@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<title>Тил Маджонг — прототип</title>
+<link rel="manifest" href="manifest.json" />
+<meta name="theme-color" content="#142622" />
+<link rel="icon" href="assets/pwa/icon-192.png" />
+<link rel="apple-touch-icon" href="assets/pwa/apple-touch-icon.png" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="apple-mobile-web-app-title" content="Тил Маджонг" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body data-screen="words">
+  <header class="topbar">
+    <h1>🐉 Тил Маджонг <span class="subtitle">прототип</span></h1>
+  </header>
+
+  <!-- ЭКРАН 1: выбор слов -->
+  <section id="screen-words" class="screen manager-panel">
+    <div class="manager-row">
+      <label for="voice-select">Голос произношения</label>
+      <div class="topic-row">
+        <select id="voice-select" title="Выбрать голос произношения"></select>
+        <button id="test-voice-btn" title="Проверить голос">🔁 Тест голоса</button>
+      </div>
+    </div>
+
+    <div class="manager-row">
+      <label for="api-key-input">API-ключ OpenAI (хранится только в этом браузере)</label>
+      <input type="password" id="api-key-input" placeholder="sk-..." />
+    </div>
+
+    <div class="manager-row">
+      <label for="word-input">Свои турецкие слова (по одному в строке, перевод не нужен)</label>
+      <textarea id="word-input" rows="5" placeholder="yavaş&#10;masa&#10;deniz"></textarea>
+      <button id="generate-words-btn">Перевести и нарисовать</button>
+    </div>
+
+    <div class="manager-row">
+      <label for="topic-input">Или предложить слова по теме (AI подберёт, ты одобришь список — потом рисуются картинки)</label>
+      <div class="topic-row">
+        <input type="text" id="topic-input" placeholder="например: овощи" />
+        <input type="number" id="topic-count-input" min="3" max="30" value="10" title="Сколько слов предложить" />
+        <button id="suggest-topic-btn">Предложить слова</button>
+      </div>
+    </div>
+
+    <div id="topic-suggestions" class="topic-suggestions hidden">
+      <div class="label">Предложенные слова — сними галочки с ненужных, потом подтверди</div>
+      <div id="topic-suggestions-list" class="word-select-list-inner"></div>
+      <div class="select-row">
+        <button id="approve-suggestions-btn">Нарисовать одобренные</button>
+        <button id="cancel-suggestions-btn">Отмена</button>
+      </div>
+    </div>
+
+    <div id="generate-progress" class="generate-progress"></div>
+
+    <div class="manager-row">
+      <div class="label">Все слова (<span id="selected-count">0</span> выбрано для игры)</div>
+      <div class="select-row">
+        <button id="select-all-btn">Выбрать все</button>
+        <button id="select-none-btn">Снять все</button>
+        <button id="export-words-btn">⬇️ Экспорт</button>
+        <button id="import-words-btn">⬆️ Импорт</button>
+        <button id="reclassify-btn">🏷 Разложить по категориям</button>
+        <button id="compress-icons-btn">🗜 Сжать картинки</button>
+        <input type="file" id="import-words-input" accept="application/json" hidden />
+      </div>
+      <div id="word-select-list" class="word-select-list"></div>
+    </div>
+
+    <div class="screen-actions">
+      <button id="words-next-btn">Далее: тип расклада →</button>
+    </div>
+  </section>
+
+  <!-- ЭКРАН 2: тип расклада -->
+  <section id="screen-layout" class="screen manager-panel">
+    <div class="manager-row">
+      <label>
+        Количество плиток в игре: <span id="tile-count-label">40</span>
+        <input type="range" id="tile-count-slider" min="20" max="144" step="2" value="40" />
+      </label>
+      <div id="deck-summary" class="deck-summary"></div>
+    </div>
+
+    <div class="screen-actions">
+      <button id="layout-back-btn" class="secondary">← Назад к словам</button>
+      <button id="layout-play-btn">Играть →</button>
+    </div>
+  </section>
+
+  <!-- ЭКРАН 3: игра -->
+  <section id="screen-game" class="screen screen-game">
+    <div class="rotate-hint">🔄 Поверни телефон горизонтально — поле поместится крупнее</div>
+    <div class="game-bar">
+      <div class="stats">
+        <div class="stat"><span class="label">Пары</span><span id="pairs-left">20</span></div>
+        <div class="stat"><span class="label">Ходы</span><span id="moves">0</span></div>
+        <div class="stat"><span class="label">Время</span><span id="timer">00:00</span></div>
+      </div>
+      <div class="controls">
+        <button id="mute-btn" title="Выключить звук">🔊</button>
+        <button id="hint-btn" title="Показать доступную пару">💡 Подсказка</button>
+        <button id="restart-btn" title="Новая раскладка с теми же словами">🔄 Новая игра</button>
+        <button id="back-to-setup-btn" title="Изменить слова и расклад">⚙️ Настройки</button>
+      </div>
+    </div>
+    <main>
+      <div id="board-frame" class="board-frame">
+        <div id="board" class="board"></div>
+      </div>
+    </main>
+  </section>
+
+  <div id="match-popup" class="match-popup hidden">
+    <div class="match-icon"></div>
+    <div class="match-tr"></div>
+    <div class="match-ru"></div>
+    <button id="replay-btn" title="Повторить произношение">🔊 Повторить</button>
+  </div>
+
+  <div id="win-screen" class="win-screen hidden">
+    <div class="win-card">
+      <h2>🎉 Все пары найдены!</h2>
+      <p id="win-stats"></p>
+      <button id="play-again-btn">Играть снова</button>
+    </div>
+  </div>
+
+  <script src="icons.js"></script>
+  <script src="wordbank.js"></script>
+  <script src="mahjong-layout.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

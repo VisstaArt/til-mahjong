@@ -1,0 +1,10 @@
+.DS_Store
+
+# Старые несжатые оригиналы иконок (32МБ) — заменены на assets/icons/*.jpg
+assets/icons/*.png
+
+# Черновые варианты стилей при подборе — не используются в игре
+assets/style-test/
+
+# Локальный dev-сервер с запретом кеша — не нужен на GitHub Pages
+nocache-server.py

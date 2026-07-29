@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<title>Раунд 2 — пропорции × фон</title>
+<style>
+  body { background:#142622; color:#f1f5f2; font-family:-apple-system,sans-serif; padding:24px; }
+  h1 { font-size:1.2rem; }
+  .grid { display:grid; grid-template-columns:repeat(3,1fr); gap:20px; max-width:900px; }
+  .card { background:#1b4332; border-radius:12px; padding:12px; text-align:center; }
+  .card img { width:100%; aspect-ratio:1; object-fit:cover; border-radius:8px; }
+  .card div { margin-top:8px; font-size:0.9rem; color:#e9c46a; }
+</style>
+</head>
+<body>
+  <h1>Kawaii vs естественные пропорции · чистый фон vs сцена</h1>
+  <div class="grid">
+    <div class="card"><img src="assets/style-test/e1-kawaii-plain.png"><div>E1 — kawaii, чистый фон</div></div>
+    <div class="card"><img src="assets/style-test/e2-kawaii-scene.png"><div>E2 — kawaii, со сценой</div></div>
+    <div class="card"><img src="assets/style-test/e3-semi-plain.png"><div>E3 — естественные пропорции, чистый фон</div></div>
+    <div class="card"><img src="assets/style-test/e4-semi-scene.png"><div>E4 — естественные пропорции, со сценой</div></div>
+    <div class="card"><img src="assets/style-test/e5-chay-style.png"><div>E5 — в стиле «чая» (реалистичный рендер), со сценой</div></div>
+    <div class="card"><img src="assets/style-test/e6-disney-style.png"><div>E6 — диснеевский мультяшный стиль, со сценой</div></div>
+  </div>
+</body>
+</html>
