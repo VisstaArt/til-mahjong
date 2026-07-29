@@ -25,7 +25,21 @@ function isFree(pos, remaining) {
   return !leftBlocked || !rightBlocked;
 }
 
-function generateShape(tileCount) {
+// Хвост, который не поместился в форму, — плоским рядом сбоку (редкий краевой случай,
+// например когда плиток задано больше, чем форма способна вместить слоями).
+function appendTail(positions, remaining, extraX, rows) {
+  let i = 0;
+  while (remaining > 0) {
+    positions.push({ x: extraX + Math.floor(i / rows) * 2, y: (i % rows) * 2, z: 0 });
+    i++;
+    remaining--;
+  }
+  return positions;
+}
+
+// Пирамида: прямоугольник, с каждым слоем уменьшающийся на 1 плитку с каждой стороны
+// и смещающийся на +1 — классическая ступенчатая пирамида.
+function generatePyramidShape(tileCount) {
   const area = Math.max(tileCount * 0.45, 16);
   let cols = Math.min(14, Math.max(6, Math.round(Math.sqrt(area * 1.8))));
   let rows = Math.min(8, Math.max(4, Math.round(Math.sqrt(area / 1.8))));
@@ -50,18 +64,91 @@ function generateShape(tileCount) {
     r -= 2;
   }
 
-  // Хвост, который не поместился в пирамиду — плоским рядом рядом с ней (редкий край. случай).
-  if (remaining > 0) {
-    const extraX = cols * 2 + 4;
-    let i = 0;
-    while (remaining > 0) {
-      positions.push({ x: extraX + Math.floor(i / rows) * 2, y: (i % rows) * 2, z: 0 });
-      i++;
-      remaining--;
+  if (remaining > 0) appendTail(positions, remaining, cols * 2 + 4, rows);
+  return positions;
+}
+
+// Крепость: та же ступенчатая логика, что у пирамиды, но почти квадратная и с более
+// медленным сужением (на 1 плитку с каждой стороны за слой вместо 1 с каждой) —
+// получается более приземистая и высокая башня вместо длинной низкой пирамиды.
+function generateFortressShape(tileCount) {
+  const area = Math.max(tileCount * 0.45, 16);
+  let side = Math.min(11, Math.max(6, Math.round(Math.sqrt(area * 1.15))));
+  let cols = side;
+  let rows = side;
+
+  const positions = [];
+  let remaining = tileCount;
+  let layer = 0;
+  let offset = 0;
+  let c = cols;
+  let r = rows;
+
+  while (remaining > 0 && c >= 1 && r >= 1) {
+    for (let ry = 0; ry < r && remaining > 0; ry++) {
+      for (let rx = 0; rx < c && remaining > 0; rx++) {
+        positions.push({ x: offset + rx * 2, y: offset + ry * 2, z: layer });
+        remaining--;
+      }
     }
+    layer++;
+    offset += 1;
+    c -= 1;
+    r -= 1;
   }
 
+  if (remaining > 0) appendTail(positions, remaining, cols * 2 + 4, rows);
   return positions;
+}
+
+// Черепаха: широкий овальный панцирь (слой 0) + меньший овальный горб по центру
+// (слой 1) + маленький пик (слой 2) — силуэт вместо прямоугольника считается
+// по уравнению эллипса на каждом слое.
+function generateTurtleShape(tileCount) {
+  const area = Math.max(tileCount * 0.5, 16);
+  const cols = Math.min(16, Math.max(8, Math.round(Math.sqrt(area * 2.6))));
+  const rows = Math.min(9, Math.max(5, Math.round(Math.sqrt(area / 2.6))));
+  const cx = (cols - 1) / 2;
+  const cy = (rows - 1) / 2;
+
+  function ellipseCells(shrink, z) {
+    const rx = (cols / 2) * shrink;
+    const ry = (rows / 2) * shrink;
+    const cells = [];
+    for (let row = 0; row < rows; row++) {
+      for (let col = 0; col < cols; col++) {
+        const nx = rx ? (col - cx) / rx : 0;
+        const ny = ry ? (row - cy) / ry : 0;
+        if (nx * nx + ny * ny <= 1) cells.push({ x: col * 2 + z, y: row * 2 + z, z });
+      }
+    }
+    return cells;
+  }
+
+  const layers = [ellipseCells(1, 0), ellipseCells(0.55, 1), ellipseCells(0.28, 2)];
+  const positions = [];
+  let remaining = tileCount;
+  layers.forEach((cells) => {
+    for (const p of cells) {
+      if (remaining <= 0) return;
+      positions.push(p);
+      remaining--;
+    }
+  });
+
+  if (remaining > 0) appendTail(positions, remaining, cols * 2 + 6, rows);
+  return positions;
+}
+
+const SHAPE_GENERATORS = {
+  pyramid: generatePyramidShape,
+  fortress: generateFortressShape,
+  turtle: generateTurtleShape,
+};
+
+function generateShape(tileCount, shapeId) {
+  const gen = SHAPE_GENERATORS[shapeId] || generatePyramidShape;
+  return gen(tileCount);
 }
 
 // Строит гарантированно решаемый порядок снятия пар: на каждом раунде снимает
@@ -97,27 +184,28 @@ function computeRemovalOrder(positions) {
   return order;
 }
 
-// deck: [{tr, ru, icon}], tileCount: чётное число плиток.
+// deck: [{tr, ru, icon}], одна запись на пару (уже взвешенный/растянутый под нужное
+// число пар список слов — см. buildWeightedDeck в script.js). tileCount: чётное
+// число плиток. shapeId: "pyramid" | "turtle" | "fortress".
 // Возвращает массив плиток с координатами x,y,z и гарантией решаемости.
-function buildLayeredBoard(deck, tileCount) {
+function buildLayeredBoard(deck, tileCount, shapeId) {
   const pairsNeeded = Math.max(1, Math.floor(tileCount / 2));
-  const shape = generateShape(pairsNeeded * 2);
+  const shape = generateShape(pairsNeeded * 2, shapeId);
   const order = computeRemovalOrder(shape);
 
   const tiles = [];
   let id = 0;
   order.forEach(([posA, posB], i) => {
-    const wordIndex = i % deck.length;
-    const w = deck[wordIndex];
+    const w = deck[i % deck.length];
     const isImageFirst = Math.random() < 0.5;
     const imagePos = isImageFirst ? posA : posB;
     const wordPos = isImageFirst ? posB : posA;
-    // pairId = индекс слова (не слота): любые повторы одного слова взаимозаменяемы,
-    // как одинаковые плитки в настоящем маджонге. Это не ломает решаемость —
-    // только добавляет дополнительные допустимые ходы к уже гарантированным.
+    // pairId = само слово (tr), а не номер слота: любые повторы одного слова
+    // взаимозаменяемы, как одинаковые плитки в настоящем маджонге. Это не ломает
+    // решаемость — только добавляет дополнительные допустимые ходы к уже гарантированным.
     tiles.push({
       id: id++,
-      pairId: wordIndex,
+      pairId: w.tr,
       type: "image",
       tr: w.tr,
       ru: w.ru,
@@ -129,7 +217,7 @@ function buildLayeredBoard(deck, tileCount) {
     });
     tiles.push({
       id: id++,
-      pairId: wordIndex,
+      pairId: w.tr,
       type: "word",
       tr: w.tr,
       ru: w.ru,

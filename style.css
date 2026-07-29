@@ -399,6 +399,11 @@ body[data-screen="game"] .topbar {
   flex: 1;
 }
 
+.row-progress-badge {
+  font-size: 0.8rem;
+  flex-shrink: 0;
+}
+
 .word-select-row button {
   background: none;
   border: none;
@@ -416,6 +421,33 @@ body[data-screen="game"] .topbar {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
+}
+
+.shape-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.shape-btn {
+  background: var(--scale-2);
+  color: var(--text);
+  border: 2px solid transparent;
+  border-radius: 8px;
+  padding: 10px 16px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.shape-btn:hover {
+  background: var(--scale-3);
+}
+
+.shape-btn.active {
+  border-color: var(--gold);
+  background: var(--scale-3);
+  font-weight: 600;
 }
 
 .topic-row input[type="text"] {

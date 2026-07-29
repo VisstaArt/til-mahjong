@@ -81,6 +81,15 @@
   <!-- ЭКРАН 2: тип расклада -->
   <section id="screen-layout" class="screen manager-panel">
     <div class="manager-row">
+      <label>Форма расклада</label>
+      <div class="shape-row">
+        <button type="button" class="shape-btn" data-shape="pyramid">🔺 Пирамида</button>
+        <button type="button" class="shape-btn" data-shape="turtle">🐢 Черепаха</button>
+        <button type="button" class="shape-btn" data-shape="fortress">🏯 Крепость</button>
+      </div>
+    </div>
+
+    <div class="manager-row">
       <label>
         Количество плиток в игре: <span id="tile-count-label">40</span>
         <input type="range" id="tile-count-slider" min="20" max="144" step="2" value="40" />

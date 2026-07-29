@@ -68,6 +68,7 @@ const generateProgressEl = document.getElementById("generate-progress");
 const tileCountSlider = document.getElementById("tile-count-slider");
 const tileCountLabel = document.getElementById("tile-count-label");
 const deckSummaryEl = document.getElementById("deck-summary");
+const shapeButtons = document.querySelectorAll(".shape-btn");
 const wordSelectListEl = document.getElementById("word-select-list");
 const selectedCountEl = document.getElementById("selected-count");
 const selectAllBtn = document.getElementById("select-all-btn");
@@ -111,6 +112,71 @@ function saveExcludedWords(set) {
 }
 
 let excludedWords = getExcludedWords();
+
+// Система "выученности" слов: streak = сколько раз подряд слово было собрано в пару
+// БЕЗ единой ошибки (см. onTileClick) — любая ошибка с участием этого слова сбрасывает
+// streak в 0. Чем выше streak, тем реже слово попадает в новую раскладку, а после
+// 10 чистых повторов оно считается выученным и из обычной ротации исключается.
+const PROGRESS_STORAGE_KEY = "mahjong-word-progress";
+
+function getWordProgress() {
+  try {
+    return JSON.parse(localStorage.getItem(PROGRESS_STORAGE_KEY) || "{}");
+  } catch {
+    return {};
+  }
+}
+
+function saveWordProgress() {
+  localStorage.setItem(PROGRESS_STORAGE_KEY, JSON.stringify(wordProgress));
+}
+
+let wordProgress = getWordProgress();
+
+// weight — во сколько раз чаще слово из этого "ящика" попадает в новую раскладку
+// относительно других ящиков; у "выученного" вес 0 — оно перестаёт появляться.
+const PROGRESS_BOXES = [
+  { id: "new", max: 2, label: "новое", emoji: "🔴", weight: 3 },
+  { id: "learning", max: 5, label: "учится", emoji: "🟡", weight: 2 },
+  { id: "almost", max: 9, label: "почти выучено", emoji: "🟢", weight: 1 },
+  { id: "mastered", max: Infinity, label: "выучено", emoji: "⭐", weight: 0 },
+];
+
+function getWordStreak(tr) {
+  return (wordProgress[tr] && wordProgress[tr].streak) || 0;
+}
+
+function getWordBox(tr) {
+  const streak = getWordStreak(tr);
+  return PROGRESS_BOXES.find((b) => streak <= b.max);
+}
+
+function bumpWordStreak(tr, correct) {
+  const streak = correct ? Math.min(getWordStreak(tr) + 1, 15) : 0;
+  wordProgress[tr] = { streak };
+  saveWordProgress();
+}
+
+// Строит колоду ровно из pairsNeeded слов, взвешенно по тому, насколько слово ещё
+// не выучено (см. PROGRESS_BOXES) — так недавно ошибочные/новые слова встречаются
+// в раскладке чаще, а хорошо выученные постепенно пропадают из ротации.
+function buildWeightedDeck(deck, pairsNeeded) {
+  const pool = [];
+  deck.forEach((w) => {
+    const weight = getWordBox(w.tr).weight;
+    for (let i = 0; i < weight; i++) pool.push(w);
+  });
+  if (!pool.length) pool.push(...deck); // всё выучено — всё равно даём поиграть
+
+  for (let i = pool.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [pool[i], pool[j]] = [pool[j], pool[i]];
+  }
+
+  const result = [];
+  for (let i = 0; i < pairsNeeded; i++) result.push(pool[i % pool.length]);
+  return result;
+}
 
 function loadVoices() {
   allVoices = speechSynthesis.getVoices();
@@ -331,6 +397,7 @@ function onTileClick(id) {
     showMatchPopup(tile);
     speak(tile.tr);
     refreshFreeStates();
+    bumpWordStreak(tile.tr, true);
 
     pairsLeft--;
     pairsLeftEl.textContent = pairsLeft;
@@ -346,6 +413,8 @@ function onTileClick(id) {
     const b = tileEl(id);
     a.classList.add("mismatch");
     b.classList.add("mismatch");
+    bumpWordStreak(selected.tr, false);
+    bumpWordStreak(tile.tr, false);
     selected = null;
     setTimeout(() => {
       a.classList.remove("mismatch", "selected");
@@ -413,7 +482,10 @@ function newGame() {
     setScreen("words");
     return;
   }
-  tiles = buildLayeredBoard(deck, Number(tileCountSlider.value));
+  const tileCount = Number(tileCountSlider.value);
+  const pairsNeeded = Math.max(1, Math.floor(tileCount / 2));
+  const weightedDeck = buildWeightedDeck(deck, pairsNeeded);
+  tiles = buildLayeredBoard(weightedDeck, tileCount, selectedShape);
   selected = null;
   pairsLeft = tiles.length / 2;
   moves = 0;
@@ -444,7 +516,10 @@ layoutPlayBtn.addEventListener("click", () => {
   setScreen("game");
   newGame();
 });
-backToSetupBtn.addEventListener("click", () => setScreen("words"));
+backToSetupBtn.addEventListener("click", () => {
+  renderWordSelectList();
+  setScreen("words");
+});
 
 apiKeyInput.value = getApiKey();
 apiKeyInput.addEventListener("change", () => setApiKey(apiKeyInput.value));
@@ -452,6 +527,26 @@ apiKeyInput.addEventListener("change", () => setApiKey(apiKeyInput.value));
 tileCountSlider.addEventListener("input", () => {
   tileCountLabel.textContent = tileCountSlider.value;
   updateDeckSummary();
+});
+
+// ---- Форма расклада ----
+
+const SHAPE_STORAGE_KEY = "mahjong-shape";
+let selectedShape = localStorage.getItem(SHAPE_STORAGE_KEY) || "pyramid";
+
+function renderShapeButtons() {
+  shapeButtons.forEach((btn) => {
+    btn.classList.toggle("active", btn.dataset.shape === selectedShape);
+  });
+}
+renderShapeButtons();
+
+shapeButtons.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    selectedShape = btn.dataset.shape;
+    localStorage.setItem(SHAPE_STORAGE_KEY, selectedShape);
+    renderShapeButtons();
+  });
 });
 
 selectAllBtn.addEventListener("click", () => {
@@ -578,18 +673,17 @@ approveSuggestionsBtn.addEventListener("click", async () => {
 
 function updateDeckSummary() {
   const deck = getActiveDeck();
-  const tileCount = Number(tileCountSlider.value);
-  const pairsNeeded = Math.floor(tileCount / 2);
   if (!deck.length) {
     deckSummaryEl.textContent = "Слова не выбраны — игра не сформируется.";
     return;
   }
-  const base = Math.floor(pairsNeeded / deck.length);
-  const extra = pairsNeeded % deck.length;
-  const summary =
-    extra === 0
-      ? `Каждое из ${deck.length} слов повторится ${base} раз(а).`
-      : `${deck.length} слов: ${extra} из них повторятся ${base + 1} раз(а), остальные — ${base} раз(а).`;
+  const masteredCount = deck.filter((w) => getWordBox(w.tr).id === "mastered").length;
+  let summary = `${deck.length} слов в игре — новые и недавно ошибочные будут появляться чаще, выученные — реже.`;
+  if (masteredCount === deck.length) {
+    summary = `Все ${deck.length} слов уже выучены 🎉 — раскладка всё равно составится из них для повторения.`;
+  } else if (masteredCount) {
+    summary += ` Полностью выучено: ${masteredCount} ⭐ (в обычной раскладке почти не участвуют, пока не появятся новые ошибки).`;
+  }
   deckSummaryEl.textContent = summary;
 }
 
@@ -621,6 +715,13 @@ function buildWordRow(w) {
   text.className = "row-text";
   text.textContent = `${w.tr} — ${w.ru}`;
   row.appendChild(text);
+
+  const box = getWordBox(w.tr);
+  const badge = document.createElement("span");
+  badge.className = "row-progress-badge";
+  badge.textContent = box.emoji;
+  badge.title = `${box.label} (${getWordStreak(w.tr)} подряд без ошибок)`;
+  row.appendChild(badge);
 
   if (isCustom) {
     const redoBtn = document.createElement("button");
