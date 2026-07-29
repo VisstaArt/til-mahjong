@@ -115,6 +115,7 @@
       <div class="controls">
         <button id="mute-btn" title="Выключить звук">🔊</button>
         <button id="hint-btn" title="Показать доступную пару">💡 Подсказка</button>
+        <button id="shuffle-btn" title="Перемешать оставшиеся плитки, если нет хода">🔀 Перемешать</button>
         <button id="restart-btn" title="Новая раскладка с теми же словами">🔄 Новая игра</button>
         <button id="back-to-setup-btn" title="Изменить слова и расклад">⚙️ Настройки</button>
       </div>
@@ -126,11 +127,13 @@
     </main>
   </section>
 
-  <div id="match-popup" class="match-popup hidden">
-    <div class="match-icon"></div>
-    <div class="match-tr"></div>
-    <div class="match-ru"></div>
-    <button id="replay-btn" title="Повторить произношение">🔊 Повторить</button>
+  <div id="match-popup" class="match-popup-overlay hidden">
+    <div class="match-card">
+      <div class="match-icon"></div>
+      <div class="match-tr"></div>
+      <div class="match-ru"></div>
+      <button id="replay-btn" title="Повторить произношение">🔊 Повторить</button>
+    </div>
   </div>
 
   <div id="win-screen" class="win-screen hidden">

@@ -101,6 +101,39 @@ async function importWordBankFile(file) {
   return imported;
 }
 
+// Стартовый набор слов, который копится по мере того, как их добавляют через игру
+// (см. assets/seed/seed-words.json) — при первом заходе в браузере он подгружается
+// автоматически, чтобы новые пользователи сразу получали не только базовые 20 слов,
+// но и всё, что уже наработано другими. Флаг в localStorage — чтобы это случилось
+// только один раз и не мешало, если пользователь потом сам удалит какие-то слова.
+const SEEDED_FLAG_KEY = "mahjong-seeded-v1";
+
+async function seedBaseWordsIfNeeded() {
+  if (localStorage.getItem(SEEDED_FLAG_KEY)) return;
+  localStorage.setItem(SEEDED_FLAG_KEY, "1");
+  try {
+    const resp = await fetch("assets/seed/seed-words.json");
+    if (!resp.ok) return;
+    const data = await resp.json();
+    const words = Array.isArray(data.words) ? data.words : [];
+    const existing = await getAllCustomWords();
+    const existingTr = new Set(existing.map((w) => w.tr));
+    for (const w of words) {
+      if (!w || !w.tr || !w.ru || !w.icon || existingTr.has(w.tr)) continue;
+      await putCustomWord({
+        tr: w.tr,
+        ru: w.ru,
+        icon: w.icon,
+        visual: w.visual || null,
+        pos: w.pos || "other",
+        theme: w.theme || null,
+      });
+    }
+  } catch (e) {
+    // тихо игнорируем — не критично, просто у пользователя не будет стартового набора
+  }
+}
+
 async function translateAndDescribe(words, apiKey) {
   const prompt =
     `Для каждого турецкого слова сначала определи его начальную (словарную) форму (поле "base") — ` +

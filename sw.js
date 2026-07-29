@@ -2,7 +2,7 @@
 // берём свежую версию (и обновляем кеш) — это на время активной разработки, чтобы
 // не словить залипание на старой версии, как уже бывало с обычным браузерным кешем.
 // Офлайн/при обрыве сети — отдаём то, что успело закешироваться.
-const CACHE_NAME = "til-mahjong-v1";
+const CACHE_NAME = "til-mahjong-v2";
 
 const APP_SHELL = [
   "./",
@@ -13,6 +13,7 @@ const APP_SHELL = [
   "./mahjong-layout.js",
   "./icons.js",
   "./manifest.json",
+  "./assets/seed/seed-words.json",
   "./assets/pwa/icon-192.png",
   "./assets/pwa/icon-512.png",
   "./assets/pwa/apple-touch-icon.png",

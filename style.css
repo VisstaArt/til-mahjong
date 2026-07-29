@@ -618,26 +618,32 @@ main {
   75% { transform: translateX(5px); }
 }
 
-.match-popup {
+/* Полноэкранный прозрачный слой-ловушка кликов: клик по нему (не по самой карточке)
+   мгновенно закрывает плашку — не нужно ждать автоматического скрытия. */
+.match-popup-overlay {
   position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  inset: 0;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.match-popup-overlay.hidden { display: none; }
+
+.match-card {
   background: linear-gradient(160deg, var(--scale-2), var(--scale-1));
   border: 2px solid var(--gold);
   border-radius: 16px;
   padding: 24px 40px;
   text-align: center;
   box-shadow: 0 20px 60px rgba(0,0,0,0.5);
-  z-index: 10000;
   animation: pop-in 0.2s ease;
 }
 
-.match-popup.hidden { display: none; }
-
 @keyframes pop-in {
-  from { transform: translate(-50%, -50%) scale(0.7); opacity: 0; }
-  to { transform: translate(-50%, -50%) scale(1); opacity: 1; }
+  from { transform: scale(0.7); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
 }
 
 .match-icon {
@@ -652,7 +658,7 @@ main {
 .match-tr { font-size: 1.5rem; font-weight: 700; color: var(--gold); margin-top: 8px; }
 .match-ru { font-size: 1rem; opacity: 0.8; margin-top: 2px; }
 
-.match-popup #replay-btn {
+.match-card #replay-btn {
   margin-top: 14px;
   background: var(--scale-2);
   color: var(--text);
@@ -663,7 +669,7 @@ main {
   cursor: pointer;
 }
 
-.match-popup #replay-btn:hover {
+.match-card #replay-btn:hover {
   background: var(--scale-3);
 }
 

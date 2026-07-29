@@ -433,6 +433,15 @@ function showMatchPopup(tile) {
   popupEl._hideTimer = setTimeout(() => popupEl.classList.add("hidden"), 4500);
 }
 
+// Клик по свободному фону (не по самой карточке) сразу закрывает плашку —
+// не нужно ждать 4.5 секунды, если слово и так понятно.
+popupEl.addEventListener("click", (e) => {
+  if (e.target === popupEl) {
+    clearTimeout(popupEl._hideTimer);
+    popupEl.classList.add("hidden");
+  }
+});
+
 function showHint() {
   const free = tiles.filter((t) => !t.matched && t.free);
   for (const t of free) {
@@ -448,6 +457,64 @@ function showHint() {
       return;
     }
   }
+}
+
+// Перемешать оставшиеся (ещё не собранные) плитки — полезно, если раскладка зашла
+// в тупик (среди свободных плиток нет ни одной подходящей пары для хода). Форма и
+// количество плиток не меняются — просто заново раздаём слова по тем же местам
+// через тот же алгоритм гарантированной решаемости, что и при старте игры.
+function shuffleTiles() {
+  if (inputLocked) return;
+  const matchedTiles = tiles.filter((t) => t.matched);
+  const remaining = tiles.filter((t) => !t.matched);
+  if (remaining.length < 2) return;
+
+  const positions = remaining.map((t) => ({ x: t.x, y: t.y, z: t.z }));
+  const order = computeRemovalOrder(positions);
+  const contentDeck = remaining
+    .filter((t) => t.type === "image")
+    .map((t) => ({ tr: t.tr, ru: t.ru, icon: t.icon }));
+  for (let i = contentDeck.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [contentDeck[i], contentDeck[j]] = [contentDeck[j], contentDeck[i]];
+  }
+
+  let nextId = Math.max(-1, ...tiles.map((t) => t.id)) + 1;
+  const rebuilt = [];
+  order.forEach(([posA, posB], i) => {
+    const w = contentDeck[i % contentDeck.length];
+    const isImageFirst = Math.random() < 0.5;
+    const imagePos = isImageFirst ? posA : posB;
+    const wordPos = isImageFirst ? posB : posA;
+    rebuilt.push({
+      id: nextId++,
+      pairId: w.tr,
+      type: "image",
+      tr: w.tr,
+      ru: w.ru,
+      icon: w.icon,
+      x: imagePos.x,
+      y: imagePos.y,
+      z: imagePos.z,
+      matched: false,
+    });
+    rebuilt.push({
+      id: nextId++,
+      pairId: w.tr,
+      type: "word",
+      tr: w.tr,
+      ru: w.ru,
+      icon: w.icon,
+      x: wordPos.x,
+      y: wordPos.y,
+      z: wordPos.z,
+      matched: false,
+    });
+  });
+
+  tiles = [...matchedTiles, ...rebuilt];
+  selected = null;
+  render();
 }
 
 function startTimer() {
@@ -507,6 +574,7 @@ muteBtn.addEventListener("click", () => {
 restartBtn.addEventListener("click", newGame);
 playAgainBtn.addEventListener("click", newGame);
 document.getElementById("hint-btn").addEventListener("click", showHint);
+document.getElementById("shuffle-btn").addEventListener("click", shuffleTiles);
 
 // ---- Флоу: слова → тип расклада → игра ----
 
@@ -885,6 +953,7 @@ generateWordsBtn.addEventListener("click", async () => {
 });
 
 (async function init() {
+  await seedBaseWordsIfNeeded();
   customWords = await getAllCustomWords();
   renderWordSelectList();
   setScreen("words");
