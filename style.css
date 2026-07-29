@@ -469,6 +469,22 @@ main {
   overflow: auto;
 }
 
+/* На игровом экране отступы вокруг main существовали для десктопного вида —
+   на телефоне (особенно в альбомной ориентации, где высоты и так мало) они
+   съедали заметную часть места, которое могло бы достаться самой доске. */
+.screen-game main {
+  padding: 10px 8px;
+}
+
+@media (max-height: 600px) {
+  .screen-game main {
+    padding: 6px 6px;
+  }
+  .screen-game .board {
+    padding: 10px;
+  }
+}
+
 .board-frame {
   position: relative;
   margin: 0 auto;
