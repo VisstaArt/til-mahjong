@@ -167,6 +167,14 @@ button.secondary:hover { filter: brightness(1.08); }
 button.secondary.small { padding: 6px 12px; font-size: 0.82rem; }
 
 /* Каталог: плитки категорий, как разделы в интернет-магазине */
+.catalog-loading {
+  text-align: center;
+  padding: 30px 0;
+  color: var(--gold);
+  font-size: 0.9rem;
+}
+.catalog-loading.hidden { display: none; }
+
 .catalog-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));

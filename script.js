@@ -902,6 +902,7 @@ function wordsByCategory() {
 }
 
 function renderCatalog() {
+  document.getElementById("catalog-loading").classList.add("hidden");
   const words = getAllAvailableWords();
   const selectedCount = words.filter((w) => !excludedWords.has(w.tr)).length;
   catalogSelectedCountEl.textContent = selectedCount;
