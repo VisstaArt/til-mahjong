@@ -339,7 +339,7 @@
     "tr": "çocuk",
     "ru": "ребёнок",
     "pos": "noun",
-    "theme": "Разное / служебные слова",
+    "theme": "Семья и отношения",
     "visual": "A happy child playing with a dog."
   },
   {
@@ -745,7 +745,7 @@
     "tr": "dürüst olmak",
     "ru": "быть честным",
     "pos": "verb",
-    "theme": "Разное / служебные слова",
+    "theme": "Глаголы — действия",
     "visual": "A person with a hand on their heart."
   },
   {
@@ -759,7 +759,7 @@
     "tr": "yazdırmak",
     "ru": "печать",
     "pos": "verb",
-    "theme": "Разное / служебные слова",
+    "theme": "Глаголы — действия",
     "visual": "A printer printing a document."
   },
   {
@@ -948,7 +948,7 @@
     "tr": "birlikte",
     "ru": "вместе",
     "pos": "adverb",
-    "theme": "Разное / служебные слова",
+    "theme": "Служебные слова",
     "visual": "two hands holding together"
   },
   {
@@ -969,7 +969,7 @@
     "tr": "herhangi",
     "ru": "любой",
     "pos": "pronoun",
-    "theme": "Разное / служебные слова",
+    "theme": "Служебные слова",
     "visual": "a question mark inside a box"
   },
   {
@@ -1284,14 +1284,14 @@
     "tr": "şemsiye",
     "ru": "зонт",
     "pos": "noun",
-    "theme": "Разное / служебные слова",
+    "theme": "Предметы и вещи",
     "visual": "An open umbrella."
   },
   {
     "tr": "fener",
     "ru": "фонарь",
     "pos": "noun",
-    "theme": "Разное / служебные слова",
+    "theme": "Предметы и вещи",
     "visual": "A lantern glowing at night."
   },
   {
@@ -1564,7 +1564,7 @@
     "tr": "boya",
     "ru": "краска",
     "pos": "noun",
-    "theme": "Разное / служебные слова",
+    "theme": "Цвета",
     "visual": "a paint tube with colors"
   },
   {
@@ -1585,35 +1585,35 @@
     "tr": "harita",
     "ru": "карта",
     "pos": "noun",
-    "theme": "Разное / служебные слова",
+    "theme": "Город и места",
     "visual": "a map spread out on a table"
   },
   {
     "tr": "kulaklık",
     "ru": "наушники",
     "pos": "noun",
-    "theme": "Разное / служебные слова",
+    "theme": "Предметы и вещи",
     "visual": "a pair of headphones"
   },
   {
     "tr": "bilgisayar",
     "ru": "компьютер",
     "pos": "noun",
-    "theme": "Разное / служебные слова",
+    "theme": "Предметы и вещи",
     "visual": "a desktop computer and monitor"
   },
   {
     "tr": "laptop",
     "ru": "лаптоп",
     "pos": "noun",
-    "theme": "Разное / служебные слова",
+    "theme": "Предметы и вещи",
     "visual": "a laptop computer open on a desk"
   },
   {
     "tr": "makas",
     "ru": "ножницы",
     "pos": "noun",
-    "theme": "Разное / служебные слова",
+    "theme": "Предметы и вещи",
     "visual": "a pair of scissors"
   },
   {
@@ -1669,7 +1669,7 @@
     "tr": "makyaj",
     "ru": "макияж",
     "pos": "noun",
-    "theme": "Разное / служебные слова",
+    "theme": "Предметы и вещи",
     "visual": "makeup products on a vanity"
   },
   {
@@ -1781,49 +1781,49 @@
     "tr": "oje",
     "ru": "лак для ногтей",
     "pos": "noun",
-    "theme": "Разное / служебные слова",
+    "theme": "Предметы и вещи",
     "visual": "a nail polish bottle"
   },
   {
     "tr": "hikaye",
     "ru": "история",
     "pos": "noun",
-    "theme": "Разное / служебные слова",
+    "theme": "Предметы и вещи",
     "visual": "an open book with a story"
   },
   {
     "tr": "şiir",
     "ru": "стихотворение",
     "pos": "noun",
-    "theme": "Разное / служебные слова",
+    "theme": "Предметы и вещи",
     "visual": "a poem written on a paper"
   },
   {
     "tr": "senaryo",
     "ru": "сценарий",
     "pos": "noun",
-    "theme": "Разное / служебные слова",
+    "theme": "Предметы и вещи",
     "visual": "a script with scenes"
   },
   {
     "tr": "liste",
     "ru": "список",
     "pos": "noun",
-    "theme": "Разное / служебные слова",
+    "theme": "Предметы и вещи",
     "visual": "a notepad with a checklist"
   },
   {
     "tr": "mesaj",
     "ru": "сообщение",
     "pos": "noun",
-    "theme": "Разное / служебные слова",
+    "theme": "Предметы и вещи",
     "visual": "a speech bubble with text"
   },
   {
     "tr": "paragraf",
     "ru": "абзац",
     "pos": "noun",
-    "theme": "Разное / служебные слова",
+    "theme": "Предметы и вещи",
     "visual": "a paragraph highlighted in a book"
   },
   {
@@ -1865,7 +1865,7 @@
     "tr": "anahtar",
     "ru": "ключ",
     "pos": "noun",
-    "theme": "Разное / служебные слова",
+    "theme": "Предметы и вещи",
     "visual": "a key on a keychain"
   },
   {
@@ -2026,7 +2026,7 @@
     "tr": "oyun",
     "ru": "игра",
     "pos": "noun",
-    "theme": "Разное / служебные слова",
+    "theme": "Город и места",
     "visual": "a game controller"
   },
   {
@@ -2040,7 +2040,7 @@
     "tr": "hiç",
     "ru": "ничто",
     "pos": "pronoun",
-    "theme": "Разное / служебные слова",
+    "theme": "Служебные слова",
     "visual": "a question mark floating"
   },
   {
@@ -2054,35 +2054,35 @@
     "tr": "ne",
     "ru": "что",
     "pos": "pronoun",
-    "theme": "Разное / служебные слова",
+    "theme": "Служебные слова",
     "visual": "a question mark"
   },
   {
     "tr": "niye",
     "ru": "почему",
     "pos": "pronoun",
-    "theme": "Разное / служебные слова",
+    "theme": "Служебные слова",
     "visual": "a question mark with a puzzled face"
   },
   {
     "tr": "neden",
     "ru": "почему",
     "pos": "pronoun",
-    "theme": "Разное / служебные слова",
+    "theme": "Служебные слова",
     "visual": "a question mark with a confused expression"
   },
   {
     "tr": "niçin",
     "ru": "зачем",
     "pos": "pronoun",
-    "theme": "Разное / служебные слова",
+    "theme": "Служебные слова",
     "visual": "a question mark with a curious face"
   },
   {
     "tr": "nasıl",
     "ru": "как",
     "pos": "pronoun",
-    "theme": "Разное / служебные слова",
+    "theme": "Служебные слова",
     "visual": "a question mark with a wondering face"
   },
   {
@@ -2278,14 +2278,14 @@
     "tr": "karton",
     "ru": "картон",
     "pos": "noun",
-    "theme": "Разное / служебные слова",
+    "theme": "Цвета",
     "visual": "a cardboard box"
   },
   {
     "tr": "cadı",
     "ru": "ведьма",
     "pos": "noun",
-    "theme": "Разное / служебные слова",
+    "theme": "Предметы и вещи",
     "visual": "a witch with a broom"
   },
   {
@@ -2607,14 +2607,14 @@
     "tr": "posta",
     "ru": "почта",
     "pos": "noun",
-    "theme": "Разное / служебные слова",
+    "theme": "Город и места",
     "visual": "A mailbox filled with letters"
   },
   {
     "tr": "ıslık",
     "ru": "свист",
     "pos": "noun",
-    "theme": "Разное / служебные слова",
+    "theme": "Предметы и вещи",
     "visual": "A hand making a whistling gesture"
   },
   {
@@ -2649,7 +2649,7 @@
     "tr": "baca",
     "ru": "труба",
     "pos": "noun",
-    "theme": "Разное / служебные слова",
+    "theme": "Предметы и вещи",
     "visual": "A chimney on a house"
   },
   {
@@ -2705,7 +2705,7 @@
     "tr": "konu",
     "ru": "тема",
     "pos": "noun",
-    "theme": "Разное / служебные слова",
+    "theme": "Предметы и вещи",
     "visual": "A speech bubble indicating a topic of discussion."
   },
   {
@@ -2726,7 +2726,7 @@
     "tr": "ise",
     "ru": "то",
     "pos": "other",
-    "theme": "Разное / служебные слова",
+    "theme": "Служебные слова",
     "visual": "An arrow indicating 'but' or 'then'."
   },
   {
@@ -2747,7 +2747,7 @@
     "tr": "yerine",
     "ru": "вместо",
     "pos": "preposition",
-    "theme": "Разное / служебные слова",
+    "theme": "Направления и предлоги",
     "visual": "One item being replaced by another."
   },
   {
@@ -2768,7 +2768,7 @@
     "tr": "kendisi",
     "ru": "сам",
     "pos": "pronoun",
-    "theme": "Разное / служебные слова",
+    "theme": "Служебные слова",
     "visual": "A mirror reflecting an image."
   },
   {
@@ -2796,7 +2796,7 @@
     "tr": "düşünce",
     "ru": "мысль",
     "pos": "noun",
-    "theme": "Разное / служебные слова",
+    "theme": "Служебные слова",
     "visual": "A thought bubble filled with an idea."
   },
   {
@@ -2824,28 +2824,28 @@
     "tr": "bir şey",
     "ru": "что-то",
     "pos": "pronoun",
-    "theme": "Разное / служебные слова",
+    "theme": "Служебные слова",
     "visual": "A question mark over a blurred object."
   },
   {
     "tr": "hatta",
     "ru": "даже",
     "pos": "other",
-    "theme": "Разное / служебные слова",
+    "theme": "Служебные слова",
     "visual": "An arrow pointing to an additional item."
   },
   {
     "tr": "sadece",
     "ru": "только",
     "pos": "adverb",
-    "theme": "Разное / служебные слова",
+    "theme": "Служебные слова",
     "visual": "A limit sign indicating 'only'."
   },
   {
     "tr": "değil",
     "ru": "не",
     "pos": "other",
-    "theme": "Разное / служебные слова",
+    "theme": "Служебные слова",
     "visual": "A no symbol or prohibition sign."
   },
   {
@@ -2873,14 +2873,14 @@
     "tr": "olay",
     "ru": "событие",
     "pos": "noun",
-    "theme": "Разное / служебные слова",
+    "theme": "Предметы и вещи",
     "visual": "A calendar marking a significant event."
   },
   {
     "tr": "hakkında",
     "ru": "о",
     "pos": "preposition",
-    "theme": "Разное / служебные слова",
+    "theme": "Направления и предлоги",
     "visual": "A note or tag attached to an object."
   },
   {
@@ -2908,7 +2908,7 @@
     "tr": "kum havuzu",
     "ru": "песочница",
     "pos": "noun",
-    "theme": "Разное / служебные слова",
+    "theme": "Предметы и вещи",
     "visual": "A sandbox with toys in it."
   },
   {
@@ -2936,7 +2936,7 @@
     "tr": "hiçbir şey",
     "ru": "ничто",
     "pos": "pronoun",
-    "theme": "Разное / служебные слова",
+    "theme": "Служебные слова",
     "visual": "An empty space with a question mark."
   },
   {
@@ -2978,7 +2978,7 @@
     "tr": "hata",
     "ru": "ошибка",
     "pos": "noun",
-    "theme": "Разное / служебные слова",
+    "theme": "Предметы и вещи",
     "visual": "A paper with a red cross over it."
   },
   {
@@ -3013,7 +3013,7 @@
     "tr": "ne olursa olsun",
     "ru": "что бы ни случилось",
     "pos": "other",
-    "theme": "Разное / служебные слова",
+    "theme": "Служебные слова",
     "visual": "A sign representing uncertainty."
   },
   {
@@ -3083,14 +3083,14 @@
     "tr": "kaynak",
     "ru": "источник",
     "pos": "noun",
-    "theme": "Разное / служебные слова",
+    "theme": "Предметы и вещи",
     "visual": "a book or a flow of water representing a source"
   },
   {
     "tr": "özellikle",
     "ru": "особенно",
     "pos": "adverb",
-    "theme": "Разное / служебные слова",
+    "theme": "Служебные слова",
     "visual": "a spotlight shining on a specific object"
   },
   {
@@ -3118,7 +3118,7 @@
     "tr": "şu",
     "ru": "тот",
     "pos": "pronoun",
-    "theme": "Разное / служебные слова",
+    "theme": "Служебные слова",
     "visual": "a pointing finger indicating something afar"
   },
   {
@@ -3146,7 +3146,7 @@
     "tr": "sanki",
     "ru": "будто",
     "pos": "other",
-    "theme": "Разное / служебные слова",
+    "theme": "Служебные слова",
     "visual": "A thought bubble with a questioning figure."
   },
   {
@@ -3174,7 +3174,7 @@
     "tr": "şarkı",
     "ru": "песня",
     "pos": "noun",
-    "theme": "Разное / служебные слова",
+    "theme": "Предметы и вещи",
     "visual": "A musical note symbol."
   },
   {
@@ -3202,7 +3202,7 @@
     "tr": "her yer",
     "ru": "везде",
     "pos": "other",
-    "theme": "Разное / служебные слова",
+    "theme": "Служебные слова",
     "visual": "A map with arrows in all directions."
   },
   {
@@ -3265,7 +3265,7 @@
     "tr": "kendi kendine",
     "ru": "сам собой",
     "pos": "other",
-    "theme": "Разное / служебные слова",
+    "theme": "Служебные слова",
     "visual": "A person doing something alone."
   },
   {
@@ -3286,7 +3286,7 @@
     "tr": "ses",
     "ru": "звук",
     "pos": "noun",
-    "theme": "Разное / служебные слова",
+    "theme": "Предметы и вещи",
     "visual": "Sound waves emitting from a source."
   },
   {
@@ -3335,7 +3335,7 @@
     "tr": "doğmak",
     "ru": "рождаться",
     "pos": "verb",
-    "theme": "Разное / служебные слова",
+    "theme": "Глаголы — действия",
     "visual": "A baby being born."
   },
   {
@@ -3762,7 +3762,7 @@
     "tr": "sefer",
     "ru": "рейс",
     "pos": "noun",
-    "theme": "Разное / служебные слова",
+    "theme": "Город и места",
     "visual": "A bus schedule board displaying various routes and times."
   },
   {
@@ -4434,7 +4434,7 @@
     "tr": "uzakdoğu",
     "ru": "Дальний Восток",
     "pos": "noun",
-    "theme": "Разное / служебные слова",
+    "theme": "Страны и национальности",
     "visual": "A map highlighting the East Asia region."
   },
   {
@@ -4546,7 +4546,7 @@
     "tr": "süzme",
     "ru": "фильтрат",
     "pos": "verb",
-    "theme": "Разное / служебные слова",
+    "theme": "Глаголы — действия",
     "visual": "A happy kitchen scene with a filter pouring liquid."
   },
   {
