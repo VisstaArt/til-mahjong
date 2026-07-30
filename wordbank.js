@@ -74,6 +74,22 @@ async function putCustomWord(entry) {
   });
 }
 
+// Записать много слов одной транзакцией — открывать соединение с IndexedDB и ждать
+// отдельную транзакцию на каждое слово (как делает putCustomWord в цикле) при 50+
+// словах ощутимо медленно (наблюдалось ~6-8 секунд на 51 слово при первом заходе
+// на сайт — каталог всё это время выглядел пустым). Один batch-put — доли секунды.
+async function putCustomWordsBatch(entries) {
+  if (!entries.length) return;
+  const db = await openWordDB();
+  return new Promise((resolve, reject) => {
+    const tx = db.transaction(CUSTOM_STORE, "readwrite");
+    const store = tx.objectStore(CUSTOM_STORE);
+    entries.forEach((entry) => store.put(entry));
+    tx.oncomplete = () => resolve();
+    tx.onerror = () => reject(tx.error);
+  });
+}
+
 async function deleteCustomWord(tr) {
   const db = await openWordDB();
   return new Promise((resolve, reject) => {
@@ -139,17 +155,17 @@ async function seedBaseWordsIfNeeded() {
     const words = Array.isArray(data.words) ? data.words : [];
     const existing = await getAllCustomWords();
     const existingTr = new Set(existing.map((w) => w.tr));
-    for (const w of words) {
-      if (!w || !w.tr || !w.ru || !w.icon || existingTr.has(w.tr)) continue;
-      await putCustomWord({
+    const toInsert = words
+      .filter((w) => w && w.tr && w.ru && w.icon && !existingTr.has(w.tr))
+      .map((w) => ({
         tr: w.tr,
         ru: w.ru,
         icon: w.icon,
         visual: w.visual || null,
         pos: w.pos || "other",
         theme: normalizeCategory(w.theme),
-      });
-    }
+      }));
+    await putCustomWordsBatch(toInsert);
   } catch (e) {
     // тихо игнорируем — не критично, просто у пользователя не будет стартового набора
   }
