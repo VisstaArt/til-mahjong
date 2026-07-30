@@ -967,8 +967,10 @@ function renderCatalog() {
       : `<span class="emoji">${CATEGORY_EMOJI[theme] || "🔤"}</span>`;
     tile.innerHTML =
       visual +
+      `<div class="tile-overlay">` +
       `<span class="name">${theme}</span>` +
-      `<span class="count">${themeSelected}/${themeWords.length}</span>`;
+      `<span class="count">${themeSelected}/${themeWords.length}</span>` +
+      `</div>`;
     tile.addEventListener("click", () => openCategory(theme));
     catalogGridEl.appendChild(tile);
   });

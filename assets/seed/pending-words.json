@@ -514,7 +514,7 @@
     "tr": "pelerin",
     "ru": "пелерина",
     "pos": "noun",
-    "theme": "Служебные слова",
+    "theme": "Одежда и аксессуары",
     "visual": "A flowing cape draped over the shoulders."
   },
   {
@@ -532,10 +532,10 @@
     "visual": "A light and airy blouse."
   },
   {
-    "tr": "kazağı",
+    "tr": "kazak",
     "ru": "свитер",
     "pos": "noun",
-    "theme": "Служебные слова",
+    "theme": "Одежда и аксессуары",
     "visual": "A cozy knit sweater."
   },
   {
@@ -700,10 +700,10 @@
     "visual": "Two runners racing towards a finish line."
   },
   {
-    "tr": "sorun",
+    "tr": "sormak",
     "ru": "спрашивать",
     "pos": "verb",
-    "theme": "Служебные слова",
+    "theme": "Глаголы — действия",
     "visual": "A person raising a hand to ask a question."
   },
   {
