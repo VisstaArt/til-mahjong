@@ -13,13 +13,46 @@
 <meta name="apple-mobile-web-app-title" content="Тил Маджонг" />
 <link rel="stylesheet" href="style.css" />
 </head>
-<body data-screen="words">
+<body data-screen="catalog">
   <header class="topbar">
     <h1>🐉 Тил Маджонг <span class="subtitle">прототип</span></h1>
   </header>
 
-  <!-- ЭКРАН 1: выбор слов -->
-  <section id="screen-words" class="screen manager-panel">
+  <!-- ЭКРАН 1: каталог — плитки категорий, как разделы в интернет-магазине -->
+  <section id="screen-catalog" class="screen manager-panel">
+    <div class="manager-row">
+      <div class="label"><span id="catalog-selected-count">0</span> слов выбрано для игры из <span id="catalog-total-count">0</span></div>
+    </div>
+    <div id="catalog-grid" class="catalog-grid"></div>
+    <div class="screen-actions">
+      <button id="open-add-words-btn" class="secondary">➕ Добавить свои слова</button>
+      <button id="catalog-next-btn">Далее: тип расклада →</button>
+    </div>
+  </section>
+
+  <!-- ЭКРАН 1а: одна категория — список слов внутри неё -->
+  <section id="screen-category" class="screen manager-panel">
+    <div class="manager-row category-header-row">
+      <button id="category-back-btn" class="secondary small">← Каталог</button>
+      <h2 id="category-title"></h2>
+    </div>
+    <div class="select-row">
+      <button id="category-select-all-btn">Включить всю группу</button>
+      <button id="category-select-none-btn">Выключить всю группу</button>
+    </div>
+    <div id="category-word-list" class="word-select-list"></div>
+    <div class="screen-actions">
+      <button id="category-done-btn" class="secondary">← Каталог</button>
+      <button id="category-next-btn">Далее: тип расклада →</button>
+    </div>
+  </section>
+
+  <!-- ЭКРАН 1б: добавить свои слова (генерация через ИИ) + служебные инструменты -->
+  <section id="screen-add-words" class="screen manager-panel">
+    <div class="manager-row">
+      <button id="add-words-back-btn" class="secondary small">← Каталог</button>
+    </div>
+
     <div class="manager-row">
       <label for="voice-select">Голос произношения</label>
       <div class="topic-row">
@@ -60,7 +93,7 @@
     <div id="generate-progress" class="generate-progress"></div>
 
     <div class="manager-row">
-      <div class="label">Все слова (<span id="selected-count">0</span> выбрано для игры)</div>
+      <div class="label">Служебное (действует на все слова сразу)</div>
       <div class="select-row">
         <button id="select-all-btn">Выбрать все</button>
         <button id="select-none-btn">Снять все</button>
@@ -70,11 +103,6 @@
         <button id="compress-icons-btn">🗜 Сжать картинки</button>
         <input type="file" id="import-words-input" accept="application/json" hidden />
       </div>
-      <div id="word-select-list" class="word-select-list"></div>
-    </div>
-
-    <div class="screen-actions">
-      <button id="words-next-btn">Далее: тип расклада →</button>
     </div>
   </section>
 
@@ -98,7 +126,7 @@
     </div>
 
     <div class="screen-actions">
-      <button id="layout-back-btn" class="secondary">← Назад к словам</button>
+      <button id="layout-back-btn" class="secondary">← Назад к каталогу</button>
       <button id="layout-play-btn">Играть →</button>
     </div>
   </section>

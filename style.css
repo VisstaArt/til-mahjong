@@ -47,7 +47,9 @@ body {
    body > .screen специфичнее, поэтому скрытие всегда побеждает, пока его
    явно не переобъявит более специфичный body[data-screen=X] #screen-X. */
 body > .screen { display: none; }
-body[data-screen="words"] #screen-words { display: flex; }
+body[data-screen="catalog"] #screen-catalog { display: flex; }
+body[data-screen="category"] #screen-category { display: flex; }
+body[data-screen="add-words"] #screen-add-words { display: flex; }
 body[data-screen="layout"] #screen-layout { display: flex; }
 body[data-screen="game"] #screen-game { display: flex; }
 
@@ -149,6 +151,60 @@ body[data-screen="game"] .topbar {
 }
 
 .screen-actions button:hover { filter: brightness(1.08); }
+
+/* Отдельностоящие кнопки вне .screen-actions (например "← Каталог" в шапке категории) */
+button.secondary {
+  background: var(--scale-2);
+  color: var(--text);
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+button.secondary:hover { filter: brightness(1.08); }
+button.secondary.small { padding: 6px 12px; font-size: 0.82rem; }
+
+/* Каталог: плитки категорий, как разделы в интернет-магазине */
+.catalog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 10px;
+}
+
+.catalog-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(233,196,106,0.2);
+  border-radius: 14px;
+  padding: 16px 10px;
+  cursor: pointer;
+  text-align: center;
+  transition: background 0.15s ease, transform 0.1s ease;
+}
+
+.catalog-tile:hover { background: rgba(233,196,106,0.1); transform: translateY(-2px); }
+
+.catalog-tile .emoji { font-size: 2.2rem; line-height: 1; }
+.catalog-tile .name { font-size: 0.82rem; font-weight: 600; line-height: 1.25; }
+.catalog-tile .count { font-size: 0.72rem; opacity: 0.7; }
+
+.category-header-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-direction: row !important;
+}
+
+.category-header-row h2 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: var(--gold);
+}
 
 .topbar h1 {
   font-size: 1.3rem;
@@ -328,6 +384,12 @@ body[data-screen="game"] .topbar {
   padding: 10px;
   background: rgba(0,0,0,0.15);
   border-radius: 8px;
+}
+
+/* На экране категории список слов — главное содержимое, не маленькая встроенная
+   панель, поэтому не ограничиваем высоту искусственно (сама страница уже скроллится). */
+#category-word-list {
+  max-height: none;
 }
 
 .word-group-header {

@@ -8,6 +8,27 @@ const CUSTOM_STORE = "words";
 // Держать в синхроне со script.js:POS_ORDER (wordbank.js грузится раньше script.js).
 const POS_VALUES = ["noun", "verb", "adjective", "adverb", "pronoun", "preposition", "numeral", "other"];
 
+// Фиксированный список категорий (тем) — каталог строится строго по нему, а не по
+// свободным темам, которые ИИ придумывал бы каждый раз заново (так раньше получалось
+// больше сотни мелких почти повторяющихся тем). Держать в синхроне со
+// script.js:CATEGORY_EMOJI (там же порядок вывода плиток каталога).
+const CATEGORIES = [
+  "Фрукты", "Овощи", "Животные", "Цвета", "Числительные",
+  "Одежда и аксессуары", "Глаголы — действия", "Направления и предлоги",
+  "Природа и погода", "Дом и мебель", "Кухня и посуда", "Ванная и гигиена",
+  "Профессии", "Транспорт и вождение", "Спорт", "Эмоции и чувства",
+  "Покупки и магазины", "Город и места", "Еда и напитки",
+  "Мясо и молочные продукты", "Крупы, специи и масла",
+  "Страны и национальности", "Прилагательные и сравнения", "Части тела",
+  "Школа и канцтовары", "Календарь и время", "Семья и отношения",
+  "Разное / служебные слова",
+];
+const FALLBACK_CATEGORY = "Разное / служебные слова";
+
+function normalizeCategory(theme) {
+  return CATEGORIES.includes(theme) ? theme : FALLBACK_CATEGORY;
+}
+
 const ICON_STYLE =
   ", adorable kawaii-inspired illustration style, soft rounded shapes, detailed premium rendering, " +
   "soft cel-shading, rich fine texture, vibrant warm color palette, glossy soft highlights, " +
@@ -93,7 +114,7 @@ async function importWordBankFile(file) {
         icon: w.icon,
         visual: w.visual || null,
         pos: w.pos || "other",
-        theme: w.theme || null,
+        theme: normalizeCategory(w.theme),
       });
       imported++;
     }
@@ -126,7 +147,7 @@ async function seedBaseWordsIfNeeded() {
         icon: w.icon,
         visual: w.visual || null,
         pos: w.pos || "other",
-        theme: w.theme || null,
+        theme: normalizeCategory(w.theme),
       });
     }
   } catch (e) {
@@ -155,12 +176,11 @@ async function translateAndDescribe(words, apiKey) {
     `для деликатных тем — мягкий нейтральный символ без шокирующих деталей).\n` +
     `Часть речи (поле "pos") — строго одно из: ${POS_VALUES.map((p) => `"${p}"`).join(", ")}. ` +
     `("preposition" — и предлоги, и турецкие послелоги; "other" — только если совсем не подходит ничего из списка). ` +
-    `Тематическая группа (поле "theme") — короткое название темы на русском в 1-2 слова. ` +
-    `Придумывай тему для любой части речи, если она естественно подходит: для существительных — ` +
-    `"Кухня", "Животные", "Овощи", "Фрукты", "Одежда", "Погода", "Транспорт", "Семья" и т.п.; ` +
-    `для глаголов — "Движение", "Учёба", "Еда", "Повседневные действия", "Спорт" и т.п.; ` +
-    `для прилагательных — "Размер", "Цвета", "Характер", "Внешность" и т.п. ` +
-    `Пустую строку "" верни только если совсем никакая тема не подходит (служебные слова, местоимения, предлоги). ` +
+    `Тематическая группа (поле "theme") — выбери РОВНО ОДНУ категорию из этого фиксированного списка ` +
+    `(название категории строго как написано, ничего не придумывай своё): ` +
+    `${CATEGORIES.map((c) => `"${c}"`).join(", ")}. ` +
+    `Если слово не подходит ни под одну тематическую категорию (служебное слово, местоимение, союз) — ` +
+    `используй "${FALLBACK_CATEGORY}". ` +
     `Ответь ТОЛЬКО валидным JSON без пояснений, в формате ` +
     `{"слово": {"base": "yemek", "ru": "перевод", "pos": "noun", "theme": "Овощи", "visual": "short english visual description"}, ...}. ` +
     `Турецкие слова: ${words.join(", ")}`;
@@ -290,7 +310,7 @@ async function addCustomWords(rawWords, onProgress) {
     try {
       const visual = info.visual || base;
       const pos = POS_VALUES.includes(info.pos) ? info.pos : "other";
-      const theme = (info.theme || "").trim() || null;
+      const theme = normalizeCategory((info.theme || "").trim());
       const icon = await generateIconDataUrl(visual, apiKey);
       await putCustomWord({ tr: base, ru: info.ru, icon, visual, pos, theme });
       seenBases.add(base);
@@ -326,13 +346,12 @@ async function reclassifyAllWords(onProgress) {
     onProgress(`Определяю часть речи и тему: ${Math.min(i + CHUNK_SIZE, all.length)}/${all.length}...`);
 
     const prompt =
-      `Определи часть речи и тематическую группу для турецких слов. Часть речи — строго одно из: ` +
+      `Определи часть речи и категорию для турецких слов. Часть речи — строго одно из: ` +
       `${POS_VALUES.map((p) => `"${p}"`).join(", ")} ("preposition" — и предлоги, и послелоги; ` +
-      `"other" — только если совсем не подходит ничего). Тема — короткое название на русском в 1-2 слова, ` +
-      `придумывай её для любой части речи, если она естественно подходит: для существительных — ` +
-      `"Кухня", "Животные", "Овощи" и т.п.; для глаголов — "Движение", "Учёба", "Еда" и т.п.; ` +
-      `для прилагательных — "Размер", "Цвета", "Характер" и т.п. Пустую строку "" — только если совсем ` +
-      `никакая тема не подходит (служебные слова, местоимения, предлоги). ` +
+      `"other" — только если совсем не подходит ничего). Категория (тема) — выбери РОВНО ОДНУ из ` +
+      `этого фиксированного списка (строго как написано, ничего своего не придумывай): ` +
+      `${CATEGORIES.map((c) => `"${c}"`).join(", ")}. Если слово не подходит ни под одну тематическую ` +
+      `категорию (служебное слово, местоимение, союз) — используй "${FALLBACK_CATEGORY}". ` +
       `Верни запись для КАЖДОГО слова из списка, ни одного не пропускай. ` +
       `Ответь ТОЛЬКО валидным JSON вида {"слово": {"pos": "noun", "theme": "Овощи"}, ...}. ` +
       `Слова: ${chunk.map((w) => w.tr).join(", ")}`;
@@ -357,7 +376,7 @@ async function reclassifyAllWords(onProgress) {
         continue; // модель пропустила слово — не трогаем то, что уже было
       }
       const pos = POS_VALUES.includes(info.pos) ? info.pos : w.pos || "other";
-      const theme = (info.theme || "").trim() || null;
+      const theme = normalizeCategory((info.theme || "").trim());
       if (pos !== w.pos || theme !== (w.theme || null)) {
         await putCustomWord({ ...w, pos, theme });
         updated++;
@@ -388,10 +407,11 @@ async function suggestWordsForTopic(topic, count, apiKey) {
     `для глаголов, именительный падеж единственного числа для существительных, НЕ спряжённые/склонённые формы. ` +
     `Не предлагай слова, которые уже есть в этом списке: ` +
     `${[...existingTr].join(", ") || "(пусто)"}. Для каждого слова дай перевод на русский, часть речи ` +
-    `(строго одно из: ${POS_VALUES.map((p) => `"${p}"`).join(", ")}), тему на русском в 1-2 слова ` +
-    `(обычно это будет "${topic}" или близкое по смыслу название), и короткое визуальное описание на английском ` +
-    `для рисования милой иконки — конкретный предмет крупным планом, без лишних персонажей, если слово не про ` +
-    `человека/животное/действие. Ответь ТОЛЬКО валидным JSON: ` +
+    `(строго одно из: ${POS_VALUES.map((p) => `"${p}"`).join(", ")}), категорию — выбери РОВНО ОДНУ из ` +
+    `этого фиксированного списка (строго как написано): ${CATEGORIES.map((c) => `"${c}"`).join(", ")} ` +
+    `(используй "${FALLBACK_CATEGORY}", если совсем не подходит ничего), и короткое визуальное описание ` +
+    `на английском для рисования милой иконки — конкретный предмет крупным планом, без лишних персонажей, ` +
+    `если слово не про человека/животное/действие. Ответь ТОЛЬКО валидным JSON: ` +
     `{"words": [{"tr": "...", "ru": "...", "pos": "noun", "theme": "...", "visual": "..."}]}`;
 
   const resp = await fetch("https://api.openai.com/v1/chat/completions", {
@@ -419,7 +439,7 @@ async function generateApprovedWords(words, onProgress) {
     onProgress(`Рисую иконку ${added + 1}/${words.length}: ${w.tr}...`);
     try {
       const pos = POS_VALUES.includes(w.pos) ? w.pos : "other";
-      const theme = (w.theme || "").trim() || null;
+      const theme = normalizeCategory((w.theme || "").trim());
       const icon = await generateIconDataUrl(w.visual || w.tr, apiKey);
       await putCustomWord({ tr: w.tr, ru: w.ru, icon, visual: w.visual, pos, theme });
       added++;

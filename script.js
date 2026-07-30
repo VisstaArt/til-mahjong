@@ -9,39 +9,60 @@ if ("serviceWorker" in navigator) {
 }
 
 const WORDS = [
-  { tr: "kitap", ru: "книга", pos: "noun", theme: "Учёба" },
+  { tr: "kitap", ru: "книга", pos: "noun", theme: "Школа и канцтовары" },
   { tr: "çay", ru: "чай", pos: "noun", theme: "Еда и напитки" },
   { tr: "ekmek", ru: "хлеб", pos: "noun", theme: "Еда и напитки" },
   { tr: "su", ru: "вода", pos: "noun", theme: "Еда и напитки" },
-  { tr: "ev", ru: "дом", pos: "noun", theme: "Дом" },
-  { tr: "araba", ru: "машина", pos: "noun", theme: "Транспорт" },
+  { tr: "ev", ru: "дом", pos: "noun", theme: "Дом и мебель" },
+  { tr: "araba", ru: "машина", pos: "noun", theme: "Транспорт и вождение" },
   { tr: "kedi", ru: "кошка", pos: "noun", theme: "Животные" },
   { tr: "köpek", ru: "собака", pos: "noun", theme: "Животные" },
-  { tr: "güneş", ru: "солнце", pos: "noun", theme: "Природа" },
-  { tr: "ay", ru: "луна", pos: "noun", theme: "Природа" },
-  { tr: "koşmak", ru: "бежать", pos: "verb", theme: "Движение" },
-  { tr: "yüzmek", ru: "плавать", pos: "verb", theme: "Движение" },
-  { tr: "okumak", ru: "читать", pos: "verb", theme: "Учёба" },
-  { tr: "yazmak", ru: "писать", pos: "verb", theme: "Учёба" },
-  { tr: "uyumak", ru: "спать", pos: "verb", theme: "Повседневные действия" },
-  { tr: "yürümek", ru: "идти", pos: "verb", theme: "Движение" },
-  { tr: "büyük", ru: "большой", pos: "adjective", theme: "Размер" },
-  { tr: "küçük", ru: "маленький", pos: "adjective", theme: "Размер" },
+  { tr: "güneş", ru: "солнце", pos: "noun", theme: "Природа и погода" },
+  { tr: "ay", ru: "луна", pos: "noun", theme: "Природа и погода" },
+  { tr: "koşmak", ru: "бежать", pos: "verb", theme: "Глаголы — действия" },
+  { tr: "yüzmek", ru: "плавать", pos: "verb", theme: "Глаголы — действия" },
+  { tr: "okumak", ru: "читать", pos: "verb", theme: "Глаголы — действия" },
+  { tr: "yazmak", ru: "писать", pos: "verb", theme: "Глаголы — действия" },
+  { tr: "uyumak", ru: "спать", pos: "verb", theme: "Глаголы — действия" },
+  { tr: "yürümek", ru: "идти", pos: "verb", theme: "Глаголы — действия" },
+  { tr: "büyük", ru: "большой", pos: "adjective", theme: "Прилагательные и сравнения" },
+  { tr: "küçük", ru: "маленький", pos: "adjective", theme: "Прилагательные и сравнения" },
   { tr: "kırmızı", ru: "красный", pos: "adjective", theme: "Цвета" },
   { tr: "mavi", ru: "синий", pos: "adjective", theme: "Цвета" },
 ];
 
-const POS_LABELS = {
-  noun: "Существительные",
-  verb: "Глаголы",
-  adjective: "Прилагательные",
-  adverb: "Наречия",
-  pronoun: "Местоимения",
-  preposition: "Предлоги/послелоги",
-  numeral: "Числительные",
-  other: "Другое",
+// Эмодзи-иконки плиток каталога — порядок вывода плиток соответствует порядку
+// CATEGORIES (см. wordbank.js, грузится раньше этого файла).
+const CATEGORY_EMOJI = {
+  "Фрукты": "🍎",
+  "Овощи": "🥕",
+  "Животные": "🐾",
+  "Цвета": "🎨",
+  "Числительные": "🔢",
+  "Одежда и аксессуары": "👕",
+  "Глаголы — действия": "🏃",
+  "Направления и предлоги": "🧭",
+  "Природа и погода": "🌦️",
+  "Дом и мебель": "🛋️",
+  "Кухня и посуда": "🍽️",
+  "Ванная и гигиена": "🛁",
+  "Профессии": "👷",
+  "Транспорт и вождение": "🚗",
+  "Спорт": "⚽",
+  "Эмоции и чувства": "😊",
+  "Покупки и магазины": "🛍️",
+  "Город и места": "🏙️",
+  "Еда и напитки": "🍲",
+  "Мясо и молочные продукты": "🥩",
+  "Крупы, специи и масла": "🌾",
+  "Страны и национальности": "🌍",
+  "Прилагательные и сравнения": "📏",
+  "Части тела": "🖐️",
+  "Школа и канцтовары": "✏️",
+  "Календарь и время": "📅",
+  "Семья и отношения": "👨‍👩‍👧",
+  "Разное / служебные слова": "🔤",
 };
-const POS_ORDER = ["noun", "verb", "adjective", "adverb", "pronoun", "preposition", "numeral", "other"];
 
 const boardEl = document.getElementById("board");
 const boardFrameEl = document.getElementById("board-frame");
@@ -57,7 +78,6 @@ const playAgainBtn = document.getElementById("play-again-btn");
 const voiceSelect = document.getElementById("voice-select");
 const testVoiceBtn = document.getElementById("test-voice-btn");
 const replayBtn = document.getElementById("replay-btn");
-const wordsNextBtn = document.getElementById("words-next-btn");
 const layoutBackBtn = document.getElementById("layout-back-btn");
 const layoutPlayBtn = document.getElementById("layout-play-btn");
 const backToSetupBtn = document.getElementById("back-to-setup-btn");
@@ -69,8 +89,19 @@ const tileCountSlider = document.getElementById("tile-count-slider");
 const tileCountLabel = document.getElementById("tile-count-label");
 const deckSummaryEl = document.getElementById("deck-summary");
 const shapeButtons = document.querySelectorAll(".shape-btn");
-const wordSelectListEl = document.getElementById("word-select-list");
-const selectedCountEl = document.getElementById("selected-count");
+const catalogGridEl = document.getElementById("catalog-grid");
+const catalogSelectedCountEl = document.getElementById("catalog-selected-count");
+const catalogTotalCountEl = document.getElementById("catalog-total-count");
+const openAddWordsBtn = document.getElementById("open-add-words-btn");
+const catalogNextBtn = document.getElementById("catalog-next-btn");
+const categoryBackBtn = document.getElementById("category-back-btn");
+const categoryDoneBtn = document.getElementById("category-done-btn");
+const categoryNextBtn = document.getElementById("category-next-btn");
+const categoryTitleEl = document.getElementById("category-title");
+const categoryWordListEl = document.getElementById("category-word-list");
+const categorySelectAllBtn = document.getElementById("category-select-all-btn");
+const categorySelectNoneBtn = document.getElementById("category-select-none-btn");
+const addWordsBackBtn = document.getElementById("add-words-back-btn");
 const selectAllBtn = document.getElementById("select-all-btn");
 const selectNoneBtn = document.getElementById("select-none-btn");
 const reclassifyBtn = document.getElementById("reclassify-btn");
@@ -154,6 +185,16 @@ function getWordBox(tr) {
 function bumpWordStreak(tr, correct) {
   const streak = correct ? Math.min(getWordStreak(tr) + 1, 15) : 0;
   wordProgress[tr] = { streak };
+  saveWordProgress();
+}
+
+// Ручная пометка "уже знаю это слово" — сразу переводит слово в ящик "выучено"
+// (см. PROGRESS_BOXES), не дожидаясь 10 чистых повторов в игре. Найти порог "mastered"
+// динамически, а не хардкодить число — чтобы не разъехалось, если пороги поменяются.
+function markWordKnown(tr) {
+  const masteredBox = PROGRESS_BOXES.find((b) => b.id === "mastered");
+  const threshold = PROGRESS_BOXES[PROGRESS_BOXES.indexOf(masteredBox) - 1].max + 1;
+  wordProgress[tr] = { streak: threshold };
   saveWordProgress();
 }
 
@@ -546,7 +587,8 @@ function newGame() {
   const deck = getActiveDeck();
   if (!deck.length) {
     generateProgressEl.textContent = "Нет слов для игры — включи базовый набор или добавь свои слова.";
-    setScreen("words");
+    renderCatalog();
+    setScreen("catalog");
     return;
   }
   const tileCount = Number(tileCountSlider.value);
@@ -576,17 +618,19 @@ playAgainBtn.addEventListener("click", newGame);
 document.getElementById("hint-btn").addEventListener("click", showHint);
 document.getElementById("shuffle-btn").addEventListener("click", shuffleTiles);
 
-// ---- Флоу: слова → тип расклада → игра ----
+// ---- Флоу: каталог/категория/добавить слова → тип расклада → игра ----
 
-wordsNextBtn.addEventListener("click", () => setScreen("layout"));
-layoutBackBtn.addEventListener("click", () => setScreen("words"));
+layoutBackBtn.addEventListener("click", () => {
+  renderCatalog();
+  setScreen("catalog");
+});
 layoutPlayBtn.addEventListener("click", () => {
   setScreen("game");
   newGame();
 });
 backToSetupBtn.addEventListener("click", () => {
-  renderWordSelectList();
-  setScreen("words");
+  renderCatalog();
+  setScreen("catalog");
 });
 
 apiKeyInput.value = getApiKey();
@@ -620,13 +664,13 @@ shapeButtons.forEach((btn) => {
 selectAllBtn.addEventListener("click", () => {
   excludedWords = new Set();
   saveExcludedWords(excludedWords);
-  renderWordSelectList();
+  renderCatalog();
 });
 
 selectNoneBtn.addEventListener("click", () => {
   excludedWords = new Set(getAllAvailableWords().map((w) => w.tr));
   saveExcludedWords(excludedWords);
-  renderWordSelectList();
+  renderCatalog();
 });
 
 reclassifyBtn.addEventListener("click", async () => {
@@ -636,7 +680,7 @@ reclassifyBtn.addEventListener("click", async () => {
       generateProgressEl.textContent = msg;
     });
     customWords = await getAllCustomWords();
-    renderWordSelectList();
+    renderCatalog();
   } catch (e) {
     generateProgressEl.textContent = `Ошибка: ${e.message}`;
   } finally {
@@ -651,7 +695,7 @@ compressIconsBtn.addEventListener("click", async () => {
       generateProgressEl.textContent = msg;
     });
     customWords = await getAllCustomWords();
-    renderWordSelectList();
+    renderCatalog();
   } catch (e) {
     generateProgressEl.textContent = `Ошибка: ${e.message}`;
   } finally {
@@ -727,7 +771,7 @@ approveSuggestionsBtn.addEventListener("click", async () => {
       generateProgressEl.scrollTop = generateProgressEl.scrollHeight;
     });
     customWords = await getAllCustomWords();
-    renderWordSelectList();
+    renderCatalog();
     currentSuggestions = [];
     topicSuggestionsEl.classList.add("hidden");
     topicInput.value = "";
@@ -755,7 +799,7 @@ function updateDeckSummary() {
   deckSummaryEl.textContent = summary;
 }
 
-function buildWordRow(w) {
+function buildWordRow(w, onChange) {
   const isCustom = customWords.some((cw) => cw.tr === w.tr);
   const row = document.createElement("div");
   row.className = "word-select-row";
@@ -768,8 +812,8 @@ function buildWordRow(w) {
     if (checkbox.checked) excludedWords.delete(w.tr);
     else excludedWords.add(w.tr);
     saveExcludedWords(excludedWords);
-    selectedCountEl.textContent = getAllAvailableWords().filter((x) => !excludedWords.has(x.tr)).length;
     updateDeckSummary();
+    if (onChange) onChange();
   });
   row.appendChild(checkbox);
 
@@ -790,6 +834,20 @@ function buildWordRow(w) {
   badge.textContent = box.emoji;
   badge.title = `${box.label} (${getWordStreak(w.tr)} подряд без ошибок)`;
   row.appendChild(badge);
+
+  if (box.id !== "mastered") {
+    const knowBtn = document.createElement("button");
+    knowBtn.textContent = "✓ Знаю";
+    knowBtn.title = "Отметить, что уже знаю это слово — оно перестанет часто появляться";
+    knowBtn.addEventListener("click", () => {
+      markWordKnown(w.tr);
+      const newBox = getWordBox(w.tr);
+      badge.textContent = newBox.emoji;
+      badge.title = `${newBox.label} (${getWordStreak(w.tr)} подряд без ошибок)`;
+      knowBtn.remove();
+    });
+    row.appendChild(knowBtn);
+  }
 
   if (isCustom) {
     const redoBtn = document.createElement("button");
@@ -819,7 +877,7 @@ function buildWordRow(w) {
       customWords = customWords.filter((cw) => cw.tr !== w.tr);
       excludedWords.delete(w.tr);
       saveExcludedWords(excludedWords);
-      renderWordSelectList();
+      if (onChange) onChange();
     });
     row.appendChild(delBtn);
   }
@@ -827,84 +885,95 @@ function buildWordRow(w) {
   return row;
 }
 
-function buildGroupHeader(labelText, groupWords) {
-  const header = document.createElement("div");
-  header.className = "word-group-header";
-  const title = document.createElement("span");
-  title.textContent = labelText;
-  header.appendChild(title);
-  const toggle = document.createElement("button");
-  toggle.textContent = "вкл/выкл";
-  toggle.addEventListener("click", () => {
-    const allSelected = groupWords.every((w) => !excludedWords.has(w.tr));
-    groupWords.forEach((w) => {
-      if (allSelected) excludedWords.add(w.tr);
-      else excludedWords.delete(w.tr);
-    });
-    saveExcludedWords(excludedWords);
-    renderWordSelectList();
+// Каталог: плитки по фиксированным категориям (см. CATEGORIES в wordbank.js) —
+// открываешь плитку и внутри видишь список слов этой категории, как раздел
+// в интернет-магазине. Пустые категории (нет ни одного слова) не показываются.
+let currentCategoryTheme = null;
+
+function wordsByCategory() {
+  const words = getAllAvailableWords();
+  const byTheme = new Map();
+  words.forEach((w) => {
+    const theme = normalizeCategory(w.theme);
+    if (!byTheme.has(theme)) byTheme.set(theme, []);
+    byTheme.get(theme).push(w);
   });
-  header.appendChild(toggle);
-  return header;
+  return byTheme;
 }
 
-// Единый список: и выбор слов для игры (чекбокс), и управление своими словами
-// (превью, перерисовка, удаление). Внутри каждой части речи слова дополнительно
-// подгруппированы по теме (Кухня, Животные, Овощи...), если она проставлена.
-function renderWordSelectList() {
+function renderCatalog() {
   const words = getAllAvailableWords();
-  const selected = words.filter((w) => !excludedWords.has(w.tr));
-  selectedCountEl.textContent = selected.length;
-  wordSelectListEl.innerHTML = "";
+  const selectedCount = words.filter((w) => !excludedWords.has(w.tr)).length;
+  catalogSelectedCountEl.textContent = selectedCount;
+  catalogTotalCountEl.textContent = words.length;
 
-  const groups = new Map(POS_ORDER.map((pos) => [pos, []]));
-  words.forEach((w) => {
-    const pos = groups.has(w.pos) ? w.pos : "other";
-    groups.get(pos).push(w);
-  });
+  const byTheme = wordsByCategory();
+  catalogGridEl.innerHTML = "";
+  CATEGORIES.forEach((theme) => {
+    const themeWords = byTheme.get(theme);
+    if (!themeWords || !themeWords.length) return;
+    const themeSelected = themeWords.filter((w) => !excludedWords.has(w.tr)).length;
 
-  POS_ORDER.forEach((pos) => {
-    const groupWords = groups.get(pos);
-    if (!groupWords.length) return;
-
-    const section = document.createElement("div");
-    section.className = "word-group";
-    section.appendChild(buildGroupHeader(`${POS_LABELS[pos]} (${groupWords.length})`, groupWords));
-
-    const byTheme = new Map();
-    const untheme = [];
-    groupWords.forEach((w) => {
-      if (w.theme) {
-        if (!byTheme.has(w.theme)) byTheme.set(w.theme, []);
-        byTheme.get(w.theme).push(w);
-      } else {
-        untheme.push(w);
-      }
-    });
-
-    if (untheme.length) {
-      const list = document.createElement("div");
-      list.className = "word-select-list-inner";
-      untheme.forEach((w) => list.appendChild(buildWordRow(w)));
-      section.appendChild(list);
-    }
-
-    [...byTheme.entries()].sort((a, b) => a[0].localeCompare(b[0], "ru")).forEach(([theme, themeWords]) => {
-      const subsection = document.createElement("div");
-      subsection.className = "word-subgroup";
-      subsection.appendChild(buildGroupHeader(`${theme} (${themeWords.length})`, themeWords));
-      const list = document.createElement("div");
-      list.className = "word-select-list-inner";
-      themeWords.forEach((w) => list.appendChild(buildWordRow(w)));
-      subsection.appendChild(list);
-      section.appendChild(subsection);
-    });
-
-    wordSelectListEl.appendChild(section);
+    const tile = document.createElement("div");
+    tile.className = "catalog-tile";
+    tile.innerHTML =
+      `<span class="emoji">${CATEGORY_EMOJI[theme] || "🔤"}</span>` +
+      `<span class="name">${theme}</span>` +
+      `<span class="count">${themeSelected}/${themeWords.length}</span>`;
+    tile.addEventListener("click", () => openCategory(theme));
+    catalogGridEl.appendChild(tile);
   });
 
   updateDeckSummary();
 }
+
+function openCategory(theme) {
+  currentCategoryTheme = theme;
+  categoryTitleEl.textContent = `${CATEGORY_EMOJI[theme] || "🔤"} ${theme}`;
+  renderCategoryWordList();
+  setScreen("category");
+}
+
+function renderCategoryWordList() {
+  const byTheme = wordsByCategory();
+  const words = (byTheme.get(currentCategoryTheme) || []).sort((a, b) => a.tr.localeCompare(b.tr, "tr"));
+  categoryWordListEl.innerHTML = "";
+  const list = document.createElement("div");
+  list.className = "word-select-list-inner";
+  words.forEach((w) => list.appendChild(buildWordRow(w, renderCategoryWordList)));
+  categoryWordListEl.appendChild(list);
+  updateDeckSummary();
+}
+
+categorySelectAllBtn.addEventListener("click", () => {
+  const byTheme = wordsByCategory();
+  (byTheme.get(currentCategoryTheme) || []).forEach((w) => excludedWords.delete(w.tr));
+  saveExcludedWords(excludedWords);
+  renderCategoryWordList();
+});
+
+categorySelectNoneBtn.addEventListener("click", () => {
+  const byTheme = wordsByCategory();
+  (byTheme.get(currentCategoryTheme) || []).forEach((w) => excludedWords.add(w.tr));
+  saveExcludedWords(excludedWords);
+  renderCategoryWordList();
+});
+
+categoryBackBtn.addEventListener("click", () => {
+  renderCatalog();
+  setScreen("catalog");
+});
+categoryDoneBtn.addEventListener("click", () => {
+  renderCatalog();
+  setScreen("catalog");
+});
+categoryNextBtn.addEventListener("click", () => setScreen("layout"));
+catalogNextBtn.addEventListener("click", () => setScreen("layout"));
+openAddWordsBtn.addEventListener("click", () => setScreen("add-words"));
+addWordsBackBtn.addEventListener("click", () => {
+  renderCatalog();
+  setScreen("catalog");
+});
 
 document.getElementById("export-words-btn").addEventListener("click", async () => {
   const n = await exportWordBank();
@@ -919,7 +988,7 @@ importInput.addEventListener("change", async () => {
   try {
     const n = await importWordBankFile(file);
     customWords = await getAllCustomWords();
-    renderWordSelectList();
+    renderCatalog();
     generateProgressEl.textContent = `Импортировано слов: ${n}`;
   } catch (e) {
     alert(`Ошибка импорта: ${e.message}`);
@@ -942,7 +1011,7 @@ generateWordsBtn.addEventListener("click", async () => {
       generateProgressEl.scrollTop = generateProgressEl.scrollHeight;
     });
     customWords = await getAllCustomWords();
-    renderWordSelectList();
+    renderCatalog();
     wordInput.value = "";
     generateProgressEl.textContent += "Готово! Можно нажать «Новая игра».";
   } catch (e) {
@@ -955,6 +1024,6 @@ generateWordsBtn.addEventListener("click", async () => {
 (async function init() {
   await seedBaseWordsIfNeeded();
   customWords = await getAllCustomWords();
-  renderWordSelectList();
-  setScreen("words");
+  renderCatalog();
+  setScreen("catalog");
 })();
