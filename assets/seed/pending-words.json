@@ -1984,7 +1984,7 @@
     "tr": "çok",
     "ru": "много",
     "pos": "adverb",
-    "theme": "Числительные",
+    "theme": "Прилагательные и сравнения",
     "visual": "a pile of items"
   },
   {
@@ -2250,7 +2250,7 @@
     "tr": "pek çok",
     "ru": "множество",
     "pos": "numeral",
-    "theme": "Числительные",
+    "theme": "Прилагательные и сравнения",
     "visual": "a large number of something"
   },
   {
