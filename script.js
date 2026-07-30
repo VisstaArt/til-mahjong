@@ -68,6 +68,7 @@ const CATEGORY_EMOJI = {
   "Водитель": "🚦",
   "Косметика": "💄",
   "Офис": "🗂️",
+  "Здоровье": "❤️‍🩹",
 };
 
 // Свои картинки для плиток каталога (если есть — показываем вместо эмодзи).
@@ -106,6 +107,7 @@ const CATEGORY_IMAGE = {
   "Водитель": "assets/categories/driver.jpg",
   "Косметика": "assets/categories/cosmetics.jpg",
   "Офис": "assets/categories/office.jpg",
+  "Здоровье": "assets/categories/health.jpg",
 };
 
 const boardEl = document.getElementById("board");
@@ -1074,6 +1076,7 @@ generateWordsBtn.addEventListener("click", async () => {
 
 (async function init() {
   await seedBaseWordsIfNeeded();
+  await syncSeedCategories();
   customWords = await getAllCustomWords();
   renderCatalog();
   setScreen("catalog");
