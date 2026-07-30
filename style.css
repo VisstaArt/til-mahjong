@@ -198,6 +198,13 @@ button.secondary.small { padding: 6px 12px; font-size: 0.82rem; }
 .catalog-tile:hover { background: rgba(233,196,106,0.1); transform: translateY(-2px); }
 
 .catalog-tile .emoji { font-size: 2.2rem; line-height: 1; }
+.catalog-tile .tile-image {
+  width: 64px;
+  height: 64px;
+  border-radius: 12px;
+  object-fit: cover;
+  background: var(--image-bg);
+}
 .catalog-tile .name { font-size: 0.82rem; font-weight: 600; line-height: 1.25; }
 .catalog-tile .count { font-size: 0.72rem; opacity: 0.7; }
 

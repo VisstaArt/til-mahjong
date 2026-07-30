@@ -48,13 +48,11 @@ const CATEGORY_EMOJI = {
   "Ванная и гигиена": "🛁",
   "Профессии": "👷",
   "Транспорт и вождение": "🚗",
-  "Спорт": "⚽",
+  "Спорт и игры": "⚽",
   "Эмоции и чувства": "😊",
   "Покупки и магазины": "🛍️",
   "Город и места": "🏙️",
   "Еда и напитки": "🍲",
-  "Мясо и молочные продукты": "🥩",
-  "Крупы, специи и масла": "🌾",
   "Страны и национальности": "🌍",
   "Прилагательные и сравнения": "📏",
   "Части тела": "🖐️",
@@ -63,6 +61,51 @@ const CATEGORY_EMOJI = {
   "Семья и отношения": "👨‍👩‍👧",
   "Предметы и вещи": "📦",
   "Служебные слова": "🔤",
+  "Птицы": "🐦",
+  "Насекомые": "🐛",
+  "Цветы и растения": "🌸",
+  "Геометрические фигуры": "🔷",
+  "Водитель": "🚦",
+  "Косметика": "💄",
+  "Офис": "🗂️",
+};
+
+// Свои картинки для плиток каталога (если есть — показываем вместо эмодзи).
+const CATEGORY_IMAGE = {
+  "Фрукты": "assets/categories/fruits.jpg",
+  "Овощи": "assets/categories/vegetables.jpg",
+  "Животные": "assets/categories/animals.jpg",
+  "Цвета": "assets/categories/colors.jpg",
+  "Числительные": "assets/categories/numbers.jpg",
+  "Одежда и аксессуары": "assets/categories/clothing.jpg",
+  "Глаголы — действия": "assets/categories/verbs.jpg",
+  "Направления и предлоги": "assets/categories/directions.jpg",
+  "Природа и погода": "assets/categories/nature.jpg",
+  "Дом и мебель": "assets/categories/home.jpg",
+  "Кухня и посуда": "assets/categories/kitchen.jpg",
+  "Ванная и гигиена": "assets/categories/bathroom.jpg",
+  "Профессии": "assets/categories/professions.jpg",
+  "Транспорт и вождение": "assets/categories/transport.jpg",
+  "Спорт и игры": "assets/categories/sports.jpg",
+  "Эмоции и чувства": "assets/categories/emotions.jpg",
+  "Покупки и магазины": "assets/categories/shopping.jpg",
+  "Город и места": "assets/categories/city.jpg",
+  "Еда и напитки": "assets/categories/food.jpg",
+  "Страны и национальности": "assets/categories/countries.jpg",
+  "Прилагательные и сравнения": "assets/categories/adjectives.jpg",
+  "Части тела": "assets/categories/body.jpg",
+  "Школа и канцтовары": "assets/categories/school.jpg",
+  "Календарь и время": "assets/categories/calendar.jpg",
+  "Семья и отношения": "assets/categories/family.jpg",
+  "Предметы и вещи": "assets/categories/objects.jpg",
+  "Служебные слова": "assets/categories/function-words.jpg",
+  "Птицы": "assets/categories/birds.jpg",
+  "Насекомые": "assets/categories/insects.jpg",
+  "Цветы и растения": "assets/categories/plants.jpg",
+  "Геометрические фигуры": "assets/categories/shapes.jpg",
+  "Водитель": "assets/categories/driver.jpg",
+  "Косметика": "assets/categories/cosmetics.jpg",
+  "Офис": "assets/categories/office.jpg",
 };
 
 const boardEl = document.getElementById("board");
@@ -918,8 +961,12 @@ function renderCatalog() {
 
     const tile = document.createElement("div");
     tile.className = "catalog-tile";
+    const image = CATEGORY_IMAGE[theme];
+    const visual = image
+      ? `<img class="tile-image" src="${image}" alt="" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'emoji',textContent:'${CATEGORY_EMOJI[theme] || "🔤"}'}))" />`
+      : `<span class="emoji">${CATEGORY_EMOJI[theme] || "🔤"}</span>`;
     tile.innerHTML =
-      `<span class="emoji">${CATEGORY_EMOJI[theme] || "🔤"}</span>` +
+      visual +
       `<span class="name">${theme}</span>` +
       `<span class="count">${themeSelected}/${themeWords.length}</span>`;
     tile.addEventListener("click", () => openCategory(theme));
