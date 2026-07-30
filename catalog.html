@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Тил Маджонг — каталог слов</title>
+<style>
+  :root {
+    --bg: #0f1a17;
+    --bg-2: #142622;
+    --scale-1: #1b4332;
+    --scale-2: #2d6a4f;
+    --scale-3: #40916c;
+    --gold: #e9c46a;
+    --text: #f1f5f2;
+    --word-bg: #f4ecd8;
+    --word-text: #3a2f1d;
+  }
+  * { box-sizing: border-box; min-width: 0; }
+  html, body { margin: 0; background: radial-gradient(ellipse at top, var(--bg-2), var(--bg)); color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  header { padding: 16px 20px; border-bottom: 1px solid rgba(255,255,255,0.08); position: sticky; top: 0;
+    background: var(--bg); z-index: 10; }
+  h1 { font-size: 1.2rem; margin: 0 0 4px; }
+  .sub { font-size: 0.85rem; opacity: 0.7; }
+  #search { width: 100%; margin-top: 10px; padding: 10px 12px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.15);
+    background: var(--word-bg); color: var(--word-text); font-size: 0.95rem; }
+  main { padding: 12px 20px 60px; max-width: 900px; margin: 0 auto; }
+  .status-tabs { display: flex; gap: 8px; margin-top: 10px; flex-wrap: wrap; }
+  .status-tabs button { background: var(--scale-2); color: var(--text); border: 2px solid transparent; border-radius: 8px;
+    padding: 6px 12px; font-size: 0.8rem; cursor: pointer; }
+  .status-tabs button.active { border-color: var(--gold); background: var(--scale-3); font-weight: 600; }
+  .group { margin-top: 18px; border: 1px solid rgba(233,196,106,0.2); border-radius: 12px; overflow: hidden; }
+  .group-header { display: flex; justify-content: space-between; align-items: center; padding: 12px 16px;
+    background: rgba(233,196,106,0.08); cursor: pointer; }
+  .group-header h2 { font-size: 1rem; margin: 0; color: var(--gold); }
+  .group-header .count { font-size: 0.8rem; opacity: 0.75; }
+  .group-body { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 8px; padding: 12px 16px; }
+  .group.collapsed .group-body { display: none; }
+  .word-chip { background: rgba(255,255,255,0.04); border-radius: 8px; padding: 6px 10px; font-size: 0.82rem; }
+  .word-chip .tr { font-weight: 600; }
+  .word-chip .ru { opacity: 0.7; }
+  .badge { display: inline-block; font-size: 0.65rem; padding: 1px 6px; border-radius: 999px; margin-left: 6px; vertical-align: middle; }
+  .badge.ready { background: #2d6a4f; color: #fff; }
+  .badge.pending { background: rgba(233,196,106,0.25); color: var(--gold); }
+  .hidden { display: none !important; }
+  .empty-msg { text-align: center; opacity: 0.6; padding: 40px 0; }
+</style>
+</head>
+<body>
+  <header>
+    <h1>🐉 Тил Маджонг — каталог слов</h1>
+    <div class="sub" id="totals">Загрузка…</div>
+    <input type="text" id="search" placeholder="Поиск по слову или переводу…" />
+    <div class="status-tabs">
+      <button data-filter="all" class="active">Все</button>
+      <button data-filter="ready">✅ Готовые (в игре)</button>
+      <button data-filter="pending">⏳ В очереди (без картинок)</button>
+    </div>
+  </header>
+  <main id="groups"></main>
+
+  <script>
+    const BASE_WORDS = [
+      {tr:"kitap",ru:"книга"},{tr:"çay",ru:"чай"},{tr:"ekmek",ru:"хлеб"},{tr:"su",ru:"вода"},{tr:"ev",ru:"дом"},
+      {tr:"araba",ru:"машина"},{tr:"kedi",ru:"кошка"},{tr:"köpek",ru:"собака"},{tr:"güneş",ru:"солнце"},{tr:"ay",ru:"луна"},
+      {tr:"koşmak",ru:"бежать"},{tr:"yüzmek",ru:"плавать"},{tr:"okumak",ru:"читать"},{tr:"yazmak",ru:"писать"},
+      {tr:"uyumak",ru:"спать"},{tr:"yürümek",ru:"идти"},{tr:"büyük",ru:"большой"},{tr:"küçük",ru:"маленький"},
+      {tr:"kırmızı",ru:"красный"},{tr:"mavi",ru:"синий"},
+    ].map(w => ({...w, theme: "Базовый набор", ready: true}));
+
+    async function loadJSON(path) {
+      try {
+        const r = await fetch(path);
+        if (!r.ok) return [];
+        const data = await r.json();
+        return Array.isArray(data) ? data : (data.words || []);
+      } catch { return []; }
+    }
+
+    (async function init() {
+      const [seed, pending] = await Promise.all([
+        loadJSON("assets/seed/seed-words.json"),
+        loadJSON("assets/seed/pending-words.json"),
+      ]);
+      const ready = [...BASE_WORDS, ...seed.map(w => ({...w, theme: w.theme || "Без темы", ready: true}))];
+      const queued = pending.map(w => ({...w, theme: w.theme || "Без темы", ready: false}));
+      const all = [...ready, ...queued];
+
+      document.getElementById("totals").textContent =
+        `Готовых слов (уже в игре): ${ready.length} · В очереди на картинки: ${queued.length} · Всего: ${all.length}`;
+
+      const groups = new Map();
+      all.forEach((w) => {
+        if (!groups.has(w.theme)) groups.set(w.theme, []);
+        groups.get(w.theme).push(w);
+      });
+      const sortedThemes = [...groups.keys()].sort((a, b) => groups.get(b).length - groups.get(a).length);
+
+      const container = document.getElementById("groups");
+      sortedThemes.forEach((theme) => {
+        const words = groups.get(theme).sort((a, b) => a.tr.localeCompare(b.tr, "tr"));
+        const readyCount = words.filter((w) => w.ready).length;
+        const pendingCount = words.length - readyCount;
+
+        const group = document.createElement("div");
+        group.className = "group";
+        group.dataset.theme = theme;
+
+        const header = document.createElement("div");
+        header.className = "group-header";
+        header.innerHTML = `<h2>${theme}</h2><span class="count">${words.length} слов` +
+          (readyCount ? ` · <span class="badge ready">${readyCount} готово</span>` : "") +
+          (pendingCount ? ` <span class="badge pending">${pendingCount} в очереди</span>` : "") +
+          `</span>`;
+        header.addEventListener("click", () => group.classList.toggle("collapsed"));
+        group.appendChild(header);
+
+        const body = document.createElement("div");
+        body.className = "group-body";
+        words.forEach((w) => {
+          const chip = document.createElement("div");
+          chip.className = "word-chip";
+          chip.dataset.status = w.ready ? "ready" : "pending";
+          chip.dataset.search = `${w.tr} ${w.ru}`.toLowerCase();
+          chip.innerHTML = `<span class="tr">${w.tr}</span> — <span class="ru">${w.ru}</span>` +
+            (w.ready ? `<span class="badge ready">✓</span>` : `<span class="badge pending">…</span>`);
+          body.appendChild(chip);
+        });
+        group.appendChild(body);
+        container.appendChild(group);
+      });
+
+      let currentFilter = "all";
+      function applyFilters() {
+        const q = document.getElementById("search").value.trim().toLowerCase();
+        document.querySelectorAll(".group").forEach((group) => {
+          let visibleCount = 0;
+          group.querySelectorAll(".word-chip").forEach((chip) => {
+            const matchesFilter = currentFilter === "all" || chip.dataset.status === currentFilter;
+            const matchesSearch = !q || chip.dataset.search.includes(q);
+            const show = matchesFilter && matchesSearch;
+            chip.classList.toggle("hidden", !show);
+            if (show) visibleCount++;
+          });
+          group.classList.toggle("hidden", visibleCount === 0);
+        });
+      }
+
+      document.getElementById("search").addEventListener("input", applyFilters);
+      document.querySelectorAll(".status-tabs button").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          document.querySelectorAll(".status-tabs button").forEach((b) => b.classList.remove("active"));
+          btn.classList.add("active");
+          currentFilter = btn.dataset.filter;
+          applyFilters();
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
