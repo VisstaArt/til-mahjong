@@ -532,7 +532,9 @@ popupEl.addEventListener("click", (e) => {
 function showHint() {
   const free = tiles.filter((t) => !t.matched && t.free);
   for (const t of free) {
-    const partner = free.find((p) => p.pairId === t.pairId && p.id !== t.id);
+    const partner = free.find(
+      (p) => p.pairId === t.pairId && p.type !== t.type
+    );
     if (partner) {
       [t, partner].forEach((h) => {
         const el = tileEl(h.id);
