@@ -10232,5 +10232,887 @@
     "pos": "noun",
     "theme": "Еда и напитки",
     "visual": "A restaurant bill on a small tray"
+  },
+  {
+    "tr": "aşçı",
+    "ru": "повар",
+    "pos": "noun",
+    "theme": "Профессии",
+    "visual": "A chef in a white hat cooking"
+  },
+  {
+    "tr": "pilot",
+    "ru": "пилот",
+    "pos": "noun",
+    "theme": "Профессии",
+    "visual": "A pilot in uniform in a cockpit"
+  },
+  {
+    "tr": "mimar",
+    "ru": "архитектор",
+    "pos": "noun",
+    "theme": "Профессии",
+    "visual": "An architect reviewing building blueprints"
+  },
+  {
+    "tr": "diş hekimi",
+    "ru": "стоматолог",
+    "pos": "noun",
+    "theme": "Профессии",
+    "visual": "A dentist examining teeth with a mirror tool"
+  },
+  {
+    "tr": "eczacı",
+    "ru": "фармацевт",
+    "pos": "noun",
+    "theme": "Профессии",
+    "visual": "A pharmacist behind a pharmacy counter"
+  },
+  {
+    "tr": "veteriner",
+    "ru": "ветеринар",
+    "pos": "noun",
+    "theme": "Профессии",
+    "visual": "A vet examining a dog"
+  },
+  {
+    "tr": "muhasebeci",
+    "ru": "бухгалтер",
+    "pos": "noun",
+    "theme": "Профессии",
+    "visual": "An accountant working with a calculator and papers"
+  },
+  {
+    "tr": "bankacı",
+    "ru": "банковский служащий",
+    "pos": "noun",
+    "theme": "Профессии",
+    "visual": "A bank clerk at a bank counter"
+  },
+  {
+    "tr": "grafik tasarımcı",
+    "ru": "графический дизайнер",
+    "pos": "noun",
+    "theme": "Профессии",
+    "visual": "A designer working on colorful graphics on a screen"
+  },
+  {
+    "tr": "gazeteci",
+    "ru": "журналист",
+    "pos": "noun",
+    "theme": "Профессии",
+    "visual": "A journalist holding a microphone and camera"
+  },
+  {
+    "tr": "kuaför",
+    "ru": "парикмахер",
+    "pos": "noun",
+    "theme": "Профессии",
+    "visual": "A hairdresser styling a client's hair"
+  },
+  {
+    "tr": "marangoz",
+    "ru": "плотник",
+    "pos": "noun",
+    "theme": "Профессии",
+    "visual": "A carpenter working with wood and tools"
+  },
+  {
+    "tr": "aktris",
+    "ru": "актриса",
+    "pos": "noun",
+    "theme": "Профессии",
+    "visual": "An actress performing under stage lights"
+  },
+  {
+    "tr": "kaptan",
+    "ru": "капитан (корабля)",
+    "pos": "noun",
+    "theme": "Профессии",
+    "visual": "A ship captain at the helm"
+  },
+  {
+    "tr": "florist",
+    "ru": "флорист",
+    "pos": "noun",
+    "theme": "Профессии",
+    "visual": "A florist arranging a bouquet of flowers"
+  },
+  {
+    "tr": "emlakçı",
+    "ru": "риэлтор",
+    "pos": "noun",
+    "theme": "Профессии",
+    "visual": "A real estate agent showing a house"
+  },
+  {
+    "tr": "tercüman",
+    "ru": "переводчик (устный)",
+    "pos": "noun",
+    "theme": "Профессии",
+    "visual": "An interpreter speaking with a headset"
+  },
+  {
+    "tr": "çevirmen",
+    "ru": "переводчик (письменный)",
+    "pos": "noun",
+    "theme": "Профессии",
+    "visual": "A translator working with texts on a laptop"
+  },
+  {
+    "tr": "iş insanı",
+    "ru": "предприниматель",
+    "pos": "noun",
+    "theme": "Профессии",
+    "visual": "A confident businessperson in a city skyline"
+  },
+  {
+    "tr": "iş yeri",
+    "ru": "рабочее место",
+    "pos": "noun",
+    "theme": "Профессии",
+    "visual": "An office desk workspace"
+  },
+  {
+    "tr": "maaş",
+    "ru": "зарплата",
+    "pos": "noun",
+    "theme": "Профессии",
+    "visual": "An envelope of salary money"
+  },
+  {
+    "tr": "deneyim",
+    "ru": "опыт",
+    "pos": "noun",
+    "theme": "Профессии",
+    "visual": "A resume with career milestones"
+  },
+  {
+    "tr": "çalışma saati",
+    "ru": "рабочие часы",
+    "pos": "noun",
+    "theme": "Профессии",
+    "visual": "A clock marking work hours"
+  },
+  {
+    "tr": "yetenek",
+    "ru": "талант, навык",
+    "pos": "noun",
+    "theme": "Профессии",
+    "visual": "A glowing star representing talent"
+  },
+  {
+    "tr": "laboratuvar",
+    "ru": "лаборатория",
+    "pos": "noun",
+    "theme": "Школа и канцтовары",
+    "visual": "A school science lab with equipment"
+  },
+  {
+    "tr": "kantin",
+    "ru": "буфет, столовая",
+    "pos": "noun",
+    "theme": "Школа и канцтовары",
+    "visual": "A school canteen with tables"
+  },
+  {
+    "tr": "konferans salonu",
+    "ru": "актовый зал",
+    "pos": "noun",
+    "theme": "Школа и канцтовары",
+    "visual": "A school auditorium with a stage"
+  },
+  {
+    "tr": "güvenlik görevlisi",
+    "ru": "охранник",
+    "pos": "noun",
+    "theme": "Профессии",
+    "visual": "A security guard at a post"
+  },
+  {
+    "tr": "hademe",
+    "ru": "техработник, уборщик",
+    "pos": "noun",
+    "theme": "Профессии",
+    "visual": "A janitor with a cleaning cart"
+  },
+  {
+    "tr": "matematik",
+    "ru": "математика",
+    "pos": "noun",
+    "theme": "Школа и канцтовары",
+    "visual": "A chalkboard with math equations"
+  },
+  {
+    "tr": "türkçe",
+    "ru": "турецкий язык",
+    "pos": "noun",
+    "theme": "Школа и канцтовары",
+    "visual": "An open book with the Turkish flag"
+  },
+  {
+    "tr": "ingilizce",
+    "ru": "английский язык",
+    "pos": "noun",
+    "theme": "Школа и канцтовары",
+    "visual": "An open book with the British flag"
+  },
+  {
+    "tr": "fen bilgisi",
+    "ru": "естествознание",
+    "pos": "noun",
+    "theme": "Школа и канцтовары",
+    "visual": "A science beaker with bubbling liquid"
+  },
+  {
+    "tr": "coğrafya",
+    "ru": "география",
+    "pos": "noun",
+    "theme": "Школа и канцтовары",
+    "visual": "A globe on a stand"
+  },
+  {
+    "tr": "müzik",
+    "ru": "музыка",
+    "pos": "noun",
+    "theme": "Школа и канцтовары",
+    "visual": "A musical note and treble clef"
+  },
+  {
+    "tr": "resim",
+    "ru": "рисование",
+    "pos": "noun",
+    "theme": "Школа и канцтовары",
+    "visual": "A paintbrush and palette"
+  },
+  {
+    "tr": "beden eğitimi",
+    "ru": "физкультура",
+    "pos": "noun",
+    "theme": "Школа и канцтовары",
+    "visual": "A student playing with a ball in gym class"
+  },
+  {
+    "tr": "tebeşir",
+    "ru": "мел",
+    "pos": "noun",
+    "theme": "Школа и канцтовары",
+    "visual": "A stick of white chalk"
+  },
+  {
+    "tr": "tahta kalemi",
+    "ru": "маркер для доски",
+    "pos": "noun",
+    "theme": "Школа и канцтовары",
+    "visual": "A whiteboard marker"
+  },
+  {
+    "tr": "sıra",
+    "ru": "парта",
+    "pos": "noun",
+    "theme": "Школа и канцтовары",
+    "visual": "A classroom desk and chair"
+  },
+  {
+    "tr": "okul çantası",
+    "ru": "школьный рюкзак",
+    "pos": "noun",
+    "theme": "Школа и канцтовары",
+    "visual": "A school backpack"
+  },
+  {
+    "tr": "kalem kutusu",
+    "ru": "пенал",
+    "pos": "noun",
+    "theme": "Школа и канцтовары",
+    "visual": "A pencil case"
+  },
+  {
+    "tr": "cetvel",
+    "ru": "линейка",
+    "pos": "noun",
+    "theme": "Школа и канцтовары",
+    "visual": "A ruler"
+  },
+  {
+    "tr": "yapıştırıcı",
+    "ru": "клей",
+    "pos": "noun",
+    "theme": "Школа и канцтовары",
+    "visual": "A glue stick"
+  },
+  {
+    "tr": "kitaplık",
+    "ru": "книжный шкаф",
+    "pos": "noun",
+    "theme": "Школа и канцтовары",
+    "visual": "A bookshelf filled with books"
+  },
+  {
+    "tr": "dizüstü bilgisayar",
+    "ru": "ноутбук",
+    "pos": "noun",
+    "theme": "Офис",
+    "visual": "A laptop computer"
+  },
+  {
+    "tr": "yazıcı",
+    "ru": "принтер",
+    "pos": "noun",
+    "theme": "Офис",
+    "visual": "An office printer"
+  },
+  {
+    "tr": "tarayıcı",
+    "ru": "сканер",
+    "pos": "noun",
+    "theme": "Офис",
+    "visual": "A flatbed scanner"
+  },
+  {
+    "tr": "fotokopi makinesi",
+    "ru": "ксерокс",
+    "pos": "noun",
+    "theme": "Офис",
+    "visual": "A large photocopier machine"
+  },
+  {
+    "tr": "telefon",
+    "ru": "телефон",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A desk telephone"
+  },
+  {
+    "tr": "cep telefonu",
+    "ru": "мобильный телефон",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A smartphone"
+  },
+  {
+    "tr": "hesap makinesi",
+    "ru": "калькулятор",
+    "pos": "noun",
+    "theme": "Офис",
+    "visual": "A calculator"
+  },
+  {
+    "tr": "projeksiyon",
+    "ru": "проектор",
+    "pos": "noun",
+    "theme": "Офис",
+    "visual": "A projector displaying a presentation"
+  },
+  {
+    "tr": "usb bellek",
+    "ru": "флешка",
+    "pos": "noun",
+    "theme": "Офис",
+    "visual": "A USB flash drive"
+  },
+  {
+    "tr": "harici disk",
+    "ru": "внешний диск",
+    "pos": "noun",
+    "theme": "Офис",
+    "visual": "An external hard drive"
+  },
+  {
+    "tr": "kablo",
+    "ru": "кабель",
+    "pos": "noun",
+    "theme": "Офис",
+    "visual": "A coiled cable"
+  },
+  {
+    "tr": "uzatma kablosu",
+    "ru": "удлинитель",
+    "pos": "noun",
+    "theme": "Офис",
+    "visual": "A power strip extension cord"
+  },
+  {
+    "tr": "kurşun kalem",
+    "ru": "карандаш",
+    "pos": "noun",
+    "theme": "Офис",
+    "visual": "A wooden pencil"
+  },
+  {
+    "tr": "kalemtraş",
+    "ru": "точилка",
+    "pos": "noun",
+    "theme": "Офис",
+    "visual": "A pencil sharpener"
+  },
+  {
+    "tr": "not defteri",
+    "ru": "блокнот",
+    "pos": "noun",
+    "theme": "Офис",
+    "visual": "A spiral notebook"
+  },
+  {
+    "tr": "yapışkan not",
+    "ru": "стикер для заметок",
+    "pos": "noun",
+    "theme": "Офис",
+    "visual": "A pad of sticky notes"
+  },
+  {
+    "tr": "klasör",
+    "ru": "папка (для документов)",
+    "pos": "noun",
+    "theme": "Офис",
+    "visual": "A ring binder folder"
+  },
+  {
+    "tr": "zımba",
+    "ru": "степлер",
+    "pos": "noun",
+    "theme": "Офис",
+    "visual": "A stapler"
+  },
+  {
+    "tr": "delgeç",
+    "ru": "дырокол",
+    "pos": "noun",
+    "theme": "Офис",
+    "visual": "A hole punch"
+  },
+  {
+    "tr": "ataç",
+    "ru": "скрепка",
+    "pos": "noun",
+    "theme": "Офис",
+    "visual": "A paperclip"
+  },
+  {
+    "tr": "raptiye",
+    "ru": "кнопка канцелярская",
+    "pos": "noun",
+    "theme": "Офис",
+    "visual": "A push pin"
+  },
+  {
+    "tr": "kartvizit",
+    "ru": "визитная карточка",
+    "pos": "noun",
+    "theme": "Офис",
+    "visual": "A business card"
+  },
+  {
+    "tr": "klips",
+    "ru": "зажим (канцелярский)",
+    "pos": "noun",
+    "theme": "Офис",
+    "visual": "A binder clip"
+  },
+  {
+    "tr": "mürekkep",
+    "ru": "чернила",
+    "pos": "noun",
+    "theme": "Офис",
+    "visual": "A bottle of ink"
+  },
+  {
+    "tr": "düzeltme bandı",
+    "ru": "корректирующая лента",
+    "pos": "noun",
+    "theme": "Офис",
+    "visual": "A correction tape roller"
+  },
+  {
+    "tr": "fosforlu kalem",
+    "ru": "текстовыделитель",
+    "pos": "noun",
+    "theme": "Офис",
+    "visual": "A yellow highlighter pen"
+  },
+  {
+    "tr": "zarf",
+    "ru": "конверт",
+    "pos": "noun",
+    "theme": "Офис",
+    "visual": "A sealed envelope"
+  },
+  {
+    "tr": "bant",
+    "ru": "скотч",
+    "pos": "noun",
+    "theme": "Офис",
+    "visual": "A roll of tape"
+  },
+  {
+    "tr": "koltuk",
+    "ru": "кресло",
+    "pos": "noun",
+    "theme": "Офис",
+    "visual": "An office armchair"
+  },
+  {
+    "tr": "dosya dolabı",
+    "ru": "шкаф для документов",
+    "pos": "noun",
+    "theme": "Офис",
+    "visual": "A filing cabinet"
+  },
+  {
+    "tr": "askılık",
+    "ru": "вешалка (стойка)",
+    "pos": "noun",
+    "theme": "Офис",
+    "visual": "A coat rack stand"
+  },
+  {
+    "tr": "pano",
+    "ru": "доска объявлений",
+    "pos": "noun",
+    "theme": "Офис",
+    "visual": "A corkboard with pinned notes"
+  },
+  {
+    "tr": "toplantı odası",
+    "ru": "переговорная",
+    "pos": "noun",
+    "theme": "Офис",
+    "visual": "A meeting room with a conference table"
+  },
+  {
+    "tr": "beyaz tahta",
+    "ru": "белая доска",
+    "pos": "noun",
+    "theme": "Офис",
+    "visual": "A whiteboard with markers"
+  },
+  {
+    "tr": "flipchart",
+    "ru": "флипчарт",
+    "pos": "noun",
+    "theme": "Офис",
+    "visual": "A flipchart easel with paper"
+  },
+  {
+    "tr": "sunum",
+    "ru": "презентация",
+    "pos": "noun",
+    "theme": "Офис",
+    "visual": "A screen showing a business presentation"
+  },
+  {
+    "tr": "lazer işaretçi",
+    "ru": "лазерная указка",
+    "pos": "noun",
+    "theme": "Офис",
+    "visual": "A laser pointer pen"
+  },
+  {
+    "tr": "araştırmak",
+    "ru": "исследовать",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A figure researching with a magnifying glass over documents"
+  },
+  {
+    "tr": "hesaplamak",
+    "ru": "считать, вычислять",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A figure calculating with a calculator"
+  },
+  {
+    "tr": "dosyalamak",
+    "ru": "архивировать",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A hand filing documents into a folder"
+  },
+  {
+    "tr": "kopyalamak",
+    "ru": "копировать",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A hand placing paper into a copier"
+  },
+  {
+    "tr": "yönetici",
+    "ru": "руководитель",
+    "pos": "noun",
+    "theme": "Офис",
+    "visual": "A manager at the head of a meeting table"
+  },
+  {
+    "tr": "çalışan",
+    "ru": "сотрудник",
+    "pos": "noun",
+    "theme": "Офис",
+    "visual": "An employee working at a desk"
+  },
+  {
+    "tr": "sekreter",
+    "ru": "секретарь",
+    "pos": "noun",
+    "theme": "Офис",
+    "visual": "A secretary answering phones at a desk"
+  },
+  {
+    "tr": "stajyer",
+    "ru": "стажёр",
+    "pos": "noun",
+    "theme": "Офис",
+    "visual": "A young intern taking notes"
+  },
+  {
+    "tr": "resepsiyon",
+    "ru": "приёмная",
+    "pos": "noun",
+    "theme": "Офис",
+    "visual": "An office reception desk"
+  },
+  {
+    "tr": "arşiv",
+    "ru": "архив",
+    "pos": "noun",
+    "theme": "Офис",
+    "visual": "Rows of archived filing boxes"
+  },
+  {
+    "tr": "e-posta",
+    "ru": "электронная почта",
+    "pos": "noun",
+    "theme": "Офис",
+    "visual": "An email envelope icon on a screen"
+  },
+  {
+    "tr": "para",
+    "ru": "деньги",
+    "pos": "noun",
+    "theme": "Покупки и магазины",
+    "visual": "A pile of coins and banknotes"
+  },
+  {
+    "tr": "nakit",
+    "ru": "наличные",
+    "pos": "noun",
+    "theme": "Покупки и магазины",
+    "visual": "A stack of cash banknotes"
+  },
+  {
+    "tr": "bozuk para",
+    "ru": "мелочь, монеты",
+    "pos": "noun",
+    "theme": "Покупки и магазины",
+    "visual": "A handful of loose coins"
+  },
+  {
+    "tr": "banknot",
+    "ru": "банкнота",
+    "pos": "noun",
+    "theme": "Покупки и магазины",
+    "visual": "A single paper banknote"
+  },
+  {
+    "tr": "cüzdan",
+    "ru": "кошелёк",
+    "pos": "noun",
+    "theme": "Покупки и магазины",
+    "visual": "A leather wallet"
+  },
+  {
+    "tr": "ödeme",
+    "ru": "оплата",
+    "pos": "noun",
+    "theme": "Покупки и магазины",
+    "visual": "A hand tapping a payment terminal"
+  },
+  {
+    "tr": "gelir",
+    "ru": "доход",
+    "pos": "noun",
+    "theme": "Покупки и магазины",
+    "visual": "An upward arrow over a pile of coins"
+  },
+  {
+    "tr": "gider",
+    "ru": "расход",
+    "pos": "noun",
+    "theme": "Покупки и магазины",
+    "visual": "A shopping cart with a downward arrow"
+  },
+  {
+    "tr": "kâr",
+    "ru": "прибыль",
+    "pos": "noun",
+    "theme": "Покупки и магазины",
+    "visual": "An upward trending profit chart"
+  },
+  {
+    "tr": "borç",
+    "ru": "долг",
+    "pos": "noun",
+    "theme": "Покупки и магазины",
+    "visual": "A figure pushing a heavy debt weight"
+  },
+  {
+    "tr": "bütçe",
+    "ru": "бюджет",
+    "pos": "noun",
+    "theme": "Покупки и магазины",
+    "visual": "A pie chart budget planner"
+  },
+  {
+    "tr": "kredi",
+    "ru": "кредит",
+    "pos": "noun",
+    "theme": "Покупки и магазины",
+    "visual": "A bank building with a loan document"
+  },
+  {
+    "tr": "tasarruf",
+    "ru": "сбережения",
+    "pos": "noun",
+    "theme": "Покупки и магазины",
+    "visual": "A piggy bank with coins"
+  },
+  {
+    "tr": "faiz",
+    "ru": "процент (банковский)",
+    "pos": "noun",
+    "theme": "Покупки и магазины",
+    "visual": "A percent sign over stacked coins"
+  },
+  {
+    "tr": "kredi kartı",
+    "ru": "кредитная карта",
+    "pos": "noun",
+    "theme": "Покупки и магазины",
+    "visual": "A credit card"
+  },
+  {
+    "tr": "banka kartı",
+    "ru": "банковская карта",
+    "pos": "noun",
+    "theme": "Покупки и магазины",
+    "visual": "A debit bank card"
+  },
+  {
+    "tr": "taksit",
+    "ru": "рассрочка, платёж частями",
+    "pos": "noun",
+    "theme": "Покупки и магазины",
+    "visual": "A calendar showing split payment installments"
+  },
+  {
+    "tr": "fatura",
+    "ru": "счёт, квитанция",
+    "pos": "noun",
+    "theme": "Покупки и магазины",
+    "visual": "A utility bill invoice"
+  },
+  {
+    "tr": "hizmet ücreti",
+    "ru": "плата за услуги",
+    "pos": "noun",
+    "theme": "Покупки и магазины",
+    "visual": "A service fee receipt"
+  },
+  {
+    "tr": "transfer",
+    "ru": "перевод (денежный)",
+    "pos": "noun",
+    "theme": "Покупки и магазины",
+    "visual": "An arrow moving money between accounts"
+  },
+  {
+    "tr": "havale",
+    "ru": "банковский перевод",
+    "pos": "noun",
+    "theme": "Покупки и магазины",
+    "visual": "A bank transfer icon between two banks"
+  },
+  {
+    "tr": "bakiye",
+    "ru": "баланс (счёта)",
+    "pos": "noun",
+    "theme": "Покупки и магазины",
+    "visual": "A phone screen showing an account balance"
+  },
+  {
+    "tr": "bankamatik",
+    "ru": "банкомат",
+    "pos": "noun",
+    "theme": "Покупки и магазины",
+    "visual": "An ATM machine"
+  },
+  {
+    "tr": "şifre",
+    "ru": "пароль",
+    "pos": "noun",
+    "theme": "Покупки и магазины",
+    "visual": "A padlock with a PIN code pad"
+  },
+  {
+    "tr": "para çekmek",
+    "ru": "снимать деньги",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A hand withdrawing cash from an ATM"
+  },
+  {
+    "tr": "para yatırmak",
+    "ru": "вносить деньги",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A hand depositing cash into an ATM"
+  },
+  {
+    "tr": "iptal",
+    "ru": "отмена",
+    "pos": "noun",
+    "theme": "Покупки и магазины",
+    "visual": "A red X cancel button"
+  },
+  {
+    "tr": "onay",
+    "ru": "подтверждение",
+    "pos": "noun",
+    "theme": "Покупки и магазины",
+    "visual": "A green checkmark confirmation"
+  },
+  {
+    "tr": "işlem",
+    "ru": "операция (банковская)",
+    "pos": "noun",
+    "theme": "Покупки и магазины",
+    "visual": "A transaction receipt with a checkmark"
+  },
+  {
+    "tr": "kasa",
+    "ru": "касса",
+    "pos": "noun",
+    "theme": "Покупки и магазины",
+    "visual": "A shop checkout register"
+  },
+  {
+    "tr": "önlük",
+    "ru": "передник",
+    "pos": "noun",
+    "theme": "Одежда и аксессуары",
+    "visual": "An apron"
+  },
+  {
+    "tr": "folyo",
+    "ru": "фольга",
+    "pos": "noun",
+    "theme": "Кухня и посуда",
+    "visual": "A roll of foil"
+  },
+  {
+    "tr": "kakül",
+    "ru": "чёлка",
+    "pos": "noun",
+    "theme": "Части тела",
+    "visual": "Hair bangs highlighted on a face"
   }
 ]
