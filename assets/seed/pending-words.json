@@ -9049,5 +9049,502 @@
     "pos": "adjective",
     "theme": "Прилагательные и сравнения",
     "visual": "A balanced neutral face icon"
+  },
+  {
+    "tr": "düğme",
+    "ru": "пуговица",
+    "pos": "noun",
+    "theme": "Одежда и аксессуары",
+    "visual": "A round four-hole button"
+  },
+  {
+    "tr": "fermuar",
+    "ru": "молния",
+    "pos": "noun",
+    "theme": "Одежда и аксессуары",
+    "visual": "A metal zipper"
+  },
+  {
+    "tr": "cep",
+    "ru": "карман",
+    "pos": "noun",
+    "theme": "Одежда и аксессуары",
+    "visual": "A jacket pocket"
+  },
+  {
+    "tr": "pamuk",
+    "ru": "хлопок",
+    "pos": "noun",
+    "theme": "Одежда и аксессуары",
+    "visual": "A soft ball of cotton fabric"
+  },
+  {
+    "tr": "yün",
+    "ru": "шерсть",
+    "pos": "noun",
+    "theme": "Одежда и аксессуары",
+    "visual": "A skein of wool yarn"
+  },
+  {
+    "tr": "ipek",
+    "ru": "шёлк",
+    "pos": "noun",
+    "theme": "Одежда и аксессуары",
+    "visual": "A smooth flowing silk fabric"
+  },
+  {
+    "tr": "keten",
+    "ru": "лён",
+    "pos": "noun",
+    "theme": "Одежда и аксессуары",
+    "visual": "A textured linen fabric swatch"
+  },
+  {
+    "tr": "kadife",
+    "ru": "бархат",
+    "pos": "noun",
+    "theme": "Одежда и аксессуары",
+    "visual": "A rich dark velvet fabric swatch"
+  },
+  {
+    "tr": "deri",
+    "ru": "кожа (материал)",
+    "pos": "noun",
+    "theme": "Одежда и аксессуары",
+    "visual": "A brown leather fabric swatch"
+  },
+  {
+    "tr": "hırka",
+    "ru": "кардиган",
+    "pos": "noun",
+    "theme": "Одежда и аксессуары",
+    "visual": "A buttoned knit cardigan"
+  },
+  {
+    "tr": "kaban",
+    "ru": "пальто",
+    "pos": "noun",
+    "theme": "Одежда и аксессуары",
+    "visual": "A long winter coat"
+  },
+  {
+    "tr": "yağmurluk",
+    "ru": "плащ-дождевик",
+    "pos": "noun",
+    "theme": "Одежда и аксессуары",
+    "visual": "A yellow raincoat"
+  },
+  {
+    "tr": "takım elbise",
+    "ru": "костюм",
+    "pos": "noun",
+    "theme": "Одежда и аксессуары",
+    "visual": "A formal business suit on a hanger"
+  },
+  {
+    "tr": "çizme",
+    "ru": "сапоги",
+    "pos": "noun",
+    "theme": "Одежда и аксессуары",
+    "visual": "A pair of tall boots"
+  },
+  {
+    "tr": "bot",
+    "ru": "ботинки",
+    "pos": "noun",
+    "theme": "Одежда и аксессуары",
+    "visual": "A pair of ankle boots"
+  },
+  {
+    "tr": "terlik",
+    "ru": "шлёпки",
+    "pos": "noun",
+    "theme": "Одежда и аксессуары",
+    "visual": "A pair of flip-flop sandals"
+  },
+  {
+    "tr": "sandalet",
+    "ru": "сандалии",
+    "pos": "noun",
+    "theme": "Одежда и аксессуары",
+    "visual": "A pair of open sandals"
+  },
+  {
+    "tr": "numara",
+    "ru": "размер (обуви)",
+    "pos": "noun",
+    "theme": "Одежда и аксессуары",
+    "visual": "A shoe with a size number tag"
+  },
+  {
+    "tr": "kalça",
+    "ru": "бёдра",
+    "pos": "noun",
+    "theme": "Части тела",
+    "visual": "Hips highlighted on a body silhouette"
+  },
+  {
+    "tr": "spor ayakkabı",
+    "ru": "кроссовки",
+    "pos": "noun",
+    "theme": "Одежда и аксессуары",
+    "visual": "A pair of white sneakers"
+  },
+  {
+    "tr": "yatak odası",
+    "ru": "спальня",
+    "pos": "noun",
+    "theme": "Дом и мебель",
+    "visual": "A cozy bedroom with a bed and lamp"
+  },
+  {
+    "tr": "balkon",
+    "ru": "балкон",
+    "pos": "noun",
+    "theme": "Дом и мебель",
+    "visual": "A small balcony with plants"
+  },
+  {
+    "tr": "duvar",
+    "ru": "стена",
+    "pos": "noun",
+    "theme": "Дом и мебель",
+    "visual": "A plain interior wall"
+  },
+  {
+    "tr": "koridor",
+    "ru": "коридор",
+    "pos": "noun",
+    "theme": "Дом и мебель",
+    "visual": "A hallway corridor with doors"
+  },
+  {
+    "tr": "kanepe",
+    "ru": "диван",
+    "pos": "noun",
+    "theme": "Дом и мебель",
+    "visual": "A comfortable sofa"
+  },
+  {
+    "tr": "tezgâh",
+    "ru": "столешница",
+    "pos": "noun",
+    "theme": "Кухня и посуда",
+    "visual": "A kitchen countertop"
+  },
+  {
+    "tr": "lavabo",
+    "ru": "раковина",
+    "pos": "noun",
+    "theme": "Кухня и посуда",
+    "visual": "A kitchen sink with a faucet"
+  },
+  {
+    "tr": "buzdolabı",
+    "ru": "холодильник",
+    "pos": "noun",
+    "theme": "Кухня и посуда",
+    "visual": "A tall refrigerator"
+  },
+  {
+    "tr": "dondurucu",
+    "ru": "морозилка",
+    "pos": "noun",
+    "theme": "Кухня и посуда",
+    "visual": "A chest freezer with frost"
+  },
+  {
+    "tr": "davlumbaz",
+    "ru": "вытяжка",
+    "pos": "noun",
+    "theme": "Кухня и посуда",
+    "visual": "A kitchen range hood above a stove"
+  },
+  {
+    "tr": "bulaşık makinesi",
+    "ru": "посудомоечная машина",
+    "pos": "noun",
+    "theme": "Кухня и посуда",
+    "visual": "A dishwasher with open racks of dishes"
+  },
+  {
+    "tr": "çekmece",
+    "ru": "ящик (мебельный)",
+    "pos": "noun",
+    "theme": "Кухня и посуда",
+    "visual": "An open kitchen drawer"
+  },
+  {
+    "tr": "raf",
+    "ru": "полка",
+    "pos": "noun",
+    "theme": "Кухня и посуда",
+    "visual": "A wooden shelf with jars"
+  },
+  {
+    "tr": "kesme tahtası",
+    "ru": "разделочная доска",
+    "pos": "noun",
+    "theme": "Кухня и посуда",
+    "visual": "A wooden cutting board"
+  },
+  {
+    "tr": "kepçe",
+    "ru": "половник",
+    "pos": "noun",
+    "theme": "Кухня и посуда",
+    "visual": "A soup ladle"
+  },
+  {
+    "tr": "spatula",
+    "ru": "лопатка (кухонная)",
+    "pos": "noun",
+    "theme": "Кухня и посуда",
+    "visual": "A kitchen spatula"
+  },
+  {
+    "tr": "çırpıcı",
+    "ru": "венчик",
+    "pos": "noun",
+    "theme": "Кухня и посуда",
+    "visual": "A wire whisk"
+  },
+  {
+    "tr": "blender",
+    "ru": "блендер",
+    "pos": "noun",
+    "theme": "Кухня и посуда",
+    "visual": "A countertop blender"
+  },
+  {
+    "tr": "su ısıtıcısı",
+    "ru": "чайник электрический",
+    "pos": "noun",
+    "theme": "Кухня и посуда",
+    "visual": "An electric kettle"
+  },
+  {
+    "tr": "ölçü kabı",
+    "ru": "мерный стакан",
+    "pos": "noun",
+    "theme": "Кухня и посуда",
+    "visual": "A measuring cup with markings"
+  },
+  {
+    "tr": "saklama kabı",
+    "ru": "контейнер для хранения",
+    "pos": "noun",
+    "theme": "Кухня и посуда",
+    "visual": "A plastic food storage container"
+  },
+  {
+    "tr": "servis etmek",
+    "ru": "подавать (еду)",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A hand serving a plate of food"
+  },
+  {
+    "tr": "un",
+    "ru": "мука",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A bowl of white flour"
+  },
+  {
+    "tr": "küvet",
+    "ru": "ванна",
+    "pos": "noun",
+    "theme": "Ванная и гигиена",
+    "visual": "A bathtub"
+  },
+  {
+    "tr": "duş",
+    "ru": "душ",
+    "pos": "noun",
+    "theme": "Ванная и гигиена",
+    "visual": "A shower head with running water"
+  },
+  {
+    "tr": "tuvalet kağıdı",
+    "ru": "туалетная бумага",
+    "pos": "noun",
+    "theme": "Ванная и гигиена",
+    "visual": "A roll of toilet paper"
+  },
+  {
+    "tr": "çamaşır sepeti",
+    "ru": "корзина для белья",
+    "pos": "noun",
+    "theme": "Ванная и гигиена",
+    "visual": "A laundry hamper basket"
+  },
+  {
+    "tr": "sünger",
+    "ru": "губка",
+    "pos": "noun",
+    "theme": "Ванная и гигиена",
+    "visual": "A yellow bath sponge"
+  },
+  {
+    "tr": "diş macunu",
+    "ru": "зубная паста",
+    "pos": "noun",
+    "theme": "Ванная и гигиена",
+    "visual": "A tube of toothpaste"
+  },
+  {
+    "tr": "tıraş bıçağı",
+    "ru": "бритва (лезвие)",
+    "pos": "noun",
+    "theme": "Ванная и гигиена",
+    "visual": "A razor blade"
+  },
+  {
+    "tr": "tartı",
+    "ru": "весы (напольные)",
+    "pos": "noun",
+    "theme": "Ванная и гигиена",
+    "visual": "A bathroom scale"
+  },
+  {
+    "tr": "banyo yapmak",
+    "ru": "принимать ванну",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A figure relaxing in a bubble bath"
+  },
+  {
+    "tr": "tıraş olmak",
+    "ru": "бриться",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A figure shaving their face"
+  },
+  {
+    "tr": "kurulanmak",
+    "ru": "вытираться",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A figure drying off with a towel"
+  },
+  {
+    "tr": "çamaşır yıkamak",
+    "ru": "стирать бельё",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A figure loading clothes into a washing machine"
+  },
+  {
+    "tr": "duşakabin",
+    "ru": "душевая кабина",
+    "pos": "noun",
+    "theme": "Ванная и гигиена",
+    "visual": "A glass shower cabin"
+  },
+  {
+    "tr": "zemin",
+    "ru": "пол",
+    "pos": "noun",
+    "theme": "Дом и мебель",
+    "visual": "A tiled floor"
+  },
+  {
+    "tr": "paspas",
+    "ru": "коврик",
+    "pos": "noun",
+    "theme": "Ванная и гигиена",
+    "visual": "A small bath mat"
+  },
+  {
+    "tr": "kokulu",
+    "ru": "с ароматом",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A scented candle with visible fragrance waves"
+  },
+  {
+    "tr": "kokusuz",
+    "ru": "без запаха",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A plain unscented bottle with a crossed-out nose icon"
+  },
+  {
+    "tr": "rezervuar",
+    "ru": "бачок (унитаза)",
+    "pos": "noun",
+    "theme": "Ванная и гигиена",
+    "visual": "A toilet tank"
+  },
+  {
+    "tr": "çöp kovası",
+    "ru": "мусорное ведро",
+    "pos": "noun",
+    "theme": "Ванная и гигиена",
+    "visual": "A small trash bin"
+  },
+  {
+    "tr": "çamaşır makinesi",
+    "ru": "стиральная машина",
+    "pos": "noun",
+    "theme": "Ванная и гигиена",
+    "visual": "A front-loading washing machine"
+  },
+  {
+    "tr": "deterjan",
+    "ru": "стиральный порошок",
+    "pos": "noun",
+    "theme": "Ванная и гигиена",
+    "visual": "A box of laundry detergent"
+  },
+  {
+    "tr": "yumuşatıcı",
+    "ru": "кондиционер для белья",
+    "pos": "noun",
+    "theme": "Ванная и гигиена",
+    "visual": "A bottle of fabric softener"
+  },
+  {
+    "tr": "leke çıkarıcı",
+    "ru": "пятновыводитель",
+    "pos": "noun",
+    "theme": "Ванная и гигиена",
+    "visual": "A stain remover spray bottle"
+  },
+  {
+    "tr": "çamaşır asmak",
+    "ru": "вешать бельё",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "Clothes hanging to dry on a line"
+  },
+  {
+    "tr": "ütü",
+    "ru": "утюг",
+    "pos": "noun",
+    "theme": "Дом и мебель",
+    "visual": "A clothes iron"
+  },
+  {
+    "tr": "ütülemek",
+    "ru": "гладить",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A hand ironing a shirt on a board"
+  },
+  {
+    "tr": "yanında",
+    "ru": "рядом с",
+    "pos": "preposition",
+    "theme": "Направления и предлоги",
+    "visual": "An object placed right beside another"
+  },
+  {
+    "tr": "arasında",
+    "ru": "между",
+    "pos": "preposition",
+    "theme": "Направления и предлоги",
+    "visual": "An object positioned between two others"
   }
 ]
