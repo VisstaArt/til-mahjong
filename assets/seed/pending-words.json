@@ -7887,5 +7887,1167 @@
     "pos": "verb",
     "theme": "Глаголы — действия",
     "visual": "A hand wiping a whiteboard clean"
+  },
+  {
+    "tr": "yüksek",
+    "ru": "высокий",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A tall skyscraper reaching into the sky"
+  },
+  {
+    "tr": "alçak",
+    "ru": "низкий",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A low small house"
+  },
+  {
+    "tr": "çirkin",
+    "ru": "некрасивый",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A frowning unattractive cartoon face"
+  },
+  {
+    "tr": "kirli",
+    "ru": "грязный",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A stained dirty piece of clothing"
+  },
+  {
+    "tr": "hafif",
+    "ru": "лёгкий (по весу)",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A light feather floating"
+  },
+  {
+    "tr": "ağır",
+    "ru": "тяжёлый",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A heavy dumbbell weight"
+  },
+  {
+    "tr": "derin",
+    "ru": "глубокий",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A deep body of dark blue water"
+  },
+  {
+    "tr": "sığ",
+    "ru": "мелкий (неглубокий)",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A shallow puddle of water"
+  },
+  {
+    "tr": "hızlı",
+    "ru": "быстрый",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A speeding red race car with motion lines"
+  },
+  {
+    "tr": "erken",
+    "ru": "ранний",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A sunrise clock showing an early hour"
+  },
+  {
+    "tr": "geç",
+    "ru": "поздний",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A moonlit clock showing a late hour"
+  },
+  {
+    "tr": "kolay",
+    "ru": "лёгкий, простой",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A puzzle with one large easy piece"
+  },
+  {
+    "tr": "zengin",
+    "ru": "богатый",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A figure surrounded by piles of gold coins"
+  },
+  {
+    "tr": "fakir",
+    "ru": "бедный",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A figure with empty pockets turned out"
+  },
+  {
+    "tr": "cesur",
+    "ru": "смелый",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A brave figure in a hero cape"
+  },
+  {
+    "tr": "korkak",
+    "ru": "трусливый",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A timid figure hiding behind their hands"
+  },
+  {
+    "tr": "dolu",
+    "ru": "полный",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A glass filled to the brim"
+  },
+  {
+    "tr": "modern",
+    "ru": "современный",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A sleek modern glass building"
+  },
+  {
+    "tr": "eski moda",
+    "ru": "устаревший, старомодный",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "An old-fashioned retro television set"
+  },
+  {
+    "tr": "sahte",
+    "ru": "фальшивый",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A fake plastic gem beside a real diamond"
+  },
+  {
+    "tr": "düzenli",
+    "ru": "аккуратный",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "Neatly stacked organized books"
+  },
+  {
+    "tr": "parlak",
+    "ru": "яркий",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A brightly glowing star"
+  },
+  {
+    "tr": "soluk",
+    "ru": "тусклый",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A faded dull star"
+  },
+  {
+    "tr": "esnek",
+    "ru": "гибкий",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A bendable stretchy rubber band shape"
+  },
+  {
+    "tr": "katı",
+    "ru": "жёсткий, твёрдый",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A rigid solid block"
+  },
+  {
+    "tr": "aktif",
+    "ru": "активный",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "An energetic figure jogging"
+  },
+  {
+    "tr": "tembel",
+    "ru": "ленивый",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A figure lounging lazily on a couch"
+  },
+  {
+    "tr": "gürültülü",
+    "ru": "шумный",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A megaphone with loud sound waves"
+  },
+  {
+    "tr": "güvenli",
+    "ru": "безопасный",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A padlocked safe box"
+  },
+  {
+    "tr": "tehlikeli",
+    "ru": "опасный",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A yellow warning triangle sign"
+  },
+  {
+    "tr": "gerçekçi",
+    "ru": "реалистичный",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A realistic detailed apple painting"
+  },
+  {
+    "tr": "hayalî",
+    "ru": "нереальный, вымышленный",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A whimsical fantasy unicorn"
+  },
+  {
+    "tr": "ince",
+    "ru": "тонкий",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A thin slender pencil"
+  },
+  {
+    "tr": "ıslak",
+    "ru": "мокрый",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A dripping wet t-shirt"
+  },
+  {
+    "tr": "ucuz",
+    "ru": "дешёвый",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A small price tag showing a low price"
+  },
+  {
+    "tr": "pahalı",
+    "ru": "дорогой",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A price tag with a high price and dollar signs"
+  },
+  {
+    "tr": "bayat",
+    "ru": "несвежий, чёрствый",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A stale hardened loaf of bread"
+  },
+  {
+    "tr": "güçsüz",
+    "ru": "слабый",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A weak drooping thin arm"
+  },
+  {
+    "tr": "aptal",
+    "ru": "глупый",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A confused figure with question marks over their head"
+  },
+  {
+    "tr": "kaba",
+    "ru": "грубый",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A figure crossing arms rudely, dismissive expression"
+  },
+  {
+    "tr": "cömert",
+    "ru": "щедрый",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A figure generously handing over a wrapped gift"
+  },
+  {
+    "tr": "cimri",
+    "ru": "скупой",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A figure clutching coins tightly to their chest"
+  },
+  {
+    "tr": "meraklı",
+    "ru": "любопытный",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A figure peering curiously through a magnifying glass"
+  },
+  {
+    "tr": "ilgisiz",
+    "ru": "равнодушный",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A figure looking bored and indifferent"
+  },
+  {
+    "tr": "sinirli",
+    "ru": "раздражённый",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "An irritated figure with an angry expression"
+  },
+  {
+    "tr": "dikkatsiz",
+    "ru": "невнимательный",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A figure distracted by a paper airplane"
+  },
+  {
+    "tr": "dürüst",
+    "ru": "честный",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A figure with a hand over heart, honest expression"
+  },
+  {
+    "tr": "yalancı",
+    "ru": "лживый",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A figure with a long growing nose"
+  },
+  {
+    "tr": "yapay",
+    "ru": "искусственный",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A plastic artificial flower"
+  },
+  {
+    "tr": "olgun",
+    "ru": "зрелый",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A ripe yellow banana"
+  },
+  {
+    "tr": "ham",
+    "ru": "незрелый",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "An unripe green banana"
+  },
+  {
+    "tr": "berrak",
+    "ru": "прозрачный",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A glass of perfectly clear water"
+  },
+  {
+    "tr": "bulanık",
+    "ru": "мутный",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A glass of cloudy murky water"
+  },
+  {
+    "tr": "eğri",
+    "ru": "кривой",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A wavy crooked line"
+  },
+  {
+    "tr": "rahatsız",
+    "ru": "неудобный",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A stiff uncomfortable wooden chair"
+  },
+  {
+    "tr": "şanslı",
+    "ru": "удачливый",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A four-leaf clover, lucky concept"
+  },
+  {
+    "tr": "şanssız",
+    "ru": "неудачливый",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A broken horseshoe, unlucky concept"
+  },
+  {
+    "tr": "gerekli",
+    "ru": "нужный",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A first aid kit, essential item"
+  },
+  {
+    "tr": "gereksiz",
+    "ru": "ненужный",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A discarded unnecessary object"
+  },
+  {
+    "tr": "mümkün",
+    "ru": "возможный",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A rocket launching upward, possibility concept"
+  },
+  {
+    "tr": "imkânsız",
+    "ru": "невозможный",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A flying elephant, impossible concept"
+  },
+  {
+    "tr": "özel",
+    "ru": "особый",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A gold star marked VIP"
+  },
+  {
+    "tr": "genel",
+    "ru": "общий",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A crowd of generic identical silhouettes"
+  },
+  {
+    "tr": "cansız",
+    "ru": "неживой",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A plain still rock"
+  },
+  {
+    "tr": "lezzetli",
+    "ru": "вкусный",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A delicious slice of cake"
+  },
+  {
+    "tr": "lezzetsiz",
+    "ru": "невкусный",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A bland unappetizing bowl of food"
+  },
+  {
+    "tr": "faydalı",
+    "ru": "полезный",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "Fresh healthy vegetables"
+  },
+  {
+    "tr": "zararlı",
+    "ru": "вредный",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A cigarette with a warning symbol"
+  },
+  {
+    "tr": "istekli",
+    "ru": "охотный, желающий",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "An eager figure raising a hand enthusiastically"
+  },
+  {
+    "tr": "isteksiz",
+    "ru": "без желания",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A reluctant figure with a low-energy expression"
+  },
+  {
+    "tr": "umutlu",
+    "ru": "полный надежды",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A figure looking hopefully at a bright sky"
+  },
+  {
+    "tr": "umutsuz",
+    "ru": "безнадёжный",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A figure under a dark cloud, hopeless expression"
+  },
+  {
+    "tr": "saygılı",
+    "ru": "уважительный",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A figure bowing respectfully"
+  },
+  {
+    "tr": "saygısız",
+    "ru": "неуважительный",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A figure being dismissive and rude"
+  },
+  {
+    "tr": "komik",
+    "ru": "смешной",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A laughing clown figure"
+  },
+  {
+    "tr": "sade",
+    "ru": "простой",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A plain simple white t-shirt"
+  },
+  {
+    "tr": "süslü",
+    "ru": "нарядный",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "An elaborately decorated fancy dress"
+  },
+  {
+    "tr": "sorumlu",
+    "ru": "ответственный",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A figure carefully checking off a task list"
+  },
+  {
+    "tr": "sorumsuz",
+    "ru": "безответственный",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A figure carelessly playing instead of working"
+  },
+  {
+    "tr": "sabırlı",
+    "ru": "терпеливый",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A calm figure meditating patiently"
+  },
+  {
+    "tr": "sabırsız",
+    "ru": "нетерпеливый",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A figure tapping their foot checking a watch"
+  },
+  {
+    "tr": "mütevazı",
+    "ru": "скромный",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A modest figure with a humble smile"
+  },
+  {
+    "tr": "kibirli",
+    "ru": "высокомерный",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A figure with nose held up arrogantly"
+  },
+  {
+    "tr": "yasak",
+    "ru": "запрещённый",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A red prohibition no-entry sign"
+  },
+  {
+    "tr": "serbest",
+    "ru": "разрешённый, свободный",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A green checkmark allowing entry"
+  },
+  {
+    "tr": "kıyafet",
+    "ru": "одежда",
+    "pos": "noun",
+    "theme": "Одежда и аксессуары",
+    "visual": "A folded set of clothing items"
+  },
+  {
+    "tr": "mont",
+    "ru": "куртка, пальто",
+    "pos": "noun",
+    "theme": "Одежда и аксессуары",
+    "visual": "A padded winter coat"
+  },
+  {
+    "tr": "tayt",
+    "ru": "легинсы",
+    "pos": "noun",
+    "theme": "Одежда и аксессуары",
+    "visual": "A pair of fitted leggings"
+  },
+  {
+    "tr": "eşofman",
+    "ru": "спортивные штаны",
+    "pos": "noun",
+    "theme": "Одежда и аксессуары",
+    "visual": "Comfortable sweatpants"
+  },
+  {
+    "tr": "mavi",
+    "ru": "синий, голубой",
+    "pos": "adjective",
+    "theme": "Цвета",
+    "visual": "A solid blue color swatch"
+  },
+  {
+    "tr": "kahverengi",
+    "ru": "коричневый",
+    "pos": "adjective",
+    "theme": "Цвета",
+    "visual": "A solid brown color swatch"
+  },
+  {
+    "tr": "tunik",
+    "ru": "туника",
+    "pos": "noun",
+    "theme": "Одежда и аксессуары",
+    "visual": "A loose flowing tunic top"
+  },
+  {
+    "tr": "atlet",
+    "ru": "майка",
+    "pos": "noun",
+    "theme": "Одежда и аксессуары",
+    "visual": "A plain sleeveless tank top"
+  },
+  {
+    "tr": "sütyen",
+    "ru": "бюстгальтер",
+    "pos": "noun",
+    "theme": "Одежда и аксессуары",
+    "visual": "A bra on a hanger"
+  },
+  {
+    "tr": "külot",
+    "ru": "трусики",
+    "pos": "noun",
+    "theme": "Одежда и аксессуары",
+    "visual": "Folded underwear"
+  },
+  {
+    "tr": "boxer",
+    "ru": "боксеры (бельё)",
+    "pos": "noun",
+    "theme": "Одежда и аксессуары",
+    "visual": "Men's boxer shorts"
+  },
+  {
+    "tr": "kot",
+    "ru": "джинсы",
+    "pos": "noun",
+    "theme": "Одежда и аксессуары",
+    "visual": "A pair of blue denim jeans"
+  },
+  {
+    "tr": "sweatshirt",
+    "ru": "свитшот",
+    "pos": "noun",
+    "theme": "Одежда и аксессуары",
+    "visual": "A cozy pullover sweatshirt"
+  },
+  {
+    "tr": "fanila",
+    "ru": "майка (нательная)",
+    "pos": "noun",
+    "theme": "Одежда и аксессуары",
+    "visual": "A simple white undershirt"
+  },
+  {
+    "tr": "iç çamaşırı",
+    "ru": "нижнее бельё",
+    "pos": "noun",
+    "theme": "Одежда и аксессуары",
+    "visual": "A folded set of underwear"
+  },
+  {
+    "tr": "kravat",
+    "ru": "галстук",
+    "pos": "noun",
+    "theme": "Одежда и аксессуары",
+    "visual": "A striped necktie"
+  },
+  {
+    "tr": "fondöten",
+    "ru": "тональный крем",
+    "pos": "noun",
+    "theme": "Косметика",
+    "visual": "A bottle of liquid foundation makeup"
+  },
+  {
+    "tr": "kapatıcı",
+    "ru": "консилер",
+    "pos": "noun",
+    "theme": "Косметика",
+    "visual": "A concealer stick"
+  },
+  {
+    "tr": "pudra",
+    "ru": "пудра",
+    "pos": "noun",
+    "theme": "Косметика",
+    "visual": "A compact of pressed face powder"
+  },
+  {
+    "tr": "allık",
+    "ru": "румяна",
+    "pos": "noun",
+    "theme": "Косметика",
+    "visual": "A compact of pink blush"
+  },
+  {
+    "tr": "bronzer",
+    "ru": "бронзер",
+    "pos": "noun",
+    "theme": "Косметика",
+    "visual": "A compact of bronzing powder"
+  },
+  {
+    "tr": "aydınlatıcı",
+    "ru": "хайлайтер",
+    "pos": "noun",
+    "theme": "Косметика",
+    "visual": "A shimmering highlighter compact"
+  },
+  {
+    "tr": "göz farı",
+    "ru": "тени для век",
+    "pos": "noun",
+    "theme": "Косметика",
+    "visual": "A palette of eyeshadow colors"
+  },
+  {
+    "tr": "eyeliner",
+    "ru": "подводка для глаз",
+    "pos": "noun",
+    "theme": "Косметика",
+    "visual": "A liquid eyeliner pen"
+  },
+  {
+    "tr": "maskara",
+    "ru": "тушь для ресниц",
+    "pos": "noun",
+    "theme": "Косметика",
+    "visual": "A mascara wand and tube"
+  },
+  {
+    "tr": "kaş kalemi",
+    "ru": "карандаш для бровей",
+    "pos": "noun",
+    "theme": "Косметика",
+    "visual": "An eyebrow pencil"
+  },
+  {
+    "tr": "ruj",
+    "ru": "помада",
+    "pos": "noun",
+    "theme": "Косметика",
+    "visual": "A tube of red lipstick"
+  },
+  {
+    "tr": "dudak parlatıcısı",
+    "ru": "блеск для губ",
+    "pos": "noun",
+    "theme": "Косметика",
+    "visual": "A tube of glossy lip gloss"
+  },
+  {
+    "tr": "makyaj bazı",
+    "ru": "праймер",
+    "pos": "noun",
+    "theme": "Косметика",
+    "visual": "A bottle of makeup primer"
+  },
+  {
+    "tr": "makyaj sabitleyici",
+    "ru": "фиксатор макияжа",
+    "pos": "noun",
+    "theme": "Косметика",
+    "visual": "A spray bottle of makeup setting spray"
+  },
+  {
+    "tr": "makyaj süngeri",
+    "ru": "спонж для макияжа",
+    "pos": "noun",
+    "theme": "Косметика",
+    "visual": "A teardrop-shaped makeup blending sponge"
+  },
+  {
+    "tr": "makyaj fırçaları",
+    "ru": "кисти для макияжа",
+    "pos": "noun",
+    "theme": "Косметика",
+    "visual": "A set of makeup brushes in a cup"
+  },
+  {
+    "tr": "cımbız",
+    "ru": "пинцет",
+    "pos": "noun",
+    "theme": "Косметика",
+    "visual": "A pair of metal tweezers"
+  },
+  {
+    "tr": "kaş jeli",
+    "ru": "гель для бровей",
+    "pos": "noun",
+    "theme": "Косметика",
+    "visual": "A small tube of eyebrow styling gel"
+  },
+  {
+    "tr": "temizleme jeli",
+    "ru": "гель для умывания",
+    "pos": "noun",
+    "theme": "Косметика",
+    "visual": "A bottle of facial cleansing gel"
+  },
+  {
+    "tr": "micellar su",
+    "ru": "мицеллярная вода",
+    "pos": "noun",
+    "theme": "Косметика",
+    "visual": "A bottle of micellar cleansing water"
+  },
+  {
+    "tr": "peeling",
+    "ru": "скраб",
+    "pos": "noun",
+    "theme": "Косметика",
+    "visual": "A jar of exfoliating face scrub"
+  },
+  {
+    "tr": "yüz maskesi",
+    "ru": "маска для лица",
+    "pos": "noun",
+    "theme": "Косметика",
+    "visual": "A sheet face mask"
+  },
+  {
+    "tr": "göz kremi",
+    "ru": "крем для век",
+    "pos": "noun",
+    "theme": "Косметика",
+    "visual": "A small jar of eye cream"
+  },
+  {
+    "tr": "yüz kremi",
+    "ru": "крем для лица",
+    "pos": "noun",
+    "theme": "Косметика",
+    "visual": "A jar of face moisturizer cream"
+  },
+  {
+    "tr": "serum",
+    "ru": "сыворотка",
+    "pos": "noun",
+    "theme": "Косметика",
+    "visual": "A dropper bottle of facial serum"
+  },
+  {
+    "tr": "güneş kremi",
+    "ru": "солнцезащитный крем",
+    "pos": "noun",
+    "theme": "Косметика",
+    "visual": "A tube of sunscreen"
+  },
+  {
+    "tr": "dudak balzamı",
+    "ru": "бальзам для губ",
+    "pos": "noun",
+    "theme": "Косметика",
+    "visual": "A stick of lip balm"
+  },
+  {
+    "tr": "nemlendirici",
+    "ru": "увлажняющий крем",
+    "pos": "noun",
+    "theme": "Косметика",
+    "visual": "A jar of moisturizing cream"
+  },
+  {
+    "tr": "retinol",
+    "ru": "ретинол",
+    "pos": "noun",
+    "theme": "Косметика",
+    "visual": "A dropper bottle labeled retinol serum"
+  },
+  {
+    "tr": "kil maskesi",
+    "ru": "глиняная маска",
+    "pos": "noun",
+    "theme": "Косметика",
+    "visual": "A jar of clay face mask"
+  },
+  {
+    "tr": "saç kremi",
+    "ru": "кондиционер для волос",
+    "pos": "noun",
+    "theme": "Косметика",
+    "visual": "A bottle of hair conditioner"
+  },
+  {
+    "tr": "saç maskesi",
+    "ru": "маска для волос",
+    "pos": "noun",
+    "theme": "Косметика",
+    "visual": "A jar of hair mask treatment"
+  },
+  {
+    "tr": "saç yağı",
+    "ru": "масло для волос",
+    "pos": "noun",
+    "theme": "Косметика",
+    "visual": "A small bottle of hair oil"
+  },
+  {
+    "tr": "saç serumu",
+    "ru": "сыворотка для волос",
+    "pos": "noun",
+    "theme": "Косметика",
+    "visual": "A dropper bottle of hair serum"
+  },
+  {
+    "tr": "saç spreyi",
+    "ru": "лак для волос",
+    "pos": "noun",
+    "theme": "Косметика",
+    "visual": "A can of hair spray"
+  },
+  {
+    "tr": "köpük",
+    "ru": "мусс для волос",
+    "pos": "noun",
+    "theme": "Косметика",
+    "visual": "A can of styling mousse foam"
+  },
+  {
+    "tr": "kuru şampuan",
+    "ru": "сухой шампунь",
+    "pos": "noun",
+    "theme": "Косметика",
+    "visual": "A spray can of dry shampoo"
+  },
+  {
+    "tr": "tarak",
+    "ru": "расчёска",
+    "pos": "noun",
+    "theme": "Косметика",
+    "visual": "A hair comb"
+  },
+  {
+    "tr": "fırça",
+    "ru": "щётка",
+    "pos": "noun",
+    "theme": "Косметика",
+    "visual": "A round hairbrush"
+  },
+  {
+    "tr": "maşa",
+    "ru": "плойка",
+    "pos": "noun",
+    "theme": "Косметика",
+    "visual": "A curling iron"
+  },
+  {
+    "tr": "düzleştirici",
+    "ru": "выпрямитель для волос",
+    "pos": "noun",
+    "theme": "Косметика",
+    "visual": "A hair straightener flat iron"
+  },
+  {
+    "tr": "saç tokası",
+    "ru": "заколка для волос",
+    "pos": "noun",
+    "theme": "Косметика",
+    "visual": "A decorative hair clip"
+  },
+  {
+    "tr": "duş jeli",
+    "ru": "гель для душа",
+    "pos": "noun",
+    "theme": "Косметика",
+    "visual": "A bottle of shower gel"
+  },
+  {
+    "tr": "vücut losyonu",
+    "ru": "лосьон для тела",
+    "pos": "noun",
+    "theme": "Косметика",
+    "visual": "A bottle of body lotion"
+  },
+  {
+    "tr": "vücut yağı",
+    "ru": "масло для тела",
+    "pos": "noun",
+    "theme": "Косметика",
+    "visual": "A bottle of body oil"
+  },
+  {
+    "tr": "vücut peelingi",
+    "ru": "скраб для тела",
+    "pos": "noun",
+    "theme": "Косметика",
+    "visual": "A jar of body scrub"
+  },
+  {
+    "tr": "el kremi",
+    "ru": "крем для рук",
+    "pos": "noun",
+    "theme": "Косметика",
+    "visual": "A tube of hand cream"
+  },
+  {
+    "tr": "deodorant",
+    "ru": "дезодорант",
+    "pos": "noun",
+    "theme": "Косметика",
+    "visual": "A deodorant stick"
+  },
+  {
+    "tr": "parfüm",
+    "ru": "духи",
+    "pos": "noun",
+    "theme": "Косметика",
+    "visual": "A glass perfume bottle"
+  },
+  {
+    "tr": "vücut spreyi",
+    "ru": "спрей для тела",
+    "pos": "noun",
+    "theme": "Косметика",
+    "visual": "A body mist spray bottle"
+  },
+  {
+    "tr": "ayak kremi",
+    "ru": "крем для ног",
+    "pos": "noun",
+    "theme": "Косметика",
+    "visual": "A tube of foot cream"
+  },
+  {
+    "tr": "tırnak kremi",
+    "ru": "крем для ногтей",
+    "pos": "noun",
+    "theme": "Косметика",
+    "visual": "A small tube of nail cream"
+  },
+  {
+    "tr": "banyo tuzu",
+    "ru": "соль для ванны",
+    "pos": "noun",
+    "theme": "Косметика",
+    "visual": "A jar of bath salts"
+  },
+  {
+    "tr": "vücut sütü",
+    "ru": "молочко для тела",
+    "pos": "noun",
+    "theme": "Косметика",
+    "visual": "A bottle of body milk lotion"
+  },
+  {
+    "tr": "oje çıkarıcı",
+    "ru": "жидкость для снятия лака",
+    "pos": "noun",
+    "theme": "Косметика",
+    "visual": "A bottle of nail polish remover"
+  },
+  {
+    "tr": "törpü",
+    "ru": "пилка для ногтей",
+    "pos": "noun",
+    "theme": "Косметика",
+    "visual": "A nail file"
+  },
+  {
+    "tr": "tırnak makası",
+    "ru": "ножницы для ногтей",
+    "pos": "noun",
+    "theme": "Косметика",
+    "visual": "Small nail scissors"
+  },
+  {
+    "tr": "takma tırnak",
+    "ru": "искусственные ногти",
+    "pos": "noun",
+    "theme": "Косметика",
+    "visual": "A set of press-on false nails"
+  },
+  {
+    "tr": "saç kurutma makinesi",
+    "ru": "фен для волос",
+    "pos": "noun",
+    "theme": "Косметика",
+    "visual": "A handheld hair dryer"
+  },
+  {
+    "tr": "epilatör",
+    "ru": "эпилятор",
+    "pos": "noun",
+    "theme": "Косметика",
+    "visual": "A handheld electric epilator device"
+  },
+  {
+    "tr": "tıraş makinesi",
+    "ru": "бритва, электробритва",
+    "pos": "noun",
+    "theme": "Косметика",
+    "visual": "An electric shaver"
+  },
+  {
+    "tr": "karma",
+    "ru": "комбинированный (о коже)",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A face split showing two different skin zones"
+  },
+  {
+    "tr": "hassas",
+    "ru": "чувствительный",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A face with a gentle protective glow, sensitive skin"
+  },
+  {
+    "tr": "yağlı",
+    "ru": "жирный",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A shiny oily surface with light reflections"
+  },
+  {
+    "tr": "normal",
+    "ru": "нормальный",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A balanced neutral face icon"
   }
 ]
