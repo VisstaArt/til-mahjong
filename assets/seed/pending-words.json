@@ -11520,5 +11520,796 @@
     "pos": "pronoun",
     "theme": "Направления и предлоги",
     "visual": "A question mark over a starting point arrow"
+  },
+  {
+    "tr": "kuzey",
+    "ru": "север",
+    "pos": "noun",
+    "theme": "Направления и предлоги",
+    "visual": "A compass needle pointing north"
+  },
+  {
+    "tr": "güney",
+    "ru": "юг",
+    "pos": "noun",
+    "theme": "Направления и предлоги",
+    "visual": "A compass needle pointing south"
+  },
+  {
+    "tr": "doğu",
+    "ru": "восток",
+    "pos": "noun",
+    "theme": "Направления и предлоги",
+    "visual": "A compass needle pointing east"
+  },
+  {
+    "tr": "batı",
+    "ru": "запад",
+    "pos": "noun",
+    "theme": "Направления и предлоги",
+    "visual": "A compass needle pointing west"
+  },
+  {
+    "tr": "kuzeybatı",
+    "ru": "северо-запад",
+    "pos": "noun",
+    "theme": "Направления и предлоги",
+    "visual": "A compass needle pointing northwest"
+  },
+  {
+    "tr": "kuzeydoğu",
+    "ru": "северо-восток",
+    "pos": "noun",
+    "theme": "Направления и предлоги",
+    "visual": "A compass needle pointing northeast"
+  },
+  {
+    "tr": "güneybatı",
+    "ru": "юго-запад",
+    "pos": "noun",
+    "theme": "Направления и предлоги",
+    "visual": "A compass needle pointing southwest"
+  },
+  {
+    "tr": "güneydoğu",
+    "ru": "юго-восток",
+    "pos": "noun",
+    "theme": "Направления и предлоги",
+    "visual": "A compass needle pointing southeast"
+  },
+  {
+    "tr": "yön",
+    "ru": "направление",
+    "pos": "noun",
+    "theme": "Направления и предлоги",
+    "visual": "Signposts pointing in different directions"
+  },
+  {
+    "tr": "pusula",
+    "ru": "компас",
+    "pos": "noun",
+    "theme": "Направления и предлоги",
+    "visual": "A compass"
+  },
+  {
+    "tr": "sağanak yağmur",
+    "ru": "ливень",
+    "pos": "noun",
+    "theme": "Природа и погода",
+    "visual": "Heavy rain pouring down"
+  },
+  {
+    "tr": "kasırga",
+    "ru": "ураган",
+    "pos": "noun",
+    "theme": "Природа и погода",
+    "visual": "A swirling hurricane storm"
+  },
+  {
+    "tr": "hortum",
+    "ru": "торнадо",
+    "pos": "noun",
+    "theme": "Природа и погода",
+    "visual": "A tornado funnel cloud"
+  },
+  {
+    "tr": "sel",
+    "ru": "наводнение",
+    "pos": "noun",
+    "theme": "Природа и погода",
+    "visual": "Floodwater surrounding houses"
+  },
+  {
+    "tr": "heyelan",
+    "ru": "оползень",
+    "pos": "noun",
+    "theme": "Природа и погода",
+    "visual": "A landslide down a hillside"
+  },
+  {
+    "tr": "deprem",
+    "ru": "землетрясение",
+    "pos": "noun",
+    "theme": "Природа и погода",
+    "visual": "Cracked ground from an earthquake"
+  },
+  {
+    "tr": "kuraklık",
+    "ru": "засуха",
+    "pos": "noun",
+    "theme": "Природа и погода",
+    "visual": "A cracked dry drought landscape"
+  },
+  {
+    "tr": "okyanus",
+    "ru": "океан",
+    "pos": "noun",
+    "theme": "Природа и погода",
+    "visual": "A vast blue ocean"
+  },
+  {
+    "tr": "yanardağ",
+    "ru": "вулкан",
+    "pos": "noun",
+    "theme": "Природа и погода",
+    "visual": "An erupting volcano with lava"
+  },
+  {
+    "tr": "gayzer",
+    "ru": "гейзер",
+    "pos": "noun",
+    "theme": "Природа и погода",
+    "visual": "A geyser erupting with steam"
+  },
+  {
+    "tr": "şelale",
+    "ru": "водопад",
+    "pos": "noun",
+    "theme": "Природа и погода",
+    "visual": "A tall waterfall"
+  },
+  {
+    "tr": "çam ağacı",
+    "ru": "сосна",
+    "pos": "noun",
+    "theme": "Цветы и растения",
+    "visual": "A tall pine tree"
+  },
+  {
+    "tr": "meşe",
+    "ru": "дуб",
+    "pos": "noun",
+    "theme": "Цветы и растения",
+    "visual": "An oak tree"
+  },
+  {
+    "tr": "huş ağacı",
+    "ru": "берёза",
+    "pos": "noun",
+    "theme": "Цветы и растения",
+    "visual": "A white birch tree"
+  },
+  {
+    "tr": "söğüt",
+    "ru": "ива",
+    "pos": "noun",
+    "theme": "Цветы и растения",
+    "visual": "A weeping willow tree"
+  },
+  {
+    "tr": "çınar",
+    "ru": "платан",
+    "pos": "noun",
+    "theme": "Цветы и растения",
+    "visual": "A large plane tree"
+  },
+  {
+    "tr": "akçaağaç",
+    "ru": "клён",
+    "pos": "noun",
+    "theme": "Цветы и растения",
+    "visual": "A maple tree with red leaves"
+  },
+  {
+    "tr": "gül",
+    "ru": "роза",
+    "pos": "noun",
+    "theme": "Цветы и растения",
+    "visual": "A red rose"
+  },
+  {
+    "tr": "lale",
+    "ru": "тюльпан",
+    "pos": "noun",
+    "theme": "Цветы и растения",
+    "visual": "A red tulip"
+  },
+  {
+    "tr": "papatya",
+    "ru": "ромашка",
+    "pos": "noun",
+    "theme": "Цветы и растения",
+    "visual": "A white daisy"
+  },
+  {
+    "tr": "orkide",
+    "ru": "орхидея",
+    "pos": "noun",
+    "theme": "Цветы и растения",
+    "visual": "A pink orchid"
+  },
+  {
+    "tr": "zambak",
+    "ru": "лилия",
+    "pos": "noun",
+    "theme": "Цветы и растения",
+    "visual": "A white lily"
+  },
+  {
+    "tr": "ayçiçeği",
+    "ru": "подсолнечник",
+    "pos": "noun",
+    "theme": "Цветы и растения",
+    "visual": "A bright sunflower"
+  },
+  {
+    "tr": "menekşe",
+    "ru": "фиалка",
+    "pos": "noun",
+    "theme": "Цветы и растения",
+    "visual": "A purple violet flower"
+  },
+  {
+    "tr": "karanfil",
+    "ru": "гвоздика",
+    "pos": "noun",
+    "theme": "Цветы и растения",
+    "visual": "A pink carnation"
+  },
+  {
+    "tr": "lavanta",
+    "ru": "лаванда",
+    "pos": "noun",
+    "theme": "Цветы и растения",
+    "visual": "A sprig of purple lavender"
+  },
+  {
+    "tr": "bitki",
+    "ru": "растение",
+    "pos": "noun",
+    "theme": "Цветы и растения",
+    "visual": "A small potted plant"
+  },
+  {
+    "tr": "kök",
+    "ru": "корень",
+    "pos": "noun",
+    "theme": "Цветы и растения",
+    "visual": "Roots of a plant underground"
+  },
+  {
+    "tr": "gövde",
+    "ru": "ствол, стебель",
+    "pos": "noun",
+    "theme": "Цветы и растения",
+    "visual": "A tree trunk"
+  },
+  {
+    "tr": "diken",
+    "ru": "шип, колючка",
+    "pos": "noun",
+    "theme": "Цветы и растения",
+    "visual": "A thorny rose stem"
+  },
+  {
+    "tr": "tomurcuk",
+    "ru": "бутон",
+    "pos": "noun",
+    "theme": "Цветы и растения",
+    "visual": "A flower bud about to bloom"
+  },
+  {
+    "tr": "çiçek yaprağı",
+    "ru": "лепесток",
+    "pos": "noun",
+    "theme": "Цветы и растения",
+    "visual": "A single flower petal"
+  },
+  {
+    "tr": "fesleğen",
+    "ru": "базилик",
+    "pos": "noun",
+    "theme": "Цветы и растения",
+    "visual": "A pot of fresh basil"
+  },
+  {
+    "tr": "nane",
+    "ru": "мята",
+    "pos": "noun",
+    "theme": "Цветы и растения",
+    "visual": "A sprig of fresh mint"
+  },
+  {
+    "tr": "biberiye",
+    "ru": "розмарин",
+    "pos": "noun",
+    "theme": "Цветы и растения",
+    "visual": "A sprig of rosemary"
+  },
+  {
+    "tr": "kaktüs",
+    "ru": "кактус",
+    "pos": "noun",
+    "theme": "Цветы и растения",
+    "visual": "A potted cactus"
+  },
+  {
+    "tr": "sukulent",
+    "ru": "суккулент",
+    "pos": "noun",
+    "theme": "Цветы и растения",
+    "visual": "A potted succulent plant"
+  },
+  {
+    "tr": "sarmaşık",
+    "ru": "плющ",
+    "pos": "noun",
+    "theme": "Цветы и растения",
+    "visual": "Climbing ivy vines"
+  },
+  {
+    "tr": "yaban domuzu",
+    "ru": "кабан",
+    "pos": "noun",
+    "theme": "Животные",
+    "visual": "A wild boar"
+  },
+  {
+    "tr": "porsuk",
+    "ru": "барсук",
+    "pos": "noun",
+    "theme": "Животные",
+    "visual": "A badger"
+  },
+  {
+    "tr": "rakun",
+    "ru": "енот",
+    "pos": "noun",
+    "theme": "Животные",
+    "visual": "A raccoon"
+  },
+  {
+    "tr": "kunduz",
+    "ru": "бобр",
+    "pos": "noun",
+    "theme": "Животные",
+    "visual": "A beaver"
+  },
+  {
+    "tr": "çita",
+    "ru": "гепард",
+    "pos": "noun",
+    "theme": "Животные",
+    "visual": "A cheetah"
+  },
+  {
+    "tr": "vaşak",
+    "ru": "рысь",
+    "pos": "noun",
+    "theme": "Животные",
+    "visual": "A lynx"
+  },
+  {
+    "tr": "karaca",
+    "ru": "косуля",
+    "pos": "noun",
+    "theme": "Животные",
+    "visual": "A roe deer"
+  },
+  {
+    "tr": "kurbağa",
+    "ru": "лягушка",
+    "pos": "noun",
+    "theme": "Животные",
+    "visual": "A green frog"
+  },
+  {
+    "tr": "boğa",
+    "ru": "бык",
+    "pos": "noun",
+    "theme": "Животные",
+    "visual": "A strong bull"
+  },
+  {
+    "tr": "dana",
+    "ru": "телёнок",
+    "pos": "noun",
+    "theme": "Животные",
+    "visual": "A young calf"
+  },
+  {
+    "tr": "koç",
+    "ru": "баран",
+    "pos": "noun",
+    "theme": "Животные",
+    "visual": "A ram with curled horns"
+  },
+  {
+    "tr": "hindi",
+    "ru": "индейка",
+    "pos": "noun",
+    "theme": "Животные",
+    "visual": "A turkey bird"
+  },
+  {
+    "tr": "sıçan",
+    "ru": "крыса, мышь",
+    "pos": "noun",
+    "theme": "Животные",
+    "visual": "A small gray rat"
+  },
+  {
+    "tr": "guinea pig",
+    "ru": "морская свинка",
+    "pos": "noun",
+    "theme": "Животные",
+    "visual": "A guinea pig"
+  },
+  {
+    "tr": "arı kovanı",
+    "ru": "улей",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A beehive with bees around it"
+  },
+  {
+    "tr": "gergedan",
+    "ru": "носорог",
+    "pos": "noun",
+    "theme": "Животные",
+    "visual": "A rhinoceros"
+  },
+  {
+    "tr": "leopar",
+    "ru": "леопард",
+    "pos": "noun",
+    "theme": "Животные",
+    "visual": "A spotted leopard"
+  },
+  {
+    "tr": "bufalo",
+    "ru": "буйвол",
+    "pos": "noun",
+    "theme": "Животные",
+    "visual": "A water buffalo"
+  },
+  {
+    "tr": "hipopotam",
+    "ru": "бегемот",
+    "pos": "noun",
+    "theme": "Животные",
+    "visual": "A hippopotamus"
+  },
+  {
+    "tr": "goril",
+    "ru": "горилла",
+    "pos": "noun",
+    "theme": "Животные",
+    "visual": "A gorilla"
+  },
+  {
+    "tr": "şempanze",
+    "ru": "шимпанзе",
+    "pos": "noun",
+    "theme": "Животные",
+    "visual": "A chimpanzee"
+  },
+  {
+    "tr": "antilop",
+    "ru": "антилопа",
+    "pos": "noun",
+    "theme": "Животные",
+    "visual": "An antelope"
+  },
+  {
+    "tr": "sırtlan",
+    "ru": "гиена",
+    "pos": "noun",
+    "theme": "Животные",
+    "visual": "A hyena"
+  },
+  {
+    "tr": "çakal",
+    "ru": "шакал",
+    "pos": "noun",
+    "theme": "Животные",
+    "visual": "A jackal"
+  },
+  {
+    "tr": "timsah",
+    "ru": "крокодил",
+    "pos": "noun",
+    "theme": "Животные",
+    "visual": "A crocodile"
+  },
+  {
+    "tr": "devekuşu",
+    "ru": "страус",
+    "pos": "noun",
+    "theme": "Животные",
+    "visual": "An ostrich"
+  },
+  {
+    "tr": "akrep",
+    "ru": "скорпион",
+    "pos": "noun",
+    "theme": "Животные",
+    "visual": "A scorpion"
+  },
+  {
+    "tr": "balina",
+    "ru": "кит",
+    "pos": "noun",
+    "theme": "Животные",
+    "visual": "A whale"
+  },
+  {
+    "tr": "köpek balığı",
+    "ru": "акула",
+    "pos": "noun",
+    "theme": "Животные",
+    "visual": "A shark"
+  },
+  {
+    "tr": "mors",
+    "ru": "морж",
+    "pos": "noun",
+    "theme": "Животные",
+    "visual": "A walrus"
+  },
+  {
+    "tr": "mürekkep balığı",
+    "ru": "кальмар",
+    "pos": "noun",
+    "theme": "Животные",
+    "visual": "A squid"
+  },
+  {
+    "tr": "denizanası",
+    "ru": "медуза",
+    "pos": "noun",
+    "theme": "Животные",
+    "visual": "A jellyfish"
+  },
+  {
+    "tr": "vatoz",
+    "ru": "скат",
+    "pos": "noun",
+    "theme": "Животные",
+    "visual": "A stingray"
+  },
+  {
+    "tr": "denizatı",
+    "ru": "морской конёк",
+    "pos": "noun",
+    "theme": "Животные",
+    "visual": "A seahorse"
+  },
+  {
+    "tr": "ton balığı",
+    "ru": "тунец",
+    "pos": "noun",
+    "theme": "Животные",
+    "visual": "A tuna fish"
+  },
+  {
+    "tr": "kılıç balığı",
+    "ru": "рыба-меч",
+    "pos": "noun",
+    "theme": "Животные",
+    "visual": "A swordfish"
+  },
+  {
+    "tr": "istiridye",
+    "ru": "устрица",
+    "pos": "noun",
+    "theme": "Животные",
+    "visual": "An oyster shell"
+  },
+  {
+    "tr": "midye",
+    "ru": "мидия",
+    "pos": "noun",
+    "theme": "Животные",
+    "visual": "A mussel shell"
+  },
+  {
+    "tr": "deniz yıldızı",
+    "ru": "морская звезда",
+    "pos": "noun",
+    "theme": "Животные",
+    "visual": "A starfish"
+  },
+  {
+    "tr": "deniz salyangozu",
+    "ru": "морская улитка",
+    "pos": "noun",
+    "theme": "Животные",
+    "visual": "A sea snail shell"
+  },
+  {
+    "tr": "mercan",
+    "ru": "коралл",
+    "pos": "noun",
+    "theme": "Животные",
+    "visual": "Colorful coral reef"
+  },
+  {
+    "tr": "kartal",
+    "ru": "орёл",
+    "pos": "noun",
+    "theme": "Птицы",
+    "visual": "A soaring eagle"
+  },
+  {
+    "tr": "şahin",
+    "ru": "сокол",
+    "pos": "noun",
+    "theme": "Птицы",
+    "visual": "A falcon"
+  },
+  {
+    "tr": "baykuş",
+    "ru": "сова",
+    "pos": "noun",
+    "theme": "Птицы",
+    "visual": "An owl"
+  },
+  {
+    "tr": "karga",
+    "ru": "ворона",
+    "pos": "noun",
+    "theme": "Птицы",
+    "visual": "A black crow"
+  },
+  {
+    "tr": "ardıç kuşu",
+    "ru": "сойка",
+    "pos": "noun",
+    "theme": "Птицы",
+    "visual": "A jay bird"
+  },
+  {
+    "tr": "serçe",
+    "ru": "воробей",
+    "pos": "noun",
+    "theme": "Птицы",
+    "visual": "A small sparrow"
+  },
+  {
+    "tr": "martı",
+    "ru": "чайка",
+    "pos": "noun",
+    "theme": "Птицы",
+    "visual": "A seagull"
+  },
+  {
+    "tr": "bülbül",
+    "ru": "соловей",
+    "pos": "noun",
+    "theme": "Птицы",
+    "visual": "A nightingale singing"
+  },
+  {
+    "tr": "kanarya",
+    "ru": "канарейка",
+    "pos": "noun",
+    "theme": "Птицы",
+    "visual": "A yellow canary"
+  },
+  {
+    "tr": "papağan",
+    "ru": "попугай",
+    "pos": "noun",
+    "theme": "Птицы",
+    "visual": "A colorful parrot"
+  },
+  {
+    "tr": "flamingo",
+    "ru": "фламинго",
+    "pos": "noun",
+    "theme": "Птицы",
+    "visual": "A pink flamingo"
+  },
+  {
+    "tr": "tukan",
+    "ru": "тукан",
+    "pos": "noun",
+    "theme": "Птицы",
+    "visual": "A toucan with a large colorful beak"
+  },
+  {
+    "tr": "baykuşcuk",
+    "ru": "сыч",
+    "pos": "noun",
+    "theme": "Птицы",
+    "visual": "A small owl"
+  },
+  {
+    "tr": "doğan",
+    "ru": "сокол, сапсан",
+    "pos": "noun",
+    "theme": "Птицы",
+    "visual": "A peregrine falcon in flight"
+  },
+  {
+    "tr": "ağaçkakan",
+    "ru": "дятел",
+    "pos": "noun",
+    "theme": "Птицы",
+    "visual": "A woodpecker on a tree"
+  },
+  {
+    "tr": "çekirge",
+    "ru": "кузнечик",
+    "pos": "noun",
+    "theme": "Насекомые",
+    "visual": "A grasshopper"
+  },
+  {
+    "tr": "yusufçuk",
+    "ru": "стрекоза",
+    "pos": "noun",
+    "theme": "Насекомые",
+    "visual": "A dragonfly"
+  },
+  {
+    "tr": "böcek",
+    "ru": "жук",
+    "pos": "noun",
+    "theme": "Насекомые",
+    "visual": "A beetle"
+  },
+  {
+    "tr": "ateş böceği",
+    "ru": "светлячок",
+    "pos": "noun",
+    "theme": "Насекомые",
+    "visual": "A glowing firefly"
+  },
+  {
+    "tr": "örümcek",
+    "ru": "паук",
+    "pos": "noun",
+    "theme": "Насекомые",
+    "visual": "A spider on its web"
+  },
+  {
+    "tr": "pire",
+    "ru": "блоха",
+    "pos": "noun",
+    "theme": "Насекомые",
+    "visual": "A tiny flea"
+  },
+  {
+    "tr": "tahta kurusu",
+    "ru": "клоп",
+    "pos": "noun",
+    "theme": "Насекомые",
+    "visual": "A bed bug"
+  },
+  {
+    "tr": "bit",
+    "ru": "вошь",
+    "pos": "noun",
+    "theme": "Насекомые",
+    "visual": "A louse"
+  },
+  {
+    "tr": "ipek böceği",
+    "ru": "шелкопряд",
+    "pos": "noun",
+    "theme": "Насекомые",
+    "visual": "A silkworm on a leaf"
   }
 ]
