@@ -5290,5 +5290,901 @@
     "pos": "verb",
     "theme": "Глаголы — действия",
     "visual": "A person sitting down, looking exhausted."
+  },
+  {
+    "tr": "anne",
+    "ru": "мама",
+    "pos": "noun",
+    "theme": "Семья и отношения",
+    "visual": "A warm smiling mother figure"
+  },
+  {
+    "tr": "baba",
+    "ru": "папа",
+    "pos": "noun",
+    "theme": "Семья и отношения",
+    "visual": "A friendly father figure"
+  },
+  {
+    "tr": "büyükanne",
+    "ru": "бабушка",
+    "pos": "noun",
+    "theme": "Семья и отношения",
+    "visual": "A sweet elderly grandmother with white hair and glasses"
+  },
+  {
+    "tr": "nine",
+    "ru": "бабушка",
+    "pos": "noun",
+    "theme": "Семья и отношения",
+    "visual": "An elderly countryside grandmother wearing a headscarf"
+  },
+  {
+    "tr": "torun",
+    "ru": "внучка",
+    "pos": "noun",
+    "theme": "Семья и отношения",
+    "visual": "A cute little granddaughter"
+  },
+  {
+    "tr": "sevgili",
+    "ru": "любимый, дорогой",
+    "pos": "noun",
+    "theme": "Семья и отношения",
+    "visual": "Two hands forming a heart shape together"
+  },
+  {
+    "tr": "kız",
+    "ru": "девочка, дочь",
+    "pos": "noun",
+    "theme": "Семья и отношения",
+    "visual": "A cheerful little girl"
+  },
+  {
+    "tr": "komşu",
+    "ru": "сосед, соседний",
+    "pos": "noun",
+    "theme": "Семья и отношения",
+    "visual": "Two neighboring houses with a friendly person waving between them"
+  },
+  {
+    "tr": "avcı",
+    "ru": "охотник",
+    "pos": "noun",
+    "theme": "Профессии",
+    "visual": "A hunter in forest attire holding a bow"
+  },
+  {
+    "tr": "balıkçı",
+    "ru": "рыбак, рыбацкий",
+    "pos": "noun",
+    "theme": "Профессии",
+    "visual": "A fisherman in a raincoat holding a fishing rod"
+  },
+  {
+    "tr": "fok",
+    "ru": "тюлень",
+    "pos": "noun",
+    "theme": "Животные",
+    "visual": "A cute round seal with flippers resting on a rock"
+  },
+  {
+    "tr": "kırmızı",
+    "ru": "красный",
+    "pos": "adjective",
+    "theme": "Цвета",
+    "visual": "A solid bright red circle swatch"
+  },
+  {
+    "tr": "boş",
+    "ru": "пустой",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "An empty open box, nothing inside"
+  },
+  {
+    "tr": "büyük",
+    "ru": "большой",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A large oversized object beside a tiny one"
+  },
+  {
+    "tr": "dalgalı",
+    "ru": "волнистый",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A wavy curly texture pattern"
+  },
+  {
+    "tr": "dikkatli",
+    "ru": "осторожный",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A cautious person tiptoeing carefully"
+  },
+  {
+    "tr": "gerçek",
+    "ru": "настоящий",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A stamp mark reading genuine with a checkmark"
+  },
+  {
+    "tr": "güçlü",
+    "ru": "сильный",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A strong flexed muscular arm"
+  },
+  {
+    "tr": "halsiz",
+    "ru": "слабо, обессиленный",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A tired person slumping with low energy"
+  },
+  {
+    "tr": "hasta",
+    "ru": "больной",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A sick person in bed with a thermometer"
+  },
+  {
+    "tr": "kalın",
+    "ru": "толстый, грубый",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A thick chunky rope coiled up"
+  },
+  {
+    "tr": "kötü",
+    "ru": "плохой",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A frowning face with a thumbs down"
+  },
+  {
+    "tr": "küçük",
+    "ru": "маленький",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A tiny small object next to a bigger one"
+  },
+  {
+    "tr": "sessiz",
+    "ru": "тихий",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A finger held over lips in a shushing gesture"
+  },
+  {
+    "tr": "sivri",
+    "ru": "острый",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A sharp pointed spike"
+  },
+  {
+    "tr": "sevimli",
+    "ru": "милый",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "An adorable cute round character"
+  },
+  {
+    "tr": "yavaş",
+    "ru": "медленный",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A slow snail crawling"
+  },
+  {
+    "tr": "zavallı",
+    "ru": "бедный, несчастный",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A sad forlorn figure sitting alone"
+  },
+  {
+    "tr": "zor",
+    "ru": "тяжело, сложно",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A person straining to lift a heavy weight"
+  },
+  {
+    "tr": "özgür",
+    "ru": "свободный",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A bird flying freely out of an open cage"
+  },
+  {
+    "tr": "böyle",
+    "ru": "так, такой",
+    "pos": "adverb",
+    "theme": "Прилагательные и сравнения",
+    "visual": "An arrow pointing at an example object, like-this concept"
+  },
+  {
+    "tr": "sayın",
+    "ru": "уважаемый",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A respectful bow gesture toward a formal figure"
+  },
+  {
+    "tr": "artık",
+    "ru": "теперь, уже",
+    "pos": "adverb",
+    "theme": "Календарь и время",
+    "visual": "A clock hand moving forward"
+  },
+  {
+    "tr": "hemen",
+    "ru": "сразу, немедленно",
+    "pos": "adverb",
+    "theme": "Календарь и время",
+    "visual": "A running figure with speed lines, immediacy"
+  },
+  {
+    "tr": "gün",
+    "ru": "день",
+    "pos": "noun",
+    "theme": "Календарь и время",
+    "visual": "A bright sun in a blue daytime sky"
+  },
+  {
+    "tr": "gece",
+    "ru": "ночь",
+    "pos": "noun",
+    "theme": "Календарь и время",
+    "visual": "A crescent moon and stars in a dark night sky"
+  },
+  {
+    "tr": "sabah",
+    "ru": "утро",
+    "pos": "noun",
+    "theme": "Календарь и время",
+    "visual": "A rising sun over hills at sunrise"
+  },
+  {
+    "tr": "hafta",
+    "ru": "неделя",
+    "pos": "noun",
+    "theme": "Календарь и время",
+    "visual": "A calendar page showing seven days"
+  },
+  {
+    "tr": "yılbaşı",
+    "ru": "Новый год",
+    "pos": "noun",
+    "theme": "Календарь и время",
+    "visual": "A New Year's Eve fireworks celebration at midnight"
+  },
+  {
+    "tr": "noel baba",
+    "ru": "Дед Мороз",
+    "pos": "noun",
+    "theme": "Календарь и время",
+    "visual": "A jolly Santa Claus with a red suit and white beard"
+  },
+  {
+    "tr": "birden",
+    "ru": "вдруг",
+    "pos": "adverb",
+    "theme": "Календарь и время",
+    "visual": "A surprised burst with exclamation lines"
+  },
+  {
+    "tr": "bir süre",
+    "ru": "некоторое время",
+    "pos": "noun",
+    "theme": "Календарь и время",
+    "visual": "An hourglass with sand flowing"
+  },
+  {
+    "tr": "ilk önce",
+    "ru": "прежде всего, сначала",
+    "pos": "adverb",
+    "theme": "Календарь и время",
+    "visual": "A number one flag marking the first step"
+  },
+  {
+    "tr": "o sırada",
+    "ru": "в тот момент",
+    "pos": "adverb",
+    "theme": "Календарь и время",
+    "visual": "A clock frozen showing a specific moment"
+  },
+  {
+    "tr": "hâlâ",
+    "ru": "всё ещё",
+    "pos": "adverb",
+    "theme": "Календарь и время",
+    "visual": "A clock still ticking, continuing over time"
+  },
+  {
+    "tr": "son",
+    "ru": "конец",
+    "pos": "noun",
+    "theme": "Календарь и время",
+    "visual": "A checkered finish flag marking the end"
+  },
+  {
+    "tr": "alt",
+    "ru": "низ, под",
+    "pos": "preposition",
+    "theme": "Направления и предлоги",
+    "visual": "A downward arrow pointing under a shelf"
+  },
+  {
+    "tr": "orada",
+    "ru": "там",
+    "pos": "adverb",
+    "theme": "Направления и предлоги",
+    "visual": "A pin marker pointing at a distant spot"
+  },
+  {
+    "tr": "oraya",
+    "ru": "туда",
+    "pos": "adverb",
+    "theme": "Направления и предлоги",
+    "visual": "An arrow pointing toward a distant location"
+  },
+  {
+    "tr": "yan",
+    "ru": "сторона",
+    "pos": "noun",
+    "theme": "Направления и предлоги",
+    "visual": "An arrow pointing sideways"
+  },
+  {
+    "tr": "iç",
+    "ru": "внутри",
+    "pos": "noun",
+    "theme": "Направления и предлоги",
+    "visual": "An arrow pointing into an open box"
+  },
+  {
+    "tr": "yer",
+    "ru": "место",
+    "pos": "noun",
+    "theme": "Направления и предлоги",
+    "visual": "A pin marker on a small map"
+  },
+  {
+    "tr": "karşı",
+    "ru": "напротив",
+    "pos": "preposition",
+    "theme": "Направления и предлоги",
+    "visual": "Two arrows facing each other across a gap"
+  },
+  {
+    "tr": "nereye",
+    "ru": "куда",
+    "pos": "pronoun",
+    "theme": "Направления и предлоги",
+    "visual": "A question mark over a signpost with arrows"
+  },
+  {
+    "tr": "ama",
+    "ru": "но",
+    "pos": "other",
+    "theme": "Служебные слова",
+    "visual": "An abstract contrast symbol, two opposite arrows"
+  },
+  {
+    "tr": "ben",
+    "ru": "я",
+    "pos": "pronoun",
+    "theme": "Служебные слова",
+    "visual": "A simple figure pointing to itself"
+  },
+  {
+    "tr": "ben de",
+    "ru": "я тоже",
+    "pos": "pronoun",
+    "theme": "Служебные слова",
+    "visual": "Two identical hands raised together"
+  },
+  {
+    "tr": "benim",
+    "ru": "моя, мой",
+    "pos": "pronoun",
+    "theme": "Служебные слова",
+    "visual": "A hand holding a small tag labeled with a star, possession"
+  },
+  {
+    "tr": "bu",
+    "ru": "этот, эта",
+    "pos": "pronoun",
+    "theme": "Служебные слова",
+    "visual": "A pointing finger at a nearby object"
+  },
+  {
+    "tr": "bu yüzden",
+    "ru": "поэтому",
+    "pos": "other",
+    "theme": "Служебные слова",
+    "visual": "An arrow connecting a cause to an effect"
+  },
+  {
+    "tr": "evet",
+    "ru": "да",
+    "pos": "other",
+    "theme": "Служебные слова",
+    "visual": "A green checkmark"
+  },
+  {
+    "tr": "fakat",
+    "ru": "однако, но",
+    "pos": "other",
+    "theme": "Служебные слова",
+    "visual": "An abstract contrast symbol between two shapes"
+  },
+  {
+    "tr": "için",
+    "ru": "для, чтобы",
+    "pos": "preposition",
+    "theme": "Служебные слова",
+    "visual": "A small gift box with an arrow pointing to it"
+  },
+  {
+    "tr": "kim",
+    "ru": "кто",
+    "pos": "pronoun",
+    "theme": "Служебные слова",
+    "visual": "A question mark over a plain silhouette figure"
+  },
+  {
+    "tr": "o",
+    "ru": "он, она, оно",
+    "pos": "pronoun",
+    "theme": "Служебные слова",
+    "visual": "A neutral silhouette figure"
+  },
+  {
+    "tr": "ona",
+    "ru": "ей, ему",
+    "pos": "pronoun",
+    "theme": "Служебные слова",
+    "visual": "An arrow pointing toward a silhouette figure"
+  },
+  {
+    "tr": "tabii ki",
+    "ru": "конечно же",
+    "pos": "other",
+    "theme": "Служебные слова",
+    "visual": "A confident thumbs up next to a checkmark"
+  },
+  {
+    "tr": "ve",
+    "ru": "и",
+    "pos": "other",
+    "theme": "Служебные слова",
+    "visual": "A plus sign linking two small shapes"
+  },
+  {
+    "tr": "çünkü",
+    "ru": "потому что",
+    "pos": "other",
+    "theme": "Служебные слова",
+    "visual": "A question mark connected by an arrow to a lightbulb"
+  },
+  {
+    "tr": "hem",
+    "ru": "и... и, тоже",
+    "pos": "other",
+    "theme": "Служебные слова",
+    "visual": "Two identical puzzle pieces joined together"
+  },
+  {
+    "tr": "tamam",
+    "ru": "хорошо, ладно",
+    "pos": "other",
+    "theme": "Служебные слова",
+    "visual": "A green checkmark inside a circle"
+  },
+  {
+    "tr": "hoş geldin",
+    "ru": "добро пожаловать",
+    "pos": "other",
+    "theme": "Служебные слова",
+    "visual": "An open door with a welcoming glow"
+  },
+  {
+    "tr": "hoş bulduk",
+    "ru": "спасибо (ответ на приветствие)",
+    "pos": "other",
+    "theme": "Служебные слова",
+    "visual": "Two hands meeting in a warm greeting"
+  },
+  {
+    "tr": "yok",
+    "ru": "нет, не имеется",
+    "pos": "other",
+    "theme": "Служебные слова",
+    "visual": "A red cross mark over an empty space"
+  },
+  {
+    "tr": "iyilik",
+    "ru": "доброта",
+    "pos": "noun",
+    "theme": "Эмоции и чувства",
+    "visual": "A helping hand gently offering a small heart"
+  },
+  {
+    "tr": "ilgi",
+    "ru": "забота, внимание",
+    "pos": "noun",
+    "theme": "Эмоции и чувства",
+    "visual": "A caring hand gently over a small growing plant"
+  },
+  {
+    "tr": "dürüstlük",
+    "ru": "честность",
+    "pos": "noun",
+    "theme": "Эмоции и чувства",
+    "visual": "A handshake with a small golden halo above it"
+  },
+  {
+    "tr": "yardım",
+    "ru": "помощь",
+    "pos": "noun",
+    "theme": "Эмоции и чувства",
+    "visual": "Two hands reaching to help each other up"
+  },
+  {
+    "tr": "seçim",
+    "ru": "выбор",
+    "pos": "noun",
+    "theme": "Эмоции и чувства",
+    "visual": "Two diverging paths with a signpost"
+  },
+  {
+    "tr": "açılmak",
+    "ru": "открываться",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A door swinging open by itself"
+  },
+  {
+    "tr": "çağırmak",
+    "ru": "звать",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A person cupping hands to their mouth, calling out"
+  },
+  {
+    "tr": "hareket etmek",
+    "ru": "двигаться",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "Motion arrows swirling around a walking figure"
+  },
+  {
+    "tr": "koşmak",
+    "ru": "бежать",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A person running fast with motion lines"
+  },
+  {
+    "tr": "yürümek",
+    "ru": "идти, гулять",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A person walking calmly along a path"
+  },
+  {
+    "tr": "kaybolmak",
+    "ru": "исчезать",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A figure fading into transparency, vanishing"
+  },
+  {
+    "tr": "doldurmak",
+    "ru": "наполнять",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A glass being filled up with water"
+  },
+  {
+    "tr": "gülümsemek",
+    "ru": "улыбаться",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A gently smiling face"
+  },
+  {
+    "tr": "inanmak",
+    "ru": "верить",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A hand over a heart with a soft glowing light"
+  },
+  {
+    "tr": "tutmak",
+    "ru": "держать",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A hand firmly gripping a small object"
+  },
+  {
+    "tr": "uyumak",
+    "ru": "спать",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A person sleeping peacefully with a Zzz symbol"
+  },
+  {
+    "tr": "yazmak",
+    "ru": "писать",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A hand writing with a pen on paper"
+  },
+  {
+    "tr": "bırakmak",
+    "ru": "оставлять, покидать",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A hand releasing a small object, letting go"
+  },
+  {
+    "tr": "gezmek",
+    "ru": "гулять",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A person strolling and sightseeing outdoors"
+  },
+  {
+    "tr": "işitmek",
+    "ru": "слышать",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "An ear with sound waves around it"
+  },
+  {
+    "tr": "kalmak",
+    "ru": "оставаться, пробыть",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A figure standing still while others walk away"
+  },
+  {
+    "tr": "saldırmak",
+    "ru": "наброситься",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A wolf lunging forward aggressively"
+  },
+  {
+    "tr": "sarılmak",
+    "ru": "обниматься",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "Two figures hugging warmly"
+  },
+  {
+    "tr": "varmak",
+    "ru": "прибывать",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A figure arriving at a finish flag"
+  },
+  {
+    "tr": "yaklaşmak",
+    "ru": "приблизиться",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A figure walking closer toward a house"
+  },
+  {
+    "tr": "yalan söylemek",
+    "ru": "врать",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A cartoon figure with a long growing nose"
+  },
+  {
+    "tr": "yatmak",
+    "ru": "лечь в кровать",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A person lying down comfortably in bed"
+  },
+  {
+    "tr": "çıkarmak",
+    "ru": "доставать",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A hand pulling an object out of a bag"
+  },
+  {
+    "tr": "öldürmek",
+    "ru": "убивать",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "An axe resting against a tree stump, symbolic"
+  },
+  {
+    "tr": "öpüşmek",
+    "ru": "целоваться",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "Two silhouette figures sharing a gentle kiss"
+  },
+  {
+    "tr": "ders",
+    "ru": "урок, вывод",
+    "pos": "noun",
+    "theme": "Школа и канцтовары",
+    "visual": "An open textbook on a school desk"
+  },
+  {
+    "tr": "cümle",
+    "ru": "предложение (грамм.)",
+    "pos": "noun",
+    "theme": "Школа и канцтовары",
+    "visual": "A sentence written on a chalkboard with punctuation"
+  },
+  {
+    "tr": "not",
+    "ru": "записка",
+    "pos": "noun",
+    "theme": "Школа и канцтовары",
+    "visual": "A small handwritten note pinned to a board"
+  },
+  {
+    "tr": "ceza",
+    "ru": "наказание",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A red warning stop sign"
+  },
+  {
+    "tr": "kutu",
+    "ru": "коробка",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A closed cardboard box"
+  },
+  {
+    "tr": "torba",
+    "ru": "мешок",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A tied cloth sack bag"
+  },
+  {
+    "tr": "hediye",
+    "ru": "подарок",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A wrapped gift box with a ribbon bow"
+  },
+  {
+    "tr": "mektup",
+    "ru": "письмо",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A sealed envelope letter"
+  },
+  {
+    "tr": "ağ",
+    "ru": "сеть",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A woven fishing net"
+  },
+  {
+    "tr": "ev",
+    "ru": "дом",
+    "pos": "noun",
+    "theme": "Дом и мебель",
+    "visual": "A cozy small house with a red roof"
+  },
+  {
+    "tr": "oda",
+    "ru": "комната",
+    "pos": "noun",
+    "theme": "Дом и мебель",
+    "visual": "A furnished room interior with a bed and window"
+  },
+  {
+    "tr": "şehir",
+    "ru": "город",
+    "pos": "noun",
+    "theme": "Город и места",
+    "visual": "A city skyline with tall buildings"
+  },
+  {
+    "tr": "deniz feneri",
+    "ru": "маяк",
+    "pos": "noun",
+    "theme": "Город и места",
+    "visual": "A tall lighthouse on a rocky coast with a beam of light"
+  },
+  {
+    "tr": "köy",
+    "ru": "деревня",
+    "pos": "noun",
+    "theme": "Город и места",
+    "visual": "A small rural village with cottages and fields"
+  },
+  {
+    "tr": "dalga",
+    "ru": "волна",
+    "pos": "noun",
+    "theme": "Природа и погода",
+    "visual": "A rolling ocean wave"
+  },
+  {
+    "tr": "kum",
+    "ru": "песок",
+    "pos": "noun",
+    "theme": "Природа и погода",
+    "visual": "A pile of golden beach sand"
+  },
+  {
+    "tr": "sahil",
+    "ru": "берег, пляж",
+    "pos": "noun",
+    "theme": "Природа и погода",
+    "visual": "A sunny sandy beach shoreline with gentle waves"
+  },
+  {
+    "tr": "dal",
+    "ru": "ветвь",
+    "pos": "noun",
+    "theme": "Природа и погода",
+    "visual": "A tree branch with green leaves"
+  },
+  {
+    "tr": "pasta",
+    "ru": "торт, пирожное",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A decorated layered cake slice"
+  },
+  {
+    "tr": "börek",
+    "ru": "пирожок",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A golden baked pastry roll"
+  },
+  {
+    "tr": "çay",
+    "ru": "чай",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A glass of hot Turkish tea"
+  },
+  {
+    "tr": "su",
+    "ru": "вода",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A clear glass of water"
+  },
+  {
+    "tr": "baş",
+    "ru": "голова",
+    "pos": "noun",
+    "theme": "Части тела",
+    "visual": "A human head silhouette"
+  },
+  {
+    "tr": "karın",
+    "ru": "живот",
+    "pos": "noun",
+    "theme": "Части тела",
+    "visual": "A human torso highlighting the belly area"
   }
 ]
