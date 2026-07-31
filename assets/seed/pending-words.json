@@ -6186,5 +6186,1706 @@
     "pos": "noun",
     "theme": "Части тела",
     "visual": "A human torso highlighting the belly area"
+  },
+  {
+    "tr": "birinci",
+    "ru": "первый",
+    "pos": "adjective",
+    "theme": "Числительные",
+    "visual": "A first-place ribbon with number 1"
+  },
+  {
+    "tr": "ikinci",
+    "ru": "второй",
+    "pos": "adjective",
+    "theme": "Числительные",
+    "visual": "A second-place ribbon with number 2"
+  },
+  {
+    "tr": "üçüncü",
+    "ru": "третий",
+    "pos": "adjective",
+    "theme": "Числительные",
+    "visual": "A third-place ribbon with number 3"
+  },
+  {
+    "tr": "dördüncü",
+    "ru": "четвёртый",
+    "pos": "adjective",
+    "theme": "Числительные",
+    "visual": "A ribbon marked with number 4"
+  },
+  {
+    "tr": "beşinci",
+    "ru": "пятый",
+    "pos": "adjective",
+    "theme": "Числительные",
+    "visual": "A ribbon marked with number 5"
+  },
+  {
+    "tr": "altıncı",
+    "ru": "шестой",
+    "pos": "adjective",
+    "theme": "Числительные",
+    "visual": "A ribbon marked with number 6"
+  },
+  {
+    "tr": "yedinci",
+    "ru": "седьмой",
+    "pos": "adjective",
+    "theme": "Числительные",
+    "visual": "A ribbon marked with number 7"
+  },
+  {
+    "tr": "sekizinci",
+    "ru": "восьмой",
+    "pos": "adjective",
+    "theme": "Числительные",
+    "visual": "A ribbon marked with number 8"
+  },
+  {
+    "tr": "dokuzuncu",
+    "ru": "девятый",
+    "pos": "adjective",
+    "theme": "Числительные",
+    "visual": "A ribbon marked with number 9"
+  },
+  {
+    "tr": "onuncu",
+    "ru": "десятый",
+    "pos": "adjective",
+    "theme": "Числительные",
+    "visual": "A ribbon marked with number 10"
+  },
+  {
+    "tr": "kaç",
+    "ru": "сколько",
+    "pos": "pronoun",
+    "theme": "Числительные",
+    "visual": "A question mark over a group of countable dots"
+  },
+  {
+    "tr": "kaçıncı",
+    "ru": "который по счёту",
+    "pos": "pronoun",
+    "theme": "Числительные",
+    "visual": "A question mark over a numbered ribbon"
+  },
+  {
+    "tr": "tane",
+    "ru": "штука",
+    "pos": "noun",
+    "theme": "Числительные",
+    "visual": "A few small identical items being counted"
+  },
+  {
+    "tr": "yaş",
+    "ru": "возраст",
+    "pos": "noun",
+    "theme": "Календарь и время",
+    "visual": "A birthday cake with lit candles"
+  },
+  {
+    "tr": "boy",
+    "ru": "рост",
+    "pos": "noun",
+    "theme": "Части тела",
+    "visual": "A measuring ruler beside a standing child"
+  },
+  {
+    "tr": "ağırlık",
+    "ru": "вес",
+    "pos": "noun",
+    "theme": "Части тела",
+    "visual": "A weighing scale"
+  },
+  {
+    "tr": "kilo",
+    "ru": "килограмм, вес",
+    "pos": "noun",
+    "theme": "Части тела",
+    "visual": "A kitchen scale showing a weight number"
+  },
+  {
+    "tr": "doğum tarihi",
+    "ru": "дата рождения",
+    "pos": "noun",
+    "theme": "Календарь и время",
+    "visual": "A calendar page with a birthday cake icon"
+  },
+  {
+    "tr": "telefon numarası",
+    "ru": "номер телефона",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A smartphone showing a phone number"
+  },
+  {
+    "tr": "saat",
+    "ru": "час, часы",
+    "pos": "noun",
+    "theme": "Календарь и время",
+    "visual": "A round wall clock"
+  },
+  {
+    "tr": "kedi",
+    "ru": "кошка",
+    "pos": "noun",
+    "theme": "Животные",
+    "visual": "A cute sitting cat"
+  },
+  {
+    "tr": "köpek",
+    "ru": "собака",
+    "pos": "noun",
+    "theme": "Животные",
+    "visual": "A happy sitting dog"
+  },
+  {
+    "tr": "arı",
+    "ru": "пчела",
+    "pos": "noun",
+    "theme": "Насекомые",
+    "visual": "A fuzzy yellow and black bee"
+  },
+  {
+    "tr": "fil",
+    "ru": "слон",
+    "pos": "noun",
+    "theme": "Животные",
+    "visual": "A gray elephant with big ears"
+  },
+  {
+    "tr": "kaplumbağa",
+    "ru": "черепаха",
+    "pos": "noun",
+    "theme": "Животные",
+    "visual": "A turtle with a patterned shell"
+  },
+  {
+    "tr": "hamster",
+    "ru": "хомяк",
+    "pos": "noun",
+    "theme": "Животные",
+    "visual": "A round fluffy hamster"
+  },
+  {
+    "tr": "geyik",
+    "ru": "олень",
+    "pos": "noun",
+    "theme": "Животные",
+    "visual": "A deer with antlers"
+  },
+  {
+    "tr": "zürafa",
+    "ru": "жираф",
+    "pos": "noun",
+    "theme": "Животные",
+    "visual": "A tall spotted giraffe"
+  },
+  {
+    "tr": "kaz",
+    "ru": "гусь",
+    "pos": "noun",
+    "theme": "Животные",
+    "visual": "A white goose"
+  },
+  {
+    "tr": "horoz",
+    "ru": "петух",
+    "pos": "noun",
+    "theme": "Животные",
+    "visual": "A colorful rooster"
+  },
+  {
+    "tr": "koyun",
+    "ru": "овца",
+    "pos": "noun",
+    "theme": "Животные",
+    "visual": "A fluffy white sheep"
+  },
+  {
+    "tr": "kirpi",
+    "ru": "ёж",
+    "pos": "noun",
+    "theme": "Животные",
+    "visual": "A small spiky hedgehog"
+  },
+  {
+    "tr": "sincap",
+    "ru": "белка",
+    "pos": "noun",
+    "theme": "Животные",
+    "visual": "A squirrel holding a nut"
+  },
+  {
+    "tr": "panda",
+    "ru": "панда",
+    "pos": "noun",
+    "theme": "Животные",
+    "visual": "A black and white panda bear"
+  },
+  {
+    "tr": "yunus",
+    "ru": "дельфин",
+    "pos": "noun",
+    "theme": "Животные",
+    "visual": "A dolphin leaping over waves"
+  },
+  {
+    "tr": "penguen",
+    "ru": "пингвин",
+    "pos": "noun",
+    "theme": "Животные",
+    "visual": "A cute standing penguin"
+  },
+  {
+    "tr": "ahtapot",
+    "ru": "осьминог",
+    "pos": "noun",
+    "theme": "Животные",
+    "visual": "A purple octopus with curled tentacles"
+  },
+  {
+    "tr": "karınca",
+    "ru": "муравей",
+    "pos": "noun",
+    "theme": "Насекомые",
+    "visual": "A tiny busy ant"
+  },
+  {
+    "tr": "uğur böceği",
+    "ru": "божья коровка",
+    "pos": "noun",
+    "theme": "Насекомые",
+    "visual": "A red ladybug with black spots"
+  },
+  {
+    "tr": "sinek",
+    "ru": "муха",
+    "pos": "noun",
+    "theme": "Насекомые",
+    "visual": "A small fly"
+  },
+  {
+    "tr": "yüzmek",
+    "ru": "плавать",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A figure swimming through water"
+  },
+  {
+    "tr": "üzüm",
+    "ru": "виноград",
+    "pos": "noun",
+    "theme": "Фрукты",
+    "visual": "A bunch of green grapes"
+  },
+  {
+    "tr": "vişne",
+    "ru": "вишня",
+    "pos": "noun",
+    "theme": "Фрукты",
+    "visual": "A pair of dark red sour cherries"
+  },
+  {
+    "tr": "ananas",
+    "ru": "ананас",
+    "pos": "noun",
+    "theme": "Фрукты",
+    "visual": "A spiky pineapple with leafy top"
+  },
+  {
+    "tr": "mandalina",
+    "ru": "мандарин",
+    "pos": "noun",
+    "theme": "Фрукты",
+    "visual": "A small orange mandarin with a leaf"
+  },
+  {
+    "tr": "erik",
+    "ru": "слива",
+    "pos": "noun",
+    "theme": "Фрукты",
+    "visual": "A purple plum"
+  },
+  {
+    "tr": "yaban mersini",
+    "ru": "черника",
+    "pos": "noun",
+    "theme": "Фрукты",
+    "visual": "A handful of blueberries"
+  },
+  {
+    "tr": "ahududu",
+    "ru": "малина",
+    "pos": "noun",
+    "theme": "Фрукты",
+    "visual": "A ripe red raspberry"
+  },
+  {
+    "tr": "böğürtlen",
+    "ru": "ежевика",
+    "pos": "noun",
+    "theme": "Фрукты",
+    "visual": "A dark ripe blackberry"
+  },
+  {
+    "tr": "incir",
+    "ru": "инжир",
+    "pos": "noun",
+    "theme": "Фрукты",
+    "visual": "A halved ripe fig"
+  },
+  {
+    "tr": "trabzon hurması",
+    "ru": "хурма",
+    "pos": "noun",
+    "theme": "Фрукты",
+    "visual": "An orange persimmon fruit"
+  },
+  {
+    "tr": "avokado",
+    "ru": "авокадо",
+    "pos": "noun",
+    "theme": "Фрукты",
+    "visual": "A halved avocado showing its pit"
+  },
+  {
+    "tr": "çekirdek",
+    "ru": "косточка, семечко",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A small fruit seed"
+  },
+  {
+    "tr": "kabuk",
+    "ru": "кожура",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A peeled fruit skin curl"
+  },
+  {
+    "tr": "dilim",
+    "ru": "долька, ломтик",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A sliced wedge of fruit"
+  },
+  {
+    "tr": "sıkmak",
+    "ru": "выжимать",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A hand squeezing juice from a citrus fruit"
+  },
+  {
+    "tr": "ekşi",
+    "ru": "кислый",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A face wincing at a sour lemon"
+  },
+  {
+    "tr": "pancar",
+    "ru": "свёкла",
+    "pos": "noun",
+    "theme": "Овощи",
+    "visual": "A round dark red beet with leaves"
+  },
+  {
+    "tr": "balkabağı",
+    "ru": "тыква",
+    "pos": "noun",
+    "theme": "Овощи",
+    "visual": "An orange pumpkin"
+  },
+  {
+    "tr": "brokoli",
+    "ru": "брокколи",
+    "pos": "noun",
+    "theme": "Овощи",
+    "visual": "A head of green broccoli"
+  },
+  {
+    "tr": "ıspanak",
+    "ru": "шпинат",
+    "pos": "noun",
+    "theme": "Овощи",
+    "visual": "A bunch of fresh spinach leaves"
+  },
+  {
+    "tr": "fasulye",
+    "ru": "фасоль",
+    "pos": "noun",
+    "theme": "Овощи",
+    "visual": "A handful of green beans"
+  },
+  {
+    "tr": "dereotu",
+    "ru": "укроп",
+    "pos": "noun",
+    "theme": "Овощи",
+    "visual": "A bunch of feathery dill"
+  },
+  {
+    "tr": "roka",
+    "ru": "руккола",
+    "pos": "noun",
+    "theme": "Овощи",
+    "visual": "A bunch of arugula leaves"
+  },
+  {
+    "tr": "mantar",
+    "ru": "гриб",
+    "pos": "noun",
+    "theme": "Овощи",
+    "visual": "A brown mushroom"
+  },
+  {
+    "tr": "yeşil biber",
+    "ru": "зелёный перец",
+    "pos": "noun",
+    "theme": "Овощи",
+    "visual": "A green bell pepper"
+  },
+  {
+    "tr": "acı biber",
+    "ru": "острый перец",
+    "pos": "noun",
+    "theme": "Овощи",
+    "visual": "A red hot chili pepper"
+  },
+  {
+    "tr": "kuşkonmaz",
+    "ru": "спаржа",
+    "pos": "noun",
+    "theme": "Овощи",
+    "visual": "A bundle of asparagus spears"
+  },
+  {
+    "tr": "enginar",
+    "ru": "артишок",
+    "pos": "noun",
+    "theme": "Овощи",
+    "visual": "A whole green artichoke"
+  },
+  {
+    "tr": "bamya",
+    "ru": "окра",
+    "pos": "noun",
+    "theme": "Овощи",
+    "visual": "A handful of green okra pods"
+  },
+  {
+    "tr": "kırmızı lahana",
+    "ru": "краснокочанная капуста",
+    "pos": "noun",
+    "theme": "Овощи",
+    "visual": "A purple-red cabbage head"
+  },
+  {
+    "tr": "haşlamak",
+    "ru": "варить",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A pot of boiling water with bubbles"
+  },
+  {
+    "tr": "kızartmak",
+    "ru": "жарить",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A frying pan with sizzling food"
+  },
+  {
+    "tr": "fırınlamak",
+    "ru": "запекать",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A tray of food baking in an oven"
+  },
+  {
+    "tr": "doğramak",
+    "ru": "резать, нарезать",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A knife chopping vegetables on a board"
+  },
+  {
+    "tr": "soymak",
+    "ru": "чистить, очищать",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A hand peeling a fruit's skin"
+  },
+  {
+    "tr": "karıştırmak",
+    "ru": "перемешивать",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A spoon stirring inside a bowl"
+  },
+  {
+    "tr": "sotelemek",
+    "ru": "пассеровать",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "Vegetables sizzling lightly in a shallow pan"
+  },
+  {
+    "tr": "yuvarlak",
+    "ru": "круглый",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A perfectly round ball shape"
+  },
+  {
+    "tr": "acı",
+    "ru": "острый, горький",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A face reacting to a spicy chili"
+  },
+  {
+    "tr": "tuzlu",
+    "ru": "солёный",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A pile of salt crystals"
+  },
+  {
+    "tr": "sulu",
+    "ru": "сочный",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A juicy dripping fruit slice"
+  },
+  {
+    "tr": "çiğ",
+    "ru": "сырой",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A raw uncooked vegetable"
+  },
+  {
+    "tr": "pişmiş",
+    "ru": "приготовленный, варёный",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A cooked steaming dish"
+  },
+  {
+    "tr": "kızarmış",
+    "ru": "жареный",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "Golden crispy fried food"
+  },
+  {
+    "tr": "fırınlanmış",
+    "ru": "запечённый",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A golden baked dish fresh from the oven"
+  },
+  {
+    "tr": "haşlanmış",
+    "ru": "варёный",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A boiled egg on a spoon"
+  },
+  {
+    "tr": "organik",
+    "ru": "органический",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A leaf stamped with an organic seal"
+  },
+  {
+    "tr": "doğal",
+    "ru": "натуральный",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A green leaf next to natural food"
+  },
+  {
+    "tr": "donmuş",
+    "ru": "замороженный",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A frozen food item covered in ice crystals"
+  },
+  {
+    "tr": "ızgara",
+    "ru": "на гриле, гриль",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "Food with visible grill marks"
+  },
+  {
+    "tr": "tahta",
+    "ru": "доска",
+    "pos": "noun",
+    "theme": "Кухня и посуда",
+    "visual": "A wooden cutting board"
+  },
+  {
+    "tr": "süzgeç",
+    "ru": "дуршлаг",
+    "pos": "noun",
+    "theme": "Кухня и посуда",
+    "visual": "A metal colander"
+  },
+  {
+    "tr": "rende",
+    "ru": "тёрка",
+    "pos": "noun",
+    "theme": "Кухня и посуда",
+    "visual": "A kitchen grater"
+  },
+  {
+    "tr": "karabiber",
+    "ru": "чёрный перец",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A small dish of ground black pepper"
+  },
+  {
+    "tr": "sirke",
+    "ru": "уксус",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A glass bottle of vinegar"
+  },
+  {
+    "tr": "garnitür",
+    "ru": "гарнир",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A side dish of vegetables next to a main plate"
+  },
+  {
+    "tr": "meze",
+    "ru": "закуска",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A small plate of assorted appetizers"
+  },
+  {
+    "tr": "güneş",
+    "ru": "солнце",
+    "pos": "noun",
+    "theme": "Природа и погода",
+    "visual": "A bright shining sun"
+  },
+  {
+    "tr": "gök gürültüsü",
+    "ru": "гром",
+    "pos": "noun",
+    "theme": "Природа и погода",
+    "visual": "Dark storm clouds with sound waves"
+  },
+  {
+    "tr": "çöl",
+    "ru": "пустыня",
+    "pos": "noun",
+    "theme": "Природа и погода",
+    "visual": "A sandy desert with dunes and a cactus"
+  },
+  {
+    "tr": "tarla",
+    "ru": "поле",
+    "pos": "noun",
+    "theme": "Природа и погода",
+    "visual": "A green farm field"
+  },
+  {
+    "tr": "ırmak",
+    "ru": "река",
+    "pos": "noun",
+    "theme": "Природа и погода",
+    "visual": "A winding river through hills"
+  },
+  {
+    "tr": "vadi",
+    "ru": "долина",
+    "pos": "noun",
+    "theme": "Природа и погода",
+    "visual": "A green valley between mountains"
+  },
+  {
+    "tr": "ada",
+    "ru": "остров",
+    "pos": "noun",
+    "theme": "Природа и погода",
+    "visual": "A small tropical island with palm trees"
+  },
+  {
+    "tr": "çimen",
+    "ru": "трава",
+    "pos": "noun",
+    "theme": "Природа и погода",
+    "visual": "A patch of green grass"
+  },
+  {
+    "tr": "palmiye",
+    "ru": "пальма",
+    "pos": "noun",
+    "theme": "Природа и погода",
+    "visual": "A tall tropical palm tree"
+  },
+  {
+    "tr": "çalı",
+    "ru": "куст",
+    "pos": "noun",
+    "theme": "Природа и погода",
+    "visual": "A round green bush"
+  },
+  {
+    "tr": "tohum",
+    "ru": "семя",
+    "pos": "noun",
+    "theme": "Природа и погода",
+    "visual": "A small seed sprouting in soil"
+  },
+  {
+    "tr": "güneşli",
+    "ru": "солнечно",
+    "pos": "adjective",
+    "theme": "Природа и погода",
+    "visual": "A sunny sky with a bright sun"
+  },
+  {
+    "tr": "yağmurlu",
+    "ru": "дождливо",
+    "pos": "adjective",
+    "theme": "Природа и погода",
+    "visual": "A rainy sky with falling raindrops"
+  },
+  {
+    "tr": "karlı",
+    "ru": "снежно",
+    "pos": "adjective",
+    "theme": "Природа и погода",
+    "visual": "A snowy landscape with snowflakes"
+  },
+  {
+    "tr": "rüzgarlı",
+    "ru": "ветрено",
+    "pos": "adjective",
+    "theme": "Природа и погода",
+    "visual": "Trees bending in strong wind"
+  },
+  {
+    "tr": "sisli",
+    "ru": "туманно",
+    "pos": "adjective",
+    "theme": "Природа и погода",
+    "visual": "A foggy landscape with low visibility"
+  },
+  {
+    "tr": "kuru",
+    "ru": "сухо",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A cracked dry desert ground"
+  },
+  {
+    "tr": "nemli",
+    "ru": "влажно",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "Water droplets on a green leaf"
+  },
+  {
+    "tr": "şimdi",
+    "ru": "сейчас",
+    "pos": "adverb",
+    "theme": "Календарь и время",
+    "visual": "A clock hand pointing to the present moment"
+  },
+  {
+    "tr": "geçiyor",
+    "ru": "прошло",
+    "pos": "other",
+    "theme": "Календарь и время",
+    "visual": "A clock hand moving past a mark"
+  },
+  {
+    "tr": "çeyrek",
+    "ru": "четверть",
+    "pos": "noun",
+    "theme": "Календарь и время",
+    "visual": "A clock face divided into quarters"
+  },
+  {
+    "tr": "buçuk",
+    "ru": "половина",
+    "pos": "noun",
+    "theme": "Календарь и время",
+    "visual": "A clock showing a half-past time"
+  },
+  {
+    "tr": "dakika",
+    "ru": "минута",
+    "pos": "noun",
+    "theme": "Календарь и время",
+    "visual": "A stopwatch showing minutes"
+  },
+  {
+    "tr": "öğle",
+    "ru": "полдень, день",
+    "pos": "noun",
+    "theme": "Календарь и время",
+    "visual": "A sun directly overhead at noon"
+  },
+  {
+    "tr": "akşam",
+    "ru": "вечер",
+    "pos": "noun",
+    "theme": "Календарь и время",
+    "visual": "An orange sunset sky"
+  },
+  {
+    "tr": "ne zaman",
+    "ru": "когда",
+    "pos": "other",
+    "theme": "Служебные слова",
+    "visual": "A question mark over a clock"
+  },
+  {
+    "tr": "kaçta",
+    "ru": "во сколько",
+    "pos": "other",
+    "theme": "Служебные слова",
+    "visual": "A question mark over a clock face"
+  },
+  {
+    "tr": "uyanmak",
+    "ru": "просыпаться",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A person stretching awake in bed"
+  },
+  {
+    "tr": "yıl",
+    "ru": "год",
+    "pos": "noun",
+    "theme": "Календарь и время",
+    "visual": "A calendar showing a full year grid"
+  },
+  {
+    "tr": "ay",
+    "ru": "месяц",
+    "pos": "noun",
+    "theme": "Календарь и время",
+    "visual": "A calendar page for one month"
+  },
+  {
+    "tr": "güz",
+    "ru": "осень",
+    "pos": "noun",
+    "theme": "Природа и погода",
+    "visual": "Autumn trees with falling orange leaves"
+  },
+  {
+    "tr": "ocak",
+    "ru": "январь",
+    "pos": "noun",
+    "theme": "Календарь и время",
+    "visual": "A winter calendar page marked January"
+  },
+  {
+    "tr": "resmî tatil",
+    "ru": "праздничный день",
+    "pos": "noun",
+    "theme": "Календарь и время",
+    "visual": "A calendar date marked with a star"
+  },
+  {
+    "tr": "tarih",
+    "ru": "дата",
+    "pos": "noun",
+    "theme": "Календарь и время",
+    "visual": "A calendar page with a circled date"
+  },
+  {
+    "tr": "takvim",
+    "ru": "календарь",
+    "pos": "noun",
+    "theme": "Календарь и время",
+    "visual": "A wall calendar"
+  },
+  {
+    "tr": "doğum günü",
+    "ru": "день рождения",
+    "pos": "noun",
+    "theme": "Календарь и время",
+    "visual": "A birthday cake with candles and balloons"
+  },
+  {
+    "tr": "tatil",
+    "ru": "отпуск, праздник",
+    "pos": "noun",
+    "theme": "Календарь и время",
+    "visual": "A beach chair and umbrella, vacation concept"
+  },
+  {
+    "tr": "gelecek",
+    "ru": "следующий, будущий",
+    "pos": "adjective",
+    "theme": "Календарь и время",
+    "visual": "An arrow pointing forward in time"
+  },
+  {
+    "tr": "geçen",
+    "ru": "прошлый",
+    "pos": "adjective",
+    "theme": "Календарь и время",
+    "visual": "An arrow pointing backward in time"
+  },
+  {
+    "tr": "büyükbaba",
+    "ru": "дедушка",
+    "pos": "noun",
+    "theme": "Семья и отношения",
+    "visual": "A kind elderly grandfather"
+  },
+  {
+    "tr": "hala",
+    "ru": "тётя (со стороны отца)",
+    "pos": "noun",
+    "theme": "Семья и отношения",
+    "visual": "A warm smiling aunt"
+  },
+  {
+    "tr": "dayı",
+    "ru": "дядя (со стороны матери)",
+    "pos": "noun",
+    "theme": "Семья и отношения",
+    "visual": "A friendly uncle"
+  },
+  {
+    "tr": "amca",
+    "ru": "дядя (со стороны отца)",
+    "pos": "noun",
+    "theme": "Семья и отношения",
+    "visual": "A friendly uncle figure"
+  },
+  {
+    "tr": "yenge",
+    "ru": "тётя (жена дяди)",
+    "pos": "noun",
+    "theme": "Семья и отношения",
+    "visual": "A smiling aunt by marriage"
+  },
+  {
+    "tr": "abi",
+    "ru": "старший брат",
+    "pos": "noun",
+    "theme": "Семья и отношения",
+    "visual": "An older brother figure"
+  },
+  {
+    "tr": "ağabey",
+    "ru": "старший брат",
+    "pos": "noun",
+    "theme": "Семья и отношения",
+    "visual": "An older brother figure smiling"
+  },
+  {
+    "tr": "kardeş",
+    "ru": "брат, сестра",
+    "pos": "noun",
+    "theme": "Семья и отношения",
+    "visual": "Two siblings standing together"
+  },
+  {
+    "tr": "kuzen",
+    "ru": "двоюродный брат/сестра",
+    "pos": "noun",
+    "theme": "Семья и отношения",
+    "visual": "Two young cousins playing together"
+  },
+  {
+    "tr": "kayınbirader",
+    "ru": "деверь",
+    "pos": "noun",
+    "theme": "Семья и отношения",
+    "visual": "A brother-in-law figure"
+  },
+  {
+    "tr": "gelin",
+    "ru": "невестка",
+    "pos": "noun",
+    "theme": "Семья и отношения",
+    "visual": "A bride in a white dress"
+  },
+  {
+    "tr": "damat",
+    "ru": "зять",
+    "pos": "noun",
+    "theme": "Семья и отношения",
+    "visual": "A groom in a suit"
+  },
+  {
+    "tr": "kayınvalide",
+    "ru": "свекровь, тёща",
+    "pos": "noun",
+    "theme": "Семья и отношения",
+    "visual": "A mother-in-law figure"
+  },
+  {
+    "tr": "kayınpeder",
+    "ru": "свёкор, тесть",
+    "pos": "noun",
+    "theme": "Семья и отношения",
+    "visual": "A father-in-law figure"
+  },
+  {
+    "tr": "akraba",
+    "ru": "родственник",
+    "pos": "noun",
+    "theme": "Семья и отношения",
+    "visual": "A group of relatives standing together"
+  },
+  {
+    "tr": "soy",
+    "ru": "род",
+    "pos": "noun",
+    "theme": "Семья и отношения",
+    "visual": "A family tree trunk"
+  },
+  {
+    "tr": "sülale",
+    "ru": "семейство, родня",
+    "pos": "noun",
+    "theme": "Семья и отношения",
+    "visual": "A large extended family tree"
+  },
+  {
+    "tr": "nesil",
+    "ru": "поколение",
+    "pos": "noun",
+    "theme": "Семья и отношения",
+    "visual": "Three generations standing in a row"
+  },
+  {
+    "tr": "kan bağı",
+    "ru": "кровное родство",
+    "pos": "noun",
+    "theme": "Семья и отношения",
+    "visual": "Linked family tree branches"
+  },
+  {
+    "tr": "evli",
+    "ru": "женат, замужем",
+    "pos": "adjective",
+    "theme": "Семья и отношения",
+    "visual": "A wedding ring on a finger"
+  },
+  {
+    "tr": "bekar",
+    "ru": "холост, не замужем",
+    "pos": "adjective",
+    "theme": "Семья и отношения",
+    "visual": "A single figure with no ring"
+  },
+  {
+    "tr": "dul",
+    "ru": "вдовец, вдова",
+    "pos": "noun",
+    "theme": "Семья и отношения",
+    "visual": "A lone elderly figure holding a photo"
+  },
+  {
+    "tr": "soyadı",
+    "ru": "фамилия",
+    "pos": "noun",
+    "theme": "Семья и отношения",
+    "visual": "A name tag with a surname field"
+  },
+  {
+    "tr": "ad",
+    "ru": "имя",
+    "pos": "noun",
+    "theme": "Семья и отношения",
+    "visual": "A name tag with a first name field"
+  },
+  {
+    "tr": "doğum yeri",
+    "ru": "место рождения",
+    "pos": "noun",
+    "theme": "Семья и отношения",
+    "visual": "A pin marker on a birth city map"
+  },
+  {
+    "tr": "medeni hali",
+    "ru": "семейное положение",
+    "pos": "noun",
+    "theme": "Семья и отношения",
+    "visual": "A form with a marital status checkbox"
+  },
+  {
+    "tr": "vücut",
+    "ru": "тело",
+    "pos": "noun",
+    "theme": "Части тела",
+    "visual": "A human body silhouette"
+  },
+  {
+    "tr": "omuz",
+    "ru": "плечо",
+    "pos": "noun",
+    "theme": "Части тела",
+    "visual": "A shoulder highlighted on a body"
+  },
+  {
+    "tr": "göğüs",
+    "ru": "грудь",
+    "pos": "noun",
+    "theme": "Части тела",
+    "visual": "A chest highlighted on a body"
+  },
+  {
+    "tr": "alın",
+    "ru": "лоб",
+    "pos": "noun",
+    "theme": "Части тела",
+    "visual": "A forehead highlighted on a face"
+  },
+  {
+    "tr": "dirsek",
+    "ru": "локоть",
+    "pos": "noun",
+    "theme": "Части тела",
+    "visual": "An elbow joint highlighted on an arm"
+  },
+  {
+    "tr": "başparmak",
+    "ru": "большой палец",
+    "pos": "noun",
+    "theme": "Части тела",
+    "visual": "A thumb held up"
+  },
+  {
+    "tr": "topuk",
+    "ru": "пятка",
+    "pos": "noun",
+    "theme": "Части тела",
+    "visual": "A heel highlighted on a foot"
+  },
+  {
+    "tr": "ayak parmağı",
+    "ru": "палец ноги",
+    "pos": "noun",
+    "theme": "Части тела",
+    "visual": "A highlighted toe on a foot"
+  },
+  {
+    "tr": "koklamak",
+    "ru": "нюхать",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A nose sniffing a flower"
+  },
+  {
+    "tr": "tatmak",
+    "ru": "пробовать на вкус",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A tongue tasting a spoonful of food"
+  },
+  {
+    "tr": "ağrımak",
+    "ru": "болеть (о части тела)",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A hand holding a hurting head with pain marks"
+  },
+  {
+    "tr": "şaşkın",
+    "ru": "удивлённый",
+    "pos": "adjective",
+    "theme": "Эмоции и чувства",
+    "visual": "A face with wide eyes and raised eyebrows"
+  },
+  {
+    "tr": "utanmak",
+    "ru": "стесняться",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A shy figure covering a blushing face"
+  },
+  {
+    "tr": "neşeli",
+    "ru": "весёлый",
+    "pos": "adjective",
+    "theme": "Эмоции и чувства",
+    "visual": "A cheerful bouncing figure with music notes"
+  },
+  {
+    "tr": "stresli",
+    "ru": "в стрессе",
+    "pos": "adjective",
+    "theme": "Эмоции и чувства",
+    "visual": "A tense figure holding their head under pressure lines"
+  },
+  {
+    "tr": "yorgun",
+    "ru": "уставший",
+    "pos": "adjective",
+    "theme": "Эмоции и чувства",
+    "visual": "A drooping tired figure"
+  },
+  {
+    "tr": "uykulu",
+    "ru": "сонный",
+    "pos": "adjective",
+    "theme": "Эмоции и чувства",
+    "visual": "A yawning sleepy figure"
+  },
+  {
+    "tr": "aç",
+    "ru": "голодный",
+    "pos": "adjective",
+    "theme": "Эмоции и чувства",
+    "visual": "A figure with a growling empty stomach"
+  },
+  {
+    "tr": "tok",
+    "ru": "сытый",
+    "pos": "adjective",
+    "theme": "Эмоции и чувства",
+    "visual": "A satisfied figure patting a full stomach"
+  },
+  {
+    "tr": "susamak",
+    "ru": "испытывать жажду",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A thirsty figure reaching for a glass of water"
+  },
+  {
+    "tr": "rahat",
+    "ru": "расслабленный, удобный",
+    "pos": "adjective",
+    "theme": "Эмоции и чувства",
+    "visual": "A relaxed figure lounging comfortably"
+  },
+  {
+    "tr": "gergin",
+    "ru": "напряжённый",
+    "pos": "adjective",
+    "theme": "Эмоции и чувства",
+    "visual": "A tense figure with clenched shoulders"
+  },
+  {
+    "tr": "gerçekten",
+    "ru": "действительно",
+    "pos": "adverb",
+    "theme": "Прилагательные и сравнения",
+    "visual": "An emphasis mark, truly-so concept"
+  },
+  {
+    "tr": "oldukça",
+    "ru": "довольно",
+    "pos": "adverb",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A partially filled intensity bar"
+  },
+  {
+    "tr": "geçmek",
+    "ru": "проходить",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A figure walking past a landmark"
+  },
+  {
+    "tr": "soyunmak",
+    "ru": "раздеваться",
+    "pos": "verb",
+    "theme": "Одежда и аксессуары",
+    "visual": "A figure taking off a jacket"
+  },
+  {
+    "tr": "yıkanmak",
+    "ru": "мыться, купаться",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A figure washing under a shower"
+  },
+  {
+    "tr": "diş fırçalamak",
+    "ru": "чистить зубы",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A hand brushing teeth with a toothbrush"
+  },
+  {
+    "tr": "kahvaltı yapmak",
+    "ru": "завтракать",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A breakfast plate with eggs and bread"
+  },
+  {
+    "tr": "taşımak",
+    "ru": "нести, носить",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A person carrying a box"
+  },
+  {
+    "tr": "duş almak",
+    "ru": "принимать душ",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A figure standing under a running shower"
+  },
+  {
+    "tr": "okumak",
+    "ru": "читать",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A person reading an open book"
+  },
+  {
+    "tr": "cevap vermek",
+    "ru": "отвечать",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A figure raising a hand to answer"
+  },
+  {
+    "tr": "anlatmak",
+    "ru": "рассказывать, объяснять",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A figure telling a story with a speech bubble"
+  },
+  {
+    "tr": "fısıldamak",
+    "ru": "шептать",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A figure whispering into another's ear"
+  },
+  {
+    "tr": "tekrar etmek",
+    "ru": "повторять",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A circular repeat arrow over a speech bubble"
+  },
+  {
+    "tr": "tanışmak",
+    "ru": "знакомиться",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "Two figures shaking hands meeting for the first time"
+  },
+  {
+    "tr": "açıklamak",
+    "ru": "объяснять",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A figure pointing at a lightbulb explaining"
+  },
+  {
+    "tr": "not almak",
+    "ru": "делать заметки",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A hand writing notes on a notepad"
+  },
+  {
+    "tr": "beğenmek",
+    "ru": "нравиться, одобрять",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A thumbs up with a small heart"
+  },
+  {
+    "tr": "şaşırmak",
+    "ru": "удивляться",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A figure with a surprised wide-eyed expression"
+  },
+  {
+    "tr": "heyecanlanmak",
+    "ru": "волноваться",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A figure with sparkling excited eyes"
+  },
+  {
+    "tr": "rahatlamak",
+    "ru": "расслабляться",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A figure exhaling calmly with relief lines"
+  },
+  {
+    "tr": "hayal etmek",
+    "ru": "мечтать",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A figure daydreaming with a thought bubble castle"
+  },
+  {
+    "tr": "kırılmak",
+    "ru": "обижаться",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A figure with a hurt expression and a cracked heart"
+  },
+  {
+    "tr": "rahatsız olmak",
+    "ru": "чувствовать дискомфорт",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A figure wincing in mild discomfort"
+  },
+  {
+    "tr": "alışmak",
+    "ru": "привыкать",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A figure settling comfortably into a new routine"
+  },
+  {
+    "tr": "pişman olmak",
+    "ru": "сожалеть",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A figure with a regretful expression holding their head"
+  },
+  {
+    "tr": "özür dilemek",
+    "ru": "извиняться",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A figure bowing slightly with an apologetic expression"
+  },
+  {
+    "tr": "takdir etmek",
+    "ru": "ценить",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "Hands clapping in appreciation"
+  },
+  {
+    "tr": "izlemek",
+    "ru": "смотреть, следить",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A figure watching attentively through binoculars"
+  },
+  {
+    "tr": "hızlanmak",
+    "ru": "ускоряться",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A figure speeding up with motion lines"
+  },
+  {
+    "tr": "yavaşlamak",
+    "ru": "замедляться",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A figure slowing down gradually"
+  },
+  {
+    "tr": "düzenlemek",
+    "ru": "приводить в порядок, организовывать",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "Hands neatly arranging items on a shelf"
+  },
+  {
+    "tr": "düzeltmek",
+    "ru": "исправлять",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A hand correcting text with an eraser"
+  },
+  {
+    "tr": "kırmak",
+    "ru": "ломать",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A hand breaking a stick in half"
+  },
+  {
+    "tr": "yakmak",
+    "ru": "включать, зажигать",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A hand switching on a glowing lightbulb"
+  },
+  {
+    "tr": "söndürmek",
+    "ru": "выключать, тушить",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A hand switching off a lightbulb"
+  },
+  {
+    "tr": "başarmak",
+    "ru": "добиваться успеха",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A figure raising arms in triumph on a podium"
+  },
+  {
+    "tr": "bağlamak",
+    "ru": "завязывать",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "Hands tying a shoelace knot"
+  },
+  {
+    "tr": "yüklemek",
+    "ru": "загружать",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A person loading boxes into a truck"
+  },
+  {
+    "tr": "indirmek",
+    "ru": "выгружать, спускать",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A person unloading boxes from a truck"
+  },
+  {
+    "tr": "kapanmak",
+    "ru": "закрываться",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "An umbrella folding closed"
+  },
+  {
+    "tr": "yükselmek",
+    "ru": "подниматься",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A hot air balloon rising upward"
+  },
+  {
+    "tr": "alçalmak",
+    "ru": "опускаться",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A hot air balloon descending downward"
+  },
+  {
+    "tr": "ölmek",
+    "ru": "умирать",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A wilted flower, symbolic end-of-life concept"
+  },
+  {
+    "tr": "onarmak",
+    "ru": "чинить",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A hand repairing a cracked vase with glue"
+  },
+  {
+    "tr": "önlemek",
+    "ru": "предотвращать, запрещать",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A raised hand in a stop gesture"
+  },
+  {
+    "tr": "izin vermek",
+    "ru": "разрешать",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A hand giving a thumbs-up approval"
+  },
+  {
+    "tr": "artmak",
+    "ru": "увеличиваться",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "An upward trending bar chart"
+  },
+  {
+    "tr": "azalmak",
+    "ru": "уменьшаться",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A downward trending bar chart"
+  },
+  {
+    "tr": "hatırlatmak",
+    "ru": "напоминать",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A figure tapping another's shoulder with a reminder note"
+  },
+  {
+    "tr": "saklamak",
+    "ru": "прятать",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A hand hiding a small object behind their back"
+  },
+  {
+    "tr": "paylaşmak",
+    "ru": "делиться",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "Two figures sharing a treat between them"
+  },
+  {
+    "tr": "bitirmek",
+    "ru": "заканчивать",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A checkered finish flag"
+  },
+  {
+    "tr": "ilerlemek",
+    "ru": "двигаться вперёд",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A figure walking forward along a path"
+  },
+  {
+    "tr": "kirletmek",
+    "ru": "грязнить, пачкать",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A hand smudging dirt onto a clean surface"
+  },
+  {
+    "tr": "övmek",
+    "ru": "хвалить",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A figure giving an approving thumbs up with praise stars"
+  },
+  {
+    "tr": "eleştirmek",
+    "ru": "критиковать",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A figure pointing out a flaw with a red mark"
+  },
+  {
+    "tr": "silmek",
+    "ru": "стирать, вытирать",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A hand wiping a whiteboard clean"
   }
 ]
