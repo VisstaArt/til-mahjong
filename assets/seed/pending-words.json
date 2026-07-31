@@ -9546,5 +9546,691 @@
     "pos": "preposition",
     "theme": "Направления и предлоги",
     "visual": "An object positioned between two others"
+  },
+  {
+    "tr": "kilim",
+    "ru": "коврик тканый",
+    "pos": "noun",
+    "theme": "Дом и мебель",
+    "visual": "A woven flat-weave rug"
+  },
+  {
+    "tr": "abajur",
+    "ru": "абажур",
+    "pos": "noun",
+    "theme": "Дом и мебель",
+    "visual": "A lamp with a fabric shade"
+  },
+  {
+    "tr": "tablo",
+    "ru": "картина",
+    "pos": "noun",
+    "theme": "Дом и мебель",
+    "visual": "A framed landscape painting on a wall"
+  },
+  {
+    "tr": "vazo",
+    "ru": "ваза",
+    "pos": "noun",
+    "theme": "Дом и мебель",
+    "visual": "A ceramic vase with flowers"
+  },
+  {
+    "tr": "sehpa",
+    "ru": "журнальный столик",
+    "pos": "noun",
+    "theme": "Дом и мебель",
+    "visual": "A small round coffee table"
+  },
+  {
+    "tr": "yatak başlığı",
+    "ru": "изголовье",
+    "pos": "noun",
+    "theme": "Дом и мебель",
+    "visual": "A padded bed headboard"
+  },
+  {
+    "tr": "yatak örtüsü",
+    "ru": "покрывало",
+    "pos": "noun",
+    "theme": "Дом и мебель",
+    "visual": "A quilted bed cover"
+  },
+  {
+    "tr": "yastık kılıfı",
+    "ru": "наволочка",
+    "pos": "noun",
+    "theme": "Дом и мебель",
+    "visual": "A patterned pillowcase"
+  },
+  {
+    "tr": "nevresim",
+    "ru": "пододеяльник",
+    "pos": "noun",
+    "theme": "Дом и мебель",
+    "visual": "A duvet cover set"
+  },
+  {
+    "tr": "yorgan",
+    "ru": "одеяло пуховое",
+    "pos": "noun",
+    "theme": "Дом и мебель",
+    "visual": "A fluffy duvet"
+  },
+  {
+    "tr": "battaniye",
+    "ru": "плед, одеяло",
+    "pos": "noun",
+    "theme": "Дом и мебель",
+    "visual": "A folded cozy blanket"
+  },
+  {
+    "tr": "yatak takımı",
+    "ru": "постельный комплект",
+    "pos": "noun",
+    "theme": "Дом и мебель",
+    "visual": "A matching bedding set"
+  },
+  {
+    "tr": "şilte",
+    "ru": "матрас",
+    "pos": "noun",
+    "theme": "Дом и мебель",
+    "visual": "A thick mattress"
+  },
+  {
+    "tr": "masa örtüsü",
+    "ru": "скатерть",
+    "pos": "noun",
+    "theme": "Кухня и посуда",
+    "visual": "A tablecloth on a dining table"
+  },
+  {
+    "tr": "peçete",
+    "ru": "салфетка",
+    "pos": "noun",
+    "theme": "Кухня и посуда",
+    "visual": "A folded cloth napkin"
+  },
+  {
+    "tr": "runner",
+    "ru": "дорожка на стол",
+    "pos": "noun",
+    "theme": "Кухня и посуда",
+    "visual": "A table runner across a wooden table"
+  },
+  {
+    "tr": "fırın eldiveni",
+    "ru": "прихватка, рукавица",
+    "pos": "noun",
+    "theme": "Кухня и посуда",
+    "visual": "An oven mitt"
+  },
+  {
+    "tr": "peçetelik",
+    "ru": "салфетница",
+    "pos": "noun",
+    "theme": "Кухня и посуда",
+    "visual": "A napkin holder"
+  },
+  {
+    "tr": "bornoz",
+    "ru": "халат (банный)",
+    "pos": "noun",
+    "theme": "Ванная и гигиена",
+    "visual": "A cozy bathrobe"
+  },
+  {
+    "tr": "duş perdesi",
+    "ru": "занавеска для душа",
+    "pos": "noun",
+    "theme": "Ванная и гигиена",
+    "visual": "A shower curtain"
+  },
+  {
+    "tr": "hindi eti",
+    "ru": "индейка (мясо)",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "Sliced turkey meat"
+  },
+  {
+    "tr": "dana eti",
+    "ru": "говядина",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "Fresh cuts of beef"
+  },
+  {
+    "tr": "kuzu eti",
+    "ru": "баранина",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "Fresh cuts of lamb"
+  },
+  {
+    "tr": "kıyma",
+    "ru": "фарш",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A pile of minced meat"
+  },
+  {
+    "tr": "biftek",
+    "ru": "стейк",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A grilled beef steak"
+  },
+  {
+    "tr": "pirzola",
+    "ru": "отбивная",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A grilled lamb chop"
+  },
+  {
+    "tr": "sosis",
+    "ru": "сосиски",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A few cooked sausages"
+  },
+  {
+    "tr": "tereyağı",
+    "ru": "сливочное масло",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A block of butter on a dish"
+  },
+  {
+    "tr": "yumurta",
+    "ru": "яйцо",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A few brown eggs in a basket"
+  },
+  {
+    "tr": "beyaz peynir",
+    "ru": "белый сыр (брынза)",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A block of white feta-style cheese"
+  },
+  {
+    "tr": "kaşar peyniri",
+    "ru": "кашарный сыр",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A wedge of yellow kashar cheese"
+  },
+  {
+    "tr": "tulum peyniri",
+    "ru": "сыр тулум",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A crumbly wrapped goat cheese"
+  },
+  {
+    "tr": "lor peyniri",
+    "ru": "творожный сыр",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A bowl of soft curd cheese"
+  },
+  {
+    "tr": "ayçiçek yağı",
+    "ru": "подсолнечное масло",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A bottle of sunflower oil"
+  },
+  {
+    "tr": "susam yağı",
+    "ru": "кунжутное масло",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A small bottle of sesame oil"
+  },
+  {
+    "tr": "ayran",
+    "ru": "айран",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A glass of white ayran yogurt drink"
+  },
+  {
+    "tr": "bitki çayı",
+    "ru": "травяной чай",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A cup of herbal tea with dried flowers"
+  },
+  {
+    "tr": "bal",
+    "ru": "мёд",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A jar of golden honey with a honey dipper"
+  },
+  {
+    "tr": "reçel",
+    "ru": "варенье",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A jar of fruit jam"
+  },
+  {
+    "tr": "tahin",
+    "ru": "тахини",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A jar of sesame paste"
+  },
+  {
+    "tr": "pekmez",
+    "ru": "виноградный сироп, пекмез",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A jar of thick grape molasses"
+  },
+  {
+    "tr": "vezne",
+    "ru": "касса (в учреждении)",
+    "pos": "noun",
+    "theme": "Город и места",
+    "visual": "A service counter window with a clerk"
+  },
+  {
+    "tr": "başvuru",
+    "ru": "заявление",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A hand submitting an application form"
+  },
+  {
+    "tr": "kimlik",
+    "ru": "удостоверение личности",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "An ID card with a photo"
+  },
+  {
+    "tr": "pasaport",
+    "ru": "паспорт",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A passport booklet"
+  },
+  {
+    "tr": "vergi",
+    "ru": "налог",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A form with a percentage tax symbol"
+  },
+  {
+    "tr": "adliye",
+    "ru": "суд",
+    "pos": "noun",
+    "theme": "Город и места",
+    "visual": "A courthouse building with columns"
+  },
+  {
+    "tr": "hâkim",
+    "ru": "судья",
+    "pos": "noun",
+    "theme": "Профессии",
+    "visual": "A judge in a robe holding a gavel"
+  },
+  {
+    "tr": "dava",
+    "ru": "дело, иск",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A folder labeled as a legal case file"
+  },
+  {
+    "tr": "avukat",
+    "ru": "адвокат",
+    "pos": "noun",
+    "theme": "Профессии",
+    "visual": "A lawyer in a suit holding a briefcase"
+  },
+  {
+    "tr": "polis",
+    "ru": "полицейский",
+    "pos": "noun",
+    "theme": "Профессии",
+    "visual": "A police officer in uniform"
+  },
+  {
+    "tr": "şikayet",
+    "ru": "жалоба",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A written complaint form"
+  },
+  {
+    "tr": "itfaiye",
+    "ru": "пожарная часть",
+    "pos": "noun",
+    "theme": "Город и места",
+    "visual": "A fire station with a red fire truck"
+  },
+  {
+    "tr": "itfaiyeci",
+    "ru": "пожарный",
+    "pos": "noun",
+    "theme": "Профессии",
+    "visual": "A firefighter in protective gear"
+  },
+  {
+    "tr": "yangın",
+    "ru": "пожар",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "Flames and smoke from a fire"
+  },
+  {
+    "tr": "sosyal yardım",
+    "ru": "социальная помощь",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "Hands offering support and aid"
+  },
+  {
+    "tr": "danışman",
+    "ru": "консультант",
+    "pos": "noun",
+    "theme": "Профессии",
+    "visual": "An advisor sitting at a desk helping someone"
+  },
+  {
+    "tr": "kargo",
+    "ru": "посылка",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A wrapped parcel box"
+  },
+  {
+    "tr": "pul",
+    "ru": "почтовая марка",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A postage stamp"
+  },
+  {
+    "tr": "posta kutusu",
+    "ru": "почтовый ящик",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A mailbox"
+  },
+  {
+    "tr": "anaokulu",
+    "ru": "детский сад",
+    "pos": "noun",
+    "theme": "Город и места",
+    "visual": "A colorful preschool building"
+  },
+  {
+    "tr": "ilkokul",
+    "ru": "начальная школа",
+    "pos": "noun",
+    "theme": "Город и места",
+    "visual": "An elementary school building"
+  },
+  {
+    "tr": "ortaokul",
+    "ru": "средняя школа",
+    "pos": "noun",
+    "theme": "Город и места",
+    "visual": "A middle school building"
+  },
+  {
+    "tr": "lise",
+    "ru": "старшая школа, лицей",
+    "pos": "noun",
+    "theme": "Город и места",
+    "visual": "A high school building"
+  },
+  {
+    "tr": "sınav",
+    "ru": "экзамен",
+    "pos": "noun",
+    "theme": "Школа и канцтовары",
+    "visual": "A student writing an exam paper"
+  },
+  {
+    "tr": "mezuniyet",
+    "ru": "выпускной",
+    "pos": "noun",
+    "theme": "Школа и канцтовары",
+    "visual": "A graduate in a cap and gown"
+  },
+  {
+    "tr": "üniversite",
+    "ru": "университет",
+    "pos": "noun",
+    "theme": "Город и места",
+    "visual": "A grand university building"
+  },
+  {
+    "tr": "fakülte",
+    "ru": "факультет",
+    "pos": "noun",
+    "theme": "Школа и канцтовары",
+    "visual": "A university faculty building sign"
+  },
+  {
+    "tr": "bölüm",
+    "ru": "отделение, отдел",
+    "pos": "noun",
+    "theme": "Школа и канцтовары",
+    "visual": "A sign marking a department section"
+  },
+  {
+    "tr": "üye",
+    "ru": "член, участник",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A membership card"
+  },
+  {
+    "tr": "kurs",
+    "ru": "курс (обучение)",
+    "pos": "noun",
+    "theme": "Школа и канцтовары",
+    "visual": "A group attending a training course"
+  },
+  {
+    "tr": "eğitim",
+    "ru": "обучение, образование",
+    "pos": "noun",
+    "theme": "Школа и канцтовары",
+    "visual": "A graduation cap over an open book"
+  },
+  {
+    "tr": "sertifika",
+    "ru": "сертификат",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A certificate with a ribbon seal"
+  },
+  {
+    "tr": "meslek",
+    "ru": "профессия",
+    "pos": "noun",
+    "theme": "Школа и канцтовары",
+    "visual": "A row of different career tool icons"
+  },
+  {
+    "tr": "beceri",
+    "ru": "навык",
+    "pos": "noun",
+    "theme": "Школа и канцтовары",
+    "visual": "A gear and lightbulb representing a skill"
+  },
+  {
+    "tr": "sinema",
+    "ru": "кинотеатр",
+    "pos": "noun",
+    "theme": "Город и места",
+    "visual": "A cinema building with a marquee"
+  },
+  {
+    "tr": "seans",
+    "ru": "сеанс",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A movie ticket showing a showtime"
+  },
+  {
+    "tr": "bilet",
+    "ru": "билет",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A torn event ticket"
+  },
+  {
+    "tr": "tiyatro",
+    "ru": "театр",
+    "pos": "noun",
+    "theme": "Город и места",
+    "visual": "A grand theater building with columns"
+  },
+  {
+    "tr": "sahne",
+    "ru": "сцена",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A stage with red curtains and spotlight"
+  },
+  {
+    "tr": "oyuncu",
+    "ru": "актёр",
+    "pos": "noun",
+    "theme": "Профессии",
+    "visual": "An actor performing on stage"
+  },
+  {
+    "tr": "sergi",
+    "ru": "выставка",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "An art exhibition with framed paintings"
+  },
+  {
+    "tr": "eser",
+    "ru": "произведение, экспонат",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A displayed sculpture on a pedestal"
+  },
+  {
+    "tr": "rehber",
+    "ru": "гид",
+    "pos": "noun",
+    "theme": "Профессии",
+    "visual": "A tour guide pointing at a landmark"
+  },
+  {
+    "tr": "konser salonu",
+    "ru": "концертный зал",
+    "pos": "noun",
+    "theme": "Город и места",
+    "visual": "A grand concert hall"
+  },
+  {
+    "tr": "konser",
+    "ru": "концерт",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A crowd at a live music concert"
+  },
+  {
+    "tr": "dinleyici",
+    "ru": "слушатель, зритель",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "An audience listening attentively"
+  },
+  {
+    "tr": "etkinlik",
+    "ru": "мероприятие",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A banner announcing a scheduled event"
+  },
+  {
+    "tr": "spor salonu",
+    "ru": "спортзал",
+    "pos": "noun",
+    "theme": "Город и места",
+    "visual": "A gym with exercise equipment"
+  },
+  {
+    "tr": "antrenman",
+    "ru": "тренировка",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "A figure training with weights"
+  },
+  {
+    "tr": "alet",
+    "ru": "инструмент, тренажёр",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "A piece of gym exercise equipment"
+  },
+  {
+    "tr": "yürüyüş",
+    "ru": "прогулка",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "A figure taking a walk in a park"
+  },
+  {
+    "tr": "bank",
+    "ru": "скамейка",
+    "pos": "noun",
+    "theme": "Город и места",
+    "visual": "A park bench"
+  },
+  {
+    "tr": "piknik",
+    "ru": "пикник",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "A picnic blanket with a basket of food"
+  },
+  {
+    "tr": "kafe",
+    "ru": "кафе",
+    "pos": "noun",
+    "theme": "Город и места",
+    "visual": "A cozy cafe storefront"
+  },
+  {
+    "tr": "menü",
+    "ru": "меню",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "An open restaurant menu"
+  },
+  {
+    "tr": "sipariş",
+    "ru": "заказ",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A waiter taking an order"
+  },
+  {
+    "tr": "hesap",
+    "ru": "счёт (в кафе)",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A restaurant bill on a small tray"
   }
 ]
