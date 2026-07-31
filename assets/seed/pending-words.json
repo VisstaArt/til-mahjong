@@ -11114,5 +11114,411 @@
     "pos": "noun",
     "theme": "Части тела",
     "visual": "Hair bangs highlighted on a face"
+  },
+  {
+    "tr": "mağaza",
+    "ru": "магазин",
+    "pos": "noun",
+    "theme": "Покупки и магазины",
+    "visual": "A storefront shop"
+  },
+  {
+    "tr": "yürüyen merdiven",
+    "ru": "эскалатор",
+    "pos": "noun",
+    "theme": "Покупки и магазины",
+    "visual": "An escalator in a mall"
+  },
+  {
+    "tr": "asansör",
+    "ru": "лифт",
+    "pos": "noun",
+    "theme": "Покупки и магазины",
+    "visual": "An elevator with open doors"
+  },
+  {
+    "tr": "deneme kabini",
+    "ru": "примерочная",
+    "pos": "noun",
+    "theme": "Покупки и магазины",
+    "visual": "A fitting room with a curtain"
+  },
+  {
+    "tr": "çıkış",
+    "ru": "выход",
+    "pos": "noun",
+    "theme": "Покупки и магазины",
+    "visual": "An exit sign over a door"
+  },
+  {
+    "tr": "fiyat etiketi",
+    "ru": "ценник",
+    "pos": "noun",
+    "theme": "Покупки и магазины",
+    "visual": "A price tag on a product"
+  },
+  {
+    "tr": "renk",
+    "ru": "цвет",
+    "pos": "noun",
+    "theme": "Цвета",
+    "visual": "A color wheel"
+  },
+  {
+    "tr": "model",
+    "ru": "модель (товара)",
+    "pos": "noun",
+    "theme": "Покупки и магазины",
+    "visual": "A dress on a mannequin, product model"
+  },
+  {
+    "tr": "fiş",
+    "ru": "чек (кассовый)",
+    "pos": "noun",
+    "theme": "Покупки и магазины",
+    "visual": "A printed store receipt"
+  },
+  {
+    "tr": "iade",
+    "ru": "возврат",
+    "pos": "noun",
+    "theme": "Покупки и магазины",
+    "visual": "A box with a return arrow"
+  },
+  {
+    "tr": "değişim",
+    "ru": "обмен (товара)",
+    "pos": "noun",
+    "theme": "Покупки и магазины",
+    "visual": "Two shopping bags being exchanged"
+  },
+  {
+    "tr": "satın almak",
+    "ru": "покупать",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A hand handing over money for a product"
+  },
+  {
+    "tr": "değiştirmek",
+    "ru": "менять, обменивать",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "Two items being swapped with exchange arrows"
+  },
+  {
+    "tr": "giriş",
+    "ru": "вход",
+    "pos": "noun",
+    "theme": "Покупки и магазины",
+    "visual": "An entrance sign over a door"
+  },
+  {
+    "tr": "danışma",
+    "ru": "справочная, информация",
+    "pos": "noun",
+    "theme": "Покупки и магазины",
+    "visual": "An information desk"
+  },
+  {
+    "tr": "yemek katı",
+    "ru": "фуд-корт",
+    "pos": "noun",
+    "theme": "Покупки и магазины",
+    "visual": "A food court with several stalls"
+  },
+  {
+    "tr": "otopark",
+    "ru": "парковка",
+    "pos": "noun",
+    "theme": "Покупки и магазины",
+    "visual": "A parking lot with cars"
+  },
+  {
+    "tr": "atkı",
+    "ru": "шарф",
+    "pos": "noun",
+    "theme": "Одежда и аксессуары",
+    "visual": "A knitted scarf"
+  },
+  {
+    "tr": "kalite",
+    "ru": "качество",
+    "pos": "noun",
+    "theme": "Покупки и магазины",
+    "visual": "A gold quality seal star"
+  },
+  {
+    "tr": "paket yapmak",
+    "ru": "упаковать",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A hand wrapping a gift box"
+  },
+  {
+    "tr": "poşet",
+    "ru": "пакет (магазинный)",
+    "pos": "noun",
+    "theme": "Покупки и магазины",
+    "visual": "A plastic shopping bag"
+  },
+  {
+    "tr": "türkiye",
+    "ru": "Турция",
+    "pos": "noun",
+    "theme": "Страны и национальности",
+    "visual": "The Turkish flag over a map outline"
+  },
+  {
+    "tr": "almanya",
+    "ru": "Германия",
+    "pos": "noun",
+    "theme": "Страны и национальности",
+    "visual": "The German flag over a map outline"
+  },
+  {
+    "tr": "japonya",
+    "ru": "Япония",
+    "pos": "noun",
+    "theme": "Страны и национальности",
+    "visual": "The Japanese flag over a map outline"
+  },
+  {
+    "tr": "brezilya",
+    "ru": "Бразилия",
+    "pos": "noun",
+    "theme": "Страны и национальности",
+    "visual": "The Brazilian flag over a map outline"
+  },
+  {
+    "tr": "kanada",
+    "ru": "Канада",
+    "pos": "noun",
+    "theme": "Страны и национальности",
+    "visual": "The Canadian flag over a map outline"
+  },
+  {
+    "tr": "ingiltere",
+    "ru": "Англия",
+    "pos": "noun",
+    "theme": "Страны и национальности",
+    "visual": "The British flag over a map outline"
+  },
+  {
+    "tr": "fransa",
+    "ru": "Франция",
+    "pos": "noun",
+    "theme": "Страны и национальности",
+    "visual": "The French flag over a map outline"
+  },
+  {
+    "tr": "italya",
+    "ru": "Италия",
+    "pos": "noun",
+    "theme": "Страны и национальности",
+    "visual": "The Italian flag over a map outline"
+  },
+  {
+    "tr": "hindistan",
+    "ru": "Индия",
+    "pos": "noun",
+    "theme": "Страны и национальности",
+    "visual": "The Indian flag over a map outline"
+  },
+  {
+    "tr": "rusya",
+    "ru": "Россия",
+    "pos": "noun",
+    "theme": "Страны и национальности",
+    "visual": "The Russian flag over a map outline"
+  },
+  {
+    "tr": "avustralya",
+    "ru": "Австралия",
+    "pos": "noun",
+    "theme": "Страны и национальности",
+    "visual": "The Australian flag over a map outline"
+  },
+  {
+    "tr": "meksika",
+    "ru": "Мексика",
+    "pos": "noun",
+    "theme": "Страны и национальности",
+    "visual": "The Mexican flag over a map outline"
+  },
+  {
+    "tr": "güney kore",
+    "ru": "Южная Корея",
+    "pos": "noun",
+    "theme": "Страны и национальности",
+    "visual": "The South Korean flag over a map outline"
+  },
+  {
+    "tr": "almanca",
+    "ru": "немецкий язык",
+    "pos": "noun",
+    "theme": "Страны и национальности",
+    "visual": "A speech bubble with the German flag"
+  },
+  {
+    "tr": "japonca",
+    "ru": "японский язык",
+    "pos": "noun",
+    "theme": "Страны и национальности",
+    "visual": "A speech bubble with the Japanese flag"
+  },
+  {
+    "tr": "portekizce",
+    "ru": "португальский язык",
+    "pos": "noun",
+    "theme": "Страны и национальности",
+    "visual": "A speech bubble with the Portuguese flag"
+  },
+  {
+    "tr": "fransızca",
+    "ru": "французский язык",
+    "pos": "noun",
+    "theme": "Страны и национальности",
+    "visual": "A speech bubble with the French flag"
+  },
+  {
+    "tr": "italyanca",
+    "ru": "итальянский язык",
+    "pos": "noun",
+    "theme": "Страны и национальности",
+    "visual": "A speech bubble with the Italian flag"
+  },
+  {
+    "tr": "hintçe",
+    "ru": "хинди (язык)",
+    "pos": "noun",
+    "theme": "Страны и национальности",
+    "visual": "A speech bubble with the Indian flag"
+  },
+  {
+    "tr": "rusça",
+    "ru": "русский язык",
+    "pos": "noun",
+    "theme": "Страны и национальности",
+    "visual": "A speech bubble with the Russian flag"
+  },
+  {
+    "tr": "çince",
+    "ru": "китайский язык",
+    "pos": "noun",
+    "theme": "Страны и национальности",
+    "visual": "A speech bubble with the Chinese flag"
+  },
+  {
+    "tr": "ispanyolca",
+    "ru": "испанский язык",
+    "pos": "noun",
+    "theme": "Страны и национальности",
+    "visual": "A speech bubble with the Spanish flag"
+  },
+  {
+    "tr": "korece",
+    "ru": "корейский язык",
+    "pos": "noun",
+    "theme": "Страны и национальности",
+    "visual": "A speech bubble with the Korean flag"
+  },
+  {
+    "tr": "hintli",
+    "ru": "индиец, индианка",
+    "pos": "noun",
+    "theme": "Страны и национальности",
+    "visual": "A person with the Indian flag"
+  },
+  {
+    "tr": "çinli",
+    "ru": "китаец, китаянка",
+    "pos": "noun",
+    "theme": "Страны и национальности",
+    "visual": "A person with the Chinese flag"
+  },
+  {
+    "tr": "mısırlı",
+    "ru": "египтянин, египтянка",
+    "pos": "noun",
+    "theme": "Страны и национальности",
+    "visual": "A person with the Egyptian flag"
+  },
+  {
+    "tr": "koreli",
+    "ru": "кореец, кореянка",
+    "pos": "noun",
+    "theme": "Страны и национальности",
+    "visual": "A person with the Korean flag"
+  },
+  {
+    "tr": "bayrak",
+    "ru": "флаг",
+    "pos": "noun",
+    "theme": "Страны и национальности",
+    "visual": "A waving flag on a pole"
+  },
+  {
+    "tr": "milliyet",
+    "ru": "национальность",
+    "pos": "noun",
+    "theme": "Страны и национальности",
+    "visual": "A group of diverse people icon"
+  },
+  {
+    "tr": "insanlar",
+    "ru": "люди",
+    "pos": "noun",
+    "theme": "Страны и национальности",
+    "visual": "A crowd of people silhouettes"
+  },
+  {
+    "tr": "seyahat",
+    "ru": "путешествие",
+    "pos": "noun",
+    "theme": "Страны и национальности",
+    "visual": "A suitcase with travel stickers"
+  },
+  {
+    "tr": "sağ",
+    "ru": "право",
+    "pos": "noun",
+    "theme": "Направления и предлоги",
+    "visual": "A right-pointing arrow"
+  },
+  {
+    "tr": "sol",
+    "ru": "лево",
+    "pos": "noun",
+    "theme": "Направления и предлоги",
+    "visual": "A left-pointing arrow"
+  },
+  {
+    "tr": "üst",
+    "ru": "верх",
+    "pos": "noun",
+    "theme": "Направления и предлоги",
+    "visual": "An upward arrow above a box"
+  },
+  {
+    "tr": "burada",
+    "ru": "здесь",
+    "pos": "adverb",
+    "theme": "Направления и предлоги",
+    "visual": "A pin marker on the current spot"
+  },
+  {
+    "tr": "nerede",
+    "ru": "где",
+    "pos": "pronoun",
+    "theme": "Направления и предлоги",
+    "visual": "A question mark over a map pin"
+  },
+  {
+    "tr": "nereden",
+    "ru": "откуда",
+    "pos": "pronoun",
+    "theme": "Направления и предлоги",
+    "visual": "A question mark over a starting point arrow"
   }
 ]
