@@ -13060,5 +13060,355 @@
     "pos": "noun",
     "theme": "Еда и напитки",
     "visual": "A takeout food bag"
+  },
+  {
+    "tr": "başlangıç",
+    "ru": "закуска",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A small appetizer plate"
+  },
+  {
+    "tr": "ara sıcak",
+    "ru": "горячая закуска",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A warm appetizer dish"
+  },
+  {
+    "tr": "köfte",
+    "ru": "котлеты, тефтели",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "Grilled meatballs on a plate"
+  },
+  {
+    "tr": "tavuk şiş",
+    "ru": "куриный шашлык",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "Chicken skewers on a grill"
+  },
+  {
+    "tr": "balık fileto",
+    "ru": "рыбное филе",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A grilled fish fillet"
+  },
+  {
+    "tr": "karides",
+    "ru": "креветки",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A plate of shrimp"
+  },
+  {
+    "tr": "deniz ürünleri",
+    "ru": "морепродукты",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "An assorted seafood platter"
+  },
+  {
+    "tr": "sos",
+    "ru": "соус",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A small bowl of sauce"
+  },
+  {
+    "tr": "spesiyal",
+    "ru": "фирменное блюдо",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A chef's special dish with a sign"
+  },
+  {
+    "tr": "patates püresi",
+    "ru": "картофельное пюре",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A scoop of mashed potatoes"
+  },
+  {
+    "tr": "acısız",
+    "ru": "неострый",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A crossed-out chili pepper, mild flavor"
+  },
+  {
+    "tr": "baharatlı",
+    "ru": "пряный, со специями",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A dish sprinkled with colorful spices"
+  },
+  {
+    "tr": "doyurucu",
+    "ru": "сытный",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A generously full hearty plate of food"
+  },
+  {
+    "tr": "vejetaryen",
+    "ru": "вегетарианский",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A plate of vegetables with a leaf symbol"
+  },
+  {
+    "tr": "adisyon",
+    "ru": "предварительный счёт",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "An order slip at a restaurant table"
+  },
+  {
+    "tr": "kuver",
+    "ru": "сервировка, куверт",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A set restaurant table setting"
+  },
+  {
+    "tr": "servis ücreti",
+    "ru": "плата за обслуживание",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A receipt with a service fee line"
+  },
+  {
+    "tr": "bahşiş",
+    "ru": "чаевые",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "Coins left on a restaurant table as a tip"
+  },
+  {
+    "tr": "ateş",
+    "ru": "жар, температура",
+    "pos": "noun",
+    "theme": "Здоровье",
+    "visual": "A thermometer showing a fever"
+  },
+  {
+    "tr": "öksürük",
+    "ru": "кашель",
+    "pos": "noun",
+    "theme": "Здоровье",
+    "visual": "A figure coughing into their elbow"
+  },
+  {
+    "tr": "burun akıntısı",
+    "ru": "насморк",
+    "pos": "noun",
+    "theme": "Здоровье",
+    "visual": "A figure with a runny nose and tissue"
+  },
+  {
+    "tr": "boğaz",
+    "ru": "горло",
+    "pos": "noun",
+    "theme": "Здоровье",
+    "visual": "A throat highlighted on a body"
+  },
+  {
+    "tr": "mide",
+    "ru": "желудок",
+    "pos": "noun",
+    "theme": "Здоровье",
+    "visual": "A stomach highlighted on a body"
+  },
+  {
+    "tr": "ilaç",
+    "ru": "лекарство",
+    "pos": "noun",
+    "theme": "Здоровье",
+    "visual": "Pills and a medicine capsule"
+  },
+  {
+    "tr": "reçete",
+    "ru": "рецепт (врачебный)",
+    "pos": "noun",
+    "theme": "Здоровье",
+    "visual": "A doctor's prescription pad"
+  },
+  {
+    "tr": "ağrı",
+    "ru": "боль",
+    "pos": "noun",
+    "theme": "Здоровье",
+    "visual": "A figure wincing with a pain marker"
+  },
+  {
+    "tr": "muayene",
+    "ru": "осмотр (врачебный)",
+    "pos": "noun",
+    "theme": "Здоровье",
+    "visual": "A doctor examining a patient with a stethoscope"
+  },
+  {
+    "tr": "geçmiş olsun",
+    "ru": "выздоравливай",
+    "pos": "other",
+    "theme": "Здоровье",
+    "visual": "A get-well card with a heart"
+  },
+  {
+    "tr": "poliklinik",
+    "ru": "поликлиника",
+    "pos": "noun",
+    "theme": "Здоровье",
+    "visual": "A polyclinic building"
+  },
+  {
+    "tr": "ameliyathane",
+    "ru": "операционная",
+    "pos": "noun",
+    "theme": "Здоровье",
+    "visual": "An operating room"
+  },
+  {
+    "tr": "yoğun bakım",
+    "ru": "отделение интенсивной терапии",
+    "pos": "noun",
+    "theme": "Здоровье",
+    "visual": "An intensive care unit with monitors"
+  },
+  {
+    "tr": "ultrason",
+    "ru": "УЗИ",
+    "pos": "noun",
+    "theme": "Здоровье",
+    "visual": "An ultrasound scan screen"
+  },
+  {
+    "tr": "teşhis",
+    "ru": "диагноз",
+    "pos": "noun",
+    "theme": "Здоровье",
+    "visual": "A doctor pointing at a diagnosis chart"
+  },
+  {
+    "tr": "tedavi",
+    "ru": "лечение",
+    "pos": "noun",
+    "theme": "Здоровье",
+    "visual": "A doctor administering treatment"
+  },
+  {
+    "tr": "tansiyon",
+    "ru": "давление (кровяное)",
+    "pos": "noun",
+    "theme": "Здоровье",
+    "visual": "A blood pressure cuff and monitor"
+  },
+  {
+    "tr": "ağrı kesici",
+    "ru": "обезболивающее",
+    "pos": "noun",
+    "theme": "Здоровье",
+    "visual": "A bottle of pain relief pills"
+  },
+  {
+    "tr": "antibiyotik",
+    "ru": "антибиотик",
+    "pos": "noun",
+    "theme": "Здоровье",
+    "visual": "A pack of antibiotic capsules"
+  },
+  {
+    "tr": "alerji",
+    "ru": "аллергия",
+    "pos": "noun",
+    "theme": "Здоровье",
+    "visual": "A figure sneezing near pollen"
+  },
+  {
+    "tr": "nezle",
+    "ru": "простуда",
+    "pos": "noun",
+    "theme": "Здоровье",
+    "visual": "A figure bundled up with a cold, tissues nearby"
+  },
+  {
+    "tr": "enfeksiyon",
+    "ru": "инфекция",
+    "pos": "noun",
+    "theme": "Здоровье",
+    "visual": "A magnified view of infected cells"
+  },
+  {
+    "tr": "kontrol",
+    "ru": "контроль, осмотр (повторный)",
+    "pos": "noun",
+    "theme": "Здоровье",
+    "visual": "A doctor checking a clipboard follow-up"
+  },
+  {
+    "tr": "rapor",
+    "ru": "справка (медицинская)",
+    "pos": "noun",
+    "theme": "Здоровье",
+    "visual": "A medical report document"
+  },
+  {
+    "tr": "kan",
+    "ru": "кровь",
+    "pos": "noun",
+    "theme": "Здоровье",
+    "visual": "A drop of blood"
+  },
+  {
+    "tr": "idrar",
+    "ru": "моча",
+    "pos": "noun",
+    "theme": "Здоровье",
+    "visual": "A urine sample cup"
+  },
+  {
+    "tr": "şırınga",
+    "ru": "шприц",
+    "pos": "noun",
+    "theme": "Здоровье",
+    "visual": "A medical syringe"
+  },
+  {
+    "tr": "termometre",
+    "ru": "термометр",
+    "pos": "noun",
+    "theme": "Здоровье",
+    "visual": "A medical thermometer"
+  },
+  {
+    "tr": "aşı",
+    "ru": "прививка",
+    "pos": "noun",
+    "theme": "Здоровье",
+    "visual": "A vaccination syringe"
+  },
+  {
+    "tr": "ameliyat",
+    "ru": "операция (хирургическая)",
+    "pos": "noun",
+    "theme": "Здоровье",
+    "visual": "A surgeon operating in scrubs"
+  },
+  {
+    "tr": "röntgen",
+    "ru": "рентген",
+    "pos": "noun",
+    "theme": "Здоровье",
+    "visual": "An X-ray image of a chest"
+  },
+  {
+    "tr": "tahlil",
+    "ru": "анализ (медицинский)",
+    "pos": "noun",
+    "theme": "Здоровье",
+    "visual": "A blood test vial with a lab label"
   }
 ]
