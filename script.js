@@ -361,6 +361,32 @@ function renderIcon(container, tile) {
   container.appendChild(img);
 }
 
+// Лицо игровой плитки со стороны "картинки": если для слова есть иллюстрация — показываем
+// её, как и раньше (понятные существительные/глаголы учатся по образу); если иллюстрации
+// нет — показываем русское слово текстом на светло-зелёном фоне. Так словам, которые трудно
+// нарисовать однозначно (служебные слова, абстрактные понятия), не нужна картинка вовсе —
+// они всегда учатся прямым переводом.
+function renderTileFace(el, tile) {
+  el.innerHTML = "";
+  el.style.background = "";
+  if (COLOR_WORDS[tile.tr]) {
+    el.classList.add("has-icon");
+    el.style.background = COLOR_WORDS[tile.tr];
+    return;
+  }
+  const src = tile.icon || IMAGE_FILES[tile.tr];
+  if (src) {
+    el.classList.add("has-icon");
+    const img = document.createElement("img");
+    img.src = src;
+    img.alt = tile.tr;
+    el.appendChild(img);
+    return;
+  }
+  el.classList.remove("has-icon");
+  el.textContent = tile.ru;
+}
+
 // Значок категории в уголке плитки — помогает увидеть, что два слова из одной
 // тематической группы, даже когда сами плитки — это просто текст без картинки.
 function renderCategoryBadge(el, tile) {
@@ -450,7 +476,7 @@ function render() {
     el.style.top = `${tile.y * UNIT_Y - tile.z * LAYER_SHIFT}px`;
     el.style.zIndex = tile.z * 1000 + tile.y * 10 + tile.x + 1;
     if (tile.type === "image") {
-      el.textContent = tile.ru;
+      renderTileFace(el, tile);
     } else {
       el.textContent = tile.tr;
     }

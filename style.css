@@ -688,6 +688,18 @@ main {
   hyphens: auto;
 }
 
+/* Если для слова есть иллюстрация — плитка становится картинкой (без текстовых отступов). */
+.tile.type-image.has-icon {
+  padding: 0;
+  overflow: hidden;
+}
+
+.tile.type-image.has-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .tile.type-word {
   background: var(--word-bg);
   font-size: 0.78rem;
