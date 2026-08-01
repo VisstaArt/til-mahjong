@@ -138,6 +138,7 @@ const shapeButtons = document.querySelectorAll(".shape-btn");
 const catalogGridEl = document.getElementById("catalog-grid");
 const catalogSelectedCountEl = document.getElementById("catalog-selected-count");
 const catalogTotalCountEl = document.getElementById("catalog-total-count");
+const catalogAvailableCountEl = document.getElementById("catalog-available-count");
 const openAddWordsBtn = document.getElementById("open-add-words-btn");
 const catalogNextBtn = document.getElementById("catalog-next-btn");
 const categoryBackBtn = document.getElementById("category-back-btn");
@@ -171,6 +172,8 @@ let inputLocked = false;
 let allVoices = [];
 let lastSpokenWord = null;
 let customWords = [];
+let categoryManifest = [];
+let manifestByTheme = new Map();
 let currentSuggestions = [];
 
 const VOICE_STORAGE_KEY = "mahjong-tts-voice";
@@ -1000,31 +1003,48 @@ function wordsByCategory() {
   return byTheme;
 }
 
+function formatSize(kb) {
+  if (kb >= 1024) return `${(kb / 1024).toFixed(1)} МБ`;
+  return `${Math.round(kb)} КБ`;
+}
+
 function renderCatalog() {
   document.getElementById("catalog-loading").classList.add("hidden");
   const words = getAllAvailableWords();
   const selectedCount = words.filter((w) => !excludedWords.has(w.tr)).length;
   catalogSelectedCountEl.textContent = selectedCount;
   catalogTotalCountEl.textContent = words.length;
+  catalogAvailableCountEl.textContent = categoryManifest.reduce((s, m) => s + m.count, 0);
 
   const byTheme = wordsByCategory();
+  const loaded = getLoadedCategories();
   catalogGridEl.innerHTML = "";
   CATEGORIES.forEach((theme) => {
-    const themeWords = byTheme.get(theme);
-    if (!themeWords || !themeWords.length) return;
+    const manifestEntry = manifestByTheme.get(theme);
+    const manifestCount = manifestEntry ? manifestEntry.count : 0;
+    const themeWords = byTheme.get(theme) || [];
+    if (!manifestCount && !themeWords.length) return; // категория пока без слов
+
+    const isLoaded = loaded.has(theme);
     const themeSelected = themeWords.filter((w) => !excludedWords.has(w.tr)).length;
 
     const tile = document.createElement("div");
-    tile.className = "catalog-tile";
+    tile.className = "catalog-tile" + (isLoaded ? "" : " not-loaded");
     const image = CATEGORY_IMAGE[theme];
     const visual = image
       ? `<img class="tile-image" src="${image}" alt="" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'emoji',textContent:'${CATEGORY_EMOJI[theme] || "🔤"}'}))" />`
       : `<span class="emoji">${CATEGORY_EMOJI[theme] || "🔤"}</span>`;
+    const countLabel = isLoaded
+      ? `${themeSelected}/${themeWords.length || manifestCount}`
+      : `⬇ ${manifestCount} слов`;
+    const sizeLabel =
+      !isLoaded && manifestEntry ? `<span class="size">${formatSize(manifestEntry.sizeKB)}</span>` : "";
     tile.innerHTML =
       visual +
       `<div class="tile-overlay">` +
       `<span class="name">${theme}</span>` +
-      `<span class="count">${themeSelected}/${themeWords.length}</span>` +
+      `<span class="count">${countLabel}</span>` +
+      sizeLabel +
       `</div>`;
     tile.addEventListener("click", () => openCategory(theme));
     catalogGridEl.appendChild(tile);
@@ -1033,11 +1053,16 @@ function renderCatalog() {
   updateDeckSummary();
 }
 
-function openCategory(theme) {
+async function openCategory(theme) {
   currentCategoryTheme = theme;
   categoryTitleEl.textContent = `${CATEGORY_EMOJI[theme] || "🔤"} ${theme}`;
-  renderCategoryWordList();
   setScreen("category");
+  if (!getLoadedCategories().has(theme)) {
+    categoryWordListEl.innerHTML = `<div class="catalog-loading">⏳ Загружаем слова…</div>`;
+    await loadCategoryWords(theme);
+    customWords = await getAllCustomWords();
+  }
+  renderCategoryWordList();
 }
 
 function renderCategoryWordList() {
@@ -1129,8 +1154,16 @@ generateWordsBtn.addEventListener("click", async () => {
 
 (async function init() {
   await seedBaseWordsIfNeeded();
-  await syncSeedCategories();
+  categoryManifest = await fetchCategoryManifest();
+  manifestByTheme = new Map(categoryManifest.map((m) => [m.theme, m]));
   customWords = await getAllCustomWords();
   renderCatalog();
   setScreen("catalog");
+  // Проверка правок в уже открытых категориях — не блокирует показ каталога.
+  syncLoadedCategories().then(async (n) => {
+    if (n > 0) {
+      customWords = await getAllCustomWords();
+      renderCatalog();
+    }
+  });
 })();

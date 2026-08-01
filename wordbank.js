@@ -34,6 +34,92 @@ function normalizeCategory(theme) {
   return CATEGORIES.includes(theme) ? theme : FALLBACK_CATEGORY;
 }
 
+// Имя файла assets/words/<slug>.json для каждой категории — так словарь не грузится
+// целиком при каждом заходе, а подгружается по одной категории, когда её открываешь.
+const CATEGORY_SLUG = {
+  "Фрукты": "fruits", "Овощи": "vegetables", "Животные": "animals", "Цвета": "colors",
+  "Числительные": "numbers", "Одежда и аксессуары": "clothing", "Глаголы — действия": "verbs",
+  "Направления и предлоги": "directions", "Природа и погода": "nature", "Дом и мебель": "home",
+  "Кухня и посуда": "kitchen", "Ванная и гигиена": "bathroom", "Профессии": "professions",
+  "Транспорт и вождение": "transport", "Спорт и игры": "sports", "Эмоции и чувства": "emotions",
+  "Покупки и магазины": "shopping", "Город и места": "city", "Еда и напитки": "food",
+  "Страны и национальности": "countries", "Прилагательные и сравнения": "adjectives",
+  "Части тела": "body", "Школа и канцтовары": "school", "Календарь и время": "calendar",
+  "Семья и отношения": "family", "Предметы и вещи": "objects", "Служебные слова": "function-words",
+  "Птицы": "birds", "Насекомые": "insects", "Цветы и растения": "plants",
+  "Геометрические фигуры": "shapes", "Водитель": "driver", "Косметика": "cosmetics",
+  "Офис": "office", "Здоровье": "health",
+};
+
+const LOADED_CATEGORIES_KEY = "mahjong-loaded-categories";
+let manifestCache = null;
+
+function getLoadedCategories() {
+  try {
+    return new Set(JSON.parse(localStorage.getItem(LOADED_CATEGORIES_KEY) || "[]"));
+  } catch (e) {
+    return new Set();
+  }
+}
+
+function saveLoadedCategories(set) {
+  localStorage.setItem(LOADED_CATEGORIES_KEY, JSON.stringify([...set]));
+}
+
+// Лёгкий список "тема → сколько слов, сколько весит" — грузится сразу, целиком,
+// сам по себе маленький (без текстов слов и без картинок), и по нему рисуется каталог.
+async function fetchCategoryManifest() {
+  if (manifestCache) return manifestCache;
+  try {
+    const resp = await fetch("assets/words/manifest.json");
+    manifestCache = resp.ok ? await resp.json() : [];
+  } catch (e) {
+    manifestCache = [];
+  }
+  return manifestCache;
+}
+
+// Подгружает слова ОДНОЙ категории (по требованию — при открытии её в каталоге или
+// перед игрой) и кладёт в IndexedDB. Безопасно вызывать повторно — новые слова
+// добавляются, у уже сохранённых поправляется тема (на случай серверных исправлений),
+// картинки уже сохранённых слов не трогаются.
+async function loadCategoryWords(theme) {
+  const slug = CATEGORY_SLUG[theme];
+  if (!slug) return 0;
+  try {
+    const resp = await fetch(`assets/words/${slug}.json`);
+    if (!resp.ok) return 0;
+    const words = await resp.json();
+    const existing = await getAllCustomWords();
+    const existingByTr = new Map(existing.map((w) => [w.tr, w]));
+    const toWrite = [];
+    for (const w of words) {
+      if (!w || !w.tr || !w.ru) continue;
+      const current = existingByTr.get(w.tr);
+      const normalizedTheme = normalizeCategory(w.theme || theme);
+      if (!current) {
+        toWrite.push({
+          tr: w.tr,
+          ru: w.ru,
+          icon: w.icon || null,
+          visual: w.visual || null,
+          pos: w.pos || "other",
+          theme: normalizedTheme,
+        });
+      } else if (current.theme !== normalizedTheme) {
+        toWrite.push({ ...current, theme: normalizedTheme });
+      }
+    }
+    if (toWrite.length) await putCustomWordsBatch(toWrite);
+    const loaded = getLoadedCategories();
+    loaded.add(theme);
+    saveLoadedCategories(loaded);
+    return toWrite.length;
+  } catch (e) {
+    return 0;
+  }
+}
+
 const ICON_STYLE =
   ", adorable kawaii-inspired illustration style, soft rounded shapes, detailed premium rendering, " +
   "soft cel-shading, rich fine texture, vibrant warm color palette, glossy soft highlights, " +
@@ -143,21 +229,19 @@ async function importWordBankFile(file) {
   return imported;
 }
 
-// Стартовый набор слов, который копится по мере того, как их добавляют через игру
-// (см. assets/seed/seed-words.json) — при первом заходе в браузере он подгружается
-// автоматически, чтобы новые пользователи сразу получали не только базовые 20 слов,
-// но и всё, что уже наработано другими. Флаг в localStorage — чтобы это случилось
-// только один раз и не мешало, если пользователь потом сам удалит какие-то слова.
-const SEEDED_FLAG_KEY = "mahjong-seeded-v1";
+// Стартовый набор — только те слова, у которых уже есть готовая иллюстрация
+// (assets/words/starter.json, лёгкий: без него весь словарь пришлось бы тащить
+// при каждом заходе). Подгружается один раз при первом визите, дальше все
+// остальные категории — по требованию, через loadCategoryWords ниже.
+const SEEDED_FLAG_KEY = "mahjong-seeded-v2";
 
 async function seedBaseWordsIfNeeded() {
   if (localStorage.getItem(SEEDED_FLAG_KEY)) return;
   localStorage.setItem(SEEDED_FLAG_KEY, "1");
   try {
-    const resp = await fetch("assets/seed/seed-words.json");
+    const resp = await fetch("assets/words/starter.json");
     if (!resp.ok) return;
-    const data = await resp.json();
-    const words = Array.isArray(data.words) ? data.words : [];
+    const words = await resp.json();
     const existing = await getAllCustomWords();
     const existingTr = new Set(existing.map((w) => w.tr));
     const toInsert = words
@@ -176,31 +260,19 @@ async function seedBaseWordsIfNeeded() {
   }
 }
 
-// seedBaseWordsIfNeeded добавляет НОВЫЕ стартовые слова только один раз (флаг), но
-// категории уже добавленных слов потом ещё не раз поправятся на сервере (как выяснилось
-// на практике — ИИ-классификация не идеальна с первого раза). Без этой функции такие
-// правки никогда бы не доходили до тех, кто уже раз зашёл в игру. Лёгкая (один fetch +
-// сверка по tr), поэтому гоняем при каждом заходе, а не только один раз.
-async function syncSeedCategories() {
-  try {
-    const resp = await fetch("assets/seed/seed-words.json");
-    if (!resp.ok) return 0;
-    const data = await resp.json();
-    const seedWords = Array.isArray(data.words) ? data.words : [];
-    const seedByTr = new Map(seedWords.map((w) => [w.tr, w]));
-    const existing = await getAllCustomWords();
-    const toUpdate = [];
-    for (const w of existing) {
-      const seedEntry = seedByTr.get(w.tr);
-      if (!seedEntry || !seedEntry.theme) continue;
-      const theme = normalizeCategory(seedEntry.theme);
-      if (theme !== w.theme) toUpdate.push({ ...w, theme });
-    }
-    if (toUpdate.length) await putCustomWordsBatch(toUpdate);
-    return toUpdate.length;
-  } catch (e) {
-    return 0;
+// Категории, которые уже когда-то загружались в этом браузере, стоит подгрузить
+// заново при заходе — вдруг в файле категории что-то поправили (тема слова,
+// перевод и т.п.), а у пользователя уже осела старая версия. Каждая — лёгкий
+// файл без картинок (кроме уже проиллюстрированных слов), так что это дёшево
+// даже суммарно по всем открытым категориям — в отличие от того, чтобы тащить
+// вообще весь словарь целиком на каждый заход.
+async function syncLoadedCategories() {
+  const loaded = getLoadedCategories();
+  let total = 0;
+  for (const theme of loaded) {
+    total += await loadCategoryWords(theme);
   }
+  return total;
 }
 
 async function translateAndDescribe(words, apiKey) {

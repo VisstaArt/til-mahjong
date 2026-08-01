@@ -235,6 +235,23 @@ button.secondary.small { padding: 6px 12px; font-size: 0.82rem; }
   color: rgba(255,255,255,0.85);
   text-shadow: 0 1px 3px rgba(0,0,0,0.9);
 }
+.catalog-tile .size {
+  font-size: 0.62rem;
+  color: rgba(255,255,255,0.6);
+}
+
+/* Категория ещё не подгружена в этот браузер — притемняем картинку,
+   чтобы было видно: тут нужно тапнуть, чтобы скачать слова. */
+.catalog-tile.not-loaded .tile-image,
+.catalog-tile.not-loaded .emoji {
+  filter: grayscale(0.6) brightness(0.6);
+}
+
+.label-secondary {
+  font-size: 0.72rem;
+  opacity: 0.65;
+  margin-top: 2px;
+}
 
 .category-header-row {
   display: flex;
