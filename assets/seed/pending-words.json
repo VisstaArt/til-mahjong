@@ -12311,5 +12311,334 @@
     "pos": "noun",
     "theme": "Насекомые",
     "visual": "A silkworm on a leaf"
+  },
+  {
+    "tr": "vize",
+    "ru": "виза",
+    "pos": "noun",
+    "theme": "Транспорт и вождение",
+    "visual": "A visa stamp in a passport"
+  },
+  {
+    "tr": "rezervasyon",
+    "ru": "бронирование",
+    "pos": "noun",
+    "theme": "Транспорт и вождение",
+    "visual": "A calendar with a booking confirmation checkmark"
+  },
+  {
+    "tr": "seyahat sigortası",
+    "ru": "страховка (путешествия)",
+    "pos": "noun",
+    "theme": "Транспорт и вождение",
+    "visual": "A travel insurance document with a shield icon"
+  },
+  {
+    "tr": "valiz",
+    "ru": "чемодан",
+    "pos": "noun",
+    "theme": "Транспорт и вождение",
+    "visual": "A rolling suitcase"
+  },
+  {
+    "tr": "gümrük",
+    "ru": "таможня",
+    "pos": "noun",
+    "theme": "Транспорт и вождение",
+    "visual": "A customs checkpoint sign at an airport"
+  },
+  {
+    "tr": "biniş kartı",
+    "ru": "посадочный талон",
+    "pos": "noun",
+    "theme": "Транспорт и вождение",
+    "visual": "A boarding pass ticket"
+  },
+  {
+    "tr": "uçuş",
+    "ru": "рейс (авиа)",
+    "pos": "noun",
+    "theme": "Транспорт и вождение",
+    "visual": "An airplane departure board"
+  },
+  {
+    "tr": "kalkış",
+    "ru": "взлёт",
+    "pos": "noun",
+    "theme": "Транспорт и вождение",
+    "visual": "An airplane taking off"
+  },
+  {
+    "tr": "iniş",
+    "ru": "посадка (самолёта)",
+    "pos": "noun",
+    "theme": "Транспорт и вождение",
+    "visual": "An airplane landing"
+  },
+  {
+    "tr": "gecikme",
+    "ru": "задержка",
+    "pos": "noun",
+    "theme": "Транспорт и вождение",
+    "visual": "A departure board showing a delayed flight"
+  },
+  {
+    "tr": "bagaj",
+    "ru": "багаж",
+    "pos": "noun",
+    "theme": "Транспорт и вождение",
+    "visual": "Suitcases on an airport luggage belt"
+  },
+  {
+    "tr": "otel",
+    "ru": "отель",
+    "pos": "noun",
+    "theme": "Город и места",
+    "visual": "A hotel building"
+  },
+  {
+    "tr": "kahvaltı",
+    "ru": "завтрак",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A breakfast plate with eggs and toast"
+  },
+  {
+    "tr": "klima",
+    "ru": "кондиционер",
+    "pos": "noun",
+    "theme": "Дом и мебель",
+    "visual": "A wall air conditioning unit"
+  },
+  {
+    "tr": "araba kiralamak",
+    "ru": "аренда автомобиля",
+    "pos": "verb",
+    "theme": "Транспорт и вождение",
+    "visual": "A hand receiving car keys over a rental car"
+  },
+  {
+    "tr": "benzin istasyonu",
+    "ru": "заправочная станция",
+    "pos": "noun",
+    "theme": "Транспорт и вождение",
+    "visual": "A gas station"
+  },
+  {
+    "tr": "köprü",
+    "ru": "мост",
+    "pos": "noun",
+    "theme": "Транспорт и вождение",
+    "visual": "A bridge over water"
+  },
+  {
+    "tr": "tünel",
+    "ru": "тоннель",
+    "pos": "noun",
+    "theme": "Транспорт и вождение",
+    "visual": "A road tunnel through a mountain"
+  },
+  {
+    "tr": "adres",
+    "ru": "адрес",
+    "pos": "noun",
+    "theme": "Город и места",
+    "visual": "An envelope with a written address"
+  },
+  {
+    "tr": "acil durum",
+    "ru": "экстренная ситуация",
+    "pos": "noun",
+    "theme": "Здоровье",
+    "visual": "A red SOS emergency alert sign"
+  },
+  {
+    "tr": "ambulans",
+    "ru": "скорая помощь",
+    "pos": "noun",
+    "theme": "Здоровье",
+    "visual": "An ambulance with lights on"
+  },
+  {
+    "tr": "hastane",
+    "ru": "больница",
+    "pos": "noun",
+    "theme": "Здоровье",
+    "visual": "A hospital building with a red cross"
+  },
+  {
+    "tr": "eczane",
+    "ru": "аптека",
+    "pos": "noun",
+    "theme": "Здоровье",
+    "visual": "A pharmacy storefront with a green cross"
+  },
+  {
+    "tr": "kayıp",
+    "ru": "потеря, пропажа",
+    "pos": "noun",
+    "theme": "Здоровье",
+    "visual": "A backpack with a question mark, lost item concept"
+  },
+  {
+    "tr": "dikkat",
+    "ru": "осторожно, внимание",
+    "pos": "noun",
+    "theme": "Здоровье",
+    "visual": "A yellow warning triangle sign"
+  },
+  {
+    "tr": "tarihi yer",
+    "ru": "историческое место",
+    "pos": "noun",
+    "theme": "Город и места",
+    "visual": "An ancient historical monument"
+  },
+  {
+    "tr": "plaj",
+    "ru": "пляж",
+    "pos": "noun",
+    "theme": "Природа и погода",
+    "visual": "A sunny beach with umbrellas"
+  },
+  {
+    "tr": "araba",
+    "ru": "машина, автомобиль",
+    "pos": "noun",
+    "theme": "Транспорт и вождение",
+    "visual": "A red car"
+  },
+  {
+    "tr": "metro",
+    "ru": "метро",
+    "pos": "noun",
+    "theme": "Транспорт и вождение",
+    "visual": "A metro subway train"
+  },
+  {
+    "tr": "tramvay",
+    "ru": "трамвай",
+    "pos": "noun",
+    "theme": "Транспорт и вождение",
+    "visual": "A city tram"
+  },
+  {
+    "tr": "tekne",
+    "ru": "лодка",
+    "pos": "noun",
+    "theme": "Транспорт и вождение",
+    "visual": "A small boat on water"
+  },
+  {
+    "tr": "sürmek",
+    "ru": "водить, управлять (транспортом)",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A person driving a car holding the wheel"
+  },
+  {
+    "tr": "istasyon",
+    "ru": "вокзал, станция",
+    "pos": "noun",
+    "theme": "Транспорт и вождение",
+    "visual": "A train station platform"
+  },
+  {
+    "tr": "havalimanı",
+    "ru": "аэропорт",
+    "pos": "noun",
+    "theme": "Транспорт и вождение",
+    "visual": "An airport terminal with a plane"
+  },
+  {
+    "tr": "ehliyet",
+    "ru": "водительские права",
+    "pos": "noun",
+    "theme": "Водитель",
+    "visual": "A driver's license card"
+  },
+  {
+    "tr": "ruhsat",
+    "ru": "техпаспорт (машины)",
+    "pos": "noun",
+    "theme": "Водитель",
+    "visual": "A vehicle registration document"
+  },
+  {
+    "tr": "sigorta",
+    "ru": "страховка",
+    "pos": "noun",
+    "theme": "Водитель",
+    "visual": "An insurance policy document with a shield"
+  },
+  {
+    "tr": "plaka",
+    "ru": "номерной знак",
+    "pos": "noun",
+    "theme": "Водитель",
+    "visual": "A car license plate"
+  },
+  {
+    "tr": "vites",
+    "ru": "коробка передач",
+    "pos": "noun",
+    "theme": "Водитель",
+    "visual": "A car gear shift lever"
+  },
+  {
+    "tr": "emniyet kemeri",
+    "ru": "ремень безопасности",
+    "pos": "noun",
+    "theme": "Водитель",
+    "visual": "A fastened car seatbelt"
+  },
+  {
+    "tr": "kavşak",
+    "ru": "перекрёсток",
+    "pos": "noun",
+    "theme": "Водитель",
+    "visual": "A road intersection"
+  },
+  {
+    "tr": "trafik ışığı",
+    "ru": "светофор",
+    "pos": "noun",
+    "theme": "Водитель",
+    "visual": "A traffic light"
+  },
+  {
+    "tr": "yaya geçidi",
+    "ru": "пешеходный переход",
+    "pos": "noun",
+    "theme": "Водитель",
+    "visual": "A zebra crosswalk"
+  },
+  {
+    "tr": "hız sınırı",
+    "ru": "ограничение скорости",
+    "pos": "noun",
+    "theme": "Водитель",
+    "visual": "A speed limit sign showing 50"
+  },
+  {
+    "tr": "radar",
+    "ru": "радар",
+    "pos": "noun",
+    "theme": "Водитель",
+    "visual": "A speed radar camera"
+  },
+  {
+    "tr": "arıza",
+    "ru": "поломка",
+    "pos": "noun",
+    "theme": "Водитель",
+    "visual": "A car with smoke coming from the hood"
+  },
+  {
+    "tr": "çekici",
+    "ru": "эвакуатор",
+    "pos": "noun",
+    "theme": "Водитель",
+    "visual": "A tow truck"
   }
 ]
