@@ -139,6 +139,7 @@ const catalogGridEl = document.getElementById("catalog-grid");
 const catalogSelectedCountEl = document.getElementById("catalog-selected-count");
 const catalogTotalCountEl = document.getElementById("catalog-total-count");
 const catalogAvailableCountEl = document.getElementById("catalog-available-count");
+const catalogMasteredCountEl = document.getElementById("catalog-mastered-count");
 const openAddWordsBtn = document.getElementById("open-add-words-btn");
 const catalogNextBtn = document.getElementById("catalog-next-btn");
 const categoryBackBtn = document.getElementById("category-back-btn");
@@ -245,6 +246,12 @@ function markWordKnown(tr) {
   const threshold = PROGRESS_BOXES[PROGRESS_BOXES.indexOf(masteredBox) - 1].max + 1;
   wordProgress[tr] = { streak: threshold };
   saveWordProgress();
+}
+
+// Сколько слов всего дошло до статуса "выучено" (⭐) — по всем словам, что вообще
+// встречались в игре или были отмечены "✓ Знаю", не только из текущей подборки.
+function getMasteredCount() {
+  return Object.keys(wordProgress).filter((tr) => getWordBox(tr).id === "mastered").length;
 }
 
 // Строит колоду ровно из pairsNeeded слов, взвешенно по тому, насколько слово ещё
@@ -1015,6 +1022,7 @@ function renderCatalog() {
   catalogSelectedCountEl.textContent = selectedCount;
   catalogTotalCountEl.textContent = words.length;
   catalogAvailableCountEl.textContent = categoryManifest.reduce((s, m) => s + m.count, 0);
+  catalogMasteredCountEl.textContent = getMasteredCount();
 
   const byTheme = wordsByCategory();
   const loaded = getLoadedCategories();
