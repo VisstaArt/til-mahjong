@@ -12640,5 +12640,425 @@
     "pos": "noun",
     "theme": "Водитель",
     "visual": "A tow truck"
+  },
+  {
+    "tr": "şezlong",
+    "ru": "шезлонг",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "A beach lounge chair"
+  },
+  {
+    "tr": "cankurtaran",
+    "ru": "спасатель",
+    "pos": "noun",
+    "theme": "Профессии",
+    "visual": "A lifeguard on a beach tower"
+  },
+  {
+    "tr": "çöp kutusu",
+    "ru": "мусорный бак",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A trash bin"
+  },
+  {
+    "tr": "yüzme",
+    "ru": "плавание",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "A person swimming in water"
+  },
+  {
+    "tr": "dalış",
+    "ru": "дайвинг",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "A scuba diver underwater"
+  },
+  {
+    "tr": "sörf",
+    "ru": "сёрфинг",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "A person surfing a wave"
+  },
+  {
+    "tr": "yelkencilik",
+    "ru": "парусный спорт",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "A sailboat on the sea"
+  },
+  {
+    "tr": "kano",
+    "ru": "каноэ",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "A person paddling a canoe"
+  },
+  {
+    "tr": "su kaydırağı",
+    "ru": "водная горка",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "A waterpark slide"
+  },
+  {
+    "tr": "ilk yardım",
+    "ru": "первая помощь",
+    "pos": "noun",
+    "theme": "Здоровье",
+    "visual": "A first aid kit with a red cross"
+  },
+  {
+    "tr": "güneş çarpması",
+    "ru": "солнечный удар",
+    "pos": "noun",
+    "theme": "Здоровье",
+    "visual": "A figure overheating under a hot sun"
+  },
+  {
+    "tr": "baş ağrısı",
+    "ru": "головная боль",
+    "pos": "noun",
+    "theme": "Здоровье",
+    "visual": "A figure holding their aching head"
+  },
+  {
+    "tr": "mide bulantısı",
+    "ru": "тошнота",
+    "pos": "noun",
+    "theme": "Здоровье",
+    "visual": "A figure feeling nauseous holding their stomach"
+  },
+  {
+    "tr": "baş dönmesi",
+    "ru": "головокружение",
+    "pos": "noun",
+    "theme": "Здоровье",
+    "visual": "A figure with spinning dizziness lines around their head"
+  },
+  {
+    "tr": "yorgunluk",
+    "ru": "усталость",
+    "pos": "noun",
+    "theme": "Здоровье",
+    "visual": "A drooping exhausted figure"
+  },
+  {
+    "tr": "cilt",
+    "ru": "кожа (покров)",
+    "pos": "noun",
+    "theme": "Здоровье",
+    "visual": "A close-up of smooth skin texture"
+  },
+  {
+    "tr": "kızarıklık",
+    "ru": "покраснение (кожи)",
+    "pos": "noun",
+    "theme": "Здоровье",
+    "visual": "A red irritated patch of skin"
+  },
+  {
+    "tr": "kuruluk",
+    "ru": "сухость (кожи)",
+    "pos": "noun",
+    "theme": "Здоровье",
+    "visual": "A dry cracked patch of skin"
+  },
+  {
+    "tr": "sahan",
+    "ru": "сковорода глубокая",
+    "pos": "noun",
+    "theme": "Кухня и посуда",
+    "visual": "A deep frying pan"
+  },
+  {
+    "tr": "fırın tepsisi",
+    "ru": "противень",
+    "pos": "noun",
+    "theme": "Кухня и посуда",
+    "visual": "A baking tray"
+  },
+  {
+    "tr": "kase",
+    "ru": "миска",
+    "pos": "noun",
+    "theme": "Кухня и посуда",
+    "visual": "A mixing bowl"
+  },
+  {
+    "tr": "kevgir",
+    "ru": "шумовка",
+    "pos": "noun",
+    "theme": "Кухня и посуда",
+    "visual": "A slotted skimmer spoon"
+  },
+  {
+    "tr": "mikrodalga",
+    "ru": "микроволновая печь",
+    "pos": "noun",
+    "theme": "Кухня и посуда",
+    "visual": "A microwave oven"
+  },
+  {
+    "tr": "mutfak tartısı",
+    "ru": "кухонные весы",
+    "pos": "noun",
+    "theme": "Кухня и посуда",
+    "visual": "A kitchen scale"
+  },
+  {
+    "tr": "tadına bakmak",
+    "ru": "пробовать на вкус (блюдо)",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A chef tasting food from a spoon"
+  },
+  {
+    "tr": "ana yemek",
+    "ru": "основное блюдо",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A main course plate with meat and sides"
+  },
+  {
+    "tr": "içecek",
+    "ru": "напиток",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A refreshing glass of juice"
+  },
+  {
+    "tr": "bir tutam",
+    "ru": "щепотка",
+    "pos": "noun",
+    "theme": "Числительные",
+    "visual": "Fingers pinching a small amount of salt"
+  },
+  {
+    "tr": "paket",
+    "ru": "пачка, упаковка",
+    "pos": "noun",
+    "theme": "Числительные",
+    "visual": "A sealed product package"
+  },
+  {
+    "tr": "litre",
+    "ru": "литр",
+    "pos": "noun",
+    "theme": "Числительные",
+    "visual": "A liter measuring jug"
+  },
+  {
+    "tr": "gram",
+    "ru": "грамм",
+    "pos": "noun",
+    "theme": "Числительные",
+    "visual": "A small scale showing grams"
+  },
+  {
+    "tr": "ezmek",
+    "ru": "разминать, толочь",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A hand mashing food with a fork"
+  },
+  {
+    "tr": "ovmek",
+    "ru": "растирать",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "Hands rubbing and kneading dough"
+  },
+  {
+    "tr": "çırpmak",
+    "ru": "взбивать",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A whisk beating eggs in a bowl"
+  },
+  {
+    "tr": "rendelemek",
+    "ru": "натирать на тёрке",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A hand grating cheese"
+  },
+  {
+    "tr": "süzmek",
+    "ru": "процеживать",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "Liquid being strained through a sieve"
+  },
+  {
+    "tr": "bekletmek",
+    "ru": "выдерживать (тесто и т.п.)",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A covered bowl of dough resting"
+  },
+  {
+    "tr": "ısıtmak",
+    "ru": "разогревать",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A plate of food being warmed"
+  },
+  {
+    "tr": "toz biber",
+    "ru": "молотая паприка",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A bowl of ground paprika powder"
+  },
+  {
+    "tr": "tarçın",
+    "ru": "корица",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "Cinnamon sticks"
+  },
+  {
+    "tr": "zerdeçal",
+    "ru": "куркума",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A pile of golden turmeric powder"
+  },
+  {
+    "tr": "köri",
+    "ru": "карри",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A bowl of curry powder"
+  },
+  {
+    "tr": "sumak",
+    "ru": "сумак",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A bowl of dark red sumac spice"
+  },
+  {
+    "tr": "yenibahar",
+    "ru": "душистый перец",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A bowl of allspice berries"
+  },
+  {
+    "tr": "kişniş",
+    "ru": "кинза, кориандр",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A bunch of fresh cilantro"
+  },
+  {
+    "tr": "taze soğan",
+    "ru": "зелёный лук",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A bunch of fresh green onions"
+  },
+  {
+    "tr": "pazı",
+    "ru": "мангольд",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "Fresh chard leaves"
+  },
+  {
+    "tr": "badem",
+    "ru": "миндаль",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A handful of almonds"
+  },
+  {
+    "tr": "ceviz",
+    "ru": "грецкий орех",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A cracked open walnut"
+  },
+  {
+    "tr": "fındık",
+    "ru": "фундук",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A pile of hazelnuts"
+  },
+  {
+    "tr": "yer fıstığı",
+    "ru": "арахис",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A handful of peanuts"
+  },
+  {
+    "tr": "kaju",
+    "ru": "кешью",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A handful of cashew nuts"
+  },
+  {
+    "tr": "antep fıstığı",
+    "ru": "фисташки",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A handful of pistachios"
+  },
+  {
+    "tr": "kestane",
+    "ru": "каштан",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "Roasted chestnuts"
+  },
+  {
+    "tr": "makademya",
+    "ru": "макадамия",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A handful of macadamia nuts"
+  },
+  {
+    "tr": "pekan cevizi",
+    "ru": "пекан",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A handful of pecan nuts"
+  },
+  {
+    "tr": "restoran",
+    "ru": "ресторан",
+    "pos": "noun",
+    "theme": "Город и места",
+    "visual": "A cozy restaurant storefront"
+  },
+  {
+    "tr": "garson",
+    "ru": "официант",
+    "pos": "noun",
+    "theme": "Профессии",
+    "visual": "A waiter carrying a tray"
+  },
+  {
+    "tr": "afiyet olsun",
+    "ru": "приятного аппетита",
+    "pos": "other",
+    "theme": "Еда и напитки",
+    "visual": "A steaming dish with a friendly greeting sparkle"
+  },
+  {
+    "tr": "paket servis",
+    "ru": "доставка, еда навынос",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A takeout food bag"
   }
 ]
