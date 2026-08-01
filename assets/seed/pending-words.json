@@ -13942,5 +13942,425 @@
     "pos": "noun",
     "theme": "Спорт и игры",
     "visual": "A person in a yoga pose on a mat"
+  },
+  {
+    "tr": "dansçı",
+    "ru": "танцор, танцовщица",
+    "pos": "noun",
+    "theme": "Профессии",
+    "visual": "A dancer mid-performance"
+  },
+  {
+    "tr": "performans",
+    "ru": "выступление, перформанс",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A stage performance with spotlights"
+  },
+  {
+    "tr": "kostüm",
+    "ru": "костюм (сценический)",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "An elaborate stage costume"
+  },
+  {
+    "tr": "partner",
+    "ru": "партнёр",
+    "pos": "noun",
+    "theme": "Семья и отношения",
+    "visual": "Two dance partners holding hands"
+  },
+  {
+    "tr": "hareket",
+    "ru": "движение",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "A figure captured mid-motion with movement lines"
+  },
+  {
+    "tr": "ritim",
+    "ru": "ритм",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "Sound waves pulsing to a beat"
+  },
+  {
+    "tr": "tempo",
+    "ru": "темп",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "A metronome ticking"
+  },
+  {
+    "tr": "duruş",
+    "ru": "осанка, стойка",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "A dancer in perfect upright posture"
+  },
+  {
+    "tr": "denge",
+    "ru": "баланс",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "A figure balancing on one leg"
+  },
+  {
+    "tr": "dönüş",
+    "ru": "поворот (танцевальный)",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "A dancer spinning"
+  },
+  {
+    "tr": "zıplama",
+    "ru": "прыжок",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "A dancer leaping in the air"
+  },
+  {
+    "tr": "adım",
+    "ru": "шаг",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "Footprints showing a dance step"
+  },
+  {
+    "tr": "koordinasyon",
+    "ru": "координация",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "A figure moving arms and legs in sync"
+  },
+  {
+    "tr": "ifade",
+    "ru": "выразительность",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "An expressive dancer's face and gesture"
+  },
+  {
+    "tr": "senkron",
+    "ru": "синхронность",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "Multiple dancers moving in perfect unison"
+  },
+  {
+    "tr": "nefes",
+    "ru": "дыхание",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "A figure breathing deeply with visible breath"
+  },
+  {
+    "tr": "alkış",
+    "ru": "аплодисменты",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "An audience clapping hands"
+  },
+  {
+    "tr": "kulis",
+    "ru": "закулисье",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A backstage area with costumes and mirrors"
+  },
+  {
+    "tr": "seyirci",
+    "ru": "зритель",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "An audience watching a stage"
+  },
+  {
+    "tr": "final",
+    "ru": "финал",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "Performers taking a final bow"
+  },
+  {
+    "tr": "tavla",
+    "ru": "нарды",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "A backgammon board with pieces"
+  },
+  {
+    "tr": "dama",
+    "ru": "шашки",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "A checkers board with pieces"
+  },
+  {
+    "tr": "kart oyunu",
+    "ru": "карточная игра",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "A hand of playing cards"
+  },
+  {
+    "tr": "yapboz",
+    "ru": "пазл",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "A jigsaw puzzle"
+  },
+  {
+    "tr": "zar",
+    "ru": "кубик игральный",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "A pair of dice"
+  },
+  {
+    "tr": "piyon",
+    "ru": "фишка, пешка",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "Colorful board game pawns"
+  },
+  {
+    "tr": "vezir",
+    "ru": "ферзь",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "A chess queen piece"
+  },
+  {
+    "tr": "şah",
+    "ru": "король (в шахматах)",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "A chess king piece"
+  },
+  {
+    "tr": "oyun parkı",
+    "ru": "детская площадка",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "A colorful playground"
+  },
+  {
+    "tr": "salıncak",
+    "ru": "качели",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "A swing set"
+  },
+  {
+    "tr": "kaydırak",
+    "ru": "горка",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "A playground slide"
+  },
+  {
+    "tr": "tahterevalli",
+    "ru": "качели-балансир",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "A seesaw"
+  },
+  {
+    "tr": "tırmanma duvarı",
+    "ru": "скалодром",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "A climbing wall"
+  },
+  {
+    "tr": "trambolin",
+    "ru": "батут",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "A trampoline"
+  },
+  {
+    "tr": "lunapark",
+    "ru": "парк аттракционов",
+    "pos": "noun",
+    "theme": "Город и места",
+    "visual": "An amusement park entrance"
+  },
+  {
+    "tr": "dönme dolap",
+    "ru": "колесо обозрения",
+    "pos": "noun",
+    "theme": "Город и места",
+    "visual": "A ferris wheel"
+  },
+  {
+    "tr": "atlıkarınca",
+    "ru": "карусель",
+    "pos": "noun",
+    "theme": "Город и места",
+    "visual": "A carousel with horses"
+  },
+  {
+    "tr": "hız treni",
+    "ru": "американские горки",
+    "pos": "noun",
+    "theme": "Город и места",
+    "visual": "A roller coaster"
+  },
+  {
+    "tr": "çarpışan arabalar",
+    "ru": "автодром (аттракцион)",
+    "pos": "noun",
+    "theme": "Город и места",
+    "visual": "Bumper cars"
+  },
+  {
+    "tr": "dönme salıncak",
+    "ru": "цепочная карусель",
+    "pos": "noun",
+    "theme": "Город и места",
+    "visual": "A swing carousel ride"
+  },
+  {
+    "tr": "bilet gişesi",
+    "ru": "билетная касса",
+    "pos": "noun",
+    "theme": "Город и места",
+    "visual": "A ticket booth"
+  },
+  {
+    "tr": "yakalamak",
+    "ru": "ловить",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A hand catching a ball"
+  },
+  {
+    "tr": "atölye",
+    "ru": "мастерская",
+    "pos": "noun",
+    "theme": "Город и места",
+    "visual": "An artist's workshop studio"
+  },
+  {
+    "tr": "galeri",
+    "ru": "галерея",
+    "pos": "noun",
+    "theme": "Город и места",
+    "visual": "An art gallery with framed paintings"
+  },
+  {
+    "tr": "tuval",
+    "ru": "холст",
+    "pos": "noun",
+    "theme": "Школа и канцтовары",
+    "visual": "A blank canvas on an easel"
+  },
+  {
+    "tr": "yağlı boya",
+    "ru": "масляная краска",
+    "pos": "noun",
+    "theme": "Школа и канцтовары",
+    "visual": "Tubes of oil paint"
+  },
+  {
+    "tr": "akrilik boya",
+    "ru": "акриловая краска",
+    "pos": "noun",
+    "theme": "Школа и канцтовары",
+    "visual": "Tubes of acrylic paint"
+  },
+  {
+    "tr": "pastel boya",
+    "ru": "пастель, восковые мелки",
+    "pos": "noun",
+    "theme": "Школа и канцтовары",
+    "visual": "A box of pastel crayons"
+  },
+  {
+    "tr": "palet",
+    "ru": "палитра",
+    "pos": "noun",
+    "theme": "Школа и канцтовары",
+    "visual": "An artist's paint palette"
+  },
+  {
+    "tr": "keçeli kalem",
+    "ru": "фломастер",
+    "pos": "noun",
+    "theme": "Школа и канцтовары",
+    "visual": "A set of felt-tip markers"
+  },
+  {
+    "tr": "şövale",
+    "ru": "мольберт",
+    "pos": "noun",
+    "theme": "Школа и канцтовары",
+    "visual": "A wooden painting easel"
+  },
+  {
+    "tr": "eskiz defteri",
+    "ru": "скетчбук",
+    "pos": "noun",
+    "theme": "Школа и канцтовары",
+    "visual": "A sketchbook with a pencil"
+  },
+  {
+    "tr": "çizmek",
+    "ru": "рисовать (линиями)",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A hand drawing a line sketch"
+  },
+  {
+    "tr": "portre",
+    "ru": "портрет",
+    "pos": "noun",
+    "theme": "Школа и канцтовары",
+    "visual": "A portrait painting of a face"
+  },
+  {
+    "tr": "manzara",
+    "ru": "пейзаж",
+    "pos": "noun",
+    "theme": "Школа и канцтовары",
+    "visual": "A landscape painting"
+  },
+  {
+    "tr": "natürmort",
+    "ru": "натюрморт",
+    "pos": "noun",
+    "theme": "Школа и канцтовары",
+    "visual": "A still life painting of fruit"
+  },
+  {
+    "tr": "eskiz",
+    "ru": "эскиз",
+    "pos": "noun",
+    "theme": "Школа и канцтовары",
+    "visual": "A rough pencil sketch"
+  },
+  {
+    "tr": "kolaj",
+    "ru": "коллаж",
+    "pos": "noun",
+    "theme": "Школа и канцтовары",
+    "visual": "A colorful paper collage"
+  },
+  {
+    "tr": "desen",
+    "ru": "рисунок, узор",
+    "pos": "noun",
+    "theme": "Школа и канцтовары",
+    "visual": "A decorative pattern design"
+  },
+  {
+    "tr": "heykel",
+    "ru": "скульптура",
+    "pos": "noun",
+    "theme": "Школа и канцтовары",
+    "visual": "A stone sculpture bust"
   }
 ]
