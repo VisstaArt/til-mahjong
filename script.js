@@ -344,14 +344,32 @@ const LAYER_SHIFT = 7; // px смещения на слой — создаёт �
 function renderIcon(container, tile) {
   container.innerHTML = "";
   if (COLOR_WORDS[tile.tr]) {
+    container.style.display = "";
     container.style.background = COLOR_WORDS[tile.tr];
     return;
   }
+  const src = tile.icon || IMAGE_FILES[tile.tr];
+  if (!src) {
+    container.style.display = "none";
+    return;
+  }
+  container.style.display = "";
   container.style.background = "";
   const img = document.createElement("img");
-  img.src = tile.icon || IMAGE_FILES[tile.tr];
+  img.src = src;
   img.alt = tile.tr;
   container.appendChild(img);
+}
+
+// Значок категории в уголке плитки — помогает увидеть, что два слова из одной
+// тематической группы, даже когда сами плитки — это просто текст без картинки.
+function renderCategoryBadge(el, tile) {
+  const emoji = CATEGORY_EMOJI[tile.theme];
+  if (!emoji) return;
+  const badge = document.createElement("span");
+  badge.className = "tile-badge";
+  badge.textContent = emoji;
+  el.appendChild(badge);
 }
 
 function refreshFreeStates() {
@@ -432,10 +450,11 @@ function render() {
     el.style.top = `${tile.y * UNIT_Y - tile.z * LAYER_SHIFT}px`;
     el.style.zIndex = tile.z * 1000 + tile.y * 10 + tile.x + 1;
     if (tile.type === "image") {
-      renderIcon(el, tile);
+      el.textContent = tile.ru;
     } else {
       el.textContent = tile.tr;
     }
+    renderCategoryBadge(el, tile);
     if (tile.matched) el.classList.add("matched");
     el.addEventListener("click", () => onTileClick(tile.id));
     boardEl.appendChild(el);
