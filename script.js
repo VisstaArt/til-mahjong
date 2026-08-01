@@ -10,7 +10,7 @@ if ("serviceWorker" in navigator) {
 
 const WORDS = [
   { tr: "kitap", ru: "книга", pos: "noun", theme: "Школа и канцтовары" },
-  { tr: "çay", ru: "чай", pos: "noun", theme: "Еда и напитки" },
+  { tr: "çay", ru: "чай / речка", pos: "noun", theme: "Еда и напитки" },
   { tr: "ekmek", ru: "хлеб", pos: "noun", theme: "Еда и напитки" },
   { tr: "su", ru: "вода", pos: "noun", theme: "Еда и напитки" },
   { tr: "ev", ru: "дом", pos: "noun", theme: "Дом и мебель" },

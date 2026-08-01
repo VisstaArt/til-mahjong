@@ -1450,7 +1450,7 @@
   },
   {
     "tr": "yüz",
-    "ru": "сто",
+    "ru": "сто / лицо",
     "pos": "numeral",
     "theme": "Числительные",
     "visual": "the number card showing digit(s) for сто, simple bold numeral design, no text other than the digits"
@@ -1716,7 +1716,7 @@
   },
   {
     "tr": "kol",
-    "ru": "рука",
+    "ru": "рука / рукав",
     "pos": "noun",
     "theme": "Части тела",
     "visual": "an arm reaching out"
@@ -4537,7 +4537,7 @@
   },
   {
     "tr": "kaymak",
-    "ru": "крем",
+    "ru": "крем / скользить",
     "pos": "noun",
     "theme": "Еда и напитки",
     "visual": "A dollop of clotted cream sitting on a slice of bread, smiling."
@@ -6210,7 +6210,7 @@
   },
   {
     "tr": "yaş",
-    "ru": "возраст",
+    "ru": "возраст / мокрый",
     "pos": "noun",
     "theme": "Календарь и время",
     "visual": "A birthday cake with lit candles"
@@ -6987,7 +6987,7 @@
   },
   {
     "tr": "ocak",
-    "ru": "январь",
+    "ru": "январь / плита, очаг",
     "pos": "noun",
     "theme": "Календарь и время",
     "visual": "A winter calendar page marked January"
@@ -7890,7 +7890,7 @@
   },
   {
     "tr": "dolu",
-    "ru": "полный",
+    "ru": "полный / град",
     "pos": "adjective",
     "theme": "Прилагательные и сравнения",
     "visual": "A glass filled to the brim"
@@ -10389,7 +10389,7 @@
   },
   {
     "tr": "sıra",
-    "ru": "парта",
+    "ru": "парта / очередь",
     "pos": "noun",
     "theme": "Школа и канцтовары",
     "visual": "A classroom desk and chair"
@@ -14001,7 +14001,7 @@
   },
   {
     "tr": "vezir",
-    "ru": "ферзь",
+    "ru": "ферзь / визирь",
     "pos": "noun",
     "theme": "Спорт и игры",
     "visual": "A chess queen piece"
