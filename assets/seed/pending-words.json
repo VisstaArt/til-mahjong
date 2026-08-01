@@ -14740,5 +14740,215 @@
     "pos": "noun",
     "theme": "Школа и канцтовары",
     "visual": "An eye looking through a perspective lens"
+  },
+  {
+    "tr": "çelik",
+    "ru": "сталь",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A shiny steel bar with a metallic sheen"
+  },
+  {
+    "tr": "demir",
+    "ru": "железо",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A rugged dark iron ingot"
+  },
+  {
+    "tr": "bakır",
+    "ru": "медь",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A reddish-orange copper ingot"
+  },
+  {
+    "tr": "bronz",
+    "ru": "бронза",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A bronze-colored metal ingot"
+  },
+  {
+    "tr": "gümüş",
+    "ru": "серебро",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A shiny silver bar"
+  },
+  {
+    "tr": "kalay",
+    "ru": "олово",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A dull gray tin ingot"
+  },
+  {
+    "tr": "nikel",
+    "ru": "никель",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A silvery nickel ingot"
+  },
+  {
+    "tr": "platin",
+    "ru": "платина",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A gleaming platinum bar"
+  },
+  {
+    "tr": "çinko",
+    "ru": "цинк",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A bluish-gray zinc ingot"
+  },
+  {
+    "tr": "alüminyum",
+    "ru": "алюминий",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A lightweight silver aluminum sheet"
+  },
+  {
+    "tr": "krom",
+    "ru": "хром",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A highly reflective chrome-plated bar"
+  },
+  {
+    "tr": "civa",
+    "ru": "ртуть",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "Silvery liquid mercury beads"
+  },
+  {
+    "tr": "maden",
+    "ru": "металл, руда",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A rough chunk of raw ore"
+  },
+  {
+    "tr": "elmas",
+    "ru": "бриллиант, алмаз",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A sparkling cut diamond"
+  },
+  {
+    "tr": "zümrüt",
+    "ru": "изумруд",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A brilliant green emerald gem"
+  },
+  {
+    "tr": "yakut",
+    "ru": "рубин",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A deep red ruby gem"
+  },
+  {
+    "tr": "topaz",
+    "ru": "топаз",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A golden-yellow topaz gem"
+  },
+  {
+    "tr": "safir",
+    "ru": "сапфир",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A deep blue sapphire gem"
+  },
+  {
+    "tr": "inci",
+    "ru": "жемчуг",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A lustrous round pearl"
+  },
+  {
+    "tr": "kehribar",
+    "ru": "янтарь",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A honey-colored amber gem"
+  },
+  {
+    "tr": "turkuaz",
+    "ru": "бирюза",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A turquoise-colored gemstone"
+  },
+  {
+    "tr": "oniks",
+    "ru": "оникс",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A polished black onyx stone"
+  },
+  {
+    "tr": "akik",
+    "ru": "агат",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A banded agate stone slice"
+  },
+  {
+    "tr": "ametist",
+    "ru": "аметист",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A purple amethyst crystal"
+  },
+  {
+    "tr": "opal",
+    "ru": "опал",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "An iridescent opal gemstone"
+  },
+  {
+    "tr": "zirkon",
+    "ru": "циркон",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A clear sparkling zircon gem"
+  },
+  {
+    "tr": "yeşim",
+    "ru": "нефрит, жад",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A polished green jade stone"
+  },
+  {
+    "tr": "mücevher",
+    "ru": "драгоценность, украшение",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A sparkling jeweled necklace"
+  },
+  {
+    "tr": "taş",
+    "ru": "камень",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A smooth gray stone"
+  },
+  {
+    "tr": "kuyumcu",
+    "ru": "ювелир",
+    "pos": "noun",
+    "theme": "Профессии",
+    "visual": "A jeweler examining a gem with a loupe"
   }
 ]
