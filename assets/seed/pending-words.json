@@ -13410,5 +13410,537 @@
     "pos": "noun",
     "theme": "Здоровье",
     "visual": "A blood test vial with a lab label"
+  },
+  {
+    "tr": "koşu",
+    "ru": "бег",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "A person running"
+  },
+  {
+    "tr": "masa tenisi",
+    "ru": "настольный теннис",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "A ping pong paddle and ball on a table"
+  },
+  {
+    "tr": "basketbol",
+    "ru": "баскетбол",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "A basketball going through a hoop"
+  },
+  {
+    "tr": "voleybol",
+    "ru": "волейбол",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "A volleyball over a net"
+  },
+  {
+    "tr": "hentbol",
+    "ru": "гандбол",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "A handball being thrown"
+  },
+  {
+    "tr": "badminton",
+    "ru": "бадминтон",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "A badminton racket and shuttlecock"
+  },
+  {
+    "tr": "golf",
+    "ru": "гольф",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "A golfer swinging a club"
+  },
+  {
+    "tr": "atletizm",
+    "ru": "лёгкая атлетика",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "A runner on a track"
+  },
+  {
+    "tr": "jimnastik",
+    "ru": "спортивная гимнастика",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "A gymnast performing a balance move"
+  },
+  {
+    "tr": "dövüş sporları",
+    "ru": "боевые искусства",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "Two fighters in martial arts stance"
+  },
+  {
+    "tr": "boks",
+    "ru": "бокс",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "A boxer with gloves up"
+  },
+  {
+    "tr": "eskrim",
+    "ru": "фехтование",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "A fencer with a sword"
+  },
+  {
+    "tr": "halter",
+    "ru": "тяжёлая атлетика, штанга",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "A weightlifter lifting a barbell"
+  },
+  {
+    "tr": "su topu",
+    "ru": "водное поло",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "Players in a pool with a ball"
+  },
+  {
+    "tr": "rugby",
+    "ru": "регби",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "A rugby player carrying the ball"
+  },
+  {
+    "tr": "amerikan futbolu",
+    "ru": "американский футбол",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "An American football player"
+  },
+  {
+    "tr": "beyzbol",
+    "ru": "бейсбол",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "A baseball bat and ball"
+  },
+  {
+    "tr": "softbol",
+    "ru": "софтбол",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "A softball pitcher"
+  },
+  {
+    "tr": "kriket",
+    "ru": "крикет",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "A cricket bat and ball"
+  },
+  {
+    "tr": "hokey",
+    "ru": "хоккей на траве",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "A field hockey stick and ball"
+  },
+  {
+    "tr": "kayak",
+    "ru": "горные лыжи",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "A skier going downhill"
+  },
+  {
+    "tr": "kayaklı koşu",
+    "ru": "лыжные гонки",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "A cross-country skier"
+  },
+  {
+    "tr": "snowboard",
+    "ru": "сноуборд",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "A snowboarder on a slope"
+  },
+  {
+    "tr": "buz pateni",
+    "ru": "фигурное катание",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "A figure skater on ice"
+  },
+  {
+    "tr": "kızak",
+    "ru": "санный спорт",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "A person on a sled"
+  },
+  {
+    "tr": "biatlon",
+    "ru": "биатлон",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "A biathlete skiing with a rifle"
+  },
+  {
+    "tr": "kısa kulvar",
+    "ru": "шорт-трек",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "Speed skaters racing on a short track"
+  },
+  {
+    "tr": "curling",
+    "ru": "кёрлинг",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "A curling stone on ice"
+  },
+  {
+    "tr": "kürek",
+    "ru": "гребля",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "A rowing team on water"
+  },
+  {
+    "tr": "jetski",
+    "ru": "гидроцикл",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "A person riding a jet ski"
+  },
+  {
+    "tr": "su kayağı",
+    "ru": "водные лыжи",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "A person water skiing behind a boat"
+  },
+  {
+    "tr": "rüzgar sörfü",
+    "ru": "виндсёрфинг",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "A windsurfer on a board with a sail"
+  },
+  {
+    "tr": "binicilik",
+    "ru": "верховая езда",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "A rider on a horse"
+  },
+  {
+    "tr": "at yarışı",
+    "ru": "конные скачки",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "Horses racing on a track"
+  },
+  {
+    "tr": "motosiklet sporu",
+    "ru": "мотоспорт",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "A motorcycle racer"
+  },
+  {
+    "tr": "bilardo",
+    "ru": "бильярд",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "A billiard table with balls"
+  },
+  {
+    "tr": "satranç",
+    "ru": "шахматы",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "A chess board with pieces"
+  },
+  {
+    "tr": "dart",
+    "ru": "дартс",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "A dartboard with darts"
+  },
+  {
+    "tr": "bowling",
+    "ru": "боулинг",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "Bowling pins and a ball"
+  },
+  {
+    "tr": "güreş",
+    "ru": "борьба",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "Two wrestlers grappling"
+  },
+  {
+    "tr": "triatlon",
+    "ru": "триатлон",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "A triathlete swimming, biking, running icons"
+  },
+  {
+    "tr": "oryantiring",
+    "ru": "ориентирование",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "A runner with a map and compass in a forest"
+  },
+  {
+    "tr": "maç",
+    "ru": "матч",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "Two teams facing off on a field"
+  },
+  {
+    "tr": "ısınma",
+    "ru": "разминка",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "A figure stretching before exercise"
+  },
+  {
+    "tr": "soğuma",
+    "ru": "заминка",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "A figure cooling down after exercise"
+  },
+  {
+    "tr": "forma",
+    "ru": "спортивная форма",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "A numbered sports jersey"
+  },
+  {
+    "tr": "şampiyon",
+    "ru": "чемпион",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "An athlete raising a trophy"
+  },
+  {
+    "tr": "madalya",
+    "ru": "медаль",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "A gold medal on a ribbon"
+  },
+  {
+    "tr": "rekor",
+    "ru": "рекорд",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "A stopwatch showing a record time"
+  },
+  {
+    "tr": "mağlubiyet",
+    "ru": "поражение",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "A disappointed athlete after losing"
+  },
+  {
+    "tr": "beraberlik",
+    "ru": "ничья",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "A scoreboard showing an equal tied score"
+  },
+  {
+    "tr": "skor",
+    "ru": "счёт (в игре)",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "A scoreboard"
+  },
+  {
+    "tr": "uzatma",
+    "ru": "дополнительное время",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "A stadium clock showing extra time"
+  },
+  {
+    "tr": "penaltı",
+    "ru": "пенальти",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "A player taking a penalty kick"
+  },
+  {
+    "tr": "faul",
+    "ru": "фол",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "A referee blowing a whistle for a foul"
+  },
+  {
+    "tr": "ofsayt",
+    "ru": "офсайд",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "A referee's offside flag"
+  },
+  {
+    "tr": "top",
+    "ru": "мяч",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "A round ball"
+  },
+  {
+    "tr": "raket",
+    "ru": "ракетка",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "A tennis racket"
+  },
+  {
+    "tr": "sopa",
+    "ru": "клюшка, палка",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "A hockey stick"
+  },
+  {
+    "tr": "eldiven",
+    "ru": "перчатки (спортивные)",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "A pair of sports gloves"
+  },
+  {
+    "tr": "kask",
+    "ru": "шлем",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "A protective sports helmet"
+  },
+  {
+    "tr": "koruyucu",
+    "ru": "защита, защитный",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "Protective sports pads"
+  },
+  {
+    "tr": "mat",
+    "ru": "мат (спортивный)",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "A gym exercise mat"
+  },
+  {
+    "tr": "ip",
+    "ru": "верёвка, скакалка",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "A coiled jump rope"
+  },
+  {
+    "tr": "koşu bandı",
+    "ru": "беговая дорожка",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "A treadmill"
+  },
+  {
+    "tr": "kondisyon bisikleti",
+    "ru": "велотренажёр",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "A stationary exercise bike"
+  },
+  {
+    "tr": "dambil",
+    "ru": "гантель",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "A dumbbell"
+  },
+  {
+    "tr": "su şişesi",
+    "ru": "бутылка воды",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "A reusable water bottle"
+  },
+  {
+    "tr": "esneme",
+    "ru": "растяжка",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "A person stretching their legs"
+  },
+  {
+    "tr": "tekrar",
+    "ru": "повторение (упражнения)",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "A counter showing exercise repetitions"
+  },
+  {
+    "tr": "set",
+    "ru": "подход (в тренировке)",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "A checklist marking a completed workout set"
+  },
+  {
+    "tr": "dinlenme",
+    "ru": "отдых",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "A person resting on a bench with water"
+  },
+  {
+    "tr": "üyelik",
+    "ru": "абонемент, членство",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "A gym membership card"
+  },
+  {
+    "tr": "meditasyon",
+    "ru": "медитация",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "A person meditating cross-legged"
+  },
+  {
+    "tr": "esneklik",
+    "ru": "гибкость",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "A figure in a flexible deep stretch pose"
+  },
+  {
+    "tr": "yoga",
+    "ru": "йога",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "A person in a yoga pose on a mat"
   }
 ]
