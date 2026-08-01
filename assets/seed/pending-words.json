@@ -14362,5 +14362,516 @@
     "pos": "noun",
     "theme": "Школа и канцтовары",
     "visual": "A stone sculpture bust"
+  },
+  {
+    "tr": "aşk",
+    "ru": "любовь",
+    "pos": "noun",
+    "theme": "Эмоции и чувства",
+    "visual": "Two intertwined hearts"
+  },
+  {
+    "tr": "kalp",
+    "ru": "сердце (символ)",
+    "pos": "noun",
+    "theme": "Эмоции и чувства",
+    "visual": "A red heart shape"
+  },
+  {
+    "tr": "yakışıklı",
+    "ru": "красивый (о мужчине)",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A stylish handsome man"
+  },
+  {
+    "tr": "zarif",
+    "ru": "элегантный",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "An elegant figure in refined posture"
+  },
+  {
+    "tr": "karizmatik",
+    "ru": "харизматичный",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A charismatic figure with a confident smile"
+  },
+  {
+    "tr": "hayran",
+    "ru": "поклонник, восхищённый",
+    "pos": "noun",
+    "theme": "Эмоции и чувства",
+    "visual": "A figure with admiring sparkling eyes"
+  },
+  {
+    "tr": "okşamak",
+    "ru": "гладить (нежно)",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A hand gently petting a cat"
+  },
+  {
+    "tr": "kaşımak",
+    "ru": "чесать",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A hand scratching an itch"
+  },
+  {
+    "tr": "temas etmek",
+    "ru": "соприкасаться, вступать в контакт",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "Two fingertips touching"
+  },
+  {
+    "tr": "sarmak",
+    "ru": "обнимать, оборачивать",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "Arms wrapping around in a hug"
+  },
+  {
+    "tr": "yalamak",
+    "ru": "лизать",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A dog licking an ice cream cone"
+  },
+  {
+    "tr": "itmek",
+    "ru": "толкнуть",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A hand pushing a box"
+  },
+  {
+    "tr": "vurmak",
+    "ru": "ударить",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A fist about to strike"
+  },
+  {
+    "tr": "pürüzsüz",
+    "ru": "гладкий",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A smooth polished surface"
+  },
+  {
+    "tr": "pürüzlü",
+    "ru": "шершавый",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A rough textured surface"
+  },
+  {
+    "tr": "karıncalanma",
+    "ru": "покалывание",
+    "pos": "noun",
+    "theme": "Здоровье",
+    "visual": "A tingling sensation with small spark marks on skin"
+  },
+  {
+    "tr": "kaşıntı",
+    "ru": "зуд",
+    "pos": "noun",
+    "theme": "Здоровье",
+    "visual": "A figure scratching an itchy arm"
+  },
+  {
+    "tr": "masal",
+    "ru": "сказка",
+    "pos": "noun",
+    "theme": "Школа и канцтовары",
+    "visual": "An open storybook with a castle"
+  },
+  {
+    "tr": "davetiye",
+    "ru": "приглашение",
+    "pos": "noun",
+    "theme": "Школа и канцтовары",
+    "visual": "A decorated invitation card"
+  },
+  {
+    "tr": "günlük",
+    "ru": "дневник",
+    "pos": "noun",
+    "theme": "Школа и канцтовары",
+    "visual": "A personal diary with a lock"
+  },
+  {
+    "tr": "başlık",
+    "ru": "заголовок",
+    "pos": "noun",
+    "theme": "Школа и канцтовары",
+    "visual": "A bold headline banner"
+  },
+  {
+    "tr": "kelime",
+    "ru": "слово",
+    "pos": "noun",
+    "theme": "Школа и канцтовары",
+    "visual": "A single highlighted word in a speech bubble"
+  },
+  {
+    "tr": "harf",
+    "ru": "буква",
+    "pos": "noun",
+    "theme": "Школа и канцтовары",
+    "visual": "The letter A"
+  },
+  {
+    "tr": "nokta",
+    "ru": "точка (пунктуация)",
+    "pos": "noun",
+    "theme": "Школа и канцтовары",
+    "visual": "A period punctuation dot"
+  },
+  {
+    "tr": "virgül",
+    "ru": "запятая",
+    "pos": "noun",
+    "theme": "Школа и канцтовары",
+    "visual": "A comma punctuation mark"
+  },
+  {
+    "tr": "soru işareti",
+    "ru": "вопросительный знак",
+    "pos": "noun",
+    "theme": "Школа и канцтовары",
+    "visual": "A question mark symbol"
+  },
+  {
+    "tr": "ünlem işareti",
+    "ru": "восклицательный знак",
+    "pos": "noun",
+    "theme": "Школа и канцтовары",
+    "visual": "An exclamation mark symbol"
+  },
+  {
+    "tr": "satır",
+    "ru": "строка",
+    "pos": "noun",
+    "theme": "Школа и канцтовары",
+    "visual": "A single line of text"
+  },
+  {
+    "tr": "sayfa",
+    "ru": "страница",
+    "pos": "noun",
+    "theme": "Школа и канцтовары",
+    "visual": "A notebook page"
+  },
+  {
+    "tr": "kitap",
+    "ru": "книга",
+    "pos": "noun",
+    "theme": "Школа и канцтовары",
+    "visual": "An open book"
+  },
+  {
+    "tr": "dosya",
+    "ru": "файл, папка (с документами)",
+    "pos": "noun",
+    "theme": "Офис",
+    "visual": "A document folder"
+  },
+  {
+    "tr": "işaretlemek",
+    "ru": "отмечать",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A hand checking a box with a checkmark"
+  },
+  {
+    "tr": "soru",
+    "ru": "вопрос",
+    "pos": "noun",
+    "theme": "Школа и канцтовары",
+    "visual": "A large question mark"
+  },
+  {
+    "tr": "cevap",
+    "ru": "ответ",
+    "pos": "noun",
+    "theme": "Школа и канцтовары",
+    "visual": "A checkmark beside an answer line"
+  },
+  {
+    "tr": "metin",
+    "ru": "текст",
+    "pos": "noun",
+    "theme": "Школа и канцтовары",
+    "visual": "A block of paragraph text"
+  },
+  {
+    "tr": "boşluk",
+    "ru": "пропуск (в тексте)",
+    "pos": "noun",
+    "theme": "Школа и канцтовары",
+    "visual": "A blank line to be filled in"
+  },
+  {
+    "tr": "seçenek",
+    "ru": "вариант (ответа)",
+    "pos": "noun",
+    "theme": "Школа и канцтовары",
+    "visual": "Multiple choice answer bubbles"
+  },
+  {
+    "tr": "özet",
+    "ru": "краткое содержание",
+    "pos": "noun",
+    "theme": "Школа и канцтовары",
+    "visual": "A condensed summary document"
+  },
+  {
+    "tr": "ana fikir",
+    "ru": "основная мысль",
+    "pos": "noun",
+    "theme": "Школа и канцтовары",
+    "visual": "A lightbulb highlighting a main idea"
+  },
+  {
+    "tr": "detay",
+    "ru": "деталь",
+    "pos": "noun",
+    "theme": "Школа и канцтовары",
+    "visual": "A magnifying glass over a small detail"
+  },
+  {
+    "tr": "sonuç",
+    "ru": "вывод, результат",
+    "pos": "noun",
+    "theme": "Школа и канцтовары",
+    "visual": "A conclusion arrow pointing to a result box"
+  },
+  {
+    "tr": "eşleştirmek",
+    "ru": "соотносить, сопоставлять",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "Matching pairs connected by lines"
+  },
+  {
+    "tr": "tamamlamak",
+    "ru": "завершать",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A checklist with the final box being checked"
+  },
+  {
+    "tr": "incelemek",
+    "ru": "рассматривать, изучать",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A magnifying glass examining a document"
+  },
+  {
+    "tr": "belirlemek",
+    "ru": "определять",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "A hand circling the correct answer"
+  },
+  {
+    "tr": "sıralamak",
+    "ru": "располагать по порядку",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "Numbered items arranged in order"
+  },
+  {
+    "tr": "karşılaştırmak",
+    "ru": "сравнивать",
+    "pos": "verb",
+    "theme": "Глаголы — действия",
+    "visual": "Two items side by side being compared"
+  },
+  {
+    "tr": "ilgili",
+    "ru": "относящийся (к теме)",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A linked chain connecting two related topics"
+  },
+  {
+    "tr": "eksik",
+    "ru": "неполный, недостающий",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A puzzle with one missing piece"
+  },
+  {
+    "tr": "benzer",
+    "ru": "похожий",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "Two similar looking shapes"
+  },
+  {
+    "tr": "verimli",
+    "ru": "эффективный, полезный",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "An upward efficiency arrow with a gear"
+  },
+  {
+    "tr": "belki",
+    "ru": "может быть",
+    "pos": "adverb",
+    "theme": "Календарь и время",
+    "visual": "A question mark over a maybe sign"
+  },
+  {
+    "tr": "muhtemelen",
+    "ru": "вероятно",
+    "pos": "adverb",
+    "theme": "Календарь и время",
+    "visual": "A percentage likelihood gauge"
+  },
+  {
+    "tr": "genellikle",
+    "ru": "обычно",
+    "pos": "adverb",
+    "theme": "Календарь и время",
+    "visual": "A repeating cycle arrow, usual pattern"
+  },
+  {
+    "tr": "çoğu zaman",
+    "ru": "часто",
+    "pos": "adverb",
+    "theme": "Календарь и время",
+    "visual": "A calendar with many days marked"
+  },
+  {
+    "tr": "nadiren",
+    "ru": "редко",
+    "pos": "adverb",
+    "theme": "Календарь и время",
+    "visual": "A calendar with only one day marked"
+  },
+  {
+    "tr": "aslında",
+    "ru": "на самом деле",
+    "pos": "adverb",
+    "theme": "Календарь и время",
+    "visual": "A curtain pulling back to reveal the truth"
+  },
+  {
+    "tr": "ayrıca",
+    "ru": "кроме того",
+    "pos": "adverb",
+    "theme": "Календарь и время",
+    "visual": "A plus sign adding an extra item"
+  },
+  {
+    "tr": "yakında",
+    "ru": "скоро",
+    "pos": "adverb",
+    "theme": "Календарь и время",
+    "visual": "A clock with an arrow pointing just ahead"
+  },
+  {
+    "tr": "örnek",
+    "ru": "пример",
+    "pos": "noun",
+    "theme": "Школа и канцтовары",
+    "visual": "A sample document labeled example"
+  },
+  {
+    "tr": "amaç",
+    "ru": "цель",
+    "pos": "noun",
+    "theme": "Школа и канцтовары",
+    "visual": "An arrow hitting the center of a target"
+  },
+  {
+    "tr": "fikir",
+    "ru": "мнение, идея",
+    "pos": "noun",
+    "theme": "Школа и канцтовары",
+    "visual": "A glowing lightbulb idea"
+  },
+  {
+    "tr": "etki",
+    "ru": "влияние",
+    "pos": "noun",
+    "theme": "Школа и канцтовары",
+    "visual": "Ripples spreading from a dropped stone"
+  },
+  {
+    "tr": "kanıt",
+    "ru": "доказательство",
+    "pos": "noun",
+    "theme": "Школа и канцтовары",
+    "visual": "A magnifying glass over a piece of evidence"
+  },
+  {
+    "tr": "öneri",
+    "ru": "предложение (совет)",
+    "pos": "noun",
+    "theme": "Школа и канцтовары",
+    "visual": "A speech bubble with a suggestion star"
+  },
+  {
+    "tr": "görev",
+    "ru": "задание",
+    "pos": "noun",
+    "theme": "Школа и канцтовары",
+    "visual": "A clipboard with an assigned task"
+  },
+  {
+    "tr": "talimat",
+    "ru": "инструкция",
+    "pos": "noun",
+    "theme": "Школа и канцтовары",
+    "visual": "A step-by-step instruction sheet"
+  },
+  {
+    "tr": "fark",
+    "ru": "разница",
+    "pos": "noun",
+    "theme": "Школа и канцтовары",
+    "visual": "Two shapes with a highlighted difference"
+  },
+  {
+    "tr": "benzerlik",
+    "ru": "сходство",
+    "pos": "noun",
+    "theme": "Школа и канцтовары",
+    "visual": "Two overlapping matching shapes"
+  },
+  {
+    "tr": "değerlendirme",
+    "ru": "оценка",
+    "pos": "noun",
+    "theme": "Школа и канцтовары",
+    "visual": "A star rating evaluation chart"
+  },
+  {
+    "tr": "durum",
+    "ru": "ситуация",
+    "pos": "noun",
+    "theme": "Школа и канцтовары",
+    "visual": "A scenario diagram with a situation icon"
+  },
+  {
+    "tr": "tahmin",
+    "ru": "предположение",
+    "pos": "noun",
+    "theme": "Школа и канцтовары",
+    "visual": "A thought bubble with a question mark guess"
+  },
+  {
+    "tr": "görüş",
+    "ru": "взгляд, точка зрения",
+    "pos": "noun",
+    "theme": "Школа и канцтовары",
+    "visual": "An eye looking through a perspective lens"
   }
 ]
