@@ -700,6 +700,13 @@ main {
   object-fit: cover;
 }
 
+/* Числительные показываются самим числом, крупно, без картинки. */
+.tile.type-image.has-number {
+  font-size: 1.4rem;
+  font-weight: 800;
+  padding: 2px;
+}
+
 .tile.type-word {
   background: var(--word-bg);
   font-size: 0.78rem;
@@ -837,4 +844,5 @@ main {
 
 @media (max-width: 640px) {
   .tile.type-word, .tile.type-image { font-size: 0.75rem; }
+  .tile.type-image.has-number { font-size: 1.15rem; }
 }

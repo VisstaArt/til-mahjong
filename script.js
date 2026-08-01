@@ -369,9 +369,15 @@ function renderIcon(container, tile) {
 function renderTileFace(el, tile) {
   el.innerHTML = "";
   el.style.background = "";
+  el.classList.remove("has-icon", "has-number");
   if (COLOR_WORDS[tile.tr]) {
     el.classList.add("has-icon");
     el.style.background = COLOR_WORDS[tile.tr];
+    return;
+  }
+  if (NUMBER_VALUES[tile.tr]) {
+    el.classList.add("has-number");
+    el.textContent = NUMBER_VALUES[tile.tr];
     return;
   }
   const src = tile.icon || IMAGE_FILES[tile.tr];

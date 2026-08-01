@@ -5369,25 +5369,11 @@
     "visual": "A cute round seal with flippers resting on a rock"
   },
   {
-    "tr": "kırmızı",
-    "ru": "красный",
-    "pos": "adjective",
-    "theme": "Цвета",
-    "visual": "A solid bright red circle swatch"
-  },
-  {
     "tr": "boş",
     "ru": "пустой",
     "pos": "adjective",
     "theme": "Прилагательные и сравнения",
     "visual": "An empty open box, nothing inside"
-  },
-  {
-    "tr": "büyük",
-    "ru": "большой",
-    "pos": "adjective",
-    "theme": "Прилагательные и сравнения",
-    "visual": "A large oversized object beside a tiny one"
   },
   {
     "tr": "dalgalı",
@@ -5444,13 +5430,6 @@
     "pos": "adjective",
     "theme": "Прилагательные и сравнения",
     "visual": "A frowning face with a thumbs down"
-  },
-  {
-    "tr": "küçük",
-    "ru": "маленький",
-    "pos": "adjective",
-    "theme": "Прилагательные и сравнения",
-    "visual": "A tiny small object next to a bigger one"
   },
   {
     "tr": "sessiz",
@@ -5866,20 +5845,6 @@
     "visual": "Motion arrows swirling around a walking figure"
   },
   {
-    "tr": "koşmak",
-    "ru": "бежать",
-    "pos": "verb",
-    "theme": "Глаголы — действия",
-    "visual": "A person running fast with motion lines"
-  },
-  {
-    "tr": "yürümek",
-    "ru": "идти, гулять",
-    "pos": "verb",
-    "theme": "Глаголы — действия",
-    "visual": "A person walking calmly along a path"
-  },
-  {
     "tr": "kaybolmak",
     "ru": "исчезать",
     "pos": "verb",
@@ -5913,20 +5878,6 @@
     "pos": "verb",
     "theme": "Глаголы — действия",
     "visual": "A hand firmly gripping a small object"
-  },
-  {
-    "tr": "uyumak",
-    "ru": "спать",
-    "pos": "verb",
-    "theme": "Глаголы — действия",
-    "visual": "A person sleeping peacefully with a Zzz symbol"
-  },
-  {
-    "tr": "yazmak",
-    "ru": "писать",
-    "pos": "verb",
-    "theme": "Глаголы — действия",
-    "visual": "A hand writing with a pen on paper"
   },
   {
     "tr": "bırakmak",
@@ -6083,13 +6034,6 @@
     "visual": "A woven fishing net"
   },
   {
-    "tr": "ev",
-    "ru": "дом",
-    "pos": "noun",
-    "theme": "Дом и мебель",
-    "visual": "A cozy small house with a red roof"
-  },
-  {
     "tr": "oda",
     "ru": "комната",
     "pos": "noun",
@@ -6158,20 +6102,6 @@
     "pos": "noun",
     "theme": "Еда и напитки",
     "visual": "A golden baked pastry roll"
-  },
-  {
-    "tr": "çay",
-    "ru": "чай",
-    "pos": "noun",
-    "theme": "Еда и напитки",
-    "visual": "A glass of hot Turkish tea"
-  },
-  {
-    "tr": "su",
-    "ru": "вода",
-    "pos": "noun",
-    "theme": "Еда и напитки",
-    "visual": "A clear glass of water"
   },
   {
     "tr": "baş",
@@ -6328,20 +6258,6 @@
     "visual": "A round wall clock"
   },
   {
-    "tr": "kedi",
-    "ru": "кошка",
-    "pos": "noun",
-    "theme": "Животные",
-    "visual": "A cute sitting cat"
-  },
-  {
-    "tr": "köpek",
-    "ru": "собака",
-    "pos": "noun",
-    "theme": "Животные",
-    "visual": "A happy sitting dog"
-  },
-  {
     "tr": "arı",
     "ru": "пчела",
     "pos": "noun",
@@ -6466,13 +6382,6 @@
     "pos": "noun",
     "theme": "Насекомые",
     "visual": "A small fly"
-  },
-  {
-    "tr": "yüzmek",
-    "ru": "плавать",
-    "pos": "verb",
-    "theme": "Глаголы — действия",
-    "visual": "A figure swimming through water"
   },
   {
     "tr": "üzüm",
@@ -6874,13 +6783,6 @@
     "visual": "A small plate of assorted appetizers"
   },
   {
-    "tr": "güneş",
-    "ru": "солнце",
-    "pos": "noun",
-    "theme": "Природа и погода",
-    "visual": "A bright shining sun"
-  },
-  {
     "tr": "gök gürültüsü",
     "ru": "гром",
     "pos": "noun",
@@ -7075,13 +6977,6 @@
     "pos": "noun",
     "theme": "Календарь и время",
     "visual": "A calendar showing a full year grid"
-  },
-  {
-    "tr": "ay",
-    "ru": "месяц",
-    "pos": "noun",
-    "theme": "Календарь и время",
-    "visual": "A calendar page for one month"
   },
   {
     "tr": "güz",
@@ -7544,13 +7439,6 @@
     "pos": "verb",
     "theme": "Глаголы — действия",
     "visual": "A figure standing under a running shower"
-  },
-  {
-    "tr": "okumak",
-    "ru": "читать",
-    "pos": "verb",
-    "theme": "Глаголы — действия",
-    "visual": "A person reading an open book"
   },
   {
     "tr": "cevap vermek",
@@ -8510,13 +8398,6 @@
     "pos": "noun",
     "theme": "Одежда и аксессуары",
     "visual": "Comfortable sweatpants"
-  },
-  {
-    "tr": "mavi",
-    "ru": "синий, голубой",
-    "pos": "adjective",
-    "theme": "Цвета",
-    "visual": "A solid blue color swatch"
   },
   {
     "tr": "kahverengi",
@@ -12502,13 +12383,6 @@
     "visual": "A sunny beach with umbrellas"
   },
   {
-    "tr": "araba",
-    "ru": "машина, автомобиль",
-    "pos": "noun",
-    "theme": "Транспорт и вождение",
-    "visual": "A red car"
-  },
-  {
     "tr": "metro",
     "ru": "метро",
     "pos": "noun",
@@ -14565,13 +14439,6 @@
     "pos": "noun",
     "theme": "Школа и канцтовары",
     "visual": "A notebook page"
-  },
-  {
-    "tr": "kitap",
-    "ru": "книга",
-    "pos": "noun",
-    "theme": "Школа и канцтовары",
-    "visual": "An open book"
   },
   {
     "tr": "dosya",
