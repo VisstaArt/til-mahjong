@@ -254,16 +254,31 @@ function getMasteredCount() {
   return Object.keys(wordProgress).filter((tr) => getWordBox(tr).id === "mastered").length;
 }
 
+// Не больше стольки совсем новых слов в одной раскладке — если открыть свежую
+// категорию целиком из незнакомых слов, играть было бы невозможно тяжело.
+// Остальные места в раскладке добираются повторами уже отобранных слов и/или
+// словами, которые попроще (учатся/почти выучены/выучены).
+const MAX_NEW_WORDS_PER_GAME = 10;
+
 // Строит колоду ровно из pairsNeeded слов, взвешенно по тому, насколько слово ещё
 // не выучено (см. PROGRESS_BOXES) — так недавно ошибочные/новые слова встречаются
 // в раскладке чаще, а хорошо выученные постепенно пропадают из ротации.
 function buildWeightedDeck(deck, pairsNeeded) {
+  const newWords = deck.filter((w) => getWordBox(w.tr).id === "new");
+  const shuffledNew = [...newWords];
+  for (let i = shuffledNew.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffledNew[i], shuffledNew[j]] = [shuffledNew[j], shuffledNew[i]];
+  }
+  const allowedNew = new Set(shuffledNew.slice(0, MAX_NEW_WORDS_PER_GAME).map((w) => w.tr));
+  const eligible = deck.filter((w) => getWordBox(w.tr).id !== "new" || allowedNew.has(w.tr));
+
   const pool = [];
-  deck.forEach((w) => {
+  eligible.forEach((w) => {
     const weight = getWordBox(w.tr).weight;
     for (let i = 0; i < weight; i++) pool.push(w);
   });
-  if (!pool.length) pool.push(...deck); // всё выучено — всё равно даём поиграть
+  if (!pool.length) pool.push(...(eligible.length ? eligible : deck)); // всё выучено — всё равно даём поиграть
 
   for (let i = pool.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
@@ -545,7 +560,9 @@ function onTileClick(id) {
     showMatchPopup(tile);
     speak(tile.tr);
     refreshFreeStates();
-    bumpWordStreak(tile.tr, true);
+    // Пара, собранная по подсказке, не считается самостоятельным правильным ответом —
+    // иначе слово выглядело бы "выученным", хотя игрок его на самом деле не вспомнил.
+    if (!selected.hinted && !tile.hinted) bumpWordStreak(tile.tr, true);
 
     pairsLeft--;
     pairsLeftEl.textContent = pairsLeft;
@@ -598,6 +615,7 @@ function showHint() {
     );
     if (partner) {
       [t, partner].forEach((h) => {
+        h.hinted = true; // запоминаем на самой плитке — переживает подсветку и её таймаут
         const el = tileEl(h.id);
         if (el) {
           el.classList.add("hint");
