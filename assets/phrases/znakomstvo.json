@@ -248,6 +248,42 @@
       "tr": "Konuşmam kesildi, beni yeniden bağlayabilir misiniz?",
       "tl": null,
       "sub": null
+    },
+    {
+      "ru": "У тебя есть зажигалка?",
+      "tr": "Ateşin var mı acaba?",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Хочешь сигарету?",
+      "tr": "Bir sigara ister misin?",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Ты куришь?",
+      "tr": "Sigara içiyor musun?",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Нет, я не курю. Спасибо.",
+      "tr": "Hayır içmiyorum, teşekkürler.",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Я бросил/бросила",
+      "tr": "Bıraktım",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Не возражаешь, если я закурю?",
+      "tr": "Sigara içersem rahatsız olur mu?",
+      "tl": null,
+      "sub": null
     }
   ]
 }
