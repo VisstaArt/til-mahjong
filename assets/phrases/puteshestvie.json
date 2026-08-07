@@ -812,6 +812,72 @@
       "tr": "lastiği",
       "tl": "ластии",
       "sub": "Словарь — Sözlük"
+    },
+    {
+      "ru": "Кабина (одноместная/двухместная)",
+      "tr": "Kamara (tek yataklı/çift yataklı)",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Лодка",
+      "tr": "Gemi",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Палуба",
+      "tr": "Güverte",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Паром",
+      "tr": "Araba vapuru",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Пароход",
+      "tr": "Vapur",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Порт",
+      "tr": "Liman",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Спасательный жилет",
+      "tr": "Cankurtaran yeleği",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Спасательная лодка",
+      "tr": "Cankurtaran sandalı",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Судно на подводных крыльях",
+      "tr": "Deniz otobüsü",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Как мне найти этот адрес?",
+      "tr": "Bu adresi nasıl (nerede) bulabilirim?",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Как называется это место?",
+      "tr": "Bu yerin adı ne?",
+      "tl": null,
+      "sub": null
     }
   ]
 }
