@@ -442,12 +442,6 @@
       "sub": "самолет — Uçak"
     },
     {
-      "ru": "в один конец вылет первый класс прибытие туда и обратно эконом класс",
-      "tr": "gidiş kalkış birinci mevki varış gidiş/dönüş turist mevki",
-      "tl": "гидиш калкыш биринджи мэвки варыш гидиш/дёнюш турист мэвки",
-      "sub": "Словарь — sőzlűk"
-    },
-    {
       "ru": "Вызовите мне такси, пожалуй- ста",
       "tr": "Bana bir taksi çağırın lütfen?",
       "tl": "Бана бир такси чайырын лютфэн",
@@ -790,84 +784,6 @@
       "sub": "Как спросить, куда ехать — Arabayla yolculuk etme"
     },
     {
-      "ru": "82-й бензин аккумулятор вода высококачест- венный бензин",
-      "tr": "normal aküyü suyu süper",
-      "tl": "нормаль акюйю суйу сюпэр",
-      "sub": "Словарь — Sözlük"
-    },
-    {
-      "ru": "дизельное топ- ливо",
-      "tr": "motorin",
-      "tl": "моторин",
-      "sub": "Словарь — Sözlük"
-    },
-    {
-      "ru": "свеча зажигания стеклоочисти- тель",
-      "tr": "bujileri cam sileceğini",
-      "tl": "бужилери джам силеджэйини",
-      "sub": "Словарь — Sözlük"
-    },
-    {
-      "ru": "шина",
-      "tr": "lastiği",
-      "tl": "ластии",
-      "sub": "Словарь — Sözlük"
-    },
-    {
-      "ru": "Кабина (одноместная/двухместная)",
-      "tr": "Kamara (tek yataklı/çift yataklı)",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "Лодка",
-      "tr": "Gemi",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "Палуба",
-      "tr": "Güverte",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "Паром",
-      "tr": "Araba vapuru",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "Пароход",
-      "tr": "Vapur",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "Порт",
-      "tr": "Liman",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "Спасательный жилет",
-      "tr": "Cankurtaran yeleği",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "Спасательная лодка",
-      "tr": "Cankurtaran sandalı",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "Судно на подводных крыльях",
-      "tr": "Deniz otobüsü",
-      "tl": null,
-      "sub": null
-    },
-    {
       "ru": "Как мне найти этот адрес?",
       "tr": "Bu adresi nasıl (nerede) bulabilirim?",
       "tl": null,
@@ -936,66 +852,6 @@
     {
       "ru": "Вы не можете/у вас не получится добраться туда пешком",
       "tr": "Oraya yürüyerek gidebilirsiniz/gidemezsiniz",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "запасная шина",
-      "tr": "yedek lastiği",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "карбюратор",
-      "tr": "karbüratör",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "колесо",
-      "tr": "tekerlek",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "коробка передач",
-      "tr": "vites kutusu",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "масло",
-      "tr": "yağ",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "мотор",
-      "tr": "motor",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "тормоза",
-      "tr": "frenler",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "тормозная жидкость",
-      "tr": "fren hidrolik yağı",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "радиатор",
-      "tr": "radyatör",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "ремень вентилятора",
-      "tr": "vantilatör kayışı",
       "tl": null,
       "sub": null
     }

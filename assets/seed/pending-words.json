@@ -16973,5 +16973,607 @@
     "pos": "noun",
     "theme": "Еда и напитки",
     "visual": "A bowl of tomato soup"
+  },
+  {
+    "tr": "gidiş",
+    "ru": "в один конец",
+    "pos": "noun",
+    "theme": "Транспорт и вождение",
+    "visual": "A one-way arrow sign"
+  },
+  {
+    "tr": "birinci mevki",
+    "ru": "первый класс",
+    "pos": "noun",
+    "theme": "Транспорт и вождение",
+    "visual": "A luxurious first-class airplane seat"
+  },
+  {
+    "tr": "varış",
+    "ru": "прибытие",
+    "pos": "noun",
+    "theme": "Транспорт и вождение",
+    "visual": "An airplane landing"
+  },
+  {
+    "tr": "gidiş/dönüş",
+    "ru": "туда и обратно",
+    "pos": "noun",
+    "theme": "Транспорт и вождение",
+    "visual": "Two arrows pointing opposite directions"
+  },
+  {
+    "tr": "turist mevki",
+    "ru": "эконом класс",
+    "pos": "noun",
+    "theme": "Транспорт и вождение",
+    "visual": "A standard economy airplane seat"
+  },
+  {
+    "tr": "Kamara (tek yataklı/çift yataklı)",
+    "ru": "кабина (одноместная/двухместная)",
+    "pos": "noun",
+    "theme": "Транспорт и вождение",
+    "visual": "A ship cabin with bunk beds"
+  },
+  {
+    "tr": "Güverte",
+    "ru": "палуба",
+    "pos": "noun",
+    "theme": "Транспорт и вождение",
+    "visual": "The deck of a ship"
+  },
+  {
+    "tr": "Araba vapuru",
+    "ru": "паром",
+    "pos": "noun",
+    "theme": "Транспорт и вождение",
+    "visual": "A car ferry crossing water"
+  },
+  {
+    "tr": "Vapur",
+    "ru": "пароход",
+    "pos": "noun",
+    "theme": "Транспорт и вождение",
+    "visual": "A steamship"
+  },
+  {
+    "tr": "Cankurtaran yeleği",
+    "ru": "спасательный жилет",
+    "pos": "noun",
+    "theme": "Транспорт и вождение",
+    "visual": "An orange life jacket"
+  },
+  {
+    "tr": "Cankurtaran sandalı",
+    "ru": "спасательная лодка",
+    "pos": "noun",
+    "theme": "Транспорт и вождение",
+    "visual": "A small lifeboat"
+  },
+  {
+    "tr": "Deniz otobüsü",
+    "ru": "судно на подводных крыльях",
+    "pos": "noun",
+    "theme": "Транспорт и вождение",
+    "visual": "A fast hydrofoil boat"
+  },
+  {
+    "tr": "normal (benzin)",
+    "ru": "82-й бензин (обычный)",
+    "pos": "noun",
+    "theme": "Водитель",
+    "visual": "A regular gasoline pump nozzle"
+  },
+  {
+    "tr": "akü",
+    "ru": "аккумулятор",
+    "pos": "noun",
+    "theme": "Водитель",
+    "visual": "A car battery"
+  },
+  {
+    "tr": "su (araba)",
+    "ru": "вода (для машины)",
+    "pos": "noun",
+    "theme": "Водитель",
+    "visual": "A water canister for a car radiator"
+  },
+  {
+    "tr": "süper (benzin)",
+    "ru": "высококачественный бензин",
+    "pos": "noun",
+    "theme": "Водитель",
+    "visual": "A premium gasoline pump nozzle"
+  },
+  {
+    "tr": "motorin",
+    "ru": "дизельное топливо",
+    "pos": "noun",
+    "theme": "Водитель",
+    "visual": "A diesel fuel pump nozzle"
+  },
+  {
+    "tr": "bujiler",
+    "ru": "свеча зажигания",
+    "pos": "noun",
+    "theme": "Водитель",
+    "visual": "A spark plug"
+  },
+  {
+    "tr": "cam silecekleri",
+    "ru": "стеклоочиститель (дворники)",
+    "pos": "noun",
+    "theme": "Водитель",
+    "visual": "Windshield wipers on a car"
+  },
+  {
+    "tr": "lastik",
+    "ru": "шина",
+    "pos": "noun",
+    "theme": "Водитель",
+    "visual": "A car tire"
+  },
+  {
+    "tr": "yedek lastiği",
+    "ru": "запасная шина",
+    "pos": "noun",
+    "theme": "Водитель",
+    "visual": "A spare tire in a car trunk"
+  },
+  {
+    "tr": "karbüratör",
+    "ru": "карбюратор",
+    "pos": "noun",
+    "theme": "Водитель",
+    "visual": "A car carburetor part"
+  },
+  {
+    "tr": "tekerlek",
+    "ru": "колесо",
+    "pos": "noun",
+    "theme": "Водитель",
+    "visual": "A car wheel"
+  },
+  {
+    "tr": "vites kutusu",
+    "ru": "коробка передач",
+    "pos": "noun",
+    "theme": "Водитель",
+    "visual": "A car gearbox"
+  },
+  {
+    "tr": "yağ (motor)",
+    "ru": "масло (машинное)",
+    "pos": "noun",
+    "theme": "Водитель",
+    "visual": "A can of motor oil"
+  },
+  {
+    "tr": "motor",
+    "ru": "мотор",
+    "pos": "noun",
+    "theme": "Водитель",
+    "visual": "A car engine"
+  },
+  {
+    "tr": "frenler",
+    "ru": "тормоза",
+    "pos": "noun",
+    "theme": "Водитель",
+    "visual": "A car brake pedal"
+  },
+  {
+    "tr": "fren hidrolik yağı",
+    "ru": "тормозная жидкость",
+    "pos": "noun",
+    "theme": "Водитель",
+    "visual": "A bottle of brake fluid"
+  },
+  {
+    "tr": "radyatör",
+    "ru": "радиатор",
+    "pos": "noun",
+    "theme": "Водитель",
+    "visual": "A car radiator"
+  },
+  {
+    "tr": "vantilatör kayışı",
+    "ru": "ремень вентилятора",
+    "pos": "noun",
+    "theme": "Водитель",
+    "visual": "A car fan belt"
+  },
+  {
+    "tr": "antika eşya",
+    "ru": "антиквариат",
+    "pos": "noun",
+    "theme": "Город и места",
+    "visual": "An antique shop window"
+  },
+  {
+    "tr": "arkeoloji",
+    "ru": "археология",
+    "pos": "noun",
+    "theme": "Город и места",
+    "visual": "Archaeological dig with ancient artifacts"
+  },
+  {
+    "tr": "kule",
+    "ru": "башня",
+    "pos": "noun",
+    "theme": "Город и места",
+    "visual": "A tall stone tower"
+  },
+  {
+    "tr": "kütüphane (yer)",
+    "ru": "библиотека (место)",
+    "pos": "noun",
+    "theme": "Город и места",
+    "visual": "A grand library building"
+  },
+  {
+    "tr": "borsa (yer)",
+    "ru": "биржа (место)",
+    "pos": "noun",
+    "theme": "Город и места",
+    "visual": "A stock exchange building"
+  },
+  {
+    "tr": "bit pazarı",
+    "ru": "блошиный рынок",
+    "pos": "noun",
+    "theme": "Город и места",
+    "visual": "A flea market with stalls"
+  },
+  {
+    "tr": "botanik (bitkibilim)",
+    "ru": "ботаника",
+    "pos": "noun",
+    "theme": "Город и места",
+    "visual": "A botanist examining a plant"
+  },
+  {
+    "tr": "botanik bahçeleri",
+    "ru": "ботанический сад",
+    "pos": "noun",
+    "theme": "Город и места",
+    "visual": "A lush botanical garden"
+  },
+  {
+    "tr": "bağ",
+    "ru": "виноградник",
+    "pos": "noun",
+    "theme": "Город и места",
+    "visual": "Rows of grapevines"
+  },
+  {
+    "tr": "çağlayan",
+    "ru": "водопад",
+    "pos": "noun",
+    "theme": "Город и места",
+    "visual": "A rushing waterfall"
+  },
+  {
+    "tr": "jeoloji",
+    "ru": "геология",
+    "pos": "noun",
+    "theme": "Город и места",
+    "visual": "Layered rock strata"
+  },
+  {
+    "tr": "çömlekçilik",
+    "ru": "гончарное дело",
+    "pos": "noun",
+    "theme": "Город и места",
+    "visual": "A potter shaping clay on a wheel"
+  },
+  {
+    "tr": "saray",
+    "ru": "дворец",
+    "pos": "noun",
+    "theme": "Город и места",
+    "visual": "A grand palace"
+  },
+  {
+    "tr": "ticaret merkezi",
+    "ru": "деловой район",
+    "pos": "noun",
+    "theme": "Город и места",
+    "visual": "A city business district skyline"
+  },
+  {
+    "tr": "ev (yer)",
+    "ru": "дом (место)",
+    "pos": "noun",
+    "theme": "Город и места",
+    "visual": "A cozy house"
+  },
+  {
+    "tr": "fabrika",
+    "ru": "завод",
+    "pos": "noun",
+    "theme": "Город и места",
+    "visual": "An industrial factory"
+  },
+  {
+    "tr": "şato",
+    "ru": "замок",
+    "pos": "noun",
+    "theme": "Город и места",
+    "visual": "A medieval castle"
+  },
+  {
+    "tr": "bina",
+    "ru": "здание",
+    "pos": "noun",
+    "theme": "Город и места",
+    "visual": "A tall building"
+  },
+  {
+    "tr": "hayvanat bahçesi",
+    "ru": "зоопарк",
+    "pos": "noun",
+    "theme": "Город и места",
+    "visual": "A zoo with animal enclosures"
+  },
+  {
+    "tr": "güzel sanatlar",
+    "ru": "изобразительные искусства",
+    "pos": "noun",
+    "theme": "Город и места",
+    "visual": "An art gallery with paintings and sculpture"
+  },
+  {
+    "tr": "sanat (yer)",
+    "ru": "искусство (место)",
+    "pos": "noun",
+    "theme": "Город и места",
+    "visual": "A museum art wing"
+  },
+  {
+    "tr": "tarih (yer)",
+    "ru": "история (место)",
+    "pos": "noun",
+    "theme": "Город и места",
+    "visual": "An ancient historical ruin"
+  },
+  {
+    "tr": "kaynak (su)",
+    "ru": "источник (родник)",
+    "pos": "noun",
+    "theme": "Город и места",
+    "visual": "A natural spring"
+  },
+  {
+    "tr": "kale",
+    "ru": "крепость",
+    "pos": "noun",
+    "theme": "Город и места",
+    "visual": "An old stone fortress"
+  },
+  {
+    "tr": "orman",
+    "ru": "лес",
+    "pos": "noun",
+    "theme": "Город и места",
+    "visual": "A dense forest"
+  },
+  {
+    "tr": "çayır",
+    "ru": "луг",
+    "pos": "noun",
+    "theme": "Город и места",
+    "visual": "A green meadow"
+  },
+  {
+    "tr": "alışveriş bölgesi",
+    "ru": "магазины (торговая зона)",
+    "pos": "noun",
+    "theme": "Город и места",
+    "visual": "A shopping district street"
+  },
+  {
+    "tr": "tıp (yer)",
+    "ru": "медицина (музей)",
+    "pos": "noun",
+    "theme": "Город и места",
+    "visual": "A medical history museum exhibit"
+  },
+  {
+    "tr": "anıt",
+    "ru": "мемориал",
+    "pos": "noun",
+    "theme": "Город и места",
+    "visual": "A stone memorial monument"
+  },
+  {
+    "tr": "manastır",
+    "ru": "монастырь",
+    "pos": "noun",
+    "theme": "Город и места",
+    "visual": "A quiet monastery"
+  },
+  {
+    "tr": "deniz (yer)",
+    "ru": "море (место)",
+    "pos": "noun",
+    "theme": "Город и места",
+    "visual": "A coastal seaside view"
+  },
+  {
+    "tr": "müzik (yer)",
+    "ru": "музыка (место)",
+    "pos": "noun",
+    "theme": "Город и места",
+    "visual": "A concert stage with instruments"
+  },
+  {
+    "tr": "madeni paralar",
+    "ru": "нумизматика (монеты)",
+    "pos": "noun",
+    "theme": "Город и места",
+    "visual": "A collection of old coins"
+  },
+  {
+    "tr": "göl",
+    "ru": "озеро",
+    "pos": "noun",
+    "theme": "Город и места",
+    "visual": "A calm lake"
+  },
+  {
+    "tr": "opera binası",
+    "ru": "опера (здание)",
+    "pos": "noun",
+    "theme": "Город и места",
+    "visual": "An opera house"
+  },
+  {
+    "tr": "abide",
+    "ru": "памятник",
+    "pos": "noun",
+    "theme": "Город и места",
+    "visual": "A monument statue"
+  },
+  {
+    "tr": "park (yer)",
+    "ru": "парк (место)",
+    "pos": "noun",
+    "theme": "Город и места",
+    "visual": "A city park with trees"
+  },
+  {
+    "tr": "geçit",
+    "ru": "перевал",
+    "pos": "noun",
+    "theme": "Город и места",
+    "visual": "A mountain pass"
+  },
+  {
+    "tr": "mağara",
+    "ru": "пещера",
+    "pos": "noun",
+    "theme": "Город и места",
+    "visual": "A dark cave"
+  },
+  {
+    "tr": "meydan",
+    "ru": "площадь",
+    "pos": "noun",
+    "theme": "Город и места",
+    "visual": "A city square"
+  },
+  {
+    "tr": "liman (yer)",
+    "ru": "порт (место)",
+    "pos": "noun",
+    "theme": "Город и места",
+    "visual": "A harbor with ships"
+  },
+  {
+    "tr": "harabeler",
+    "ru": "развалины",
+    "pos": "noun",
+    "theme": "Город и места",
+    "visual": "Ancient ruins"
+  },
+  {
+    "tr": "parlamento binası",
+    "ru": "резиденция парламента",
+    "pos": "noun",
+    "theme": "Город и места",
+    "visual": "A grand parliament building"
+  },
+  {
+    "tr": "din",
+    "ru": "религия",
+    "pos": "noun",
+    "theme": "Город и места",
+    "visual": "A religious symbol"
+  },
+  {
+    "tr": "el sanatları",
+    "ru": "ремесла",
+    "pos": "noun",
+    "theme": "Город и места",
+    "visual": "Handcrafted pottery and textiles"
+  },
+  {
+    "tr": "pazar (yer)",
+    "ru": "рынок (место)",
+    "pos": "noun",
+    "theme": "Город и места",
+    "visual": "An open-air market"
+  },
+  {
+    "tr": "heykeltıraşlık",
+    "ru": "скульптура",
+    "pos": "noun",
+    "theme": "Город и места",
+    "visual": "A stone sculpture on display"
+  },
+  {
+    "tr": "görkemli",
+    "ru": "великолепный",
+    "pos": "noun",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A magnificent golden palace"
+  },
+  {
+    "tr": "etkileyici",
+    "ru": "впечатляющий",
+    "pos": "noun",
+    "theme": "Прилагательные и сравнения",
+    "visual": "An awe-inspiring grand canyon view"
+  },
+  {
+    "tr": "şaşırtıcı",
+    "ru": "изумительный",
+    "pos": "noun",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A surprised face looking at something amazing"
+  },
+  {
+    "tr": "ilginç",
+    "ru": "интересный",
+    "pos": "noun",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A curious person examining an object"
+  },
+  {
+    "tr": "karanlık",
+    "ru": "мрачный",
+    "pos": "noun",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A dark gloomy alley"
+  },
+  {
+    "tr": "tuhaf",
+    "ru": "странный",
+    "pos": "noun",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A strange oddly-shaped object"
+  },
+  {
+    "tr": "müthiş",
+    "ru": "страшный",
+    "pos": "noun",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A scary dark silhouette"
+  },
+  {
+    "tr": "Öğrenciler",
+    "ru": "студенты (скидка)",
+    "pos": "noun",
+    "theme": "Служебные слова",
+    "visual": "A group of students with backpacks"
+  },
+  {
+    "tr": "Özürlüler",
+    "ru": "инвалиды (скидка)",
+    "pos": "noun",
+    "theme": "Служебные слова",
+    "visual": "A wheelchair accessibility symbol"
   }
 ]
