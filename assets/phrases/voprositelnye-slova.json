@@ -1,1 +1,43 @@
-{"id": "voprositelnye-slova", "title": "Вопросительные слова", "source": "razgovornik", "phrases": [{"ru": "Как далеко?", "tr": "Ne kadar uzaklıkta?", "tl": "Нэ кадар узаклыкта?", "sub": null}, {"ru": "Как долго?", "tr": "Ne kadar zaman?", "tl": "Нэ кадар заман?", "sub": null}, {"ru": "Как мне туда добраться?", "tr": "Oraya nasıl gidebilirim?", "tl": "Орайа насыл гидэбилирим?", "sub": null}, {"ru": "Что я должен делать?", "tr": "Ne yapmam gerek?", "tl": "Нэ япмам герэк?", "sub": null}, {"ru": "Где я могу найти …?", "tr": "Nerede … bulabilirim?", "tl": "Нэрдэ … булабилирим?", "sub": null}]}
+{
+  "id": "voprositelnye-slova",
+  "title": "Вопросительные слова",
+  "source": "razgovornik",
+  "phrases": [
+    {
+      "ru": "Как далеко?",
+      "tr": "Ne kadar uzaklıkta?",
+      "tl": "Нэ кадар узаклыкта?",
+      "sub": null
+    },
+    {
+      "ru": "Как долго?",
+      "tr": "Ne kadar zaman?",
+      "tl": "Нэ кадар заман?",
+      "sub": null
+    },
+    {
+      "ru": "Как мне туда добраться?",
+      "tr": "Oraya nasıl gidebilirim?",
+      "tl": "Орайа насыл гидэбилирим?",
+      "sub": null
+    },
+    {
+      "ru": "Что я должен делать?",
+      "tr": "Ne yapmam gerek?",
+      "tl": "Нэ япмам герэк?",
+      "sub": null
+    },
+    {
+      "ru": "Где я могу найти …?",
+      "tr": "Nerede … bulabilirim?",
+      "tl": "Нэрдэ … булабилирим?",
+      "sub": null
+    },
+    {
+      "ru": "Могу я?",
+      "tr": "… alabilir miyim?",
+      "tl": null,
+      "sub": null
+    }
+  ]
+}
