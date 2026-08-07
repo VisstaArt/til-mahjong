@@ -1,1 +1,139 @@
-{"id": "nekotorye-poleznye-nadpisi-i-vyveski", "title": "Некоторые полезные надписи и вывески", "source": "razgovornik", "phrases": [{"ru": "некОт Входная плата Прибытие Отъезд Автобус Осторожно, злая собака", "tr": "Орые Giriş serbset (bedava) Varış (Geliş) Gidiş (Hareket) Otobüs Köpek var", "tl": "ПОлезные надПиси и вывески Гириш сэрбэст (бэдава) Варыш (гелиш) Гидиш/харэкэт Отобюс Кёпэк вар", "sub": null}, {"ru": "Касса Внимание! Закрыто Открыто Дорожка для ве- лосипедистов", "tr": "Kasa Dikkat Kapalı Açık Bisiklet yolu", "tl": "Каса Диккат Капалы Ачык Бисиклет йолу", "sub": null}, {"ru": "Не для питья Занято Улица с односто- ронним движе- нием", "tr": "İçilmez Meşgul Tek yollu cadde", "tl": "Ичильмэз Мэшгюль Тэк йоллу джадэ", "sub": null}, {"ru": "Открыто с … по … Звонить", "tr": "Saat … den … e kadar açık Lütfen zili çalınız", "tl": "Саат … дэн …э кадар ачык Лютфен, зили чалыныз", "sub": null}, {"ru": "На себя От себя Зарезервировано Билетов нет Метро Зал ожидания Вход только для сотрудников", "tr": "Çekiniz İtiniz Rezerve Yer yok Metro Bekleme odası Yalnızca Yetkili Personel Girişi", "tl": "Чекиниз Итиниз Рэзэрвэ Йэр йок Мэтро Бэклемэ одасы Ялнызджа йэткили пэрсонэл гириши", "sub": null}]}
+{
+  "id": "nekotorye-poleznye-nadpisi-i-vyveski",
+  "title": "Некоторые полезные надписи и вывески",
+  "source": "razgovornik",
+  "phrases": [
+    {
+      "ru": "Входная плата",
+      "tr": "Giriş serbest (bedava)",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Прибытие",
+      "tr": "Varış (Geliş)",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Отъезд",
+      "tr": "Gidiş (Hareket)",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Автобус",
+      "tr": "Otobüs",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Осторожно, злая собака",
+      "tr": "Köpek var",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Касса",
+      "tr": "Kasa",
+      "tl": "Каса",
+      "sub": null
+    },
+    {
+      "ru": "Внимание!",
+      "tr": "Dikkat",
+      "tl": "Диккат",
+      "sub": null
+    },
+    {
+      "ru": "Закрыто",
+      "tr": "Kapalı",
+      "tl": "Капалы",
+      "sub": null
+    },
+    {
+      "ru": "Открыто",
+      "tr": "Açık",
+      "tl": "Ачык",
+      "sub": null
+    },
+    {
+      "ru": "Дорожка для ве- лосипедистов",
+      "tr": "Bisiklet yolu",
+      "tl": "Бисиклет йолу",
+      "sub": null
+    },
+    {
+      "ru": "Не для питья",
+      "tr": "İçilmez",
+      "tl": "Ичильмэз",
+      "sub": null
+    },
+    {
+      "ru": "Занято",
+      "tr": "Meşgul",
+      "tl": "Мэшгюль",
+      "sub": null
+    },
+    {
+      "ru": "Улица с односто- ронним движе- нием",
+      "tr": "Tek yollu cadde",
+      "tl": "Тэк йоллу джадэ",
+      "sub": null
+    },
+    {
+      "ru": "Открыто с … по …",
+      "tr": "Saat … den … e kadar açık",
+      "tl": "Саат … дэн …э кадар ачык",
+      "sub": null
+    },
+    {
+      "ru": "Звонить",
+      "tr": "Lütfen zili çalınız",
+      "tl": "Лютфен, зили чалыныз",
+      "sub": null
+    },
+    {
+      "ru": "На себя",
+      "tr": "Çekiniz",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "От себя",
+      "tr": "İtiniz",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Зарезервировано",
+      "tr": "Rezerve",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Билетов нет",
+      "tr": "Yer yok",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Метро",
+      "tr": "Metro",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Зал ожидания",
+      "tr": "Bekleme odası",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Вход только для сотрудников",
+      "tr": "Yalnızca Yetkili Personel Girişi",
+      "tl": null,
+      "sub": null
+    }
+  ]
+}

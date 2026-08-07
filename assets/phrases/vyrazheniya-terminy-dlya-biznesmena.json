@@ -1,1 +1,25 @@
-{"id": "vyrazheniya-terminy-dlya-biznesmena", "title": "Выражения, термины для бизнесмена", "source": "razgovornik", "phrases": [{"ru": "Меня зовут … Вот моя визит- ная карточка", "tr": "İŞ TERIMLERI Adım … Buyurun kartım", "tl": "Адым … Буюрун картым", "sub": null}, {"ru": "Вы можете на- звать приблизи- тельную стои- мо сть?", "tr": "Bana yaklaşık bir maliyet verebilir misiniz?", "tl": "Бана яклашык бир малийэт вэрэбилир мисиниз?", "sub": null}]}
+{
+  "id": "vyrazheniya-terminy-dlya-biznesmena",
+  "title": "Выражения, термины для бизнесмена",
+  "source": "razgovornik",
+  "phrases": [
+    {
+      "ru": "Меня зовут …",
+      "tr": "Adım …",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Вот моя визитная карточка",
+      "tr": "Buyurun kartım",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Вы можете на- звать приблизи- тельную стои- мо сть?",
+      "tr": "Bana yaklaşık bir maliyet verebilir misiniz?",
+      "tl": "Бана яклашык бир малийэт вэрэбилир мисиниз?",
+      "sub": null
+    }
+  ]
+}

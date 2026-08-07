@@ -1,5 +1,40 @@
 [
   {
+    "id": "kak-deystvovat-v-ekstrennoy-situacii",
+    "title": "Как действовать в экстренной ситуации",
+    "source": "razgovornik",
+    "count": 10,
+    "sizeKB": 2.0
+  },
+  {
+    "id": "kak-pomenyat-dengi",
+    "title": "Как поменять деньги",
+    "source": "razgovornik",
+    "count": 16,
+    "sizeKB": 3.5
+  },
+  {
+    "id": "na-tamozhne",
+    "title": "На таможне",
+    "source": "razgovornik",
+    "count": 17,
+    "sizeKB": 3.8
+  },
+  {
+    "id": "nekotorye-poleznye-nadpisi-i-vyveski",
+    "title": "Некоторые полезные надписи и вывески",
+    "source": "razgovornik",
+    "count": 22,
+    "sizeKB": 2.9
+  },
+  {
+    "id": "o-pogode",
+    "title": "О погоде",
+    "source": "razgovornik",
+    "count": 12,
+    "sizeKB": 3.8
+  },
+  {
     "id": "obscheprinyatye-slova",
     "title": "Общепринятые слова",
     "source": "razgovornik",
@@ -7,32 +42,18 @@
     "sizeKB": 2.1
   },
   {
-    "id": "voprositelnye-slova",
-    "title": "Вопросительные слова",
+    "id": "osmotr-dostoprimechatelnostey",
+    "title": "Осмотр достопримечательностей",
     "source": "razgovornik",
-    "count": 5,
-    "sizeKB": 0.7
+    "count": 43,
+    "sizeKB": 13.0
   },
   {
-    "id": "privetstvie",
-    "title": "Приветствие",
+    "id": "pokupki-servis",
+    "title": "Покупки, сервис",
     "source": "razgovornik",
-    "count": 65,
-    "sizeKB": 16.2
-  },
-  {
-    "id": "professii",
-    "title": "Профессии",
-    "source": "razgovornik",
-    "count": 4,
-    "sizeKB": 1.0
-  },
-  {
-    "id": "vremya",
-    "title": "Время",
-    "source": "razgovornik",
-    "count": 6,
-    "sizeKB": 1.1
+    "count": 271,
+    "sizeKB": 74.4
   },
   {
     "id": "poleznye-antonimy",
@@ -42,18 +63,46 @@
     "sizeKB": 2.1
   },
   {
-    "id": "na-tamozhne",
-    "title": "На таможне",
+    "id": "privetstvie",
+    "title": "Приветствие",
     "source": "razgovornik",
-    "count": 13,
-    "sizeKB": 3.3
+    "count": 87,
+    "sizeKB": 19.0
   },
   {
-    "id": "kak-pomenyat-dengi",
-    "title": "Как поменять деньги",
+    "id": "professii",
+    "title": "Профессии",
     "source": "razgovornik",
-    "count": 12,
-    "sizeKB": 3.4
+    "count": 4,
+    "sizeKB": 1.0
+  },
+  {
+    "id": "puteshestvie",
+    "title": "Путешествие",
+    "source": "razgovornik",
+    "count": 135,
+    "sizeKB": 43.1
+  },
+  {
+    "id": "razvlecheniya-otdyh",
+    "title": "Развлечения, отдых",
+    "source": "razgovornik",
+    "count": 66,
+    "sizeKB": 21.5
+  },
+  {
+    "id": "restoran",
+    "title": "Ресторан",
+    "source": "razgovornik",
+    "count": 120,
+    "sizeKB": 29.2
+  },
+  {
+    "id": "ustoychivye-vyrazheniya-so-slovom-allah",
+    "title": "Устойчивые выражения со словом «Allah»",
+    "source": "allah",
+    "count": 225,
+    "sizeKB": 30.8
   },
   {
     "id": "v-gorode",
@@ -63,94 +112,45 @@
     "sizeKB": 1.7
   },
   {
-    "id": "nekotorye-poleznye-nadpisi-i-vyveski",
-    "title": "Некоторые полезные надписи и вывески",
-    "source": "razgovornik",
-    "count": 5,
-    "sizeKB": 1.7
-  },
-  {
     "id": "v-otele",
     "title": "В отеле",
     "source": "razgovornik",
-    "count": 63,
-    "sizeKB": 17.0
+    "count": 72,
+    "sizeKB": 19.5
   },
   {
-    "id": "restoran",
-    "title": "Ресторан",
+    "id": "voprositelnye-slova",
+    "title": "Вопросительные слова",
     "source": "razgovornik",
-    "count": 103,
-    "sizeKB": 25.7
+    "count": 5,
+    "sizeKB": 0.7
   },
   {
-    "id": "puteshestvie",
-    "title": "Путешествие",
+    "id": "vremya",
+    "title": "Время",
     "source": "razgovornik",
-    "count": 125,
-    "sizeKB": 38.4
-  },
-  {
-    "id": "osmotr-dostoprimechatelnostey",
-    "title": "Осмотр достопримечательностей",
-    "source": "razgovornik",
-    "count": 40,
-    "sizeKB": 11.9
-  },
-  {
-    "id": "pokupki-servis",
-    "title": "Покупки, сервис",
-    "source": "razgovornik",
-    "count": 247,
-    "sizeKB": 66.1
-  },
-  {
-    "id": "znakomstvo",
-    "title": "Знакомство",
-    "source": "razgovornik",
-    "count": 31,
-    "sizeKB": 9.9
-  },
-  {
-    "id": "o-pogode",
-    "title": "О погоде",
-    "source": "razgovornik",
-    "count": 10,
-    "sizeKB": 3.7
+    "count": 8,
+    "sizeKB": 1.5
   },
   {
     "id": "vyrazheniya-terminy-dlya-biznesmena",
     "title": "Выражения, термины для бизнесмена",
     "source": "razgovornik",
-    "count": 2,
-    "sizeKB": 0.6
-  },
-  {
-    "id": "razvlecheniya-otdyh",
-    "title": "Развлечения, отдых",
-    "source": "razgovornik",
-    "count": 63,
-    "sizeKB": 19.2
+    "count": 3,
+    "sizeKB": 0.7
   },
   {
     "id": "zdorove",
     "title": "Здоровье",
     "source": "razgovornik",
-    "count": 64,
-    "sizeKB": 16.8
+    "count": 92,
+    "sizeKB": 20.6
   },
   {
-    "id": "kak-deystvovat-v-ekstrennoy-situacii",
-    "title": "Как действовать в экстренной ситуации",
+    "id": "znakomstvo",
+    "title": "Знакомство",
     "source": "razgovornik",
-    "count": 7,
-    "sizeKB": 1.6
-  },
-  {
-    "id": "ustoychivye-vyrazheniya-so-slovom-allah",
-    "title": "Устойчивые выражения со словом «Allah»",
-    "source": "allah",
-    "count": 225,
-    "sizeKB": 30.8
+    "count": 37,
+    "sizeKB": 10.6
   }
 ]

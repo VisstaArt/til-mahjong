@@ -1,1 +1,103 @@
-{"id": "kak-pomenyat-dengi", "title": "Как поменять деньги", "source": "razgovornik", "phrases": [{"ru": "Где находится ближайший банк/пункт об- мена валют?", "tr": "как ПОменять PARA BOZDURMA En yakın banka/ dövuz bürosu nerede?", "tl": "деньги Эн якын банка/ дёвуз бюросу нэрдэ?", "sub": null}, {"ru": "Я хочу поменять доллары/евро/ фунты стерлин- гов", "tr": "Dolar/аvro/sterlin bozdurmak istiyorum", "tl": "Долар/авро/ стэрлин боздурмак истийорум", "sub": null}, {"ru": "Я хочу обменять дорожные чеки Где я могу по- менять доллары/ евро/фунты стерлингов?", "tr": "Seyahat çeki bozdurmak istiyorum Nerede biraz dolar/аvro/sterlin bozdurabilirim?", "tl": "Сэйахат чэки боздурмак истийорум Нэрдэ бираз долар/авро/ стэрлин бозду- рабилир им?", "sub": null}, {"ru": "Какой сегодня курс доллара/ евро/фунта стер- лингов?", "tr": "Bugünkü dolar/ аvro/sterlin kuru ne?", "tl": "Бугюнкю долар/ авро/стэрлин куру нэ?", "sub": null}, {"ru": "Я хочу открыть счет Сколько денег у меня на счету?", "tr": "Bir hesap açtırmak istiyorum Hesabımda ne kadar param var?", "tl": "Бир хэсап ачтырмак истийорум Хэсабымда нэ кадар парам вар? Хэсабымда пара ятырмак иситийорум Буну хэсабымда ятырмак истийорум Бираз пара чэкмэк истийорум", "sub": null}, {"ru": "Я хочу попол- нить счет Я хочу положить столько на мой счет Я хочу снять не- много денег", "tr": "Hesabımda para yatırmak istiyorum Bunu hesabımda yatırmak istiyorum Biraz para çekmek istiyorum", "tl": "Бир хэсап ачтырмак истийорум Хэсабымда нэ кадар парам вар? Хэсабымда пара ятырмак иситийорум Буну хэсабымда ятырмак истийорум Бираз пара чэкмэк истийорум", "sub": null}, {"ru": "Я жду денег из Москвы.", "tr": "Moskova dan para bekliyorum.", "tl": "Московадан пара бэклийорум. Гэльди ми?", "sub": null}, {"ru": "Их уже перевели?", "tr": "Geldi mi?", "tl": "Московадан пара бэклийорум. Гэльди ми?", "sub": null}, {"ru": "Дайте мне, по- жалуйста, банк- ноты по … лир", "tr": "… lık banknоtlar verin lütfen", "tl": "… лык банкнотлар вэрин лютфэн", "sub": null}, {"ru": "У вас есть удос- товерение лич- ности?", "tr": "Bir kimliğiniz var mı?", "tl": "Бир кимлийиниз вар мы?", "sub": null}, {"ru": "Распишитесь здесь, пожалуй- ста", "tr": "Burayı imzalayın lütfen", "tl": "Бурайы имзалайин лютфэн", "sub": null}, {"ru": "Пройдите в кас- су, пожалуйста", "tr": "Veznedara gidin, lütfen", "tl": "Вэзнэдара гидин, лютфэн", "sub": null}]}
+{
+  "id": "kak-pomenyat-dengi",
+  "title": "Как поменять деньги",
+  "source": "razgovornik",
+  "phrases": [
+    {
+      "ru": "Где находится ближайший банк/пункт об- мена валют?",
+      "tr": "как ПОменять PARA BOZDURMA En yakın banka/ dövuz bürosu nerede?",
+      "tl": "деньги Эн якын банка/ дёвуз бюросу нэрдэ?",
+      "sub": null
+    },
+    {
+      "ru": "Я хочу поменять доллары/евро/ фунты стерлин- гов",
+      "tr": "Dolar/аvro/sterlin bozdurmak istiyorum",
+      "tl": "Долар/авро/ стэрлин боздурмак истийорум",
+      "sub": null
+    },
+    {
+      "ru": "Я хочу обменять дорожные чеки",
+      "tr": "Seyahat çeki bozdurmak istiyorum",
+      "tl": "Сэйахат чэки боздурмак истийорум",
+      "sub": null
+    },
+    {
+      "ru": "Где я могу по- менять доллары/ евро/фунты стерлингов?",
+      "tr": "Nerede biraz dolar/аvro/sterlin bozdurabilirim?",
+      "tl": "Нэрдэ бираз долар/авро/ стэрлин бозду- рабилир им?",
+      "sub": null
+    },
+    {
+      "ru": "Какой сегодня курс доллара/ евро/фунта стер- лингов?",
+      "tr": "Bugünkü dolar/ аvro/sterlin kuru ne?",
+      "tl": "Бугюнкю долар/ авро/стэрлин куру нэ?",
+      "sub": null
+    },
+    {
+      "ru": "Я хочу открыть счет",
+      "tr": "Bir hesap açtırmak istiyorum",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Сколько денег у меня на счету?",
+      "tr": "Hesabımda ne kadar param var?",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Я хочу попол- нить счет",
+      "tr": "Hesabımda para yatırmak istiyorum",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Я хочу положить столько на мой счет",
+      "tr": "Bunu hesabımda yatırmak istiyorum",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Я хочу снять не- много денег",
+      "tr": "Biraz para çekmek istiyorum",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Я жду денег из Москвы.",
+      "tr": "Moskova dan para bekliyorum.",
+      "tl": "Московадан пара бэклийорум. Гэльди ми?",
+      "sub": null
+    },
+    {
+      "ru": "Их уже перевели?",
+      "tr": "Geldi mi?",
+      "tl": "Московадан пара бэклийорум. Гэльди ми?",
+      "sub": null
+    },
+    {
+      "ru": "Дайте мне, по- жалуйста, банк- ноты по … лир",
+      "tr": "… lık banknоtlar verin lütfen",
+      "tl": "… лык банкнотлар вэрин лютфэн",
+      "sub": null
+    },
+    {
+      "ru": "У вас есть удос- товерение лич- ности?",
+      "tr": "Bir kimliğiniz var mı?",
+      "tl": "Бир кимлийиниз вар мы?",
+      "sub": null
+    },
+    {
+      "ru": "Распишитесь здесь, пожалуй- ста",
+      "tr": "Burayı imzalayın lütfen",
+      "tl": "Бурайы имзалайин лютфэн",
+      "sub": null
+    },
+    {
+      "ru": "Пройдите в кас- су, пожалуйста",
+      "tr": "Veznedara gidin, lütfen",
+      "tl": "Вэзнэдара гидин, лютфэн",
+      "sub": null
+    }
+  ]
+}
