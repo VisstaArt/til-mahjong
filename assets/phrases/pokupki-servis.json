@@ -2096,6 +2096,42 @@
       "tr": "spor ceket",
       "tl": null,
       "sub": null
+    },
+    {
+      "ru": "туалетная вода",
+      "tr": "kolonya",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "тушь",
+      "tr": "rimel",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "увлажняющий крем",
+      "tr": "nemlendirici krem",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "шампунь для жирных волос",
+      "tr": "şampuan (yağlı saç için)",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "шампунь для сухих волос",
+      "tr": "şampuan (kuru saç için)",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "щетка для волос",
+      "tr": "saç fırçası",
+      "tl": null,
+      "sub": null
     }
   ]
 }
