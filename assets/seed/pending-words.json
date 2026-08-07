@@ -17575,5 +17575,1944 @@
     "pos": "noun",
     "theme": "Служебные слова",
     "visual": "A wheelchair accessibility symbol"
+  },
+  {
+    "tr": "antikacı dükkanı",
+    "ru": "антикварный магазин",
+    "pos": "noun",
+    "theme": "Покупки и магазины",
+    "visual": "An antique shop storefront"
+  },
+  {
+    "tr": "bakkal dükkanı",
+    "ru": "бакалея",
+    "pos": "noun",
+    "theme": "Покупки и магазины",
+    "visual": "A small grocery store"
+  },
+  {
+    "tr": "halıcı",
+    "ru": "магазин ковров",
+    "pos": "noun",
+    "theme": "Покупки и магазины",
+    "visual": "A carpet shop with rolled rugs"
+  },
+  {
+    "tr": "hediye dükkanı",
+    "ru": "магазин подарков",
+    "pos": "noun",
+    "theme": "Покупки и магазины",
+    "visual": "A gift shop window"
+  },
+  {
+    "tr": "kasap",
+    "ru": "мясной магазин",
+    "pos": "noun",
+    "theme": "Покупки и магазины",
+    "visual": "A butcher shop counter"
+  },
+  {
+    "tr": "ayakkabı mağazası",
+    "ru": "обувной магазин",
+    "pos": "noun",
+    "theme": "Покупки и магазины",
+    "visual": "A shoe store display"
+  },
+  {
+    "tr": "manav",
+    "ru": "овощной магазин",
+    "pos": "noun",
+    "theme": "Покупки и магазины",
+    "visual": "A greengrocer's stall"
+  },
+  {
+    "tr": "gözlükçü",
+    "ru": "оптика",
+    "pos": "noun",
+    "theme": "Покупки и магазины",
+    "visual": "An optician's shop with glasses display"
+  },
+  {
+    "tr": "kuaför (dükkan)",
+    "ru": "парикмахерская",
+    "pos": "noun",
+    "theme": "Покупки и магазины",
+    "visual": "A hairdresser's salon storefront"
+  },
+  {
+    "tr": "postane",
+    "ru": "почта",
+    "pos": "noun",
+    "theme": "Покупки и магазины",
+    "visual": "A post office building"
+  },
+  {
+    "tr": "çamaşırhane",
+    "ru": "прачечная",
+    "pos": "noun",
+    "theme": "Покупки и магазины",
+    "visual": "A laundromat with washing machines"
+  },
+  {
+    "tr": "balıkçı dükkanı",
+    "ru": "рыбный магазин",
+    "pos": "noun",
+    "theme": "Покупки и магазины",
+    "visual": "A fish market stall"
+  },
+  {
+    "tr": "spor mağazası",
+    "ru": "спортивные товары",
+    "pos": "noun",
+    "theme": "Покупки и магазины",
+    "visual": "A sporting goods store"
+  },
+  {
+    "tr": "eskici dükkanı",
+    "ru": "сэконд-хэнд",
+    "pos": "noun",
+    "theme": "Покупки и магазины",
+    "visual": "A secondhand thrift shop"
+  },
+  {
+    "tr": "ticaret merkezi (avm)",
+    "ru": "торговый центр",
+    "pos": "noun",
+    "theme": "Покупки и магазины",
+    "visual": "A large shopping mall"
+  },
+  {
+    "tr": "seyahat acentesi",
+    "ru": "туристическое агентство",
+    "pos": "noun",
+    "theme": "Покупки и магазины",
+    "visual": "A travel agency office"
+  },
+  {
+    "tr": "fotoğraf dükkanı",
+    "ru": "фотомагазин",
+    "pos": "noun",
+    "theme": "Покупки и магазины",
+    "visual": "A photo shop storefront"
+  },
+  {
+    "tr": "kuru temizleyici",
+    "ru": "химчистка",
+    "pos": "noun",
+    "theme": "Покупки и магазины",
+    "visual": "A dry cleaner's shop"
+  },
+  {
+    "tr": "sanat galerisi",
+    "ru": "художественная галерея",
+    "pos": "noun",
+    "theme": "Покупки и магазины",
+    "visual": "An art gallery interior"
+  },
+  {
+    "tr": "çiçekçi dükkanı",
+    "ru": "цветочный магазин",
+    "pos": "noun",
+    "theme": "Покупки и магазины",
+    "visual": "A flower shop storefront"
+  },
+  {
+    "tr": "kuyumcu dükkanı",
+    "ru": "ювелирный магазин",
+    "pos": "noun",
+    "theme": "Покупки и магазины",
+    "visual": "A jewelry shop storefront"
+  },
+  {
+    "tr": "bej",
+    "ru": "бежевый",
+    "pos": "noun",
+    "theme": "Цвета",
+    "visual": "A beige color swatch"
+  },
+  {
+    "tr": "turkuvaz",
+    "ru": "бирюзовый",
+    "pos": "noun",
+    "theme": "Цвета",
+    "visual": "A turquoise color swatch"
+  },
+  {
+    "tr": "altın rengi",
+    "ru": "золотой",
+    "pos": "noun",
+    "theme": "Цвета",
+    "visual": "A gold color swatch"
+  },
+  {
+    "tr": "kırmızı",
+    "ru": "красный",
+    "pos": "noun",
+    "theme": "Цвета",
+    "visual": "A red color swatch"
+  },
+  {
+    "tr": "portakal rengi",
+    "ru": "оранжевый",
+    "pos": "noun",
+    "theme": "Цвета",
+    "visual": "An orange color swatch"
+  },
+  {
+    "tr": "açık mor",
+    "ru": "розовато-лиловый",
+    "pos": "noun",
+    "theme": "Цвета",
+    "visual": "A light lilac color swatch"
+  },
+  {
+    "tr": "gümüş rengi",
+    "ru": "серебряный",
+    "pos": "noun",
+    "theme": "Цвета",
+    "visual": "A silver color swatch"
+  },
+  {
+    "tr": "mavi",
+    "ru": "синий",
+    "pos": "noun",
+    "theme": "Цвета",
+    "visual": "A blue color swatch"
+  },
+  {
+    "tr": "el çantası",
+    "ru": "сумочка",
+    "pos": "noun",
+    "theme": "Одежда и аксессуары",
+    "visual": "A woman's handbag"
+  },
+  {
+    "tr": "erkek külotu",
+    "ru": "трусы мужские",
+    "pos": "noun",
+    "theme": "Одежда и аксессуары",
+    "visual": "Men's underwear"
+  },
+  {
+    "tr": "sabahlık",
+    "ru": "халат",
+    "pos": "noun",
+    "theme": "Одежда и аксессуары",
+    "visual": "A bathrobe"
+  },
+  {
+    "tr": "çorap (kadın)",
+    "ru": "чулки",
+    "pos": "noun",
+    "theme": "Одежда и аксессуары",
+    "visual": "Women's stockings"
+  },
+  {
+    "tr": "tenis ayakkabısı",
+    "ru": "теннисные туфли",
+    "pos": "noun",
+    "theme": "Одежда и аксессуары",
+    "visual": "Tennis shoes"
+  },
+  {
+    "tr": "ayakkabı düz ökçeli",
+    "ru": "туфли без каблука",
+    "pos": "noun",
+    "theme": "Одежда и аксессуары",
+    "visual": "Flat shoes"
+  },
+  {
+    "tr": "ökçeli",
+    "ru": "туфли на каблуке",
+    "pos": "noun",
+    "theme": "Одежда и аксессуары",
+    "visual": "High-heeled shoes"
+  },
+  {
+    "tr": "kösele tabanlı",
+    "ru": "туфли на кожаной подошве",
+    "pos": "noun",
+    "theme": "Одежда и аксессуары",
+    "visual": "Shoes with a leather sole"
+  },
+  {
+    "tr": "kauçuk tabanlı",
+    "ru": "на резиновой подошве",
+    "pos": "noun",
+    "theme": "Одежда и аксессуары",
+    "visual": "Shoes with a rubber sole"
+  },
+  {
+    "tr": "süet (materyal)",
+    "ru": "замшевые (материал)",
+    "pos": "noun",
+    "theme": "Одежда и аксессуары",
+    "visual": "A suede texture swatch"
+  },
+  {
+    "tr": "deri (materyal)",
+    "ru": "кожаные (материал)",
+    "pos": "noun",
+    "theme": "Одежда и аксессуары",
+    "visual": "A leather texture swatch"
+  },
+  {
+    "tr": "kauçuk (materyal)",
+    "ru": "резиновые (материал)",
+    "pos": "noun",
+    "theme": "Одежда и аксессуары",
+    "visual": "A rubber texture swatch"
+  },
+  {
+    "tr": "kumaş (materyal)",
+    "ru": "тканевые (материал)",
+    "pos": "noun",
+    "theme": "Одежда и аксессуары",
+    "visual": "A fabric texture swatch"
+  },
+  {
+    "tr": "patiska",
+    "ru": "батист",
+    "pos": "noun",
+    "theme": "Одежда и аксессуары",
+    "visual": "A roll of fine batiste fabric"
+  },
+  {
+    "tr": "fitilli kadife",
+    "ru": "вельвет",
+    "pos": "noun",
+    "theme": "Одежда и аксессуары",
+    "visual": "A roll of corduroy fabric"
+  },
+  {
+    "tr": "gabardin",
+    "ru": "габардин",
+    "pos": "noun",
+    "theme": "Одежда и аксессуары",
+    "visual": "A roll of gabardine fabric"
+  },
+  {
+    "tr": "blucin kumaşı",
+    "ru": "джинсовая ткань",
+    "pos": "noun",
+    "theme": "Одежда и аксессуары",
+    "visual": "A roll of denim fabric"
+  },
+  {
+    "tr": "süet",
+    "ru": "замша",
+    "pos": "noun",
+    "theme": "Одежда и аксессуары",
+    "visual": "A piece of suede leather"
+  },
+  {
+    "tr": "dantel",
+    "ru": "кружево",
+    "pos": "noun",
+    "theme": "Одежда и аксессуары",
+    "visual": "A piece of lace fabric"
+  },
+  {
+    "tr": "havlu kumaş",
+    "ru": "махровая ткань",
+    "pos": "noun",
+    "theme": "Одежда и аксессуары",
+    "visual": "A roll of terrycloth fabric"
+  },
+  {
+    "tr": "poplin",
+    "ru": "поплин",
+    "pos": "noun",
+    "theme": "Одежда и аксессуары",
+    "visual": "A roll of poplin fabric"
+  },
+  {
+    "tr": "saten",
+    "ru": "сатин",
+    "pos": "noun",
+    "theme": "Одежда и аксессуары",
+    "visual": "A roll of satin fabric"
+  },
+  {
+    "tr": "pamuklu",
+    "ru": "хлопок",
+    "pos": "noun",
+    "theme": "Одежда и аксессуары",
+    "visual": "A roll of cotton fabric"
+  },
+  {
+    "tr": "şifon",
+    "ru": "шифон",
+    "pos": "noun",
+    "theme": "Одежда и аксессуары",
+    "visual": "A roll of chiffon fabric"
+  },
+  {
+    "tr": "sutyen",
+    "ru": "бюстгалтер",
+    "pos": "noun",
+    "theme": "Одежда и аксессуары",
+    "visual": "A bra"
+  },
+  {
+    "tr": "gece elbisesi",
+    "ru": "вечернее платье",
+    "pos": "noun",
+    "theme": "Одежда и аксессуары",
+    "visual": "An evening gown"
+  },
+  {
+    "tr": "uzun çorap",
+    "ru": "гольфы",
+    "pos": "noun",
+    "theme": "Одежда и аксессуары",
+    "visual": "Knee-high socks"
+  },
+  {
+    "tr": "kot, blucin",
+    "ru": "джинсы",
+    "pos": "noun",
+    "theme": "Одежда и аксессуары",
+    "visual": "Blue jeans"
+  },
+  {
+    "tr": "bayan külotu",
+    "ru": "женские трусики",
+    "pos": "noun",
+    "theme": "Одежда и аксессуары",
+    "visual": "Women's underwear"
+  },
+  {
+    "tr": "yelek",
+    "ru": "жилет",
+    "pos": "noun",
+    "theme": "Одежда и аксессуары",
+    "visual": "A vest"
+  },
+  {
+    "tr": "kasket",
+    "ru": "кепка",
+    "pos": "noun",
+    "theme": "Одежда и аксессуары",
+    "visual": "A flat cap"
+  },
+  {
+    "tr": "külotlu çorap",
+    "ru": "колготки",
+    "pos": "noun",
+    "theme": "Одежда и аксессуары",
+    "visual": "Pantyhose"
+  },
+  {
+    "tr": "korse",
+    "ru": "корсет",
+    "pos": "noun",
+    "theme": "Одежда и аксессуары",
+    "visual": "A corset"
+  },
+  {
+    "tr": "tayyör",
+    "ru": "костюм женский",
+    "pos": "noun",
+    "theme": "Одежда и аксессуары",
+    "visual": "A women's suit"
+  },
+  {
+    "tr": "erkek elbisesi",
+    "ru": "костюм мужской",
+    "pos": "noun",
+    "theme": "Одежда и аксессуары",
+    "visual": "A men's suit"
+  },
+  {
+    "tr": "bone",
+    "ru": "купальная шапочка",
+    "pos": "noun",
+    "theme": "Одежда и аксессуары",
+    "visual": "A swim cap"
+  },
+  {
+    "tr": "mayo",
+    "ru": "купальник",
+    "pos": "noun",
+    "theme": "Одежда и аксессуары",
+    "visual": "A swimsuit"
+  },
+  {
+    "tr": "anorak",
+    "ru": "куртка",
+    "pos": "noun",
+    "theme": "Одежда и аксессуары",
+    "visual": "A jacket"
+  },
+  {
+    "tr": "erkek çorabı",
+    "ru": "мужские носки",
+    "pos": "noun",
+    "theme": "Одежда и аксессуары",
+    "visual": "Men's socks"
+  },
+  {
+    "tr": "gecelik",
+    "ru": "ночная рубашка",
+    "pos": "noun",
+    "theme": "Одежда и аксессуары",
+    "visual": "A nightgown"
+  },
+  {
+    "tr": "manto, palto",
+    "ru": "пальто",
+    "pos": "noun",
+    "theme": "Одежда и аксессуары",
+    "visual": "A winter coat"
+  },
+  {
+    "tr": "pijama",
+    "ru": "пижама",
+    "pos": "noun",
+    "theme": "Одежда и аксессуары",
+    "visual": "Pajamas"
+  },
+  {
+    "tr": "erkek mayosu",
+    "ru": "плавки",
+    "pos": "noun",
+    "theme": "Одежда и аксессуары",
+    "visual": "Men's swim trunks"
+  },
+  {
+    "tr": "toka",
+    "ru": "пряжка",
+    "pos": "noun",
+    "theme": "Одежда и аксессуары",
+    "visual": "A belt buckle"
+  },
+  {
+    "tr": "spor ceket",
+    "ru": "спортивная куртка",
+    "pos": "noun",
+    "theme": "Одежда и аксессуары",
+    "visual": "A sports jacket"
+  },
+  {
+    "tr": "kolonya",
+    "ru": "туалетная вода",
+    "pos": "noun",
+    "theme": "Косметика",
+    "visual": "A bottle of cologne"
+  },
+  {
+    "tr": "rimel",
+    "ru": "тушь",
+    "pos": "noun",
+    "theme": "Косметика",
+    "visual": "A tube of mascara"
+  },
+  {
+    "tr": "nemlendirici krem",
+    "ru": "увлажняющий крем",
+    "pos": "noun",
+    "theme": "Косметика",
+    "visual": "A jar of moisturizing cream"
+  },
+  {
+    "tr": "şampuan (yağlı saç için)",
+    "ru": "шампунь для жирных волос",
+    "pos": "noun",
+    "theme": "Косметика",
+    "visual": "A bottle of shampoo for oily hair"
+  },
+  {
+    "tr": "şampuan (kuru saç için)",
+    "ru": "шампунь для сухих волос",
+    "pos": "noun",
+    "theme": "Косметика",
+    "visual": "A bottle of shampoo for dry hair"
+  },
+  {
+    "tr": "saç fırçası",
+    "ru": "щетка для волос",
+    "pos": "noun",
+    "theme": "Косметика",
+    "visual": "A hairbrush"
+  },
+  {
+    "tr": "bigudi",
+    "ru": "бигуди",
+    "pos": "noun",
+    "theme": "Косметика",
+    "visual": "Hair curlers"
+  },
+  {
+    "tr": "saç jölesi",
+    "ru": "гель для укладки",
+    "pos": "noun",
+    "theme": "Косметика",
+    "visual": "A jar of styling gel"
+  },
+  {
+    "tr": "göz kalemi",
+    "ru": "карандаш для глаз",
+    "pos": "noun",
+    "theme": "Косметика",
+    "visual": "An eyeliner pencil"
+  },
+  {
+    "tr": "krem (kuru/yağlı cilt için)",
+    "ru": "крем (для сухой/жирной кожи)",
+    "pos": "noun",
+    "theme": "Косметика",
+    "visual": "A jar of skin cream"
+  },
+  {
+    "tr": "tıraş kremi",
+    "ru": "крем для бритья",
+    "pos": "noun",
+    "theme": "Косметика",
+    "visual": "A tube of shaving cream"
+  },
+  {
+    "tr": "saç boyası",
+    "ru": "краска для волос",
+    "pos": "noun",
+    "theme": "Косметика",
+    "visual": "A box of hair dye"
+  },
+  {
+    "tr": "güneş kremi/yağı",
+    "ru": "крем/масло для загара",
+    "pos": "noun",
+    "theme": "Косметика",
+    "visual": "A bottle of suntan lotion"
+  },
+  {
+    "tr": "tıraş losyonu",
+    "ru": "лосьон после бритья",
+    "pos": "noun",
+    "theme": "Косметика",
+    "visual": "A bottle of aftershave lotion"
+  },
+  {
+    "tr": "yüz losyonu",
+    "ru": "лосьон для лица",
+    "pos": "noun",
+    "theme": "Косметика",
+    "visual": "A bottle of face lotion"
+  },
+  {
+    "tr": "tıraş fırçası",
+    "ru": "помазок",
+    "pos": "noun",
+    "theme": "Косметика",
+    "visual": "A shaving brush"
+  },
+  {
+    "tr": "yüz pudrası",
+    "ru": "пудра",
+    "pos": "noun",
+    "theme": "Косметика",
+    "visual": "A compact of face powder"
+  },
+  {
+    "tr": "far",
+    "ru": "тени для век",
+    "pos": "noun",
+    "theme": "Косметика",
+    "visual": "A palette of eyeshadow"
+  },
+  {
+    "tr": "manikür",
+    "ru": "маникюр",
+    "pos": "noun",
+    "theme": "Косметика",
+    "visual": "A manicure being done"
+  },
+  {
+    "tr": "boyama (saç)",
+    "ru": "окраска волос",
+    "pos": "noun",
+    "theme": "Косметика",
+    "visual": "Hair being dyed"
+  },
+  {
+    "tr": "renk açma",
+    "ru": "осветление (волос)",
+    "pos": "noun",
+    "theme": "Косметика",
+    "visual": "Hair being lightened"
+  },
+  {
+    "tr": "mizanpli",
+    "ru": "помывка шампунем и укладка",
+    "pos": "noun",
+    "theme": "Косметика",
+    "visual": "Hair being washed and styled"
+  },
+  {
+    "tr": "fönleme",
+    "ru": "сушка феном",
+    "pos": "noun",
+    "theme": "Косметика",
+    "visual": "Hair being blow-dried"
+  },
+  {
+    "tr": "perma",
+    "ru": "химическая завивка",
+    "pos": "noun",
+    "theme": "Косметика",
+    "visual": "Hair being permed with curlers"
+  },
+  {
+    "tr": "diş fırçası",
+    "ru": "зубная щетка",
+    "pos": "noun",
+    "theme": "Ванная и гигиена",
+    "visual": "A toothbrush"
+  },
+  {
+    "tr": "aseton",
+    "ru": "жидкость для снятия лака",
+    "pos": "noun",
+    "theme": "Ванная и гигиена",
+    "visual": "A bottle of nail polish remover"
+  },
+  {
+    "tr": "manikür takımı (pilo)",
+    "ru": "пилочка для ногтей",
+    "pos": "noun",
+    "theme": "Ванная и гигиена",
+    "visual": "A nail file"
+  },
+  {
+    "tr": "mektup zarfı",
+    "ru": "конверты",
+    "pos": "noun",
+    "theme": "Школа и канцтовары",
+    "visual": "An envelope"
+  },
+  {
+    "tr": "karbon kağıdı",
+    "ru": "копировальная бумага",
+    "pos": "noun",
+    "theme": "Школа и канцтовары",
+    "visual": "A sheet of carbon paper"
+  },
+  {
+    "tr": "boya kutusu",
+    "ru": "краски",
+    "pos": "noun",
+    "theme": "Школа и канцтовары",
+    "visual": "A box of paints"
+  },
+  {
+    "tr": "kartpostal",
+    "ru": "открытка",
+    "pos": "noun",
+    "theme": "Школа и канцтовары",
+    "visual": "A postcard"
+  },
+  {
+    "tr": "mektup kağıdı",
+    "ru": "писчая бумага",
+    "pos": "noun",
+    "theme": "Школа и канцтовары",
+    "visual": "A sheet of writing paper"
+  },
+  {
+    "tr": "seloteyp",
+    "ru": "скотч",
+    "pos": "noun",
+    "theme": "Школа и канцтовары",
+    "visual": "A roll of tape"
+  },
+  {
+    "tr": "dilbilgisi kitabı",
+    "ru": "учебник по грамматике",
+    "pos": "noun",
+    "theme": "Школа и канцтовары",
+    "visual": "A grammar textbook"
+  },
+  {
+    "tr": "mum boya",
+    "ru": "цветные карандаши",
+    "pos": "noun",
+    "theme": "Школа и канцтовары",
+    "visual": "A box of colored pencils"
+  },
+  {
+    "tr": "tükenmez kalem",
+    "ru": "шариковая ручка",
+    "pos": "noun",
+    "theme": "Школа и канцтовары",
+    "visual": "A ballpoint pen"
+  },
+  {
+    "tr": "adres defteri",
+    "ru": "адресная книга",
+    "pos": "noun",
+    "theme": "Школа и канцтовары",
+    "visual": "An address book"
+  },
+  {
+    "tr": "dolmakalem",
+    "ru": "авторучка",
+    "pos": "noun",
+    "theme": "Школа и канцтовары",
+    "visual": "A fountain pen"
+  },
+  {
+    "tr": "bloknot",
+    "ru": "блокнот",
+    "pos": "noun",
+    "theme": "Школа и канцтовары",
+    "visual": "A spiral notepad"
+  },
+  {
+    "tr": "oyun kağıdı",
+    "ru": "игральные карты",
+    "pos": "noun",
+    "theme": "Школа и канцтовары",
+    "visual": "A deck of playing cards"
+  },
+  {
+    "tr": "kopya kağıdı",
+    "ru": "калька",
+    "pos": "noun",
+    "theme": "Школа и канцтовары",
+    "visual": "A sheet of tracing paper"
+  },
+  {
+    "tr": "çok sesli müzik",
+    "ru": "вокал (музыка)",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A choir singing"
+  },
+  {
+    "tr": "video kaseti",
+    "ru": "видеокассета",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A VHS video cassette"
+  },
+  {
+    "tr": "caz",
+    "ru": "джаз",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A saxophone player"
+  },
+  {
+    "tr": "enstrumantal müzik",
+    "ru": "инструментальная музыка",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "An orchestra playing instruments"
+  },
+  {
+    "tr": "hafif müzik",
+    "ru": "легкая музыка",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A relaxed lounge music scene"
+  },
+  {
+    "tr": "oda müziği",
+    "ru": "камерная музыка",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A small chamber music ensemble"
+  },
+  {
+    "tr": "klasik müzik",
+    "ru": "классическая музыка",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A symphony orchestra"
+  },
+  {
+    "tr": "okunabilir yazabilir CD",
+    "ru": "компакт-диск (перезаписываемый)",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A rewritable CD disc"
+  },
+  {
+    "tr": "orkestra müziği",
+    "ru": "оркестровая музыка",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A full orchestra performing"
+  },
+  {
+    "tr": "pop müzik",
+    "ru": "поп-музыка",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A pop singer performing"
+  },
+  {
+    "tr": "boş kaset",
+    "ru": "пустую кассету",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A blank cassette tape"
+  },
+  {
+    "tr": "halk müziği",
+    "ru": "фольклор (музыка)",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "Folk musicians playing traditional instruments"
+  },
+  {
+    "tr": "DVD (okunabilir yazabilir)",
+    "ru": "DVD (перезаписываемый)",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A rewritable DVD disc"
+  },
+  {
+    "tr": "MP3",
+    "ru": "МП3",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "An MP3 player icon"
+  },
+  {
+    "tr": "video (cihaz)",
+    "ru": "видеомагнитофон",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A VCR video player"
+  },
+  {
+    "tr": "hoparlör",
+    "ru": "колонки",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "Speakers"
+  },
+  {
+    "tr": "ampul",
+    "ru": "лампочка",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A light bulb"
+  },
+  {
+    "tr": "oto radyosu",
+    "ru": "магнитола",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A car radio"
+  },
+  {
+    "tr": "teyp",
+    "ru": "магнитофон",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A cassette tape player"
+  },
+  {
+    "tr": "sigorta (elektrik)",
+    "ru": "плавкий предохранитель",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "An electrical fuse"
+  },
+  {
+    "tr": "adaptör",
+    "ru": "адаптер",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A power plug adapter"
+  },
+  {
+    "tr": "portatif televizyon",
+    "ru": "(переносной) телевизор",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A portable television"
+  },
+  {
+    "tr": "radyo",
+    "ru": "радио",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A radio"
+  },
+  {
+    "tr": "uzatma kordonu",
+    "ru": "удлинитель",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "An extension cord"
+  },
+  {
+    "tr": "amplifikatör",
+    "ru": "усилитель",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A stereo amplifier"
+  },
+  {
+    "tr": "pil",
+    "ru": "батарейка",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "AA batteries"
+  },
+  {
+    "tr": "hızlı film",
+    "ru": "высокочувствительная пленка",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A roll of fast camera film"
+  },
+  {
+    "tr": "telemetre",
+    "ru": "дальномер",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A camera rangefinder"
+  },
+  {
+    "tr": "lcd ekran",
+    "ru": "жидкокристаллический экран",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "An LCD screen"
+  },
+  {
+    "tr": "kapak (fotoğraf)",
+    "ru": "затвор фотообъектива",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A camera shutter"
+  },
+  {
+    "tr": "pil şarj aleti",
+    "ru": "зарядное устройство",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A battery charger"
+  },
+  {
+    "tr": "hafıza kartı",
+    "ru": "карта памяти",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A memory card"
+  },
+  {
+    "tr": "kaset (fotoğraf)",
+    "ru": "картридж",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A film cartridge"
+  },
+  {
+    "tr": "objektif kapağı",
+    "ru": "крышка объектива",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A camera lens cap"
+  },
+  {
+    "tr": "objektif",
+    "ru": "объектив",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A camera lens"
+  },
+  {
+    "tr": "32 MB hafıza",
+    "ru": "память в 32 мегабайта",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A 32 MB memory chip"
+  },
+  {
+    "tr": "gün ışığı tipi (film)",
+    "ru": "пленка для съемки при естественном освещении",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "Camera film for daylight shooting"
+  },
+  {
+    "tr": "yapay ışık tipi (film)",
+    "ru": "пленка для съемки при искусственном освещении",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "Camera film for artificial light"
+  },
+  {
+    "tr": "dijital kamera yazıcısı",
+    "ru": "принтер для цифровых фотоаппаратов",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A digital photo printer"
+  },
+  {
+    "tr": "deklanşör",
+    "ru": "спусковой тросик",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A camera shutter release cable"
+  },
+  {
+    "tr": "poz sayıcı",
+    "ru": "счетчик кадров",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A camera frame counter"
+  },
+  {
+    "tr": "filtre (fotoğraf)",
+    "ru": "фильтр (фото)",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A camera lens filter"
+  },
+  {
+    "tr": "flaş",
+    "ru": "флэш",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A camera flash"
+  },
+  {
+    "tr": "pozometre",
+    "ru": "фотометр",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A light meter"
+  },
+  {
+    "tr": "renkli film",
+    "ru": "цветная пленка",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A roll of color camera film"
+  },
+  {
+    "tr": "fotoğraf çantası",
+    "ru": "чехол для фотоаппарата",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A camera carrying case"
+  },
+  {
+    "tr": "geniş açılı objektif",
+    "ru": "широкоугольный объектив",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A wide-angle camera lens"
+  },
+  {
+    "tr": "CCD sensor",
+    "ru": "ССD датчик",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A camera CCD sensor chip"
+  },
+  {
+    "tr": "USB kablo",
+    "ru": "USB кабель",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A USB cable"
+  },
+  {
+    "tr": "uzun sigara",
+    "ru": "длинные сигареты",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A pack of long cigarettes"
+  },
+  {
+    "tr": "yumuşak/sert sigara",
+    "ru": "легкие/крепкие сигареты",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A pack of light and strong cigarettes"
+  },
+  {
+    "tr": "sigara ağızlığı",
+    "ru": "мундштук",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A cigarette holder"
+  },
+  {
+    "tr": "açık/koyu tütün",
+    "ru": "светлый/темный табак",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "Light and dark pipe tobacco"
+  },
+  {
+    "tr": "filtresiz sigara",
+    "ru": "сигареты без фильтра",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A pack of unfiltered cigarettes"
+  },
+  {
+    "tr": "mentolu sigara",
+    "ru": "сигареты с ментолом",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A pack of menthol cigarettes"
+  },
+  {
+    "tr": "filtreli sigara",
+    "ru": "сигареты с фильтром",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A pack of filtered cigarettes"
+  },
+  {
+    "tr": "kibrit",
+    "ru": "спички",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A box of matches"
+  },
+  {
+    "tr": "pipo",
+    "ru": "трубка",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A smoking pipe"
+  },
+  {
+    "tr": "pipo tütünü",
+    "ru": "трубочный табак",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A pouch of pipe tobacco"
+  },
+  {
+    "tr": "firuze",
+    "ru": "бирюза",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A turquoise gemstone"
+  },
+  {
+    "tr": "bilezik",
+    "ru": "браслет",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A bracelet"
+  },
+  {
+    "tr": "broş",
+    "ru": "брошь",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A brooch"
+  },
+  {
+    "tr": "iğne (mücevher)",
+    "ru": "булавка",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A decorative pin"
+  },
+  {
+    "tr": "kravat iğnesi",
+    "ru": "булавка для галстука",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A tie pin"
+  },
+  {
+    "tr": "kesme cam",
+    "ru": "граненое стекло",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "Faceted cut glass"
+  },
+  {
+    "tr": "kol düğmesi",
+    "ru": "запонки",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "Cufflinks"
+  },
+  {
+    "tr": "nişan yüzüğü",
+    "ru": "кольцо в честь помолвки",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "An engagement ring"
+  },
+  {
+    "tr": "paslanmaz çelik",
+    "ru": "нержавеющая сталь",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A stainless steel item"
+  },
+  {
+    "tr": "alyans yüzük",
+    "ru": "обручальное кольцо",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A wedding band"
+  },
+  {
+    "tr": "gümüş çatal bıçak kaşık",
+    "ru": "столовое серебро",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "Silver cutlery set"
+  },
+  {
+    "tr": "kristal",
+    "ru": "хрусталь",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A crystal glass item"
+  },
+  {
+    "tr": "zincir",
+    "ru": "цепочка",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A chain necklace"
+  },
+  {
+    "tr": "tespih",
+    "ru": "четки",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "Prayer beads"
+  },
+  {
+    "tr": "mücevher kutusu",
+    "ru": "шкатулка для драгоценностей",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A jewelry box"
+  },
+  {
+    "tr": "mine",
+    "ru": "эмаль",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "An enamel decorated item"
+  },
+  {
+    "tr": "pandantif",
+    "ru": "подвеска",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A pendant necklace"
+  },
+  {
+    "tr": "altın kaplama",
+    "ru": "позолоченный",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A gold-plated item"
+  },
+  {
+    "tr": "gümüş kaplama",
+    "ru": "посеребренный",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A silver-plated item"
+  },
+  {
+    "tr": "fildişi",
+    "ru": "слоновая кость",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A carved ivory piece"
+  },
+  {
+    "tr": "çatal bıçak takımı",
+    "ru": "столовые приборы",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A cutlery set"
+  },
+  {
+    "tr": "çalar saat",
+    "ru": "будильник",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "An alarm clock"
+  },
+  {
+    "tr": "su geçirmez saat",
+    "ru": "водонепроницаемые часы",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A waterproof watch"
+  },
+  {
+    "tr": "cep saati",
+    "ru": "карманные часы",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A pocket watch"
+  },
+  {
+    "tr": "kuvars saat",
+    "ru": "кварцевые часы",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A quartz wristwatch"
+  },
+  {
+    "tr": "kol saati",
+    "ru": "наручные часы",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A wristwatch"
+  },
+  {
+    "tr": "kol saati kayışı",
+    "ru": "ремешок (часов)",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A watch strap"
+  },
+  {
+    "tr": "dijital saat",
+    "ru": "электронные часы",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A digital watch"
+  },
+  {
+    "tr": "kova (oyuncak)",
+    "ru": "ведерко",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A toy sand bucket"
+  },
+  {
+    "tr": "oyuncak araba",
+    "ru": "игрушечная машина",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A toy car"
+  },
+  {
+    "tr": "kitap (oyuncak)",
+    "ru": "книга (игрушка)",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A children's picture book"
+  },
+  {
+    "tr": "oyuncak bebek",
+    "ru": "кукла",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A doll"
+  },
+  {
+    "tr": "kürek (oyuncak)",
+    "ru": "лопатка (игрушка)",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A toy sand shovel"
+  },
+  {
+    "tr": "deniz topu",
+    "ru": "пляжный мяч",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A beach ball"
+  },
+  {
+    "tr": "boyama kitabı",
+    "ru": "раскраска",
+    "pos": "noun",
+    "theme": "Предметы и вещи",
+    "visual": "A coloring book"
+  },
+  {
+    "tr": "En kısa zamanda",
+    "ru": "срочно",
+    "pos": "noun",
+    "theme": "Календарь и время",
+    "visual": "A clock with an urgent red arrow"
+  },
+  {
+    "tr": "Bu akşam",
+    "ru": "сегодня вечером",
+    "pos": "noun",
+    "theme": "Календарь и время",
+    "visual": "A sunset with a clock"
+  },
+  {
+    "tr": "Pazardan önce",
+    "ru": "к воскресенью",
+    "pos": "noun",
+    "theme": "Календарь и время",
+    "visual": "A calendar with Sunday circled"
+  },
+  {
+    "tr": "yara merhemi",
+    "ru": "антисептический крем",
+    "pos": "noun",
+    "theme": "Здоровье",
+    "visual": "A tube of antiseptic cream"
+  },
+  {
+    "tr": "aspirin",
+    "ru": "аспирин",
+    "pos": "noun",
+    "theme": "Здоровье",
+    "visual": "A pack of aspirin tablets"
+  },
+  {
+    "tr": "biberon",
+    "ru": "бутылочка для кормления",
+    "pos": "noun",
+    "theme": "Здоровье",
+    "visual": "A baby feeding bottle"
+  },
+  {
+    "tr": "vitamin",
+    "ru": "витамины",
+    "pos": "noun",
+    "theme": "Здоровье",
+    "visual": "A bottle of vitamins"
+  },
+  {
+    "tr": "dezenfektan",
+    "ru": "дезинфицирующее средство",
+    "pos": "noun",
+    "theme": "Здоровье",
+    "visual": "A bottle of disinfectant"
+  },
+  {
+    "tr": "böcek ilacı",
+    "ru": "средство от насекомых",
+    "pos": "noun",
+    "theme": "Здоровье",
+    "visual": "A can of insect repellent"
+  },
+  {
+    "tr": "boğaz pastili",
+    "ru": "пастилки от кашля",
+    "pos": "noun",
+    "theme": "Здоровье",
+    "visual": "A pack of throat lozenges"
+  },
+  {
+    "tr": "bebek maması",
+    "ru": "детское питание",
+    "pos": "noun",
+    "theme": "Здоровье",
+    "visual": "A jar of baby food"
+  },
+  {
+    "tr": "ishal",
+    "ru": "диарея",
+    "pos": "noun",
+    "theme": "Здоровье",
+    "visual": "A medicine bottle with a stomach icon"
+  },
+  {
+    "tr": "peklik",
+    "ru": "запор",
+    "pos": "noun",
+    "theme": "Здоровье",
+    "visual": "A medicine bottle with a stomach icon"
+  },
+  {
+    "tr": "tentürdiyot",
+    "ru": "йод",
+    "pos": "noun",
+    "theme": "Здоровье",
+    "visual": "A small bottle of iodine"
+  },
+  {
+    "tr": "göz damlası",
+    "ru": "капли для глаз",
+    "pos": "noun",
+    "theme": "Здоровье",
+    "visual": "A bottle of eye drops"
+  },
+  {
+    "tr": "burun damlası",
+    "ru": "капли для носа",
+    "pos": "noun",
+    "theme": "Здоровье",
+    "visual": "A bottle of nose drops"
+  },
+  {
+    "tr": "kulak damlası",
+    "ru": "капли для ушей",
+    "pos": "noun",
+    "theme": "Здоровье",
+    "visual": "A bottle of ear drops"
+  },
+  {
+    "tr": "deniz tutması",
+    "ru": "морская болезнь",
+    "pos": "noun",
+    "theme": "Здоровье",
+    "visual": "A person feeling seasick on a boat"
+  },
+  {
+    "tr": "mide bozukluğu",
+    "ru": "несварение желудка",
+    "pos": "noun",
+    "theme": "Здоровье",
+    "visual": "A person with stomach discomfort"
+  },
+  {
+    "tr": "plaster",
+    "ru": "пластырь",
+    "pos": "noun",
+    "theme": "Здоровье",
+    "visual": "An adhesive bandage"
+  },
+  {
+    "tr": "gargara",
+    "ru": "полоскание (для горла)",
+    "pos": "noun",
+    "theme": "Здоровье",
+    "visual": "A glass of mouthwash"
+  },
+  {
+    "tr": "içki mahmurluğu",
+    "ru": "похмелье",
+    "pos": "noun",
+    "theme": "Здоровье",
+    "visual": "A person with a hangover holding their head"
+  },
+  {
+    "tr": "prezervatif",
+    "ru": "презерватив",
+    "pos": "noun",
+    "theme": "Здоровье",
+    "visual": "A condom in packaging"
+  },
+  {
+    "tr": "kağıt mendil",
+    "ru": "салфетки",
+    "pos": "noun",
+    "theme": "Здоровье",
+    "visual": "A pack of paper tissues"
+  },
+  {
+    "tr": "müshil",
+    "ru": "слабительное",
+    "pos": "noun",
+    "theme": "Здоровье",
+    "visual": "A bottle of laxative"
+  },
+  {
+    "tr": "uyku ilacı",
+    "ru": "снотворное",
+    "pos": "noun",
+    "theme": "Здоровье",
+    "visual": "A bottle of sleeping pills"
+  },
+  {
+    "tr": "güneş yanığı",
+    "ru": "солнечный ожог",
+    "pos": "noun",
+    "theme": "Здоровье",
+    "visual": "Sunburned skin"
+  },
+  {
+    "tr": "talk pudrası",
+    "ru": "тальк",
+    "pos": "noun",
+    "theme": "Здоровье",
+    "visual": "A bottle of talcum powder"
+  },
+  {
+    "tr": "yol tutması",
+    "ru": "укачивание",
+    "pos": "noun",
+    "theme": "Здоровье",
+    "visual": "A person feeling carsick"
+  },
+  {
+    "tr": "böcek sokması",
+    "ru": "укус насекомого",
+    "pos": "noun",
+    "theme": "Здоровье",
+    "visual": "A mosquito bite on skin"
+  },
+  {
+    "tr": "uçak postası",
+    "ru": "авиаписьмо",
+    "pos": "noun",
+    "theme": "Офис",
+    "visual": "An airmail envelope with a plane stamp"
+  },
+  {
+    "tr": "taahhütlü",
+    "ru": "заказное письмо",
+    "pos": "noun",
+    "theme": "Офис",
+    "visual": "A registered mail envelope with a receipt"
+  },
+  {
+    "tr": "şehir içi",
+    "ru": "местное (письмо)",
+    "pos": "noun",
+    "theme": "Офис",
+    "visual": "A local mail envelope"
+  },
+  {
+    "tr": "adi posta",
+    "ru": "обычная почта",
+    "pos": "noun",
+    "theme": "Офис",
+    "visual": "A standard mail envelope"
+  },
+  {
+    "tr": "ekspres",
+    "ru": "экспресс (почта)",
+    "pos": "noun",
+    "theme": "Офис",
+    "visual": "An express mail envelope"
+  },
+  {
+    "tr": "çocuk doktoru",
+    "ru": "педиатр",
+    "pos": "noun",
+    "theme": "Профессии",
+    "visual": "A pediatrician examining a child"
+  },
+  {
+    "tr": "dahiliyeci",
+    "ru": "терапевт",
+    "pos": "noun",
+    "theme": "Профессии",
+    "visual": "A general practitioner doctor"
+  },
+  {
+    "tr": "göz doktoru",
+    "ru": "окулист",
+    "pos": "noun",
+    "theme": "Профессии",
+    "visual": "An eye doctor with an eye chart"
+  },
+  {
+    "tr": "jinekolog",
+    "ru": "гинеколог",
+    "pos": "noun",
+    "theme": "Профессии",
+    "visual": "A gynecologist's office"
+  },
+  {
+    "tr": "apandisit",
+    "ru": "аппендицит",
+    "pos": "noun",
+    "theme": "Здоровье",
+    "visual": "A doctor pointing at an appendix diagram"
+  },
+  {
+    "tr": "astım",
+    "ru": "астма",
+    "pos": "noun",
+    "theme": "Здоровье",
+    "visual": "A person using an asthma inhaler"
+  },
+  {
+    "tr": "uykusuzluk",
+    "ru": "бессонница",
+    "pos": "noun",
+    "theme": "Здоровье",
+    "visual": "A person lying awake at night"
+  },
+  {
+    "tr": "zatürree",
+    "ru": "воспаление легких (пневмония)",
+    "pos": "noun",
+    "theme": "Здоровье",
+    "visual": "A chest x-ray showing lungs"
+  },
+  {
+    "tr": "grip",
+    "ru": "грипп",
+    "pos": "noun",
+    "theme": "Здоровье",
+    "visual": "A person sick in bed with a thermometer"
+  },
+  {
+    "tr": "sarılık",
+    "ru": "желтуха",
+    "pos": "noun",
+    "theme": "Здоровье",
+    "visual": "A person with jaundiced yellow skin tone"
+  },
+  {
+    "tr": "kızamık",
+    "ru": "корь",
+    "pos": "noun",
+    "theme": "Здоровье",
+    "visual": "A child with measles spots"
+  },
+  {
+    "tr": "apse",
+    "ru": "нарыв (абсцесс)",
+    "pos": "noun",
+    "theme": "Здоровье",
+    "visual": "A swollen abscess on skin"
+  },
+  {
+    "tr": "güneş yanığı (hastalık)",
+    "ru": "солнечный ожог (болезнь)",
+    "pos": "noun",
+    "theme": "Здоровье",
+    "visual": "Sunburned red skin"
+  },
+  {
+    "tr": "bademcik iltihabı",
+    "ru": "тонзиллит",
+    "pos": "noun",
+    "theme": "Здоровье",
+    "visual": "A doctor examining a sore throat"
+  },
+  {
+    "tr": "ülser",
+    "ru": "язва",
+    "pos": "noun",
+    "theme": "Здоровье",
+    "visual": "A diagram of a stomach ulcer"
+  },
+  {
+    "tr": "damar",
+    "ru": "вена",
+    "pos": "noun",
+    "theme": "Части тела",
+    "visual": "A vein diagram"
+  },
+  {
+    "tr": "şakak",
+    "ru": "висок",
+    "pos": "noun",
+    "theme": "Части тела",
+    "visual": "A temple on the side of a head"
+  },
+  {
+    "tr": "bağırsak",
+    "ru": "внутренности (кишечник)",
+    "pos": "noun",
+    "theme": "Части тела",
+    "visual": "An intestines diagram"
+  },
+  {
+    "tr": "cinsel organlar",
+    "ru": "гениталии",
+    "pos": "noun",
+    "theme": "Части тела",
+    "visual": "A human anatomy diagram silhouette"
+  },
+  {
+    "tr": "baş, kafa",
+    "ru": "голова",
+    "pos": "noun",
+    "theme": "Части тела",
+    "visual": "A human head"
+  },
+  {
+    "tr": "diş etleri",
+    "ru": "десны",
+    "pos": "noun",
+    "theme": "Части тела",
+    "visual": "Gums in a mouth diagram"
+  },
+  {
+    "tr": "bilek",
+    "ru": "запястье",
+    "pos": "noun",
+    "theme": "Части тела",
+    "visual": "A wrist"
+  },
+  {
+    "tr": "diz kapağı",
+    "ru": "коленная чашечка",
+    "pos": "noun",
+    "theme": "Части тела",
+    "visual": "A kneecap diagram"
+  },
+  {
+    "tr": "kemik",
+    "ru": "кость",
+    "pos": "noun",
+    "theme": "Части тела",
+    "visual": "A bone"
+  },
+  {
+    "tr": "akciğer",
+    "ru": "легкое",
+    "pos": "noun",
+    "theme": "Части тела",
+    "visual": "Lungs diagram"
+  },
+  {
+    "tr": "bademcikler",
+    "ru": "миндалины",
+    "pos": "noun",
+    "theme": "Части тела",
+    "visual": "Tonsils in a throat diagram"
+  },
+  {
+    "tr": "memeler",
+    "ru": "молочные железы",
+    "pos": "noun",
+    "theme": "Части тела",
+    "visual": "A breast anatomy diagram"
+  },
+  {
+    "tr": "eklem",
+    "ru": "связка (сустав)",
+    "pos": "noun",
+    "theme": "Части тела",
+    "visual": "A joint and ligament diagram"
+  },
+  {
+    "tr": "yanak",
+    "ru": "щека",
+    "pos": "noun",
+    "theme": "Части тела",
+    "visual": "A cheek"
+  },
+  {
+    "tr": "arkadaki (diş)",
+    "ru": "задний (зуб)",
+    "pos": "noun",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A back molar tooth highlighted"
+  },
+  {
+    "tr": "aşağıdaki (diş)",
+    "ru": "нижний (зуб)",
+    "pos": "noun",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A lower tooth highlighted"
+  },
+  {
+    "tr": "öndeki (diş)",
+    "ru": "передний (зуб)",
+    "pos": "noun",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A front tooth highlighted"
+  },
+  {
+    "tr": "yukarıdaki (diş)",
+    "ru": "верхний (зуб)",
+    "pos": "noun",
+    "theme": "Прилагательные и сравнения",
+    "visual": "An upper tooth highlighted"
   }
 ]

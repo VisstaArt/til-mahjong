@@ -34,18 +34,6 @@
       "sub": null
     },
     {
-      "ru": "педиатра",
-      "tr": "çocuk doktoru",
-      "tl": "чоджук доктору",
-      "sub": null
-    },
-    {
-      "ru": "терапевта окулиста гинеколога",
-      "tr": "dahiliyeci göz doktoru jinekolog",
-      "tl": null,
-      "sub": null
-    },
-    {
       "ru": "В какие часы от- крыта приемная?",
       "tr": "Muayene saatleri neler?",
       "tl": null,
@@ -64,7 +52,7 @@
       "sub": null
     },
     {
-      "ru": "Можно записать- ся на завтра? Болезни – Hastaliklar",
+      "ru": "Можно записаться на завтра?",
       "tr": "Yarına bir randevu alabilir miyim?",
       "tl": "Ярына бир рандэву алабилир мийим?",
       "sub": null
@@ -208,8 +196,8 @@
       "sub": null
     },
     {
-      "ru": "У меня плохой кашель У меня аллергия на …",
-      "tr": "Kötü bir öksürüğüm var …ye alerjim var",
+      "ru": "У меня плохой кашель",
+      "tr": "Kötü bir öksürüğüm var",
       "tl": "Кётю бир ёксюрюйюм вар … йе алержим вар",
       "sub": null
     },
@@ -292,54 +280,6 @@
       "sub": null
     },
     {
-      "ru": "аппендицит астма бессонница воспаление лег- ких",
-      "tr": "apandisit astım uykusuzluk zatürree",
-      "tl": "апандисит астым уйкусузлук затюрээ",
-      "sub": "Словарь — Sőzlűk"
-    },
-    {
-      "ru": "грипп желтуха зуд инфекция корь нарыв солнечный ожог тонзиллит",
-      "tr": "grip sarılık kaşıntı enfeksiyon kızamık apse güneş yanığı bademcik iltihabi",
-      "tl": "грипп сарылык кашынты энфэксьйон кызамык апсэ гюнэш яныйы бадэмджик илтихаби",
-      "sub": "Словарь — Sőzlűk"
-    },
-    {
-      "ru": "язва",
-      "tr": "ülser",
-      "tl": "юльсэр",
-      "sub": "Словарь — Sőzlűk"
-    },
-    {
-      "ru": "бедро большой палец руки",
-      "tr": "kalça başparmak",
-      "tl": "кальча башпармак",
-      "sub": "Словарь — Sőzlűk"
-    },
-    {
-      "ru": "вена висок внутренности гениталии",
-      "tr": "damar şakak bağırsak cinsel organlar",
-      "tl": "дамар шакак баырсак джинсэль органлар",
-      "sub": "Словарь — Sőzlűk"
-    },
-    {
-      "ru": "глаз голова горло грудь губа десны желудок запястье кожа коленная чашеч- ка",
-      "tr": "göz baş, kafa boğaz göğüs dudak diş etleri mide bilek deri diz kapağı",
-      "tl": "гёз баш, кафа боаз гёюз дудак диш этлери мидэ билек дэри диз капайи",
-      "sub": "Словарь — Sőzlűk"
-    },
-    {
-      "ru": "колено кость легкое лицо локоть миналины молочные желе- зы",
-      "tr": "diz kemik akciğer yüz dirsek bademcikler memeler",
-      "tl": "диз кэмик акджийер йюз дирсэк бадэмджиклер мэмэлер",
-      "sub": "Словарь — Sőzlűk"
-    },
-    {
-      "ru": "связка сердце спина ухо шея щека язык 0 Лечение – Tedavi",
-      "tr": "eklem kalp sırt kulak boyun yanak dil",
-      "tl": "эклем кальп сырт кулак боюн янак диль",
-      "sub": "Словарь — Sőzlűk"
-    },
-    {
       "ru": "Я обычно при- нимаю это ле- карство",
       "tr": "Bu her zaman kullandığım ilaçtır",
       "tl": "Бу хэр заман кулландыйым илачтыр",
@@ -388,14 +328,14 @@
       "sub": "Словарь — Sőzlűk"
     },
     {
-      "ru": "Когда я смогу снова ехать? Сейчас я чув",
+      "ru": "Когда я смогу снова ехать?",
       "tr": "Tekrar ne zaman yolculuk edebilirim?",
       "tl": "Тэкрар нэ заман йолджулук эдэбилирим? ст-Şimdi kendimi Шимди кэндими",
       "sub": "Словарь — Sőzlűk"
     },
     {
-      "ru": "вую себя лучше",
-      "tr": "daha iyi hissediyorum",
+      "ru": "Сейчас я чувствую себя лучше",
+      "tr": "Şimdi kendimi daha iyi hissediyorum",
       "tl": "даха ии хиссэдийорум",
       "sub": "Словарь — Sőzlűk"
     },
@@ -508,7 +448,7 @@
       "sub": "Словарь — Sőzlűk"
     },
     {
-      "ru": "Я принимаю противозачаточ- ные таблетки У дантиста – Diş hekimi",
+      "ru": "Я принимаю противозачаточные таблетки",
       "tr": "Doğum kontrol hapı alıyorum",
       "tl": "Доум контроль хапы алыйорум",
       "sub": "Словарь — Sőzlűk"
@@ -550,126 +490,6 @@
       "sub": "Словарь — Sőzlűk"
     },
     {
-      "ru": "задний нижний передний верхний",
-      "tr": "arkadaki aşağıdaki öndeki yukarıdaki",
-      "tl": "аркадаки ашаыдаки ёндэки юкарыдаки",
-      "sub": "Словарь — Sőzlűk"
-    },
-    {
-      "ru": "мочевой пузырь",
-      "tr": "idrar torbası",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "мускул",
-      "tr": "kas",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "нерв",
-      "tr": "sinir",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "нервная система",
-      "tr": "sinir sistemi",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "нога",
-      "tr": "bacak",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "нога (ступня)",
-      "tr": "ayak",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "ноготь",
-      "tr": "tırnak",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "нос",
-      "tr": "burun",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "плечо",
-      "tr": "omuz",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "палец ноги",
-      "tr": "ayak parmağı",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "печень",
-      "tr": "karaciğer",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "позвоночник",
-      "tr": "omurga, bel kemiği",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "подбородок",
-      "tr": "çene",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "почка",
-      "tr": "böbrek",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "пятка",
-      "tr": "topuk",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "ребро",
-      "tr": "kaburga kemiği",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "рот",
-      "tr": "ağız",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "рука (кисть)",
-      "tr": "el",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "рука (от кисти до плеча)",
-      "tr": "kol",
-      "tl": null,
-      "sub": null
-    },
-    {
       "ru": "Придется наложить гипс",
       "tr": "Alçıya koymam gerekecek",
       "tl": null,
@@ -690,6 +510,12 @@
     {
       "ru": "Приходите на прием через два дня",
       "tr": "İki gün içinde gelip beni tekrar görün",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "У меня аллергия на …",
+      "tr": "…ye alerjim var",
       "tl": null,
       "sub": null
     }
