@@ -668,6 +668,30 @@
       "tr": "kol",
       "tl": null,
       "sub": null
+    },
+    {
+      "ru": "Придется наложить гипс",
+      "tr": "Alçıya koymam gerekecek",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Я выпишу вам антибиотики. Принимайте три раза в день.",
+      "tr": "Size bir antibiyotik vereceğim. Bunu günde üç kez alın.",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Я сделаю вам укол",
+      "tr": "Size bir iğne yazacağım",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Приходите на прием через два дня",
+      "tr": "İki gün içinde gelip beni tekrar görün",
+      "tl": null,
+      "sub": null
     }
   ]
 }
