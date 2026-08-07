@@ -554,6 +554,120 @@
       "tr": "arkadaki aşağıdaki öndeki yukarıdaki",
       "tl": "аркадаки ашаыдаки ёндэки юкарыдаки",
       "sub": "Словарь — Sőzlűk"
+    },
+    {
+      "ru": "мочевой пузырь",
+      "tr": "idrar torbası",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "мускул",
+      "tr": "kas",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "нерв",
+      "tr": "sinir",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "нервная система",
+      "tr": "sinir sistemi",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "нога",
+      "tr": "bacak",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "нога (ступня)",
+      "tr": "ayak",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "ноготь",
+      "tr": "tırnak",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "нос",
+      "tr": "burun",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "плечо",
+      "tr": "omuz",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "палец ноги",
+      "tr": "ayak parmağı",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "печень",
+      "tr": "karaciğer",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "позвоночник",
+      "tr": "omurga, bel kemiği",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "подбородок",
+      "tr": "çene",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "почка",
+      "tr": "böbrek",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "пятка",
+      "tr": "topuk",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "ребро",
+      "tr": "kaburga kemiği",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "рот",
+      "tr": "ağız",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "рука (кисть)",
+      "tr": "el",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "рука (от кисти до плеча)",
+      "tr": "kol",
+      "tl": null,
+      "sub": null
     }
   ]
 }
