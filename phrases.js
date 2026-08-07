@@ -345,14 +345,44 @@ function onAnswerClick(btn) {
     btn.classList.add("correct");
     if (!hintUsed) bumpPhraseStreak(phraseId(currentTopic.id, currentPhrase), true);
     updateQuizProgressLabel();
-    speak(currentPhrase.tr);
-    setTimeout(nextQuestion, 900);
+    showPhraseMatchPopup(currentPhrase);
   } else {
     btn.classList.add("wrong");
     btn.disabled = true;
     if (!hintUsed) bumpPhraseStreak(phraseId(currentTopic.id, currentPhrase), false);
     setTimeout(() => btn.classList.remove("wrong"), 300);
   }
+}
+
+// Плашка "нашлась пара" — тот же принцип, что и в маджонге (см. showMatchPopup в
+// script.js), но без иконки (у фраз её нет) и с переходом к следующему вопросу вместо
+// простого закрытия: 4,5 сек автоматически, или сразу — тапом по свободному полю.
+// Даёт сфокусироваться на фразе, даже если ответ угадан случайно.
+function showPhraseMatchPopup(phrase) {
+  const popupEl = document.getElementById("match-popup");
+  const card = popupEl.querySelector(".match-card");
+  card.classList.add("no-icon");
+  popupEl.querySelector(".match-tr").textContent = phrase.tr;
+  popupEl.querySelector(".match-ru").textContent = phrase.ru;
+  popupEl.classList.remove("hidden");
+  clearTimeout(popupEl._hideTimer);
+
+  let advanced = false;
+  const advance = () => {
+    if (advanced) return;
+    advanced = true;
+    popupEl.classList.add("hidden");
+    card.classList.remove("no-icon");
+    popupEl.removeEventListener("click", onBackgroundClick);
+    nextQuestion();
+  };
+  function onBackgroundClick(e) {
+    if (e.target === popupEl) advance();
+  }
+  popupEl.addEventListener("click", onBackgroundClick);
+  popupEl._hideTimer = setTimeout(advance, 4500);
+
+  speak(phrase.tr);
 }
 
 // Подсказка гасит половину неверных вариантов (оставляет верный + половину неверных).
