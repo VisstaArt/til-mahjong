@@ -1,11 +1,6 @@
 [
   {
     "topic": "Осмотр достопримечательностей",
-    "ru": "Какая высота у этой горы? Как далеко до…? Что это за зверь/ птица/цветок/де- рево? 0",
-    "tr": "Şu dağın yüksekliği ne kadar? … ne kadar uzaklıkta? Bu ne tür bir hayvan/kuş/çiçek/ ağaç?"
-  },
-  {
-    "topic": "Осмотр достопримечательностей",
     "ru": "собор стадион старый город статуя театр тропинка универмаг университет утес фонтан холм храм художественная галерея",
     "tr": "katedral stadyum eski şehir heykel tiyatro patika çarşı üniversite uçurum çeşme tepe tapınak sanat galeresi"
   },

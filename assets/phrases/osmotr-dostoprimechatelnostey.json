@@ -278,6 +278,24 @@
       "tr": "Çocuklar/emekliler için bir indirim var mı?",
       "tl": null,
       "sub": null
+    },
+    {
+      "ru": "Какая высота у этой горы?",
+      "tr": "Şu dağın yüksekliği ne kadar?",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Как далеко до…?",
+      "tr": "… ne kadar uzaklıkta?",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Что это за зверь/птица/цветок/дерево?",
+      "tr": "Bu ne tür bir hayvan/kuş/çiçek/ağaç?",
+      "tl": null,
+      "sub": null
     }
   ]
 }
