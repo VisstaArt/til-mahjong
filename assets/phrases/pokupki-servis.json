@@ -2180,6 +2180,48 @@
       "tr": "raptiye",
       "tl": null,
       "sub": null
+    },
+    {
+      "ru": "вокал",
+      "tr": "çok sesli müzik",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "видеокассета",
+      "tr": "video kaseti",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "джаз",
+      "tr": "caz",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "инструментальная музыка",
+      "tr": "enstrumantal müzik",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "легкая музыка",
+      "tr": "hafif müzik",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "камерная музыка",
+      "tr": "oda müziği",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "классическая музыка",
+      "tr": "klasik müzik",
+      "tl": null,
+      "sub": null
     }
   ]
 }
