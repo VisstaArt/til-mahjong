@@ -398,6 +398,24 @@
       "tr": "Burada su kayağı yapabilir miyiz",
       "tl": "Бурда су каяйи йапабилир мийиз?",
       "sub": "На пляже — Plajda"
+    },
+    {
+      "ru": "Можно взять напрокат ракетки?",
+      "tr": "Raket kiralayabilir miyim?",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Куда можно сходить поплавать/половить рыбу?",
+      "tr": "Nerede yüzmeye/balık tutmaya gidebiliriz?",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Я бы хотел порыбачить. Мне нужно разрешение?",
+      "tr": "Balığa gitmek istiyorum. Bir izin gerekiyor mu?",
+      "tl": null,
+      "sub": null
     }
   ]
 }
