@@ -2,7 +2,7 @@
 // берём свежую версию (и обновляем кеш) — это на время активной разработки, чтобы
 // не словить залипание на старой версии, как уже бывало с обычным браузерным кешем.
 // Офлайн/при обрыве сети — отдаём то, что успело закешироваться.
-const CACHE_NAME = "til-mahjong-v3";
+const CACHE_NAME = "til-mahjong-v4";
 
 const APP_SHELL = [
   "./",
@@ -53,8 +53,12 @@ self.addEventListener("activate", (event) => {
 
 self.addEventListener("fetch", (event) => {
   if (event.request.method !== "GET") return;
+  // GitHub Pages отдаёт файлы с Cache-Control: max-age=600 — обычный fetch() тихо
+  // подставил бы ответ из HTTP-кеша браузера вместо похода в сеть, и "network-first"
+  // работал бы только на бумаге. cache: "reload" заставляет реально ходить в сеть.
+  const req = new Request(event.request, { cache: "reload" });
   event.respondWith(
-    fetch(event.request)
+    fetch(req)
       .then((res) => {
         const copy = res.clone();
         caches.open(CACHE_NAME).then((cache) => cache.put(event.request, copy));
