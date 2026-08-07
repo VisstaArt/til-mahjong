@@ -1640,6 +1640,72 @@
       "tr": "Biraz ayakkabı boyası/ayakkabı bağına ihtiyacım var",
       "tl": null,
       "sub": null
+    },
+    {
+      "ru": "банк",
+      "tr": "banka",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "библиотека",
+      "tr": "kütüphane",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "больница",
+      "tr": "hastane",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "булочная",
+      "tr": "fırın",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "газетный киоск",
+      "tr": "gazete bayii",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "деликатесы",
+      "tr": "şarküteri",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "книжный магазин",
+      "tr": "kitapçı",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "компьютерный магазин",
+      "tr": "bilgisayar mağazası",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "кондитерская",
+      "tr": "pastane",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "магазин игрушек",
+      "tr": "oyuncakçı dükkanı",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "магазин канцтоваров",
+      "tr": "kırtasiyeci",
+      "tl": null,
+      "sub": null
     }
   ]
 }
