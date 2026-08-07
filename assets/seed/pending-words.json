@@ -14957,5 +14957,159 @@
     "pos": "pronoun",
     "theme": "Служебные слова",
     "visual": "A question mark pointing between two different objects"
+  },
+  {
+    "tr": "asker",
+    "ru": "военный",
+    "pos": "noun",
+    "theme": "Профессии",
+    "visual": "A soldier in uniform"
+  },
+  {
+    "tr": "dekoratör",
+    "ru": "дизайнер",
+    "pos": "noun",
+    "theme": "Профессии",
+    "visual": "A designer arranging fabric swatches and color samples"
+  },
+  {
+    "tr": "ev hanımı",
+    "ru": "домохозяйка",
+    "pos": "noun",
+    "theme": "Профессии",
+    "visual": "A woman doing housework at home"
+  },
+  {
+    "tr": "kasiyer",
+    "ru": "кассир",
+    "pos": "noun",
+    "theme": "Профессии",
+    "visual": "A cashier at a checkout register"
+  },
+  {
+    "tr": "manken",
+    "ru": "модель",
+    "pos": "noun",
+    "theme": "Профессии",
+    "visual": "A fashion model posing on a runway"
+  },
+  {
+    "tr": "denizci",
+    "ru": "моряк",
+    "pos": "noun",
+    "theme": "Профессии",
+    "visual": "A sailor in a striped shirt on a ship deck"
+  },
+  {
+    "tr": "müzisyen",
+    "ru": "музыкант",
+    "pos": "noun",
+    "theme": "Профессии",
+    "visual": "A musician playing an instrument"
+  },
+  {
+    "tr": "hamal",
+    "ru": "носильщик",
+    "pos": "noun",
+    "theme": "Профессии",
+    "visual": "A porter carrying luggage"
+  },
+  {
+    "tr": "noter",
+    "ru": "нотариус",
+    "pos": "noun",
+    "theme": "Профессии",
+    "visual": "A notary stamping a document"
+  },
+  {
+    "tr": "kameraman",
+    "ru": "оператор",
+    "pos": "noun",
+    "theme": "Профессии",
+    "visual": "A camera operator filming with a large camera"
+  },
+  {
+    "tr": "berber",
+    "ru": "парикмахер (в мужском зале)",
+    "pos": "noun",
+    "theme": "Профессии",
+    "visual": "A barber cutting a man's hair"
+  },
+  {
+    "tr": "emekli",
+    "ru": "пенсионер",
+    "pos": "noun",
+    "theme": "Профессии",
+    "visual": "An elderly person relaxing in a chair"
+  },
+  {
+    "tr": "yazar",
+    "ru": "писатель",
+    "pos": "noun",
+    "theme": "Профессии",
+    "visual": "A writer typing at a desk"
+  },
+  {
+    "tr": "politikacı",
+    "ru": "политик",
+    "pos": "noun",
+    "theme": "Профессии",
+    "visual": "A politician giving a speech at a podium"
+  },
+  {
+    "tr": "şair",
+    "ru": "поэт",
+    "pos": "noun",
+    "theme": "Профессии",
+    "visual": "A poet writing in a notebook"
+  },
+  {
+    "tr": "programcı",
+    "ru": "программист",
+    "pos": "noun",
+    "theme": "Профессии",
+    "visual": "A programmer typing code on a laptop"
+  },
+  {
+    "tr": "psikolog",
+    "ru": "психолог",
+    "pos": "noun",
+    "theme": "Профессии",
+    "visual": "A psychologist talking with a client"
+  },
+  {
+    "tr": "işçi",
+    "ru": "рабочий",
+    "pos": "noun",
+    "theme": "Профессии",
+    "visual": "A worker in a hard hat"
+  },
+  {
+    "tr": "reklamcı",
+    "ru": "рекламный агент",
+    "pos": "noun",
+    "theme": "Профессии",
+    "visual": "An advertising agent presenting a billboard design"
+  },
+  {
+    "tr": "papaz",
+    "ru": "священник",
+    "pos": "noun",
+    "theme": "Профессии",
+    "visual": "A priest in robes"
+  },
+  {
+    "tr": "heykeltıraş",
+    "ru": "скульптор",
+    "pos": "noun",
+    "theme": "Профессии",
+    "visual": "A sculptor carving a stone statue"
+  },
+  {
+    "tr": "sigortacı",
+    "ru": "страховой агент",
+    "pos": "noun",
+    "theme": "Профессии",
+    "visual": "An insurance agent holding a policy document"
   }
 ]

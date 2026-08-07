@@ -524,6 +524,150 @@
       "tr": "O iş adam kadın",
       "tl": "О иш адам/иш кадын",
       "sub": null
+    },
+    {
+      "ru": "Не могли бы вы мне это перевести?",
+      "tr": "Bunu bana tercüme edebilir misiniz?",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Это моя жена/мой муж",
+      "tr": "Bu benim karım/kocam",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Это моя дочь/мой сын",
+      "tr": "Bu kızım/oğlum",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Это мой молодой человек/моя девушка",
+      "tr": "Bu benim erkek arkadaşım/kız arkadaşım",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Рада познакомиться",
+      "tr": "Memnun oldum",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Канадец/канадка",
+      "tr": "Kanadalı",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Русский/русская",
+      "tr": "Rus",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Турок/турчанка",
+      "tr": "Türk",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Грек/гречанка",
+      "tr": "Yunanlı",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Он/она американец/американка",
+      "tr": "O Amerikalı",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Моя семья",
+      "tr": "Ailem",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Мой друг",
+      "tr": "Arkadaşım",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Мои дети",
+      "tr": "Çocuklarım",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Моя жена",
+      "tr": "Karım",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Мой муж",
+      "tr": "Kocam",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Мой супруг",
+      "tr": "Eşim",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Моя дочь",
+      "tr": "Kızım",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Мой сын",
+      "tr": "Oğlum",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Вы женаты/замужем?",
+      "tr": "Bekar mısınız?/Evli misiniz?",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Моему сыну/дочери … лет",
+      "tr": "Oğlum/kızım … yaşında",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "У вас есть братья или сестры?",
+      "tr": "Erkek kardeşiniz ya da kız kardeşiniz var mı?",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "У меня … братьев/сестер",
+      "tr": "Erkek kardeşim/kız kardeşim var",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Где вы остановились?",
+      "tr": "Nerede kalıyorsunuz?",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Мы остановились в отеле/Я остановился(-ась) в отеле",
+      "tr": "Bir otelde kalıyoruz/Bir otelde kalıyorum",
+      "tl": null,
+      "sub": null
     }
   ]
 }

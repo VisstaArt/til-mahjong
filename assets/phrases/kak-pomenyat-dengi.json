@@ -98,6 +98,24 @@
       "tr": "Veznedara gidin, lütfen",
       "tl": "Вэзнэдара гидин, лютфэн",
       "sub": null
+    },
+    {
+      "ru": "Вы можете обменять это на доллары/евро/фунты стерлингов?",
+      "tr": "Bunu dolara/avroya/sterline çevirebilir misiniz?",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Какой вы берете процент?",
+      "tr": "Ne kadar komisyon alıyorsunuz?",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Не могли бы вы мне выдать более мелкие купюры?",
+      "tr": "Daha küçük kağıt para verin lütfen?",
+      "tl": null,
+      "sub": null
     }
   ]
 }

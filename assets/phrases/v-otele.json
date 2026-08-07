@@ -434,6 +434,72 @@
       "tr": "hamal santral memuru garson kadın garson komi müdür kapıcı",
       "tl": "хамаль сантрал мэмуру гарсон кадын гарсон коми мюдюр капыджы",
       "sub": "Персонал отеля — Otel personeli"
+    },
+    {
+      "ru": "c балконом",
+      "tr": "Balkonlu",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "c ванной",
+      "tr": "Banyolu",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "c видом на море",
+      "tr": "Denize bakan",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "c душем",
+      "tr": "Duşlu",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "c отоплением",
+      "tr": "Isıtmalı",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "c двуспальной кроватью",
+      "tr": "İki kişilik yataklı",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "с двумя односпальными кроватями",
+      "tr": "İki yataklı",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Я вернусь очень поздно",
+      "tr": "Çok geç döneceğim",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Разбудите меня в … , пожалуйста",
+      "tr": "Beni saat …de uyandırır mısınız, lütfen",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Ключ от номера … пожалуйста",
+      "tr": "… odanın anahtarı lütfen",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Где находится лифт?",
+      "tr": "Asansör nerede?",
+      "tl": null,
+      "sub": null
     }
   ]
 }

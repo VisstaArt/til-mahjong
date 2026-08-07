@@ -722,6 +722,876 @@
       "tr": "elma suyu",
       "tl": "эльма суйю турции блюда, кото-",
       "sub": null
+    },
+    {
+      "ru": "около окна",
+      "tr": "Pencere kenarında",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "на террасе",
+      "tr": "Terasta",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "в зале для некурящих",
+      "tr": "Sigara içilmeyen bir yerde",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Я бы хотел(а) заказать столик на сегодняшний вечер/на завтра",
+      "tr": "Bu akşama/yarına bir masa ayırtmak istiyorum",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Здесь нет стакана/тарелки",
+      "tr": "Bir bardak/tabak eksik",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Это не то, что я заказывал/заказывала",
+      "tr": "Bu ısmarladığım şey değil",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "зубочистка",
+      "tr": "kürdan",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "йогурт",
+      "tr": "yoğurt",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "какао",
+      "tr": "sütlü kakao",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "кофе без кофеина",
+      "tr": "kahve kafeinsiz",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "черный с молоком",
+      "tr": "koyu sütlü",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "красный перец",
+      "tr": "kırmızı biber",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "лимон",
+      "tr": "limon",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "ложка",
+      "tr": "kaşık",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "масло",
+      "tr": "yağ",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "мед",
+      "tr": "bal",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "метрдотель",
+      "tr": "şef, garson",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "молоко",
+      "tr": "süt",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "холодное",
+      "tr": "soğuk",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "теплое",
+      "tr": "sıcak",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "неразбавленный",
+      "tr": "sek",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "нож",
+      "tr": "bıçak",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "оливки",
+      "tr": "zeytin",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "официант/официантка",
+      "tr": "garson",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "сыр",
+      "tr": "peynir",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "тарелка",
+      "tr": "tabak",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "тимьян",
+      "tr": "kekik",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "тмин",
+      "tr": "kimyon",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "тосты",
+      "tr": "kızarmış ekmek",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "уксус",
+      "tr": "sirke",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "фаршированный",
+      "tr": "dolma",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "фруктовый сок",
+      "tr": "meyve suyu",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "хлеб",
+      "tr": "ekmek",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "чаевые",
+      "tr": "bahşiş",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "чай с лимоном",
+      "tr": "çay limonlu",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "с молоком",
+      "tr": "sütlü",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "чашка",
+      "tr": "fincan",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "черный молотый перец",
+      "tr": "karabiber",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "суп с морковью",
+      "tr": "havuç çorbası",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "суп с сельдереем",
+      "tr": "kereviz çorbası",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "суп с сыром",
+      "tr": "peynir çorbası",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "суп пюре",
+      "tr": "un çorbası",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "суп с угрем",
+      "tr": "yılan balığı çorbası",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "суп с фасолью",
+      "tr": "fasulye çorbası",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "томатный суп",
+      "tr": "domates çorbası",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "анчоусы",
+      "tr": "ançüezler",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "калкан",
+      "tr": "kalkan",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "карп",
+      "tr": "sazan",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "кефаль",
+      "tr": "kefal, tekir",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "крабы",
+      "tr": "pavurya",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "креветки",
+      "tr": "karidesler",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "лосось",
+      "tr": "som balığı",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "мерланг",
+      "tr": "mezgit",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "мидия",
+      "tr": "midye",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "окунь",
+      "tr": "levrek",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "омар",
+      "tr": "ıstakoz",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "палтус",
+      "tr": "pisi balığı",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "пикша",
+      "tr": "mezgit",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "рыба-меч",
+      "tr": "kılıç balığı",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "сарган (морская щука)",
+      "tr": "zargana",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "сардина",
+      "tr": "sardalye",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "сельдь",
+      "tr": "ringa balığı",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "скумбрия",
+      "tr": "uskumbru",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "соленый тунец",
+      "tr": "lakerda",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "ставрида",
+      "tr": "istavrit",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "треска",
+      "tr": "morina",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "тунец",
+      "tr": "ton balığı",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "угорь",
+      "tr": "yılan balığı",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "устрица",
+      "tr": "istiridye",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "форель",
+      "tr": "alabalık",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "черный лещ",
+      "tr": "karagöz",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "щука",
+      "tr": "turna",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "артишоки",
+      "tr": "enginarlar",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "аспарагус",
+      "tr": "kuşkonmaz",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "баклажан",
+      "tr": "patlıcan",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "бамия",
+      "tr": "bamya",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "горох",
+      "tr": "bezelye",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "грибы",
+      "tr": "mantar",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "зеленая фасоль",
+      "tr": "taze fasulye",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "зеленый лук",
+      "tr": "taze soğan",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "кабачок",
+      "tr": "sakız kabağı",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "капуста",
+      "tr": "kapuska",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "картофель",
+      "tr": "patates",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "каштан",
+      "tr": "kestane",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "лук",
+      "tr": "soğan",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "лук-порей",
+      "tr": "pırasa",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "морковь",
+      "tr": "havuç",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "огурец",
+      "tr": "salatalık",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "перец",
+      "tr": "biber",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "помидоры",
+      "tr": "domatesler",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "портулак",
+      "tr": "semizotu",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "редис",
+      "tr": "turp",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "репа",
+      "tr": "şalgam",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "рис",
+      "tr": "pirinç",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "салат",
+      "tr": "salata",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "салат из картофеля",
+      "tr": "patates salatası",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "гусь",
+      "tr": "kaz",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "дикая утка",
+      "tr": "yaban ördeği",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "заяц",
+      "tr": "yaban tavşanı",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "индейка",
+      "tr": "hindi",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "кабан",
+      "tr": "yaban domuzu",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "курица",
+      "tr": "tavuk",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "куропатка",
+      "tr": "keklik",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "перепел",
+      "tr": "bıldırcın",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "фазан",
+      "tr": "sülün",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "абрикос",
+      "tr": "kayısı",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "айва",
+      "tr": "ayva",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "ананас",
+      "tr": "ananas",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "апельсин",
+      "tr": "portakal",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "арбуз",
+      "tr": "karpuz",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "банан",
+      "tr": "muz",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "блины",
+      "tr": "gözleme",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "виноград",
+      "tr": "üzüm",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "грецкий орех",
+      "tr": "ceviz",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "груша",
+      "tr": "armut",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "дыня",
+      "tr": "kavun",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "ежевика",
+      "tr": "böğürtlen",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "инжир",
+      "tr": "incir",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "клубника",
+      "tr": "çilek",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "компот",
+      "tr": "komposto",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "кофейный торт",
+      "tr": "kahveli pasta",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "крем-карамель",
+      "tr": "krem karamel",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "крыжовник",
+      "tr": "bektaşı üzümü",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "малина",
+      "tr": "ahududu",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "мандарин",
+      "tr": "mandalina",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "миндаль",
+      "tr": "badem",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "миндальное печенье",
+      "tr": "bademli kurabiye",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "тутовая ягода",
+      "tr": "dut",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "фруктовый салат",
+      "tr": "meyve salatası",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "фруктовый торт",
+      "tr": "meyveli turta",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "фундук",
+      "tr": "fındık",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "черешня",
+      "tr": "kiraz",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "черная смородина",
+      "tr": "frenk üzümü",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "шоколадный пудинг",
+      "tr": "krem şokola",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "молоко (напиток)",
+      "tr": "süt",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "пиво",
+      "tr": "bira",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "портвейн",
+      "tr": "porto",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "ром",
+      "tr": "rom",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "сидр",
+      "tr": "elma şarabı",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "содовая вода",
+      "tr": "soda",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "фруктовый сок (напиток)",
+      "tr": "meyve suyu",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "чай",
+      "tr": "çay",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "чай со льдом",
+      "tr": "buzlu çay",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "чай с молоком (напиток)",
+      "tr": "sütlü çay",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "шерри",
+      "tr": "ispanyol şarabı",
+      "tl": null,
+      "sub": null
     }
   ]
 }
