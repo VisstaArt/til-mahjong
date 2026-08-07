@@ -2222,6 +2222,54 @@
       "tr": "klasik müzik",
       "tl": null,
       "sub": null
+    },
+    {
+      "ru": "видеомагнитофон",
+      "tr": "video",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "калькулятор",
+      "tr": "hesap makinesi",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "колонки",
+      "tr": "hoparlör",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "лампочка",
+      "tr": "ampul",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "магнитола",
+      "tr": "oto radyosu",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "магнитофон",
+      "tr": "teyp",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "наушники",
+      "tr": "kulaklık",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "плавкий предохранитель",
+      "tr": "sigorta",
+      "tl": null,
+      "sub": null
     }
   ]
 }
