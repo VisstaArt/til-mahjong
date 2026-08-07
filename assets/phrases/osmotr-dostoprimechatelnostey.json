@@ -374,6 +374,30 @@
       "tr": "sanat galeresi",
       "tl": null,
       "sub": null
+    },
+    {
+      "ru": "центр города",
+      "tr": "şehir merkezi",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "церковь",
+      "tr": "kilise",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "экономика",
+      "tr": "ekonomi",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "ярмарка",
+      "tr": "fuar",
+      "tl": null,
+      "sub": null
     }
   ]
 }
