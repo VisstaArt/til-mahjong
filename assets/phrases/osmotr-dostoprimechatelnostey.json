@@ -260,6 +260,24 @@
       "tr": "görkemli etkileyici şaşırtıcı ilginç güzel sevimli karanlık tuhaf müthiş",
       "tl": "гёркэмли эткилейиджи шашыртыджы ильгинч гюзэль сэвимли каранлык тухаф мютхиш",
       "sub": "Словарь — Sőzlűk"
+    },
+    {
+      "ru": "Где находится касса?",
+      "tr": "Bilet gişesi nerede?",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Сколько стоит входной билет?",
+      "tr": "Giriş ücreti ne kadar?",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "У вас есть скидки для … детей/пенсионеров?",
+      "tr": "Çocuklar/emekliler için bir indirim var mı?",
+      "tl": null,
+      "sub": null
     }
   ]
 }
