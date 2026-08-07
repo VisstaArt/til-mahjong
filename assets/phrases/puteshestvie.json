@@ -902,6 +902,36 @@
       "tr": "…nin karşısında/yanında/arkasında",
       "tl": null,
       "sub": null
+    },
+    {
+      "ru": "Поверните направо у светофора",
+      "tr": "Trafik ışıklarından sağa dönün",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Поверните налево на следующем углу",
+      "tr": "Bir sonraki köşeden sola dönün",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Поверните налево у школы",
+      "tr": "Okulun oradan sola dönün",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Езжайте прямо по дороге …",
+      "tr": "…yolu boyunca gidin",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Первый/второй/третий поворот направо",
+      "tr": "Sağdaki birinci/ikinci/üçüncü yola sapın",
+      "tl": null,
+      "sub": null
     }
   ]
 }
