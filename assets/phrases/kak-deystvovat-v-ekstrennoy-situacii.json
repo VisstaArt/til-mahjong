@@ -52,15 +52,21 @@
       "sub": null
     },
     {
-      "ru": "Посольство Консульство Где находится полицейский участок/бюро находок?",
-      "tr": "Büyükelçilik Konsolosluk Polis karakolu/ Kayıp eşya bürosu nerede",
-      "tl": "Бюйюкэльчилик Консолослук Полис караколу/ кайып эшйя бюросу нэрдэ?",
+      "ru": "Где находится полицейский участок/бюро находок?",
+      "tr": "Polis karakolu/Kayıp eşya bürosu nerede?",
+      "tl": null,
       "sub": null
     },
     {
-      "ru": "Я хочу заявить о краже У меня украли деньги/бумаж- ник/сумку",
-      "tr": "Bir hırsızlığı bildirmek istiyorum Param/Cüzdanım/ Çantam çalındı",
-      "tl": "Бир хырсызлыы бильдирмек истийорум Парам/ джюзданым/ чантам чалынды",
+      "ru": "Я хочу заявить о краже",
+      "tr": "Bir hırsızlığı bildirmek istiyorum",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "У меня украли деньги/бумажник/сумку",
+      "tr": "Param/Cüzdanım/Çantam çalındı",
+      "tl": null,
       "sub": null
     }
   ]

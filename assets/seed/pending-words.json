@@ -19514,5 +19514,19 @@
     "pos": "noun",
     "theme": "Прилагательные и сравнения",
     "visual": "An upper tooth highlighted"
+  },
+  {
+    "tr": "Büyükelçilik",
+    "ru": "посольство",
+    "pos": "noun",
+    "theme": "Город и места",
+    "visual": "An embassy building with a flag"
+  },
+  {
+    "tr": "Konsolosluk",
+    "ru": "консульство",
+    "pos": "noun",
+    "theme": "Город и места",
+    "visual": "A consulate building with a flag"
   }
 ]
