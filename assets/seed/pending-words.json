@@ -14950,5 +14950,12 @@
     "pos": "noun",
     "theme": "Профессии",
     "visual": "A jeweler examining a gem with a loupe"
+  },
+  {
+    "tr": "hangi",
+    "ru": "какой",
+    "pos": "pronoun",
+    "theme": "Служебные слова",
+    "visual": "A question mark pointing between two different objects"
   }
 ]

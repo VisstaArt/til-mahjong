@@ -15,7 +15,11 @@
 </head>
 <body data-screen="catalog">
   <header class="topbar">
-    <h1>🐉 Тил Маджонг <span class="subtitle">прототип</span></h1>
+    <h1>🐉 Тил <span class="subtitle">прототип</span></h1>
+    <div class="mode-switch">
+      <button id="mode-mahjong-btn" class="mode-btn active" type="button">🀄 Маджонг</button>
+      <button id="mode-phrases-btn" class="mode-btn" type="button">💬 Фразы</button>
+    </div>
   </header>
 
   <!-- ЭКРАН 1: каталог — плитки категорий, как разделы в интернет-магазине -->
@@ -158,6 +162,53 @@
     </main>
   </section>
 
+  <!-- ЭКРАН 4: каталог тем — фразы -->
+  <section id="screen-phrases-catalog" class="screen manager-panel">
+    <div class="manager-row">
+      <div class="label label-mastered">⭐ <span id="phrases-mastered-count">0</span> фраз уже выучено</div>
+      <div class="label"><span id="phrases-total-count">0</span> фраз всего в <span id="phrases-topic-count">0</span> темах</div>
+    </div>
+    <div id="phrases-catalog-loading" class="catalog-loading">⏳ Загружаем список тем…</div>
+    <div id="phrases-catalog-grid" class="catalog-grid"></div>
+  </section>
+
+  <!-- ЭКРАН 4а: одна тема фраз — список фраз внутри неё (аналог screen-category) -->
+  <section id="screen-phrase-topic" class="screen manager-panel">
+    <div class="manager-row category-header-row">
+      <button id="phrase-topic-back-btn" class="secondary small">← Темы</button>
+      <h2 id="phrase-topic-title"></h2>
+    </div>
+    <div class="select-row">
+      <button id="phrase-topic-select-all-btn">Включить всю группу</button>
+      <button id="phrase-topic-select-none-btn">Выключить всю группу</button>
+    </div>
+    <div id="phrase-topic-list" class="word-select-list"></div>
+    <div class="screen-actions">
+      <button id="phrase-topic-done-btn" class="secondary">← Темы</button>
+      <button id="phrase-topic-play-btn">Играть →</button>
+    </div>
+  </section>
+
+  <!-- ЭКРАН 5: квиз фраз -->
+  <section id="screen-quiz" class="screen screen-game">
+    <div class="game-bar">
+      <div class="stats">
+        <div class="stat"><span class="label">Тема</span><span id="quiz-topic-title">—</span></div>
+        <div class="stat"><span class="label">Прогресс</span><span id="quiz-progress">0/0</span></div>
+      </div>
+      <div class="controls">
+        <button id="quiz-mute-btn" title="Выключить звук">🔊</button>
+        <button id="quiz-hint-btn" title="Подсказка: убрать половину неверных вариантов">💡 Подсказка</button>
+        <button id="quiz-back-btn" class="secondary" title="Вернуться к темам">← Темы</button>
+      </div>
+    </div>
+    <main class="quiz-main">
+      <div id="quiz-direction" class="quiz-direction"></div>
+      <div id="quiz-prompt" class="quiz-prompt"></div>
+      <div id="quiz-options" class="quiz-options"></div>
+    </main>
+  </section>
+
   <div id="match-popup" class="match-popup-overlay hidden">
     <div class="match-card">
       <div class="match-icon"></div>
@@ -179,5 +230,6 @@
   <script src="wordbank.js"></script>
   <script src="mahjong-layout.js"></script>
   <script src="script.js"></script>
+  <script src="phrases.js"></script>
 </body>
 </html>

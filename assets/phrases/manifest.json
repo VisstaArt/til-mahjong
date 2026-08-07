@@ -1,0 +1,156 @@
+[
+  {
+    "id": "obscheprinyatye-slova",
+    "title": "Общепринятые слова",
+    "source": "razgovornik",
+    "count": 8,
+    "sizeKB": 1.6
+  },
+  {
+    "id": "voprositelnye-slova",
+    "title": "Вопросительные слова",
+    "source": "razgovornik",
+    "count": 5,
+    "sizeKB": 0.7
+  },
+  {
+    "id": "privetstvie",
+    "title": "Приветствие",
+    "source": "razgovornik",
+    "count": 65,
+    "sizeKB": 16.2
+  },
+  {
+    "id": "professii",
+    "title": "Профессии",
+    "source": "razgovornik",
+    "count": 4,
+    "sizeKB": 1.0
+  },
+  {
+    "id": "vremya",
+    "title": "Время",
+    "source": "razgovornik",
+    "count": 6,
+    "sizeKB": 1.1
+  },
+  {
+    "id": "poleznye-antonimy",
+    "title": "Полезные антонимы",
+    "source": "razgovornik",
+    "count": 12,
+    "sizeKB": 2.1
+  },
+  {
+    "id": "na-tamozhne",
+    "title": "На таможне",
+    "source": "razgovornik",
+    "count": 13,
+    "sizeKB": 3.3
+  },
+  {
+    "id": "kak-pomenyat-dengi",
+    "title": "Как поменять деньги",
+    "source": "razgovornik",
+    "count": 12,
+    "sizeKB": 3.4
+  },
+  {
+    "id": "v-gorode",
+    "title": "В городе",
+    "source": "razgovornik",
+    "count": 8,
+    "sizeKB": 1.7
+  },
+  {
+    "id": "nekotorye-poleznye-nadpisi-i-vyveski",
+    "title": "Некоторые полезные надписи и вывески",
+    "source": "razgovornik",
+    "count": 5,
+    "sizeKB": 1.7
+  },
+  {
+    "id": "v-otele",
+    "title": "В отеле",
+    "source": "razgovornik",
+    "count": 63,
+    "sizeKB": 17.0
+  },
+  {
+    "id": "restoran",
+    "title": "Ресторан",
+    "source": "razgovornik",
+    "count": 103,
+    "sizeKB": 25.7
+  },
+  {
+    "id": "puteshestvie",
+    "title": "Путешествие",
+    "source": "razgovornik",
+    "count": 125,
+    "sizeKB": 38.4
+  },
+  {
+    "id": "osmotr-dostoprimechatelnostey",
+    "title": "Осмотр достопримечательностей",
+    "source": "razgovornik",
+    "count": 40,
+    "sizeKB": 11.9
+  },
+  {
+    "id": "pokupki-servis",
+    "title": "Покупки, сервис",
+    "source": "razgovornik",
+    "count": 247,
+    "sizeKB": 66.1
+  },
+  {
+    "id": "znakomstvo",
+    "title": "Знакомство",
+    "source": "razgovornik",
+    "count": 31,
+    "sizeKB": 9.9
+  },
+  {
+    "id": "o-pogode",
+    "title": "О погоде",
+    "source": "razgovornik",
+    "count": 10,
+    "sizeKB": 3.7
+  },
+  {
+    "id": "vyrazheniya-terminy-dlya-biznesmena",
+    "title": "Выражения, термины для бизнесмена",
+    "source": "razgovornik",
+    "count": 2,
+    "sizeKB": 0.6
+  },
+  {
+    "id": "razvlecheniya-otdyh",
+    "title": "Развлечения, отдых",
+    "source": "razgovornik",
+    "count": 63,
+    "sizeKB": 19.2
+  },
+  {
+    "id": "zdorove",
+    "title": "Здоровье",
+    "source": "razgovornik",
+    "count": 64,
+    "sizeKB": 16.8
+  },
+  {
+    "id": "kak-deystvovat-v-ekstrennoy-situacii",
+    "title": "Как действовать в экстренной ситуации",
+    "source": "razgovornik",
+    "count": 7,
+    "sizeKB": 1.6
+  },
+  {
+    "id": "ustoychivye-vyrazheniya-so-slovom-allah",
+    "title": "Устойчивые выражения со словом «Allah»",
+    "source": "allah",
+    "count": 225,
+    "sizeKB": 30.8
+  }
+]
