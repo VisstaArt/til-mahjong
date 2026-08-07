@@ -878,6 +878,30 @@
       "tr": "Bu yerin adı ne?",
       "tl": null,
       "sub": null
+    },
+    {
+      "ru": "Вам надо вернуться в …",
+      "tr": "… a geri dönmeniz gerekiyor",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Это в пятнадцати минутах отсюда",
+      "tr": "Buradan yaklaşık olarak on beş dakika",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Это слева/справа",
+      "tr": "Orada solda/sağda",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Напротив/рядом с/за …",
+      "tr": "…nin karşısında/yanında/arkasında",
+      "tl": null,
+      "sub": null
     }
   ]
 }

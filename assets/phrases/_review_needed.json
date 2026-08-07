@@ -1,11 +1,6 @@
 [
   {
     "topic": "Путешествие",
-    "ru": "Вам надо вер- нуться в … Это в пятнадца- ти минутах от- сюда Это слева/справа Напротив/рядом с/за …",
-    "tr": "… a geri dönmeniz gerekiyor Buradan yaklaşık olarak on beş dakika Orada solda/ sağda …nin karşısında/ yanında/arkasında"
-  },
-  {
-    "topic": "Путешествие",
     "ru": "Поверните на- право у светофо- ра Поверните нале- во на следую- щем углу Поверните нале- во у школы Езжайте прямо по дороге … Первый/второй/ третий поворт направо",
     "tr": "Trafik ışıklarından sağa dönün Bir sonraki köşeden sola dönün Okulun oradan sola dönün …yolu boyunca gidin Sağdaki birinci/ ikinci/ücüncü yola sapın"
   },
