@@ -938,6 +938,66 @@
       "tr": "Oraya yürüyerek gidebilirsiniz/gidemezsiniz",
       "tl": null,
       "sub": null
+    },
+    {
+      "ru": "запасная шина",
+      "tr": "yedek lastiği",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "карбюратор",
+      "tr": "karbüratör",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "колесо",
+      "tr": "tekerlek",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "коробка передач",
+      "tr": "vites kutusu",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "масло",
+      "tr": "yağ",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "мотор",
+      "tr": "motor",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "тормоза",
+      "tr": "frenler",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "тормозная жидкость",
+      "tr": "fren hidrolik yağı",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "радиатор",
+      "tr": "radyatör",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "ремень вентилятора",
+      "tr": "vantilatör kayışı",
+      "tl": null,
+      "sub": null
     }
   ]
 }
