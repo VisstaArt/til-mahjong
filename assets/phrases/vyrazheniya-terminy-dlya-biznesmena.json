@@ -158,6 +158,84 @@
       "tr": "verimlilik",
       "tl": null,
       "sub": null
+    },
+    {
+      "ru": "процент",
+      "tr": "yüzde, faiz",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "рабочая сила",
+      "tr": "emek, iş gücü",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "ресурс",
+      "tr": "kaynak",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "рынок",
+      "tr": "pazar",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "рыночная цена",
+      "tr": "değer",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "сбережения",
+      "tr": "tasarruf",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "скидка",
+      "tr": "indirim",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "спрос",
+      "tr": "talep",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "ставка",
+      "tr": "oran",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "стоимость",
+      "tr": "maliyet",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "счет-фактура",
+      "tr": "fatura",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "товар",
+      "tr": "mallar",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "убытки",
+      "tr": "kayıp",
+      "tl": null,
+      "sub": null
     }
   ]
 }
