@@ -224,6 +224,30 @@
       "tr": "Ne zaman geri dönmen gerek?",
       "tl": "Нэрдэ булушалым? Сэни саат … дэ арарым Тэлэфон нумаран нэ? Сэни отэлиндэн алырым Сэни саат докузда алырым Нэ заман гелейим? Нэ заман гэри дёнмен гэрэк?",
       "sub": "Знакомство — Arkadaş edinme"
+    },
+    {
+      "ru": "Алло, это …",
+      "tr": "Alo, ben …",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Я хочу поговорить с …",
+      "tr": "…ile konuşmak istiyorum",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Говорите громче/медленнее, пожалуйста",
+      "tr": "Daha yüksek sesle/daha yavaş konuşur musunuz lütfen",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Нас разъединили, соедините меня снова, пожалуйста",
+      "tr": "Konuşmam kesildi, beni yeniden bağlayabilir misiniz?",
+      "tl": null,
+      "sub": null
     }
   ]
 }

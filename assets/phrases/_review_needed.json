@@ -1,11 +1,6 @@
 [
   {
     "topic": "Знакомство",
-    "ru": "Алло, это … Я хочу погово- рить с … Говорите гром- че/медленнее, пожалуйста Нас разъедини- ли, соедините меня снова, по- жалуйста",
-    "tr": "Alo, ben … …ile konuşmak istiyorum Daha yüksek ses- le/daha yavaş konuşur musunuz lütfen Konuşmam kes- ildibami yeniden bağlayabilir mis- iniz?"
-  },
-  {
-    "topic": "Знакомство",
     "ru": "У тебя есть за- жигалка? Хочешь сигаре- ту? Ты куришь? Нет. Я не курю. Спасибо. Я бро- сил/бросила Не возражаешь, если я закурю?",
     "tr": "Ateşin var mı acaba? Bir sigara ister misin? Sigara içiyor musun? Hayır içmiyorum teşekkürler. Bıraktım Sigara içersem rahatsız olur mu?"
   },
