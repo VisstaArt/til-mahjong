@@ -1,1 +1,103 @@
-{"id": "obscheprinyatye-slova", "title": "Общепринятые слова", "source": "razgovornik", "phrases": [{"ru": "Я там", "tr": "Oradayım", "tl": "Орадайим (в разгов. речи ордайим)", "sub": null}, {"ru": "Мы там", "tr": "Oradayız", "tl": "Орадайиз (в разгов. речи ордайиз)", "sub": null}, {"ru": "Они там", "tr": "Oradalar", "tl": "Орадалар (в разгов. речи ордалар)", "sub": null}, {"ru": "Есть Есть?", "tr": "Var Var mı?", "tl": "Вар Вар мы Йок Хич бир шэй йок Билийорум Бильмийорум Ёйле саныйорум Аджэлем вар Бени рахат быракын", "sub": null}, {"ru": "Нет Ничего нет Я знаю Я не знаю Я так думаю Я спешу Оставьте меня в покое", "tr": "Yok Hiç bir şey yok Biliyorum Bilmiyorum Öyle sanıyorum Acelem var Beni rahat bırakın", "tl": "Вар Вар мы Йок Хич бир шэй йок Билийорум Бильмийорум Ёйле саныйорум Аджэлем вар Бени рахат быракын", "sub": null}, {"ru": "Минуточку, пожалуйста", "tr": "Bir dakika lütfen", "tl": "Бир дакика лютфэн", "sub": null}, {"ru": "Сюда, пожалуй- ста", "tr": "Bu taraftan lütfen", "tl": "Бу тарафтан лютфэн", "sub": null}, {"ru": "Заходите Заходи", "tr": "İçeri gelin İçeri gel", "tl": "Ичери гэлин Ичери гэль", "sub": null}]}
+{
+  "id": "obscheprinyatye-slova",
+  "title": "Общепринятые слова",
+  "source": "razgovornik",
+  "phrases": [
+    {
+      "ru": "Я там",
+      "tr": "Oradayım",
+      "tl": "Орадайим (в разгов. речи ордайим)",
+      "sub": null
+    },
+    {
+      "ru": "Мы там",
+      "tr": "Oradayız",
+      "tl": "Орадайиз (в разгов. речи ордайиз)",
+      "sub": null
+    },
+    {
+      "ru": "Они там",
+      "tr": "Oradalar",
+      "tl": "Орадалар (в разгов. речи ордалар)",
+      "sub": null
+    },
+    {
+      "ru": "Есть",
+      "tr": "Var",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Есть?",
+      "tr": "Var mı?",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Нет",
+      "tr": "Yok",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Ничего нет",
+      "tr": "Hiç bir şey yok",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Я знаю",
+      "tr": "Biliyorum",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Я не знаю",
+      "tr": "Bilmiyorum",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Я так думаю",
+      "tr": "Öyle sanıyorum",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Я спешу",
+      "tr": "Acelem var",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Оставьте меня в покое",
+      "tr": "Beni rahat bırakın",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Минуточку, пожалуйста",
+      "tr": "Bir dakika lütfen",
+      "tl": "Бир дакика лютфэн",
+      "sub": null
+    },
+    {
+      "ru": "Сюда, пожалуй- ста",
+      "tr": "Bu taraftan lütfen",
+      "tl": "Бу тарафтан лютфэн",
+      "sub": null
+    },
+    {
+      "ru": "Заходите",
+      "tr": "İçeri gelin",
+      "tl": "Ичери гэлин",
+      "sub": null
+    },
+    {
+      "ru": "Заходи",
+      "tr": "İçeri gel",
+      "tl": "Ичери гэль",
+      "sub": null
+    }
+  ]
+}
