@@ -1628,6 +1628,18 @@
       "tr": "…için alan kodu ne?",
       "tl": "…ичин алан коду нэ? Сонра бана гёрюшмэ бэдэлини вэрир мисиниз лютфэн Ёдэмэли арамак истийорум",
       "sub": "Телефон — Telefon"
+    },
+    {
+      "ru": "У вас есть размер поменьше/побольше?",
+      "tr": "Daha küçük/daha büyük bir numara var mı?",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Мне нужен крем для обуви/шнурки",
+      "tr": "Biraz ayakkabı boyası/ayakkabı bağına ihtiyacım var",
+      "tl": null,
+      "sub": null
     }
   ]
 }
