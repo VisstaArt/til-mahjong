@@ -2132,6 +2132,54 @@
       "tr": "saç fırçası",
       "tl": null,
       "sub": null
+    },
+    {
+      "ru": "адресная книга",
+      "tr": "adres defteri",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "авторучка",
+      "tr": "dolmakalem",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "блокнот",
+      "tr": "bloknot",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "бумага",
+      "tr": "kağıt",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "игральные карты",
+      "tr": "oyun kağıdı",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "календарь",
+      "tr": "takvim",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "калька",
+      "tr": "kopya kağıdı",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "канцелярская кнопка",
+      "tr": "raptiye",
+      "tl": null,
+      "sub": null
     }
   ]
 }
