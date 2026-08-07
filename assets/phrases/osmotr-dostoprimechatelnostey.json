@@ -296,6 +296,84 @@
       "tr": "Bu ne tür bir hayvan/kuş/çiçek/ağaç?",
       "tl": null,
       "sub": null
+    },
+    {
+      "ru": "собор",
+      "tr": "katedral",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "стадион",
+      "tr": "stadyum",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "старый город",
+      "tr": "eski şehir",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "статуя",
+      "tr": "heykel",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "театр",
+      "tr": "tiyatro",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "тропинка",
+      "tr": "patika",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "универмаг",
+      "tr": "çarşı",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "университет",
+      "tr": "üniversite",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "утес",
+      "tr": "uçurum",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "фонтан",
+      "tr": "çeşme",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "холм",
+      "tr": "tepe",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "храм",
+      "tr": "tapınak",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "художественная галерея",
+      "tr": "sanat galeresi",
+      "tl": null,
+      "sub": null
     }
   ]
 }
