@@ -24,15 +24,15 @@
     "id": "nekotorye-poleznye-nadpisi-i-vyveski",
     "title": "Некоторые полезные надписи и вывески",
     "source": "razgovornik",
-    "count": 22,
-    "sizeKB": 2.9
+    "count": 1,
+    "sizeKB": 0.3
   },
   {
     "id": "o-pogode",
     "title": "О погоде",
     "source": "razgovornik",
-    "count": 26,
-    "sizeKB": 5.1
+    "count": 7,
+    "sizeKB": 1.2
   },
   {
     "id": "obscheprinyatye-slova",
@@ -56,25 +56,11 @@
     "sizeKB": 89.8
   },
   {
-    "id": "poleznye-antonimy",
-    "title": "Полезные антонимы",
-    "source": "razgovornik",
-    "count": 12,
-    "sizeKB": 2.1
-  },
-  {
     "id": "privetstvie",
     "title": "Приветствие",
     "source": "razgovornik",
-    "count": 111,
-    "sizeKB": 22.1
-  },
-  {
-    "id": "professii",
-    "title": "Профессии",
-    "source": "razgovornik",
-    "count": 4,
-    "sizeKB": 1.0
+    "count": 105,
+    "sizeKB": 14.2
   },
   {
     "id": "puteshestvie",
@@ -94,8 +80,8 @@
     "id": "restoran",
     "title": "Ресторан",
     "source": "razgovornik",
-    "count": 265,
-    "sizeKB": 44.5
+    "count": 78,
+    "sizeKB": 11.9
   },
   {
     "id": "ustoychivye-vyrazheniya-so-slovom-allah",
@@ -115,8 +101,8 @@
     "id": "v-otele",
     "title": "В отеле",
     "source": "razgovornik",
-    "count": 83,
-    "sizeKB": 21.0
+    "count": 72,
+    "sizeKB": 11.5
   },
   {
     "id": "voprositelnye-slova",
@@ -136,8 +122,8 @@
     "id": "vyrazheniya-terminy-dlya-biznesmena",
     "title": "Выражения, термины для бизнесмена",
     "source": "razgovornik",
-    "count": 39,
-    "sizeKB": 4.4
+    "count": 3,
+    "sizeKB": 0.7
   },
   {
     "id": "zdorove",
@@ -150,7 +136,7 @@
     "id": "znakomstvo",
     "title": "Знакомство",
     "source": "razgovornik",
-    "count": 47,
-    "sizeKB": 12.1
+    "count": 53,
+    "sizeKB": 13.0
   }
 ]

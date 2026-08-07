@@ -15111,5 +15111,1867 @@
     "pos": "noun",
     "theme": "Профессии",
     "visual": "An insurance agent holding a policy document"
+  },
+  {
+    "tr": "arkeolog",
+    "ru": "археолог",
+    "pos": "noun",
+    "theme": "Профессии",
+    "visual": "An archaeologist excavating ancient ruins"
+  },
+  {
+    "tr": "banka memuru",
+    "ru": "банковский служащий",
+    "pos": "noun",
+    "theme": "Профессии",
+    "visual": "A bank employee at a teller counter"
+  },
+  {
+    "tr": "iş adamı, iş kadını",
+    "ru": "бизнесмен, бизнес-леди",
+    "pos": "noun",
+    "theme": "Профессии",
+    "visual": "A businessperson in a suit carrying a briefcase"
+  },
+  {
+    "tr": "teknisyen",
+    "ru": "техник",
+    "pos": "noun",
+    "theme": "Профессии",
+    "visual": "A technician repairing equipment"
+  },
+  {
+    "tr": "bilim adamı",
+    "ru": "ученый",
+    "pos": "noun",
+    "theme": "Профессии",
+    "visual": "A scientist in a lab coat with a test tube"
+  },
+  {
+    "tr": "çiçekçi",
+    "ru": "флорист",
+    "pos": "noun",
+    "theme": "Профессии",
+    "visual": "A florist arranging a bouquet of flowers"
+  },
+  {
+    "tr": "fotoğrafçı",
+    "ru": "фотограф",
+    "pos": "noun",
+    "theme": "Профессии",
+    "visual": "A photographer holding a camera"
+  },
+  {
+    "tr": "hisse senedi",
+    "ru": "акция",
+    "pos": "noun",
+    "theme": "Бизнес",
+    "visual": "A stock certificate with a rising graph"
+  },
+  {
+    "tr": "bilanço",
+    "ru": "баланс",
+    "pos": "noun",
+    "theme": "Бизнес",
+    "visual": "A balance sheet with columns of numbers"
+  },
+  {
+    "tr": "borsa",
+    "ru": "биржа",
+    "pos": "noun",
+    "theme": "Бизнес",
+    "visual": "A stock exchange board with ticking prices"
+  },
+  {
+    "tr": "sözleşme",
+    "ru": "договор",
+    "pos": "noun",
+    "theme": "Бизнес",
+    "visual": "A signed contract document with a pen"
+  },
+  {
+    "tr": "masraflar",
+    "ru": "издержки",
+    "pos": "noun",
+    "theme": "Бизнес",
+    "visual": "A stack of receipts and bills"
+  },
+  {
+    "tr": "ithalat",
+    "ru": "импорт",
+    "pos": "noun",
+    "theme": "Бизнес",
+    "visual": "Cargo containers being unloaded from a ship"
+  },
+  {
+    "tr": "yatırım",
+    "ru": "инвестиции",
+    "pos": "noun",
+    "theme": "Бизнес",
+    "visual": "A hand placing coins into a growing plant of money"
+  },
+  {
+    "tr": "enflasyon",
+    "ru": "инфляция",
+    "pos": "noun",
+    "theme": "Бизнес",
+    "visual": "A shrinking shopping basket with a rising price arrow"
+  },
+  {
+    "tr": "ipotek",
+    "ru": "ипотека",
+    "pos": "noun",
+    "theme": "Бизнес",
+    "visual": "A house with a bank document and keys"
+  },
+  {
+    "tr": "sermaye",
+    "ru": "капитал",
+    "pos": "noun",
+    "theme": "Бизнес",
+    "visual": "A stack of gold coins and banknotes"
+  },
+  {
+    "tr": "miktar",
+    "ru": "количество",
+    "pos": "noun",
+    "theme": "Бизнес",
+    "visual": "A stack of boxes being counted"
+  },
+  {
+    "tr": "şirket",
+    "ru": "компания",
+    "pos": "noun",
+    "theme": "Бизнес",
+    "visual": "An office building with a company logo"
+  },
+  {
+    "tr": "satın alma",
+    "ru": "покупка",
+    "pos": "noun",
+    "theme": "Бизнес",
+    "visual": "A shopping cart full of goods"
+  },
+  {
+    "tr": "tüketim",
+    "ru": "потребление",
+    "pos": "noun",
+    "theme": "Бизнес",
+    "visual": "A person consuming products from a shelf"
+  },
+  {
+    "tr": "arz",
+    "ru": "предложение",
+    "pos": "noun",
+    "theme": "Бизнес",
+    "visual": "Warehouse shelves stocked with goods"
+  },
+  {
+    "tr": "satış",
+    "ru": "продажа",
+    "pos": "noun",
+    "theme": "Бизнес",
+    "visual": "A salesperson handing over a product with a receipt"
+  },
+  {
+    "tr": "ürün",
+    "ru": "продукция",
+    "pos": "noun",
+    "theme": "Бизнес",
+    "visual": "A finished product on a factory conveyor belt"
+  },
+  {
+    "tr": "üretim",
+    "ru": "производство",
+    "pos": "noun",
+    "theme": "Бизнес",
+    "visual": "A factory assembly line"
+  },
+  {
+    "tr": "verimlilik",
+    "ru": "производительность",
+    "pos": "noun",
+    "theme": "Бизнес",
+    "visual": "A speedometer-style efficiency gauge"
+  },
+  {
+    "tr": "yüzde, faiz",
+    "ru": "процент",
+    "pos": "noun",
+    "theme": "Бизнес",
+    "visual": "A percent sign with coins"
+  },
+  {
+    "tr": "emek, iş gücü",
+    "ru": "рабочая сила",
+    "pos": "noun",
+    "theme": "Бизнес",
+    "visual": "A group of workers at a factory"
+  },
+  {
+    "tr": "değer",
+    "ru": "рыночная цена",
+    "pos": "noun",
+    "theme": "Бизнес",
+    "visual": "A price tag with a fluctuating value graph"
+  },
+  {
+    "tr": "talep",
+    "ru": "спрос",
+    "pos": "noun",
+    "theme": "Бизнес",
+    "visual": "A crowd of hands reaching for a product"
+  },
+  {
+    "tr": "oran",
+    "ru": "ставка",
+    "pos": "noun",
+    "theme": "Бизнес",
+    "visual": "A percentage rate dial or gauge"
+  },
+  {
+    "tr": "maliyet",
+    "ru": "стоимость",
+    "pos": "noun",
+    "theme": "Бизнес",
+    "visual": "A price tag with a calculator"
+  },
+  {
+    "tr": "mallar",
+    "ru": "товар",
+    "pos": "noun",
+    "theme": "Бизнес",
+    "visual": "Boxes of goods on a warehouse shelf"
+  },
+  {
+    "tr": "ay",
+    "ru": "луна",
+    "pos": "noun",
+    "theme": "Природа и погода",
+    "visual": "A crescent moon in the night sky"
+  },
+  {
+    "tr": "don",
+    "ru": "мороз",
+    "pos": "noun",
+    "theme": "Природа и погода",
+    "visual": "Frost covering a window"
+  },
+  {
+    "tr": "güneş",
+    "ru": "солнце",
+    "pos": "noun",
+    "theme": "Природа и погода",
+    "visual": "A bright shining sun"
+  },
+  {
+    "tr": "Giriş serbest (bedava)",
+    "ru": "входная плата (бесплатно)",
+    "pos": "noun",
+    "theme": "Город и места",
+    "visual": "A ticket booth sign showing free entry"
+  },
+  {
+    "tr": "Varış (Geliş)",
+    "ru": "прибытие",
+    "pos": "noun",
+    "theme": "Город и места",
+    "visual": "An airport arrivals board"
+  },
+  {
+    "tr": "Gidiş (Hareket)",
+    "ru": "отъезд",
+    "pos": "noun",
+    "theme": "Город и места",
+    "visual": "A departures board at a station"
+  },
+  {
+    "tr": "Köpek var",
+    "ru": "осторожно, злая собака",
+    "pos": "noun",
+    "theme": "Город и места",
+    "visual": "A beware of dog sign on a gate"
+  },
+  {
+    "tr": "Bisiklet yolu",
+    "ru": "дорожка для велосипедистов",
+    "pos": "noun",
+    "theme": "Город и места",
+    "visual": "A bicycle lane road sign"
+  },
+  {
+    "tr": "İçilmez",
+    "ru": "не для питья",
+    "pos": "noun",
+    "theme": "Город и места",
+    "visual": "A crossed-out drinking water sign"
+  },
+  {
+    "tr": "Meşgul",
+    "ru": "занято",
+    "pos": "noun",
+    "theme": "Город и места",
+    "visual": "An occupied sign on a restroom door"
+  },
+  {
+    "tr": "Tek yollu cadde",
+    "ru": "улица с односторонним движением",
+    "pos": "noun",
+    "theme": "Город и места",
+    "visual": "A one-way street sign"
+  },
+  {
+    "tr": "Lütfen zili çalınız",
+    "ru": "звонить",
+    "pos": "noun",
+    "theme": "Город и места",
+    "visual": "A doorbell button with a ring sign"
+  },
+  {
+    "tr": "Çekiniz",
+    "ru": "на себя",
+    "pos": "noun",
+    "theme": "Город и места",
+    "visual": "A pull door sign"
+  },
+  {
+    "tr": "İtiniz",
+    "ru": "от себя",
+    "pos": "noun",
+    "theme": "Город и места",
+    "visual": "A push door sign"
+  },
+  {
+    "tr": "Rezerve",
+    "ru": "зарезервировано",
+    "pos": "noun",
+    "theme": "Город и места",
+    "visual": "A reserved table sign"
+  },
+  {
+    "tr": "Yer yok",
+    "ru": "билетов нет",
+    "pos": "noun",
+    "theme": "Город и места",
+    "visual": "A sold out sign at a ticket booth"
+  },
+  {
+    "tr": "Bekleme odası",
+    "ru": "зал ожидания",
+    "pos": "noun",
+    "theme": "Город и места",
+    "visual": "A waiting room sign"
+  },
+  {
+    "tr": "Yalnızca Yetkili Personel Girişi",
+    "ru": "вход только для сотрудников",
+    "pos": "noun",
+    "theme": "Город и места",
+    "visual": "An employees only door sign"
+  },
+  {
+    "tr": "Amerikalı",
+    "ru": "американец/американка",
+    "pos": "noun",
+    "theme": "Страны и национальности",
+    "visual": "An American flag with a landmark silhouette"
+  },
+  {
+    "tr": "İngiliz",
+    "ru": "англичанин/англичанка",
+    "pos": "noun",
+    "theme": "Страны и национальности",
+    "visual": "A British flag with Big Ben"
+  },
+  {
+    "tr": "İspanyol",
+    "ru": "испанец/испанка",
+    "pos": "noun",
+    "theme": "Страны и национальности",
+    "visual": "A Spanish flag with a landmark silhouette"
+  },
+  {
+    "tr": "İtalyan",
+    "ru": "итальянец/итальянка",
+    "pos": "noun",
+    "theme": "Страны и национальности",
+    "visual": "An Italian flag with a landmark silhouette"
+  },
+  {
+    "tr": "Yunanlı",
+    "ru": "грек/гречанка",
+    "pos": "noun",
+    "theme": "Страны и национальности",
+    "visual": "A Greek flag with a landmark silhouette"
+  },
+  {
+    "tr": "Ailem",
+    "ru": "моя семья",
+    "pos": "noun",
+    "theme": "Семья и отношения",
+    "visual": "A family standing together"
+  },
+  {
+    "tr": "Arkadaşım",
+    "ru": "мой друг",
+    "pos": "noun",
+    "theme": "Семья и отношения",
+    "visual": "Two friends smiling together"
+  },
+  {
+    "tr": "Çocuklarım",
+    "ru": "мои дети",
+    "pos": "noun",
+    "theme": "Семья и отношения",
+    "visual": "Children playing together"
+  },
+  {
+    "tr": "Karım",
+    "ru": "моя жена",
+    "pos": "noun",
+    "theme": "Семья и отношения",
+    "visual": "A wedding ring with a woman's silhouette"
+  },
+  {
+    "tr": "Kocam",
+    "ru": "мой муж",
+    "pos": "noun",
+    "theme": "Семья и отношения",
+    "visual": "A wedding ring with a man's silhouette"
+  },
+  {
+    "tr": "Eşim",
+    "ru": "мой супруг(а)",
+    "pos": "noun",
+    "theme": "Семья и отношения",
+    "visual": "Two wedding rings intertwined"
+  },
+  {
+    "tr": "Kızım",
+    "ru": "моя дочь",
+    "pos": "noun",
+    "theme": "Семья и отношения",
+    "visual": "A father holding his young daughter's hand"
+  },
+  {
+    "tr": "Oğlum",
+    "ru": "мой сын",
+    "pos": "noun",
+    "theme": "Семья и отношения",
+    "visual": "A father holding his young son's hand"
+  },
+  {
+    "tr": "Okumak",
+    "ru": "читать",
+    "pos": "noun",
+    "theme": "Глаголы — действия",
+    "visual": "A person reading a book"
+  },
+  {
+    "tr": "Yolculuk etmek",
+    "ru": "путешествовать",
+    "pos": "noun",
+    "theme": "Глаголы — действия",
+    "visual": "A suitcase and a globe"
+  },
+  {
+    "tr": "Futbol oynamak",
+    "ru": "играть в футбол",
+    "pos": "noun",
+    "theme": "Спорт и игры",
+    "visual": "Two people playing football"
+  },
+  {
+    "tr": "büyük/küçük",
+    "ru": "большой/маленький",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A big box next to a small box"
+  },
+  {
+    "tr": "çabuk/yavaş",
+    "ru": "быстро/медленно",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A hare and a tortoise racing"
+  },
+  {
+    "tr": "sıcak/soğuk",
+    "ru": "жарко/холодно",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A thermometer showing hot and cold"
+  },
+  {
+    "tr": "dolu/boş",
+    "ru": "полный/пустой",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A full glass next to an empty glass"
+  },
+  {
+    "tr": "kolay/zor",
+    "ru": "легкий/трудный",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A simple puzzle next to a tangled one"
+  },
+  {
+    "tr": "ağır/hafif",
+    "ru": "тяжелый/легкий",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A heavy weight next to a feather"
+  },
+  {
+    "tr": "açık/kapalı",
+    "ru": "открытый/закрытый",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "An open door next to a closed door"
+  },
+  {
+    "tr": "doğru/yanlış",
+    "ru": "правильный/неправильный",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A checkmark next to an X mark"
+  },
+  {
+    "tr": "eski/yeni",
+    "ru": "старый/новый",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "An old worn book next to a shiny new one"
+  },
+  {
+    "tr": "ihtiyar/genç",
+    "ru": "старый/молодой",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "An elderly person next to a young person"
+  },
+  {
+    "tr": "gelecek/son",
+    "ru": "следующий/прошлый",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A calendar with forward and back arrows"
+  },
+  {
+    "tr": "güzel/çirkin",
+    "ru": "красивый/уродливый",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A beautiful flower next to a wilted one"
+  },
+  {
+    "tr": "serbest/meşgul",
+    "ru": "свободный/занятый",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "An empty chair next to an occupied one"
+  },
+  {
+    "tr": "iyi/kötü",
+    "ru": "хороший/плохой",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A thumbs up next to a thumbs down"
+  },
+  {
+    "tr": "daha iyi/daha kötü",
+    "ru": "лучше/хуже",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A rising bar next to a falling bar"
+  },
+  {
+    "tr": "erken/geç",
+    "ru": "рано/поздно",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A clock showing early morning next to late night"
+  },
+  {
+    "tr": "ucuz/pahalı",
+    "ru": "дешевый/дорогой",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A small price tag next to a large price tag"
+  },
+  {
+    "tr": "yakın/uzak",
+    "ru": "близко/далеко",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A near marker and a far marker on a road"
+  },
+  {
+    "tr": "burada/orada",
+    "ru": "здесь/там",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A here pin and a there pin on a map"
+  },
+  {
+    "tr": "biraz (az)/çok",
+    "ru": "мало/много",
+    "pos": "adjective",
+    "theme": "Прилагательные и сравнения",
+    "visual": "A few dots next to many dots"
+  },
+  {
+    "tr": "Soyadı – adı",
+    "ru": "ФИО",
+    "pos": "noun",
+    "theme": "Офис",
+    "visual": "A form with name fields being filled in"
+  },
+  {
+    "tr": "Pasaport numarası",
+    "ru": "номер паспорта",
+    "pos": "noun",
+    "theme": "Офис",
+    "visual": "An open passport showing a number"
+  },
+  {
+    "tr": "Semt/mahalle",
+    "ru": "город/район постоянного проживания",
+    "pos": "noun",
+    "theme": "Офис",
+    "visual": "A city map with a neighborhood highlighted"
+  },
+  {
+    "tr": "resepsiyon görevlisi",
+    "ru": "администратор (в отеле)",
+    "pos": "noun",
+    "theme": "Профессии",
+    "visual": "A hotel receptionist at the front desk"
+  },
+  {
+    "tr": "oda temizlikçisi",
+    "ru": "горничная",
+    "pos": "noun",
+    "theme": "Профессии",
+    "visual": "A maid making up a hotel bed"
+  },
+  {
+    "tr": "santral memuru",
+    "ru": "оператор (телефонный)",
+    "pos": "noun",
+    "theme": "Профессии",
+    "visual": "A telephone switchboard operator"
+  },
+  {
+    "tr": "kadın garson",
+    "ru": "официантка",
+    "pos": "noun",
+    "theme": "Профессии",
+    "visual": "A waitress carrying a tray"
+  },
+  {
+    "tr": "komi",
+    "ru": "посыльный",
+    "pos": "noun",
+    "theme": "Профессии",
+    "visual": "A bellboy carrying a message"
+  },
+  {
+    "tr": "kapıcı",
+    "ru": "швейцар",
+    "pos": "noun",
+    "theme": "Профессии",
+    "visual": "A doorman in uniform opening a door"
+  },
+  {
+    "tr": "Balkonlu",
+    "ru": "с балконом",
+    "pos": "noun",
+    "theme": "Дом и мебель",
+    "visual": "A hotel room with a balcony"
+  },
+  {
+    "tr": "Banyolu",
+    "ru": "с ванной",
+    "pos": "noun",
+    "theme": "Дом и мебель",
+    "visual": "A bathroom with a bathtub"
+  },
+  {
+    "tr": "Denize bakan",
+    "ru": "с видом на море",
+    "pos": "noun",
+    "theme": "Дом и мебель",
+    "visual": "A window overlooking the sea"
+  },
+  {
+    "tr": "Duşlu",
+    "ru": "с душем",
+    "pos": "noun",
+    "theme": "Дом и мебель",
+    "visual": "A shower stall"
+  },
+  {
+    "tr": "Isıtmalı",
+    "ru": "с отоплением",
+    "pos": "noun",
+    "theme": "Дом и мебель",
+    "visual": "A radiator heater in a room"
+  },
+  {
+    "tr": "İki kişilik yataklı",
+    "ru": "с двуспальной кроватью",
+    "pos": "noun",
+    "theme": "Дом и мебель",
+    "visual": "A double bed in a hotel room"
+  },
+  {
+    "tr": "İki yataklı",
+    "ru": "с двумя односпальными кроватями",
+    "pos": "noun",
+    "theme": "Дом и мебель",
+    "visual": "Two single beds in a hotel room"
+  },
+  {
+    "tr": "Sıcak sulu",
+    "ru": "с горячей водой",
+    "pos": "noun",
+    "theme": "Дом и мебель",
+    "visual": "A tap with steaming hot water"
+  },
+  {
+    "tr": "Telefonlu",
+    "ru": "с телефоном",
+    "pos": "noun",
+    "theme": "Дом и мебель",
+    "visual": "A telephone on a nightstand"
+  },
+  {
+    "tr": "Televizyonlu",
+    "ru": "с телевизором",
+    "pos": "noun",
+    "theme": "Дом и мебель",
+    "visual": "A television in a hotel room"
+  },
+  {
+    "tr": "küçük ekmek",
+    "ru": "булочка",
+    "pos": "noun",
+    "theme": "Кухня и посуда",
+    "visual": "A round bread roll"
+  },
+  {
+    "tr": "şişe",
+    "ru": "бутылка",
+    "pos": "noun",
+    "theme": "Кухня и посуда",
+    "visual": "A glass bottle"
+  },
+  {
+    "tr": "sürahi",
+    "ru": "графин",
+    "pos": "noun",
+    "theme": "Кухня и посуда",
+    "visual": "A glass water carafe"
+  },
+  {
+    "tr": "kül tablası",
+    "ru": "пепельница",
+    "pos": "noun",
+    "theme": "Кухня и посуда",
+    "visual": "An ashtray"
+  },
+  {
+    "tr": "yarım şişe",
+    "ru": "полбутылки",
+    "pos": "noun",
+    "theme": "Кухня и посуда",
+    "visual": "A half-full bottle"
+  },
+  {
+    "tr": "fincan tabağı",
+    "ru": "соусница",
+    "pos": "noun",
+    "theme": "Кухня и посуда",
+    "visual": "A small sauce dish"
+  },
+  {
+    "tr": "fincan",
+    "ru": "чашка",
+    "pos": "noun",
+    "theme": "Кухня и посуда",
+    "visual": "A tea cup with saucer"
+  },
+  {
+    "tr": "kürdan",
+    "ru": "зубочистка",
+    "pos": "noun",
+    "theme": "Кухня и посуда",
+    "visual": "A toothpick"
+  },
+  {
+    "tr": "haşlama",
+    "ru": "варенное на медленном огне / тушеное мясо с овощами",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A pot of slow-simmered stew"
+  },
+  {
+    "tr": "buğulama",
+    "ru": "варенное на пару",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "Steamed food in a bamboo steamer"
+  },
+  {
+    "tr": "marmelat",
+    "ru": "джем",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A jar of fruit marmalade"
+  },
+  {
+    "tr": "izgara",
+    "ru": "жаренное на решетке (гриль)",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "Meat grilling over open flame"
+  },
+  {
+    "tr": "tavada kızarmış",
+    "ru": "жаренное на сковороде",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "Food frying in a pan"
+  },
+  {
+    "tr": "fırında",
+    "ru": "печеный",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "Food baking in an oven"
+  },
+  {
+    "tr": "greyfurt suyu",
+    "ru": "сок из грейпфрута",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A glass of grapefruit juice"
+  },
+  {
+    "tr": "turşu",
+    "ru": "соленья / пикули",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A jar of pickled vegetables"
+  },
+  {
+    "tr": "jambon ve yumurta",
+    "ru": "яичница с ветчиной",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "Fried eggs with ham on a plate"
+  },
+  {
+    "tr": "rafadan yumurta",
+    "ru": "яйцо всмятку",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A soft-boiled egg in an egg cup"
+  },
+  {
+    "tr": "katı yumurta",
+    "ru": "яйцо, сваренное вкрутую",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A hard-boiled egg, peeled and halved"
+  },
+  {
+    "tr": "kabuksuz haşlanmış yumurta",
+    "ru": "яйцо-пашот",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A poached egg on toast"
+  },
+  {
+    "tr": "haşlanmış yumurtalar",
+    "ru": "вареные яйца",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "Boiled eggs in a bowl"
+  },
+  {
+    "tr": "omlet",
+    "ru": "омлет",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A folded omelette on a plate"
+  },
+  {
+    "tr": "mantarlı omlet",
+    "ru": "омлет с грибами",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A mushroom omelette"
+  },
+  {
+    "tr": "yeşillikli omlet",
+    "ru": "омлет с зеленью",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "An omelette with herbs"
+  },
+  {
+    "tr": "peynirli omlet",
+    "ru": "омлет с сыром",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A cheese omelette"
+  },
+  {
+    "tr": "ispanaklı omlet",
+    "ru": "омлет со шпинатом",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A spinach omelette"
+  },
+  {
+    "tr": "rafadan yumurtalar",
+    "ru": "яйца всмятку",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "Soft-boiled eggs in egg cups"
+  },
+  {
+    "tr": "tavada kızarmış yumurtalar",
+    "ru": "яичница",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "Fried eggs sunny side up"
+  },
+  {
+    "tr": "katı yumurtalar",
+    "ru": "яйца, сваренные вкрутую",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "Hard-boiled eggs sliced"
+  },
+  {
+    "tr": "koyun eti",
+    "ru": "баранина",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "Raw lamb meat cuts"
+  },
+  {
+    "tr": "bonfile",
+    "ru": "бифштекс",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A grilled beefsteak"
+  },
+  {
+    "tr": "sığır eti",
+    "ru": "говядина",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "Raw beef cuts"
+  },
+  {
+    "tr": "tas kebap",
+    "ru": "гуляш",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A pot of beef goulash stew"
+  },
+  {
+    "tr": "koyun kızartma",
+    "ru": "жареная баранина",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "Roasted lamb on a platter"
+  },
+  {
+    "tr": "kuzu kızartma",
+    "ru": "жареное мясо молодого барашка",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A roasted leg of young lamb"
+  },
+  {
+    "tr": "dana pirzolalar",
+    "ru": "котлеты из телятины",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "Grilled veal chops"
+  },
+  {
+    "tr": "kuzu",
+    "ru": "мясо молодого барашка",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "Cuts of young lamb meat"
+  },
+  {
+    "tr": "ciğer",
+    "ru": "печень",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "Sliced liver on a plate"
+  },
+  {
+    "tr": "böbrekler",
+    "ru": "почки (еда)",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "Kidneys prepared as food"
+  },
+  {
+    "tr": "sığır eti kızartma",
+    "ru": "ростбиф",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "Sliced roast beef"
+  },
+  {
+    "tr": "koyun haşlama",
+    "ru": "тушеная баранина",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A pot of stewed lamb"
+  },
+  {
+    "tr": "fileto",
+    "ru": "филе",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A fillet of meat"
+  },
+  {
+    "tr": "köfteler",
+    "ru": "фрикадельки",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "Meatballs on a plate"
+  },
+  {
+    "tr": "dil (yemek)",
+    "ru": "язык (блюдо)",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "Sliced beef tongue as a dish"
+  },
+  {
+    "tr": "ançüezler",
+    "ru": "анчоусы",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A plate of anchovies"
+  },
+  {
+    "tr": "enginarlar",
+    "ru": "артишоки",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "Whole artichokes"
+  },
+  {
+    "tr": "tuzlanmış domuz eti",
+    "ru": "бекон",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "Strips of crispy bacon"
+  },
+  {
+    "tr": "yeşil zeytinler",
+    "ru": "зеленые оливки",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A bowl of green olives"
+  },
+  {
+    "tr": "havyar",
+    "ru": "икра",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A small jar of caviar"
+  },
+  {
+    "tr": "deniz ürünleri kokteyli",
+    "ru": "коктейль из морепродуктов",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A seafood cocktail in a glass"
+  },
+  {
+    "tr": "kılıç balığı füme",
+    "ru": "копченая рыба-меч",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "Smoked swordfish slices"
+  },
+  {
+    "tr": "som balığı füme",
+    "ru": "копченый лосось",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "Smoked salmon slices"
+  },
+  {
+    "tr": "yılan balığı füme",
+    "ru": "копченый угорь",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "Smoked eel slices"
+  },
+  {
+    "tr": "pavurya",
+    "ru": "крабы",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A whole crab"
+  },
+  {
+    "tr": "midyeler",
+    "ru": "мидии",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A bowl of mussels"
+  },
+  {
+    "tr": "beyin",
+    "ru": "мозги (еда)",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A dish of brain as food"
+  },
+  {
+    "tr": "zeytinler",
+    "ru": "оливки",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A bowl of olives"
+  },
+  {
+    "tr": "istakoz",
+    "ru": "раки / омар",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A cooked lobster"
+  },
+  {
+    "tr": "işkembe",
+    "ru": "рубцы",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A bowl of tripe stew"
+  },
+  {
+    "tr": "patlıcan salatası",
+    "ru": "салат из баклажанов",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "An eggplant salad"
+  },
+  {
+    "tr": "beyin salatası",
+    "ru": "салат из мозгов",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A brain salad dish"
+  },
+  {
+    "tr": "sardalyalar",
+    "ru": "сардины",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A tin of sardines"
+  },
+  {
+    "tr": "salyangozlar",
+    "ru": "улитки",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A plate of cooked snails"
+  },
+  {
+    "tr": "istiridyeler",
+    "ru": "устрицы",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A plate of fresh oysters"
+  },
+  {
+    "tr": "bezelye çorbası",
+    "ru": "гороховый суп",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A bowl of pea soup"
+  },
+  {
+    "tr": "patates çorbası",
+    "ru": "картофельный суп",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A bowl of potato soup"
+  },
+  {
+    "tr": "tavuk suyu",
+    "ru": "куриный бульон",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A bowl of chicken broth"
+  },
+  {
+    "tr": "soğan çorbası",
+    "ru": "луковый суп",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A bowl of French onion soup"
+  },
+  {
+    "tr": "sebze çorbası",
+    "ru": "овощной суп",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A bowl of vegetable soup"
+  },
+  {
+    "tr": "pirinç çorbası",
+    "ru": "рисовый суп",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A bowl of rice soup"
+  },
+  {
+    "tr": "mısır çorbası",
+    "ru": "суп с кукурузой",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A bowl of corn soup"
+  },
+  {
+    "tr": "irmik çorbası",
+    "ru": "суп с манной крупой",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A bowl of semolina soup"
+  },
+  {
+    "tr": "mercimek çorbası",
+    "ru": "чечевичный суп",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A bowl of lentil soup"
+  },
+  {
+    "tr": "yeşillikli börek",
+    "ru": "пирог с зеленью",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A savory pastry filled with greens"
+  },
+  {
+    "tr": "patatesli börek",
+    "ru": "пирог с картошкой",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A savory pastry filled with potato"
+  },
+  {
+    "tr": "mantı",
+    "ru": "равиоли",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "Small Turkish dumplings"
+  },
+  {
+    "tr": "kıymalı börek",
+    "ru": "слоеный пирог с фаршем",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A flaky pastry filled with minced meat"
+  },
+  {
+    "tr": "havuç salatası",
+    "ru": "салат из моркови",
+    "pos": "noun",
+    "theme": "Овощи",
+    "visual": "A grated carrot salad"
+  },
+  {
+    "tr": "domates salatası",
+    "ru": "салат из помидоров",
+    "pos": "noun",
+    "theme": "Овощи",
+    "visual": "A tomato salad"
+  },
+  {
+    "tr": "tatlı biber",
+    "ru": "сладкий перец",
+    "pos": "noun",
+    "theme": "Овощи",
+    "visual": "A sweet bell pepper"
+  },
+  {
+    "tr": "çalı fasulye",
+    "ru": "стручковая фасоль",
+    "pos": "noun",
+    "theme": "Овощи",
+    "visual": "A handful of green string beans"
+  },
+  {
+    "tr": "fasulyeler",
+    "ru": "фасоль",
+    "pos": "noun",
+    "theme": "Овощи",
+    "visual": "A bowl of beans"
+  },
+  {
+    "tr": "mercimek",
+    "ru": "чечевица",
+    "pos": "noun",
+    "theme": "Овощи",
+    "visual": "A bowl of lentils"
+  },
+  {
+    "tr": "ispanak",
+    "ru": "шпинат",
+    "pos": "noun",
+    "theme": "Овощи",
+    "visual": "A bunch of fresh spinach"
+  },
+  {
+    "tr": "taze fasulye",
+    "ru": "зеленая фасоль",
+    "pos": "noun",
+    "theme": "Овощи",
+    "visual": "Fresh green beans"
+  },
+  {
+    "tr": "sakız kabağı",
+    "ru": "кабачок",
+    "pos": "noun",
+    "theme": "Овощи",
+    "visual": "A zucchini squash"
+  },
+  {
+    "tr": "kapuska",
+    "ru": "капуста",
+    "pos": "noun",
+    "theme": "Овощи",
+    "visual": "A head of cabbage"
+  },
+  {
+    "tr": "domatesler",
+    "ru": "помидоры",
+    "pos": "noun",
+    "theme": "Овощи",
+    "visual": "Fresh tomatoes"
+  },
+  {
+    "tr": "semizotu",
+    "ru": "портулак",
+    "pos": "noun",
+    "theme": "Овощи",
+    "visual": "Fresh purslane leaves"
+  },
+  {
+    "tr": "şalgam",
+    "ru": "репа",
+    "pos": "noun",
+    "theme": "Овощи",
+    "visual": "A whole turnip"
+  },
+  {
+    "tr": "patates salatası",
+    "ru": "салат из картофеля",
+    "pos": "noun",
+    "theme": "Овощи",
+    "visual": "A potato salad"
+  },
+  {
+    "tr": "yaban ördeği",
+    "ru": "дикая утка",
+    "pos": "noun",
+    "theme": "Животные",
+    "visual": "A wild duck"
+  },
+  {
+    "tr": "yaban tavşanı",
+    "ru": "заяц",
+    "pos": "noun",
+    "theme": "Животные",
+    "visual": "A wild hare"
+  },
+  {
+    "tr": "keklik",
+    "ru": "куропатка",
+    "pos": "noun",
+    "theme": "Животные",
+    "visual": "A partridge"
+  },
+  {
+    "tr": "bıldırcın",
+    "ru": "перепел",
+    "pos": "noun",
+    "theme": "Животные",
+    "visual": "A quail"
+  },
+  {
+    "tr": "sülün",
+    "ru": "фазан",
+    "pos": "noun",
+    "theme": "Животные",
+    "visual": "A pheasant"
+  },
+  {
+    "tr": "ayva",
+    "ru": "айва",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A quince fruit"
+  },
+  {
+    "tr": "gözleme",
+    "ru": "блины",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "Turkish flatbread pancakes"
+  },
+  {
+    "tr": "kavun (meyve)",
+    "ru": "дыня (плод)",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A cantaloupe melon"
+  },
+  {
+    "tr": "komposto",
+    "ru": "компот",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A glass of stewed fruit compote"
+  },
+  {
+    "tr": "kahveli pasta",
+    "ru": "кофейный торт",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A coffee-flavored cake"
+  },
+  {
+    "tr": "krem karamel",
+    "ru": "крем-карамель",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A creme caramel dessert"
+  },
+  {
+    "tr": "bektaşı üzümü",
+    "ru": "крыжовник",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "Fresh gooseberries"
+  },
+  {
+    "tr": "bademli kurabiye",
+    "ru": "миндальное печенье",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "Almond cookies"
+  },
+  {
+    "tr": "şurupla karıştırılmış süt",
+    "ru": "молочный коктейль",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A milkshake in a tall glass"
+  },
+  {
+    "tr": "dondurma",
+    "ru": "мороженое",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A scoop of ice cream"
+  },
+  {
+    "tr": "fındıklı pasta",
+    "ru": "ореховый торт",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A hazelnut cake"
+  },
+  {
+    "tr": "kadın göbeği tatlısı",
+    "ru": "пончики (турецкий десерт)",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A syrup-soaked Turkish donut dessert"
+  },
+  {
+    "tr": "muhallebi",
+    "ru": "пудинг",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A milk pudding dessert"
+  },
+  {
+    "tr": "erikli pasta",
+    "ru": "сливовый торт",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A plum cake"
+  },
+  {
+    "tr": "sufle",
+    "ru": "суфле",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A dessert souffle"
+  },
+  {
+    "tr": "pеynir pastası",
+    "ru": "сырный торт",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A cheesecake"
+  },
+  {
+    "tr": "turta",
+    "ru": "торт",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A layered cake"
+  },
+  {
+    "tr": "baharatlı pasta",
+    "ru": "торт с пряностями",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A spiced cake"
+  },
+  {
+    "tr": "elmalı pasta",
+    "ru": "яблочный торт",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "An apple cake"
+  },
+  {
+    "tr": "dut",
+    "ru": "тутовая ягода",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "Fresh mulberries"
+  },
+  {
+    "tr": "meyve salatası",
+    "ru": "фруктовый салат",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A bowl of mixed fruit salad"
+  },
+  {
+    "tr": "meyveli turta",
+    "ru": "фруктовый торт",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A fruit tart"
+  },
+  {
+    "tr": "kiraz",
+    "ru": "черешня",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "Fresh cherries"
+  },
+  {
+    "tr": "frenk üzümü",
+    "ru": "черная смородина",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "Fresh blackcurrants"
+  },
+  {
+    "tr": "krem şokola",
+    "ru": "шоколадный пудинг",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A chocolate pudding"
+  },
+  {
+    "tr": "portakal suyu",
+    "ru": "апельсиновый сок",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A glass of orange juice"
+  },
+  {
+    "tr": "alkol",
+    "ru": "алкогольный напиток",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A cocktail glass with a warning label"
+  },
+  {
+    "tr": "konyak",
+    "ru": "брэнди",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A snifter of brandy"
+  },
+  {
+    "tr": "vermut",
+    "ru": "вермут",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A glass of vermouth"
+  },
+  {
+    "tr": "beyaz (şarap)",
+    "ru": "белое (вино)",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A glass of white wine"
+  },
+  {
+    "tr": "köpüklü (şarap)",
+    "ru": "игристое (вино)",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A glass of sparkling wine with bubbles"
+  },
+  {
+    "tr": "kırmızı (şarap)",
+    "ru": "красное (вино)",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A glass of red wine"
+  },
+  {
+    "tr": "oda ısısında",
+    "ru": "комнатной температуры",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A wine glass with a room thermometer"
+  },
+  {
+    "tr": "hafif (içki)",
+    "ru": "легкое (о напитке)",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A light-colored drink in a glass"
+  },
+  {
+    "tr": "soğutulmuş",
+    "ru": "охлажденное",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A chilled drink with ice cubes"
+  },
+  {
+    "tr": "tatlı (içki)",
+    "ru": "сладкое (о напитке)",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A sweet dessert wine glass"
+  },
+  {
+    "tr": "sek",
+    "ru": "сухое / неразбавленный",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A glass of dry wine"
+  },
+  {
+    "tr": "viski",
+    "ru": "виски",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A glass of whiskey with ice"
+  },
+  {
+    "tr": "su",
+    "ru": "вода",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A glass of water"
+  },
+  {
+    "tr": "votka",
+    "ru": "водка",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A shot glass of vodka"
+  },
+  {
+    "tr": "cin-tonik",
+    "ru": "джин-тоник",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A gin and tonic in a glass"
+  },
+  {
+    "tr": "sıcak alkollü içki",
+    "ru": "грог",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A mug of hot spiced grog"
+  },
+  {
+    "tr": "likör",
+    "ru": "ликер",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A small glass of liqueur"
+  },
+  {
+    "tr": "limonata",
+    "ru": "лимонад",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A glass of lemonade"
+  },
+  {
+    "tr": "elma suyu",
+    "ru": "яблочный сок",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A glass of apple juice"
+  },
+  {
+    "tr": "porto",
+    "ru": "портвейн",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A glass of port wine"
+  },
+  {
+    "tr": "rom",
+    "ru": "ром",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A bottle of rum"
+  },
+  {
+    "tr": "elma şarabı",
+    "ru": "сидр",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A glass of cider"
+  },
+  {
+    "tr": "çay",
+    "ru": "чай",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A cup of tea"
+  },
+  {
+    "tr": "buzlu çay",
+    "ru": "чай со льдом",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A glass of iced tea"
+  },
+  {
+    "tr": "ispanyol şarabı",
+    "ru": "шерри",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A glass of sherry"
+  },
+  {
+    "tr": "koyu sütlü",
+    "ru": "черный с молоком (кофе)",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A cup of coffee with milk"
+  },
+  {
+    "tr": "sütlü kakao",
+    "ru": "какао",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A cup of hot cocoa with milk"
+  },
+  {
+    "tr": "kahve kafeinsiz",
+    "ru": "кофе без кофеина",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A cup of decaf coffee"
+  },
+  {
+    "tr": "kırmızı biber",
+    "ru": "красный перец",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "Red chili peppers"
+  },
+  {
+    "tr": "çay limonlu",
+    "ru": "чай с лимоном",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A cup of tea with lemon slice"
+  },
+  {
+    "tr": "sütlü (çay)",
+    "ru": "с молоком (чай)",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A cup of tea with milk"
+  },
+  {
+    "tr": "havuç çorbası",
+    "ru": "суп с морковью",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A bowl of carrot soup"
+  },
+  {
+    "tr": "kereviz çorbası",
+    "ru": "суп с сельдереем",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A bowl of celery soup"
+  },
+  {
+    "tr": "peynir çorbası",
+    "ru": "суп с сыром",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A bowl of cheese soup"
+  },
+  {
+    "tr": "un çorbası",
+    "ru": "суп пюре",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A bowl of creamy pureed soup"
+  },
+  {
+    "tr": "yılan balığı çorbası",
+    "ru": "суп с угрем",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A bowl of eel soup"
+  },
+  {
+    "tr": "fasulye çorbası",
+    "ru": "суп с фасолью",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A bowl of bean soup"
+  },
+  {
+    "tr": "domates çorbası",
+    "ru": "томатный суп",
+    "pos": "noun",
+    "theme": "Еда и напитки",
+    "visual": "A bowl of tomato soup"
   }
 ]

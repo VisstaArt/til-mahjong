@@ -284,6 +284,42 @@
       "tr": "Sigara içersem rahatsız olur mu?",
       "tl": null,
       "sub": null
+    },
+    {
+      "ru": "Я отвезу тебя домой",
+      "tr": "Seni evine götüreyim",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Ты живешь один/одна?",
+      "tr": "Yalnız mı yaşıyorsun?",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Вечер был чудесный",
+      "tr": "Akşam nefisti",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Может встретимся снова?",
+      "tr": "Seni tekrar görebilir miyim?",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Надеюсь, мы еще увидимся",
+      "tr": "Yakında seni yine göreceğimi umarım",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Увидимся потом/завтра",
+      "tr": "Sonra/yarın görüşürüz",
+      "tl": null,
+      "sub": null
     }
   ]
 }

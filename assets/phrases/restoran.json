@@ -4,9 +4,9 @@
   "source": "razgovornik",
   "phrases": [
     {
-      "ru": "Вы не могли бы посоветовать ка- кой-нибудь хоро- ший/недорогой ресторан?",
+      "ru": "Вы не могли бы посоветовать какой-нибудь хороший/недорогой ресторан?",
       "tr": "İyi/ucuz bir restoran tavsiye edebilir misiniz?",
-      "tl": "Ии/уджуз бир рэсторан тавсийэ эдэбилир мисиниз?",
+      "tl": null,
       "sub": null
     },
     {
@@ -22,81 +22,81 @@
       "sub": null
     },
     {
-      "ru": "Где можно пере- кусить?",
+      "ru": "Где можно перекусить?",
       "tr": "Nerede hafif yemekler bulabiliriz?",
       "tl": null,
       "sub": null
     },
     {
-      "ru": "Я бы хотел (а) заказать столик на двоих/троих/ четверых",
+      "ru": "Я бы хотел(а) заказать столик на двоих/троих/четверых",
       "tr": "İki/üç/dört kişilik bir masa ayırtmak istiyorum",
-      "tl": "Аджыктым Сусадым Нэрдэ хафиф йемеклер булабилириз? Ики/юч/дёрт кишилик бир маса айыртмак иситийорум",
+      "tl": null,
       "sub": null
     },
     {
-      "ru": "У вас есть сто- лик на двоих/ троих/четверых?",
+      "ru": "У вас есть столик на двоих/троих/четверых?",
       "tr": "İki/üç/dört kişilik bir masanız var mı?",
-      "tl": "Ики/юч/дёрт кишилик бир масаныз вар мы? … бир маса вар мы? Бир кёшэдэ Дышарыда",
+      "tl": null,
       "sub": null
     },
     {
-      "ru": "У вас есть сто- лик …?",
+      "ru": "У вас есть столик …?",
       "tr": "… bir masa var mı?",
-      "tl": "Ики/юч/дёрт кишилик бир масаныз вар мы? … бир маса вар мы? Бир кёшэдэ Дышарыда",
+      "tl": null,
       "sub": null
     },
     {
-      "ru": "в углу на открытом воздухе",
-      "tr": "Bir köşede Dışarıda",
-      "tl": "Ики/юч/дёрт кишилик бир масаныз вар мы? … бир маса вар мы? Бир кёшэдэ Дышарыда",
+      "ru": "В углу / на открытом воздухе",
+      "tr": "Bir köşede / Dışarıda",
+      "tl": null,
       "sub": null
     },
     {
-      "ru": "Сюда, пожалуй- ста",
+      "ru": "Сюда, пожалуйста",
       "tr": "Bu taraftan lütfen",
-      "tl": "Бу тарафтан лютфэн",
+      "tl": null,
       "sub": null
     },
     {
-      "ru": "Официант/офи- циантка",
+      "ru": "Официант/официантка!",
       "tr": "Garson!",
-      "tl": "Гарсон!",
+      "tl": null,
       "sub": null
     },
     {
-      "ru": "Нам бы что-ни- будь поесть/по- пить",
+      "ru": "Нам бы что-нибудь поесть/попить",
       "tr": "Yemek/içmek için bir şey istiyoruz",
-      "tl": "Йемек/ичмек ичин бир шэй истийоруз",
+      "tl": null,
       "sub": null
     },
     {
-      "ru": "Можно посмот- реть меню?",
+      "ru": "Можно посмотреть меню?",
       "tr": "Mönüye bakabilir miyim lütfen?",
-      "tl": "Мёньюйэ бакабилир мийим лютфэн?",
+      "tl": null,
       "sub": null
     },
     {
-      "ru": "У вас есть блю- да, которые быс- тро готовятся?",
+      "ru": "У вас есть блюда, которые быстро готовятся?",
       "tr": "Çabuk hazır olan bir şeyiniz var mı?",
-      "tl": "Чабук хазыр олан шэйиниз вар мы? Йэрли йемеклери- низ вар мы? Хафиф йемеклер верийор мусунуз? Нэ тавсийэ эдэрсиниз? Аджэлемиз вар Бир пэчэтэ алабилир мийим?",
+      "tl": null,
       "sub": null
     },
     {
-      "ru": "У вас есть мест- ные блюда?",
+      "ru": "У вас есть местные блюда?",
       "tr": "Yerli yemekleriniz var mı?",
-      "tl": "Чабук хазыр олан шэйиниз вар мы? Йэрли йемеклери- низ вар мы? Хафиф йемеклер верийор мусунуз? Нэ тавсийэ эдэрсиниз? Аджэлемиз вар Бир пэчэтэ алабилир мийим?",
+      "tl": null,
       "sub": null
     },
     {
-      "ru": "Вы подаете за- куски?",
+      "ru": "Вы подаете закуски?",
       "tr": "Hafif yemekler veriyor musunuz?",
-      "tl": "Чабук хазыр олан шэйиниз вар мы? Йэрли йемеклери- низ вар мы? Хафиф йемеклер верийор мусунуз? Нэ тавсийэ эдэрсиниз? Аджэлемиз вар Бир пэчэтэ алабилир мийим?",
+      "tl": null,
       "sub": null
     },
     {
-      "ru": "Что бы вы посо- ветовали?",
+      "ru": "Что бы вы посоветовали?",
       "tr": "Ne tavsiye edersiniz?",
-      "tl": "Чабук хазыр олан шэйиниз вар мы? Йэрли йемеклери- низ вар мы? Хафиф йемеклер верийор мусунуз? Нэ тавсийэ эдэрсиниз? Аджэлемиз вар Бир пэчэтэ алабилир мийим?",
+      "tl": null,
       "sub": null
     },
     {
@@ -106,169 +106,175 @@
       "sub": null
     },
     {
-      "ru": "Можно салфет- ки, пожалуйста",
+      "ru": "Можно салфетки, пожалуйста",
       "tr": "Bir peçete alabilir miyim?",
       "tl": null,
       "sub": null
     },
     {
-      "ru": "Можно мне не- много хлеба?",
+      "ru": "Можно мне немного хлеба?",
       "tr": "Biraz ekmek alabilir miyim?",
-      "tl": "Бираз экмек алабилир мийим?",
+      "tl": null,
       "sub": null
     },
     {
       "ru": "Можно фасоль вместо гороха?",
       "tr": "Bezelye yerine fasulye alabilir miyim?",
-      "tl": "Бэзэлйэ йэринэ фасулйэ алабилир мийим?",
+      "tl": null,
       "sub": null
     },
     {
       "ru": "Без соуса/масла, пожалуйста",
-      "tr": "Sossuz (salçasız)/ yağsız lütfen",
-      "tl": "Соссуз (сальчасыз)/ яасыз лютфэн",
+      "tr": "Sossuz (salçasız)/yağsız lütfen",
+      "tl": null,
       "sub": null
     },
     {
-      "ru": "Можно еще не- много?",
+      "ru": "Можно еще немного?",
       "tr": "Biraz daha rica ediyorum",
-      "tl": "Бираз даха риджа эдийорум",
+      "tl": null,
       "sub": null
     },
     {
       "ru": "Больше ничего не надо, спасибо",
       "tr": "Bu kadar yeter teşekkür ederim",
-      "tl": "Бу кадар йэтэр тэшэккюр эдэрим",
+      "tl": null,
       "sub": null
     },
     {
       "ru": "Я на диете",
       "tr": "Özel bir rejimdeyim",
-      "tl": "Ёзэль бир рэжимдэйим",
+      "tl": null,
       "sub": null
     },
     {
-      "ru": "Я не упортебляю алкогольные на- питки",
+      "ru": "Я не употребляю алкогольные напитки",
       "tr": "Alkol kullanmıyorum",
-      "tl": "Алколь кулланмыйорум",
+      "tl": null,
       "sub": null
     },
     {
-      "ru": "Мне нельзя есть блюда с… сахаром солью мукой жиром У вас есть веге- тарианские блю- да?",
-      "tr": "… içeren yemekler yememeliyim Şeker Tuz Un Yağ Vejetaryen yemekleriniz var mı?",
-      "tl": "… ичэрэн йэмеклер йэмемелийим Шэкэр Туз Ун Яа Вэжэтарьйен йемеклериниз вар мы? Шэкэр хасталары ичин ёзэль бир мёню вар мы?",
+      "ru": "Мне нельзя есть блюда с сахаром/солью/мукой/жиром",
+      "tr": "… içeren yemekler yememeliyim: Şeker, Tuz, Un, Yağ",
+      "tl": null,
       "sub": null
     },
     {
-      "ru": "У вас есть спе- циальное меню для диабетиков?",
-      "tr": "Şeker hastaları için őzel bir mönü var mı?",
-      "tl": "… ичэрэн йэмеклер йэмемелийим Шэкэр Туз Ун Яа Вэжэтарьйен йемеклериниз вар мы? Шэкэр хасталары ичин ёзэль бир мёню вар мы?",
+      "ru": "У вас есть вегетарианские блюда?",
+      "tr": "Vejetaryen yemekleriniz var mı?",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "У вас есть специальное меню для диабетиков?",
+      "tr": "Şeker hastaları için özel bir mönü var mı?",
+      "tl": null,
       "sub": null
     },
     {
       "ru": "Можно мне заменитель сахара?",
       "tr": "Yapay tatlandırıcı (Sakarin) alabilir miyim?",
-      "tl": "Йапай татлан- дырыдж ы (сака- рин) алабилир мийим?",
+      "tl": null,
       "sub": null
     },
     {
-      "ru": "Можно мне пе- пельницу?",
+      "ru": "Можно мне пепельницу?",
       "tr": "Bir kül tablası alabilir miyim?",
-      "tl": "Бир кюль таб- ласы алабилир мийим?",
+      "tl": null,
       "sub": null
     },
     {
       "ru": "Где находятся туалеты?",
       "tr": "Tuvaletler nerede?",
-      "tl": "Тувалетлер нэрдэ? Нэ арзу эдэрсиниз? … истэр мисиниз?",
+      "tl": null,
       "sub": null
     },
     {
-      "ru": "Что бы вы хоте- ли заказать?",
+      "ru": "Что бы вы хотели заказать?",
       "tr": "Ne arzu edersiniz?",
-      "tl": "Тувалетлер нэрдэ? Нэ арзу эдэрсиниз? … истэр мисиниз?",
+      "tl": null,
       "sub": null
     },
     {
       "ru": "Не хотите ли …?",
       "tr": "… ister misiniz?",
-      "tl": "Тувалетлер нэрдэ? Нэ арзу эдэрсиниз? … истэр мисиниз?",
+      "tl": null,
       "sub": null
     },
     {
       "ru": "Что будете пить?",
       "tr": "Ne içersiniz?",
-      "tl": "Нэ ичэрсиниз?",
+      "tl": null,
       "sub": null
     },
     {
       "ru": "У нас нет …",
-      "tr": "Bizde … . yok",
-      "tl": "Биздэ … йок",
+      "tr": "Bizde … yok",
+      "tl": null,
       "sub": null
     },
     {
-      "ru": "Я бы порекомен- довал (пореко- мендовала) …",
+      "ru": "Я бы порекомендовал(а) …",
       "tr": "Bunu tavsiye ederim",
-      "tl": "Буну тавсийэ эдэрим",
+      "tl": null,
       "sub": null
     },
     {
       "ru": "Не хотите ли попробовать …?",
       "tr": "… denemek (tatmak) ister misiniz?",
-      "tl": "… дэнэмек (татмак) истэр мисиниз? Кахвальты истийорум лютфэн",
+      "tl": null,
       "sub": null
     },
     {
-      "ru": "Я бы хотел/хоте- ла позавтракать",
+      "ru": "Я бы хотел/хотела позавтракать",
       "tr": "Kahvaltı istiyorum lütfen",
-      "tl": "… дэнэмек (татмак) истэр мисиниз? Кахвальты истийорум лютфэн",
+      "tl": null,
       "sub": null
     },
     {
       "ru": "Я буду …",
       "tr": "Biraz … alırım",
-      "tl": "Бираз … алырым",
+      "tl": null,
       "sub": null
     },
     {
       "ru": "Можно мне …?",
       "tr": "… alabilir miyim?",
-      "tl": "… алабилир мийим? Ичэджэк нэ алырсыныз? Бир бардак вотка/джин- тоник риджа эдийорум",
+      "tl": null,
       "sub": null
     },
     {
       "ru": "Что вы будете пить?",
       "tr": "İçecek ne alırsınız?",
-      "tl": "… алабилир мийим? Ичэджэк нэ алырсыныз? Бир бардак вотка/джин- тоник риджа эдийорум",
+      "tl": null,
       "sub": null
     },
     {
-      "ru": "Мне стакан вод- ки/джин тоника, пожалуйста",
-      "tr": "Bir bardak votka/ cin-tonik rica ediyorum",
-      "tl": "… алабилир мийим? Ичэджэк нэ алырсыныз? Бир бардак вотка/джин- тоник риджа эдийорум",
+      "ru": "Мне стакан водки/джин-тоника, пожалуйста",
+      "tr": "Bir bardak votka/cin-tonik rica ediyorum",
+      "tl": null,
       "sub": null
     },
     {
-      "ru": "Бутылку/стакан пива, пожалуй- ста",
+      "ru": "Бутылку/стакан пива, пожалуйста",
       "tr": "Bir şişe/bardak bira rica ediyorum",
-      "tl": "Бир шишэ/ бардак бира риджа эдийорум",
+      "tl": null,
       "sub": null
     },
     {
       "ru": "Темное/светлое пиво, пожалуйста",
       "tr": "Siyah/beyaz bir bira lütfen",
-      "tl": "Сийах/бэйаз бир бира лютфэн",
+      "tl": null,
       "sub": null
     },
     {
       "ru": "Бутылку вина, пожалуйста",
       "tr": "Bir şişe şarap rica ediyorum",
-      "tl": "Бир шишэ шарап риджа эдийорум",
+      "tl": null,
       "sub": null
     },
     {
-      "ru": "Бутылку местно- го вина, пожа- луйста",
+      "ru": "Бутылку местного вина, пожалуйста",
       "tr": "Bir şişe yerli şarap rica ediyorum",
       "tl": null,
       "sub": null
@@ -280,85 +286,85 @@
       "sub": null
     },
     {
-      "ru": "Принесите еще…, пожалуй- ста",
+      "ru": "Принесите еще…, пожалуйста",
       "tr": "Bir … daha getirir misiniz lütfen?",
-      "tl": "Бир шишэ йэрли шарап риджа эдийорум Бу шарабин ады нэ? Бир … даха гэтирир мисиниз лютфэн?",
+      "tl": null,
       "sub": null
     },
     {
-      "ru": "Принесите шам- панского, пожа- луйста",
+      "ru": "Принесите шампанского, пожалуйста",
       "tr": "Şampanya getirir misiniz lütfen",
-      "tl": "Шампанья гэтирир мисиниз лютфэн",
+      "tl": null,
       "sub": null
     },
     {
-      "ru": "Принесите ста- кан воды, пожа- луйста",
+      "ru": "Принесите стакан воды, пожалуйста",
       "tr": "Bir bardak su rica ediyorum",
-      "tl": "Бир бардак су риджа эдийорум",
+      "tl": null,
       "sub": null
     },
     {
-      "ru": "Я бы хотел/хоте- ла минеральной воды/фруктовый сок",
-      "tr": "Bir maden suyu/ meyve suyu rica ediyorum",
-      "tl": "Бир мадэн суйу/ мэйвэ суйу риджа эдийорум",
+      "ru": "Я бы хотел/хотела минеральной воды/фруктовый сок",
+      "tr": "Bir maden suyu/meyve suyu rica ediyorum",
+      "tl": null,
       "sub": null
     },
     {
       "ru": "Чашку чая/кофе, пожалуйста",
-      "tr": "Bir fincan çay/ kahve lütfen",
-      "tl": "Бир финджан чай/кахвэ лютфэн",
+      "tr": "Bir fincan çay/kahve lütfen",
+      "tl": null,
       "sub": null
     },
     {
       "ru": "Должно быть, это ошибка.",
       "tr": "Bir yanlışlık olmalı.",
-      "tl": "Бир янлышлык олмалы. Бэн … ысмарламыш- тым",
+      "tl": null,
       "sub": null
     },
     {
-      "ru": "Язаказывал/за - казывала …",
+      "ru": "Я заказывал/заказывала …",
       "tr": "Ben … ısmarlamıştım",
-      "tl": "Бир янлышлык олмалы. Бэн … ысмарламыш- тым",
+      "tl": null,
       "sub": null
     },
     {
-      "ru": "У меня нет лож- ки/вилки/ножа",
-      "tr": "Kaşığım/çatalım/ bıçağım yok",
-      "tl": "Кашыйым/ чаталым/ бычайым йок",
+      "ru": "У меня нет ложки/вилки/ножа",
+      "tr": "Kaşığım/çatalım/bıçağım yok",
+      "tl": null,
       "sub": null
     },
     {
-      "ru": "Мне это не нра- вится",
+      "ru": "Мне это не нравится",
       "tr": "Bunu beğenmedim",
-      "tl": "Буну бээнмедим",
+      "tl": null,
       "sub": null
     },
     {
-      "ru": "Слишком соле- ное/кислое/пер- ченое",
-      "tr": "Bu çok tuzlu/ekşi/ baharatlı",
-      "tl": "Бу чок тузлу/ экши/бахаратлы",
+      "ru": "Слишком соленое/кислое/перченое",
+      "tr": "Bu çok tuzlu/ekşi/baharatlı",
+      "tl": null,
       "sub": null
     },
     {
-      "ru": "Попросите по- дойти метрдоте- ля",
+      "ru": "Попросите подойти метрдотеля",
       "tr": "Şef garsonu çağırır mısınız lütfen",
-      "tl": "Шэф гарсону чайырыр мысы- ныз лютфэн",
+      "tl": null,
       "sub": null
     },
     {
-      "ru": "Счет, пожалуй- ста",
+      "ru": "Счет, пожалуйста",
       "tr": "Hesap lütfen",
-      "tl": "Хэсап лютфэн",
+      "tl": null,
       "sub": null
     },
     {
-      "ru": "Я хочу распла- титься",
+      "ru": "Я хочу расплатиться",
       "tr": "Hesabı vermek istiyorum",
       "tl": null,
       "sub": null
     },
     {
-      "ru": "Можно раздель- ный счет?",
+      "ru": "Можно раздельный счет?",
       "tr": "Ayrı hesaplar alabilir miyiz?",
       "tl": null,
       "sub": null
@@ -366,7 +372,7 @@
     {
       "ru": "Обслуживание включено?",
       "tr": "Servisi içeriyor mu?",
-      "tl": "Хэсаби вэрмек истийорум Айры хэсаплар алабилир мийиз? Сэрвиси ичэрийор му? Санырым бу хэсапта бир йанлышлык вар Бу миктар нэ ичин? Чорба/тавук алмадым",
+      "tl": null,
       "sub": null
     },
     {
@@ -384,25 +390,25 @@
     {
       "ru": "Я не заказывал (заказывала) суп/курицу",
       "tr": "Çorba/tavuk almadım",
-      "tl": "Хэсаби вэрмек истийорум Айры хэсаплар алабилир мийиз? Сэрвиси ичэрийор му? Санырым бу хэсапта бир йанлышлык вар Бу миктар нэ ичин? Чорба/тавук алмадым",
+      "tl": null,
       "sub": null
     },
     {
-      "ru": "Могу я распла- титься кредит- ной карточкой",
+      "ru": "Могу я расплатиться кредитной карточкой?",
       "tr": "Kredi kartı ile ödeyebilir miyim?",
-      "tl": "Крэди карты иле ёдэйебилир мийим?",
+      "tl": null,
       "sub": null
     },
     {
       "ru": "Спасибо.",
       "tr": "Teşekkür ederim.",
-      "tl": "Тэшэккюр эдэ- рим.",
+      "tl": null,
       "sub": null
     },
     {
       "ru": "Это вам",
       "tr": "Bu sizin için",
-      "tl": "Бу сизин ичин",
+      "tl": null,
       "sub": null
     },
     {
@@ -412,7 +418,7 @@
       "sub": null
     },
     {
-      "ru": "Нам понрави- лось.",
+      "ru": "Нам понравилось.",
       "tr": "Beğendik.",
       "tl": null,
       "sub": null
@@ -420,307 +426,25 @@
     {
       "ru": "Спасибо",
       "tr": "Teşekkür ederiz",
-      "tl": "Юстю калсын Бээндик. Тэшэккюр эдэриз",
+      "tl": null,
       "sub": null
     },
     {
-      "ru": "Было очень вкусно Словарь – Sözlük",
+      "ru": "Было очень вкусно",
       "tr": "Çok güzeldi",
-      "tl": "Чок гюзэльди",
+      "tl": null,
       "sub": null
     },
     {
-      "ru": "апельсиновый сок булочка варенье варенный на медленном огне",
-      "tr": "portakal suyu küçük ekmek reçel haşlama",
-      "tl": "портакаль суйу кючюк экмек рэчэль хашлама",
+      "ru": "Здесь нет стакана/тарелки",
+      "tr": "Bir bardak/tabak eksik",
+      "tl": null,
       "sub": null
     },
     {
-      "ru": "варенный на пару бутылка вилка графин горчица джем жаренный на рашпере",
-      "tr": "buğulama şişe çatal sürahi hardal marmelat izgara",
-      "tl": "буулама шишэ чаталь сюрахи хардаль мармелат ызгара",
-      "sub": null
-    },
-    {
-      "ru": "жаренный в ду- ховке или на от- крытом огне",
-      "tr": "kızarmış",
-      "tl": "кызармыш",
-      "sub": null
-    },
-    {
-      "ru": "жаренный на сковороде",
-      "tr": "tavada kızarmış",
-      "tl": "тавада кызармыш",
-      "sub": null
-    },
-    {
-      "ru": "пепельница перец петрушка печеный полбутылки приправа салфетка сахар с водой 0",
-      "tr": "kül tablası biber maydanoz fırında yarım şişe baharat peçete şeker suyla",
-      "tl": "кюль табасы бибэр майданоз фырында ярым шишэ бахарат пэчэтэ шэкэр суйла",
-      "sub": null
-    },
-    {
-      "ru": "скатерть сливочное масло сок из грейп- фрута",
-      "tr": "masa örtüsü tereyağı greyfurt suyu",
-      "tl": "маса ёртюсю тэрэяйы грэйфурт суйу",
-      "sub": null
-    },
-    {
-      "ru": "соленья соль со льдом соус соусница",
-      "tr": "turşu tuz buzlu sos fincan tabağı",
-      "tl": "туршу туз бузлу сос финджан табайы",
-      "sub": null
-    },
-    {
-      "ru": "с содовой стакан стол с фруктовым соком",
-      "tr": "sodayla bardak masa meyve suyuyla",
-      "tl": "содайла бардак маса мэйвэ суйуйла",
-      "sub": null
-    },
-    {
-      "ru": "чеснок яичница с ветчи- ной яйцо яйцо всмятку",
-      "tr": "sarımsak jambon ve yumurta yumurta rafadan yumurta",
-      "tl": "сарымсак жамбон вэ йумурта йумурта рафадан йумурта",
-      "sub": null
-    },
-    {
-      "ru": "яйцо, сваренное вкрутую меню – MÖNÜ Закуски - Mezeler (antreler)",
-      "tr": "katı yumurta",
-      "tl": "каты йумурта",
-      "sub": null
-    },
-    {
-      "ru": "анчоусы артишоки бекон ветчина дыня зеленые оливки",
-      "tr": "ançüezler enginarlar tuzlanmış domuz eti jambon kavun yeşil zeytinler",
-      "tl": "анчюэзлер энгинарлар тузланмыш домуш эт жамбон кавун йэшиль зэйтинлер",
-      "sub": null
-    },
-    {
-      "ru": "икра йогурт коктейль из мо- репродуктов копченая рыба- меч",
-      "tr": "havyar yoğurt deniz ürünleri kokteyli kılıç balığı füme",
-      "tl": "хавьяр йоурт дэниз юрюнлери коктэйли кылыч балыйы фюмэ",
-      "sub": null
-    },
-    {
-      "ru": "копченый лосось",
-      "tr": "som balığı füme",
-      "tl": "сом балыйы фюмэ",
-      "sub": null
-    },
-    {
-      "ru": "копченый угорь",
-      "tr": "yılan balığı füme",
-      "tl": "йылан балыйы фюмэ",
-      "sub": null
-    },
-    {
-      "ru": "крабы мидии мозги оливки печень пикули почки раки рубцы салат из бакла- жанов",
-      "tr": "pavurya midyeler beyin zeytinler ciğer turşu böbrekler istakoz işkembe patlıcan salatası",
-      "tl": "павурийа мидьелер бэйин зэйтинлер джийэр туршу бёбреклер ыстакоз ишкэмбэ патлыджан салатасы",
-      "sub": null
-    },
-    {
-      "ru": "салат из мозгов сардины сосиски сыр тунец улитки устрицы фрикадельки язык Супы - Çorbalar",
-      "tr": "beyin salatası sardalyalar sosis peynir ton balığı salyangozlar istiridyeler köfte dil",
-      "tl": "бэйин салатасы сардальялар сосис пэйнир тон балыйы сальянгозлар истиридьелер кёфтэ диль",
-      "sub": null
-    },
-    {
-      "ru": "гороховый суп картофельный суп",
-      "tr": "bezelye çorbası patates çorbası",
-      "tl": "бэзэлье чорбасы пататэс чорбасы",
-      "sub": null
-    },
-    {
-      "ru": "куриный бульон луковый суп овощной суп рисовый суп суп с кукурузой суп с манной крупой",
-      "tr": "tavuk suyu soğan çorbası sebze çorbası pirinç çorbası mısır çorbası irmik çorbası",
-      "tl": "тавук суйу соан чорбасы сэбзэ чорбасы пиринч чорбасы мысыр чорбасы ирмик чорбасы",
-      "sub": null
-    },
-    {
-      "ru": "чечевичный суп Мясные блюда - Et",
-      "tr": "mercimek çorbası",
-      "tl": "мэрджимэк чорбасы",
-      "sub": null
-    },
-    {
-      "ru": "баранина бифштекс говядина гуляш жареная барани- на",
-      "tr": "koyun eti bonfile sığır eti tas kebap koyun kızartma",
-      "tl": "койун эти бонфиле сыйыр эти тас кебап койун кызартма",
-      "sub": null
-    },
-    {
-      "ru": "жареное мясо молодого бараш- ка",
-      "tr": "kuzu kızartma",
-      "tl": "кузу кызартма",
-      "sub": null
-    },
-    {
-      "ru": "котлеты из теля- тины",
-      "tr": "dana pirzolalar",
-      "tl": "дана пирзолалар",
-      "sub": null
-    },
-    {
-      "ru": "мелкорубленое мясо",
-      "tr": "kıyma",
-      "tl": "кыйма",
-      "sub": null
-    },
-    {
-      "ru": "мясо молодого барашка",
-      "tr": "kuzu",
-      "tl": "кузу",
-      "sub": null
-    },
-    {
-      "ru": "отбивная печень почки ростбиф",
-      "tr": "pirzola ciğer böbrekler sığır eti kızartma",
-      "tl": "пирзола чийер бёбреклер сыйыр эти кызартма",
-      "sub": null
-    },
-    {
-      "ru": "стейк телятина тушеная баранина",
-      "tr": "biftek dana eti koyun haşlama",
-      "tl": "бифтэк дана эти койун хашлама",
-      "sub": null
-    },
-    {
-      "ru": "тушеное мясо с овощами",
-      "tr": "haşlama",
-      "tl": "хашлама",
-      "sub": null
-    },
-    {
-      "ru": "филе фрикадельки Морепродукты – Deniz ürünleri",
-      "tr": "fileto köfteler",
-      "tl": "филето кёфтэлер",
-      "sub": null
-    },
-    {
-      "ru": "вареные яйца омлет омлет с грибами",
-      "tr": "haşlanmış yumurtalar omlet mantarlı omlet",
-      "tl": "хашланмыш юмурталар омлет мантарлы омлет",
-      "sub": null
-    },
-    {
-      "ru": "омлет с зеленью",
-      "tr": "yeşillikli omlet",
-      "tl": "йешиликли омлет",
-      "sub": null
-    },
-    {
-      "ru": "омлет с сыром омлет со шпина- том",
-      "tr": "peynirli omlet ispanaklı omlet",
-      "tl": "пейнирли омлет ыспанаклы омлет",
-      "sub": null
-    },
-    {
-      "ru": "яйца всмятку яичница",
-      "tr": "rafadan yumurtalar tavada kızlanmış yumurtalar",
-      "tl": "рафадан юмурталар тавада кызланмыш юмурталар",
-      "sub": null
-    },
-    {
-      "ru": "яйца, сваренные вкрутую",
-      "tr": "katı yumurtalar",
-      "tl": "каты юмурталар",
-      "sub": null
-    },
-    {
-      "ru": "яйцо-пашот Овощи – салаты – Sebzeler – salatalar",
-      "tr": "kabuksuz haşlanmış yumurtalar",
-      "tl": "кабуксуз хашланмыш юмурталар",
-      "sub": null
-    },
-    {
-      "ru": "салат из моркови салат из помидо- ров",
-      "tr": "havuç salatası domates salatası",
-      "tl": "хавуч салатасы доматэс салатасы",
-      "sub": null
-    },
-    {
-      "ru": "салат-латук свекла сельдерей сладкая кукуруза сладкий перец стручковая фа- соль",
-      "tr": "marul pancar kereviz mısır tatlı biber çalı fasulye",
-      "tl": "маруль панджар кэрэвиз мысыр татлы бибэр чалы фасулье",
-      "sub": null
-    },
-    {
-      "ru": "тыква фасоль цветная капуста чеснок чечевица шпинат Дичь и птица – Av ve kümeş hayvanları",
-      "tr": "kabak fasulyeler karnabahar sarımsak mercimek ispanak",
-      "tl": "кабак фасульйе карнабахар сарымсак мэрджимек ыспанак",
-      "sub": null
-    },
-    {
-      "ru": "макароны пирог с зеленью",
-      "tr": "makarna yeşillikli börek",
-      "tl": "макарна йешиликли бёрэк",
-      "sub": null
-    },
-    {
-      "ru": "пирог с картош- кой",
-      "tr": "patatesli börek",
-      "tl": "пататэсли бёрэк",
-      "sub": null
-    },
-    {
-      "ru": "равиоли слоеный пирог слоеный пирог с фаршем 0 Десерты и торты - Tatlılar ve pastalar",
-      "tr": "mantı börek kıymalı börek",
-      "tl": "манты бёрэк кыймалы бёрэк",
-      "sub": null
-    },
-    {
-      "ru": "молочный кок- тейль мороженое мята орех ореховый торт",
-      "tr": "şurupla karıştırılmış süt dondurma nane fındık fındıklı pasta",
-      "tl": "шурупла карыш- тырылм ыш сют дондурма нанэ фындык фындыклы паста",
-      "sub": null
-    },
-    {
-      "ru": "персик пончики пудинг слива сливовый торт суфле сырный торт торт торт с пряностя- ми",
-      "tr": "şeftali kadın göbeği tatlısı muhallebi erik erikli pasta sufle pеynir pastası turta baharatlı pasta",
-      "tl": "шэфтали кадын гёбэйи татлысы мухаллеби эрик эрикли паста суфле пейнир пастасы турта бахаратлы паста",
-      "sub": null
-    },
-    {
-      "ru": "яблоко яблочный торт Напитки – Içler",
-      "tr": "elma elmalı pasta",
-      "tl": "эльма эльмалы паста",
-      "sub": null
-    },
-    {
-      "ru": "алкогольный на- питок",
-      "tr": "alkol",
-      "tl": "алколь",
-      "sub": null
-    },
-    {
-      "ru": "апельсиновый сок",
-      "tr": "portakal suyu",
-      "tl": "портакаль суйю",
-      "sub": null
-    },
-    {
-      "ru": "брэнди вермут вино белое игристое красное комнатной тем- пературы",
-      "tr": "konyak vermut şarap beyaz köpüklü kırmızı oda ısısında",
-      "tl": "коньяк вэрмут шарап бейаз кёпюклю кырмызы ода ысысында",
-      "sub": null
-    },
-    {
-      "ru": "легкое охлажденное сладкое сухое виски вода водка джин-тоник грог",
-      "tr": "hafif soğutulmuş tatlı sek viski su votka cin-tonik sıcak alkollü içki",
-      "tl": "хафиф соутулмуш татлы сэк виски су вотка джин-тоник сыджак алколлю ички",
-      "sub": null
-    },
-    {
-      "ru": "кофе ликер лимонад минеральная вода",
-      "tr": "kahve likör limonata maden suyu",
-      "tl": "кахвэ ликёр лимоната мадэн суйю",
-      "sub": null
-    },
-    {
-      "ru": "яблочный сок вот некоторые популярные в рые обязательно надо попробовать.",
-      "tr": "elma suyu",
-      "tl": "эльма суйю турции блюда, кото-",
+      "ru": "Это не то, что я заказывал/заказывала",
+      "tr": "Bu ısmarladığım şey değil",
+      "tl": null,
       "sub": null
     },
     {
@@ -744,852 +468,6 @@
     {
       "ru": "Я бы хотел(а) заказать столик на сегодняшний вечер/на завтра",
       "tr": "Bu akşama/yarına bir masa ayırtmak istiyorum",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "Здесь нет стакана/тарелки",
-      "tr": "Bir bardak/tabak eksik",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "Это не то, что я заказывал/заказывала",
-      "tr": "Bu ısmarladığım şey değil",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "зубочистка",
-      "tr": "kürdan",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "йогурт",
-      "tr": "yoğurt",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "какао",
-      "tr": "sütlü kakao",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "кофе без кофеина",
-      "tr": "kahve kafeinsiz",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "черный с молоком",
-      "tr": "koyu sütlü",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "красный перец",
-      "tr": "kırmızı biber",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "лимон",
-      "tr": "limon",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "ложка",
-      "tr": "kaşık",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "масло",
-      "tr": "yağ",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "мед",
-      "tr": "bal",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "метрдотель",
-      "tr": "şef, garson",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "молоко",
-      "tr": "süt",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "холодное",
-      "tr": "soğuk",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "теплое",
-      "tr": "sıcak",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "неразбавленный",
-      "tr": "sek",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "нож",
-      "tr": "bıçak",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "оливки",
-      "tr": "zeytin",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "официант/официантка",
-      "tr": "garson",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "сыр",
-      "tr": "peynir",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "тарелка",
-      "tr": "tabak",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "тимьян",
-      "tr": "kekik",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "тмин",
-      "tr": "kimyon",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "тосты",
-      "tr": "kızarmış ekmek",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "уксус",
-      "tr": "sirke",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "фаршированный",
-      "tr": "dolma",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "фруктовый сок",
-      "tr": "meyve suyu",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "хлеб",
-      "tr": "ekmek",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "чаевые",
-      "tr": "bahşiş",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "чай с лимоном",
-      "tr": "çay limonlu",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "с молоком",
-      "tr": "sütlü",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "чашка",
-      "tr": "fincan",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "черный молотый перец",
-      "tr": "karabiber",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "суп с морковью",
-      "tr": "havuç çorbası",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "суп с сельдереем",
-      "tr": "kereviz çorbası",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "суп с сыром",
-      "tr": "peynir çorbası",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "суп пюре",
-      "tr": "un çorbası",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "суп с угрем",
-      "tr": "yılan balığı çorbası",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "суп с фасолью",
-      "tr": "fasulye çorbası",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "томатный суп",
-      "tr": "domates çorbası",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "анчоусы",
-      "tr": "ançüezler",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "калкан",
-      "tr": "kalkan",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "карп",
-      "tr": "sazan",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "кефаль",
-      "tr": "kefal, tekir",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "крабы",
-      "tr": "pavurya",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "креветки",
-      "tr": "karidesler",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "лосось",
-      "tr": "som balığı",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "мерланг",
-      "tr": "mezgit",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "мидия",
-      "tr": "midye",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "окунь",
-      "tr": "levrek",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "омар",
-      "tr": "ıstakoz",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "палтус",
-      "tr": "pisi balığı",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "пикша",
-      "tr": "mezgit",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "рыба-меч",
-      "tr": "kılıç balığı",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "сарган (морская щука)",
-      "tr": "zargana",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "сардина",
-      "tr": "sardalye",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "сельдь",
-      "tr": "ringa balığı",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "скумбрия",
-      "tr": "uskumbru",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "соленый тунец",
-      "tr": "lakerda",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "ставрида",
-      "tr": "istavrit",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "треска",
-      "tr": "morina",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "тунец",
-      "tr": "ton balığı",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "угорь",
-      "tr": "yılan balığı",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "устрица",
-      "tr": "istiridye",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "форель",
-      "tr": "alabalık",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "черный лещ",
-      "tr": "karagöz",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "щука",
-      "tr": "turna",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "артишоки",
-      "tr": "enginarlar",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "аспарагус",
-      "tr": "kuşkonmaz",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "баклажан",
-      "tr": "patlıcan",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "бамия",
-      "tr": "bamya",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "горох",
-      "tr": "bezelye",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "грибы",
-      "tr": "mantar",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "зеленая фасоль",
-      "tr": "taze fasulye",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "зеленый лук",
-      "tr": "taze soğan",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "кабачок",
-      "tr": "sakız kabağı",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "капуста",
-      "tr": "kapuska",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "картофель",
-      "tr": "patates",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "каштан",
-      "tr": "kestane",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "лук",
-      "tr": "soğan",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "лук-порей",
-      "tr": "pırasa",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "морковь",
-      "tr": "havuç",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "огурец",
-      "tr": "salatalık",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "перец",
-      "tr": "biber",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "помидоры",
-      "tr": "domatesler",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "портулак",
-      "tr": "semizotu",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "редис",
-      "tr": "turp",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "репа",
-      "tr": "şalgam",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "рис",
-      "tr": "pirinç",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "салат",
-      "tr": "salata",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "салат из картофеля",
-      "tr": "patates salatası",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "гусь",
-      "tr": "kaz",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "дикая утка",
-      "tr": "yaban ördeği",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "заяц",
-      "tr": "yaban tavşanı",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "индейка",
-      "tr": "hindi",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "кабан",
-      "tr": "yaban domuzu",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "курица",
-      "tr": "tavuk",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "куропатка",
-      "tr": "keklik",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "перепел",
-      "tr": "bıldırcın",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "фазан",
-      "tr": "sülün",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "абрикос",
-      "tr": "kayısı",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "айва",
-      "tr": "ayva",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "ананас",
-      "tr": "ananas",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "апельсин",
-      "tr": "portakal",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "арбуз",
-      "tr": "karpuz",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "банан",
-      "tr": "muz",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "блины",
-      "tr": "gözleme",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "виноград",
-      "tr": "üzüm",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "грецкий орех",
-      "tr": "ceviz",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "груша",
-      "tr": "armut",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "дыня",
-      "tr": "kavun",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "ежевика",
-      "tr": "böğürtlen",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "инжир",
-      "tr": "incir",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "клубника",
-      "tr": "çilek",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "компот",
-      "tr": "komposto",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "кофейный торт",
-      "tr": "kahveli pasta",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "крем-карамель",
-      "tr": "krem karamel",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "крыжовник",
-      "tr": "bektaşı üzümü",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "малина",
-      "tr": "ahududu",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "мандарин",
-      "tr": "mandalina",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "миндаль",
-      "tr": "badem",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "миндальное печенье",
-      "tr": "bademli kurabiye",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "тутовая ягода",
-      "tr": "dut",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "фруктовый салат",
-      "tr": "meyve salatası",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "фруктовый торт",
-      "tr": "meyveli turta",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "фундук",
-      "tr": "fındık",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "черешня",
-      "tr": "kiraz",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "черная смородина",
-      "tr": "frenk üzümü",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "шоколадный пудинг",
-      "tr": "krem şokola",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "молоко (напиток)",
-      "tr": "süt",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "пиво",
-      "tr": "bira",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "портвейн",
-      "tr": "porto",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "ром",
-      "tr": "rom",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "сидр",
-      "tr": "elma şarabı",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "содовая вода",
-      "tr": "soda",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "фруктовый сок (напиток)",
-      "tr": "meyve suyu",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "чай",
-      "tr": "çay",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "чай со льдом",
-      "tr": "buzlu çay",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "чай с молоком (напиток)",
-      "tr": "sütlü çay",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "шерри",
-      "tr": "ispanyol şarabı",
       "tl": null,
       "sub": null
     }
