@@ -74,6 +74,90 @@
       "tr": "Sanırım yarın gü- zel bır gün olacak",
       "tl": "Бугюн соук/ сыджак Хэр заман бурда бу кадар сыджак мы? Бугюн хава рапору насыл? Яамур/кар яад- жайыны дюшю- нюйор мусунуз? Ярын гюнэшли олур му? Санырым ярын гюзэль бир гюн оладжак",
       "sub": null
+    },
+    {
+      "ru": "ветер",
+      "tr": "rüzgar",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "гроза",
+      "tr": "fırtına",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "гром",
+      "tr": "gök gürültüsü",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "дождь",
+      "tr": "yağmur",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "звезда",
+      "tr": "yıldız",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "лед",
+      "tr": "buz",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "луна",
+      "tr": "ay",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "молния",
+      "tr": "şimşek",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "мороз",
+      "tr": "don",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "небо",
+      "tr": "gök",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "облако",
+      "tr": "bulut",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "снег",
+      "tr": "kar",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "солнце",
+      "tr": "güneş",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "туман",
+      "tr": "sis",
+      "tl": null,
+      "sub": null
     }
   ]
 }
