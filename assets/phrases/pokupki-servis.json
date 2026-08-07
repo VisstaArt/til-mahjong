@@ -1778,6 +1778,102 @@
       "tr": "iyi",
       "tl": null,
       "sub": null
+    },
+    {
+      "ru": "батист",
+      "tr": "patiska",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "бархат",
+      "tr": "kadife",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "вельвет",
+      "tr": "fitilli kadife",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "габардин",
+      "tr": "gabardin",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "джинсовая ткань",
+      "tr": "blucin kumaşı",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "замша",
+      "tr": "süet",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "кожа",
+      "tr": "deri",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "кружево",
+      "tr": "dantel",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "лен",
+      "tr": "keten",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "махровая ткань",
+      "tr": "havlu kumaş",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "поплин",
+      "tr": "poplin",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "сатин",
+      "tr": "saten",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "хлопок",
+      "tr": "pamuklu",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "шелк",
+      "tr": "ipek",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "шерсть",
+      "tr": "yün",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "шифон",
+      "tr": "şifon",
+      "tl": null,
+      "sub": null
     }
   ]
 }
