@@ -932,6 +932,12 @@
       "tr": "Sağdaki birinci/ikinci/üçüncü yola sapın",
       "tl": null,
       "sub": null
+    },
+    {
+      "ru": "Вы не можете/у вас не получится добраться туда пешком",
+      "tr": "Oraya yürüyerek gidebilirsiniz/gidemezsiniz",
+      "tl": null,
+      "sub": null
     }
   ]
 }
