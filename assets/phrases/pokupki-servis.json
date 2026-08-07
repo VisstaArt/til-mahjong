@@ -1706,6 +1706,78 @@
       "tr": "kırtasiyeci",
       "tl": null,
       "sub": null
+    },
+    {
+      "ru": "большой",
+      "tr": "büyük",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "дешевый",
+      "tr": "ucuz",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "квадратный",
+      "tr": "kare",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "круглый",
+      "tr": "yuvarlak",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "легкий",
+      "tr": "hafif",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "маленький",
+      "tr": "küçük",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "овальный",
+      "tr": "oval",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "прочный",
+      "tr": "sağlam",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "прямоугольный",
+      "tr": "dikdörtgen",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "темный",
+      "tr": "koyu renk",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "тяжелый",
+      "tr": "ağır",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "хороший",
+      "tr": "iyi",
+      "tl": null,
+      "sub": null
     }
   ]
 }
