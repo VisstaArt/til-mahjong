@@ -119,13 +119,6 @@
     "sizeKB": 1.5
   },
   {
-    "id": "vyrazheniya-terminy-dlya-biznesmena",
-    "title": "Выражения, термины для бизнесмена",
-    "source": "razgovornik",
-    "count": 99,
-    "sizeKB": 20.2
-  },
-  {
     "id": "zdorove",
     "title": "Здоровье",
     "source": "razgovornik",
@@ -138,5 +131,68 @@
     "source": "razgovornik",
     "count": 53,
     "sizeKB": 9.9
+  },
+  {
+    "id": "biznes-vstrechi-i-ofis",
+    "title": "Бизнес: встречи и офис",
+    "source": "razgovornik",
+    "count": 49,
+    "sizeKB": 8.2
+  },
+  {
+    "id": "biznes-peregovory",
+    "title": "Бизнес: переговоры",
+    "source": "razgovornik",
+    "count": 10,
+    "sizeKB": 2.3
+  },
+  {
+    "id": "biznes-investicii",
+    "title": "Бизнес: инвестиции",
+    "source": "razgovornik",
+    "count": 10,
+    "sizeKB": 2.3
+  },
+  {
+    "id": "biznes-marketing",
+    "title": "Бизнес: маркетинг",
+    "source": "razgovornik",
+    "count": 10,
+    "sizeKB": 2.2
+  },
+  {
+    "id": "biznes-strategiya-i-politika",
+    "title": "Бизнес: стратегия и политика",
+    "source": "razgovornik",
+    "count": 10,
+    "sizeKB": 2.3
+  },
+  {
+    "id": "biznes-upravlenie-personalom",
+    "title": "Бизнес: управление персоналом",
+    "source": "razgovornik",
+    "count": 10,
+    "sizeKB": 2.2
+  },
+  {
+    "id": "biznes-nalogi",
+    "title": "Бизнес: налоги",
+    "source": "razgovornik",
+    "count": 10,
+    "sizeKB": 2.1
+  },
+  {
+    "id": "biznes-buhgalteriya",
+    "title": "Бизнес: бухгалтерия",
+    "source": "razgovornik",
+    "count": 10,
+    "sizeKB": 2.1
+  },
+  {
+    "id": "biznes-yurisprudenciya",
+    "title": "Бизнес: юриспруденция",
+    "source": "razgovornik",
+    "count": 10,
+    "sizeKB": 2.3
   }
 ]

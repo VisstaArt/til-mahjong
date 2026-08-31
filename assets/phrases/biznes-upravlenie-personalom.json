@@ -1,0 +1,67 @@
+{
+  "id": "biznes-upravlenie-personalom",
+  "title": "Бизнес: управление персоналом",
+  "source": "razgovornik",
+  "phrases": [
+    {
+      "ru": "Как вы оцениваете эффективность своей команды?",
+      "tr": "Ekibinizin performansını nasıl değerlendiriyorsunuz?",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Нам нужно провести аттестацию сотрудников",
+      "tr": "Personel değerlendirmesi yapmamız gerekiyor",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Я хотел(а) бы обсудить ваш карьерный рост",
+      "tr": "Kariyer gelişiminizi konuşmak istiyorum",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Как мотивировать команду в сложный период?",
+      "tr": "Zor bir dönemde ekibi nasıl motive edebiliriz?",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Нужно делегировать больше задач",
+      "tr": "Daha fazla görevi devretmemiz gerekiyor",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Давайте проведём обратную связь по проекту",
+      "tr": "Proje hakkında geri bildirim toplantısı yapalım",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "В команде назрел конфликт, который нужно решить",
+      "tr": "Ekipte çözülmesi gereken bir çatışma var",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Мы планируем набрать новых сотрудников в отдел",
+      "tr": "Departmana yeni personel almayı planlıyoruz",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Как распределить нагрузку между сотрудниками?",
+      "tr": "İş yükünü çalışanlar arasında nasıl dağıtmalıyız?",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Нужно повысить вовлечённость сотрудников",
+      "tr": "Çalışan bağlılığını artırmamız gerekiyor",
+      "tl": null,
+      "sub": null
+    }
+  ]
+}

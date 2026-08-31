@@ -1,0 +1,67 @@
+{
+  "id": "biznes-marketing",
+  "title": "Бизнес: маркетинг",
+  "source": "razgovornik",
+  "phrases": [
+    {
+      "ru": "Какова наша целевая аудитория для этого продукта?",
+      "tr": "Bu ürün için hedef kitlemiz kim?",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Нам нужно повысить узнаваемость бренда",
+      "tr": "Marka bilinirliğimizi artırmamız gerekiyor",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Какой бюджет заложен на рекламную кампанию?",
+      "tr": "Reklam kampanyası için ne kadar bütçe ayrıldı?",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Давайте проанализируем показатели конверсии",
+      "tr": "Dönüşüm oranlarını analiz edelim",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Нам нужна более чёткая позиция бренда на рынке",
+      "tr": "Markanın pazardaki konumlandırması daha net olmalı",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Какие каналы продвижения наиболее эффективны?",
+      "tr": "Hangi tanıtım kanalları en etkili?",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Нужно провести исследование рынка перед запуском",
+      "tr": "Lansmandan önce pazar araştırması yapmamız gerekiyor",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Кампания должна повысить вовлечённость аудитории",
+      "tr": "Kampanya, kitlenin etkileşimini artırmalı",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Мы планируем ребрендинг в следующем году",
+      "tr": "Gelecek yıl yeniden markalaşma planlıyoruz",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Какова наша доля рынка по сравнению с конкурентами?",
+      "tr": "Rakiplere kıyasla pazar payımız nedir?",
+      "tl": null,
+      "sub": null
+    }
+  ]
+}

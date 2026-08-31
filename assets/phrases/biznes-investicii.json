@@ -1,0 +1,67 @@
+{
+  "id": "biznes-investicii",
+  "title": "Бизнес: инвестиции",
+  "source": "razgovornik",
+  "phrases": [
+    {
+      "ru": "Мы рассматриваем возможность инвестировать в вашу компанию",
+      "tr": "Şirketinize yatırım yapmayı değerlendiriyoruz",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Какая ожидаемая доходность этого проекта?",
+      "tr": "Bu projenin beklenen getirisi nedir?",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Нам нужно провести комплексную проверку компании перед сделкой",
+      "tr": "İşlemden önce şirket hakkında kapsamlı bir inceleme yapmamız gerekiyor",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Каков срок окупаемости инвестиций?",
+      "tr": "Yatırımın geri dönüş süresi nedir?",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Мы ищем стратегического инвестора",
+      "tr": "Stratejik bir yatırımcı arıyoruz",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Оценка компании кажется нам завышенной",
+      "tr": "Şirket değerlemesi bize yüksek görünüyor",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Какая доля в компании предлагается за эти инвестиции?",
+      "tr": "Bu yatırım karşılığında şirkette hangi pay teklif ediliyor?",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Мы диверсифицируем портфель, чтобы снизить риски",
+      "tr": "Riskleri azaltmak için portföyümüzü çeşitlendiriyoruz",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Нужен независимый аудит финансовой отчётности",
+      "tr": "Bağımsız bir mali denetime ihtiyaç var",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Раунд финансирования планируется закрыть в следующем квартале",
+      "tr": "Finansman turunun gelecek çeyrekte kapanması planlanıyor",
+      "tl": null,
+      "sub": null
+    }
+  ]
+}

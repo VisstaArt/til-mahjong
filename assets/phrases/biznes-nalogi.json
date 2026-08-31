@@ -1,0 +1,67 @@
+{
+  "id": "biznes-nalogi",
+  "title": "Бизнес: налоги",
+  "source": "razgovornik",
+  "phrases": [
+    {
+      "ru": "Какая ставка налога на прибыль в этом году?",
+      "tr": "Bu yıl kurumlar vergisi oranı nedir?",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Нам нужно подать налоговую декларацию до конца месяца",
+      "tr": "Ay sonuna kadar vergi beyannamesi vermemiz gerekiyor",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Эти расходы подлежат вычету из налогооблагаемой базы?",
+      "tr": "Bu giderler vergi matrahından düşülebilir mi?",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "У нас налоговая проверка на следующей неделе",
+      "tr": "Önümüzdeki hafta vergi denetimi var",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Мы переплатили налоги в прошлом квартале",
+      "tr": "Geçen çeyrekte fazla vergi ödedik",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Как избежать двойного налогообложения?",
+      "tr": "Çifte vergilendirmeden nasıl kaçınabiliriz?",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "НДС включён в эту сумму?",
+      "tr": "Bu tutara KDV dahil mi?",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Нам нужна консультация налогового юриста",
+      "tr": "Bir vergi avukatına danışmamız gerekiyor",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Штраф за просрочку уплаты налогов очень высокий",
+      "tr": "Vergi gecikme cezası çok yüksek",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Компания имеет право на налоговые льготы",
+      "tr": "Şirketin vergi teşviklerinden yararlanma hakkı var",
+      "tl": null,
+      "sub": null
+    }
+  ]
+}

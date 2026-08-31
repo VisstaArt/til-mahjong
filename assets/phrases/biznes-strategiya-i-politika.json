@@ -1,0 +1,67 @@
+{
+  "id": "biznes-strategiya-i-politika",
+  "title": "Бизнес: стратегия и политика",
+  "source": "razgovornik",
+  "phrases": [
+    {
+      "ru": "Какова ценовая политика компании?",
+      "tr": "Şirketin fiyatlandırma politikası nedir?",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Нам нужно пересмотреть стратегию развития компании",
+      "tr": "Şirketin büyüme stratejisini gözden geçirmemiz gerekiyor",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Это противоречит корпоративной политике",
+      "tr": "Bu, şirket politikasına aykırı",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Какие приоритеты у компании на этот год?",
+      "tr": "Şirketin bu yıl için öncelikleri neler?",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Нам нужно соответствовать новым нормативным требованиям",
+      "tr": "Yeni düzenleyici gerekliliklere uyum sağlamamız gerekiyor",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Совет директоров утвердил новую стратегию",
+      "tr": "Yönetim kurulu yeni stratejiyi onayladı",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Компания придерживается политики нулевой терпимости к коррупции",
+      "tr": "Şirket, yolsuzluğa karşı sıfır tolerans politikası izliyor",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Какова наша политика в отношении удалённой работы?",
+      "tr": "Uzaktan çalışma konusunda politikamız nedir?",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Нужно согласовать это решение с высшим руководством",
+      "tr": "Bu kararı üst yönetimle görüşmemiz gerekiyor",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Компания расширяется на новые рынки",
+      "tr": "Şirket yeni pazarlara açılıyor",
+      "tl": null,
+      "sub": null
+    }
+  ]
+}

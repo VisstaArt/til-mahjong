@@ -1,0 +1,67 @@
+{
+  "id": "biznes-peregovory",
+  "title": "Бизнес: переговоры",
+  "source": "razgovornik",
+  "phrases": [
+    {
+      "ru": "Мы готовы обсудить условия сотрудничества",
+      "tr": "İş birliği şartlarını görüşmeye hazırız",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Каковы ваши условия по срокам поставки?",
+      "tr": "Teslimat süreleri konusunda şartlarınız nedir?",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Мы бы хотели пересмотреть цену в свете текущих обстоятельств",
+      "tr": "Mevcut koşullar ışığında fiyatı yeniden gözden geçirmek istiyoruz",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Это наше окончательное предложение",
+      "tr": "Bu bizim son teklifimiz",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Нам нужно больше времени, чтобы обдумать ваше предложение",
+      "tr": "Teklifinizi değerlendirmek için daha fazla zamana ihtiyacımız var",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Давайте закрепим договорённости в письменном виде",
+      "tr": "Anlaşmayı yazılı hale getirelim",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Мы настаиваем на эксклюзивных условиях сотрудничества",
+      "tr": "İş birliğinde münhasır şartlarda ısrar ediyoruz",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Есть ли пространство для манёвра по цене?",
+      "tr": "Fiyatta pazarlık payı var mı?",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Мы можем пойти на уступки при определённых условиях",
+      "tr": "Belirli şartlar altında taviz verebiliriz",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Прежде чем подписать контракт, нам нужно проконсультироваться с юристами",
+      "tr": "Sözleşmeyi imzalamadan önce avukatlarımıza danışmamız gerekiyor",
+      "tl": null,
+      "sub": null
+    }
+  ]
+}

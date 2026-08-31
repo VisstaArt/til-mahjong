@@ -1,0 +1,67 @@
+{
+  "id": "biznes-yurisprudenciya",
+  "title": "Бизнес: юриспруденция",
+  "source": "razgovornik",
+  "phrases": [
+    {
+      "ru": "Нам нужно проверить этот контракт перед подписанием",
+      "tr": "Bu sözleşmeyi imzalamadan önce incelememiz gerekiyor",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Какая ответственность предусмотрена за нарушение условий договора?",
+      "tr": "Sözleşme şartlarının ihlali için hangi yaptırım öngörülüyor?",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Мы хотим включить пункт о конфиденциальности",
+      "tr": "Bir gizlilik maddesi eklemek istiyoruz",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Этот пункт договора нужно уточнить с юристами",
+      "tr": "Sözleşmenin bu maddesini avukatlarla netleştirmemiz gerekiyor",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "У нас есть право расторгнуть договор в одностороннем порядке?",
+      "tr": "Sözleşmeyi tek taraflı feshetme hakkımız var mı?",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Нам нужно зарегистрировать товарный знак",
+      "tr": "Ticari markamızı tescil ettirmemiz gerekiyor",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Против компании подан иск",
+      "tr": "Şirkete karşı dava açıldı",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Какой срок исковой давности по этому вопросу?",
+      "tr": "Bu konuda zamanaşımı süresi ne kadar?",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Нужно получить юридическое заключение по этой сделке",
+      "tr": "Bu işlemle ilgili hukuki görüş almamız gerekiyor",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Договор должен соответствовать местному законодательству",
+      "tr": "Sözleşme yerel mevzuata uygun olmalı",
+      "tl": null,
+      "sub": null
+    }
+  ]
+}

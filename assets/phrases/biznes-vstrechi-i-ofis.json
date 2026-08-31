@@ -1,0 +1,301 @@
+{
+  "id": "biznes-vstrechi-i-ofis",
+  "title": "Бизнес: встречи и офис",
+  "source": "razgovornik",
+  "phrases": [
+    {
+      "ru": "Меня зовут …",
+      "tr": "Adım …",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Вот моя визитная карточка",
+      "tr": "Buyurun kartım",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Вы можете назвать приблизительную стоимость?",
+      "tr": "Bana yaklaşık bir maliyet verebilir misiniz?",
+      "tl": "Бана яклашык бир малийэт вэрэбилир мисиниз?",
+      "sub": null
+    },
+    {
+      "ru": "Когда собрание?",
+      "tr": "Toplantı ne zaman?",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Где будет собрание?",
+      "tr": "Toplantı nerede?",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "В какой комнате собрание?",
+      "tr": "Toplantı hangi odada?",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Сколько будет длиться собрание?",
+      "tr": "Toplantı ne kadar sürer?",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Какая повестка дня у собрания?",
+      "tr": "Toplantının gündemi nedir?",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Если все здесь, давайте начнём собрание",
+      "tr": "Herkes buradaysa, toplantıya başlayalım",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Можно задать вопрос?",
+      "tr": "Bir soru sorabilir miyim?",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Я хотел(а) бы кое-что добавить",
+      "tr": "Bir ekleme yapmak istiyorum",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Что вы думаете об этом?",
+      "tr": "Bu konuda ne düşünüyorsunuz?",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "У кого-то есть другие идеи?",
+      "tr": "Başka fikri olan var mı?",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "У кого-то есть предложения?",
+      "tr": "Herhangi bir önerisi olan var mı?",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Я согласен/согласна с вами",
+      "tr": "Size katılıyorum",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "К сожалению, я не согласен/согласна с вами",
+      "tr": "Ne yazık ki size katılmıyorum",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Думаю, мы можем перейти к следующему вопросу",
+      "tr": "Sanırım bir sonraki konuya geçebiliriz",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Давайте подведём итоги собрания",
+      "tr": "Toplantıyı özetleyelim",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Давайте определим дальнейшие шаги",
+      "tr": "Sonraki adımları belirleyelim",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Это было очень продуктивное собрание",
+      "tr": "Çok verimli bir toplantı oldu",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Мы должны перенести это собрание",
+      "tr": "Bu toplantıyı ertelemeliyiz",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "В каком отделе вы работаете?",
+      "tr": "Hangi departmanda çalışıyorsunuz?",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Над каким проектом вы работаете?",
+      "tr": "Hangi proje üzerinde çalışıyorsunuz?",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Сколько лет вы здесь работаете?",
+      "tr": "Kaç yıldır burada çalışıyorsunuz?",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Я новый менеджер по закупкам",
+      "tr": "Ben yeni Satın Alma Müdürüyüm",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Я изучал(а) финансы",
+      "tr": "Finans okudum",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "У меня степень MBA",
+      "tr": "İşletme yüksek lisansım var (MBA)",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Сейчас я работаю финансовым директором",
+      "tr": "Şu an finans müdürü olarak çalışıyorum",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Не могли бы вы повторить ваш вопрос?",
+      "tr": "Sorunuzu tekrar edebilir misiniz lütfen?",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Не могли бы вы мне это объяснить?",
+      "tr": "Bunu bana anlatabilir misiniz lütfen?",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Не могли бы вы показать, как пользоваться этой системой?",
+      "tr": "Bu sistemi nasıl kullanacağımı gösterebilir misiniz?",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Как мне получить доступ к документу, который вы упомянули?",
+      "tr": "Bahsettiğiniz dokümana nasıl ulaşabilirim?",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Спасибо за ваш вклад",
+      "tr": "Katkılarınız için teşekkürler",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Это большой успех",
+      "tr": "Bu büyük bir başarı",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Отличная работа!",
+      "tr": "İyi iş çıkardınız!",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Меня об этом не проинформировали",
+      "tr": "Bana bu konuda bir bilgi verilmedi",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "У нас нет бюджета на это",
+      "tr": "Bunun için bütçemiz yok",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Мы не успеем сделать это в такой срок",
+      "tr": "Bu kadar zamanda bu işi yetiştiremeyiz",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "В этом документе есть ошибка",
+      "tr": "Bu dokümanda bir hata var",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "По этому вопросу нет данных",
+      "tr": "Bununla ilgili bir veri yok",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Не могли бы вы соединить меня с бухгалтерией?",
+      "tr": "Beni muhasebe departmanına bağlayabilir misiniz?",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Пожалуйста, оставайтесь на линии",
+      "tr": "Hatta kalın lütfen",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Его линия занята",
+      "tr": "Hattı meşgul",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Он сейчас на собрании",
+      "tr": "Şu anda toplantıda",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Не могли бы вы перезвонить позже?",
+      "tr": "Daha sonra tekrar arayabilir misiniz?",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Я передам вашу записку",
+      "tr": "Notunuzu ileteceğim",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Какие рабочие языки конференции?",
+      "tr": "Konferansın çalışma dilleri hangisi?",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Будет ли перевод выступлений на русский язык?",
+      "tr": "Konuşmalar rusçaya çevrilecek mi?",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Сколько времени отводится для дискуссии?",
+      "tr": "Tartışma ne kadar sürecek?",
+      "tl": null,
+      "sub": null
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "id": "biznes-buhgalteriya",
+  "title": "Бизнес: бухгалтерия",
+  "source": "razgovornik",
+  "phrases": [
+    {
+      "ru": "Нужно закрыть отчётный период до пятницы",
+      "tr": "Raporlama dönemini cumaya kadar kapatmamız gerekiyor",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "В балансе есть расхождение",
+      "tr": "Bilançoda bir tutarsızlık var",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Пришлите мне, пожалуйста, счёт-фактуру",
+      "tr": "Lütfen bana faturayı gönderin",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Нам нужно провести инвентаризацию склада",
+      "tr": "Depoda envanter sayımı yapmamız gerekiyor",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Какая у нас дебиторская задолженность на конец месяца?",
+      "tr": "Ay sonunda alacaklarımız ne kadar?",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Эти расходы нужно отнести на другую статью бюджета",
+      "tr": "Bu giderler bütçenin başka bir kalemine yazılmalı",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Аудитор запросил все первичные документы",
+      "tr": "Denetçi tüm birincil belgeleri istedi",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Зарплата будет перечислена пятого числа",
+      "tr": "Maaşlar ayın beşinde yatırılacak",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "У нас кассовый разрыв в этом месяце",
+      "tr": "Bu ay nakit akışı sorunumuz var",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Финансовая отчётность должна соответствовать международным стандартам",
+      "tr": "Mali tablolar uluslararası standartlara uygun olmalı",
+      "tl": null,
+      "sub": null
+    }
+  ]
+}
