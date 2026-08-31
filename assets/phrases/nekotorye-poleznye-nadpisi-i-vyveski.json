@@ -8,6 +8,24 @@
       "tr": "Saat … den … e kadar açık",
       "tl": null,
       "sub": null
+    },
+    {
+      "ru": "Что означает эта надпись/этот знак?",
+      "tr": "Bu tabela ne anlama geliyor?",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Извините, что здесь написано?",
+      "tr": "Affedersiniz, burada ne yazıyor?",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Не могли бы вы перевести эту надпись?",
+      "tr": "Bu yazıyı çevirebilir misiniz?",
+      "tl": null,
+      "sub": null
     }
   ]
 }

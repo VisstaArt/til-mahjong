@@ -4,8 +4,20 @@
   "source": "razgovornik",
   "phrases": [
     {
-      "ru": "Ваш паспорт, пожалуйста Пожалуйста, вот мой паспорт Как долго вы пробудете здесь?",
-      "tr": "на тамО VARIŞTA Pasaportunuz lütfen Buyurun pasaportum Burada ne kadar kalacaksınız?",
+      "ru": "Ваш паспорт, пожалуйста",
+      "tr": "Pasaportunuz lütfen",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Пожалуйста, вот мой паспорт",
+      "tr": "Buyurun pasaportum",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Как долго вы пробудете здесь?",
+      "tr": "Burada ne kadar kalacaksınız?",
       "tl": null,
       "sub": null
     },
