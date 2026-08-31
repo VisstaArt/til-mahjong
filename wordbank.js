@@ -48,7 +48,7 @@ const CATEGORY_SLUG = {
   "Семья и отношения": "family", "Предметы и вещи": "objects", "Служебные слова": "function-words",
   "Птицы": "birds", "Насекомые": "insects", "Цветы и растения": "plants",
   "Геометрические фигуры": "shapes", "Водитель": "driver", "Косметика": "cosmetics",
-  "Офис": "office", "Здоровье": "health",
+  "Офис": "office", "Здоровье": "health", "Бизнес": "business",
 };
 
 const LOADED_CATEGORIES_KEY = "mahjong-loaded-categories";
