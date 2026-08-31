@@ -4,51 +4,69 @@
   "source": "razgovornik",
   "phrases": [
     {
-      "ru": "а теперь начнем наше путешествие по городу.",
-      "tr": "в ŞEHİRDE",
-      "tl": "гОр Оде",
+      "ru": "Где находится автобусная остановка?",
+      "tr": "Otobüs durağı nerede?",
+      "tl": null,
       "sub": null
     },
     {
-      "ru": "Где находится … автобусная остановка",
-      "tr": "… nerede? otobüs durağı",
-      "tl": "… нэрдэ? отобюс дурайи",
+      "ru": "Где находится билетная касса?",
+      "tr": "Bilet gişesi nerede?",
+      "tl": null,
       "sub": null
     },
     {
-      "ru": "билетная касса вокзал газетный киоск платформа 4 справочная",
-      "tr": "bilet gişesi istasyon gazete bayii peron 4 danışma bürosu",
-      "tl": "билет гишеси истасьон газэтэ байии пэрон дёрт данышма бюросу",
+      "ru": "Где находится вокзал?",
+      "tr": "İstasyon nerede?",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Где находится газетный киоск?",
+      "tr": "Gazete bayii nerede?",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Где находится платформа 4?",
+      "tr": "Peron 4 nerede?",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Где находится справочная?",
+      "tr": "Danışma bürosu nerede?",
+      "tl": null,
       "sub": null
     },
     {
       "ru": "Где я могу сесть в такси?",
       "tr": "Nerede bir taksi bulabilirim?",
-      "tl": "Нэрдэ бир такси булабилирим? Шэхир мэркэзинэ насыл гидэбилирим?",
+      "tl": null,
       "sub": null
     },
     {
       "ru": "Как мне добраться до центра города?",
       "tr": "Şehir merkezine nasıl gidebilirim?",
-      "tl": "Нэрдэ бир такси булабилирим? Шэхир мэркэзинэ насыл гидэбилирим?",
+      "tl": null,
       "sub": null
     },
     {
       "ru": "Есть ли автобусы, идущие в город?",
       "tr": "Şehir merkezine bir otobüs var mı?",
-      "tl": "Шэхир мэркэзинэ бир отобюс вар мы?",
+      "tl": null,
       "sub": null
     },
     {
       "ru": "Как долго туда ехать?",
       "tr": "Oraya gitmek ne kadar zaman alır?",
-      "tl": "Орайа гитмек нэ кадар заман алыр?",
+      "tl": null,
       "sub": null
     },
     {
       "ru": "Сколько километров?",
       "tr": "Kaç kilometre?",
-      "tl": "Кач киломэтрэ?",
+      "tl": null,
       "sub": null
     }
   ]
