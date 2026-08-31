@@ -53,7 +53,7 @@
     "title": "Покупки, сервис",
     "source": "razgovornik",
     "count": 181,
-    "sizeKB": 51.8
+    "sizeKB": 51.5
   },
   {
     "id": "privetstvie",
@@ -67,14 +67,14 @@
     "title": "Путешествие",
     "source": "razgovornik",
     "count": 142,
-    "sizeKB": 43.8
+    "sizeKB": 43.6
   },
   {
     "id": "razvlecheniya-otdyh",
     "title": "Развлечения, отдых",
     "source": "razgovornik",
     "count": 69,
-    "sizeKB": 22.1
+    "sizeKB": 22.0
   },
   {
     "id": "restoran",
@@ -95,7 +95,7 @@
     "title": "В городе",
     "source": "razgovornik",
     "count": 8,
-    "sizeKB": 1.7
+    "sizeKB": 2.0
   },
   {
     "id": "v-otele",
@@ -130,13 +130,13 @@
     "title": "Здоровье",
     "source": "razgovornik",
     "count": 86,
-    "sizeKB": 18.4
+    "sizeKB": 18.3
   },
   {
     "id": "znakomstvo",
     "title": "Знакомство",
     "source": "razgovornik",
     "count": 53,
-    "sizeKB": 13.0
+    "sizeKB": 12.9
   }
 ]
