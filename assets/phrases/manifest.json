@@ -18,7 +18,7 @@
     "title": "На таможне",
     "source": "razgovornik",
     "count": 17,
-    "sizeKB": 3.8
+    "sizeKB": 3.4
   },
   {
     "id": "nekotorye-poleznye-nadpisi-i-vyveski",
@@ -52,8 +52,8 @@
     "id": "pokupki-servis",
     "title": "Покупки, сервис",
     "source": "razgovornik",
-    "count": 181,
-    "sizeKB": 51.5
+    "count": 185,
+    "sizeKB": 44.1
   },
   {
     "id": "privetstvie",
@@ -66,15 +66,15 @@
     "id": "puteshestvie",
     "title": "Путешествие",
     "source": "razgovornik",
-    "count": 142,
-    "sizeKB": 43.6
+    "count": 145,
+    "sizeKB": 33.2
   },
   {
     "id": "razvlecheniya-otdyh",
     "title": "Развлечения, отдых",
     "source": "razgovornik",
     "count": 69,
-    "sizeKB": 22.0
+    "sizeKB": 15.0
   },
   {
     "id": "restoran",
@@ -130,13 +130,13 @@
     "title": "Здоровье",
     "source": "razgovornik",
     "count": 86,
-    "sizeKB": 18.3
+    "sizeKB": 16.4
   },
   {
     "id": "znakomstvo",
     "title": "Знакомство",
     "source": "razgovornik",
     "count": 53,
-    "sizeKB": 12.9
+    "sizeKB": 9.9
   }
 ]
