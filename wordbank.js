@@ -272,6 +272,36 @@ async function seedBaseWordsIfNeeded() {
   }
 }
 
+// Разовая починка: у 6 слов (at, inek, keçi, aile, kuş, kelebek) первый проход
+// бесплатных OpenMoji-иконок случайно подменил "родную" AI-иллюстрацию на эмодзи —
+// саму подмену откатили в starter.json, но обычная синхронизация (loadCategoryWords)
+// намеренно не трогает иконку, если она уже есть (защита от затирания), поэтому у
+// тех, кто уже открывал эти категории, на телефоне осталось бы эмодзи навсегда.
+// Разово и принудительно подставляем обратно, дальше эта функция больше не нужна.
+const AI_ICONS_RESTORED_KEY = "mahjong-ai-icons-restored-v1";
+const RESTORED_AI_WORDS = new Set(["at", "inek", "keçi", "aile", "kuş", "kelebek"]);
+
+async function restoreAiIconsIfNeeded() {
+  if (localStorage.getItem(AI_ICONS_RESTORED_KEY)) return;
+  localStorage.setItem(AI_ICONS_RESTORED_KEY, "1");
+  try {
+    const resp = await fetch("assets/words/starter.json");
+    if (!resp.ok) return;
+    const words = await resp.json();
+    const existing = await getAllCustomWords();
+    const existingByTr = new Map(existing.map((w) => [w.tr, w]));
+    const toWrite = [];
+    for (const w of words) {
+      if (!RESTORED_AI_WORDS.has(w.tr) || !w.icon) continue;
+      const current = existingByTr.get(w.tr);
+      if (current) toWrite.push({ ...current, icon: w.icon });
+    }
+    await putCustomWordsBatch(toWrite);
+  } catch (e) {
+    // тихо игнорируем — в худшем случае эмодзи ещё немного полежит вместо картинки
+  }
+}
+
 // Категории, которые уже когда-то загружались в этом браузере, стоит подгрузить
 // заново при заходе — вдруг в файле категории что-то поправили (тема слова,
 // перевод и т.п.), а у пользователя уже осела старая версия. Каждая — лёгкий

@@ -1193,6 +1193,7 @@ generateWordsBtn.addEventListener("click", async () => {
 
 (async function init() {
   await seedBaseWordsIfNeeded();
+  await restoreAiIconsIfNeeded();
   categoryManifest = await fetchCategoryManifest();
   manifestByTheme = new Map(categoryManifest.map((m) => [m.theme, m]));
   customWords = await getAllCustomWords();
