@@ -369,6 +369,7 @@ const LAYER_SHIFT = 7; // px смещения на слой — создаёт �
 
 function renderIcon(container, tile) {
   container.innerHTML = "";
+  container.classList.remove("svg-icon");
   if (COLOR_WORDS[tile.tr]) {
     container.style.display = "";
     container.style.background = COLOR_WORDS[tile.tr];
@@ -381,6 +382,9 @@ function renderIcon(container, tile) {
   }
   container.style.display = "";
   container.style.background = "";
+  if (src.startsWith("data:image/svg+xml") || src.endsWith(".svg")) {
+    container.classList.add("svg-icon");
+  }
   const img = document.createElement("img");
   img.src = src;
   img.alt = tile.tr;
@@ -395,7 +399,7 @@ function renderIcon(container, tile) {
 function renderTileFace(el, tile) {
   el.innerHTML = "";
   el.style.background = "";
-  el.classList.remove("has-icon", "has-number");
+  el.classList.remove("has-icon", "has-number", "svg-icon");
   if (COLOR_WORDS[tile.tr]) {
     el.classList.add("has-icon");
     el.style.background = COLOR_WORDS[tile.tr];
@@ -406,9 +410,17 @@ function renderTileFace(el, tile) {
     el.textContent = NUMBER_VALUES[tile.tr];
     return;
   }
+  if (DIRECTION_LETTERS[tile.tr]) {
+    el.classList.add("has-number");
+    el.textContent = DIRECTION_LETTERS[tile.tr];
+    return;
+  }
   const src = tile.icon || IMAGE_FILES[tile.tr];
   if (src) {
     el.classList.add("has-icon");
+    if (src.startsWith("data:image/svg+xml") || src.endsWith(".svg")) {
+      el.classList.add("svg-icon");
+    }
     const img = document.createElement("img");
     img.src = src;
     img.alt = tile.tr;

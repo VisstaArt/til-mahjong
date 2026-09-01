@@ -5,13 +5,13 @@
 const IMAGE_FILES = {
   kitap: "assets/icons/kitap.jpg",
   "çay": "assets/icons/cay.jpg",
-  ekmek: "assets/icons/ekmek.svg",
+  ekmek: "assets/icons/ekmek.jpg",
   su: "assets/icons/su.jpg",
-  ev: "assets/icons/ev.svg",
+  ev: "assets/icons/ev.jpg",
   araba: "assets/icons/araba.jpg",
-  kedi: "assets/icons/kedi.svg",
-  "köpek": "assets/icons/kopek.svg",
-  "güneş": "assets/icons/gunes.svg",
+  kedi: "assets/icons/kedi.jpg",
+  "köpek": "assets/icons/kopek.jpg",
+  "güneş": "assets/icons/gunes.jpg",
   ay: "assets/icons/ay.jpg",
   "koşmak": "assets/icons/kosmak.jpg",
   "yüzmek": "assets/icons/yuzmek.jpg",
@@ -42,6 +42,12 @@ const COLOR_WORDS = {
   "koyu yeşil": "#1e6b3a",
   "altın": "#d4af37",
   kahverengi: "#8b5a2b",
+  bej: "#e8dcc3",
+  turkuvaz: "#1abc9c",
+  "altın rengi": "#d4af37",
+  "portakal rengi": "#e67e22",
+  "açık mor": "#c39bd3",
+  "gümüş rengi": "#c0c0c0",
 };
 
 // Числительные (тема "Числительные") не рисуются картинкой — плитка показывает
@@ -80,4 +86,18 @@ const NUMBER_VALUES = {
   sekizinci: "8-й",
   dokuzuncu: "9-й",
   onuncu: "10-й",
+};
+
+// Стороны света (тема "Направления и предлоги") — не картинка и не стрелка (стрелки
+// используются для "вперёд/назад/вверх/вниз", это другое понятие), а крупная буква,
+// как и с числами: С/Ю/З/В и их сочетания.
+const DIRECTION_LETTERS = {
+  kuzey: "С",
+  "güney": "Ю",
+  "doğu": "В",
+  "batı": "З",
+  "kuzeydoğu": "СВ",
+  "kuzeybatı": "СЗ",
+  "güneydoğu": "ЮВ",
+  "güneybatı": "ЮЗ",
 };
