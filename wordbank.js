@@ -80,9 +80,13 @@ async function fetchCategoryManifest() {
 }
 
 // Подгружает слова ОДНОЙ категории (по требованию — при открытии её в каталоге или
-// перед игрой) и кладёт в IndexedDB. Безопасно вызывать повторно — новые слова
-// добавляются, у уже сохранённых поправляется тема (на случай серверных исправлений),
-// картинки уже сохранённых слов не трогаются.
+// перед игрой) и кладёт в IndexedDB. Безопасно вызывать повторно (см. syncLoadedCategories
+// ниже — она перезагружает все уже открытые темы при каждом старте приложения):
+// новые слова добавляются, у уже сохранённых поправляется тема (на случай серверных
+// исправлений). Иконка уже сохранённого слова НЕ трогается, если она уже есть — чтобы
+// не затереть картинку, которую пользователь перерисовал вручную через "🔄". Но если
+// иконки не было (слово раньше показывалось просто текстом), а на сервере она теперь
+// появилась — подхватываем: это только улучшение, риска затереть что-то своё нет.
 async function loadCategoryWords(theme) {
   const slug = CATEGORY_SLUG[theme];
   if (!slug) return 0;
@@ -106,8 +110,16 @@ async function loadCategoryWords(theme) {
           pos: w.pos || "other",
           theme: normalizedTheme,
         });
-      } else if (current.theme !== normalizedTheme) {
-        toWrite.push({ ...current, theme: normalizedTheme });
+      } else {
+        const needsThemeFix = current.theme !== normalizedTheme;
+        const needsIconUpgrade = !current.icon && w.icon;
+        if (needsThemeFix || needsIconUpgrade) {
+          toWrite.push({
+            ...current,
+            theme: normalizedTheme,
+            icon: needsIconUpgrade ? w.icon : current.icon,
+          });
+        }
       }
     }
     if (toWrite.length) await putCustomWordsBatch(toWrite);
