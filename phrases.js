@@ -2,6 +2,10 @@
 // слов в wordbank.js/script.js) → экран темы с выбором фраз (чекбоксы + "✓ Знаю",
 // как buildWordRow) → квиз "выбери перевод". Переиспользует speak()/muted/setScreen()
 // из script.js (общий глобальный скоуп классических <script>, без модулей).
+//
+// Квиз может идти по ОДНОЙ теме (кнопка "Играть" на экране темы) или сразу по НЕСКОЛЬКИМ
+// темам вперемешку (чекбоксы на плитках каталога + "▶ Играть вместе") — перемешивание
+// между темами не даёт фразам "примелькаться" по порядку внутри одной темы.
 
 const PHRASES_MANIFEST_URL = "assets/phrases/manifest.json";
 const PHRASES_DIR = "assets/phrases";
@@ -19,11 +23,20 @@ const PHRASE_BOXES = [
   { id: "mastered", max: Infinity, label: "выучено", emoji: "⭐", weight: 0 },
 ];
 
+// Не больше стольки совсем новых фраз за один заход в квиз (см. MAX_NEW_WORDS_PER_GAME
+// в script.js — тот же принцип): открыть свежую тему и сразу получить только незнакомые
+// фразы подряд — тяжело и не запоминается. Остальные места в раскладке добираются
+// повторами уже отобранных фраз и/или более простыми (учится/почти выучено/выучено).
+const MAX_NEW_PHRASES_PER_SESSION = 8;
+
 let phraseManifest = []; // [{id, title, source, count, sizeKB}]
 let phraseTopicCache = new Map(); // id → {id, title, source, phrases: [...]}
-let currentTopic = null;
-let currentQueue = [];
-let currentPhrase = null;
+let selectedForQuiz = new Set(); // id тем, отмеченных чекбоксом в каталоге для общего квиза
+
+let currentTopics = []; // темы, участвующие в текущей сессии квиза (1 или несколько)
+let currentQueue = []; // очередь элементов {phrase, topicId, id}
+let allowedNewIds = null; // Set id — какие "новые" фразы допущены в этой сессии (фиксируется один раз при старте)
+let currentItem = null; // {phrase, topicId, id} — текущий вопрос
 let currentDirectionRuToTr = true;
 let hintUsed = false;
 let questionAnswered = false;
@@ -141,7 +154,7 @@ async function renderPhrasesCatalog() {
     totalMastered += masteredHere;
 
     const tile = document.createElement("div");
-    tile.className = "catalog-tile" + (isLoaded ? "" : " not-loaded");
+    tile.className = "catalog-tile" + (isLoaded ? "" : " not-loaded") + (selectedForQuiz.has(m.id) ? " selected-for-quiz" : "");
     const emoji = m.source === "allah" ? "☪️" : "💬";
     const countLabel = isLoaded ? `${masteredHere}/${m.count}` : `⬇ ${m.count} фраз`;
     const sizeLabel = !isLoaded ? `<span class="size">${formatSizeKB(m.sizeKB)}</span>` : "";
@@ -152,6 +165,21 @@ async function renderPhrasesCatalog() {
       `<span class="count">${countLabel}</span>` +
       sizeLabel +
       `</div>`;
+
+    const checkbox = document.createElement("input");
+    checkbox.type = "checkbox";
+    checkbox.className = "tile-select";
+    checkbox.checked = selectedForQuiz.has(m.id);
+    checkbox.title = "Взять эту тему в общий квиз вперемешку с другими";
+    checkbox.addEventListener("click", (e) => e.stopPropagation());
+    checkbox.addEventListener("change", () => {
+      if (checkbox.checked) selectedForQuiz.add(m.id);
+      else selectedForQuiz.delete(m.id);
+      tile.classList.toggle("selected-for-quiz", checkbox.checked);
+      updatePlaySelectedButton();
+    });
+    tile.appendChild(checkbox);
+
     tile.addEventListener("click", () => openPhraseTopic(m.id));
     grid.appendChild(tile);
   });
@@ -159,7 +187,24 @@ async function renderPhrasesCatalog() {
   document.getElementById("phrases-mastered-count").textContent = totalMastered;
   document.getElementById("phrases-total-count").textContent = totalPhrases;
   document.getElementById("phrases-topic-count").textContent = phraseManifest.length;
+  updatePlaySelectedButton();
 }
+
+function updatePlaySelectedButton() {
+  const btn = document.getElementById("phrases-catalog-play-btn");
+  document.getElementById("phrases-selected-count").textContent = selectedForQuiz.size;
+  btn.disabled = selectedForQuiz.size === 0;
+}
+
+document.getElementById("phrases-catalog-play-btn").addEventListener("click", async () => {
+  const ids = [...selectedForQuiz];
+  if (!ids.length) return;
+  const btn = document.getElementById("phrases-catalog-play-btn");
+  btn.disabled = true;
+  btn.textContent = "⏳ Загружаем…";
+  const topics = await Promise.all(ids.map((id) => loadPhraseTopic(id)));
+  startQuiz(topics);
+});
 
 // --- экран темы: список фраз, чекбоксы "брать в работу", кнопка "✓ Знаю" ---
 let currentTopicId = null;
@@ -253,7 +298,7 @@ document.getElementById("phrase-topic-done-btn").addEventListener("click", () =>
 document.getElementById("phrase-topic-play-btn").addEventListener("click", () => {
   const topic = phraseTopicCache.get(currentTopicId);
   if (!topic) return;
-  startQuiz(topic);
+  startQuiz([topic]);
 });
 
 // --- квиз ---
@@ -266,49 +311,95 @@ function shuffle(arr) {
   return a;
 }
 
-// Взвешенная колода — как buildWeightedDeck в script.js: невыученное встречается чаще,
-// выученное (weight 0) постепенно пропадает из ротации. Фразы, снятые галочкой на
-// экране темы, в практику не попадают вовсе (но остаются доступны как дистракторы).
-function buildPhraseQueue(topic) {
-  const included = topic.phrases.filter((p) => !excludedPhrases.has(phraseId(topic.id, p)));
-  const source = included.length ? included : topic.phrases; // всё выключено — играем всё равно
-  const pool = [];
-  source.forEach((p) => {
-    const weight = getPhraseBox(phraseId(topic.id, p)).weight;
-    for (let i = 0; i < weight; i++) pool.push(p);
+// Плоский список {phrase, topicId, id} по всем темам сессии, за вычетом снятых
+// галочкой на экране темы (если так вышло, что снято всё — играем всё равно всем).
+function collectItems(topics) {
+  const items = [];
+  topics.forEach((topic) => {
+    topic.phrases.forEach((p) => {
+      const id = phraseId(topic.id, p);
+      if (!excludedPhrases.has(id)) items.push({ phrase: p, topicId: topic.id, id });
+    });
   });
-  if (!pool.length) pool.push(...source);
+  if (items.length) return items;
+  const all = [];
+  topics.forEach((topic) => {
+    topic.phrases.forEach((p) => all.push({ phrase: p, topicId: topic.id, id: phraseId(topic.id, p) }));
+  });
+  return all;
+}
+
+// Взвешенная колода — как buildWeightedDeck в script.js: невыученное встречается чаще,
+// выученное (weight 0) постепенно пропадает из ротации. Кроме того, не больше
+// MAX_NEW_PHRASES_PER_SESSION совсем новых фраз допускается за одну сессию квиза —
+// набор "разрешённых новых" фиксируется один раз при старте (см. startQuiz) и не
+// пересчитывается при каждом обновлении очереди, иначе темп не соблюдался бы на
+// длинной сессии. Фразы разных тем перемешиваются в одном пуле.
+function buildPhraseQueue(topics) {
+  const items = collectItems(topics);
+
+  if (!allowedNewIds) {
+    const newItems = items.filter((it) => getPhraseBox(it.id).id === "new");
+    const shuffledNew = shuffle(newItems);
+    allowedNewIds = new Set(shuffledNew.slice(0, MAX_NEW_PHRASES_PER_SESSION).map((it) => it.id));
+  }
+
+  const eligible = items.filter((it) => getPhraseBox(it.id).id !== "new" || allowedNewIds.has(it.id));
+
+  const pool = [];
+  eligible.forEach((it) => {
+    const weight = getPhraseBox(it.id).weight;
+    for (let i = 0; i < weight; i++) pool.push(it);
+  });
+  if (!pool.length) pool.push(...(eligible.length ? eligible : items));
   return shuffle(pool);
 }
 
-// Дистракторы берём из той же темы (REQ-010, включая исключённые из практики — как
-// "фон" они всё ещё годятся). Если фраз меньше 8, добираем из уже подгруженных тем.
-function pickDistractors(topic, correct, n) {
-  let pool = shuffle(topic.phrases.filter((p) => p !== correct));
+// Дистракторы предпочтительно из той же темы, что и правильный ответ (REQ-010) —
+// правдоподобнее, чем случайные фразы из всей сессии. Если в теме фраз мало, добираем
+// сначала из остальных тем сессии, потом из уже подгруженных ранее тем.
+function pickDistractors(topics, correctItem, n) {
+  const sameTopic = topics.find((t) => t.id === correctItem.topicId);
+  let pool = shuffle((sameTopic ? sameTopic.phrases : []).filter((p) => p !== correctItem.phrase));
   if (pool.length < n) {
-    const otherTopics = [...phraseTopicCache.values()].filter((t) => t.id !== topic.id);
-    const others = shuffle(otherTopics.flatMap((t) => t.phrases));
-    pool = pool.concat(others);
+    const otherSessionTopics = topics.filter((t) => t.id !== correctItem.topicId);
+    pool = pool.concat(shuffle(otherSessionTopics.flatMap((t) => t.phrases)));
+  }
+  if (pool.length < n) {
+    const otherCached = [...phraseTopicCache.values()].filter((t) => !topics.some((x) => x.id === t.id));
+    pool = pool.concat(shuffle(otherCached.flatMap((t) => t.phrases)));
   }
   return pool.slice(0, n);
 }
 
-function startQuiz(topic) {
-  currentTopic = topic;
-  currentQueue = buildPhraseQueue(topic);
+function startQuiz(topics) {
+  currentTopics = topics;
+  allowedNewIds = null; // новая сессия — заново решаем, какие новые фразы пустить в оборот
+  currentQueue = buildPhraseQueue(currentTopics);
   setScreen("quiz");
-  document.getElementById("quiz-topic-title").textContent = topic.title;
+  document.getElementById("quiz-topic-title").textContent = quizHeaderTitle(topics);
   nextQuestion();
 }
 
+function quizHeaderTitle(topics) {
+  if (topics.length === 1) return topics[0].title;
+  if (topics.length === 2) return topics.map((t) => t.title).join(" + ");
+  return `${topics.length} тем вместе`;
+}
+
 function updateQuizProgressLabel() {
-  const mastered = currentTopic.phrases.filter((p) => getPhraseBox(phraseId(currentTopic.id, p)).id === "mastered").length;
-  document.getElementById("quiz-progress").textContent = `${mastered}/${currentTopic.phrases.length}`;
+  let mastered = 0;
+  let total = 0;
+  currentTopics.forEach((topic) => {
+    total += topic.phrases.length;
+    mastered += topic.phrases.filter((p) => getPhraseBox(phraseId(topic.id, p)).id === "mastered").length;
+  });
+  document.getElementById("quiz-progress").textContent = `${mastered}/${total}`;
 }
 
 function nextQuestion() {
-  if (!currentQueue.length) currentQueue = buildPhraseQueue(currentTopic);
-  currentPhrase = currentQueue.pop();
+  if (!currentQueue.length) currentQueue = buildPhraseQueue(currentTopics);
+  currentItem = currentQueue.pop();
   currentDirectionRuToTr = Math.random() < 0.5;
   hintUsed = false;
   questionAnswered = false;
@@ -316,19 +407,20 @@ function nextQuestion() {
   const promptEl = document.getElementById("quiz-prompt");
   const dirEl = document.getElementById("quiz-direction");
   const optionsEl = document.getElementById("quiz-options");
+  const phrase = currentItem.phrase;
 
-  promptEl.textContent = currentDirectionRuToTr ? currentPhrase.ru : currentPhrase.tr;
+  promptEl.textContent = currentDirectionRuToTr ? phrase.ru : phrase.tr;
   dirEl.textContent = currentDirectionRuToTr ? "Выбери перевод на турецкий" : "Выбери перевод на русский";
 
-  const distractors = pickDistractors(currentTopic, currentPhrase, 7);
-  const options = shuffle([currentPhrase, ...distractors]);
+  const distractors = pickDistractors(currentTopics, currentItem, 7);
+  const options = shuffle([phrase, ...distractors]);
 
   optionsEl.innerHTML = "";
   options.forEach((opt) => {
     const btn = document.createElement("button");
     btn.className = "quiz-option";
     btn.textContent = currentDirectionRuToTr ? opt.tr : opt.ru;
-    btn.dataset.correct = opt === currentPhrase ? "1" : "0";
+    btn.dataset.correct = opt === phrase ? "1" : "0";
     btn.addEventListener("click", () => onAnswerClick(btn));
     optionsEl.appendChild(btn);
   });
@@ -343,13 +435,13 @@ function onAnswerClick(btn) {
   if (correct) {
     questionAnswered = true;
     btn.classList.add("correct");
-    if (!hintUsed) bumpPhraseStreak(phraseId(currentTopic.id, currentPhrase), true);
+    if (!hintUsed) bumpPhraseStreak(currentItem.id, true);
     updateQuizProgressLabel();
-    showPhraseMatchPopup(currentPhrase);
+    showPhraseMatchPopup(currentItem.phrase);
   } else {
     btn.classList.add("wrong");
     btn.disabled = true;
-    if (!hintUsed) bumpPhraseStreak(phraseId(currentTopic.id, currentPhrase), false);
+    if (!hintUsed) bumpPhraseStreak(currentItem.id, false);
     setTimeout(() => btn.classList.remove("wrong"), 300);
   }
 }
@@ -404,6 +496,8 @@ function useHint() {
 function initPhrasesMode() {
   document.getElementById("quiz-hint-btn").addEventListener("click", useHint);
   document.getElementById("quiz-back-btn").addEventListener("click", () => {
+    currentTopics = [];
+    allowedNewIds = null;
     renderPhrasesCatalog();
     setScreen("phrases-catalog");
   });
