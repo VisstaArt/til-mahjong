@@ -86,7 +86,7 @@ function getPhraseBox(id) {
 // "созрела" для перехода на следующий уровень (0 для "new" — учить можно сразу).
 // Даже пока фраза не созрела, она всё равно попадается в квизе по весу ящика (см.
 // buildPhraseQueue) — это просто тренировка, без продвижения вперёд.
-const PHRASE_BOX_INTERVAL_DAYS = { new: 0, learning: 1, almost: 3, mastered: 7 };
+const PHRASE_BOX_INTERVAL_DAYS = { new: 0, learning: 1, almost: 3 };
 // Сколько верных ответов нужно набрать за ОДИН календарный день (когда интервал уже
 // прошёл), чтобы фраза перешла на следующий уровень — одного-двух мало, могло быть
 // случайное угадывание; после DAILY_CORRECT_TO_ADVANCE подряд за день это уже
@@ -95,12 +95,33 @@ const PHRASE_BOX_INTERVAL_DAYS = { new: 0, learning: 1, almost: 3, mastered: 7 }
 // день, но сам переход внутри созревшего дня не растягивается на неделю ответов.
 const DAILY_CORRECT_TO_ADVANCE = 4;
 
+// "Выучено" — не тупик: фраза уходит из ротации, но периодически возвращается на
+// контрольную проверку по нарастающим интервалам (неделя → месяц → квартал →
+// полгода, дальше повторяется раз в полгода). Верный ответ на контрольной проверке —
+// это ОДИН ответ, а не DAILY_CORRECT_TO_ADVANCE: тут не учим заново, а просто
+// подтверждаем, что не забыла, и просто отодвигаем следующую проверку дальше.
+// Ошиблась — сразу назад в 🔴 "новое", как и при любой другой ошибке.
+const MASTERED_REVIEW_INTERVALS_DAYS = [7, 30, 90, 180];
+
 function bumpPhraseStreak(id, correct) {
   const today = todayStr();
-  const prev = phraseProgress[id] || { box: "new", dueDay: null, todayDay: null, todayCorrect: 0 };
+  const prev = phraseProgress[id] || { box: "new", dueDay: null, todayDay: null, todayCorrect: 0, reviewStage: 0 };
 
   if (!correct) {
-    phraseProgress[id] = { box: "new", dueDay: null, todayDay: today, todayCorrect: 0 };
+    phraseProgress[id] = { box: "new", dueDay: null, todayDay: today, todayCorrect: 0, reviewStage: 0 };
+    savePhraseProgress();
+    return;
+  }
+
+  if (prev.box === "mastered") {
+    const stage = Math.min((prev.reviewStage || 0) + 1, MASTERED_REVIEW_INTERVALS_DAYS.length - 1);
+    phraseProgress[id] = {
+      box: "mastered",
+      dueDay: addDaysStr(today, MASTERED_REVIEW_INTERVALS_DAYS[stage]),
+      todayDay: today,
+      todayCorrect: 0,
+      reviewStage: stage,
+    };
     savePhraseProgress();
     return;
   }
@@ -112,14 +133,11 @@ function bumpPhraseStreak(id, correct) {
 
   if (todayCorrect >= DAILY_CORRECT_TO_ADVANCE) {
     const nextBox = PHRASE_BOX_ORDER[Math.min(PHRASE_BOX_ORDER.indexOf(prev.box || "new") + 1, PHRASE_BOX_ORDER.length - 1)];
-    phraseProgress[id] = {
-      box: nextBox,
-      dueDay: nextBox === "mastered" ? null : addDaysStr(today, PHRASE_BOX_INTERVAL_DAYS[nextBox]),
-      todayDay: today,
-      todayCorrect: 0,
-    };
+    const dueDay =
+      nextBox === "mastered" ? addDaysStr(today, MASTERED_REVIEW_INTERVALS_DAYS[0]) : addDaysStr(today, PHRASE_BOX_INTERVAL_DAYS[nextBox]);
+    phraseProgress[id] = { box: nextBox, dueDay, todayDay: today, todayCorrect: 0, reviewStage: 0 };
   } else {
-    phraseProgress[id] = { box: prev.box || "new", dueDay: prev.dueDay || null, todayDay: today, todayCorrect };
+    phraseProgress[id] = { box: prev.box || "new", dueDay: prev.dueDay || null, todayDay: today, todayCorrect, reviewStage: prev.reviewStage || 0 };
   }
   savePhraseProgress();
 }
@@ -135,9 +153,26 @@ function getPhraseTodayCorrect(id) {
   return p.todayDay === today ? p.todayCorrect || 0 : 0;
 }
 
-// Ручная пометка "уже знаю эту фразу" — сразу переводит в ящик "выучено", как markWordKnown.
+// "Созрела" ли выученная фраза для контрольной проверки — используется, чтобы решить,
+// брать ли её в пул квиза (см. buildPhraseQueue): пока не назрел срок, она в квизе не
+// участвует вообще, экономя место для того, что реально нужно повторять.
+function isPhraseMasteredDue(id) {
+  const p = phraseProgress[id];
+  if (!p || p.box !== "mastered") return false;
+  return !p.dueDay || todayStr() >= p.dueDay;
+}
+
+// Ручная пометка "уже знаю эту фразу" — сразу переводит в ящик "выучено", как markWordKnown,
+// но тоже ставится на контрольную проверку через неделю, а не выпадает из ротации навсегда.
 function markPhraseKnown(id) {
-  phraseProgress[id] = { box: "mastered", dueDay: null, todayDay: todayStr(), todayCorrect: 0 };
+  const today = todayStr();
+  phraseProgress[id] = {
+    box: "mastered",
+    dueDay: addDaysStr(today, MASTERED_REVIEW_INTERVALS_DAYS[0]),
+    todayDay: today,
+    todayCorrect: 0,
+    reviewStage: 0,
+  };
   savePhraseProgress();
 }
 
@@ -333,8 +368,11 @@ function buildPhraseRow(topic, p) {
 // засчитано к переходу на следующий уровень, или с какого дня фраза снова "созреет".
 function phraseStatusLabel(id) {
   const box = getPhraseBox(id);
-  if (box.id === "mastered") return box.label;
   const p = phraseProgress[id];
+  if (box.id === "mastered") {
+    if (p && p.dueDay) return `${box.label} — контрольная проверка с ${p.dueDay}`;
+    return box.label;
+  }
   const today = todayStr();
   if (p && p.dueDay && today < p.dueDay) return `${box.label} — повторить можно с ${p.dueDay}`;
   const todayCorrect = getPhraseTodayCorrect(id);
@@ -426,18 +464,29 @@ function topUpAllowedNew(items) {
   }
 }
 
+// Насколько редко "выученная, но созревшая для проверки" фраза попадается в квизе —
+// как и "почти выучено" (weight 1), не чаще, это просто сверка, а не заучивание.
+const MASTERED_REVIEW_WEIGHT = 1;
+
 // Взвешенная колода — как buildWeightedDeck в script.js: невыученное встречается чаще,
-// выученное (weight 0) постепенно пропадает из ротации. Фразы разных тем перемешиваются
-// в одном пуле.
+// выученное постепенно пропадает из ротации — и полностью выпадает из неё, пока не
+// назреет срок контрольной проверки (см. isPhraseMasteredDue). Фразы разных тем
+// перемешиваются в одном пуле.
 function buildPhraseQueue(topics) {
   const items = collectItems(topics);
   topUpAllowedNew(items);
 
-  const eligible = items.filter((it) => getPhraseBox(it.id).id !== "new" || allowedNewIds.has(it.id));
+  const eligible = items.filter((it) => {
+    const boxId = getPhraseBox(it.id).id;
+    if (boxId === "new") return allowedNewIds.has(it.id);
+    if (boxId === "mastered") return isPhraseMasteredDue(it.id);
+    return true;
+  });
 
   const pool = [];
   eligible.forEach((it) => {
-    const weight = getPhraseBox(it.id).weight;
+    const box = getPhraseBox(it.id);
+    const weight = box.id === "mastered" ? MASTERED_REVIEW_WEIGHT : box.weight;
     for (let i = 0; i < weight; i++) pool.push(it);
   });
   if (!pool.length) pool.push(...(eligible.length ? eligible : items));
