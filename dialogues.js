@@ -161,40 +161,54 @@ function appendDialogueBubble(turn) {
   transcriptEl.scrollTop = transcriptEl.scrollHeight;
 }
 
-// Озвучивает реплику и вызывает callback ТОЛЬКО когда речь реально закончилась (плюс
-// небольшая пауза), а не через фиксированную задержку — иначе на длинных репликах
-// таймер срабатывал раньше конца озвучки, и следующая реплика начинала звучать поверх
-// ещё не дочитанной предыдущей. onerror — подстраховка на случай сбоя синтеза, чтобы
-// диалог не завис молча, если речь вдруг не запустится.
+// Озвучивает реплику и вызывает callback только когда речь реально закончилась (плюс
+// небольшая пауза). Раньше ждали только событие onend — но в Safari на iOS (а тестирует
+// пользователь именно на iPhone) onend у SpeechSynthesisUtterance — известный баг WebKit —
+// может сработать РАНЬШЕ, чем аудио реально доиграло, особенно на длинных фразах: тогда
+// следующая реплика начинала звучать поверх ещё не дочитанной. Поэтому переход ждёт ОБА
+// условия сразу: (1) оценку длительности по длине текста (не зависит от браузера) и
+// (2) сигнал от синтеза (onend/onerror, с подстраховкой по таймауту, если движок вообще
+// не пришлёт событие) — какое бы из двух ни сработало позже.
 function speakThenAdvance(text, pauseAfter, callback) {
   const session = dialogueSession;
   const isCurrent = () => session === dialogueSession;
-  const runIfCurrent = () => {
-    if (isCurrent()) callback();
+
+  let estimateDone = false;
+  let speechDone = false;
+  let fired = false;
+  const tryProceed = () => {
+    if (fired || !isCurrent() || !estimateDone || !speechDone) return;
+    fired = true;
+    dialogueAdvanceTimer = setTimeout(() => {
+      if (isCurrent()) callback();
+    }, pauseAfter);
   };
 
   if (muted || !("speechSynthesis" in window)) {
-    dialogueAdvanceTimer = setTimeout(runIfCurrent, pauseAfter);
-    return;
+    speechDone = true;
+  } else {
+    speechSynthesis.cancel();
+    const voice = typeof getSelectedVoice === "function" ? getSelectedVoice() : null;
+    const u = new SpeechSynthesisUtterance(text);
+    u.lang = voice ? voice.lang : "tr-TR";
+    if (voice) u.voice = voice;
+    u.rate = 0.85;
+    const onSpeechDone = () => {
+      speechDone = true;
+      tryProceed();
+    };
+    u.onend = onSpeechDone;
+    u.onerror = onSpeechDone;
+    speechSynthesis.speak(u);
+    // Подстраховка: если движок вообще не пришлёт onend/onerror, диалог не должен
+    // зависнуть молча навсегда.
+    setTimeout(onSpeechDone, Math.max(6000, text.length * 150));
   }
-  speechSynthesis.cancel();
-  const voice = typeof getSelectedVoice === "function" ? getSelectedVoice() : null;
-  const u = new SpeechSynthesisUtterance(text);
-  u.lang = voice ? voice.lang : "tr-TR";
-  if (voice) u.voice = voice;
-  u.rate = 0.85;
-  let proceeded = false;
-  const proceed = () => {
-    if (proceeded || !isCurrent()) return;
-    proceeded = true;
-    dialogueAdvanceTimer = setTimeout(runIfCurrent, pauseAfter);
-  };
-  u.onend = proceed;
-  u.onerror = proceed;
-  // Подстраховка: если синтез речи вдруг не пришлёт onend/onerror (бывает у некоторых
-  // движков), диалог всё равно продолжится, а не зависнет молча навсегда.
-  setTimeout(proceed, Math.max(4000, text.length * 90));
-  speechSynthesis.speak(u);
+
+  setTimeout(() => {
+    estimateDone = true;
+    tryProceed();
+  }, Math.max(1200, text.length * 90));
 }
 
 function advanceDialogue() {
