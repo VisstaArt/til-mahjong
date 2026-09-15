@@ -320,6 +320,24 @@
       "tr": "Sonra/yarın görüşürüz",
       "tl": null,
       "sub": null
+    },
+    {
+      "ru": "Меня зовут … . А тебя как зовут?",
+      "tr": "Benim adım … . Senin adın ne?",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Приятно познакомиться",
+      "tr": "Tanıştığıma memnun oldum",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Мне тоже приятно",
+      "tr": "Ben de memnun oldum",
+      "tl": null,
+      "sub": null
     }
   ]
 }

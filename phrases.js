@@ -649,16 +649,26 @@ function initPhrasesMode() {
   const mahjongBtn = document.getElementById("mode-mahjong-btn");
   const phrasesBtn = document.getElementById("mode-phrases-btn");
   mahjongBtn.addEventListener("click", () => {
-    mahjongBtn.classList.add("active");
-    phrasesBtn.classList.remove("active");
+    activateMode("mahjong");
     setScreen("catalog");
   });
   phrasesBtn.addEventListener("click", () => {
-    phrasesBtn.classList.add("active");
-    mahjongBtn.classList.remove("active");
+    activateMode("phrases");
     renderPhrasesCatalog();
     setScreen("phrases-catalog");
   });
+}
+
+// Общий переключатель трёх вкладок режима (Маджонг/Фразы/Диалоги) — используется из
+// phrases.js и dialogues.js, чтобы при переключении в любую сторону подсвечивалась
+// ровно одна кнопка, а не оставалась "залипшая" активной от предыдущего режима.
+function activateMode(mode) {
+  const buttons = {
+    mahjong: document.getElementById("mode-mahjong-btn"),
+    phrases: document.getElementById("mode-phrases-btn"),
+    dialogues: document.getElementById("mode-dialogues-btn"),
+  };
+  Object.entries(buttons).forEach(([key, btn]) => btn.classList.toggle("active", key === mode));
 }
 
 initPhrasesMode();

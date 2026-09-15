@@ -19,6 +19,7 @@
     <div class="mode-switch">
       <button id="mode-mahjong-btn" class="mode-btn active" type="button">🀄 Маджонг</button>
       <button id="mode-phrases-btn" class="mode-btn" type="button">💬 Фразы</button>
+      <button id="mode-dialogues-btn" class="mode-btn" type="button">🗨️ Диалоги</button>
     </div>
   </header>
 
@@ -215,6 +216,51 @@
     </main>
   </section>
 
+  <!-- ЭКРАН 6: каталог тем — диалоги -->
+  <section id="screen-dialogues-catalog" class="screen manager-panel">
+    <div class="manager-row">
+      <div class="label">Диалоги, собранные из фраз по темам — потренироваться в связной речи</div>
+    </div>
+    <div id="dialogues-catalog-loading" class="catalog-loading">⏳ Загружаем список тем…</div>
+    <div id="dialogues-catalog-grid" class="catalog-grid"></div>
+  </section>
+
+  <!-- ЭКРАН 6а: список диалогов внутри темы — выбор диалога и роли -->
+  <section id="screen-dialogue-topic" class="screen manager-panel">
+    <div class="manager-row category-header-row">
+      <button id="dialogue-topic-back-btn" class="secondary small">← Темы</button>
+      <h2 id="dialogue-topic-title"></h2>
+    </div>
+    <div id="dialogue-topic-list" class="dialogue-list"></div>
+  </section>
+
+  <!-- ЭКРАН 6б: проигрыватель диалога -->
+  <section id="screen-dialogue-player" class="screen screen-game">
+    <div class="game-bar">
+      <div class="stats">
+        <div class="stat"><span class="label">Диалог</span><span id="dialogue-player-title">—</span></div>
+        <div class="stat"><span class="label">Роль</span><span id="dialogue-player-role">—</span></div>
+      </div>
+      <div class="controls">
+        <button id="dialogue-translate-btn" title="Показать/скрыть перевод">👁 Перевод</button>
+        <button id="dialogue-replay-all-btn" title="Прослушать весь диалог с начала">🔊 Прослушать всё</button>
+        <button id="dialogue-mute-btn" title="Выключить звук">🔊</button>
+        <button id="dialogue-back-btn" class="secondary" title="Вернуться к диалогам">← Диалоги</button>
+      </div>
+    </div>
+    <main class="dialogue-main">
+      <div id="dialogue-transcript" class="dialogue-transcript"></div>
+      <div id="dialogue-choices" class="dialogue-choices hidden"></div>
+      <div id="dialogue-finished" class="dialogue-finished hidden">
+        <p>🎉 Диалог завершён!</p>
+        <div class="screen-actions">
+          <button id="dialogue-replay-role-btn">Ещё раз, та же роль</button>
+          <button id="dialogue-swap-role-btn">Сыграть за другого</button>
+        </div>
+      </div>
+    </main>
+  </section>
+
   <div id="match-popup" class="match-popup-overlay hidden">
     <div class="match-card">
       <div class="match-icon"></div>
@@ -237,5 +283,6 @@
   <script src="mahjong-layout.js"></script>
   <script src="script.js"></script>
   <script src="phrases.js"></script>
+  <script src="dialogues.js"></script>
 </body>
 </html>

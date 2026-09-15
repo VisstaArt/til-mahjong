@@ -1,0 +1,166 @@
+{
+  "id": "znakomstvo",
+  "title": "Знакомство",
+  "dialogues": [
+    {
+      "id": "znakomstvo-vecherinka",
+      "title": "Знакомство на вечеринке",
+      "speakers": { "a": "Айше", "b": "Дениз" },
+      "turns": [
+        {
+          "speaker": "a",
+          "tr": "Merhaba!",
+          "ru": "Привет!",
+          "distractors": [
+            { "tr": "Seni saat yedide ararım.", "ru": "Я позвоню тебе в семь." },
+            { "tr": "Çok iyi olur, teşekkür ederim!", "ru": "С удовольствием, спасибо!" }
+          ]
+        },
+        {
+          "speaker": "b",
+          "tr": "Merhaba!",
+          "ru": "Привет!",
+          "distractors": [
+            { "tr": "Tamam, görüşürüz!", "ru": "Хорошо, увидимся!" },
+            { "tr": "Hayır, boşum.", "ru": "Нет, я свободна." }
+          ]
+        },
+        {
+          "speaker": "a",
+          "tr": "Nasılsın?",
+          "ru": "Как дела?",
+          "distractors": [
+            { "tr": "Telefon numaran ne?", "ru": "Какой у тебя номер телефона?" },
+            { "tr": "Tanıştığıma memnun oldum.", "ru": "Приятно познакомиться." }
+          ]
+        },
+        {
+          "speaker": "b",
+          "tr": "İyiyim, teşekkür ederim. Ya sen?",
+          "ru": "Хорошо, спасибо. А ты?",
+          "distractors": [
+            { "tr": "Çok iyi olur, teşekkür ederim!", "ru": "С удовольствием, спасибо!" },
+            { "tr": "Benim adım Deniz.", "ru": "Меня зовут Дениз." }
+          ]
+        },
+        {
+          "speaker": "a",
+          "tr": "Ben de iyiyim, teşekkürler. Benim adım Ayşe. Senin adın ne?",
+          "ru": "У меня тоже хорошо, спасибо. Меня зовут Айше. А тебя как зовут?",
+          "distractors": [
+            { "tr": "Harika! Sinemaya gidelim mi?", "ru": "Здорово! Может, сходим в кино?" },
+            { "tr": "Nerede buluşalım?", "ru": "Где мы встретимся?" }
+          ]
+        },
+        {
+          "speaker": "b",
+          "tr": "Benim adım Deniz. Tanıştığıma memnun oldum.",
+          "ru": "Меня зовут Дениз. Приятно познакомиться.",
+          "distractors": [
+            { "tr": "İyi günler!", "ru": "Хорошего дня!" },
+            { "tr": "Hayır, boşum.", "ru": "Нет, я свободна." }
+          ]
+        },
+        {
+          "speaker": "a",
+          "tr": "Ben de memnun oldum. Bu akşam bir şey yapıyor musun?",
+          "ru": "Мне тоже приятно. У тебя есть планы на вечер?",
+          "distractors": [
+            { "tr": "Nasılsın?", "ru": "Как дела?" },
+            { "tr": "Telefon numaran ne?", "ru": "Какой у тебя номер телефона?" }
+          ]
+        },
+        {
+          "speaker": "b",
+          "tr": "Hayır, boşum.",
+          "ru": "Нет, я свободна.",
+          "distractors": [
+            { "tr": "Benim adım Deniz.", "ru": "Меня зовут Дениз." },
+            { "tr": "Tamam, görüşürüz!", "ru": "Хорошо, увидимся!" }
+          ]
+        },
+        {
+          "speaker": "a",
+          "tr": "Harika! Sinemaya gidelim mi?",
+          "ru": "Здорово! Может, сходим в кино?",
+          "distractors": [
+            { "tr": "Merhaba!", "ru": "Привет!" },
+            { "tr": "Nerede buluşalım?", "ru": "Где мы встретимся?" }
+          ]
+        },
+        {
+          "speaker": "b",
+          "tr": "Çok iyi olur, teşekkür ederim!",
+          "ru": "С удовольствием, спасибо!",
+          "distractors": [
+            { "tr": "Nasılsın?", "ru": "Как дела?" },
+            { "tr": "Benim adım Deniz.", "ru": "Меня зовут Дениз." }
+          ]
+        },
+        {
+          "speaker": "a",
+          "tr": "Nerede buluşalım?",
+          "ru": "Где мы встретимся?",
+          "distractors": [
+            { "tr": "Merhaba!", "ru": "Привет!" },
+            { "tr": "Bu akşam bir şey yapıyor musun?", "ru": "У тебя есть планы на вечер?" }
+          ]
+        },
+        {
+          "speaker": "b",
+          "tr": "Sinemanın önünde buluşalım.",
+          "ru": "Встретимся перед кинотеатром.",
+          "distractors": [
+            { "tr": "Otobüs durağında buluşalım.", "ru": "Встретимся на автобусной остановке." },
+            { "tr": "Köşede buluşalım.", "ru": "Встретимся на углу." }
+          ]
+        },
+        {
+          "speaker": "a",
+          "tr": "Olur, saat kaçta?",
+          "ru": "Хорошо, во сколько?",
+          "distractors": [
+            { "tr": "Benim adım Ayşe.", "ru": "Меня зовут Айше." },
+            { "tr": "Merhaba!", "ru": "Привет!" }
+          ]
+        },
+        {
+          "speaker": "b",
+          "tr": "Yedide buluşalım.",
+          "ru": "Встретимся в семь.",
+          "distractors": [
+            { "tr": "Hayır, boşum.", "ru": "Нет, я свободна." },
+            { "tr": "Tanıştığıma memnun oldum.", "ru": "Приятно познакомиться." }
+          ]
+        },
+        {
+          "speaker": "a",
+          "tr": "Tamam, görüşürüz!",
+          "ru": "Хорошо, увидимся!",
+          "distractors": [
+            { "tr": "Nasılsın?", "ru": "Как дела?" },
+            { "tr": "Nerede buluşalım?", "ru": "Где мы встретимся?" }
+          ]
+        },
+        {
+          "speaker": "b",
+          "tr": "İyi günler!",
+          "ru": "Хорошего дня!",
+          "distractors": [
+            { "tr": "Merhaba!", "ru": "Привет!" },
+            { "tr": "Çok iyi olur, teşekkür ederim!", "ru": "С удовольствием, спасибо!" }
+          ]
+        },
+        {
+          "speaker": "a",
+          "tr": "Sana da!",
+          "ru": "И тебе тоже!",
+          "distractors": [
+            { "tr": "Nerede buluşalım?", "ru": "Где мы встретимся?" },
+            { "tr": "Benim adım Ayşe.", "ru": "Меня зовут Айше." }
+          ]
+        }
+      ]
+    }
+  ]
+}

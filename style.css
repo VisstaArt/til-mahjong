@@ -85,6 +85,10 @@ body[data-screen="phrases-catalog"] #screen-phrases-catalog { display: flex; }
 body[data-screen="phrase-topic"] #screen-phrase-topic { display: flex; }
 body[data-screen="quiz"] #screen-quiz { display: flex; }
 body[data-screen="quiz"] .topbar { display: none; }
+body[data-screen="dialogues-catalog"] #screen-dialogues-catalog { display: flex; }
+body[data-screen="dialogue-topic"] #screen-dialogue-topic { display: flex; }
+body[data-screen="dialogue-player"] #screen-dialogue-player { display: flex; }
+body[data-screen="dialogue-player"] .topbar { display: none; }
 
 .screen-game {
   flex-direction: column;
@@ -1001,6 +1005,128 @@ main {
   0%, 100% { transform: translateX(0); }
   25% { transform: translateX(-6px); }
   75% { transform: translateX(6px); }
+}
+
+/* Список диалогов внутри темы — по строке на диалог, с двумя кнопками выбора роли
+   (за кого играть) и кнопкой предварительного прослушивания. */
+.dialogue-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow-y: auto;
+  padding: 4px 0 16px;
+}
+
+.dialogue-list-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  background: var(--word-bg);
+  color: var(--word-text);
+  border-radius: 12px;
+  padding: 12px 14px;
+}
+
+.dialogue-list-row .dialogue-row-title {
+  flex: 1;
+  min-width: 140px;
+  font-weight: 600;
+}
+
+.dialogue-list-row .dialogue-row-actions {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.dialogue-list-row button {
+  background: var(--scale-2);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 7px 12px;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.dialogue-list-row button.secondary {
+  background: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  color: inherit;
+}
+
+/* Экран проигрывателя диалога — растущая переписка сверху, варианты ответа снизу
+   (переиспользуют .quiz-options/.quiz-option — тот же визуальный язык, что в квизе фраз). */
+.dialogue-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  padding: 16px;
+  gap: 14px;
+}
+
+.dialogue-transcript {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 4px;
+}
+
+.dialogue-bubble {
+  max-width: 78%;
+  padding: 10px 14px;
+  border-radius: 14px;
+  line-height: 1.35;
+}
+
+.dialogue-bubble .bubble-speaker {
+  font-size: 0.72rem;
+  opacity: 0.65;
+  margin-bottom: 2px;
+}
+
+.dialogue-bubble .bubble-tr {
+  font-weight: 600;
+}
+
+.dialogue-bubble .bubble-ru {
+  font-size: 0.85rem;
+  opacity: 0.8;
+  margin-top: 3px;
+}
+
+.dialogue-bubble.bubble-a {
+  align-self: flex-start;
+  background: var(--word-bg);
+  color: var(--word-text);
+  border-bottom-left-radius: 4px;
+}
+
+.dialogue-bubble.bubble-b {
+  align-self: flex-end;
+  background: var(--scale-3);
+  color: #fff;
+  border-bottom-right-radius: 4px;
+}
+
+/* Перевод скрыт по умолчанию (учим по-турецки) — показывается по кнопке "Перевод". */
+.dialogue-main:not(.show-translation) .dialogue-bubble .bubble-ru {
+  display: none;
+}
+
+.dialogue-choices {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 10px;
+}
+
+.dialogue-finished {
+  text-align: center;
+  padding: 16px;
 }
 
 .win-card h2 { margin-top: 0; }
