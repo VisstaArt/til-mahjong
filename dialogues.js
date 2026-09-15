@@ -162,53 +162,41 @@ function appendDialogueBubble(turn) {
 }
 
 // Озвучивает реплику и вызывает callback только когда речь реально закончилась (плюс
-// небольшая пауза). Раньше ждали только событие onend — но в Safari на iOS (а тестирует
-// пользователь именно на iPhone) onend у SpeechSynthesisUtterance — известный баг WebKit —
-// может сработать РАНЬШЕ, чем аудио реально доиграло, особенно на длинных фразах: тогда
-// следующая реплика начинала звучать поверх ещё не дочитанной. Поэтому переход ждёт ОБА
-// условия сразу: (1) оценку длительности по длине текста (не зависит от браузера) и
-// (2) сигнал от синтеза (onend/onerror, с подстраховкой по таймауту, если движок вообще
-// не пришлёт событие) — какое бы из двух ни сработало позже.
+// небольшая пауза для естественности) — ждём именно onend, без искусственной оценки
+// по длине текста (та давала неестественные "притормаживания"). НЕ вызываем cancel()
+// перед каждой репликой — играть в этот момент нечему, предыдущая уже дозвучала (мы её
+// дожидаемся), а резкий cancel()+speak() подряд сам по себе известная точка сбоя в
+// Safari/WebKit. cancel() остаётся только там, где мы осознанно прерываем речь —
+// уход с экрана/рестарт диалога (см. startDialogue и кнопку "← Диалоги").
 function speakThenAdvance(text, pauseAfter, callback) {
   const session = dialogueSession;
   const isCurrent = () => session === dialogueSession;
-
-  let estimateDone = false;
-  let speechDone = false;
-  let fired = false;
-  const tryProceed = () => {
-    if (fired || !isCurrent() || !estimateDone || !speechDone) return;
-    fired = true;
+  const proceed = () => {
     dialogueAdvanceTimer = setTimeout(() => {
       if (isCurrent()) callback();
     }, pauseAfter);
   };
 
   if (muted || !("speechSynthesis" in window)) {
-    speechDone = true;
-  } else {
-    speechSynthesis.cancel();
-    const voice = typeof getSelectedVoice === "function" ? getSelectedVoice() : null;
-    const u = new SpeechSynthesisUtterance(text);
-    u.lang = voice ? voice.lang : "tr-TR";
-    if (voice) u.voice = voice;
-    u.rate = 0.85;
-    const onSpeechDone = () => {
-      speechDone = true;
-      tryProceed();
-    };
-    u.onend = onSpeechDone;
-    u.onerror = onSpeechDone;
-    speechSynthesis.speak(u);
-    // Подстраховка: если движок вообще не пришлёт onend/onerror, диалог не должен
-    // зависнуть молча навсегда.
-    setTimeout(onSpeechDone, Math.max(6000, text.length * 150));
+    proceed();
+    return;
   }
-
-  setTimeout(() => {
-    estimateDone = true;
-    tryProceed();
-  }, Math.max(1200, text.length * 90));
+  const voice = typeof getSelectedVoice === "function" ? getSelectedVoice() : null;
+  const u = new SpeechSynthesisUtterance(text);
+  u.lang = voice ? voice.lang : "tr-TR";
+  if (voice) u.voice = voice;
+  u.rate = 0.85;
+  let done = false;
+  const onDone = () => {
+    if (done || !isCurrent()) return;
+    done = true;
+    proceed();
+  };
+  u.onend = onDone;
+  u.onerror = onDone;
+  // Подстраховка: если движок вообще не пришлёт onend/onerror, диалог не зависнет молча.
+  setTimeout(onDone, Math.max(4000, text.length * 120));
+  speechSynthesis.speak(u);
 }
 
 function advanceDialogue() {
@@ -236,6 +224,11 @@ function renderDialogueChoices(turn) {
   choicesEl.classList.remove("hidden");
   choicesEl.innerHTML = "";
 
+  // Общий на все варианты этого вопроса флаг (не только btn.disabled у конкретной
+  // кнопки) — подстраховка от сдвоенного тач/клик события на мобильном, из-за которого
+  // currentTurnIndex мог бы увеличиться дважды за одно нажатие и диалог "проскакивал".
+  let answered = false;
+
   const options = shuffle([
     { tr: turn.tr, ru: turn.ru, correct: true },
     ...turn.distractors.map((d) => ({ ...d, correct: false })),
@@ -246,8 +239,9 @@ function renderDialogueChoices(turn) {
     btn.className = "quiz-option";
     btn.textContent = opt.tr;
     btn.addEventListener("click", () => {
-      if (btn.disabled) return;
+      if (answered || btn.disabled) return;
       if (opt.correct) {
+        answered = true;
         Array.from(choicesEl.children).forEach((b) => (b.disabled = true));
         btn.classList.add("correct");
         appendDialogueBubble(turn);
