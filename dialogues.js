@@ -19,6 +19,11 @@ let currentDialogueRole = null; // "a" | "b" — за кого играет по
 let currentTurnIndex = 0;
 let dialogueAdvanceTimer = null; // таймер автопродолжения — чистим при уходе с экрана,
 // иначе просроченный колбэк может подмешаться в уже другой открытый диалог.
+// Метка текущей "сессии" диалога — растёт на каждый старт/выход. speechSynthesis.cancel()
+// сам по себе вызывает onend/onerror у ОБРЫВАЕМОЙ реплики, а не просто молча замолкает —
+// без этой метки такой запоздалый колбэк планировал бы переход уже в новом диалоге,
+// из-за чего он "проскакивал" реплики или на нём всплывала чужая табличка "Завершён".
+let dialogueSession = 0;
 
 function pluralRu(n, one, few, many) {
   const mod10 = n % 10;
@@ -124,6 +129,9 @@ document.getElementById("dialogue-topic-back-btn").addEventListener("click", () 
 // --- проигрыватель ---
 function startDialogue(topic, dialogue, role) {
   clearTimeout(dialogueAdvanceTimer);
+  dialogueSession++;
+  linesPlaybackGeneration++;
+  if ("speechSynthesis" in window) speechSynthesis.cancel();
   currentDialogueTopicId = topic.id;
   currentDialogue = dialogue;
   currentDialogueRole = role;
@@ -153,6 +161,42 @@ function appendDialogueBubble(turn) {
   transcriptEl.scrollTop = transcriptEl.scrollHeight;
 }
 
+// Озвучивает реплику и вызывает callback ТОЛЬКО когда речь реально закончилась (плюс
+// небольшая пауза), а не через фиксированную задержку — иначе на длинных репликах
+// таймер срабатывал раньше конца озвучки, и следующая реплика начинала звучать поверх
+// ещё не дочитанной предыдущей. onerror — подстраховка на случай сбоя синтеза, чтобы
+// диалог не завис молча, если речь вдруг не запустится.
+function speakThenAdvance(text, pauseAfter, callback) {
+  const session = dialogueSession;
+  const isCurrent = () => session === dialogueSession;
+  const runIfCurrent = () => {
+    if (isCurrent()) callback();
+  };
+
+  if (muted || !("speechSynthesis" in window)) {
+    dialogueAdvanceTimer = setTimeout(runIfCurrent, pauseAfter);
+    return;
+  }
+  speechSynthesis.cancel();
+  const voice = typeof getSelectedVoice === "function" ? getSelectedVoice() : null;
+  const u = new SpeechSynthesisUtterance(text);
+  u.lang = voice ? voice.lang : "tr-TR";
+  if (voice) u.voice = voice;
+  u.rate = 0.85;
+  let proceeded = false;
+  const proceed = () => {
+    if (proceeded || !isCurrent()) return;
+    proceeded = true;
+    dialogueAdvanceTimer = setTimeout(runIfCurrent, pauseAfter);
+  };
+  u.onend = proceed;
+  u.onerror = proceed;
+  // Подстраховка: если синтез речи вдруг не пришлёт onend/onerror (бывает у некоторых
+  // движков), диалог всё равно продолжится, а не зависнет молча навсегда.
+  setTimeout(proceed, Math.max(4000, text.length * 90));
+  speechSynthesis.speak(u);
+}
+
 function advanceDialogue() {
   const choicesEl = document.getElementById("dialogue-choices");
   choicesEl.classList.add("hidden");
@@ -168,9 +212,8 @@ function advanceDialogue() {
     renderDialogueChoices(turn);
   } else {
     appendDialogueBubble(turn);
-    speak(turn.tr);
     currentTurnIndex++;
-    dialogueAdvanceTimer = setTimeout(advanceDialogue, 1400);
+    speakThenAdvance(turn.tr, 500, advanceDialogue);
   }
 }
 
@@ -194,9 +237,8 @@ function renderDialogueChoices(turn) {
         Array.from(choicesEl.children).forEach((b) => (b.disabled = true));
         btn.classList.add("correct");
         appendDialogueBubble(turn);
-        speak(turn.tr);
         currentTurnIndex++;
-        dialogueAdvanceTimer = setTimeout(advanceDialogue, 700);
+        speakThenAdvance(turn.tr, 300, advanceDialogue);
       } else {
         btn.classList.add("wrong");
         btn.disabled = true;
@@ -211,18 +253,26 @@ function renderDialogueChoices(turn) {
 // та обрывает текущую озвучку при каждом вызове, а тут нужно дождаться конца одной
 // реплики перед следующей). Используется и для "прослушать превью" в списке тем,
 // и для "прослушать весь диалог" в самом проигрывателе.
-function playLinesAloud(lines, index = 0) {
+// Своя метка поколения (независимая от dialogueSession — прослушивание превью
+// запускается и до старта диалога, из списка тем) — чтобы новый запуск прослушивания
+// или уход с экрана обрывал предыдущую цепочку onend, а не дал ей доиграть поверх.
+let linesPlaybackGeneration = 0;
+
+function playLinesAloud(lines, index = 0, generation = null) {
   if (index === 0) {
     if (!("speechSynthesis" in window)) return;
+    linesPlaybackGeneration++;
+    generation = linesPlaybackGeneration;
     speechSynthesis.cancel();
   }
+  if (generation !== linesPlaybackGeneration) return;
   if (muted || !("speechSynthesis" in window) || index >= lines.length) return;
   const voice = typeof getSelectedVoice === "function" ? getSelectedVoice() : null;
   const u = new SpeechSynthesisUtterance(lines[index]);
   u.lang = voice ? voice.lang : "tr-TR";
   if (voice) u.voice = voice;
   u.rate = 0.85;
-  u.onend = () => setTimeout(() => playLinesAloud(lines, index + 1), 300);
+  u.onend = () => setTimeout(() => playLinesAloud(lines, index + 1, generation), 300);
   speechSynthesis.speak(u);
 }
 
@@ -250,6 +300,8 @@ function initDialoguesMode() {
 
   document.getElementById("dialogue-back-btn").addEventListener("click", () => {
     clearTimeout(dialogueAdvanceTimer);
+    dialogueSession++;
+    linesPlaybackGeneration++;
     if ("speechSynthesis" in window) speechSynthesis.cancel();
     renderDialogueTopicList(dialogueTopicCache.get(currentDialogueTopicId));
     setScreen("dialogue-topic");
