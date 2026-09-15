@@ -329,20 +329,31 @@ function collectItems(topics) {
   return all;
 }
 
+// Не больше MAX_NEW_PHRASES_PER_SESSION совсем новых фраз "в работе" одновременно —
+// но это скользящее окно, а не разовая фиксация: как только фраза из allowedNewIds
+// набирает 3 правильных ответа подряд и покидает ящик "new" (переходит в "learning"),
+// освобождённое место тут же занимает следующая ещё непройденная фраза темы. Иначе
+// (как было раньше) набор из 8 фиксировался один раз на всю сессию и остальные ~100
+// фраз темы не попадали в ротацию, пока эти 8 не дойдут до полного мастерства.
+function topUpAllowedNew(items) {
+  if (!allowedNewIds) allowedNewIds = new Set();
+  for (const id of allowedNewIds) {
+    if (getPhraseBox(id).id !== "new") allowedNewIds.delete(id);
+  }
+  if (allowedNewIds.size >= MAX_NEW_PHRASES_PER_SESSION) return;
+  const candidates = shuffle(items.filter((it) => getPhraseBox(it.id).id === "new" && !allowedNewIds.has(it.id)));
+  for (const it of candidates) {
+    if (allowedNewIds.size >= MAX_NEW_PHRASES_PER_SESSION) break;
+    allowedNewIds.add(it.id);
+  }
+}
+
 // Взвешенная колода — как buildWeightedDeck в script.js: невыученное встречается чаще,
-// выученное (weight 0) постепенно пропадает из ротации. Кроме того, не больше
-// MAX_NEW_PHRASES_PER_SESSION совсем новых фраз допускается за одну сессию квиза —
-// набор "разрешённых новых" фиксируется один раз при старте (см. startQuiz) и не
-// пересчитывается при каждом обновлении очереди, иначе темп не соблюдался бы на
-// длинной сессии. Фразы разных тем перемешиваются в одном пуле.
+// выученное (weight 0) постепенно пропадает из ротации. Фразы разных тем перемешиваются
+// в одном пуле.
 function buildPhraseQueue(topics) {
   const items = collectItems(topics);
-
-  if (!allowedNewIds) {
-    const newItems = items.filter((it) => getPhraseBox(it.id).id === "new");
-    const shuffledNew = shuffle(newItems);
-    allowedNewIds = new Set(shuffledNew.slice(0, MAX_NEW_PHRASES_PER_SESSION).map((it) => it.id));
-  }
+  topUpAllowedNew(items);
 
   const eligible = items.filter((it) => getPhraseBox(it.id).id !== "new" || allowedNewIds.has(it.id));
 
