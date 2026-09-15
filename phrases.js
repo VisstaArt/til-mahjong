@@ -23,11 +23,11 @@ const PHRASE_BOXES = [
   { id: "mastered", max: Infinity, label: "выучено", emoji: "⭐", weight: 0 },
 ];
 
-// Не больше стольки совсем новых фраз за один заход в квиз (см. MAX_NEW_WORDS_PER_GAME
+// Не больше стольки совсем новых фраз "в работе" одновременно (см. MAX_NEW_WORDS_PER_GAME
 // в script.js — тот же принцип): открыть свежую тему и сразу получить только незнакомые
 // фразы подряд — тяжело и не запоминается. Остальные места в раскладке добираются
 // повторами уже отобранных фраз и/или более простыми (учится/почти выучено/выучено).
-const MAX_NEW_PHRASES_PER_SESSION = 8;
+const MAX_NEW_PHRASES_PER_SESSION = 15;
 
 let phraseManifest = []; // [{id, title, source, count, sizeKB}]
 let phraseTopicCache = new Map(); // id → {id, title, source, phrases: [...]}
@@ -63,9 +63,27 @@ function getPhraseBox(id) {
   const streak = getPhraseStreak(id);
   return PHRASE_BOXES.find((b) => streak <= b.max);
 }
+function todayStr() {
+  return new Date().toISOString().slice(0, 10);
+}
+// Стрик растёт максимум на 1 в день (по календарной дате, не по "разам подряд в одном
+// заходе") — иначе фразу можно было бы протыкать 10 раз за один присест и сразу
+// получить ⭐, хотя на деле это ничего не доказывает про долгосрочную память. Повторный
+// верный ответ на ту же фразу в тот же день просто засчитывается как практика, без
+// движения по ящикам; движение вперёд требует того, чтобы фраза правильно вспомнилась
+// в РАЗНЫЕ дни — так дойти до "выучено" можно только через реальные интервалы повторения.
+// Неверный ответ сбрасывает стрик сразу же, в любой момент, без привязки к дате.
 function bumpPhraseStreak(id, correct) {
-  const streak = correct ? Math.min(getPhraseStreak(id) + 1, 15) : 0;
-  phraseProgress[id] = { streak };
+  const prev = phraseProgress[id] || { streak: 0, lastDay: null };
+  if (!correct) {
+    phraseProgress[id] = { streak: 0, lastDay: prev.lastDay };
+    savePhraseProgress();
+    return;
+  }
+  const today = todayStr();
+  if (prev.lastDay === today) return; // сегодня этот рост уже засчитан
+  const streak = Math.min((prev.streak || 0) + 1, 15);
+  phraseProgress[id] = { streak, lastDay: today };
   savePhraseProgress();
 }
 // Ручная пометка "уже знаю эту фразу" — сразу переводит в ящик "выучено", как markWordKnown.
@@ -331,10 +349,11 @@ function collectItems(topics) {
 
 // Не больше MAX_NEW_PHRASES_PER_SESSION совсем новых фраз "в работе" одновременно —
 // но это скользящее окно, а не разовая фиксация: как только фраза из allowedNewIds
-// набирает 3 правильных ответа подряд и покидает ящик "new" (переходит в "learning"),
-// освобождённое место тут же занимает следующая ещё непройденная фраза темы. Иначе
-// (как было раньше) набор из 8 фиксировался один раз на всю сессию и остальные ~100
-// фраз темы не попадали в ротацию, пока эти 8 не дойдут до полного мастерства.
+// набирает 3 верных ответа В РАЗНЫЕ ДНИ (см. bumpPhraseStreak) и покидает ящик "new"
+// (переходит в "learning"), освобождённое место тут же занимает следующая ещё
+// непройденная фраза темы. Иначе (как было раньше) набор фиксировался один раз на всю
+// сессию и остальной массив темы не попадал в ротацию, пока первая партия не дойдёт
+// до полного мастерства.
 function topUpAllowedNew(items) {
   if (!allowedNewIds) allowedNewIds = new Set();
   for (const id of allowedNewIds) {
