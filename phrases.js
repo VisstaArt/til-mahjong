@@ -16,12 +16,15 @@ const PHRASE_LOADED_KEY = "mahjong-phrase-loaded-topics";
 
 // Тот же принцип "ящиков", что и для слов (см. PROGRESS_BOXES в script.js), но отдельное
 // хранилище — прогресс по фразам не должен смешиваться с прогрессом по словам маджонга.
+// В отличие от слов, переход между ящиками здесь разнесён по времени (см. ниже,
+// система Лейтнера) — не через "N подряд правильных за один присест".
 const PHRASE_BOXES = [
-  { id: "new", max: 2, label: "новое", emoji: "🔴", weight: 3 },
-  { id: "learning", max: 5, label: "учится", emoji: "🟡", weight: 2 },
-  { id: "almost", max: 9, label: "почти выучено", emoji: "🟢", weight: 1 },
-  { id: "mastered", max: Infinity, label: "выучено", emoji: "⭐", weight: 0 },
+  { id: "new", label: "новое", emoji: "🔴", weight: 3 },
+  { id: "learning", label: "учится", emoji: "🟡", weight: 2 },
+  { id: "almost", label: "почти выучено", emoji: "🟢", weight: 1 },
+  { id: "mastered", label: "выучено", emoji: "⭐", weight: 0 },
 ];
+const PHRASE_BOX_ORDER = PHRASE_BOXES.map((b) => b.id);
 
 // Не больше стольки совсем новых фраз "в работе" одновременно (см. MAX_NEW_WORDS_PER_GAME
 // в script.js — тот же принцип): открыть свежую тему и сразу получить только незнакомые
@@ -56,41 +59,85 @@ function savePhraseProgress() {
 function phraseId(topicId, phrase) {
   return `${topicId}::${phrase.tr}`;
 }
-function getPhraseStreak(id) {
-  return (phraseProgress[id] && phraseProgress[id].streak) || 0;
-}
-function getPhraseBox(id) {
-  const streak = getPhraseStreak(id);
-  return PHRASE_BOXES.find((b) => streak <= b.max);
+// Локальный календарный день (не UTC — иначе для восточных часовых поясов "день" менялся
+// бы посреди вечера, а не в полночь по местному времени пользователя).
+function dateToStr(d) {
+  const y = d.getFullYear();
+  const m = String(d.getMonth() + 1).padStart(2, "0");
+  const day = String(d.getDate()).padStart(2, "0");
+  return `${y}-${m}-${day}`;
 }
 function todayStr() {
-  return new Date().toISOString().slice(0, 10);
+  return dateToStr(new Date());
 }
-// Стрик растёт максимум на 1 в день (по календарной дате, не по "разам подряд в одном
-// заходе") — иначе фразу можно было бы протыкать 10 раз за один присест и сразу
-// получить ⭐, хотя на деле это ничего не доказывает про долгосрочную память. Повторный
-// верный ответ на ту же фразу в тот же день просто засчитывается как практика, без
-// движения по ящикам; движение вперёд требует того, чтобы фраза правильно вспомнилась
-// в РАЗНЫЕ дни — так дойти до "выучено" можно только через реальные интервалы повторения.
-// Неверный ответ сбрасывает стрик сразу же, в любой момент, без привязки к дате.
+function addDaysStr(dateStr, days) {
+  const [y, m, d] = dateStr.split("-").map(Number);
+  return dateToStr(new Date(y, m - 1, d + days));
+}
+
+function getPhraseBoxId(id) {
+  return (phraseProgress[id] && phraseProgress[id].box) || "new";
+}
+function getPhraseBox(id) {
+  return PHRASE_BOXES.find((b) => b.id === getPhraseBoxId(id));
+}
+
+// Система Лейтнера: у каждого ящика — свой интервал в днях, раньше которого фраза не
+// "созрела" для перехода на следующий уровень (0 для "new" — учить можно сразу).
+// Даже пока фраза не созрела, она всё равно попадается в квизе по весу ящика (см.
+// buildPhraseQueue) — это просто тренировка, без продвижения вперёд.
+const PHRASE_BOX_INTERVAL_DAYS = { new: 0, learning: 1, almost: 3, mastered: 7 };
+// Сколько верных ответов нужно набрать за ОДИН календарный день (когда интервал уже
+// прошёл), чтобы фраза перешла на следующий уровень — одного-двух мало, могло быть
+// случайное угадывание; после DAILY_CORRECT_TO_ADVANCE подряд за день это уже
+// настоящее подтверждение. Комбинация даёт то, что и требовалось: выучить фразу
+// "за один присест" физически невозможно — нужно обязательно вернуться к ней в другой
+// день, но сам переход внутри созревшего дня не растягивается на неделю ответов.
+const DAILY_CORRECT_TO_ADVANCE = 4;
+
 function bumpPhraseStreak(id, correct) {
-  const prev = phraseProgress[id] || { streak: 0, lastDay: null };
+  const today = todayStr();
+  const prev = phraseProgress[id] || { box: "new", dueDay: null, todayDay: null, todayCorrect: 0 };
+
   if (!correct) {
-    phraseProgress[id] = { streak: 0, lastDay: prev.lastDay };
+    phraseProgress[id] = { box: "new", dueDay: null, todayDay: today, todayCorrect: 0 };
     savePhraseProgress();
     return;
   }
-  const today = todayStr();
-  if (prev.lastDay === today) return; // сегодня этот рост уже засчитан
-  const streak = Math.min((prev.streak || 0) + 1, 15);
-  phraseProgress[id] = { streak, lastDay: today };
+
+  // Ящик ещё не "созрел" для перехода — засчитываем как практику, без движения вперёд.
+  if (prev.dueDay && today < prev.dueDay) return;
+
+  const todayCorrect = (prev.todayDay === today ? prev.todayCorrect || 0 : 0) + 1;
+
+  if (todayCorrect >= DAILY_CORRECT_TO_ADVANCE) {
+    const nextBox = PHRASE_BOX_ORDER[Math.min(PHRASE_BOX_ORDER.indexOf(prev.box || "new") + 1, PHRASE_BOX_ORDER.length - 1)];
+    phraseProgress[id] = {
+      box: nextBox,
+      dueDay: nextBox === "mastered" ? null : addDaysStr(today, PHRASE_BOX_INTERVAL_DAYS[nextBox]),
+      todayDay: today,
+      todayCorrect: 0,
+    };
+  } else {
+    phraseProgress[id] = { box: prev.box || "new", dueDay: prev.dueDay || null, todayDay: today, todayCorrect };
+  }
   savePhraseProgress();
 }
+
+// Сколько сегодняшних верных ответов уже засчитано в счётчик перехода (0, если фраза
+// ещё не созрела для перехода или сегодня по ней ещё не отвечали) — для подсказки в
+// списке темы.
+function getPhraseTodayCorrect(id) {
+  const p = phraseProgress[id];
+  if (!p) return 0;
+  const today = todayStr();
+  if (p.dueDay && today < p.dueDay) return 0;
+  return p.todayDay === today ? p.todayCorrect || 0 : 0;
+}
+
 // Ручная пометка "уже знаю эту фразу" — сразу переводит в ящик "выучено", как markWordKnown.
 function markPhraseKnown(id) {
-  const masteredBox = PHRASE_BOXES.find((b) => b.id === "mastered");
-  const threshold = PHRASE_BOXES[PHRASE_BOXES.indexOf(masteredBox) - 1].max + 1;
-  phraseProgress[id] = { streak: threshold };
+  phraseProgress[id] = { box: "mastered", dueDay: null, todayDay: todayStr(), todayCorrect: 0 };
   savePhraseProgress();
 }
 
@@ -262,7 +309,7 @@ function buildPhraseRow(topic, p) {
   const badge = document.createElement("span");
   badge.className = "row-progress-badge";
   badge.textContent = box.emoji;
-  badge.title = `${box.label} (${getPhraseStreak(id)} подряд без ошибок)`;
+  badge.title = phraseStatusLabel(id);
   row.appendChild(badge);
 
   if (box.id !== "mastered") {
@@ -273,13 +320,25 @@ function buildPhraseRow(topic, p) {
       markPhraseKnown(id);
       const newBox = getPhraseBox(id);
       badge.textContent = newBox.emoji;
-      badge.title = `${newBox.label} (${getPhraseStreak(id)} подряд без ошибок)`;
+      badge.title = phraseStatusLabel(id);
       knowBtn.remove();
     });
     row.appendChild(knowBtn);
   }
 
   return row;
+}
+
+// Текст подсказки над бейджем прогресса: сколько сегодняшних верных ответов уже
+// засчитано к переходу на следующий уровень, или с какого дня фраза снова "созреет".
+function phraseStatusLabel(id) {
+  const box = getPhraseBox(id);
+  if (box.id === "mastered") return box.label;
+  const p = phraseProgress[id];
+  const today = todayStr();
+  if (p && p.dueDay && today < p.dueDay) return `${box.label} — повторить можно с ${p.dueDay}`;
+  const todayCorrect = getPhraseTodayCorrect(id);
+  return `${box.label} — ${todayCorrect}/${DAILY_CORRECT_TO_ADVANCE} верных сегодня`;
 }
 
 function renderPhraseTopicList(topic) {
@@ -349,11 +408,11 @@ function collectItems(topics) {
 
 // Не больше MAX_NEW_PHRASES_PER_SESSION совсем новых фраз "в работе" одновременно —
 // но это скользящее окно, а не разовая фиксация: как только фраза из allowedNewIds
-// набирает 3 верных ответа В РАЗНЫЕ ДНИ (см. bumpPhraseStreak) и покидает ящик "new"
-// (переходит в "learning"), освобождённое место тут же занимает следующая ещё
-// непройденная фраза темы. Иначе (как было раньше) набор фиксировался один раз на всю
-// сессию и остальной массив темы не попадал в ротацию, пока первая партия не дойдёт
-// до полного мастерства.
+// набирает DAILY_CORRECT_TO_ADVANCE верных ответов за день (см. bumpPhraseStreak) и
+// покидает ящик "new" (переходит в "learning"), освобождённое место тут же занимает
+// следующая ещё непройденная фраза темы. Иначе (как было раньше) набор фиксировался
+// один раз на всю сессию и остальной массив темы не попадал в ротацию, пока первая
+// партия не дойдёт до полного мастерства.
 function topUpAllowedNew(items) {
   if (!allowedNewIds) allowedNewIds = new Set();
   for (const id of allowedNewIds) {
