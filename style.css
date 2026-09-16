@@ -1130,6 +1130,7 @@ main {
   padding: 16px;
 }
 .dialogue-finished.hidden { display: none; }
+#dialogue-next-btn.hidden { display: none; }
 
 .win-card h2 { margin-top: 0; }
 

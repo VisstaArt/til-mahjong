@@ -185,7 +185,7 @@ function speakThenAdvance(text, pauseAfter, callback) {
   const u = new SpeechSynthesisUtterance(text);
   u.lang = voice ? voice.lang : "tr-TR";
   if (voice) u.voice = voice;
-  u.rate = 0.85;
+  u.rate = 1;
   let done = false;
   const onDone = () => {
     if (done || !isCurrent()) return;
@@ -199,12 +199,23 @@ function speakThenAdvance(text, pauseAfter, callback) {
   speechSynthesis.speak(u);
 }
 
+// Следующий диалог ПОСЛЕ текущего в той же теме — по порядку в manifest/файле темы —
+// или null, если текущий диалог последний.
+function getNextDialogueInTopic() {
+  const topic = dialogueTopicCache.get(currentDialogueTopicId);
+  if (!topic || !currentDialogue) return null;
+  const idx = topic.dialogues.findIndex((d) => d.id === currentDialogue.id);
+  if (idx === -1 || idx + 1 >= topic.dialogues.length) return null;
+  return topic.dialogues[idx + 1];
+}
+
 function advanceDialogue() {
   const choicesEl = document.getElementById("dialogue-choices");
   choicesEl.classList.add("hidden");
   choicesEl.innerHTML = "";
 
   if (currentTurnIndex >= currentDialogue.turns.length) {
+    document.getElementById("dialogue-next-btn").classList.toggle("hidden", !getNextDialogueInTopic());
     document.getElementById("dialogue-finished").classList.remove("hidden");
     return;
   }
@@ -279,7 +290,7 @@ function playLinesAloud(lines, index = 0, generation = null) {
   const u = new SpeechSynthesisUtterance(lines[index]);
   u.lang = voice ? voice.lang : "tr-TR";
   if (voice) u.voice = voice;
-  u.rate = 0.85;
+  u.rate = 1;
   u.onend = () => setTimeout(() => playLinesAloud(lines, index + 1, generation), 300);
   speechSynthesis.speak(u);
 }
@@ -321,6 +332,11 @@ function initDialoguesMode() {
   document.getElementById("dialogue-swap-role-btn").addEventListener("click", () => {
     const otherRole = currentDialogueRole === "a" ? "b" : "a";
     startDialogue(dialogueTopicCache.get(currentDialogueTopicId), currentDialogue, otherRole);
+  });
+  document.getElementById("dialogue-next-btn").addEventListener("click", () => {
+    const next = getNextDialogueInTopic();
+    const topic = dialogueTopicCache.get(currentDialogueTopicId);
+    if (topic && next) startDialogue(topic, next, currentDialogueRole);
   });
 }
 
