@@ -65,7 +65,7 @@ async function renderDialoguesCatalog() {
     const tile = document.createElement("div");
     tile.className = "catalog-tile";
     tile.innerHTML =
-      `<span class="emoji">🗨️</span>` +
+      `<span class="emoji">🎭</span>` +
       `<div class="tile-overlay">` +
       `<span class="name">${m.title}</span>` +
       `<span class="count">${m.count} ${pluralRu(m.count, "диалог", "диалога", "диалогов")}</span>` +
