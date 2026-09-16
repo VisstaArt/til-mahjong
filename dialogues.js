@@ -159,6 +159,10 @@ function appendDialogueBubble(turn) {
     `<div class="bubble-ru">${turn.ru}</div>`;
   transcriptEl.appendChild(bubble);
   transcriptEl.scrollTop = transcriptEl.scrollHeight;
+  // На мобильном Safari высота экрана (100vh/flex) иногда считается нестабильно —
+  // одного scrollTop у внутреннего контейнера транскрипта недостаточно, страница
+  // может не докрутиться сама. Подстраховываемся явным scrollIntoView новой реплики.
+  requestAnimationFrame(() => bubble.scrollIntoView({ block: "end", behavior: "smooth" }));
 }
 
 // Озвучивает реплику и вызывает callback только когда речь реально закончилась (плюс
@@ -266,6 +270,8 @@ function renderDialogueChoices(turn) {
     });
     choicesEl.appendChild(btn);
   });
+
+  requestAnimationFrame(() => choicesEl.scrollIntoView({ block: "end", behavior: "smooth" }));
 }
 
 // Прослушать список реплик подряд, одну за другой (в отличие от общего speak() —

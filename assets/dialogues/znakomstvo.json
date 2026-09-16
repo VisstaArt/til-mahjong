@@ -43,7 +43,7 @@
           { "tr": "Nerede çalışıyorsunuz?", "ru": "Где вы работаете?" },
           { "tr": "Merhaba!", "ru": "Здравствуйте!" }
         ]},
-        { "speaker": "b", "tr": "Bir hafta oldu, iş için geldim.", "ru": "Уже неделя, приехал по делам.", "distractors": [
+        { "speaker": "b", "tr": "Bir hafta oldu, iş için geldim. Ya siz, ne kadar zamandır buradasınız?", "ru": "Уже неделя, приехал по делам. А вы, как долго вы уже здесь?", "distractors": [
           { "tr": "Nerelisiniz?", "ru": "Откуда вы?" },
           { "tr": "Çocuğum var.", "ru": "У меня есть ребёнок." }
         ]},
