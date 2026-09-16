@@ -65,7 +65,7 @@
         ]},
         { "speaker": "a", "tr": "Bir şirkette çalışıyorum, yabancı müşterilerle. Ya siz, nerede çalışıyorsunuz?", "ru": "Я работаю в одной компании, с иностранными клиентами. А вы, где вы работаете?", "distractors": [
           { "tr": "Rusyalıyım.", "ru": "Я из России." },
-          { "tr": "Evet, ne yazık ki gitmem gerekiyor.", "ru": "Да, к сожалению, мне нужно идти." }
+          { "tr": "Evet, ne yazık ki bir toplantıya yetişmem gerekiyor.", "ru": "Да, к сожалению, мне нужно успеть на встречу." }
         ]},
         { "speaker": "b", "tr": "Ben bir bankada çalışıyorum.", "ru": "Я работаю в банке.", "distractors": [
           { "tr": "İlginç! Türkçeyi nasıl öğrendiniz?", "ru": "Интересно! Как вы выучили турецкий?" },
@@ -95,21 +95,21 @@
           { "tr": "Bir hafta oldu, iş için geldim.", "ru": "Уже неделя, приехал по делам." },
           { "tr": "Ben İstanbulluyum.", "ru": "Я из Стамбула." }
         ]},
-        { "speaker": "a", "tr": "Vaktiniz nasıl, işe geri dönmeniz mi gerekiyor?", "ru": "Как у вас со временем, вам нужно возвращаться на работу?", "distractors": [
+        { "speaker": "a", "tr": "Vaktiniz nasıl, bir yere yetişmeniz mi gerekiyor?", "ru": "Как у вас со временем, вам нужно куда-то успеть?", "distractors": [
           { "tr": "Hayır, bekarım.", "ru": "Нет, я не замужем." },
           { "tr": "Ben bir bankada çalışıyorum.", "ru": "Я работаю в банке." }
         ]},
-        { "speaker": "b", "tr": "Evet, ne yazık ki gitmem gerekiyor.", "ru": "Да, к сожалению, мне нужно идти.", "distractors": [
+        { "speaker": "b", "tr": "Evet, ne yazık ki bir toplantıya yetişmem gerekiyor.", "ru": "Да, к сожалению, мне нужно успеть на встречу.", "distractors": [
           { "tr": "Evliyim. Çocuğum var.", "ru": "Я женат. У меня есть ребёнок." },
           { "tr": "İlginç! Türkçeyi nasıl öğrendiniz?", "ru": "Интересно! Как вы выучили турецкий?" }
         ]},
         { "speaker": "a", "tr": "Anlıyorum. Sizinle tanışmak çok güzeldi.", "ru": "Понимаю. Было очень приятно с вами познакомиться.", "distractors": [
-          { "tr": "Vaktiniz nasıl, işe geri dönmeniz mi gerekiyor?", "ru": "Как у вас со временем, вам нужно возвращаться на работу?" },
+          { "tr": "Vaktiniz nasıl, bir yere yetişmeniz mi gerekiyor?", "ru": "Как у вас со временем, вам нужно куда-то успеть?" },
           { "tr": "İlginç, bankacılık zor bir meslek olmalı.", "ru": "Интересно, банковское дело — наверное, непростая профессия." }
         ]},
         { "speaker": "b", "tr": "Sizinle tanıştığıma çok memnun oldum, Olga Hanım. Görüşürüz!", "ru": "Очень рад был с вами познакомиться, госпожа Ольга. До встречи!", "distractors": [
           { "tr": "Nerelisiniz?", "ru": "Откуда вы?" },
-          { "tr": "Evet, ne yazık ki gitmem gerekiyor.", "ru": "Да, к сожалению, мне нужно идти." }
+          { "tr": "Evet, ne yazık ki bir toplantıya yetişmem gerekiyor.", "ru": "Да, к сожалению, мне нужно успеть на встречу." }
         ]},
         { "speaker": "a", "tr": "Ben de öyle, Mehmet Bey. İyi günler!", "ru": "Мне тоже, господин Мехмет. Хорошего дня!", "distractors": [
           { "tr": "Benim adım Olga.", "ru": "Меня зовут Ольга." },
