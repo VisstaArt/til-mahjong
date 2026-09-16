@@ -2,12 +2,13 @@
 // берём свежую версию (и обновляем кеш) — это на время активной разработки, чтобы
 // не словить залипание на старой версии, как уже бывало с обычным браузерным кешем.
 // Офлайн/при обрыве сети — отдаём то, что успело закешироваться.
-const CACHE_NAME = "til-mahjong-v4";
+const CACHE_NAME = "til-mahjong-v5";
 
 const APP_SHELL = [
   "./",
   "./index.html",
   "./style.css",
+  "./supabase-sync.js",
   "./script.js",
   "./wordbank.js",
   "./mahjong-layout.js",

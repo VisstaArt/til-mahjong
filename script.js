@@ -1192,6 +1192,9 @@ generateWordsBtn.addEventListener("click", async () => {
 });
 
 (async function init() {
+  // Ждём подтверждения входа (см. supabase-sync.js) — иначе каталог мелькнул бы на
+  // экране раньше, чем решится, показывать логин или уже настоящий прогресс пользователя.
+  if (window.authReady) await window.authReady;
   await seedBaseWordsIfNeeded();
   await restoreAiIconsIfNeeded();
   categoryManifest = await fetchCategoryManifest();

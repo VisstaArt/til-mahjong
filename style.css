@@ -76,6 +76,8 @@ body {
    body > .screen специфичнее, поэтому скрытие всегда побеждает, пока его
    явно не переобъявит более специфичный body[data-screen=X] #screen-X. */
 body > .screen { display: none; }
+body[data-screen="auth"] #screen-auth { display: flex; }
+body[data-screen="auth"] .topbar { display: none; }
 body[data-screen="catalog"] #screen-catalog { display: flex; }
 body[data-screen="category"] #screen-category { display: flex; }
 body[data-screen="add-words"] #screen-add-words { display: flex; }
@@ -1150,3 +1152,91 @@ main {
   .tile.type-word, .tile.type-image { font-size: 0.75rem; }
   .tile.type-image.has-number { font-size: 1.15rem; }
 }
+
+/* Экран входа/регистрации (Supabase) */
+.auth-screen {
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 340px;
+  background: var(--bg-2);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 28px 24px;
+  text-align: center;
+}
+
+.auth-card h2 { margin: 0 0 4px; }
+
+.auth-sub {
+  color: rgba(241, 245, 242, 0.7);
+  font-size: 0.88rem;
+  margin: 0 0 20px;
+  line-height: 1.4;
+}
+
+#auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#auth-form input {
+  background: var(--word-bg);
+  color: var(--word-text);
+  border: none;
+  border-radius: 8px;
+  padding: 12px 14px;
+  font-size: 0.95rem;
+}
+
+#auth-form button {
+  margin-top: 6px;
+  background: var(--gold);
+  color: #1b1b1b;
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+#auth-toggle-btn {
+  margin-top: 14px;
+  background: transparent;
+  border: none;
+  color: var(--gold);
+  font-size: 0.85rem;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.auth-error {
+  color: var(--danger);
+  font-size: 0.85rem;
+  text-align: left;
+}
+.auth-error.hidden { display: none; }
+
+.auth-status {
+  color: rgba(241, 245, 242, 0.7);
+  font-size: 0.85rem;
+  margin-top: 14px;
+}
+.auth-status.hidden { display: none; }
+
+/* Индикатор аккаунта в шапке — почта + выход, видно только когда вошли. */
+.account-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.8rem;
+  color: rgba(241, 245, 242, 0.7);
+}
+.account-box.hidden { display: none; }
