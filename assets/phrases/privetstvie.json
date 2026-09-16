@@ -4,12 +4,6 @@
   "source": "razgovornik",
   "phrases": [
     {
-      "ru": "Где я могу взять, купить …?",
-      "tr": "Nerede … alabilirim?",
-      "tl": null,
-      "sub": null
-    },
-    {
       "ru": "Как поживаете, как дела?",
       "tr": "Nasılsınız?",
       "tl": null,
@@ -22,38 +16,8 @@
       "sub": null
     },
     {
-      "ru": "Чего желаете?",
-      "tr": "Ne istiyorsun(uz)?",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "У вас есть …?",
-      "tr": "Sizde … var mı?",
-      "tl": null,
-      "sub": null
-    },
-    {
       "ru": "Не могли бы вы мне помочь?",
       "tr": "Bana yardım edebilir misiniz?",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "Могу я вам чем-то помочь?",
-      "tr": "Size yardım edebilir miyim?",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "Не могли бы вы мне сказать …?",
-      "tr": "Bana … söyleyebilir misiniz?",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "Не могли бы вы мне показать…?",
-      "tr": "Bana … gösterebilir misiniz?",
       "tl": null,
       "sub": null
     },

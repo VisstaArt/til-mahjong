@@ -52,15 +52,15 @@
     "id": "pokupki-servis",
     "title": "Покупки, сервис",
     "source": "razgovornik",
-    "count": 185,
-    "sizeKB": 44.1
+    "count": 198,
+    "sizeKB": 46.2
   },
   {
     "id": "privetstvie",
     "title": "Приветствие",
     "source": "razgovornik",
-    "count": 105,
-    "sizeKB": 14.2
+    "count": 99,
+    "sizeKB": 13.4
   },
   {
     "id": "puteshestvie",
@@ -129,8 +129,8 @@
     "id": "znakomstvo",
     "title": "Знакомство",
     "source": "razgovornik",
-    "count": 56,
-    "sizeKB": 10.3
+    "count": 49,
+    "sizeKB": 9.0
   },
   {
     "id": "biznes-vstrechi-i-ofis",

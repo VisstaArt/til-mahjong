@@ -1027,6 +1027,262 @@
           { "tr": "Erkek kardeşiniz ya da kız kardeşiniz var mı?", "ru": "У вас есть братья или сёстры?" }
         ]}
       ]
+    },
+    {
+      "id": "znakomstvo-kompaniya",
+      "title": "Приглашение в компанию",
+      "speakers": { "a": "Ольга", "b": "Барыш" },
+      "turns": [
+        { "speaker": "a", "tr": "Birisini mi bekliyorsun?", "ru": "Ты кого-то ждёшь?", "distractors": [
+          { "tr": "Gelecek sefere seni bize bekliyoruz, her zaman!", "ru": "В следующий раз тоже тебя ждём, всегда!" },
+          { "tr": "Ne yazık ki şimdi ayrılmak zorundayım.", "ru": "К сожалению, мне сейчас нужно идти." }
+        ]},
+        { "speaker": "b", "tr": "Hayır, kimseyi beklemiyorum. Size katılabilir miyim?", "ru": "Нет, никого не жду. Можно к вам присоединиться?", "distractors": [
+          { "tr": "Sen de geliyor musun?", "ru": "Ты тоже пойдёшь?" },
+          { "tr": "Çünkü çok mutluyum, harika bir akşam olacak!", "ru": "Потому что я очень рада, будет отличный вечер!" }
+        ]},
+        { "speaker": "a", "tr": "Tabii, bize katılsana!", "ru": "Конечно, присоединяйся!", "distractors": [
+          { "tr": "Harika, bir parti da var yemekten sonra.", "ru": "Отлично, после ужина ещё будет вечеринка." },
+          { "tr": "Tamam, görüşürüz!", "ru": "Хорошо, увидимся!" }
+        ]},
+        { "speaker": "b", "tr": "Teşekkürler. Bu akşam bizimle akşam yemeği yemek ister misin?", "ru": "Спасибо. Хочешь сегодня поужинать с нами?", "distractors": [
+          { "tr": "Evet, gidiyorum. Ne/neden gülüyorsun?", "ru": "Да, иду. А ты чего смеёшься?" },
+          { "tr": "Birisini mi bekliyorsun?", "ru": "Ты кого-то ждёшь?" }
+        ]},
+        { "speaker": "a", "tr": "Büyük bir zevkle gelirim!", "ru": "Я с удовольствием приду!", "distractors": [
+          { "tr": "Çünkü çok mutluyum, harika bir akşam olacak!", "ru": "Потому что я очень рада, будет отличный вечер!" },
+          { "tr": "Tabii, bize katılsana!", "ru": "Конечно, присоединяйся!" }
+        ]},
+        { "speaker": "b", "tr": "Harika, bir parti da var yemekten sonra.", "ru": "Отлично, после ужина ещё будет вечеринка.", "distractors": [
+          { "tr": "Ne yazık ki şimdi ayrılmak zorundayım, ama akşam görüşürüz.", "ru": "К сожалению, мне сейчас нужно идти, но увидимся вечером." },
+          { "tr": "Size katılabilir miyim?", "ru": "Можно к вам присоединиться?" }
+        ]},
+        { "speaker": "a", "tr": "Sen de geliyor musun?", "ru": "Ты тоже пойдёшь?", "distractors": [
+          { "tr": "Büyük bir zevkle gelirim!", "ru": "Я с удовольствием приду!" },
+          { "tr": "Tamam, görüşürüz!", "ru": "Хорошо, увидимся!" }
+        ]},
+        { "speaker": "b", "tr": "Evet, gidiyorum. Ne/neden gülüyorsun?", "ru": "Да, иду. А ты чего смеёшься?", "distractors": [
+          { "tr": "Bize katılsana!", "ru": "Присоединяйся!" },
+          { "tr": "Gelecek sefere seni bize bekliyoruz, her zaman!", "ru": "В следующий раз тоже тебя ждём, всегда!" }
+        ]},
+        { "speaker": "a", "tr": "Çünkü çok mutluyum, harika bir akşam olacak!", "ru": "Потому что я очень рада, будет отличный вечер!", "distractors": [
+          { "tr": "Hayır, kimseyi beklemiyorum.", "ru": "Нет, никого не жду." },
+          { "tr": "Harika, bir parti da var yemekten sonra.", "ru": "Отлично, после ужина ещё будет вечеринка." }
+        ]},
+        { "speaker": "b", "tr": "Ne yazık ki şimdi ayrılmak zorundayım, ama akşam görüşürüz.", "ru": "К сожалению, мне сейчас нужно идти, но увидимся вечером.", "distractors": [
+          { "tr": "Sen de geliyor musun?", "ru": "Ты тоже пойдёшь?" },
+          { "tr": "Teşekkürler. Bu akşam bizimle akşam yemeği yemek ister misin?", "ru": "Спасибо. Хочешь сегодня поужинать с нами?" }
+        ]},
+        { "speaker": "a", "tr": "Tamam, görüşürüz!", "ru": "Хорошо, увидимся!", "distractors": [
+          { "tr": "Birisini mi bekliyorsun?", "ru": "Ты кого-то ждёшь?" },
+          { "tr": "Evet, gidiyorum. Ne/neden gülüyorsun?", "ru": "Да, иду. А ты чего смеёшься?" }
+        ]},
+        { "speaker": "b", "tr": "Gelecek sefere seni bize bekliyoruz, her zaman!", "ru": "В следующий раз тоже тебя ждём, всегда!", "distractors": [
+          { "tr": "Çünkü çok mutluyum, harika bir akşam olacak!", "ru": "Потому что я очень рада, будет отличный вечер!" },
+          { "tr": "Tabii, bize katılsana!", "ru": "Конечно, присоединяйся!" }
+        ]}
+      ]
+    },
+    {
+      "id": "znakomstvo-turistka",
+      "title": "Соотечественница-туристка",
+      "speakers": { "a": "Ольга", "b": "Настя" },
+      "turns": [
+        { "speaker": "a", "tr": "Size yardım edebilir miyim?", "ru": "Могу я вам помочь?", "distractors": [
+          { "tr": "Rica ederim. İyi tatiller!", "ru": "Пожалуйста. Хорошего отдыха!" },
+          { "tr": "Yardımınız için teşekkür ederim, çok naziksiniz!", "ru": "Спасибо за вашу помощь, вы очень добры!" }
+        ]},
+        { "speaker": "b", "tr": "Ah, teşekkür ederim! Rusça mı konuşuyorsunuz?", "ru": "Ах, спасибо! Вы говорите по-русски?", "distractors": [
+          { "tr": "Evet! Ben de Rusum.", "ru": "Да! Я тоже русская." },
+          { "tr": "Bir hafta buradayım.", "ru": "Я здесь на неделю." }
+        ]},
+        { "speaker": "a", "tr": "Evet! Ben de Rusum.", "ru": "Да! Я тоже русская.", "distractors": [
+          { "tr": "Gerçekten mi? Ne kadar şanslıyım!", "ru": "Правда? Как же мне повезло!" },
+          { "tr": "Teşekkürler, iyi günler!", "ru": "Спасибо, хорошего дня!" }
+        ]},
+        { "speaker": "b", "tr": "Gerçekten mi? Ne kadar şanslıyım!", "ru": "Правда? Как же мне повезло!", "distractors": [
+          { "tr": "Tatilde misiniz?", "ru": "Вы в отпуске?" },
+          { "tr": "Bir yıldır. Siz ne kadar kalıyorsunuz?", "ru": "Уже год. А вы на сколько здесь?" }
+        ]},
+        { "speaker": "a", "tr": "Tatilde misiniz?", "ru": "Вы в отпуске?", "distractors": [
+          { "tr": "Nerede kalıyorsunuz?", "ru": "Где вы остановились?" },
+          { "tr": "Ne kadar zamandır buradasınız?", "ru": "Как долго вы уже здесь?" }
+        ]},
+        { "speaker": "b", "tr": "Evet, tatildeyim. Bu ilk gelişim.", "ru": "Да, я в отпуске. Это мой первый приезд.", "distractors": [
+          { "tr": "Nerede kalıyorsunuz?", "ru": "Где вы остановились?" },
+          { "tr": "Aslında ben de Rusyalıyım, ama burada yaşıyorum.", "ru": "На самом деле я тоже из России, но живу здесь." }
+        ]},
+        { "speaker": "a", "tr": "Nerede kalıyorsunuz?", "ru": "Где вы остановились?", "distractors": [
+          { "tr": "Evet, tatildeyim. Bu ilk gelişim.", "ru": "Да, я в отпуске. Это мой первый приезд." },
+          { "tr": "Bir hafta buradayım.", "ru": "Я здесь на неделю." }
+        ]},
+        { "speaker": "b", "tr": "Bir otelde kalıyorum. Ya siz, buralı mısınız?", "ru": "Я остановилась в отеле. А вы, вы местная?", "distractors": [
+          { "tr": "Aslında ben de Rusyalıyım, ama burada yaşıyorum.", "ru": "На самом деле я тоже из России, но живу здесь." },
+          { "tr": "Rica ederim. İyi tatiller!", "ru": "Пожалуйста. Хорошего отдыха!" }
+        ]},
+        { "speaker": "a", "tr": "Aslında ben de Rusyalıyım, ama burada yaşıyorum.", "ru": "На самом деле я тоже из России, но живу здесь.", "distractors": [
+          { "tr": "Ne kadar zamandır buradasınız?", "ru": "Как долго вы уже здесь?" },
+          { "tr": "Yardımınız için teşekkür ederim, çok naziksiniz!", "ru": "Спасибо за вашу помощь, вы очень добры!" }
+        ]},
+        { "speaker": "b", "tr": "Ne kadar zamandır buradasınız?", "ru": "Как долго вы уже здесь?", "distractors": [
+          { "tr": "Bir yıldır. Siz ne kadar kalıyorsunuz?", "ru": "Уже год. А вы на сколько здесь?" },
+          { "tr": "Evet! Ben de Rusum.", "ru": "Да! Я тоже русская." }
+        ]},
+        { "speaker": "a", "tr": "Bir yıldır. Siz ne kadar kalıyorsunuz?", "ru": "Уже год. А вы на сколько здесь?", "distractors": [
+          { "tr": "Bir hafta buradayım.", "ru": "Я здесь на неделю." },
+          { "tr": "Gerçekten mi? Ne kadar şanslıyım!", "ru": "Правда? Как же мне повезло!" }
+        ]},
+        { "speaker": "b", "tr": "Bir hafta buradayım.", "ru": "Я здесь на неделю.", "distractors": [
+          { "tr": "Yardımınız gerekirse, bana yazabilirsiniz.", "ru": "Если понадобится помощь, можете мне написать." },
+          { "tr": "Size yardım edebilir miyim?", "ru": "Могу я вам помочь?" }
+        ]},
+        { "speaker": "a", "tr": "Yardımınız gerekirse, bana yazabilirsiniz.", "ru": "Если понадобится помощь, можете мне написать.", "distractors": [
+          { "tr": "Teşekkürler, iyi günler!", "ru": "Спасибо, хорошего дня!" },
+          { "tr": "Evet, tatildeyim. Bu ilk gelişim.", "ru": "Да, я в отпуске. Это мой первый приезд." }
+        ]},
+        { "speaker": "b", "tr": "Yardımınız için teşekkür ederim, çok naziksiniz!", "ru": "Спасибо за вашу помощь, вы очень добры!", "distractors": [
+          { "tr": "Rica ederim. İyi tatiller!", "ru": "Пожалуйста. Хорошего отдыха!" },
+          { "tr": "Nerede kalıyorsunuz?", "ru": "Где вы остановились?" }
+        ]},
+        { "speaker": "a", "tr": "Rica ederim. İyi tatiller!", "ru": "Пожалуйста. Хорошего отдыха!", "distractors": [
+          { "tr": "Bir hafta buradayım.", "ru": "Я здесь на неделю." },
+          { "tr": "Ah, teşekkür ederim! Rusça mı konuşuyorsunuz?", "ru": "Ах, спасибо! Вы говорите по-русски?" }
+        ]},
+        { "speaker": "b", "tr": "Teşekkürler, iyi günler!", "ru": "Спасибо, хорошего дня!", "distractors": [
+          { "tr": "Yardımınız gerekirse, bana yazabilirsiniz.", "ru": "Если понадобится помощь, можете мне написать." },
+          { "tr": "Bir otelde kalıyorum. Ya siz, buralı mısınız?", "ru": "Я остановилась в отеле. А вы, вы местная?" }
+        ]}
+      ]
+    },
+    {
+      "id": "znakomstvo-eshche-svidanie",
+      "title": "Ещё одно свидание",
+      "speakers": { "a": "Ольга", "b": "Дениз" },
+      "turns": [
+        { "speaker": "b", "tr": "Alo, ben Deniz. Nasılsın?", "ru": "Алло, это Дениз. Как ты?", "distractors": [
+          { "tr": "Tamam, anladım. Sonra görüşürüz!", "ru": "Хорошо, понял. До скорого!" },
+          { "tr": "Ne zaman geri dönmen gerek?", "ru": "Во сколько тебе надо вернуться?" }
+        ]},
+        { "speaker": "a", "tr": "İyiyim, merak etme. Aramana çok sevindim.", "ru": "Хорошо, не переживай. Рада, что позвонил.", "distractors": [
+          { "tr": "Evet, bu akşam serbestim!", "ru": "Да, я сегодня вечером свободна!" },
+          { "tr": "Yalnız yaşıyorum, aşağıdan ararsın.", "ru": "Живу одна, позвонишь снизу." }
+        ]},
+        { "speaker": "b", "tr": "Bu akşam benimle çıkmak ister misin?", "ru": "Хочешь сегодня вечером пойти куда-нибудь со мной?", "distractors": [
+          { "tr": "Harika! İyi bir diskotek biliyorum.", "ru": "Отлично! Я знаю хорошую дискотеку." },
+          { "tr": "Seni saat dokuzda alırım.", "ru": "Я заеду за тобой в девять." }
+        ]},
+        { "speaker": "a", "tr": "Evet, bu akşam serbestim!", "ru": "Да, я сегодня вечером свободна!", "distractors": [
+          { "tr": "Dans etmeyi çok isterim!", "ru": "Очень хочу потанцевать!" },
+          { "tr": "Görüşürüz, Deniz!", "ru": "Увидимся, Дениз!" }
+        ]},
+        { "speaker": "b", "tr": "Harika! İyi bir diskotek biliyorum.", "ru": "Отлично! Я знаю хорошую дискотеку.", "distractors": [
+          { "tr": "Yoksa arabayla gezmek ister misin önce?", "ru": "Или хочешь сначала покататься на машине?" },
+          { "tr": "Yalnız mı yaşıyorsun, yoksa seni aşağıdan mı çağırayım?", "ru": "Ты живёшь одна, или мне позвонить тебе снизу?" }
+        ]},
+        { "speaker": "a", "tr": "Dans etmeyi çok isterim!", "ru": "Очень хочу потанцевать!", "distractors": [
+          { "tr": "İkisi de olur!", "ru": "И то, и другое подойдёт!" },
+          { "tr": "Geç kalmayacağım, yarın işim var.", "ru": "Я не задержусь надолго, завтра у меня работа." }
+        ]},
+        { "speaker": "b", "tr": "Yoksa arabayla gezmek ister misin önce?", "ru": "Или хочешь сначала покататься на машине?", "distractors": [
+          { "tr": "Seni saat dokuzda alırım.", "ru": "Я заеду за тобой в девять." },
+          { "tr": "Alo, ben Deniz. Nasılsın?", "ru": "Алло, это Дениз. Как ты?" }
+        ]},
+        { "speaker": "a", "tr": "İkisi de olur!", "ru": "И то, и другое подойдёт!", "distractors": [
+          { "tr": "Tamam, o zaman hazır olurum.", "ru": "Хорошо, буду готова к этому времени." },
+          { "tr": "Evet, bu akşam serbestim!", "ru": "Да, я сегодня вечером свободна!" }
+        ]},
+        { "speaker": "b", "tr": "Seni saat dokuzda alırım.", "ru": "Я заеду за тобой в девять.", "distractors": [
+          { "tr": "Ne zaman geri dönmen gerek?", "ru": "Во сколько тебе надо вернуться?" },
+          { "tr": "Harika! İyi bir diskotek biliyorum.", "ru": "Отлично! Я знаю хорошую дискотеку." }
+        ]},
+        { "speaker": "a", "tr": "Tamam, o zaman hazır olurum.", "ru": "Хорошо, буду готова к этому времени.", "distractors": [
+          { "tr": "Yalnız yaşıyorum, aşağıdan ararsın.", "ru": "Живу одна, позвонишь снизу." },
+          { "tr": "İkisi de olur!", "ru": "И то, и другое подойдёт!" }
+        ]},
+        { "speaker": "b", "tr": "Yalnız mı yaşıyorsun, yoksa seni aşağıdan mı çağırayım?", "ru": "Ты живёшь одна, или мне позвонить тебе снизу?", "distractors": [
+          { "tr": "Tamam, anladım. Sonra görüşürüz!", "ru": "Хорошо, понял. До скорого!" },
+          { "tr": "Yoksa arabayla gezmek ister misin önce?", "ru": "Или хочешь сначала покататься на машине?" }
+        ]},
+        { "speaker": "a", "tr": "Yalnız yaşıyorum, aşağıdan ararsın.", "ru": "Живу одна, позвонишь снизу.", "distractors": [
+          { "tr": "Geç kalmayacağım, yarın işim var.", "ru": "Я не задержусь надолго, завтра у меня работа." },
+          { "tr": "Dans etmeyi çok isterim!", "ru": "Очень хочу потанцевать!" }
+        ]},
+        { "speaker": "b", "tr": "Ne zaman geri dönmen gerek?", "ru": "Во сколько тебе надо вернуться?", "distractors": [
+          { "tr": "Alo, ben Deniz. Nasılsın?", "ru": "Алло, это Дениз. Как ты?" },
+          { "tr": "Seni saat dokuzda alırım.", "ru": "Я заеду за тобой в девять." }
+        ]},
+        { "speaker": "a", "tr": "Geç kalmayacağım, yarın işim var.", "ru": "Я не задержусь надолго, завтра у меня работа.", "distractors": [
+          { "tr": "Görüşürüz, Deniz!", "ru": "Увидимся, Дениз!" },
+          { "tr": "Tamam, o zaman hazır olurum.", "ru": "Хорошо, буду готова к этому времени." }
+        ]},
+        { "speaker": "b", "tr": "Tamam, anladım. Sonra görüşürüz!", "ru": "Хорошо, понял. До скорого!", "distractors": [
+          { "tr": "Yalnız mı yaşıyorsun, yoksa seni aşağıdan mı çağırayım?", "ru": "Ты живёшь одна, или мне позвонить тебе снизу?" },
+          { "tr": "İyi bir diskotek biliyorum.", "ru": "Я знаю хорошую дискотеку." }
+        ]},
+        { "speaker": "a", "tr": "Görüşürüz, Deniz!", "ru": "Увидимся, Дениз!", "distractors": [
+          { "tr": "Evet, bu akşam serbestim!", "ru": "Да, я сегодня вечером свободна!" },
+          { "tr": "İkisi de olur!", "ru": "И то, и другое подойдёт!" }
+        ]}
+      ]
+    },
+    {
+      "id": "znakomstvo-semya-kollegi",
+      "title": "Встреча с семьёй коллеги",
+      "speakers": { "a": "Ольга", "b": "Пынар" },
+      "turns": [
+        { "speaker": "b", "tr": "Size kocamı tanıştırabilir miyim?", "ru": "Можно познакомить вас с моим мужем?", "distractors": [
+          { "tr": "Bizim için de öyle. Sizi yakında yine görmek isteriz.", "ru": "И для нас тоже. Хотели бы снова вас увидеть в скором времени." },
+          { "tr": "Kızım on yaşında.", "ru": "Моей дочери десять лет." }
+        ]},
+        { "speaker": "a", "tr": "Tabii, memnuniyetle!", "ru": "Конечно, с удовольствием!", "distractors": [
+          { "tr": "Bu benim kocam, Kemal.", "ru": "Это мой муж, Кемаль." },
+          { "tr": "Anladım. Ailenizle tanışmak çok güzeldi.", "ru": "Понятно. Было очень приятно познакомиться с вашей семьёй." }
+        ]},
+        { "speaker": "b", "tr": "Bu benim kocam, Kemal.", "ru": "Это мой муж, Кемаль.", "distractors": [
+          { "tr": "Merhaba Kemal, tanıştığımıza memnun oldum.", "ru": "Привет, Кемаль, приятно познакомиться." },
+          { "tr": "Evet, bir kızımız var.", "ru": "Да, у нас есть дочь." }
+        ]},
+        { "speaker": "a", "tr": "Merhaba Kemal, tanıştığımıza memnun oldum.", "ru": "Привет, Кемаль, приятно познакомиться.", "distractors": [
+          { "tr": "Ben de memnun oldum.", "ru": "Мне тоже приятно." },
+          { "tr": "Kaç yaşında?", "ru": "Сколько ей лет?" }
+        ]},
+        { "speaker": "b", "tr": "Ben de memnun oldum.", "ru": "Мне тоже приятно.", "distractors": [
+          { "tr": "Çocuğunuz var mı?", "ru": "У вас есть дети?" },
+          { "tr": "Hayır, bu akşam büyükannesiyle.", "ru": "Нет, сегодня вечером она с бабушкой." }
+        ]},
+        { "speaker": "a", "tr": "Çocuğunuz var mı?", "ru": "У вас есть дети?", "distractors": [
+          { "tr": "Bu benim kocam, Kemal.", "ru": "Это мой муж, Кемаль." },
+          { "tr": "Bizim için de öyle. Sizi yakında yine görmek isteriz.", "ru": "И для нас тоже. Хотели бы снова вас увидеть в скором времени." }
+        ]},
+        { "speaker": "b", "tr": "Evet, bir kızımız var.", "ru": "Да, у нас есть дочь.", "distractors": [
+          { "tr": "Kaç yaşında?", "ru": "Сколько ей лет?" },
+          { "tr": "Size kocamı tanıştırabilir miyim?", "ru": "Можно познакомить вас с моим мужем?" }
+        ]},
+        { "speaker": "a", "tr": "Kaç yaşında?", "ru": "Сколько ей лет?", "distractors": [
+          { "tr": "Kızım on yaşında.", "ru": "Моей дочери десять лет." },
+          { "tr": "Ne güzel! O da burada mı?", "ru": "Как мило! Она тоже здесь?" }
+        ]},
+        { "speaker": "b", "tr": "Kızım on yaşında.", "ru": "Моей дочери десять лет.", "distractors": [
+          { "tr": "Ne güzel! O da burada mı?", "ru": "Как мило! Она тоже здесь?" },
+          { "tr": "Merhaba Kemal, tanıştığımıza memnun oldum.", "ru": "Привет, Кемаль, приятно познакомиться." }
+        ]},
+        { "speaker": "a", "tr": "Ne güzel! O da burada mı?", "ru": "Как мило! Она тоже здесь?", "distractors": [
+          { "tr": "Hayır, bu akşam büyükannesiyle.", "ru": "Нет, сегодня вечером она с бабушкой." },
+          { "tr": "Tabii, memnuniyetle!", "ru": "Конечно, с удовольствием!" }
+        ]},
+        { "speaker": "b", "tr": "Hayır, bu akşam büyükannesiyle.", "ru": "Нет, сегодня вечером она с бабушкой.", "distractors": [
+          { "tr": "Anladım. Ailenizle tanışmak çok güzeldi.", "ru": "Понятно. Было очень приятно познакомиться с вашей семьёй." },
+          { "tr": "Evet, bir kızımız var.", "ru": "Да, у нас есть дочь." }
+        ]},
+        { "speaker": "a", "tr": "Anladım. Ailenizle tanışmak çok güzeldi.", "ru": "Понятно. Было очень приятно познакомиться с вашей семьёй.", "distractors": [
+          { "tr": "Bizim için de öyle. Sizi yakında yine görmek isteriz.", "ru": "И для нас тоже. Хотели бы снова вас увидеть в скором времени." },
+          { "tr": "Ben de memnun oldum.", "ru": "Мне тоже приятно." }
+        ]},
+        { "speaker": "b", "tr": "Bizim için de öyle. Sizi yakında yine görmek isteriz.", "ru": "И для нас тоже. Хотели бы снова вас увидеть в скором времени.", "distractors": [
+          { "tr": "Tabii, memnuniyetle!", "ru": "Конечно, с удовольствием!" },
+          { "tr": "Çocuğunuz var mı?", "ru": "У вас есть дети?" }
+        ]}
+      ]
     }
   ]
 }

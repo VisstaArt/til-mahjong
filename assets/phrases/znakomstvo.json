@@ -4,24 +4,6 @@
   "source": "razgovornik",
   "phrases": [
     {
-      "ru": "Не вешайте трубку, пожалуйста",
-      "tr": "Hattan ayrılmayın lütfen",
-      "tl": "Хаттан айрылмайын лютфэн",
-      "sub": null
-    },
-    {
-      "ru": "Попробуйте позвонить, позднее",
-      "tr": "Daha sonrа tekrar dener misiniz lütfen",
-      "tl": "Даха сонра тэкрар дэнэр мисиниз, лютфэн",
-      "sub": null
-    },
-    {
-      "ru": "Сколько стоит звонок?",
-      "tr": "Bu görüşmenin fiyatı ne kadar?",
-      "tl": "Бу гёрюшмэнин фияты нэ кадар?",
-      "sub": null
-    },
-    {
       "ru": "Будет вечеринка.",
       "tr": "Bir parti var.",
       "tl": null,
@@ -224,30 +206,6 @@
       "tr": "Ne zaman geri dönmen gerek?",
       "tl": null,
       "sub": "Знакомство — Arkadaş edinme"
-    },
-    {
-      "ru": "Алло, это …",
-      "tr": "Alo, ben …",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "Я хочу поговорить с …",
-      "tr": "…ile konuşmak istiyorum",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "Говорите громче/медленнее, пожалуйста",
-      "tr": "Daha yüksek sesle/daha yavaş konuşur musunuz lütfen",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "Нас разъединили, соедините меня снова, пожалуйста",
-      "tr": "Konuşmam kesildi, beni yeniden bağlayabilir misiniz?",
-      "tl": null,
-      "sub": null
     },
     {
       "ru": "У тебя есть зажигалка?",

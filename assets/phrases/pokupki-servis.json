@@ -340,7 +340,7 @@
       "sub": "В книжном магазине — Kitapçi gazete bayii kirtasiyeci"
     },
     {
-      "ru": "Где находится отдел с путеводителями? 5 «Русско-турецкий разговорник» 0",
+      "ru": "Где находится отдел с путеводителями?",
       "tr": "Rehber kitaplar bölümü nerede?",
       "tl": "Рэхбэр китаплар бёлюмю нэрдэ?",
       "sub": "В книжном магазине — Kitapçi gazete bayii kirtasiyeci"
@@ -1110,6 +1110,84 @@
     {
       "ru": "Мне нужен крем для обуви/шнурки",
       "tr": "Biraz ayakkabı boyası/ayakkabı bağına ihtiyacım var",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Не вешайте трубку, пожалуйста",
+      "tr": "Hattan ayrılmayın lütfen",
+      "tl": "Хаттан айрылмайын лютфэн",
+      "sub": null
+    },
+    {
+      "ru": "Попробуйте позвонить, позднее",
+      "tr": "Daha sonrа tekrar dener misiniz lütfen",
+      "tl": "Даха сонра тэкрар дэнэр мисиниз, лютфэн",
+      "sub": null
+    },
+    {
+      "ru": "Сколько стоит звонок?",
+      "tr": "Bu görüşmenin fiyatı ne kadar?",
+      "tl": "Бу гёрюшмэнин фияты нэ кадар?",
+      "sub": null
+    },
+    {
+      "ru": "Алло, это …",
+      "tr": "Alo, ben …",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Я хочу поговорить с …",
+      "tr": "…ile konuşmak istiyorum",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Говорите громче/медленнее, пожалуйста",
+      "tr": "Daha yüksek sesle/daha yavaş konuşur musunuz lütfen",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Нас разъединили, соедините меня снова, пожалуйста",
+      "tr": "Konuşmam kesildi, beni yeniden bağlayabilir misiniz?",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Где я могу взять, купить …?",
+      "tr": "Nerede … alabilirim?",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Чего желаете?",
+      "tr": "Ne istiyorsun(uz)?",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "У вас есть …?",
+      "tr": "Sizde … var mı?",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Могу я вам чем-то помочь?",
+      "tr": "Size yardım edebilir miyim?",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Не могли бы вы мне сказать …?",
+      "tr": "Bana … söyleyebilir misiniz?",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Не могли бы вы мне показать…?",
+      "tr": "Bana … gösterebilir misiniz?",
       "tl": null,
       "sub": null
     }
