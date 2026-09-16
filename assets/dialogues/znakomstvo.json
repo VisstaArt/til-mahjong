@@ -267,16 +267,142 @@
           "ru": "Меня зовут Дениз. Приятно познакомиться.",
           "distractors": [
             { "tr": "İyi günler!", "ru": "Хорошего дня!" },
+            { "tr": "Bu partiyi beğendin mi?", "ru": "Тебе нравится эта вечеринка?" }
+          ]
+        },
+        {
+          "speaker": "a",
+          "tr": "Buraya kiminle geldin?",
+          "ru": "С кем ты сюда пришёл?",
+          "distractors": [
+            { "tr": "Nasılsın?", "ru": "Как дела?" },
+            { "tr": "Anladım, çok güzel bir ev.", "ru": "Понятно, очень красивый дом." }
+          ]
+        },
+        {
+          "speaker": "b",
+          "tr": "Arkadaşlarımla geldim. Ya sen?",
+          "ru": "С друзьями. А ты?",
+          "distractors": [
+            { "tr": "Ben sık gelirim, burası arkadaşımın evi.", "ru": "Я часто, это дом моего друга." },
+            { "tr": "Yedide buluşalım.", "ru": "Встретимся в семь." }
+          ]
+        },
+        {
+          "speaker": "a",
+          "tr": "Ben arkadaşımla geldim.",
+          "ru": "Я с подругой.",
+          "distractors": [
+            { "tr": "Hayır, bu ilk seferim. Ya sen?", "ru": "Нет, я тут впервые. А ты?" },
+            { "tr": "Olur, saat kaçta?", "ru": "Хорошо, во сколько?" }
+          ]
+        },
+        {
+          "speaker": "b",
+          "tr": "Bu partiyi beğendin mi?",
+          "ru": "Тебе нравится эта вечеринка?",
+          "distractors": [
+            { "tr": "Buraya sık geliyor musun?", "ru": "Ты часто сюда приходишь?" },
+            { "tr": "Sinemanın önünde buluşalım.", "ru": "Встретимся перед кинотеатром." }
+          ]
+        },
+        {
+          "speaker": "a",
+          "tr": "Evet, çok eğlenceli! Müzik harika.",
+          "ru": "Да, очень весело! Музыка классная.",
+          "distractors": [
+            { "tr": "Evet, severim. Ya sen?", "ru": "Да, люблю. А ты?" },
+            { "tr": "Nerede buluşalım?", "ru": "Где мы встретимся?" }
+          ]
+        },
+        {
+          "speaker": "b",
+          "tr": "Katılıyorum. Dans etmeyi sever misin?",
+          "ru": "Согласен. Ты любишь танцевать?",
+          "distractors": [
+            { "tr": "Teşekkürler, ona söylerim.", "ru": "Спасибо, передам ему." },
             { "tr": "Hayır, boşum.", "ru": "Нет, я свободна." }
           ]
         },
         {
           "speaker": "a",
-          "tr": "Ben de memnun oldum. Bu akşam bir şey yapıyor musun?",
-          "ru": "Мне тоже приятно. У тебя есть планы на вечер?",
+          "tr": "Evet, severim. Ya sen?",
+          "ru": "Да, люблю. А ты?",
+          "distractors": [
+            { "tr": "Bu partiyi beğendin mi?", "ru": "Тебе нравится эта вечеринка?" },
+            { "tr": "Tamam, görüşürüz!", "ru": "Хорошо, увидимся!" }
+          ]
+        },
+        {
+          "speaker": "b",
+          "tr": "Ben de severim. Dans edelim mi?",
+          "ru": "Я тоже. Потанцуем?",
+          "distractors": [
+            { "tr": "Arkadaşlarımla geldim.", "ru": "С друзьями." },
+            { "tr": "Çok iyi olur, teşekkür ederim!", "ru": "С удовольствием, спасибо!" }
+          ]
+        },
+        {
+          "speaker": "a",
+          "tr": "Olur, hadi!",
+          "ru": "Давай!",
+          "distractors": [
+            { "tr": "Yarın akşam bir şey yapıyor musun?", "ru": "У тебя есть планы на завтра вечером?" },
+            { "tr": "Anladım, çok güzel bir ev.", "ru": "Понятно, очень красивый дом." }
+          ]
+        },
+        {
+          "speaker": "b",
+          "tr": "Buraya sık geliyor musun?",
+          "ru": "Ты часто сюда приходишь?",
+          "distractors": [
+            { "tr": "Dans etmeyi sever misin?", "ru": "Ты любишь танцевать?" },
+            { "tr": "İyi günler!", "ru": "Хорошего дня!" }
+          ]
+        },
+        {
+          "speaker": "a",
+          "tr": "Hayır, bu ilk seferim. Ya sen?",
+          "ru": "Нет, я тут впервые. А ты?",
+          "distractors": [
+            { "tr": "Ben arkadaşımla geldim.", "ru": "Я с подругой." },
+            { "tr": "Nerede buluşalım?", "ru": "Где мы встретимся?" }
+          ]
+        },
+        {
+          "speaker": "b",
+          "tr": "Ben sık gelirim, burası arkadaşımın evi.",
+          "ru": "Я часто, это дом моего друга.",
+          "distractors": [
+            { "tr": "Sinemanın önünde buluşalım.", "ru": "Встретимся перед кинотеатром." },
+            { "tr": "Katılıyorum. Dans etmeyi sever misin?", "ru": "Согласен. Ты любишь танцевать?" }
+          ]
+        },
+        {
+          "speaker": "a",
+          "tr": "Anladım, çok güzel bir ev.",
+          "ru": "Понятно, очень красивый дом.",
+          "distractors": [
+            { "tr": "Buraya kiminle geldin?", "ru": "С кем ты сюда пришёл?" },
+            { "tr": "Harika! Sinemaya gidelim mi?", "ru": "Здорово! Может, сходим в кино?" }
+          ]
+        },
+        {
+          "speaker": "b",
+          "tr": "Teşekkürler, ona söylerim.",
+          "ru": "Спасибо, передам ему.",
+          "distractors": [
+            { "tr": "Yedide buluşalım.", "ru": "Встретимся в семь." },
+            { "tr": "Bu partiyi beğendin mi?", "ru": "Тебе нравится эта вечеринка?" }
+          ]
+        },
+        {
+          "speaker": "a",
+          "tr": "Yarın akşam bir şey yapıyor musun?",
+          "ru": "У тебя есть планы на завтра вечером?",
           "distractors": [
             { "tr": "Nasılsın?", "ru": "Как дела?" },
-            { "tr": "Telefon numaran ne?", "ru": "Какой у тебя номер телефона?" }
+            { "tr": "Ben sık gelirim, burası arkadaşımın evi.", "ru": "Я часто, это дом моего друга." }
           ]
         },
         {
@@ -284,7 +410,7 @@
           "tr": "Hayır, boşum.",
           "ru": "Нет, я свободна.",
           "distractors": [
-            { "tr": "Benim adım Deniz.", "ru": "Меня зовут Дениз." },
+            { "tr": "Arkadaşlarımla geldim.", "ru": "С друзьями." },
             { "tr": "Tamam, görüşürüz!", "ru": "Хорошо, увидимся!" }
           ]
         },
@@ -294,7 +420,7 @@
           "ru": "Здорово! Может, сходим в кино?",
           "distractors": [
             { "tr": "Merhaba!", "ru": "Привет!" },
-            { "tr": "Nerede buluşalım?", "ru": "Где мы встретимся?" }
+            { "tr": "Buraya kiminle geldin?", "ru": "С кем ты сюда пришёл?" }
           ]
         },
         {
@@ -312,7 +438,7 @@
           "ru": "Где мы встретимся?",
           "distractors": [
             { "tr": "Merhaba!", "ru": "Привет!" },
-            { "tr": "Bu akşam bir şey yapıyor musun?", "ru": "У тебя есть планы на вечер?" }
+            { "tr": "Yarın akşam bir şey yapıyor musun?", "ru": "У тебя есть планы на завтра вечером?" }
           ]
         },
         {
