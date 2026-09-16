@@ -5,7 +5,7 @@
     {
       "id": "znakomstvo-vecherinka",
       "title": "Знакомство на вечеринке",
-      "speakers": { "a": "Айше", "b": "Дениз" },
+      "speakers": { "a": "Ольга", "b": "Дениз" },
       "turns": [
         {
           "speaker": "a",
@@ -45,8 +45,8 @@
         },
         {
           "speaker": "a",
-          "tr": "Ben de iyiyim, teşekkürler. Benim adım Ayşe. Senin adın ne?",
-          "ru": "У меня тоже хорошо, спасибо. Меня зовут Айше. А тебя как зовут?",
+          "tr": "Ben de iyiyim, teşekkürler. Benim adım Olga. Senin adın ne?",
+          "ru": "У меня тоже хорошо, спасибо. Меня зовут Ольга. А тебя как зовут?",
           "distractors": [
             { "tr": "Harika! Sinemaya gidelim mi?", "ru": "Здорово! Может, сходим в кино?" },
             { "tr": "Nerede buluşalım?", "ru": "Где мы встретимся?" }
@@ -120,7 +120,7 @@
           "tr": "Olur, saat kaçta?",
           "ru": "Хорошо, во сколько?",
           "distractors": [
-            { "tr": "Benim adım Ayşe.", "ru": "Меня зовут Айше." },
+            { "tr": "Benim adım Olga.", "ru": "Меня зовут Ольга." },
             { "tr": "Merhaba!", "ru": "Привет!" }
           ]
         },
@@ -157,7 +157,7 @@
           "ru": "И тебе тоже!",
           "distractors": [
             { "tr": "Nerede buluşalım?", "ru": "Где мы встретимся?" },
-            { "tr": "Benim adım Ayşe.", "ru": "Меня зовут Айше." }
+            { "tr": "Benim adım Olga.", "ru": "Меня зовут Ольга." }
           ]
         }
       ]
@@ -165,7 +165,7 @@
     {
       "id": "znakomstvo-v-poezdke",
       "title": "Знакомство в поездке (вежливая форма)",
-      "speakers": { "a": "Элиф", "b": "Мехмет" },
+      "speakers": { "a": "Ольга", "b": "Мехмет" },
       "turns": [
         { "speaker": "a", "tr": "Merhaba!", "ru": "Здравствуйте!", "distractors": [
           { "tr": "Görüşürüz!", "ru": "До встречи!" },
@@ -176,15 +176,15 @@
           { "tr": "Evli misiniz?", "ru": "Вы замужем/женаты?" }
         ]},
         { "speaker": "a", "tr": "Adınız ne?", "ru": "Как вас зовут?", "distractors": [
-          { "tr": "Nerede kalıyorsunuz?", "ru": "Где вы остановились?" },
+          { "tr": "Nerede çalışıyorsunuz?", "ru": "Где вы работаете?" },
           { "tr": "Çocuğum var.", "ru": "У меня есть ребёнок." }
         ]},
         { "speaker": "b", "tr": "Benim adım Mehmet.", "ru": "Меня зовут Мехмет.", "distractors": [
           { "tr": "Rusyalıyım.", "ru": "Я из России." },
-          { "tr": "Bir otelde kalıyorum.", "ru": "Я остановился в отеле." }
+          { "tr": "Bir şirkette çalışıyorum.", "ru": "Я работаю в одной компании." }
         ]},
-        { "speaker": "a", "tr": "Benim adım Elif. Memnun oldum.", "ru": "Меня зовут Элиф. Приятно познакомиться.", "distractors": [
-          { "tr": "Ne kadar zaman buradasınız?", "ru": "Как долго вы здесь находитесь?" },
+        { "speaker": "a", "tr": "Benim adım Olga. Memnun oldum.", "ru": "Меня зовут Ольга. Приятно познакомиться.", "distractors": [
+          { "tr": "Bu şehri seviyor musunuz?", "ru": "Вам нравится этот город?" },
           { "tr": "Hobim müzik.", "ru": "Моё хобби — музыка." }
         ]},
         { "speaker": "b", "tr": "Ben de memnun oldum. Nerelisiniz?", "ru": "Мне тоже приятно. Откуда вы?", "distractors": [
@@ -193,86 +193,86 @@
         ]},
         { "speaker": "a", "tr": "Rusyalıyım. Ya siz?", "ru": "Я из России. А вы?", "distractors": [
           { "tr": "Evliyim.", "ru": "Я женат/замужем." },
-          { "tr": "Tatildeyim.", "ru": "Я в отпуске." }
+          { "tr": "Ben burada bir yıldır yaşıyorum.", "ru": "Я здесь живу уже год." }
         ]},
         { "speaker": "b", "tr": "Ben İstanbulluyum.", "ru": "Я из Стамбула.", "distractors": [
-          { "tr": "Bir hafta buradayım.", "ru": "Я здесь неделю." },
+          { "tr": "Bir hafta oldu, iş için geldim.", "ru": "Уже неделя, приехал по делам." },
           { "tr": "Bekarım.", "ru": "Я не женат." }
         ]},
-        { "speaker": "a", "tr": "Ne kadar zaman buradasınız?", "ru": "Как долго вы здесь находитесь?", "distractors": [
-          { "tr": "Nerede yaşıyorsunuz?", "ru": "Где вы живёте?" },
+        { "speaker": "a", "tr": "Ne kadar zamandır buradasınız?", "ru": "Как долго вы уже здесь?", "distractors": [
+          { "tr": "Nerede çalışıyorsunuz?", "ru": "Где вы работаете?" },
           { "tr": "Merhaba!", "ru": "Здравствуйте!" }
         ]},
-        { "speaker": "b", "tr": "Bir hafta buradayım. Ya siz?", "ru": "Я здесь неделю. А вы?", "distractors": [
+        { "speaker": "b", "tr": "Bir hafta oldu, iş için geldim.", "ru": "Уже неделя, приехал по делам.", "distractors": [
           { "tr": "Nerelisiniz?", "ru": "Откуда вы?" },
           { "tr": "Çocuğum var.", "ru": "У меня есть ребёнок." }
         ]},
-        { "speaker": "a", "tr": "Tatildeyim.", "ru": "Я в отпуске.", "distractors": [
-          { "tr": "Benim adım Elif.", "ru": "Меня зовут Элиф." },
-          { "tr": "Nerede kalıyorsunuz?", "ru": "Где вы остановились?" }
+        { "speaker": "a", "tr": "Ben burada bir yıldır yaşıyorum.", "ru": "А я здесь живу уже год.", "distractors": [
+          { "tr": "Benim adım Olga.", "ru": "Меня зовут Ольга." },
+          { "tr": "Nerede çalışıyorsunuz?", "ru": "Где вы работаете?" }
         ]},
-        { "speaker": "b", "tr": "Bu ilk gelişiniz mi?", "ru": "Это ваш первый приезд?", "distractors": [
+        { "speaker": "b", "tr": "Bu şehri seviyor musunuz?", "ru": "Вам нравится этот город?", "distractors": [
           { "tr": "Evli misiniz?", "ru": "Вы замужем?" },
           { "tr": "Hobiniz var mı?", "ru": "У вас есть хобби?" }
         ]},
-        { "speaker": "a", "tr": "Evet, bu ilk gelişim.", "ru": "Да, это мой первый приезд.", "distractors": [
-          { "tr": "Moskova'da yaşıyorum.", "ru": "Я живу в Москве." },
-          { "tr": "Hayır, bekarım.", "ru": "Нет, я не замужем." }
+        { "speaker": "a", "tr": "Evet, çok seviyorum.", "ru": "Да, очень нравится.", "distractors": [
+          { "tr": "Hayır, bekarım.", "ru": "Нет, я не замужем." },
+          { "tr": "Hâlâ öğreniyorum aslında.", "ru": "Вообще-то я всё ещё учу." }
         ]},
-        { "speaker": "b", "tr": "Nerede kalıyorsunuz?", "ru": "Где вы остановились?", "distractors": [
+        { "speaker": "b", "tr": "Nerede çalışıyorsunuz?", "ru": "Где вы работаете?", "distractors": [
           { "tr": "Adınız ne?", "ru": "Как вас зовут?" },
-          { "tr": "Ne kadar zaman buradasınız?", "ru": "Как долго вы здесь находитесь?" }
+          { "tr": "Ne kadar zamandır buradasınız?", "ru": "Как долго вы уже здесь?" }
         ]},
-        { "speaker": "a", "tr": "Bir otelde kalıyorum.", "ru": "Я остановилась в отеле.", "distractors": [
+        { "speaker": "a", "tr": "Bir şirkette çalışıyorum, yabancı müşterilerle.", "ru": "Я работаю в одной компании, с иностранными клиентами.", "distractors": [
           { "tr": "Rusyalıyım.", "ru": "Я из России." },
           { "tr": "Benim hobim de sinema.", "ru": "А моё хобби — кино." }
         ]},
-        { "speaker": "b", "tr": "Nerede yaşıyorsunuz?", "ru": "А где вы живёте?", "distractors": [
-          { "tr": "Bu ilk gelişiniz mi?", "ru": "Это ваш первый приезд?" },
+        { "speaker": "b", "tr": "İlginç! Türkçeyi nasıl öğrendiniz?", "ru": "Интересно! Как вы выучили турецкий?", "distractors": [
+          { "tr": "Bu şehri seviyor musunuz?", "ru": "Вам нравится этот город?" },
           { "tr": "Merhaba!", "ru": "Здравствуйте!" }
         ]},
-        { "speaker": "a", "tr": "Moskova'da yaşıyorum.", "ru": "Я живу в Москве.", "distractors": [
-          { "tr": "Bir otelde kalıyorum.", "ru": "Я остановилась в отеле." },
-          { "tr": "Tatildeyim.", "ru": "Я в отпуске." }
+        { "speaker": "a", "tr": "Hâlâ öğreniyorum aslında.", "ru": "Вообще-то я всё ещё учу.", "distractors": [
+          { "tr": "Bir şirkette çalışıyorum.", "ru": "Я работаю в одной компании." },
+          { "tr": "Ben burada bir yıldır yaşıyorum.", "ru": "Я здесь живу уже год." }
         ]},
         { "speaker": "b", "tr": "Evli misiniz?", "ru": "Вы замужем?", "distractors": [
           { "tr": "Hobiniz var mı?", "ru": "У вас есть хобби?" },
-          { "tr": "Nerede yaşıyorsunuz?", "ru": "Где вы живёте?" }
+          { "tr": "Nerede çalışıyorsunuz?", "ru": "Где вы работаете?" }
         ]},
         { "speaker": "a", "tr": "Hayır, bekarım. Ya siz?", "ru": "Нет, я не замужем. А вы?", "distractors": [
-          { "tr": "Evet, bu ilk gelişim.", "ru": "Да, это мой первый приезд." },
+          { "tr": "Evet, çok seviyorum.", "ru": "Да, очень нравится." },
           { "tr": "Rusyalıyım.", "ru": "Я из России." }
         ]},
         { "speaker": "b", "tr": "Evliyim. Çocuğum var.", "ru": "Я женат. У меня есть ребёнок.", "distractors": [
-          { "tr": "Bir hafta buradayım.", "ru": "Я здесь неделю." },
+          { "tr": "Bir hafta oldu, iş için geldim.", "ru": "Уже неделя, приехал по делам." },
           { "tr": "Ben İstanbulluyum.", "ru": "Я из Стамбула." }
         ]},
         { "speaker": "a", "tr": "Hobiniz var mı?", "ru": "У вас есть хобби?", "distractors": [
           { "tr": "Evli misiniz?", "ru": "Вы замужем?" },
-          { "tr": "Nerede kalıyorsunuz?", "ru": "Где вы остановились?" }
+          { "tr": "Nerede çalışıyorsunuz?", "ru": "Где вы работаете?" }
         ]},
         { "speaker": "b", "tr": "Evet, hobim müzik. Ya sizin?", "ru": "Да, моё хобби музыка. А ваше?", "distractors": [
           { "tr": "Evliyim. Çocuğum var.", "ru": "Я женат. У меня есть ребёнок." },
-          { "tr": "Bu ilk gelişiniz mi?", "ru": "Это ваш первый приезд?" }
+          { "tr": "Türkçeyi nasıl öğrendiniz?", "ru": "Как вы выучили турецкий?" }
         ]},
         { "speaker": "a", "tr": "Benim hobim de sinema.", "ru": "А моё хобби — кино.", "distractors": [
           { "tr": "Hayır, bekarım.", "ru": "Нет, я не замужем." },
-          { "tr": "Moskova'da yaşıyorum.", "ru": "Я живу в Москве." }
+          { "tr": "Ben burada bir yıldır yaşıyorum.", "ru": "Я здесь живу уже год." }
         ]},
-        { "speaker": "b", "tr": "Sizinle tanıştığıma çok memnun oldum, Elif Hanım. Görüşürüz!", "ru": "Очень рад был с вами познакомиться, госпожа Элиф. До встречи!", "distractors": [
+        { "speaker": "b", "tr": "Sizinle tanıştığıma çok memnun oldum, Olga Hanım. Görüşürüz!", "ru": "Очень рад был с вами познакомиться, госпожа Ольга. До встречи!", "distractors": [
           { "tr": "Nerelisiniz?", "ru": "Откуда вы?" },
           { "tr": "Hobiniz var mı?", "ru": "У вас есть хобби?" }
         ]},
         { "speaker": "a", "tr": "Ben de öyle, Mehmet Bey. İyi günler!", "ru": "Мне тоже, господин Мехмет. Хорошего дня!", "distractors": [
-          { "tr": "Benim adım Elif.", "ru": "Меня зовут Элиф." },
-          { "tr": "Bir otelde kalıyorum.", "ru": "Я остановилась в отеле." }
+          { "tr": "Benim adım Olga.", "ru": "Меня зовут Ольга." },
+          { "tr": "Bir şirkette çalışıyorum.", "ru": "Я работаю в одной компании." }
         ]}
       ]
     },
     {
       "id": "znakomstvo-vezhlivyy-otkaz",
       "title": "Вежливо, но нет",
-      "speakers": { "a": "Зейнеп", "b": "Джан" },
+      "speakers": { "a": "Ольга", "b": "Джан" },
       "turns": [
         { "speaker": "b", "tr": "Buraya oturmam seni rahatsız eder mi?", "ru": "Не возражаешь, если я присяду рядом?", "distractors": [
           { "tr": "Görüşürüz. İyi akşamlar!", "ru": "Пока. Хорошего вечера!" },
