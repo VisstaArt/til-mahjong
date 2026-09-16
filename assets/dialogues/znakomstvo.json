@@ -63,20 +63,28 @@
           { "tr": "Adınız ne?", "ru": "Как вас зовут?" },
           { "tr": "Ne kadar zamandır buradasınız?", "ru": "Как долго вы уже здесь?" }
         ]},
-        { "speaker": "a", "tr": "Bir şirkette çalışıyorum, yabancı müşterilerle.", "ru": "Я работаю в одной компании, с иностранными клиентами.", "distractors": [
+        { "speaker": "a", "tr": "Bir şirkette çalışıyorum, yabancı müşterilerle. Ya siz, nerede çalışıyorsunuz?", "ru": "Я работаю в одной компании, с иностранными клиентами. А вы, где вы работаете?", "distractors": [
           { "tr": "Rusyalıyım.", "ru": "Я из России." },
-          { "tr": "Benim hobim de sinema.", "ru": "А моё хобби — кино." }
+          { "tr": "Evet, ne yazık ki gitmem gerekiyor.", "ru": "Да, к сожалению, мне нужно идти." }
+        ]},
+        { "speaker": "b", "tr": "Ben bir bankada çalışıyorum.", "ru": "Я работаю в банке.", "distractors": [
+          { "tr": "İlginç! Türkçeyi nasıl öğrendiniz?", "ru": "Интересно! Как вы выучили турецкий?" },
+          { "tr": "Bu şehri seviyor musunuz?", "ru": "Вам нравится этот город?" }
+        ]},
+        { "speaker": "a", "tr": "İlginç, bankacılık zor bir meslek olmalı.", "ru": "Интересно, банковское дело — наверное, непростая профессия.", "distractors": [
+          { "tr": "Hâlâ öğreniyorum aslında.", "ru": "Вообще-то я всё ещё учу." },
+          { "tr": "Anlıyorum. Sizinle tanışmak çok güzeldi.", "ru": "Понимаю. Было очень приятно с вами познакомиться." }
         ]},
         { "speaker": "b", "tr": "İlginç! Türkçeyi nasıl öğrendiniz?", "ru": "Интересно! Как вы выучили турецкий?", "distractors": [
-          { "tr": "Bu şehri seviyor musunuz?", "ru": "Вам нравится этот город?" },
+          { "tr": "Ben bir bankada çalışıyorum.", "ru": "Я работаю в банке." },
           { "tr": "Merhaba!", "ru": "Здравствуйте!" }
         ]},
         { "speaker": "a", "tr": "Hâlâ öğreniyorum aslında.", "ru": "Вообще-то я всё ещё учу.", "distractors": [
-          { "tr": "Bir şirkette çalışıyorum.", "ru": "Я работаю в одной компании." },
+          { "tr": "Bir şirkette çalışıyorum, yabancı müşterilerle.", "ru": "Я работаю в одной компании, с иностранными клиентами." },
           { "tr": "Ben burada bir yıldır yaşıyorum.", "ru": "Я здесь живу уже год." }
         ]},
         { "speaker": "b", "tr": "Evli misiniz?", "ru": "Вы замужем?", "distractors": [
-          { "tr": "Hobiniz var mı?", "ru": "У вас есть хобби?" },
+          { "tr": "İlginç, bankacılık zor bir meslek olmalı.", "ru": "Интересно, банковское дело — наверное, непростая профессия." },
           { "tr": "Nerede çalışıyorsunuz?", "ru": "Где вы работаете?" }
         ]},
         { "speaker": "a", "tr": "Hayır, bekarım. Ya siz?", "ru": "Нет, я не замужем. А вы?", "distractors": [
@@ -87,25 +95,25 @@
           { "tr": "Bir hafta oldu, iş için geldim.", "ru": "Уже неделя, приехал по делам." },
           { "tr": "Ben İstanbulluyum.", "ru": "Я из Стамбула." }
         ]},
-        { "speaker": "a", "tr": "Hobiniz var mı?", "ru": "У вас есть хобби?", "distractors": [
-          { "tr": "Evli misiniz?", "ru": "Вы замужем?" },
-          { "tr": "Nerede çalışıyorsunuz?", "ru": "Где вы работаете?" }
-        ]},
-        { "speaker": "b", "tr": "Evet, hobim müzik. Ya sizin?", "ru": "Да, моё хобби музыка. А ваше?", "distractors": [
-          { "tr": "Evliyim. Çocuğum var.", "ru": "Я женат. У меня есть ребёнок." },
-          { "tr": "Türkçeyi nasıl öğrendiniz?", "ru": "Как вы выучили турецкий?" }
-        ]},
-        { "speaker": "a", "tr": "Benim hobim de sinema.", "ru": "А моё хобби — кино.", "distractors": [
+        { "speaker": "a", "tr": "Vaktiniz nasıl, işe geri dönmeniz mi gerekiyor?", "ru": "Как у вас со временем, вам нужно возвращаться на работу?", "distractors": [
           { "tr": "Hayır, bekarım.", "ru": "Нет, я не замужем." },
-          { "tr": "Ben burada bir yıldır yaşıyorum.", "ru": "Я здесь живу уже год." }
+          { "tr": "Ben bir bankada çalışıyorum.", "ru": "Я работаю в банке." }
+        ]},
+        { "speaker": "b", "tr": "Evet, ne yazık ki gitmem gerekiyor.", "ru": "Да, к сожалению, мне нужно идти.", "distractors": [
+          { "tr": "Evliyim. Çocuğum var.", "ru": "Я женат. У меня есть ребёнок." },
+          { "tr": "İlginç! Türkçeyi nasıl öğrendiniz?", "ru": "Интересно! Как вы выучили турецкий?" }
+        ]},
+        { "speaker": "a", "tr": "Anlıyorum. Sizinle tanışmak çok güzeldi.", "ru": "Понимаю. Было очень приятно с вами познакомиться.", "distractors": [
+          { "tr": "Vaktiniz nasıl, işe geri dönmeniz mi gerekiyor?", "ru": "Как у вас со временем, вам нужно возвращаться на работу?" },
+          { "tr": "İlginç, bankacılık zor bir meslek olmalı.", "ru": "Интересно, банковское дело — наверное, непростая профессия." }
         ]},
         { "speaker": "b", "tr": "Sizinle tanıştığıma çok memnun oldum, Olga Hanım. Görüşürüz!", "ru": "Очень рад был с вами познакомиться, госпожа Ольга. До встречи!", "distractors": [
           { "tr": "Nerelisiniz?", "ru": "Откуда вы?" },
-          { "tr": "Hobiniz var mı?", "ru": "У вас есть хобби?" }
+          { "tr": "Evet, ne yazık ki gitmem gerekiyor.", "ru": "Да, к сожалению, мне нужно идти." }
         ]},
         { "speaker": "a", "tr": "Ben de öyle, Mehmet Bey. İyi günler!", "ru": "Мне тоже, господин Мехмет. Хорошего дня!", "distractors": [
           { "tr": "Benim adım Olga.", "ru": "Меня зовут Ольга." },
-          { "tr": "Bir şirkette çalışıyorum.", "ru": "Я работаю в одной компании." }
+          { "tr": "Anlıyorum. Sizinle tanışmak çok güzeldi.", "ru": "Понимаю. Было очень приятно с вами познакомиться." }
         ]}
       ]
     },
