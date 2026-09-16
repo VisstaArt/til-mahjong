@@ -370,6 +370,242 @@
           { "tr": "Tamam, daha yavaş konuşurum. Anladınız mı?", "ru": "Хорошо, я буду говорить медленнее. Понимаете?" }
         ]}
       ]
+    },
+    {
+      "id": "znakomstvo-sport",
+      "title": "Спорт и увлечения",
+      "speakers": { "a": "Ольга", "b": "Керем" },
+      "turns": [
+        { "speaker": "a", "tr": "Merhaba! Burada spor mu yapıyorsun?", "ru": "Привет! Ты тут занимаешься спортом?", "distractors": [
+          { "tr": "Numaranı verir misin?", "ru": "Дашь свой номер?" },
+          { "tr": "Haftada üç kez.", "ru": "Три раза в неделю." }
+        ]},
+        { "speaker": "b", "tr": "Evet, her gün koşuyorum. Ya sen?", "ru": "Да, бегаю каждый день. А ты?", "distractors": [
+          { "tr": "Ne tesadüf! Birlikte antrenman yapabiliriz.", "ru": "Какое совпадение! Можем тренироваться вместе." },
+          { "tr": "Şehir merkezindeki spor salonuna.", "ru": "В тот, что в центре города." }
+        ]},
+        { "speaker": "a", "tr": "Ben yüzmeyi seviyorum.", "ru": "Я люблю плавать.", "distractors": [
+          { "tr": "Hangi spor salonuna gidiyorsun?", "ru": "В какой спортзал ты ходишь?" },
+          { "tr": "Tabii, işte numaram.", "ru": "Конечно, вот мой номер." }
+        ]},
+        { "speaker": "b", "tr": "Harika! Başka spor yapıyor musun?", "ru": "Здорово! Ещё каким-то спортом занимаешься?", "distractors": [
+          { "tr": "Ben de spor salonuna gitmeyi seviyorum.", "ru": "Я тоже люблю ходить в спортзал." },
+          { "tr": "Numaranı verir misin?", "ru": "Дашь свой номер?" }
+        ]},
+        { "speaker": "a", "tr": "Bazen basketbol oynuyorum.", "ru": "Иногда играю в баскетбол.", "distractors": [
+          { "tr": "Ben de oraya gidiyorum bazen!", "ru": "Я тоже туда иногда хожу!" },
+          { "tr": "Olur, harika bir fikir.", "ru": "Хорошо, отличная идея." }
+        ]},
+        { "speaker": "b", "tr": "Ben de futbol oynarım. Bir takımım var.", "ru": "Я ещё в футбол играю. У меня есть команда.", "distractors": [
+          { "tr": "Ne kadar sıklıkla antrenman yapıyorsun?", "ru": "Как часто тренируешься?" },
+          { "tr": "Şehir merkezindeki spor salonuna.", "ru": "В тот, что в центре города." }
+        ]},
+        { "speaker": "a", "tr": "Ne kadar sıklıkla antrenman yapıyorsun?", "ru": "Как часто тренируешься?", "distractors": [
+          { "tr": "Ben de futbol oynarım.", "ru": "Я ещё в футбол играю." },
+          { "tr": "Tabii, işte numaram.", "ru": "Конечно, вот мой номер." }
+        ]},
+        { "speaker": "b", "tr": "Haftada üç kez.", "ru": "Три раза в неделю.", "distractors": [
+          { "tr": "Ben yüzmeyi seviyorum.", "ru": "Я люблю плавать." },
+          { "tr": "Ne tesadüf! Birlikte antrenman yapabiliriz.", "ru": "Какое совпадение! Можем тренироваться вместе." }
+        ]},
+        { "speaker": "a", "tr": "Ben de spor salonuna gitmeyi seviyorum.", "ru": "Я тоже люблю ходить в спортзал.", "distractors": [
+          { "tr": "Hangi spor salonuna gidiyorsun?", "ru": "В какой спортзал ты ходишь?" },
+          { "tr": "Haftada üç kez.", "ru": "Три раза в неделю." }
+        ]},
+        { "speaker": "b", "tr": "Hangi spor salonuna gidiyorsun?", "ru": "В какой спортзал ты ходишь?", "distractors": [
+          { "tr": "Bazen basketbol oynuyorum.", "ru": "Иногда играю в баскетбол." },
+          { "tr": "Numaranı verir misin?", "ru": "Дашь свой номер?" }
+        ]},
+        { "speaker": "a", "tr": "Şehir merkezindeki spor salonuna.", "ru": "В тот, что в центре города.", "distractors": [
+          { "tr": "Ben de oraya gidiyorum bazen!", "ru": "Я тоже туда иногда хожу!" },
+          { "tr": "Olur, harika bir fikir.", "ru": "Хорошо, отличная идея." }
+        ]},
+        { "speaker": "b", "tr": "Ben de oraya gidiyorum bazen!", "ru": "Я тоже туда иногда хожу!", "distractors": [
+          { "tr": "Ben yüzmeyi seviyorum.", "ru": "Я люблю плавать." },
+          { "tr": "Ne kadar sıklıkla antrenman yapıyorsun?", "ru": "Как часто тренируешься?" }
+        ]},
+        { "speaker": "a", "tr": "Ne tesadüf! Birlikte antrenman yapabiliriz.", "ru": "Какое совпадение! Можем тренироваться вместе.", "distractors": [
+          { "tr": "Haftada üç kez.", "ru": "Три раза в неделю." },
+          { "tr": "Tabii, işte numaram.", "ru": "Конечно, вот мой номер." }
+        ]},
+        { "speaker": "b", "tr": "Olur, harika bir fikir.", "ru": "Хорошо, отличная идея.", "distractors": [
+          { "tr": "Şehir merkezindeki spor salonuna.", "ru": "В тот, что в центре города." },
+          { "tr": "Ben de spor salonuna gitmeyi seviyorum.", "ru": "Я тоже люблю ходить в спортзал." }
+        ]},
+        { "speaker": "a", "tr": "Numaranı verir misin?", "ru": "Дашь свой номер?", "distractors": [
+          { "tr": "Ben de futbol oynarım.", "ru": "Я ещё в футбол играю." },
+          { "tr": "Harika! Başka spor yapıyor musun?", "ru": "Здорово! Ещё каким-то спортом занимаешься?" }
+        ]},
+        { "speaker": "b", "tr": "Tabii, işte numaram.", "ru": "Конечно, вот мой номер.", "distractors": [
+          { "tr": "Ne tesadüf! Birlikte antrenman yapabiliriz.", "ru": "Какое совпадение! Можем тренироваться вместе." },
+          { "tr": "Ben yüzmeyi seviyorum.", "ru": "Я люблю плавать." }
+        ]}
+      ]
+    },
+    {
+      "id": "znakomstvo-sevdikler",
+      "title": "Любимые вещи",
+      "speakers": { "a": "Ольга", "b": "Селин" },
+      "turns": [
+        { "speaker": "a", "tr": "Bu kahve harika, değil mi?", "ru": "Этот кофе прекрасен, правда?", "distractors": [
+          { "tr": "Sana birkaç şarkı önerebilirim.", "ru": "Могу порекомендовать пару песен." },
+          { "tr": "Mantı seviyorum.", "ru": "Я люблю манты." }
+        ]},
+        { "speaker": "b", "tr": "Evet! Ben kahveyi çok severim.", "ru": "Да! Я очень люблю кофе.", "distractors": [
+          { "tr": "Çok isterim, teşekkürler!", "ru": "Было бы здорово, спасибо!" },
+          { "tr": "Henüz bilmiyorum, yeni öğreniyorum.", "ru": "Ещё не знаю, только знакомлюсь." }
+        ]},
+        { "speaker": "a", "tr": "En sevdiğin renk ne?", "ru": "Какой твой любимый цвет?", "distractors": [
+          { "tr": "Ben de! Peki müzik? Ne dinlersin?", "ru": "Я тоже! А музыка? Что слушаешь?" },
+          { "tr": "Harika, ben de. En sevdiğin şarkıcı kim?", "ru": "Здорово, я тоже. Какой твой любимый певец?" }
+        ]},
+        { "speaker": "b", "tr": "Mavi. Ya senin?", "ru": "Синий. А твой?", "distractors": [
+          { "tr": "En sevdiğin yemek ne?", "ru": "Какая твоя любимая еда?" },
+          { "tr": "Türk pop müziği dinlerim.", "ru": "Слушаю турецкий поп." }
+        ]},
+        { "speaker": "a", "tr": "Benim en sevdiğim renk yeşil.", "ru": "Мой любимый цвет — зелёный.", "distractors": [
+          { "tr": "Güzel! En sevdiğin yemek ne?", "ru": "Красиво! Какая твоя любимая еда?" },
+          { "tr": "Sana birkaç şarkı önerebilirim.", "ru": "Могу порекомендовать пару песен." }
+        ]},
+        { "speaker": "b", "tr": "Güzel! En sevdiğin yemek ne?", "ru": "Красиво! Какая твоя любимая еда?", "distractors": [
+          { "tr": "Benim en sevdiğim renk yeşil.", "ru": "Мой любимый цвет — зелёный." },
+          { "tr": "Çok isterim, teşekkürler!", "ru": "Было бы здорово, спасибо!" }
+        ]},
+        { "speaker": "a", "tr": "Mantı seviyorum.", "ru": "Я люблю манты.", "distractors": [
+          { "tr": "Mavi. Ya senin?", "ru": "Синий. А твой?" },
+          { "tr": "Harika, ben de. En sevdiğin şarkıcı kim?", "ru": "Здорово, я тоже. Какой твой любимый певец?" }
+        ]},
+        { "speaker": "b", "tr": "Ben de! Peki müzik? Ne dinlersin?", "ru": "Я тоже! А музыка? Что слушаешь?", "distractors": [
+          { "tr": "En sevdiğin renk ne?", "ru": "Какой твой любимый цвет?" },
+          { "tr": "Mantı seviyorum.", "ru": "Я люблю манты." }
+        ]},
+        { "speaker": "a", "tr": "Türk pop müziği dinlerim.", "ru": "Слушаю турецкий поп.", "distractors": [
+          { "tr": "Ben de! Peki müzik? Ne dinlersin?", "ru": "Я тоже! А музыка? Что слушаешь?" },
+          { "tr": "Çok isterim, teşekkürler!", "ru": "Было бы здорово, спасибо!" }
+        ]},
+        { "speaker": "b", "tr": "Harika, ben de. En sevdiğin şarkıcı kim?", "ru": "Здорово, я тоже. Какой твой любимый певец?", "distractors": [
+          { "tr": "Bu kahve harika, değil mi?", "ru": "Этот кофе прекрасен, правда?" },
+          { "tr": "Benim en sevdiğim renk yeşil.", "ru": "Мой любимый цвет — зелёный." }
+        ]},
+        { "speaker": "a", "tr": "Henüz bilmiyorum, yeni öğreniyorum.", "ru": "Ещё не знаю, только знакомлюсь.", "distractors": [
+          { "tr": "Sana birkaç şarkı önerebilirim.", "ru": "Могу порекомендовать пару песен." },
+          { "tr": "Mavi. Ya senin?", "ru": "Синий. А твой?" }
+        ]},
+        { "speaker": "b", "tr": "Sana birkaç şarkı önerebilirim.", "ru": "Могу порекомендовать пару песен.", "distractors": [
+          { "tr": "En sevdiğin şarkıcı kim?", "ru": "Какой твой любимый певец?" },
+          { "tr": "Bu kahve harika, değil mi?", "ru": "Этот кофе прекрасен, правда?" }
+        ]},
+        { "speaker": "a", "tr": "Çok isterim, teşekkürler!", "ru": "Было бы здорово, спасибо!", "distractors": [
+          { "tr": "Henüz bilmiyorum, yeni öğreniyorum.", "ru": "Ещё не знаю, только знакомлюсь." },
+          { "tr": "En sevdiğin renk ne?", "ru": "Какой твой любимый цвет?" }
+        ]}
+      ]
+    },
+    {
+      "id": "znakomstvo-dogum-gunu",
+      "title": "С днём рождения!",
+      "speakers": { "a": "Ольга", "b": "Али" },
+      "turns": [
+        { "speaker": "b", "tr": "İyi ki doğdun, Olga! Kaç yaşındasın?", "ru": "С днём рождения, Ольга! Сколько тебе лет?", "distractors": [
+          { "tr": "Rica ederim. İyi eğlenceler!", "ru": "Пожалуйста. Хорошего праздника!" },
+          { "tr": "Tabii, aç!", "ru": "Конечно, открывай!" }
+        ]},
+        { "speaker": "a", "tr": "Yirmi yedi yaşındayım.", "ru": "Мне двадцать семь.", "distractors": [
+          { "tr": "Balık burcuyum.", "ru": "Я Рыбы." },
+          { "tr": "Çok güzelmiş, teşekkür ederim!", "ru": "Как красиво, спасибо!" }
+        ]},
+        { "speaker": "b", "tr": "Burcun ne?", "ru": "Какой у тебя знак зодиака?", "distractors": [
+          { "tr": "Sana bir hediyem var.", "ru": "У меня для тебя подарок." },
+          { "tr": "Ne tesadüf!", "ru": "Какое совпадение!" }
+        ]},
+        { "speaker": "a", "tr": "Balık burcuyum.", "ru": "Я Рыбы.", "distractors": [
+          { "tr": "Yirmi yedi yaşındayım.", "ru": "Мне двадцать семь." },
+          { "tr": "Aa, çok naziksin! Açabilir miyim?", "ru": "Ой, как мило! Можно открыть?" }
+        ]},
+        { "speaker": "b", "tr": "Ben de Balık burcuyum!", "ru": "Я тоже Рыбы!", "distractors": [
+          { "tr": "Burcun ne?", "ru": "Какой у тебя знак зодиака?" },
+          { "tr": "Rica ederim. İyi eğlenceler!", "ru": "Пожалуйста. Хорошего праздника!" }
+        ]},
+        { "speaker": "a", "tr": "Ne tesadüf!", "ru": "Какое совпадение!", "distractors": [
+          { "tr": "Balık burcuyum.", "ru": "Я Рыбы." },
+          { "tr": "Tabii, aç!", "ru": "Конечно, открывай!" }
+        ]},
+        { "speaker": "b", "tr": "Sana bir hediyem var.", "ru": "У меня для тебя подарок.", "distractors": [
+          { "tr": "Ben de Balık burcuyum!", "ru": "Я тоже Рыбы!" },
+          { "tr": "Kaç yaşındasın?", "ru": "Сколько тебе лет?" }
+        ]},
+        { "speaker": "a", "tr": "Aa, çok naziksin! Açabilir miyim?", "ru": "Ой, как мило! Можно открыть?", "distractors": [
+          { "tr": "Ne tesadüf!", "ru": "Какое совпадение!" },
+          { "tr": "Yirmi yedi yaşındayım.", "ru": "Мне двадцать семь." }
+        ]},
+        { "speaker": "b", "tr": "Tabii, aç!", "ru": "Конечно, открывай!", "distractors": [
+          { "tr": "Sana bir hediyem var.", "ru": "У меня для тебя подарок." },
+          { "tr": "İyi ki doğdun, Olga! Kaç yaşındasın?", "ru": "С днём рождения, Ольга! Сколько тебе лет?" }
+        ]},
+        { "speaker": "a", "tr": "Çok güzelmiş, teşekkür ederim!", "ru": "Как красиво, спасибо!", "distractors": [
+          { "tr": "Aa, çok naziksin! Açabilir miyim?", "ru": "Ой, как мило! Можно открыть?" },
+          { "tr": "Balık burcuyum.", "ru": "Я Рыбы." }
+        ]},
+        { "speaker": "b", "tr": "Rica ederim. İyi eğlenceler!", "ru": "Пожалуйста. Хорошего праздника!", "distractors": [
+          { "tr": "Burcun ne?", "ru": "Какой у тебя знак зодиака?" },
+          { "tr": "Sana bir hediyem var.", "ru": "У меня для тебя подарок." }
+        ]}
+      ]
+    },
+    {
+      "id": "znakomstvo-yazisma",
+      "title": "Знакомство по переписке",
+      "speakers": { "a": "Ольга", "b": "Эмре" },
+      "turns": [
+        { "speaker": "b", "tr": "Merhaba, profilini gördüm. Selam vermek istedim.", "ru": "Привет, увидел твой профиль. Решил поздороваться.", "distractors": [
+          { "tr": "Harika! Sana yazarım.", "ru": "Отлично! Я тебе напишу." },
+          { "tr": "Bir ara buluşup kahve içelim mi?", "ru": "Может, как-нибудь встретимся, выпьем кофе?" }
+        ]},
+        { "speaker": "a", "tr": "Merhaba! Nazik bir mesaj, teşekkürler.", "ru": "Привет! Приятное сообщение, спасибо.", "distractors": [
+          { "tr": "Görüşmek üzere!", "ru": "До встречи!" },
+          { "tr": "Bir yıldır.", "ru": "Уже год." }
+        ]},
+        { "speaker": "b", "tr": "Nerelisin?", "ru": "Ты откуда?", "distractors": [
+          { "tr": "Türkçen çok iyi!", "ru": "У тебя очень хороший турецкий!" },
+          { "tr": "Vay, ne zamandır buradasın?", "ru": "Ого, как давно ты здесь?" }
+        ]},
+        { "speaker": "a", "tr": "Rusyalıyım, ama İstanbul'da yaşıyorum.", "ru": "Я из России, но живу в Стамбуле.", "distractors": [
+          { "tr": "Teşekkürler, hâlâ öğreniyorum.", "ru": "Спасибо, я всё ещё учу." },
+          { "tr": "Olur, neden olmasın.", "ru": "Хорошо, почему бы и нет." }
+        ]},
+        { "speaker": "b", "tr": "Vay, ne zamandır buradasın?", "ru": "Ого, как давно ты здесь?", "distractors": [
+          { "tr": "Bir ara buluşup kahve içelim mi?", "ru": "Может, как-нибудь встретимся, выпьем кофе?" },
+          { "tr": "Nerelisin?", "ru": "Ты откуда?" }
+        ]},
+        { "speaker": "a", "tr": "Bir yıldır.", "ru": "Уже год.", "distractors": [
+          { "tr": "Rusyalıyım, ama İstanbul'da yaşıyorum.", "ru": "Я из России, но живу в Стамбуле." },
+          { "tr": "Görüşmek üzere!", "ru": "До встречи!" }
+        ]},
+        { "speaker": "b", "tr": "Türkçen çok iyi!", "ru": "У тебя очень хороший турецкий!", "distractors": [
+          { "tr": "Nerelisin?", "ru": "Ты откуда?" },
+          { "tr": "Harika! Sana yazarım.", "ru": "Отлично! Я тебе напишу." }
+        ]},
+        { "speaker": "a", "tr": "Teşekkürler, hâlâ öğreniyorum.", "ru": "Спасибо, я всё ещё учу.", "distractors": [
+          { "tr": "Bir yıldır.", "ru": "Уже год." },
+          { "tr": "Olur, neden olmasın.", "ru": "Хорошо, почему бы и нет." }
+        ]},
+        { "speaker": "b", "tr": "Bir ara buluşup kahve içelim mi?", "ru": "Может, как-нибудь встретимся, выпьем кофе?", "distractors": [
+          { "tr": "Türkçen çok iyi!", "ru": "У тебя очень хороший турецкий!" },
+          { "tr": "Vay, ne zamandır buradasın?", "ru": "Ого, как давно ты здесь?" }
+        ]},
+        { "speaker": "a", "tr": "Olur, neden olmasın.", "ru": "Хорошо, почему бы и нет.", "distractors": [
+          { "tr": "Teşekkürler, hâlâ öğreniyorum.", "ru": "Спасибо, я всё ещё учу." },
+          { "tr": "Merhaba! Nazik bir mesaj, teşekkürler.", "ru": "Привет! Приятное сообщение, спасибо." }
+        ]},
+        { "speaker": "b", "tr": "Harika! Sana yazarım.", "ru": "Отлично! Я тебе напишу.", "distractors": [
+          { "tr": "Nerelisin?", "ru": "Ты откуда?" },
+          { "tr": "Bir ara buluşup kahve içelim mi?", "ru": "Может, как-нибудь встретимся, выпьем кофе?" }
+        ]},
+        { "speaker": "a", "tr": "Görüşmek üzere!", "ru": "До встречи!", "distractors": [
+          { "tr": "Rusyalıyım, ama İstanbul'da yaşıyorum.", "ru": "Я из России, но живу в Стамбуле." },
+          { "tr": "Olur, neden olmasın.", "ru": "Хорошо, почему бы и нет." }
+        ]}
+      ]
     }
   ]
 }
