@@ -19,7 +19,7 @@
           { "tr": "Nerede çalışıyorsunuz?", "ru": "Где вы работаете?" },
           { "tr": "Çocuğum var.", "ru": "У меня есть ребёнок." }
         ]},
-        { "speaker": "b", "tr": "Benim adım Mehmet.", "ru": "Меня зовут Мехмет.", "distractors": [
+        { "speaker": "b", "tr": "Benim adım Mehmet. Ya siz?", "ru": "Меня зовут Мехмет. А вас?", "distractors": [
           { "tr": "Rusyalıyım.", "ru": "Я из России." },
           { "tr": "Bir şirkette çalışıyorum.", "ru": "Я работаю в одной компании." }
         ]},
@@ -55,11 +55,11 @@
           { "tr": "Evli misiniz?", "ru": "Вы замужем?" },
           { "tr": "Hobiniz var mı?", "ru": "У вас есть хобби?" }
         ]},
-        { "speaker": "a", "tr": "Evet, çok seviyorum.", "ru": "Да, очень нравится.", "distractors": [
+        { "speaker": "a", "tr": "Evet, çok seviyorum. Ya siz, bu şehri seviyor musunuz?", "ru": "Да, очень нравится. А вам, вам нравится этот город?", "distractors": [
           { "tr": "Hayır, bekarım.", "ru": "Нет, я не замужем." },
           { "tr": "Hâlâ öğreniyorum aslında.", "ru": "Вообще-то я всё ещё учу." }
         ]},
-        { "speaker": "b", "tr": "Nerede çalışıyorsunuz?", "ru": "Где вы работаете?", "distractors": [
+        { "speaker": "b", "tr": "Evet, ben de çok seviyorum. Nerede çalışıyorsunuz?", "ru": "Да, мне тоже очень нравится. Где вы работаете?", "distractors": [
           { "tr": "Adınız ne?", "ru": "Как вас зовут?" },
           { "tr": "Ne kadar zamandır buradasınız?", "ru": "Как долго вы уже здесь?" }
         ]},
@@ -660,13 +660,13 @@
           { "tr": "Benim en sevdiğim renk yeşil.", "ru": "Мой любимый цвет — зелёный." },
           { "tr": "Çok isterim, teşekkürler!", "ru": "Было бы здорово, спасибо!" }
         ]},
-        { "speaker": "a", "tr": "Mantı seviyorum.", "ru": "Я люблю манты.", "distractors": [
+        { "speaker": "a", "tr": "Mantı seviyorum. Ya sen, en sevdiğin yemek ne?", "ru": "Мне нравятся манты. А ты, какая твоя любимая еда?", "distractors": [
           { "tr": "Mavi. Ya senin?", "ru": "Синий. А твой?" },
           { "tr": "Harika, ben de. En sevdiğin şarkıcı kim?", "ru": "Здорово, я тоже. Какой твой любимый певец?" }
         ]},
-        { "speaker": "b", "tr": "Ben de! Peki müzik? Ne dinlersin?", "ru": "Я тоже! А музыка? Что слушаешь?", "distractors": [
+        { "speaker": "b", "tr": "Ben de mantıyı severim! Peki müzik? Ne dinlersin?", "ru": "Мне тоже нравятся манты! А музыка? Что слушаешь?", "distractors": [
           { "tr": "En sevdiğin renk ne?", "ru": "Какой твой любимый цвет?" },
-          { "tr": "Mantı seviyorum.", "ru": "Я люблю манты." }
+          { "tr": "Mantı seviyorum. Ya sen, en sevdiğin yemek ne?", "ru": "Мне нравятся манты. А ты, какая твоя любимая еда?" }
         ]},
         { "speaker": "a", "tr": "Türk pop müziği dinlerim.", "ru": "Слушаю турецкий поп.", "distractors": [
           { "tr": "Ben de! Peki müzik? Ne dinlersin?", "ru": "Я тоже! А музыка? Что слушаешь?" },
@@ -1592,13 +1592,21 @@
           { "tr": "Evet, sende kalıyorum, teşekkürler.", "ru": "Да, у тебя остановлюсь, спасибо." },
           { "tr": "Ben de seni özledim.", "ru": "Я тоже по тебе скучала." }
         ]},
-        { "speaker": "b", "tr": "Evet, sende kalıyorum, teşekkürler.", "ru": "Да, у тебя остановлюсь, спасибо.", "distractors": [
-          { "tr": "Harika! Hâlâ Moskova'da mı yaşıyorsun?", "ru": "Отлично! Ты всё ещё живёшь в Москве?" },
+        { "speaker": "b", "tr": "Evet, sende kalıyorum, teşekkürler. Sen nasılsın, işin nasıl gidiyor?", "ru": "Да, у тебя остановлюсь, спасибо. А ты как, как работа?", "distractors": [
+          { "tr": "Harika! Hâlâ Moskova'da mı yaşıyorsun sen?", "ru": "Отлично! А ты всё ещё живёшь в Москве?" },
           { "tr": "Seni de! Bu ilk gelişin mi Türkiye'ye?", "ru": "Тебя тоже! Это твой первый приезд в Турцию?" }
         ]},
-        { "speaker": "a", "tr": "Harika! Hâlâ Moskova'da mı yaşıyorsun?", "ru": "Отлично! Ты всё ещё живёшь в Москве?", "distractors": [
-          { "tr": "Evet, Moskova'da yaşıyorum.", "ru": "Да, я живу в Москве." },
-          { "tr": "Bir hafta buradayım.", "ru": "Я здесь на неделю." }
+        { "speaker": "a", "tr": "İyiyim, iş biraz yoğun ama seviyorum.", "ru": "Хорошо, работы многовато, но мне нравится.", "distractors": [
+          { "tr": "Hayır, bu ikinci gelişim.", "ru": "Нет, это мой второй приезд." },
+          { "tr": "Sevindim buna. Deniz'i de görecek miyim bu sefer?", "ru": "Рада это слышать. А Дениза я в этот раз увижу?" }
+        ]},
+        { "speaker": "b", "tr": "Sevindim buna. Deniz'i de görecek miyim bu sefer?", "ru": "Рада это слышать. А Дениза я в этот раз увижу?", "distractors": [
+          { "tr": "Bir hafta buradayım.", "ru": "Я здесь на неделю." },
+          { "tr": "Ben de seni özledim.", "ru": "Я тоже по тебе скучала." }
+        ]},
+        { "speaker": "a", "tr": "Tabii, onunla tanışacaksın! Hâlâ Moskova'da mı yaşıyorsun sen?", "ru": "Конечно, ты с ним познакомишься! А ты всё ещё живёшь в Москве?", "distractors": [
+          { "tr": "Evet, tatildeyim, işten izin aldım.", "ru": "Да, в отпуске, взяла отпуск с работы." },
+          { "tr": "İyiyim, iş biraz yoğun ama seviyorum.", "ru": "Хорошо, работы многовато, но мне нравится." }
         ]},
         { "speaker": "b", "tr": "Evet, Moskova'da yaşıyorum.", "ru": "Да, я живу в Москве.", "distractors": [
           { "tr": "Seni özledim çok.", "ru": "Я по тебе очень скучала." },
