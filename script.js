@@ -1,35 +1,10 @@
 // Тил Маджонг — прототип
-// 20 турецких слов (существительные, глаголы действия, прилагательные)
-// каждое слово даёт пару плиток: картинка (SVG-иконка из icons.js) + турецкое слово
 
 if ("serviceWorker" in navigator) {
   window.addEventListener("load", () => {
     navigator.serviceWorker.register("sw.js").catch(() => {});
   });
 }
-
-const WORDS = [
-  { tr: "kitap", ru: "книга", pos: "noun", theme: "Школа и канцтовары" },
-  { tr: "çay", ru: "чай / речка", pos: "noun", theme: "Еда и напитки" },
-  { tr: "ekmek", ru: "хлеб", pos: "noun", theme: "Еда и напитки" },
-  { tr: "su", ru: "вода", pos: "noun", theme: "Еда и напитки" },
-  { tr: "ev", ru: "дом", pos: "noun", theme: "Дом и мебель" },
-  { tr: "araba", ru: "машина", pos: "noun", theme: "Транспорт и вождение" },
-  { tr: "kedi", ru: "кошка", pos: "noun", theme: "Животные" },
-  { tr: "köpek", ru: "собака", pos: "noun", theme: "Животные" },
-  { tr: "güneş", ru: "солнце", pos: "noun", theme: "Природа и погода" },
-  { tr: "ay", ru: "луна", pos: "noun", theme: "Природа и погода" },
-  { tr: "koşmak", ru: "бежать", pos: "verb", theme: "Глаголы — действия" },
-  { tr: "yüzmek", ru: "плавать", pos: "verb", theme: "Глаголы — действия" },
-  { tr: "okumak", ru: "читать", pos: "verb", theme: "Глаголы — действия" },
-  { tr: "yazmak", ru: "писать", pos: "verb", theme: "Глаголы — действия" },
-  { tr: "uyumak", ru: "спать", pos: "verb", theme: "Глаголы — действия" },
-  { tr: "yürümek", ru: "идти", pos: "verb", theme: "Глаголы — действия" },
-  { tr: "büyük", ru: "большой", pos: "adjective", theme: "Прилагательные и сравнения" },
-  { tr: "küçük", ru: "маленький", pos: "adjective", theme: "Прилагательные и сравнения" },
-  { tr: "kırmızı", ru: "красный", pos: "adjective", theme: "Цвета" },
-  { tr: "mavi", ru: "синий", pos: "adjective", theme: "Цвета" },
-];
 
 // Эмодзи-иконки плиток каталога — порядок вывода плиток соответствует порядку
 // CATEGORIES (см. wordbank.js, грузится раньше этого файла).
@@ -347,13 +322,10 @@ replayBtn.addEventListener("click", () => {
   if (lastSpokenWord) speak(lastSpokenWord);
 });
 
-// Все доступные слова (базовые + свои), без учёта выбора. Кастомное слово
-// перекрывает базовое, если совпадает по написанию.
+// Все слова, загруженные в этом браузере (из открытых категорий) — единый пул,
+// без каких-либо слов "по умолчанию": пока категория не открыта, её слов тут нет.
 function getAllAvailableWords() {
-  const byTr = new Map();
-  WORDS.forEach((w) => byTr.set(w.tr, { ...w, icon: null }));
-  customWords.forEach((w) => byTr.set(w.tr, w));
-  return [...byTr.values()];
+  return customWords;
 }
 
 // Колода для игры — только отмеченные чекбоксом слова.
@@ -375,7 +347,7 @@ function renderIcon(container, tile) {
     container.style.background = COLOR_WORDS[tile.tr];
     return;
   }
-  const src = tile.icon || IMAGE_FILES[tile.tr];
+  const src = tile.icon;
   if (!src) {
     container.style.display = "none";
     return;
@@ -415,7 +387,7 @@ function renderTileFace(el, tile) {
     el.textContent = DIRECTION_LETTERS[tile.tr];
     return;
   }
-  const src = tile.icon || IMAGE_FILES[tile.tr];
+  const src = tile.icon;
   if (src) {
     el.classList.add("has-icon");
     if (src.startsWith("data:image/svg+xml") || src.endsWith(".svg")) {
@@ -959,7 +931,7 @@ function buildWordRow(w, onChange) {
 
   const thumb = document.createElement("img");
   thumb.className = "row-thumb";
-  thumb.src = w.icon || IMAGE_FILES[w.tr] || "";
+  thumb.src = w.icon || "";
   thumb.alt = w.tr;
   row.appendChild(thumb);
 
@@ -1195,8 +1167,7 @@ generateWordsBtn.addEventListener("click", async () => {
   // Ждём подтверждения входа (см. supabase-sync.js) — иначе каталог мелькнул бы на
   // экране раньше, чем решится, показывать логин или уже настоящий прогресс пользователя.
   if (window.authReady) await window.authReady;
-  await seedBaseWordsIfNeeded();
-  await restoreAiIconsIfNeeded();
+  await unstickHardcodedWordsIfNeeded();
   categoryManifest = await fetchCategoryManifest();
   manifestByTheme = new Map(categoryManifest.map((m) => [m.theme, m]));
   customWords = await getAllCustomWords();

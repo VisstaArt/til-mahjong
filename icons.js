@@ -1,28 +1,3 @@
-// Существительные и глаголы — готовые иллюстрации (сгенерированы через API, лежат в assets/icons/).
-// Прилагательные-цвета не используют картинку — плитка целиком закрашена цветом (см. COLOR_WORDS).
-// Прилагательные-сравнения (büyük/küçük) — тоже иллюстрация: два предмета, один яркий, один серый.
-
-const IMAGE_FILES = {
-  kitap: "assets/icons/kitap.jpg",
-  "çay": "assets/icons/cay.jpg",
-  ekmek: "assets/icons/ekmek.jpg",
-  su: "assets/icons/su.jpg",
-  ev: "assets/icons/ev.jpg",
-  araba: "assets/icons/araba.jpg",
-  kedi: "assets/icons/kedi.jpg",
-  "köpek": "assets/icons/kopek.jpg",
-  "güneş": "assets/icons/gunes.jpg",
-  ay: "assets/icons/ay.jpg",
-  "koşmak": "assets/icons/kosmak.jpg",
-  "yüzmek": "assets/icons/yuzmek.jpg",
-  okumak: "assets/icons/okumak.jpg",
-  yazmak: "assets/icons/yazmak.jpg",
-  uyumak: "assets/icons/uyumak.jpg",
-  "yürümek": "assets/icons/yurumek.jpg",
-  "büyük": "assets/icons/buyuk.jpg",
-  "küçük": "assets/icons/kucuk.jpg",
-};
-
 // Прилагательные-цвета (тема "Цвета") не рисуются картинкой — плитка просто
 // заливается этим цветом. Слова вроде "boya"/"karton"/"renk" сюда не входят —
 // это не сами цвета, а предметы/понятие, им генерация всё же нужна.

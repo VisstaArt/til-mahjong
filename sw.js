@@ -2,8 +2,11 @@
 // берём свежую версию (и обновляем кеш) — это на время активной разработки, чтобы
 // не словить залипание на старой версии, как уже бывало с обычным браузерным кешем.
 // Офлайн/при обрыве сети — отдаём то, что успело закешироваться.
-const CACHE_NAME = "til-mahjong-v10";
+const CACHE_NAME = "til-mahjong-v11";
 
+// Раньше 20 "базовых" слов жили отдельными файлами-картинками и грузились всегда —
+// теперь это обычные слова внутри своих категорий (assets/words/<slug>.json,
+// картинка — прямо внутри слова), отдельно кешировать их тут больше не нужно.
 const APP_SHELL = [
   "./",
   "./index.html",
@@ -14,28 +17,9 @@ const APP_SHELL = [
   "./mahjong-layout.js",
   "./icons.js",
   "./manifest.json",
-  "./assets/seed/seed-words.json",
   "./assets/pwa/icon-192-v2.png",
   "./assets/pwa/icon-512-v2.png",
   "./assets/pwa/apple-touch-icon-v2.png",
-  "./assets/icons/araba.jpg",
-  "./assets/icons/ay.jpg",
-  "./assets/icons/buyuk.jpg",
-  "./assets/icons/cay.jpg",
-  "./assets/icons/ekmek.svg",
-  "./assets/icons/ev.svg",
-  "./assets/icons/gunes.svg",
-  "./assets/icons/kedi.svg",
-  "./assets/icons/kitap.jpg",
-  "./assets/icons/kopek.svg",
-  "./assets/icons/kosmak.jpg",
-  "./assets/icons/kucuk.jpg",
-  "./assets/icons/okumak.jpg",
-  "./assets/icons/su.jpg",
-  "./assets/icons/uyumak.jpg",
-  "./assets/icons/yazmak.jpg",
-  "./assets/icons/yurumek.jpg",
-  "./assets/icons/yuzmek.jpg",
 ];
 
 self.addEventListener("install", (event) => {

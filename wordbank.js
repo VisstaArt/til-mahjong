@@ -203,6 +203,18 @@ async function deleteCustomWord(tr) {
   });
 }
 
+async function deleteCustomWordsBatch(trs) {
+  if (!trs.length) return;
+  const db = await openWordDB();
+  return new Promise((resolve, reject) => {
+    const tx = db.transaction(CUSTOM_STORE, "readwrite");
+    const store = tx.objectStore(CUSTOM_STORE);
+    trs.forEach((tr) => store.delete(tr));
+    tx.oncomplete = () => resolve();
+    tx.onerror = () => reject(tx.error);
+  });
+}
+
 // Экспорт всех своих слов (включая картинки) в один JSON-файл — можно перенести
 // на другой компьютер/браузер и загрузить через importWordBankFile, не тратя API повторно.
 async function exportWordBank() {
@@ -241,64 +253,36 @@ async function importWordBankFile(file) {
   return imported;
 }
 
-// Стартовый набор — только те слова, у которых уже есть готовая иллюстрация
-// (assets/words/starter.json, лёгкий: без него весь словарь пришлось бы тащить
-// при каждом заходе). Подгружается один раз при первом визите, дальше все
-// остальные категории — по требованию, через loadCategoryWords ниже.
-const SEEDED_FLAG_KEY = "mahjong-seeded-v2";
+// Разовая миграция: раньше 20 "базовых" слов (kitap/araba/kedi/...) и 49 слов
+// стартового набора (aslan/aile/kuş/...) были жёстко встроены и появлялись у
+// каждого всегда, независимо от того, какие категории он выбрал — их нельзя
+// было ни исключить, ни понять, откуда они взялись. Теперь это обычные слова
+// внутри своих категорий (assets/words/<slug>.json) и подгружаются наравне со
+// всеми через loadCategoryWords — только когда категория открыта. У тех, кто
+// заходил в игру раньше, эти слова уже осели в IndexedDB "навсегда" — разово
+// убираем именно их оттуда, дальше они появятся снова сами, как только
+// откроется их категория, и тогда их уже можно будет выключить чекбоксом.
+const HARDCODED_WORDS_UNSTUCK_KEY = "mahjong-hardcoded-unstuck-v1";
+const FORMERLY_HARDCODED_WORDS = [
+  "kitap", "çay", "ekmek", "su", "ev", "araba", "kedi", "köpek", "güneş", "ay",
+  "koşmak", "yüzmek", "okumak", "yazmak", "uyumak", "yürümek", "büyük", "küçük",
+  "kırmızı", "mavi",
+  "göl", "kır", "leş", "orman", "ot", "çevre", "kara", "aslan", "at", "ayı",
+  "hayvan", "inek", "keçi", "kurt", "kuzu", "tilki", "biri", "bitmek",
+  "destek olmak", "eksilmek", "gerekmek", "karşılamak", "yardım etmek",
+  "yaşamak", "dışında", "başarı", "dayanışma", "mutluluk", "sevgi", "tehlike",
+  "beslenme", "birçok", "bol bol", "canlı", "en", "farklı", "hızla", "yakın",
+  "ölen", "aile", "aile bireyi", "birbirlerine", "ilişki", "topluluk", "akıl",
+  "kimisi", "kuş", "kelebek", "sağlık",
+];
 
-async function seedBaseWordsIfNeeded() {
-  if (localStorage.getItem(SEEDED_FLAG_KEY)) return;
-  localStorage.setItem(SEEDED_FLAG_KEY, "1");
+async function unstickHardcodedWordsIfNeeded() {
+  if (localStorage.getItem(HARDCODED_WORDS_UNSTUCK_KEY)) return;
+  localStorage.setItem(HARDCODED_WORDS_UNSTUCK_KEY, "1");
   try {
-    const resp = await fetch("assets/words/starter.json");
-    if (!resp.ok) return;
-    const words = await resp.json();
-    const existing = await getAllCustomWords();
-    const existingTr = new Set(existing.map((w) => w.tr));
-    const toInsert = words
-      .filter((w) => w && w.tr && w.ru && w.icon && !existingTr.has(w.tr))
-      .map((w) => ({
-        tr: w.tr,
-        ru: w.ru,
-        icon: w.icon,
-        visual: w.visual || null,
-        pos: w.pos || "other",
-        theme: normalizeCategory(w.theme),
-      }));
-    await putCustomWordsBatch(toInsert);
+    await deleteCustomWordsBatch(FORMERLY_HARDCODED_WORDS);
   } catch (e) {
-    // тихо игнорируем — не критично, просто у пользователя не будет стартового набора
-  }
-}
-
-// Разовая починка: у 6 слов (at, inek, keçi, aile, kuş, kelebek) первый проход
-// бесплатных OpenMoji-иконок случайно подменил "родную" AI-иллюстрацию на эмодзи —
-// саму подмену откатили в starter.json, но обычная синхронизация (loadCategoryWords)
-// намеренно не трогает иконку, если она уже есть (защита от затирания), поэтому у
-// тех, кто уже открывал эти категории, на телефоне осталось бы эмодзи навсегда.
-// Разово и принудительно подставляем обратно, дальше эта функция больше не нужна.
-const AI_ICONS_RESTORED_KEY = "mahjong-ai-icons-restored-v1";
-const RESTORED_AI_WORDS = new Set(["at", "inek", "keçi", "aile", "kuş", "kelebek"]);
-
-async function restoreAiIconsIfNeeded() {
-  if (localStorage.getItem(AI_ICONS_RESTORED_KEY)) return;
-  localStorage.setItem(AI_ICONS_RESTORED_KEY, "1");
-  try {
-    const resp = await fetch("assets/words/starter.json");
-    if (!resp.ok) return;
-    const words = await resp.json();
-    const existing = await getAllCustomWords();
-    const existingByTr = new Map(existing.map((w) => [w.tr, w]));
-    const toWrite = [];
-    for (const w of words) {
-      if (!RESTORED_AI_WORDS.has(w.tr) || !w.icon) continue;
-      const current = existingByTr.get(w.tr);
-      if (current) toWrite.push({ ...current, icon: w.icon });
-    }
-    await putCustomWordsBatch(toWrite);
-  } catch (e) {
-    // тихо игнорируем — в худшем случае эмодзи ещё немного полежит вместо картинки
+    // тихо игнорируем — в худшем случае эти слова ещё немного повисят как раньше
   }
 }
 
@@ -446,7 +430,7 @@ async function addCustomWords(rawWords, onProgress) {
   const existing = await getAllCustomWords();
   const existingSet = new Set(existing.map((w) => w.tr));
   const uniqueInput = [...new Set(rawWords.map((w) => w.trim().toLowerCase()).filter(Boolean))];
-  const skipped = uniqueInput.filter((w) => existingSet.has(w) || w in IMAGE_FILES || w in COLOR_WORDS);
+  const skipped = uniqueInput.filter((w) => existingSet.has(w) || w in COLOR_WORDS);
   const words = uniqueInput.filter((w) => !skipped.includes(w));
 
   if (skipped.length) {
@@ -471,7 +455,7 @@ async function addCustomWords(rawWords, onProgress) {
     }
 
     const base = (info.base || word).trim().toLowerCase();
-    if (base !== word && (seenBases.has(base) || base in IMAGE_FILES || base in COLOR_WORDS)) {
+    if (base !== word && (seenBases.has(base) || base in COLOR_WORDS)) {
       onProgress(`«${word}» — это форма слова «${base}», которое уже есть в словаре — пропускаю`);
       continue;
     }
@@ -579,7 +563,7 @@ async function reclassifyAllWords(onProgress) {
 // и лишь потом генерируются иконки (generateApprovedWords), чтобы не тратить API впустую.
 async function suggestWordsForTopic(topic, count, apiKey) {
   const existing = await getAllCustomWords();
-  const existingTr = new Set([...existing.map((w) => w.tr), ...Object.keys(IMAGE_FILES), ...Object.keys(COLOR_WORDS)]);
+  const existingTr = new Set([...existing.map((w) => w.tr), ...Object.keys(COLOR_WORDS)]);
 
   const prompt =
     `Предложи ${count} турецких слов уровня A1-A2 по теме "${topic}" для языковой игры-маджонга ` +
