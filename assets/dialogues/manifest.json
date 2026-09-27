@@ -16,5 +16,11 @@
     "title": "В отеле",
     "count": 20,
     "sizeKB": 108.9
+  },
+  {
+    "id": "restoran",
+    "title": "Ресторан",
+    "count": 19,
+    "sizeKB": 105.3
   }
 ]
