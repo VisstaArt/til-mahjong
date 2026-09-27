@@ -10,5 +10,11 @@
     "title": "Покупки, сервис",
     "count": 39,
     "sizeKB": 253.1
+  },
+  {
+    "id": "restoran",
+    "title": "Ресторан",
+    "count": 19,
+    "sizeKB": 105.3
   }
 ]
