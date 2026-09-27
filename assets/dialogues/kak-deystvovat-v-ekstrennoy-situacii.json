@@ -1,0 +1,650 @@
+{
+  "id": "kak-deystvovat-v-ekstrennoy-situacii",
+  "title": "Как действовать в экстренной ситуации",
+  "dialogues": [
+    {
+      "id": "ekstren-kayip-cuzdan",
+      "title": "Потеряла кошелёк: бюро находок",
+      "level": "A2",
+      "speakers": { "a": "Ольга", "b": "Мюге" },
+      "turns": [
+        { "speaker": "a", "tr": "Affedersiniz, kayıp eşya bürosu nerede?", "ru": "Извините, где бюро находок?", "distractors": [
+          { "tr": "Ne kadar iyi insanlar var! İyi günler.", "ru": "Какие бывают хорошие люди! Хорошего дня." },
+          { "tr": "İyi günler. Bir dahaki sefere dikkat edin!", "ru": "Хорошего дня. В следующий раз будьте внимательнее!" }
+        ]},
+        { "speaker": "b", "tr": "Burası. Buyurun, ne kaybettiniz?", "ru": "Здесь. Слушаю вас, что вы потеряли?", "distractors": [
+          { "tr": "Kadıköy'den Karaköy'e, sekiz buçuk vapurunda.", "ru": "Из Кадыкёя в Каракёй, на пароходе в половине девятого." },
+          { "tr": "Güzel. Burada adınızı ve telefonunuzu yazın, lütfen.", "ru": "Хорошо. Напишите здесь, пожалуйста, ваше имя и телефон." }
+        ]},
+        { "speaker": "a", "tr": "Cüzdanımı. Galiba sabah vapurda unuttum.", "ru": "Кошелёк. Кажется, я забыла его утром на пароходе.", "distractors": [
+          { "tr": "Affedersiniz, kayıp eşya bürosu nerede?", "ru": "Извините, где бюро находок?" },
+          { "tr": "Ne kadar iyi insanlar var! İyi günler.", "ru": "Какие бывают хорошие люди! Хорошего дня." }
+        ]},
+        { "speaker": "b", "tr": "Hangi vapurda? Saat kaçta?", "ru": "На каком пароходе? Во сколько?", "distractors": [
+          { "tr": "Kahverengi, küçük. İçinde oturma iznim, banka kartım ve biraz para var.", "ru": "Коричневый, маленький. В нём мой вид на жительство, банковская карта и немного денег." },
+          { "tr": "Evet, her şey burada. Param da var.", "ru": "Да, всё здесь. И деньги тоже." }
+        ]},
+        { "speaker": "a", "tr": "Kadıköy'den Karaköy'e, sekiz buçuk vapurunda.", "ru": "Из Кадыкёя в Каракёй, на пароходе в половине девятого.", "distractors": [
+          { "tr": "Cüzdanımı. Galiba sabah vapurda unuttum.", "ru": "Кошелёк. Кажется, я забыла его утром на пароходе." },
+          { "tr": "İyi günler. Bir dahaki sefere dikkat edin!", "ru": "Хорошего дня. В следующий раз будьте внимательнее!" }
+        ]},
+        { "speaker": "b", "tr": "Cüzdanınız ne renk? İçinde ne var?", "ru": "Какого цвета ваш кошелёк? Что в нём?", "distractors": [
+          { "tr": "Cüzdanımı. Galiba sabah vapurda unuttum.", "ru": "Кошелёк. Кажется, я забыла его утром на пароходе." },
+          { "tr": "Rica ederim. Lütfen içine bakın. Her şey var mı?", "ru": "Не за что. Посмотрите, пожалуйста, внутри. Всё на месте?" }
+        ]},
+        { "speaker": "a", "tr": "Kahverengi, küçük. İçinde oturma iznim, banka kartım ve biraz para var.", "ru": "Коричневый, маленький. В нём мой вид на жительство, банковская карта и немного денег.", "distractors": [
+          { "tr": "Tabii. Kim buldu acaba?", "ru": "Конечно. Интересно, кто его нашёл?" },
+          { "tr": "İyi günler. Bir dahaki sefere dikkat edin!", "ru": "Хорошего дня. В следующий раз будьте внимательнее!" }
+        ]},
+        { "speaker": "b", "tr": "Bir dakika, bakıyorum... Bu mu?", "ru": "Минутку, смотрю... Этот?", "distractors": [
+          { "tr": "Bir öğrenci getirmiş. Adını söylememiş.", "ru": "Говорят, его принёс какой-то студент. Имя он не назвал." },
+          { "tr": "İyi günler. Bir dahaki sefere dikkat edin!", "ru": "Хорошего дня. В следующий раз будьте внимательнее!" }
+        ]},
+        { "speaker": "a", "tr": "Evet, bu! Çok teşekkür ederim!", "ru": "Да, этот! Большое спасибо!", "distractors": [
+          { "tr": "Kahverengi, küçük. İçinde oturma iznim, banka kartım ve biraz para var.", "ru": "Коричневый, маленький. В нём мой вид на жительство, банковская карта и немного денег." },
+          { "tr": "Güzel. Burada adınızı ve telefonunuzu yazın, lütfen.", "ru": "Хорошо. Напишите здесь, пожалуйста, ваше имя и телефон." }
+        ]},
+        { "speaker": "b", "tr": "Rica ederim. Lütfen içine bakın. Her şey var mı?", "ru": "Не за что. Посмотрите, пожалуйста, внутри. Всё на месте?", "distractors": [
+          { "tr": "Affedersiniz, kayıp eşya bürosu nerede?", "ru": "Извините, где бюро находок?" },
+          { "tr": "İyi günler. Bir dahaki sefere dikkat edin!", "ru": "Хорошего дня. В следующий раз будьте внимательнее!" }
+        ]},
+        { "speaker": "a", "tr": "Evet, her şey burada. Param da var.", "ru": "Да, всё здесь. И деньги тоже.", "distractors": [
+          { "tr": "Cüzdanınız ne renk? İçinde ne var?", "ru": "Какого цвета ваш кошелёк? Что в нём?" },
+          { "tr": "Tabii. Kim buldu acaba?", "ru": "Конечно. Интересно, кто его нашёл?" }
+        ]},
+        { "speaker": "b", "tr": "Güzel. Burada adınızı ve telefonunuzu yazın, lütfen.", "ru": "Хорошо. Напишите здесь, пожалуйста, ваше имя и телефон.", "distractors": [
+          { "tr": "Affedersiniz, kayıp eşya bürosu nerede?", "ru": "Извините, где бюро находок?" },
+          { "tr": "İyi günler. Bir dahaki sefere dikkat edin!", "ru": "Хорошего дня. В следующий раз будьте внимательнее!" }
+        ]},
+        { "speaker": "a", "tr": "Tabii. Kim buldu acaba?", "ru": "Конечно. Интересно, кто его нашёл?", "distractors": [
+          { "tr": "Kadıköy'den Karaköy'e, sekiz buçuk vapurunda.", "ru": "Из Кадыкёя в Каракёй, на пароходе в половине девятого." },
+          { "tr": "Evet, bu! Çok teşekkür ederim!", "ru": "Да, этот! Большое спасибо!" }
+        ]},
+        { "speaker": "b", "tr": "Bir öğrenci getirmiş. Adını söylememiş.", "ru": "Говорят, его принёс какой-то студент. Имя он не назвал.", "distractors": [
+          { "tr": "Affedersiniz, kayıp eşya bürosu nerede?", "ru": "Извините, где бюро находок?" },
+          { "tr": "Kadıköy'den Karaköy'e, sekiz buçuk vapurunda.", "ru": "Из Кадыкёя в Каракёй, на пароходе в половине девятого." }
+        ]},
+        { "speaker": "a", "tr": "Ne kadar iyi insanlar var! İyi günler.", "ru": "Какие бывают хорошие люди! Хорошего дня.", "distractors": [
+          { "tr": "Evet, her şey burada. Param da var.", "ru": "Да, всё здесь. И деньги тоже." },
+          { "tr": "Güzel. Burada adınızı ve telefonunuzu yazın, lütfen.", "ru": "Хорошо. Напишите здесь, пожалуйста, ваше имя и телефон." }
+        ]},
+        { "speaker": "b", "tr": "İyi günler. Bir dahaki sefere dikkat edin!", "ru": "Хорошего дня. В следующий раз будьте внимательнее!", "distractors": [
+          { "tr": "Hangi vapurda? Saat kaçta?", "ru": "На каком пароходе? Во сколько?" },
+          { "tr": "Kahverengi, küçük. İçinde oturma iznim, banka kartım ve biraz para var.", "ru": "Коричневый, маленький. В нём мой вид на жительство, банковская карта и немного денег." }
+        ]}
+      ]
+    },
+    {
+      "id": "ekstren-telefon-taksi",
+      "title": "Потеряла телефон в такси",
+      "level": "A2",
+      "speakers": { "a": "Ольга", "b": "Ведат" },
+      "turns": [
+        { "speaker": "a", "tr": "Alo, merhaba! Bu telefon benim. Dün akşam taksiyle eve geldim ve telefonumu kaybettim.", "ru": "Алло, здравствуйте! Это мой телефон. Вчера вечером я ехала домой на такси и потеряла телефон.", "distractors": [
+          { "tr": "Harika. Ofisimin yanında bir kahveci var. Orada beklerim.", "ru": "Отлично. Рядом с моим офисом есть кофейня. Я подожду там." },
+          { "tr": "Evet, bu iş arkadaşım Tuba'nın numarası. Çok teşekkür ederim!", "ru": "Да, это номер моей коллеги Тубы. Большое спасибо!" }
+        ]},
+        { "speaker": "b", "tr": "Merhaba! Evet, telefon arka koltukta kalmış. Ben taksi şoförüyüm.", "ru": "Здравствуйте! Да, телефон, оказывается, остался на заднем сиденье. Я таксист.", "distractors": [
+          { "tr": "Şimdi Beşiktaş'tayım. Yarım saat sonra Karaköy'de olurum.", "ru": "Я сейчас в Бешикташе. Через полчаса буду в Каракёе." },
+          { "tr": "Görüşürüz, Olga Hanım.", "ru": "До встречи, Ольга-ханым." }
+        ]},
+        { "speaker": "a", "tr": "Çok şükür! İş arkadaşımın telefonuyla arıyorum. Adım Olga.", "ru": "Слава богу! Я звоню с телефона коллеги. Меня зовут Ольга.", "distractors": [
+          { "tr": "Alo, merhaba! Bu telefon benim. Dün akşam taksiyle eve geldim ve telefonumu kaybettim.", "ru": "Алло, здравствуйте! Это мой телефон. Вчера вечером я ехала домой на такси и потеряла телефон." },
+          { "tr": "Evet, kız kardeşim her gün yazar. Görüşürüz!", "ru": "Да, сестра пишет мне каждый день. До встречи!" }
+        ]},
+        { "speaker": "b", "tr": "Memnun oldum, Olga Hanım. Ben Vedat. Telefonunuzu nasıl getirebilirim?", "ru": "Очень приятно, Ольга-ханым. Я Ведат. Как мне вернуть вам телефон?", "distractors": [
+          { "tr": "Evet, bu iş arkadaşım Tuba'nın numarası. Çok teşekkür ederim!", "ru": "Да, это номер моей коллеги Тубы. Большое спасибо!" },
+          { "tr": "Görüşürüz, Olga Hanım.", "ru": "До встречи, Ольга-ханым." }
+        ]},
+        { "speaker": "a", "tr": "Ben Karaköy'de çalışıyorum. Buraya gelebilir misiniz?", "ru": "Я работаю в Каракёе. Вы можете сюда приехать?", "distractors": [
+          { "tr": "Merhaba! Evet, telefon arka koltukta kalmış. Ben taksi şoförüyüm.", "ru": "Здравствуйте! Да, телефон, оказывается, остался на заднем сиденье. Я таксист." },
+          { "tr": "Görüşürüz, Olga Hanım.", "ru": "До встречи, Ольга-ханым." }
+        ]},
+        { "speaker": "b", "tr": "Şimdi Beşiktaş'tayım. Yarım saat sonra Karaköy'de olurum.", "ru": "Я сейчас в Бешикташе. Через полчаса буду в Каракёе.", "distractors": [
+          { "tr": "Çok şükür! İş arkadaşımın telefonuyla arıyorum. Adım Olga.", "ru": "Слава богу! Я звоню с телефона коллеги. Меня зовут Ольга." },
+          { "tr": "Evet, kız kardeşim her gün yazar. Görüşürüz!", "ru": "Да, сестра пишет мне каждый день. До встречи!" }
+        ]},
+        { "speaker": "a", "tr": "Harika. Ofisimin yanında bir kahveci var. Orada beklerim.", "ru": "Отлично. Рядом с моим офисом есть кофейня. Я подожду там.", "distractors": [
+          { "tr": "Alo, merhaba! Bu telefon benim. Dün akşam taksiyle eve geldim ve telefonumu kaybettim.", "ru": "Алло, здравствуйте! Это мой телефон. Вчера вечером я ехала домой на такси и потеряла телефон." },
+          { "tr": "Görüşürüz, Olga Hanım.", "ru": "До встречи, Ольга-ханым." }
+        ]},
+        { "speaker": "b", "tr": "Tamam. Gelince bu numarayı ararım.", "ru": "Хорошо. Когда приеду, позвоню на этот номер.", "distractors": [
+          { "tr": "Çok şükür! İş arkadaşımın telefonuyla arıyorum. Adım Olga.", "ru": "Слава богу! Я звоню с телефона коллеги. Меня зовут Ольга." },
+          { "tr": "Evet, kız kardeşim her gün yazar. Görüşürüz!", "ru": "Да, сестра пишет мне каждый день. До встречи!" }
+        ]},
+        { "speaker": "a", "tr": "Evet, bu iş arkadaşım Tuba'nın numarası. Çok teşekkür ederim!", "ru": "Да, это номер моей коллеги Тубы. Большое спасибо!", "distractors": [
+          { "tr": "Çok şükür! İş arkadaşımın telefonuyla arıyorum. Adım Olga.", "ru": "Слава богу! Я звоню с телефона коллеги. Меня зовут Ольга." },
+          { "tr": "Şimdi Beşiktaş'tayım. Yarım saat sonra Karaköy'de olurum.", "ru": "Я сейчас в Бешикташе. Через полчаса буду в Каракёе." }
+        ]},
+        { "speaker": "b", "tr": "Rica ederim. Telefonunuz çok çalıyor, herhalde aileniz merak ediyor.", "ru": "Не за что. Ваш телефон всё время звонит — наверное, семья волнуется.", "distractors": [
+          { "tr": "Ben Karaköy'de çalışıyorum. Buraya gelebilir misiniz?", "ru": "Я работаю в Каракёе. Вы можете сюда приехать?" },
+          { "tr": "Görüşürüz, Olga Hanım.", "ru": "До встречи, Ольга-ханым." }
+        ]},
+        { "speaker": "a", "tr": "Evet, kız kardeşim her gün yazar. Görüşürüz!", "ru": "Да, сестра пишет мне каждый день. До встречи!", "distractors": [
+          { "tr": "Harika. Ofisimin yanında bir kahveci var. Orada beklerim.", "ru": "Отлично. Рядом с моим офисом есть кофейня. Я подожду там." },
+          { "tr": "Tamam. Gelince bu numarayı ararım.", "ru": "Хорошо. Когда приеду, позвоню на этот номер." }
+        ]},
+        { "speaker": "b", "tr": "Görüşürüz, Olga Hanım.", "ru": "До встречи, Ольга-ханым.", "distractors": [
+          { "tr": "Alo, merhaba! Bu telefon benim. Dün akşam taksiyle eve geldim ve telefonumu kaybettim.", "ru": "Алло, здравствуйте! Это мой телефон. Вчера вечером я ехала домой на такси и потеряла телефон." },
+          { "tr": "Ben Karaköy'de çalışıyorum. Buraya gelebilir misiniz?", "ru": "Я работаю в Каракёе. Вы можете сюда приехать?" }
+        ]}
+      ]
+    },
+    {
+      "id": "ekstren-sokakta-hirsiz",
+      "title": "Украли сумку на улице",
+      "level": "A2",
+      "speakers": { "a": "Ольга", "b": "Корай" },
+      "turns": [
+        { "speaker": "a", "tr": "İmdat! Hırsızı durdurun!", "ru": "Помогите! Держите вора!", "distractors": [
+          { "tr": "Tamam, arıyorum... Polis on dakika sonra gelecek. Ama karakol buraya çok yakın.", "ru": "Хорошо, звоню... Полиция приедет через десять минут. Но участок отсюда совсем близко." },
+          { "tr": "Çok iyisiniz. Adınız ne?", "ru": "Вы очень добры. Как вас зовут?" }
+        ]},
+        { "speaker": "b", "tr": "Ne oldu? İyi misiniz?", "ru": "Что случилось? Вы в порядке?", "distractors": [
+          { "tr": "Düz gidin, sonra sola dönün. Ben de sizinle geliyorum.", "ru": "Идите прямо, потом поверните налево. Я пойду с вами." },
+          { "tr": "Koray. Hadi, karakola gidiyoruz.", "ru": "Корай. Давайте, идём в участок." }
+        ]},
+        { "speaker": "a", "tr": "Çantam çalındı! Şu adam, siyah montlu!", "ru": "У меня украли сумку! Вон тот мужчина, в чёрной куртке!", "distractors": [
+          { "tr": "Çok iyisiniz. Adınız ne?", "ru": "Вы очень добры. Как вас зовут?" },
+          { "tr": "Koray. Hadi, karakola gidiyoruz.", "ru": "Корай. Давайте, идём в участок." }
+        ]},
+        { "speaker": "b", "tr": "Çok hızlı koştu, gitti. Maalesef onu tutamadım.", "ru": "Он очень быстро убежал. К сожалению, я не смог его поймать.", "distractors": [
+          { "tr": "Polis karakolu nerede?", "ru": "Где полицейский участок?" },
+          { "tr": "Çok iyisiniz. Adınız ne?", "ru": "Вы очень добры. Как вас зовут?" }
+        ]},
+        { "speaker": "a", "tr": "Çantamda her şey vardı: cüzdanım, telefonum, anahtarlarım...", "ru": "В сумке было всё: кошелёк, телефон, ключи...", "distractors": [
+          { "tr": "Tamam, arıyorum... Polis on dakika sonra gelecek. Ama karakol buraya çok yakın.", "ru": "Хорошо, звоню... Полиция приедет через десять минут. Но участок отсюда совсем близко." },
+          { "tr": "Normal. Ben hırsızı gördüm, polise anlatabilirim.", "ru": "Это нормально. Я видел вора, могу рассказать полиции." }
+        ]},
+        { "speaker": "b", "tr": "Sakin olun, lütfen. Size nasıl yardım edebilirim?", "ru": "Успокойтесь, пожалуйста. Чем я могу вам помочь?", "distractors": [
+          { "tr": "Çantam çalındı! Şu adam, siyah montlu!", "ru": "У меня украли сумку! Вон тот мужчина, в чёрной куртке!" },
+          { "tr": "Polis karakolu nerede?", "ru": "Где полицейский участок?" }
+        ]},
+        { "speaker": "a", "tr": "Polis çağırın, lütfen! Telefonum da çantadaydı.", "ru": "Вызовите полицию, пожалуйста! Мой телефон тоже был в сумке.", "distractors": [
+          { "tr": "İmdat! Hırsızı durdurun!", "ru": "Помогите! Держите вора!" },
+          { "tr": "Polis karakolu nerede?", "ru": "Где полицейский участок?" }
+        ]},
+        { "speaker": "b", "tr": "Tamam, arıyorum... Polis on dakika sonra gelecek. Ama karakol buraya çok yakın.", "ru": "Хорошо, звоню... Полиция приедет через десять минут. Но участок отсюда совсем близко.", "distractors": [
+          { "tr": "Çantam çalındı! Şu adam, siyah montlu!", "ru": "У меня украли сумку! Вон тот мужчина, в чёрной куртке!" },
+          { "tr": "Normal. Ben hırsızı gördüm, polise anlatabilirim.", "ru": "Это нормально. Я видел вора, могу рассказать полиции." }
+        ]},
+        { "speaker": "a", "tr": "Polis karakolu nerede?", "ru": "Где полицейский участок?", "distractors": [
+          { "tr": "Çantam çalındı! Şu adam, siyah montlu!", "ru": "У меня украли сумку! Вон тот мужчина, в чёрной куртке!" },
+          { "tr": "Çantamda her şey vardı: cüzdanım, telefonum, anahtarlarım...", "ru": "В сумке было всё: кошелёк, телефон, ключи..." }
+        ]},
+        { "speaker": "b", "tr": "Düz gidin, sonra sola dönün. Ben de sizinle geliyorum.", "ru": "Идите прямо, потом поверните налево. Я пойду с вами.", "distractors": [
+          { "tr": "Sakin olun, lütfen. Size nasıl yardım edebilirim?", "ru": "Успокойтесь, пожалуйста. Чем я могу вам помочь?" },
+          { "tr": "Polis çağırın, lütfen! Telefonum da çantadaydı.", "ru": "Вызовите полицию, пожалуйста! Мой телефон тоже был в сумке." }
+        ]},
+        { "speaker": "a", "tr": "Çok teşekkür ederim. Çok korktum.", "ru": "Большое спасибо. Я очень испугалась.", "distractors": [
+          { "tr": "Çantam çalındı! Şu adam, siyah montlu!", "ru": "У меня украли сумку! Вон тот мужчина, в чёрной куртке!" },
+          { "tr": "Sakin olun, lütfen. Size nasıl yardım edebilirim?", "ru": "Успокойтесь, пожалуйста. Чем я могу вам помочь?" }
+        ]},
+        { "speaker": "b", "tr": "Normal. Ben hırsızı gördüm, polise anlatabilirim.", "ru": "Это нормально. Я видел вора, могу рассказать полиции.", "distractors": [
+          { "tr": "Polis çağırın, lütfen! Telefonum da çantadaydı.", "ru": "Вызовите полицию, пожалуйста! Мой телефон тоже был в сумке." },
+          { "tr": "Düz gidin, sonra sola dönün. Ben de sizinle geliyorum.", "ru": "Идите прямо, потом поверните налево. Я пойду с вами." }
+        ]},
+        { "speaker": "a", "tr": "Çok iyisiniz. Adınız ne?", "ru": "Вы очень добры. Как вас зовут?", "distractors": [
+          { "tr": "İmdat! Hırsızı durdurun!", "ru": "Помогите! Держите вора!" },
+          { "tr": "Polis karakolu nerede?", "ru": "Где полицейский участок?" }
+        ]},
+        { "speaker": "b", "tr": "Koray. Hadi, karakola gidiyoruz.", "ru": "Корай. Давайте, идём в участок.", "distractors": [
+          { "tr": "Sakin olun, lütfen. Size nasıl yardım edebilirim?", "ru": "Успокойтесь, пожалуйста. Чем я могу вам помочь?" },
+          { "tr": "Polis çağırın, lütfen! Telefonum da çantadaydı.", "ru": "Вызовите полицию, пожалуйста! Мой телефон тоже был в сумке." }
+        ]}
+      ]
+    },
+    {
+      "id": "ekstren-karakol",
+      "title": "В полиции: заявление о краже",
+      "level": "A2",
+      "speakers": { "a": "Ольга", "b": "Тахсин" },
+      "turns": [
+        { "speaker": "a", "tr": "İyi akşamlar. Bir hırsızlığı bildirmek istiyorum.", "ru": "Добрый вечер. Я хочу заявить о краже.", "distractors": [
+          { "tr": "Cüzdanım, telefonum ve anahtarlarım.", "ru": "Кошелёк, телефон и ключи." },
+          { "tr": "Oturma izni için göç idaresine gitmelisiniz. Bu kâğıdı da götürün.", "ru": "Насчёт вида на жительство вам нужно обратиться в миграционную службу. И возьмите с собой эту бумагу." }
+        ]},
+        { "speaker": "b", "tr": "Buyurun, oturun. Ne oldu?", "ru": "Проходите, садитесь. Что случилось?", "distractors": [
+          { "tr": "Yaklaşık iki bin lira. Param çalındı, ama en önemlisi oturma iznim.", "ru": "Около двух тысяч лир. Деньги украли, но самое важное — мой вид на жительство." },
+          { "tr": "Çok teşekkür ederim, Memur Bey.", "ru": "Большое спасибо, господин полицейский." }
+        ]},
+        { "speaker": "a", "tr": "Çantam çalındı. Yarım saat önce, sokakta.", "ru": "У меня украли сумку. Полчаса назад, на улице.", "distractors": [
+          { "tr": "Çantanın içinde ne vardı?", "ru": "Что было в сумке?" },
+          { "tr": "Adresinizi ve bir arkadaşınızın numarasını yazın.", "ru": "Напишите ваш адрес и номер кого-нибудь из друзей." }
+        ]},
+        { "speaker": "b", "tr": "Hangi sokakta?", "ru": "На какой улице?", "distractors": [
+          { "tr": "Tamam. Telefonum yok, beni nasıl bulacaksınız?", "ru": "Хорошо. Телефона у меня нет — как вы меня найдёте?" },
+          { "tr": "Çok teşekkür ederim, Memur Bey.", "ru": "Большое спасибо, господин полицейский." }
+        ]},
+        { "speaker": "a", "tr": "Moda Caddesi'nde, eczanenin önünde. Bir adam çantamı aldı ve koştu.", "ru": "На Мода-джаддеси, перед аптекой. Какой-то мужчина схватил мою сумку и убежал.", "distractors": [
+          { "tr": "Çantam çalındı. Yarım saat önce, sokakta.", "ru": "У меня украли сумку. Полчаса назад, на улице." },
+          { "tr": "Genç, uzun boylu. Üstünde siyah bir mont vardı.", "ru": "Молодой, высокий. На нём была чёрная куртка." }
+        ]},
+        { "speaker": "b", "tr": "Adamı gördünüz mü? Nasıl biriydi?", "ru": "Вы видели этого мужчину? Как он выглядел?", "distractors": [
+          { "tr": "Tamam. Telefonum yok, beni nasıl bulacaksınız?", "ru": "Хорошо. Телефона у меня нет — как вы меня найдёте?" },
+          { "tr": "Adresim Çınar Sokak, on iki, daire beş. Arkadaşım Leyla'nın numarasını biliyorum. Buradan onu arayabilir miyim?", "ru": "Мой адрес: Чынар-сокак, 12, квартира 5. Я знаю номер подруги, Лейлы. Можно ей отсюда позвонить?" }
+        ]},
+        { "speaker": "a", "tr": "Genç, uzun boylu. Üstünde siyah bir mont vardı.", "ru": "Молодой, высокий. На нём была чёрная куртка.", "distractors": [
+          { "tr": "Oturma izni için göç idaresine gitmelisiniz. Bu kâğıdı da götürün.", "ru": "Насчёт вида на жительство вам нужно обратиться в миграционную службу. И возьмите с собой эту бумагу." },
+          { "tr": "Adresim Çınar Sokak, on iki, daire beş. Arkadaşım Leyla'nın numarasını biliyorum. Buradan onu arayabilir miyim?", "ru": "Мой адрес: Чынар-сокак, 12, квартира 5. Я знаю номер подруги, Лейлы. Можно ей отсюда позвонить?" }
+        ]},
+        { "speaker": "b", "tr": "Çantanın içinde ne vardı?", "ru": "Что было в сумке?", "distractors": [
+          { "tr": "Buyurun, oturun. Ne oldu?", "ru": "Проходите, садитесь. Что случилось?" },
+          { "tr": "Tabii, bu telefonu kullanın. Çantanızı bulunca sizi ararız.", "ru": "Конечно, звоните с этого телефона. Когда найдём сумку, мы вам позвоним." }
+        ]},
+        { "speaker": "a", "tr": "Cüzdanım, telefonum ve anahtarlarım.", "ru": "Кошелёк, телефон и ключи.", "distractors": [
+          { "tr": "Hangi sokakta?", "ru": "На какой улице?" },
+          { "tr": "Oturma izni için göç idaresine gitmelisiniz. Bu kâğıdı da götürün.", "ru": "Насчёт вида на жительство вам нужно обратиться в миграционную службу. И возьмите с собой эту бумагу." }
+        ]},
+        { "speaker": "b", "tr": "Cüzdanda ne kadar para vardı?", "ru": "Сколько денег было в кошельке?", "distractors": [
+          { "tr": "Genç, uzun boylu. Üstünde siyah bir mont vardı.", "ru": "Молодой, высокий. На нём была чёрная куртка." },
+          { "tr": "Oturma izni için göç idaresine gitmelisiniz. Bu kâğıdı da götürün.", "ru": "Насчёт вида на жительство вам нужно обратиться в миграционную службу. И возьмите с собой эту бумагу." }
+        ]},
+        { "speaker": "a", "tr": "Yaklaşık iki bin lira. Param çalındı, ama en önemlisi oturma iznim.", "ru": "Около двух тысяч лир. Деньги украли, но самое важное — мой вид на жительство.", "distractors": [
+          { "tr": "Adresim Çınar Sokak, on iki, daire beş. Arkadaşım Leyla'nın numarasını biliyorum. Buradan onu arayabilir miyim?", "ru": "Мой адрес: Чынар-сокак, 12, квартира 5. Я знаю номер подруги, Лейлы. Можно ей отсюда позвонить?" },
+          { "tr": "Çok teşekkür ederim, Memur Bey.", "ru": "Большое спасибо, господин полицейский." }
+        ]},
+        { "speaker": "b", "tr": "Oturma izni için göç idaresine gitmelisiniz. Bu kâğıdı da götürün.", "ru": "Насчёт вида на жительство вам нужно обратиться в миграционную службу. И возьмите с собой эту бумагу.", "distractors": [
+          { "tr": "Cüzdanda ne kadar para vardı?", "ru": "Сколько денег было в кошельке?" },
+          { "tr": "Tabii, bu telefonu kullanın. Çantanızı bulunca sizi ararız.", "ru": "Конечно, звоните с этого телефона. Когда найдём сумку, мы вам позвоним." }
+        ]},
+        { "speaker": "a", "tr": "Tamam. Telefonum yok, beni nasıl bulacaksınız?", "ru": "Хорошо. Телефона у меня нет — как вы меня найдёте?", "distractors": [
+          { "tr": "Genç, uzun boylu. Üstünde siyah bir mont vardı.", "ru": "Молодой, высокий. На нём была чёрная куртка." },
+          { "tr": "Yaklaşık iki bin lira. Param çalındı, ama en önemlisi oturma iznim.", "ru": "Около двух тысяч лир. Деньги украли, но самое важное — мой вид на жительство." }
+        ]},
+        { "speaker": "b", "tr": "Adresinizi ve bir arkadaşınızın numarasını yazın.", "ru": "Напишите ваш адрес и номер кого-нибудь из друзей.", "distractors": [
+          { "tr": "Cüzdanda ne kadar para vardı?", "ru": "Сколько денег было в кошельке?" },
+          { "tr": "Çok teşekkür ederim, Memur Bey.", "ru": "Большое спасибо, господин полицейский." }
+        ]},
+        { "speaker": "a", "tr": "Adresim Çınar Sokak, on iki, daire beş. Arkadaşım Leyla'nın numarasını biliyorum. Buradan onu arayabilir miyim?", "ru": "Мой адрес: Чынар-сокак, 12, квартира 5. Я знаю номер подруги, Лейлы. Можно ей отсюда позвонить?", "distractors": [
+          { "tr": "Moda Caddesi'nde, eczanenin önünde. Bir adam çantamı aldı ve koştu.", "ru": "На Мода-джаддеси, перед аптекой. Какой-то мужчина схватил мою сумку и убежал." },
+          { "tr": "Yaklaşık iki bin lira. Param çalındı, ama en önemlisi oturma iznim.", "ru": "Около двух тысяч лир. Деньги украли, но самое важное — мой вид на жительство." }
+        ]},
+        { "speaker": "b", "tr": "Tabii, bu telefonu kullanın. Çantanızı bulunca sizi ararız.", "ru": "Конечно, звоните с этого телефона. Когда найдём сумку, мы вам позвоним.", "distractors": [
+          { "tr": "Genç, uzun boylu. Üstünde siyah bir mont vardı.", "ru": "Молодой, высокий. На нём была чёрная куртка." },
+          { "tr": "Yaklaşık iki bin lira. Param çalındı, ama en önemlisi oturma iznim.", "ru": "Около двух тысяч лир. Деньги украли, но самое важное — мой вид на жительство." }
+        ]},
+        { "speaker": "a", "tr": "Çok teşekkür ederim, Memur Bey.", "ru": "Большое спасибо, господин полицейский.", "distractors": [
+          { "tr": "Çantam çalındı. Yarım saat önce, sokakta.", "ru": "У меня украли сумку. Полчаса назад, на улице." },
+          { "tr": "Oturma izni için göç idaresine gitmelisiniz. Bu kâğıdı da götürün.", "ru": "Насчёт вида на жительство вам нужно обратиться в миграционную службу. И возьмите с собой эту бумагу." }
+        ]}
+      ]
+    },
+    {
+      "id": "ekstren-leyla-pomogi",
+      "title": "Звонок Лейле: «Помоги!»",
+      "level": "A2",
+      "speakers": { "a": "Ольга", "b": "Лейла" },
+      "turns": [
+        { "speaker": "a", "tr": "Leyla, benim, Olga. Karakoldan arıyorum.", "ru": "Лейла, это я, Ольга. Звоню из полицейского участка.", "distractors": [
+          { "tr": "Tabii! Hangi karakoldasın? Hemen geliyorum.", "ru": "Конечно! В каком ты участке? Сейчас приеду." },
+          { "tr": "Evet! Komşum Nuran Hanım'da yedek anahtarım var.", "ru": "Да! Запасной ключ есть у соседки, Нуран-ханым." }
+        ]},
+        { "speaker": "b", "tr": "Karakoldan mı? Ne oldu? İyi misin?", "ru": "Из участка? Что случилось? Ты в порядке?", "distractors": [
+          { "tr": "Doğru, unuttum! Yedek anahtarın var mı?", "ru": "Точно, забыла! У тебя есть запасной ключ?" },
+          { "tr": "Çok teşekkür ederim, Leyla. Sen bir meleksin!", "ru": "Большое спасибо, Лейла. Ты ангел!" }
+        ]},
+        { "speaker": "a", "tr": "İyiyim, ama çantam çalındı.", "ru": "Со мной всё хорошо, но у меня украли сумку.", "distractors": [
+          { "tr": "Bu gece bende kal!", "ru": "Оставайся сегодня у меня!" },
+          { "tr": "Doğru, unuttum! Yedek anahtarın var mı?", "ru": "Точно, забыла! У тебя есть запасной ключ?" }
+        ]},
+        { "speaker": "b", "tr": "Ne?! Cüzdanın da mı?", "ru": "Что?! И кошелёк тоже?", "distractors": [
+          { "tr": "Ama Pamuk... Biliyorsun, kedilere alerjim var.", "ru": "Но Памук... Ты же знаешь, у меня аллергия на кошек." },
+          { "tr": "Çok teşekkür ederim, Leyla. Sen bir meleksin!", "ru": "Большое спасибо, Лейла. Ты ангел!" }
+        ]},
+        { "speaker": "a", "tr": "Evet, cüzdanım çalındı, telefonum da. Lütfen bana yardım et.", "ru": "Да, кошелёк украли, и телефон тоже. Пожалуйста, помоги мне.", "distractors": [
+          { "tr": "Bu gece bende kal!", "ru": "Оставайся сегодня у меня!" },
+          { "tr": "Süper. Ben seni alırım, beraber eve gideriz. Zehra'nın kocasını da ararım, o polis.", "ru": "Супер. Я тебя заберу, и вместе поедем к тебе. И позвоню мужу Зехры — он полицейский." }
+        ]},
+        { "speaker": "b", "tr": "Tabii! Hangi karakoldasın? Hemen geliyorum.", "ru": "Конечно! В каком ты участке? Сейчас приеду.", "distractors": [
+          { "tr": "Ama Pamuk... Biliyorsun, kedilere alerjim var.", "ru": "Но Памук... Ты же знаешь, у меня аллергия на кошек." },
+          { "tr": "Doğru, unuttum! Yedek anahtarın var mı?", "ru": "Точно, забыла! У тебя есть запасной ключ?" }
+        ]},
+        { "speaker": "a", "tr": "Moda'dayım, karakolda. Anahtarım da yok, eve giremiyorum.", "ru": "Я в Моде, в участке. И ключей нет, я не могу попасть домой.", "distractors": [
+          { "tr": "Leyla, benim, Olga. Karakoldan arıyorum.", "ru": "Лейла, это я, Ольга. Звоню из полицейского участка." },
+          { "tr": "Karakoldan mı? Ne oldu? İyi misin?", "ru": "Из участка? Что случилось? Ты в порядке?" }
+        ]},
+        { "speaker": "b", "tr": "Bu gece bende kal!", "ru": "Оставайся сегодня у меня!", "distractors": [
+          { "tr": "Karakoldan mı? Ne oldu? İyi misin?", "ru": "Из участка? Что случилось? Ты в порядке?" },
+          { "tr": "Tabii! Hangi karakoldasın? Hemen geliyorum.", "ru": "Конечно! В каком ты участке? Сейчас приеду." }
+        ]},
+        { "speaker": "a", "tr": "Ama Pamuk... Biliyorsun, kedilere alerjim var.", "ru": "Но Памук... Ты же знаешь, у меня аллергия на кошек.", "distractors": [
+          { "tr": "İyiyim, ama çantam çalındı.", "ru": "Со мной всё хорошо, но у меня украли сумку." },
+          { "tr": "Moda'dayım, karakolda. Anahtarım da yok, eve giremiyorum.", "ru": "Я в Моде, в участке. И ключей нет, я не могу попасть домой." }
+        ]},
+        { "speaker": "b", "tr": "Doğru, unuttum! Yedek anahtarın var mı?", "ru": "Точно, забыла! У тебя есть запасной ключ?", "distractors": [
+          { "tr": "Tabii! Hangi karakoldasın? Hemen geliyorum.", "ru": "Конечно! В каком ты участке? Сейчас приеду." },
+          { "tr": "Çok teşekkür ederim, Leyla. Sen bir meleksin!", "ru": "Большое спасибо, Лейла. Ты ангел!" }
+        ]},
+        { "speaker": "a", "tr": "Evet! Komşum Nuran Hanım'da yedek anahtarım var.", "ru": "Да! Запасной ключ есть у соседки, Нуран-ханым.", "distractors": [
+          { "tr": "Leyla, benim, Olga. Karakoldan arıyorum.", "ru": "Лейла, это я, Ольга. Звоню из полицейского участка." },
+          { "tr": "Ne?! Cüzdanın da mı?", "ru": "Что?! И кошелёк тоже?" }
+        ]},
+        { "speaker": "b", "tr": "Süper. Ben seni alırım, beraber eve gideriz. Zehra'nın kocasını da ararım, o polis.", "ru": "Супер. Я тебя заберу, и вместе поедем к тебе. И позвоню мужу Зехры — он полицейский.", "distractors": [
+          { "tr": "Bu gece bende kal!", "ru": "Оставайся сегодня у меня!" },
+          { "tr": "Ama Pamuk... Biliyorsun, kedilere alerjim var.", "ru": "Но Памук... Ты же знаешь, у меня аллергия на кошек." }
+        ]},
+        { "speaker": "a", "tr": "Çok teşekkür ederim, Leyla. Sen bir meleksin!", "ru": "Большое спасибо, Лейла. Ты ангел!", "distractors": [
+          { "tr": "Ama Pamuk... Biliyorsun, kedilere alerjim var.", "ru": "Но Памук... Ты же знаешь, у меня аллергия на кошек." },
+          { "tr": "Evet! Komşum Nuran Hanım'da yedek anahtarım var.", "ru": "Да! Запасной ключ есть у соседки, Нуран-ханым." }
+        ]},
+        { "speaker": "b", "tr": "Saçmalama! Yirmi dakikaya oradayım. Bekle beni.", "ru": "Не говори глупостей! Буду через двадцать минут. Жди меня.", "distractors": [
+          { "tr": "İyiyim, ama çantam çalındı.", "ru": "Со мной всё хорошо, но у меня украли сумку." },
+          { "tr": "Süper. Ben seni alırım, beraber eve gideriz. Zehra'nın kocasını da ararım, o polis.", "ru": "Супер. Я тебя заберу, и вместе поедем к тебе. И позвоню мужу Зехры — он полицейский." }
+        ]}
+      ]
+    },
+    {
+      "id": "ekstren-canta-bulundu",
+      "title": "Полиция нашла сумку",
+      "level": "A2",
+      "speakers": { "a": "Ольга", "b": "Тахсин" },
+      "turns": [
+        { "speaker": "a", "tr": "Alo, Global Trade, buyurun.", "ru": "Алло, Global Trade, слушаю.", "distractors": [
+          { "tr": "Evet. Hırsız çantayı bir parkta bırakmış. Bir temizlik görevlisi bulmuş.", "ru": "Да. Оказалось, вор бросил сумку в парке. Её нашёл дворник." },
+          { "tr": "Bugün işten sonra gelebilirim. Saat altı buçukta olur mu?", "ru": "Могу прийти сегодня после работы. В половине седьмого можно?" }
+        ]},
+        { "speaker": "b", "tr": "İyi günler. Ben Moda karakolundan Tahsin. Olga Petrova ile mi görüşüyorum?", "ru": "Добрый день. Это Тахсин из участка в Моде. Я говорю с Ольгой Петровой?", "distractors": [
+          { "tr": "Evet. Hırsız çantayı bir parkta bırakmış. Bir temizlik görevlisi bulmuş.", "ru": "Да. Оказалось, вор бросил сумку в парке. Её нашёл дворник." },
+          { "tr": "Anlıyorum. Çantanızı ne zaman alabilirsiniz?", "ru": "Понимаю. Когда вы сможете забрать сумку?" }
+        ]},
+        { "speaker": "a", "tr": "Evet, benim! Çantamı buldunuz mu?", "ru": "Да, это я! Вы нашли мою сумку?", "distractors": [
+          { "tr": "Alo, Global Trade, buyurun.", "ru": "Алло, Global Trade, слушаю." },
+          { "tr": "Bugün işten sonra gelebilirim. Saat altı buçukta olur mu?", "ru": "Могу прийти сегодня после работы. В половине седьмого можно?" }
+        ]},
+        { "speaker": "b", "tr": "Evet. Hırsız çantayı bir parkta bırakmış. Bir temizlik görevlisi bulmuş.", "ru": "Да. Оказалось, вор бросил сумку в парке. Её нашёл дворник.", "distractors": [
+          { "tr": "Çok sevindim! Oturma izni benim için paradan daha önemli.", "ru": "Я так рада! Вид на жительство для меня важнее денег." },
+          { "tr": "Görüşürüz, Olga Hanım. Kolay gelsin.", "ru": "До встречи, Ольга-ханым. Хорошей работы." }
+        ]},
+        { "speaker": "a", "tr": "Harika! İçinde ne var?", "ru": "Отлично! Что в ней?", "distractors": [
+          { "tr": "Olur. Pasaportunuzu da getirin, lütfen.", "ru": "Можно. Возьмите, пожалуйста, с собой паспорт." },
+          { "tr": "Çok teşekkür ederim, Tahsin Bey. Akşam görüşürüz.", "ru": "Большое спасибо, Тахсин-бей. До вечера." }
+        ]},
+        { "speaker": "b", "tr": "Maalesef para ve telefon yok. Ama oturma izniniz ve anahtarlarınız içinde.", "ru": "К сожалению, денег и телефона нет. Но ваш вид на жительство и ключи на месте.", "distractors": [
+          { "tr": "İyi günler. Ben Moda karakolundan Tahsin. Olga Petrova ile mi görüşüyorum?", "ru": "Добрый день. Это Тахсин из участка в Моде. Я говорю с Ольгой Петровой?" },
+          { "tr": "Görüşürüz, Olga Hanım. Kolay gelsin.", "ru": "До встречи, Ольга-ханым. Хорошей работы." }
+        ]},
+        { "speaker": "a", "tr": "Çok sevindim! Oturma izni benim için paradan daha önemli.", "ru": "Я так рада! Вид на жительство для меня важнее денег.", "distractors": [
+          { "tr": "Evet. Hırsız çantayı bir parkta bırakmış. Bir temizlik görevlisi bulmuş.", "ru": "Да. Оказалось, вор бросил сумку в парке. Её нашёл дворник." },
+          { "tr": "Çok teşekkür ederim, Tahsin Bey. Akşam görüşürüz.", "ru": "Большое спасибо, Тахсин-бей. До вечера." }
+        ]},
+        { "speaker": "b", "tr": "Anlıyorum. Çantanızı ne zaman alabilirsiniz?", "ru": "Понимаю. Когда вы сможете забрать сумку?", "distractors": [
+          { "tr": "Evet. Hırsız çantayı bir parkta bırakmış. Bir temizlik görevlisi bulmuş.", "ru": "Да. Оказалось, вор бросил сумку в парке. Её нашёл дворник." },
+          { "tr": "Görüşürüz, Olga Hanım. Kolay gelsin.", "ru": "До встречи, Ольга-ханым. Хорошей работы." }
+        ]},
+        { "speaker": "a", "tr": "Bugün işten sonra gelebilirim. Saat altı buçukta olur mu?", "ru": "Могу прийти сегодня после работы. В половине седьмого можно?", "distractors": [
+          { "tr": "İyi günler. Ben Moda karakolundan Tahsin. Olga Petrova ile mi görüşüyorum?", "ru": "Добрый день. Это Тахсин из участка в Моде. Я говорю с Ольгой Петровой?" },
+          { "tr": "Tamam, getiririm. Hırsızı buldunuz mu?", "ru": "Хорошо, возьму. А вора вы нашли?" }
+        ]},
+        { "speaker": "b", "tr": "Olur. Pasaportunuzu da getirin, lütfen.", "ru": "Можно. Возьмите, пожалуйста, с собой паспорт.", "distractors": [
+          { "tr": "İyi günler. Ben Moda karakolundan Tahsin. Olga Petrova ile mi görüşüyorum?", "ru": "Добрый день. Это Тахсин из участка в Моде. Я говорю с Ольгой Петровой?" },
+          { "tr": "Evet, benim! Çantamı buldunuz mu?", "ru": "Да, это я! Вы нашли мою сумку?" }
+        ]},
+        { "speaker": "a", "tr": "Tamam, getiririm. Hırsızı buldunuz mu?", "ru": "Хорошо, возьму. А вора вы нашли?", "distractors": [
+          { "tr": "Bugün işten sonra gelebilirim. Saat altı buçukta olur mu?", "ru": "Могу прийти сегодня после работы. В половине седьмого можно?" },
+          { "tr": "Görüşürüz, Olga Hanım. Kolay gelsin.", "ru": "До встречи, Ольга-ханым. Хорошей работы." }
+        ]},
+        { "speaker": "b", "tr": "Henüz değil, ama arıyoruz. Koray Bey bize çok yardım etti.", "ru": "Пока нет, но ищем. Корай-бей нам очень помог.", "distractors": [
+          { "tr": "Maalesef para ve telefon yok. Ama oturma izniniz ve anahtarlarınız içinde.", "ru": "К сожалению, денег и телефона нет. Но ваш вид на жительство и ключи на месте." },
+          { "tr": "Görüşürüz, Olga Hanım. Kolay gelsin.", "ru": "До встречи, Ольга-ханым. Хорошей работы." }
+        ]},
+        { "speaker": "a", "tr": "Çok teşekkür ederim, Tahsin Bey. Akşam görüşürüz.", "ru": "Большое спасибо, Тахсин-бей. До вечера.", "distractors": [
+          { "tr": "Evet. Hırsız çantayı bir parkta bırakmış. Bir temizlik görevlisi bulmuş.", "ru": "Да. Оказалось, вор бросил сумку в парке. Её нашёл дворник." },
+          { "tr": "Bugün işten sonra gelebilirim. Saat altı buçukta olur mu?", "ru": "Могу прийти сегодня после работы. В половине седьмого можно?" }
+        ]},
+        { "speaker": "b", "tr": "Görüşürüz, Olga Hanım. Kolay gelsin.", "ru": "До встречи, Ольга-ханым. Хорошей работы.", "distractors": [
+          { "tr": "İyi günler. Ben Moda karakolundan Tahsin. Olga Petrova ile mi görüşüyorum?", "ru": "Добрый день. Это Тахсин из участка в Моде. Я говорю с Ольгой Петровой?" },
+          { "tr": "Çok sevindim! Oturma izni benim için paradan daha önemli.", "ru": "Я так рада! Вид на жительство для меня важнее денег." }
+        ]}
+      ]
+    },
+    {
+      "id": "ekstren-kayboldum-deniz",
+      "title": "Заблудилась: звонок Денизу",
+      "level": "A2",
+      "speakers": { "a": "Ольга", "b": "Дениз" },
+      "turns": [
+        { "speaker": "a", "tr": "Deniz, bana yardım eder misin? Kayboldum.", "ru": "Дениз, поможешь мне? Я заблудилась.", "distractors": [
+          { "tr": "Durakta bir tabela var mı? Durağın adını oku.", "ru": "На остановке есть табличка? Прочитай название остановки." },
+          { "tr": "Ne demek! Bir dahaki sefere otobüse binmeden önce numarasına bak!", "ru": "Да о чём ты! В следующий раз, прежде чем садиться в автобус, смотри на номер!" }
+        ]},
+        { "speaker": "b", "tr": "Kayboldun mu? Neredesin?", "ru": "Заблудилась? Где ты?", "distractors": [
+          { "tr": "Burada beklerim. Biraz korkuyorum, çok karanlık.", "ru": "Я подожду здесь. Мне немного страшно, очень темно." },
+          { "tr": "Tamam. Çok teşekkür ederim, canım.", "ru": "Хорошо. Огромное спасибо, дорогой." }
+        ]},
+        { "speaker": "a", "tr": "Bilmiyorum. Üsküdar'da bir arkadaşa gittim, sonra yanlış otobüse bindim.", "ru": "Не знаю. Я ездила к подруге в Ускюдар, а потом села не на тот автобус.", "distractors": [
+          { "tr": "Büyük bir cami, bir eczane ve bir otobüs durağı var. Ama sokakta kimse yok.", "ru": "Большая мечеть, аптека и автобусная остановка. Но на улице никого нет." },
+          { "tr": "\"Çamlıca\" yazıyor. Telefonumun şarjı da az, yüzde beş.", "ru": "Написано «Чамлыджа». И телефон почти сел — пять процентов." }
+        ]},
+        { "speaker": "b", "tr": "Etrafında ne görüyorsun?", "ru": "Что ты видишь вокруг?", "distractors": [
+          { "tr": "Deniz, bana yardım eder misin? Kayboldum.", "ru": "Дениз, поможешь мне? Я заблудилась." },
+          { "tr": "Burada beklerim. Biraz korkuyorum, çok karanlık.", "ru": "Я подожду здесь. Мне немного страшно, очень темно." }
+        ]},
+        { "speaker": "a", "tr": "Büyük bir cami, bir eczane ve bir otobüs durağı var. Ama sokakta kimse yok.", "ru": "Большая мечеть, аптека и автобусная остановка. Но на улице никого нет.", "distractors": [
+          { "tr": "Tamam, orayı biliyorum. Arabayla geliyorum, on beş dakika sürer.", "ru": "Хорошо, я знаю это место. Еду на машине, минут пятнадцать." },
+          { "tr": "Eczanenin önünde bekle, orası aydınlık. Gelince seni ararım.", "ru": "Жди у аптеки, там светло. Когда приеду, позвоню." }
+        ]},
+        { "speaker": "b", "tr": "Durakta bir tabela var mı? Durağın adını oku.", "ru": "На остановке есть табличка? Прочитай название остановки.", "distractors": [
+          { "tr": "Kayboldun mu? Neredesin?", "ru": "Заблудилась? Где ты?" },
+          { "tr": "Tamam. Çok teşekkür ederim, canım.", "ru": "Хорошо. Огромное спасибо, дорогой." }
+        ]},
+        { "speaker": "a", "tr": "\"Çamlıca\" yazıyor. Telefonumun şarjı da az, yüzde beş.", "ru": "Написано «Чамлыджа». И телефон почти сел — пять процентов.", "distractors": [
+          { "tr": "Deniz, bana yardım eder misin? Kayboldum.", "ru": "Дениз, поможешь мне? Я заблудилась." },
+          { "tr": "Bilmiyorum. Üsküdar'da bir arkadaşa gittim, sonra yanlış otobüse bindim.", "ru": "Не знаю. Я ездила к подруге в Ускюдар, а потом села не на тот автобус." }
+        ]},
+        { "speaker": "b", "tr": "Tamam, orayı biliyorum. Arabayla geliyorum, on beş dakika sürer.", "ru": "Хорошо, я знаю это место. Еду на машине, минут пятнадцать.", "distractors": [
+          { "tr": "Tamam. Çok teşekkür ederim, canım.", "ru": "Хорошо. Огромное спасибо, дорогой." },
+          { "tr": "Ne demek! Bir dahaki sefere otobüse binmeden önce numarasına bak!", "ru": "Да о чём ты! В следующий раз, прежде чем садиться в автобус, смотри на номер!" }
+        ]},
+        { "speaker": "a", "tr": "Burada beklerim. Biraz korkuyorum, çok karanlık.", "ru": "Я подожду здесь. Мне немного страшно, очень темно.", "distractors": [
+          { "tr": "Etrafında ne görüyorsun?", "ru": "Что ты видишь вокруг?" },
+          { "tr": "\"Çamlıca\" yazıyor. Telefonumun şarjı da az, yüzde beş.", "ru": "Написано «Чамлыджа». И телефон почти сел — пять процентов." }
+        ]},
+        { "speaker": "b", "tr": "Eczanenin önünde bekle, orası aydınlık. Gelince seni ararım.", "ru": "Жди у аптеки, там светло. Когда приеду, позвоню.", "distractors": [
+          { "tr": "Deniz, bana yardım eder misin? Kayboldum.", "ru": "Дениз, поможешь мне? Я заблудилась." },
+          { "tr": "\"Çamlıca\" yazıyor. Telefonumun şarjı da az, yüzde beş.", "ru": "Написано «Чамлыджа». И телефон почти сел — пять процентов." }
+        ]},
+        { "speaker": "a", "tr": "Tamam. Çok teşekkür ederim, canım.", "ru": "Хорошо. Огромное спасибо, дорогой.", "distractors": [
+          { "tr": "Etrafında ne görüyorsun?", "ru": "Что ты видишь вокруг?" },
+          { "tr": "Büyük bir cami, bir eczane ve bir otobüs durağı var. Ama sokakta kimse yok.", "ru": "Большая мечеть, аптека и автобусная остановка. Но на улице никого нет." }
+        ]},
+        { "speaker": "b", "tr": "Ne demek! Bir dahaki sefere otobüse binmeden önce numarasına bak!", "ru": "Да о чём ты! В следующий раз, прежде чем садиться в автобус, смотри на номер!", "distractors": [
+          { "tr": "Kayboldun mu? Neredesin?", "ru": "Заблудилась? Где ты?" },
+          { "tr": "Etrafında ne görüyorsun?", "ru": "Что ты видишь вокруг?" }
+        ]}
+      ]
+    },
+    {
+      "id": "ekstren-bas-donmesi",
+      "title": "Стало плохо на улице",
+      "level": "A2",
+      "speakers": { "a": "Ольга", "b": "Несрин" },
+      "turns": [
+        { "speaker": "a", "tr": "Affedersiniz... Hastayım, başım dönüyor.", "ru": "Извините... Мне плохо, голова кружится.", "distractors": [
+          { "tr": "Rica ederim. Doktor çağırmak ister misiniz?", "ru": "Не за что. Хотите, вызовем врача?" },
+          { "tr": "Emin misiniz? Yüzünüz hâlâ çok beyaz.", "ru": "Вы уверены? Вы всё ещё очень бледная." }
+        ]},
+        { "speaker": "b", "tr": "Aman! Şu banka oturun. Ne oldu?", "ru": "Ой! Садитесь на эту скамейку. Что случилось?", "distractors": [
+          { "tr": "Hayır, gerek yok. Şimdi daha iyiyim.", "ru": "Нет, не нужно. Мне уже лучше." },
+          { "tr": "Evim çok yakın, Moda'da. Ama arkadaşımı ararım.", "ru": "Мой дом совсем близко, в Моде. Но я позвоню подруге." }
+        ]},
+        { "speaker": "a", "tr": "Bilmiyorum. Tansiyonum düşük, bazen böyle oluyor.", "ru": "Не знаю. У меня пониженное давление, иногда так бывает.", "distractors": [
+          { "tr": "Kahvaltı yapmadan kahve içmek iyi değil! Alın, su ve biraz çikolata.", "ru": "Пить кофе без завтрака нехорошо! Возьмите, вот вода и немного шоколада." },
+          { "tr": "Emin misiniz? Yüzünüz hâlâ çok beyaz.", "ru": "Вы уверены? Вы всё ещё очень бледная." }
+        ]},
+        { "speaker": "b", "tr": "Bugün bir şey yediniz mi?", "ru": "Вы сегодня что-нибудь ели?", "distractors": [
+          { "tr": "Affedersiniz... Hastayım, başım dönüyor.", "ru": "Извините... Мне плохо, голова кружится." },
+          { "tr": "Kahvaltı yapmadan kahve içmek iyi değil! Alın, su ve biraz çikolata.", "ru": "Пить кофе без завтрака нехорошо! Возьмите, вот вода и немного шоколада." }
+        ]},
+        { "speaker": "a", "tr": "Hayır, sabah sadece kahve içtim.", "ru": "Нет, утром выпила только кофе.", "distractors": [
+          { "tr": "Aman! Şu banka oturun. Ne oldu?", "ru": "Ой! Садитесь на эту скамейку. Что случилось?" },
+          { "tr": "Rica ederim. Doktor çağırmak ister misiniz?", "ru": "Не за что. Хотите, вызовем врача?" }
+        ]},
+        { "speaker": "b", "tr": "Kahvaltı yapmadan kahve içmek iyi değil! Alın, su ve biraz çikolata.", "ru": "Пить кофе без завтрака нехорошо! Возьмите, вот вода и немного шоколада.", "distractors": [
+          { "tr": "Evim çok yakın, Moda'da. Ama arkadaşımı ararım.", "ru": "Мой дом совсем близко, в Моде. Но я позвоню подруге." },
+          { "tr": "İyi. Geçmiş olsun!", "ru": "Хорошо. Поправляйтесь!" }
+        ]},
+        { "speaker": "a", "tr": "Çok teşekkür ederim. Çok naziksiniz.", "ru": "Большое спасибо. Вы очень любезны.", "distractors": [
+          { "tr": "Affedersiniz... Hastayım, başım dönüyor.", "ru": "Извините... Мне плохо, голова кружится." },
+          { "tr": "Evim çok yakın, Moda'da. Ama arkadaşımı ararım.", "ru": "Мой дом совсем близко, в Моде. Но я позвоню подруге." }
+        ]},
+        { "speaker": "b", "tr": "Rica ederim. Doktor çağırmak ister misiniz?", "ru": "Не за что. Хотите, вызовем врача?", "distractors": [
+          { "tr": "Bilmiyorum. Tansiyonum düşük, bazen böyle oluyor.", "ru": "Не знаю. У меня пониженное давление, иногда так бывает." },
+          { "tr": "Kahvaltı yapmadan kahve içmek iyi değil! Alın, su ve biraz çikolata.", "ru": "Пить кофе без завтрака нехорошо! Возьмите, вот вода и немного шоколада." }
+        ]},
+        { "speaker": "a", "tr": "Hayır, gerek yok. Şimdi daha iyiyim.", "ru": "Нет, не нужно. Мне уже лучше.", "distractors": [
+          { "tr": "Bilmiyorum. Tansiyonum düşük, bazen böyle oluyor.", "ru": "Не знаю. У меня пониженное давление, иногда так бывает." },
+          { "tr": "Tamam, ama yalnız eve gitmeyin. Birisi sizi alabilir mi?", "ru": "Хорошо, но домой одна не идите. Кто-нибудь может вас забрать?" }
+        ]},
+        { "speaker": "b", "tr": "Emin misiniz? Yüzünüz hâlâ çok beyaz.", "ru": "Вы уверены? Вы всё ещё очень бледная.", "distractors": [
+          { "tr": "Aman! Şu banka oturun. Ne oldu?", "ru": "Ой! Садитесь на эту скамейку. Что случилось?" },
+          { "tr": "Kahvaltı yapmadan kahve içmek iyi değil! Alın, su ve biraz çikolata.", "ru": "Пить кофе без завтрака нехорошо! Возьмите, вот вода и немного шоколада." }
+        ]},
+        { "speaker": "a", "tr": "Evet, eminim. Biraz oturunca geçer.", "ru": "Да, уверена. Посижу немного — и пройдёт.", "distractors": [
+          { "tr": "Çok teşekkür ederim. Çok naziksiniz.", "ru": "Большое спасибо. Вы очень любезны." },
+          { "tr": "Evim çok yakın, Moda'da. Ama arkadaşımı ararım.", "ru": "Мой дом совсем близко, в Моде. Но я позвоню подруге." }
+        ]},
+        { "speaker": "b", "tr": "Tamam, ama yalnız eve gitmeyin. Birisi sizi alabilir mi?", "ru": "Хорошо, но домой одна не идите. Кто-нибудь может вас забрать?", "distractors": [
+          { "tr": "Hayır, sabah sadece kahve içtim.", "ru": "Нет, утром выпила только кофе." },
+          { "tr": "Çok teşekkür ederim. Çok naziksiniz.", "ru": "Большое спасибо. Вы очень любезны." }
+        ]},
+        { "speaker": "a", "tr": "Evim çok yakın, Moda'da. Ama arkadaşımı ararım.", "ru": "Мой дом совсем близко, в Моде. Но я позвоню подруге.", "distractors": [
+          { "tr": "Hayır, sabah sadece kahve içtim.", "ru": "Нет, утром выпила только кофе." },
+          { "tr": "Evet, eminim. Biraz oturunca geçer.", "ru": "Да, уверена. Посижу немного — и пройдёт." }
+        ]},
+        { "speaker": "b", "tr": "İyi. Geçmiş olsun!", "ru": "Хорошо. Поправляйтесь!", "distractors": [
+          { "tr": "Bilmiyorum. Tansiyonum düşük, bazen böyle oluyor.", "ru": "Не знаю. У меня пониженное давление, иногда так бывает." },
+          { "tr": "Kahvaltı yapmadan kahve içmek iyi değil! Alın, su ve biraz çikolata.", "ru": "Пить кофе без завтрака нехорошо! Возьмите, вот вода и немного шоколада." }
+        ]}
+      ]
+    },
+    {
+      "id": "ekstren-dusen-adam",
+      "title": "Помощь прохожему",
+      "level": "A2",
+      "speakers": { "a": "Ольга", "b": "Хайри" },
+      "turns": [
+        { "speaker": "a", "tr": "Affedersiniz! Yardım edin, lütfen! Dışarıda yaşlı bir adam düştü.", "ru": "Извините! Помогите, пожалуйста! На улице упал пожилой мужчина.", "distractors": [
+          { "tr": "Tamam, 112'yi arıyorum. Siz başını tutun, lütfen.", "ru": "Хорошо, звоню в 112. А вы, пожалуйста, придержите ему голову." },
+          { "tr": "Çok iyi. İşte ambulans geliyor!", "ru": "Очень хорошо. Вот и скорая едет!" }
+        ]},
+        { "speaker": "b", "tr": "Nerede? Hemen geliyorum!", "ru": "Где? Сейчас иду!", "distractors": [
+          { "tr": "Onu kaldırmalı mıyız?", "ru": "Нам нужно его поднять?" },
+          { "tr": "Asıl ben teşekkür ederim. Siz onu gördünüz!", "ru": "Это вам спасибо. Это вы его заметили!" }
+        ]},
+        { "speaker": "a", "tr": "Merdivenlerde. Ona \"Dikkat!\" dedim, ama geç kaldım.", "ru": "На лестнице. Я крикнула ему «Осторожно!», но не успела.", "distractors": [
+          { "tr": "Doktor çağırın! Ben Türkçe iyi anlatamam.", "ru": "Вызовите врача! Я не смогу хорошо объяснить по-турецки." },
+          { "tr": "Tamam, 112'yi arıyorum. Siz başını tutun, lütfen.", "ru": "Хорошо, звоню в 112. А вы, пожалуйста, придержите ему голову." }
+        ]},
+        { "speaker": "b", "tr": "Amca, iyi misiniz? ... Konuşmuyor. Gözleri kapalı.", "ru": "Дедушка, вы в порядке? ... Не отвечает. Глаза закрыты.", "distractors": [
+          { "tr": "Anladım. Ceketimi üstüne koyuyorum, hava soğuk.", "ru": "Поняла. Накрою его своей курткой, холодно." },
+          { "tr": "Yardımınız için çok teşekkür ederim.", "ru": "Большое вам спасибо за помощь." }
+        ]},
+        { "speaker": "a", "tr": "Doktor çağırın! Ben Türkçe iyi anlatamam.", "ru": "Вызовите врача! Я не смогу хорошо объяснить по-турецки.", "distractors": [
+          { "tr": "Nerede? Hemen geliyorum!", "ru": "Где? Сейчас иду!" },
+          { "tr": "Merdivenlerde. Ona \"Dikkat!\" dedim, ama geç kaldım.", "ru": "На лестнице. Я крикнула ему «Осторожно!», но не успела." }
+        ]},
+        { "speaker": "b", "tr": "Tamam, 112'yi arıyorum. Siz başını tutun, lütfen.", "ru": "Хорошо, звоню в 112. А вы, пожалуйста, придержите ему голову.", "distractors": [
+          { "tr": "Anladım. Ceketimi üstüne koyuyorum, hava soğuk.", "ru": "Поняла. Накрою его своей курткой, холодно." },
+          { "tr": "Asıl ben teşekkür ederim. Siz onu gördünüz!", "ru": "Это вам спасибо. Это вы его заметили!" }
+        ]},
+        { "speaker": "a", "tr": "Tamam. Bakın, gözlerini açtı!", "ru": "Хорошо. Смотрите, он открыл глаза!", "distractors": [
+          { "tr": "Affedersiniz! Yardım edin, lütfen! Dışarıda yaşlı bir adam düştü.", "ru": "Извините! Помогите, пожалуйста! На улице упал пожилой мужчина." },
+          { "tr": "Çok iyi. İşte ambulans geliyor!", "ru": "Очень хорошо. Вот и скорая едет!" }
+        ]},
+        { "speaker": "b", "tr": "Çok şükür. Ambulans beş dakika sonra gelecek.", "ru": "Слава богу. Скорая приедет через пять минут.", "distractors": [
+          { "tr": "Merdivenlerde. Ona \"Dikkat!\" dedim, ama geç kaldım.", "ru": "На лестнице. Я крикнула ему «Осторожно!», но не успела." },
+          { "tr": "Asıl ben teşekkür ederim. Siz onu gördünüz!", "ru": "Это вам спасибо. Это вы его заметили!" }
+        ]},
+        { "speaker": "a", "tr": "Onu kaldırmalı mıyız?", "ru": "Нам нужно его поднять?", "distractors": [
+          { "tr": "Anladım. Ceketimi üstüne koyuyorum, hava soğuk.", "ru": "Поняла. Накрою его своей курткой, холодно." },
+          { "tr": "Asıl ben teşekkür ederim. Siz onu gördünüz!", "ru": "Это вам спасибо. Это вы его заметили!" }
+        ]},
+        { "speaker": "b", "tr": "Hayır! Doktor gelmeden önce onu kaldırmayın.", "ru": "Нет! Не поднимайте его, пока не приедет врач.", "distractors": [
+          { "tr": "Tamam. Bakın, gözlerini açtı!", "ru": "Хорошо. Смотрите, он открыл глаза!" },
+          { "tr": "Çok şükür. Ambulans beş dakika sonra gelecek.", "ru": "Слава богу. Скорая приедет через пять минут." }
+        ]},
+        { "speaker": "a", "tr": "Anladım. Ceketimi üstüne koyuyorum, hava soğuk.", "ru": "Поняла. Накрою его своей курткой, холодно.", "distractors": [
+          { "tr": "Çok şükür. Ambulans beş dakika sonra gelecek.", "ru": "Слава богу. Скорая приедет через пять минут." },
+          { "tr": "Onu kaldırmalı mıyız?", "ru": "Нам нужно его поднять?" }
+        ]},
+        { "speaker": "b", "tr": "Çok iyi. İşte ambulans geliyor!", "ru": "Очень хорошо. Вот и скорая едет!", "distractors": [
+          { "tr": "Onu kaldırmalı mıyız?", "ru": "Нам нужно его поднять?" },
+          { "tr": "Asıl ben teşekkür ederim. Siz onu gördünüz!", "ru": "Это вам спасибо. Это вы его заметили!" }
+        ]},
+        { "speaker": "a", "tr": "Yardımınız için çok teşekkür ederim.", "ru": "Большое вам спасибо за помощь.", "distractors": [
+          { "tr": "Affedersiniz! Yardım edin, lütfen! Dışarıda yaşlı bir adam düştü.", "ru": "Извините! Помогите, пожалуйста! На улице упал пожилой мужчина." },
+          { "tr": "Anladım. Ceketimi üstüne koyuyorum, hava soğuk.", "ru": "Поняла. Накрою его своей курткой, холодно." }
+        ]},
+        { "speaker": "b", "tr": "Asıl ben teşekkür ederim. Siz onu gördünüz!", "ru": "Это вам спасибо. Это вы его заметили!", "distractors": [
+          { "tr": "Amca, iyi misiniz? ... Konuşmuyor. Gözleri kapalı.", "ru": "Дедушка, вы в порядке? ... Не отвечает. Глаза закрыты." },
+          { "tr": "Tamam. Bakın, gözlerini açtı!", "ru": "Хорошо. Смотрите, он открыл глаза!" }
+        ]}
+      ]
+    },
+    {
+      "id": "ekstren-duman-komsu",
+      "title": "Дым в подъезде",
+      "level": "A2",
+      "speakers": { "a": "Ольга", "b": "Нуран" },
+      "turns": [
+        { "speaker": "a", "tr": "Nuran Hanım, kapıyı açın! Merdivende duman var!", "ru": "Нуран-ханым, откройте дверь! На лестнице дым!", "distractors": [
+          { "tr": "Emin misiniz? Çok duman var.", "ru": "Вы уверены? Очень много дыма." },
+          { "tr": "Eminim. Ocağı kapattım. Şimdi pencereleri açıyorum.", "ru": "Уверена. Плиту я выключила. Сейчас открываю окна." }
+        ]},
+        { "speaker": "b", "tr": "Duman mı? Aman Allahım, yemeğim! Ocakta unuttum!", "ru": "Дым? Боже мой, моя еда! Я забыла её на плите!", "distractors": [
+          { "tr": "Dur, kızım, arama! Yangın yok, sadece tencere yandı.", "ru": "Подожди, дочка, не звони! Пожара нет, просто кастрюля подгорела." },
+          { "tr": "Haklısın. Of, bütün ev duman kokuyor.", "ru": "Ты права. Уф, вся квартира пахнет дымом." }
+        ]},
+        { "speaker": "a", "tr": "Yangın mı var? İtfaiyeyi arıyorum!", "ru": "Пожар? Звоню пожарным!", "distractors": [
+          { "tr": "Eminim. Ocağı kapattım. Şimdi pencereleri açıyorum.", "ru": "Уверена. Плиту я выключила. Сейчас открываю окна." },
+          { "tr": "Dikkat edin, tencere çok sıcak!", "ru": "Осторожно, кастрюля очень горячая!" }
+        ]},
+        { "speaker": "b", "tr": "Dur, kızım, arama! Yangın yok, sadece tencere yandı.", "ru": "Подожди, дочка, не звони! Пожара нет, просто кастрюля подгорела.", "distractors": [
+          { "tr": "Duman mı? Aman Allahım, yemeğim! Ocakta unuttum!", "ru": "Дым? Боже мой, моя еда! Я забыла её на плите!" },
+          { "tr": "Eminim. Ocağı kapattım. Şimdi pencereleri açıyorum.", "ru": "Уверена. Плиту я выключила. Сейчас открываю окна." }
+        ]},
+        { "speaker": "a", "tr": "Emin misiniz? Çok duman var.", "ru": "Вы уверены? Очень много дыма.", "distractors": [
+          { "tr": "Nuran Hanım, kapıyı açın! Merdivende duman var!", "ru": "Нуран-ханым, откройте дверь! На лестнице дым!" },
+          { "tr": "Olur öyle. Ama siz iyisiniz, bu çok önemli.", "ru": "Бывает. Главное, что с вами всё хорошо." }
+        ]},
+        { "speaker": "b", "tr": "Eminim. Ocağı kapattım. Şimdi pencereleri açıyorum.", "ru": "Уверена. Плиту я выключила. Сейчас открываю окна.", "distractors": [
+          { "tr": "Nuran Hanım, kapıyı açın! Merdivende duman var!", "ru": "Нуран-ханым, откройте дверь! На лестнице дым!" },
+          { "tr": "Olur öyle. Ama siz iyisiniz, bu çok önemli.", "ru": "Бывает. Главное, что с вами всё хорошо." }
+        ]},
+        { "speaker": "a", "tr": "Dikkat edin, tencere çok sıcak!", "ru": "Осторожно, кастрюля очень горячая!", "distractors": [
+          { "tr": "Emin misiniz? Çok duman var.", "ru": "Вы уверены? Очень много дыма." },
+          { "tr": "Sağ ol, kızım. Telefonla konuşurken yemeği unuttum. Kızım İzmir'den aradı.", "ru": "Спасибо, дочка. Говорила по телефону и забыла про еду. Дочь звонила из Измира." }
+        ]},
+        { "speaker": "b", "tr": "Haklısın. Of, bütün ev duman kokuyor.", "ru": "Ты права. Уф, вся квартира пахнет дымом.", "distractors": [
+          { "tr": "Dur, kızım, arama! Yangın yok, sadece tencere yandı.", "ru": "Подожди, дочка, не звони! Пожара нет, просто кастрюля подгорела." },
+          { "tr": "Sen çok iyi bir komşusun, Olga.", "ru": "Ты очень хорошая соседка, Ольга." }
+        ]},
+        { "speaker": "a", "tr": "Biraz bende oturun. Size çay yaparım.", "ru": "Посидите немного у меня. Я сделаю вам чаю.", "distractors": [
+          { "tr": "Dur, kızım, arama! Yangın yok, sadece tencere yandı.", "ru": "Подожди, дочка, не звони! Пожара нет, просто кастрюля подгорела." },
+          { "tr": "Eminim. Ocağı kapattım. Şimdi pencereleri açıyorum.", "ru": "Уверена. Плиту я выключила. Сейчас открываю окна." }
+        ]},
+        { "speaker": "b", "tr": "Sağ ol, kızım. Telefonla konuşurken yemeği unuttum. Kızım İzmir'den aradı.", "ru": "Спасибо, дочка. Говорила по телефону и забыла про еду. Дочь звонила из Измира.", "distractors": [
+          { "tr": "Yangın mı var? İtfaiyeyi arıyorum!", "ru": "Пожар? Звоню пожарным!" },
+          { "tr": "Siz de! Hadi gelin. Ama bu sefer ocağa ben bakıyorum!", "ru": "Вы тоже! Пойдёмте. Но в этот раз за плитой слежу я!" }
+        ]},
+        { "speaker": "a", "tr": "Olur öyle. Ama siz iyisiniz, bu çok önemli.", "ru": "Бывает. Главное, что с вами всё хорошо.", "distractors": [
+          { "tr": "Yangın mı var? İtfaiyeyi arıyorum!", "ru": "Пожар? Звоню пожарным!" },
+          { "tr": "Biraz bende oturun. Size çay yaparım.", "ru": "Посидите немного у меня. Я сделаю вам чаю." }
+        ]},
+        { "speaker": "b", "tr": "Sen çok iyi bir komşusun, Olga.", "ru": "Ты очень хорошая соседка, Ольга.", "distractors": [
+          { "tr": "Duman mı? Aman Allahım, yemeğim! Ocakta unuttum!", "ru": "Дым? Боже мой, моя еда! Я забыла её на плите!" },
+          { "tr": "Eminim. Ocağı kapattım. Şimdi pencereleri açıyorum.", "ru": "Уверена. Плиту я выключила. Сейчас открываю окна." }
+        ]},
+        { "speaker": "a", "tr": "Siz de! Hadi gelin. Ama bu sefer ocağa ben bakıyorum!", "ru": "Вы тоже! Пойдёмте. Но в этот раз за плитой слежу я!", "distractors": [
+          { "tr": "Nuran Hanım, kapıyı açın! Merdivende duman var!", "ru": "Нуран-ханым, откройте дверь! На лестнице дым!" },
+          { "tr": "Duman mı? Aman Allahım, yemeğim! Ocakta unuttum!", "ru": "Дым? Боже мой, моя еда! Я забыла её на плите!" }
+        ]},
+        { "speaker": "b", "tr": "Tamam, tamam, sen bak!", "ru": "Ладно-ладно, следи ты!", "distractors": [
+          { "tr": "Nuran Hanım, kapıyı açın! Merdivende duman var!", "ru": "Нуран-ханым, откройте дверь! На лестнице дым!" },
+          { "tr": "Haklısın. Of, bütün ev duman kokuyor.", "ru": "Ты права. Уф, вся квартира пахнет дымом." }
+        ]}
+      ]
+    }
+  ]
+}
