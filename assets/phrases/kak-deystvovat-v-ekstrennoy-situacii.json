@@ -64,8 +64,20 @@
       "sub": null
     },
     {
-      "ru": "У меня украли деньги/бумажник/сумку",
-      "tr": "Param/Cüzdanım/Çantam çalındı",
+      "ru": "У меня украли деньги",
+      "tr": "Param çalındı",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "У меня украли бумажник",
+      "tr": "Cüzdanım çalındı",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "У меня украли сумку",
+      "tr": "Çantam çalındı",
       "tl": null,
       "sub": null
     }

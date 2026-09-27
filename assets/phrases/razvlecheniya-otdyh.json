@@ -154,8 +154,20 @@
       "sub": "Концерт, балет, опера — Konser – bale – opera"
     },
     {
-      "ru": "Можете порекомендовать, на какой концерт/ балет/оперу сходить?",
-      "tr": "Bir konser/bale/ opera tavsiye edebilir misiniz?",
+      "ru": "Можете порекомендовать, на какой концерт сходить?",
+      "tr": "Bir konser tavsiye edebilir misiniz?",
+      "tl": null,
+      "sub": "Концерт, балет, опера — Konser – bale – opera"
+    },
+    {
+      "ru": "Можете порекомендовать, на какой балет сходить?",
+      "tr": "Bir bale tavsiye edebilir misiniz?",
+      "tl": null,
+      "sub": "Концерт, балет, опера — Konser – bale – opera"
+    },
+    {
+      "ru": "Можете порекомендовать, на какую оперу сходить?",
+      "tr": "Bir opera tavsiye edebilir misiniz?",
       "tl": null,
       "sub": "Концерт, балет, опера — Konser – bale – opera"
     },
@@ -232,9 +244,21 @@
       "sub": "Спорт, игры — Spor ve oyunlar"
     },
     {
-      "ru": "Сколько стоит одна игра/день/ час?",
-      "tr": "Oyun/günlük/saat ücreti ne kadar?",
-      "tl": "Ойун/гюнлюк/ саат юджрэти нэ кадар?",
+      "ru": "Сколько стоит одна игра?",
+      "tr": "Oyun ücreti ne kadar?",
+      "tl": "Ойун юджрэти нэ кадар?",
+      "sub": "Спорт, игры — Spor ve oyunlar"
+    },
+    {
+      "ru": "Сколько стоит день?",
+      "tr": "Günlük ücret ne kadar?",
+      "tl": "Гюнлюк юджрэт нэ кадар?",
+      "sub": "Спорт, игры — Spor ve oyunlar"
+    },
+    {
+      "ru": "Сколько стоит час?",
+      "tr": "Saatlik ücret ne kadar?",
+      "tl": "Саатлик юджрэт нэ кадар?",
       "sub": "Спорт, игры — Spor ve oyunlar"
     },
     {
@@ -298,9 +322,21 @@
       "sub": "Спорт, игры — Spor ve oyunlar"
     },
     {
-      "ru": "Здесь пляж песчаный/галечный/ каменистый?",
-      "tr": "Plaj kum mu/çakıl mı/kayalık mı?",
-      "tl": "Пляж кум му/ чакыль ми/ каялык мы?",
+      "ru": "Здесь пляж песчаный?",
+      "tr": "Plaj kumlu mu?",
+      "tl": "Пляж кумлу му?",
+      "sub": "На пляже — Plajda"
+    },
+    {
+      "ru": "Здесь пляж галечный?",
+      "tr": "Plaj çakıllı mı?",
+      "tl": "Пляж чакыллы мы?",
+      "sub": "На пляже — Plajda"
+    },
+    {
+      "ru": "Здесь пляж каменистый?",
+      "tr": "Plaj kayalık mı?",
+      "tl": "Пляж каялык мы?",
       "sub": "На пляже — Plajda"
     },
     {

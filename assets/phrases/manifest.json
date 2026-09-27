@@ -3,22 +3,22 @@
     "id": "kak-deystvovat-v-ekstrennoy-situacii",
     "title": "Как действовать в экстренной ситуации",
     "source": "razgovornik",
-    "count": 11,
-    "sizeKB": 1.8
+    "count": 13,
+    "sizeKB": 2.0
   },
   {
     "id": "kak-pomenyat-dengi",
     "title": "Как поменять деньги",
     "source": "razgovornik",
-    "count": 19,
-    "sizeKB": 4.0
+    "count": 26,
+    "sizeKB": 5.1
   },
   {
     "id": "na-tamozhne",
     "title": "На таможне",
     "source": "razgovornik",
-    "count": 19,
-    "sizeKB": 3.5
+    "count": 21,
+    "sizeKB": 3.8
   },
   {
     "id": "nekotorye-poleznye-nadpisi-i-vyveski",
@@ -45,49 +45,49 @@
     "id": "osmotr-dostoprimechatelnostey",
     "title": "Осмотр достопримечательностей",
     "source": "razgovornik",
-    "count": 41,
-    "sizeKB": 6.8
+    "count": 46,
+    "sizeKB": 7.3
   },
   {
     "id": "pokupki-servis",
     "title": "Покупки, сервис",
     "source": "razgovornik",
-    "count": 196,
-    "sizeKB": 45.8
+    "count": 193,
+    "sizeKB": 44.0
   },
   {
     "id": "privetstvie",
     "title": "Приветствие",
     "source": "razgovornik",
-    "count": 99,
-    "sizeKB": 13.4
+    "count": 114,
+    "sizeKB": 15.3
   },
   {
     "id": "puteshestvie",
     "title": "Путешествие",
     "source": "razgovornik",
-    "count": 147,
-    "sizeKB": 33.5
+    "count": 158,
+    "sizeKB": 35.1
   },
   {
     "id": "razvlecheniya-otdyh",
     "title": "Развлечения, отдых",
     "source": "razgovornik",
-    "count": 68,
-    "sizeKB": 14.5
+    "count": 74,
+    "sizeKB": 15.7
   },
   {
     "id": "restoran",
     "title": "Ресторан",
     "source": "razgovornik",
-    "count": 78,
-    "sizeKB": 11.9
+    "count": 89,
+    "sizeKB": 13.4
   },
   {
     "id": "ustoychivye-vyrazheniya-so-slovom-allah",
     "title": "Устойчивые выражения со словом «Allah»",
     "source": "allah",
-    "count": 224,
+    "count": 225,
     "sizeKB": 30.7
   },
   {
@@ -101,8 +101,8 @@
     "id": "v-otele",
     "title": "В отеле",
     "source": "razgovornik",
-    "count": 72,
-    "sizeKB": 11.4
+    "count": 79,
+    "sizeKB": 12.2
   },
   {
     "id": "voprositelnye-slova",

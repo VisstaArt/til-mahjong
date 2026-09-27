@@ -262,8 +262,20 @@
       "sub": null
     },
     {
-      "ru": "Не могли бы вы показать это слово/эту фразу/это предложение в книге?",
-      "tr": "Sözcüğü/deyimi/tümceyi kitapta gösterir misiniz, lütfen?",
+      "ru": "Не могли бы вы показать это слово в книге?",
+      "tr": "Bu kelimeyi kitapta gösterir misiniz, lütfen?",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Не могли бы вы показать эту фразу в книге?",
+      "tr": "Bu ifadeyi kitapta gösterir misiniz, lütfen?",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Не могли бы вы показать это предложение в книге?",
+      "tr": "Bu cümleyi kitapta gösterir misiniz, lütfen?",
       "tl": null,
       "sub": null
     },
@@ -280,8 +292,20 @@
       "sub": null
     },
     {
-      "ru": "Пожалуйста, дайте/принесите/покажите мне …",
-      "tr": "Lütfen bana … veriniz/getiriniz/gösteriniz",
+      "ru": "Пожалуйста, дайте мне …",
+      "tr": "Lütfen bana … verin",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Пожалуйста, принесите мне …",
+      "tr": "Lütfen bana … getirin",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Пожалуйста, покажите мне …",
+      "tr": "Lütfen bana … gösterin",
       "tl": null,
       "sub": null
     },
@@ -340,8 +364,26 @@
       "sub": null
     },
     {
-      "ru": "Хочу познакомить вас с моей женой, моим мужем, моим сыном, моей дочерью",
-      "tr": "Size karımı/kocamı/oğlumu/kızımı tanıştırabilir miyim?",
+      "ru": "Позвольте познакомить вас с моей женой",
+      "tr": "Size karımı tanıştırabilir miyim?",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Позвольте познакомить вас с моим мужем",
+      "tr": "Size kocamı tanıştırabilir miyim?",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Позвольте познакомить вас с моим сыном",
+      "tr": "Size oğlumu tanıştırabilir miyim?",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Позвольте познакомить вас с моей дочерью",
+      "tr": "Size kızımı tanıştırabilir miyim?",
       "tl": null,
       "sub": null
     },
@@ -388,8 +430,26 @@
       "sub": null
     },
     {
-      "ru": "Я здесь …дней/недель/месяцев/лет",
-      "tr": "… gün/hafta/ay/yıl buradayım",
+      "ru": "Я здесь … дней",
+      "tr": "… gündür buradayım",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Я здесь … недель",
+      "tr": "… haftadır buradayım",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Я здесь … месяцев",
+      "tr": "… aydır buradayım",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Я здесь … лет",
+      "tr": "… yıldır buradayım",
       "tl": null,
       "sub": null
     },
@@ -400,8 +460,26 @@
       "sub": null
     },
     {
-      "ru": "Я с женой/мужем/сыном/дочерью",
-      "tr": "Karımla/kocamla/oğlumla/kızımla birlikteyim",
+      "ru": "Я с женой",
+      "tr": "Karımla birlikteyim",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Я с мужем",
+      "tr": "Kocamla birlikteyim",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Я с сыном",
+      "tr": "Oğlumla birlikteyim",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Я с дочерью",
+      "tr": "Kızımla birlikteyim",
       "tl": null,
       "sub": null
     },
@@ -490,8 +568,20 @@
       "sub": null
     },
     {
-      "ru": "Мое хобби музыка/спорт/кино",
-      "tr": "Hobim müzik/spor/sinema",
+      "ru": "Моё хобби — музыка",
+      "tr": "Hobim müzik",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Моё хобби — спорт",
+      "tr": "Hobim spor",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Моё хобби — кино",
+      "tr": "Hobim sinema",
       "tl": null,
       "sub": null
     },

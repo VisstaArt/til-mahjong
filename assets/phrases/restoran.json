@@ -28,14 +28,38 @@
       "sub": null
     },
     {
-      "ru": "Я бы хотел(а) заказать столик на двоих/троих/четверых",
-      "tr": "İki/üç/dört kişilik bir masa ayırtmak istiyorum",
+      "ru": "Я бы хотел(а) заказать столик на двоих",
+      "tr": "İki kişilik bir masa ayırtmak istiyorum",
       "tl": null,
       "sub": null
     },
     {
-      "ru": "У вас есть столик на двоих/троих/четверых?",
-      "tr": "İki/üç/dört kişilik bir masanız var mı?",
+      "ru": "Я бы хотел(а) заказать столик на троих",
+      "tr": "Üç kişilik bir masa ayırtmak istiyorum",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Я бы хотел(а) заказать столик на четверых",
+      "tr": "Dört kişilik bir masa ayırtmak istiyorum",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "У вас есть столик на двоих?",
+      "tr": "İki kişilik bir masanız var mı?",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "У вас есть столик на троих?",
+      "tr": "Üç kişilik bir masanız var mı?",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "У вас есть столик на четверых?",
+      "tr": "Dört kişilik bir masanız var mı?",
       "tl": null,
       "sub": null
     },
@@ -154,8 +178,26 @@
       "sub": null
     },
     {
-      "ru": "Мне нельзя есть блюда с сахаром/солью/мукой/жиром",
-      "tr": "Şeker/tuz/un/yağ içeren yemekler yememeliyim",
+      "ru": "Мне нельзя есть блюда с сахаром",
+      "tr": "Şeker içeren yemekler yememeliyim",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Мне нельзя есть блюда с солью",
+      "tr": "Tuz içeren yemekler yememeliyim",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Мне нельзя есть блюда с мукой",
+      "tr": "Un içeren yemekler yememeliyim",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Мне нельзя есть блюда с жиром",
+      "tr": "Yağ içeren yemekler yememeliyim",
       "tl": null,
       "sub": null
     },
@@ -328,8 +370,20 @@
       "sub": null
     },
     {
-      "ru": "У меня нет ложки/вилки/ножа",
-      "tr": "Kaşığım/çatalım/bıçağım yok",
+      "ru": "У меня нет ложки",
+      "tr": "Kaşığım yok",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "У меня нет вилки",
+      "tr": "Çatalım yok",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "У меня нет ножа",
+      "tr": "Bıçağım yok",
       "tl": null,
       "sub": null
     },
@@ -340,8 +394,20 @@
       "sub": null
     },
     {
-      "ru": "Слишком соленое/кислое/перченое",
-      "tr": "Bu çok tuzlu/ekşi/baharatlı",
+      "ru": "Слишком солёное",
+      "tr": "Bu çok tuzlu",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Слишком кислое",
+      "tr": "Bu çok ekşi",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Слишком перчёное",
+      "tr": "Bu çok baharatlı",
       "tl": null,
       "sub": null
     },

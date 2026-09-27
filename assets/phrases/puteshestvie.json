@@ -112,8 +112,20 @@
       "sub": "автобус и трамвай — Otobüs ve tramvay"
     },
     {
-      "ru": "Во сколько идет первый/последний/следующий автобус до …?",
-      "tr": "… ya ilk/son/bir sonraki otobüs ne zaman?",
+      "ru": "Во сколько идет первый автобус до …?",
+      "tr": "… ya ilk otobüs ne zaman?",
+      "tl": null,
+      "sub": "автобус и трамвай — Otobüs ve tramvay"
+    },
+    {
+      "ru": "Во сколько идет последний автобус до …?",
+      "tr": "… ya son otobüs ne zaman?",
+      "tl": null,
+      "sub": "автобус и трамвай — Otobüs ve tramvay"
+    },
+    {
+      "ru": "Во сколько идет следующий автобус до …?",
+      "tr": "… ya bir sonraki otobüs ne zaman?",
       "tl": null,
       "sub": "автобус и трамвай — Otobüs ve tramvay"
     },
@@ -154,9 +166,21 @@
       "sub": "Поезд и метро — Tren ve metro"
     },
     {
-      "ru": "Во сколько идет первый/последний/следующий поезд?",
-      "tr": "İlk/son/gelecek … treni ne zaman?",
-      "tl": "Ильк/сон/ гэледжэк … трэни нэ заман?",
+      "ru": "Во сколько идет первый поезд до …?",
+      "tr": "İlk … treni ne zaman?",
+      "tl": "Ильк … трэни нэ заман?",
+      "sub": "Поезд и метро — Tren ve metro"
+    },
+    {
+      "ru": "Во сколько идет последний поезд до …?",
+      "tr": "Son … treni ne zaman?",
+      "tl": "Сон … трэни нэ заман?",
+      "sub": "Поезд и метро — Tren ve metro"
+    },
+    {
+      "ru": "Во сколько идет следующий поезд до …?",
+      "tr": "Bir sonraki … treni ne zaman?",
+      "tl": "Бир сонраки … трэни нэ заман?",
       "sub": "Поезд и метро — Tren ve metro"
     },
     {
@@ -190,8 +214,20 @@
       "sub": "Поезд и метро — Tren ve metro"
     },
     {
-      "ru": "Платформа шесть слева/ справа/там",
-      "tr": "Altı numaralı peron solda/sağda/orada",
+      "ru": "Платформа шесть слева",
+      "tr": "Altı numaralı peron solda",
+      "tl": null,
+      "sub": "Поезд и метро — Tren ve metro"
+    },
+    {
+      "ru": "Платформа шесть справа",
+      "tr": "Altı numaralı peron sağda",
+      "tl": null,
+      "sub": "Поезд и метро — Tren ve metro"
+    },
+    {
+      "ru": "Платформа шесть там",
+      "tr": "Altı numaralı peron orada",
       "tl": null,
       "sub": "Поезд и метро — Tren ve metro"
     },
@@ -490,8 +526,20 @@
       "sub": "такси — Taksi"
     },
     {
-      "ru": "в аэропорт/в отель …/на вокзал",
-      "tr": "havaalanına/… oteline/istasyona",
+      "ru": "в аэропорт",
+      "tr": "havaalanına",
+      "tl": null,
+      "sub": "такси — Taksi"
+    },
+    {
+      "ru": "в отель …",
+      "tr": "… oteline",
+      "tl": null,
+      "sub": "такси — Taksi"
+    },
+    {
+      "ru": "на вокзал",
+      "tr": "istasyona",
       "tl": null,
       "sub": "такси — Taksi"
     },
@@ -766,12 +814,6 @@
       "sub": "Как спросить, куда ехать — Arabayla yolculuk etme"
     },
     {
-      "ru": "Где я могу найти телефон?",
-      "tr": "Nerede bir telefon var?",
-      "tl": null,
-      "sub": "Как спросить, куда ехать — Arabayla yolculuk etme"
-    },
-    {
       "ru": "Могу я воспользоваться вашим телефоном?",
       "tr": "Telefonunuzu kullanabilir miyim?",
       "tl": null,
@@ -844,8 +886,20 @@
       "sub": null
     },
     {
-      "ru": "Напротив/рядом с/за …",
-      "tr": "…nin karşısında/yanında/arkasında",
+      "ru": "Напротив …",
+      "tr": "…nin karşısında",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Рядом с …",
+      "tr": "…nin yanında",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "За …",
+      "tr": "…nin arkasında",
       "tl": null,
       "sub": null
     },
@@ -874,8 +928,20 @@
       "sub": null
     },
     {
-      "ru": "Первый/второй/третий поворот направо",
-      "tr": "Sağdaki birinci/ikinci/üçüncü yola sapın",
+      "ru": "Первый поворот направо",
+      "tr": "Sağdaki birinci yola sapın",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Второй поворот направо",
+      "tr": "Sağdaki ikinci yola sapın",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Третий поворот направо",
+      "tr": "Sağdaki üçüncü yola sapın",
       "tl": null,
       "sub": null
     },

@@ -10,27 +10,57 @@
       "sub": null
     },
     {
-      "ru": "Я хочу поменять доллары/евро/ фунты стерлингов",
-      "tr": "Dolar/avro/sterlin bozdurmak istiyorum",
-      "tl": "Долар/авро/ стэрлин боздурмак истийорум",
+      "ru": "Я хочу поменять доллары",
+      "tr": "Dolar bozdurmak istiyorum",
+      "tl": "Долар боздурмак истийорум",
       "sub": null
     },
     {
-      "ru": "Я хочу обменять дорожные чеки",
-      "tr": "Seyahat çeki bozdurmak istiyorum",
-      "tl": "Сэйахат чэки боздурмак истийорум",
+      "ru": "Я хочу поменять евро",
+      "tr": "Avro bozdurmak istiyorum",
+      "tl": "Авро боздурмак истийорум",
       "sub": null
     },
     {
-      "ru": "Где я могу поменять доллары/ евро/фунты стерлингов?",
-      "tr": "Nerede biraz dolar/avro/sterlin bozdurabilirim?",
-      "tl": "Нэрдэ бираз долар/авро/стэрлин боздурабилирим?",
+      "ru": "Я хочу поменять фунты стерлингов",
+      "tr": "Sterlin bozdurmak istiyorum",
+      "tl": "Стэрлин боздурмак истийорум",
       "sub": null
     },
     {
-      "ru": "Какой сегодня курс доллара/ евро/фунта стерлингов?",
-      "tr": "Bugünkü dolar/ avro/sterlin kuru ne?",
-      "tl": "Бугюнкю долар/ авро/стэрлин куру нэ?",
+      "ru": "Где я могу поменять доллары?",
+      "tr": "Nerede biraz dolar bozdurabilirim?",
+      "tl": "Нэрдэ бираз долар боздурабилирим?",
+      "sub": null
+    },
+    {
+      "ru": "Где я могу поменять евро?",
+      "tr": "Nerede biraz avro bozdurabilirim?",
+      "tl": "Нэрдэ бираз авро боздурабилирим?",
+      "sub": null
+    },
+    {
+      "ru": "Где я могу поменять фунты стерлингов?",
+      "tr": "Nerede biraz sterlin bozdurabilirim?",
+      "tl": "Нэрдэ бираз стэрлин боздурабилирим?",
+      "sub": null
+    },
+    {
+      "ru": "Какой сегодня курс доллара?",
+      "tr": "Bugünkü dolar kuru ne?",
+      "tl": "Бугюнкю долар куру нэ?",
+      "sub": null
+    },
+    {
+      "ru": "Какой сегодня курс евро?",
+      "tr": "Bugünkü avro kuru ne?",
+      "tl": "Бугюнкю авро куру нэ?",
+      "sub": null
+    },
+    {
+      "ru": "Какой сегодня курс фунта стерлингов?",
+      "tr": "Bugünkü sterlin kuru ne?",
+      "tl": "Бугюнкю стэрлин куру нэ?",
       "sub": null
     },
     {
@@ -100,8 +130,20 @@
       "sub": null
     },
     {
-      "ru": "Вы можете обменять это на доллары/евро/фунты стерлингов?",
-      "tr": "Bunu dolara/avroya/sterline çevirebilir misiniz?",
+      "ru": "Вы можете обменять это на доллары?",
+      "tr": "Bunu dolara çevirebilir misiniz?",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Вы можете обменять это на евро?",
+      "tr": "Bunu avroya çevirebilir misiniz?",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Вы можете обменять это на фунты стерлингов?",
+      "tr": "Bunu sterline çevirebilir misiniz?",
       "tl": null,
       "sub": null
     },

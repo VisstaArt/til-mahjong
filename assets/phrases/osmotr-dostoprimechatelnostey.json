@@ -166,8 +166,20 @@
       "sub": null
     },
     {
-      "ru": "Кто архитектор/художник/скульптор?",
-      "tr": "Mimar/ressam/heykeltıraş kim?",
+      "ru": "Кто архитектор?",
+      "tr": "Mimar kim?",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Кто художник?",
+      "tr": "Ressam kim?",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Кто скульптор?",
+      "tr": "Heykeltıraş kim?",
       "tl": null,
       "sub": null
     },
@@ -244,8 +256,26 @@
       "sub": null
     },
     {
-      "ru": "Что это за зверь/птица/цветок/дерево?",
-      "tr": "Bu ne tür bir hayvan/kuş/çiçek/ağaç?",
+      "ru": "Что это за зверь?",
+      "tr": "Bu ne tür bir hayvan?",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Что это за птица?",
+      "tr": "Bu ne tür bir kuş?",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Что это за цветок?",
+      "tr": "Bu ne tür bir çiçek?",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Что это за дерево?",
+      "tr": "Bu ne tür bir ağaç?",
       "tl": null,
       "sub": null
     }

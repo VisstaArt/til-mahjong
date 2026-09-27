@@ -22,8 +22,20 @@
       "sub": null
     },
     {
-      "ru": "Я пробуду здесь несколько дней/ неделю/месяц",
-      "tr": "Birkaç gün/bir hafta/bir ay kalacağım",
+      "ru": "Я пробуду здесь несколько дней",
+      "tr": "Birkaç gün kalacağım",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Я пробуду здесь неделю",
+      "tr": "Bir hafta kalacağım",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Я пробуду здесь месяц",
+      "tr": "Bir ay kalacağım",
       "tl": null,
       "sub": null
     },

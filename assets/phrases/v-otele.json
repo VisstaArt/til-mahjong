@@ -76,8 +76,26 @@
       "sub": null
     },
     {
-      "ru": "Номер на втором/третьем/четвертом/пятом этаже",
-      "tr": "Oda ikinci/üçüncü/dördüncü/beşinci katta",
+      "ru": "Номер на втором этаже",
+      "tr": "Oda ikinci katta",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Номер на третьем этаже",
+      "tr": "Oda üçüncü katta",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Номер на четвертом этаже",
+      "tr": "Oda dördüncü katta",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Номер на пятом этаже",
+      "tr": "Oda beşinci katta",
       "tl": null,
       "sub": null
     },
@@ -142,8 +160,20 @@
       "sub": null
     },
     {
-      "ru": "В номере есть телефон/радио/телевизор?",
-      "tr": "Odada telefon/radyo/televizyon var mı?",
+      "ru": "В номере есть телефон?",
+      "tr": "Odada telefon var mı?",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "В номере есть радио?",
+      "tr": "Odada radyo var mı?",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "В номере есть телевизор?",
+      "tr": "Odada televizyon var mı?",
       "tl": null,
       "sub": null
     },
@@ -334,8 +364,20 @@
       "sub": null
     },
     {
-      "ru": "Сломалась розетка/дверца/жалюзи",
-      "tr": "Priz/kapı/panjur bozuk",
+      "ru": "Сломалась розетка",
+      "tr": "Priz bozuk",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Сломалась дверь",
+      "tr": "Kapı bozuk",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Сломались жалюзи",
+      "tr": "Panjur bozuk",
       "tl": null,
       "sub": null
     },

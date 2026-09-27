@@ -196,9 +196,21 @@
       "sub": "в магазине — Dükkanda mağazada"
     },
     {
-      "ru": "Где находиться отдел одежды/ нижнего белья/ галантерейный отдел?",
-      "tr": "Giyim/iç çamaşırı/tuhafiye bölümü nerede?",
-      "tl": "Гийим/ич чамашыры/тухафийэ бёлюмю нэрдэ?",
+      "ru": "Где находится отдел одежды?",
+      "tr": "Giyim bölümü nerede?",
+      "tl": "Гийим бёлюмю нэрдэ?",
+      "sub": "в магазине — Dükkanda mağazada"
+    },
+    {
+      "ru": "Где находится отдел нижнего белья?",
+      "tr": "İç çamaşırı bölümü nerede?",
+      "tl": "Ич чамашыры бёлюмю нэрдэ?",
+      "sub": "в магазине — Dükkanda mağazada"
+    },
+    {
+      "ru": "Где находится галантерейный отдел?",
+      "tr": "Tuhafiye bölümü nerede?",
+      "tl": "Тухафийэ бёлюмю нэрдэ?",
       "sub": "в магазине — Dükkanda mağazada"
     },
     {
@@ -226,8 +238,20 @@
       "sub": "в магазине — Dükkanda mağazada"
     },
     {
-      "ru": "Эта вещь местного производства/импортная/ ручной работы?",
-      "tr": "Burada mı yapılmış/ithal mi/ el işi mi?",
+      "ru": "Эта вещь местного производства?",
+      "tr": "Bu burada mı yapılmış?",
+      "tl": null,
+      "sub": "в магазине — Dükkanda mağazada"
+    },
+    {
+      "ru": "Эта вещь импортная?",
+      "tr": "Bu ithal mi?",
+      "tl": null,
+      "sub": "в магазине — Dükkanda mağazada"
+    },
+    {
+      "ru": "Эта вещь ручной работы?",
+      "tr": "Bu el işi mi?",
       "tl": null,
       "sub": "в магазине — Dükkanda mağazada"
     },
@@ -244,8 +268,20 @@
       "sub": "в магазине — Dükkanda mağazada"
     },
     {
-      "ru": "Это чистый хлопок/чистая шерсть/синтетика?",
-      "tr": "Saf pamuklu mu/ saf yünlü mü/ sentetik mi?",
+      "ru": "Это чистый хлопок?",
+      "tr": "Saf pamuklu mu?",
+      "tl": null,
+      "sub": "в магазине — Dükkanda mağazada"
+    },
+    {
+      "ru": "Это чистая шерсть?",
+      "tr": "Saf yünlü mü?",
+      "tl": null,
+      "sub": "в магазине — Dükkanda mağazada"
+    },
+    {
+      "ru": "Это синтетика?",
+      "tr": "Sentetik mi?",
       "tl": null,
       "sub": "в магазине — Dükkanda mağazada"
     },
@@ -400,34 +436,16 @@
       "sub": "В книжном магазине — Kitapçı, gazete bayii, kırtasiyeci"
     },
     {
-      "ru": "У вас есть кассеты/компакт-диски …?",
-      "tr": "Sizde …nin kasetleri/CD'leri var mı?",
-      "tl": null,
-      "sub": "Музыка, кассеты — Müzik, kaset"
-    },
-    {
       "ru": "Есть новый диск …?",
       "tr": "… nin yeni CD'si var mı?",
       "tl": null,
-      "sub": "Музыка, кассеты — Müzik, kaset"
+      "sub": "Музыка — Müzik"
     },
     {
       "ru": "Мне диск, пожалуйста",
       "tr": "Bir disk rica ediyorum",
       "tl": null,
-      "sub": "Музыка, кассеты — Müzik, kaset"
-    },
-    {
-      "ru": "Можно сначала послушать эту кассету/компакт-диск?",
-      "tr": "Bu kaseti/CD'yi dinleyebilir miyim?",
-      "tl": null,
-      "sub": "Музыка, кассеты — Müzik, kaset"
-    },
-    {
-      "ru": "У вас есть записи с местной музыкой?",
-      "tr": "Sizde yöresel müzik kasetleri bulunur mu?",
-      "tl": "Сиздэ йёрэсэль мюзик касэтлэри булунур му?",
-      "sub": "Музыка, кассеты — Müzik, kaset"
+      "sub": "Музыка — Müzik"
     },
     {
       "ru": "Какое напряжение?",
@@ -478,50 +496,8 @@
       "sub": "Фотография — Fotoğrafçılık"
     },
     {
-      "ru": "У вас есть пленка для этого фотоаппарата?",
-      "tr": "Bu fotoğraf makinesi için bir film var mı?",
-      "tl": "Бу фотоораф макинэси ичин бир фильм вар мы?",
-      "sub": "Фотография — Fotoğrafçılık"
-    },
-    {
-      "ru": "У вас есть цифровые фотоаппараты с разрешением в 6 мегапикселей?",
-      "tr": "Altı megapiksel bir dijital fotoğraf makinesi var mı?",
-      "tl": "Алты мэгапиксэль бир дижиталь фотоораф макинэси вар мы?",
-      "sub": "Фотография — Fotoğrafçılık"
-    },
-    {
-      "ru": "Я хочу купить цифровую камеру с разрешением в 5 мегапикселей",
-      "tr": "5 megapiksel çözünürlüklü bir dijital fotoğraf makinesi satın almak istiyorum",
-      "tl": "Бэш мегапиксель чёзюнюрлюклю бир дижиталь фотоораф макинэси сатын алмак истийорум",
-      "sub": "Фотография — Fotoğrafçılık"
-    },
-    {
-      "ru": "С оптическим/цифровым объективом с переменным фокусным расстоянием",
-      "tr": "Optik/dijital uzaklık ayarlı mercek",
-      "tl": "Оптик/ дижиталь узаклык айарлы мэрджэк",
-      "sub": "Фотография — Fotoğrafçılık"
-    },
-    {
       "ru": "Мне нужен …",
       "tr": "Bir … rica ediyorum",
-      "tl": null,
-      "sub": "Фотография — Fotoğrafçılık"
-    },
-    {
-      "ru": "Сколько стоит проявить пленку?",
-      "tr": "Banyo için ne kadar ücret alıyorsunuz?",
-      "tl": null,
-      "sub": "Фотография — Fotoğrafçılık"
-    },
-    {
-      "ru": "Мне 2 фотографии с каждого кадра",
-      "tr": "Her negatifin 2 baskısını rica ediyorum",
-      "tl": null,
-      "sub": "Фотография — Fotoğrafçılık"
-    },
-    {
-      "ru": "На глянцевой бумаге/на матовой бумаге",
-      "tr": "Parlak baskı/mat baskı",
       "tl": null,
       "sub": "Фотография — Fotoğrafçılık"
     },
@@ -652,9 +628,21 @@
       "sub": "В магазине часов — Saatçi"
     },
     {
-      "ru": "Стрелка/пружина/стекло сломаны",
-      "tr": "Pim/yay/cam kırılmış",
-      "tl": "Пим/яй/джам кырылмыш",
+      "ru": "Стрелка сломалась",
+      "tr": "İbre kırılmış",
+      "tl": "Ибрэ кырылмыш",
+      "sub": "В магазине часов — Saatçi"
+    },
+    {
+      "ru": "Пружина сломалась",
+      "tr": "Yay kırılmış",
+      "tl": "Яй кырылмыш",
+      "sub": "В магазине часов — Saatçi"
+    },
+    {
+      "ru": "Стекло разбилось",
+      "tr": "Cam kırılmış",
+      "tl": "Джам кырылмыш",
       "sub": "В магазине часов — Saatçi"
     },
     {
@@ -700,9 +688,21 @@
       "sub": "В продуктовом магазине — Yiyecek ve içecek satın alma"
     },
     {
-      "ru": "Можно одну бутылку молока/ пива/вина, пожалуйста",
-      "tr": "Bir şişe süt/bira/ şarap lütfen",
-      "tl": "Бир шишэ сют/бира/шарап лютфэн",
+      "ru": "Можно одну бутылку молока, пожалуйста",
+      "tr": "Bir şişe süt lütfen",
+      "tl": "Бир шишэ сют лютфэн",
+      "sub": "В продуктовом магазине — Yiyecek ve içecek satın alma"
+    },
+    {
+      "ru": "Можно одну бутылку пива, пожалуйста",
+      "tr": "Bir şişe bira lütfen",
+      "tl": "Бир шишэ бира лютфэн",
+      "sub": "В продуктовом магазине — Yiyecek ve içecek satın alma"
+    },
+    {
+      "ru": "Можно одну бутылку вина, пожалуйста",
+      "tr": "Bir şişe şarap lütfen",
+      "tl": "Бир шишэ шарап лютфэн",
       "sub": "В продуктовом магазине — Yiyecek ve içecek satın alma"
     },
     {
@@ -754,9 +754,21 @@
       "sub": "В продуктовом магазине — Yiyecek ve içecek satın alma"
     },
     {
-      "ru": "Мне полкило/килограмм/два килограмма …, пожалуйста",
-      "tr": "Bana yarım/bir/ iki kilo … verin lütfen",
-      "tl": "Бана ярым/бир/ ики кило … вэрин лютфэн",
+      "ru": "Мне полкило …, пожалуйста",
+      "tr": "Bana yarım kilo … verin lütfen",
+      "tl": "Бана ярым кило … вэрин лютфэн",
+      "sub": "В продуктовом магазине — Yiyecek ve içecek satın alma"
+    },
+    {
+      "ru": "Мне килограмм …, пожалуйста",
+      "tr": "Bana bir kilo … verin lütfen",
+      "tl": "Бана бир кило … вэрин лютфэн",
+      "sub": "В продуктовом магазине — Yiyecek ve içecek satın alma"
+    },
+    {
+      "ru": "Мне два килограмма …, пожалуйста",
+      "tr": "Bana iki kilo … verin lütfen",
+      "tl": "Бана ики кило … вэрин лютфэн",
       "sub": "В продуктовом магазине — Yiyecek ve içecek satın alma"
     },
     {
@@ -778,9 +790,27 @@
       "sub": "В продуктовом магазине — Yiyecek ve içecek satın alma"
     },
     {
-      "ru": "Можно почистить/погладить/постирать эти вещи? Мне они нужны к …",
-      "tr": "Bu elbiseleri temizletmek/ütületmek/yıkatmak istiyorum. … e kadar gerekiyor",
-      "tl": "Бу эльбисэлери тэмизлетмек/ютюлетмек/йыкатмак истийорум. … э кадар гэрэкьйор",
+      "ru": "Я хочу сдать эти вещи в химчистку",
+      "tr": "Bu elbiseleri temizletmek istiyorum",
+      "tl": "Бу эльбисэлери тэмизлетмек истийорум",
+      "sub": "В прачечной-химчистке — Çamaşırhane, kuru temizleme"
+    },
+    {
+      "ru": "Я хочу, чтобы эти вещи погладили",
+      "tr": "Bu elbiseleri ütületmek istiyorum",
+      "tl": "Бу эльбисэлери ютюлетмек истийорум",
+      "sub": "В прачечной-химчистке — Çamaşırhane, kuru temizleme"
+    },
+    {
+      "ru": "Я хочу, чтобы эти вещи постирали",
+      "tr": "Bu elbiseleri yıkatmak istiyorum",
+      "tl": "Бу эльбисэлери йыкатмак истийорум",
+      "sub": "В прачечной-химчистке — Çamaşırhane, kuru temizleme"
+    },
+    {
+      "ru": "Мне они нужны к …",
+      "tr": "… e kadar gerekiyor",
+      "tl": "… э кадар гэрэкьйор",
       "sub": "В прачечной-химчистке — Çamaşırhane, kuru temizleme"
     },
     {
@@ -880,9 +910,21 @@
       "sub": "В парикмахерской — Kuaför ve berber"
     },
     {
-      "ru": "У меня сухие/жирные/нормальные волосы",
-      "tr": "Saçım kuru/yağlı/ normal",
-      "tl": "Сачым куру/ яалы/нормаль",
+      "ru": "У меня сухие волосы",
+      "tr": "Saçım kuru",
+      "tl": "Сачым куру",
+      "sub": "В парикмахерской — Kuaför ve berber"
+    },
+    {
+      "ru": "У меня жирные волосы",
+      "tr": "Saçım yağlı",
+      "tl": "Сачым яалы",
+      "sub": "В парикмахерской — Kuaför ve berber"
+    },
+    {
+      "ru": "У меня нормальные волосы",
+      "tr": "Saçım normal",
+      "tl": "Сачым нормаль",
       "sub": "В парикмахерской — Kuaför ve berber"
     },
     {
@@ -1018,28 +1060,10 @@
       "sub": "На почте — Postane"
     },
     {
-      "ru": "Я бы хотел(а) отправить телеграмму",
-      "tr": "Bir telgraf göndermek istiyorum",
-      "tl": null,
-      "sub": "На почте — Postane"
-    },
-    {
-      "ru": "Сколько стоит одно слово?",
-      "tr": "Kelimesi ne kadar?",
-      "tl": null,
-      "sub": "На почте — Postane"
-    },
-    {
       "ru": "Можно бланк, пожалуйста?",
       "tr": "Bir form alabilir miyim, lütfen?",
       "tl": null,
       "sub": "На почте — Postane"
-    },
-    {
-      "ru": "Где находится ближайший телефон?",
-      "tr": "En yakın telefon nerede?",
-      "tl": "Эн якын тэлэфон нэрдэ?",
-      "sub": "Телефон — Telefon"
     },
     {
       "ru": "Можно позвонить по вашему телефону?",
@@ -1052,42 +1076,6 @@
       "tr": "Rusya’ya telefon etmek istiyorum",
       "tl": "Русья’я тэлэфон этмэк истийорум",
       "sub": "Телефон — Telefon"
-    },
-    {
-      "ru": "Можно телефонную карту для международных разговоров?",
-      "tr": "Bana uluslararası bir telefon kartı verin, lütfen",
-      "tl": "Бана улусларарасы бир тэлэфон карты вэрин лютфэн",
-      "sub": "Телефон — Telefon"
-    },
-    {
-      "ru": "Соедините меня с этим номером, пожалуйста?",
-      "tr": "Beni bu numaraya bağlar mısınız?",
-      "tl": null,
-      "sub": "Телефон — Telefon"
-    },
-    {
-      "ru": "У вас есть телефонный справочник?",
-      "tr": "Bir telefon rehberiniz var mı?",
-      "tl": null,
-      "sub": "Телефон — Telefon"
-    },
-    {
-      "ru": "Какой код Москвы?",
-      "tr": "Moskova için alan kodu ne?",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "Скажите мне потом, пожалуйста, стоимость звонка",
-      "tr": "Sonra bana görüşme bedelini verir misiniz lütfen?",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "Я хочу позвонить за счет абонента",
-      "tr": "Ödemeli aramak istiyorum",
-      "tl": null,
-      "sub": null
     },
     {
       "ru": "У вас есть размер поменьше/побольше?",
@@ -1134,12 +1122,6 @@
     {
       "ru": "Говорите громче/медленнее, пожалуйста",
       "tr": "Daha yüksek sesle/daha yavaş konuşur musunuz lütfen?",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "Нас разъединили, соедините меня снова, пожалуйста",
-      "tr": "Konuşmam kesildi, beni yeniden bağlayabilir misiniz?",
       "tl": null,
       "sub": null
     },
