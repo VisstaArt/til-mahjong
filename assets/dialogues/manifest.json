@@ -34,5 +34,17 @@
     "title": "Путешествие",
     "count": 36,
     "sizeKB": 205.5
+  },
+  {
+    "id": "semya",
+    "title": "Семья",
+    "count": 10,
+    "sizeKB": 48.9
+  },
+  {
+    "id": "moy-den",
+    "title": "Мой день",
+    "count": 11,
+    "sizeKB": 47.4
   }
 ]

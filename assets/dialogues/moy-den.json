@@ -1,0 +1,514 @@
+{
+  "id": "moy-den",
+  "title": "Мой день",
+  "dialogues": [
+    {
+      "id": "moy-den-utro-deniz",
+      "title": "Утро перед работой",
+      "level": "A1",
+      "speakers": { "a": "Ольга", "b": "Дениз" },
+      "turns": [
+        { "speaker": "b", "tr": "Günaydın! Uyandın mı?", "ru": "Доброе утро! Проснулась?", "distractors": [
+          { "tr": "Evet, her zaman vapurla. İyi günler, Deniz!", "ru": "Да, как всегда на пароходе. Хорошего дня, Дениз!" },
+          { "tr": "Afiyet olsun! Acele etmeliyim. Akşam seni arayacağım.", "ru": "Приятного аппетита! Мне надо спешить. Вечером я тебе позвоню." }
+        ]},
+        { "speaker": "a", "tr": "Günaydın! Evet, ama bugün geç kalktım.", "ru": "Доброе утро! Да, но сегодня я встала поздно.", "distractors": [
+          { "tr": "Tamam. İşe nasıl gidiyorsun, vapurla mı?", "ru": "Хорошо. Как ты едешь на работу, на пароходе?" },
+          { "tr": "Evet, her zaman vapurla. İyi günler, Deniz!", "ru": "Да, как всегда на пароходе. Хорошего дня, Дениз!" }
+        ]},
+        { "speaker": "b", "tr": "Geç mi? Saat kaçta kalktın?", "ru": "Поздно? Во сколько ты встала?", "distractors": [
+          { "tr": "Günaydın! Uyandın mı?", "ru": "Доброе утро! Проснулась?" },
+          { "tr": "Evet, her zaman vapurla. İyi günler, Deniz!", "ru": "Да, как всегда на пароходе. Хорошего дня, Дениз!" }
+        ]},
+        { "speaker": "a", "tr": "Sekizde. Normalde her sabah yedide kalkıyorum.", "ru": "В восемь. Обычно каждое утро я встаю в семь.", "distractors": [
+          { "tr": "Günaydın! Uyandın mı?", "ru": "Доброе утро! Проснулась?" },
+          { "tr": "Tamam. İşe nasıl gidiyorsun, vapurla mı?", "ru": "Хорошо. Как ты едешь на работу, на пароходе?" }
+        ]},
+        { "speaker": "b", "tr": "Kahvaltı yapıyor musun?", "ru": "Ты завтракаешь?", "distractors": [
+          { "tr": "Günaydın! Evet, ama bugün geç kalktım.", "ru": "Доброе утро! Да, но сегодня я встала поздно." },
+          { "tr": "Evet, her zaman vapurla. İyi günler, Deniz!", "ru": "Да, как всегда на пароходе. Хорошего дня, Дениз!" }
+        ]},
+        { "speaker": "a", "tr": "Hayır, zaman yok. Önce bir kahve içiyorum, sonra çıkıyorum. Sen şu an ne yapıyorsun?", "ru": "Нет, времени нет. Сначала пью кофе, потом выхожу. А ты что сейчас делаешь?", "distractors": [
+          { "tr": "Günaydın! Evet, ama bugün geç kalktım.", "ru": "Доброе утро! Да, но сегодня я встала поздно." },
+          { "tr": "Evet, her zaman vapurla. İyi günler, Deniz!", "ru": "Да, как всегда на пароходе. Хорошего дня, Дениз!" }
+        ]},
+        { "speaker": "b", "tr": "Kahvaltı yapıyorum. Kahvaltıda peynir ve zeytin yiyorum, her zaman.", "ru": "Завтракаю. На завтрак я ем сыр и оливки, как всегда.", "distractors": [
+          { "tr": "Günaydın! Uyandın mı?", "ru": "Доброе утро! Проснулась?" },
+          { "tr": "Tamam. İşe nasıl gidiyorsun, vapurla mı?", "ru": "Хорошо. Как ты едешь на работу, на пароходе?" }
+        ]},
+        { "speaker": "a", "tr": "Afiyet olsun! Acele etmeliyim. Akşam seni arayacağım.", "ru": "Приятного аппетита! Мне надо спешить. Вечером я тебе позвоню.", "distractors": [
+          { "tr": "Günaydın! Uyandın mı?", "ru": "Доброе утро! Проснулась?" },
+          { "tr": "Evet, her zaman vapurla. İyi günler, Deniz!", "ru": "Да, как всегда на пароходе. Хорошего дня, Дениз!" }
+        ]},
+        { "speaker": "b", "tr": "Tamam. İşe nasıl gidiyorsun, vapurla mı?", "ru": "Хорошо. Как ты едешь на работу, на пароходе?", "distractors": [
+          { "tr": "Günaydın! Evet, ama bugün geç kalktım.", "ru": "Доброе утро! Да, но сегодня я встала поздно." },
+          { "tr": "Sekizde. Normalde her sabah yedide kalkıyorum.", "ru": "В восемь. Обычно каждое утро я встаю в семь." }
+        ]},
+        { "speaker": "a", "tr": "Evet, her zaman vapurla. İyi günler, Deniz!", "ru": "Да, как всегда на пароходе. Хорошего дня, Дениз!", "distractors": [
+          { "tr": "Günaydın! Uyandın mı?", "ru": "Доброе утро! Проснулась?" },
+          { "tr": "Geç mi? Saat kaçta kalktın?", "ru": "Поздно? Во сколько ты встала?" }
+        ]}
+      ]
+    },
+    {
+      "id": "moy-den-vapur-tuba",
+      "title": "Опоздала на пароход",
+      "level": "A1",
+      "speakers": { "a": "Ольга", "b": "Туба" },
+      "turns": [
+        { "speaker": "a", "tr": "Alo, Tuba! Vapuru kaçırdım.", "ru": "Алло, Туба! Я опоздала на пароход.", "distractors": [
+          { "tr": "Dokuzda. Metin Bey ofiste mi?", "ru": "В девять. Метин-бей в офисе?" },
+          { "tr": "Dokuza on var. Bir sonraki vapur ne zaman?", "ru": "Без десяти девять. Когда следующий пароход?" }
+        ]},
+        { "speaker": "b", "tr": "Eyvah! Neredesin?", "ru": "Ой! Ты где?", "distractors": [
+          { "tr": "Tamam, teşekkürler! Vapur geldi. Yoldayım!", "ru": "Хорошо, спасибо! Пароход пришёл. Я уже в пути!" },
+          { "tr": "Hayır, daha gelmedi. Merak etme!", "ru": "Нет, ещё не пришёл. Не волнуйся!" }
+        ]},
+        { "speaker": "a", "tr": "Kadıköy'deyim, iskelede. Biraz geç kalacağım.", "ru": "Я в Кадыкёе, на пристани. Я немного опоздаю.", "distractors": [
+          { "tr": "Alo, Tuba! Vapuru kaçırdım.", "ru": "Алло, Туба! Я опоздала на пароход." },
+          { "tr": "Dokuzda. Metin Bey ofiste mi?", "ru": "В девять. Метин-бей в офисе?" }
+        ]},
+        { "speaker": "b", "tr": "Sorun yok. Toplantı saat onda.", "ru": "Ничего страшного. Совещание в десять.", "distractors": [
+          { "tr": "Eyvah! Neredesin?", "ru": "Ой! Ты где?" },
+          { "tr": "Dokuzda. Metin Bey ofiste mi?", "ru": "В девять. Метин-бей в офисе?" }
+        ]},
+        { "speaker": "a", "tr": "Saat kaç şimdi?", "ru": "А сейчас который час?", "distractors": [
+          { "tr": "Alo, Tuba! Vapuru kaçırdım.", "ru": "Алло, Туба! Я опоздала на пароход." },
+          { "tr": "Hayır, daha gelmedi. Merak etme!", "ru": "Нет, ещё не пришёл. Не волнуйся!" }
+        ]},
+        { "speaker": "b", "tr": "Dokuza on var. Bir sonraki vapur ne zaman?", "ru": "Без десяти девять. Когда следующий пароход?", "distractors": [
+          { "tr": "Alo, Tuba! Vapuru kaçırdım.", "ru": "Алло, Туба! Я опоздала на пароход." },
+          { "tr": "Tamam, teşekkürler! Vapur geldi. Yoldayım!", "ru": "Хорошо, спасибо! Пароход пришёл. Я уже в пути!" }
+        ]},
+        { "speaker": "a", "tr": "Dokuzda. Metin Bey ofiste mi?", "ru": "В девять. Метин-бей в офисе?", "distractors": [
+          { "tr": "Alo, Tuba! Vapuru kaçırdım.", "ru": "Алло, Туба! Я опоздала на пароход." },
+          { "tr": "Kadıköy'deyim, iskelede. Biraz geç kalacağım.", "ru": "Я в Кадыкёе, на пристани. Я немного опоздаю." }
+        ]},
+        { "speaker": "b", "tr": "Hayır, daha gelmedi. Merak etme!", "ru": "Нет, ещё не пришёл. Не волнуйся!", "distractors": [
+          { "tr": "Eyvah! Neredesin?", "ru": "Ой! Ты где?" },
+          { "tr": "Saat kaç şimdi?", "ru": "А сейчас который час?" }
+        ]},
+        { "speaker": "a", "tr": "Tamam, teşekkürler! Vapur geldi. Yoldayım!", "ru": "Хорошо, спасибо! Пароход пришёл. Я уже в пути!", "distractors": [
+          { "tr": "Eyvah! Neredesin?", "ru": "Ой! Ты где?" },
+          { "tr": "Saat kaç şimdi?", "ru": "А сейчас который час?" }
+        ]}
+      ]
+    },
+    {
+      "id": "moy-den-ofis-utro",
+      "title": "В офисе с Тубой",
+      "level": "A1",
+      "speakers": { "a": "Ольга", "b": "Туба" },
+      "turns": [
+        { "speaker": "b", "tr": "Günaydın, Olga! Kahve ister misin?", "ru": "Доброе утро, Ольга! Хочешь кофе?", "distractors": [
+          { "tr": "Tavuk ve pilav. Annemin tarifi!", "ru": "Курицу с рисом. Мамин рецепт!" },
+          { "tr": "Ben de getirdim! O zaman mutfakta yiyoruz.", "ru": "Я тоже! Тогда едим на кухне." }
+        ]},
+        { "speaker": "a", "tr": "Günaydın! Evet, lütfen. Bugün çok işim var.", "ru": "Доброе утро! Да, пожалуйста. Сегодня у меня много работы.", "distractors": [
+          { "tr": "Mercimek çorbası ve salata. Ya sen?", "ru": "Чечевичный суп и салат. А ты?" },
+          { "tr": "Tamam! Sen bugün ne getirdin?", "ru": "Договорились! А ты что сегодня принесла?" }
+        ]},
+        { "speaker": "b", "tr": "Ne yapıyorsun?", "ru": "Что ты делаешь?", "distractors": [
+          { "tr": "Günaydın, Olga! Kahve ister misin?", "ru": "Доброе утро, Ольга! Хочешь кофе?" },
+          { "tr": "Tavuk ve pilav. Annemin tarifi!", "ru": "Курицу с рисом. Мамин рецепт!" }
+        ]},
+        { "speaker": "a", "tr": "Müşterilere e-posta yazıyorum. Rus müşteriler çok soru soruyor!", "ru": "Я пишу письма клиентам. Русские клиенты задают много вопросов!", "distractors": [
+          { "tr": "Günaydın, Olga! Kahve ister misin?", "ru": "Доброе утро, Ольга! Хочешь кофе?" },
+          { "tr": "Mercimek çorbası ve salata. Ya sen?", "ru": "Чечевичный суп и салат. А ты?" }
+        ]},
+        { "speaker": "b", "tr": "Öğle arası saat birde. Benimle yemek yemek ister misin?", "ru": "Обеденный перерыв в час. Хочешь пообедать со мной?", "distractors": [
+          { "tr": "Günaydın! Evet, lütfen. Bugün çok işim var.", "ru": "Доброе утро! Да, пожалуйста. Сегодня у меня много работы." },
+          { "tr": "Tavuk ve pilav. Annemin tarifi!", "ru": "Курицу с рисом. Мамин рецепт!" }
+        ]},
+        { "speaker": "a", "tr": "Tabii! Ama yemeğimi evden getirdim.", "ru": "Конечно! Но я принесла еду из дома.", "distractors": [
+          { "tr": "Günaydın, Olga! Kahve ister misin?", "ru": "Доброе утро, Ольга! Хочешь кофе?" },
+          { "tr": "Mercimek çorbası ve salata. Ya sen?", "ru": "Чечевичный суп и салат. А ты?" }
+        ]},
+        { "speaker": "b", "tr": "Ben de getirdim! O zaman mutfakta yiyoruz.", "ru": "Я тоже! Тогда едим на кухне.", "distractors": [
+          { "tr": "Günaydın, Olga! Kahve ister misin?", "ru": "Доброе утро, Ольга! Хочешь кофе?" },
+          { "tr": "Mercimek çorbası ve salata. Ya sen?", "ru": "Чечевичный суп и салат. А ты?" }
+        ]},
+        { "speaker": "a", "tr": "Tamam! Sen bugün ne getirdin?", "ru": "Договорились! А ты что сегодня принесла?", "distractors": [
+          { "tr": "Günaydın! Evet, lütfen. Bugün çok işim var.", "ru": "Доброе утро! Да, пожалуйста. Сегодня у меня много работы." },
+          { "tr": "Tavuk ve pilav. Annemin tarifi!", "ru": "Курицу с рисом. Мамин рецепт!" }
+        ]},
+        { "speaker": "b", "tr": "Mercimek çorbası ve salata. Ya sen?", "ru": "Чечевичный суп и салат. А ты?", "distractors": [
+          { "tr": "Günaydın! Evet, lütfen. Bugün çok işim var.", "ru": "Доброе утро! Да, пожалуйста. Сегодня у меня много работы." },
+          { "tr": "Müşterilere e-posta yazıyorum. Rus müşteriler çok soru soruyor!", "ru": "Я пишу письма клиентам. Русские клиенты задают много вопросов!" }
+        ]},
+        { "speaker": "a", "tr": "Tavuk ve pilav. Annemin tarifi!", "ru": "Курицу с рисом. Мамин рецепт!", "distractors": [
+          { "tr": "Günaydın, Olga! Kahve ister misin?", "ru": "Доброе утро, Ольга! Хочешь кофе?" },
+          { "tr": "Ne yapıyorsun?", "ru": "Что ты делаешь?" }
+        ]}
+      ]
+    },
+    {
+      "id": "moy-den-obed",
+      "title": "Обеденный перерыв",
+      "level": "A1",
+      "speakers": { "a": "Ольга", "b": "Туба" },
+      "turns": [
+        { "speaker": "a", "tr": "Tuba, aç mısın?", "ru": "Туба, ты голодна?", "distractors": [
+          { "tr": "Hayır, o bugün çok meşgul. Hadi, gel!", "ru": "Нет, он сегодня очень занят. Давай, пошли!" },
+          { "tr": "Merak etme. Lokanta çok yakın, beş dakika.", "ru": "Не волнуйся. Столовая совсем рядом, пять минут." }
+        ]},
+        { "speaker": "b", "tr": "Evet, çok açım! Saat kaç?", "ru": "Да, очень голодна! Который час?", "distractors": [
+          { "tr": "Hayır, o bugün çok meşgul. Hadi, gel!", "ru": "Нет, он сегодня очень занят. Давай, пошли!" },
+          { "tr": "Merak etme. Lokanta çok yakın, beş dakika.", "ru": "Не волнуйся. Столовая совсем рядом, пять минут." }
+        ]},
+        { "speaker": "a", "tr": "Saat bir. Öğle arası!", "ru": "Час. Обеденный перерыв!", "distractors": [
+          { "tr": "Tuba, aç mısın?", "ru": "Туба, ты голодна?" },
+          { "tr": "Harika. Metin Bey de geliyor mu?", "ru": "Отлично. Метин-бей тоже идёт?" }
+        ]},
+        { "speaker": "b", "tr": "Bugün ne yemek istiyorsun?", "ru": "Что ты хочешь сегодня поесть?", "distractors": [
+          { "tr": "Tuba, aç mısın?", "ru": "Туба, ты голодна?" },
+          { "tr": "Hayır, o bugün çok meşgul. Hadi, gel!", "ru": "Нет, он сегодня очень занят. Давай, пошли!" }
+        ]},
+        { "speaker": "a", "tr": "Bugün dışarıda yemek istiyorum. Köşede yeni bir lokanta var.", "ru": "Сегодня я хочу поесть в городе. На углу есть новая столовая.", "distractors": [
+          { "tr": "Tuba, aç mısın?", "ru": "Туба, ты голодна?" },
+          { "tr": "Harika. Metin Bey de geliyor mu?", "ru": "Отлично. Метин-бей тоже идёт?" }
+        ]},
+        { "speaker": "b", "tr": "Tamam! Ama saat ikide toplantı var. Geç kalmamalıyız.", "ru": "Хорошо! Но в два совещание. Нам нельзя опаздывать.", "distractors": [
+          { "tr": "Tuba, aç mısın?", "ru": "Туба, ты голодна?" },
+          { "tr": "Harika. Metin Bey de geliyor mu?", "ru": "Отлично. Метин-бей тоже идёт?" }
+        ]},
+        { "speaker": "a", "tr": "Merak etme. Lokanta çok yakın, beş dakika.", "ru": "Не волнуйся. Столовая совсем рядом, пять минут.", "distractors": [
+          { "tr": "Tuba, aç mısın?", "ru": "Туба, ты голодна?" },
+          { "tr": "Hayır, o bugün çok meşgul. Hadi, gel!", "ru": "Нет, он сегодня очень занят. Давай, пошли!" }
+        ]},
+        { "speaker": "b", "tr": "Harika. Metin Bey de geliyor mu?", "ru": "Отлично. Метин-бей тоже идёт?", "distractors": [
+          { "tr": "Saat bir. Öğle arası!", "ru": "Час. Обеденный перерыв!" },
+          { "tr": "Bugün dışarıda yemek istiyorum. Köşede yeni bir lokanta var.", "ru": "Сегодня я хочу поесть в городе. На углу есть новая столовая." }
+        ]},
+        { "speaker": "a", "tr": "Hayır, o bugün çok meşgul. Hadi, gel!", "ru": "Нет, он сегодня очень занят. Давай, пошли!", "distractors": [
+          { "tr": "Tuba, aç mısın?", "ru": "Туба, ты голодна?" },
+          { "tr": "Evet, çok açım! Saat kaç?", "ru": "Да, очень голодна! Который час?" }
+        ]}
+      ]
+    },
+    {
+      "id": "moy-den-vecher-deniz",
+      "title": "Вечерний звонок Денизу",
+      "level": "A1",
+      "speakers": { "a": "Ольга", "b": "Дениз" },
+      "turns": [
+        { "speaker": "a", "tr": "Alo, Deniz! Meşgul müsün?", "ru": "Алло, Дениз! Ты занят?", "distractors": [
+          { "tr": "İyi geceler, Olga!", "ru": "Спокойной ночи, Ольга!" },
+          { "tr": "İyi yolculuklar! Ben saat on birde yatıyorum. İyi geceler!", "ru": "Хорошей дороги! А я ложусь в одиннадцать. Спокойной ночи!" }
+        ]},
+        { "speaker": "b", "tr": "Hayır. Şimdi evdeyim, dinleniyorum. Günün nasıldı?", "ru": "Нет. Сейчас я дома, отдыхаю. Как прошёл твой день?", "distractors": [
+          { "tr": "İyi geceler, Olga!", "ru": "Спокойной ночи, Ольга!" },
+          { "tr": "İyi yolculuklar! Ben saat on birde yatıyorum. İyi geceler!", "ru": "Хорошей дороги! А я ложусь в одиннадцать. Спокойной ночи!" }
+        ]},
+        { "speaker": "a", "tr": "Çok yoğundu. Çok yoruldum!", "ru": "Очень напряжённо. Я очень устала!", "distractors": [
+          { "tr": "Alo, Deniz! Meşgul müsün?", "ru": "Алло, Дениз! Ты занят?" },
+          { "tr": "Bilmiyorum, daha seçmedim. Sen yarın ne yapıyorsun?", "ru": "Не знаю, ещё не выбрала. А ты что делаешь завтра?" }
+        ]},
+        { "speaker": "b", "tr": "Akşam ne yapıyorsun?", "ru": "Что делаешь вечером?", "distractors": [
+          { "tr": "Hangi film?", "ru": "Какой фильм?" },
+          { "tr": "Alo, Deniz! Meşgul müsün?", "ru": "Алло, Дениз! Ты занят?" }
+        ]},
+        { "speaker": "a", "tr": "Akşam yemek yapıyorum. Sonra bu akşam bir film izleyeceğim.", "ru": "Вечером я готовлю ужин. А потом сегодня посмотрю фильм.", "distractors": [
+          { "tr": "Alo, Deniz! Meşgul müsün?", "ru": "Алло, Дениз! Ты занят?" },
+          { "tr": "Bilmiyorum, daha seçmedim. Sen yarın ne yapıyorsun?", "ru": "Не знаю, ещё не выбрала. А ты что делаешь завтра?" }
+        ]},
+        { "speaker": "b", "tr": "Hangi film?", "ru": "Какой фильм?", "distractors": [
+          { "tr": "Çok yoğundu. Çok yoruldum!", "ru": "Очень напряжённо. Я очень устала!" },
+          { "tr": "İyi geceler, Olga!", "ru": "Спокойной ночи, Ольга!" }
+        ]},
+        { "speaker": "a", "tr": "Bilmiyorum, daha seçmedim. Sen yarın ne yapıyorsun?", "ru": "Не знаю, ещё не выбрала. А ты что делаешь завтра?", "distractors": [
+          { "tr": "Çok yoğundu. Çok yoruldum!", "ru": "Очень напряжённо. Я очень устала!" },
+          { "tr": "İyi geceler, Olga!", "ru": "Спокойной ночи, Ольга!" }
+        ]},
+        { "speaker": "b", "tr": "Yarın Ankara'ya gidiyorum. Ailem orada.", "ru": "Завтра еду в Анкару. У меня там семья.", "distractors": [
+          { "tr": "Hangi film?", "ru": "Какой фильм?" },
+          { "tr": "Hayır. Şimdi evdeyim, dinleniyorum. Günün nasıldı?", "ru": "Нет. Сейчас я дома, отдыхаю. Как прошёл твой день?" }
+        ]},
+        { "speaker": "a", "tr": "İyi yolculuklar! Ben saat on birde yatıyorum. İyi geceler!", "ru": "Хорошей дороги! А я ложусь в одиннадцать. Спокойной ночи!", "distractors": [
+          { "tr": "Alo, Deniz! Meşgul müsün?", "ru": "Алло, Дениз! Ты занят?" },
+          { "tr": "Hayır. Şimdi evdeyim, dinleniyorum. Günün nasıldı?", "ru": "Нет. Сейчас я дома, отдыхаю. Как прошёл твой день?" }
+        ]},
+        { "speaker": "b", "tr": "İyi geceler, Olga!", "ru": "Спокойной ночи, Ольга!", "distractors": [
+          { "tr": "Alo, Deniz! Meşgul müsün?", "ru": "Алло, Дениз! Ты занят?" },
+          { "tr": "Hayır. Şimdi evdeyim, dinleniyorum. Günün nasıldı?", "ru": "Нет. Сейчас я дома, отдыхаю. Как прошёл твой день?" }
+        ]}
+      ]
+    },
+    {
+      "id": "moy-den-leyla-vyhodnye",
+      "title": "Планы на выходные с Лейлой",
+      "level": "A1",
+      "speakers": { "a": "Ольга", "b": "Лейла" },
+      "turns": [
+        { "speaker": "b", "tr": "Olga, hafta sonu ne yapıyorsun?", "ru": "Ольга, что ты делаешь на выходных?", "distractors": [
+          { "tr": "Tamam, geliyorum!", "ru": "Хорошо, я иду!" },
+          { "tr": "Saat üçte.", "ru": "В три." }
+        ]},
+        { "speaker": "a", "tr": "Cumartesi günü boşum. Ama önce evi temizlemeliyim.", "ru": "В субботу я свободна. Но сначала мне надо убраться дома.", "distractors": [
+          { "tr": "Pazar günü geç kalkıyorum, ama sinemayı çok seviyorum! Film saat kaçta?", "ru": "В воскресенье я встаю поздно, но кино я очень люблю! Во сколько фильм?" },
+          { "tr": "Pazar günü Efe'yle sinemaya gidiyorum. Sen de gelmek ister misin?", "ru": "В воскресенье иду с Эфе в кино. Хочешь с нами?" }
+        ]},
+        { "speaker": "b", "tr": "Cumartesi birlikte kahvaltı yapmak ister misin?", "ru": "Хочешь в субботу вместе позавтракать?", "distractors": [
+          { "tr": "Olga, hafta sonu ne yapıyorsun?", "ru": "Ольга, что ты делаешь на выходных?" },
+          { "tr": "Tamam, geliyorum!", "ru": "Хорошо, я иду!" }
+        ]},
+        { "speaker": "a", "tr": "Çok isterim! Saat kaçta?", "ru": "С удовольствием! Во сколько?", "distractors": [
+          { "tr": "Pazar günü geç kalkıyorum, ama sinemayı çok seviyorum! Film saat kaçta?", "ru": "В воскресенье я встаю поздно, но кино я очень люблю! Во сколько фильм?" },
+          { "tr": "Olga, hafta sonu ne yapıyorsun?", "ru": "Ольга, что ты делаешь на выходных?" }
+        ]},
+        { "speaker": "b", "tr": "Saat onda, Moda'da. Sonra sahilde yürüyüş yapacağız.", "ru": "В десять, в Моде. Потом погуляем по набережной.", "distractors": [
+          { "tr": "Olga, hafta sonu ne yapıyorsun?", "ru": "Ольга, что ты делаешь на выходных?" },
+          { "tr": "Pazar günü geç kalkıyorum, ama sinemayı çok seviyorum! Film saat kaçta?", "ru": "В воскресенье я встаю поздно, но кино я очень люблю! Во сколько фильм?" }
+        ]},
+        { "speaker": "a", "tr": "Süper! Pazar günü ne yapıyorsun?", "ru": "Супер! А в воскресенье что делаешь?", "distractors": [
+          { "tr": "Saat üçte.", "ru": "В три." },
+          { "tr": "Olga, hafta sonu ne yapıyorsun?", "ru": "Ольга, что ты делаешь на выходных?" }
+        ]},
+        { "speaker": "b", "tr": "Pazar günü Efe'yle sinemaya gidiyorum. Sen de gelmek ister misin?", "ru": "В воскресенье иду с Эфе в кино. Хочешь с нами?", "distractors": [
+          { "tr": "Cumartesi günü boşum. Ama önce evi temizlemeliyim.", "ru": "В субботу я свободна. Но сначала мне надо убраться дома." },
+          { "tr": "Tamam, geliyorum!", "ru": "Хорошо, я иду!" }
+        ]},
+        { "speaker": "a", "tr": "Pazar günü geç kalkıyorum, ama sinemayı çok seviyorum! Film saat kaçta?", "ru": "В воскресенье я встаю поздно, но кино я очень люблю! Во сколько фильм?", "distractors": [
+          { "tr": "Cumartesi birlikte kahvaltı yapmak ister misin?", "ru": "Хочешь в субботу вместе позавтракать?" },
+          { "tr": "Olga, hafta sonu ne yapıyorsun?", "ru": "Ольга, что ты делаешь на выходных?" }
+        ]},
+        { "speaker": "b", "tr": "Saat üçte.", "ru": "В три.", "distractors": [
+          { "tr": "Olga, hafta sonu ne yapıyorsun?", "ru": "Ольга, что ты делаешь на выходных?" },
+          { "tr": "Cumartesi birlikte kahvaltı yapmak ister misin?", "ru": "Хочешь в субботу вместе позавтракать?" }
+        ]},
+        { "speaker": "a", "tr": "Tamam, geliyorum!", "ru": "Хорошо, я иду!", "distractors": [
+          { "tr": "Olga, hafta sonu ne yapıyorsun?", "ru": "Ольга, что ты делаешь на выходных?" },
+          { "tr": "Cumartesi birlikte kahvaltı yapmak ister misin?", "ru": "Хочешь в субботу вместе позавтракать?" }
+        ]}
+      ]
+    },
+    {
+      "id": "moy-den-na-pristani",
+      "title": "На пристани (вежливая форма)",
+      "level": "A1",
+      "speakers": { "a": "Ольга", "b": "Ялчын" },
+      "turns": [
+        { "speaker": "b", "tr": "Affedersiniz, saat kaç?", "ru": "Извините, который час?", "distractors": [
+          { "tr": "Size de! Bol şans!", "ru": "И вам! Удачи!" },
+          { "tr": "Aa, vapur geldi! İyi günler!", "ru": "О, пароход пришёл! Хорошего дня!" }
+        ]},
+        { "speaker": "a", "tr": "Saat sekiz buçuk.", "ru": "Половина девятого.", "distractors": [
+          { "tr": "Harika! Siz her gün mü çalışıyorsunuz?", "ru": "Отлично! Вы работаете каждый день?" },
+          { "tr": "Size de! Bol şans!", "ru": "И вам! Удачи!" }
+        ]},
+        { "speaker": "b", "tr": "Teşekkürler. Karaköy vapuru saat kaçta?", "ru": "Спасибо. Во сколько пароход на Каракёй?", "distractors": [
+          { "tr": "Affedersiniz, saat kaç?", "ru": "Извините, который час?" },
+          { "tr": "Size de! Bol şans!", "ru": "И вам! Удачи!" }
+        ]},
+        { "speaker": "a", "tr": "Dokuzda. Ben de o vapura biniyorum. Siz de işe mi gidiyorsunuz?", "ru": "В девять. Я тоже на нём еду. Вы тоже на работу?", "distractors": [
+          { "tr": "Saat sekiz buçuk.", "ru": "Половина девятого." },
+          { "tr": "Size de! Bol şans!", "ru": "И вам! Удачи!" }
+        ]},
+        { "speaker": "b", "tr": "Evet, yeni işime gidiyorum. Bugün ilk günüm!", "ru": "Да, еду на новую работу. Сегодня мой первый день!", "distractors": [
+          { "tr": "Affedersiniz, saat kaç?", "ru": "Извините, который час?" },
+          { "tr": "Harika! Siz her gün mü çalışıyorsunuz?", "ru": "Отлично! Вы работаете каждый день?" }
+        ]},
+        { "speaker": "a", "tr": "Tebrikler! Ben de Karaköy'de çalışıyorum. Vapurla işe gidiyorum.", "ru": "Поздравляю! Я тоже работаю в Каракёе. Я езжу на работу на пароходе.", "distractors": [
+          { "tr": "Affedersiniz, saat kaç?", "ru": "Извините, который час?" },
+          { "tr": "Harika! Siz her gün mü çalışıyorsunuz?", "ru": "Отлично! Вы работаете каждый день?" }
+        ]},
+        { "speaker": "b", "tr": "Yol ne kadar sürüyor?", "ru": "Сколько занимает дорога?", "distractors": [
+          { "tr": "Saat sekiz buçuk.", "ru": "Половина девятого." },
+          { "tr": "Size de! Bol şans!", "ru": "И вам! Удачи!" }
+        ]},
+        { "speaker": "a", "tr": "Yol yirmi dakika sürüyor. Vapurda çay içiyorum.", "ru": "Дорога занимает двадцать минут. На пароходе я пью чай.", "distractors": [
+          { "tr": "Affedersiniz, saat kaç?", "ru": "Извините, который час?" },
+          { "tr": "Size de! Bol şans!", "ru": "И вам! Удачи!" }
+        ]},
+        { "speaker": "b", "tr": "Harika! Siz her gün mü çalışıyorsunuz?", "ru": "Отлично! Вы работаете каждый день?", "distractors": [
+          { "tr": "Saat sekiz buçuk.", "ru": "Половина девятого." },
+          { "tr": "Size de! Bol şans!", "ru": "И вам! Удачи!" }
+        ]},
+        { "speaker": "a", "tr": "Pazartesiden cumaya çalışıyorum. Hafta sonu boşum.", "ru": "Я работаю с понедельника по пятницу. В выходные я свободна.", "distractors": [
+          { "tr": "Affedersiniz, saat kaç?", "ru": "Извините, который час?" },
+          { "tr": "Size de! Bol şans!", "ru": "И вам! Удачи!" }
+        ]},
+        { "speaker": "b", "tr": "Aa, vapur geldi! İyi günler!", "ru": "О, пароход пришёл! Хорошего дня!", "distractors": [
+          { "tr": "Affedersiniz, saat kaç?", "ru": "Извините, который час?" },
+          { "tr": "Teşekkürler. Karaköy vapuru saat kaçta?", "ru": "Спасибо. Во сколько пароход на Каракёй?" }
+        ]},
+        { "speaker": "a", "tr": "Size de! Bol şans!", "ru": "И вам! Удачи!", "distractors": [
+          { "tr": "Affedersiniz, saat kaç?", "ru": "Извините, который час?" },
+          { "tr": "Teşekkürler. Karaköy vapuru saat kaçta?", "ru": "Спасибо. Во сколько пароход на Каракёй?" }
+        ]}
+      ]
+    },
+    {
+      "id": "moy-den-rano-v-ofise",
+      "title": "Рано в офисе",
+      "level": "A1",
+      "speakers": { "a": "Ольга", "b": "Туба" },
+      "turns": [
+        { "speaker": "b", "tr": "Günaydın! Bugün erkencisin!", "ru": "Доброе утро! Ты сегодня рано!", "distractors": [
+          { "tr": "Hayır, akşam çocuklarla evdeyim. Sen işten saat kaçta çıkıyorsun?", "ru": "Нет, вечером я дома с детьми. А ты во сколько уходишь с работы?" },
+          { "tr": "Eyvah, e-postaları daha göndermedim!", "ru": "Ой, я ещё не отправила письма!" }
+        ]},
+        { "speaker": "a", "tr": "Evet, bugün saat sekizde geldim. Normalde saat dokuzda işe başlıyorum.", "ru": "Да, сегодня пришла в восемь. Обычно я начинаю работать в девять.", "distractors": [
+          { "tr": "Hayır, akşam çocuklarla evdeyim. Sen işten saat kaçta çıkıyorsun?", "ru": "Нет, вечером я дома с детьми. А ты во сколько уходишь с работы?" },
+          { "tr": "Eyvah, e-postaları daha göndermedim!", "ru": "Ой, я ещё не отправила письма!" }
+        ]},
+        { "speaker": "b", "tr": "Neden erken geldin?", "ru": "Почему ты пришла рано?", "distractors": [
+          { "tr": "Günaydın! Bugün erkencisin!", "ru": "Доброе утро! Ты сегодня рано!" },
+          { "tr": "Eyvah, e-postaları daha göndermedim!", "ru": "Ой, я ещё не отправила письма!" }
+        ]},
+        { "speaker": "a", "tr": "Toplantı saat onda ve çok işim var. Bugün günlerden ne?", "ru": "Совещание в десять, а у меня много работы. Какой сегодня день недели?", "distractors": [
+          { "tr": "Günaydın! Bugün erkencisin!", "ru": "Доброе утро! Ты сегодня рано!" },
+          { "tr": "Eyvah, e-postaları daha göndermedim!", "ru": "Ой, я ещё не отправила письма!" }
+        ]},
+        { "speaker": "b", "tr": "Bugün perşembe. Yarın cuma!", "ru": "Сегодня четверг. Завтра пятница!", "distractors": [
+          { "tr": "Neden erken geldin?", "ru": "Почему ты пришла рано?" },
+          { "tr": "Hayır, akşam çocuklarla evdeyim. Sen işten saat kaçta çıkıyorsun?", "ru": "Нет, вечером я дома с детьми. А ты во сколько уходишь с работы?" }
+        ]},
+        { "speaker": "a", "tr": "Çok iyi! Bu akşam spor salonuna gidiyorum. Sen de gelmek ister misin?", "ru": "Отлично! Сегодня вечером я иду в спортзал. Хочешь со мной?", "distractors": [
+          { "tr": "Günaydın! Bugün erkencisin!", "ru": "Доброе утро! Ты сегодня рано!" },
+          { "tr": "Eyvah, e-postaları daha göndermedim!", "ru": "Ой, я ещё не отправила письма!" }
+        ]},
+        { "speaker": "b", "tr": "Hayır, akşam çocuklarla evdeyim. Sen işten saat kaçta çıkıyorsun?", "ru": "Нет, вечером я дома с детьми. А ты во сколько уходишь с работы?", "distractors": [
+          { "tr": "Günaydın! Bugün erkencisin!", "ru": "Доброе утро! Ты сегодня рано!" },
+          { "tr": "Eyvah, e-postaları daha göndermedim!", "ru": "Ой, я ещё не отправила письма!" }
+        ]},
+        { "speaker": "a", "tr": "İşten saat altıda çıkıyorum. Spor salonu ofise çok yakın.", "ru": "Я ухожу с работы в шесть. Спортзал совсем рядом с офисом.", "distractors": [
+          { "tr": "Neden erken geldin?", "ru": "Почему ты пришла рано?" },
+          { "tr": "Eyvah, e-postaları daha göndermedim!", "ru": "Ой, я ещё не отправила письма!" }
+        ]},
+        { "speaker": "b", "tr": "Bak, Metin Bey geldi!", "ru": "Смотри, Метин-бей пришёл!", "distractors": [
+          { "tr": "Neden erken geldin?", "ru": "Почему ты пришла рано?" },
+          { "tr": "Toplantı saat onda ve çok işim var. Bugün günlerden ne?", "ru": "Совещание в десять, а у меня много работы. Какой сегодня день недели?" }
+        ]},
+        { "speaker": "a", "tr": "Eyvah, e-postaları daha göndermedim!", "ru": "Ой, я ещё не отправила письма!", "distractors": [
+          { "tr": "Neden erken geldin?", "ru": "Почему ты пришла рано?" },
+          { "tr": "Toplantı saat onda ve çok işim var. Bugün günlerden ne?", "ru": "Совещание в десять, а у меня много работы. Какой сегодня день недели?" }
+        ]}
+      ]
+    },
+    {
+      "id": "moy-den-leyla-seychas",
+      "title": "Лейла звонит в обед",
+      "level": "A1",
+      "speakers": { "a": "Ольга", "b": "Лейла" },
+      "turns": [
+        { "speaker": "b", "tr": "Alo, Olga! Şu an ne yapıyorsun?", "ru": "Алло, Ольга! Что ты сейчас делаешь?", "distractors": [
+          { "tr": "Çok tatlısın! Görüşürüz!", "ru": "Ты такая милая! Увидимся!" },
+          { "tr": "Saat yedide. Senin için ayran alacağım!", "ru": "В семь. Куплю для тебя айран!" }
+        ]},
+        { "speaker": "a", "tr": "Şu an yemek yiyorum. Öğle arası!", "ru": "Сейчас я ем. Обеденный перерыв!", "distractors": [
+          { "tr": "Çok isterim! Saat kaçta?", "ru": "С удовольствием! Во сколько?" },
+          { "tr": "Saat yedide. Senin için ayran alacağım!", "ru": "В семь. Куплю для тебя айран!" }
+        ]},
+        { "speaker": "b", "tr": "Afiyet olsun! Ben Moda'dayım. Kahve içmek ister misin?", "ru": "Приятного аппетита! Я в Моде. Хочешь выпить кофе?", "distractors": [
+          { "tr": "Alo, Olga! Şu an ne yapıyorsun?", "ru": "Алло, Ольга! Что ты сейчас делаешь?" },
+          { "tr": "Çok tatlısın! Görüşürüz!", "ru": "Ты такая милая! Увидимся!" }
+        ]},
+        { "speaker": "a", "tr": "Çok isterim ama işteyim. Öğle arası saat ikide bitiyor.", "ru": "С удовольствием, но я на работе. Перерыв заканчивается в два.", "distractors": [
+          { "tr": "Saat yedide. Senin için ayran alacağım!", "ru": "В семь. Куплю для тебя айран!" },
+          { "tr": "Alo, Olga! Şu an ne yapıyorsun?", "ru": "Алло, Ольга! Что ты сейчас делаешь?" }
+        ]},
+        { "speaker": "b", "tr": "Ah, doğru. Akşam ne yapıyorsun?", "ru": "Ах, точно. Что делаешь вечером?", "distractors": [
+          { "tr": "Şu an yemek yiyorum. Öğle arası!", "ru": "Сейчас я ем. Обеденный перерыв!" },
+          { "tr": "Çok tatlısın! Görüşürüz!", "ru": "Ты такая милая! Увидимся!" }
+        ]},
+        { "speaker": "a", "tr": "Akşam evdeyim, yemek yapıyorum. Sen de gelmek ister misin?", "ru": "Вечером я дома, готовлю ужин. Хочешь прийти?", "distractors": [
+          { "tr": "Şu an yemek yiyorum. Öğle arası!", "ru": "Сейчас я ем. Обеденный перерыв!" },
+          { "tr": "Çok tatlısın! Görüşürüz!", "ru": "Ты такая милая! Увидимся!" }
+        ]},
+        { "speaker": "b", "tr": "Çok isterim! Saat kaçta?", "ru": "С удовольствием! Во сколько?", "distractors": [
+          { "tr": "Şu an yemek yiyorum. Öğle arası!", "ru": "Сейчас я ем. Обеденный перерыв!" },
+          { "tr": "Çok tatlısın! Görüşürüz!", "ru": "Ты такая милая! Увидимся!" }
+        ]},
+        { "speaker": "a", "tr": "Saat yedide. Senin için ayran alacağım!", "ru": "В семь. Куплю для тебя айран!", "distractors": [
+          { "tr": "Alo, Olga! Şu an ne yapıyorsun?", "ru": "Алло, Ольга! Что ты сейчас делаешь?" },
+          { "tr": "Afiyet olsun! Ben Moda'dayım. Kahve içmek ister misin?", "ru": "Приятного аппетита! Я в Моде. Хочешь выпить кофе?" }
+        ]},
+        { "speaker": "b", "tr": "Çok tatlısın! Görüşürüz!", "ru": "Ты такая милая! Увидимся!", "distractors": [
+          { "tr": "Alo, Olga! Şu an ne yapıyorsun?", "ru": "Алло, Ольга! Что ты сейчас делаешь?" },
+          { "tr": "Afiyet olsun! Ben Moda'dayım. Kahve içmek ister misin?", "ru": "Приятного аппетита! Я в Моде. Хочешь выпить кофе?" }
+        ]}
+      ]
+    },
+    {
+      "id": "moy-den-anya-toplanti",
+      "title": "Аня звонит во время совещания",
+      "level": "A1",
+      "speakers": { "a": "Ольга", "b": "Аня" },
+      "turns": [
+        { "speaker": "b", "tr": "Alo, Olga! Meşgul müsün?", "ru": "Алло, Ольга! Ты занята?", "distractors": [
+          { "tr": "Görüşürüz, Anya!", "ru": "До связи, Аня!" },
+          { "tr": "Haha, doğru! Tamam, saat yedide arayacağım.", "ru": "Ха-ха, точно! Хорошо, позвоню в семь." }
+        ]},
+        { "speaker": "a", "tr": "Evet, biraz. Şu an toplantıdayım. Sonra seni arayacağım.", "ru": "Да, немного. Я сейчас на совещании. Я тебе потом позвоню.", "distractors": [
+          { "tr": "Moskova ve İstanbul'da saat aynı! Unuttun mu?", "ru": "В Москве и в Стамбуле одинаковое время! Ты забыла?" },
+          { "tr": "Moskova saatiyle mi?", "ru": "По московскому времени?" }
+        ]},
+        { "speaker": "b", "tr": "Tamam. Akşam evde misin?", "ru": "Хорошо. Вечером ты дома?", "distractors": [
+          { "tr": "Alo, Olga! Meşgul müsün?", "ru": "Алло, Ольга! Ты занята?" },
+          { "tr": "Görüşürüz, Anya!", "ru": "До связи, Аня!" }
+        ]},
+        { "speaker": "a", "tr": "Evet, akşam evdeyim. Saat yedide ara!", "ru": "Да, вечером я дома. Позвони в семь!", "distractors": [
+          { "tr": "Alo, Olga! Meşgul müsün?", "ru": "Алло, Ольга! Ты занята?" },
+          { "tr": "Moskova ve İstanbul'da saat aynı! Unuttun mu?", "ru": "В Москве и в Стамбуле одинаковое время! Ты забыла?" }
+        ]},
+        { "speaker": "b", "tr": "Moskova saatiyle mi?", "ru": "По московскому времени?", "distractors": [
+          { "tr": "Evet, biraz. Şu an toplantıdayım. Sonra seni arayacağım.", "ru": "Да, немного. Я сейчас на совещании. Я тебе потом позвоню." },
+          { "tr": "Görüşürüz, Anya!", "ru": "До связи, Аня!" }
+        ]},
+        { "speaker": "a", "tr": "Moskova ve İstanbul'da saat aynı! Unuttun mu?", "ru": "В Москве и в Стамбуле одинаковое время! Ты забыла?", "distractors": [
+          { "tr": "Evet, biraz. Şu an toplantıdayım. Sonra seni arayacağım.", "ru": "Да, немного. Я сейчас на совещании. Я тебе потом позвоню." },
+          { "tr": "Görüşürüz, Anya!", "ru": "До связи, Аня!" }
+        ]},
+        { "speaker": "b", "tr": "Haha, doğru! Tamam, saat yedide arayacağım.", "ru": "Ха-ха, точно! Хорошо, позвоню в семь.", "distractors": [
+          { "tr": "Alo, Olga! Meşgul müsün?", "ru": "Алло, Ольга! Ты занята?" },
+          { "tr": "Tamam. Akşam evde misin?", "ru": "Хорошо. Вечером ты дома?" }
+        ]},
+        { "speaker": "a", "tr": "Görüşürüz, Anya!", "ru": "До связи, Аня!", "distractors": [
+          { "tr": "Alo, Olga! Meşgul müsün?", "ru": "Алло, Ольга! Ты занята?" },
+          { "tr": "Tamam. Akşam evde misin?", "ru": "Хорошо. Вечером ты дома?" }
+        ]}
+      ]
+    },
+    {
+      "id": "moy-den-ponedelnik",
+      "title": "Понедельник: как прошли выходные",
+      "level": "A1",
+      "speakers": { "a": "Ольга", "b": "Туба" },
+      "turns": [
+        { "speaker": "b", "tr": "Günaydın! Hafta sonu ne yaptın?", "ru": "Доброе утро! Что ты делала на выходных?", "distractors": [
+          { "tr": "Evet, lütfen! Önce kahve, sonra iş.", "ru": "Да, пожалуйста! Сначала кофе, потом работа." },
+          { "tr": "Ben de. Bugün pazartesi ve çok işimiz var!", "ru": "Я тоже. Сегодня понедельник, а у нас много работы!" }
+        ]},
+        { "speaker": "a", "tr": "Cumartesi Leyla'yla kahvaltı yaptık, sonra sahilde yürüdük.", "ru": "В субботу мы с Лейлой позавтракали, потом гуляли по набережной.", "distractors": [
+          { "tr": "Evet. Kahve ister misin?", "ru": "Да. Хочешь кофе?" },
+          { "tr": "Evet, lütfen! Önce kahve, sonra iş.", "ru": "Да, пожалуйста! Сначала кофе, потом работа." }
+        ]},
+        { "speaker": "b", "tr": "Ne güzel! Pazar günü?", "ru": "Как здорово! А в воскресенье?", "distractors": [
+          { "tr": "Günaydın! Hafta sonu ne yaptın?", "ru": "Доброе утро! Что ты делала на выходных?" },
+          { "tr": "Evet, lütfen! Önce kahve, sonra iş.", "ru": "Да, пожалуйста! Сначала кофе, потом работа." }
+        ]},
+        { "speaker": "a", "tr": "Pazar günü geç kalktım ve evi temizledim. Sen ne yaptın?", "ru": "В воскресенье я встала поздно и убралась дома. А ты что делала?", "distractors": [
+          { "tr": "Cumartesi Leyla'yla kahvaltı yaptık, sonra sahilde yürüdük.", "ru": "В субботу мы с Лейлой позавтракали, потом гуляли по набережной." },
+          { "tr": "Evet, lütfen! Önce kahve, sonra iş.", "ru": "Да, пожалуйста! Сначала кофе, потом работа." }
+        ]},
+        { "speaker": "b", "tr": "Çocuklarla parka gittik. Şimdi çok yorgunum!", "ru": "Ходили с детьми в парк. Теперь я очень устала!", "distractors": [
+          { "tr": "Günaydın! Hafta sonu ne yaptın?", "ru": "Доброе утро! Что ты делала на выходных?" },
+          { "tr": "Evet. Kahve ister misin?", "ru": "Да. Хочешь кофе?" }
+        ]},
+        { "speaker": "a", "tr": "Ben de. Bugün pazartesi ve çok işimiz var!", "ru": "Я тоже. Сегодня понедельник, а у нас много работы!", "distractors": [
+          { "tr": "Günaydın! Hafta sonu ne yaptın?", "ru": "Доброе утро! Что ты делала на выходных?" },
+          { "tr": "Evet, lütfen! Önce kahve, sonra iş.", "ru": "Да, пожалуйста! Сначала кофе, потом работа." }
+        ]},
+        { "speaker": "b", "tr": "Evet. Kahve ister misin?", "ru": "Да. Хочешь кофе?", "distractors": [
+          { "tr": "Cumartesi Leyla'yla kahvaltı yaptık, sonra sahilde yürüdük.", "ru": "В субботу мы с Лейлой позавтракали, потом гуляли по набережной." },
+          { "tr": "Çocuklarla parka gittik. Şimdi çok yorgunum!", "ru": "Ходили с детьми в парк. Теперь я очень устала!" }
+        ]},
+        { "speaker": "a", "tr": "Evet, lütfen! Önce kahve, sonra iş.", "ru": "Да, пожалуйста! Сначала кофе, потом работа.", "distractors": [
+          { "tr": "Günaydın! Hafta sonu ne yaptın?", "ru": "Доброе утро! Что ты делала на выходных?" },
+          { "tr": "Ne güzel! Pazar günü?", "ru": "Как здорово! А в воскресенье?" }
+        ]}
+      ]
+    }
+  ]
+}
