@@ -1,0 +1,5 @@
+# основа до -yor → фразы; глагола нет в словаре (assets/words) или форма не сошлась
+uyuyamı	1	Uyuyamıyorum
+yiyemi	1	Yemek yiyemiyorum
+görebili	1	Yarın akşam. Gözlüksüz görebiliyor musunuz?
+duyamı	1	Affedersiniz, sizi iyi duyamıyorum. Daha yüksek sesle konuşur musunuz lütfen?
