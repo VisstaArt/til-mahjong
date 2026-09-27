@@ -10,5 +10,11 @@
     "title": "Покупки, сервис",
     "count": 39,
     "sizeKB": 253.1
+  },
+  {
+    "id": "zdorove",
+    "title": "Здоровье",
+    "count": 24,
+    "sizeKB": 138.4
   }
 ]
