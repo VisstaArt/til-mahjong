@@ -18,6 +18,12 @@
     "sizeKB": 108.9
   },
   {
+    "id": "restoran",
+    "title": "Ресторан",
+    "count": 19,
+    "sizeKB": 105.3
+  },
+  {
     "id": "zdorove",
     "title": "Здоровье",
     "count": 24,
