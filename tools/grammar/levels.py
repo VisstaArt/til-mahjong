@@ -52,7 +52,7 @@ FALSE = {
     "kilo", "metro", "daha", "yeni", "hepsi", "ne", "nerede", "neden", "niye", "bugün", "yarın",
     "dün", "hafta", "akşam", "sabah", "geçmiş", "olsun", "misafir", "mutlu", "tatlı", "tuzlu",
     "pazar", "kira", "ara", "kiralık", "fakir", "sıra", "doktor", "sigara", "yüzde", "hazır",
-    "tamam", "yılmaz", "bekarım", "memnunum", "yoksa",
+    "tamam", "yılmaz", "bekarım", "memnunum", "yoksa", "yaramaz", "yetmiş", "müşteri",
     # Застывшие формулы учатся целиком, как слово, — это A1, хоть форма и широкое время.
     "ederim", "dilerim", "görüşürüz", "ederiz",
 }

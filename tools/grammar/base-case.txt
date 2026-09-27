@@ -48,3 +48,9 @@ Parka gidiyoruz. | Мы идём в парк.
 Ben kafeye gidiyorum. | Я иду в кафе.
 Siz Kadıköy'e mi gidiyorsunuz? | Вы едете в Кадыкёй?
 Buraya gel! | Иди сюда!
+# факты из LEGEND.md (офис в Каракёе, семьи)
+Olga Karaköy'de çalışıyor. | Ольга работает в Каракёе.
+Olga Kadıköy'den Karaköy'e gidiyor. | Ольга едет из Кадыкёя в Каракёй.
+Anya bankada çalışıyor. | Аня работает в банке.
+Leyla Üsküdar'a gidiyor. | Лейла едет в Ускюдар.
+Deniz'in ailesi Ankara'da. | Семья Дениза в Анкаре.

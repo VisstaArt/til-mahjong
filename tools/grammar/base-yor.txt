@@ -82,3 +82,8 @@ Biz bugün çalışmıyoruz. | Мы сегодня не работаем.
 Siz gelmiyor musunuz? | Вы не придёте?
 Onlar Rusça bilmiyorlar. | Они не знают русский.
 Pamuk süt içmiyor. | Памук не пьёт молоко.
+# факты из LEGEND.md (распорядок, семьи)
+Olga her sabah kahve içiyor. | Ольга каждое утро пьёт кофе.
+Olga vapurda çay içiyor. | На пароходе Ольга пьёт чай.
+Deniz kahvaltıda peynir yiyor. | На завтрак Дениз ест сыр.
+Anya her gün yazıyor. | Аня пишет каждый день.

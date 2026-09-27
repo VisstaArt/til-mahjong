@@ -1,9 +1,12 @@
 # основа до -yor → фразы; глагола нет в словаре (assets/words) или форма не сошлась
+benzi	3	Annene benziyorsun.
 uyuyamı	3	Uyuyamıyorum
 yiyemi	3	Yemek yiyemiyorum
 gelemi	2	Günaydın, Metin Bey. Özür dilerim, bugün gelemiyorum. Hastayım.
 görebili	1	Yarın akşam. Gözlüksüz görebiliyor musunuz?
 duyamı	1	Affedersiniz, sizi iyi duyamıyorum. Daha yüksek sesle konuşur musunuz lütfen?
+tanı	1	Efe'yi tanıyorum! Ablan ne iş yapıyor?
+benzemi	1	Evet! Aa, çok güzel! Sana hiç benzemiyor.
 edemi	1	Bir de priz bozuk. Telefonumu şarj edemiyorum. Tamir edebilir misiniz?
 öksürü	1	Biraz düştü. Şimdi kendimi daha iyi hissediyorum, ama hâlâ öksürüyorum. Sen nasılsın, iş nasıldı?
 basamı	1	Hayır, kolum iyi. Ama ayağıma basamıyorum.
