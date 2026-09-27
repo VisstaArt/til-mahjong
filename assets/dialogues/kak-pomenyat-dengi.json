@@ -1,0 +1,538 @@
+{
+  "id": "kak-pomenyat-dengi",
+  "title": "Как поменять деньги",
+  "dialogues": [
+    {
+      "id": "kak-pomenyat-dengi-gde-obmennik",
+      "title": "Где поменять деньги перед Москвой",
+      "level": "A2",
+      "speakers": { "a": "Ольга", "b": "Дениз" },
+      "turns": [
+        { "speaker": "a", "tr": "Deniz, Moskova'ya gitmeden önce dolar almam lazım.", "ru": "Дениз, перед поездкой в Москву мне нужно купить доллары.", "distractors": [
+          { "tr": "Pasaport değil, ikamet kartımı götürürüm. Sen de gelir misin?", "ru": "Не паспорт — возьму вид на жительство. Ты тоже пойдёшь?" },
+          { "tr": "Harika! Yarın işten dönünce oraya giderim.", "ru": "Отлично! Завтра, когда вернусь с работы, схожу туда." }
+        ]},
+        { "speaker": "b", "tr": "Neden? Rusya'da kartla ödeyemez misin?", "ru": "Зачем? Ты не сможешь платить в России картой?", "distractors": [
+          { "tr": "Gelirim! Sonra Moda'da bir kahve içeriz.", "ru": "Пойду! А потом выпьем кофе в Моде." },
+          { "tr": "Harika! Yarın işten dönünce oraya giderim.", "ru": "Отлично! Завтра, когда вернусь с работы, схожу туда." }
+        ]},
+        { "speaker": "a", "tr": "Hayır, Türk kartları orada çalışmıyor. Nakit götürmem lazım.", "ru": "Нет, турецкие карты там не работают. Мне нужно везти наличные.", "distractors": [
+          { "tr": "Pasaport değil, ikamet kartımı götürürüm. Sen de gelir misin?", "ru": "Не паспорт — возьму вид на жительство. Ты тоже пойдёшь?" },
+          { "tr": "Harika! Yarın işten dönünce oraya giderim.", "ru": "Отлично! Завтра, когда вернусь с работы, схожу туда." }
+        ]},
+        { "speaker": "b", "tr": "Anladım. Bankadan mı alacaksın?", "ru": "Понятно. Будешь покупать в банке?", "distractors": [
+          { "tr": "Gelirim! Sonra Moda'da bir kahve içeriz.", "ru": "Пойду! А потом выпьем кофе в Моде." },
+          { "tr": "Bahariye Caddesi'nde bir tane var. Orada kur bankadan daha iyi.", "ru": "Есть один на улице Бахарие. Там курс лучше, чем в банке." }
+        ]},
+        { "speaker": "a", "tr": "Bilmiyorum. En yakın döviz bürosu nerede?", "ru": "Не знаю. Где ближайший пункт обмена валют?", "distractors": [
+          { "tr": "Deniz, Moskova'ya gitmeden önce dolar almam lazım.", "ru": "Дениз, перед поездкой в Москву мне нужно купить доллары." },
+          { "tr": "Pasaport değil, ikamet kartımı götürürüm. Sen de gelir misin?", "ru": "Не паспорт — возьму вид на жительство. Ты тоже пойдёшь?" }
+        ]},
+        { "speaker": "b", "tr": "Bahariye Caddesi'nde bir tane var. Orada kur bankadan daha iyi.", "ru": "Есть один на улице Бахарие. Там курс лучше, чем в банке.", "distractors": [
+          { "tr": "Neden? Rusya'da kartla ödeyemez misin?", "ru": "Зачем? Ты не сможешь платить в России картой?" },
+          { "tr": "Gelirim! Sonra Moda'da bir kahve içeriz.", "ru": "Пойду! А потом выпьем кофе в Моде." }
+        ]},
+        { "speaker": "a", "tr": "Harika! Yarın işten dönünce oraya giderim.", "ru": "Отлично! Завтра, когда вернусь с работы, схожу туда.", "distractors": [
+          { "tr": "Deniz, Moskova'ya gitmeden önce dolar almam lazım.", "ru": "Дениз, перед поездкой в Москву мне нужно купить доллары." },
+          { "tr": "Hayır, Türk kartları orada çalışmıyor. Nakit götürmem lazım.", "ru": "Нет, турецкие карты там не работают. Мне нужно везти наличные." }
+        ]},
+        { "speaker": "b", "tr": "Pasaportunu unutma. Döviz bürolarında kimlik isterler.", "ru": "Не забудь паспорт. В обменниках спрашивают документ.", "distractors": [
+          { "tr": "Neden? Rusya'da kartla ödeyemez misin?", "ru": "Зачем? Ты не сможешь платить в России картой?" },
+          { "tr": "Anladım. Bankadan mı alacaksın?", "ru": "Понятно. Будешь покупать в банке?" }
+        ]},
+        { "speaker": "a", "tr": "Pasaport değil, ikamet kartımı götürürüm. Sen de gelir misin?", "ru": "Не паспорт — возьму вид на жительство. Ты тоже пойдёшь?", "distractors": [
+          { "tr": "Deniz, Moskova'ya gitmeden önce dolar almam lazım.", "ru": "Дениз, перед поездкой в Москву мне нужно купить доллары." },
+          { "tr": "Hayır, Türk kartları orada çalışmıyor. Nakit götürmem lazım.", "ru": "Нет, турецкие карты там не работают. Мне нужно везти наличные." }
+        ]},
+        { "speaker": "b", "tr": "Gelirim! Sonra Moda'da bir kahve içeriz.", "ru": "Пойду! А потом выпьем кофе в Моде.", "distractors": [
+          { "tr": "Neden? Rusya'da kartla ödeyemez misin?", "ru": "Зачем? Ты не сможешь платить в России картой?" },
+          { "tr": "Anladım. Bankadan mı alacaksın?", "ru": "Понятно. Будешь покупать в банке?" }
+        ]}
+      ]
+    },
+    {
+      "id": "kak-pomenyat-dengi-obmennik-dollary",
+      "title": "Обменник на Бахарие",
+      "level": "A2",
+      "speakers": { "a": "Ольга", "b": "Тевфик" },
+      "turns": [
+        { "speaker": "a", "tr": "İyi akşamlar. Bugünkü dolar kuru ne?", "ru": "Добрый вечер. Какой сегодня курс доллара?", "distractors": [
+          { "tr": "Hayır, Moskova'ya, kız kardeşime gidiyorum. Yüzlük banknotlar verin lütfen.", "ru": "Нет, еду в Москву к сестре. Дайте мне, пожалуйста, купюры по сто." },
+          { "tr": "Evet, buyurun. Bu benim ikamet kartım.", "ru": "Да, пожалуйста. Это мой вид на жительство." }
+        ]},
+        { "speaker": "b", "tr": "İyi akşamlar. Bugün kırk beş lira.", "ru": "Добрый вечер. Сегодня сорок пять лир.", "distractors": [
+          { "tr": "Tabii. Buyurun, on tane yüz dolar. Burayı imzalayın lütfen.", "ru": "Конечно. Вот, десять купюр по сто долларов. Распишитесь здесь, пожалуйста." },
+          { "tr": "Komisyon almıyoruz. Bir kimliğiniz var mı?", "ru": "Мы не берём комиссию. У вас есть удостоверение личности?" }
+        ]},
+        { "speaker": "a", "tr": "Kırk beş bin lira var. Bunu dolara çevirebilir misiniz?", "ru": "Здесь сорок пять тысяч лир. Вы можете обменять это на доллары?", "distractors": [
+          { "tr": "Teşekkür ederim. İyi akşamlar!", "ru": "Спасибо. Хорошего вечера!" },
+          { "tr": "Hayır, Moskova'ya, kız kardeşime gidiyorum. Yüzlük banknotlar verin lütfen.", "ru": "Нет, еду в Москву к сестре. Дайте мне, пожалуйста, купюры по сто." }
+        ]},
+        { "speaker": "b", "tr": "Tabii. Bin dolar eder.", "ru": "Конечно. Получится тысяча долларов.", "distractors": [
+          { "tr": "İyi yolculuklar!", "ru": "Счастливого пути!" },
+          { "tr": "İyi akşamlar. Bugün kırk beş lira.", "ru": "Добрый вечер. Сегодня сорок пять лир." }
+        ]},
+        { "speaker": "a", "tr": "Ne kadar komisyon alıyorsunuz?", "ru": "Какой вы берёте процент?", "distractors": [
+          { "tr": "Teşekkür ederim. İyi akşamlar!", "ru": "Спасибо. Хорошего вечера!" },
+          { "tr": "İyi akşamlar. Bugünkü dolar kuru ne?", "ru": "Добрый вечер. Какой сегодня курс доллара?" }
+        ]},
+        { "speaker": "b", "tr": "Komisyon almıyoruz. Bir kimliğiniz var mı?", "ru": "Мы не берём комиссию. У вас есть удостоверение личности?", "distractors": [
+          { "tr": "İyi yolculuklar!", "ru": "Счастливого пути!" },
+          { "tr": "İyi akşamlar. Bugün kırk beş lira.", "ru": "Добрый вечер. Сегодня сорок пять лир." }
+        ]},
+        { "speaker": "a", "tr": "Evet, buyurun. Bu benim ikamet kartım.", "ru": "Да, пожалуйста. Это мой вид на жительство.", "distractors": [
+          { "tr": "İyi akşamlar. Bugünkü dolar kuru ne?", "ru": "Добрый вечер. Какой сегодня курс доллара?" },
+          { "tr": "Kırk beş bin lira var. Bunu dolara çevirebilir misiniz?", "ru": "Здесь сорок пять тысяч лир. Вы можете обменять это на доллары?" }
+        ]},
+        { "speaker": "b", "tr": "Teşekkürler. Tatile mi gidiyorsunuz?", "ru": "Спасибо. Едете в отпуск?", "distractors": [
+          { "tr": "Tabii. Bin dolar eder.", "ru": "Конечно. Получится тысяча долларов." },
+          { "tr": "Komisyon almıyoruz. Bir kimliğiniz var mı?", "ru": "Мы не берём комиссию. У вас есть удостоверение личности?" }
+        ]},
+        { "speaker": "a", "tr": "Hayır, Moskova'ya, kız kardeşime gidiyorum. Yüzlük banknotlar verin lütfen.", "ru": "Нет, еду в Москву к сестре. Дайте мне, пожалуйста, купюры по сто.", "distractors": [
+          { "tr": "İyi akşamlar. Bugünkü dolar kuru ne?", "ru": "Добрый вечер. Какой сегодня курс доллара?" },
+          { "tr": "Kırk beş bin lira var. Bunu dolara çevirebilir misiniz?", "ru": "Здесь сорок пять тысяч лир. Вы можете обменять это на доллары?" }
+        ]},
+        { "speaker": "b", "tr": "Tabii. Buyurun, on tane yüz dolar. Burayı imzalayın lütfen.", "ru": "Конечно. Вот, десять купюр по сто долларов. Распишитесь здесь, пожалуйста.", "distractors": [
+          { "tr": "İyi akşamlar. Bugün kırk beş lira.", "ru": "Добрый вечер. Сегодня сорок пять лир." },
+          { "tr": "Komisyon almıyoruz. Bir kimliğiniz var mı?", "ru": "Мы не берём комиссию. У вас есть удостоверение личности?" }
+        ]},
+        { "speaker": "a", "tr": "Teşekkür ederim. İyi akşamlar!", "ru": "Спасибо. Хорошего вечера!", "distractors": [
+          { "tr": "Kırk beş bin lira var. Bunu dolara çevirebilir misiniz?", "ru": "Здесь сорок пять тысяч лир. Вы можете обменять это на доллары?" },
+          { "tr": "Ne kadar komisyon alıyorsunuz?", "ru": "Какой вы берёте процент?" }
+        ]},
+        { "speaker": "b", "tr": "İyi yolculuklar!", "ru": "Счастливого пути!", "distractors": [
+          { "tr": "Tabii. Bin dolar eder.", "ru": "Конечно. Получится тысяча долларов." },
+          { "tr": "Komisyon almıyoruz. Bir kimliğiniz var mı?", "ru": "Мы не берём комиссию. У вас есть удостоверение личности?" }
+        ]}
+      ]
+    },
+    {
+      "id": "kak-pomenyat-dengi-schet-v-evro",
+      "title": "Счёт в евро",
+      "level": "A2",
+      "speakers": { "a": "Ольга", "b": "Эсин" },
+      "turns": [
+        { "speaker": "a", "tr": "Merhaba. Bir hesap açtırmak istiyorum. Avro hesabı.", "ru": "Здравствуйте. Я хочу открыть счёт. Счёт в евро.", "distractors": [
+          { "tr": "Hayır, teşekkürler. İyi günler!", "ru": "Нет, спасибо. Всего доброго!" },
+          { "tr": "Harika. Bunu hesabıma yatırmak istiyorum.", "ru": "Отлично. Я хочу положить это на свой счёт." }
+        ]},
+        { "speaker": "b", "tr": "Merhaba, hoş geldiniz. Bizim bankada lira hesabınız var mı?", "ru": "Здравствуйте, добро пожаловать. У вас есть счёт в лирах в нашем банке?", "distractors": [
+          { "tr": "Size de iyi günler!", "ru": "И вам всего доброго!" },
+          { "tr": "Tamam, hesabınız hazır. Başka bir şey var mı?", "ru": "Хорошо, ваш счёт готов. Что-нибудь ещё?" }
+        ]},
+        { "speaker": "a", "tr": "Evet, maaşım buraya geliyor. Her ay biraz avro biriktirmek istiyorum.", "ru": "Да, сюда приходит моя зарплата. Я хочу каждый месяц откладывать немного евро.", "distractors": [
+          { "tr": "Hayır, teşekkürler. İyi günler!", "ru": "Нет, спасибо. Всего доброго!" },
+          { "tr": "Harika. Bunu hesabıma yatırmak istiyorum.", "ru": "Отлично. Я хочу положить это на свой счёт." }
+        ]},
+        { "speaker": "b", "tr": "Çok iyi fikir. Türkiye'de ne zamandır yaşıyorsunuz?", "ru": "Отличная идея. Сколько вы уже живёте в Турции?", "distractors": [
+          { "tr": "Size de iyi günler!", "ru": "И вам всего доброго!" },
+          { "tr": "Tamam, hesabınız hazır. Başka bir şey var mı?", "ru": "Хорошо, ваш счёт готов. Что-нибудь ещё?" }
+        ]},
+        { "speaker": "a", "tr": "Bir yıldır. İkamet kartım var. Avro hesabı açmak zor mu?", "ru": "Год. У меня есть вид на жительство. Открыть счёт в евро сложно?", "distractors": [
+          { "tr": "Hayır, teşekkürler. İyi günler!", "ru": "Нет, спасибо. Всего доброго!" },
+          { "tr": "Harika. Bunu hesabıma yatırmak istiyorum.", "ru": "Отлично. Я хочу положить это на свой счёт." }
+        ]},
+        { "speaker": "b", "tr": "Hayır, çok kolay. On dakikada açabiliriz. Burayı imzalayın lütfen.", "ru": "Нет, очень просто. Мы можем открыть его за десять минут. Распишитесь здесь, пожалуйста.", "distractors": [
+          { "tr": "Size de iyi günler!", "ru": "И вам всего доброго!" },
+          { "tr": "Merhaba, hoş geldiniz. Bizim bankada lira hesabınız var mı?", "ru": "Здравствуйте, добро пожаловать. У вас есть счёт в лирах в нашем банке?" }
+        ]},
+        { "speaker": "a", "tr": "Tamam. Beş bin lira getirdim. Bunu avroya çevirebilir misiniz?", "ru": "Хорошо. Я принесла пять тысяч лир. Вы можете обменять это на евро?", "distractors": [
+          { "tr": "Merhaba. Bir hesap açtırmak istiyorum. Avro hesabı.", "ru": "Здравствуйте. Я хочу открыть счёт. Счёт в евро." },
+          { "tr": "Evet, maaşım buraya geliyor. Her ay biraz avro biriktirmek istiyorum.", "ru": "Да, сюда приходит моя зарплата. Я хочу каждый месяц откладывать немного евро." }
+        ]},
+        { "speaker": "b", "tr": "Tabii. Bugünkü kurla yaklaşık yüz avro eder.", "ru": "Конечно. По сегодняшнему курсу получится примерно сто евро.", "distractors": [
+          { "tr": "Merhaba, hoş geldiniz. Bizim bankada lira hesabınız var mı?", "ru": "Здравствуйте, добро пожаловать. У вас есть счёт в лирах в нашем банке?" },
+          { "tr": "Çok iyi fikir. Türkiye'de ne zamandır yaşıyorsunuz?", "ru": "Отличная идея. Сколько вы уже живёте в Турции?" }
+        ]},
+        { "speaker": "a", "tr": "Harika. Bunu hesabıma yatırmak istiyorum.", "ru": "Отлично. Я хочу положить это на свой счёт.", "distractors": [
+          { "tr": "Merhaba. Bir hesap açtırmak istiyorum. Avro hesabı.", "ru": "Здравствуйте. Я хочу открыть счёт. Счёт в евро." },
+          { "tr": "Evet, maaşım buraya geliyor. Her ay biraz avro biriktirmek istiyorum.", "ru": "Да, сюда приходит моя зарплата. Я хочу каждый месяц откладывать немного евро." }
+        ]},
+        { "speaker": "b", "tr": "Tamam, hesabınız hazır. Başka bir şey var mı?", "ru": "Хорошо, ваш счёт готов. Что-нибудь ещё?", "distractors": [
+          { "tr": "Merhaba, hoş geldiniz. Bizim bankada lira hesabınız var mı?", "ru": "Здравствуйте, добро пожаловать. У вас есть счёт в лирах в нашем банке?" },
+          { "tr": "Çok iyi fikir. Türkiye'de ne zamandır yaşıyorsunuz?", "ru": "Отличная идея. Сколько вы уже живёте в Турции?" }
+        ]},
+        { "speaker": "a", "tr": "Hayır, teşekkürler. İyi günler!", "ru": "Нет, спасибо. Всего доброго!", "distractors": [
+          { "tr": "Merhaba. Bir hesap açtırmak istiyorum. Avro hesabı.", "ru": "Здравствуйте. Я хочу открыть счёт. Счёт в евро." },
+          { "tr": "Evet, maaşım buraya geliyor. Her ay biraz avro biriktirmek istiyorum.", "ru": "Да, сюда приходит моя зарплата. Я хочу каждый месяц откладывать немного евро." }
+        ]},
+        { "speaker": "b", "tr": "Size de iyi günler!", "ru": "И вам всего доброго!", "distractors": [
+          { "tr": "Merhaba, hoş geldiniz. Bizim bankada lira hesabınız var mı?", "ru": "Здравствуйте, добро пожаловать. У вас есть счёт в лирах в нашем банке?" },
+          { "tr": "Çok iyi fikir. Türkiye'de ne zamandır yaşıyorsunuz?", "ru": "Отличная идея. Сколько вы уже живёте в Турции?" }
+        ]}
+      ]
+    },
+    {
+      "id": "kak-pomenyat-dengi-anya-perevod",
+      "title": "Аня возвращает деньги за билет",
+      "level": "A2",
+      "speakers": { "a": "Ольга", "b": "Аня" },
+      "turns": [
+        { "speaker": "a", "tr": "Anya, biletin hazır! Temmuzda Bodrum'a uçuyorsun.", "ru": "Аня, твой билет готов! В июле ты летишь в Бодрум.", "distractors": [
+          { "tr": "Tamam, yazarım. Öpüyorum!", "ru": "Хорошо, напишу. Целую!" },
+          { "tr": "Haha, doğru! Para kaç günde gelir?", "ru": "Ха-ха, точно! За сколько дней дойдут деньги?" }
+        ]},
+        { "speaker": "b", "tr": "Süper, teşekkürler! Ne kadar tuttu?", "ru": "Супер, спасибо! Сколько он стоил?", "distractors": [
+          { "tr": "İki üç günde gelir. Gelince bana yaz, tamam mı?", "ru": "За два-три дня. Когда придут, напиши мне, хорошо?" },
+          { "tr": "Tamam. Ben bankada çalışıyorum, bu işleri iyi bilirim!", "ru": "Хорошо. Я же работаю в банке, я в этом хорошо разбираюсь!" }
+        ]},
+        { "speaker": "a", "tr": "On sekiz bin lira. Ama acele etme, sonra ödersin.", "ru": "Восемнадцать тысяч лир. Но не торопись, потом отдашь.", "distractors": [
+          { "tr": "Tamam, yazarım. Öpüyorum!", "ru": "Хорошо, напишу. Целую!" },
+          { "tr": "Haha, doğru! Para kaç günde gelir?", "ru": "Ха-ха, точно! За сколько дней дойдут деньги?" }
+        ]},
+        { "speaker": "b", "tr": "Hayır, hemen gönderirim. Senin kartına gönderebilir miyim?", "ru": "Нет, я сразу отправлю. Можно отправить на твою карту?", "distractors": [
+          { "tr": "Ben de öpüyorum! Görüşürüz!", "ru": "И я тебя целую! Пока!" },
+          { "tr": "İki üç günde gelir. Gelince bana yaz, tamam mı?", "ru": "За два-три дня. Когда придут, напиши мне, хорошо?" }
+        ]},
+        { "speaker": "a", "tr": "Kartıma değil, hesabıma gönder. Hesap numaramı sana yazarım.", "ru": "Не на карту, а на счёт. Я напишу тебе номер счёта.", "distractors": [
+          { "tr": "Anya, biletin hazır! Temmuzda Bodrum'a uçuyorsun.", "ru": "Аня, твой билет готов! В июле ты летишь в Бодрум." },
+          { "tr": "Tamam, yazarım. Öpüyorum!", "ru": "Хорошо, напишу. Целую!" }
+        ]},
+        { "speaker": "b", "tr": "Tamam. Ben bankada çalışıyorum, bu işleri iyi bilirim!", "ru": "Хорошо. Я же работаю в банке, я в этом хорошо разбираюсь!", "distractors": [
+          { "tr": "Süper, teşekkürler! Ne kadar tuttu?", "ru": "Супер, спасибо! Сколько он стоил?" },
+          { "tr": "Ben de öpüyorum! Görüşürüz!", "ru": "И я тебя целую! Пока!" }
+        ]},
+        { "speaker": "a", "tr": "Haha, doğru! Para kaç günde gelir?", "ru": "Ха-ха, точно! За сколько дней дойдут деньги?", "distractors": [
+          { "tr": "Anya, biletin hazır! Temmuzda Bodrum'a uçuyorsun.", "ru": "Аня, твой билет готов! В июле ты летишь в Бодрум." },
+          { "tr": "On sekiz bin lira. Ama acele etme, sonra ödersin.", "ru": "Восемнадцать тысяч лир. Но не торопись, потом отдашь." }
+        ]},
+        { "speaker": "b", "tr": "İki üç günde gelir. Gelince bana yaz, tamam mı?", "ru": "За два-три дня. Когда придут, напиши мне, хорошо?", "distractors": [
+          { "tr": "Süper, teşekkürler! Ne kadar tuttu?", "ru": "Супер, спасибо! Сколько он стоил?" },
+          { "tr": "Hayır, hemen gönderirim. Senin kartına gönderebilir miyim?", "ru": "Нет, я сразу отправлю. Можно отправить на твою карту?" }
+        ]},
+        { "speaker": "a", "tr": "Tamam, yazarım. Öpüyorum!", "ru": "Хорошо, напишу. Целую!", "distractors": [
+          { "tr": "Anya, biletin hazır! Temmuzda Bodrum'a uçuyorsun.", "ru": "Аня, твой билет готов! В июле ты летишь в Бодрум." },
+          { "tr": "On sekiz bin lira. Ama acele etme, sonra ödersin.", "ru": "Восемнадцать тысяч лир. Но не торопись, потом отдашь." }
+        ]},
+        { "speaker": "b", "tr": "Ben de öpüyorum! Görüşürüz!", "ru": "И я тебя целую! Пока!", "distractors": [
+          { "tr": "Hayır, hemen gönderirim. Senin kartına gönderebilir miyim?", "ru": "Нет, я сразу отправлю. Можно отправить на твою карту?" },
+          { "tr": "Tamam. Ben bankada çalışıyorum, bu işleri iyi bilirim!", "ru": "Хорошо. Я же работаю в банке, я в этом хорошо разбираюсь!" }
+        ]}
+      ]
+    },
+    {
+      "id": "kak-pomenyat-dengi-dengi-iz-moskvy",
+      "title": "Деньги из Москвы пришли?",
+      "level": "A2",
+      "speakers": { "a": "Ольга", "b": "Небахат" },
+      "turns": [
+        { "speaker": "a", "tr": "Merhaba. Moskova'dan para bekliyorum.", "ru": "Здравствуйте. Я жду денег из Москвы.", "distractors": [
+          { "tr": "Teşekkürler. İyi günler!", "ru": "Спасибо. Всего доброго!" },
+          { "tr": "Beş bin lira. Tatile gitmeden önce nakit lazım.", "ru": "Пять тысяч лир. Перед отпуском нужны наличные." }
+        ]},
+        { "speaker": "b", "tr": "Merhaba. Hesabınıza mı gelecek?", "ru": "Здравствуйте. Они должны прийти на ваш счёт?", "distractors": [
+          { "tr": "İyi günler, iyi tatiller!", "ru": "Всего доброго, хорошего отпуска!" },
+          { "tr": "Tamam. Burayı imzalayın lütfen. Veznedara gidin, lütfen.", "ru": "Хорошо. Распишитесь здесь, пожалуйста. Пройдите в кассу, пожалуйста." }
+        ]},
+        { "speaker": "a", "tr": "Evet, kız kardeşim üç gün önce gönderdi. Geldi mi?", "ru": "Да, сестра отправила их три дня назад. Их уже перевели?", "distractors": [
+          { "tr": "Teşekkürler. İyi günler!", "ru": "Спасибо. Всего доброго!" },
+          { "tr": "Beş bin lira. Tatile gitmeden önce nakit lazım.", "ru": "Пять тысяч лир. Перед отпуском нужны наличные." }
+        ]},
+        { "speaker": "b", "tr": "Bir bakayım. Bir kimliğiniz var mı?", "ru": "Сейчас посмотрю. У вас есть удостоверение личности?", "distractors": [
+          { "tr": "İyi günler, iyi tatiller!", "ru": "Всего доброго, хорошего отпуска!" },
+          { "tr": "Tamam. Burayı imzalayın lütfen. Veznedara gidin, lütfen.", "ru": "Хорошо. Распишитесь здесь, пожалуйста. Пройдите в кассу, пожалуйста." }
+        ]},
+        { "speaker": "a", "tr": "Evet, buyurun. İkamet kartım.", "ru": "Да, пожалуйста. Мой вид на жительство.", "distractors": [
+          { "tr": "Teşekkürler. İyi günler!", "ru": "Спасибо. Всего доброго!" },
+          { "tr": "Merhaba. Moskova'dan para bekliyorum.", "ru": "Здравствуйте. Я жду денег из Москвы." }
+        ]},
+        { "speaker": "b", "tr": "Evet, para gelmiş. On sekiz bin lira.", "ru": "Да, деньги пришли. Восемнадцать тысяч лир.", "distractors": [
+          { "tr": "İyi günler, iyi tatiller!", "ru": "Всего доброго, хорошего отпуска!" },
+          { "tr": "Merhaba. Hesabınıza mı gelecek?", "ru": "Здравствуйте. Они должны прийти на ваш счёт?" }
+        ]},
+        { "speaker": "a", "tr": "Çok iyi! Biraz para çekmek istiyorum.", "ru": "Отлично! Я хочу снять немного денег.", "distractors": [
+          { "tr": "Merhaba. Moskova'dan para bekliyorum.", "ru": "Здравствуйте. Я жду денег из Москвы." },
+          { "tr": "Evet, kız kardeşim üç gün önce gönderdi. Geldi mi?", "ru": "Да, сестра отправила их три дня назад. Их уже перевели?" }
+        ]},
+        { "speaker": "b", "tr": "Ne kadar çekmek istiyorsunuz?", "ru": "Сколько вы хотите снять?", "distractors": [
+          { "tr": "Merhaba. Hesabınıza mı gelecek?", "ru": "Здравствуйте. Они должны прийти на ваш счёт?" },
+          { "tr": "Bir bakayım. Bir kimliğiniz var mı?", "ru": "Сейчас посмотрю. У вас есть удостоверение личности?" }
+        ]},
+        { "speaker": "a", "tr": "Beş bin lira. Tatile gitmeden önce nakit lazım.", "ru": "Пять тысяч лир. Перед отпуском нужны наличные.", "distractors": [
+          { "tr": "Merhaba. Moskova'dan para bekliyorum.", "ru": "Здравствуйте. Я жду денег из Москвы." },
+          { "tr": "Evet, kız kardeşim üç gün önce gönderdi. Geldi mi?", "ru": "Да, сестра отправила их три дня назад. Их уже перевели?" }
+        ]},
+        { "speaker": "b", "tr": "Tamam. Burayı imzalayın lütfen. Veznedara gidin, lütfen.", "ru": "Хорошо. Распишитесь здесь, пожалуйста. Пройдите в кассу, пожалуйста.", "distractors": [
+          { "tr": "Evet, para gelmiş. On sekiz bin lira.", "ru": "Да, деньги пришли. Восемнадцать тысяч лир." },
+          { "tr": "Merhaba. Hesabınıza mı gelecek?", "ru": "Здравствуйте. Они должны прийти на ваш счёт?" }
+        ]},
+        { "speaker": "a", "tr": "Teşekkürler. İyi günler!", "ru": "Спасибо. Всего доброго!", "distractors": [
+          { "tr": "Merhaba. Moskova'dan para bekliyorum.", "ru": "Здравствуйте. Я жду денег из Москвы." },
+          { "tr": "Evet, kız kardeşim üç gün önce gönderdi. Geldi mi?", "ru": "Да, сестра отправила их три дня назад. Их уже перевели?" }
+        ]},
+        { "speaker": "b", "tr": "İyi günler, iyi tatiller!", "ru": "Всего доброго, хорошего отпуска!", "distractors": [
+          { "tr": "Merhaba. Hesabınıza mı gelecek?", "ru": "Здравствуйте. Они должны прийти на ваш счёт?" },
+          { "tr": "Bir bakayım. Bir kimliğiniz var mı?", "ru": "Сейчас посмотрю. У вас есть удостоверение личности?" }
+        ]}
+      ]
+    },
+    {
+      "id": "kak-pomenyat-dengi-anya-bodrum",
+      "title": "Аня в Бодруме: где поменять евро",
+      "level": "A2",
+      "speakers": { "a": "Ольга", "b": "Аня" },
+      "turns": [
+        { "speaker": "a", "tr": "Anya, neden üzgünsün?", "ru": "Аня, почему ты грустная?", "distractors": [
+          { "tr": "Tabii! Ama önce para, sonra halı!", "ru": "Конечно! Но сначала деньги, потом ковёр!" },
+          { "tr": "Aşağı yukarı beş bin lira. Pasaportunu unutma!", "ru": "Примерно пять тысяч лир. Не забудь паспорт!" }
+        ]},
+        { "speaker": "b", "tr": "Nakit param bitti! Nerede biraz avro bozdurabilirim?", "ru": "У меня кончились наличные! Где я могу поменять евро?", "distractors": [
+          { "tr": "Unutmam! Sonra halıcıya da gidelim mi?", "ru": "Не забуду! А потом зайдём ещё в магазин ковров?" },
+          { "tr": "Yüz avro. Kaç lira eder?", "ru": "Сто евро. Сколько это будет в лирах?" }
+        ]},
+        { "speaker": "a", "tr": "Otelde bozdurma, orada kur çok kötü.", "ru": "Не меняй в отеле, там очень плохой курс.", "distractors": [
+          { "tr": "Tabii! Ama önce para, sonra halı!", "ru": "Конечно! Но сначала деньги, потом ковёр!" },
+          { "tr": "Aşağı yukarı beş bin lira. Pasaportunu unutma!", "ru": "Примерно пять тысяч лир. Не забудь паспорт!" }
+        ]},
+        { "speaker": "b", "tr": "Öyle mi? O zaman nereye gidelim?", "ru": "Правда? Тогда куда пойдём?", "distractors": [
+          { "tr": "Unutmam! Sonra halıcıya da gidelim mi?", "ru": "Не забуду! А потом зайдём ещё в магазин ковров?" },
+          { "tr": "Yüz avro. Kaç lira eder?", "ru": "Сто евро. Сколько это будет в лирах?" }
+        ]},
+        { "speaker": "a", "tr": "Plajın yanında bir döviz bürosu var. Oradaki kur otelden daha iyi.", "ru": "Рядом с пляжем есть обменник. Там курс лучше, чем в отеле.", "distractors": [
+          { "tr": "Tabii! Ama önce para, sonra halı!", "ru": "Конечно! Но сначала деньги, потом ковёр!" },
+          { "tr": "Anya, neden üzgünsün?", "ru": "Аня, почему ты грустная?" }
+        ]},
+        { "speaker": "b", "tr": "Tamam, plajdan dönünce gideriz. Ruble de bozdurabilir miyim?", "ru": "Хорошо, сходим, когда вернёмся с пляжа. А рубли тоже можно поменять?", "distractors": [
+          { "tr": "Nakit param bitti! Nerede biraz avro bozdurabilirim?", "ru": "У меня кончились наличные! Где я могу поменять евро?" },
+          { "tr": "Unutmam! Sonra halıcıya da gidelim mi?", "ru": "Не забуду! А потом зайдём ещё в магазин ковров?" }
+        ]},
+        { "speaker": "a", "tr": "Sanmıyorum, burada çoğu büro ruble almıyor. Kaç avro bozduracaksın?", "ru": "Вряд ли, здесь большинство обменников рубли не берёт. Сколько евро будешь менять?", "distractors": [
+          { "tr": "Anya, neden üzgünsün?", "ru": "Аня, почему ты грустная?" },
+          { "tr": "Otelde bozdurma, orada kur çok kötü.", "ru": "Не меняй в отеле, там очень плохой курс." }
+        ]},
+        { "speaker": "b", "tr": "Yüz avro. Kaç lira eder?", "ru": "Сто евро. Сколько это будет в лирах?", "distractors": [
+          { "tr": "Nakit param bitti! Nerede biraz avro bozdurabilirim?", "ru": "У меня кончились наличные! Где я могу поменять евро?" },
+          { "tr": "Öyle mi? O zaman nereye gidelim?", "ru": "Правда? Тогда куда пойдём?" }
+        ]},
+        { "speaker": "a", "tr": "Aşağı yukarı beş bin lira. Pasaportunu unutma!", "ru": "Примерно пять тысяч лир. Не забудь паспорт!", "distractors": [
+          { "tr": "Anya, neden üzgünsün?", "ru": "Аня, почему ты грустная?" },
+          { "tr": "Otelde bozdurma, orada kur çok kötü.", "ru": "Не меняй в отеле, там очень плохой курс." }
+        ]},
+        { "speaker": "b", "tr": "Unutmam! Sonra halıcıya da gidelim mi?", "ru": "Не забуду! А потом зайдём ещё в магазин ковров?", "distractors": [
+          { "tr": "Nakit param bitti! Nerede biraz avro bozdurabilirim?", "ru": "У меня кончились наличные! Где я могу поменять евро?" },
+          { "tr": "Öyle mi? O zaman nereye gidelim?", "ru": "Правда? Тогда куда пойдём?" }
+        ]},
+        { "speaker": "a", "tr": "Tabii! Ama önce para, sonra halı!", "ru": "Конечно! Но сначала деньги, потом ковёр!", "distractors": [
+          { "tr": "Anya, neden üzgünsün?", "ru": "Аня, почему ты грустная?" },
+          { "tr": "Otelde bozdurma, orada kur çok kötü.", "ru": "Не меняй в отеле, там очень плохой курс." }
+        ]}
+      ]
+    },
+    {
+      "id": "kak-pomenyat-dengi-popolnit-schet",
+      "title": "Пополнить счёт долларами",
+      "level": "A2",
+      "speakers": { "a": "Ольга", "b": "Бюшра" },
+      "turns": [
+        { "speaker": "a", "tr": "Merhaba. Hesabıma para yatırmak istiyorum.", "ru": "Здравствуйте. Я хочу пополнить счёт.", "distractors": [
+          { "tr": "Hayır, teşekkürler. İyi günler!", "ru": "Нет, спасибо. Всего доброго!" },
+          { "tr": "Tamam. Hesabımda ne kadar param var?", "ru": "Хорошо. Сколько денег у меня на счету?" }
+        ]},
+        { "speaker": "b", "tr": "Merhaba. Tabii. Lira mı yatıracaksınız?", "ru": "Здравствуйте. Конечно. Вы будете вносить лиры?", "distractors": [
+          { "tr": "Size de iyi günler!", "ru": "И вам всего доброго!" },
+          { "tr": "Şimdi on iki bin lira var. Başka bir şey var mı?", "ru": "Сейчас двенадцать тысяч лир. Что-нибудь ещё?" }
+        ]},
+        { "speaker": "a", "tr": "Hayır, dolar. Moskova'dan sonra iki yüz dolar kaldı.", "ru": "Нет, доллары. После Москвы осталось двести долларов.", "distractors": [
+          { "tr": "Hayır, teşekkürler. İyi günler!", "ru": "Нет, спасибо. Всего доброго!" },
+          { "tr": "Tamam. Hesabımda ne kadar param var?", "ru": "Хорошо. Сколько денег у меня на счету?" }
+        ]},
+        { "speaker": "b", "tr": "Hesabınız lira hesabı mı, dolar hesabı mı?", "ru": "Ваш счёт в лирах или в долларах?", "distractors": [
+          { "tr": "Size de iyi günler!", "ru": "И вам всего доброго!" },
+          { "tr": "Şimdi on iki bin lira var. Başka bir şey var mı?", "ru": "Сейчас двенадцать тысяч лир. Что-нибудь ещё?" }
+        ]},
+        { "speaker": "a", "tr": "Lira hesabı. Dolar bozdurmak istiyorum. Liraya çevirip hesabıma yatırabilir misiniz?", "ru": "В лирах. Я хочу поменять доллары. Можете перевести их в лиры и положить на мой счёт?", "distractors": [
+          { "tr": "Hayır, teşekkürler. İyi günler!", "ru": "Нет, спасибо. Всего доброго!" },
+          { "tr": "Tamam. Hesabımda ne kadar param var?", "ru": "Хорошо. Сколько денег у меня на счету?" }
+        ]},
+        { "speaker": "b", "tr": "Tabii. Bugünkü kur kırk beş lira. Dokuz bin lira eder.", "ru": "Конечно. Сегодня курс сорок пять лир. Получится девять тысяч лир.", "distractors": [
+          { "tr": "Size de iyi günler!", "ru": "И вам всего доброго!" },
+          { "tr": "Şimdi on iki bin lira var. Başka bir şey var mı?", "ru": "Сейчас двенадцать тысяч лир. Что-нибудь ещё?" }
+        ]},
+        { "speaker": "a", "tr": "Tamam. Moskova'da kur buradan daha kötüydü.", "ru": "Хорошо. В Москве курс был хуже, чем здесь.", "distractors": [
+          { "tr": "Merhaba. Hesabıma para yatırmak istiyorum.", "ru": "Здравствуйте. Я хочу пополнить счёт." },
+          { "tr": "Hayır, dolar. Moskova'dan sonra iki yüz dolar kaldı.", "ru": "Нет, доллары. После Москвы осталось двести долларов." }
+        ]},
+        { "speaker": "b", "tr": "Öyle mi? Burayı imzalayın lütfen.", "ru": "Правда? Распишитесь здесь, пожалуйста.", "distractors": [
+          { "tr": "Merhaba. Tabii. Lira mı yatıracaksınız?", "ru": "Здравствуйте. Конечно. Вы будете вносить лиры?" },
+          { "tr": "Hesabınız lira hesabı mı, dolar hesabı mı?", "ru": "Ваш счёт в лирах или в долларах?" }
+        ]},
+        { "speaker": "a", "tr": "Tamam. Hesabımda ne kadar param var?", "ru": "Хорошо. Сколько денег у меня на счету?", "distractors": [
+          { "tr": "Merhaba. Hesabıma para yatırmak istiyorum.", "ru": "Здравствуйте. Я хочу пополнить счёт." },
+          { "tr": "Hayır, dolar. Moskova'dan sonra iki yüz dolar kaldı.", "ru": "Нет, доллары. После Москвы осталось двести долларов." }
+        ]},
+        { "speaker": "b", "tr": "Şimdi on iki bin lira var. Başka bir şey var mı?", "ru": "Сейчас двенадцать тысяч лир. Что-нибудь ещё?", "distractors": [
+          { "tr": "Merhaba. Tabii. Lira mı yatıracaksınız?", "ru": "Здравствуйте. Конечно. Вы будете вносить лиры?" },
+          { "tr": "Hesabınız lira hesabı mı, dolar hesabı mı?", "ru": "Ваш счёт в лирах или в долларах?" }
+        ]},
+        { "speaker": "a", "tr": "Hayır, teşekkürler. İyi günler!", "ru": "Нет, спасибо. Всего доброго!", "distractors": [
+          { "tr": "Merhaba. Hesabıma para yatırmak istiyorum.", "ru": "Здравствуйте. Я хочу пополнить счёт." },
+          { "tr": "Hayır, dolar. Moskova'dan sonra iki yüz dolar kaldı.", "ru": "Нет, доллары. После Москвы осталось двести долларов." }
+        ]},
+        { "speaker": "b", "tr": "Size de iyi günler!", "ru": "И вам всего доброго!", "distractors": [
+          { "tr": "Merhaba. Tabii. Lira mı yatıracaksınız?", "ru": "Здравствуйте. Конечно. Вы будете вносить лиры?" },
+          { "tr": "Hesabınız lira hesabı mı, dolar hesabı mı?", "ru": "Ваш счёт в лирах или в долларах?" }
+        ]}
+      ]
+    },
+    {
+      "id": "kak-pomenyat-dengi-melkie-kupyury",
+      "title": "Мелкие купюры к приезду мамы",
+      "level": "A2",
+      "speakers": { "a": "Ольга", "b": "Кюбра" },
+      "turns": [
+        { "speaker": "a", "tr": "Merhaba. Biraz para çekmek istiyorum.", "ru": "Здравствуйте. Я хочу снять немного денег.", "distractors": [
+          { "tr": "Teşekkür ederim. İyi günler!", "ru": "Спасибо. Всего доброго!" },
+          { "tr": "Hayır, ilk defa geliyor. İki hafta kalacak. Siz İstanbullu musunuz?", "ru": "Нет, приезжает впервые. Пробудет две недели. А вы из Стамбула?" }
+        ]},
+        { "speaker": "b", "tr": "Merhaba. Tabii. Ne kadar çekmek istiyorsunuz?", "ru": "Здравствуйте. Конечно. Сколько вы хотите снять?", "distractors": [
+          { "tr": "İyi günler! Annenize hoş geldiniz deyin!", "ru": "Всего доброго! Передайте маме «добро пожаловать»!" },
+          { "tr": "Hayır, Rizeliyim ama yirmi yıldır burada yaşıyorum. Buyurun, üç bin lira.", "ru": "Нет, я из Ризе, но уже двадцать лет живу здесь. Вот, пожалуйста, три тысячи лир." }
+        ]},
+        { "speaker": "a", "tr": "Üç bin lira. Daha küçük kağıt para verebilir misiniz lütfen?", "ru": "Три тысячи лир. Не могли бы вы мне выдать более мелкие купюры?", "distractors": [
+          { "tr": "Teşekkür ederim. İyi günler!", "ru": "Спасибо. Всего доброго!" },
+          { "tr": "Hayır, ilk defa geliyor. İki hafta kalacak. Siz İstanbullu musunuz?", "ru": "Нет, приезжает впервые. Пробудет две недели. А вы из Стамбула?" }
+        ]},
+        { "speaker": "b", "tr": "Tabii. Ellilik ve yirmilik olur mu?", "ru": "Конечно. По пятьдесят и по двадцать подойдёт?", "distractors": [
+          { "tr": "İyi günler! Annenize hoş geldiniz deyin!", "ru": "Всего доброго! Передайте маме «добро пожаловать»!" },
+          { "tr": "Hayır, Rizeliyim ama yirmi yıldır burada yaşıyorum. Buyurun, üç bin lira.", "ru": "Нет, я из Ризе, но уже двадцать лет живу здесь. Вот, пожалуйста, три тысячи лир." }
+        ]},
+        { "speaker": "a", "tr": "Evet, çok iyi. ATM hep iki yüzlük verir.", "ru": "Да, отлично. Банкомат всегда выдаёт по двести.", "distractors": [
+          { "tr": "Teşekkür ederim. İyi günler!", "ru": "Спасибо. Всего доброго!" },
+          { "tr": "Merhaba. Biraz para çekmek istiyorum.", "ru": "Здравствуйте. Я хочу снять немного денег." }
+        ]},
+        { "speaker": "b", "tr": "Evet, maalesef. Bozuk para da ister misiniz?", "ru": "Да, к сожалению. Мелочь тоже нужна?", "distractors": [
+          { "tr": "İyi günler! Annenize hoş geldiniz deyin!", "ru": "Всего доброго! Передайте маме «добро пожаловать»!" },
+          { "tr": "Merhaba. Tabii. Ne kadar çekmek istiyorsunuz?", "ru": "Здравствуйте. Конечно. Сколько вы хотите снять?" }
+        ]},
+        { "speaker": "a", "tr": "Evet, lütfen. Annem gelecek hafta geliyor. Dolmuşta ve pazarda bozuk para lazım.", "ru": "Да, пожалуйста. На следующей неделе приезжает мама. В долмуше и на рынке нужна мелочь.", "distractors": [
+          { "tr": "Merhaba. Biraz para çekmek istiyorum.", "ru": "Здравствуйте. Я хочу снять немного денег." },
+          { "tr": "Teşekkür ederim. İyi günler!", "ru": "Спасибо. Всего доброго!" }
+        ]},
+        { "speaker": "b", "tr": "Ne güzel! Anneniz İstanbul'u daha önce gördü mü?", "ru": "Как здорово! Ваша мама уже бывала в Стамбуле?", "distractors": [
+          { "tr": "Merhaba. Tabii. Ne kadar çekmek istiyorsunuz?", "ru": "Здравствуйте. Конечно. Сколько вы хотите снять?" },
+          { "tr": "Tabii. Ellilik ve yirmilik olur mu?", "ru": "Конечно. По пятьдесят и по двадцать подойдёт?" }
+        ]},
+        { "speaker": "a", "tr": "Hayır, ilk defa geliyor. İki hafta kalacak. Siz İstanbullu musunuz?", "ru": "Нет, приезжает впервые. Пробудет две недели. А вы из Стамбула?", "distractors": [
+          { "tr": "Merhaba. Biraz para çekmek istiyorum.", "ru": "Здравствуйте. Я хочу снять немного денег." },
+          { "tr": "Üç bin lira. Daha küçük kağıt para verebilir misiniz lütfen?", "ru": "Три тысячи лир. Не могли бы вы мне выдать более мелкие купюры?" }
+        ]},
+        { "speaker": "b", "tr": "Hayır, Rizeliyim ama yirmi yıldır burada yaşıyorum. Buyurun, üç bin lira.", "ru": "Нет, я из Ризе, но уже двадцать лет живу здесь. Вот, пожалуйста, три тысячи лир.", "distractors": [
+          { "tr": "Merhaba. Tabii. Ne kadar çekmek istiyorsunuz?", "ru": "Здравствуйте. Конечно. Сколько вы хотите снять?" },
+          { "tr": "Tabii. Ellilik ve yirmilik olur mu?", "ru": "Конечно. По пятьдесят и по двадцать подойдёт?" }
+        ]},
+        { "speaker": "a", "tr": "Teşekkür ederim. İyi günler!", "ru": "Спасибо. Всего доброго!", "distractors": [
+          { "tr": "Merhaba. Biraz para çekmek istiyorum.", "ru": "Здравствуйте. Я хочу снять немного денег." },
+          { "tr": "Üç bin lira. Daha küçük kağıt para verebilir misiniz lütfen?", "ru": "Три тысячи лир. Не могли бы вы мне выдать более мелкие купюры?" }
+        ]},
+        { "speaker": "b", "tr": "İyi günler! Annenize hoş geldiniz deyin!", "ru": "Всего доброго! Передайте маме «добро пожаловать»!", "distractors": [
+          { "tr": "Merhaba. Tabii. Ne kadar çekmek istiyorsunuz?", "ru": "Здравствуйте. Конечно. Сколько вы хотите снять?" },
+          { "tr": "Tabii. Ellilik ve yirmilik olur mu?", "ru": "Конечно. По пятьдесят и по двадцать подойдёт?" }
+        ]}
+      ]
+    },
+    {
+      "id": "kak-pomenyat-dengi-mama-rubli-evro",
+      "title": "Мама: рубли или евро?",
+      "level": "A2",
+      "speakers": { "a": "Ольга", "b": "Мама" },
+      "turns": [
+        { "speaker": "a", "tr": "Anne, bu akşam döviz bürosuna gidelim mi?", "ru": "Мам, сходим сегодня вечером в обменник?", "distractors": [
+          { "tr": "İki yüz avro yeter. Yüz avroyu sakla.", "ru": "Двухсот евро хватит. Сто евро оставь." },
+          { "tr": "Anne, Türkçe bilmiyorsun! İşten dönünce birlikte gideriz.", "ru": "Мам, ты же не знаешь турецкий! Когда вернусь с работы, сходим вместе." }
+        ]},
+        { "speaker": "b", "tr": "Evet. Bende ruble ve avro var. Burada ruble bozdurabilir miyim?", "ru": "Да. У меня есть рубли и евро. Здесь можно поменять рубли?", "distractors": [
+          { "tr": "Haklısın, kızım. Ne kadar bozdurayım?", "ru": "Ты права, доченька. Сколько мне поменять?" },
+          { "tr": "İki yüz avro yeter. Yüz avroyu sakla.", "ru": "Двухсот евро хватит. Сто евро оставь." }
+        ]},
+        { "speaker": "a", "tr": "Pek kolay değil. Burada çoğu büro ruble almıyor. Kaç avro getirdin?", "ru": "Не очень просто. Здесь большинство обменников рубли не берёт. Сколько евро ты привезла?", "distractors": [
+          { "tr": "İki yüz avro yeter. Yüz avroyu sakla.", "ru": "Двухсот евро хватит. Сто евро оставь." },
+          { "tr": "Anne, Türkçe bilmiyorsun! İşten dönünce birlikte gideriz.", "ru": "Мам, ты же не знаешь турецкий! Когда вернусь с работы, сходим вместе." }
+        ]},
+        { "speaker": "b", "tr": "Üç yüz avro getirdim. Kartla ödeyemez miyim?", "ru": "Я привезла триста евро. А картой я платить не могу?", "distractors": [
+          { "tr": "Tamam. Sonra seni kahveye davet ediyorum!", "ru": "Хорошо. А потом я угощаю тебя кофе!" },
+          { "tr": "Haklısın, kızım. Ne kadar bozdurayım?", "ru": "Ты права, доченька. Сколько мне поменять?" }
+        ]},
+        { "speaker": "a", "tr": "Hayır, senin kartın burada çalışmıyor. Nakit lazım.", "ru": "Нет, твоя карта здесь не работает. Нужны наличные.", "distractors": [
+          { "tr": "Anne, bu akşam döviz bürosuna gidelim mi?", "ru": "Мам, сходим сегодня вечером в обменник?" },
+          { "tr": "İki yüz avro yeter. Yüz avroyu sakla.", "ru": "Двухсот евро хватит. Сто евро оставь." }
+        ]},
+        { "speaker": "b", "tr": "Peki. Sen işteyken ben yalnız gidebilir miyim?", "ru": "Ладно. Пока ты на работе, можно я схожу одна?", "distractors": [
+          { "tr": "Evet. Bende ruble ve avro var. Burada ruble bozdurabilir miyim?", "ru": "Да. У меня есть рубли и евро. Здесь можно поменять рубли?" },
+          { "tr": "Tamam. Sonra seni kahveye davet ediyorum!", "ru": "Хорошо. А потом я угощаю тебя кофе!" }
+        ]},
+        { "speaker": "a", "tr": "Anne, Türkçe bilmiyorsun! İşten dönünce birlikte gideriz.", "ru": "Мам, ты же не знаешь турецкий! Когда вернусь с работы, сходим вместе.", "distractors": [
+          { "tr": "İki yüz avro yeter. Yüz avroyu sakla.", "ru": "Двухсот евро хватит. Сто евро оставь." },
+          { "tr": "Hayır, senin kartın burada çalışmıyor. Nakit lazım.", "ru": "Нет, твоя карта здесь не работает. Нужны наличные." }
+        ]},
+        { "speaker": "b", "tr": "Haklısın, kızım. Ne kadar bozdurayım?", "ru": "Ты права, доченька. Сколько мне поменять?", "distractors": [
+          { "tr": "Evet. Bende ruble ve avro var. Burada ruble bozdurabilir miyim?", "ru": "Да. У меня есть рубли и евро. Здесь можно поменять рубли?" },
+          { "tr": "Üç yüz avro getirdim. Kartla ödeyemez miyim?", "ru": "Я привезла триста евро. А картой я платить не могу?" }
+        ]},
+        { "speaker": "a", "tr": "İki yüz avro yeter. Yüz avroyu sakla.", "ru": "Двухсот евро хватит. Сто евро оставь.", "distractors": [
+          { "tr": "Anne, bu akşam döviz bürosuna gidelim mi?", "ru": "Мам, сходим сегодня вечером в обменник?" },
+          { "tr": "Pek kolay değil. Burada çoğu büro ruble almıyor. Kaç avro getirdin?", "ru": "Не очень просто. Здесь большинство обменников рубли не берёт. Сколько евро ты привезла?" }
+        ]},
+        { "speaker": "b", "tr": "Tamam. Sonra seni kahveye davet ediyorum!", "ru": "Хорошо. А потом я угощаю тебя кофе!", "distractors": [
+          { "tr": "Evet. Bende ruble ve avro var. Burada ruble bozdurabilir miyim?", "ru": "Да. У меня есть рубли и евро. Здесь можно поменять рубли?" },
+          { "tr": "Üç yüz avro getirdim. Kartla ödeyemez miyim?", "ru": "Я привезла триста евро. А картой я платить не могу?" }
+        ]}
+      ]
+    },
+    {
+      "id": "kak-pomenyat-dengi-mama-obmennik",
+      "title": "Мама в обменнике",
+      "level": "A2",
+      "speakers": { "a": "Ольга", "b": "Тевфик" },
+      "turns": [
+        { "speaker": "a", "tr": "İyi akşamlar. Avro bozdurmak istiyorum. Annem için.", "ru": "Добрый вечер. Я хочу поменять евро. Для мамы.", "distractors": [
+          { "tr": "Evet, buyurun.", "ru": "Да, вот, пожалуйста." },
+          { "tr": "Anladım. Ellilik banknotlar verin lütfen. Annem pazara gidecek.", "ru": "Понятно. Дайте, пожалуйста, купюры по пятьдесят. Мама пойдёт на рынок." }
+        ]},
+        { "speaker": "b", "tr": "İyi akşamlar! Sizi hatırlıyorum. Moskova'ya gitmeden önce buradan dolar aldınız, değil mi?", "ru": "Добрый вечер! Я вас помню. Перед поездкой в Москву вы покупали здесь доллары, да?", "distractors": [
+          { "tr": "Tabii. On bin dört yüz lira eder. Annenizin pasaportu yanında mı?", "ru": "Конечно. Получится десять тысяч четыреста лир. У вашей мамы есть с собой паспорт?" },
+          { "tr": "Maalesef hayır. Sadece dolar, avro ve sterlin alıyoruz.", "ru": "К сожалению, нет. Мы берём только доллары, евро и фунты." }
+        ]},
+        { "speaker": "a", "tr": "Evet! Bu da annem, İstanbul'a ilk defa geldi. Bugünkü avro kuru ne?", "ru": "Да! А это моя мама, она впервые приехала в Стамбул. Какой сегодня курс евро?", "distractors": [
+          { "tr": "Teşekkürler, iyi akşamlar!", "ru": "Спасибо, хорошего вечера!" },
+          { "tr": "Evet, buyurun.", "ru": "Да, вот, пожалуйста." }
+        ]},
+        { "speaker": "b", "tr": "Hoş geldiniz! Bugün elli iki lira. Kaç avro bozduracaksınız?", "ru": "Добро пожаловать! Сегодня пятьдесят две лиры. Сколько евро будете менять?", "distractors": [
+          { "tr": "İyi akşamlar! Annenize İstanbul'da iyi tatiller!", "ru": "Хорошего вечера! Пусть мама хорошо отдохнёт в Стамбуле!" },
+          { "tr": "Teşekkürler. Buyurun, paranız. Burayı imzalayın lütfen.", "ru": "Спасибо. Вот ваши деньги. Распишитесь здесь, пожалуйста." }
+        ]},
+        { "speaker": "a", "tr": "İki yüz avro. Ruble de alıyor musunuz?", "ru": "Двести евро. А рубли вы тоже берёте?", "distractors": [
+          { "tr": "Teşekkürler, iyi akşamlar!", "ru": "Спасибо, хорошего вечера!" },
+          { "tr": "İyi akşamlar. Avro bozdurmak istiyorum. Annem için.", "ru": "Добрый вечер. Я хочу поменять евро. Для мамы." }
+        ]},
+        { "speaker": "b", "tr": "Maalesef hayır. Sadece dolar, avro ve sterlin alıyoruz.", "ru": "К сожалению, нет. Мы берём только доллары, евро и фунты.", "distractors": [
+          { "tr": "İyi akşamlar! Annenize İstanbul'da iyi tatiller!", "ru": "Хорошего вечера! Пусть мама хорошо отдохнёт в Стамбуле!" },
+          { "tr": "İyi akşamlar! Sizi hatırlıyorum. Moskova'ya gitmeden önce buradan dolar aldınız, değil mi?", "ru": "Добрый вечер! Я вас помню. Перед поездкой в Москву вы покупали здесь доллары, да?" }
+        ]},
+        { "speaker": "a", "tr": "Anladım. Ellilik banknotlar verin lütfen. Annem pazara gidecek.", "ru": "Понятно. Дайте, пожалуйста, купюры по пятьдесят. Мама пойдёт на рынок.", "distractors": [
+          { "tr": "İyi akşamlar. Avro bozdurmak istiyorum. Annem için.", "ru": "Добрый вечер. Я хочу поменять евро. Для мамы." },
+          { "tr": "Evet! Bu da annem, İstanbul'a ilk defa geldi. Bugünkü avro kuru ne?", "ru": "Да! А это моя мама, она впервые приехала в Стамбул. Какой сегодня курс евро?" }
+        ]},
+        { "speaker": "b", "tr": "Tabii. On bin dört yüz lira eder. Annenizin pasaportu yanında mı?", "ru": "Конечно. Получится десять тысяч четыреста лир. У вашей мамы есть с собой паспорт?", "distractors": [
+          { "tr": "İyi akşamlar! Sizi hatırlıyorum. Moskova'ya gitmeden önce buradan dolar aldınız, değil mi?", "ru": "Добрый вечер! Я вас помню. Перед поездкой в Москву вы покупали здесь доллары, да?" },
+          { "tr": "Hoş geldiniz! Bugün elli iki lira. Kaç avro bozduracaksınız?", "ru": "Добро пожаловать! Сегодня пятьдесят две лиры. Сколько евро будете менять?" }
+        ]},
+        { "speaker": "a", "tr": "Evet, buyurun.", "ru": "Да, вот, пожалуйста.", "distractors": [
+          { "tr": "İyi akşamlar. Avro bozdurmak istiyorum. Annem için.", "ru": "Добрый вечер. Я хочу поменять евро. Для мамы." },
+          { "tr": "Evet! Bu da annem, İstanbul'a ilk defa geldi. Bugünkü avro kuru ne?", "ru": "Да! А это моя мама, она впервые приехала в Стамбул. Какой сегодня курс евро?" }
+        ]},
+        { "speaker": "b", "tr": "Teşekkürler. Buyurun, paranız. Burayı imzalayın lütfen.", "ru": "Спасибо. Вот ваши деньги. Распишитесь здесь, пожалуйста.", "distractors": [
+          { "tr": "Hoş geldiniz! Bugün elli iki lira. Kaç avro bozduracaksınız?", "ru": "Добро пожаловать! Сегодня пятьдесят две лиры. Сколько евро будете менять?" },
+          { "tr": "Maalesef hayır. Sadece dolar, avro ve sterlin alıyoruz.", "ru": "К сожалению, нет. Мы берём только доллары, евро и фунты." }
+        ]},
+        { "speaker": "a", "tr": "Teşekkürler, iyi akşamlar!", "ru": "Спасибо, хорошего вечера!", "distractors": [
+          { "tr": "Evet! Bu da annem, İstanbul'a ilk defa geldi. Bugünkü avro kuru ne?", "ru": "Да! А это моя мама, она впервые приехала в Стамбул. Какой сегодня курс евро?" },
+          { "tr": "İki yüz avro. Ruble de alıyor musunuz?", "ru": "Двести евро. А рубли вы тоже берёте?" }
+        ]},
+        { "speaker": "b", "tr": "İyi akşamlar! Annenize İstanbul'da iyi tatiller!", "ru": "Хорошего вечера! Пусть мама хорошо отдохнёт в Стамбуле!", "distractors": [
+          { "tr": "Hoş geldiniz! Bugün elli iki lira. Kaç avro bozduracaksınız?", "ru": "Добро пожаловать! Сегодня пятьдесят две лиры. Сколько евро будете менять?" },
+          { "tr": "Maalesef hayır. Sadece dolar, avro ve sterlin alıyoruz.", "ru": "К сожалению, нет. Мы берём только доллары, евро и фунты." }
+        ]}
+      ]
+    }
+  ]
+}

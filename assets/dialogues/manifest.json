@@ -52,5 +52,11 @@
     "title": "В городе",
     "count": 10,
     "sizeKB": 40.1
+  },
+  {
+    "id": "kak-pomenyat-dengi",
+    "title": "Как поменять деньги",
+    "count": 10,
+    "sizeKB": 61.0
   }
 ]
