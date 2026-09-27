@@ -1,0 +1,458 @@
+{
+  "id": "v-gorode",
+  "title": "В городе",
+  "dialogues": [
+    {
+      "id": "v-gorode-dorogu-k-metro",
+      "title": "Где метро? Спросить прохожего",
+      "level": "A1",
+      "speakers": { "a": "Ольга", "b": "Нурай" },
+      "turns": [
+        { "speaker": "a", "tr": "Affedersiniz, metro nerede?", "ru": "Извините, где метро?", "distractors": [
+          { "tr": "Buradan beş dakika. Önce düz gidin, sonra sola dönün.", "ru": "Отсюда пять минут. Сначала идите прямо, потом поверните налево." },
+          { "tr": "Evet, sola. Metro solda, bankanın yanında.", "ru": "Да, налево. Метро слева, рядом с банком." }
+        ]},
+        { "speaker": "b", "tr": "Metro mu? Çok uzak değil.", "ru": "Метро? Не очень далеко.", "distractors": [
+          { "tr": "Sola mı?", "ru": "Налево?" },
+          { "tr": "Çok teşekkür ederim!", "ru": "Большое спасибо!" }
+        ]},
+        { "speaker": "a", "tr": "Kaç dakika?", "ru": "Сколько минут?", "distractors": [
+          { "tr": "Sola mı?", "ru": "Налево?" },
+          { "tr": "Rica ederim. İyi günler!", "ru": "Не за что. Хорошего дня!" }
+        ]},
+        { "speaker": "b", "tr": "Buradan beş dakika. Önce düz gidin, sonra sola dönün.", "ru": "Отсюда пять минут. Сначала идите прямо, потом поверните налево.", "distractors": [
+          { "tr": "Evet, sola. Metro solda, bankanın yanında.", "ru": "Да, налево. Метро слева, рядом с банком." },
+          { "tr": "Rica ederim. İyi günler!", "ru": "Не за что. Хорошего дня!" }
+        ]},
+        { "speaker": "a", "tr": "Sola mı?", "ru": "Налево?", "distractors": [
+          { "tr": "Affedersiniz, metro nerede?", "ru": "Извините, где метро?" },
+          { "tr": "Kaç dakika?", "ru": "Сколько минут?" }
+        ]},
+        { "speaker": "b", "tr": "Evet, sola. Metro solda, bankanın yanında.", "ru": "Да, налево. Метро слева, рядом с банком.", "distractors": [
+          { "tr": "Metro mu? Çok uzak değil.", "ru": "Метро? Не очень далеко." },
+          { "tr": "Rica ederim. İyi günler!", "ru": "Не за что. Хорошего дня!" }
+        ]},
+        { "speaker": "a", "tr": "Çok teşekkür ederim!", "ru": "Большое спасибо!", "distractors": [
+          { "tr": "Affedersiniz, metro nerede?", "ru": "Извините, где метро?" },
+          { "tr": "Sola mı?", "ru": "Налево?" }
+        ]},
+        { "speaker": "b", "tr": "Rica ederim. İyi günler!", "ru": "Не за что. Хорошего дня!", "distractors": [
+          { "tr": "Buradan beş dakika. Önce düz gidin, sonra sola dönün.", "ru": "Отсюда пять минут. Сначала идите прямо, потом поверните налево." },
+          { "tr": "Evet, sola. Metro solda, bankanın yanında.", "ru": "Да, налево. Метро слева, рядом с банком." }
+        ]}
+      ]
+    },
+    {
+      "id": "v-gorode-uskudar-iskele",
+      "title": "Ускюдар: где пристань?",
+      "level": "A1",
+      "speakers": { "a": "Ольга", "b": "Хильми" },
+      "turns": [
+        { "speaker": "a", "tr": "Affedersiniz, burası neresi?", "ru": "Извините, что это за место?", "distractors": [
+          { "tr": "Bu yol doğru mu?", "ru": "Это правильная дорога?" },
+          { "tr": "Kaç kilometre?", "ru": "Сколько километров?" }
+        ]},
+        { "speaker": "b", "tr": "Burası Bağlarbaşı. Nereye gidiyorsunuz?", "ru": "Это Бааларбашы. Куда вы идёте?", "distractors": [
+          { "tr": "Bir kilometre. Çok yakın!", "ru": "Один километр. Совсем близко!" },
+          { "tr": "Düz gidin, sonra sağa dönün.", "ru": "Идите прямо, потом поверните направо." }
+        ]},
+        { "speaker": "a", "tr": "İskeleye gidiyorum. İskele nerede?", "ru": "Я иду на пристань. Где пристань?", "distractors": [
+          { "tr": "Kaç kilometre?", "ru": "Сколько километров?" },
+          { "tr": "Teşekkürler!", "ru": "Спасибо!" }
+        ]},
+        { "speaker": "b", "tr": "Düz gidin, sonra sağa dönün.", "ru": "Идите прямо, потом поверните направо.", "distractors": [
+          { "tr": "Burası Bağlarbaşı. Nereye gidiyorsunuz?", "ru": "Это Бааларбашы. Куда вы идёте?" },
+          { "tr": "Rica ederim. İyi akşamlar!", "ru": "Не за что. Хорошего вечера!" }
+        ]},
+        { "speaker": "a", "tr": "Bu yol doğru mu?", "ru": "Это правильная дорога?", "distractors": [
+          { "tr": "Affedersiniz, burası neresi?", "ru": "Извините, что это за место?" },
+          { "tr": "Teşekkürler!", "ru": "Спасибо!" }
+        ]},
+        { "speaker": "b", "tr": "Evet, doğru. İskele aşağıda, denizin yanında.", "ru": "Да, правильная. Пристань внизу, у моря.", "distractors": [
+          { "tr": "Burası Bağlarbaşı. Nereye gidiyorsunuz?", "ru": "Это Бааларбашы. Куда вы идёте?" },
+          { "tr": "Bir kilometre. Çok yakın!", "ru": "Один километр. Совсем близко!" }
+        ]},
+        { "speaker": "a", "tr": "Kaç kilometre?", "ru": "Сколько километров?", "distractors": [
+          { "tr": "İskeleye gidiyorum. İskele nerede?", "ru": "Я иду на пристань. Где пристань?" },
+          { "tr": "Teşekkürler!", "ru": "Спасибо!" }
+        ]},
+        { "speaker": "b", "tr": "Bir kilometre. Çok yakın!", "ru": "Один километр. Совсем близко!", "distractors": [
+          { "tr": "Düz gidin, sonra sağa dönün.", "ru": "Идите прямо, потом поверните направо." },
+          { "tr": "Evet, doğru. İskele aşağıda, denizin yanında.", "ru": "Да, правильная. Пристань внизу, у моря." }
+        ]},
+        { "speaker": "a", "tr": "Teşekkürler!", "ru": "Спасибо!", "distractors": [
+          { "tr": "Bu yol doğru mu?", "ru": "Это правильная дорога?" },
+          { "tr": "Kaç kilometre?", "ru": "Сколько километров?" }
+        ]},
+        { "speaker": "b", "tr": "Rica ederim. İyi akşamlar!", "ru": "Не за что. Хорошего вечера!", "distractors": [
+          { "tr": "Burası Bağlarbaşı. Nereye gidiyorsunuz?", "ru": "Это Бааларбашы. Куда вы идёте?" },
+          { "tr": "Bir kilometre. Çok yakın!", "ru": "Один километр. Совсем близко!" }
+        ]}
+      ]
+    },
+    {
+      "id": "v-gorode-avtobus-taksim",
+      "title": "Каракёй: автобус на Таксим",
+      "level": "A1",
+      "speakers": { "a": "Ольга", "b": "Шейма" },
+      "turns": [
+        { "speaker": "a", "tr": "Affedersiniz, durak burada mı?", "ru": "Извините, остановка здесь?", "distractors": [
+          { "tr": "Hangi durakta inmeliyim?", "ru": "На какой остановке мне выходить?" },
+          { "tr": "Teşekkürler! Sinemaya geç kalıyorum.", "ru": "Спасибо! Я опаздываю в кино." }
+        ]},
+        { "speaker": "b", "tr": "Evet, burada. Nereye gidiyorsunuz?", "ru": "Да, здесь. Куда вы едете?", "distractors": [
+          { "tr": "Son durakta. Taksim son durak.", "ru": "На конечной. Таксим — конечная остановка." },
+          { "tr": "Hayır, uzak değil. On beş dakika.", "ru": "Нет, недалеко. Пятнадцать минут." }
+        ]},
+        { "speaker": "a", "tr": "Taksim'e. Bu otobüs Taksim'e gidiyor mu?", "ru": "На Таксим. Этот автобус идёт на Таксим?", "distractors": [
+          { "tr": "Uzak mı?", "ru": "Это далеко?" },
+          { "tr": "Teşekkürler! Sinemaya geç kalıyorum.", "ru": "Спасибо! Я опаздываю в кино." }
+        ]},
+        { "speaker": "b", "tr": "Evet, gidiyor. Bakın, geliyor!", "ru": "Да, идёт. Смотрите, подъезжает!", "distractors": [
+          { "tr": "Evet, burada. Nereye gidiyorsunuz?", "ru": "Да, здесь. Куда вы едете?" },
+          { "tr": "Hayır, uzak değil. On beş dakika.", "ru": "Нет, недалеко. Пятнадцать минут." }
+        ]},
+        { "speaker": "a", "tr": "Hangi durakta inmeliyim?", "ru": "На какой остановке мне выходить?", "distractors": [
+          { "tr": "Affedersiniz, durak burada mı?", "ru": "Извините, остановка здесь?" },
+          { "tr": "Teşekkürler! Sinemaya geç kalıyorum.", "ru": "Спасибо! Я опаздываю в кино." }
+        ]},
+        { "speaker": "b", "tr": "Son durakta. Taksim son durak.", "ru": "На конечной. Таксим — конечная остановка.", "distractors": [
+          { "tr": "Evet, gidiyor. Bakın, geliyor!", "ru": "Да, идёт. Смотрите, подъезжает!" },
+          { "tr": "Rica ederim. İyi seyirler!", "ru": "Не за что. Приятного просмотра!" }
+        ]},
+        { "speaker": "a", "tr": "Uzak mı?", "ru": "Это далеко?", "distractors": [
+          { "tr": "Taksim'e. Bu otobüs Taksim'e gidiyor mu?", "ru": "На Таксим. Этот автобус идёт на Таксим?" },
+          { "tr": "Affedersiniz, durak burada mı?", "ru": "Извините, остановка здесь?" }
+        ]},
+        { "speaker": "b", "tr": "Hayır, uzak değil. On beş dakika.", "ru": "Нет, недалеко. Пятнадцать минут.", "distractors": [
+          { "tr": "Evet, gidiyor. Bakın, geliyor!", "ru": "Да, идёт. Смотрите, подъезжает!" },
+          { "tr": "Son durakta. Taksim son durak.", "ru": "На конечной. Таксим — конечная остановка." }
+        ]},
+        { "speaker": "a", "tr": "Teşekkürler! Sinemaya geç kalıyorum.", "ru": "Спасибо! Я опаздываю в кино.", "distractors": [
+          { "tr": "Taksim'e. Bu otobüs Taksim'e gidiyor mu?", "ru": "На Таксим. Этот автобус идёт на Таксим?" },
+          { "tr": "Uzak mı?", "ru": "Это далеко?" }
+        ]},
+        { "speaker": "b", "tr": "Rica ederim. İyi seyirler!", "ru": "Не за что. Приятного просмотра!", "distractors": [
+          { "tr": "Evet, burada. Nereye gidiyorsunuz?", "ru": "Да, здесь. Куда вы едете?" },
+          { "tr": "Son durakta. Taksim son durak.", "ru": "На конечной. Таксим — конечная остановка." }
+        ]}
+      ]
+    },
+    {
+      "id": "v-gorode-kadikoy-iskele",
+      "title": "На пристани в Кадыкёе",
+      "level": "A1",
+      "speakers": { "a": "Ольга", "b": "Мюмтаз" },
+      "turns": [
+        { "speaker": "a", "tr": "Affedersiniz, bilet gişesi nerede?", "ru": "Извините, где билетная касса?", "distractors": [
+          { "tr": "Eminönü'ne. Vapur ne zaman kalkıyor?", "ru": "В Эминёню. Когда отходит пароход?" },
+          { "tr": "Tamam. Eminönü'ne kaç dakika?", "ru": "Хорошо. А до Эминёню сколько минут?" }
+        ]},
+        { "speaker": "b", "tr": "Orada, solda. İstanbulkart'ınız var mı?", "ru": "Вон там, слева. У вас есть Истанбулкарт?", "distractors": [
+          { "tr": "On bir buçukta. On beş dakika var.", "ru": "В половине двенадцатого. Ещё пятнадцать минут." },
+          { "tr": "Vapurla yirmi dakika. İyi yolculuklar!", "ru": "На пароходе двадцать минут. Счастливого пути!" }
+        ]},
+        { "speaker": "a", "tr": "Evet, İstanbulkart'ım var. Kartıma para yüklemek istiyorum.", "ru": "Да, у меня есть Истанбулкарт. Я хочу пополнить карту.", "distractors": [
+          { "tr": "Eyvah! Bir sonraki vapur saat kaçta?", "ru": "Ой! Во сколько следующий пароход?" },
+          { "tr": "Tamam. Eminönü'ne kaç dakika?", "ru": "Хорошо. А до Эминёню сколько минут?" }
+        ]},
+        { "speaker": "b", "tr": "Tamam, gişede yüklüyorsunuz. Nereye gidiyorsunuz?", "ru": "Хорошо, пополните в кассе. Куда вы едете?", "distractors": [
+          { "tr": "Şimdi kalkıyor! Bakın, orada.", "ru": "Прямо сейчас отходит! Смотрите, вон он." },
+          { "tr": "Vapurla yirmi dakika. İyi yolculuklar!", "ru": "На пароходе двадцать минут. Счастливого пути!" }
+        ]},
+        { "speaker": "a", "tr": "Eminönü'ne. Vapur ne zaman kalkıyor?", "ru": "В Эминёню. Когда отходит пароход?", "distractors": [
+          { "tr": "Affedersiniz, bilet gişesi nerede?", "ru": "Извините, где билетная касса?" },
+          { "tr": "Evet, İstanbulkart'ım var. Kartıma para yüklemek istiyorum.", "ru": "Да, у меня есть Истанбулкарт. Я хочу пополнить карту." }
+        ]},
+        { "speaker": "b", "tr": "Şimdi kalkıyor! Bakın, orada.", "ru": "Прямо сейчас отходит! Смотрите, вон он.", "distractors": [
+          { "tr": "Orada, solda. İstanbulkart'ınız var mı?", "ru": "Вон там, слева. У вас есть Истанбулкарт?" },
+          { "tr": "Vapurla yirmi dakika. İyi yolculuklar!", "ru": "На пароходе двадцать минут. Счастливого пути!" }
+        ]},
+        { "speaker": "a", "tr": "Eyvah! Bir sonraki vapur saat kaçta?", "ru": "Ой! Во сколько следующий пароход?", "distractors": [
+          { "tr": "Evet, İstanbulkart'ım var. Kartıma para yüklemek istiyorum.", "ru": "Да, у меня есть Истанбулкарт. Я хочу пополнить карту." },
+          { "tr": "Eminönü'ne. Vapur ne zaman kalkıyor?", "ru": "В Эминёню. Когда отходит пароход?" }
+        ]},
+        { "speaker": "b", "tr": "On bir buçukta. On beş dakika var.", "ru": "В половине двенадцатого. Ещё пятнадцать минут.", "distractors": [
+          { "tr": "Tamam, gişede yüklüyorsunuz. Nereye gidiyorsunuz?", "ru": "Хорошо, пополните в кассе. Куда вы едете?" },
+          { "tr": "Orada, solda. İstanbulkart'ınız var mı?", "ru": "Вон там, слева. У вас есть Истанбулкарт?" }
+        ]},
+        { "speaker": "a", "tr": "Tamam. Eminönü'ne kaç dakika?", "ru": "Хорошо. А до Эминёню сколько минут?", "distractors": [
+          { "tr": "Affedersiniz, bilet gişesi nerede?", "ru": "Извините, где билетная касса?" },
+          { "tr": "Eyvah! Bir sonraki vapur saat kaçta?", "ru": "Ой! Во сколько следующий пароход?" }
+        ]},
+        { "speaker": "b", "tr": "Vapurla yirmi dakika. İyi yolculuklar!", "ru": "На пароходе двадцать минут. Счастливого пути!", "distractors": [
+          { "tr": "Tamam, gişede yüklüyorsunuz. Nereye gidiyorsunuz?", "ru": "Хорошо, пополните в кассе. Куда вы едете?" },
+          { "tr": "Şimdi kalkıyor! Bakın, orada.", "ru": "Прямо сейчас отходит! Смотрите, вон он." }
+        ]}
+      ]
+    },
+    {
+      "id": "v-gorode-metro-anya",
+      "title": "В метро с Аней",
+      "level": "A1",
+      "speakers": { "a": "Ольга", "b": "Аня" },
+      "turns": [
+        { "speaker": "a", "tr": "Anya, gel! Metro burada.", "ru": "Аня, иди сюда! Метро здесь.", "distractors": [
+          { "tr": "Aşağıda, sağda. Gel!", "ru": "Внизу, справа. Пошли!" },
+          { "tr": "Hayır. Metroyla on dakika sürüyor.", "ru": "Нет. На метро это занимает десять минут." }
+        ]},
+        { "speaker": "b", "tr": "Tamam. Ama ben su almak istiyorum. Gazete bayii nerede?", "ru": "Хорошо. Но я хочу купить воды. Где газетный киоск?", "distractors": [
+          { "tr": "Hayır, kartım yok.", "ru": "Нет, карты у меня нет." },
+          { "tr": "Taksim uzak mı?", "ru": "Таксим далеко?" }
+        ]},
+        { "speaker": "a", "tr": "Orada, köşede. Senin kartın var mı?", "ru": "Вон там, на углу. У тебя есть карта?", "distractors": [
+          { "tr": "Sorun değil, İstanbulkart'ım var.", "ru": "Ничего страшного, у меня есть Истанбулкарт." },
+          { "tr": "Hayır. Metroyla on dakika sürüyor.", "ru": "Нет. На метро это занимает десять минут." }
+        ]},
+        { "speaker": "b", "tr": "Hayır, kartım yok.", "ru": "Нет, карты у меня нет.", "distractors": [
+          { "tr": "Taksim uzak mı?", "ru": "Таксим далеко?" },
+          { "tr": "Harika! Bak, metro geliyor!", "ru": "Отлично! Смотри, поезд идёт!" }
+        ]},
+        { "speaker": "a", "tr": "Sorun değil, İstanbulkart'ım var.", "ru": "Ничего страшного, у меня есть Истанбулкарт.", "distractors": [
+          { "tr": "Aşağıda, sağda. Gel!", "ru": "Внизу, справа. Пошли!" },
+          { "tr": "Hayır. Metroyla on dakika sürüyor.", "ru": "Нет. На метро это занимает десять минут." }
+        ]},
+        { "speaker": "b", "tr": "Süper! Burada \"Taksim, Peron 4\" yazıyor. Peron 4 nerede?", "ru": "Супер! Тут написано «Таксим, платформа 4». Где платформа 4?", "distractors": [
+          { "tr": "Tamam. Ama ben su almak istiyorum. Gazete bayii nerede?", "ru": "Хорошо. Но я хочу купить воды. Где газетный киоск?" },
+          { "tr": "Hayır, kartım yok.", "ru": "Нет, карты у меня нет." }
+        ]},
+        { "speaker": "a", "tr": "Aşağıda, sağda. Gel!", "ru": "Внизу, справа. Пошли!", "distractors": [
+          { "tr": "Sorun değil, İstanbulkart'ım var.", "ru": "Ничего страшного, у меня есть Истанбулкарт." },
+          { "tr": "Hayır. Metroyla on dakika sürüyor.", "ru": "Нет. На метро это занимает десять минут." }
+        ]},
+        { "speaker": "b", "tr": "Taksim uzak mı?", "ru": "Таксим далеко?", "distractors": [
+          { "tr": "Tamam. Ama ben su almak istiyorum. Gazete bayii nerede?", "ru": "Хорошо. Но я хочу купить воды. Где газетный киоск?" },
+          { "tr": "Hayır, kartım yok.", "ru": "Нет, карты у меня нет." }
+        ]},
+        { "speaker": "a", "tr": "Hayır. Metroyla on dakika sürüyor.", "ru": "Нет. На метро это занимает десять минут.", "distractors": [
+          { "tr": "Orada, köşede. Senin kartın var mı?", "ru": "Вон там, на углу. У тебя есть карта?" },
+          { "tr": "Aşağıda, sağda. Gel!", "ru": "Внизу, справа. Пошли!" }
+        ]},
+        { "speaker": "b", "tr": "Harika! Bak, metro geliyor!", "ru": "Отлично! Смотри, поезд идёт!", "distractors": [
+          { "tr": "Hayır, kartım yok.", "ru": "Нет, карты у меня нет." },
+          { "tr": "Süper! Burada \"Taksim, Peron 4\" yazıyor. Peron 4 nerede?", "ru": "Супер! Тут написано «Таксим, платформа 4». Где платформа 4?" }
+        ]}
+      ]
+    },
+    {
+      "id": "v-gorode-taksi-deniz",
+      "title": "Такси с Денизом после кино",
+      "level": "A1",
+      "speakers": { "a": "Ольга", "b": "Дениз" },
+      "turns": [
+        { "speaker": "a", "tr": "Deniz, film çok güzeldi! Ama saat on iki, vapur yok.", "ru": "Дениз, фильм был очень хороший! Но уже двенадцать, пароходов нет.", "distractors": [
+          { "tr": "Moda'ya kaç dakika?", "ru": "Сколько минут до Моды?" },
+          { "tr": "Bugün ben ödüyorum, tamam mı?", "ru": "Сегодня плачу я, ладно?" }
+        ]},
+        { "speaker": "b", "tr": "Sorun değil. Taksiyle gidiyoruz.", "ru": "Не страшно. Поедем на такси.", "distractors": [
+          { "tr": "Hayır, sen sinemada ödedin. Bu sefer ben!", "ru": "Нет, ты платила в кино. В этот раз я!" },
+          { "tr": "Tamam, teşekkürler canım!", "ru": "Хорошо, спасибо, дорогой!" }
+        ]},
+        { "speaker": "a", "tr": "Taksi durağı nerede?", "ru": "Где стоянка такси?", "distractors": [
+          { "tr": "Bugün ben ödüyorum, tamam mı?", "ru": "Сегодня плачу я, ладно?" },
+          { "tr": "Tamam, teşekkürler canım!", "ru": "Хорошо, спасибо, дорогой!" }
+        ]},
+        { "speaker": "b", "tr": "Orada, sağda. Bak, bir taksi var!", "ru": "Вон там, справа. Смотри, есть такси!", "distractors": [
+          { "tr": "Yirmi beş dakika. Gece trafik yok.", "ru": "Двадцать пять минут. Ночью пробок нет." },
+          { "tr": "Hayır, sen sinemada ödedin. Bu sefer ben!", "ru": "Нет, ты платила в кино. В этот раз я!" }
+        ]},
+        { "speaker": "a", "tr": "Moda'ya kaç dakika?", "ru": "Сколько минут до Моды?", "distractors": [
+          { "tr": "Deniz, film çok güzeldi! Ama saat on iki, vapur yok.", "ru": "Дениз, фильм был очень хороший! Но уже двенадцать, пароходов нет." },
+          { "tr": "Tamam, teşekkürler canım!", "ru": "Хорошо, спасибо, дорогой!" }
+        ]},
+        { "speaker": "b", "tr": "Yirmi beş dakika. Gece trafik yok.", "ru": "Двадцать пять минут. Ночью пробок нет.", "distractors": [
+          { "tr": "Sorun değil. Taksiyle gidiyoruz.", "ru": "Не страшно. Поедем на такси." },
+          { "tr": "Hayır, sen sinemada ödedin. Bu sefer ben!", "ru": "Нет, ты платила в кино. В этот раз я!" }
+        ]},
+        { "speaker": "a", "tr": "Bugün ben ödüyorum, tamam mı?", "ru": "Сегодня плачу я, ладно?", "distractors": [
+          { "tr": "Taksi durağı nerede?", "ru": "Где стоянка такси?" },
+          { "tr": "Deniz, film çok güzeldi! Ama saat on iki, vapur yok.", "ru": "Дениз, фильм был очень хороший! Но уже двенадцать, пароходов нет." }
+        ]},
+        { "speaker": "b", "tr": "Hayır, sen sinemada ödedin. Bu sefer ben!", "ru": "Нет, ты платила в кино. В этот раз я!", "distractors": [
+          { "tr": "Orada, sağda. Bak, bir taksi var!", "ru": "Вон там, справа. Смотри, есть такси!" },
+          { "tr": "Yirmi beş dakika. Gece trafik yok.", "ru": "Двадцать пять минут. Ночью пробок нет." }
+        ]},
+        { "speaker": "a", "tr": "Tamam, teşekkürler canım!", "ru": "Хорошо, спасибо, дорогой!", "distractors": [
+          { "tr": "Taksi durağı nerede?", "ru": "Где стоянка такси?" },
+          { "tr": "Moda'ya kaç dakika?", "ru": "Сколько минут до Моды?" }
+        ]}
+      ]
+    },
+    {
+      "id": "v-gorode-taksi-iskele",
+      "title": "Утром на такси до пристани",
+      "level": "A1",
+      "speakers": { "a": "Ольга", "b": "Ферди" },
+      "turns": [
+        { "speaker": "a", "tr": "Günaydın. İskeleye, lütfen.", "ru": "Доброе утро. На пристань, пожалуйста.", "distractors": [
+          { "tr": "Burada durun, lütfen. Buradan yürüyorum.", "ru": "Остановите здесь, пожалуйста. Дальше я пешком." },
+          { "tr": "Buyurun. İyi günler!", "ru": "Вот, пожалуйста. Хорошего дня!" }
+        ]},
+        { "speaker": "b", "tr": "Tamam. Acele ediyor musunuz?", "ru": "Хорошо. Вы спешите?", "distractors": [
+          { "tr": "Tamam. Seksen lira.", "ru": "Хорошо. Восемьдесят лир." },
+          { "tr": "Size de iyi günler!", "ru": "И вам хорошего дня!" }
+        ]},
+        { "speaker": "a", "tr": "Evet, çok geç kaldım. Taksimetreyi açın, lütfen.", "ru": "Да, я очень опоздала. Включите счётчик, пожалуйста.", "distractors": [
+          { "tr": "Burada durun, lütfen. Buradan yürüyorum.", "ru": "Остановите здесь, пожалуйста. Дальше я пешком." },
+          { "tr": "Buyurun. İyi günler!", "ru": "Вот, пожалуйста. Хорошего дня!" }
+        ]},
+        { "speaker": "b", "tr": "Tabii, açık. Bakın.", "ru": "Конечно, включён. Смотрите.", "distractors": [
+          { "tr": "Tamam. Seksen lira.", "ru": "Хорошо. Восемьдесят лир." },
+          { "tr": "Size de iyi günler!", "ru": "И вам хорошего дня!" }
+        ]},
+        { "speaker": "a", "tr": "Vapur saat sekiz buçukta kalkıyor.", "ru": "Пароход отходит в половине девятого.", "distractors": [
+          { "tr": "Günaydın. İskeleye, lütfen.", "ru": "Доброе утро. На пристань, пожалуйста." },
+          { "tr": "Buyurun. İyi günler!", "ru": "Вот, пожалуйста. Хорошего дня!" }
+        ]},
+        { "speaker": "b", "tr": "Sorun değil, beş dakika. Ama bugün çok trafik var.", "ru": "Не страшно, пять минут. Но сегодня большие пробки.", "distractors": [
+          { "tr": "Tamam. Acele ediyor musunuz?", "ru": "Хорошо. Вы спешите?" },
+          { "tr": "Tabii, açık. Bakın.", "ru": "Конечно, включён. Смотрите." }
+        ]},
+        { "speaker": "a", "tr": "Burada durun, lütfen. Buradan yürüyorum.", "ru": "Остановите здесь, пожалуйста. Дальше я пешком.", "distractors": [
+          { "tr": "Günaydın. İskeleye, lütfen.", "ru": "Доброе утро. На пристань, пожалуйста." },
+          { "tr": "Evet, çok geç kaldım. Taksimetreyi açın, lütfen.", "ru": "Да, я очень опоздала. Включите счётчик, пожалуйста." }
+        ]},
+        { "speaker": "b", "tr": "Tamam. Seksen lira.", "ru": "Хорошо. Восемьдесят лир.", "distractors": [
+          { "tr": "Tabii, açık. Bakın.", "ru": "Конечно, включён. Смотрите." },
+          { "tr": "Size de iyi günler!", "ru": "И вам хорошего дня!" }
+        ]},
+        { "speaker": "a", "tr": "Buyurun. İyi günler!", "ru": "Вот, пожалуйста. Хорошего дня!", "distractors": [
+          { "tr": "Evet, çok geç kaldım. Taksimetreyi açın, lütfen.", "ru": "Да, я очень опоздала. Включите счётчик, пожалуйста." },
+          { "tr": "Vapur saat sekiz buçukta kalkıyor.", "ru": "Пароход отходит в половине девятого." }
+        ]},
+        { "speaker": "b", "tr": "Size de iyi günler!", "ru": "И вам хорошего дня!", "distractors": [
+          { "tr": "Sorun değil, beş dakika. Ama bugün çok trafik var.", "ru": "Не страшно, пять минут. Но сегодня большие пробки." },
+          { "tr": "Tamam. Seksen lira.", "ru": "Хорошо. Восемьдесят лир." }
+        ]}
+      ]
+    },
+    {
+      "id": "v-gorode-leyla-marmaray",
+      "title": "С Лейлой на Мармарае в Ускюдар",
+      "level": "A1",
+      "speakers": { "a": "Ольга", "b": "Лейла" },
+      "turns": [
+        { "speaker": "a", "tr": "Leyla, Marmaray'la mı gidiyoruz?", "ru": "Лейла, мы едем на Мармарае?", "distractors": [
+          { "tr": "Üsküdar'a kaç dakika?", "ru": "А до Ускюдара сколько минут?" },
+          { "tr": "Ne güzel! Ben de Efe'yi görmek istiyorum.", "ru": "Как здорово! Я тоже хочу увидеть Эфе." }
+        ]},
+        { "speaker": "b", "tr": "Evet, Marmaray'la Üsküdar'a gidiyoruz. Ablam bizi bekliyor.", "ru": "Да, едем на Мармарае в Ускюдар. Сестра нас ждёт.", "distractors": [
+          { "tr": "On dakika. Efe de evde, seni görmek istiyor!", "ru": "Десять минут. Эфе тоже дома, он хочет тебя увидеть!" },
+          { "tr": "Ne güzel! Ben de Efe'yi görmek istiyorum.", "ru": "Как здорово! Я тоже хочу увидеть Эфе." }
+        ]},
+        { "speaker": "a", "tr": "Tamam. İstasyon nerede? Uzak mı?", "ru": "Хорошо. Где станция? Далеко?", "distractors": [
+          { "tr": "Leyla, Marmaray'la mı gidiyoruz?", "ru": "Лейла, мы едем на Мармарае?" },
+          { "tr": "Ne güzel! Ben de Efe'yi görmek istiyorum.", "ru": "Как здорово! Я тоже хочу увидеть Эфе." }
+        ]},
+        { "speaker": "b", "tr": "Hayır, çok yakın. Buradan beş dakika.", "ru": "Нет, совсем близко. Отсюда пять минут.", "distractors": [
+          { "tr": "Evet, Marmaray'la Üsküdar'a gidiyoruz. Ablam bizi bekliyor.", "ru": "Да, едем на Мармарае в Ускюдар. Сестра нас ждёт." },
+          { "tr": "Hadi, gel! Geç kalıyoruz.", "ru": "Давай, пошли! Мы опаздываем." }
+        ]},
+        { "speaker": "a", "tr": "Üsküdar'a kaç dakika?", "ru": "А до Ускюдара сколько минут?", "distractors": [
+          { "tr": "Leyla, Marmaray'la mı gidiyoruz?", "ru": "Лейла, мы едем на Мармарае?" },
+          { "tr": "Ne güzel! Ben de Efe'yi görmek istiyorum.", "ru": "Как здорово! Я тоже хочу увидеть Эфе." }
+        ]},
+        { "speaker": "b", "tr": "On dakika. Efe de evde, seni görmek istiyor!", "ru": "Десять минут. Эфе тоже дома, он хочет тебя увидеть!", "distractors": [
+          { "tr": "Evet, Marmaray'la Üsküdar'a gidiyoruz. Ablam bizi bekliyor.", "ru": "Да, едем на Мармарае в Ускюдар. Сестра нас ждёт." },
+          { "tr": "Hadi, gel! Geç kalıyoruz.", "ru": "Давай, пошли! Мы опаздываем." }
+        ]},
+        { "speaker": "a", "tr": "Ne güzel! Ben de Efe'yi görmek istiyorum.", "ru": "Как здорово! Я тоже хочу увидеть Эфе.", "distractors": [
+          { "tr": "Tamam. İstasyon nerede? Uzak mı?", "ru": "Хорошо. Где станция? Далеко?" },
+          { "tr": "Üsküdar'a kaç dakika?", "ru": "А до Ускюдара сколько минут?" }
+        ]},
+        { "speaker": "b", "tr": "Hadi, gel! Geç kalıyoruz.", "ru": "Давай, пошли! Мы опаздываем.", "distractors": [
+          { "tr": "Evet, Marmaray'la Üsküdar'a gidiyoruz. Ablam bizi bekliyor.", "ru": "Да, едем на Мармарае в Ускюдар. Сестра нас ждёт." },
+          { "tr": "Hayır, çok yakın. Buradan beş dakika.", "ru": "Нет, совсем близко. Отсюда пять минут." }
+        ]}
+      ]
+    },
+    {
+      "id": "v-gorode-bodrum-otobus",
+      "title": "Бодрум: автобус в центр",
+      "level": "A1",
+      "speakers": { "a": "Ольга", "b": "Гёнюль" },
+      "turns": [
+        { "speaker": "a", "tr": "Affedersiniz, otobüs durağı nerede?", "ru": "Извините, где автобусная остановка?", "distractors": [
+          { "tr": "Kaç dakika?", "ru": "Сколько минут?" },
+          { "tr": "Evet, tatildeyim. Mavi Otel'de kalıyorum.", "ru": "Да, я в отпуске. Живу в «Мави Отель»." }
+        ]},
+        { "speaker": "b", "tr": "Orada, köşede. Nereye gidiyorsunuz?", "ru": "Там, на углу. Куда вы едете?", "distractors": [
+          { "tr": "On beş dakika. Tatildesiniz, değil mi?", "ru": "Пятнадцать минут. Вы в отпуске, да?" },
+          { "tr": "Ne güzel! İyi tatiller!", "ru": "Как здорово! Хорошего отдыха!" }
+        ]},
+        { "speaker": "a", "tr": "Bodrum'a. Şehir merkezine bir otobüs var mı?", "ru": "В Бодрум. Есть автобус в центр города?", "distractors": [
+          { "tr": "Affedersiniz, otobüs durağı nerede?", "ru": "Извините, где автобусная остановка?" },
+          { "tr": "Kaç dakika?", "ru": "Сколько минут?" }
+        ]},
+        { "speaker": "b", "tr": "Evet, var. Dolmuş da var.", "ru": "Да, есть. Есть ещё и долмуш.", "distractors": [
+          { "tr": "Evet, tatildeyim. Mavi Otel'de kalıyorum.", "ru": "Да, я в отпуске. Живу в «Мави Отель»." },
+          { "tr": "Ne güzel! İyi tatiller!", "ru": "Как здорово! Хорошего отдыха!" }
+        ]},
+        { "speaker": "a", "tr": "Kaç dakika?", "ru": "Сколько минут?", "distractors": [
+          { "tr": "Affedersiniz, otobüs durağı nerede?", "ru": "Извините, где автобусная остановка?" },
+          { "tr": "Evet, tatildeyim. Mavi Otel'de kalıyorum.", "ru": "Да, я в отпуске. Живу в «Мави Отель»." }
+        ]},
+        { "speaker": "b", "tr": "On beş dakika. Tatildesiniz, değil mi?", "ru": "Пятнадцать минут. Вы в отпуске, да?", "distractors": [
+          { "tr": "Orada, köşede. Nereye gidiyorsunuz?", "ru": "Там, на углу. Куда вы едете?" },
+          { "tr": "Evet, var. Dolmuş da var.", "ru": "Да, есть. Есть ещё и долмуш." }
+        ]},
+        { "speaker": "a", "tr": "Evet, tatildeyim. Mavi Otel'de kalıyorum.", "ru": "Да, я в отпуске. Живу в «Мави Отель».", "distractors": [
+          { "tr": "Bodrum'a. Şehir merkezine bir otobüs var mı?", "ru": "В Бодрум. Есть автобус в центр города?" },
+          { "tr": "Kaç dakika?", "ru": "Сколько минут?" }
+        ]},
+        { "speaker": "b", "tr": "Ne güzel! İyi tatiller!", "ru": "Как здорово! Хорошего отдыха!", "distractors": [
+          { "tr": "Orada, köşede. Nereye gidiyorsunuz?", "ru": "Там, на углу. Куда вы едете?" },
+          { "tr": "On beş dakika. Tatildesiniz, değil mi?", "ru": "Пятнадцать минут. Вы в отпуске, да?" }
+        ]}
+      ]
+    },
+    {
+      "id": "v-gorode-ankara-gar",
+      "title": "Анкара: с вокзала в центр",
+      "level": "A2",
+      "speakers": { "a": "Ольга", "b": "Исмаил" },
+      "turns": [
+        { "speaker": "a", "tr": "Affedersiniz, danışma bürosu nerede?", "ru": "Извините, где справочная?", "distractors": [
+          { "tr": "Oraya gitmek ne kadar zaman alır?", "ru": "Как долго туда ехать?" },
+          { "tr": "Teşekkür ederim. İyi akşamlar!", "ru": "Спасибо. Хорошего вечера!" }
+        ]},
+        { "speaker": "b", "tr": "Danışma şimdi kapalı. Nereye gidiyorsunuz?", "ru": "Справочная сейчас закрыта. Куда вы едете?", "distractors": [
+          { "tr": "Metroyla on dakika sürüyor. Çantanız ağır mı?", "ru": "На метро это занимает десять минут. У вас тяжёлая сумка?" },
+          { "tr": "İyi akşamlar! Hoş geldiniz!", "ru": "Хорошего вечера! Добро пожаловать!" }
+        ]},
+        { "speaker": "a", "tr": "Kızılay'a. Şehir merkezine nasıl gidebilirim?", "ru": "В Кызылай. Как мне добраться до центра города?", "distractors": [
+          { "tr": "Evet, çok ağır. Nerede bir taksi bulabilirim?", "ru": "Да, очень тяжёлая. Где я могу сесть в такси?" },
+          { "tr": "Teşekkür ederim. İyi akşamlar!", "ru": "Спасибо. Хорошего вечера!" }
+        ]},
+        { "speaker": "b", "tr": "Metroyla. Metro burada, aşağıda.", "ru": "На метро. Метро здесь, внизу.", "distractors": [
+          { "tr": "Danışma şimdi kapalı. Nereye gidiyorsunuz?", "ru": "Справочная сейчас закрыта. Куда вы едете?" },
+          { "tr": "İyi akşamlar! Hoş geldiniz!", "ru": "Хорошего вечера! Добро пожаловать!" }
+        ]},
+        { "speaker": "a", "tr": "Oraya gitmek ne kadar zaman alır?", "ru": "Как долго туда ехать?", "distractors": [
+          { "tr": "Affedersiniz, danışma bürosu nerede?", "ru": "Извините, где справочная?" },
+          { "tr": "Teşekkür ederim. İyi akşamlar!", "ru": "Спасибо. Хорошего вечера!" }
+        ]},
+        { "speaker": "b", "tr": "Metroyla on dakika sürüyor. Çantanız ağır mı?", "ru": "На метро это занимает десять минут. У вас тяжёлая сумка?", "distractors": [
+          { "tr": "Metroyla. Metro burada, aşağıda.", "ru": "На метро. Метро здесь, внизу." },
+          { "tr": "Taksi durağı dışarıda, sağda.", "ru": "Стоянка такси на улице, справа." }
+        ]},
+        { "speaker": "a", "tr": "Evet, çok ağır. Nerede bir taksi bulabilirim?", "ru": "Да, очень тяжёлая. Где я могу сесть в такси?", "distractors": [
+          { "tr": "Kızılay'a. Şehir merkezine nasıl gidebilirim?", "ru": "В Кызылай. Как мне добраться до центра города?" },
+          { "tr": "Oraya gitmek ne kadar zaman alır?", "ru": "Как долго туда ехать?" }
+        ]},
+        { "speaker": "b", "tr": "Taksi durağı dışarıda, sağda.", "ru": "Стоянка такси на улице, справа.", "distractors": [
+          { "tr": "Danışma şimdi kapalı. Nereye gidiyorsunuz?", "ru": "Справочная сейчас закрыта. Куда вы едете?" },
+          { "tr": "Metroyla on dakika sürüyor. Çantanız ağır mı?", "ru": "На метро это занимает десять минут. У вас тяжёлая сумка?" }
+        ]},
+        { "speaker": "a", "tr": "Teşekkür ederim. İyi akşamlar!", "ru": "Спасибо. Хорошего вечера!", "distractors": [
+          { "tr": "Affedersiniz, danışma bürosu nerede?", "ru": "Извините, где справочная?" },
+          { "tr": "Evet, çok ağır. Nerede bir taksi bulabilirim?", "ru": "Да, очень тяжёлая. Где я могу сесть в такси?" }
+        ]},
+        { "speaker": "b", "tr": "İyi akşamlar! Hoş geldiniz!", "ru": "Хорошего вечера! Добро пожаловать!", "distractors": [
+          { "tr": "Metroyla. Metro burada, aşağıda.", "ru": "На метро. Метро здесь, внизу." },
+          { "tr": "Metroyla on dakika sürüyor. Çantanız ağır mı?", "ru": "На метро это занимает десять минут. У вас тяжёлая сумка?" }
+        ]}
+      ]
+    }
+  ]
+}

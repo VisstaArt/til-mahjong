@@ -16,3 +16,7 @@ nocache-server.py
 # в публичный репозиторий (publishable key для кода приложения — не отсюда,
 # он безопасен и зашит прямо в код, см. supabase-sync.js)
 API/
+
+# Кеш Python
+__pycache__/
+*.pyc
