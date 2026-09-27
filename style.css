@@ -1289,6 +1289,10 @@ main {
   text-align: left;
 }
 .memo-table th { background: rgba(0, 0, 0, 0.05); font-weight: 600; }
+/* Таблица по содержимому, а не на всю ширину — иначе короткие колонки растягиваются
+   пустотой, а пример переносится на две строки. */
+.memo-table { width: auto; }
+.memo-table td, .memo-table th { white-space: nowrap; }
 .memo-examples {
   display: flex;
   flex-direction: column;

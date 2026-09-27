@@ -48,11 +48,11 @@ const GRAMMAR_TOPICS = [
       <h3>Şimdiki zaman — делаю сейчас / вообще</h3>
       <p class="memo-formula">основа + <b>(ı/i/u/ü)yor</b> + лицо</p>
       <table class="memo-table">
-        <tr><th>последняя гласная основы</th><th>суффикс</th><th>пример</th></tr>
-        <tr><td>a, ı</td><td>-ıyor</td><td>yap → yap<b>ıyor</b></td></tr>
-        <tr><td>e, i</td><td>-iyor</td><td>gel → gel<b>iyor</b></td></tr>
-        <tr><td>o, u</td><td>-uyor</td><td>dur → dur<b>uyor</b></td></tr>
-        <tr><td>ö, ü</td><td>-üyor</td><td>gör → gör<b>üyor</b></td></tr>
+        <tr><th>гласная<br>основы</th><th>суффикс</th><th>пример</th></tr>
+        <tr><td>a, ı</td><td>-ıyor</td><td>yap<b>ıyor</b></td></tr>
+        <tr><td>e, i</td><td>-iyor</td><td>gel<b>iyor</b></td></tr>
+        <tr><td>o, u</td><td>-uyor</td><td>dur<b>uyor</b></td></tr>
+        <tr><td>ö, ü</td><td>-üyor</td><td>gör<b>üyor</b></td></tr>
       </table>
       <ul>
         <li>Основа на <b>-a/-e</b>: гласная выпадает — bekle → bekl<b>iyor</b>, ağla → ağl<b>ıyor</b>, oyna → oyn<b>uyor</b>.</li>
@@ -60,8 +60,13 @@ const GRAMMAR_TOPICS = [
         <li><b>git, et</b>: t → d — <b>gid</b>iyor, <b>ed</b>iyor. Исключения: de → <b>di</b>yor, ye → <b>yi</b>yor.</li>
       </ul>
       <table class="memo-table">
-        <tr><td>ben</td><td>-um</td><td>sen</td><td>-sun</td><td>o</td><td>—</td></tr>
-        <tr><td>biz</td><td>-uz</td><td>siz</td><td>-sunuz</td><td>onlar</td><td>-lar</td></tr>
+        <tr><th>кто</th><th>окончание</th><th>пример</th></tr>
+        <tr><td>ben</td><td>-um</td><td>geliyor<b>um</b></td></tr>
+        <tr><td>sen</td><td>-sun</td><td>geliyor<b>sun</b></td></tr>
+        <tr><td>o</td><td>—</td><td>geliyor</td></tr>
+        <tr><td>biz</td><td>-uz</td><td>geliyor<b>uz</b></td></tr>
+        <tr><td>siz</td><td>-sunuz</td><td>geliyor<b>sunuz</b></td></tr>
+        <tr><td>onlar</td><td>-lar</td><td>geliyor<b>lar</b></td></tr>
       </table>
       <ul>
         <li>Отрицание: <b>m</b> + узкая гласная — bil<b>mi</b>yorum, anla<b>mı</b>yorum.</li>
@@ -88,9 +93,9 @@ const GRAMMAR_TOPICS = [
       <h3>Где? Откуда? Куда?</h3>
       <table class="memo-table">
         <tr><th>вопрос</th><th>суффикс</th><th>пример</th></tr>
-        <tr><td>где? nerede?</td><td>-de / -da</td><td>ev<b>de</b>, okul<b>da</b></td></tr>
-        <tr><td>откуда? nereden?</td><td>-den / -dan</td><td>ev<b>den</b>, okul<b>dan</b></td></tr>
-        <tr><td>куда? nereye?</td><td>-e / -a</td><td>ev<b>e</b>, okul<b>a</b></td></tr>
+        <tr><td>где?<br>nerede?</td><td>-de<br>-da</td><td>ev<b>de</b><br>okul<b>da</b></td></tr>
+        <tr><td>откуда?<br>nereden?</td><td>-den<br>-dan</td><td>ev<b>den</b><br>okul<b>dan</b></td></tr>
+        <tr><td>куда?<br>nereye?</td><td>-e<br>-a</td><td>ev<b>e</b><br>okul<b>a</b></td></tr>
       </table>
       <ul>
         <li>Гармония: последняя гласная <b>a, ı, o, u → a</b>; <b>e, i, ö, ü → e</b>.</li>
