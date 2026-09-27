@@ -64,7 +64,7 @@
     {
       "id": "v-otele-bodrum-bron",
       "title": "Бодрум: бронирую номер",
-      "speakers": { "a": "Ольга", "b": "Мурат" },
+      "speakers": { "a": "Ольга", "b": "Берк" },
       "turns": [
         { "speaker": "b", "tr": "Mavi Otel, iyi günler. Buyurun.", "ru": "Отель «Мави», добрый день. Слушаю вас.", "distractors": [
           { "tr": "Nasıl bir oda istersiniz?", "ru": "Какой номер вы хотите?" },
@@ -127,7 +127,7 @@
     {
       "id": "v-otele-bodrum-zaselenie",
       "title": "Бодрум: заселяемся с Аней",
-      "speakers": { "a": "Ольга", "b": "Мурат" },
+      "speakers": { "a": "Ольга", "b": "Берк" },
       "turns": [
         { "speaker": "a", "tr": "İyi akşamlar. Rezervasyonum var. Adım Olga.", "ru": "Добрый вечер. У меня забронирован номер. Меня зовут Ольга.", "distractors": [
           { "tr": "Tamam. Kız kardeşim için de mi?", "ru": "Хорошо. И за сестру тоже?" },
@@ -190,7 +190,7 @@
     {
       "id": "v-otele-bodrum-drugoy-nomer",
       "title": "Бодрум: этот номер нам не нравится",
-      "speakers": { "a": "Ольга", "b": "Мурат" },
+      "speakers": { "a": "Ольга", "b": "Берк" },
       "turns": [
         { "speaker": "a", "tr": "Affedersiniz. Bu odayı beğenmedik. Çok gürültülü.", "ru": "Извините. Нам не нравится номер. Очень шумно.", "distractors": [
           { "tr": "Odada radyo var mı? Kız kardeşim sabahları radyo dinler.", "ru": "В номере есть радио? Сестра по утрам слушает радио." },
@@ -237,7 +237,7 @@
     {
       "id": "v-otele-bodrum-ne-gotov",
       "title": "Бодрум: номер не готов",
-      "speakers": { "a": "Ольга", "b": "Мурат" },
+      "speakers": { "a": "Ольга", "b": "Берк" },
       "turns": [
         { "speaker": "a", "tr": "Affedersiniz, yine ben. Odamız hazırlanmamış. Yataklar dağınık.", "ru": "Извините, это снова я. Наш номер не подготовили к нашему приезду. Кровати не заправлены.", "distractors": [
           { "tr": "Evet, panjur bozuk. Odada çok güneş var.", "ru": "Да, сломались жалюзи. В номере очень много солнца." },
@@ -331,7 +331,7 @@
     {
       "id": "v-otele-bodrum-uslugi",
       "title": "Бодрум: завтрак и прачечная",
-      "speakers": { "a": "Ольга", "b": "Мурат" },
+      "speakers": { "a": "Ольга", "b": "Берк" },
       "turns": [
         { "speaker": "a", "tr": "Günaydın! Affedersiniz, kahvaltı ne zaman?", "ru": "Доброе утро! Извините, во сколько завтрак?", "distractors": [
           { "tr": "Teşekkürler!", "ru": "Спасибо!" },
@@ -433,7 +433,7 @@
     {
       "id": "v-otele-bodrum-vyselenie",
       "title": "Бодрум: выселение, плачу наличными",
-      "speakers": { "a": "Ольга", "b": "Мурат" },
+      "speakers": { "a": "Ольга", "b": "Берк" },
       "turns": [
         { "speaker": "a", "tr": "Günaydın! Öğleye doğru ayrılacağım. Hesabı şimdi ödeyebilir miyim?", "ru": "Доброе утро! Я буду выезжать где-то в полдень. Можно оплатить счёт сейчас?", "distractors": [
           { "tr": "Harika! Burada kalmak çok güzeldi.", "ru": "Прекрасно! Нам очень понравилось в вашем отеле." },
@@ -472,7 +472,7 @@
     {
       "id": "v-otele-izmir-net-mest",
       "title": "Командировка в Измир: мест нет",
-      "speakers": { "a": "Ольга", "b": "Толга" },
+      "speakers": { "a": "Ольга", "b": "Джихан" },
       "turns": [
         { "speaker": "b", "tr": "Kordon Otel, iyi günler.", "ru": "Отель «Кордон», добрый день.", "distractors": [
           { "tr": "Liman Otel çok iyi. Fuara da yakın.", "ru": "Отель «Лиман» очень хороший. И к выставке близко." },
@@ -515,7 +515,7 @@
     {
       "id": "v-otele-izmir-bron",
       "title": "Измир: два номера для меня и начальника",
-      "speakers": { "a": "Ольга", "b": "Селин" },
+      "speakers": { "a": "Ольга", "b": "Севиль" },
       "turns": [
         { "speaker": "b", "tr": "Liman Otel, iyi günler.", "ru": "Отель «Лиман», добрый день.", "distractors": [
           { "tr": "Tabii. Arka tarafta iki oda var, çok sessiz.", "ru": "Конечно. Есть два номера с обратной стороны, очень тихие." },
@@ -574,7 +574,7 @@
     {
       "id": "v-otele-izmir-zaselenie",
       "title": "Измир: заселение, два номера",
-      "speakers": { "a": "Ольга", "b": "Селин" },
+      "speakers": { "a": "Ольга", "b": "Севиль" },
       "turns": [
         { "speaker": "a", "tr": "İyi günler. İki oda rezerve ettirdim. Adım Olga.", "ru": "Добрый день. У меня забронировано два номера. Меня зовут Ольга.", "distractors": [
           { "tr": "İyi, o oda onun için olsun. Kahvaltı ne zaman?", "ru": "Хорошо, пусть этот номер будет для него. Во сколько завтрак?" },
@@ -621,7 +621,7 @@
     {
       "id": "v-otele-izmir-seyf-taksi",
       "title": "Измир: сейф, будильник и такси",
-      "speakers": { "a": "Ольга", "b": "Селин" },
+      "speakers": { "a": "Ольга", "b": "Севиль" },
       "turns": [
         { "speaker": "a", "tr": "İyi akşamlar. Bunu sizin kasanıza bırakabilir miyim? Önemli belgeler.", "ru": "Добрый вечер. Можно оставить это у вас в сейфе? Это важные документы.", "distractors": [
           { "tr": "Evet. Saat yedide bir taksi çağırın, lütfen.", "ru": "Да. Вызовите такси на семь часов, пожалуйста." },
@@ -668,7 +668,7 @@
     {
       "id": "v-otele-izmir-klyuch-soobshcheniya",
       "title": "Измир: поздно вечером — ключ и сообщения",
-      "speakers": { "a": "Ольга", "b": "Эмре" },
+      "speakers": { "a": "Ольга", "b": "Умут" },
       "turns": [
         { "speaker": "a", "tr": "İyi geceler. İki yüz on dört numaralı odanın anahtarı lütfen.", "ru": "Добрый вечер. Ключ от номера двести четырнадцать, пожалуйста.", "distractors": [
           { "tr": "Anladım. Telefonum bütün gün kapalıydı. Beni arayan var mı?", "ru": "Понятно. У меня весь день был выключен телефон. Мне кто-нибудь звонил?" },
@@ -711,7 +711,7 @@
     {
       "id": "v-otele-izmir-goryachaya-voda",
       "title": "Измир: нет горячей воды",
-      "speakers": { "a": "Ольга", "b": "Эмре" },
+      "speakers": { "a": "Ольга", "b": "Умут" },
       "turns": [
         { "speaker": "a", "tr": "Alo, resepsiyon mu? İki yüz on dört numaralı odadan arıyorum.", "ru": "Алло, это ресепшн? Звоню из номера двести четырнадцать.", "distractors": [
           { "tr": "Bir de priz bozuk. Telefonumu şarj edemiyorum. Tamir edebilir misiniz?", "ru": "И ещё сломалась розетка. Не могу зарядить телефон. Не могли бы вы починить?" },
@@ -805,7 +805,7 @@
     {
       "id": "v-otele-izmir-schet",
       "title": "Измир: кажется, в счёте ошибка",
-      "speakers": { "a": "Ольга", "b": "Селин" },
+      "speakers": { "a": "Ольга", "b": "Севиль" },
       "turns": [
         { "speaker": "a", "tr": "İyi akşamlar. Yarın sabah ayrılıyorum. Hesabımı alabilir miyim, lütfen?", "ru": "Добрый вечер. Я уезжаю завтра утром. Можно счёт, пожалуйста?", "distractors": [
           { "tr": "Teşekkürler. Kredi kartı ile ödeyeceğim.", "ru": "Спасибо. Я расплачусь кредитной картой." },
@@ -946,7 +946,7 @@
     {
       "id": "v-otele-ankara-srochno",
       "title": "Анкара: срочно уезжаю",
-      "speakers": { "a": "Ольга", "b": "Зейнеп" },
+      "speakers": { "a": "Ольга", "b": "Гонджа" },
       "turns": [
         { "speaker": "a", "tr": "Affedersiniz, hemen ayrılmam gerekiyor. İşte bir sorun var.", "ru": "Извините, мне нужно уехать сразу же. На работе проблема.", "distractors": [
           { "tr": "Evet, bir taksi çağırın, lütfen. Havalimanına gidiyorum.", "ru": "Да, вызовите такси, пожалуйста. Я еду в аэропорт." },

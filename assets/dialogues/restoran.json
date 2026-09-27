@@ -48,7 +48,7 @@
     {
       "id": "restoran-telefon",
       "title": "Бронь по телефону: столик на компанию",
-      "speakers": { "a": "Ольга", "b": "Октай" },
+      "speakers": { "a": "Ольга", "b": "Тайфун" },
       "turns": [
         { "speaker": "b", "tr": "«Mavi Ev» restoran, buyurun.", "ru": "Ресторан «Мави Эв», слушаю вас.", "distractors": [
           { "tr": "Evet, terasta var. Boğaz manzaralı.", "ru": "Да, на террасе есть. С видом на Босфор." },

@@ -139,7 +139,7 @@
     {
       "id": "puteshestvie-emanet-ankara",
       "title": "Камера хранения и метро",
-      "speakers": { "a": "Ольга", "b": "Метин" },
+      "speakers": { "a": "Ольга", "b": "Тургут" },
       "turns": [
         { "speaker": "a", "tr": "Affedersiniz, bagajımı bırakmak istiyorum.", "ru": "Извините, я хотела бы оставить багаж.", "distractors": [
           { "tr": "Çok teşekkürler!", "ru": "Большое спасибо!" },
@@ -669,7 +669,7 @@
     {
       "id": "puteshestvie-rezervasyon",
       "title": "Звонок в агентство: поменять билет",
-      "speakers": { "a": "Ольга", "b": "Гизем" },
+      "speakers": { "a": "Ольга", "b": "Назан" },
       "turns": [
         { "speaker": "a", "tr": "Alo, iyi günler. Rezervasyonumu değiştirmek istiyorum.", "ru": "Алло, добрый день. Я хотела бы поменять билеты.", "distractors": [
           { "tr": "Olur. Uçak Moskova'ya saat kaçta varıyor?", "ru": "Подходит. Во сколько самолёт прилетает в Москву?" },
@@ -1050,7 +1050,7 @@
     {
       "id": "puteshestvie-bodrum-otobus",
       "title": "На остановке в Бодруме",
-      "speakers": { "a": "Ольга", "b": "Фатма" },
+      "speakers": { "a": "Ольга", "b": "Перихан" },
       "turns": [
         { "speaker": "a", "tr": "Affedersiniz, Gümbet'e gitmek için hangi otobüse binmeliyim?", "ru": "Извините, на какой автобус мне надо сесть, чтобы доехать до Гюмбета?", "distractors": [
           { "tr": "Çok naziksiniz, teşekkürler!", "ru": "Вы очень любезны, спасибо!" },
@@ -1231,7 +1231,7 @@
     {
       "id": "puteshestvie-mavi-yolculuk",
       "title": "Голубой круиз: бронирую каюту",
-      "speakers": { "a": "Ольга", "b": "Кенан" },
+      "speakers": { "a": "Ольга", "b": "Фарук" },
       "turns": [
         { "speaker": "a", "tr": "İyi günler. Mavi yolculuk için bilgi almak istiyorum.", "ru": "Добрый день. Я хотела бы узнать про голубой круиз.", "distractors": [
           { "tr": "Tekne ne zaman kalkıyor?", "ru": "Когда отплывает яхта?" },
@@ -1443,7 +1443,7 @@
     {
       "id": "puteshestvie-benzin",
       "title": "На заправке: масло и шины",
-      "speakers": { "a": "Ольга", "b": "Тарык" },
+      "speakers": { "a": "Ольга", "b": "Зафер" },
       "turns": [
         { "speaker": "a", "tr": "İyi günler. Kırk litre benzin verir misiniz?", "ru": "Добрый день. Сорок литров бензина, пожалуйста.", "distractors": [
           { "tr": "Eyvah! Bu patlak lastiği değiştirebilir misiniz?", "ru": "Ой! Не могли бы вы заменить спущенную шину?" },
@@ -1514,7 +1514,7 @@
     {
       "id": "puteshestvie-ariza",
       "title": "Сломалась машина: звоню в автосервис",
-      "speakers": { "a": "Ольга", "b": "Ильхан" },
+      "speakers": { "a": "Ольга", "b": "Аднан" },
       "turns": [
         { "speaker": "a", "tr": "Alo, iyi günler. Arabam bozuldu.", "ru": "Алло, добрый день. У меня сломалась машина.", "distractors": [
           { "tr": "Tamam, bekliyoruz. Teşekkürler!", "ru": "Хорошо, ждём. Спасибо!" },
@@ -1565,7 +1565,7 @@
     {
       "id": "puteshestvie-izmir-yolu",
       "title": "Заправка по дороге в Измир",
-      "speakers": { "a": "Ольга", "b": "Бюлент" },
+      "speakers": { "a": "Ольга", "b": "Бурхан" },
       "turns": [
         { "speaker": "a", "tr": "Merhaba. Doldurun lütfen.", "ru": "Здравствуйте. Заправьте, пожалуйста, полный бак.", "distractors": [
           { "tr": "Acıktık. Bir sonraki kasabaya ne kadar var?", "ru": "Мы проголодались. Далеко до следующего городка?" },
