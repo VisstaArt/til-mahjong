@@ -20,6 +20,7 @@
       <button id="mode-mahjong-btn" class="mode-btn active" type="button">🀄 Маджонг</button>
       <button id="mode-phrases-btn" class="mode-btn" type="button">💬 Фразы</button>
       <button id="mode-dialogues-btn" class="mode-btn" type="button">🎭 Диалоги</button>
+      <button id="mode-grammar-btn" class="mode-btn" type="button">🧩 Грамматика</button>
     </div>
     <div id="account-box" class="account-box hidden">
       <span id="account-email"></span>
@@ -283,6 +284,62 @@
     </main>
   </section>
 
+  <!-- ЭКРАН 7: грамматика — список тем (правил) -->
+  <section id="screen-grammar-catalog" class="screen manager-panel">
+    <div class="manager-row">
+      <div class="label">Правила по одному: короткая памятка → упражнения на фразах из «Фраз» и «Диалогов». Когда пройдены две темы, открывается повторение вперемешку.</div>
+    </div>
+    <div id="grammar-catalog-loading" class="catalog-loading">⏳ Загружаем упражнения…</div>
+    <div id="grammar-catalog-grid" class="catalog-grid"></div>
+  </section>
+
+  <!-- ЭКРАН 7а: тема грамматики — памятка + как идут правила + старт -->
+  <section id="screen-grammar-topic" class="screen manager-panel">
+    <div class="manager-row category-header-row">
+      <button id="grammar-topic-back-btn" class="secondary small">← Темы</button>
+      <h2 id="grammar-topic-title"></h2>
+    </div>
+    <div id="grammar-topic-memo" class="grammar-memo"></div>
+    <div class="manager-row">
+      <div class="label">Как идут правила (по последним ответам)</div>
+      <div id="grammar-topic-rules" class="grammar-rules"></div>
+    </div>
+    <div class="screen-actions">
+      <button id="grammar-topic-done-btn" class="secondary">← Темы</button>
+      <button id="grammar-topic-play-btn">Упражняться →</button>
+    </div>
+  </section>
+
+  <!-- ЭКРАН 7б: упражнение — фраза с пропуском, «выбери форму» или «собери из кусочков» -->
+  <section id="screen-grammar-drill" class="screen screen-game">
+    <div class="game-bar">
+      <div class="stats">
+        <div class="stat"><span class="label">Тема</span><span id="grammar-drill-title">—</span></div>
+        <div class="stat"><span class="label">Выучено</span><span id="grammar-drill-progress">0/0</span></div>
+      </div>
+      <div class="controls">
+        <button id="grammar-memo-btn" title="Открыть памятку">📖 Памятка</button>
+        <button id="grammar-mute-btn" title="Выключить звук">🔊</button>
+        <button id="grammar-back-btn" class="secondary" title="Вернуться к темам">← Темы</button>
+      </div>
+    </div>
+    <main class="quiz-main grammar-main">
+      <div id="grammar-direction" class="quiz-direction"></div>
+      <div id="grammar-ru" class="grammar-ru"></div>
+      <div id="grammar-sentence" class="grammar-sentence"></div>
+      <div id="grammar-gloss" class="grammar-gloss"></div>
+      <div id="grammar-answer" class="grammar-answer"></div>
+      <div id="grammar-why" class="grammar-why"></div>
+    </main>
+  </section>
+
+  <div id="grammar-memo-overlay" class="match-popup-overlay hidden">
+    <div class="grammar-memo grammar-memo-card">
+      <div id="grammar-memo-overlay-body"></div>
+      <button id="grammar-memo-close-btn" type="button">Понятно, дальше</button>
+    </div>
+  </div>
+
   <div id="match-popup" class="match-popup-overlay hidden">
     <div class="match-card">
       <div class="match-icon"></div>
@@ -308,5 +365,6 @@
   <script src="script.js"></script>
   <script src="phrases.js"></script>
   <script src="dialogues.js"></script>
+  <script src="grammar.js"></script>
 </body>
 </html>
