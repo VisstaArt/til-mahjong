@@ -91,6 +91,10 @@ body[data-screen="dialogues-catalog"] #screen-dialogues-catalog { display: flex;
 body[data-screen="dialogue-topic"] #screen-dialogue-topic { display: flex; }
 body[data-screen="dialogue-player"] #screen-dialogue-player { display: flex; }
 body[data-screen="dialogue-player"] .topbar { display: none; }
+body[data-screen="grammar-catalog"] #screen-grammar-catalog { display: flex; }
+body[data-screen="grammar-topic"] #screen-grammar-topic { display: flex; }
+body[data-screen="grammar-drill"] #screen-grammar-drill { display: flex; }
+body[data-screen="grammar-drill"] .topbar { display: none; }
 
 .screen-game {
   flex-direction: column;
@@ -1254,3 +1258,191 @@ main {
   color: rgba(241, 245, 242, 0.7);
 }
 .account-box.hidden { display: none; }
+
+/* Раздел «Грамматика»: памятка, плашки правил, фраза с пропуском, ряды тайлов-кусочков. */
+.grammar-memo {
+  background: var(--word-bg);
+  color: var(--word-text);
+  border-radius: 12px;
+  padding: 14px 16px;
+  line-height: 1.45;
+  font-size: 0.95rem;
+}
+.grammar-memo h3 { margin: 0 0 8px; }
+.grammar-memo ul { margin: 8px 0; padding-left: 20px; }
+.grammar-memo li { margin: 4px 0; }
+.grammar-memo b { color: #9a3412; }
+.memo-formula {
+  font-size: 1.05rem;
+  text-align: center;
+  margin: 6px 0 10px;
+}
+.memo-table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 8px 0;
+  font-size: 0.9rem;
+}
+.memo-table th, .memo-table td {
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  padding: 5px 8px;
+  text-align: left;
+}
+.memo-table th { background: rgba(0, 0, 0, 0.05); font-weight: 600; }
+.memo-examples {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 10px;
+}
+.memo-example {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+  background: rgba(0, 0, 0, 0.05);
+  border: none;
+  border-radius: 8px;
+  padding: 8px 10px;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+.memo-example .memo-tr { font-weight: 600; }
+.memo-example .memo-ru { font-size: 0.85rem; opacity: 0.75; }
+
+.grammar-memo-card {
+  width: min(560px, calc(100vw - 32px));
+  max-height: calc(100vh - 48px);
+  overflow-y: auto;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+.grammar-memo-card > button {
+  display: block;
+  margin: 12px auto 0;
+  background: var(--scale-2);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 18px;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+#grammar-memo-overlay { background: rgba(0, 0, 0, 0.55); }
+
+.grammar-rules {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.grammar-rule {
+  border-radius: 999px;
+  padding: 4px 10px;
+  font-size: 0.8rem;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+.grammar-rule.rule-none { opacity: 0.55; }
+.grammar-rule.rule-good { background: var(--scale-3); border-color: var(--gold); }
+.grammar-rule.rule-mid { background: #8a6d1f; }
+.grammar-rule.rule-weak { background: var(--danger); }
+
+.grammar-main { justify-content: flex-start; }
+.grammar-ru {
+  font-size: 0.95rem;
+  opacity: 0.8;
+  text-align: center;
+  max-width: 560px;
+}
+.grammar-sentence {
+  font-size: 1.35rem;
+  font-weight: 600;
+  text-align: center;
+  max-width: 600px;
+  line-height: 1.6;
+}
+.grammar-gap {
+  display: inline-block;
+  min-width: 3em;
+  padding: 0 6px;
+  border-bottom: 2px dashed rgba(255, 255, 255, 0.4);
+  opacity: 0.6;
+}
+.grammar-gap.gap-active {
+  color: var(--gold);
+  border-bottom-color: var(--gold);
+  opacity: 1;
+}
+.grammar-gap.gap-done {
+  color: #9be3b8;
+  border-bottom-style: solid;
+  border-bottom-color: #9be3b8;
+  opacity: 1;
+}
+.grammar-gloss {
+  font-size: 0.85rem;
+  opacity: 0.65;
+  min-height: 1em;
+}
+.grammar-answer {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  max-width: 600px;
+}
+.grammar-choose { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+@media (max-width: 480px) {
+  .grammar-choose { grid-template-columns: 1fr; }
+  .grammar-sentence { font-size: 1.15rem; }
+}
+.grammar-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.grammar-row-label {
+  flex: 0 0 76px;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  opacity: 0.6;
+}
+.grammar-tiles {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 8px;
+}
+.grammar-tile {
+  background: var(--word-bg);
+  color: var(--word-text);
+  border: 2px solid transparent;
+  border-radius: 10px;
+  padding: 12px 4px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.1s ease, opacity 0.15s ease;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.grammar-tile:disabled { cursor: default; opacity: 0.35; }
+.grammar-tile.correct {
+  background: var(--scale-3);
+  color: #fff;
+  border-color: var(--gold);
+  opacity: 1;
+}
+.grammar-tile.wrong {
+  background: var(--danger);
+  color: #fff;
+  animation: quiz-shake 0.3s ease;
+}
+.grammar-why {
+  min-height: 1.4em;
+  max-width: 600px;
+  font-size: 0.9rem;
+  color: var(--gold);
+  text-align: center;
+}

@@ -1,0 +1,22 @@
+# Глаголы, которых нет в словаре маджонга, но они встречаются во фразах/диалогах.
+# Формат: инфинитив = перевод. После правки: python3 tools/grammar/build.py
+etmek = делать (в составе: yardım etmek, ısrar etmek…)
+göndermek = отправлять
+değerlendirmek = оценивать, рассматривать
+sanmak = думать, полагать
+takmak = надевать (очки, украшения)
+gösterilmek = показываться (о фильме)
+edilmek = делаться (страдат. от etmek)
+çeşitlendirmek = разнообразить
+planlanmak = планироваться
+öngörülmek = предусматриваться
+ilgilenmek = интересоваться
+damlamak = капать
+ayrılmak = уезжать, расставаться
+bulanmak = мутить (midem bulanıyor)
+titremek = дрожать
+kusmak = тошнить (рвать)
+kanamak = кровоточить
+zorlanmak = с трудом справляться
+çekmek = тянуть; снимать (фото, видео)
+kurumak = сохнуть
