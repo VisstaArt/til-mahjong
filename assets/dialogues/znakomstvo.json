@@ -987,7 +987,7 @@
       "speakers": { "a": "Ольга", "b": "Эдже" },
       "turns": [
         { "speaker": "b", "tr": "Hoş geldin!", "ru": "Добро пожаловать!", "distractors": [
-          { "tr": "Sizi ailenizle tanıştırmak isterim bir gün.", "ru": "Хотел бы я познакомиться с вашей семьёй когда-нибудь." },
+          { "tr": "Bir gün ailenizle tanışmak isterim.", "ru": "Я бы хотел когда-нибудь познакомиться с вашей семьёй." },
           { "tr": "Onu özlüyor musunuz?", "ru": "Вы по ней скучаете?" }
         ]},
         { "speaker": "a", "tr": "Hoş bulduk!", "ru": "Спасибо, что позвали!", "distractors": [
@@ -1008,7 +1008,7 @@
         ]},
         { "speaker": "a", "tr": "Erkek kardeşiniz ya da kız kardeşiniz var mı?", "ru": "У вас есть братья или сёстры?", "distractors": [
           { "tr": "Bu benim kardeşim, Kaan.", "ru": "Это мой брат, Каан." },
-          { "tr": "Sizi ailenizle tanıştırmak isterim bir gün.", "ru": "Хотел бы я познакомиться с вашей семьёй когда-нибудь." }
+          { "tr": "Bir gün ailenizle tanışmak isterim.", "ru": "Я бы хотел когда-нибудь познакомиться с вашей семьёй." }
         ]},
         { "speaker": "b", "tr": "Evet, bir erkek kardeşim var, işte Kaan. Ya sizin?", "ru": "Да, есть брат, вот Каан. А у вас?", "distractors": [
           { "tr": "Benim de bir kız kardeşim var, Rusya'da yaşıyor.", "ru": "У меня тоже есть сестра, живёт в России." },
@@ -1023,10 +1023,10 @@
           { "tr": "Merhaba Kaan, tanıştığımıza memnun oldum.", "ru": "Привет, Каан, приятно познакомиться." }
         ]},
         { "speaker": "a", "tr": "Evet, çok özlüyorum.", "ru": "Да, очень скучаю.", "distractors": [
-          { "tr": "Sizi ailenizle tanıştırmak isterim bir gün.", "ru": "Хотел бы я познакомиться с вашей семьёй когда-нибудь." },
+          { "tr": "Bir gün ailenizle tanışmak isterim.", "ru": "Я бы хотел когда-нибудь познакомиться с вашей семьёй." },
           { "tr": "Hoş geldin!", "ru": "Добро пожаловать!" }
         ]},
-        { "speaker": "b", "tr": "Sizi ailenizle tanıştırmak isterim bir gün.", "ru": "Хотел бы я познакомиться с вашей семьёй когда-нибудь.", "distractors": [
+        { "speaker": "b", "tr": "Bir gün ailenizle tanışmak isterim.", "ru": "Я бы хотел когда-нибудь познакомиться с вашей семьёй.", "distractors": [
           { "tr": "Benim de bir kız kardeşim var, Rusya'da yaşıyor.", "ru": "У меня тоже есть сестра, живёт в России." },
           { "tr": "Evet, çok özlüyorum.", "ru": "Да, очень скучаю." }
         ]},
@@ -1141,10 +1141,10 @@
           { "tr": "Gerçekten mi? Ne kadar şanslıyım!", "ru": "Правда? Как же мне повезло!" }
         ]},
         { "speaker": "b", "tr": "Bir hafta buradayım.", "ru": "Я здесь на неделю.", "distractors": [
-          { "tr": "Yardımınız gerekirse, bana yazabilirsiniz.", "ru": "Если понадобится помощь, можете мне написать." },
+          { "tr": "Bir şey lazım olursa, bana yazın.", "ru": "Если что-то понадобится, пишите мне." },
           { "tr": "Size yardım edebilir miyim?", "ru": "Могу я вам помочь?" }
         ]},
-        { "speaker": "a", "tr": "Yardımınız gerekirse, bana yazabilirsiniz.", "ru": "Если понадобится помощь, можете мне написать.", "distractors": [
+        { "speaker": "a", "tr": "Bir şey lazım olursa, bana yazın.", "ru": "Если что-то понадобится, пишите мне.", "distractors": [
           { "tr": "Teşekkürler, iyi günler!", "ru": "Спасибо, хорошего дня!" },
           { "tr": "Evet, tatildeyim. Bu ilk gelişim.", "ru": "Да, я в отпуске. Это мой первый приезд." }
         ]},
@@ -1157,7 +1157,7 @@
           { "tr": "Ah, teşekkür ederim! Rusça mı konuşuyorsunuz?", "ru": "Ах, спасибо! Вы говорите по-русски?" }
         ]},
         { "speaker": "b", "tr": "Teşekkürler, iyi günler!", "ru": "Спасибо, хорошего дня!", "distractors": [
-          { "tr": "Yardımınız gerekirse, bana yazabilirsiniz.", "ru": "Если понадобится помощь, можете мне написать." },
+          { "tr": "Bir şey lazım olursa, bana yazın.", "ru": "Если что-то понадобится, пишите мне." },
           { "tr": "Bir otelde kalıyorum. Ya siz, buralı mısınız?", "ru": "Я остановилась в отеле. А вы, вы местная?" }
         ]}
       ]
