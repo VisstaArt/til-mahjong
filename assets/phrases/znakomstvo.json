@@ -36,19 +36,19 @@
     {
       "ru": "Спасибо большое. Очень любезно с твоей стороны",
       "tr": "Çok naziksin",
-      "tl": "Чок назыксын",
+      "tl": "Чок назиксин",
       "sub": "Знакомство — Arkadaş edinme"
     },
     {
       "ru": "Здорово.",
       "tr": "Harika.",
-      "tl": null,
+      "tl": "Харика.",
       "sub": "Знакомство — Arkadaş edinme"
     },
     {
       "ru": "Я с удовольствием приду",
       "tr": "Büyük bir zevkle gelirim",
-      "tl": "Харика. Бюйюк бир зэвкле гэлирим",
+      "tl": "Бюйюк бир зэвкле гэлирим",
       "sub": "Знакомство — Arkadaş edinme"
     },
     {
@@ -89,20 +89,20 @@
     },
     {
       "ru": "Могу я заказать тебе чего-нибудь выпить?",
-      "tr": "Seni bir içki getirebilir miyim?",
+      "tr": "Sana bir içki ısmarlayabilir miyim?",
       "tl": null,
       "sub": "Знакомство — Arkadaş edinme"
     },
     {
       "ru": "Почему ты смеешься?",
       "tr": "Ne/neden gülüyorsun?",
-      "tl": null,
+      "tl": "Нэ/нэдэн гюлюйорсун?",
       "sub": "Знакомство — Arkadaş edinme"
     },
     {
       "ru": "У тебя есть планы на вечер?",
       "tr": "Bu akşam bir şey yapıyor musun?",
-      "tl": "Нэ/нэдэн гюлюйорсун? Бу акшам бир шэй япыйор мусун?",
+      "tl": "Бу акшам бир шэй япыйор мусун?",
       "sub": "Знакомство — Arkadaş edinme"
     },
     {
@@ -113,7 +113,7 @@
     },
     {
       "ru": "Ты сегодня вечером свободен/ свободна?",
-      "tr": "Bu akşam serbest misin?",
+      "tr": "Bu akşam boş musun?",
       "tl": null,
       "sub": "Знакомство — Arkadaş edinme"
     },
@@ -239,7 +239,7 @@
     },
     {
       "ru": "Не возражаешь, если я закурю?",
-      "tr": "Sigara içersem rahatsız olur mu?",
+      "tr": "Sigara içersem rahatsız olur musun?",
       "tl": null,
       "sub": null
     },

@@ -3,22 +3,22 @@
     "id": "kak-deystvovat-v-ekstrennoy-situacii",
     "title": "Как действовать в экстренной ситуации",
     "source": "razgovornik",
-    "count": 11,
-    "sizeKB": 1.8
+    "count": 13,
+    "sizeKB": 2.0
   },
   {
     "id": "kak-pomenyat-dengi",
     "title": "Как поменять деньги",
     "source": "razgovornik",
-    "count": 19,
-    "sizeKB": 4.1
+    "count": 26,
+    "sizeKB": 5.1
   },
   {
     "id": "na-tamozhne",
     "title": "На таможне",
     "source": "razgovornik",
-    "count": 19,
-    "sizeKB": 3.5
+    "count": 21,
+    "sizeKB": 3.8
   },
   {
     "id": "nekotorye-poleznye-nadpisi-i-vyveski",
@@ -45,50 +45,50 @@
     "id": "osmotr-dostoprimechatelnostey",
     "title": "Осмотр достопримечательностей",
     "source": "razgovornik",
-    "count": 41,
-    "sizeKB": 6.7
+    "count": 46,
+    "sizeKB": 7.3
   },
   {
     "id": "pokupki-servis",
     "title": "Покупки, сервис",
     "source": "razgovornik",
-    "count": 198,
-    "sizeKB": 46.2
+    "count": 189,
+    "sizeKB": 43.2
   },
   {
     "id": "privetstvie",
     "title": "Приветствие",
     "source": "razgovornik",
-    "count": 99,
-    "sizeKB": 13.4
+    "count": 114,
+    "sizeKB": 15.3
   },
   {
     "id": "puteshestvie",
     "title": "Путешествие",
     "source": "razgovornik",
-    "count": 145,
-    "sizeKB": 33.2
+    "count": 157,
+    "sizeKB": 34.9
   },
   {
     "id": "razvlecheniya-otdyh",
     "title": "Развлечения, отдых",
     "source": "razgovornik",
-    "count": 69,
-    "sizeKB": 15.0
+    "count": 74,
+    "sizeKB": 15.7
   },
   {
     "id": "restoran",
     "title": "Ресторан",
     "source": "razgovornik",
-    "count": 78,
-    "sizeKB": 11.9
+    "count": 89,
+    "sizeKB": 13.4
   },
   {
     "id": "ustoychivye-vyrazheniya-so-slovom-allah",
     "title": "Устойчивые выражения со словом «Allah»",
     "source": "allah",
-    "count": 225,
-    "sizeKB": 30.8
+    "count": 220,
+    "sizeKB": 29.9
   },
   {
     "id": "v-gorode",
@@ -101,22 +101,22 @@
     "id": "v-otele",
     "title": "В отеле",
     "source": "razgovornik",
-    "count": 72,
-    "sizeKB": 11.5
+    "count": 79,
+    "sizeKB": 12.4
   },
   {
     "id": "voprositelnye-slova",
     "title": "Вопросительные слова",
     "source": "razgovornik",
     "count": 6,
-    "sizeKB": 1.0
+    "sizeKB": 1.1
   },
   {
     "id": "vremya",
     "title": "Время",
     "source": "razgovornik",
-    "count": 8,
-    "sizeKB": 1.5
+    "count": 7,
+    "sizeKB": 1.1
   },
   {
     "id": "zdorove",

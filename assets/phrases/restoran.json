@@ -28,20 +28,44 @@
       "sub": null
     },
     {
-      "ru": "Я бы хотел(а) заказать столик на двоих/троих/четверых",
-      "tr": "İki/üç/dört kişilik bir masa ayırtmak istiyorum",
+      "ru": "Я бы хотел(а) заказать столик на двоих",
+      "tr": "İki kişilik bir masa ayırtmak istiyorum",
       "tl": null,
       "sub": null
     },
     {
-      "ru": "У вас есть столик на двоих/троих/четверых?",
-      "tr": "İki/üç/dört kişilik bir masanız var mı?",
+      "ru": "Я бы хотел(а) заказать столик на троих",
+      "tr": "Üç kişilik bir masa ayırtmak istiyorum",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Я бы хотел(а) заказать столик на четверых",
+      "tr": "Dört kişilik bir masa ayırtmak istiyorum",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "У вас есть столик на двоих?",
+      "tr": "İki kişilik bir masanız var mı?",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "У вас есть столик на троих?",
+      "tr": "Üç kişilik bir masanız var mı?",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "У вас есть столик на четверых?",
+      "tr": "Dört kişilik bir masanız var mı?",
       "tl": null,
       "sub": null
     },
     {
       "ru": "У вас есть столик …?",
-      "tr": "… bir masa var mı?",
+      "tr": "… bir masanız var mı?",
       "tl": null,
       "sub": null
     },
@@ -137,7 +161,7 @@
     },
     {
       "ru": "Больше ничего не надо, спасибо",
-      "tr": "Bu kadar yeter teşekkür ederim",
+      "tr": "Bu kadar yeter, teşekkür ederim",
       "tl": null,
       "sub": null
     },
@@ -154,8 +178,26 @@
       "sub": null
     },
     {
-      "ru": "Мне нельзя есть блюда с сахаром/солью/мукой/жиром",
-      "tr": "… içeren yemekler yememeliyim: Şeker, Tuz, Un, Yağ",
+      "ru": "Мне нельзя есть блюда с сахаром",
+      "tr": "Şeker içeren yemekler yememeliyim",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Мне нельзя есть блюда с солью",
+      "tr": "Tuz içeren yemekler yememeliyim",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Мне нельзя есть блюда с мукой",
+      "tr": "Un içeren yemekler yememeliyim",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Мне нельзя есть блюда с жиром",
+      "tr": "Yağ içeren yemekler yememeliyim",
       "tl": null,
       "sub": null
     },
@@ -215,7 +257,7 @@
     },
     {
       "ru": "Я бы порекомендовал(а) …",
-      "tr": "Bunu tavsiye ederim",
+      "tr": "… tavsiye ederim",
       "tl": null,
       "sub": null
     },
@@ -245,7 +287,7 @@
     },
     {
       "ru": "Что вы будете пить?",
-      "tr": "İçecek ne alırsınız?",
+      "tr": "İçecek olarak ne alırsınız?",
       "tl": null,
       "sub": null
     },
@@ -263,7 +305,7 @@
     },
     {
       "ru": "Темное/светлое пиво, пожалуйста",
-      "tr": "Siyah/beyaz bir bira lütfen",
+      "tr": "Koyu/açık bir bira lütfen",
       "tl": null,
       "sub": null
     },
@@ -293,7 +335,7 @@
     },
     {
       "ru": "Принесите шампанского, пожалуйста",
-      "tr": "Şampanya getirir misiniz lütfen",
+      "tr": "Şampanya getirir misiniz lütfen?",
       "tl": null,
       "sub": null
     },
@@ -328,8 +370,20 @@
       "sub": null
     },
     {
-      "ru": "У меня нет ложки/вилки/ножа",
-      "tr": "Kaşığım/çatalım/bıçağım yok",
+      "ru": "У меня нет ложки",
+      "tr": "Kaşığım yok",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "У меня нет вилки",
+      "tr": "Çatalım yok",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "У меня нет ножа",
+      "tr": "Bıçağım yok",
       "tl": null,
       "sub": null
     },
@@ -340,14 +394,26 @@
       "sub": null
     },
     {
-      "ru": "Слишком соленое/кислое/перченое",
-      "tr": "Bu çok tuzlu/ekşi/baharatlı",
+      "ru": "Слишком солёное",
+      "tr": "Bu çok tuzlu",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Слишком кислое",
+      "tr": "Bu çok ekşi",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Слишком перчёное",
+      "tr": "Bu çok baharatlı",
       "tl": null,
       "sub": null
     },
     {
       "ru": "Попросите подойти метрдотеля",
-      "tr": "Şef garsonu çağırır mısınız lütfen",
+      "tr": "Şef garsonu çağırır mısınız lütfen?",
       "tl": null,
       "sub": null
     },
@@ -359,7 +425,7 @@
     },
     {
       "ru": "Я хочу расплатиться",
-      "tr": "Hesabı vermek istiyorum",
+      "tr": "Hesabı ödemek istiyorum",
       "tl": null,
       "sub": null
     },
@@ -371,7 +437,7 @@
     },
     {
       "ru": "Обслуживание включено?",
-      "tr": "Servisi içeriyor mu?",
+      "tr": "Servis dahil mi?",
       "tl": null,
       "sub": null
     },
@@ -389,7 +455,7 @@
     },
     {
       "ru": "Я не заказывал (заказывала) суп/курицу",
-      "tr": "Çorba/tavuk almadım",
+      "tr": "Çorba/tavuk ısmarlamadım",
       "tl": null,
       "sub": null
     },

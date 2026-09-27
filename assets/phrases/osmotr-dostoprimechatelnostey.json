@@ -29,7 +29,7 @@
     },
     {
       "ru": "Мы бы хотели нанять русскоговорящего гида на полдня",
-      "tr": "Yarım gün için özel bir rehber tutmak istiyoruz",
+      "tr": "Yarım gün için Rusça bilen bir rehber tutmak istiyoruz",
       "tl": null,
       "sub": null
     },
@@ -101,7 +101,7 @@
     },
     {
       "ru": "У вас есть скидки для студентов/инвалидов?",
-      "tr": "Öğrenciler/özürlüler için indirim var mı?",
+      "tr": "Öğrenciler/engelliler için indirim var mı?",
       "tl": null,
       "sub": null
     },
@@ -137,7 +137,7 @@
     },
     {
       "ru": "Оставьте сумку в гардеробе, пожалуйста",
-      "tr": "Çantanızı vestiyerde bırakın lütfen",
+      "tr": "Çantanızı vestiyere bırakın lütfen",
       "tl": null,
       "sub": null
     },
@@ -166,8 +166,20 @@
       "sub": null
     },
     {
-      "ru": "Кто архитектор/художник/скульптор?",
-      "tr": "Mimar/ressam/heykeltıraş kim?",
+      "ru": "Кто архитектор?",
+      "tr": "Mimar kim?",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Кто художник?",
+      "tr": "Ressam kim?",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Кто скульптор?",
+      "tr": "Heykeltıraş kim?",
       "tl": null,
       "sub": null
     },
@@ -185,7 +197,7 @@
     },
     {
       "ru": "Я увлекаюсь искусством",
-      "tr": "Sanatle ilgileniyorum",
+      "tr": "Sanatla ilgileniyorum",
       "tl": null,
       "sub": null
     },
@@ -244,8 +256,26 @@
       "sub": null
     },
     {
-      "ru": "Что это за зверь/птица/цветок/дерево?",
-      "tr": "Bu ne tür bir hayvan/kuş/çiçek/ağaç?",
+      "ru": "Что это за зверь?",
+      "tr": "Bu ne tür bir hayvan?",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Что это за птица?",
+      "tr": "Bu ne tür bir kuş?",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Что это за цветок?",
+      "tr": "Bu ne tür bir çiçek?",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Что это за дерево?",
+      "tr": "Bu ne tür bir ağaç?",
       "tl": null,
       "sub": null
     }

@@ -76,14 +76,32 @@
       "sub": null
     },
     {
-      "ru": "Номер на втором/третьем/четвертом/пятом этаже",
-      "tr": "Oda ikinci/üçüncü/dördüncü/beşinci katta",
+      "ru": "Номер на втором этаже (по-турецки — первый)",
+      "tr": "Oda birinci katta",
       "tl": null,
       "sub": null
     },
     {
-      "ru": "У вас есть номера на первом этаже?",
-      "tr": "Birinci katta bir odanız var mı?",
+      "ru": "Номер на третьем этаже (по-турецки — второй)",
+      "tr": "Oda ikinci katta",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Номер на четвёртом этаже (по-турецки — третий)",
+      "tr": "Oda üçüncü katta",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Номер на пятом этаже (по-турецки — четвёртый)",
+      "tr": "Oda dördüncü katta",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "У вас есть номер на первом этаже? (по-турецки — zemin kat)",
+      "tr": "Zemin katta bir odanız var mı?",
       "tl": null,
       "sub": null
     },
@@ -125,7 +143,7 @@
     },
     {
       "ru": "Там есть кондиционер?",
-      "tr": "Klimalı var mı?",
+      "tr": "Klima var mı?",
       "tl": null,
       "sub": null
     },
@@ -142,8 +160,20 @@
       "sub": null
     },
     {
-      "ru": "В номере есть телефон/радио/телевизор?",
-      "tr": "Odada telefon/radyo/televizyon var mı?",
+      "ru": "В номере есть телефон?",
+      "tr": "Odada telefon var mı?",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "В номере есть радио?",
+      "tr": "Odada radyo var mı?",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "В номере есть телевизор?",
+      "tr": "Odada televizyon var mı?",
       "tl": null,
       "sub": null
     },
@@ -191,7 +221,7 @@
     },
     {
       "ru": "Сколько стоит номер и завтрак?",
-      "tr": "Yatak ve kahvaltı fiyatı ne kadar?",
+      "tr": "Oda kahvaltı fiyatı ne kadar?",
       "tl": null,
       "sub": null
     },
@@ -299,7 +329,7 @@
     },
     {
       "ru": "Завтрак в номер, пожалуйста",
-      "tr": "Kahvaltı odama istiyorum, lütfen",
+      "tr": "Kahvaltıyı odama istiyorum, lütfen",
       "tl": null,
       "sub": null
     },
@@ -334,8 +364,20 @@
       "sub": null
     },
     {
-      "ru": "Сломалась розетка/дверца/жалюзи",
-      "tr": "Elektrik fişi/panjur/kepenk bozuk",
+      "ru": "Сломалась розетка",
+      "tr": "Priz bozuk",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Сломалась дверь",
+      "tr": "Kapı bozuk",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Сломались жалюзи",
+      "tr": "Panjur bozuk",
       "tl": null,
       "sub": null
     },
@@ -347,7 +389,7 @@
     },
     {
       "ru": "Я уезжаю завтра утром",
-      "tr": "Sabah erkenden ayrılıyorum",
+      "tr": "Yarın sabah ayrılıyorum",
       "tl": null,
       "sub": null
     },
@@ -365,7 +407,7 @@
     },
     {
       "ru": "Мне нужно уехать сразу же",
-      "tr": "Hemen ayrılmamız gerekiyor",
+      "tr": "Hemen ayrılmam gerekiyor",
       "tl": null,
       "sub": null
     },
@@ -389,13 +431,13 @@
     },
     {
       "ru": "Вызовите мне такси, пожалуйста",
-      "tr": "Bana bir taksi çağırır mısınız lütfen",
+      "tr": "Bana bir taksi çağırır mısınız lütfen?",
       "tl": null,
       "sub": null
     },
     {
       "ru": "Отнести вниз мой багаж, пожалуйста",
-      "tr": "Bagajımı aşağı getirir misiniz lütfen?",
+      "tr": "Bagajımı aşağı indirir misiniz lütfen?",
       "tl": null,
       "sub": null
     },
@@ -419,7 +461,7 @@
     },
     {
       "ru": "Разбудите меня в … , пожалуйста",
-      "tr": "Beni saat …de uyandırır mısınız, lütfen",
+      "tr": "Beni saat …de uyandırır mısınız, lütfen?",
       "tl": null,
       "sub": null
     },

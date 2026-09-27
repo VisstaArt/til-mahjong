@@ -22,8 +22,20 @@
       "sub": null
     },
     {
-      "ru": "Я пробуду здесь несколько дней/ неделю/месяц",
-      "tr": "Birkaç gün/bir hafta/bir ay kalacağım",
+      "ru": "Я пробуду здесь несколько дней",
+      "tr": "Birkaç gün kalacağım",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Я пробуду здесь неделю",
+      "tr": "Bir hafta kalacağım",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Я пробуду здесь месяц",
+      "tr": "Bir ay kalacağım",
       "tl": null,
       "sub": null
     },
@@ -76,7 +88,7 @@
       "sub": null
     },
     {
-      "ru": "Есть ли у вас вещи, полежащие обложению пошлиной?",
+      "ru": "Есть ли у вас вещи, подлежащие обложению пошлиной?",
       "tr": "Deklare edecek bir şeyiniz var mı?",
       "tl": "Дэкларэ эдэджэк бир шейиниз вар мы?",
       "sub": null

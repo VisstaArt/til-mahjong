@@ -29,7 +29,7 @@
     },
     {
       "ru": "Доброе утро",
-      "tr": "Gün aydın",
+      "tr": "Günaydın",
       "tl": null,
       "sub": null
     },
@@ -65,7 +65,7 @@
     },
     {
       "ru": "Хорошо провести выходные",
-      "tr": "İyi tatiler",
+      "tr": "İyi hafta sonları",
       "tl": null,
       "sub": null
     },
@@ -167,7 +167,7 @@
     },
     {
       "ru": "Здесь кто-нибудь говорит по-русски?",
-      "tr": "Burada birisi rusça biliyor mu?",
+      "tr": "Burada birisi Rusça biliyor mu?",
       "tl": null,
       "sub": null
     },
@@ -215,7 +215,7 @@
     },
     {
       "ru": "Вы не могли бы говорить помедленнее?",
-      "tr": "Lütfen, daha yavaş konuşun",
+      "tr": "Daha yavaş konuşabilir misiniz, lütfen?",
       "tl": null,
       "sub": null
     },
@@ -227,7 +227,7 @@
     },
     {
       "ru": "Не могли бы вы повторить, пожалуйста?",
-      "tr": "Tekrar söyler misiniz, lütfen",
+      "tr": "Tekrar söyler misiniz, lütfen?",
       "tl": null,
       "sub": null
     },
@@ -245,25 +245,37 @@
     },
     {
       "ru": "Что это значит в турецком?",
-      "tr": "O Türkçe ne demek istiyor?",
+      "tr": "Bu Türkçede ne demek?",
       "tl": null,
       "sub": null
     },
     {
       "ru": "Как это называется по-турецки?",
-      "tr": "Türkçede o nasıl denir?",
+      "tr": "Buna Türkçede ne denir?",
       "tl": null,
       "sub": null
     },
     {
       "ru": "Как это сказать по-турецки?",
-      "tr": "Türkçe o nasıl söylenir?",
+      "tr": "Bu Türkçe nasıl söylenir?",
       "tl": null,
       "sub": null
     },
     {
-      "ru": "Не могли бы вы показать это слово/эту фразу/это предложение в книге?",
-      "tr": "Sözcüğü/deyimi/tümceyi kitapta gösterir misiniz, lütfen?",
+      "ru": "Не могли бы вы показать это слово в книге?",
+      "tr": "Bu kelimeyi kitapta gösterir misiniz, lütfen?",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Не могли бы вы показать эту фразу в книге?",
+      "tr": "Bu ifadeyi kitapta gösterir misiniz, lütfen?",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Не могли бы вы показать это предложение в книге?",
+      "tr": "Bu cümleyi kitapta gösterir misiniz, lütfen?",
       "tl": null,
       "sub": null
     },
@@ -280,8 +292,20 @@
       "sub": null
     },
     {
-      "ru": "Пожалуйста, дайте/принесите/покажите мне …",
-      "tr": "Lütfen bana … veriniz/getiriniz/gösteriniz",
+      "ru": "Пожалуйста, дайте мне …",
+      "tr": "Lütfen bana … verin",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Пожалуйста, принесите мне …",
+      "tr": "Lütfen bana … getirin",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Пожалуйста, покажите мне …",
+      "tr": "Lütfen bana … gösterin",
       "tl": null,
       "sub": null
     },
@@ -340,8 +364,26 @@
       "sub": null
     },
     {
-      "ru": "Хочу познакомить вас с моей женой, моим мужем, моим сыном, моей дочерью",
-      "tr": "Size karımı/kocamı/oğlumu/kızımı tanıştırabilir miyim",
+      "ru": "Позвольте познакомить вас с моей женой",
+      "tr": "Size karımı tanıştırabilir miyim?",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Позвольте познакомить вас с моим мужем",
+      "tr": "Size kocamı tanıştırabilir miyim?",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Позвольте познакомить вас с моим сыном",
+      "tr": "Size oğlumu tanıştırabilir miyim?",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Позвольте познакомить вас с моей дочерью",
+      "tr": "Size kızımı tanıştırabilir miyim?",
       "tl": null,
       "sub": null
     },
@@ -353,13 +395,13 @@
     },
     {
       "ru": "Я русский/русская",
-      "tr": "Ben rusum",
+      "tr": "Ben Rusum",
       "tl": null,
       "sub": null
     },
     {
       "ru": "Откуда вы?",
-      "tr": "Neresilisiniz?",
+      "tr": "Nerelisiniz?",
       "tl": null,
       "sub": null
     },
@@ -383,13 +425,31 @@
     },
     {
       "ru": "Как долго вы здесь находитесь?",
-      "tr": "Ne kadar zaman buradasınız?",
+      "tr": "Ne kadar zamandır buradasınız?",
       "tl": null,
       "sub": null
     },
     {
-      "ru": "Я здесь …дней/недель/месяцев/лет",
-      "tr": "… gün/hafta/ay/yıl buradayım",
+      "ru": "Я здесь … дней",
+      "tr": "… gündür buradayım",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Я здесь … недель",
+      "tr": "… haftadır buradayım",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Я здесь … месяцев",
+      "tr": "… aydır buradayım",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Я здесь … лет",
+      "tr": "… yıldır buradayım",
       "tl": null,
       "sub": null
     },
@@ -400,13 +460,31 @@
       "sub": null
     },
     {
-      "ru": "Я с женой/мужем/сыном/дочерью",
-      "tr": "Karımla/kocamla/oğlumla/kızımla birlikteyim",
+      "ru": "Я с женой",
+      "tr": "Karımla birlikteyim",
       "tl": null,
       "sub": null
     },
     {
-      "ru": "Я не женат/незамужем",
+      "ru": "Я с мужем",
+      "tr": "Kocamla birlikteyim",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Я с сыном",
+      "tr": "Oğlumla birlikteyim",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Я с дочерью",
+      "tr": "Kızımla birlikteyim",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Я не женат/не замужем",
       "tr": "Bekarım",
       "tl": null,
       "sub": null
@@ -490,8 +568,20 @@
       "sub": null
     },
     {
-      "ru": "Мое хобби музыка/спорт/кино",
-      "tr": "Hobim müzik/spor/sinema",
+      "ru": "Моё хобби — музыка",
+      "tr": "Hobim müzik",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Моё хобби — спорт",
+      "tr": "Hobim spor",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Моё хобби — кино",
+      "tr": "Hobim sinema",
       "tl": null,
       "sub": null
     },
@@ -563,7 +653,7 @@
     },
     {
       "ru": "Вы женаты/замужем?",
-      "tr": "Bekar mısınız?/Evli misiniz?",
+      "tr": "Evli misiniz?",
       "tl": null,
       "sub": null
     },
@@ -581,7 +671,7 @@
     },
     {
       "ru": "У меня … братьев/сестер",
-      "tr": "Erkek kardeşim/kız kardeşim var",
+      "tr": "… erkek kardeşim/kız kardeşim var",
       "tl": null,
       "sub": null
     },
