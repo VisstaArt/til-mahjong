@@ -113,7 +113,7 @@ def load_sources():
         items = data if isinstance(data, list) else data.get("phrases", [])
         for p in items:
             if p.get("tr") and p.get("ru"):
-                out.append({"ru": p["ru"], "tr": p["tr"], "src": f"Фразы · {titles.get(tid, tid)}", "tier": "life"})
+                out.append({"ru": p["ru"], "tr": p["tr"], "src": f"Фразы · {titles.get(tid, tid)}", "tier": "life", "level": p.get("level")})
     for f in sorted(glob.glob(os.path.join(ROOT, "assets", "dialogues", "*.json"))):
         if f.endswith("manifest.json"):
             continue
@@ -121,7 +121,7 @@ def load_sources():
         for d in topic.get("dialogues", []):
             for t in d.get("turns", []):
                 if t.get("tr") and t.get("ru"):
-                    out.append({"ru": t["ru"], "tr": t["tr"], "src": f"Диалоги · {d['title']}", "tier": "life"})
+                    out.append({"ru": t["ru"], "tr": t["tr"], "src": f"Диалоги · {d['title']}", "tier": "life", "level": t.get("level") or d.get("level")})
     seen, uniq = set(), []
     for it in out:
         key = it["tr"].strip()
@@ -331,7 +331,9 @@ def main():
                 base_problems.append(f"{src['baseTopic']}: {tr}")
                 continue
         else:
-            if len(tr.split()) > LIFE_MAX_WORDS or levels.classify(tr)[0] not in LIFE_LEVELS:
+            # Уровень, проставленный вручную (агент диалогов), важнее эвристики levels.py.
+            level = src.get("level") or levels.classify(tr)[0]
+            if len(tr.split()) > LIFE_MAX_WORDS or level not in LIFE_LEVELS:
                 too_hard += 1
                 continue
         if slots:
