@@ -6,7 +6,7 @@
       "id": "na-tamozhne-vylet-moskva",
       "title": "Паспортный контроль: вылет в Москву",
       "level": "A2",
-      "speakers": { "a": "Ольга", "b": "Ведат" },
+      "speakers": { "a": "Ольга", "b": "Гёкай" },
       "turns": [
         { "speaker": "b", "tr": "Günaydın. Pasaportunuz lütfen.", "ru": "Доброе утро. Ваш паспорт, пожалуйста.", "distractors": [
           { "tr": "Moskova'ya. Ailem orada yaşıyor.", "ru": "В Москву. Там живёт моя семья." },
@@ -334,7 +334,7 @@
       "id": "na-tamozhne-podarki",
       "title": "Таможня: подарки из Москвы",
       "level": "A2",
-      "speakers": { "a": "Ольга", "b": "Корай" },
+      "speakers": { "a": "Ольга", "b": "Эртан" },
       "turns": [
         { "speaker": "b", "tr": "Bir dakika, hanımefendi. Deklare edecek bir şeyiniz var mı?", "ru": "Минутку, госпожа. Есть ли у вас вещи, подлежащие обложению пошлиной?", "distractors": [
           { "tr": "Üç yüz avrom ve biraz rublem var.", "ru": "У меня триста евро и немного рублей." },
