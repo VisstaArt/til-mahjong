@@ -527,14 +527,14 @@
           { "tr": "Hayır, rahatsız olmam.", "ru": "Нет, не возражаю." }
         ]},
         { "speaker": "b", "tr": "Bir içki getirebilir miyim?", "ru": "Могу я принести тебе выпить?", "distractors": [
-          { "tr": "Sigara içersem rahatsız olur mu?", "ru": "Не возражаешь, если я закурю?" },
+          { "tr": "Sigara içersem rahatsız olur musun?", "ru": "Не возражаешь, если я закурю?" },
           { "tr": "Seninle tanışabilir miyim?", "ru": "Можно с тобой познакомиться?" }
         ]},
         { "speaker": "a", "tr": "Teşekkür ederim ama meşgulüm.", "ru": "Спасибо, но я занята.", "distractors": [
           { "tr": "Hayır, buyurun.", "ru": "Нет, пожалуйста." },
           { "tr": "Görüşürüz. İyi akşamlar!", "ru": "Пока. Хорошего вечера!" }
         ]},
-        { "speaker": "b", "tr": "Sigara içersem rahatsız olur mu?", "ru": "Не возражаешь, если я закурю?", "distractors": [
+        { "speaker": "b", "tr": "Sigara içersem rahatsız olur musun?", "ru": "Не возражаешь, если я закурю?", "distractors": [
           { "tr": "Buraya oturmam seni rahatsız eder mi?", "ru": "Не возражаешь, если я присяду рядом?" },
           { "tr": "Peki, görüşürüz belki.", "ru": "Хорошо, может, увидимся." }
         ]},
