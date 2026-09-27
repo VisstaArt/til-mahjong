@@ -1621,6 +1621,438 @@
           { "tr": "Seni de! Bu ilk gelişin mi Türkiye'ye?", "ru": "Тебя тоже! Это твой первый приезд в Турцию?" }
         ]}
       ]
+    },
+    {
+      "id": "znakomstvo-a1-sosedka",
+      "title": "Новая соседка",
+      "level": "A1",
+      "speakers": { "a": "Ольга", "b": "Нуран" },
+      "turns": [
+        { "speaker": "a", "tr": "İyi günler! Siz yeni komşu musunuz?", "ru": "Добрый день! Вы новая соседка?", "distractors": [
+          { "tr": "Memnun oldum, Olga Hanım. Görüşürüz!", "ru": "Очень приятно, Ольга. До встречи!" },
+          { "tr": "Benim adım Olga. Hoş geldiniz!", "ru": "Меня зовут Ольга. Добро пожаловать!" }
+        ]},
+        { "speaker": "b", "tr": "Evet, dün taşındım. Benim adım Nuran. Sizin adınız ne?", "ru": "Да, вчера переехала. Меня зовут Нуран. А вас как зовут?", "distractors": [
+          { "tr": "Üçüncü kattayım. Nerelisiniz, Olga Hanım?", "ru": "Я на третьем. Откуда вы, Ольга?" },
+          { "tr": "Rusyalıyım. Bir yıl önce Türkiye'ye geldim.", "ru": "Я из России. Приехала в Турцию год назад." }
+        ]},
+        { "speaker": "a", "tr": "Benim adım Olga. Hoş geldiniz!", "ru": "Меня зовут Ольга. Добро пожаловать!", "distractors": [
+          { "tr": "Teşekkür ederim. Türkçe öğreniyorum.", "ru": "Спасибо. Я учу турецкий." },
+          { "tr": "Türkçeniz çok iyi!", "ru": "У вас очень хороший турецкий!" }
+        ]},
+        { "speaker": "b", "tr": "Hoş bulduk. Hangi katta oturuyorsunuz?", "ru": "Спасибо. На каком этаже вы живёте?", "distractors": [
+          { "tr": "Teşekkür ederim. Türkçe öğreniyorum.", "ru": "Спасибо. Я учу турецкий." },
+          { "tr": "Evet, dün taşındım. Benim adım Nuran. Sizin adınız ne?", "ru": "Да, вчера переехала. Меня зовут Нуран. А вас как зовут?" }
+        ]},
+        { "speaker": "a", "tr": "İkinci katta, beş numarada. Ya siz?", "ru": "На втором этаже, в пятой квартире. А вы?", "distractors": [
+          { "tr": "Benim adım Olga. Hoş geldiniz!", "ru": "Меня зовут Ольга. Добро пожаловать!" },
+          { "tr": "Evet, dün taşındım. Benim adım Nuran. Sizin adınız ne?", "ru": "Да, вчера переехала. Меня зовут Нуран. А вас как зовут?" }
+        ]},
+        { "speaker": "b", "tr": "Üçüncü kattayım. Nerelisiniz, Olga Hanım?", "ru": "Я на третьем. Откуда вы, Ольга?", "distractors": [
+          { "tr": "Hoş bulduk. Hangi katta oturuyorsunuz?", "ru": "Спасибо. На каком этаже вы живёте?" },
+          { "tr": "Benim adım Olga. Hoş geldiniz!", "ru": "Меня зовут Ольга. Добро пожаловать!" }
+        ]},
+        { "speaker": "a", "tr": "Rusyalıyım. Bir yıl önce Türkiye'ye geldim.", "ru": "Я из России. Приехала в Турцию год назад.", "distractors": [
+          { "tr": "Benim adım Olga. Hoş geldiniz!", "ru": "Меня зовут Ольга. Добро пожаловать!" },
+          { "tr": "Memnun oldum, Olga Hanım. Görüşürüz!", "ru": "Очень приятно, Ольга. До встречи!" }
+        ]},
+        { "speaker": "b", "tr": "Türkçeniz çok iyi!", "ru": "У вас очень хороший турецкий!", "distractors": [
+          { "tr": "Benim adım Olga. Hoş geldiniz!", "ru": "Меня зовут Ольга. Добро пожаловать!" },
+          { "tr": "Üçüncü kattayım. Nerelisiniz, Olga Hanım?", "ru": "Я на третьем. Откуда вы, Ольга?" }
+        ]},
+        { "speaker": "a", "tr": "Teşekkür ederim. Türkçe öğreniyorum.", "ru": "Спасибо. Я учу турецкий.", "distractors": [
+          { "tr": "İkinci katta, beş numarada. Ya siz?", "ru": "На втором этаже, в пятой квартире. А вы?" },
+          { "tr": "Evet, dün taşındım. Benim adım Nuran. Sizin adınız ne?", "ru": "Да, вчера переехала. Меня зовут Нуран. А вас как зовут?" }
+        ]},
+        { "speaker": "b", "tr": "Memnun oldum, Olga Hanım. Görüşürüz!", "ru": "Очень приятно, Ольга. До встречи!", "distractors": [
+          { "tr": "İkinci katta, beş numarada. Ya siz?", "ru": "На втором этаже, в пятой квартире. А вы?" },
+          { "tr": "Üçüncü kattayım. Nerelisiniz, Olga Hanım?", "ru": "Я на третьем. Откуда вы, Ольга?" }
+        ]}
+      ]
+    },
+    {
+      "id": "znakomstvo-a1-sosedka-chay",
+      "title": "Чай у соседки",
+      "level": "A1",
+      "speakers": { "a": "Ольга", "b": "Нуран" },
+      "turns": [
+        { "speaker": "b", "tr": "Buyurun, Olga Hanım, içeri gelin!", "ru": "Проходите, Ольга, заходите!", "distractors": [
+          { "tr": "Tabii, bu benim numaram. WhatsApp'ım da var.", "ru": "Конечно, вот мой номер. У меня и WhatsApp есть." },
+          { "tr": "Sağ olun. Çay ister misiniz?", "ru": "Спасибо. Хотите чаю?" }
+        ]},
+        { "speaker": "a", "tr": "Teşekkürler. Eviniz çok güzel.", "ru": "Спасибо. У вас очень красивая квартира.", "distractors": [
+          { "tr": "Olga Hanım, telefon numaranız ne? Artık komşuyuz.", "ru": "Ольга, какой у вас номер телефона? Мы ведь теперь соседи." },
+          { "tr": "Pazarlama bölümünde çalışıyorum. Ofisimiz Karaköy'de.", "ru": "Я работаю в отделе маркетинга. Наш офис в Каракёе." }
+        ]},
+        { "speaker": "b", "tr": "Sağ olun. Çay ister misiniz?", "ru": "Спасибо. Хотите чаю?", "distractors": [
+          { "tr": "Pazarlama bölümünde çalışıyorum. Ofisimiz Karaköy'de.", "ru": "Я работаю в отделе маркетинга. Наш офис в Каракёе." },
+          { "tr": "Buyurun, Olga Hanım, içeri gelin!", "ru": "Проходите, Ольга, заходите!" }
+        ]},
+        { "speaker": "a", "tr": "Evet, lütfen. Nuran Hanım, siz nerelisiniz?", "ru": "Да, пожалуйста. Нуран, а вы откуда?", "distractors": [
+          { "tr": "Anlıyorum. Oğlunuz ne iş yapıyor?", "ru": "Понимаю. А кем работает ваш сын?" },
+          { "tr": "Doktor. Siz ne iş yapıyorsunuz?", "ru": "Он врач. А вы кем работаете?" }
+        ]},
+        { "speaker": "b", "tr": "İzmirliyim. Oğlum İstanbul'da, ona yakın oturmak istiyorum.", "ru": "Я из Измира. Мой сын в Стамбуле, я хочу жить рядом с ним.", "distractors": [
+          { "tr": "Pazarlama bölümünde çalışıyorum. Ofisimiz Karaköy'de.", "ru": "Я работаю в отделе маркетинга. Наш офис в Каракёе." },
+          { "tr": "Buyurun, Olga Hanım, içeri gelin!", "ru": "Проходите, Ольга, заходите!" }
+        ]},
+        { "speaker": "a", "tr": "Anlıyorum. Oğlunuz ne iş yapıyor?", "ru": "Понимаю. А кем работает ваш сын?", "distractors": [
+          { "tr": "Teşekkürler. Eviniz çok güzel.", "ru": "Спасибо. У вас очень красивая квартира." },
+          { "tr": "Buyurun, Olga Hanım, içeri gelin!", "ru": "Проходите, Ольга, заходите!" }
+        ]},
+        { "speaker": "b", "tr": "Doktor. Siz ne iş yapıyorsunuz?", "ru": "Он врач. А вы кем работаете?", "distractors": [
+          { "tr": "Teşekkürler. Eviniz çok güzel.", "ru": "Спасибо. У вас очень красивая квартира." },
+          { "tr": "Sağ olun. Çay ister misiniz?", "ru": "Спасибо. Хотите чаю?" }
+        ]},
+        { "speaker": "a", "tr": "Pazarlama bölümünde çalışıyorum. Ofisimiz Karaköy'de.", "ru": "Я работаю в отделе маркетинга. Наш офис в Каракёе.", "distractors": [
+          { "tr": "Tabii, bu benim numaram. WhatsApp'ım da var.", "ru": "Конечно, вот мой номер. У меня и WhatsApp есть." },
+          { "tr": "Buyurun, Olga Hanım, içeri gelin!", "ru": "Проходите, Ольга, заходите!" }
+        ]},
+        { "speaker": "b", "tr": "Olga Hanım, telefon numaranız ne? Artık komşuyuz.", "ru": "Ольга, какой у вас номер телефона? Мы ведь теперь соседи.", "distractors": [
+          { "tr": "Anlıyorum. Oğlunuz ne iş yapıyor?", "ru": "Понимаю. А кем работает ваш сын?" },
+          { "tr": "Buyurun, Olga Hanım, içeri gelin!", "ru": "Проходите, Ольга, заходите!" }
+        ]},
+        { "speaker": "a", "tr": "Tabii, bu benim numaram. WhatsApp'ım da var.", "ru": "Конечно, вот мой номер. У меня и WhatsApp есть.", "distractors": [
+          { "tr": "Teşekkürler. Eviniz çok güzel.", "ru": "Спасибо. У вас очень красивая квартира." },
+          { "tr": "Sağ olun. Çay ister misiniz?", "ru": "Спасибо. Хотите чаю?" }
+        ]}
+      ]
+    },
+    {
+      "id": "znakomstvo-a1-sportzal-pervyy-den",
+      "title": "Первый день в спортзале",
+      "level": "A1",
+      "speakers": { "a": "Ольга", "b": "Синан" },
+      "turns": [
+        { "speaker": "a", "tr": "Merhaba! Bugün ilk günüm. Üye olmak istiyorum.", "ru": "Здравствуйте! Сегодня мой первый день. Я хочу оформить абонемент.", "distractors": [
+          { "tr": "Hayır, zor değil! Kaç yaşındasınız?", "ru": "Нет, не трудная! Сколько вам лет?" },
+          { "tr": "Benim adım Olga.", "ru": "Меня зовут Ольга." }
+        ]},
+        { "speaker": "b", "tr": "Hoş geldiniz! Buyurun, oturun. Adınız ne?", "ru": "Добро пожаловать! Садитесь, пожалуйста. Как вас зовут?", "distractors": [
+          { "tr": "Sabah yedide. Telefon numaranız ne?", "ru": "В семь утра. Какой у вас номер телефона?" },
+          { "tr": "Petrova. Soyadım biraz zor, değil mi?", "ru": "Петрова. Фамилия немного трудная, да?" }
+        ]},
+        { "speaker": "a", "tr": "Benim adım Olga.", "ru": "Меня зовут Ольга.", "distractors": [
+          { "tr": "Tamam, Olga Hanım. Kolay gelsin, iyi sporlar!", "ru": "Хорошо, Ольга. Удачи, хороших тренировок!" },
+          { "tr": "Merhaba! Bugün ilk günüm. Üye olmak istiyorum.", "ru": "Здравствуйте! Сегодня мой первый день. Я хочу оформить абонемент." }
+        ]},
+        { "speaker": "b", "tr": "Soyadınız ne?", "ru": "Какая у вас фамилия?", "distractors": [
+          { "tr": "Yirmi yedi yaşındayım. Salon sabah kaçta açık?", "ru": "Мне двадцать семь лет. Во сколько утром открывается зал?" },
+          { "tr": "Hoş geldiniz! Buyurun, oturun. Adınız ne?", "ru": "Добро пожаловать! Садитесь, пожалуйста. Как вас зовут?" }
+        ]},
+        { "speaker": "a", "tr": "Petrova. Soyadım biraz zor, değil mi?", "ru": "Петрова. Фамилия немного трудная, да?", "distractors": [
+          { "tr": "Tamam, Olga Hanım. Kolay gelsin, iyi sporlar!", "ru": "Хорошо, Ольга. Удачи, хороших тренировок!" },
+          { "tr": "Benim adım Olga.", "ru": "Меня зовут Ольга." }
+        ]},
+        { "speaker": "b", "tr": "Hayır, zor değil! Kaç yaşındasınız?", "ru": "Нет, не трудная! Сколько вам лет?", "distractors": [
+          { "tr": "Merhaba! Bugün ilk günüm. Üye olmak istiyorum.", "ru": "Здравствуйте! Сегодня мой первый день. Я хочу оформить абонемент." },
+          { "tr": "Tamam, Olga Hanım. Kolay gelsin, iyi sporlar!", "ru": "Хорошо, Ольга. Удачи, хороших тренировок!" }
+        ]},
+        { "speaker": "a", "tr": "Yirmi yedi yaşındayım. Salon sabah kaçta açık?", "ru": "Мне двадцать семь лет. Во сколько утром открывается зал?", "distractors": [
+          { "tr": "Tamam, Olga Hanım. Kolay gelsin, iyi sporlar!", "ru": "Хорошо, Ольга. Удачи, хороших тренировок!" },
+          { "tr": "Bu benim numaram. İşten sonra geleceğim, ofisim yakında.", "ru": "Вот мой номер. Я буду приходить после работы, мой офис рядом." }
+        ]},
+        { "speaker": "b", "tr": "Sabah yedide. Telefon numaranız ne?", "ru": "В семь утра. Какой у вас номер телефона?", "distractors": [
+          { "tr": "Benim adım Olga.", "ru": "Меня зовут Ольга." },
+          { "tr": "Hoş geldiniz! Buyurun, oturun. Adınız ne?", "ru": "Добро пожаловать! Садитесь, пожалуйста. Как вас зовут?" }
+        ]},
+        { "speaker": "a", "tr": "Bu benim numaram. İşten sonra geleceğim, ofisim yakında.", "ru": "Вот мой номер. Я буду приходить после работы, мой офис рядом.", "distractors": [
+          { "tr": "Soyadınız ne?", "ru": "Какая у вас фамилия?" },
+          { "tr": "Merhaba! Bugün ilk günüm. Üye olmak istiyorum.", "ru": "Здравствуйте! Сегодня мой первый день. Я хочу оформить абонемент." }
+        ]},
+        { "speaker": "b", "tr": "Tamam, Olga Hanım. Kolay gelsin, iyi sporlar!", "ru": "Хорошо, Ольга. Удачи, хороших тренировок!", "distractors": [
+          { "tr": "Hayır, zor değil! Kaç yaşındasınız?", "ru": "Нет, не трудная! Сколько вам лет?" },
+          { "tr": "Yirmi yedi yaşındayım. Salon sabah kaçta açık?", "ru": "Мне двадцать семь лет. Во сколько утром открывается зал?" }
+        ]}
+      ]
+    },
+    {
+      "id": "znakomstvo-a1-sportzal-sosedka",
+      "title": "Знакомство в спортзале",
+      "level": "A1",
+      "speakers": { "a": "Ольга", "b": "Ышыл" },
+      "turns": [
+        { "speaker": "b", "tr": "Merhaba! Siz yenisiniz, değil mi?", "ru": "Здравствуйте! Вы новенькая, да?", "distractors": [
+          { "tr": "Kadıköy'de, Moda'da. Ya siz?", "ru": "В Кадыкёе, в Моде. А вы?" },
+          { "tr": "Hayır, haftada üç gün. Türkçe biliyor musunuz?", "ru": "Нет, три раза в неделю. Вы знаете турецкий?" }
+        ]},
+        { "speaker": "a", "tr": "Evet, bugün ilk günüm. Ben Olga.", "ru": "Да, сегодня мой первый день. Я Ольга.", "distractors": [
+          { "tr": "Ben de Kadıköy'de oturuyorum! Siz de vapurla mı geliyorsunuz?", "ru": "Я тоже живу в Кадыкёе! Вы тоже ездите на пароходе?" },
+          { "tr": "Biraz Türkçe konuşuyorum. Lütfen yavaş konuşun.", "ru": "Я немного говорю по-турецки. Говорите медленно, пожалуйста." }
+        ]},
+        { "speaker": "b", "tr": "Ben Işıl, memnun oldum. Nerelisiniz?", "ru": "Я Ышыл, очень приятно. Откуда вы?", "distractors": [
+          { "tr": "Kadıköy'de, Moda'da. Ya siz?", "ru": "В Кадыкёе, в Моде. А вы?" },
+          { "tr": "Ben de Kadıköy'de oturuyorum! Siz de vapurla mı geliyorsunuz?", "ru": "Я тоже живу в Кадыкёе! Вы тоже ездите на пароходе?" }
+        ]},
+        { "speaker": "a", "tr": "Rusyalıyım, Moskovalıyım. Siz her gün buraya geliyor musunuz?", "ru": "Я из России, из Москвы. А вы приходите сюда каждый день?", "distractors": [
+          { "tr": "Biraz Türkçe konuşuyorum. Lütfen yavaş konuşun.", "ru": "Я немного говорю по-турецки. Говорите медленно, пожалуйста." },
+          { "tr": "Tamam. Nerede oturuyorsunuz?", "ru": "Хорошо. Где вы живёте?" }
+        ]},
+        { "speaker": "b", "tr": "Hayır, haftada üç gün. Türkçe biliyor musunuz?", "ru": "Нет, три раза в неделю. Вы знаете турецкий?", "distractors": [
+          { "tr": "Ben Işıl, memnun oldum. Nerelisiniz?", "ru": "Я Ышыл, очень приятно. Откуда вы?" },
+          { "tr": "Kadıköy'de, Moda'da. Ya siz?", "ru": "В Кадыкёе, в Моде. А вы?" }
+        ]},
+        { "speaker": "a", "tr": "Biraz Türkçe konuşuyorum. Lütfen yavaş konuşun.", "ru": "Я немного говорю по-турецки. Говорите медленно, пожалуйста.", "distractors": [
+          { "tr": "Ben Işıl, memnun oldum. Nerelisiniz?", "ru": "Я Ышыл, очень приятно. Откуда вы?" },
+          { "tr": "Rusyalıyım, Moskovalıyım. Siz her gün buraya geliyor musunuz?", "ru": "Я из России, из Москвы. А вы приходите сюда каждый день?" }
+        ]},
+        { "speaker": "b", "tr": "Tamam. Nerede oturuyorsunuz?", "ru": "Хорошо. Где вы живёте?", "distractors": [
+          { "tr": "Merhaba! Siz yenisiniz, değil mi?", "ru": "Здравствуйте! Вы новенькая, да?" },
+          { "tr": "Rusyalıyım, Moskovalıyım. Siz her gün buraya geliyor musunuz?", "ru": "Я из России, из Москвы. А вы приходите сюда каждый день?" }
+        ]},
+        { "speaker": "a", "tr": "Kadıköy'de, Moda'da. Ya siz?", "ru": "В Кадыкёе, в Моде. А вы?", "distractors": [
+          { "tr": "Ben Işıl, memnun oldum. Nerelisiniz?", "ru": "Я Ышыл, очень приятно. Откуда вы?" },
+          { "tr": "Biraz Türkçe konuşuyorum. Lütfen yavaş konuşun.", "ru": "Я немного говорю по-турецки. Говорите медленно, пожалуйста." }
+        ]},
+        { "speaker": "b", "tr": "Ben de Kadıköy'de oturuyorum! Siz de vapurla mı geliyorsunuz?", "ru": "Я тоже живу в Кадыкёе! Вы тоже ездите на пароходе?", "distractors": [
+          { "tr": "Rusyalıyım, Moskovalıyım. Siz her gün buraya geliyor musunuz?", "ru": "Я из России, из Москвы. А вы приходите сюда каждый день?" },
+          { "tr": "Hayır, haftada üç gün. Türkçe biliyor musunuz?", "ru": "Нет, три раза в неделю. Вы знаете турецкий?" }
+        ]},
+        { "speaker": "a", "tr": "Evet, her sabah vapurla geliyorum. Vapurda çay içiyorum.", "ru": "Да, каждое утро езжу на пароходе. На пароходе пью чай.", "distractors": [
+          { "tr": "Biraz Türkçe konuşuyorum. Lütfen yavaş konuşun.", "ru": "Я немного говорю по-турецки. Говорите медленно, пожалуйста." },
+          { "tr": "Hayır, haftada üç gün. Türkçe biliyor musunuz?", "ru": "Нет, три раза в неделю. Вы знаете турецкий?" }
+        ]}
+      ]
+    },
+    {
+      "id": "znakomstvo-a1-novaya-kollega",
+      "title": "Новая коллега",
+      "level": "A1",
+      "speakers": { "a": "Ольга", "b": "Озге" },
+      "turns": [
+        { "speaker": "a", "tr": "Günaydın! Hoş geldiniz! Ben Olga, pazarlama bölümündeyim.", "ru": "Доброе утро! Добро пожаловать! Я Ольга, из отдела маркетинга.", "distractors": [
+          { "tr": "O zaman Rusça çok lazım. Ben İngilizce biliyorum ama Rusça bilmiyorum.", "ru": "Тогда русский очень нужен. Я знаю английский, а русский — нет." },
+          { "tr": "Harika! Masanız burada, benim yanımda.", "ru": "Отлично! Ваш стол здесь, рядом со мной." }
+        ]},
+        { "speaker": "b", "tr": "Hoş bulduk! Benim adım Özge. Ben de pazarlama bölümünde çalışacağım.", "ru": "Спасибо! Меня зовут Озге. Я тоже буду работать в отделе маркетинга.", "distractors": [
+          { "tr": "Çok güzel. Olga Hanım, siz nerelisiniz?", "ru": "Очень хорошо. Ольга, а вы откуда?" },
+          { "tr": "O zaman İstanbul'a da hoş geldiniz! Müdürümüz Metin Bey, o çok iyi biri.", "ru": "Тогда и в Стамбул добро пожаловать! Наш начальник — Метин-бей, он очень хороший человек." }
+        ]},
+        { "speaker": "a", "tr": "Harika! Masanız burada, benim yanımda.", "ru": "Отлично! Ваш стол здесь, рядом со мной.", "distractors": [
+          { "tr": "Çoğunlukla Rus, biraz da Alman.", "ru": "В основном русские, немного — немцы." },
+          { "tr": "O zaman Rusça çok lazım. Ben İngilizce biliyorum ama Rusça bilmiyorum.", "ru": "Тогда русский очень нужен. Я знаю английский, а русский — нет." }
+        ]},
+        { "speaker": "b", "tr": "Çok güzel. Olga Hanım, siz nerelisiniz?", "ru": "Очень хорошо. Ольга, а вы откуда?", "distractors": [
+          { "tr": "Hayır, Eskişehirliyim. İstanbul'a geçen ay geldim.", "ru": "Нет, я из Эскишехира. Приехала в Стамбул в прошлом месяце." },
+          { "tr": "Günaydın! Hoş geldiniz! Ben Olga, pazarlama bölümündeyim.", "ru": "Доброе утро! Добро пожаловать! Я Ольга, из отдела маркетинга." }
+        ]},
+        { "speaker": "a", "tr": "Rusyalıyım. Ya siz? İstanbullu musunuz?", "ru": "Я из России. А вы? Вы из Стамбула?", "distractors": [
+          { "tr": "Harika! Masanız burada, benim yanımda.", "ru": "Отлично! Ваш стол здесь, рядом со мной." },
+          { "tr": "Hoş bulduk! Benim adım Özge. Ben de pazarlama bölümünde çalışacağım.", "ru": "Спасибо! Меня зовут Озге. Я тоже буду работать в отделе маркетинга." }
+        ]},
+        { "speaker": "b", "tr": "Hayır, Eskişehirliyim. İstanbul'a geçen ay geldim.", "ru": "Нет, я из Эскишехира. Приехала в Стамбул в прошлом месяце.", "distractors": [
+          { "tr": "Güzel. Müşterilerimiz nereli?", "ru": "Хорошо. А откуда наши клиенты?" },
+          { "tr": "Harika! Masanız burada, benim yanımda.", "ru": "Отлично! Ваш стол здесь, рядом со мной." }
+        ]},
+        { "speaker": "a", "tr": "O zaman İstanbul'a da hoş geldiniz! Müdürümüz Metin Bey, o çok iyi biri.", "ru": "Тогда и в Стамбул добро пожаловать! Наш начальник — Метин-бей, он очень хороший человек.", "distractors": [
+          { "tr": "Çok güzel. Olga Hanım, siz nerelisiniz?", "ru": "Очень хорошо. Ольга, а вы откуда?" },
+          { "tr": "Çoğunlukla Rus, biraz da Alman.", "ru": "В основном русские, немного — немцы." }
+        ]},
+        { "speaker": "b", "tr": "Güzel. Müşterilerimiz nereli?", "ru": "Хорошо. А откуда наши клиенты?", "distractors": [
+          { "tr": "Rusyalıyım. Ya siz? İstanbullu musunuz?", "ru": "Я из России. А вы? Вы из Стамбула?" },
+          { "tr": "O zaman Rusça çok lazım. Ben İngilizce biliyorum ama Rusça bilmiyorum.", "ru": "Тогда русский очень нужен. Я знаю английский, а русский — нет." }
+        ]},
+        { "speaker": "a", "tr": "Çoğunlukla Rus, biraz da Alman.", "ru": "В основном русские, немного — немцы.", "distractors": [
+          { "tr": "Rusyalıyım. Ya siz? İstanbullu musunuz?", "ru": "Я из России. А вы? Вы из Стамбула?" },
+          { "tr": "Çok güzel. Olga Hanım, siz nerelisiniz?", "ru": "Очень хорошо. Ольга, а вы откуда?" }
+        ]},
+        { "speaker": "b", "tr": "O zaman Rusça çok lazım. Ben İngilizce biliyorum ama Rusça bilmiyorum.", "ru": "Тогда русский очень нужен. Я знаю английский, а русский — нет.", "distractors": [
+          { "tr": "Harika! Masanız burada, benim yanımda.", "ru": "Отлично! Ваш стол здесь, рядом со мной." },
+          { "tr": "Çok güzel. Olga Hanım, siz nerelisiniz?", "ru": "Очень хорошо. Ольга, а вы откуда?" }
+        ]}
+      ]
+    },
+    {
+      "id": "znakomstvo-a1-kollega-obed",
+      "title": "Обед с новой коллегой",
+      "level": "A1",
+      "speakers": { "a": "Ольга", "b": "Озге" },
+      "turns": [
+        { "speaker": "b", "tr": "Olga Hanım, öğle yemeğine gidiyor musunuz?", "ru": "Ольга, вы идёте на обед?", "distractors": [
+          { "tr": "Tamam. Siz nerede oturuyorsunuz?", "ru": "Хорошо. А где вы живёте?" },
+          { "tr": "Tamam, sizi gruba ekleyeceğim.", "ru": "Хорошо, я добавлю вас в группу." }
+        ]},
+        { "speaker": "a", "tr": "Evet, bugün evden yemek getirmedim. Siz de gelin!", "ru": "Да, сегодня я не взяла обед из дома. Пойдёмте со мной!", "distractors": [
+          { "tr": "Çok güzel! WhatsApp'ınız var mı? Bir iş grubumuz var.", "ru": "Здорово! У вас есть WhatsApp? У нас есть рабочая группа." },
+          { "tr": "Var. Bu benim numaram.", "ru": "Есть. Вот мой номер." }
+        ]},
+        { "speaker": "b", "tr": "Tamam. Siz nerede oturuyorsunuz?", "ru": "Хорошо. А где вы живёте?", "distractors": [
+          { "tr": "Var. Bu benim numaram.", "ru": "Есть. Вот мой номер." },
+          { "tr": "Tamam, sizi gruba ekleyeceğim.", "ru": "Хорошо, я добавлю вас в группу." }
+        ]},
+        { "speaker": "a", "tr": "Moda'da oturuyorum. Her sabah vapurla geliyorum. Ya siz?", "ru": "Я живу в Моде. Каждое утро приезжаю на пароходе. А вы?", "distractors": [
+          { "tr": "Var. Bu benim numaram.", "ru": "Есть. Вот мой номер." },
+          { "tr": "Çok güzel! WhatsApp'ınız var mı? Bir iş grubumuz var.", "ru": "Здорово! У вас есть WhatsApp? У нас есть рабочая группа." }
+        ]},
+        { "speaker": "b", "tr": "Beşiktaş'ta. Siz çok gençsiniz. Kaç yaşındasınız?", "ru": "В Бешикташе. Вы очень молодая. Сколько вам лет?", "distractors": [
+          { "tr": "Olga Hanım, öğle yemeğine gidiyor musunuz?", "ru": "Ольга, вы идёте на обед?" },
+          { "tr": "Çok güzel! WhatsApp'ınız var mı? Bir iş grubumuz var.", "ru": "Здорово! У вас есть WhatsApp? У нас есть рабочая группа." }
+        ]},
+        { "speaker": "a", "tr": "Yirmi yedi yaşındayım. Siz kaç yaşındasınız?", "ru": "Мне двадцать семь лет. А вам сколько?", "distractors": [
+          { "tr": "Olga Hanım, öğle yemeğine gidiyor musunuz?", "ru": "Ольга, вы идёте на обед?" },
+          { "tr": "Moda'da oturuyorum. Her sabah vapurla geliyorum. Ya siz?", "ru": "Я живу в Моде. Каждое утро приезжаю на пароходе. А вы?" }
+        ]},
+        { "speaker": "b", "tr": "Ben yirmi dört yaşındayım. Burası benim ilk işim.", "ru": "Мне двадцать четыре. Это моя первая работа.", "distractors": [
+          { "tr": "Evet, bugün evden yemek getirmedim. Siz de gelin!", "ru": "Да, сегодня я не взяла обед из дома. Пойдёмте со мной!" },
+          { "tr": "Olga Hanım, öğle yemeğine gidiyor musunuz?", "ru": "Ольга, вы идёте на обед?" }
+        ]},
+        { "speaker": "a", "tr": "Çok güzel! WhatsApp'ınız var mı? Bir iş grubumuz var.", "ru": "Здорово! У вас есть WhatsApp? У нас есть рабочая группа.", "distractors": [
+          { "tr": "Beşiktaş'ta. Siz çok gençsiniz. Kaç yaşındasınız?", "ru": "В Бешикташе. Вы очень молодая. Сколько вам лет?" },
+          { "tr": "Tamam, sizi gruba ekleyeceğim.", "ru": "Хорошо, я добавлю вас в группу." }
+        ]},
+        { "speaker": "b", "tr": "Var. Bu benim numaram.", "ru": "Есть. Вот мой номер.", "distractors": [
+          { "tr": "Beşiktaş'ta. Siz çok gençsiniz. Kaç yaşındasınız?", "ru": "В Бешикташе. Вы очень молодая. Сколько вам лет?" },
+          { "tr": "Moda'da oturuyorum. Her sabah vapurla geliyorum. Ya siz?", "ru": "Я живу в Моде. Каждое утро приезжаю на пароходе. А вы?" }
+        ]},
+        { "speaker": "a", "tr": "Tamam, sizi gruba ekleyeceğim.", "ru": "Хорошо, я добавлю вас в группу.", "distractors": [
+          { "tr": "Tamam. Siz nerede oturuyorsunuz?", "ru": "Хорошо. А где вы живёте?" },
+          { "tr": "Evet, bugün evden yemek getirmedim. Siz de gelin!", "ru": "Да, сегодня я не взяла обед из дома. Пойдёмте со мной!" }
+        ]}
+      ]
+    },
+    {
+      "id": "znakomstvo-a1-kurs-pervyy-urok",
+      "title": "Первый урок на курсах турецкого",
+      "level": "A1",
+      "speakers": { "a": "Ольга", "b": "Маркус" },
+      "turns": [
+        { "speaker": "b", "tr": "Merhaba! Burası Türkçe kursu mu?", "ru": "Здравствуйте! Это курсы турецкого?", "distractors": [
+          { "tr": "Hayır, öğrenci değilim. Çalışıyorum.", "ru": "Нет, я не студентка. Я работаю." },
+          { "tr": "Almanyalıyım, Hamburg'danım. Ya siz?", "ru": "Я из Германии, из Гамбурга. А вы?" }
+        ]},
+        { "speaker": "a", "tr": "Evet, burası. Siz de bu grupta mısınız?", "ru": "Да, здесь. Вы тоже в этой группе?", "distractors": [
+          { "tr": "Bir otelde aşçıyım. Siz öğrenci misiniz?", "ru": "Я повар в отеле. А вы студентка?" },
+          { "tr": "Ben Rusyalıyım. Burada ne iş yapıyorsunuz?", "ru": "Я из России. А чем вы здесь занимаетесь?" }
+        ]},
+        { "speaker": "b", "tr": "Evet. Benim adım Markus. Sizin adınız ne?", "ru": "Да. Меня зовут Маркус. А вас как зовут?", "distractors": [
+          { "tr": "Olga, bana sen de, lütfen.", "ru": "Ольга, говори мне «ты», пожалуйста." },
+          { "tr": "Tamam, sen de bana sen de! Bak, ders başlıyor.", "ru": "Хорошо, и ты мне говори «ты»! Смотри, урок начинается." }
+        ]},
+        { "speaker": "a", "tr": "Benim adım Olga. Nerelisiniz, Markus?", "ru": "Меня зовут Ольга. Откуда вы, Маркус?", "distractors": [
+          { "tr": "Hayır, öğrenci değilim. Çalışıyorum.", "ru": "Нет, я не студентка. Я работаю." },
+          { "tr": "Bir otelde aşçıyım. Siz öğrenci misiniz?", "ru": "Я повар в отеле. А вы студентка?" }
+        ]},
+        { "speaker": "b", "tr": "Almanyalıyım, Hamburg'danım. Ya siz?", "ru": "Я из Германии, из Гамбурга. А вы?", "distractors": [
+          { "tr": "Bir otelde aşçıyım. Siz öğrenci misiniz?", "ru": "Я повар в отеле. А вы студентка?" },
+          { "tr": "Hayır, öğrenci değilim. Çalışıyorum.", "ru": "Нет, я не студентка. Я работаю." }
+        ]},
+        { "speaker": "a", "tr": "Ben Rusyalıyım. Burada ne iş yapıyorsunuz?", "ru": "Я из России. А чем вы здесь занимаетесь?", "distractors": [
+          { "tr": "Olga, bana sen de, lütfen.", "ru": "Ольга, говори мне «ты», пожалуйста." },
+          { "tr": "Hayır, öğrenci değilim. Çalışıyorum.", "ru": "Нет, я не студентка. Я работаю." }
+        ]},
+        { "speaker": "b", "tr": "Bir otelde aşçıyım. Siz öğrenci misiniz?", "ru": "Я повар в отеле. А вы студентка?", "distractors": [
+          { "tr": "Almanyalıyım, Hamburg'danım. Ya siz?", "ru": "Я из Германии, из Гамбурга. А вы?" },
+          { "tr": "Evet, burası. Siz de bu grupta mısınız?", "ru": "Да, здесь. Вы тоже в этой группе?" }
+        ]},
+        { "speaker": "a", "tr": "Hayır, öğrenci değilim. Çalışıyorum.", "ru": "Нет, я не студентка. Я работаю.", "distractors": [
+          { "tr": "Ben Rusyalıyım. Burada ne iş yapıyorsunuz?", "ru": "Я из России. А чем вы здесь занимаетесь?" },
+          { "tr": "Almanyalıyım, Hamburg'danım. Ya siz?", "ru": "Я из Германии, из Гамбурга. А вы?" }
+        ]},
+        { "speaker": "b", "tr": "Olga, bana sen de, lütfen.", "ru": "Ольга, говори мне «ты», пожалуйста.", "distractors": [
+          { "tr": "Merhaba! Burası Türkçe kursu mu?", "ru": "Здравствуйте! Это курсы турецкого?" },
+          { "tr": "Benim adım Olga. Nerelisiniz, Markus?", "ru": "Меня зовут Ольга. Откуда вы, Маркус?" }
+        ]},
+        { "speaker": "a", "tr": "Tamam, sen de bana sen de! Bak, ders başlıyor.", "ru": "Хорошо, и ты мне говори «ты»! Смотри, урок начинается.", "distractors": [
+          { "tr": "Bir otelde aşçıyım. Siz öğrenci misiniz?", "ru": "Я повар в отеле. А вы студентка?" },
+          { "tr": "Ben Rusyalıyım. Burada ne iş yapıyorsunuz?", "ru": "Я из России. А чем вы здесь занимаетесь?" }
+        ]}
+      ]
+    },
+    {
+      "id": "znakomstvo-a1-kurs-posle-uroka",
+      "title": "После урока",
+      "level": "A1",
+      "speakers": { "a": "Ольга", "b": "Маркус" },
+      "turns": [
+        { "speaker": "b", "tr": "Olga, ders çok zordu, değil mi?", "ru": "Ольга, урок был очень трудный, правда?", "distractors": [
+          { "tr": "Beyoğlu'nda, otelin yakınında. Sen nerede oturuyorsun?", "ru": "В Бейоглу, рядом с отелем. А ты где живёшь?" },
+          { "tr": "Ben bir yıl önce geldim. İstanbul'da nerede oturuyorsun?", "ru": "Я — год назад. Где ты живёшь в Стамбуле?" }
+        ]},
+        { "speaker": "a", "tr": "Biraz zordu. Sen Türkiye'ye ne zaman geldin?", "ru": "Немного трудный. А ты когда приехал в Турцию?", "distractors": [
+          { "tr": "Moda'da. Grubumuzun WhatsApp'ı var mı?", "ru": "В Моде. А у нашей группы есть WhatsApp?" },
+          { "tr": "Tamam! Cumartesi görüşürüz!", "ru": "Хорошо! Увидимся в субботу!" }
+        ]},
+        { "speaker": "b", "tr": "Altı ay önce geldim. Ya sen?", "ru": "Полгода назад. А ты?", "distractors": [
+          { "tr": "Bu benim numaram. Sana mesaj atacağım.", "ru": "Вот мой номер. Я напишу тебе сообщение." },
+          { "tr": "Beyoğlu'nda, otelin yakınında. Sen nerede oturuyorsun?", "ru": "В Бейоглу, рядом с отелем. А ты где живёшь?" }
+        ]},
+        { "speaker": "a", "tr": "Ben bir yıl önce geldim. İstanbul'da nerede oturuyorsun?", "ru": "Я — год назад. Где ты живёшь в Стамбуле?", "distractors": [
+          { "tr": "Görüşürüz, Markus! İyi hafta sonları!", "ru": "Пока, Маркус! Хороших выходных!" },
+          { "tr": "Olga, ders çok zordu, değil mi?", "ru": "Ольга, урок был очень трудный, правда?" }
+        ]},
+        { "speaker": "b", "tr": "Beyoğlu'nda, otelin yakınında. Sen nerede oturuyorsun?", "ru": "В Бейоглу, рядом с отелем. А ты где живёшь?", "distractors": [
+          { "tr": "Olga, ders çok zordu, değil mi?", "ru": "Ольга, урок был очень трудный, правда?" },
+          { "tr": "Biraz zordu. Sen Türkiye'ye ne zaman geldin?", "ru": "Немного трудный. А ты когда приехал в Турцию?" }
+        ]},
+        { "speaker": "a", "tr": "Moda'da. Grubumuzun WhatsApp'ı var mı?", "ru": "В Моде. А у нашей группы есть WhatsApp?", "distractors": [
+          { "tr": "Görüşürüz, Markus! İyi hafta sonları!", "ru": "Пока, Маркус! Хороших выходных!" },
+          { "tr": "Altı ay önce geldim. Ya sen?", "ru": "Полгода назад. А ты?" }
+        ]},
+        { "speaker": "b", "tr": "Bilmiyorum. Telefon numaran ne?", "ru": "Не знаю. Какой у тебя номер телефона?", "distractors": [
+          { "tr": "Altı ay önce geldim. Ya sen?", "ru": "Полгода назад. А ты?" },
+          { "tr": "Görüşürüz, Markus! İyi hafta sonları!", "ru": "Пока, Маркус! Хороших выходных!" }
+        ]},
+        { "speaker": "a", "tr": "Bu benim numaram. Sana mesaj atacağım.", "ru": "Вот мой номер. Я напишу тебе сообщение.", "distractors": [
+          { "tr": "Biraz zordu. Sen Türkiye'ye ne zaman geldin?", "ru": "Немного трудный. А ты когда приехал в Турцию?" },
+          { "tr": "Olga, ders çok zordu, değil mi?", "ru": "Ольга, урок был очень трудный, правда?" }
+        ]},
+        { "speaker": "b", "tr": "Tamam! Cumartesi görüşürüz!", "ru": "Хорошо! Увидимся в субботу!", "distractors": [
+          { "tr": "Beyoğlu'nda, otelin yakınında. Sen nerede oturuyorsun?", "ru": "В Бейоглу, рядом с отелем. А ты где живёшь?" },
+          { "tr": "Biraz zordu. Sen Türkiye'ye ne zaman geldin?", "ru": "Немного трудный. А ты когда приехал в Турцию?" }
+        ]},
+        { "speaker": "a", "tr": "Görüşürüz, Markus! İyi hafta sonları!", "ru": "Пока, Маркус! Хороших выходных!", "distractors": [
+          { "tr": "Bu benim numaram. Sana mesaj atacağım.", "ru": "Вот мой номер. Я напишу тебе сообщение." },
+          { "tr": "Bilmiyorum. Telefon numaran ne?", "ru": "Не знаю. Какой у тебя номер телефона?" }
+        ]}
+      ]
+    },
+    {
+      "id": "znakomstvo-a1-kurs-novenkaya",
+      "title": "Новенькая в группе",
+      "level": "A1",
+      "speakers": { "a": "Ольга", "b": "Айгерим" },
+      "turns": [
+        { "speaker": "b", "tr": "Merhaba! Ben bu gruba yeni geldim. Burası boş mu?", "ru": "Здравствуйте! Я новенькая в этой группе. Здесь свободно?", "distractors": [
+          { "tr": "Türkçeniz çok iyi! Bakın, öğretmen geldi.", "ru": "У вас очень хороший турецкий! Смотрите, преподаватель пришёл." },
+          { "tr": "Ben Aygerim. Memnun oldum.", "ru": "Я Айгерим. Очень приятно." }
+        ]},
+        { "speaker": "a", "tr": "Evet, boş. Buyurun, oturun. Benim adım Olga.", "ru": "Да, свободно. Садитесь, пожалуйста. Меня зовут Ольга.", "distractors": [
+          { "tr": "Üniversitede öğrenciyim. Derslerim Türkçe.", "ru": "Я студентка в университете. Занятия у меня на турецком." },
+          { "tr": "Rusyalıyım. Siz Kazakistan'dan mısınız?", "ru": "Я из России. А вы из Казахстана?" }
+        ]},
+        { "speaker": "b", "tr": "Ben Aygerim. Memnun oldum.", "ru": "Я Айгерим. Очень приятно.", "distractors": [
+          { "tr": "Rusyalıyım. Siz Kazakistan'dan mısınız?", "ru": "Я из России. А вы из Казахстана?" },
+          { "tr": "Evet, Almatılıyım. Ben de Rusça biliyorum!", "ru": "Да, я из Алматы. Я тоже знаю русский!" }
+        ]},
+        { "speaker": "a", "tr": "Pardon, bir daha söyleyin, lütfen.", "ru": "Простите, повторите, пожалуйста.", "distractors": [
+          { "tr": "Rusyalıyım. Siz Kazakistan'dan mısınız?", "ru": "Я из России. А вы из Казахстана?" },
+          { "tr": "Merhaba! Ben bu gruba yeni geldim. Burası boş mu?", "ru": "Здравствуйте! Я новенькая в этой группе. Здесь свободно?" }
+        ]},
+        { "speaker": "b", "tr": "Aygerim. Bu bir Kazak adı. Siz nerelisiniz?", "ru": "Айгерим. Это казахское имя. А вы откуда?", "distractors": [
+          { "tr": "Harika! Türkiye'de ne iş yapıyorsunuz?", "ru": "Отлично! А чем вы занимаетесь в Турции?" },
+          { "tr": "Ben Aygerim. Memnun oldum.", "ru": "Я Айгерим. Очень приятно." }
+        ]},
+        { "speaker": "a", "tr": "Rusyalıyım. Siz Kazakistan'dan mısınız?", "ru": "Я из России. А вы из Казахстана?", "distractors": [
+          { "tr": "Üniversitede öğrenciyim. Derslerim Türkçe.", "ru": "Я студентка в университете. Занятия у меня на турецком." },
+          { "tr": "Harika! Türkiye'de ne iş yapıyorsunuz?", "ru": "Отлично! А чем вы занимаетесь в Турции?" }
+        ]},
+        { "speaker": "b", "tr": "Evet, Almatılıyım. Ben de Rusça biliyorum!", "ru": "Да, я из Алматы. Я тоже знаю русский!", "distractors": [
+          { "tr": "Evet, boş. Buyurun, oturun. Benim adım Olga.", "ru": "Да, свободно. Садитесь, пожалуйста. Меня зовут Ольга." },
+          { "tr": "Üniversitede öğrenciyim. Derslerim Türkçe.", "ru": "Я студентка в университете. Занятия у меня на турецком." }
+        ]},
+        { "speaker": "a", "tr": "Harika! Türkiye'de ne iş yapıyorsunuz?", "ru": "Отлично! А чем вы занимаетесь в Турции?", "distractors": [
+          { "tr": "Evet, boş. Buyurun, oturun. Benim adım Olga.", "ru": "Да, свободно. Садитесь, пожалуйста. Меня зовут Ольга." },
+          { "tr": "Aygerim. Bu bir Kazak adı. Siz nerelisiniz?", "ru": "Айгерим. Это казахское имя. А вы откуда?" }
+        ]},
+        { "speaker": "b", "tr": "Üniversitede öğrenciyim. Derslerim Türkçe.", "ru": "Я студентка в университете. Занятия у меня на турецком.", "distractors": [
+          { "tr": "Merhaba! Ben bu gruba yeni geldim. Burası boş mu?", "ru": "Здравствуйте! Я новенькая в этой группе. Здесь свободно?" },
+          { "tr": "Rusyalıyım. Siz Kazakistan'dan mısınız?", "ru": "Я из России. А вы из Казахстана?" }
+        ]},
+        { "speaker": "a", "tr": "Türkçeniz çok iyi! Bakın, öğretmen geldi.", "ru": "У вас очень хороший турецкий! Смотрите, преподаватель пришёл.", "distractors": [
+          { "tr": "Aygerim. Bu bir Kazak adı. Siz nerelisiniz?", "ru": "Айгерим. Это казахское имя. А вы откуда?" },
+          { "tr": "Rusyalıyım. Siz Kazakistan'dan mısınız?", "ru": "Я из России. А вы из Казахстана?" }
+        ]}
+      ]
     }
   ]
 }
