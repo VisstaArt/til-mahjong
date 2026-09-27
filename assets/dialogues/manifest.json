@@ -46,5 +46,11 @@
     "title": "Мой день",
     "count": 11,
     "sizeKB": 47.4
+  },
+  {
+    "id": "v-gorode",
+    "title": "В городе",
+    "count": 10,
+    "sizeKB": 40.1
   }
 ]
