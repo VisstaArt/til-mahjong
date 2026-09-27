@@ -11,8 +11,8 @@
     },
     {
       "ru": "Можете порекомендовать мне магазин ковров?",
-      "tr": "Bir hakıcı tavsiye edebilir misiniz?",
-      "tl": "Бир хакыджы тавсийэ эдэбилир мисиниз?",
+      "tr": "Bir halıcı tavsiye edebilir misiniz?",
+      "tl": "Бир халыджы тавсийэ эдэбилир мисиниз?",
       "sub": "магазины-универмаги — Dükkanlar-mağazalar"
     },
     {
@@ -53,7 +53,7 @@
     },
     {
       "ru": "Простите, у вас есть …?",
-      "tr": "Afedersiniz sizde … var mı?",
+      "tr": "Affedersiniz sizde … var mı?",
       "tl": null,
       "sub": "в магазине — Dükkanda mağazada"
     },
@@ -191,8 +191,8 @@
     },
     {
       "ru": "Не могли бы вы это поменять?",
-      "tr": "Bunu değişterebilir misiniz lütfen",
-      "tl": "Буну дэиштэрэбилир мисиниз лютфэн",
+      "tr": "Bunu değiştirebilir misiniz lütfen",
+      "tl": "Буну дэиштирэбилир мисиниз лютфэн",
       "sub": "в магазине — Dükkanda mağazada"
     },
     {
@@ -233,7 +233,7 @@
     },
     {
       "ru": "Эта вещь местного производства/импортная/ ручной работы?",
-      "tr": "Burada mı yapılmış/ihtal mi/ el işi mi?",
+      "tr": "Burada mı yapılmış/ithal mi/ el işi mi?",
       "tl": null,
       "sub": "в магазине — Dükkanda mağazada"
     },
@@ -281,7 +281,7 @@
     },
     {
       "ru": "Из чего это?",
-      "tr": "Neden yapılmıştır?",
+      "tr": "Neyden yapılmış?",
       "tl": null,
       "sub": "в магазине — Dükkanda mağazada"
     },
@@ -347,7 +347,7 @@
     },
     {
       "ru": "Где продаются турецкие газеты?",
-      "tr": "Nereden Türkçe bir gazette satın alabilirim?",
+      "tr": "Nereden Türkçe bir gazete satın alabilirim?",
       "tl": null,
       "sub": "В книжном магазине — Kitapçi gazete bayii kirtasiyeci"
     },
@@ -665,8 +665,8 @@
     },
     {
       "ru": "Ремешок порвался",
-      "tr": "Kayış kırılmış",
-      "tl": "Кайыш кырырлмыш",
+      "tr": "Kayış kopmuş",
+      "tl": "Кайыш копмуш",
       "sub": "В магазине часов — Saatçi"
     },
     {
@@ -695,7 +695,7 @@
     },
     {
       "ru": "Буханку хлеба, пожалуйста",
-      "tr": "Bir somun ekmeği lütfen",
+      "tr": "Bir somun ekmek lütfen",
       "tl": null,
       "sub": "В продуктовом магазине — Yiyecek ve içecek satin"
     },
@@ -863,8 +863,8 @@
     },
     {
       "ru": "Не слишком коротко с боков",
-      "tr": "Kenarlar çok kısa olmasan",
-      "tl": "Кэнарлар чок кыса олмасан",
+      "tr": "Kenarlar çok kısa olmasın",
+      "tl": "Кэнарлар чок кыса олмасын",
       "sub": "В парикмахерской — Kuaför ve berber"
     },
     {
@@ -1073,7 +1073,7 @@
     },
     {
       "ru": "Соедините меня с этим номером, пожалуйста?",
-      "tr": "Bana bu numarayı bağlar mısınız?",
+      "tr": "Beni bu numaraya bağlar mısınız?",
       "tl": null,
       "sub": "Телефон — Telefon"
     },
