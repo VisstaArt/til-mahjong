@@ -1026,6 +1026,438 @@
           { "tr": "Ha ha! Su iç, su! Levreğin nasıl?", "ru": "Ха-ха! Пей воду, воду! А как твой сибас?" }
         ]}
       ]
+    },
+    {
+      "id": "restoran-a1-kahveci-ofis",
+      "title": "Кофейня у офиса",
+      "level": "A1",
+      "speakers": { "a": "Ольга", "b": "Кузей" },
+      "turns": [
+        { "speaker": "b", "tr": "Günaydın! Hoş geldiniz. Ne istiyorsunuz?", "ru": "Доброе утро! Добро пожаловать. Что вы хотите?", "distractors": [
+          { "tr": "Büyük, lütfen. Şekersiz.", "ru": "Большой, пожалуйста. Без сахара." },
+          { "tr": "Var. Büyük mü, küçük mü?", "ru": "Есть. Большой или маленький?" }
+        ]},
+        { "speaker": "a", "tr": "Günaydın! Bir kahve, lütfen. Sütlü kahve var mı?", "ru": "Доброе утро! Кофе, пожалуйста. Есть кофе с молоком?", "distractors": [
+          { "tr": "Tabii. Buyurun, kahveniz! Kolay gelsin!", "ru": "Конечно. Вот ваш кофе! Хорошего рабочего дня!" },
+          { "tr": "Paket, lütfen. İşe gidiyorum. Ne kadar?", "ru": "С собой, пожалуйста. Я иду на работу. Сколько стоит?" }
+        ]},
+        { "speaker": "b", "tr": "Var. Büyük mü, küçük mü?", "ru": "Есть. Большой или маленький?", "distractors": [
+          { "tr": "Evet, ofisim çok yakın. Kartla ödemek istiyorum.", "ru": "Да, мой офис совсем рядом. Я хочу заплатить картой." },
+          { "tr": "Teşekkürler! İyi günler!", "ru": "Спасибо! Хорошего дня!" }
+        ]},
+        { "speaker": "a", "tr": "Büyük, lütfen. Şekersiz.", "ru": "Большой, пожалуйста. Без сахара.", "distractors": [
+          { "tr": "Günaydın! Bir kahve, lütfen. Sütlü kahve var mı?", "ru": "Доброе утро! Кофе, пожалуйста. Есть кофе с молоком?" },
+          { "tr": "Tabii. Buyurun, kahveniz! Kolay gelsin!", "ru": "Конечно. Вот ваш кофе! Хорошего рабочего дня!" }
+        ]},
+        { "speaker": "b", "tr": "Tamam. Burada mı, paket mi?", "ru": "Хорошо. Здесь или с собой?", "distractors": [
+          { "tr": "Günaydın! Hoş geldiniz. Ne istiyorsunuz?", "ru": "Доброе утро! Добро пожаловать. Что вы хотите?" },
+          { "tr": "Teşekkürler! İyi günler!", "ru": "Спасибо! Хорошего дня!" }
+        ]},
+        { "speaker": "a", "tr": "Paket, lütfen. İşe gidiyorum. Ne kadar?", "ru": "С собой, пожалуйста. Я иду на работу. Сколько стоит?", "distractors": [
+          { "tr": "Tabii. Buyurun, kahveniz! Kolay gelsin!", "ru": "Конечно. Вот ваш кофе! Хорошего рабочего дня!" },
+          { "tr": "Evet, ofisim çok yakın. Kartla ödemek istiyorum.", "ru": "Да, мой офис совсем рядом. Я хочу заплатить картой." }
+        ]},
+        { "speaker": "b", "tr": "Yüz yirmi lira. Siz bu mahallede mi çalışıyorsunuz?", "ru": "Сто двадцать лир. Вы работаете в этом районе?", "distractors": [
+          { "tr": "Günaydın! Hoş geldiniz. Ne istiyorsunuz?", "ru": "Доброе утро! Добро пожаловать. Что вы хотите?" },
+          { "tr": "Tamam. Burada mı, paket mi?", "ru": "Хорошо. Здесь или с собой?" }
+        ]},
+        { "speaker": "a", "tr": "Evet, ofisim çok yakın. Kartla ödemek istiyorum.", "ru": "Да, мой офис совсем рядом. Я хочу заплатить картой.", "distractors": [
+          { "tr": "Büyük, lütfen. Şekersiz.", "ru": "Большой, пожалуйста. Без сахара." },
+          { "tr": "Günaydın! Hoş geldiniz. Ne istiyorsunuz?", "ru": "Доброе утро! Добро пожаловать. Что вы хотите?" }
+        ]},
+        { "speaker": "b", "tr": "Tabii. Buyurun, kahveniz! Kolay gelsin!", "ru": "Конечно. Вот ваш кофе! Хорошего рабочего дня!", "distractors": [
+          { "tr": "Günaydın! Hoş geldiniz. Ne istiyorsunuz?", "ru": "Доброе утро! Добро пожаловать. Что вы хотите?" },
+          { "tr": "Var. Büyük mü, küçük mü?", "ru": "Есть. Большой или маленький?" }
+        ]},
+        { "speaker": "a", "tr": "Teşekkürler! İyi günler!", "ru": "Спасибо! Хорошего дня!", "distractors": [
+          { "tr": "Büyük, lütfen. Şekersiz.", "ru": "Большой, пожалуйста. Без сахара." },
+          { "tr": "Günaydın! Bir kahve, lütfen. Sütlü kahve var mı?", "ru": "Доброе утро! Кофе, пожалуйста. Есть кофе с молоком?" }
+        ]}
+      ]
+    },
+    {
+      "id": "restoran-a1-kahveci-ikinci-gun",
+      "title": "Кофейня у офиса: чай для коллег",
+      "level": "A1",
+      "speakers": { "a": "Ольга", "b": "Кузей" },
+      "turns": [
+        { "speaker": "b", "tr": "Günaydın! Yine sütlü kahve mi?", "ru": "Доброе утро! Снова кофе с молоком?", "distractors": [
+          { "tr": "Var. Kaç çay istiyorsunuz?", "ru": "Есть. Сколько чая хотите?" },
+          { "tr": "Tamam. Simit de istiyor musunuz? Simitler bugün çok taze.", "ru": "Хорошо. Симиты тоже хотите? Симиты сегодня очень свежие." }
+        ]},
+        { "speaker": "a", "tr": "Günaydın! Evet. Çay da var mı?", "ru": "Доброе утро! Да. А чай у вас есть?", "distractors": [
+          { "tr": "Çaylar şekerli mi?", "ru": "Чай с сахаром?" },
+          { "tr": "İki yüz yetmiş lira. Paket, değil mi?", "ru": "Двести семьдесят лир. С собой, да?" }
+        ]},
+        { "speaker": "b", "tr": "Var. Kaç çay istiyorsunuz?", "ru": "Есть. Сколько чая хотите?", "distractors": [
+          { "tr": "İki yüz yetmiş lira. Paket, değil mi?", "ru": "Двести семьдесят лир. С собой, да?" },
+          { "tr": "Evet, paket. Teşekkürler, kolay gelsin!", "ru": "Да, с собой. Спасибо, хорошего дня!" }
+        ]},
+        { "speaker": "a", "tr": "İki çay, lütfen. İş arkadaşlarım için. Saat dokuzda toplantımız var.", "ru": "Два чая, пожалуйста. Для коллег. В девять у нас совещание.", "distractors": [
+          { "tr": "Evet, üç simit, lütfen! Hepsi ne kadar?", "ru": "Да, три симита, пожалуйста! Сколько всё вместе?" },
+          { "tr": "Tamam. Simit de istiyor musunuz? Simitler bugün çok taze.", "ru": "Хорошо. Симиты тоже хотите? Симиты сегодня очень свежие." }
+        ]},
+        { "speaker": "b", "tr": "Çaylar şekerli mi?", "ru": "Чай с сахаром?", "distractors": [
+          { "tr": "Günaydın! Evet. Çay da var mı?", "ru": "Доброе утро! Да. А чай у вас есть?" },
+          { "tr": "Evet, üç simit, lütfen! Hepsi ne kadar?", "ru": "Да, три симита, пожалуйста! Сколько всё вместе?" }
+        ]},
+        { "speaker": "a", "tr": "Bir şekerli, bir şekersiz. İş arkadaşım şeker yememeli.", "ru": "Один с сахаром, один без. Моей коллеге нельзя сахар.", "distractors": [
+          { "tr": "Evet, üç simit, lütfen! Hepsi ne kadar?", "ru": "Да, три симита, пожалуйста! Сколько всё вместе?" },
+          { "tr": "Var. Kaç çay istiyorsunuz?", "ru": "Есть. Сколько чая хотите?" }
+        ]},
+        { "speaker": "b", "tr": "Tamam. Simit de istiyor musunuz? Simitler bugün çok taze.", "ru": "Хорошо. Симиты тоже хотите? Симиты сегодня очень свежие.", "distractors": [
+          { "tr": "Evet, paket. Teşekkürler, kolay gelsin!", "ru": "Да, с собой. Спасибо, хорошего дня!" },
+          { "tr": "Günaydın! Yine sütlü kahve mi?", "ru": "Доброе утро! Снова кофе с молоком?" }
+        ]},
+        { "speaker": "a", "tr": "Evet, üç simit, lütfen! Hepsi ne kadar?", "ru": "Да, три симита, пожалуйста! Сколько всё вместе?", "distractors": [
+          { "tr": "Evet, paket. Teşekkürler, kolay gelsin!", "ru": "Да, с собой. Спасибо, хорошего дня!" },
+          { "tr": "Günaydın! Evet. Çay da var mı?", "ru": "Доброе утро! Да. А чай у вас есть?" }
+        ]},
+        { "speaker": "b", "tr": "İki yüz yetmiş lira. Paket, değil mi?", "ru": "Двести семьдесят лир. С собой, да?", "distractors": [
+          { "tr": "Bir şekerli, bir şekersiz. İş arkadaşım şeker yememeli.", "ru": "Один с сахаром, один без. Моей коллеге нельзя сахар." },
+          { "tr": "İki çay, lütfen. İş arkadaşlarım için. Saat dokuzda toplantımız var.", "ru": "Два чая, пожалуйста. Для коллег. В девять у нас совещание." }
+        ]},
+        { "speaker": "a", "tr": "Evet, paket. Teşekkürler, kolay gelsin!", "ru": "Да, с собой. Спасибо, хорошего дня!", "distractors": [
+          { "tr": "Bir şekerli, bir şekersiz. İş arkadaşım şeker yememeli.", "ru": "Один с сахаром, один без. Моей коллеге нельзя сахар." },
+          { "tr": "Var. Kaç çay istiyorsunuz?", "ru": "Есть. Сколько чая хотите?" }
+        ]}
+      ]
+    },
+    {
+      "id": "restoran-a1-leyla-cay",
+      "title": "Чай с Лейлой",
+      "level": "A1",
+      "speakers": { "a": "Ольга", "b": "Лейла" },
+      "turns": [
+        { "speaker": "a", "tr": "Leyla, çay içmek istiyor musun?", "ru": "Лейла, хочешь выпить чаю?", "distractors": [
+          { "tr": "Doğru. Çok susadım, su da istiyorum.", "ru": "Правда. Я очень хочу пить, ещё хочу воды." },
+          { "tr": "Hayır, ben ayran istiyorum. Hava çok sıcak!", "ru": "Нет, я хочу айран. На улице очень жарко!" }
+        ]},
+        { "speaker": "b", "tr": "Tabii! Şurada güzel bir çay bahçesi var.", "ru": "Конечно! Вон там есть хорошая чайная в саду.", "distractors": [
+          { "tr": "Hayır! Geçen sefer sen ödedin. Bugün ben ödüyorum!", "ru": "Нет! В прошлый раз платила ты. Сегодня плачу я!" },
+          { "tr": "Aç mısın? Burada tost da var.", "ru": "Ты голодна? Здесь есть и тосты." }
+        ]},
+        { "speaker": "a", "tr": "Süper! Ben bir çay istiyorum. Sen de çay mı istiyorsun?", "ru": "Супер! Я хочу чай. Ты тоже хочешь чай?", "distractors": [
+          { "tr": "Leyla, çay içmek istiyor musun?", "ru": "Лейла, хочешь выпить чаю?" },
+          { "tr": "Hayır! Geçen sefer sen ödedin. Bugün ben ödüyorum!", "ru": "Нет! В прошлый раз платила ты. Сегодня плачу я!" }
+        ]},
+        { "speaker": "b", "tr": "Hayır, ben ayran istiyorum. Hava çok sıcak!", "ru": "Нет, я хочу айран. На улице очень жарко!", "distractors": [
+          { "tr": "Hayır, aç değilim. Öğlen çok yedim. Sen aç mısın?", "ru": "Нет, не голодна. Я много съела в обед. А ты голодна?" },
+          { "tr": "Leyla, çay içmek istiyor musun?", "ru": "Лейла, хочешь выпить чаю?" }
+        ]},
+        { "speaker": "a", "tr": "Doğru. Çok susadım, su da istiyorum.", "ru": "Правда. Я очень хочу пить, ещё хочу воды.", "distractors": [
+          { "tr": "Süper! Ben bir çay istiyorum. Sen de çay mı istiyorsun?", "ru": "Супер! Я хочу чай. Ты тоже хочешь чай?" },
+          { "tr": "Hayır! Geçen sefer sen ödedin. Bugün ben ödüyorum!", "ru": "Нет! В прошлый раз платила ты. Сегодня плачу я!" }
+        ]},
+        { "speaker": "b", "tr": "Aç mısın? Burada tost da var.", "ru": "Ты голодна? Здесь есть и тосты.", "distractors": [
+          { "tr": "Biraz açım. Bir tost yiyeceğim.", "ru": "Немного голодна. Я съем тост." },
+          { "tr": "Süper! Ben bir çay istiyorum. Sen de çay mı istiyorsun?", "ru": "Супер! Я хочу чай. Ты тоже хочешь чай?" }
+        ]},
+        { "speaker": "a", "tr": "Hayır, aç değilim. Öğlen çok yedim. Sen aç mısın?", "ru": "Нет, не голодна. Я много съела в обед. А ты голодна?", "distractors": [
+          { "tr": "Hayır! Geçen sefer sen ödedin. Bugün ben ödüyorum!", "ru": "Нет! В прошлый раз платила ты. Сегодня плачу я!" },
+          { "tr": "Leyla, çay içmek istiyor musun?", "ru": "Лейла, хочешь выпить чаю?" }
+        ]},
+        { "speaker": "b", "tr": "Biraz açım. Bir tost yiyeceğim.", "ru": "Немного голодна. Я съем тост.", "distractors": [
+          { "tr": "Aç mısın? Burada tost da var.", "ru": "Ты голодна? Здесь есть и тосты." },
+          { "tr": "Hayır, ben ayran istiyorum. Hava çok sıcak!", "ru": "Нет, я хочу айран. На улице очень жарко!" }
+        ]},
+        { "speaker": "a", "tr": "Afiyet olsun! Bugün hesap bende.", "ru": "Приятного аппетита! Сегодня счёт за мной.", "distractors": [
+          { "tr": "Doğru. Çok susadım, su da istiyorum.", "ru": "Правда. Я очень хочу пить, ещё хочу воды." },
+          { "tr": "Leyla, çay içmek istiyor musun?", "ru": "Лейла, хочешь выпить чаю?" }
+        ]},
+        { "speaker": "b", "tr": "Hayır! Geçen sefer sen ödedin. Bugün ben ödüyorum!", "ru": "Нет! В прошлый раз платила ты. Сегодня плачу я!", "distractors": [
+          { "tr": "Hayır, aç değilim. Öğlen çok yedim. Sen aç mısın?", "ru": "Нет, не голодна. Я много съела в обед. А ты голодна?" },
+          { "tr": "Leyla, çay içmek istiyor musun?", "ru": "Лейла, хочешь выпить чаю?" }
+        ]}
+      ]
+    },
+    {
+      "id": "restoran-a1-leyla-evde",
+      "title": "Лейла в гостях: чай или кофе?",
+      "level": "A1",
+      "speakers": { "a": "Ольга", "b": "Лейла" },
+      "turns": [
+        { "speaker": "a", "tr": "Hoş geldin, Leyla! Gel, otur.", "ru": "Добро пожаловать, Лейла! Проходи, садись.", "distractors": [
+          { "tr": "Var. Peynir, zeytin ve domates var. Buyur!", "ru": "Есть. Сыр, оливки и помидоры. Угощайся!" },
+          { "tr": "Afiyet olsun! Bir çay daha istiyor musun?", "ru": "Приятного аппетита! Хочешь ещё чаю?" }
+        ]},
+        { "speaker": "b", "tr": "Hoş bulduk! Evin çok güzel.", "ru": "Спасибо! У тебя очень красиво.", "distractors": [
+          { "tr": "Afiyet olsun! Bir çay daha istiyor musun?", "ru": "Приятного аппетита! Хочешь ещё чаю?" },
+          { "tr": "Çok lezzetli! Simit çok taze.", "ru": "Очень вкусно! Симит очень свежий." }
+        ]},
+        { "speaker": "a", "tr": "Teşekkürler! Çay mı, kahve mi?", "ru": "Спасибо! Чай или кофе?", "distractors": [
+          { "tr": "Evet, lütfen. Ama şekersiz.", "ru": "Да, пожалуйста. Но без сахара." },
+          { "tr": "Evet, çok açım! Peynir var mı?", "ru": "Да, очень голодна! Сыр есть?" }
+        ]},
+        { "speaker": "b", "tr": "Çay, lütfen. Sen yine kahve mi içiyorsun?", "ru": "Чай, пожалуйста. Ты опять пьёшь кофе?", "distractors": [
+          { "tr": "Çok lezzetli! Simit çok taze.", "ru": "Очень вкусно! Симит очень свежий." },
+          { "tr": "Hoş bulduk! Evin çok güzel.", "ru": "Спасибо! У тебя очень красиво." }
+        ]},
+        { "speaker": "a", "tr": "Evet, ben her zaman kahve içiyorum! Aç mısın? Simit aldım.", "ru": "Да, я всегда пью кофе! Ты голодна? Я купила симиты.", "distractors": [
+          { "tr": "Afiyet olsun! Bir çay daha istiyor musun?", "ru": "Приятного аппетита! Хочешь ещё чаю?" },
+          { "tr": "Hoş geldin, Leyla! Gel, otur.", "ru": "Добро пожаловать, Лейла! Проходи, садись." }
+        ]},
+        { "speaker": "b", "tr": "Evet, çok açım! Peynir var mı?", "ru": "Да, очень голодна! Сыр есть?", "distractors": [
+          { "tr": "Hoş geldin, Leyla! Gel, otur.", "ru": "Добро пожаловать, Лейла! Проходи, садись." },
+          { "tr": "Afiyet olsun! Bir çay daha istiyor musun?", "ru": "Приятного аппетита! Хочешь ещё чаю?" }
+        ]},
+        { "speaker": "a", "tr": "Var. Peynir, zeytin ve domates var. Buyur!", "ru": "Есть. Сыр, оливки и помидоры. Угощайся!", "distractors": [
+          { "tr": "Hoş bulduk! Evin çok güzel.", "ru": "Спасибо! У тебя очень красиво." },
+          { "tr": "Teşekkürler! Çay mı, kahve mi?", "ru": "Спасибо! Чай или кофе?" }
+        ]},
+        { "speaker": "b", "tr": "Çok lezzetli! Simit çok taze.", "ru": "Очень вкусно! Симит очень свежий.", "distractors": [
+          { "tr": "Hoş geldin, Leyla! Gel, otur.", "ru": "Добро пожаловать, Лейла! Проходи, садись." },
+          { "tr": "Hoş bulduk! Evin çok güzel.", "ru": "Спасибо! У тебя очень красиво." }
+        ]},
+        { "speaker": "a", "tr": "Afiyet olsun! Bir çay daha istiyor musun?", "ru": "Приятного аппетита! Хочешь ещё чаю?", "distractors": [
+          { "tr": "Var. Peynir, zeytin ve domates var. Buyur!", "ru": "Есть. Сыр, оливки и помидоры. Угощайся!" },
+          { "tr": "Hoş geldin, Leyla! Gel, otur.", "ru": "Добро пожаловать, Лейла! Проходи, садись." }
+        ]},
+        { "speaker": "b", "tr": "Evet, lütfen. Ama şekersiz.", "ru": "Да, пожалуйста. Но без сахара.", "distractors": [
+          { "tr": "Var. Peynir, zeytin ve domates var. Buyur!", "ru": "Есть. Сыр, оливки и помидоры. Угощайся!" },
+          { "tr": "Teşekkürler! Çay mı, kahve mi?", "ru": "Спасибо! Чай или кофе?" }
+        ]}
+      ]
+    },
+    {
+      "id": "restoran-a1-tezgah",
+      "title": "Заказ у стойки: симит и чай",
+      "level": "A1",
+      "speakers": { "a": "Ольга", "b": "Эрай" },
+      "turns": [
+        { "speaker": "b", "tr": "Buyurun, ne istiyorsunuz?", "ru": "Здравствуйте, что желаете?", "distractors": [
+          { "tr": "Teşekkürler! Poğaça çok lezzetli!", "ru": "Спасибо! Погача очень вкусная!" },
+          { "tr": "Buyurun. Çay çok sıcak mı?", "ru": "Вот, пожалуйста. Чай очень горячий?" }
+        ]},
+        { "speaker": "a", "tr": "Merhaba! Bir simit ve bir çay, lütfen.", "ru": "Здравствуйте! Один симит и один чай, пожалуйста.", "distractors": [
+          { "tr": "Teşekkürler! Poğaça çok lezzetli!", "ru": "Спасибо! Погача очень вкусная!" },
+          { "tr": "Tamam, bir peynirli poğaça, lütfen. Ne kadar?", "ru": "Хорошо, одну погачу с сыром, пожалуйста. Сколько стоит?" }
+        ]},
+        { "speaker": "b", "tr": "Simit bitti, maalesef. Poğaça var.", "ru": "Симиты, к сожалению, закончились. Есть погача.", "distractors": [
+          { "tr": "Evet, peynirli ve zeytinli poğaça var. Çok taze!", "ru": "Да, есть погача с сыром и с оливками. Очень свежая!" },
+          { "tr": "Tamam, bir peynirli poğaça, lütfen. Ne kadar?", "ru": "Хорошо, одну погачу с сыром, пожалуйста. Сколько стоит?" }
+        ]},
+        { "speaker": "a", "tr": "Poğaça ne? Peynirli mi?", "ru": "А что такое погача? С сыром?", "distractors": [
+          { "tr": "Tamam, bir peynirli poğaça, lütfen. Ne kadar?", "ru": "Хорошо, одну погачу с сыром, пожалуйста. Сколько стоит?" },
+          { "tr": "Merhaba! Bir simit ve bir çay, lütfen.", "ru": "Здравствуйте! Один симит и один чай, пожалуйста." }
+        ]},
+        { "speaker": "b", "tr": "Evet, peynirli ve zeytinli poğaça var. Çok taze!", "ru": "Да, есть погача с сыром и с оливками. Очень свежая!", "distractors": [
+          { "tr": "Evet, dikkat edin! Afiyet olsun!", "ru": "Да, осторожно! Приятного аппетита!" },
+          { "tr": "Simit bitti, maalesef. Poğaça var.", "ru": "Симиты, к сожалению, закончились. Есть погача." }
+        ]},
+        { "speaker": "a", "tr": "Tamam, bir peynirli poğaça, lütfen. Ne kadar?", "ru": "Хорошо, одну погачу с сыром, пожалуйста. Сколько стоит?", "distractors": [
+          { "tr": "Evet, dikkat edin! Afiyet olsun!", "ru": "Да, осторожно! Приятного аппетита!" },
+          { "tr": "Teşekkürler! Poğaça çok lezzetli!", "ru": "Спасибо! Погача очень вкусная!" }
+        ]},
+        { "speaker": "b", "tr": "Poğaça otuz lira, çay yirmi lira. Hepsi elli lira.", "ru": "Погача тридцать лир, чай двадцать. Всего пятьдесят.", "distractors": [
+          { "tr": "Evet, dikkat edin! Afiyet olsun!", "ru": "Да, осторожно! Приятного аппетита!" },
+          { "tr": "Buyurun, ne istiyorsunuz?", "ru": "Здравствуйте, что желаете?" }
+        ]},
+        { "speaker": "a", "tr": "Buyurun. Çay çok sıcak mı?", "ru": "Вот, пожалуйста. Чай очень горячий?", "distractors": [
+          { "tr": "Evet, peynirli ve zeytinli poğaça var. Çok taze!", "ru": "Да, есть погача с сыром и с оливками. Очень свежая!" },
+          { "tr": "Tamam, bir peynirli poğaça, lütfen. Ne kadar?", "ru": "Хорошо, одну погачу с сыром, пожалуйста. Сколько стоит?" }
+        ]},
+        { "speaker": "b", "tr": "Evet, dikkat edin! Afiyet olsun!", "ru": "Да, осторожно! Приятного аппетита!", "distractors": [
+          { "tr": "Merhaba! Bir simit ve bir çay, lütfen.", "ru": "Здравствуйте! Один симит и один чай, пожалуйста." },
+          { "tr": "Evet, peynirli ve zeytinli poğaça var. Çok taze!", "ru": "Да, есть погача с сыром и с оливками. Очень свежая!" }
+        ]},
+        { "speaker": "a", "tr": "Teşekkürler! Poğaça çok lezzetli!", "ru": "Спасибо! Погача очень вкусная!", "distractors": [
+          { "tr": "Poğaça ne? Peynirli mi?", "ru": "А что такое погача? С сыром?" },
+          { "tr": "Merhaba! Bir simit ve bir çay, lütfen.", "ru": "Здравствуйте! Один симит и один чай, пожалуйста." }
+        ]}
+      ]
+    },
+    {
+      "id": "restoran-a1-tuba-ogle",
+      "title": "Обед с Тубой",
+      "level": "A1",
+      "speakers": { "a": "Ольга", "b": "Туба" },
+      "turns": [
+        { "speaker": "b", "tr": "Olga, çok açım! Ne yiyeceksin?", "ru": "Ольга, я очень голодна! Что ты будешь есть?", "distractors": [
+          { "tr": "Sana da afiyet olsun!", "ru": "И тебе приятного аппетита!" },
+          { "tr": "Tamam, sütlaç da yiyeceğim! Çok susadım, su da istiyorum.", "ru": "Хорошо, возьму и сютлач! Я очень хочу пить, ещё хочу воды." }
+        ]},
+        { "speaker": "a", "tr": "Mercimek çorbası ve pilav. Ya sen?", "ru": "Чечевичный суп и рис. А ты?", "distractors": [
+          { "tr": "Tamam, sütlaç da yiyeceğim! Çok susadım, su da istiyorum.", "ru": "Хорошо, возьму и сютлач! Я очень хочу пить, ещё хочу воды." },
+          { "tr": "Köfte biraz tuzlu, ama güzel. Afiyet olsun!", "ru": "Кёфте немного солёные, но хорошие. Приятного аппетита!" }
+        ]},
+        { "speaker": "b", "tr": "Ben köfte ve salata istiyorum. Ekmek yememeliyim.", "ru": "Я хочу кёфте и салат. Мне нельзя хлеб.", "distractors": [
+          { "tr": "Köfte biraz tuzlu, ama güzel. Afiyet olsun!", "ru": "Кёфте немного солёные, но хорошие. Приятного аппетита!" },
+          { "tr": "Tuba, çorba çok lezzetli! Köfte nasıl?", "ru": "Туба, суп очень вкусный! Как кёфте?" }
+        ]},
+        { "speaker": "a", "tr": "Tatlı da yememelisin, değil mi?", "ru": "И сладкое тебе нельзя, да?", "distractors": [
+          { "tr": "Mercimek çorbası ve pilav. Ya sen?", "ru": "Чечевичный суп и рис. А ты?" },
+          { "tr": "Köfte biraz tuzlu, ama güzel. Afiyet olsun!", "ru": "Кёфте немного солёные, но хорошие. Приятного аппетита!" }
+        ]},
+        { "speaker": "b", "tr": "Evet, tatlı yok. Ama sen sütlaç ye! Burada sütlaç çok lezzetli.", "ru": "Да, без сладкого. Но ты возьми сютлач! Здесь он очень вкусный.", "distractors": [
+          { "tr": "Ben köfte ve salata istiyorum. Ekmek yememeliyim.", "ru": "Я хочу кёфте и салат. Мне нельзя хлеб." },
+          { "tr": "Olga, çok açım! Ne yiyeceksin?", "ru": "Ольга, я очень голодна! Что ты будешь есть?" }
+        ]},
+        { "speaker": "a", "tr": "Tamam, sütlaç da yiyeceğim! Çok susadım, su da istiyorum.", "ru": "Хорошо, возьму и сютлач! Я очень хочу пить, ещё хочу воды.", "distractors": [
+          { "tr": "Mercimek çorbası ve pilav. Ya sen?", "ru": "Чечевичный суп и рис. А ты?" },
+          { "tr": "Olga, çok açım! Ne yiyeceksin?", "ru": "Ольга, я очень голодна! Что ты будешь есть?" }
+        ]},
+        { "speaker": "b", "tr": "Affedersiniz! İki su, lütfen!", "ru": "Извините! Две воды, пожалуйста!", "distractors": [
+          { "tr": "Sana da afiyet olsun!", "ru": "И тебе приятного аппетита!" },
+          { "tr": "Ben köfte ve salata istiyorum. Ekmek yememeliyim.", "ru": "Я хочу кёфте и салат. Мне нельзя хлеб." }
+        ]},
+        { "speaker": "a", "tr": "Tuba, çorba çok lezzetli! Köfte nasıl?", "ru": "Туба, суп очень вкусный! Как кёфте?", "distractors": [
+          { "tr": "Tatlı da yememelisin, değil mi?", "ru": "И сладкое тебе нельзя, да?" },
+          { "tr": "Ben köfte ve salata istiyorum. Ekmek yememeliyim.", "ru": "Я хочу кёфте и салат. Мне нельзя хлеб." }
+        ]},
+        { "speaker": "b", "tr": "Köfte biraz tuzlu, ama güzel. Afiyet olsun!", "ru": "Кёфте немного солёные, но хорошие. Приятного аппетита!", "distractors": [
+          { "tr": "Olga, çok açım! Ne yiyeceksin?", "ru": "Ольга, я очень голодна! Что ты будешь есть?" },
+          { "tr": "Mercimek çorbası ve pilav. Ya sen?", "ru": "Чечевичный суп и рис. А ты?" }
+        ]},
+        { "speaker": "a", "tr": "Sana da afiyet olsun!", "ru": "И тебе приятного аппетита!", "distractors": [
+          { "tr": "Tamam, sütlaç da yiyeceğim! Çok susadım, su da istiyorum.", "ru": "Хорошо, возьму и сютлач! Я очень хочу пить, ещё хочу воды." },
+          { "tr": "Mercimek çorbası ve pilav. Ya sen?", "ru": "Чечевичный суп и рис. А ты?" }
+        ]}
+      ]
+    },
+    {
+      "id": "restoran-a1-tuba-hesap",
+      "title": "Обед с Тубой: кто платит",
+      "level": "A1",
+      "speakers": { "a": "Ольга", "b": "Туба" },
+      "turns": [
+        { "speaker": "a", "tr": "Affedersiniz, hesap lütfen!", "ru": "Извините, счёт, пожалуйста!", "distractors": [
+          { "tr": "Tabii! Ama şimdi saat iki oldu. Toplantı var, hadi!", "ru": "Конечно! Но сейчас уже два. У нас совещание, пошли!" },
+          { "tr": "Tamam. Sen nakit mi ödüyorsun?", "ru": "Хорошо. Ты платишь наличными?" }
+        ]},
+        { "speaker": "b", "tr": "Olga, bugün hesap bende.", "ru": "Ольга, сегодня счёт за мной.", "distractors": [
+          { "tr": "Evet, çok! Yarın yine buraya geliyor muyuz?", "ru": "Да, очень! Завтра снова придём сюда?" },
+          { "tr": "Hayır, kartla ödüyorum. Nakit param yok.", "ru": "Нет, картой. У меня нет наличных." }
+        ]},
+        { "speaker": "a", "tr": "Hayır, Tuba! Geçen hafta sen ödedin.", "ru": "Нет, Туба! На прошлой неделе платила ты.", "distractors": [
+          { "tr": "Dört yüz lira. İki yüz sen, iki yüz ben.", "ru": "Четыреста лир. Двести ты, двести я." },
+          { "tr": "Tamam. Sen nakit mi ödüyorsun?", "ru": "Хорошо. Ты платишь наличными?" }
+        ]},
+        { "speaker": "b", "tr": "Tamam, o zaman yarı yarıya ödüyoruz. Hepsi ne kadar?", "ru": "Ладно, тогда платим пополам. Сколько всего?", "distractors": [
+          { "tr": "Olga, bugün hesap bende.", "ru": "Ольга, сегодня счёт за мной." },
+          { "tr": "Tabii! Ama şimdi saat iki oldu. Toplantı var, hadi!", "ru": "Конечно! Но сейчас уже два. У нас совещание, пошли!" }
+        ]},
+        { "speaker": "a", "tr": "Dört yüz lira. İki yüz sen, iki yüz ben.", "ru": "Четыреста лир. Двести ты, двести я.", "distractors": [
+          { "tr": "Evet, çok! Yarın yine buraya geliyor muyuz?", "ru": "Да, очень! Завтра снова придём сюда?" },
+          { "tr": "Ben nakit ödüyorum. Yemek çok lezzetliydi, değil mi?", "ru": "Я плачу наличными. Еда была очень вкусная, правда?" }
+        ]},
+        { "speaker": "b", "tr": "Tamam. Sen nakit mi ödüyorsun?", "ru": "Хорошо. Ты платишь наличными?", "distractors": [
+          { "tr": "Ben nakit ödüyorum. Yemek çok lezzetliydi, değil mi?", "ru": "Я плачу наличными. Еда была очень вкусная, правда?" },
+          { "tr": "Hayır, Tuba! Geçen hafta sen ödedin.", "ru": "Нет, Туба! На прошлой неделе платила ты." }
+        ]},
+        { "speaker": "a", "tr": "Hayır, kartla ödüyorum. Nakit param yok.", "ru": "Нет, картой. У меня нет наличных.", "distractors": [
+          { "tr": "Evet, çok! Yarın yine buraya geliyor muyuz?", "ru": "Да, очень! Завтра снова придём сюда?" },
+          { "tr": "Dört yüz lira. İki yüz sen, iki yüz ben.", "ru": "Четыреста лир. Двести ты, двести я." }
+        ]},
+        { "speaker": "b", "tr": "Ben nakit ödüyorum. Yemek çok lezzetliydi, değil mi?", "ru": "Я плачу наличными. Еда была очень вкусная, правда?", "distractors": [
+          { "tr": "Tamam, o zaman yarı yarıya ödüyoruz. Hepsi ne kadar?", "ru": "Ладно, тогда платим пополам. Сколько всего?" },
+          { "tr": "Dört yüz lira. İki yüz sen, iki yüz ben.", "ru": "Четыреста лир. Двести ты, двести я." }
+        ]},
+        { "speaker": "a", "tr": "Evet, çok! Yarın yine buraya geliyor muyuz?", "ru": "Да, очень! Завтра снова придём сюда?", "distractors": [
+          { "tr": "Tamam, o zaman yarı yarıya ödüyoruz. Hepsi ne kadar?", "ru": "Ладно, тогда платим пополам. Сколько всего?" },
+          { "tr": "Hayır, Tuba! Geçen hafta sen ödedin.", "ru": "Нет, Туба! На прошлой неделе платила ты." }
+        ]},
+        { "speaker": "b", "tr": "Tabii! Ama şimdi saat iki oldu. Toplantı var, hadi!", "ru": "Конечно! Но сейчас уже два. У нас совещание, пошли!", "distractors": [
+          { "tr": "Tamam, o zaman yarı yarıya ödüyoruz. Hepsi ne kadar?", "ru": "Ладно, тогда платим пополам. Сколько всего?" },
+          { "tr": "Olga, bugün hesap bende.", "ru": "Ольга, сегодня счёт за мной." }
+        ]}
+      ]
+    },
+    {
+      "id": "restoran-a1-vapur-cay",
+      "title": "Чай на пароходе",
+      "level": "A1",
+      "speakers": { "a": "Ольга", "b": "Рамазан" },
+      "turns": [
+        { "speaker": "b", "tr": "Çay! Sıcak çay!", "ru": "Чай! Горячий чай!", "distractors": [
+          { "tr": "Çok güzel, sıcak ve taze. Kolay gelsin!", "ru": "Очень хороший, горячий и свежий. Хорошего дня!" },
+          { "tr": "Buyurun. Şeker istiyor musunuz?", "ru": "Пожалуйста. Сахар хотите?" }
+        ]},
+        { "speaker": "a", "tr": "Günaydın! Bir çay, lütfen.", "ru": "Доброе утро! Один чай, пожалуйста.", "distractors": [
+          { "tr": "Çok güzel, sıcak ve taze. Kolay gelsin!", "ru": "Очень хороший, горячий и свежий. Хорошего дня!" },
+          { "tr": "Hayır, şekersiz içiyorum. Ne kadar?", "ru": "Нет, я пью без сахара. Сколько стоит?" }
+        ]},
+        { "speaker": "b", "tr": "Buyurun. Şeker istiyor musunuz?", "ru": "Пожалуйста. Сахар хотите?", "distractors": [
+          { "tr": "Çok güzel, sıcak ve taze. Kolay gelsin!", "ru": "Очень хороший, горячий и свежий. Хорошего дня!" },
+          { "tr": "Çay! Sıcak çay!", "ru": "Чай! Горячий чай!" }
+        ]},
+        { "speaker": "a", "tr": "Hayır, şekersiz içiyorum. Ne kadar?", "ru": "Нет, я пью без сахара. Сколько стоит?", "distractors": [
+          { "tr": "Günaydın! Bir çay, lütfen.", "ru": "Доброе утро! Один чай, пожалуйста." },
+          { "tr": "Çay nasıl?", "ru": "Как чай?" }
+        ]},
+        { "speaker": "b", "tr": "Yirmi lira. Siz her sabah bu vapurdasınız, değil mi?", "ru": "Двадцать лир. Вы каждое утро на этом пароходе, да?", "distractors": [
+          { "tr": "Günaydın! Bir çay, lütfen.", "ru": "Доброе утро! Один чай, пожалуйста." },
+          { "tr": "Çay nasıl?", "ru": "Как чай?" }
+        ]},
+        { "speaker": "a", "tr": "Evet, her sabah Karaköy'e gidiyorum. Ofisim orada.", "ru": "Да, каждое утро я еду в Каракёй. Мой офис там.", "distractors": [
+          { "tr": "Hayır, şekersiz içiyorum. Ne kadar?", "ru": "Нет, я пью без сахара. Сколько стоит?" },
+          { "tr": "Teşekkürler, ama sabah kahvaltı yapmıyorum. Sadece kahve ve çay!", "ru": "Спасибо, но утром я не завтракаю. Только кофе и чай!" }
+        ]},
+        { "speaker": "b", "tr": "Simit de var. Taze simit!", "ru": "Есть и симиты. Свежие симиты!", "distractors": [
+          { "tr": "Çay! Sıcak çay!", "ru": "Чай! Горячий чай!" },
+          { "tr": "Hayır, şekersiz içiyorum. Ne kadar?", "ru": "Нет, я пью без сахара. Сколько стоит?" }
+        ]},
+        { "speaker": "a", "tr": "Teşekkürler, ama sabah kahvaltı yapmıyorum. Sadece kahve ve çay!", "ru": "Спасибо, но утром я не завтракаю. Только кофе и чай!", "distractors": [
+          { "tr": "Hayır, şekersiz içiyorum. Ne kadar?", "ru": "Нет, я пью без сахара. Сколько стоит?" },
+          { "tr": "Yirmi lira. Siz her sabah bu vapurdasınız, değil mi?", "ru": "Двадцать лир. Вы каждое утро на этом пароходе, да?" }
+        ]},
+        { "speaker": "b", "tr": "Çay nasıl?", "ru": "Как чай?", "distractors": [
+          { "tr": "Hayır, şekersiz içiyorum. Ne kadar?", "ru": "Нет, я пью без сахара. Сколько стоит?" },
+          { "tr": "Yirmi lira. Siz her sabah bu vapurdasınız, değil mi?", "ru": "Двадцать лир. Вы каждое утро на этом пароходе, да?" }
+        ]},
+        { "speaker": "a", "tr": "Çok güzel, sıcak ve taze. Kolay gelsin!", "ru": "Очень хороший, горячий и свежий. Хорошего дня!", "distractors": [
+          { "tr": "Yirmi lira. Siz her sabah bu vapurdasınız, değil mi?", "ru": "Двадцать лир. Вы каждое утро на этом пароходе, да?" },
+          { "tr": "Teşekkürler, ama sabah kahvaltı yapmıyorum. Sadece kahve ve çay!", "ru": "Спасибо, но утром я не завтракаю. Только кофе и чай!" }
+        ]}
+      ]
+    },
+    {
+      "id": "restoran-a1-vapur-leyla",
+      "title": "На пароходе с Лейлой: чай и симит",
+      "level": "A1",
+      "speakers": { "a": "Ольга", "b": "Лейла" },
+      "turns": [
+        { "speaker": "b", "tr": "Olga, çay içmek istiyor musun? Çaycı geliyor.", "ru": "Ольга, хочешь чаю? Вон идёт продавец чая.", "distractors": [
+          { "tr": "İki çay, lütfen! Simit de istiyor musun?", "ru": "Два чая, пожалуйста! Симит тоже хочешь?" },
+          { "tr": "Çok lezzetli. Vapurda çay her zaman lezzetli!", "ru": "Очень вкусный. На пароходе чай всегда вкусный!" }
+        ]},
+        { "speaker": "a", "tr": "Evet! Vapurda her zaman çay içiyorum.", "ru": "Да! На пароходе я всегда пью чай.", "distractors": [
+          { "tr": "Doğru! Eminönü'nde balık ekmek yiyecek miyiz?", "ru": "Правда! В Эминёню будем есть балык-экмек?" },
+          { "tr": "Bak, martılar! Simitini martılara verme!", "ru": "Смотри, чайки! Не отдавай свой симит чайкам!" }
+        ]},
+        { "speaker": "b", "tr": "İki çay, lütfen! Simit de istiyor musun?", "ru": "Два чая, пожалуйста! Симит тоже хочешь?", "distractors": [
+          { "tr": "Doğru! Eminönü'nde balık ekmek yiyecek miyiz?", "ru": "Правда! В Эминёню будем есть балык-экмек?" },
+          { "tr": "Çok lezzetli. Vapurda çay her zaman lezzetli!", "ru": "Очень вкусный. На пароходе чай всегда вкусный!" }
+        ]},
+        { "speaker": "a", "tr": "Evet, çok açım. Bu sabah kahvaltı yapmadım.", "ru": "Да, я очень голодна. Сегодня утром я не завтракала.", "distractors": [
+          { "tr": "Tabii! Balık ekmeği çok seviyorum.", "ru": "Конечно! Я очень люблю балык-экмек." },
+          { "tr": "Haha! Ama martılar da çok aç, değil mi?", "ru": "Ха-ха! Но чайки тоже очень голодные, правда?" }
+        ]},
+        { "speaker": "b", "tr": "Bak, martılar! Simitini martılara verme!", "ru": "Смотри, чайки! Не отдавай свой симит чайкам!", "distractors": [
+          { "tr": "Tabii! Balık ekmeği çok seviyorum.", "ru": "Конечно! Я очень люблю балык-экмек." },
+          { "tr": "Doğru! Eminönü'nde balık ekmek yiyecek miyiz?", "ru": "Правда! В Эминёню будем есть балык-экмек?" }
+        ]},
+        { "speaker": "a", "tr": "Haha! Ama martılar da çok aç, değil mi?", "ru": "Ха-ха! Но чайки тоже очень голодные, правда?", "distractors": [
+          { "tr": "İki çay, lütfen! Simit de istiyor musun?", "ru": "Два чая, пожалуйста! Симит тоже хочешь?" },
+          { "tr": "Olga, çay içmek istiyor musun? Çaycı geliyor.", "ru": "Ольга, хочешь чаю? Вон идёт продавец чая." }
+        ]},
+        { "speaker": "b", "tr": "Biraz ver, ama hepsini değil! Çay nasıl?", "ru": "Дай немного, но не весь! Как чай?", "distractors": [
+          { "tr": "İki çay, lütfen! Simit de istiyor musun?", "ru": "Два чая, пожалуйста! Симит тоже хочешь?" },
+          { "tr": "Evet, çok açım. Bu sabah kahvaltı yapmadım.", "ru": "Да, я очень голодна. Сегодня утром я не завтракала." }
+        ]},
+        { "speaker": "a", "tr": "Çok lezzetli. Vapurda çay her zaman lezzetli!", "ru": "Очень вкусный. На пароходе чай всегда вкусный!", "distractors": [
+          { "tr": "Evet! Vapurda her zaman çay içiyorum.", "ru": "Да! На пароходе я всегда пью чай." },
+          { "tr": "Evet, çok açım. Bu sabah kahvaltı yapmadım.", "ru": "Да, я очень голодна. Сегодня утром я не завтракала." }
+        ]},
+        { "speaker": "b", "tr": "Doğru! Eminönü'nde balık ekmek yiyecek miyiz?", "ru": "Правда! В Эминёню будем есть балык-экмек?", "distractors": [
+          { "tr": "Olga, çay içmek istiyor musun? Çaycı geliyor.", "ru": "Ольга, хочешь чаю? Вон идёт продавец чая." },
+          { "tr": "Haha! Ama martılar da çok aç, değil mi?", "ru": "Ха-ха! Но чайки тоже очень голодные, правда?" }
+        ]},
+        { "speaker": "a", "tr": "Tabii! Balık ekmeği çok seviyorum.", "ru": "Конечно! Я очень люблю балык-экмек.", "distractors": [
+          { "tr": "Bak, martılar! Simitini martılara verme!", "ru": "Смотри, чайки! Не отдавай свой симит чайкам!" },
+          { "tr": "Çok lezzetli. Vapurda çay her zaman lezzetli!", "ru": "Очень вкусный. На пароходе чай всегда вкусный!" }
+        ]}
+      ]
     }
   ]
 }
