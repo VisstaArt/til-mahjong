@@ -10,6 +10,7 @@
 не сошлось, в упражнения не идёт — лучше меньше фраз, чем неверная «правильная» форма.
 """
 
+import copy
 import glob
 import json
 import os
@@ -17,12 +18,20 @@ import re
 import sys
 
 sys.path.insert(0, os.path.dirname(__file__))
+import levels  # noqa: E402
 import morph  # noqa: E402
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
 OUT = os.path.join(ROOT, "assets", "grammar", "items.json")
 UNMATCHED = os.path.join(os.path.dirname(__file__), "unmatched.txt")
 EXTRA_VERBS = os.path.join(os.path.dirname(__file__), "extra-verbs.txt")
+EXTRA_NOUNS = os.path.join(os.path.dirname(__file__), "extra-nouns.txt")
+# Свои короткие фразы A1 («База») — по файлу на тему: base-<тема>.txt, «tr | ru».
+BASE_FILES = {"yor": "base-yor.txt", "case": "base-case.txt"}
+# Фраза из разговорника/диалога идёт в ступень «В жизни» только если она короткая и по
+# грамматике не выше этого уровня (оценка levels.py) — иначе для начинающих слишком сложно.
+LIFE_MAX_WORDS = 8
+LIFE_LEVELS = {"A1"}
 
 # Служебные слова, которые случайно совпадают с падежной формой какого-нибудь
 # существительного из словаря (il → ile, an → ana…). Их не трогаем.
@@ -57,6 +66,13 @@ def load_lexicon():
                 verbs.setdefault(tr, w.get("ru", ""))
             elif w.get("pos") == "noun":
                 nouns.setdefault(tr, w.get("ru", ""))
+    for path, target in ((EXTRA_NOUNS, nouns),):
+        if os.path.exists(path):
+            for line in open(path, encoding="utf-8"):
+                line = line.split("#")[0].strip()
+                if line:
+                    word, _, ru = line.partition("=")
+                    target.setdefault(tr_lower(word.strip()), ru.strip())
     if os.path.exists(EXTRA_VERBS):
         for line in open(EXTRA_VERBS, encoding="utf-8"):
             line = line.split("#")[0].strip()
@@ -67,9 +83,23 @@ def load_lexicon():
     return verbs, nouns, all_words
 
 
-def load_sources():
-    """Фразы и реплики диалогов в одном виде: {id, ru, tr, src}."""
+def load_base():
     out = []
+    for topic, name in BASE_FILES.items():
+        path = os.path.join(os.path.dirname(__file__), name)
+        for line in open(path, encoding="utf-8"):
+            line = line.strip()
+            if not line or line.startswith("#"):
+                continue
+            tr, _, ru = line.partition("|")
+            out.append({"ru": ru.strip(), "tr": tr.strip(), "src": "База", "tier": "base", "baseTopic": topic})
+    return out
+
+
+def load_sources():
+    """Фразы и реплики диалогов в одном виде: {id, ru, tr, src, tier}. Сначала «База»,
+    чтобы при совпадении текста фраза считалась своей, а не из разговорника."""
+    out = load_base()
     pm = json.load(open(os.path.join(ROOT, "assets", "phrases", "manifest.json"), encoding="utf-8"))
     titles = {m["id"]: m["title"] for m in pm}
     # Идиомы с Allah — застывшие выражения, часто со старой грамматикой: на них
@@ -83,7 +113,7 @@ def load_sources():
         items = data if isinstance(data, list) else data.get("phrases", [])
         for p in items:
             if p.get("tr") and p.get("ru"):
-                out.append({"ru": p["ru"], "tr": p["tr"], "src": f"Фразы · {titles.get(tid, tid)}"})
+                out.append({"ru": p["ru"], "tr": p["tr"], "src": f"Фразы · {titles.get(tid, tid)}", "tier": "life"})
     for f in sorted(glob.glob(os.path.join(ROOT, "assets", "dialogues", "*.json"))):
         if f.endswith("manifest.json"):
             continue
@@ -91,7 +121,7 @@ def load_sources():
         for d in topic.get("dialogues", []):
             for t in d.get("turns", []):
                 if t.get("tr") and t.get("ru"):
-                    out.append({"ru": t["ru"], "tr": t["tr"], "src": f"Диалоги · {d['title']}"})
+                    out.append({"ru": t["ru"], "tr": t["tr"], "src": f"Диалоги · {d['title']}", "tier": "life"})
     seen, uniq = set(), []
     for it in out:
         key = it["tr"].strip()
@@ -242,6 +272,7 @@ def main():
     case_idx = build_case_index(nouns, all_words)
     sources = load_sources()
     items, unmatched = [], {}
+    base_problems, too_hard = [], 0
 
     for n, src in enumerate(sources):
         tr = src["tr"]
@@ -277,17 +308,34 @@ def main():
                 slot["case"] = case
                 slot["alts"] = case_alternatives(tr_lower(name), case, {}, True, name)
                 slots.append(slot)
-            elif low in case_idx and raw[0].islower():
+            elif low in case_idx and (raw[0].islower() or s == 0 or tr[:s].rstrip()[-1:] in ".!?"):
+                # С заглавной — только в начале предложения (иначе это имя собственное).
                 lemma, case, kw, form = case_idx[low]
+                if raw[0].isupper():
+                    form = copy.deepcopy(form)
+                    first = form.parts[0]
+                    first.text = raw[0] + first.text[1:]
+                    first.options = [o[0].upper() + o[1:] for o in first.options]
+                    form.word = raw
                 # Перевод леммы для падежей не показываем: у существительных в словаре
                 # бывает не тот смысл (sağ → «право»), а смысл и так есть во фразе.
                 slot = form_to_slot(form, s, e, lemma, "case", "")
                 slot["case"] = case
                 slot["alts"] = case_alternatives(lemma, case, kw, False)
+                if raw[0].isupper():
+                    slot["alts"] = [x[0].upper() + x[1:] for x in slot["alts"]]
                 slots.append(slot)
             i += 1
+        if src["tier"] == "base":
+            if not any(s["topic"] == src["baseTopic"] for s in slots):
+                base_problems.append(f"{src['baseTopic']}: {tr}")
+                continue
+        else:
+            if len(tr.split()) > LIFE_MAX_WORDS or levels.classify(tr)[0] not in LIFE_LEVELS:
+                too_hard += 1
+                continue
         if slots:
-            items.append({"id": f"g{n}", "ru": src["ru"], "tr": tr, "src": src["src"], "slots": slots})
+            items.append({"id": f"g{n}", "ru": src["ru"], "tr": tr, "src": src["src"], "tier": src["tier"], "slots": slots})
 
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
     with open(OUT, "w", encoding="utf-8") as f:
@@ -302,6 +350,14 @@ def main():
         for s in it["slots"]:
             by_topic[s["topic"]] = by_topic.get(s["topic"], 0) + 1
     print(f"источников: {len(sources)}, фраз с пропусками: {len(items)}, пропусков по темам: {by_topic}")
+    tiers = {}
+    for it in items:
+        tiers[it["tier"]] = tiers.get(it["tier"], 0) + 1
+    print(f"по ступеням: {tiers}; отброшено как слишком сложное для «В жизни»: {too_hard}")
+    if base_problems:
+        print("ВНИМАНИЕ: в «Базе» не нашёлся пропуск своей темы (генератор не распознал форму):")
+        for p in base_problems:
+            print("  ", p)
     print(f"не распознано основ на -yor: {len(unmatched)} (см. {os.path.relpath(UNMATCHED, ROOT)})")
 
 

@@ -1,0 +1,50 @@
+# «База» A1 для темы -de / -den / -e: где? откуда? куда?
+# Формат: турецкий | русский. После правки: python3 tools/grammar/build.py
+# где? -de
+Olga evde. | Ольга дома.
+Pamuk mutfakta. | Памук на кухне.
+Anya Moskova'da. | Аня в Москве.
+Kitap masada. | Книга на столе.
+Deniz arabada. | Дениз в машине.
+Tuba ofiste. | Туба в офисе.
+Leyla parkta. | Лейла в парке.
+Çocuklar okulda. | Дети в школе.
+Telefon çantada. | Телефон в сумке.
+Olga Kadıköy'de yaşıyor. | Ольга живёт в Кадыкёе.
+Biz kafede kahve içiyoruz. | Мы пьём кофе в кафе.
+Metin Bey toplantıda. | Метин-бей на совещании.
+Otobüs durakta. | Автобус на остановке.
+Anahtar kapıda. | Ключ в двери.
+Sen İstanbul'da mı yaşıyorsun? | Ты живёшь в Стамбуле?
+# откуда? -den
+Olga Rusya'dan. | Ольга из России.
+Anya Moskova'dan geliyor. | Аня едет из Москвы.
+Leyla işten geliyor. | Лейла идёт с работы.
+Deniz Ankara'dan geliyor. | Дениз едет из Анкары.
+Çocuklar okuldan geliyor. | Дети идут из школы.
+Biz sinemadan çıkıyoruz. | Мы выходим из кинотеатра.
+Tuba ofisten çıkıyor. | Туба выходит из офиса.
+Ben evden çıkıyorum. | Я выхожу из дома.
+Pamuk kutudan çıkıyor. | Памук вылезает из коробки.
+Metin Bey toplantıdan geliyor. | Метин-бей идёт с совещания.
+Buradan otobüs geçiyor mu? | Здесь проходит автобус?
+Parktan geliyoruz. | Мы идём из парка.
+# куда? -e
+Olga eve gidiyor. | Ольга идёт домой.
+Ben işe gidiyorum. | Я иду на работу.
+Leyla markete gidiyor. | Лейла идёт в магазин.
+Biz sinemaya gidiyoruz. | Мы идём в кино.
+Anya İstanbul'a geliyor. | Аня приезжает в Стамбул.
+Deniz Ankara'ya gidiyor. | Дениз едет в Анкару.
+Çocuklar okula gidiyor. | Дети идут в школу.
+Tuba ofise geliyor. | Туба идёт в офис.
+Otobüse biniyoruz. | Мы садимся в автобус.
+Pamuk kutuya giriyor. | Памук залезает в коробку.
+Olga Bodrum'a gidiyor. | Ольга едет в Бодрум.
+Çocuklar sokağa çıkıyor. | Дети выходят на улицу.
+Leyla mutfağa gidiyor. | Лейла идёт на кухню.
+Ben durağa yürüyorum. | Я иду пешком к остановке.
+Parka gidiyoruz. | Мы идём в парк.
+Ben kafeye gidiyorum. | Я иду в кафе.
+Siz Kadıköy'e mi gidiyorsunuz? | Вы едете в Кадыкёй?
+Buraya gel! | Иди сюда!

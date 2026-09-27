@@ -23,6 +23,10 @@ const WEAK_RULE_BONUS = 2;
 const MAX_NEW_GRAMMAR_PER_SESSION = 15;
 // Повторение открывается, когда по каждой теме набрано столько ответов.
 const REVIEW_UNLOCK_ANSWERS = 20;
+// Ступени внутри темы: сначала «База» (свои короткие фразы A1), а фразы разговорника и
+// диалогов («В жизни») подмешиваются, когда по теме набрано столько ответов — чтобы в
+// начале не было слишком сложно.
+const LIFE_UNLOCK_ANSWERS = 40;
 
 const GRAMMAR_TOPICS = [
   {
@@ -166,9 +170,23 @@ async function loadGrammarItems() {
   return grammarItems;
 }
 
+function topicAnswerCount(topicId) {
+  return grammarRuleStats[`${topicId}.total`] || 0;
+}
+function isLifeUnlocked(topicId) {
+  return topicAnswerCount(topicId) >= LIFE_UNLOCK_ANSWERS;
+}
+// Фраза доступна в теме: «База» — всегда, «В жизни» — после открытия ступени.
+function itemAvailable(item, topicId) {
+  return item.tier === "base" || isLifeUnlocked(topicId);
+}
+
 function topicSlots(topicId) {
   const out = [];
-  grammarItems.forEach((item) => item.slots.forEach((slot) => slot.topic === topicId && out.push({ item, slot })));
+  grammarItems.forEach((item) => {
+    if (!itemAvailable(item, topicId)) return;
+    item.slots.forEach((slot) => slot.topic === topicId && out.push({ item, slot }));
+  });
   return out;
 }
 
@@ -179,7 +197,7 @@ function bumpTopicCounter(topicId) {
   localStorage.setItem(GRAMMAR_RULES_KEY, JSON.stringify(grammarRuleStats));
 }
 function isReviewUnlocked() {
-  return GRAMMAR_TOPICS.every((t) => (grammarRuleStats[`${t.id}.total`] || 0) >= REVIEW_UNLOCK_ANSWERS);
+  return GRAMMAR_TOPICS.every((t) => topicAnswerCount(t.id) >= REVIEW_UNLOCK_ANSWERS);
 }
 
 // --- каталог ---
@@ -251,12 +269,30 @@ function renderRuleChips(container, topic) {
   });
 }
 
+// Ступени темы: «База» открыта сразу, «В жизни» — после LIFE_UNLOCK_ANSWERS ответов.
+function renderTopicStages(topic) {
+  const el = document.getElementById("grammar-topic-stages");
+  const count = (tier) => grammarItems.filter((it) => it.tier === tier && it.slots.some((s) => s.topic === topic.id)).length;
+  const answers = topicAnswerCount(topic.id);
+  const life = isLifeUnlocked(topic.id)
+    ? `🌍 В жизни — ${count("life")} фраз из «Фраз» и «Диалогов», подмешиваются к базе`
+    : `🔒 В жизни — ${count("life")} фраз из «Фраз» и «Диалогов»; откроется после ${LIFE_UNLOCK_ANSWERS} ответов (сейчас ${answers})`;
+  el.innerHTML = "";
+  [`🧱 База — ${count("base")} коротких фраз`, life].forEach((text) => {
+    const row = document.createElement("div");
+    row.className = "grammar-stage";
+    row.textContent = text;
+    el.appendChild(row);
+  });
+}
+
 async function openGrammarTopic(id) {
   currentGrammarTopicId = id;
   const topic = GRAMMAR_TOPICS.find((t) => t.id === id);
   document.getElementById("grammar-topic-title").textContent = `${topic.emoji} ${topic.title}`;
   fillMemo(document.getElementById("grammar-topic-memo"), topic);
   renderRuleChips(document.getElementById("grammar-topic-rules"), topic);
+  renderTopicStages(topic);
   setScreen("grammar-topic");
 }
 
@@ -270,10 +306,14 @@ let drillQuestion = null; // {item, slots: [...], index}
 // фразы (не больше двух), чтобы в одной фразе встречались разные правила.
 function drillCandidates() {
   if (drillMode === "review") {
-    return grammarItems.map((item) => ({ item, slots: shuffle(item.slots).slice(0, 2).sort((a, b) => a.start - b.start) }));
+    return grammarItems
+      .map((item) => ({ item, slots: item.slots.filter((s) => itemAvailable(item, s.topic)) }))
+      .filter((c) => c.slots.length)
+      .map((c) => ({ item: c.item, slots: shuffle(c.slots).slice(0, 2).sort((a, b) => a.start - b.start) }));
   }
   const out = [];
   grammarItems.forEach((item) => {
+    if (!itemAvailable(item, drillMode)) return;
     const own = item.slots.filter((s) => s.topic === drillMode);
     if (own.length) out.push({ item, slots: [own[Math.floor(Math.random() * own.length)]] });
   });
