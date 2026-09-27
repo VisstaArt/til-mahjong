@@ -2206,6 +2206,398 @@
           { "tr": "Tabii, pardon. Ama Türkçeniz çok iyi! Nerelisiniz?", "ru": "Конечно, простите. Но у вас очень хороший турецкий! Вы откуда?" }
         ]}
       ]
+    },
+    {
+      "id": "pokupki-a1-bakkal-sut",
+      "title": "Лавка: молоко и яйца",
+      "level": "A1",
+      "speakers": { "a": "Ольга", "b": "Хамди" },
+      "turns": [
+        { "speaker": "b", "tr": "Günaydın! Buyurun.", "ru": "Доброе утро! Слушаю вас.", "distractors": [
+          { "tr": "Küçük, lütfen. Yumurta da var mı?", "ru": "Маленькое, пожалуйста. А яйца есть?" },
+          { "tr": "Maalesef yok. Yarın gelecek.", "ru": "К сожалению, нет. Завтра привезут." }
+        ]},
+        { "speaker": "a", "tr": "Günaydın, Hamdi Bey. Süt var mı?", "ru": "Доброе утро, господин Хамди. Молоко есть?", "distractors": [
+          { "tr": "Maalesef yok. Yarın gelecek.", "ru": "К сожалению, нет. Завтра привезут." },
+          { "tr": "Tamam. Bu peyniri de verin, lütfen. Hepsi ne kadar?", "ru": "Хорошо. И дайте ещё этот сыр, пожалуйста. Сколько всего?" }
+        ]},
+        { "speaker": "b", "tr": "Var. Büyük mü, küçük mü?", "ru": "Есть. Большое или маленькое?", "distractors": [
+          { "tr": "Tamam. Bu peyniri de verin, lütfen. Hepsi ne kadar?", "ru": "Хорошо. И дайте ещё этот сыр, пожалуйста. Сколько всего?" },
+          { "tr": "Hepsi yüz yirmi lira.", "ru": "Всего сто двадцать лир." }
+        ]},
+        { "speaker": "a", "tr": "Küçük, lütfen. Yumurta da var mı?", "ru": "Маленькое, пожалуйста. А яйца есть?", "distractors": [
+          { "tr": "Hepsi yüz yirmi lira.", "ru": "Всего сто двадцать лир." },
+          { "tr": "Buyurun. Teşekkürler, iyi günler!", "ru": "Вот, пожалуйста. Спасибо, хорошего дня!" }
+        ]},
+        { "speaker": "b", "tr": "Maalesef yok. Yarın gelecek.", "ru": "К сожалению, нет. Завтра привезут.", "distractors": [
+          { "tr": "Günaydın! Buyurun.", "ru": "Доброе утро! Слушаю вас." },
+          { "tr": "Buyurun. Teşekkürler, iyi günler!", "ru": "Вот, пожалуйста. Спасибо, хорошего дня!" }
+        ]},
+        { "speaker": "a", "tr": "Tamam. Bu peyniri de verin, lütfen. Hepsi ne kadar?", "ru": "Хорошо. И дайте ещё этот сыр, пожалуйста. Сколько всего?", "distractors": [
+          { "tr": "Günaydın! Buyurun.", "ru": "Доброе утро! Слушаю вас." },
+          { "tr": "Günaydın, Hamdi Bey. Süt var mı?", "ru": "Доброе утро, господин Хамди. Молоко есть?" }
+        ]},
+        { "speaker": "b", "tr": "Hepsi yüz yirmi lira.", "ru": "Всего сто двадцать лир.", "distractors": [
+          { "tr": "Günaydın, Hamdi Bey. Süt var mı?", "ru": "Доброе утро, господин Хамди. Молоко есть?" },
+          { "tr": "Var. Büyük mü, küçük mü?", "ru": "Есть. Большое или маленькое?" }
+        ]},
+        { "speaker": "a", "tr": "Buyurun. Teşekkürler, iyi günler!", "ru": "Вот, пожалуйста. Спасибо, хорошего дня!", "distractors": [
+          { "tr": "Var. Büyük mü, küçük mü?", "ru": "Есть. Большое или маленькое?" },
+          { "tr": "Küçük, lütfen. Yumurta da var mı?", "ru": "Маленькое, пожалуйста. А яйца есть?" }
+        ]}
+      ]
+    },
+    {
+      "id": "pokupki-a1-bakkal-kart",
+      "title": "Лавка: картой можно?",
+      "level": "A1",
+      "speakers": { "a": "Ольга", "b": "Нурсель" },
+      "turns": [
+        { "speaker": "a", "tr": "İyi akşamlar! Su var mı?", "ru": "Добрый вечер! Вода есть?", "distractors": [
+          { "tr": "Buyurun. Başka bir şey?", "ru": "Пожалуйста. Что-нибудь ещё?" },
+          { "tr": "Hayır, bu kadar. Kart geçiyor mu?", "ru": "Нет, это всё. Картой можно?" }
+        ]},
+        { "speaker": "b", "tr": "İyi akşamlar! Var, orada. Büyük şişe mi?", "ru": "Добрый вечер! Есть, вон там. Большую бутылку?", "distractors": [
+          { "tr": "Hayır, bu kadar. Kart geçiyor mu?", "ru": "Нет, это всё. Картой можно?" },
+          { "tr": "Evet, geçiyor. Poşet ister misiniz?", "ru": "Да, можно. Пакет нужен?" }
+        ]},
+        { "speaker": "a", "tr": "Evet, iki büyük şişe su, lütfen. Bir de ekmek.", "ru": "Да, две большие бутылки воды, пожалуйста. И ещё хлеб.", "distractors": [
+          { "tr": "Hayır, poşet istemiyorum, çantam var.", "ru": "Нет, пакет не нужен, у меня есть сумка." },
+          { "tr": "Tamam. Hepsi altmış lira. İyi akşamlar!", "ru": "Хорошо. Всего шестьдесят лир. Хорошего вечера!" }
+        ]},
+        { "speaker": "b", "tr": "Buyurun. Başka bir şey?", "ru": "Пожалуйста. Что-нибудь ещё?", "distractors": [
+          { "tr": "Hayır, poşet istemiyorum, çantam var.", "ru": "Нет, пакет не нужен, у меня есть сумка." },
+          { "tr": "Tamam. Hepsi altmış lira. İyi akşamlar!", "ru": "Хорошо. Всего шестьдесят лир. Хорошего вечера!" }
+        ]},
+        { "speaker": "a", "tr": "Hayır, bu kadar. Kart geçiyor mu?", "ru": "Нет, это всё. Картой можно?", "distractors": [
+          { "tr": "İyi akşamlar! Su var mı?", "ru": "Добрый вечер! Вода есть?" },
+          { "tr": "Tamam. Hepsi altmış lira. İyi akşamlar!", "ru": "Хорошо. Всего шестьдесят лир. Хорошего вечера!" }
+        ]},
+        { "speaker": "b", "tr": "Evet, geçiyor. Poşet ister misiniz?", "ru": "Да, можно. Пакет нужен?", "distractors": [
+          { "tr": "İyi akşamlar! Su var mı?", "ru": "Добрый вечер! Вода есть?" },
+          { "tr": "İyi akşamlar! Var, orada. Büyük şişe mi?", "ru": "Добрый вечер! Есть, вон там. Большую бутылку?" }
+        ]},
+        { "speaker": "a", "tr": "Hayır, poşet istemiyorum, çantam var.", "ru": "Нет, пакет не нужен, у меня есть сумка.", "distractors": [
+          { "tr": "İyi akşamlar! Var, orada. Büyük şişe mi?", "ru": "Добрый вечер! Есть, вон там. Большую бутылку?" },
+          { "tr": "Evet, iki büyük şişe su, lütfen. Bir de ekmek.", "ru": "Да, две большие бутылки воды, пожалуйста. И ещё хлеб." }
+        ]},
+        { "speaker": "b", "tr": "Tamam. Hepsi altmış lira. İyi akşamlar!", "ru": "Хорошо. Всего шестьдесят лир. Хорошего вечера!", "distractors": [
+          { "tr": "Evet, iki büyük şişe su, lütfen. Bir de ekmek.", "ru": "Да, две большие бутылки воды, пожалуйста. И ещё хлеб." },
+          { "tr": "Buyurun. Başka bir şey?", "ru": "Пожалуйста. Что-нибудь ещё?" }
+        ]}
+      ]
+    },
+    {
+      "id": "pokupki-a1-pazar-elma",
+      "title": "Рынок: яблоки — это дорого!",
+      "level": "A1",
+      "speakers": { "a": "Ольга", "b": "Решат" },
+      "turns": [
+        { "speaker": "b", "tr": "Buyurun abla! Elmalar çok taze!", "ru": "Подходите, сестрица! Яблоки очень свежие!", "distractors": [
+          { "tr": "Seksen mi? Çok pahalı!", "ru": "Восемьдесят? Очень дорого!" },
+          { "tr": "Bunlar daha ucuz. Kilosu elli lira.", "ru": "Вот эти дешевле. Пятьдесят лир за килограмм." }
+        ]},
+        { "speaker": "a", "tr": "Kilosu kaç lira?", "ru": "Сколько лир за килограмм?", "distractors": [
+          { "tr": "Tamam, bunlardan iki kilo verin, lütfen.", "ru": "Хорошо, дайте два килограмма вот этих, пожалуйста." },
+          { "tr": "Evet, bir poşet, lütfen. Teşekkürler!", "ru": "Да, пакет, пожалуйста. Спасибо!" }
+        ]},
+        { "speaker": "b", "tr": "Seksen lira.", "ru": "Восемьдесят лир.", "distractors": [
+          { "tr": "Buyurun abla! Elmalar çok taze!", "ru": "Подходите, сестрица! Яблоки очень свежие!" },
+          { "tr": "Tamam, bunlardan iki kilo verin, lütfen.", "ru": "Хорошо, дайте два килограмма вот этих, пожалуйста." }
+        ]},
+        { "speaker": "a", "tr": "Seksen mi? Çok pahalı!", "ru": "Восемьдесят? Очень дорого!", "distractors": [
+          { "tr": "Buyurun, yüz lira. Poşet ister misiniz?", "ru": "Пожалуйста, сто лир. Пакет нужен?" },
+          { "tr": "Evet, bir poşet, lütfen. Teşekkürler!", "ru": "Да, пакет, пожалуйста. Спасибо!" }
+        ]},
+        { "speaker": "b", "tr": "Bunlar daha ucuz. Kilosu elli lira.", "ru": "Вот эти дешевле. Пятьдесят лир за килограмм.", "distractors": [
+          { "tr": "Buyurun abla! Elmalar çok taze!", "ru": "Подходите, сестрица! Яблоки очень свежие!" },
+          { "tr": "Evet, bir poşet, lütfen. Teşekkürler!", "ru": "Да, пакет, пожалуйста. Спасибо!" }
+        ]},
+        { "speaker": "a", "tr": "Tamam, bunlardan iki kilo verin, lütfen.", "ru": "Хорошо, дайте два килограмма вот этих, пожалуйста.", "distractors": [
+          { "tr": "Buyurun abla! Elmalar çok taze!", "ru": "Подходите, сестрица! Яблоки очень свежие!" },
+          { "tr": "Kilosu kaç lira?", "ru": "Сколько лир за килограмм?" }
+        ]},
+        { "speaker": "b", "tr": "Buyurun, yüz lira. Poşet ister misiniz?", "ru": "Пожалуйста, сто лир. Пакет нужен?", "distractors": [
+          { "tr": "Kilosu kaç lira?", "ru": "Сколько лир за килограмм?" },
+          { "tr": "Seksen mi? Çok pahalı!", "ru": "Восемьдесят? Очень дорого!" }
+        ]},
+        { "speaker": "a", "tr": "Evet, bir poşet, lütfen. Teşekkürler!", "ru": "Да, пакет, пожалуйста. Спасибо!", "distractors": [
+          { "tr": "Seksen lira.", "ru": "Восемьдесят лир." },
+          { "tr": "Seksen mi? Çok pahalı!", "ru": "Восемьдесят? Очень дорого!" }
+        ]}
+      ]
+    },
+    {
+      "id": "pokupki-a1-pazar-leyla",
+      "title": "На рынке с Лейлой: клубника или черешня?",
+      "level": "A1",
+      "speakers": { "a": "Ольга", "b": "Лейла" },
+      "turns": [
+        { "speaker": "a", "tr": "Leyla, bak! Çilek var!", "ru": "Лейла, смотри! Клубника!", "distractors": [
+          { "tr": "Yüz lira. Biraz pahalı.", "ru": "Сто лир. Дороговато." },
+          { "tr": "Evet, pahalı. Kiraz var mı?", "ru": "Да, дорого. А черешня есть?" }
+        ]},
+        { "speaker": "b", "tr": "Evet, çok güzel. Sen çilek seviyor musun?", "ru": "Да, очень красивая. Ты любишь клубнику?", "distractors": [
+          { "tr": "Var, orada. Kiraz bugün ucuz, kilosu altmış lira.", "ru": "Есть, вон там. Черешня сегодня дешёвая, шестьдесят лир за килограмм." },
+          { "tr": "Harika! Bir kilo kiraz alıyorum. Sen de istiyor musun?", "ru": "Отлично! Беру килограмм черешни. Ты тоже хочешь?" }
+        ]},
+        { "speaker": "a", "tr": "Çok seviyorum! Ama kilosu ne kadar?", "ru": "Очень люблю! Но сколько стоит килограмм?", "distractors": [
+          { "tr": "Var, orada. Kiraz bugün ucuz, kilosu altmış lira.", "ru": "Есть, вон там. Черешня сегодня дешёвая, шестьдесят лир за килограмм." },
+          { "tr": "Harika! Bir kilo kiraz alıyorum. Sen de istiyor musun?", "ru": "Отлично! Беру килограмм черешни. Ты тоже хочешь?" }
+        ]},
+        { "speaker": "b", "tr": "Yüz lira. Biraz pahalı.", "ru": "Сто лир. Дороговато.", "distractors": [
+          { "tr": "Harika! Bir kilo kiraz alıyorum. Sen de istiyor musun?", "ru": "Отлично! Беру килограмм черешни. Ты тоже хочешь?" },
+          { "tr": "Evet, ben de yarım kilo alıyorum.", "ru": "Да, я тоже беру полкило." }
+        ]},
+        { "speaker": "a", "tr": "Evet, pahalı. Kiraz var mı?", "ru": "Да, дорого. А черешня есть?", "distractors": [
+          { "tr": "Leyla, bak! Çilek var!", "ru": "Лейла, смотри! Клубника!" },
+          { "tr": "Çok seviyorum! Ama kilosu ne kadar?", "ru": "Очень люблю! Но сколько стоит килограмм?" }
+        ]},
+        { "speaker": "b", "tr": "Var, orada. Kiraz bugün ucuz, kilosu altmış lira.", "ru": "Есть, вон там. Черешня сегодня дешёвая, шестьдесят лир за килограмм.", "distractors": [
+          { "tr": "Leyla, bak! Çilek var!", "ru": "Лейла, смотри! Клубника!" },
+          { "tr": "Evet, çok güzel. Sen çilek seviyor musun?", "ru": "Да, очень красивая. Ты любишь клубнику?" }
+        ]},
+        { "speaker": "a", "tr": "Harika! Bir kilo kiraz alıyorum. Sen de istiyor musun?", "ru": "Отлично! Беру килограмм черешни. Ты тоже хочешь?", "distractors": [
+          { "tr": "Evet, çok güzel. Sen çilek seviyor musun?", "ru": "Да, очень красивая. Ты любишь клубнику?" },
+          { "tr": "Çok seviyorum! Ama kilosu ne kadar?", "ru": "Очень люблю! Но сколько стоит килограмм?" }
+        ]},
+        { "speaker": "b", "tr": "Evet, ben de yarım kilo alıyorum.", "ru": "Да, я тоже беру полкило.", "distractors": [
+          { "tr": "Çok seviyorum! Ama kilosu ne kadar?", "ru": "Очень люблю! Но сколько стоит килограмм?" },
+          { "tr": "Yüz lira. Biraz pahalı.", "ru": "Сто лир. Дороговато." }
+        ]}
+      ]
+    },
+    {
+      "id": "pokupki-a1-elbise-beden",
+      "title": "Магазин одежды: какой размер?",
+      "level": "A1",
+      "speakers": { "a": "Ольга", "b": "Джемиле" },
+      "turns": [
+        { "speaker": "b", "tr": "Hoş geldiniz! Buyurun.", "ru": "Добро пожаловать! Слушаю вас.", "distractors": [
+          { "tr": "Otuz altı.", "ru": "Тридцать шестой." },
+          { "tr": "Buyurun, otuz altı beden. Kabin orada.", "ru": "Пожалуйста, тридцать шестой. Примерочная там." }
+        ]},
+        { "speaker": "a", "tr": "Merhaba. Bu elbisenin mavisi var mı?", "ru": "Здравствуйте. Это платье есть в синем?", "distractors": [
+          { "tr": "Buyurun, otuz altı beden. Kabin orada.", "ru": "Пожалуйста, тридцать шестой. Примерочная там." },
+          { "tr": "Bu bana küçük. Otuz sekiz var mı?", "ru": "Мне это мало. Тридцать восьмой есть?" }
+        ]},
+        { "speaker": "b", "tr": "Var. Bedeniniz kaç?", "ru": "Есть. Какой у вас размер?", "distractors": [
+          { "tr": "Bu bana küçük. Otuz sekiz var mı?", "ru": "Мне это мало. Тридцать восьмой есть?" },
+          { "tr": "Sekiz yüz lira.", "ru": "Восемьсот лир." }
+        ]},
+        { "speaker": "a", "tr": "Otuz altı.", "ru": "Тридцать шестой.", "distractors": [
+          { "tr": "Evet, var. Buyurun.", "ru": "Да, есть. Пожалуйста." },
+          { "tr": "Bu çok iyi! Ne kadar?", "ru": "Вот это хорошо! Сколько стоит?" }
+        ]},
+        { "speaker": "b", "tr": "Buyurun, otuz altı beden. Kabin orada.", "ru": "Пожалуйста, тридцать шестой. Примерочная там.", "distractors": [
+          { "tr": "Bu çok iyi! Ne kadar?", "ru": "Вот это хорошо! Сколько стоит?" },
+          { "tr": "Sekiz yüz lira.", "ru": "Восемьсот лир." }
+        ]},
+        { "speaker": "a", "tr": "Bu bana küçük. Otuz sekiz var mı?", "ru": "Мне это мало. Тридцать восьмой есть?", "distractors": [
+          { "tr": "Sekiz yüz lira.", "ru": "Восемьсот лир." },
+          { "tr": "Tamam, bunu alıyorum.", "ru": "Хорошо, беру." }
+        ]},
+        { "speaker": "b", "tr": "Evet, var. Buyurun.", "ru": "Да, есть. Пожалуйста.", "distractors": [
+          { "tr": "Hoş geldiniz! Buyurun.", "ru": "Добро пожаловать! Слушаю вас." },
+          { "tr": "Tamam, bunu alıyorum.", "ru": "Хорошо, беру." }
+        ]},
+        { "speaker": "a", "tr": "Bu çok iyi! Ne kadar?", "ru": "Вот это хорошо! Сколько стоит?", "distractors": [
+          { "tr": "Hoş geldiniz! Buyurun.", "ru": "Добро пожаловать! Слушаю вас." },
+          { "tr": "Merhaba. Bu elbisenin mavisi var mı?", "ru": "Здравствуйте. Это платье есть в синем?" }
+        ]},
+        { "speaker": "b", "tr": "Sekiz yüz lira.", "ru": "Восемьсот лир.", "distractors": [
+          { "tr": "Merhaba. Bu elbisenin mavisi var mı?", "ru": "Здравствуйте. Это платье есть в синем?" },
+          { "tr": "Var. Bedeniniz kaç?", "ru": "Есть. Какой у вас размер?" }
+        ]},
+        { "speaker": "a", "tr": "Tamam, bunu alıyorum.", "ru": "Хорошо, беру.", "distractors": [
+          { "tr": "Var. Bedeniniz kaç?", "ru": "Есть. Какой у вас размер?" },
+          { "tr": "Otuz altı.", "ru": "Тридцать шестой." }
+        ]}
+      ]
+    },
+    {
+      "id": "pokupki-a1-kazak-renk",
+      "title": "Свитер: а другой цвет есть?",
+      "level": "A1",
+      "speakers": { "a": "Ольга", "b": "Илькер" },
+      "turns": [
+        { "speaker": "a", "tr": "Merhaba. Bu kazak ne kadar?", "ru": "Здравствуйте. Сколько стоит этот свитер?", "distractors": [
+          { "tr": "Maalesef kırmızı yok. Beyaz ve siyah var.", "ru": "Красного, к сожалению, нет. Есть белый и чёрный." },
+          { "tr": "Siyahı verin, lütfen.", "ru": "Дайте чёрный, пожалуйста." }
+        ]},
+        { "speaker": "b", "tr": "Altı yüz lira.", "ru": "Шестьсот лир.", "distractors": [
+          { "tr": "Siyahı verin, lütfen.", "ru": "Дайте чёрный, пожалуйста." },
+          { "tr": "Buyurun. Nakit mi, kartla mı?", "ru": "Пожалуйста. Наличными или картой?" }
+        ]},
+        { "speaker": "a", "tr": "Güzel, ama bu renk... Kırmızısı var mı?", "ru": "Красивый, но этот цвет... А красный есть?", "distractors": [
+          { "tr": "Buyurun. Nakit mi, kartla mı?", "ru": "Пожалуйста. Наличными или картой?" },
+          { "tr": "Nakit ödüyorum. Buyurun.", "ru": "Плачу наличными. Вот, пожалуйста." }
+        ]},
+        { "speaker": "b", "tr": "Maalesef kırmızı yok. Beyaz ve siyah var.", "ru": "Красного, к сожалению, нет. Есть белый и чёрный.", "distractors": [
+          { "tr": "Nakit ödüyorum. Buyurun.", "ru": "Плачу наличными. Вот, пожалуйста." },
+          { "tr": "Teşekkürler. Buyurun, para üstünüz. İyi günler!", "ru": "Спасибо. Пожалуйста, ваша сдача. Хорошего дня!" }
+        ]},
+        { "speaker": "a", "tr": "Siyahı verin, lütfen.", "ru": "Дайте чёрный, пожалуйста.", "distractors": [
+          { "tr": "Merhaba. Bu kazak ne kadar?", "ru": "Здравствуйте. Сколько стоит этот свитер?" },
+          { "tr": "Teşekkürler. Buyurun, para üstünüz. İyi günler!", "ru": "Спасибо. Пожалуйста, ваша сдача. Хорошего дня!" }
+        ]},
+        { "speaker": "b", "tr": "Buyurun. Nakit mi, kartla mı?", "ru": "Пожалуйста. Наличными или картой?", "distractors": [
+          { "tr": "Merhaba. Bu kazak ne kadar?", "ru": "Здравствуйте. Сколько стоит этот свитер?" },
+          { "tr": "Altı yüz lira.", "ru": "Шестьсот лир." }
+        ]},
+        { "speaker": "a", "tr": "Nakit ödüyorum. Buyurun.", "ru": "Плачу наличными. Вот, пожалуйста.", "distractors": [
+          { "tr": "Altı yüz lira.", "ru": "Шестьсот лир." },
+          { "tr": "Güzel, ama bu renk... Kırmızısı var mı?", "ru": "Красивый, но этот цвет... А красный есть?" }
+        ]},
+        { "speaker": "b", "tr": "Teşekkürler. Buyurun, para üstünüz. İyi günler!", "ru": "Спасибо. Пожалуйста, ваша сдача. Хорошего дня!", "distractors": [
+          { "tr": "Güzel, ama bu renk... Kırmızısı var mı?", "ru": "Красивый, но этот цвет... А красный есть?" },
+          { "tr": "Maalesef kırmızı yok. Beyaz ve siyah var.", "ru": "Красного, к сожалению, нет. Есть белый и чёрный." }
+        ]}
+      ]
+    },
+    {
+      "id": "pokupki-a1-deniz-gomlek",
+      "title": "Рубашка для Дениза",
+      "level": "A1",
+      "speakers": { "a": "Ольга", "b": "Дениз" },
+      "turns": [
+        { "speaker": "b", "tr": "Olga, bu gömlek nasıl?", "ru": "Ольга, как тебе эта рубашка?", "distractors": [
+          { "tr": "Küçük beden var mı? Satıcıya sor.", "ru": "А размер поменьше есть? Спроси продавца." },
+          { "tr": "Sordum, var. Ama çok pahalı, bin lira!", "ru": "Спросил, есть. Но очень дорого, тысяча лир!" }
+        ]},
+        { "speaker": "a", "tr": "Çok güzel! Mavi sana çok yakışıyor.", "ru": "Очень красивая! Тебе очень идёт синий.", "distractors": [
+          { "tr": "Sordum, var. Ama çok pahalı, bin lira!", "ru": "Спросил, есть. Но очень дорого, тысяча лир!" },
+          { "tr": "Bu mağazada indirim var. Bak, yüzde yirmi!", "ru": "В этом магазине скидка. Смотри, двадцать процентов!" }
+        ]},
+        { "speaker": "b", "tr": "Ama bana büyük.", "ru": "Но она мне велика.", "distractors": [
+          { "tr": "Bu mağazada indirim var. Bak, yüzde yirmi!", "ru": "В этом магазине скидка. Смотри, двадцать процентов!" },
+          { "tr": "Kartla mı ödüyorsun?", "ru": "Ты платишь картой?" }
+        ]},
+        { "speaker": "a", "tr": "Küçük beden var mı? Satıcıya sor.", "ru": "А размер поменьше есть? Спроси продавца.", "distractors": [
+          { "tr": "Gerçekten mi? O zaman alıyorum!", "ru": "Правда? Тогда беру!" },
+          { "tr": "Kartla mı ödüyorsun?", "ru": "Ты платишь картой?" }
+        ]},
+        { "speaker": "b", "tr": "Sordum, var. Ama çok pahalı, bin lira!", "ru": "Спросил, есть. Но очень дорого, тысяча лир!", "distractors": [
+          { "tr": "Kartla mı ödüyorsun?", "ru": "Ты платишь картой?" },
+          { "tr": "Evet, kartla. Sonra kahve içiyoruz, tamam mı?", "ru": "Да, картой. А потом пьём кофе, хорошо?" }
+        ]},
+        { "speaker": "a", "tr": "Bu mağazada indirim var. Bak, yüzde yirmi!", "ru": "В этом магазине скидка. Смотри, двадцать процентов!", "distractors": [
+          { "tr": "Evet, kartla. Sonra kahve içiyoruz, tamam mı?", "ru": "Да, картой. А потом пьём кофе, хорошо?" },
+          { "tr": "Tamam, çok iyi fikir!", "ru": "Хорошо, отличная идея!" }
+        ]},
+        { "speaker": "b", "tr": "Gerçekten mi? O zaman alıyorum!", "ru": "Правда? Тогда беру!", "distractors": [
+          { "tr": "Olga, bu gömlek nasıl?", "ru": "Ольга, как тебе эта рубашка?" },
+          { "tr": "Tamam, çok iyi fikir!", "ru": "Хорошо, отличная идея!" }
+        ]},
+        { "speaker": "a", "tr": "Kartla mı ödüyorsun?", "ru": "Ты платишь картой?", "distractors": [
+          { "tr": "Olga, bu gömlek nasıl?", "ru": "Ольга, как тебе эта рубашка?" },
+          { "tr": "Çok güzel! Mavi sana çok yakışıyor.", "ru": "Очень красивая! Тебе очень идёт синий." }
+        ]},
+        { "speaker": "b", "tr": "Evet, kartla. Sonra kahve içiyoruz, tamam mı?", "ru": "Да, картой. А потом пьём кофе, хорошо?", "distractors": [
+          { "tr": "Çok güzel! Mavi sana çok yakışıyor.", "ru": "Очень красивая! Тебе очень идёт синий." },
+          { "tr": "Ama bana büyük.", "ru": "Но она мне велика." }
+        ]},
+        { "speaker": "a", "tr": "Tamam, çok iyi fikir!", "ru": "Хорошо, отличная идея!", "distractors": [
+          { "tr": "Ama bana büyük.", "ru": "Но она мне велика." },
+          { "tr": "Küçük beden var mı? Satıcıya sor.", "ru": "А размер поменьше есть? Спроси продавца." }
+        ]}
+      ]
+    },
+    {
+      "id": "pokupki-a1-firin-simit",
+      "title": "Пекарня: симиты для коллег",
+      "level": "A1",
+      "speakers": { "a": "Ольга", "b": "Шенол" },
+      "turns": [
+        { "speaker": "b", "tr": "Günaydın! Buyurun.", "ru": "Доброе утро! Слушаю вас.", "distractors": [
+          { "tr": "Beş tane, lütfen. Bir tane ne kadar?", "ru": "Пять, пожалуйста. Сколько стоит один?" },
+          { "tr": "On beş lira. Poğaça da var, çok taze.", "ru": "Пятнадцать лир. Есть ещё погача, очень свежая." }
+        ]},
+        { "speaker": "a", "tr": "Günaydın! Simit var mı?", "ru": "Доброе утро! Симиты есть?", "distractors": [
+          { "tr": "On beş lira. Poğaça da var, çok taze.", "ru": "Пятнадцать лир. Есть ещё погача, очень свежая." },
+          { "tr": "Tamam, üç poğaça da verin. İş arkadaşlarım için.", "ru": "Хорошо, дайте ещё три погачи. Это для коллег." }
+        ]},
+        { "speaker": "b", "tr": "Var, sıcak sıcak! Kaç tane?", "ru": "Есть, горяченькие! Сколько штук?", "distractors": [
+          { "tr": "Tamam, üç poğaça da verin. İş arkadaşlarım için.", "ru": "Хорошо, дайте ещё три погачи. Это для коллег." },
+          { "tr": "Hepsi yüz yirmi lira.", "ru": "Всего сто двадцать лир." }
+        ]},
+        { "speaker": "a", "tr": "Beş tane, lütfen. Bir tane ne kadar?", "ru": "Пять, пожалуйста. Сколько стоит один?", "distractors": [
+          { "tr": "Hepsi yüz yirmi lira.", "ru": "Всего сто двадцать лир." },
+          { "tr": "Kart geçiyor mu?", "ru": "Картой можно?" }
+        ]},
+        { "speaker": "b", "tr": "On beş lira. Poğaça da var, çok taze.", "ru": "Пятнадцать лир. Есть ещё погача, очень свежая.", "distractors": [
+          { "tr": "Kart geçiyor mu?", "ru": "Картой можно?" },
+          { "tr": "Tabii. Afiyet olsun!", "ru": "Конечно. Приятного аппетита!" }
+        ]},
+        { "speaker": "a", "tr": "Tamam, üç poğaça da verin. İş arkadaşlarım için.", "ru": "Хорошо, дайте ещё три погачи. Это для коллег.", "distractors": [
+          { "tr": "Tabii. Afiyet olsun!", "ru": "Конечно. Приятного аппетита!" },
+          { "tr": "Teşekkürler, iyi günler!", "ru": "Спасибо, хорошего дня!" }
+        ]},
+        { "speaker": "b", "tr": "Hepsi yüz yirmi lira.", "ru": "Всего сто двадцать лир.", "distractors": [
+          { "tr": "Günaydın! Buyurun.", "ru": "Доброе утро! Слушаю вас." },
+          { "tr": "Teşekkürler, iyi günler!", "ru": "Спасибо, хорошего дня!" }
+        ]},
+        { "speaker": "a", "tr": "Kart geçiyor mu?", "ru": "Картой можно?", "distractors": [
+          { "tr": "Günaydın! Buyurun.", "ru": "Доброе утро! Слушаю вас." },
+          { "tr": "Günaydın! Simit var mı?", "ru": "Доброе утро! Симиты есть?" }
+        ]},
+        { "speaker": "b", "tr": "Tabii. Afiyet olsun!", "ru": "Конечно. Приятного аппетита!", "distractors": [
+          { "tr": "Günaydın! Simit var mı?", "ru": "Доброе утро! Симиты есть?" },
+          { "tr": "Var, sıcak sıcak! Kaç tane?", "ru": "Есть, горяченькие! Сколько штук?" }
+        ]},
+        { "speaker": "a", "tr": "Teşekkürler, iyi günler!", "ru": "Спасибо, хорошего дня!", "distractors": [
+          { "tr": "Var, sıcak sıcak! Kaç tane?", "ru": "Есть, горяченькие! Сколько штук?" },
+          { "tr": "Beş tane, lütfen. Bir tane ne kadar?", "ru": "Пять, пожалуйста. Сколько стоит один?" }
+        ]}
+      ]
+    },
+    {
+      "id": "pokupki-a1-firin-ekmek",
+      "title": "Пекарня: хлеб и печенье",
+      "level": "A1",
+      "speakers": { "a": "Ольга", "b": "Гюлизар" },
+      "turns": [
+        { "speaker": "a", "tr": "İyi akşamlar! Tam buğday ekmeği var mı?", "ru": "Добрый вечер! Цельнозерновой хлеб есть?", "distractors": [
+          { "tr": "Kilosu dört yüz lira.", "ru": "Четыреста лир за килограмм." },
+          { "tr": "Biraz pahalı. Yarım kilo verin, lütfen.", "ru": "Дороговато. Дайте полкило, пожалуйста." }
+        ]},
+        { "speaker": "b", "tr": "Maalesef bitti. Beyaz ekmek var.", "ru": "К сожалению, закончился. Есть белый.", "distractors": [
+          { "tr": "Biraz pahalı. Yarım kilo verin, lütfen.", "ru": "Дороговато. Дайте полкило, пожалуйста." },
+          { "tr": "Buyurun. Nakit mi, kartla mı?", "ru": "Пожалуйста. Наличными или картой?" }
+        ]},
+        { "speaker": "a", "tr": "Tamam, bir beyaz ekmek, lütfen. Bu kurabiyeler ne kadar?", "ru": "Хорошо, один белый, пожалуйста. Сколько стоит это печенье?", "distractors": [
+          { "tr": "Buyurun. Nakit mi, kartla mı?", "ru": "Пожалуйста. Наличными или картой?" },
+          { "tr": "Nakit. Buyurun, üç yüz lira.", "ru": "Наличными. Вот, триста лир." }
+        ]},
+        { "speaker": "b", "tr": "Kilosu dört yüz lira.", "ru": "Четыреста лир за килограмм.", "distractors": [
+          { "tr": "Teşekkürler! Bir poşet de verin, lütfen.", "ru": "Спасибо! И дайте, пожалуйста, пакет." },
+          { "tr": "Buyurun. İyi akşamlar!", "ru": "Пожалуйста. Хорошего вечера!" }
+        ]},
+        { "speaker": "a", "tr": "Biraz pahalı. Yarım kilo verin, lütfen.", "ru": "Дороговато. Дайте полкило, пожалуйста.", "distractors": [
+          { "tr": "Ekmek yirmi lira. Hepsi iki yüz yirmi. Para üstünüz seksen lira.", "ru": "Хлеб — двадцать лир. Всего двести двадцать. Ваша сдача — восемьдесят лир." },
+          { "tr": "Teşekkürler! Bir poşet de verin, lütfen.", "ru": "Спасибо! И дайте, пожалуйста, пакет." }
+        ]},
+        { "speaker": "b", "tr": "Buyurun. Nakit mi, kartla mı?", "ru": "Пожалуйста. Наличными или картой?", "distractors": [
+          { "tr": "Maalesef bitti. Beyaz ekmek var.", "ru": "К сожалению, закончился. Есть белый." },
+          { "tr": "Teşekkürler! Bir poşet de verin, lütfen.", "ru": "Спасибо! И дайте, пожалуйста, пакет." }
+        ]},
+        { "speaker": "a", "tr": "Nakit. Buyurun, üç yüz lira.", "ru": "Наличными. Вот, триста лир.", "distractors": [
+          { "tr": "İyi akşamlar! Tam buğday ekmeği var mı?", "ru": "Добрый вечер! Цельнозерновой хлеб есть?" },
+          { "tr": "Buyurun. İyi akşamlar!", "ru": "Пожалуйста. Хорошего вечера!" }
+        ]},
+        { "speaker": "b", "tr": "Ekmek yirmi lira. Hepsi iki yüz yirmi. Para üstünüz seksen lira.", "ru": "Хлеб — двадцать лир. Всего двести двадцать. Ваша сдача — восемьдесят лир.", "distractors": [
+          { "tr": "İyi akşamlar! Tam buğday ekmeği var mı?", "ru": "Добрый вечер! Цельнозерновой хлеб есть?" },
+          { "tr": "Maalesef bitti. Beyaz ekmek var.", "ru": "К сожалению, закончился. Есть белый." }
+        ]},
+        { "speaker": "a", "tr": "Teşekkürler! Bir poşet de verin, lütfen.", "ru": "Спасибо! И дайте, пожалуйста, пакет.", "distractors": [
+          { "tr": "Maalesef bitti. Beyaz ekmek var.", "ru": "К сожалению, закончился. Есть белый." },
+          { "tr": "Tamam, bir beyaz ekmek, lütfen. Bu kurabiyeler ne kadar?", "ru": "Хорошо, один белый, пожалуйста. Сколько стоит это печенье?" }
+        ]},
+        { "speaker": "b", "tr": "Buyurun. İyi akşamlar!", "ru": "Пожалуйста. Хорошего вечера!", "distractors": [
+          { "tr": "Tamam, bir beyaz ekmek, lütfen. Bu kurabiyeler ne kadar?", "ru": "Хорошо, один белый, пожалуйста. Сколько стоит это печенье?" },
+          { "tr": "Kilosu dört yüz lira.", "ru": "Четыреста лир за килограмм." }
+        ]}
+      ]
     }
   ]
 }
