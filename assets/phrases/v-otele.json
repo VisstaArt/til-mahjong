@@ -125,7 +125,7 @@
     },
     {
       "ru": "Там есть кондиционер?",
-      "tr": "Klimalı var mı?",
+      "tr": "Klima var mı?",
       "tl": null,
       "sub": null
     },
@@ -191,7 +191,7 @@
     },
     {
       "ru": "Сколько стоит номер и завтрак?",
-      "tr": "Yatak ve kahvaltı fiyatı ne kadar?",
+      "tr": "Oda kahvaltı fiyatı ne kadar?",
       "tl": null,
       "sub": null
     },
@@ -299,7 +299,7 @@
     },
     {
       "ru": "Завтрак в номер, пожалуйста",
-      "tr": "Kahvaltı odama istiyorum, lütfen",
+      "tr": "Kahvaltıyı odama istiyorum, lütfen",
       "tl": null,
       "sub": null
     },
@@ -335,7 +335,7 @@
     },
     {
       "ru": "Сломалась розетка/дверца/жалюзи",
-      "tr": "Elektrik fişi/panjur/kepenk bozuk",
+      "tr": "Priz/kapı/panjur bozuk",
       "tl": null,
       "sub": null
     },
@@ -347,7 +347,7 @@
     },
     {
       "ru": "Я уезжаю завтра утром",
-      "tr": "Sabah erkenden ayrılıyorum",
+      "tr": "Yarın sabah ayrılıyorum",
       "tl": null,
       "sub": null
     },
@@ -365,7 +365,7 @@
     },
     {
       "ru": "Мне нужно уехать сразу же",
-      "tr": "Hemen ayrılmamız gerekiyor",
+      "tr": "Hemen ayrılmam gerekiyor",
       "tl": null,
       "sub": null
     },
@@ -389,13 +389,13 @@
     },
     {
       "ru": "Вызовите мне такси, пожалуйста",
-      "tr": "Bana bir taksi çağırır mısınız lütfen",
+      "tr": "Bana bir taksi çağırır mısınız lütfen?",
       "tl": null,
       "sub": null
     },
     {
       "ru": "Отнести вниз мой багаж, пожалуйста",
-      "tr": "Bagajımı aşağı getirir misiniz lütfen?",
+      "tr": "Bagajımı aşağı indirir misiniz lütfen?",
       "tl": null,
       "sub": null
     },
@@ -419,7 +419,7 @@
     },
     {
       "ru": "Разбудите меня в … , пожалуйста",
-      "tr": "Beni saat …de uyandırır mısınız, lütfen",
+      "tr": "Beni saat …de uyandırır mısınız, lütfen?",
       "tl": null,
       "sub": null
     },

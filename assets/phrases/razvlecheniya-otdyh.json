@@ -4,177 +4,171 @@
   "source": "razgovornik",
   "phrases": [
     {
-      "ru": "упаковка услуги цена чек экономика экспорт EĞLENCE – DINLENCE",
-      "tr": "ambalajlama hizmetler fiyat çek ekonomi ihracat развлечения, Отдых",
-      "tl": "амбалажлама хизмэтлэр фият чэк экономи ихраджат",
-      "sub": null
-    },
-    {
       "ru": "Что сегодня идет в кинотеатрах?",
       "tr": "Bu akşam sinemada ne oynuyor?",
       "tl": null,
-      "sub": "Кино, театр — Sinema-tyatro"
+      "sub": "Кино, театр — Sinema-tiyatro"
     },
     {
       "ru": "Где можно посмотреть новый фильм режиссера …",
       "tr": "… nin yönettiği yeni film nerede gösteriliyor?",
       "tl": null,
-      "sub": "Кино, театр — Sinema-tyatro"
+      "sub": "Кино, театр — Sinema-tiyatro"
     },
     {
       "ru": "Можете порекомендовать хороший фильм/комедию?",
       "tr": "İyi bir film/iyi bir komedi tavsiye edebilir misiniz?",
       "tl": null,
-      "sub": "Кино, театр — Sinema-tyatro"
+      "sub": "Кино, театр — Sinema-tiyatro"
     },
     {
       "ru": "Кто там играет?",
       "tr": "Kimler oynuyor?",
       "tl": "Кимлер ойнуйор?",
-      "sub": "Кино, театр — Sinema-tyatro"
+      "sub": "Кино, театр — Sinema-tiyatro"
     },
     {
       "ru": "Кто режиссер?",
       "tr": "Yönetmen kim?",
       "tl": null,
-      "sub": "Кино, театр — Sinema-tyatro"
+      "sub": "Кино, театр — Sinema-tiyatro"
     },
     {
       "ru": "Кто играет главные роли?",
       "tr": "Başrolde kim oynuyor?",
       "tl": null,
-      "sub": "Кино, театр — Sinema-tyatro"
+      "sub": "Кино, театр — Sinema-tiyatro"
     },
     {
       "ru": "Что идет в театре?",
       "tr": "Tiyatroda ne oynuyor?",
       "tl": null,
-      "sub": "Кино, театр — Sinema-tyatro"
+      "sub": "Кино, театр — Sinema-tiyatro"
     },
     {
       "ru": "Что это за пьеса?",
       "tr": "Ne tür bir oyun?",
       "tl": null,
-      "sub": "Кино, театр — Sinema-tyatro"
+      "sub": "Кино, театр — Sinema-tiyatro"
     },
     {
       "ru": "Чья она?",
       "tr": "Kimin eseri?",
       "tl": null,
-      "sub": "Кино, театр — Sinema-tyatro"
+      "sub": "Кино, театр — Sinema-tiyatro"
     },
     {
       "ru": "В каком театре идет эта новая пьеса …?",
       "tr": "… nin yeni oyunu hangi tiyatroda gösteriliyor?",
       "tl": null,
-      "sub": "Кино, театр — Sinema-tyatro"
+      "sub": "Кино, театр — Sinema-tiyatro"
     },
     {
       "ru": "Во сколько начало?",
       "tr": "Saat kaçta başlıyor?",
       "tl": null,
-      "sub": "Кино, театр — Sinema-tyatro"
+      "sub": "Кино, театр — Sinema-tiyatro"
     },
     {
       "ru": "Есть места на сегодняшний вечер/завтрашний вечер?",
       "tr": "Bu gece/yarın akşam için yer var mı?",
       "tl": null,
-      "sub": "Кино, театр — Sinema-tyatro"
+      "sub": "Кино, театр — Sinema-tiyatro"
     },
     {
       "ru": "Почем билеты?",
       "tr": "Biletler ne kadar?",
       "tl": "Билетлер нэ кадар?",
-      "sub": "Кино, театр — Sinema-tyatro"
+      "sub": "Кино, театр — Sinema-tiyatro"
     },
     {
       "ru": "Можно забронировать места на субботу?",
-      "tr": "Cumartesi için yer ayırtmak istiyorum",
-      "tl": "Джумартэси ичин йэр айыртмак истийорум",
-      "sub": "Кино, театр — Sinema-tyatro"
+      "tr": "Cumartesi için yer ayırtabilir miyim?",
+      "tl": "Джумартэси ичин йэр айыртабилир мийим?",
+      "sub": "Кино, театр — Sinema-tiyatro"
     },
     {
       "ru": "Можно два билета на дневной спектакль в воскресенье?",
       "tr": "Pazar günkü matine için iki bilet verir misiniz lütfen?",
       "tl": null,
-      "sub": "Кино, театр — Sinema-tyatro"
+      "sub": "Кино, театр — Sinema-tiyatro"
     },
     {
       "ru": "К сожалению, все билеты проданы",
-      "tr": "Üzgünüm hepsi satıldı",
+      "tr": "Üzgünüm, hepsi satıldı",
       "tl": null,
-      "sub": "Кино, театр — Sinema-tyatro"
+      "sub": "Кино, театр — Sinema-tiyatro"
     },
     {
       "ru": "Почем места в партере/на балконе?",
       "tr": "Salondaki/ balkondaki yerler ne kadar?",
       "tl": null,
-      "sub": "Кино, театр — Sinema-tyatro"
+      "sub": "Кино, театр — Sinema-tiyatro"
     },
     {
       "ru": "Не очень далеко, пожалуйста",
       "tr": "Çok arkada olmasın",
       "tl": null,
-      "sub": "Кино, театр — Sinema-tyatro"
+      "sub": "Кино, театр — Sinema-tiyatro"
     },
     {
       "ru": "Где-нибудь в середине",
       "tr": "Ortalarda olsun",
       "tl": null,
-      "sub": "Кино, театр — Sinema-tyatro"
+      "sub": "Кино, театр — Sinema-tiyatro"
     },
     {
       "ru": "Можно программку?",
       "tr": "Bir program alabilir miyim lütfen?",
       "tl": null,
-      "sub": "Кино, театр — Sinema-tyatro"
+      "sub": "Кино, театр — Sinema-tiyatro"
     },
     {
       "ru": "Где находится гардероб?",
       "tr": "Vestiyer nerede?",
       "tl": null,
-      "sub": "Кино, театр — Sinema-tyatro"
+      "sub": "Кино, театр — Sinema-tiyatro"
     },
     {
       "ru": "Где находятся эти места?",
       "tr": "Bu yerler nerede?",
       "tl": "Бу йерлер нэрдэ?",
-      "sub": "Кино, театр — Sinema-tyatro"
+      "sub": "Кино, театр — Sinema-tiyatro"
     },
     {
       "ru": "Можно ваш билет?",
       "tr": "Biletinizi görebilir miyim?",
       "tl": "Билетинизи гёрэбилир мийим?",
-      "sub": "Кино, театр — Sinema-tyatro"
+      "sub": "Кино, театр — Sinema-tiyatro"
     },
     {
       "ru": "Вот ваше место",
       "tr": "Yeriniz burası",
       "tl": "Йериниз бурасы",
-      "sub": "Кино, театр — Sinema-tyatro"
+      "sub": "Кино, театр — Sinema-tiyatro"
     },
     {
       "ru": "Где находится концертный зал/ опера?",
-      "tr": "Opera binasi/ konser salonu nerede?",
+      "tr": "Konser salonu/opera binası nerede?",
       "tl": null,
       "sub": "Концерт, балет, опера — Konser – bale – opera"
     },
     {
       "ru": "Можете порекомендовать, на какой концерт/ балет/оперу сходить?",
-      "tr": "Bir konser/bale/ opera tavsiye еdebilir misiniz?",
+      "tr": "Bir konser/bale/ opera tavsiye edebilir misiniz?",
       "tl": null,
       "sub": "Концерт, балет, опера — Konser – bale – opera"
     },
     {
       "ru": "Что дают в опере сегодня вечером?",
       "tr": "Bu akşam operada ne var?",
-      "tl": "Бу акшам операда нэ вар? Солист/ оркестра шэфи ким?",
+      "tl": "Бу акшам операда нэ вар?",
       "sub": "Концерт, балет, опера — Konser – bale – opera"
     },
     {
       "ru": "Кто солирует/дирижирует?",
       "tr": "Solist/orkestra şefi kim?",
-      "tl": null,
+      "tl": "Солист/оркестра шэфи ким?",
       "sub": "Концерт, балет, опера — Konser – bale – opera"
     },
     {
@@ -191,7 +185,7 @@
     },
     {
       "ru": "Кто поет/танцует?",
-      "tr": "Kim şarki söylüyor/dans ediyor?",
+      "tr": "Kim şarkı söylüyor/dans ediyor?",
       "tl": null,
       "sub": "Концерт, балет, опера — Konser – bale – opera"
     },
@@ -203,12 +197,12 @@
     },
     {
       "ru": "Здесь есть хорошая дискотека/ джазовый клуб?",
-      "tr": "Burada iyi bir diskоtek/caz kulübü var mı?",
+      "tr": "Burada iyi bir diskotek/caz kulübü var mı?",
       "tl": null,
       "sub": "Ночные клубы — Gece kulüpleri – diskotekler"
     },
     {
-      "ru": "Вы знаете какуюнибудь хорошую дискотеку?",
+      "ru": "Вы знаете какую-нибудь хорошую дискотеку?",
       "tr": "İyi bir diskotek biliyor musunuz?",
       "tl": null,
       "sub": "Ночные клубы — Gece kulüpleri – diskotekler"
@@ -216,13 +210,13 @@
     {
       "ru": "Не хотите ли потанцевать?",
       "tr": "Dans etmek ister misiniz?",
-      "tl": "Данс этмек истэр мисиниз? Атраксьон нэ заман?",
+      "tl": "Данс этмек истэр мисиниз?",
       "sub": "Ночные клубы — Gece kulüpleri – diskotekler"
     },
     {
       "ru": "Во сколько начинается программа в ночном клубе?",
       "tr": "Atraksiyon ne zaman?",
-      "tl": "Данс этмек истэр мисиниз? Атраксьон нэ заман?",
+      "tl": "Атраксьон нэ заман?",
       "sub": "Ночные клубы — Gece kulüpleri – diskotekler"
     },
     {
@@ -250,7 +244,7 @@
       "sub": "Спорт, игры — Spor ve oyunlar"
     },
     {
-      "ru": "Где находиться стадион?",
+      "ru": "Где находится стадион?",
       "tr": "Stadyum nerede?",
       "tl": "Стадьюм нэрдэ?",
       "sub": "Спорт, игры — Spor ve oyunlar"
@@ -310,15 +304,15 @@
       "sub": "На пляже — Plajda"
     },
     {
-      "ru": "Можно взять напрокат … тент",
-      "tr": "Bir … kiralayabilir miyim? güneş şemsiyesi",
-      "tl": "Бир … киралайя- билир мийим? гюнэш шэмсийеси",
+      "ru": "Можно взять напрокат тент?",
+      "tr": "Bir güneş şemsiyesi kiralayabilir miyim?",
+      "tl": "Бир гюнэш шэмсийеси киралайябилир мийим?",
       "sub": "На пляже — Plajda"
     },
     {
-      "ru": "моторную лодку гребную шлюпку",
-      "tr": "motorbotu sandal",
-      "tl": "моторботу сандаль",
+      "ru": "моторную лодку/гребную шлюпку",
+      "tr": "motorbot/sandal",
+      "tl": "моторбот/сандаль",
       "sub": "На пляже — Plajda"
     },
     {
@@ -353,19 +347,19 @@
     },
     {
       "ru": "Это не опасно для маленьких детей?",
-      "tr": "Küçük çocuklar için güvenceli mi?",
+      "tr": "Küçük çocuklar için güvenli mi?",
       "tl": null,
       "sub": "На пляже — Plajda"
     },
     {
       "ru": "Там безопасно плавать?",
-      "tr": "Burada yüzmek güvenceli mi?",
+      "tr": "Burada yüzmek güvenli mi?",
       "tl": null,
       "sub": "На пляже — Plajda"
     },
     {
       "ru": "В этом заливе безопасно плавать?",
-      "tr": "Bu körfezden denize girmek güvenceli mi?",
+      "tr": "Bu körfezde denize girmek güvenli mi?",
       "tl": null,
       "sub": "На пляже — Plajda"
     },
@@ -390,12 +384,12 @@
     {
       "ru": "Вы хорошо плаваете?",
       "tr": "İyi bir yüzücü müsünüz?",
-      "tl": "Ии бир йюзюджю мюсюнюз?",
+      "tl": "Ийи бир йюзюджю мюсюнюз?",
       "sub": "На пляже — Plajda"
     },
     {
       "ru": "Можно здесь покататься на водных лыжах?",
-      "tr": "Burada su kayağı yapabilir miyiz",
+      "tr": "Burada su kayağı yapabilir miyiz?",
       "tl": "Бурда су каяйи йапабилир мийиз?",
       "sub": "На пляже — Plajda"
     },

@@ -41,7 +41,7 @@
     },
     {
       "ru": "У вас есть столик …?",
-      "tr": "… bir masa var mı?",
+      "tr": "… bir masanız var mı?",
       "tl": null,
       "sub": null
     },
@@ -137,7 +137,7 @@
     },
     {
       "ru": "Больше ничего не надо, спасибо",
-      "tr": "Bu kadar yeter teşekkür ederim",
+      "tr": "Bu kadar yeter, teşekkür ederim",
       "tl": null,
       "sub": null
     },
@@ -155,7 +155,7 @@
     },
     {
       "ru": "Мне нельзя есть блюда с сахаром/солью/мукой/жиром",
-      "tr": "… içeren yemekler yememeliyim: Şeker, Tuz, Un, Yağ",
+      "tr": "Şeker/tuz/un/yağ içeren yemekler yememeliyim",
       "tl": null,
       "sub": null
     },
@@ -215,7 +215,7 @@
     },
     {
       "ru": "Я бы порекомендовал(а) …",
-      "tr": "Bunu tavsiye ederim",
+      "tr": "… tavsiye ederim",
       "tl": null,
       "sub": null
     },
@@ -245,7 +245,7 @@
     },
     {
       "ru": "Что вы будете пить?",
-      "tr": "İçecek ne alırsınız?",
+      "tr": "İçecek olarak ne alırsınız?",
       "tl": null,
       "sub": null
     },
@@ -263,7 +263,7 @@
     },
     {
       "ru": "Темное/светлое пиво, пожалуйста",
-      "tr": "Siyah/beyaz bir bira lütfen",
+      "tr": "Koyu/açık bir bira lütfen",
       "tl": null,
       "sub": null
     },
@@ -293,7 +293,7 @@
     },
     {
       "ru": "Принесите шампанского, пожалуйста",
-      "tr": "Şampanya getirir misiniz lütfen",
+      "tr": "Şampanya getirir misiniz lütfen?",
       "tl": null,
       "sub": null
     },
@@ -347,7 +347,7 @@
     },
     {
       "ru": "Попросите подойти метрдотеля",
-      "tr": "Şef garsonu çağırır mısınız lütfen",
+      "tr": "Şef garsonu çağırır mısınız lütfen?",
       "tl": null,
       "sub": null
     },
@@ -359,7 +359,7 @@
     },
     {
       "ru": "Я хочу расплатиться",
-      "tr": "Hesabı vermek istiyorum",
+      "tr": "Hesabı ödemek istiyorum",
       "tl": null,
       "sub": null
     },
@@ -371,7 +371,7 @@
     },
     {
       "ru": "Обслуживание включено?",
-      "tr": "Servisi içeriyor mu?",
+      "tr": "Servis dahil mi?",
       "tl": null,
       "sub": null
     },
@@ -389,7 +389,7 @@
     },
     {
       "ru": "Я не заказывал (заказывала) суп/курицу",
-      "tr": "Çorba/tavuk almadım",
+      "tr": "Çorba/tavuk ısmarlamadım",
       "tl": null,
       "sub": null
     },

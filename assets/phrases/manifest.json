@@ -11,7 +11,7 @@
     "title": "Как поменять деньги",
     "source": "razgovornik",
     "count": 19,
-    "sizeKB": 4.1
+    "sizeKB": 4.0
   },
   {
     "id": "na-tamozhne",
@@ -46,14 +46,14 @@
     "title": "Осмотр достопримечательностей",
     "source": "razgovornik",
     "count": 41,
-    "sizeKB": 6.7
+    "sizeKB": 6.8
   },
   {
     "id": "pokupki-servis",
     "title": "Покупки, сервис",
     "source": "razgovornik",
-    "count": 198,
-    "sizeKB": 46.2
+    "count": 196,
+    "sizeKB": 45.8
   },
   {
     "id": "privetstvie",
@@ -66,15 +66,15 @@
     "id": "puteshestvie",
     "title": "Путешествие",
     "source": "razgovornik",
-    "count": 145,
-    "sizeKB": 33.2
+    "count": 147,
+    "sizeKB": 33.5
   },
   {
     "id": "razvlecheniya-otdyh",
     "title": "Развлечения, отдых",
     "source": "razgovornik",
-    "count": 69,
-    "sizeKB": 15.0
+    "count": 68,
+    "sizeKB": 14.5
   },
   {
     "id": "restoran",
@@ -87,8 +87,8 @@
     "id": "ustoychivye-vyrazheniya-so-slovom-allah",
     "title": "Устойчивые выражения со словом «Allah»",
     "source": "allah",
-    "count": 225,
-    "sizeKB": 30.8
+    "count": 224,
+    "sizeKB": 30.7
   },
   {
     "id": "v-gorode",
@@ -102,21 +102,21 @@
     "title": "В отеле",
     "source": "razgovornik",
     "count": 72,
-    "sizeKB": 11.5
+    "sizeKB": 11.4
   },
   {
     "id": "voprositelnye-slova",
     "title": "Вопросительные слова",
     "source": "razgovornik",
     "count": 6,
-    "sizeKB": 1.0
+    "sizeKB": 1.1
   },
   {
     "id": "vremya",
     "title": "Время",
     "source": "razgovornik",
-    "count": 8,
-    "sizeKB": 1.5
+    "count": 7,
+    "sizeKB": 1.1
   },
   {
     "id": "zdorove",

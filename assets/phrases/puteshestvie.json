@@ -6,13 +6,13 @@
     {
       "ru": "Где находится билетная касса?",
       "tr": "Bilet gişesi nerede?",
-      "tl": null,
+      "tl": "Билет гишэси нэрдэ?",
       "sub": "Билеты — Bilet"
     },
     {
-      "ru": "Где находтся ближайшее туристическое агентство?",
+      "ru": "Где находится ближайшее туристическое агентство?",
       "tr": "En yakın seyahat ajansı nerede?",
-      "tl": "Билет гишэси нэрдэ? Эн якын сэйахат ажансы нэрдэ?",
+      "tl": "Эн якын сэйахат ажансы нэрдэ?",
       "sub": "Билеты — Bilet"
     },
     {
@@ -46,7 +46,7 @@
       "sub": "Билеты — Bilet"
     },
     {
-      "ru": "Какое время действителен билет?",
+      "ru": "Как долго действителен билет?",
       "tr": "Bu bilet ne kadar süre geçerli?",
       "tl": "Бу билет нэ кадар сюрэ гэчэрли?",
       "sub": "Билеты — Bilet"
@@ -76,7 +76,7 @@
       "sub": "автобус и трамвай — Otobüs ve tramvay"
     },
     {
-      "ru": "Автобусы/трамваи ходят кажды десять минут",
+      "ru": "Автобусы/трамваи ходят каждые десять минут",
       "tr": "Otobüsler/ tramvaylar on dakikada bir kalkar",
       "tl": "Отобюслэр/ трамвайлар он дакикада бир калькар",
       "sub": "автобус и трамвай — Otobüs ve tramvay"
@@ -88,14 +88,20 @@
       "sub": "автобус и трамвай — Otobüs ve tramvay"
     },
     {
-      "ru": "На какой мне надо сесть автобус?",
+      "ru": "На какой автобус мне надо сесть, чтобы доехать до …?",
       "tr": "… ye gitmek için hangi otobüse binmeliyim?",
       "tl": null,
       "sub": "автобус и трамвай — Otobüs ve tramvay"
     },
     {
-      "ru": "Вам нужно сесть на автобус номер … Где я могу сесть на автобус до …?",
-      "tr": "… numaralı otobüse binmelisiniz …otobüsüne nereden binebilirim?",
+      "ru": "Вам нужно сесть на автобус номер …",
+      "tr": "… numaralı otobüse binmelisiniz",
+      "tl": null,
+      "sub": "автобус и трамвай — Otobüs ve tramvay"
+    },
+    {
+      "ru": "Где я могу сесть на автобус до …?",
+      "tr": "… otobüsüne nereden binebilirim?",
       "tl": null,
       "sub": "автобус и трамвай — Otobüs ve tramvay"
     },
@@ -106,14 +112,14 @@
       "sub": "автобус и трамвай — Otobüs ve tramvay"
     },
     {
-      "ru": "Во сколько идет первый/последний/следующий автобус?",
-      "tr": "Ya… ilk/son/bir sonraki otobüs ne zaman?",
+      "ru": "Во сколько идет первый/последний/следующий автобус до …?",
+      "tr": "… ya ilk/son/bir sonraki otobüs ne zaman?",
       "tl": null,
       "sub": "автобус и трамвай — Otobüs ve tramvay"
     },
     {
       "ru": "Сколько стоит проезд до …?",
-      "tr": "… e yolculuk ücreti ne?",
+      "tr": "… e yolculuk ücreti ne kadar?",
       "tl": null,
       "sub": "автобус и трамвай — Otobüs ve tramvay"
     },
@@ -155,7 +161,7 @@
     },
     {
       "ru": "В девять часов есть поезд до…?",
-      "tr": "… a saat dokuzda bir tren var mı",
+      "tr": "… a saat dokuzda bir tren var mı?",
       "tl": "… а саат докузда бир трэн вар мы?",
       "sub": "Поезд и метро — Tren ve metro"
     },
@@ -179,13 +185,13 @@
     },
     {
       "ru": "Это платформа номер шесть?",
-      "tr": "Altı numaralı peron nerede?",
+      "tr": "Burası altı numaralı peron mu?",
       "tl": null,
       "sub": "Поезд и метро — Tren ve metro"
     },
     {
       "ru": "Платформа шесть слева/ справа/там",
-      "tr": "Altı numaralı peron sağda/ solda/orada",
+      "tr": "Altı numaralı peron solda/sağda/orada",
       "tl": null,
       "sub": "Поезд и метро — Tren ve metro"
     },
@@ -198,13 +204,13 @@
     {
       "ru": "Это экспресс?",
       "tr": "Bu tren ekspres mi?",
-      "tl": null,
+      "tl": "Бу трэн экспрэс ми?",
       "sub": "Поезд и метро — Tren ve metro"
     },
     {
       "ru": "Там можно пересесть на поезд до…?",
       "tr": "… ya bağlantı var mı?",
-      "tl": "Бу трэн экспрэс мы? … я бааланты вар мы?",
+      "tl": "… я бааланты вар мы?",
       "sub": "Поезд и метро — Tren ve metro"
     },
     {
@@ -226,15 +232,21 @@
       "sub": "Поезд и метро — Tren ve metro"
     },
     {
-      "ru": "С какой платформы отпавляется поезд в …?",
+      "ru": "С какой платформы отправляется поезд в …?",
       "tr": "… treni hangi perondan kalkıyor?",
-      "tl": null,
+      "tl": "… трэни ханги пэрондан калкыйор?",
       "sub": "Поезд и метро — Tren ve metro"
     },
     {
-      "ru": "Ваш поезд отправляется с платформы номер пять Во сколько наш поезд приезжает в…?",
-      "tr": "Treniniz beş numaralı perondan kalkacak … a ne zaman varıyor?",
-      "tl": "… трэни ханги пэрондан калькыйор? Трэниниз бэш нумаралы пэрондан калькаджак … а нэ заман варыйор?",
+      "ru": "Ваш поезд отправляется с платформы номер пять",
+      "tr": "Treniniz beş numaralı perondan kalkacak",
+      "tl": "Трэниниз бэш нумаралы пэрондан калькаджак",
+      "sub": "Поезд и метро — Tren ve metro"
+    },
+    {
+      "ru": "Во сколько наш поезд приезжает в …?",
+      "tr": "Trenimiz … a ne zaman varıyor?",
+      "tl": "Трэнимиз … а нэ заман варыйор?",
       "sub": "Поезд и метро — Tren ve metro"
     },
     {
@@ -250,7 +262,7 @@
       "sub": "Поезд и метро — Tren ve metro"
     },
     {
-      "ru": "Поезд из … сейчас прибывает к платформе номер два 0",
+      "ru": "Поезд из … сейчас прибывает к платформе номер два",
       "tr": "… treni şu anda iki numaralı perona varıyor",
       "tl": "… трэни шу анда ики нумаралы пэрона варыйор",
       "sub": "Поезд и метро — Tren ve metro"
@@ -305,68 +317,68 @@
     },
     {
       "ru": "Куда идти на посадку?",
-      "tr": "İsekele nerede?",
-      "tl": "Исэкэлэ нэрдэ?",
-      "sub": "Пароход — Vapu"
+      "tr": "İskele nerede?",
+      "tl": "Искэлэ нэрдэ?",
+      "sub": "Пароход — Vapur"
     },
     {
       "ru": "Отсюда до … есть пароход/паром?",
       "tr": "Buradan … a bir vapur/araba vapuru var mı?",
       "tl": null,
-      "sub": "Пароход — Vapu"
+      "sub": "Пароход — Vapur"
     },
     {
       "ru": "Как часто ходят пароходы?",
       "tr": "Vapurlar ne sıklıkta kalkıyor?",
       "tl": null,
-      "sub": "Пароход — Vapu"
+      "sub": "Пароход — Vapur"
     },
     {
       "ru": "Во сколько идет следующий пароход?",
       "tr": "Bir sonraki vapur ne zaman kalkıyor?",
       "tl": null,
-      "sub": "Пароход — Vapu"
+      "sub": "Пароход — Vapur"
     },
     {
       "ru": "Мне один/два билета на пароход до …",
-      "tr": "… a bir/iki bileti rica ediyorum",
+      "tr": "… a bir/iki vapur bileti rica ediyorum",
       "tl": null,
-      "sub": "Пароход — Vapu"
+      "sub": "Пароход — Vapur"
     },
     {
       "ru": "Могу я забронировать одноместную каюту?",
       "tr": "Tek kişilik bir yataklı kamara ayırtabilir miyim?",
       "tl": "Тэк кишилик бир ятаклы камара айыртабилир мийим?",
-      "sub": "Пароход — Vapu"
+      "sub": "Пароход — Vapur"
     },
     {
       "ru": "Сколько мест в каюте?",
       "tr": "Kamarada kaç yatak var?",
       "tl": null,
-      "sub": "Пароход — Vapu"
+      "sub": "Пароход — Vapur"
     },
     {
       "ru": "Сколько времени мы будем туда плыть?",
       "tr": "Oraya varmak ne kadar zaman alır?",
       "tl": null,
-      "sub": "Пароход — Vapu"
+      "sub": "Пароход — Vapur"
     },
     {
       "ru": "Сколько времени занимает переправа?",
       "tr": "Karşıya geçiş ne kadar zaman alır?",
       "tl": "Каршыйа гэчиш нэ кадар заман алыр?",
-      "sub": "Пароход — Vapu"
+      "sub": "Пароход — Vapur"
     },
     {
-      "ru": "Сколько времени мы с стоим в этом порту?",
+      "ru": "Сколько времени мы стоим в этом порту?",
       "tr": "Limanda ne kadar süre kalıyoruz?",
       "tl": "Лиманда нэ кадар сюрэ калыйоруз?",
-      "sub": "Пароход — Vapu"
+      "sub": "Пароход — Vapur"
     },
     {
       "ru": "Пристегните ремни, пожалуйста",
-      "tr": "Kemeri bağlayin, lűtfen",
-      "tl": "Кэмэри баалайин, лютфэн",
+      "tr": "Kemerlerinizi bağlayın, lütfen",
+      "tl": "Кэмэрлеринизи баалайын, лютфэн",
       "sub": "самолет — Uçak"
     },
     {
@@ -384,13 +396,13 @@
     {
       "ru": "Это прямой рейс?",
       "tr": "Direkt bir uçuş mu?",
-      "tl": null,
+      "tl": "Дирэкт бир учуш му?",
       "sub": "самолет — Uçak"
     },
     {
       "ru": "В … можно будет сделать пересадку?",
       "tr": "… a bağlantı var mı?",
-      "tl": "Дирэкт бир учуш му? … а бааланты вар мы?",
+      "tl": "… а бааланты вар мы?",
       "sub": "самолет — Uçak"
     },
     {
@@ -413,14 +425,14 @@
     },
     {
       "ru": "Как мне добраться до аэропорта?",
-      "tr": "Havaalanında nasıl gidebilirim?",
-      "tl": "Хавааланында насыл гидэбилирим?",
+      "tr": "Havaalanına nasıl gidebilirim?",
+      "tl": "Хавааланына насыл гидэбилирим?",
       "sub": "самолет — Uçak"
     },
     {
       "ru": "До аэропорта идет какой-нибудь автобус?",
-      "tr": "Havaalanında bir otobüs var mı?",
-      "tl": "Хавааланында бир отобюс вар мы?",
+      "tr": "Havaalanına bir otobüs var mı?",
+      "tl": "Хавааланына бир отобюс вар мы?",
       "sub": "самолет — Uçak"
     },
     {
@@ -449,37 +461,37 @@
     },
     {
       "ru": "Я бы хотел/хотела отменить бронь на самолет до …",
-      "tr": "… olan rezervasyonumu iptal etmek istiyorum",
-      "tl": "… олан рэзэрвасьонуму ипталь этмэк истийорум",
+      "tr": "… a olan rezervasyonumu iptal etmek istiyorum",
+      "tl": "… а олан рэзэрвасьонуму ипталь этмэк истийорум",
       "sub": "самолет — Uçak"
     },
     {
       "ru": "Я бы хотел/хотела поменять билеты",
       "tr": "Rezervasyonumu değiştirmek istiyorum",
-      "tl": "Рэзэрвасьонуму дэйистирмэк истийорум",
+      "tl": "Рэзэрвасьонуму дэйиштирмэк истийорум",
       "sub": "самолет — Uçak"
     },
     {
       "ru": "Вызовите мне такси, пожалуйста",
-      "tr": "Bana bir taksi çağırın lütfen?",
+      "tr": "Bana bir taksi çağırın lütfen",
       "tl": "Бана бир такси чайырын лютфэн",
       "sub": "такси — Taksi"
     },
     {
       "ru": "Отвезите меня в … по этому адресу",
-      "tr": "Beni … e/a götürün bu adrese",
-      "tl": "Бэни … гётюрюн бу адрэсэ",
+      "tr": "Beni … e/a, bu adrese götürün",
+      "tl": "Бэни … э/а, бу адрэсэ гётюрюн",
       "sub": "такси — Taksi"
     },
     {
       "ru": "в центр города",
-      "tr": "şehir merkezi’ye",
-      "tl": "шэхир мэркэзийэ",
+      "tr": "şehir merkezine",
+      "tl": "шэхир мэркэзинэ",
       "sub": "такси — Taksi"
     },
     {
-      "ru": "в аэропорт в отель … на вокзал",
-      "tr": "havaalanı’ya … oteli’ye istasyon",
+      "ru": "в аэропорт/в отель …/на вокзал",
+      "tr": "havaalanına/… oteline/istasyona",
       "tl": null,
       "sub": "такси — Taksi"
     },
@@ -515,8 +527,8 @@
     },
     {
       "ru": "Вы не могли бы мне помочь донести багаж?",
-      "tr": "Bagajlarımı taşımama yardım edebilir miydiniz?",
-      "tl": "Багажларымы ташымама йардым эдэбилир мийдиниз?",
+      "tr": "Bagajlarımı taşımama yardım edebilir misiniz?",
+      "tl": "Багажларымы ташымама йардым эдэбилир мисиниз?",
       "sub": "такси — Taksi"
     },
     {
@@ -539,13 +551,13 @@
     },
     {
       "ru": "Отнесите этот багаж к такси/автобусу",
-      "tr": "Şu bagaji taksiye/ otobüse götürün lütfen",
+      "tr": "Şu bagajı taksiye/otobüse götürün lütfen",
       "tl": null,
       "sub": "Багаж — Bagaj"
     },
     {
       "ru": "Вы мне не поможете отнести багаж?",
-      "tr": "Bagajımı taşımama yadım eder misiniz?",
+      "tr": "Bagajımı taşımama yardım eder misiniz?",
       "tl": "Багажымы ташымама йардым эдэр мисиниз?",
       "sub": "Багаж — Bagaj"
     },
@@ -557,7 +569,7 @@
     },
     {
       "ru": "Я хотел/хотела бы зарегистрировать багаж",
-      "tr": "Bagajımı teslim etmek isityorum",
+      "tr": "Bagajımı teslim etmek istiyorum",
       "tl": "Багажымы тэслим этмэк истийорум",
       "sub": "Багаж — Bagaj"
     },
@@ -593,8 +605,8 @@
     },
     {
       "ru": "Как нам добраться до шоссе на …?",
-      "tr": "… otoyoluna nasıl çıkabılırız?",
-      "tl": "… отойолуна насыл чикабилириз?",
+      "tr": "… otoyoluna nasıl çıkabiliriz?",
+      "tl": "… отойолуна насыл чыкабилириз?",
       "sub": "Как спросить, куда ехать — Arabayla yolculuk etme"
     },
     {
@@ -636,7 +648,7 @@
     {
       "ru": "Могу я дойти туда пешком?",
       "tr": "Oraya yürüyerek gidebilir miyim?",
-      "tl": "Орайа уюрюй- эрэк гидэбилир мийим?",
+      "tl": "Орайа йюрюйэрэк гидэбилир мийим?",
       "sub": "Как спросить, куда ехать — Arabayla yolculuk etme"
     },
     {
@@ -664,9 +676,9 @@
       "sub": "Как спросить, куда ехать — Arabayla yolculuk etme"
     },
     {
-      "ru": "Езжайте прямо Следуйте указателям на… Езжайте по дороге …",
-      "tr": "Doğru gidin … işaretlerini izleyin … yolundan gidin",
-      "tl": "Доору гидин … ишарэтле- рини излейин … йолундан гидин",
+      "ru": "Езжайте прямо. Следуйте указателям на … Езжайте по дороге …",
+      "tr": "Doğru gidin. … işaretlerini izleyin. … yolundan gidin",
+      "tl": "Доору гидин. … ишарэтлерини излейин. … йолундан гидин",
       "sub": "Как спросить, куда ехать — Arabayla yolculuk etme"
     },
     {
@@ -683,7 +695,7 @@
     },
     {
       "ru": "Как далеко до ближайшей автозаправочной станции?",
-      "tr": "Gelecek benzin istasyonu ne kadar uzakta?",
+      "tr": "En yakın benzin istasyonu ne kadar uzakta?",
       "tl": null,
       "sub": "Как спросить, куда ехать — Arabayla yolculuk etme"
     },
@@ -719,8 +731,8 @@
     },
     {
       "ru": "Мне надо поменять масло",
-      "tr": "Yağın değişmesi gerekiyor",
-      "tl": "Яаын дэйишмеси гэрэкьйор",
+      "tr": "Yağın değiştirilmesi gerekiyor",
+      "tl": "Яаын дэйиштирилмеси гэрэкьйор",
       "sub": "Как спросить, куда ехать — Arabayla yolculuk etme"
     },
     {
@@ -730,9 +742,9 @@
       "sub": "Как спросить, куда ехать — Arabayla yolculuk etme"
     },
     {
-      "ru": "Не могли бы вы поменять …",
-      "tr": "… değişterebilir misiniz?",
-      "tl": "… дэйиштэ- рэбилир мисиниз? 0",
+      "ru": "Не могли бы вы поменять …?",
+      "tr": "… değiştirebilir misiniz?",
+      "tl": "… дэйиштирэбилир мисиниз?",
       "sub": "Как спросить, куда ехать — Arabayla yolculuk etme"
     },
     {
@@ -743,8 +755,8 @@
     },
     {
       "ru": "Не могли бы вы заменить спущенную шину?",
-      "tr": "Bu patlak lastiği tamir edebilir misiniz?",
-      "tl": "Бу патлак ластии тамир эдэбилир мисиниз?",
+      "tr": "Bu patlak lastiği değiştirebilir misiniz?",
+      "tl": "Бу патлак ластии дэйиштирэбилир мисиниз?",
       "sub": "Как спросить, куда ехать — Arabayla yolculuk etme"
     },
     {
@@ -784,7 +796,7 @@
       "sub": "Как спросить, куда ехать — Arabayla yolculuk etme"
     },
     {
-      "ru": "Не могли бы вы заменить ее?",
+      "ru": "Не могли бы вы ее починить?",
       "tr": "Onarabilir misiniz?",
       "tl": null,
       "sub": "Как спросить, куда ехать — Arabayla yolculuk etme"
@@ -798,7 +810,7 @@
     {
       "ru": "У меня проблема с …",
       "tr": "… de/da bir problem var",
-      "tl": "… дэ/да бир проблем вар 0",
+      "tl": "… дэ/да бир проблем вар",
       "sub": "Как спросить, куда ехать — Arabayla yolculuk etme"
     },
     {
@@ -821,7 +833,7 @@
     },
     {
       "ru": "Это в пятнадцати минутах отсюда",
-      "tr": "Buradan yaklaşık olarak on beş dakika",
+      "tr": "Buradan on beş dakika uzaklıkta",
       "tl": null,
       "sub": null
     },
@@ -868,7 +880,7 @@
       "sub": null
     },
     {
-      "ru": "Вы не можете/у вас не получится добраться туда пешком",
+      "ru": "Вы можете/не можете дойти туда пешком",
       "tr": "Oraya yürüyerek gidebilirsiniz/gidemezsiniz",
       "tl": null,
       "sub": null

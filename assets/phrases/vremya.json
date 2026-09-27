@@ -4,15 +4,9 @@
   "source": "razgovornik",
   "phrases": [
     {
-      "ru": "хирург художник чиновник шахтер экономист электрик ZAMANI SÖYLEMEK",
-      "tr": "cerrah ressam memur madenci ekonomist elektrikçi время",
-      "tl": "джеррах рэссам мэмур мадэнджи экономист электрикчи",
-      "sub": null
-    },
-    {
       "ru": "Сколько времени?",
-      "tr": "Saat kaç",
-      "tl": "Саат кач",
+      "tr": "Saat kaç?",
+      "tl": "Саат кач?",
       "sub": null
     },
     {
@@ -35,8 +29,8 @@
     },
     {
       "ru": "Половина девятого",
-      "tr": "Dokuz buçuk",
-      "tl": "Докуз бучук",
+      "tr": "Sekiz buçuk",
+      "tl": "Сэкиз бучук",
       "sub": null
     },
     {
