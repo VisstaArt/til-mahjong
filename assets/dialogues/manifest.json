@@ -52,5 +52,11 @@
     "title": "В городе",
     "count": 10,
     "sizeKB": 40.1
+  },
+  {
+    "id": "na-tamozhne",
+    "title": "На таможне",
+    "count": 8,
+    "sizeKB": 61.9
   }
 ]
