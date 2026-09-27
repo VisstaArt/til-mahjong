@@ -52,8 +52,8 @@
     "id": "pokupki-servis",
     "title": "Покупки, сервис",
     "source": "razgovornik",
-    "count": 193,
-    "sizeKB": 44.0
+    "count": 189,
+    "sizeKB": 43.2
   },
   {
     "id": "privetstvie",
@@ -66,8 +66,8 @@
     "id": "puteshestvie",
     "title": "Путешествие",
     "source": "razgovornik",
-    "count": 158,
-    "sizeKB": 35.1
+    "count": 157,
+    "sizeKB": 34.9
   },
   {
     "id": "razvlecheniya-otdyh",
@@ -87,8 +87,8 @@
     "id": "ustoychivye-vyrazheniya-so-slovom-allah",
     "title": "Устойчивые выражения со словом «Allah»",
     "source": "allah",
-    "count": 225,
-    "sizeKB": 30.7
+    "count": 220,
+    "sizeKB": 29.9
   },
   {
     "id": "v-gorode",
@@ -102,7 +102,7 @@
     "title": "В отеле",
     "source": "razgovornik",
     "count": 79,
-    "sizeKB": 12.2
+    "sizeKB": 12.4
   },
   {
     "id": "voprositelnye-slova",

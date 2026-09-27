@@ -76,32 +76,32 @@
       "sub": null
     },
     {
-      "ru": "Номер на втором этаже",
+      "ru": "Номер на втором этаже (по-турецки — первый)",
+      "tr": "Oda birinci katta",
+      "tl": null,
+      "sub": null
+    },
+    {
+      "ru": "Номер на третьем этаже (по-турецки — второй)",
       "tr": "Oda ikinci katta",
       "tl": null,
       "sub": null
     },
     {
-      "ru": "Номер на третьем этаже",
+      "ru": "Номер на четвёртом этаже (по-турецки — третий)",
       "tr": "Oda üçüncü katta",
       "tl": null,
       "sub": null
     },
     {
-      "ru": "Номер на четвертом этаже",
+      "ru": "Номер на пятом этаже (по-турецки — четвёртый)",
       "tr": "Oda dördüncü katta",
       "tl": null,
       "sub": null
     },
     {
-      "ru": "Номер на пятом этаже",
-      "tr": "Oda beşinci katta",
-      "tl": null,
-      "sub": null
-    },
-    {
-      "ru": "У вас есть номера на первом этаже?",
-      "tr": "Birinci katta bir odanız var mı?",
+      "ru": "У вас есть номер на первом этаже? (по-турецки — zemin kat)",
+      "tr": "Zemin katta bir odanız var mı?",
       "tl": null,
       "sub": null
     },

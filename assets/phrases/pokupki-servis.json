@@ -496,12 +496,6 @@
       "sub": "Фотография — Fotoğrafçılık"
     },
     {
-      "ru": "Мне нужен …",
-      "tr": "Bir … rica ediyorum",
-      "tl": null,
-      "sub": "Фотография — Fotoğrafçılık"
-    },
-    {
       "ru": "Какие сигареты/ сигары у вас есть?",
       "tr": "Sizde hangi sigaralar/purolar var?",
       "tl": null,
@@ -568,12 +562,6 @@
       "sub": "Очки, контактные линзы — Gözlük-lens"
     },
     {
-      "ru": "Когда они будут готовы?",
-      "tr": "Ne zaman hazır olur?",
-      "tl": null,
-      "sub": "Очки, контактные линзы — Gözlük-lens"
-    },
-    {
       "ru": "Мне солнечные очки, пожалуйста",
       "tr": "Güneş gözlüğü rica ediyorum",
       "tl": null,
@@ -616,12 +604,6 @@
       "sub": "В ювелирном магазине — Kuyumcu dükkanı"
     },
     {
-      "ru": "Можно …?",
-      "tr": "Bir … rica ediyorum",
-      "tl": "Бир … риджа эдийорум",
-      "sub": "В ювелирном магазине — Kuyumcu dükkanı"
-    },
-    {
       "ru": "Вы не могли бы почистить эти часы?",
       "tr": "Bu saati temizleyebilir misiniz?",
       "tl": "Бу саати тэмизлейэбилир мисиниз?",
@@ -649,12 +631,6 @@
       "ru": "Ремешок порвался",
       "tr": "Kayış kopmuş",
       "tl": "Кайыш копмуш",
-      "sub": "В магазине часов — Saatçi"
-    },
-    {
-      "ru": "Когда можно забирать?",
-      "tr": "Ne zaman hazır olur?",
-      "tl": null,
       "sub": "В магазине часов — Saatçi"
     },
     {
