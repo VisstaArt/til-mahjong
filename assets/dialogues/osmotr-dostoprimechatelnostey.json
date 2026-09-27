@@ -1,0 +1,666 @@
+{
+  "id": "osmotr-dostoprimechatelnostey",
+  "title": "Осмотр достопримечательностей",
+  "dialogues": [
+    {
+      "id": "osmotr-mama-kadikoy",
+      "title": "Мама в Кадыкёе",
+      "level": "A2",
+      "speakers": { "a": "Ольга", "b": "Мама" },
+      "turns": [
+        { "speaker": "a", "tr": "Anne, işte Kadıköy! Ben burada yaşıyorum.", "ru": "Мама, вот Кадыкёй! Я здесь живу.", "distractors": [
+          { "tr": "Çok büyük! Heykeltıraş kim?", "ru": "Какой большой! Кто скульптор?" },
+          { "tr": "Oraya yürüyerek gidebilir miyiz?", "ru": "Сможем мы туда добраться пешком?" }
+        ]},
+        { "speaker": "b", "tr": "Ne güzel bir yer! Bu ne tür bir hayvan?", "ru": "Какое красивое место! Что это за зверь?", "distractors": [
+          { "tr": "Çok iyi fikir! Çaylar benden.", "ru": "Отличная идея! Чай за мной." },
+          { "tr": "Oraya yürüyerek gidebilir miyiz?", "ru": "Сможем мы туда добраться пешком?" }
+        ]},
+        { "speaker": "a", "tr": "Bu bir boğa. Kadıköy'ün simgesi.", "ru": "Это бык. Символ Кадыкёя.", "distractors": [
+          { "tr": "Hayır, arada deniz var! Yarın vapurla gideriz.", "ru": "Нет, между нами море! Завтра поедем на пароходе." },
+          { "tr": "Çok iyi fikir! Çaylar benden.", "ru": "Отличная идея! Чай за мной." }
+        ]},
+        { "speaker": "b", "tr": "Çok büyük! Heykeltıraş kim?", "ru": "Какой большой! Кто скульптор?", "distractors": [
+          { "tr": "Hayır, arada deniz var! Yarın vapurla gideriz.", "ru": "Нет, между нами море! Завтра поедем на пароходе." },
+          { "tr": "Anne, işte Kadıköy! Ben burada yaşıyorum.", "ru": "Мама, вот Кадыкёй! Я здесь живу." }
+        ]},
+        { "speaker": "a", "tr": "Bir Fransız heykeltıraş, adı Bonheur. Beğendin mi?", "ru": "Французский скульптор, его зовут Бонёр. Тебе нравится?", "distractors": [
+          { "tr": "Çok iyi fikir! Çaylar benden.", "ru": "Отличная идея! Чай за мной." },
+          { "tr": "Oraya yürüyerek gidebilir miyiz?", "ru": "Сможем мы туда добраться пешком?" }
+        ]},
+        { "speaker": "b", "tr": "Evet, çok. Görülmeye değer yerler nerede?", "ru": "Да, очень. А какие у вас основные достопримечательности?", "distractors": [
+          { "tr": "Tamam. Biraz yoruldum. Burada biraz oturmak olanaklı mı?", "ru": "Хорошо. Я немного устала. Здесь можно немного посидеть?" },
+          { "tr": "Anne, işte Kadıköy! Ben burada yaşıyorum.", "ru": "Мама, вот Кадыкёй! Я здесь живу." }
+        ]},
+        { "speaker": "a", "tr": "Çoğu karşıda, Sultanahmet'te: Ayasofya, Topkapı Sarayı…", "ru": "Большинство на том берегу, в Султанахмете: Святая София, дворец Топкапы…", "distractors": [
+          { "tr": "Bu bir boğa. Kadıköy'ün simgesi.", "ru": "Это бык. Символ Кадыкёя." },
+          { "tr": "Tabii. Gel, Moda sahilinde oturalım ve çay içelim.", "ru": "Конечно. Пойдём посидим на набережной Моды и выпьем чаю." }
+        ]},
+        { "speaker": "b", "tr": "Oraya yürüyerek gidebilir miyiz?", "ru": "Сможем мы туда добраться пешком?", "distractors": [
+          { "tr": "Anne, işte Kadıköy! Ben burada yaşıyorum.", "ru": "Мама, вот Кадыкёй! Я здесь живу." },
+          { "tr": "Çok büyük! Heykeltıraş kim?", "ru": "Какой большой! Кто скульптор?" }
+        ]},
+        { "speaker": "a", "tr": "Hayır, arada deniz var! Yarın vapurla gideriz.", "ru": "Нет, между нами море! Завтра поедем на пароходе.", "distractors": [
+          { "tr": "Bir Fransız heykeltıraş, adı Bonheur. Beğendin mi?", "ru": "Французский скульптор, его зовут Бонёр. Тебе нравится?" },
+          { "tr": "Ne güzel bir yer! Bu ne tür bir hayvan?", "ru": "Какое красивое место! Что это за зверь?" }
+        ]},
+        { "speaker": "b", "tr": "Tamam. Biraz yoruldum. Burada biraz oturmak olanaklı mı?", "ru": "Хорошо. Я немного устала. Здесь можно немного посидеть?", "distractors": [
+          { "tr": "Çok büyük! Heykeltıraş kim?", "ru": "Какой большой! Кто скульптор?" },
+          { "tr": "Çoğu karşıda, Sultanahmet'te: Ayasofya, Topkapı Sarayı…", "ru": "Большинство на том берегу, в Султанахмете: Святая София, дворец Топкапы…" }
+        ]},
+        { "speaker": "a", "tr": "Tabii. Gel, Moda sahilinde oturalım ve çay içelim.", "ru": "Конечно. Пойдём посидим на набережной Моды и выпьем чаю.", "distractors": [
+          { "tr": "Bu bir boğa. Kadıköy'ün simgesi.", "ru": "Это бык. Символ Кадыкёя." },
+          { "tr": "Çoğu karşıda, Sultanahmet'te: Ayasofya, Topkapı Sarayı…", "ru": "Большинство на том берегу, в Султанахмете: Святая София, дворец Топкапы…" }
+        ]},
+        { "speaker": "b", "tr": "Çok iyi fikir! Çaylar benden.", "ru": "Отличная идея! Чай за мной.", "distractors": [
+          { "tr": "Hayır, arada deniz var! Yarın vapurla gideriz.", "ru": "Нет, между нами море! Завтра поедем на пароходе." },
+          { "tr": "Çok büyük! Heykeltıraş kim?", "ru": "Какой большой! Кто скульптор?" }
+        ]}
+      ]
+    },
+    {
+      "id": "osmotr-mama-gulhane",
+      "title": "Мама в парке Гюльхане",
+      "level": "A2",
+      "speakers": { "a": "Ольга", "b": "Мама" },
+      "turns": [
+        { "speaker": "a", "tr": "Anne, burası Gülhane Parkı. Çok eski bir park.", "ru": "Мама, это парк Гюльхане. Это очень старый парк.", "distractors": [
+          { "tr": "Doğru! Peki, bu ne tür bir çiçek?", "ru": "Точно! А что это за цветок?" },
+          { "tr": "Çok eski mi?", "ru": "Она очень старая?" }
+        ]},
+        { "speaker": "b", "tr": "Ne kadar güzel! Bu ne tür bir ağaç?", "ru": "Как красиво! Что это за дерево?", "distractors": [
+          { "tr": "Evet, çıkışta bir dükkan var. Hatıralık eşya da var.", "ru": "Да, у выхода есть магазин. Там и сувениры есть." },
+          { "tr": "Çok severim. Şu bina ne?", "ru": "Очень люблю. Что это за здание?" }
+        ]},
+        { "speaker": "a", "tr": "Çınar. Benim sokağımın adı da Çınar Sokak!", "ru": "Платан. Моя улица тоже называется Чынар Сокак — «Платановая»!", "distractors": [
+          { "tr": "Evet, altıncı yüzyıldan. Yaklaşık bin beş yüz yaşında!", "ru": "Да, шестой век. Ей почти полторы тысячи лет!" },
+          { "tr": "Harika. Hadi gidelim!", "ru": "Отлично. Пойдём!" }
+        ]},
+        { "speaker": "b", "tr": "Doğru! Peki, bu ne tür bir çiçek?", "ru": "Точно! А что это за цветок?", "distractors": [
+          { "tr": "Evet, altıncı yüzyıldan. Yaklaşık bin beş yüz yaşında!", "ru": "Да, шестой век. Ей почти полторы тысячи лет!" },
+          { "tr": "Anne, burası Gülhane Parkı. Çok eski bir park.", "ru": "Мама, это парк Гюльхане. Это очень старый парк." }
+        ]},
+        { "speaker": "a", "tr": "Gül. \"Gülhane\" de \"gül evi\" demek. Sen gülleri seversin, değil mi?", "ru": "Роза. «Гюльхане» и значит «дом роз». Ты ведь любишь розы?", "distractors": [
+          { "tr": "Harika. Hadi gidelim!", "ru": "Отлично. Пойдём!" },
+          { "tr": "Çok eski mi?", "ru": "Она очень старая?" }
+        ]},
+        { "speaker": "b", "tr": "Çok severim. Şu bina ne?", "ru": "Очень люблю. Что это за здание?", "distractors": [
+          { "tr": "İnanılmaz! Burada posta kartı almak olanaklı mı? Anneme göndermek istiyorum.", "ru": "Невероятно! Здесь можно купить открытку? Хочу отправить маме." },
+          { "tr": "Anne, burası Gülhane Parkı. Çok eski bir park.", "ru": "Мама, это парк Гюльхане. Это очень старый парк." }
+        ]},
+        { "speaker": "a", "tr": "Ayasofya. Yarın oraya gidiyoruz.", "ru": "Святая София. Завтра мы туда идём.", "distractors": [
+          { "tr": "Çınar. Benim sokağımın adı da Çınar Sokak!", "ru": "Платан. Моя улица тоже называется Чынар Сокак — «Платановая»!" },
+          { "tr": "Evet, çıkışta bir dükkan var. Hatıralık eşya da var.", "ru": "Да, у выхода есть магазин. Там и сувениры есть." }
+        ]},
+        { "speaker": "b", "tr": "Çok eski mi?", "ru": "Она очень старая?", "distractors": [
+          { "tr": "Anne, burası Gülhane Parkı. Çok eski bir park.", "ru": "Мама, это парк Гюльхане. Это очень старый парк." },
+          { "tr": "Doğru! Peki, bu ne tür bir çiçek?", "ru": "Точно! А что это за цветок?" }
+        ]},
+        { "speaker": "a", "tr": "Evet, altıncı yüzyıldan. Yaklaşık bin beş yüz yaşında!", "ru": "Да, шестой век. Ей почти полторы тысячи лет!", "distractors": [
+          { "tr": "Çok severim. Şu bina ne?", "ru": "Очень люблю. Что это за здание?" },
+          { "tr": "Ne kadar güzel! Bu ne tür bir ağaç?", "ru": "Как красиво! Что это за дерево?" }
+        ]},
+        { "speaker": "b", "tr": "İnanılmaz! Burada posta kartı almak olanaklı mı? Anneme göndermek istiyorum.", "ru": "Невероятно! Здесь можно купить открытку? Хочу отправить маме.", "distractors": [
+          { "tr": "Gül. \"Gülhane\" de \"gül evi\" demek. Sen gülleri seversin, değil mi?", "ru": "Роза. «Гюльхане» и значит «дом роз». Ты ведь любишь розы?" },
+          { "tr": "Anne, burası Gülhane Parkı. Çok eski bir park.", "ru": "Мама, это парк Гюльхане. Это очень старый парк." }
+        ]},
+        { "speaker": "a", "tr": "Evet, çıkışta bir dükkan var. Hatıralık eşya da var.", "ru": "Да, у выхода есть магазин. Там и сувениры есть.", "distractors": [
+          { "tr": "Çınar. Benim sokağımın adı da Çınar Sokak!", "ru": "Платан. Моя улица тоже называется Чынар Сокак — «Платановая»!" },
+          { "tr": "Ayasofya. Yarın oraya gidiyoruz.", "ru": "Святая София. Завтра мы туда идём." }
+        ]},
+        { "speaker": "b", "tr": "Harika. Hadi gidelim!", "ru": "Отлично. Пойдём!", "distractors": [
+          { "tr": "Evet, altıncı yüzyıldan. Yaklaşık bin beş yüz yaşında!", "ru": "Да, шестой век. Ей почти полторы тысячи лет!" },
+          { "tr": "Gül. \"Gülhane\" de \"gül evi\" demek. Sen gülleri seversin, değil mi?", "ru": "Роза. «Гюльхане» и значит «дом роз». Ты ведь любишь розы?" }
+        ]}
+      ]
+    },
+    {
+      "id": "osmotr-dolmabahce-kassa",
+      "title": "Долмабахче: касса",
+      "level": "A2",
+      "speakers": { "a": "Ольга", "b": "Тамер" },
+      "turns": [
+        { "speaker": "a", "tr": "İyi günler. Bugün açık mı?", "ru": "Добрый день. Сегодня открыто?", "distractors": [
+          { "tr": "Akşam altıda. Kaç kişisiniz?", "ru": "В шесть вечера. Сколько вас?" },
+          { "tr": "Rehberlerimiz Türkçe ve İngilizce konuşuyor, ama Rusça sesli rehber var. Annenize bir tane ister misiniz?", "ru": "Наши гиды говорят по-турецки и по-английски, но есть аудиогид на русском. Возьмёте один для мамы?" }
+        ]},
+        { "speaker": "b", "tr": "Evet, açık. Sadece pazartesi kapalı.", "ru": "Да, открыто. Закрыто только по понедельникам.", "distractors": [
+          { "tr": "Rehberlerimiz Türkçe ve İngilizce konuşuyor, ama Rusça sesli rehber var. Annenize bir tane ister misiniz?", "ru": "Наши гиды говорят по-турецки и по-английски, но есть аудиогид на русском. Возьмёте один для мамы?" },
+          { "tr": "Anladım, teşekkür ederim!", "ru": "Поняла, спасибо!" }
+        ]},
+        { "speaker": "a", "tr": "Saat kaçta kapanıyor?", "ru": "Когда закрывается?", "distractors": [
+          { "tr": "Kişi başı bin iki yüz lira.", "ru": "Тысяча двести лир с человека." },
+          { "tr": "Evet, lütfen. Fotoğraf çekebilir miyiz?", "ru": "Да, пожалуйста. Можно фотографировать?" }
+        ]},
+        { "speaker": "b", "tr": "Akşam altıda. Kaç kişisiniz?", "ru": "В шесть вечера. Сколько вас?", "distractors": [
+          { "tr": "Evet, lütfen. Fotoğraf çekebilir miyiz?", "ru": "Да, пожалуйста. Можно фотографировать?" },
+          { "tr": "İyi günler. Bugün açık mı?", "ru": "Добрый день. Сегодня открыто?" }
+        ]},
+        { "speaker": "a", "tr": "İki kişiyiz, ben ve annem. Giriş ücreti ne kadar?", "ru": "Нас двое: я и мама. Сколько стоит входной билет?", "distractors": [
+          { "tr": "İyi günler. Bugün açık mı?", "ru": "Добрый день. Сегодня открыто?" },
+          { "tr": "Evet, lütfen. Fotoğraf çekebilir miyiz?", "ru": "Да, пожалуйста. Можно фотографировать?" }
+        ]},
+        { "speaker": "b", "tr": "Kişi başı bin iki yüz lira.", "ru": "Тысяча двести лир с человека.", "distractors": [
+          { "tr": "Evet, lütfen. Fotoğraf çekebilir miyiz?", "ru": "Да, пожалуйста. Можно фотографировать?" },
+          { "tr": "İyi günler. Bugün açık mı?", "ru": "Добрый день. Сегодня открыто?" }
+        ]},
+        { "speaker": "a", "tr": "Annem öğretmen. Öğretmenler için indirim var mı?", "ru": "Мама — учительница. У вас есть скидки для учителей?", "distractors": [
+          { "tr": "İyi günler. Bugün açık mı?", "ru": "Добрый день. Сегодня открыто?" },
+          { "tr": "Evet, lütfen. Fotoğraf çekebilir miyiz?", "ru": "Да, пожалуйста. Можно фотографировать?" }
+        ]},
+        { "speaker": "b", "tr": "Maalesef, sadece Türk öğretmenler için. Kartla mı ödüyorsunuz?", "ru": "К сожалению, только для турецких учителей. Будете платить картой?", "distractors": [
+          { "tr": "Evet, lütfen. Fotoğraf çekebilir miyiz?", "ru": "Да, пожалуйста. Можно фотографировать?" },
+          { "tr": "İyi günler. Bugün açık mı?", "ru": "Добрый день. Сегодня открыто?" }
+        ]},
+        { "speaker": "a", "tr": "Evet, kartla. Rusça bilen bir rehber var mı?", "ru": "Да, картой. Здесь есть русскоговорящий гид?", "distractors": [
+          { "tr": "İyi günler. Bugün açık mı?", "ru": "Добрый день. Сегодня открыто?" },
+          { "tr": "Kişi başı bin iki yüz lira.", "ru": "Тысяча двести лир с человека." }
+        ]},
+        { "speaker": "b", "tr": "Rehberlerimiz Türkçe ve İngilizce konuşuyor, ama Rusça sesli rehber var. Annenize bir tane ister misiniz?", "ru": "Наши гиды говорят по-турецки и по-английски, но есть аудиогид на русском. Возьмёте один для мамы?", "distractors": [
+          { "tr": "Kişi başı bin iki yüz lira.", "ru": "Тысяча двести лир с человека." },
+          { "tr": "İyi günler. Bugün açık mı?", "ru": "Добрый день. Сегодня открыто?" }
+        ]},
+        { "speaker": "a", "tr": "Evet, lütfen. Fotoğraf çekebilir miyiz?", "ru": "Да, пожалуйста. Можно фотографировать?", "distractors": [
+          { "tr": "İyi günler. Bugün açık mı?", "ru": "Добрый день. Сегодня открыто?" },
+          { "tr": "Kişi başı bin iki yüz lira.", "ru": "Тысяча двести лир с человека." }
+        ]},
+        { "speaker": "b", "tr": "Bahçede çekebilirsiniz, ama içeride fotoğraf yasaktır. Çantanızı vestiyere bırakın lütfen.", "ru": "В саду можно, но внутри фотографировать запрещено. Оставьте сумку в гардеробе, пожалуйста.", "distractors": [
+          { "tr": "Kişi başı bin iki yüz lira.", "ru": "Тысяча двести лир с человека." },
+          { "tr": "İyi günler. Bugün açık mı?", "ru": "Добрый день. Сегодня открыто?" }
+        ]},
+        { "speaker": "a", "tr": "Tamam. Tur saat kaçta başlıyor?", "ru": "Хорошо. Во сколько начинается экскурсия?", "distractors": [
+          { "tr": "İyi günler. Bugün açık mı?", "ru": "Добрый день. Сегодня открыто?" },
+          { "tr": "Kişi başı bin iki yüz lira.", "ru": "Тысяча двести лир с человека." }
+        ]},
+        { "speaker": "b", "tr": "On dakika sonra. İçeride rehberi izleyin lütfen.", "ru": "Через десять минут. Внутри следуйте за гидом, пожалуйста.", "distractors": [
+          { "tr": "Evet, lütfen. Fotoğraf çekebilir miyiz?", "ru": "Да, пожалуйста. Можно фотографировать?" },
+          { "tr": "İki kişiyiz, ben ve annem. Giriş ücreti ne kadar?", "ru": "Нас двое: я и мама. Сколько стоит входной билет?" }
+        ]},
+        { "speaker": "a", "tr": "Anladım, teşekkür ederim!", "ru": "Поняла, спасибо!", "distractors": [
+          { "tr": "Evet, lütfen. Fotoğraf çekebilir miyiz?", "ru": "Да, пожалуйста. Можно фотографировать?" },
+          { "tr": "İki kişiyiz, ben ve annem. Giriş ücreti ne kadar?", "ru": "Нас двое: я и мама. Сколько стоит входной билет?" }
+        ]}
+      ]
+    },
+    {
+      "id": "osmotr-dolmabahce-rehber",
+      "title": "Долмабахче: с гидом по залам",
+      "level": "A2",
+      "speakers": { "a": "Ольга", "b": "Севда" },
+      "turns": [
+        { "speaker": "a", "tr": "Çok güzel bir saray! Bu ne zaman yapıldı?", "ru": "Какой красивый дворец! Когда он был построен?", "distractors": [
+          { "tr": "Balyan ailesi. Onlar İstanbul'da çok bina yaptı.", "ru": "Семья Бальян. Они построили в Стамбуле много зданий." },
+          { "tr": "Peki, şu deniz tablosu? Ressam kim?", "ru": "А вот эта картина с морем? Кто художник?" }
+        ]},
+        { "speaker": "b", "tr": "1856'da bitti. Burada sultanlar yaşadı, sonra Atatürk de.", "ru": "Его закончили в 1856 году. Здесь жили султаны, а потом и Ататюрк.", "distractors": [
+          { "tr": "O da Ayvazovski! Siz Rus musunuz?", "ru": "Тоже Айвазовский! Вы русская?" },
+          { "tr": "Annem sanatla ilgileniyor. Şu tabloyu kim yaptı?", "ru": "Мама увлекается искусством. Кто написал эту картину?" }
+        ]},
+        { "speaker": "a", "tr": "Mimar kim?", "ru": "Кто архитектор?", "distractors": [
+          { "tr": "On dokuzuncu yüzyılda. İstanbul'a birkaç kez geldi. Sarayda onun çok tablosu var.", "ru": "В девятнадцатом веке. Он несколько раз приезжал в Стамбул. Во дворце много его картин." },
+          { "tr": "Hoş geldiniz! Anneniz sesli rehberi beğendi mi?", "ru": "Добро пожаловать! Маме понравился аудиогид?" }
+        ]},
+        { "speaker": "b", "tr": "Balyan ailesi. Onlar İstanbul'da çok bina yaptı.", "ru": "Семья Бальян. Они построили в Стамбуле много зданий.", "distractors": [
+          { "tr": "Çok beğendi. Teşekkür ederim!", "ru": "Очень понравился. Спасибо!" },
+          { "tr": "Peki, şu deniz tablosu? Ressam kim?", "ru": "А вот эта картина с морем? Кто художник?" }
+        ]},
+        { "speaker": "a", "tr": "Annem sanatla ilgileniyor. Şu tabloyu kim yaptı?", "ru": "Мама увлекается искусством. Кто написал эту картину?", "distractors": [
+          { "tr": "Çok beğendi. Teşekkür ederim!", "ru": "Очень понравился. Спасибо!" },
+          { "tr": "Peki, şu deniz tablosu? Ressam kim?", "ru": "А вот эта картина с морем? Кто художник?" }
+        ]},
+        { "speaker": "b", "tr": "Ayvazovski. Onu tanıyor musunuz?", "ru": "Айвазовский. Вы его знаете?", "distractors": [
+          { "tr": "1856'da bitti. Burada sultanlar yaşadı, sonra Atatürk de.", "ru": "Его закончили в 1856 году. Здесь жили султаны, а потом и Ататюрк." },
+          { "tr": "Evet, Moskovalıyım, ama İstanbul'da yaşıyorum. Annem misafir.", "ru": "Да, я из Москвы, но живу в Стамбуле. Мама у меня в гостях." }
+        ]},
+        { "speaker": "a", "tr": "Tabii! Çok ünlü bir Rus ressam. Ne zaman yaşadı?", "ru": "Конечно! Очень известный русский художник. Когда он жил?", "distractors": [
+          { "tr": "Hoş geldiniz! Anneniz sesli rehberi beğendi mi?", "ru": "Добро пожаловать! Маме понравился аудиогид?" },
+          { "tr": "Mimar kim?", "ru": "Кто архитектор?" }
+        ]},
+        { "speaker": "b", "tr": "On dokuzuncu yüzyılda. İstanbul'a birkaç kez geldi. Sarayda onun çok tablosu var.", "ru": "В девятнадцатом веке. Он несколько раз приезжал в Стамбул. Во дворце много его картин.", "distractors": [
+          { "tr": "Balyan ailesi. Onlar İstanbul'da çok bina yaptı.", "ru": "Семья Бальян. Они построили в Стамбуле много зданий." },
+          { "tr": "Çok beğendi. Teşekkür ederim!", "ru": "Очень понравился. Спасибо!" }
+        ]},
+        { "speaker": "a", "tr": "Peki, şu deniz tablosu? Ressam kim?", "ru": "А вот эта картина с морем? Кто художник?", "distractors": [
+          { "tr": "1856'da bitti. Burada sultanlar yaşadı, sonra Atatürk de.", "ru": "Его закончили в 1856 году. Здесь жили султаны, а потом и Ататюрк." },
+          { "tr": "Ayvazovski. Onu tanıyor musunuz?", "ru": "Айвазовский. Вы его знаете?" }
+        ]},
+        { "speaker": "b", "tr": "O da Ayvazovski! Siz Rus musunuz?", "ru": "Тоже Айвазовский! Вы русская?", "distractors": [
+          { "tr": "Balyan ailesi. Onlar İstanbul'da çok bina yaptı.", "ru": "Семья Бальян. Они построили в Стамбуле много зданий." },
+          { "tr": "Çok beğendi. Teşekkür ederim!", "ru": "Очень понравился. Спасибо!" }
+        ]},
+        { "speaker": "a", "tr": "Evet, Moskovalıyım, ama İstanbul'da yaşıyorum. Annem misafir.", "ru": "Да, я из Москвы, но живу в Стамбуле. Мама у меня в гостях.", "distractors": [
+          { "tr": "1856'da bitti. Burada sultanlar yaşadı, sonra Atatürk de.", "ru": "Его закончили в 1856 году. Здесь жили султаны, а потом и Ататюрк." },
+          { "tr": "Annem sanatla ilgileniyor. Şu tabloyu kim yaptı?", "ru": "Мама увлекается искусством. Кто написал эту картину?" }
+        ]},
+        { "speaker": "b", "tr": "Hoş geldiniz! Anneniz sesli rehberi beğendi mi?", "ru": "Добро пожаловать! Маме понравился аудиогид?", "distractors": [
+          { "tr": "1856'da bitti. Burada sultanlar yaşadı, sonra Atatürk de.", "ru": "Его закончили в 1856 году. Здесь жили султаны, а потом и Ататюрк." },
+          { "tr": "Ayvazovski. Onu tanıyor musunuz?", "ru": "Айвазовский. Вы его знаете?" }
+        ]},
+        { "speaker": "a", "tr": "Çok beğendi. Teşekkür ederim!", "ru": "Очень понравился. Спасибо!", "distractors": [
+          { "tr": "Çok güzel bir saray! Bu ne zaman yapıldı?", "ru": "Какой красивый дворец! Когда он был построен?" },
+          { "tr": "Ayvazovski. Onu tanıyor musunuz?", "ru": "Айвазовский. Вы его знаете?" }
+        ]}
+      ]
+    },
+    {
+      "id": "osmotr-kapadokya-tur",
+      "title": "Каппадокия: выбираем экскурсию",
+      "level": "A2",
+      "speakers": { "a": "Ольга", "b": "Хюсейн" },
+      "turns": [
+        { "speaker": "a", "tr": "Merhaba. Bir turistik tur tavsiye edebilir misiniz?", "ru": "Здравствуйте. Какие вы порекомендуете экскурсии?", "distractors": [
+          { "tr": "Sabah dokuz buçukta.", "ru": "В полдесятого утра." },
+          { "tr": "Evet, rehber bütün gün sizinle.", "ru": "Да, гид будет с вами весь день." }
+        ]},
+        { "speaker": "b", "tr": "Tabii. Kırmızı tur çok güzel: Göreme Açık Hava Müzesi, Uçhisar ve Paşabağı. Kaç kişisiniz?", "ru": "Конечно. «Красный тур» очень хороший: музей под открытым небом в Гёреме, Учхисар и Пашабагы. Сколько вас?", "distractors": [
+          { "tr": "Evet, rehber bütün gün sizinle.", "ru": "Да, гид будет с вами весь день." },
+          { "tr": "Tamam, iki kişi yazın lütfen.", "ru": "Хорошо, запишите, пожалуйста, двоих." }
+        ]},
+        { "speaker": "a", "tr": "İki kişiyiz, ben ve erkek arkadaşım. Tur saat kaçta başlıyor?", "ru": "Нас двое: я и мой парень. Во сколько начинается экскурсия?", "distractors": [
+          { "tr": "Buradan, ofisin önünden. Hangi otelde kalıyorsunuz?", "ru": "Отсюда, от нашего офиса. В каком отеле вы остановились?" },
+          { "tr": "Rehber Rusça biliyor mu?", "ru": "Этот гид говорит по-русски?" }
+        ]},
+        { "speaker": "b", "tr": "Sabah dokuz buçukta.", "ru": "В полдесятого утра.", "distractors": [
+          { "tr": "Rehber Rusça biliyor mu?", "ru": "Этот гид говорит по-русски?" },
+          { "tr": "Merhaba. Bir turistik tur tavsiye edebilir misiniz?", "ru": "Здравствуйте. Какие вы порекомендуете экскурсии?" }
+        ]},
+        { "speaker": "a", "tr": "Nereden hareket edeceğiz?", "ru": "Откуда мы отъезжаем?", "distractors": [
+          { "tr": "Evet, alabilir. Saat dokuzda otelin önünde bekleyin.", "ru": "Да, может. Ждите перед отелем в девять." },
+          { "tr": "Evet, anlıyorum, Türkçe öğreniyorum. Ne zaman geri dönüyoruz?", "ru": "Да, понимаю, я учу турецкий. Во сколько мы вернёмся?" }
+        ]},
+        { "speaker": "b", "tr": "Buradan, ofisin önünden. Hangi otelde kalıyorsunuz?", "ru": "Отсюда, от нашего офиса. В каком отеле вы остановились?", "distractors": [
+          { "tr": "Rehber Rusça biliyor mu?", "ru": "Этот гид говорит по-русски?" },
+          { "tr": "Merhaba. Bir turistik tur tavsiye edebilir misiniz?", "ru": "Здравствуйте. Какие вы порекомендуете экскурсии?" }
+        ]},
+        { "speaker": "a", "tr": "Göreme'de, küçük bir mağara otelinde. Otobüs bizi otelden alabilir mi?", "ru": "В Гёреме, в маленьком пещерном отеле. Может автобус подъехать к отелю?", "distractors": [
+          { "tr": "Merhaba. Bir turistik tur tavsiye edebilir misiniz?", "ru": "Здравствуйте. Какие вы порекомендуете экскурсии?" },
+          { "tr": "Rehber Rusça biliyor mu?", "ru": "Этот гид говорит по-русски?" }
+        ]},
+        { "speaker": "b", "tr": "Evet, alabilir. Saat dokuzda otelin önünde bekleyin.", "ru": "Да, может. Ждите перед отелем в девять.", "distractors": [
+          { "tr": "Rehber Rusça biliyor mu?", "ru": "Этот гид говорит по-русски?" },
+          { "tr": "Merhaba. Bir turistik tur tavsiye edebilir misiniz?", "ru": "Здравствуйте. Какие вы порекомендуете экскурсии?" }
+        ]},
+        { "speaker": "a", "tr": "Rehber olacak mı?", "ru": "У нас будет гид?", "distractors": [
+          { "tr": "Merhaba. Bir turistik tur tavsiye edebilir misiniz?", "ru": "Здравствуйте. Какие вы порекомендуете экскурсии?" },
+          { "tr": "Buradan, ofisin önünden. Hangi otelde kalıyorsunuz?", "ru": "Отсюда, от нашего офиса. В каком отеле вы остановились?" }
+        ]},
+        { "speaker": "b", "tr": "Evet, rehber bütün gün sizinle.", "ru": "Да, гид будет с вами весь день.", "distractors": [
+          { "tr": "Buradan, ofisin önünden. Hangi otelde kalıyorsunuz?", "ru": "Отсюда, от нашего офиса. В каком отеле вы остановились?" },
+          { "tr": "Merhaba. Bir turistik tur tavsiye edebilir misiniz?", "ru": "Здравствуйте. Какие вы порекомендуете экскурсии?" }
+        ]},
+        { "speaker": "a", "tr": "Rehber Rusça biliyor mu?", "ru": "Этот гид говорит по-русски?", "distractors": [
+          { "tr": "Merhaba. Bir turistik tur tavsiye edebilir misiniz?", "ru": "Здравствуйте. Какие вы порекомендуете экскурсии?" },
+          { "tr": "Buradan, ofisin önünden. Hangi otelde kalıyorsunuz?", "ru": "Отсюда, от нашего офиса. В каком отеле вы остановились?" }
+        ]},
+        { "speaker": "b", "tr": "Hayır, sadece Türkçe ve İngilizce. Türkçe anlıyor musunuz?", "ru": "Нет, только по-турецки и по-английски. Вы понимаете по-турецки?", "distractors": [
+          { "tr": "Buradan, ofisin önünden. Hangi otelde kalıyorsunuz?", "ru": "Отсюда, от нашего офиса. В каком отеле вы остановились?" },
+          { "tr": "Merhaba. Bir turistik tur tavsiye edebilir misiniz?", "ru": "Здравствуйте. Какие вы порекомендуете экскурсии?" }
+        ]},
+        { "speaker": "a", "tr": "Evet, anlıyorum, Türkçe öğreniyorum. Ne zaman geri dönüyoruz?", "ru": "Да, понимаю, я учу турецкий. Во сколько мы вернёмся?", "distractors": [
+          { "tr": "Merhaba. Bir turistik tur tavsiye edebilir misiniz?", "ru": "Здравствуйте. Какие вы порекомендуете экскурсии?" },
+          { "tr": "Buradan, ofisin önünden. Hangi otelde kalıyorsunuz?", "ru": "Отсюда, от нашего офиса. В каком отеле вы остановились?" }
+        ]},
+        { "speaker": "b", "tr": "Akşam beş gibi.", "ru": "Около пяти вечера.", "distractors": [
+          { "tr": "Rehber Rusça biliyor mu?", "ru": "Этот гид говорит по-русски?" },
+          { "tr": "Nereden hareket edeceğiz?", "ru": "Откуда мы отъезжаем?" }
+        ]},
+        { "speaker": "a", "tr": "Tamam, iki kişi yazın lütfen.", "ru": "Хорошо, запишите, пожалуйста, двоих.", "distractors": [
+          { "tr": "Evet, rehber bütün gün sizinle.", "ru": "Да, гид будет с вами весь день." },
+          { "tr": "İki kişiyiz, ben ve erkek arkadaşım. Tur saat kaçta başlıyor?", "ru": "Нас двое: я и мой парень. Во сколько начинается экскурсия?" }
+        ]}
+      ]
+    },
+    {
+      "id": "osmotr-kapadokya-yol",
+      "title": "Каппадокия: в машине с Денизом",
+      "level": "A2",
+      "speakers": { "a": "Ольга", "b": "Дениз" },
+      "turns": [
+        { "speaker": "a", "tr": "Deniz, bugün Selime Manastırı'na gidiyoruz, değil mi?", "ru": "Дениз, сегодня мы едем в монастырь Селиме, да?", "distractors": [
+          { "tr": "Yaklaşık yüz kilometre. Arabayla bir buçuk saat.", "ru": "Примерно сто километров. На машине полтора часа." },
+          { "tr": "Bak, yolda küçük bir hayvan! Bu ne tür bir hayvan?", "ru": "Смотри, на дороге маленький зверёк! Что это за зверь?" }
+        ]},
+        { "speaker": "b", "tr": "Evet. Çok güzel bir yer, kayada bir manastır.", "ru": "Да. Очень красивое место, монастырь в скале.", "distractors": [
+          { "tr": "Kirpi! Merak etme, yavaş gidiyorum. Sen hiç kirpi gördün mü?", "ru": "Ёжик! Не волнуйся, я еду медленно. Ты когда-нибудь видела ежа?" },
+          { "tr": "Selime'ye izlenecek manzaralı bir yol var mı?", "ru": "Есть какая-нибудь красивая дорога в Селиме?" }
+        ]},
+        { "speaker": "a", "tr": "Selime ne kadar uzaklıkta?", "ru": "Как далеко до Селиме?", "distractors": [
+          { "tr": "Üç bin metreden fazla. Kışın üstünde kar olur.", "ru": "Больше трёх тысяч метров. Зимой на ней лежит снег." },
+          { "tr": "Selime'de manastırdan sonra kahve içeriz. Kahve istersin, değil mi?", "ru": "В Селиме после монастыря выпьем кофе. Ты ведь захочешь кофе?" }
+        ]},
+        { "speaker": "b", "tr": "Yaklaşık yüz kilometre. Arabayla bir buçuk saat.", "ru": "Примерно сто километров. На машине полтора часа.", "distractors": [
+          { "tr": "Tabii! Kahvesiz olmaz.", "ru": "Конечно! Без кофе никак." },
+          { "tr": "Bak, yolda küçük bir hayvan! Bu ne tür bir hayvan?", "ru": "Смотри, на дороге маленький зверёк! Что это за зверь?" }
+        ]},
+        { "speaker": "a", "tr": "Selime'ye izlenecek manzaralı bir yol var mı?", "ru": "Есть какая-нибудь красивая дорога в Селиме?", "distractors": [
+          { "tr": "Kirpi! Merak etme, yavaş gidiyorum. Sen hiç kirpi gördün mü?", "ru": "Ёжик! Не волнуйся, я еду медленно. Ты когда-нибудь видела ежа?" },
+          { "tr": "Deniz, bugün Selime Manastırı'na gidiyoruz, değil mi?", "ru": "Дениз, сегодня мы едем в монастырь Селиме, да?" }
+        ]},
+        { "speaker": "b", "tr": "Evet, var. Hasan Dağı'nın yanından gideceğiz. Hasan Dağı'nı biliyor musun?", "ru": "Да, есть. Поедем мимо горы Хасан. Знаешь гору Хасан?", "distractors": [
+          { "tr": "Moskova'da gördüm, ama çok küçüktü. Çok tatlı!", "ru": "В Москве видела, но он был совсем маленький. Такой милый!" },
+          { "tr": "Deniz, bugün Selime Manastırı'na gidiyoruz, değil mi?", "ru": "Дениз, сегодня мы едем в монастырь Селиме, да?" }
+        ]},
+        { "speaker": "a", "tr": "Hayır. Şu dağın yüksekliği ne kadar?", "ru": "Нет. Какая высота у этой горы?", "distractors": [
+          { "tr": "Selime'de manastırdan sonra kahve içeriz. Kahve istersin, değil mi?", "ru": "В Селиме после монастыря выпьем кофе. Ты ведь захочешь кофе?" },
+          { "tr": "Selime ne kadar uzaklıkta?", "ru": "Как далеко до Селиме?" }
+        ]},
+        { "speaker": "b", "tr": "Üç bin metreden fazla. Kışın üstünde kar olur.", "ru": "Больше трёх тысяч метров. Зимой на ней лежит снег.", "distractors": [
+          { "tr": "Yaklaşık yüz kilometre. Arabayla bir buçuk saat.", "ru": "Примерно сто километров. На машине полтора часа." },
+          { "tr": "Tabii! Kahvesiz olmaz.", "ru": "Конечно! Без кофе никак." }
+        ]},
+        { "speaker": "a", "tr": "Bak, yolda küçük bir hayvan! Bu ne tür bir hayvan?", "ru": "Смотри, на дороге маленький зверёк! Что это за зверь?", "distractors": [
+          { "tr": "Deniz, bugün Selime Manastırı'na gidiyoruz, değil mi?", "ru": "Дениз, сегодня мы едем в монастырь Селиме, да?" },
+          { "tr": "Selime'ye izlenecek manzaralı bir yol var mı?", "ru": "Есть какая-нибудь красивая дорога в Селиме?" }
+        ]},
+        { "speaker": "b", "tr": "Kirpi! Merak etme, yavaş gidiyorum. Sen hiç kirpi gördün mü?", "ru": "Ёжик! Не волнуйся, я еду медленно. Ты когда-нибудь видела ежа?", "distractors": [
+          { "tr": "Evet, var. Hasan Dağı'nın yanından gideceğiz. Hasan Dağı'nı biliyor musun?", "ru": "Да, есть. Поедем мимо горы Хасан. Знаешь гору Хасан?" },
+          { "tr": "Evet. Çok güzel bir yer, kayada bir manastır.", "ru": "Да. Очень красивое место, монастырь в скале." }
+        ]},
+        { "speaker": "a", "tr": "Moskova'da gördüm, ama çok küçüktü. Çok tatlı!", "ru": "В Москве видела, но он был совсем маленький. Такой милый!", "distractors": [
+          { "tr": "Evet. Çok güzel bir yer, kayada bir manastır.", "ru": "Да. Очень красивое место, монастырь в скале." },
+          { "tr": "Selime'ye izlenecek manzaralı bir yol var mı?", "ru": "Есть какая-нибудь красивая дорога в Селиме?" }
+        ]},
+        { "speaker": "b", "tr": "Selime'de manastırdan sonra kahve içeriz. Kahve istersin, değil mi?", "ru": "В Селиме после монастыря выпьем кофе. Ты ведь захочешь кофе?", "distractors": [
+          { "tr": "Evet. Çok güzel bir yer, kayada bir manastır.", "ru": "Да. Очень красивое место, монастырь в скале." },
+          { "tr": "Evet, var. Hasan Dağı'nın yanından gideceğiz. Hasan Dağı'nı biliyor musun?", "ru": "Да, есть. Поедем мимо горы Хасан. Знаешь гору Хасан?" }
+        ]},
+        { "speaker": "a", "tr": "Tabii! Kahvesiz olmaz.", "ru": "Конечно! Без кофе никак.", "distractors": [
+          { "tr": "Deniz, bugün Selime Manastırı'na gidiyoruz, değil mi?", "ru": "Дениз, сегодня мы едем в монастырь Селиме, да?" },
+          { "tr": "Evet, var. Hasan Dağı'nın yanından gideceğiz. Hasan Dağı'nı biliyor musun?", "ru": "Да, есть. Поедем мимо горы Хасан. Знаешь гору Хасан?" }
+        ]}
+      ]
+    },
+    {
+      "id": "osmotr-kapadokya-selime",
+      "title": "Каппадокия: монастырь Селиме",
+      "level": "A2",
+      "speakers": { "a": "Ольга", "b": "Шахин" },
+      "turns": [
+        { "speaker": "a", "tr": "İyi günler. Manastırı ziyaret edebilir miyim?", "ru": "Добрый день. Могу я зайти в монастырь?", "distractors": [
+          { "tr": "Aşağıda, otoparkın yanında.", "ru": "Внизу, рядом с парковкой." },
+          { "tr": "Tamam. Bu ne tür bir kuş? Kayalarda çok var.", "ru": "Хорошо. Что это за птица? На скалах их много." }
+        ]},
+        { "speaker": "b", "tr": "Tabii, buyurun. Biletiniz var mı?", "ru": "Конечно, пожалуйста. У вас есть билет?", "distractors": [
+          { "tr": "Güvercin. Kapadokya'da eskiden güvercinler için evler yaptılar.", "ru": "Голубь. В Каппадокии раньше строили для голубей домики." },
+          { "tr": "Teşekkürler. Hangi saatlerde açıktır?", "ru": "Спасибо. Какие здесь часы работы?" }
+        ]},
+        { "speaker": "a", "tr": "Hayır, yok. Bilet gişesi nerede?", "ru": "Нет. Где находится касса?", "distractors": [
+          { "tr": "Evet, çekebilirsiniz. Ama dikkat edin, kayalar yüksek.", "ru": "Да, можно. Но будьте осторожны, скалы высокие." },
+          { "tr": "Orası mutfak. Tabii, bakabilirsiniz. İyi gezmeler!", "ru": "Это кухня. Конечно, посмотрите. Приятной прогулки!" }
+        ]},
+        { "speaker": "b", "tr": "Aşağıda, otoparkın yanında.", "ru": "Внизу, рядом с парковкой.", "distractors": [
+          { "tr": "Teşekkür ederim!", "ru": "Спасибо!" },
+          { "tr": "Tamam. Bu ne tür bir kuş? Kayalarda çok var.", "ru": "Хорошо. Что это за птица? На скалах их много." }
+        ]},
+        { "speaker": "a", "tr": "Teşekkürler. Hangi saatlerde açıktır?", "ru": "Спасибо. Какие здесь часы работы?", "distractors": [
+          { "tr": "Güvercin. Kapadokya'da eskiden güvercinler için evler yaptılar.", "ru": "Голубь. В Каппадокии раньше строили для голубей домики." },
+          { "tr": "İyi günler. Manastırı ziyaret edebilir miyim?", "ru": "Добрый день. Могу я зайти в монастырь?" }
+        ]},
+        { "speaker": "b", "tr": "Yazın sabah sekizden akşam yediye kadar. Nereden geliyorsunuz?", "ru": "Летом с восьми утра до семи вечера. Откуда вы приехали?", "distractors": [
+          { "tr": "Tabii, buyurun. Biletiniz var mı?", "ru": "Конечно, пожалуйста. У вас есть билет?" },
+          { "tr": "Çok ilginç! Şu büyük oda ne? Bir bakabilir miyiz?", "ru": "Как интересно! А что это за большая комната? Можно посмотреть?" }
+        ]},
+        { "speaker": "a", "tr": "İstanbul'dan. Erkek arkadaşım bilet alıyor. Fotoğraf çekebilir miyiz?", "ru": "Из Стамбула. Мой парень покупает билеты. Можно фотографировать?", "distractors": [
+          { "tr": "Orası mutfak. Tabii, bakabilirsiniz. İyi gezmeler!", "ru": "Это кухня. Конечно, посмотрите. Приятной прогулки!" },
+          { "tr": "Hayır, yok. Bilet gişesi nerede?", "ru": "Нет. Где находится касса?" }
+        ]},
+        { "speaker": "b", "tr": "Evet, çekebilirsiniz. Ama dikkat edin, kayalar yüksek.", "ru": "Да, можно. Но будьте осторожны, скалы высокие.", "distractors": [
+          { "tr": "Aşağıda, otoparkın yanında.", "ru": "Внизу, рядом с парковкой." },
+          { "tr": "Teşekkür ederim!", "ru": "Спасибо!" }
+        ]},
+        { "speaker": "a", "tr": "Tamam. Bu ne tür bir kuş? Kayalarda çok var.", "ru": "Хорошо. Что это за птица? На скалах их много.", "distractors": [
+          { "tr": "İyi günler. Manastırı ziyaret edebilir miyim?", "ru": "Добрый день. Могу я зайти в монастырь?" },
+          { "tr": "Teşekkürler. Hangi saatlerde açıktır?", "ru": "Спасибо. Какие здесь часы работы?" }
+        ]},
+        { "speaker": "b", "tr": "Güvercin. Kapadokya'da eskiden güvercinler için evler yaptılar.", "ru": "Голубь. В Каппадокии раньше строили для голубей домики.", "distractors": [
+          { "tr": "Yazın sabah sekizden akşam yediye kadar. Nereden geliyorsunuz?", "ru": "Летом с восьми утра до семи вечера. Откуда вы приехали?" },
+          { "tr": "Tabii, buyurun. Biletiniz var mı?", "ru": "Конечно, пожалуйста. У вас есть билет?" }
+        ]},
+        { "speaker": "a", "tr": "Çok ilginç! Şu büyük oda ne? Bir bakabilir miyiz?", "ru": "Как интересно! А что это за большая комната? Можно посмотреть?", "distractors": [
+          { "tr": "Hayır, yok. Bilet gişesi nerede?", "ru": "Нет. Где находится касса?" },
+          { "tr": "İstanbul'dan. Erkek arkadaşım bilet alıyor. Fotoğraf çekebilir miyiz?", "ru": "Из Стамбула. Мой парень покупает билеты. Можно фотографировать?" }
+        ]},
+        { "speaker": "b", "tr": "Orası mutfak. Tabii, bakabilirsiniz. İyi gezmeler!", "ru": "Это кухня. Конечно, посмотрите. Приятной прогулки!", "distractors": [
+          { "tr": "Tamam. Bu ne tür bir kuş? Kayalarda çok var.", "ru": "Хорошо. Что это за птица? На скалах их много." },
+          { "tr": "Teşekkürler. Hangi saatlerde açıktır?", "ru": "Спасибо. Какие здесь часы работы?" }
+        ]},
+        { "speaker": "a", "tr": "Teşekkür ederim!", "ru": "Спасибо!", "distractors": [
+          { "tr": "İyi günler. Manastırı ziyaret edebilir miyim?", "ru": "Добрый день. Могу я зайти в монастырь?" },
+          { "tr": "Yazın sabah sekizden akşam yediye kadar. Nereden geliyorsunuz?", "ru": "Летом с восьми утра до семи вечера. Откуда вы приехали?" }
+        ]}
+      ]
+    },
+    {
+      "id": "osmotr-bodrum-anya",
+      "title": "Ольга показывает Ане Бодрум",
+      "level": "A2",
+      "speakers": { "a": "Ольга", "b": "Аня" },
+      "turns": [
+        { "speaker": "a", "tr": "Anya, hoş geldin! Bodrum'u beğendin mi?", "ru": "Аня, добро пожаловать! Тебе нравится Бодрум?", "distractors": [
+          { "tr": "Güzel! Ya şu küçük beyaz binalar ne?", "ru": "Здорово! А что это за маленькие белые здания?" },
+          { "tr": "Burada, Bodrum'da. Şimdi müze, onun kostümleri de orada.", "ru": "Здесь, в Бодруме. Сейчас там музей, там и его костюмы." }
+        ]},
+        { "speaker": "b", "tr": "Çok! Deniz çok mavi. Şu bina ne?", "ru": "Очень! Море такое синее. Что это за здание?", "distractors": [
+          { "tr": "Ne zaman yaşadı?", "ru": "Когда он жил?" },
+          { "tr": "Onlar yel değirmenleri. Eskiden burada çok vardı. Fotoğraf çekmek ister misin?", "ru": "Это ветряные мельницы. Раньше их здесь было много. Хочешь сфотографироваться?" }
+        ]},
+        { "speaker": "a", "tr": "Bodrum Kalesi. Çok eski, şimdi müze. Yarın rehberle gidiyoruz.", "ru": "Бодрумская крепость. Она очень старая, сейчас там музей. Завтра идём туда с гидом.", "distractors": [
+          { "tr": "Zeki Müren'in yaşamış olduğu ev nerede?", "ru": "Где находится дом, в котором жил Зеки Мюрен?" },
+          { "tr": "İsterim, ama önce halı! Bodrum'da güzel bir halı almak istiyorum.", "ru": "Хочу, но сначала ковёр! Хочу купить в Бодруме красивый ковёр." }
+        ]},
+        { "speaker": "b", "tr": "Güzel! Ya şu küçük beyaz binalar ne?", "ru": "Здорово! А что это за маленькие белые здания?", "distractors": [
+          { "tr": "Tamam, önce halı, sonra Zeki Müren!", "ru": "Ладно, сначала ковёр, потом Зеки Мюрен!" },
+          { "tr": "Burada, Bodrum'da. Şimdi müze, onun kostümleri de orada.", "ru": "Здесь, в Бодруме. Сейчас там музей, там и его костюмы." }
+        ]},
+        { "speaker": "a", "tr": "Onlar yel değirmenleri. Eskiden burada çok vardı. Fotoğraf çekmek ister misin?", "ru": "Это ветряные мельницы. Раньше их здесь было много. Хочешь сфотографироваться?", "distractors": [
+          { "tr": "Ne zaman yaşadı?", "ru": "Когда он жил?" },
+          { "tr": "Anya, hoş geldin! Bodrum'u beğendin mi?", "ru": "Аня, добро пожаловать! Тебе нравится Бодрум?" }
+        ]},
+        { "speaker": "b", "tr": "Evet! Bodrum'da ünlü biri yaşadı mı?", "ru": "Да! А в Бодруме жил кто-нибудь знаменитый?", "distractors": [
+          { "tr": "Çok! Deniz çok mavi. Şu bina ne?", "ru": "Очень! Море такое синее. Что это за здание?" },
+          { "tr": "1931'den 1996'ya kadar. Müzeye gitmek ister misin?", "ru": "С 1931 по 1996 год. Хочешь сходить в музей?" }
+        ]},
+        { "speaker": "a", "tr": "Evet, Zeki Müren. Çok ünlü bir Türk şarkıcı.", "ru": "Да, Зеки Мюрен. Очень известный турецкий певец.", "distractors": [
+          { "tr": "İsterim, ama önce halı! Bodrum'da güzel bir halı almak istiyorum.", "ru": "Хочу, но сначала ковёр! Хочу купить в Бодруме красивый ковёр." },
+          { "tr": "Bodrum Kalesi. Çok eski, şimdi müze. Yarın rehberle gidiyoruz.", "ru": "Бодрумская крепость. Она очень старая, сейчас там музей. Завтра идём туда с гидом." }
+        ]},
+        { "speaker": "b", "tr": "Zeki Müren'in yaşamış olduğu ev nerede?", "ru": "Где находится дом, в котором жил Зеки Мюрен?", "distractors": [
+          { "tr": "Anya, hoş geldin! Bodrum'u beğendin mi?", "ru": "Аня, добро пожаловать! Тебе нравится Бодрум?" },
+          { "tr": "Onlar yel değirmenleri. Eskiden burada çok vardı. Fotoğraf çekmek ister misin?", "ru": "Это ветряные мельницы. Раньше их здесь было много. Хочешь сфотографироваться?" }
+        ]},
+        { "speaker": "a", "tr": "Burada, Bodrum'da. Şimdi müze, onun kostümleri de orada.", "ru": "Здесь, в Бодруме. Сейчас там музей, там и его костюмы.", "distractors": [
+          { "tr": "Anya, hoş geldin! Bodrum'u beğendin mi?", "ru": "Аня, добро пожаловать! Тебе нравится Бодрум?" },
+          { "tr": "Onlar yel değirmenleri. Eskiden burada çok vardı. Fotoğraf çekmek ister misin?", "ru": "Это ветряные мельницы. Раньше их здесь было много. Хочешь сфотографироваться?" }
+        ]},
+        { "speaker": "b", "tr": "Ne zaman yaşadı?", "ru": "Когда он жил?", "distractors": [
+          { "tr": "Evet! Bodrum'da ünlü biri yaşadı mı?", "ru": "Да! А в Бодруме жил кто-нибудь знаменитый?" },
+          { "tr": "Çok! Deniz çok mavi. Şu bina ne?", "ru": "Очень! Море такое синее. Что это за здание?" }
+        ]},
+        { "speaker": "a", "tr": "1931'den 1996'ya kadar. Müzeye gitmek ister misin?", "ru": "С 1931 по 1996 год. Хочешь сходить в музей?", "distractors": [
+          { "tr": "Bodrum Kalesi. Çok eski, şimdi müze. Yarın rehberle gidiyoruz.", "ru": "Бодрумская крепость. Она очень старая, сейчас там музей. Завтра идём туда с гидом." },
+          { "tr": "Evet, Zeki Müren. Çok ünlü bir Türk şarkıcı.", "ru": "Да, Зеки Мюрен. Очень известный турецкий певец." }
+        ]},
+        { "speaker": "b", "tr": "İsterim, ama önce halı! Bodrum'da güzel bir halı almak istiyorum.", "ru": "Хочу, но сначала ковёр! Хочу купить в Бодруме красивый ковёр.", "distractors": [
+          { "tr": "Burada, Bodrum'da. Şimdi müze, onun kostümleri de orada.", "ru": "Здесь, в Бодруме. Сейчас там музей, там и его костюмы." },
+          { "tr": "Güzel! Ya şu küçük beyaz binalar ne?", "ru": "Здорово! А что это за маленькие белые здания?" }
+        ]},
+        { "speaker": "a", "tr": "Tamam, önce halı, sonra Zeki Müren!", "ru": "Ладно, сначала ковёр, потом Зеки Мюрен!", "distractors": [
+          { "tr": "Anya, hoş geldin! Bodrum'u beğendin mi?", "ru": "Аня, добро пожаловать! Тебе нравится Бодрум?" },
+          { "tr": "Evet! Bodrum'da ünlü biri yaşadı mı?", "ru": "Да! А в Бодруме жил кто-нибудь знаменитый?" }
+        ]}
+      ]
+    },
+    {
+      "id": "osmotr-bodrum-agentstvo",
+      "title": "Бодрум: гид для Ани",
+      "level": "A2",
+      "speakers": { "a": "Ольга", "b": "Бекир" },
+      "turns": [
+        { "speaker": "a", "tr": "Merhaba. Yarım gün için Rusça bilen bir rehber tutmak istiyoruz.", "ru": "Здравствуйте. Мы бы хотели нанять русскоговорящего гида на полдня.", "distractors": [
+          { "tr": "Anladım. Bodrum'da ne kadar kalıyorsunuz?", "ru": "Понятно. Сколько вы пробудете в Бодруме?" },
+          { "tr": "Gümbet'te, Mavi Otel'de. Rehber bizi otelden alabilir mi?", "ru": "В Гюмбете, в «Мави Отеле». Гид может заехать за нами в отель?" }
+        ]},
+        { "speaker": "b", "tr": "Tabii. Kaç kişisiniz?", "ru": "Конечно. Сколько вас?", "distractors": [
+          { "tr": "Evet, sabah dokuzda otelin önünde olur.", "ru": "Да, в девять утра она будет у отеля." },
+          { "tr": "Kardeşimle bir haftalığına buradayız.", "ru": "Мы с сестрой здесь на одну неделю." }
+        ]},
+        { "speaker": "a", "tr": "İki kişiyiz, ben ve kardeşim. Kardeşim Türkçe bilmiyor.", "ru": "Нас двое: я и сестра. Сестра не знает турецкого.", "distractors": [
+          { "tr": "Evet, çok iyi biliyor. Annesi Rus. Hangi oteldesiniz?", "ru": "Да, очень хорошо. У неё мама русская. В каком вы отеле?" },
+          { "tr": "Saat birde oteldesiniz.", "ru": "В час дня вы будете в отеле." }
+        ]},
+        { "speaker": "b", "tr": "Anladım. Bodrum'da ne kadar kalıyorsunuz?", "ru": "Понятно. Сколько вы пробудете в Бодруме?", "distractors": [
+          { "tr": "Çok iyi. Yarın için, lütfen.", "ru": "Очень хорошо. Тогда на завтра, пожалуйста." },
+          { "tr": "Gümbet'te, Mavi Otel'de. Rehber bizi otelden alabilir mi?", "ru": "В Гюмбете, в «Мави Отеле». Гид может заехать за нами в отель?" }
+        ]},
+        { "speaker": "a", "tr": "Kardeşimle bir haftalığına buradayız.", "ru": "Мы с сестрой здесь на одну неделю.", "distractors": [
+          { "tr": "Evet, sabah dokuzda otelin önünde olur.", "ru": "Да, в девять утра она будет у отеля." },
+          { "tr": "Merhaba. Yarım gün için Rusça bilen bir rehber tutmak istiyoruz.", "ru": "Здравствуйте. Мы бы хотели нанять русскоговорящего гида на полдня." }
+        ]},
+        { "speaker": "b", "tr": "Güzel. Nereyi görmek istiyorsunuz?", "ru": "Хорошо. Что вы хотите посмотреть?", "distractors": [
+          { "tr": "Ne zaman geri dönüyoruz?", "ru": "Во сколько мы вернёмся?" },
+          { "tr": "Merhaba. Yarım gün için Rusça bilen bir rehber tutmak istiyoruz.", "ru": "Здравствуйте. Мы бы хотели нанять русскоговорящего гида на полдня." }
+        ]},
+        { "speaker": "a", "tr": "Bodrum Kalesi'ni ve Mozole'yi. Rehber Rusça biliyor mu?", "ru": "Бодрумскую крепость и Мавзолей. Этот гид говорит по-русски?", "distractors": [
+          { "tr": "Saat birde oteldesiniz.", "ru": "В час дня вы будете в отеле." },
+          { "tr": "İki kişiyiz, ben ve kardeşim. Kardeşim Türkçe bilmiyor.", "ru": "Нас двое: я и сестра. Сестра не знает турецкого." }
+        ]},
+        { "speaker": "b", "tr": "Evet, çok iyi biliyor. Annesi Rus. Hangi oteldesiniz?", "ru": "Да, очень хорошо. У неё мама русская. В каком вы отеле?", "distractors": [
+          { "tr": "Merhaba. Yarım gün için Rusça bilen bir rehber tutmak istiyoruz.", "ru": "Здравствуйте. Мы бы хотели нанять русскоговорящего гида на полдня." },
+          { "tr": "Kardeşimle bir haftalığına buradayız.", "ru": "Мы с сестрой здесь на одну неделю." }
+        ]},
+        { "speaker": "a", "tr": "Gümbet'te, Mavi Otel'de. Rehber bizi otelden alabilir mi?", "ru": "В Гюмбете, в «Мави Отеле». Гид может заехать за нами в отель?", "distractors": [
+          { "tr": "Merhaba. Yarım gün için Rusça bilen bir rehber tutmak istiyoruz.", "ru": "Здравствуйте. Мы бы хотели нанять русскоговорящего гида на полдня." },
+          { "tr": "Kardeşimle bir haftalığına buradayız.", "ru": "Мы с сестрой здесь на одну неделю." }
+        ]},
+        { "speaker": "b", "tr": "Evet, sabah dokuzda otelin önünde olur.", "ru": "Да, в девять утра она будет у отеля.", "distractors": [
+          { "tr": "Kardeşimle bir haftalığına buradayız.", "ru": "Мы с сестрой здесь на одну неделю." },
+          { "tr": "Çok iyi. Yarın için, lütfen.", "ru": "Очень хорошо. Тогда на завтра, пожалуйста." }
+        ]},
+        { "speaker": "a", "tr": "Ne zaman geri dönüyoruz?", "ru": "Во сколько мы вернёмся?", "distractors": [
+          { "tr": "İki kişiyiz, ben ve kardeşim. Kardeşim Türkçe bilmiyor.", "ru": "Нас двое: я и сестра. Сестра не знает турецкого." },
+          { "tr": "Bodrum Kalesi'ni ve Mozole'yi. Rehber Rusça biliyor mu?", "ru": "Бодрумскую крепость и Мавзолей. Этот гид говорит по-русски?" }
+        ]},
+        { "speaker": "b", "tr": "Saat birde oteldesiniz.", "ru": "В час дня вы будете в отеле.", "distractors": [
+          { "tr": "Tabii. Kaç kişisiniz?", "ru": "Конечно. Сколько вас?" },
+          { "tr": "Güzel. Nereyi görmek istiyorsunuz?", "ru": "Хорошо. Что вы хотите посмотреть?" }
+        ]},
+        { "speaker": "a", "tr": "Çok iyi. Yarın için, lütfen.", "ru": "Очень хорошо. Тогда на завтра, пожалуйста.", "distractors": [
+          { "tr": "Merhaba. Yarım gün için Rusça bilen bir rehber tutmak istiyoruz.", "ru": "Здравствуйте. Мы бы хотели нанять русскоговорящего гида на полдня." },
+          { "tr": "Güzel. Nereyi görmek istiyorsunuz?", "ru": "Хорошо. Что вы хотите посмотреть?" }
+        ]}
+      ]
+    },
+    {
+      "id": "osmotr-bodrum-mozole",
+      "title": "Бодрум: с гидом у Мавзолея",
+      "level": "A2",
+      "speakers": { "a": "Ольга", "b": "Мелек" },
+      "turns": [
+        { "speaker": "a", "tr": "Günaydın! Siz rehberimiz misiniz?", "ru": "Доброе утро! Вы наш гид?", "distractors": [
+          { "tr": "Burası Mozole. Dünyanın yedi harikasından biri.", "ru": "Это Мавзолей. Одно из семи чудес света." },
+          { "tr": "Evet, sanatla ilgileniyorum. Bu ne zaman yapıldı?", "ru": "Да, я увлекаюсь искусством. Когда это было построено?" }
+        ]},
+        { "speaker": "b", "tr": "Evet, günaydın! Hoş geldiniz. Kardeşiniz nerede?", "ru": "Да, доброе утро! Добро пожаловать. А где ваша сестра?", "distractors": [
+          { "tr": "Milattan önce dördüncü yüzyılda, Kral Mausolos için.", "ru": "В четвёртом веке до нашей эры, для царя Мавсола." },
+          { "tr": "Ama burada çok az şey var!", "ru": "Но здесь почти ничего не осталось!" }
+        ]},
+        { "speaker": "a", "tr": "Geliyor, fotoğraf çekiyor. Burası neresi?", "ru": "Идёт, она фотографирует. Что это за место?", "distractors": [
+          { "tr": "Dört heykeltıraş vardı, en ünlüsü Skopas. Siz sanatla ilgileniyor musunuz?", "ru": "Их было четверо, самый известный — Скопас. Вы увлекаетесь искусством?" },
+          { "tr": "Evet, on beş dakika. Sahilden gideriz.", "ru": "Да, пятнадцать минут. Пойдём по набережной." }
+        ]},
+        { "speaker": "b", "tr": "Burası Mozole. Dünyanın yedi harikasından biri.", "ru": "Это Мавзолей. Одно из семи чудес света.", "distractors": [
+          { "tr": "Harika! Anya, gel, gidiyoruz!", "ru": "Отлично! Аня, иди сюда, мы идём!" },
+          { "tr": "Evet, sanatla ilgileniyorum. Bu ne zaman yapıldı?", "ru": "Да, я увлекаюсь искусством. Когда это было построено?" }
+        ]},
+        { "speaker": "a", "tr": "Ama burada çok az şey var!", "ru": "Но здесь почти ничего не осталось!", "distractors": [
+          { "tr": "Milattan önce dördüncü yüzyılda, Kral Mausolos için.", "ru": "В четвёртом веке до нашей эры, для царя Мавсола." },
+          { "tr": "Günaydın! Siz rehberimiz misiniz?", "ru": "Доброе утро! Вы наш гид?" }
+        ]},
+        { "speaker": "b", "tr": "Evet, taşların çoğu kaleye gitti. Heykellerin çoğu da Londra'da.", "ru": "Да, большая часть камней ушла на крепость. А большинство статуй — в Лондоне.", "distractors": [
+          { "tr": "Evet, günaydın! Hoş geldiniz. Kardeşiniz nerede?", "ru": "Да, доброе утро! Добро пожаловать. А где ваша сестра?" },
+          { "tr": "Sonra kaleye gidiyoruz, değil mi? Oraya yürüyerek gidebilir miyiz?", "ru": "Потом мы идём в крепость, да? Сможем мы туда добраться пешком?" }
+        ]},
+        { "speaker": "a", "tr": "Heykeltıraş kim?", "ru": "Кто скульптор?", "distractors": [
+          { "tr": "Evet, on beş dakika. Sahilden gideriz.", "ru": "Да, пятнадцать минут. Пойдём по набережной." },
+          { "tr": "Geliyor, fotoğraf çekiyor. Burası neresi?", "ru": "Идёт, она фотографирует. Что это за место?" }
+        ]},
+        { "speaker": "b", "tr": "Dört heykeltıraş vardı, en ünlüsü Skopas. Siz sanatla ilgileniyor musunuz?", "ru": "Их было четверо, самый известный — Скопас. Вы увлекаетесь искусством?", "distractors": [
+          { "tr": "Burası Mozole. Dünyanın yedi harikasından biri.", "ru": "Это Мавзолей. Одно из семи чудес света." },
+          { "tr": "Harika! Anya, gel, gidiyoruz!", "ru": "Отлично! Аня, иди сюда, мы идём!" }
+        ]},
+        { "speaker": "a", "tr": "Evet, sanatla ilgileniyorum. Bu ne zaman yapıldı?", "ru": "Да, я увлекаюсь искусством. Когда это было построено?", "distractors": [
+          { "tr": "Günaydın! Siz rehberimiz misiniz?", "ru": "Доброе утро! Вы наш гид?" },
+          { "tr": "Ama burada çok az şey var!", "ru": "Но здесь почти ничего не осталось!" }
+        ]},
+        { "speaker": "b", "tr": "Milattan önce dördüncü yüzyılda, Kral Mausolos için.", "ru": "В четвёртом веке до нашей эры, для царя Мавсола.", "distractors": [
+          { "tr": "Evet, taşların çoğu kaleye gitti. Heykellerin çoğu da Londra'da.", "ru": "Да, большая часть камней ушла на крепость. А большинство статуй — в Лондоне." },
+          { "tr": "Evet, günaydın! Hoş geldiniz. Kardeşiniz nerede?", "ru": "Да, доброе утро! Добро пожаловать. А где ваша сестра?" }
+        ]},
+        { "speaker": "a", "tr": "Sonra kaleye gidiyoruz, değil mi? Oraya yürüyerek gidebilir miyiz?", "ru": "Потом мы идём в крепость, да? Сможем мы туда добраться пешком?", "distractors": [
+          { "tr": "Geliyor, fotoğraf çekiyor. Burası neresi?", "ru": "Идёт, она фотографирует. Что это за место?" },
+          { "tr": "Heykeltıraş kim?", "ru": "Кто скульптор?" }
+        ]},
+        { "speaker": "b", "tr": "Evet, on beş dakika. Sahilden gideriz.", "ru": "Да, пятнадцать минут. Пойдём по набережной.", "distractors": [
+          { "tr": "Evet, günaydın! Hoş geldiniz. Kardeşiniz nerede?", "ru": "Да, доброе утро! Добро пожаловать. А где ваша сестра?" },
+          { "tr": "Evet, taşların çoğu kaleye gitti. Heykellerin çoğu da Londra'da.", "ru": "Да, большая часть камней ушла на крепость. А большинство статуй — в Лондоне." }
+        ]},
+        { "speaker": "a", "tr": "Harika! Anya, gel, gidiyoruz!", "ru": "Отлично! Аня, иди сюда, мы идём!", "distractors": [
+          { "tr": "Günaydın! Siz rehberimiz misiniz?", "ru": "Доброе утро! Вы наш гид?" },
+          { "tr": "Evet, taşların çoğu kaleye gitti. Heykellerin çoğu da Londra'da.", "ru": "Да, большая часть камней ушла на крепость. А большинство статуй — в Лондоне." }
+        ]}
+      ]
+    },
+    {
+      "id": "osmotr-bodrum-kale-kassa",
+      "title": "Бодрумская крепость: касса",
+      "level": "A2",
+      "speakers": { "a": "Ольга", "b": "Ясемин" },
+      "turns": [
+        { "speaker": "a", "tr": "Merhaba. İki bilet, lütfen.", "ru": "Здравствуйте. Два билета, пожалуйста.", "distractors": [
+          { "tr": "Var. Öğrenci misiniz?", "ru": "Есть. Вы студентка?" },
+          { "tr": "Kalenin içinde, müze dükkanında. Rusça katalog da var.", "ru": "Внутри крепости, в музейном магазине. Есть и каталог на русском." }
+        ]},
+        { "speaker": "b", "tr": "Merhaba. Kale bugün açık, ama bir salon kapalı. Yine de bilet istiyor musunuz?", "ru": "Здравствуйте. Крепость сегодня открыта, но один зал закрыт. Всё равно возьмёте билеты?", "distractors": [
+          { "tr": "Ben Türkçe kursuna gidiyorum!", "ru": "Я хожу на курсы турецкого!" },
+          { "tr": "Kalenin içinde, müze dükkanında. Rusça katalog da var.", "ru": "Внутри крепости, в музейном магазине. Есть и каталог на русском." }
+        ]},
+        { "speaker": "a", "tr": "Evet, istiyoruz. Öğrenciler için indirim var mı?", "ru": "Да, возьмём. У вас есть скидки для студентов?", "distractors": [
+          { "tr": "Maalesef, sadece üniversite öğrencileri için. Kartla mı ödüyorsunuz?", "ru": "К сожалению, только для студентов университета. Будете платить картой?" },
+          { "tr": "Harika. Burada hatıralık eşya almak olanaklı mı?", "ru": "Отлично. Здесь можно купить сувенир?" }
+        ]},
+        { "speaker": "b", "tr": "Var. Öğrenci misiniz?", "ru": "Есть. Вы студентка?", "distractors": [
+          { "tr": "Harika. Burada hatıralık eşya almak olanaklı mı?", "ru": "Отлично. Здесь можно купить сувенир?" },
+          { "tr": "Merhaba. İki bilet, lütfen.", "ru": "Здравствуйте. Два билета, пожалуйста." }
+        ]},
+        { "speaker": "a", "tr": "Ben Türkçe kursuna gidiyorum!", "ru": "Я хожу на курсы турецкого!", "distractors": [
+          { "tr": "Kalenin içinde, müze dükkanında. Rusça katalog da var.", "ru": "Внутри крепости, в музейном магазине. Есть и каталог на русском." },
+          { "tr": "Teşekkürler, iyi günler!", "ru": "Спасибо, хорошего дня!" }
+        ]},
+        { "speaker": "b", "tr": "Maalesef, sadece üniversite öğrencileri için. Kartla mı ödüyorsunuz?", "ru": "К сожалению, только для студентов университета. Будете платить картой?", "distractors": [
+          { "tr": "Merhaba. Kale bugün açık, ama bir salon kapalı. Yine de bilet istiyor musunuz?", "ru": "Здравствуйте. Крепость сегодня открыта, но один зал закрыт. Всё равно возьмёте билеты?" },
+          { "tr": "Evet, aynı dükkanda. Buyurun, biletleriniz. İyi gezmeler!", "ru": "Да, в том же магазине. Вот ваши билеты. Приятной прогулки!" }
+        ]},
+        { "speaker": "a", "tr": "Evet, kartla. Nereden bir katalog alabilirim?", "ru": "Да, картой. Где можно приобрести каталог?", "distractors": [
+          { "tr": "Merhaba. İki bilet, lütfen.", "ru": "Здравствуйте. Два билета, пожалуйста." },
+          { "tr": "Var. Öğrenci misiniz?", "ru": "Есть. Вы студентка?" }
+        ]},
+        { "speaker": "b", "tr": "Kalenin içinde, müze dükkanında. Rusça katalog da var.", "ru": "Внутри крепости, в музейном магазине. Есть и каталог на русском.", "distractors": [
+          { "tr": "Teşekkürler, iyi günler!", "ru": "Спасибо, хорошего дня!" },
+          { "tr": "Evet, istiyoruz. Öğrenciler için indirim var mı?", "ru": "Да, возьмём. У вас есть скидки для студентов?" }
+        ]},
+        { "speaker": "a", "tr": "Harika. Burada hatıralık eşya almak olanaklı mı?", "ru": "Отлично. Здесь можно купить сувенир?", "distractors": [
+          { "tr": "Ben Türkçe kursuna gidiyorum!", "ru": "Я хожу на курсы турецкого!" },
+          { "tr": "Merhaba. Kale bugün açık, ama bir salon kapalı. Yine de bilet istiyor musunuz?", "ru": "Здравствуйте. Крепость сегодня открыта, но один зал закрыт. Всё равно возьмёте билеты?" }
+        ]},
+        { "speaker": "b", "tr": "Evet, aynı dükkanda. Buyurun, biletleriniz. İyi gezmeler!", "ru": "Да, в том же магазине. Вот ваши билеты. Приятной прогулки!", "distractors": [
+          { "tr": "Ben Türkçe kursuna gidiyorum!", "ru": "Я хожу на курсы турецкого!" },
+          { "tr": "Merhaba. İki bilet, lütfen.", "ru": "Здравствуйте. Два билета, пожалуйста." }
+        ]},
+        { "speaker": "a", "tr": "Teşekkürler, iyi günler!", "ru": "Спасибо, хорошего дня!", "distractors": [
+          { "tr": "Evet, istiyoruz. Öğrenciler için indirim var mı?", "ru": "Да, возьмём. У вас есть скидки для студентов?" },
+          { "tr": "Evet, kartla. Nereden bir katalog alabilirim?", "ru": "Да, картой. Где можно приобрести каталог?" }
+        ]}
+      ]
+    }
+  ]
+}
