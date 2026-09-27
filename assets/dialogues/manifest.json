@@ -10,5 +10,11 @@
     "title": "Покупки, сервис",
     "count": 39,
     "sizeKB": 253.1
+  },
+  {
+    "id": "puteshestvie",
+    "title": "Путешествие",
+    "count": 36,
+    "sizeKB": 205.5
   }
 ]
