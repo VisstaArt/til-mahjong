@@ -1,0 +1,190 @@
+{
+  "id": "voprositelnye-slova",
+  "title": "Вопросительные слова",
+  "dialogues": [
+    {
+      "id": "voprositelnye-slova-gde-pochta",
+      "title": "Где найти почту? Как далеко?",
+      "level": "A2",
+      "speakers": { "a": "Ольга", "b": "Хюсню" },
+      "turns": [
+        { "speaker": "a", "tr": "Affedersiniz, nerede bir postane bulabilirim?", "ru": "Извините, где я могу найти почту?", "distractors": [
+          { "tr": "Rica ederim. İyi günler!", "ru": "Не за что. Хорошего дня!" },
+          { "tr": "Evet, Moskova'ya, kız kardeşime. Çok teşekkürler!", "ru": "Да, в Москву, сестре. Большое спасибо!" }
+        ]},
+        { "speaker": "b", "tr": "Postane mi? Çarşıda bir postane var.", "ru": "Почту? На рынке есть почта.", "distractors": [
+          { "tr": "Rica ederim. İyi günler!", "ru": "Не за что. Хорошего дня!" },
+          { "tr": "Evet, Moskova'ya, kız kardeşime. Çok teşekkürler!", "ru": "Да, в Москву, сестре. Большое спасибо!" }
+        ]},
+        { "speaker": "a", "tr": "Ne kadar uzaklıkta?", "ru": "Как далеко?", "distractors": [
+          { "tr": "Rica ederim. İyi günler!", "ru": "Не за что. Хорошего дня!" },
+          { "tr": "Evet, Moskova'ya, kız kardeşime. Çok teşekkürler!", "ru": "Да, в Москву, сестре. Большое спасибо!" }
+        ]},
+        { "speaker": "b", "tr": "Çok uzak değil, bir kilometre.", "ru": "Не очень далеко, километр.", "distractors": [
+          { "tr": "Rica ederim. İyi günler!", "ru": "Не за что. Хорошего дня!" },
+          { "tr": "Evet, Moskova'ya, kız kardeşime. Çok teşekkürler!", "ru": "Да, в Москву, сестре. Большое спасибо!" }
+        ]},
+        { "speaker": "a", "tr": "Oraya nasıl gidebilirim?", "ru": "Как мне туда добраться?", "distractors": [
+          { "tr": "Rica ederim. İyi günler!", "ru": "Не за что. Хорошего дня!" },
+          { "tr": "Affedersiniz, nerede bir postane bulabilirim?", "ru": "Извините, где я могу найти почту?" }
+        ]},
+        { "speaker": "b", "tr": "Düz gidin, sonra sağa dönün. Postane caminin yanında.", "ru": "Идите прямо, потом поверните направо. Почта рядом с мечетью.", "distractors": [
+          { "tr": "Affedersiniz, nerede bir postane bulabilirim?", "ru": "Извините, где я могу найти почту?" },
+          { "tr": "Postane mi? Çarşıda bir postane var.", "ru": "Почту? На рынке есть почта." }
+        ]},
+        { "speaker": "a", "tr": "Yürüyerek ne kadar zaman?", "ru": "А пешком сколько идти?", "distractors": [
+          { "tr": "Affedersiniz, nerede bir postane bulabilirim?", "ru": "Извините, где я могу найти почту?" },
+          { "tr": "Postane mi? Çarşıda bir postane var.", "ru": "Почту? На рынке есть почта." }
+        ]},
+        { "speaker": "b", "tr": "On beş dakika. Paket mi göndereceksiniz?", "ru": "Пятнадцать минут. Посылку будете отправлять?", "distractors": [
+          { "tr": "Affedersiniz, nerede bir postane bulabilirim?", "ru": "Извините, где я могу найти почту?" },
+          { "tr": "Postane mi? Çarşıda bir postane var.", "ru": "Почту? На рынке есть почта." }
+        ]},
+        { "speaker": "a", "tr": "Evet, Moskova'ya, kız kardeşime. Çok teşekkürler!", "ru": "Да, в Москву, сестре. Большое спасибо!", "distractors": [
+          { "tr": "Affedersiniz, nerede bir postane bulabilirim?", "ru": "Извините, где я могу найти почту?" },
+          { "tr": "Postane mi? Çarşıda bir postane var.", "ru": "Почту? На рынке есть почта." }
+        ]},
+        { "speaker": "b", "tr": "Rica ederim. İyi günler!", "ru": "Не за что. Хорошего дня!", "distractors": [
+          { "tr": "Affedersiniz, nerede bir postane bulabilirim?", "ru": "Извините, где я могу найти почту?" },
+          { "tr": "Postane mi? Çarşıda bir postane var.", "ru": "Почту? На рынке есть почта." }
+        ]}
+      ]
+    },
+    {
+      "id": "voprositelnye-slova-posylka-ane",
+      "title": "На почте: что мне нужно сделать?",
+      "level": "A2",
+      "speakers": { "a": "Ольга", "b": "Гюльтен" },
+      "turns": [
+        { "speaker": "a", "tr": "Merhaba. Moskova'ya bir paket göndermek istiyorum. Ne yapmam gerek?", "ru": "Здравствуйте. Я хочу отправить посылку в Москву. Что мне нужно сделать?", "distractors": [
+          { "tr": "Evet, kartla. Teşekkürler!", "ru": "Да, картой. Спасибо!" },
+          { "tr": "Dört yüz lira. Kartla mı ödüyorsunuz?", "ru": "Четыреста лир. Платите картой?" }
+        ]},
+        { "speaker": "b", "tr": "Önce bu formu doldurun. Pasaportunuz var mı?", "ru": "Сначала заполните этот бланк. У вас есть паспорт?", "distractors": [
+          { "tr": "Evet, kartla. Teşekkürler!", "ru": "Да, картой. Спасибо!" },
+          { "tr": "Dört yüz lira. Kartla mı ödüyorsunuz?", "ru": "Четыреста лир. Платите картой?" }
+        ]},
+        { "speaker": "a", "tr": "Var. Bir kalem alabilir miyim?", "ru": "Есть. Можно взять ручку?", "distractors": [
+          { "tr": "Evet, kartla. Teşekkürler!", "ru": "Да, картой. Спасибо!" },
+          { "tr": "Dört yüz lira. Kartla mı ödüyorsunuz?", "ru": "Четыреста лир. Платите картой?" }
+        ]},
+        { "speaker": "b", "tr": "Tabii, buyurun. Paketin içinde ne var?", "ru": "Конечно, пожалуйста. Что в посылке?", "distractors": [
+          { "tr": "Evet, kartla. Teşekkürler!", "ru": "Да, картой. Спасибо!" },
+          { "tr": "Dört yüz lira. Kartla mı ödüyorsunuz?", "ru": "Четыреста лир. Платите картой?" }
+        ]},
+        { "speaker": "a", "tr": "Bir kitap ve bir şal. Kız kardeşime hediye.", "ru": "Книга и шаль. Подарок сестре.", "distractors": [
+          { "tr": "Merhaba. Moskova'ya bir paket göndermek istiyorum. Ne yapmam gerek?", "ru": "Здравствуйте. Я хочу отправить посылку в Москву. Что мне нужно сделать?" },
+          { "tr": "Evet, kartla. Teşekkürler!", "ru": "Да, картой. Спасибо!" }
+        ]},
+        { "speaker": "b", "tr": "Tamam. Paket Moskova'ya on günde gidiyor.", "ru": "Хорошо. Посылка идёт в Москву десять дней.", "distractors": [
+          { "tr": "Merhaba. Moskova'ya bir paket göndermek istiyorum. Ne yapmam gerek?", "ru": "Здравствуйте. Я хочу отправить посылку в Москву. Что мне нужно сделать?" },
+          { "tr": "Önce bu formu doldurun. Pasaportunuz var mı?", "ru": "Сначала заполните этот бланк. У вас есть паспорт?" }
+        ]},
+        { "speaker": "a", "tr": "On gün mü? Peki, kaç lira?", "ru": "Десять дней? Ладно, сколько стоит?", "distractors": [
+          { "tr": "Merhaba. Moskova'ya bir paket göndermek istiyorum. Ne yapmam gerek?", "ru": "Здравствуйте. Я хочу отправить посылку в Москву. Что мне нужно сделать?" },
+          { "tr": "Önce bu formu doldurun. Pasaportunuz var mı?", "ru": "Сначала заполните этот бланк. У вас есть паспорт?" }
+        ]},
+        { "speaker": "b", "tr": "Dört yüz lira. Kartla mı ödüyorsunuz?", "ru": "Четыреста лир. Платите картой?", "distractors": [
+          { "tr": "Merhaba. Moskova'ya bir paket göndermek istiyorum. Ne yapmam gerek?", "ru": "Здравствуйте. Я хочу отправить посылку в Москву. Что мне нужно сделать?" },
+          { "tr": "Önce bu formu doldurun. Pasaportunuz var mı?", "ru": "Сначала заполните этот бланк. У вас есть паспорт?" }
+        ]},
+        { "speaker": "a", "tr": "Evet, kartla. Teşekkürler!", "ru": "Да, картой. Спасибо!", "distractors": [
+          { "tr": "Merhaba. Moskova'ya bir paket göndermek istiyorum. Ne yapmam gerek?", "ru": "Здравствуйте. Я хочу отправить посылку в Москву. Что мне нужно сделать?" },
+          { "tr": "Önce bu formu doldurun. Pasaportunuz var mı?", "ru": "Сначала заполните этот бланк. У вас есть паспорт?" }
+        ]}
+      ]
+    },
+    {
+      "id": "voprositelnye-slova-ozge-otchyot",
+      "title": "Озге: где найти, что делать?",
+      "level": "A2",
+      "speakers": { "a": "Ольга", "b": "Озге" },
+      "turns": [
+        { "speaker": "b", "tr": "Olga Hanım, affedersiniz. Nerede kâğıt bulabilirim?", "ru": "Ольга-ханым, извините. Где я могу найти бумагу?", "distractors": [
+          { "tr": "Tabii, buyurun!", "ru": "Конечно, берите!" },
+          { "tr": "Çok teşekkürler! Zımbanızı alabilir miyim?", "ru": "Большое спасибо! Можно взять ваш степлер?" }
+        ]},
+        { "speaker": "a", "tr": "Fotokopi odasında, koridorun sonunda.", "ru": "В копировальной, в конце коридора.", "distractors": [
+          { "tr": "Ne kadar zaman? Rapor bugün lazım.", "ru": "Сколько времени? Отчёт нужен сегодня." },
+          { "tr": "Rapor hazır mı?", "ru": "Отчёт готов?" }
+        ]},
+        { "speaker": "b", "tr": "Teşekkürler. Metin Bey'e rapor göndermek istiyorum. Ne yapmam gerek?", "ru": "Спасибо. Я хочу отправить отчёт Метин-бею. Что мне нужно сделать?", "distractors": [
+          { "tr": "Tabii, buyurun!", "ru": "Конечно, берите!" },
+          { "tr": "Çok teşekkürler! Zımbanızı alabilir miyim?", "ru": "Большое спасибо! Можно взять ваш степлер?" }
+        ]},
+        { "speaker": "a", "tr": "Rapor hazır mı?", "ru": "Отчёт готов?", "distractors": [
+          { "tr": "Tabii, buyurun!", "ru": "Конечно, берите!" },
+          { "tr": "Çok teşekkürler! Zımbanızı alabilir miyim?", "ru": "Большое спасибо! Можно взять ваш степлер?" }
+        ]},
+        { "speaker": "b", "tr": "Evet, hazır.", "ru": "Да, готов.", "distractors": [
+          { "tr": "Olga Hanım, affedersiniz. Nerede kâğıt bulabilirim?", "ru": "Ольга-ханым, извините. Где я могу найти бумагу?" },
+          { "tr": "Ne kadar zaman? Rapor bugün lazım.", "ru": "Сколько времени? Отчёт нужен сегодня." }
+        ]},
+        { "speaker": "a", "tr": "Önce Tuba Hanım'a gönderin. O kontrol ediyor, sonra Metin Bey'e gönderiyor.", "ru": "Сначала отправьте Тубе-ханым. Она проверяет, потом отправляет Метин-бею.", "distractors": [
+          { "tr": "Olga Hanım, affedersiniz. Nerede kâğıt bulabilirim?", "ru": "Ольга-ханым, извините. Где я могу найти бумагу?" },
+          { "tr": "Fotokopi odasında, koridorun sonunda.", "ru": "В копировальной, в конце коридора." }
+        ]},
+        { "speaker": "b", "tr": "Ne kadar zaman? Rapor bugün lazım.", "ru": "Сколько времени? Отчёт нужен сегодня.", "distractors": [
+          { "tr": "Olga Hanım, affedersiniz. Nerede kâğıt bulabilirim?", "ru": "Ольга-ханым, извините. Где я могу найти бумагу?" },
+          { "tr": "Fotokopi odasında, koridorun sonunda.", "ru": "В копировальной, в конце коридора." }
+        ]},
+        { "speaker": "a", "tr": "Bir saat, belki daha az. Merak etmeyin.", "ru": "Час, может быть, меньше. Не волнуйтесь.", "distractors": [
+          { "tr": "Olga Hanım, affedersiniz. Nerede kâğıt bulabilirim?", "ru": "Ольга-ханым, извините. Где я могу найти бумагу?" },
+          { "tr": "Fotokopi odasında, koridorun sonunda.", "ru": "В копировальной, в конце коридора." }
+        ]},
+        { "speaker": "b", "tr": "Çok teşekkürler! Zımbanızı alabilir miyim?", "ru": "Большое спасибо! Можно взять ваш степлер?", "distractors": [
+          { "tr": "Olga Hanım, affedersiniz. Nerede kâğıt bulabilirim?", "ru": "Ольга-ханым, извините. Где я могу найти бумагу?" },
+          { "tr": "Fotokopi odasında, koridorun sonunda.", "ru": "В копировальной, в конце коридора." }
+        ]},
+        { "speaker": "a", "tr": "Tabii, buyurun!", "ru": "Конечно, берите!", "distractors": [
+          { "tr": "Olga Hanım, affedersiniz. Nerede kâğıt bulabilirim?", "ru": "Ольга-ханым, извините. Где я могу найти бумагу?" },
+          { "tr": "Fotokopi odasında, koridorun sonunda.", "ru": "В копировальной, в конце коридора." }
+        ]}
+      ]
+    },
+    {
+      "id": "voprositelnye-slova-kuzey-kofe",
+      "title": "Кузей: можно взять…?",
+      "level": "A1",
+      "speakers": { "a": "Ольга", "b": "Кузей" },
+      "turns": [
+        { "speaker": "b", "tr": "Günaydın Olga Hanım! Her zamanki gibi mi? Büyük, sütlü, şekersiz?", "ru": "Доброе утро, Ольга-ханым! Как обычно? Большой, с молоком, без сахара?", "distractors": [
+          { "tr": "Buyurun, afiyet olsun! İyi günler!", "ru": "Пожалуйста, приятного аппетита! Хорошего дня!" },
+          { "tr": "Evet, kartla.", "ru": "Да, картой." }
+        ]},
+        { "speaker": "a", "tr": "Evet, lütfen. Bir bardak su alabilir miyim?", "ru": "Да, пожалуйста. Можно ещё стакан воды?", "distractors": [
+          { "tr": "Buyurun, afiyet olsun! İyi günler!", "ru": "Пожалуйста, приятного аппетита! Хорошего дня!" },
+          { "tr": "Evet, kartla.", "ru": "Да, картой." }
+        ]},
+        { "speaker": "b", "tr": "Tabii. Başka bir şey?", "ru": "Конечно. Что-нибудь ещё?", "distractors": [
+          { "tr": "Buyurun, afiyet olsun! İyi günler!", "ru": "Пожалуйста, приятного аппетита! Хорошего дня!" },
+          { "tr": "Evet, kartla.", "ru": "Да, картой." }
+        ]},
+        { "speaker": "a", "tr": "Ofis için dört poğaça alabilir miyim?", "ru": "Можно взять четыре погачи для офиса?", "distractors": [
+          { "tr": "Buyurun, afiyet olsun! İyi günler!", "ru": "Пожалуйста, приятного аппетита! Хорошего дня!" },
+          { "tr": "Evet, kartla.", "ru": "Да, картой." }
+        ]},
+        { "speaker": "b", "tr": "Maalesef poğaça bitti. Simit var.", "ru": "К сожалению, погача закончилась. Есть симиты.", "distractors": [
+          { "tr": "Günaydın Olga Hanım! Her zamanki gibi mi? Büyük, sütlü, şekersiz?", "ru": "Доброе утро, Ольга-ханым! Как обычно? Большой, с молоком, без сахара?" },
+          { "tr": "Buyurun, afiyet olsun! İyi günler!", "ru": "Пожалуйста, приятного аппетита! Хорошего дня!" }
+        ]},
+        { "speaker": "a", "tr": "O zaman dört simit, lütfen. Ne kadar zaman? Acelem var.", "ru": "Тогда четыре симита, пожалуйста. Сколько ждать? Я спешу.", "distractors": [
+          { "tr": "Günaydın Olga Hanım! Her zamanki gibi mi? Büyük, sütlü, şekersiz?", "ru": "Доброе утро, Ольга-ханым! Как обычно? Большой, с молоком, без сахара?" },
+          { "tr": "Evet, lütfen. Bir bardak su alabilir miyim?", "ru": "Да, пожалуйста. Можно ещё стакан воды?" }
+        ]},
+        { "speaker": "b", "tr": "İki dakika. Kartla mı ödüyorsunuz?", "ru": "Две минуты. Картой платите?", "distractors": [
+          { "tr": "Günaydın Olga Hanım! Her zamanki gibi mi? Büyük, sütlü, şekersiz?", "ru": "Доброе утро, Ольга-ханым! Как обычно? Большой, с молоком, без сахара?" },
+          { "tr": "Evet, lütfen. Bir bardak su alabilir miyim?", "ru": "Да, пожалуйста. Можно ещё стакан воды?" }
+        ]},
+        { "speaker": "a", "tr": "Evet, kartla.", "ru": "Да, картой.", "distractors": [
+          { "tr": "Günaydın Olga Hanım! Her zamanki gibi mi? Büyük, sütlü, şekersiz?", "ru": "Доброе утро, Ольга-ханым! Как обычно? Большой, с молоком, без сахара?" },
+          { "tr": "Evet, lütfen. Bir bardak su alabilir miyim?", "ru": "Да, пожалуйста. Можно ещё стакан воды?" }
+        ]},
+        { "speaker": "b", "tr": "Buyurun, afiyet olsun! İyi günler!", "ru": "Пожалуйста, приятного аппетита! Хорошего дня!", "distractors": [
+          { "tr": "Günaydın Olga Hanım! Her zamanki gibi mi? Büyük, sütlü, şekersiz?", "ru": "Доброе утро, Ольга-ханым! Как обычно? Большой, с молоком, без сахара?" },
+          { "tr": "Evet, lütfen. Bir bardak su alabilir miyim?", "ru": "Да, пожалуйста. Можно ещё стакан воды?" }
+        ]}
+      ]
+    }
+  ]
+}

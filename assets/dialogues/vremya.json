@@ -1,0 +1,218 @@
+{
+  "id": "vremya",
+  "title": "Время",
+  "dialogues": [
+    {
+      "id": "vremya-skolko-vremeni",
+      "title": "Который час? На улице",
+      "level": "A1",
+      "speakers": { "a": "Ольга", "b": "Недим" },
+      "turns": [
+        { "speaker": "a", "tr": "Affedersiniz, saat kaç?", "ru": "Извините, который час?", "distractors": [
+          { "tr": "Altıda kapanıyor. Hâlâ vaktiniz var.", "ru": "В шесть. У вас ещё есть время." },
+          { "tr": "Telefonda saat beş. Sizin saatiniz geri.", "ru": "На телефоне пять. Ваши часы отстают." }
+        ]},
+        { "speaker": "b", "tr": "Saat beş.", "ru": "Пять часов.", "distractors": [
+          { "tr": "İyi günler!", "ru": "Хорошего дня!" },
+          { "tr": "Çok teşekkürler! İyi günler!", "ru": "Большое спасибо! Хорошего дня!" }
+        ]},
+        { "speaker": "a", "tr": "Beş mi? Benim saatim dört buçuk!", "ru": "Пять? А на моих половина пятого!", "distractors": [
+          { "tr": "İyi günler!", "ru": "Хорошего дня!" },
+          { "tr": "Çok teşekkürler! İyi günler!", "ru": "Большое спасибо! Хорошего дня!" }
+        ]},
+        { "speaker": "b", "tr": "Telefonda saat beş. Sizin saatiniz geri.", "ru": "На телефоне пять. Ваши часы отстают.", "distractors": [
+          { "tr": "İyi günler!", "ru": "Хорошего дня!" },
+          { "tr": "Affedersiniz, saat kaç?", "ru": "Извините, который час?" }
+        ]},
+        { "speaker": "a", "tr": "Eyvah! Eczane saat kaçta kapanıyor, biliyor musunuz?", "ru": "Ой! Не знаете, во сколько закрывается аптека?", "distractors": [
+          { "tr": "Affedersiniz, saat kaç?", "ru": "Извините, который час?" },
+          { "tr": "Saat beş.", "ru": "Пять часов." }
+        ]},
+        { "speaker": "b", "tr": "Altıda kapanıyor. Hâlâ vaktiniz var.", "ru": "В шесть. У вас ещё есть время.", "distractors": [
+          { "tr": "Affedersiniz, saat kaç?", "ru": "Извините, который час?" },
+          { "tr": "Saat beş.", "ru": "Пять часов." }
+        ]},
+        { "speaker": "a", "tr": "Çok teşekkürler! İyi günler!", "ru": "Большое спасибо! Хорошего дня!", "distractors": [
+          { "tr": "Affedersiniz, saat kaç?", "ru": "Извините, который час?" },
+          { "tr": "Saat beş.", "ru": "Пять часов." }
+        ]},
+        { "speaker": "b", "tr": "İyi günler!", "ru": "Хорошего дня!", "distractors": [
+          { "tr": "Affedersiniz, saat kaç?", "ru": "Извините, который час?" },
+          { "tr": "Saat beş.", "ru": "Пять часов." }
+        ]}
+      ]
+    },
+    {
+      "id": "vremya-opazdyvayu-na-parohod",
+      "title": "Опаздываю на пароход: такси",
+      "level": "A1",
+      "speakers": { "a": "Ольга", "b": "Шахин" },
+      "turns": [
+        { "speaker": "a", "tr": "Günaydın! İskeleye, lütfen. Acelem var.", "ru": "Доброе утро! На пристань, пожалуйста. Я спешу.", "distractors": [
+          { "tr": "Yüz yirmi lira. İyi günler!", "ru": "Сто двадцать лир. Хорошего дня!" },
+          { "tr": "Harika! Kaç lira?", "ru": "Отлично! Сколько с меня?" }
+        ]},
+        { "speaker": "b", "tr": "Tamam. Vapurunuz saat kaçta?", "ru": "Хорошо. Во сколько ваш пароход?", "distractors": [
+          { "tr": "Yüz yirmi lira. İyi günler!", "ru": "Сто двадцать лир. Хорошего дня!" },
+          { "tr": "Harika! Kaç lira?", "ru": "Отлично! Сколько с меня?" }
+        ]},
+        { "speaker": "a", "tr": "Sekiz buçuk. Şimdi saat kaç?", "ru": "Половина девятого. А сейчас который час?", "distractors": [
+          { "tr": "Yüz yirmi lira. İyi günler!", "ru": "Сто двадцать лир. Хорошего дня!" },
+          { "tr": "Harika! Kaç lira?", "ru": "Отлично! Сколько с меня?" }
+        ]},
+        { "speaker": "b", "tr": "Sekizi çeyrek geçiyor.", "ru": "Пятнадцать минут девятого.", "distractors": [
+          { "tr": "Yüz yirmi lira. İyi günler!", "ru": "Сто двадцать лир. Хорошего дня!" },
+          { "tr": "Harika! Kaç lira?", "ru": "Отлично! Сколько с меня?" }
+        ]},
+        { "speaker": "a", "tr": "Eyvah! Vapura yetişiyor muyuz?", "ru": "Ой! Мы успеваем на пароход?", "distractors": [
+          { "tr": "Yüz yirmi lira. İyi günler!", "ru": "Сто двадцать лир. Хорошего дня!" },
+          { "tr": "Günaydın! İskeleye, lütfen. Acelem var.", "ru": "Доброе утро! На пристань, пожалуйста. Я спешу." }
+        ]},
+        { "speaker": "b", "tr": "Merak etmeyin, on dakikada iskeledeyiz.", "ru": "Не волнуйтесь, через десять минут будем на пристани.", "distractors": [
+          { "tr": "Günaydın! İskeleye, lütfen. Acelem var.", "ru": "Доброе утро! На пристань, пожалуйста. Я спешу." },
+          { "tr": "Tamam. Vapurunuz saat kaçta?", "ru": "Хорошо. Во сколько ваш пароход?" }
+        ]},
+        { "speaker": "a", "tr": "Çok teşekkür ederim!", "ru": "Большое спасибо!", "distractors": [
+          { "tr": "Günaydın! İskeleye, lütfen. Acelem var.", "ru": "Доброе утро! На пристань, пожалуйста. Я спешу." },
+          { "tr": "Tamam. Vapurunuz saat kaçta?", "ru": "Хорошо. Во сколько ваш пароход?" }
+        ]},
+        { "speaker": "b", "tr": "İşte iskele! Saat sekizi yirmi beş geçiyor.", "ru": "Вот и пристань! Двадцать пять минут девятого.", "distractors": [
+          { "tr": "Günaydın! İskeleye, lütfen. Acelem var.", "ru": "Доброе утро! На пристань, пожалуйста. Я спешу." },
+          { "tr": "Tamam. Vapurunuz saat kaçta?", "ru": "Хорошо. Во сколько ваш пароход?" }
+        ]},
+        { "speaker": "a", "tr": "Harika! Kaç lira?", "ru": "Отлично! Сколько с меня?", "distractors": [
+          { "tr": "Günaydın! İskeleye, lütfen. Acelem var.", "ru": "Доброе утро! На пристань, пожалуйста. Я спешу." },
+          { "tr": "Tamam. Vapurunuz saat kaçta?", "ru": "Хорошо. Во сколько ваш пароход?" }
+        ]},
+        { "speaker": "b", "tr": "Yüz yirmi lira. İyi günler!", "ru": "Сто двадцать лир. Хорошего дня!", "distractors": [
+          { "tr": "Günaydın! İskeleye, lütfen. Acelem var.", "ru": "Доброе утро! На пристань, пожалуйста. Я спешу." },
+          { "tr": "Tamam. Vapurunuz saat kaçta?", "ru": "Хорошо. Во сколько ваш пароход?" }
+        ]}
+      ]
+    },
+    {
+      "id": "vremya-tuba-soveshchanie",
+      "title": "Туба и совещание в два",
+      "level": "A1",
+      "speakers": { "a": "Ольга", "b": "Туба" },
+      "turns": [
+        { "speaker": "b", "tr": "Olga, saat kaç? Telefonumun şarjı bitti.", "ru": "Ольга, который час? У меня сел телефон.", "distractors": [
+          { "tr": "Tamam. Çayımı içiyorum ve gidiyorum!", "ru": "Ладно. Допиваю чай и иду!" },
+          { "tr": "Hayır, ben saat üçte Özge ile çalışıyorum.", "ru": "Нет, в три я работаю с Озге." }
+        ]},
+        { "speaker": "a", "tr": "İkiye çeyrek var.", "ru": "Без пятнадцати два.", "distractors": [
+          { "tr": "Tamam. Çayımı içiyorum ve gidiyorum!", "ru": "Ладно. Допиваю чай и иду!" },
+          { "tr": "Hayır, ben saat üçte Özge ile çalışıyorum.", "ru": "Нет, в три я работаю с Озге." }
+        ]},
+        { "speaker": "b", "tr": "Eyvah! Saat ikide toplantı var!", "ru": "Ой! В два совещание!", "distractors": [
+          { "tr": "Tamam. Çayımı içiyorum ve gidiyorum!", "ru": "Ладно. Допиваю чай и иду!" },
+          { "tr": "Hayır, ben saat üçte Özge ile çalışıyorum.", "ru": "Нет, в три я работаю с Озге." }
+        ]},
+        { "speaker": "a", "tr": "Hangi toplantı? Metin Bey'le mi?", "ru": "Какое совещание? С Метин-беем?", "distractors": [
+          { "tr": "Olga, saat kaç? Telefonumun şarjı bitti.", "ru": "Ольга, который час? У меня сел телефон." },
+          { "tr": "Tamam. Çayımı içiyorum ve gidiyorum!", "ru": "Ладно. Допиваю чай и иду!" }
+        ]},
+        { "speaker": "b", "tr": "Evet, Alman müşterilerle. Sen de geliyor musun?", "ru": "Да, с немецкими клиентами. Ты тоже идёшь?", "distractors": [
+          { "tr": "Olga, saat kaç? Telefonumun şarjı bitti.", "ru": "Ольга, который час? У меня сел телефон." },
+          { "tr": "İkiye çeyrek var.", "ru": "Без пятнадцати два." }
+        ]},
+        { "speaker": "a", "tr": "Hayır, ben saat üçte Özge ile çalışıyorum.", "ru": "Нет, в три я работаю с Озге.", "distractors": [
+          { "tr": "Olga, saat kaç? Telefonumun şarjı bitti.", "ru": "Ольга, который час? У меня сел телефон." },
+          { "tr": "İkiye çeyrek var.", "ru": "Без пятнадцати два." }
+        ]},
+        { "speaker": "b", "tr": "Tamam. Çayımı içiyorum ve gidiyorum!", "ru": "Ладно. Допиваю чай и иду!", "distractors": [
+          { "tr": "Olga, saat kaç? Telefonumun şarjı bitti.", "ru": "Ольга, который час? У меня сел телефон." },
+          { "tr": "İkiye çeyrek var.", "ru": "Без пятнадцати два." }
+        ]}
+      ]
+    },
+    {
+      "id": "vremya-leyla-koncert",
+      "title": "Лейла: успеваем на концерт?",
+      "level": "A1",
+      "speakers": { "a": "Ольга", "b": "Лейла" },
+      "turns": [
+        { "speaker": "a", "tr": "Leyla, konser saat kaçta?", "ru": "Лейла, во сколько концерт?", "distractors": [
+          { "tr": "Tamam! Hesabı ben ödüyorum.", "ru": "Хорошо! Я плачу." },
+          { "tr": "Koş! Konser salonu çok yakın.", "ru": "Бежим! Концертный зал совсем рядом." }
+        ]},
+        { "speaker": "b", "tr": "Yedide. Şimdi saat kaç?", "ru": "В семь. А сейчас сколько?", "distractors": [
+          { "tr": "Tamam! Hesabı ben ödüyorum.", "ru": "Хорошо! Я плачу." },
+          { "tr": "Koş! Konser salonu çok yakın.", "ru": "Бежим! Концертный зал совсем рядом." }
+        ]},
+        { "speaker": "a", "tr": "Altıyı on geçiyor.", "ru": "Десять минут седьмого.", "distractors": [
+          { "tr": "Tamam! Hesabı ben ödüyorum.", "ru": "Хорошо! Я плачу." },
+          { "tr": "Koş! Konser salonu çok yakın.", "ru": "Бежим! Концертный зал совсем рядом." }
+        ]},
+        { "speaker": "b", "tr": "İyi, vaktimiz var. Çay istiyor musun?", "ru": "Хорошо, время есть. Хочешь чаю?", "distractors": [
+          { "tr": "Tamam! Hesabı ben ödüyorum.", "ru": "Хорошо! Я плачу." },
+          { "tr": "Koş! Konser salonu çok yakın.", "ru": "Бежим! Концертный зал совсем рядом." }
+        ]},
+        { "speaker": "a", "tr": "Evet, istiyorum. Ama çabuk!", "ru": "Да, хочу. Но быстро!", "distractors": [
+          { "tr": "Leyla, konser saat kaçta?", "ru": "Лейла, во сколько концерт?" },
+          { "tr": "Koş! Konser salonu çok yakın.", "ru": "Бежим! Концертный зал совсем рядом." }
+        ]},
+        { "speaker": "b", "tr": "Olga, saat kaç oldu?", "ru": "Ольга, сколько уже времени?", "distractors": [
+          { "tr": "Leyla, konser saat kaçta?", "ru": "Лейла, во сколько концерт?" },
+          { "tr": "Yedide. Şimdi saat kaç?", "ru": "В семь. А сейчас сколько?" }
+        ]},
+        { "speaker": "a", "tr": "Yediye beş var! Eyvah!", "ru": "Без пяти семь! Ой!", "distractors": [
+          { "tr": "Leyla, konser saat kaçta?", "ru": "Лейла, во сколько концерт?" },
+          { "tr": "Yedide. Şimdi saat kaç?", "ru": "В семь. А сейчас сколько?" }
+        ]},
+        { "speaker": "b", "tr": "Koş! Konser salonu çok yakın.", "ru": "Бежим! Концертный зал совсем рядом.", "distractors": [
+          { "tr": "Leyla, konser saat kaçta?", "ru": "Лейла, во сколько концерт?" },
+          { "tr": "Yedide. Şimdi saat kaç?", "ru": "В семь. А сейчас сколько?" }
+        ]},
+        { "speaker": "a", "tr": "Tamam! Hesabı ben ödüyorum.", "ru": "Хорошо! Я плачу.", "distractors": [
+          { "tr": "Leyla, konser saat kaçta?", "ru": "Лейла, во сколько концерт?" },
+          { "tr": "Yedide. Şimdi saat kaç?", "ru": "В семь. А сейчас сколько?" }
+        ]}
+      ]
+    },
+    {
+      "id": "vremya-markus-opozdal",
+      "title": "Маркус опоздал на урок",
+      "level": "A1",
+      "speakers": { "a": "Ольга", "b": "Маркус" },
+      "turns": [
+        { "speaker": "b", "tr": "Günaydın Olga! Ders başladı mı?", "ru": "Доброе утро, Ольга! Урок уже начался?", "distractors": [
+          { "tr": "Tamam, anladım! Teşekkürler Olga.", "ru": "Всё, понял! Спасибо, Ольга." },
+          { "tr": "\"Sekiz buçuk\". Çok kolay!", "ru": "«Половина девятого». Очень легко!" }
+        ]},
+        { "speaker": "a", "tr": "Evet, saat onda başladı. Şimdi onu çeyrek geçiyor!", "ru": "Да, начался в десять. Сейчас пятнадцать минут одиннадцатого!", "distractors": [
+          { "tr": "Tamam, anladım! Teşekkürler Olga.", "ru": "Всё, понял! Спасибо, Ольга." },
+          { "tr": "\"Sekiz buçuk\". Çok kolay!", "ru": "«Половина девятого». Очень легко!" }
+        ]},
+        { "speaker": "b", "tr": "Eyvah! Otobüs çok geç geldi.", "ru": "Ой! Автобус пришёл очень поздно.", "distractors": [
+          { "tr": "Tamam, anladım! Teşekkürler Olga.", "ru": "Всё, понял! Спасибо, Ольга." },
+          { "tr": "\"Sekiz buçuk\". Çok kolay!", "ru": "«Половина девятого». Очень легко!" }
+        ]},
+        { "speaker": "a", "tr": "Sorun değil. Bugün konu saatler.", "ru": "Ничего страшного. Сегодня тема — время.", "distractors": [
+          { "tr": "Tamam, anladım! Teşekkürler Olga.", "ru": "Всё, понял! Спасибо, Ольга." },
+          { "tr": "\"Sekiz buçuk\". Çok kolay!", "ru": "«Половина девятого». Очень легко!" }
+        ]},
+        { "speaker": "b", "tr": "Harika! Saatleri hiç bilmiyorum.", "ru": "Отлично! Я совсем не умею называть время.", "distractors": [
+          { "tr": "Günaydın Olga! Ders başladı mı?", "ru": "Доброе утро, Ольга! Урок уже начался?" },
+          { "tr": "Tamam, anladım! Teşekkürler Olga.", "ru": "Всё, понял! Спасибо, Ольга." }
+        ]},
+        { "speaker": "a", "tr": "Kolay! Bak: altı elli beş — \"yediye beş var\".", "ru": "Это легко! Смотри: шесть пятьдесят пять — «без пяти семь».", "distractors": [
+          { "tr": "Günaydın Olga! Ders başladı mı?", "ru": "Доброе утро, Ольга! Урок уже начался?" },
+          { "tr": "Evet, saat onda başladı. Şimdi onu çeyrek geçiyor!", "ru": "Да, начался в десять. Сейчас пятнадцать минут одиннадцатого!" }
+        ]},
+        { "speaker": "b", "tr": "Peki, sekiz otuz?", "ru": "А восемь тридцать?", "distractors": [
+          { "tr": "Günaydın Olga! Ders başladı mı?", "ru": "Доброе утро, Ольга! Урок уже начался?" },
+          { "tr": "Evet, saat onda başladı. Şimdi onu çeyrek geçiyor!", "ru": "Да, начался в десять. Сейчас пятнадцать минут одиннадцатого!" }
+        ]},
+        { "speaker": "a", "tr": "\"Sekiz buçuk\". Çok kolay!", "ru": "«Половина девятого». Очень легко!", "distractors": [
+          { "tr": "Günaydın Olga! Ders başladı mı?", "ru": "Доброе утро, Ольга! Урок уже начался?" },
+          { "tr": "Evet, saat onda başladı. Şimdi onu çeyrek geçiyor!", "ru": "Да, начался в десять. Сейчас пятнадцать минут одиннадцатого!" }
+        ]},
+        { "speaker": "b", "tr": "Tamam, anladım! Teşekkürler Olga.", "ru": "Всё, понял! Спасибо, Ольга.", "distractors": [
+          { "tr": "Günaydın Olga! Ders başladı mı?", "ru": "Доброе утро, Ольга! Урок уже начался?" },
+          { "tr": "Evet, saat onda başladı. Şimdi onu çeyrek geçiyor!", "ru": "Да, начался в десять. Сейчас пятнадцать минут одиннадцатого!" }
+        ]}
+      ]
+    }
+  ]
+}

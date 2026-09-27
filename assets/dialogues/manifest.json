@@ -52,5 +52,29 @@
     "title": "В городе",
     "count": 10,
     "sizeKB": 40.1
+  },
+  {
+    "id": "obscheprinyatye-slova",
+    "title": "Общепринятые слова",
+    "count": 5,
+    "sizeKB": 17.1
+  },
+  {
+    "id": "vremya",
+    "title": "Время",
+    "count": 5,
+    "sizeKB": 17.9
+  },
+  {
+    "id": "o-pogode",
+    "title": "О погоде",
+    "count": 5,
+    "sizeKB": 20.7
+  },
+  {
+    "id": "voprositelnye-slova",
+    "title": "Вопросительные слова",
+    "count": 4,
+    "sizeKB": 18.3
   }
 ]
