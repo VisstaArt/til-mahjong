@@ -75,11 +75,13 @@ function addDaysStr(dateStr, days) {
   return dateToStr(new Date(y, m - 1, d + days));
 }
 
-function getPhraseBoxId(id) {
-  return (phraseProgress[id] && phraseProgress[id].box) || "new";
+// store/save — чтобы те же ящики Лейтнера переиспользовал раздел «Грамматика»
+// (grammar.js) со своим хранилищем, не смешивая прогресс с фразами.
+function getPhraseBoxId(id, store = phraseProgress) {
+  return (store[id] && store[id].box) || "new";
 }
-function getPhraseBox(id) {
-  return PHRASE_BOXES.find((b) => b.id === getPhraseBoxId(id));
+function getPhraseBox(id, store = phraseProgress) {
+  return PHRASE_BOXES.find((b) => b.id === getPhraseBoxId(id, store));
 }
 
 // Система Лейтнера: у каждого ящика — свой интервал в днях, раньше которого фраза не
@@ -103,26 +105,26 @@ const DAILY_CORRECT_TO_ADVANCE = 4;
 // Ошиблась — сразу назад в 🔴 "новое", как и при любой другой ошибке.
 const MASTERED_REVIEW_INTERVALS_DAYS = [7, 30, 90, 180];
 
-function bumpPhraseStreak(id, correct) {
+function bumpPhraseStreak(id, correct, store = phraseProgress, save = savePhraseProgress) {
   const today = todayStr();
-  const prev = phraseProgress[id] || { box: "new", dueDay: null, todayDay: null, todayCorrect: 0, reviewStage: 0 };
+  const prev = store[id] || { box: "new", dueDay: null, todayDay: null, todayCorrect: 0, reviewStage: 0 };
 
   if (!correct) {
-    phraseProgress[id] = { box: "new", dueDay: null, todayDay: today, todayCorrect: 0, reviewStage: 0 };
-    savePhraseProgress();
+    store[id] = { box: "new", dueDay: null, todayDay: today, todayCorrect: 0, reviewStage: 0 };
+    save();
     return;
   }
 
   if (prev.box === "mastered") {
     const stage = Math.min((prev.reviewStage || 0) + 1, MASTERED_REVIEW_INTERVALS_DAYS.length - 1);
-    phraseProgress[id] = {
+    store[id] = {
       box: "mastered",
       dueDay: addDaysStr(today, MASTERED_REVIEW_INTERVALS_DAYS[stage]),
       todayDay: today,
       todayCorrect: 0,
       reviewStage: stage,
     };
-    savePhraseProgress();
+    save();
     return;
   }
 
@@ -135,11 +137,11 @@ function bumpPhraseStreak(id, correct) {
     const nextBox = PHRASE_BOX_ORDER[Math.min(PHRASE_BOX_ORDER.indexOf(prev.box || "new") + 1, PHRASE_BOX_ORDER.length - 1)];
     const dueDay =
       nextBox === "mastered" ? addDaysStr(today, MASTERED_REVIEW_INTERVALS_DAYS[0]) : addDaysStr(today, PHRASE_BOX_INTERVAL_DAYS[nextBox]);
-    phraseProgress[id] = { box: nextBox, dueDay, todayDay: today, todayCorrect: 0, reviewStage: 0 };
+    store[id] = { box: nextBox, dueDay, todayDay: today, todayCorrect: 0, reviewStage: 0 };
   } else {
-    phraseProgress[id] = { box: prev.box || "new", dueDay: prev.dueDay || null, todayDay: today, todayCorrect, reviewStage: prev.reviewStage || 0 };
+    store[id] = { box: prev.box || "new", dueDay: prev.dueDay || null, todayDay: today, todayCorrect, reviewStage: prev.reviewStage || 0 };
   }
-  savePhraseProgress();
+  save();
 }
 
 // Сколько сегодняшних верных ответов уже засчитано в счётчик перехода (0, если фраза
@@ -156,8 +158,8 @@ function getPhraseTodayCorrect(id) {
 // "Созрела" ли выученная фраза для контрольной проверки — используется, чтобы решить,
 // брать ли её в пул квиза (см. buildPhraseQueue): пока не назрел срок, она в квизе не
 // участвует вообще, экономя место для того, что реально нужно повторять.
-function isPhraseMasteredDue(id) {
-  const p = phraseProgress[id];
+function isPhraseMasteredDue(id, store = phraseProgress) {
+  const p = store[id];
   if (!p || p.box !== "mastered") return false;
   return !p.dueDay || todayStr() >= p.dueDay;
 }
@@ -667,6 +669,7 @@ function activateMode(mode) {
     mahjong: document.getElementById("mode-mahjong-btn"),
     phrases: document.getElementById("mode-phrases-btn"),
     dialogues: document.getElementById("mode-dialogues-btn"),
+    grammar: document.getElementById("mode-grammar-btn"),
   };
   Object.entries(buttons).forEach(([key, btn]) => btn.classList.toggle("active", key === mode));
 }

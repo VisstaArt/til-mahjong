@@ -12,6 +12,12 @@
     "sizeKB": 253.1
   },
   {
+    "id": "v-otele",
+    "title": "В отеле",
+    "count": 20,
+    "sizeKB": 108.9
+  },
+  {
     "id": "puteshestvie",
     "title": "Путешествие",
     "count": 36,
