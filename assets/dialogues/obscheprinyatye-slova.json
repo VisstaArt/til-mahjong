@@ -1,0 +1,194 @@
+{
+  "id": "obscheprinyatye-slova",
+  "title": "Общепринятые слова",
+  "dialogues": [
+    {
+      "id": "obscheprinyatye-slova-deniz-u-dveri",
+      "title": "Дениз у двери: заходи!",
+      "level": "A1",
+      "speakers": { "a": "Ольга", "b": "Дениз" },
+      "turns": [
+        { "speaker": "a", "tr": "Alo, Deniz? Neredesin?", "ru": "Алло, Дениз? Ты где?", "distractors": [
+          { "tr": "Var, mutfakta. Buyur!", "ru": "Есть, на кухне. Угощайся!" },
+          { "tr": "Tamam, bekliyorum. Kahve var mı?", "ru": "Ладно, жду. Кофе есть?" }
+        ]},
+        { "speaker": "b", "tr": "Senin kapının önündeyim. Hazır mısın?", "ru": "Я у твоей двери. Ты готова?", "distractors": [
+          { "tr": "Var, mutfakta. Buyur!", "ru": "Есть, на кухне. Угощайся!" },
+          { "tr": "Tamam, bekliyorum. Kahve var mı?", "ru": "Ладно, жду. Кофе есть?" }
+        ]},
+        { "speaker": "a", "tr": "Hayır, daha hazır değilim. Kapı açık, içeri gel!", "ru": "Нет, ещё не готова. Дверь открыта, заходи!", "distractors": [
+          { "tr": "Var, mutfakta. Buyur!", "ru": "Есть, на кухне. Угощайся!" },
+          { "tr": "Tamam, bekliyorum. Kahve var mı?", "ru": "Ладно, жду. Кофе есть?" }
+        ]},
+        { "speaker": "b", "tr": "Tamam. Film saat sekizde, biliyorsun.", "ru": "Ладно. Фильм в восемь, ты же знаешь.", "distractors": [
+          { "tr": "Alo, Deniz? Neredesin?", "ru": "Алло, Дениз? Ты где?" },
+          { "tr": "Var, mutfakta. Buyur!", "ru": "Есть, на кухне. Угощайся!" }
+        ]},
+        { "speaker": "a", "tr": "Biliyorum, biliyorum! On dakika, lütfen.", "ru": "Знаю, знаю! Десять минут, пожалуйста.", "distractors": [
+          { "tr": "Alo, Deniz? Neredesin?", "ru": "Алло, Дениз? Ты где?" },
+          { "tr": "Senin kapının önündeyim. Hazır mısın?", "ru": "Я у твоей двери. Ты готова?" }
+        ]},
+        { "speaker": "b", "tr": "Tamam, bekliyorum. Kahve var mı?", "ru": "Ладно, жду. Кофе есть?", "distractors": [
+          { "tr": "Alo, Deniz? Neredesin?", "ru": "Алло, Дениз? Ты где?" },
+          { "tr": "Senin kapının önündeyim. Hazır mısın?", "ru": "Я у твоей двери. Ты готова?" }
+        ]},
+        { "speaker": "a", "tr": "Var, mutfakta. Buyur!", "ru": "Есть, на кухне. Угощайся!", "distractors": [
+          { "tr": "Alo, Deniz? Neredesin?", "ru": "Алло, Дениз? Ты где?" },
+          { "tr": "Senin kapının önündeyim. Hazır mısın?", "ru": "Я у твоей двери. Ты готова?" }
+        ]}
+      ]
+    },
+    {
+      "id": "obscheprinyatye-slova-bakkal-hleb",
+      "title": "Бакалея вечером: хлеба нет",
+      "level": "A1",
+      "speakers": { "a": "Ольга", "b": "Хайри" },
+      "turns": [
+        { "speaker": "a", "tr": "İyi akşamlar! Ekmek var mı?", "ru": "Добрый вечер! Хлеб есть?", "distractors": [
+          { "tr": "Var! Ekmek sabah yedide geliyor.", "ru": "Будет! Хлеб привозят в семь утра." },
+          { "tr": "Hayır, teşekkürler. Yarın sabah ekmek var mı?", "ru": "Нет, спасибо. А завтра утром хлеб будет?" }
+        ]},
+        { "speaker": "b", "tr": "Yok, maalesef. Ekmek bitti.", "ru": "Нет, к сожалению. Хлеб закончился.", "distractors": [
+          { "tr": "Hayır, teşekkürler. Yarın sabah ekmek var mı?", "ru": "Нет, спасибо. А завтра утром хлеб будет?" },
+          { "tr": "Peki, süt var mı?", "ru": "Ладно, а молоко есть?" }
+        ]},
+        { "speaker": "a", "tr": "Simit var mı?", "ru": "А симиты есть?", "distractors": [
+          { "tr": "Var! Ekmek sabah yedide geliyor.", "ru": "Будет! Хлеб привозят в семь утра." },
+          { "tr": "Hayır, teşekkürler. Yarın sabah ekmek var mı?", "ru": "Нет, спасибо. А завтра утром хлеб будет?" }
+        ]},
+        { "speaker": "b", "tr": "Simit de yok. Ekmek, simit, poğaça — hiçbir şey yok!", "ru": "Симитов тоже нет. Хлеб, симиты, погача — ничего нет!", "distractors": [
+          { "tr": "İyi akşamlar! Ekmek var mı?", "ru": "Добрый вечер! Хлеб есть?" },
+          { "tr": "Hayır, teşekkürler. Yarın sabah ekmek var mı?", "ru": "Нет, спасибо. А завтра утром хлеб будет?" }
+        ]},
+        { "speaker": "a", "tr": "Peki, süt var mı?", "ru": "Ладно, а молоко есть?", "distractors": [
+          { "tr": "İyi akşamlar! Ekmek var mı?", "ru": "Добрый вечер! Хлеб есть?" },
+          { "tr": "Yok, maalesef. Ekmek bitti.", "ru": "Нет, к сожалению. Хлеб закончился." }
+        ]},
+        { "speaker": "b", "tr": "Süt var. Başka bir şey istiyor musunuz?", "ru": "Молоко есть. Хотите что-нибудь ещё?", "distractors": [
+          { "tr": "İyi akşamlar! Ekmek var mı?", "ru": "Добрый вечер! Хлеб есть?" },
+          { "tr": "Hayır, teşekkürler. Yarın sabah ekmek var mı?", "ru": "Нет, спасибо. А завтра утром хлеб будет?" }
+        ]},
+        { "speaker": "a", "tr": "Hayır, teşekkürler. Yarın sabah ekmek var mı?", "ru": "Нет, спасибо. А завтра утром хлеб будет?", "distractors": [
+          { "tr": "İyi akşamlar! Ekmek var mı?", "ru": "Добрый вечер! Хлеб есть?" },
+          { "tr": "Yok, maalesef. Ekmek bitti.", "ru": "Нет, к сожалению. Хлеб закончился." }
+        ]},
+        { "speaker": "b", "tr": "Var! Ekmek sabah yedide geliyor.", "ru": "Будет! Хлеб привозят в семь утра.", "distractors": [
+          { "tr": "İyi akşamlar! Ekmek var mı?", "ru": "Добрый вечер! Хлеб есть?" },
+          { "tr": "Peki, süt var mı?", "ru": "Ладно, а молоко есть?" }
+        ]}
+      ]
+    },
+    {
+      "id": "obscheprinyatye-slova-prodavets-zontov",
+      "title": "Продавец зонтов на пристани",
+      "level": "A1",
+      "speakers": { "a": "Ольга", "b": "Хайдар" },
+      "turns": [
+        { "speaker": "b", "tr": "Abla, bakın! Şemsiye var, çok ucuz!", "ru": "Девушка, смотрите! Есть зонты, очень дёшево!", "distractors": [
+          { "tr": "Tamam, tamam. İyi yolculuklar!", "ru": "Ладно, ладно. Счастливого пути!" },
+          { "tr": "Lütfen, beni rahat bırakın! Vapur kalkıyor!", "ru": "Пожалуйста, оставьте меня в покое! Пароход отходит!" }
+        ]},
+        { "speaker": "a", "tr": "Hayır, teşekkürler. Acelem var.", "ru": "Нет, спасибо. Я спешу.", "distractors": [
+          { "tr": "Tamam, tamam. İyi yolculuklar!", "ru": "Ладно, ладно. Счастливого пути!" },
+          { "tr": "İki şemsiye yüz elli lira! Bugün yağmur var!", "ru": "Два зонта — сто пятьдесят лир! Сегодня дождь!" }
+        ]},
+        { "speaker": "b", "tr": "Bir dakika, abla! Sadece yüz lira!", "ru": "Минутку, девушка! Всего сто лир!", "distractors": [
+          { "tr": "Tamam, tamam. İyi yolculuklar!", "ru": "Ладно, ладно. Счастливого пути!" },
+          { "tr": "Lütfen, beni rahat bırakın! Vapur kalkıyor!", "ru": "Пожалуйста, оставьте меня в покое! Пароход отходит!" }
+        ]},
+        { "speaker": "a", "tr": "Benim şemsiyem var. İstemiyorum.", "ru": "У меня есть зонт. Не хочу.", "distractors": [
+          { "tr": "Abla, bakın! Şemsiye var, çok ucuz!", "ru": "Девушка, смотрите! Есть зонты, очень дёшево!" },
+          { "tr": "Tamam, tamam. İyi yolculuklar!", "ru": "Ладно, ладно. Счастливого пути!" }
+        ]},
+        { "speaker": "b", "tr": "İki şemsiye yüz elli lira! Bugün yağmur var!", "ru": "Два зонта — сто пятьдесят лир! Сегодня дождь!", "distractors": [
+          { "tr": "Hayır, teşekkürler. Acelem var.", "ru": "Нет, спасибо. Я спешу." },
+          { "tr": "Tamam, tamam. İyi yolculuklar!", "ru": "Ладно, ладно. Счастливого пути!" }
+        ]},
+        { "speaker": "a", "tr": "Lütfen, beni rahat bırakın! Vapur kalkıyor!", "ru": "Пожалуйста, оставьте меня в покое! Пароход отходит!", "distractors": [
+          { "tr": "Abla, bakın! Şemsiye var, çok ucuz!", "ru": "Девушка, смотрите! Есть зонты, очень дёшево!" },
+          { "tr": "Tamam, tamam. İyi yolculuklar!", "ru": "Ладно, ладно. Счастливого пути!" }
+        ]},
+        { "speaker": "b", "tr": "Tamam, tamam. İyi yolculuklar!", "ru": "Ладно, ладно. Счастливого пути!", "distractors": [
+          { "tr": "Abla, bakın! Şemsiye var, çok ucuz!", "ru": "Девушка, смотрите! Есть зонты, очень дёшево!" },
+          { "tr": "Hayır, teşekkürler. Acelem var.", "ru": "Нет, спасибо. Я спешу." }
+        ]}
+      ]
+    },
+    {
+      "id": "obscheprinyatye-slova-nuran-za-solyu",
+      "title": "Нуран-ханым заходит за солью",
+      "level": "A1",
+      "speakers": { "a": "Ольга", "b": "Нуран" },
+      "turns": [
+        { "speaker": "a", "tr": "Aa, Nuran Hanım, merhaba! İçeri gelin.", "ru": "А, Нуран-ханым, здравствуйте! Заходите.", "distractors": [
+          { "tr": "Teşekkürler, akşam geleceğim!", "ru": "Спасибо, вечером приду!" },
+          { "tr": "Tamam. Akşam bana çaya gel!", "ru": "Хорошо. Приходи вечером ко мне на чай!" }
+        ]},
+        { "speaker": "b", "tr": "Merhaba kızım. Evde tuz var mı? Benim tuzum bitti.", "ru": "Здравствуй, дочка. У тебя дома есть соль? У меня соль закончилась.", "distractors": [
+          { "tr": "Teşekkürler, akşam geleceğim!", "ru": "Спасибо, вечером приду!" },
+          { "tr": "Tamam. Akşam bana çaya gel!", "ru": "Хорошо. Приходи вечером ко мне на чай!" }
+        ]},
+        { "speaker": "a", "tr": "Var, mutfakta. Bu taraftan lütfen.", "ru": "Есть, на кухне. Сюда, пожалуйста.", "distractors": [
+          { "tr": "Teşekkürler, akşam geleceğim!", "ru": "Спасибо, вечером приду!" },
+          { "tr": "Tamam. Akşam bana çaya gel!", "ru": "Хорошо. Приходи вечером ко мне на чай!" }
+        ]},
+        { "speaker": "b", "tr": "Sağ ol. Ne güzel mutfak!", "ru": "Спасибо. Какая красивая кухня!", "distractors": [
+          { "tr": "Teşekkürler, akşam geleceğim!", "ru": "Спасибо, вечером приду!" },
+          { "tr": "Tamam. Akşam bana çaya gel!", "ru": "Хорошо. Приходи вечером ко мне на чай!" }
+        ]},
+        { "speaker": "a", "tr": "Bir dakika lütfen... Tuz burada. Buyurun!", "ru": "Минуточку, пожалуйста... Соль здесь. Держите!", "distractors": [
+          { "tr": "Aa, Nuran Hanım, merhaba! İçeri gelin.", "ru": "А, Нуран-ханым, здравствуйте! Заходите." },
+          { "tr": "Teşekkürler, akşam geleceğim!", "ru": "Спасибо, вечером приду!" }
+        ]},
+        { "speaker": "b", "tr": "Teşekkürler kızım. Yarın pazar. Market açık mı, biliyor musun?", "ru": "Спасибо, дочка. Завтра воскресенье. Не знаешь, магазин открыт?", "distractors": [
+          { "tr": "Aa, Nuran Hanım, merhaba! İçeri gelin.", "ru": "А, Нуран-ханым, здравствуйте! Заходите." },
+          { "tr": "Merhaba kızım. Evde tuz var mı? Benim tuzum bitti.", "ru": "Здравствуй, дочка. У тебя дома есть соль? У меня соль закончилась." }
+        ]},
+        { "speaker": "a", "tr": "Bilmiyorum... Açık, öyle sanıyorum.", "ru": "Не знаю... Думаю, открыт.", "distractors": [
+          { "tr": "Aa, Nuran Hanım, merhaba! İçeri gelin.", "ru": "А, Нуран-ханым, здравствуйте! Заходите." },
+          { "tr": "Merhaba kızım. Evde tuz var mı? Benim tuzum bitti.", "ru": "Здравствуй, дочка. У тебя дома есть соль? У меня соль закончилась." }
+        ]},
+        { "speaker": "b", "tr": "Tamam. Akşam bana çaya gel!", "ru": "Хорошо. Приходи вечером ко мне на чай!", "distractors": [
+          { "tr": "Aa, Nuran Hanım, merhaba! İçeri gelin.", "ru": "А, Нуран-ханым, здравствуйте! Заходите." },
+          { "tr": "Merhaba kızım. Evde tuz var mı? Benim tuzum bitti.", "ru": "Здравствуй, дочка. У тебя дома есть соль? У меня соль закончилась." }
+        ]},
+        { "speaker": "a", "tr": "Teşekkürler, akşam geleceğim!", "ru": "Спасибо, вечером приду!", "distractors": [
+          { "tr": "Aa, Nuran Hanım, merhaba! İçeri gelin.", "ru": "А, Нуран-ханым, здравствуйте! Заходите." },
+          { "tr": "Merhaba kızım. Evde tuz var mı? Benim tuzum bitti.", "ru": "Здравствуй, дочка. У тебя дома есть соль? У меня соль закончилась." }
+        ]}
+      ]
+    },
+    {
+      "id": "obscheprinyatye-slova-leyla-uskudar",
+      "title": "Лейла в Ускюдаре: мы там",
+      "level": "A1",
+      "speakers": { "a": "Ольга", "b": "Лейла" },
+      "turns": [
+        { "speaker": "a", "tr": "Alo, Leyla! Ben Üsküdar'dayım, iskeledeyim. Siz çay bahçesinde misiniz?", "ru": "Алло, Лейла! Я в Ускюдаре, на пристани. Вы в чайном саду?", "distractors": [
+          { "tr": "Tamam, bekliyoruz. Acele etme!", "ru": "Хорошо, ждём. Не спеши!" },
+          { "tr": "O parkı biliyorum. Beş dakikaya oradayım!", "ru": "Этот парк я знаю. Через пять минут буду там!" }
+        ]},
+        { "speaker": "b", "tr": "Evet, oradayız. Zehra da burada.", "ru": "Да, мы там. Зехра тоже здесь.", "distractors": [
+          { "tr": "O parkı biliyorum. Beş dakikaya oradayım!", "ru": "Этот парк я знаю. Через пять минут буду там!" },
+          { "tr": "Efe de sizinle mi?", "ru": "А Эфе с вами?" }
+        ]},
+        { "speaker": "a", "tr": "Efe de sizinle mi?", "ru": "А Эфе с вами?", "distractors": [
+          { "tr": "Tamam, bekliyoruz. Acele etme!", "ru": "Хорошо, ждём. Не спеши!" },
+          { "tr": "Alo, Leyla! Ben Üsküdar'dayım, iskeledeyim. Siz çay bahçesinde misiniz?", "ru": "Алло, Лейла! Я в Ускюдаре, на пристани. Вы в чайном саду?" }
+        ]},
+        { "speaker": "b", "tr": "Hayır, Efe ile babası parka gittiler. Çay bahçesinin yanında bir park var, oradalar.", "ru": "Нет, Эфе с папой пошли в парк. Рядом с чайным садом есть парк, они там.", "distractors": [
+          { "tr": "Alo, Leyla! Ben Üsküdar'dayım, iskeledeyim. Siz çay bahçesinde misiniz?", "ru": "Алло, Лейла! Я в Ускюдаре, на пристани. Вы в чайном саду?" },
+          { "tr": "Evet, oradayız. Zehra da burada.", "ru": "Да, мы там. Зехра тоже здесь." }
+        ]},
+        { "speaker": "a", "tr": "O parkı biliyorum. Beş dakikaya oradayım!", "ru": "Этот парк я знаю. Через пять минут буду там!", "distractors": [
+          { "tr": "Alo, Leyla! Ben Üsküdar'dayım, iskeledeyim. Siz çay bahçesinde misiniz?", "ru": "Алло, Лейла! Я в Ускюдаре, на пристани. Вы в чайном саду?" },
+          { "tr": "Evet, oradayız. Zehra da burada.", "ru": "Да, мы там. Зехра тоже здесь." }
+        ]},
+        { "speaker": "b", "tr": "Tamam, bekliyoruz. Acele etme!", "ru": "Хорошо, ждём. Не спеши!", "distractors": [
+          { "tr": "Alo, Leyla! Ben Üsküdar'dayım, iskeledeyim. Siz çay bahçesinde misiniz?", "ru": "Алло, Лейла! Я в Ускюдаре, на пристани. Вы в чайном саду?" },
+          { "tr": "Evet, oradayız. Zehra da burada.", "ru": "Да, мы там. Зехра тоже здесь." }
+        ]}
+      ]
+    }
+  ]
+}

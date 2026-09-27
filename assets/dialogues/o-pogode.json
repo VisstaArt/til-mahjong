@@ -1,0 +1,206 @@
+{
+  "id": "o-pogode",
+  "title": "О погоде",
+  "dialogues": [
+    {
+      "id": "o-pogode-nuran-horoshaya-pogoda",
+      "title": "Нуран-ханым: какая хорошая погода!",
+      "level": "A2",
+      "speakers": { "a": "Ольга", "b": "Нуран" },
+      "turns": [
+        { "speaker": "a", "tr": "Günaydın, Nuran Hanım! Ne güzel hava!", "ru": "Доброе утро, Нуран-ханым! Какая хорошая погода!", "distractors": [
+          { "tr": "Çok özlüyorum, kızım. Hadi, iyi eğlenceler!", "ru": "Очень скучаю, дочка. Ну, хорошо вам погулять!" },
+          { "tr": "İzmir'i özlüyor musunuz?", "ru": "Скучаете по Измиру?" }
+        ]},
+        { "speaker": "b", "tr": "Günaydın kızım! Evet, bugün sıcak.", "ru": "Доброе утро, дочка! Да, сегодня жарко.", "distractors": [
+          { "tr": "Çok özlüyorum, kızım. Hadi, iyi eğlenceler!", "ru": "Очень скучаю, дочка. Ну, хорошо вам погулять!" },
+          { "tr": "İzmir'i özlüyor musunuz?", "ru": "Скучаете по Измиру?" }
+        ]},
+        { "speaker": "a", "tr": "Ama bulutlar var. Bugün yağmur yağacağını düşünüyor musunuz?", "ru": "Но есть облака. Как вы думаете, сегодня будет дождь?", "distractors": [
+          { "tr": "Çok özlüyorum, kızım. Hadi, iyi eğlenceler!", "ru": "Очень скучаю, дочка. Ну, хорошо вам погулять!" },
+          { "tr": "İzmir'i özlüyor musunuz?", "ru": "Скучаете по Измиру?" }
+        ]},
+        { "speaker": "b", "tr": "Hayır, sanmıyorum. Sen şemsiye alıyor musun?", "ru": "Нет, не думаю. А ты берёшь зонт?", "distractors": [
+          { "tr": "Çok özlüyorum, kızım. Hadi, iyi eğlenceler!", "ru": "Очень скучаю, дочка. Ну, хорошо вам погулять!" },
+          { "tr": "Günaydın, Nuran Hanım! Ne güzel hava!", "ru": "Доброе утро, Нуран-ханым! Какая хорошая погода!" }
+        ]},
+        { "speaker": "a", "tr": "Hayır. Bugün pazar, Leyla ile sahilde yürüyeceğiz.", "ru": "Нет. Сегодня воскресенье, мы с Лейлой погуляем по набережной.", "distractors": [
+          { "tr": "Günaydın, Nuran Hanım! Ne güzel hava!", "ru": "Доброе утро, Нуран-ханым! Какая хорошая погода!" },
+          { "tr": "Günaydın kızım! Evet, bugün sıcak.", "ru": "Доброе утро, дочка! Да, сегодня жарко." }
+        ]},
+        { "speaker": "b", "tr": "Ne güzel! İzmir'de de şimdi hava çok güzel.", "ru": "Как хорошо! В Измире сейчас тоже очень хорошая погода.", "distractors": [
+          { "tr": "Günaydın, Nuran Hanım! Ne güzel hava!", "ru": "Доброе утро, Нуран-ханым! Какая хорошая погода!" },
+          { "tr": "Günaydın kızım! Evet, bugün sıcak.", "ru": "Доброе утро, дочка! Да, сегодня жарко." }
+        ]},
+        { "speaker": "a", "tr": "İzmir'i özlüyor musunuz?", "ru": "Скучаете по Измиру?", "distractors": [
+          { "tr": "Günaydın, Nuran Hanım! Ne güzel hava!", "ru": "Доброе утро, Нуран-ханым! Какая хорошая погода!" },
+          { "tr": "Günaydın kızım! Evet, bugün sıcak.", "ru": "Доброе утро, дочка! Да, сегодня жарко." }
+        ]},
+        { "speaker": "b", "tr": "Çok özlüyorum, kızım. Hadi, iyi eğlenceler!", "ru": "Очень скучаю, дочка. Ну, хорошо вам погулять!", "distractors": [
+          { "tr": "Günaydın, Nuran Hanım! Ne güzel hava!", "ru": "Доброе утро, Нуран-ханым! Какая хорошая погода!" },
+          { "tr": "Günaydın kızım! Evet, bugün sıcak.", "ru": "Доброе утро, дочка! Да, сегодня жарко." }
+        ]}
+      ]
+    },
+    {
+      "id": "o-pogode-ochered-holodno",
+      "title": "Очередь на пристани: холодно",
+      "level": "A2",
+      "speakers": { "a": "Ольга", "b": "Мюжгян" },
+      "turns": [
+        { "speaker": "b", "tr": "Ne berbat hava! Vapur hâlâ yok.", "ru": "Какая ужасная погода! А парохода всё нет.", "distractors": [
+          { "tr": "Evet, var. Ben her sabah vapurda çay içiyorum.", "ru": "Да, есть. Я каждое утро пью чай на пароходе." },
+          { "tr": "Nihayet! Vapurda çay var, değil mi?", "ru": "Наконец-то! На пароходе есть чай, правда?" }
+        ]},
+        { "speaker": "a", "tr": "Evet, bugün soğuk. Rüzgâr da çok kuvvetli.", "ru": "Да, сегодня холодно. И ветер очень сильный.", "distractors": [
+          { "tr": "Evet, var. Ben her sabah vapurda çay içiyorum.", "ru": "Да, есть. Я каждое утро пью чай на пароходе." },
+          { "tr": "Nihayet! Vapurda çay var, değil mi?", "ru": "Наконец-то! На пароходе есть чай, правда?" }
+        ]},
+        { "speaker": "b", "tr": "Bugün kar yağacağını düşünüyor musunuz?", "ru": "Как вы думаете, сегодня будет снег?", "distractors": [
+          { "tr": "Evet, var. Ben her sabah vapurda çay içiyorum.", "ru": "Да, есть. Я каждое утро пью чай на пароходе." },
+          { "tr": "Nihayet! Vapurda çay var, değil mi?", "ru": "Наконец-то! На пароходе есть чай, правда?" }
+        ]},
+        { "speaker": "a", "tr": "Bilmiyorum. Telefonda \"akşam kar\" yazıyor.", "ru": "Не знаю. В телефоне написано «вечером снег».", "distractors": [
+          { "tr": "Evet, var. Ben her sabah vapurda çay içiyorum.", "ru": "Да, есть. Я каждое утро пью чай на пароходе." },
+          { "tr": "Ne berbat hava! Vapur hâlâ yok.", "ru": "Какая ужасная погода! А парохода всё нет." }
+        ]},
+        { "speaker": "b", "tr": "Kar mı? Eyvah, benim botlarım yok!", "ru": "Снег? Ой, а у меня нет сапог!", "distractors": [
+          { "tr": "Ne berbat hava! Vapur hâlâ yok.", "ru": "Какая ужасная погода! А парохода всё нет." },
+          { "tr": "Evet, bugün soğuk. Rüzgâr da çok kuvvetli.", "ru": "Да, сегодня холодно. И ветер очень сильный." }
+        ]},
+        { "speaker": "a", "tr": "Bakın, vapur geliyor!", "ru": "Смотрите, пароход идёт!", "distractors": [
+          { "tr": "Ne berbat hava! Vapur hâlâ yok.", "ru": "Какая ужасная погода! А парохода всё нет." },
+          { "tr": "Evet, bugün soğuk. Rüzgâr da çok kuvvetli.", "ru": "Да, сегодня холодно. И ветер очень сильный." }
+        ]},
+        { "speaker": "b", "tr": "Nihayet! Vapurda çay var, değil mi?", "ru": "Наконец-то! На пароходе есть чай, правда?", "distractors": [
+          { "tr": "Ne berbat hava! Vapur hâlâ yok.", "ru": "Какая ужасная погода! А парохода всё нет." },
+          { "tr": "Evet, bugün soğuk. Rüzgâr da çok kuvvetli.", "ru": "Да, сегодня холодно. И ветер очень сильный." }
+        ]},
+        { "speaker": "a", "tr": "Evet, var. Ben her sabah vapurda çay içiyorum.", "ru": "Да, есть. Я каждое утро пью чай на пароходе.", "distractors": [
+          { "tr": "Ne berbat hava! Vapur hâlâ yok.", "ru": "Какая ужасная погода! А парохода всё нет." },
+          { "tr": "Evet, bugün soğuk. Rüzgâr da çok kuvvetli.", "ru": "Да, сегодня холодно. И ветер очень сильный." }
+        ]}
+      ]
+    },
+    {
+      "id": "o-pogode-leyla-piknik",
+      "title": "Лейла: погода перед выходными",
+      "level": "A2",
+      "speakers": { "a": "Ольга", "b": "Лейла" },
+      "turns": [
+        { "speaker": "a", "tr": "Leyla, yarın Fenerbahçe Parkı'nda piknik yapıyor muyuz?", "ru": "Лейла, завтра устраиваем пикник в парке Фенербахче?", "distractors": [
+          { "tr": "Çok tatlısın! Yarın görüşürüz.", "ru": "Ты прелесть! Увидимся завтра." },
+          { "tr": "Ben kahve ve çilek getiriyorum. Sen çileği çok seviyorsun!", "ru": "Я принесу кофе и клубнику. Ты же очень любишь клубнику!" }
+        ]},
+        { "speaker": "b", "tr": "Bilmiyorum. Bugün hava raporu nasıl?", "ru": "Не знаю. Какой прогноз на сегодня?", "distractors": [
+          { "tr": "Çok tatlısın! Yarın görüşürüz.", "ru": "Ты прелесть! Увидимся завтра." },
+          { "tr": "Ben kahve ve çilek getiriyorum. Sen çileği çok seviyorsun!", "ru": "Я принесу кофе и клубнику. Ты же очень любишь клубнику!" }
+        ]},
+        { "speaker": "a", "tr": "Bir dakika, telefona bakıyorum... Bu akşam yağmur var.", "ru": "Минутку, смотрю в телефоне... Сегодня вечером дождь.", "distractors": [
+          { "tr": "Çok tatlısın! Yarın görüşürüz.", "ru": "Ты прелесть! Увидимся завтра." },
+          { "tr": "Ben kahve ve çilek getiriyorum. Sen çileği çok seviyorsun!", "ru": "Я принесу кофе и клубнику. Ты же очень любишь клубнику!" }
+        ]},
+        { "speaker": "b", "tr": "Peki, yarın güneşli olur mu?", "ru": "А завтра будет солнечно?", "distractors": [
+          { "tr": "Çok tatlısın! Yarın görüşürüz.", "ru": "Ты прелесть! Увидимся завтра." },
+          { "tr": "Leyla, yarın Fenerbahçe Parkı'nda piknik yapıyor muyuz?", "ru": "Лейла, завтра устраиваем пикник в парке Фенербахче?" }
+        ]},
+        { "speaker": "a", "tr": "Evet, yarın güneş var. Sanırım yarın güzel bir gün olacak.", "ru": "Да, завтра солнце. Я думаю, завтра будет хорошая погода.", "distractors": [
+          { "tr": "Leyla, yarın Fenerbahçe Parkı'nda piknik yapıyor muyuz?", "ru": "Лейла, завтра устраиваем пикник в парке Фенербахче?" },
+          { "tr": "Bilmiyorum. Bugün hava raporu nasıl?", "ru": "Не знаю. Какой прогноз на сегодня?" }
+        ]},
+        { "speaker": "b", "tr": "Harika! Ben börek yapıyorum. Sen ne getiriyorsun?", "ru": "Отлично! Я делаю бёрек. А ты что принесёшь?", "distractors": [
+          { "tr": "Leyla, yarın Fenerbahçe Parkı'nda piknik yapıyor muyuz?", "ru": "Лейла, завтра устраиваем пикник в парке Фенербахче?" },
+          { "tr": "Bilmiyorum. Bugün hava raporu nasıl?", "ru": "Не знаю. Какой прогноз на сегодня?" }
+        ]},
+        { "speaker": "a", "tr": "Ben kahve ve çilek getiriyorum. Sen çileği çok seviyorsun!", "ru": "Я принесу кофе и клубнику. Ты же очень любишь клубнику!", "distractors": [
+          { "tr": "Leyla, yarın Fenerbahçe Parkı'nda piknik yapıyor muyuz?", "ru": "Лейла, завтра устраиваем пикник в парке Фенербахче?" },
+          { "tr": "Bilmiyorum. Bugün hava raporu nasıl?", "ru": "Не знаю. Какой прогноз на сегодня?" }
+        ]},
+        { "speaker": "b", "tr": "Çok tatlısın! Yarın görüşürüz.", "ru": "Ты прелесть! Увидимся завтра.", "distractors": [
+          { "tr": "Leyla, yarın Fenerbahçe Parkı'nda piknik yapıyor muyuz?", "ru": "Лейла, завтра устраиваем пикник в парке Фенербахче?" },
+          { "tr": "Bilmiyorum. Bugün hava raporu nasıl?", "ru": "Не знаю. Какой прогноз на сегодня?" }
+        ]}
+      ]
+    },
+    {
+      "id": "o-pogode-bodrum-zhara",
+      "title": "Бодрум: здесь всегда так жарко?",
+      "level": "A1",
+      "speakers": { "a": "Ольга", "b": "Мерич" },
+      "turns": [
+        { "speaker": "a", "tr": "Merhaba! Bir soğuk limonata, lütfen.", "ru": "Здравствуйте! Холодный лимонад, пожалуйста.", "distractors": [
+          { "tr": "Hoş geldiniz! Akşam deniz kenarında hava serin, çok güzel.", "ru": "Добро пожаловать! Вечером у моря прохладно, очень хорошо." },
+          { "tr": "Evet, İstanbul'da yaşıyorum. Burada kız kardeşimle tatildeyim.", "ru": "Да, я живу в Стамбуле. Здесь я в отпуске с сестрой." }
+        ]},
+        { "speaker": "b", "tr": "Tabii, buyurun. Çok sıcak, değil mi?", "ru": "Конечно, пожалуйста. Очень жарко, правда?", "distractors": [
+          { "tr": "Hoş geldiniz! Akşam deniz kenarında hava serin, çok güzel.", "ru": "Добро пожаловать! Вечером у моря прохладно, очень хорошо." },
+          { "tr": "Evet, İstanbul'da yaşıyorum. Burada kız kardeşimle tatildeyim.", "ru": "Да, я живу в Стамбуле. Здесь я в отпуске с сестрой." }
+        ]},
+        { "speaker": "a", "tr": "Evet! Her zaman burada bu kadar sıcak mı?", "ru": "Да! Здесь всегда так жарко?", "distractors": [
+          { "tr": "Hoş geldiniz! Akşam deniz kenarında hava serin, çok güzel.", "ru": "Добро пожаловать! Вечером у моря прохладно, очень хорошо." },
+          { "tr": "Evet, İstanbul'da yaşıyorum. Burada kız kardeşimle tatildeyim.", "ru": "Да, я живу в Стамбуле. Здесь я в отпуске с сестрой." }
+        ]},
+        { "speaker": "b", "tr": "Temmuzda evet. Bugün otuz sekiz derece!", "ru": "В июле — да. Сегодня тридцать восемь градусов!", "distractors": [
+          { "tr": "Hoş geldiniz! Akşam deniz kenarında hava serin, çok güzel.", "ru": "Добро пожаловать! Вечером у моря прохладно, очень хорошо." },
+          { "tr": "Merhaba! Bir soğuk limonata, lütfen.", "ru": "Здравствуйте! Холодный лимонад, пожалуйста." }
+        ]},
+        { "speaker": "a", "tr": "Otuz sekiz mi? İstanbul'da şimdi otuz.", "ru": "Тридцать восемь? В Стамбуле сейчас тридцать.", "distractors": [
+          { "tr": "Merhaba! Bir soğuk limonata, lütfen.", "ru": "Здравствуйте! Холодный лимонад, пожалуйста." },
+          { "tr": "Tabii, buyurun. Çok sıcak, değil mi?", "ru": "Конечно, пожалуйста. Очень жарко, правда?" }
+        ]},
+        { "speaker": "b", "tr": "İstanbul'dan mı geldiniz?", "ru": "Вы приехали из Стамбула?", "distractors": [
+          { "tr": "Merhaba! Bir soğuk limonata, lütfen.", "ru": "Здравствуйте! Холодный лимонад, пожалуйста." },
+          { "tr": "Tabii, buyurun. Çok sıcak, değil mi?", "ru": "Конечно, пожалуйста. Очень жарко, правда?" }
+        ]},
+        { "speaker": "a", "tr": "Evet, İstanbul'da yaşıyorum. Burada kız kardeşimle tatildeyim.", "ru": "Да, я живу в Стамбуле. Здесь я в отпуске с сестрой.", "distractors": [
+          { "tr": "Merhaba! Bir soğuk limonata, lütfen.", "ru": "Здравствуйте! Холодный лимонад, пожалуйста." },
+          { "tr": "Tabii, buyurun. Çok sıcak, değil mi?", "ru": "Конечно, пожалуйста. Очень жарко, правда?" }
+        ]},
+        { "speaker": "b", "tr": "Hoş geldiniz! Akşam deniz kenarında hava serin, çok güzel.", "ru": "Добро пожаловать! Вечером у моря прохладно, очень хорошо.", "distractors": [
+          { "tr": "Merhaba! Bir soğuk limonata, lütfen.", "ru": "Здравствуйте! Холодный лимонад, пожалуйста." },
+          { "tr": "Tabii, buyurun. Çok sıcak, değil mi?", "ru": "Конечно, пожалуйста. Очень жарко, правда?" }
+        ]}
+      ]
+    },
+    {
+      "id": "o-pogode-anya-moskva-sneg",
+      "title": "Аня: в Москве снег",
+      "level": "A1",
+      "speakers": { "a": "Ольга", "b": "Аня" },
+      "turns": [
+        { "speaker": "a", "tr": "Alo, Anya! Moskova'da hava nasıl?", "ru": "Алло, Аня! Какая в Москве погода?", "distractors": [
+          { "tr": "Tamam! Sen de şemsiyeni unutma!", "ru": "Хорошо! А ты не забывай зонт!" },
+          { "tr": "Sağ ol, Anya. Sıcak giyin!", "ru": "Спасибо, Аня. Одевайся теплее!" }
+        ]},
+        { "speaker": "b", "tr": "Berbat! Bugün soğuk, kar var. İstanbul'da hava nasıl?", "ru": "Ужасная! Сегодня холодно, снег. А в Стамбуле какая погода?", "distractors": [
+          { "tr": "Tamam! Sen de şemsiyeni unutma!", "ru": "Хорошо! А ты не забывай зонт!" },
+          { "tr": "Sağ ol, Anya. Sıcak giyin!", "ru": "Спасибо, Аня. Одевайся теплее!" }
+        ]},
+        { "speaker": "a", "tr": "Burada bugün yağmur var, ama soğuk değil. On iki derece.", "ru": "Здесь сегодня дождь, но не холодно. Двенадцать градусов.", "distractors": [
+          { "tr": "Tamam! Sen de şemsiyeni unutma!", "ru": "Хорошо! А ты не забывай зонт!" },
+          { "tr": "Sağ ol, Anya. Sıcak giyin!", "ru": "Спасибо, Аня. Одевайся теплее!" }
+        ]},
+        { "speaker": "b", "tr": "On iki mi? Moskova'da eksi on!", "ru": "Двенадцать? А в Москве минус десять!", "distractors": [
+          { "tr": "Tamam! Sen de şemsiyeni unutma!", "ru": "Хорошо! А ты не забывай зонт!" },
+          { "tr": "Alo, Anya! Moskova'da hava nasıl?", "ru": "Алло, Аня! Какая в Москве погода?" }
+        ]},
+        { "speaker": "a", "tr": "Eyvah! Anneannem nasıl? Dışarı çıkıyor mu?", "ru": "Ой! А как бабушка? Выходит на улицу?", "distractors": [
+          { "tr": "Alo, Anya! Moskova'da hava nasıl?", "ru": "Алло, Аня! Какая в Москве погода?" },
+          { "tr": "Berbat! Bugün soğuk, kar var. İstanbul'da hava nasıl?", "ru": "Ужасная! Сегодня холодно, снег. А в Стамбуле какая погода?" }
+        ]},
+        { "speaker": "b", "tr": "Hayır, evde. Ben her gün ona gidiyorum, merak etme.", "ru": "Нет, сидит дома. Я каждый день к ней захожу, не волнуйся.", "distractors": [
+          { "tr": "Alo, Anya! Moskova'da hava nasıl?", "ru": "Алло, Аня! Какая в Москве погода?" },
+          { "tr": "Berbat! Bugün soğuk, kar var. İstanbul'da hava nasıl?", "ru": "Ужасная! Сегодня холодно, снег. А в Стамбуле какая погода?" }
+        ]},
+        { "speaker": "a", "tr": "Sağ ol, Anya. Sıcak giyin!", "ru": "Спасибо, Аня. Одевайся теплее!", "distractors": [
+          { "tr": "Alo, Anya! Moskova'da hava nasıl?", "ru": "Алло, Аня! Какая в Москве погода?" },
+          { "tr": "Berbat! Bugün soğuk, kar var. İstanbul'da hava nasıl?", "ru": "Ужасная! Сегодня холодно, снег. А в Стамбуле какая погода?" }
+        ]},
+        { "speaker": "b", "tr": "Tamam! Sen de şemsiyeni unutma!", "ru": "Хорошо! А ты не забывай зонт!", "distractors": [
+          { "tr": "Alo, Anya! Moskova'da hava nasıl?", "ru": "Алло, Аня! Какая в Москве погода?" },
+          { "tr": "Berbat! Bugün soğuk, kar var. İstanbul'da hava nasıl?", "ru": "Ужасная! Сегодня холодно, снег. А в Стамбуле какая погода?" }
+        ]}
+      ]
+    }
+  ]
+}
