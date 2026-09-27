@@ -52,5 +52,11 @@
     "title": "В городе",
     "count": 10,
     "sizeKB": 40.1
+  },
+  {
+    "id": "osmotr-dostoprimechatelnostey",
+    "title": "Осмотр достопримечательностей",
+    "count": 11,
+    "sizeKB": 74.7
   }
 ]
