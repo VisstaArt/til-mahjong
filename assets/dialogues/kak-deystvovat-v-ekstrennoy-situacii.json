@@ -522,7 +522,7 @@
       "id": "ekstren-dusen-adam",
       "title": "Помощь прохожему",
       "level": "A2",
-      "speakers": { "a": "Ольга", "b": "Хайри" },
+      "speakers": { "a": "Ольга", "b": "Сабри" },
       "turns": [
         { "speaker": "a", "tr": "Affedersiniz! Yardım edin, lütfen! Dışarıda yaşlı bir adam düştü.", "ru": "Извините! Помогите, пожалуйста! На улице упал пожилой мужчина.", "distractors": [
           { "tr": "Tamam, 112'yi arıyorum. Siz başını tutun, lütfen.", "ru": "Хорошо, звоню в 112. А вы, пожалуйста, придержите ему голову." },
