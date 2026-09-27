@@ -793,7 +793,7 @@
       "speakers": { "a": "Ольга", "b": "Лейла" },
       "turns": [
         { "speaker": "a", "tr": "Leyla, çok acıktım! Nerede hafif yemekler bulabiliriz?", "ru": "Лейла, я ужасно проголодалась! Где можно перекусить?", "distractors": [
-          { "tr": "İyi! Anya'dan haber var: Mayıs'ta Türkiye'ye geliyor!", "ru": "Хорошо! Есть новости от Ани: в мае она приезжает в Турцию!" },
+          { "tr": "İyi! Anya'dan haber var: Temmuz'da Türkiye'ye geliyor!", "ru": "Хорошо! Есть новости от Ани: в июле она приезжает в Турцию!" },
           { "tr": "Olmaz! Yarı yarıya ödeyelim.", "ru": "Ни за что! Давай пополам." }
         ]},
         { "speaker": "b", "tr": "Köşede küçük bir kafe var, çok güzel. Ben de acıktım!", "ru": "На углу есть маленькое кафе, очень хорошее. Я тоже проголодалась!", "distractors": [
@@ -817,7 +817,7 @@
           { "tr": "Tamam! Bu sefer hesabı ben ödüyorum.", "ru": "Ладно! На этот раз счёт оплачиваю я." }
         ]},
         { "speaker": "a", "tr": "Ben de! Şarap içer misin?", "ru": "Я тоже! Вино будешь?", "distractors": [
-          { "tr": "İyi! Anya'dan haber var: Mayıs'ta Türkiye'ye geliyor!", "ru": "Хорошо! Есть новости от Ани: в мае она приезжает в Турцию!" },
+          { "tr": "İyi! Anya'dan haber var: Temmuz'da Türkiye'ye geliyor!", "ru": "Хорошо! Есть новости от Ани: в июле она приезжает в Турцию!" },
           { "tr": "Olmaz! Yarı yarıya ödeyelim.", "ru": "Ни за что! Давай пополам." }
         ]},
         { "speaker": "b", "tr": "Hayır, teşekkürler, alkol kullanmıyorum. Ayran içeceğim. Sen?", "ru": "Нет, спасибо, я не употребляю алкоголь. Буду айран. А ты?", "distractors": [
@@ -832,7 +832,7 @@
           { "tr": "Burada gözleme çok güzel. Ben peynirli gözleme alıyorum.", "ru": "Здесь очень вкусная гёзлеме. Я беру гёзлеме с сыром." },
           { "tr": "Tamam! Bu sefer hesabı ben ödüyorum.", "ru": "Ладно! На этот раз счёт оплачиваю я." }
         ]},
-        { "speaker": "a", "tr": "İyi! Anya'dan haber var: Mayıs'ta Türkiye'ye geliyor!", "ru": "Хорошо! Есть новости от Ани: в мае она приезжает в Турцию!", "distractors": [
+        { "speaker": "a", "tr": "İyi! Anya'dan haber var: Temmuz'da Türkiye'ye geliyor!", "ru": "Хорошо! Есть новости от Ани: в июле она приезжает в Турцию!", "distractors": [
           { "tr": "Leyla, çok acıktım! Nerede hafif yemekler bulabiliriz?", "ru": "Лейла, я ужасно проголодалась! Где можно перекусить?" },
           { "tr": "Ben de! Şarap içer misin?", "ru": "Я тоже! Вино будешь?" }
         ]},
