@@ -282,7 +282,7 @@
       "id": "v-gorode-taksi-iskele",
       "title": "Утром на такси до пристани",
       "level": "A1",
-      "speakers": { "a": "Ольга", "b": "Рамазан" },
+      "speakers": { "a": "Ольга", "b": "Ферди" },
       "turns": [
         { "speaker": "a", "tr": "Günaydın. İskeleye, lütfen.", "ru": "Доброе утро. На пристань, пожалуйста.", "distractors": [
           { "tr": "Burada durun, lütfen. Buradan yürüyorum.", "ru": "Остановите здесь, пожалуйста. Дальше я пешком." },
