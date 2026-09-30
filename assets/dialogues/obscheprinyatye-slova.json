@@ -75,6 +75,14 @@
         { "speaker": "b", "tr": "Var! Ekmek sabah yedide geliyor.", "ru": "Будет! Хлеб привозят в семь утра.", "distractors": [
           { "tr": "İyi akşamlar! Ekmek var mı?", "ru": "Добрый вечер! Хлеб есть?" },
           { "tr": "Peki, süt var mı?", "ru": "Ладно, а молоко есть?" }
+        ]},
+        { "speaker": "a", "tr": "Tamam, teşekkürler. Allah'a ısmarladık!", "ru": "Хорошо, спасибо. До свидания!", "distractors": [
+          { "tr": "İyi akşamlar! Ekmek var mı?", "ru": "Добрый вечер! Хлеб есть?" },
+          { "tr": "Simit var mı?", "ru": "А симиты есть?" }
+        ]},
+        { "speaker": "b", "tr": "Güle güle!", "ru": "Всего доброго!", "distractors": [
+          { "tr": "Yok, maalesef. Ekmek bitti.", "ru": "Нет, к сожалению. Хлеб закончился." },
+          { "tr": "Simit de yok. Ekmek, simit, poğaça — hiçbir şey yok!", "ru": "Симитов тоже нет. Хлеб, симиты, погача — ничего нет!" }
         ]}
       ]
     },
@@ -140,7 +148,7 @@
           { "tr": "Aa, Nuran Hanım, merhaba! İçeri gelin.", "ru": "А, Нуран-ханым, здравствуйте! Заходите." },
           { "tr": "Teşekkürler, akşam geleceğim!", "ru": "Спасибо, вечером приду!" }
         ]},
-        { "speaker": "b", "tr": "Teşekkürler kızım. Yarın pazar. Market açık mı, biliyor musun?", "ru": "Спасибо, дочка. Завтра воскресенье. Не знаешь, магазин открыт?", "distractors": [
+        { "speaker": "b", "tr": "Allah razı olsun kızım. Yarın pazar. Market açık mı, biliyor musun?", "ru": "Храни тебя бог, дочка. Завтра воскресенье. Не знаешь, магазин открыт?", "distractors": [
           { "tr": "Aa, Nuran Hanım, merhaba! İçeri gelin.", "ru": "А, Нуран-ханым, здравствуйте! Заходите." },
           { "tr": "Merhaba kızım. Evde tuz var mı? Benim tuzum bitti.", "ru": "Здравствуй, дочка. У тебя дома есть соль? У меня соль закончилась." }
         ]},

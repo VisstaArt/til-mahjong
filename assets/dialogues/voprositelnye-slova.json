@@ -9,23 +9,23 @@
       "speakers": { "a": "Ольга", "b": "Хюсню" },
       "turns": [
         { "speaker": "a", "tr": "Affedersiniz, nerede bir postane bulabilirim?", "ru": "Извините, где я могу найти почту?", "distractors": [
-          { "tr": "Rica ederim. İyi günler!", "ru": "Не за что. Хорошего дня!" },
+          { "tr": "Rica ederim. Allah kavuştursun! İyi günler!", "ru": "Не за что. Дай бог вам скорее увидеться! Хорошего дня!" },
           { "tr": "Evet, Moskova'ya, kız kardeşime. Çok teşekkürler!", "ru": "Да, в Москву, сестре. Большое спасибо!" }
         ]},
         { "speaker": "b", "tr": "Postane mi? Çarşıda bir postane var.", "ru": "Почту? На рынке есть почта.", "distractors": [
-          { "tr": "Rica ederim. İyi günler!", "ru": "Не за что. Хорошего дня!" },
+          { "tr": "Rica ederim. Allah kavuştursun! İyi günler!", "ru": "Не за что. Дай бог вам скорее увидеться! Хорошего дня!" },
           { "tr": "Evet, Moskova'ya, kız kardeşime. Çok teşekkürler!", "ru": "Да, в Москву, сестре. Большое спасибо!" }
         ]},
         { "speaker": "a", "tr": "Ne kadar uzaklıkta?", "ru": "Как далеко?", "distractors": [
-          { "tr": "Rica ederim. İyi günler!", "ru": "Не за что. Хорошего дня!" },
+          { "tr": "Rica ederim. Allah kavuştursun! İyi günler!", "ru": "Не за что. Дай бог вам скорее увидеться! Хорошего дня!" },
           { "tr": "Evet, Moskova'ya, kız kardeşime. Çok teşekkürler!", "ru": "Да, в Москву, сестре. Большое спасибо!" }
         ]},
         { "speaker": "b", "tr": "Çok uzak değil, bir kilometre.", "ru": "Не очень далеко, километр.", "distractors": [
-          { "tr": "Rica ederim. İyi günler!", "ru": "Не за что. Хорошего дня!" },
+          { "tr": "Rica ederim. Allah kavuştursun! İyi günler!", "ru": "Не за что. Дай бог вам скорее увидеться! Хорошего дня!" },
           { "tr": "Evet, Moskova'ya, kız kardeşime. Çok teşekkürler!", "ru": "Да, в Москву, сестре. Большое спасибо!" }
         ]},
         { "speaker": "a", "tr": "Oraya nasıl gidebilirim?", "ru": "Как мне туда добраться?", "distractors": [
-          { "tr": "Rica ederim. İyi günler!", "ru": "Не за что. Хорошего дня!" },
+          { "tr": "Rica ederim. Allah kavuştursun! İyi günler!", "ru": "Не за что. Дай бог вам скорее увидеться! Хорошего дня!" },
           { "tr": "Affedersiniz, nerede bir postane bulabilirim?", "ru": "Извините, где я могу найти почту?" }
         ]},
         { "speaker": "b", "tr": "Düz gidin, sonra sağa dönün. Postane caminin yanında.", "ru": "Идите прямо, потом поверните направо. Почта рядом с мечетью.", "distractors": [
@@ -44,7 +44,7 @@
           { "tr": "Affedersiniz, nerede bir postane bulabilirim?", "ru": "Извините, где я могу найти почту?" },
           { "tr": "Postane mi? Çarşıda bir postane var.", "ru": "Почту? На рынке есть почта." }
         ]},
-        { "speaker": "b", "tr": "Rica ederim. İyi günler!", "ru": "Не за что. Хорошего дня!", "distractors": [
+        { "speaker": "b", "tr": "Rica ederim. Allah kavuştursun! İyi günler!", "ru": "Не за что. Дай бог вам скорее увидеться! Хорошего дня!", "distractors": [
           { "tr": "Affedersiniz, nerede bir postane bulabilirim?", "ru": "Извините, где я могу найти почту?" },
           { "tr": "Postane mi? Çarşıda bir postane var.", "ru": "Почту? На рынке есть почта." }
         ]}
