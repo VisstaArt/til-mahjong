@@ -489,6 +489,510 @@
           { "tr": "Hayır, bir kız kardeşim var. Neden?", "ru": "Нет, у меня есть сестра. А что?" }
         ]}
       ]
+    },
+    {
+      "id": "semya-a2-detstvo-olgi",
+      "title": "Мама в гостях: детство Ольги",
+      "level": "A2",
+      "speakers": { "a": "Ольга", "b": "Дениз" },
+      "turns": [
+        { "speaker": "a", "tr": "Deniz, annem sana eski fotoğraflarımı göstermek istiyor.", "ru": "Дениз, мама хочет показать тебе мои старые фотографии.", "distractors": [
+          { "tr": "Evet. Hafta sonları beni hep müzelere götürürdü. Peki sen küçükken nasıl bir çocuktun?", "ru": "Да. По выходным она всегда водила меня в музеи. А ты каким был в детстве?" },
+          { "tr": "Annem de seni çok sevdi. \"Deniz çok kibar\" diyor.", "ru": "Ты маме тоже очень понравился. Она говорит: «Дениз очень вежливый»." }
+        ]},
+        { "speaker": "b", "tr": "Harika! Bu küçük kız sen misin?", "ru": "Здорово! Эта маленькая девочка — ты?", "distractors": [
+          { "tr": "Ben çok yaramazdım! Okuldan gelince çantamı atıp sokakta top oynardım.", "ru": "Я был очень шаловливым! Приходил из школы, бросал портфель и играл во дворе в мяч." },
+          { "tr": "Annene teşekkür et. Yemek de çok güzeldi!", "ru": "Поблагодари маму. И ужин был очень вкусный!" }
+        ]},
+        { "speaker": "a", "tr": "Evet, burada beş yaşındayım. Annem diyor ki, çocukken çok sakinmişim.", "ru": "Да, здесь мне пять лет. Мама говорит, что в детстве я была очень спокойной.", "distractors": [
+          { "tr": "Evet. Hafta sonları beni hep müzelere götürürdü. Peki sen küçükken nasıl bir çocuktun?", "ru": "Да. По выходным она всегда водила меня в музеи. А ты каким был в детстве?" },
+          { "tr": "Annem de seni çok sevdi. \"Deniz çok kibar\" diyor.", "ru": "Ты маме тоже очень понравился. Она говорит: «Дениз очень вежливый»." }
+        ]},
+        { "speaker": "b", "tr": "Sakin mi? Şimdi benden daha çok konuşuyorsun!", "ru": "Спокойной? Сейчас ты говоришь больше меня!", "distractors": [
+          { "tr": "Ben çok yaramazdım! Okuldan gelince çantamı atıp sokakta top oynardım.", "ru": "Я был очень шаловливым! Приходил из школы, бросал портфель и играл во дворе в мяч." },
+          { "tr": "Annene teşekkür et. Yemek de çok güzeldi!", "ru": "Поблагодари маму. И ужин был очень вкусный!" }
+        ]},
+        { "speaker": "a", "tr": "Ha ha! Annem diyor ki, bütün gün sessizce resim yaparmışım.", "ru": "Ха-ха! Мама говорит, что я целыми днями тихо рисовала.", "distractors": [
+          { "tr": "Anya da öyleydi. Annem diyor ki, bir gün bütün duvarlara resim yapmış!", "ru": "Аня тоже была такой. Мама говорит, однажды она разрисовала все стены!" },
+          { "tr": "Annem de seni çok sevdi. \"Deniz çok kibar\" diyor.", "ru": "Ты маме тоже очень понравился. Она говорит: «Дениз очень вежливый»." }
+        ]},
+        { "speaker": "b", "tr": "Annen de resmi çok seviyor, değil mi?", "ru": "Твоя мама ведь тоже очень любит живопись?", "distractors": [
+          { "tr": "Ha ha! O zaman Anya'yı çok seveceğim.", "ru": "Ха-ха! Тогда Аня мне точно понравится." },
+          { "tr": "Annene teşekkür et. Yemek de çok güzeldi!", "ru": "Поблагодари маму. И ужин был очень вкусный!" }
+        ]},
+        { "speaker": "a", "tr": "Evet. Hafta sonları beni hep müzelere götürürdü. Peki sen küçükken nasıl bir çocuktun?", "ru": "Да. По выходным она всегда водила меня в музеи. А ты каким был в детстве?", "distractors": [
+          { "tr": "Deniz, annem sana eski fotoğraflarımı göstermek istiyor.", "ru": "Дениз, мама хочет показать тебе мои старые фотографии." },
+          { "tr": "Annem de seni çok sevdi. \"Deniz çok kibar\" diyor.", "ru": "Ты маме тоже очень понравился. Она говорит: «Дениз очень вежливый»." }
+        ]},
+        { "speaker": "b", "tr": "Ben çok yaramazdım! Okuldan gelince çantamı atıp sokakta top oynardım.", "ru": "Я был очень шаловливым! Приходил из школы, бросал портфель и играл во дворе в мяч.", "distractors": [
+          { "tr": "Harika! Bu küçük kız sen misin?", "ru": "Здорово! Эта маленькая девочка — ты?" },
+          { "tr": "Annene teşekkür et. Yemek de çok güzeldi!", "ru": "Поблагодари маму. И ужин был очень вкусный!" }
+        ]},
+        { "speaker": "a", "tr": "Anya da öyleydi. Annem diyor ki, bir gün bütün duvarlara resim yapmış!", "ru": "Аня тоже была такой. Мама говорит, однажды она разрисовала все стены!", "distractors": [
+          { "tr": "Deniz, annem sana eski fotoğraflarımı göstermek istiyor.", "ru": "Дениз, мама хочет показать тебе мои старые фотографии." },
+          { "tr": "Ha ha! Annem diyor ki, bütün gün sessizce resim yaparmışım.", "ru": "Ха-ха! Мама говорит, что я целыми днями тихо рисовала." }
+        ]},
+        { "speaker": "b", "tr": "Ha ha! O zaman Anya'yı çok seveceğim.", "ru": "Ха-ха! Тогда Аня мне точно понравится.", "distractors": [
+          { "tr": "Harika! Bu küçük kız sen misin?", "ru": "Здорово! Эта маленькая девочка — ты?" },
+          { "tr": "Annen de resmi çok seviyor, değil mi?", "ru": "Твоя мама ведь тоже очень любит живопись?" }
+        ]},
+        { "speaker": "a", "tr": "Annem de seni çok sevdi. \"Deniz çok kibar\" diyor.", "ru": "Ты маме тоже очень понравился. Она говорит: «Дениз очень вежливый».", "distractors": [
+          { "tr": "Deniz, annem sana eski fotoğraflarımı göstermek istiyor.", "ru": "Дениз, мама хочет показать тебе мои старые фотографии." },
+          { "tr": "Ha ha! Annem diyor ki, bütün gün sessizce resim yaparmışım.", "ru": "Ха-ха! Мама говорит, что я целыми днями тихо рисовала." }
+        ]},
+        { "speaker": "b", "tr": "Annene teşekkür et. Yemek de çok güzeldi!", "ru": "Поблагодари маму. И ужин был очень вкусный!", "distractors": [
+          { "tr": "Harika! Bu küçük kız sen misin?", "ru": "Здорово! Эта маленькая девочка — ты?" },
+          { "tr": "Annen de resmi çok seviyor, değil mi?", "ru": "Твоя мама ведь тоже очень любит живопись?" }
+        ]}
+      ]
+    },
+    {
+      "id": "semya-a2-sestry",
+      "title": "Сравниваем сестёр: Аня и Зехра",
+      "level": "A2",
+      "speakers": { "a": "Ольга", "b": "Лейла" },
+      "turns": [
+        { "speaker": "a", "tr": "Leyla, Zehra senden kaç yaş büyük?", "ru": "Лейла, на сколько лет Зехра старше тебя?", "distractors": [
+          { "tr": "Ne tatlı! Zehra neden hemşire oldu?", "ru": "Как мило! А почему Зехра стала медсестрой?" },
+          { "tr": "Evet, Anya bana her gün yazar. Hafta sonları da görüntülü konuşuruz.", "ru": "Да, Аня пишет мне каждый день. А по выходным созваниваемся по видео." }
+        ]},
+        { "speaker": "b", "tr": "Beş yaş. Ama o benden daha enerjik! Anya senden küçük, değil mi?", "ru": "На пять лет. Но она энергичнее меня! А Аня ведь младше тебя?", "distractors": [
+          { "tr": "Küçükken bebeklerini hep tedavi ederdi. Anya neden bankacı oldu?", "ru": "В детстве она всё время лечила своих кукол. А почему Аня пошла работать в банк?" },
+          { "tr": "Ben de Zehra'ya her hafta giderim. Efe beni kapıda bekler!", "ru": "А я каждую неделю езжу к Зехре. Эфе ждёт меня у двери!" }
+        ]},
+        { "speaker": "a", "tr": "Evet, iki yaş küçük. Ama benden daha uzun ve daha neşeli.", "ru": "Да, на два года младше. Но выше меня и веселее.", "distractors": [
+          { "tr": "Ne tatlı! Zehra neden hemşire oldu?", "ru": "Как мило! А почему Зехра стала медсестрой?" },
+          { "tr": "Evet, Anya bana her gün yazar. Hafta sonları da görüntülü konuşuruz.", "ru": "Да, Аня пишет мне каждый день. А по выходным созваниваемся по видео." }
+        ]},
+        { "speaker": "b", "tr": "Çocukken kavga eder miydiniz?", "ru": "А в детстве вы ссорились?", "distractors": [
+          { "tr": "Küçükken bebeklerini hep tedavi ederdi. Anya neden bankacı oldu?", "ru": "В детстве она всё время лечила своих кукол. А почему Аня пошла работать в банк?" },
+          { "tr": "Ben de Zehra'ya her hafta giderim. Efe beni kapıda bekler!", "ru": "А я каждую неделю езжу к Зехре. Эфе ждёт меня у двери!" }
+        ]},
+        { "speaker": "a", "tr": "Çok! Eskiden bir odamız vardı ve her gün kavga ederdik. Siz?", "ru": "Ещё как! Раньше у нас была одна комната на двоих, и мы каждый день ссорились. А вы?", "distractors": [
+          { "tr": "Anya okulda matematikte benden çok daha iyiydi.", "ru": "Аня в школе была гораздо сильнее меня в математике." },
+          { "tr": "Evet, Anya bana her gün yazar. Hafta sonları da görüntülü konuşuruz.", "ru": "Да, Аня пишет мне каждый день. А по выходным созваниваемся по видео." }
+        ]},
+        { "speaker": "b", "tr": "Biz az kavga ederdik. Zehra beni hep korurdu.", "ru": "Мы ссорились редко. Зехра всегда меня защищала.", "distractors": [
+          { "tr": "Anlıyorum. Şimdi Anya'yla sık konuşuyor musunuz?", "ru": "Понятно. А сейчас вы с Аней часто общаетесь?" },
+          { "tr": "Ben de Zehra'ya her hafta giderim. Efe beni kapıda bekler!", "ru": "А я каждую неделю езжу к Зехре. Эфе ждёт меня у двери!" }
+        ]},
+        { "speaker": "a", "tr": "Ne tatlı! Zehra neden hemşire oldu?", "ru": "Как мило! А почему Зехра стала медсестрой?", "distractors": [
+          { "tr": "Leyla, Zehra senden kaç yaş büyük?", "ru": "Лейла, на сколько лет Зехра старше тебя?" },
+          { "tr": "Evet, Anya bana her gün yazar. Hafta sonları da görüntülü konuşuruz.", "ru": "Да, Аня пишет мне каждый день. А по выходным созваниваемся по видео." }
+        ]},
+        { "speaker": "b", "tr": "Küçükken bebeklerini hep tedavi ederdi. Anya neden bankacı oldu?", "ru": "В детстве она всё время лечила своих кукол. А почему Аня пошла работать в банк?", "distractors": [
+          { "tr": "Beş yaş. Ama o benden daha enerjik! Anya senden küçük, değil mi?", "ru": "На пять лет. Но она энергичнее меня! А Аня ведь младше тебя?" },
+          { "tr": "Ben de Zehra'ya her hafta giderim. Efe beni kapıda bekler!", "ru": "А я каждую неделю езжу к Зехре. Эфе ждёт меня у двери!" }
+        ]},
+        { "speaker": "a", "tr": "Anya okulda matematikte benden çok daha iyiydi.", "ru": "Аня в школе была гораздо сильнее меня в математике.", "distractors": [
+          { "tr": "Leyla, Zehra senden kaç yaş büyük?", "ru": "Лейла, на сколько лет Зехра старше тебя?" },
+          { "tr": "Çok! Eskiden bir odamız vardı ve her gün kavga ederdik. Siz?", "ru": "Ещё как! Раньше у нас была одна комната на двоих, и мы каждый день ссорились. А вы?" }
+        ]},
+        { "speaker": "b", "tr": "Anlıyorum. Şimdi Anya'yla sık konuşuyor musunuz?", "ru": "Понятно. А сейчас вы с Аней часто общаетесь?", "distractors": [
+          { "tr": "Beş yaş. Ama o benden daha enerjik! Anya senden küçük, değil mi?", "ru": "На пять лет. Но она энергичнее меня! А Аня ведь младше тебя?" },
+          { "tr": "Biz az kavga ederdik. Zehra beni hep korurdu.", "ru": "Мы ссорились редко. Зехра всегда меня защищала." }
+        ]},
+        { "speaker": "a", "tr": "Evet, Anya bana her gün yazar. Hafta sonları da görüntülü konuşuruz.", "ru": "Да, Аня пишет мне каждый день. А по выходным созваниваемся по видео.", "distractors": [
+          { "tr": "Leyla, Zehra senden kaç yaş büyük?", "ru": "Лейла, на сколько лет Зехра старше тебя?" },
+          { "tr": "Çok! Eskiden bir odamız vardı ve her gün kavga ederdik. Siz?", "ru": "Ещё как! Раньше у нас была одна комната на двоих, и мы каждый день ссорились. А вы?" }
+        ]},
+        { "speaker": "b", "tr": "Ben de Zehra'ya her hafta giderim. Efe beni kapıda bekler!", "ru": "А я каждую неделю езжу к Зехре. Эфе ждёт меня у двери!", "distractors": [
+          { "tr": "Beş yaş. Ama o benden daha enerjik! Anya senden küçük, değil mi?", "ru": "На пять лет. Но она энергичнее меня! А Аня ведь младше тебя?" },
+          { "tr": "Biz az kavga ederdik. Zehra beni hep korurdu.", "ru": "Мы ссорились редко. Зехра всегда меня защищала." }
+        ]}
+      ]
+    },
+    {
+      "id": "semya-a2-markus-prazdniki",
+      "title": "Маркус: русские семейные праздники",
+      "level": "A2",
+      "speakers": { "a": "Ольга", "b": "Маркус" },
+      "turns": [
+        { "speaker": "a", "tr": "Markus, hafta sonu ne yaptın?", "ru": "Маркус, что ты делал на выходных?", "distractors": [
+          { "tr": "Çok salata! Annem her yıl \"Olivye\" salatası yapar. Siz Noel'de ne yersiniz?", "ru": "Много салатов! Мама каждый год делает салат «Оливье». А вы что едите на Рождество?" },
+          { "tr": "Bilmiyorum, biletler çok pahalı. Belki annemle babam İstanbul'a gelir.", "ru": "Не знаю, билеты очень дорогие. Может, мама с папой приедут в Стамбул." }
+        ]},
+        { "speaker": "b", "tr": "Annemin doğum günüydü, Hamburg'a telefon ettim. Rusya'da en önemli aile bayramı hangisi?", "ru": "У мамы был день рождения, я звонил в Гамбург. А какой в России самый главный семейный праздник?", "distractors": [
+          { "tr": "Kaz yeriz. Babaannem çok güzel kaz yaparmış, annem de ondan öğrendi.", "ru": "Гуся. Бабушка, говорят, прекрасно готовила гуся, а мама научилась у неё." },
+          { "tr": "O zaman onları da bizim sınıfa getir!", "ru": "Тогда приводи их к нам в класс!" }
+        ]},
+        { "speaker": "a", "tr": "Yılbaşı! Bütün aile bir araya gelir, büyük bir sofra kurarız.", "ru": "Новый год! Собирается вся семья, мы накрываем большой стол.", "distractors": [
+          { "tr": "Çok salata! Annem her yıl \"Olivye\" salatası yapar. Siz Noel'de ne yersiniz?", "ru": "Много салатов! Мама каждый год делает салат «Оливье». А вы что едите на Рождество?" },
+          { "tr": "Bilmiyorum, biletler çok pahalı. Belki annemle babam İstanbul'a gelir.", "ru": "Не знаю, билеты очень дорогие. Может, мама с папой приедут в Стамбул." }
+        ]},
+        { "speaker": "b", "tr": "Noel değil mi? Almanya'da biz Noel'i kutlarız.", "ru": "Не Рождество? В Германии мы празднуем Рождество.", "distractors": [
+          { "tr": "Kaz yeriz. Babaannem çok güzel kaz yaparmış, annem de ondan öğrendi.", "ru": "Гуся. Бабушка, говорят, прекрасно готовила гуся, а мама научилась у неё." },
+          { "tr": "O zaman onları da bizim sınıfa getir!", "ru": "Тогда приводи их к нам в класс!" }
+        ]},
+        { "speaker": "a", "tr": "Noel de var ama ocakta ve daha sessiz geçer. Yılbaşı daha büyük.", "ru": "Рождество тоже есть, но в январе, и оно проходит тише. Новый год — праздник больше.", "distractors": [
+          { "tr": "Ne güzel! Eskiden gece saat on ikide hep birlikte dilek tutardık.", "ru": "Как здорово! А мы раньше ровно в полночь все вместе загадывали желание." },
+          { "tr": "Bilmiyorum, biletler çok pahalı. Belki annemle babam İstanbul'a gelir.", "ru": "Не знаю, билеты очень дорогие. Может, мама с папой приедут в Стамбул." }
+        ]},
+        { "speaker": "b", "tr": "Yılbaşında ne yersiniz?", "ru": "А что вы едите на Новый год?", "distractors": [
+          { "tr": "Bu yıl yılbaşında Moskova'ya gidecek misin?", "ru": "В этом году поедешь на Новый год в Москву?" },
+          { "tr": "O zaman onları da bizim sınıfa getir!", "ru": "Тогда приводи их к нам в класс!" }
+        ]},
+        { "speaker": "a", "tr": "Çok salata! Annem her yıl \"Olivye\" salatası yapar. Siz Noel'de ne yersiniz?", "ru": "Много салатов! Мама каждый год делает салат «Оливье». А вы что едите на Рождество?", "distractors": [
+          { "tr": "Markus, hafta sonu ne yaptın?", "ru": "Маркус, что ты делал на выходных?" },
+          { "tr": "Bilmiyorum, biletler çok pahalı. Belki annemle babam İstanbul'a gelir.", "ru": "Не знаю, билеты очень дорогие. Может, мама с папой приедут в Стамбул." }
+        ]},
+        { "speaker": "b", "tr": "Kaz yeriz. Babaannem çok güzel kaz yaparmış, annem de ondan öğrendi.", "ru": "Гуся. Бабушка, говорят, прекрасно готовила гуся, а мама научилась у неё.", "distractors": [
+          { "tr": "Annemin doğum günüydü, Hamburg'a telefon ettim. Rusya'da en önemli aile bayramı hangisi?", "ru": "У мамы был день рождения, я звонил в Гамбург. А какой в России самый главный семейный праздник?" },
+          { "tr": "O zaman onları da bizim sınıfa getir!", "ru": "Тогда приводи их к нам в класс!" }
+        ]},
+        { "speaker": "a", "tr": "Ne güzel! Eskiden gece saat on ikide hep birlikte dilek tutardık.", "ru": "Как здорово! А мы раньше ровно в полночь все вместе загадывали желание.", "distractors": [
+          { "tr": "Markus, hafta sonu ne yaptın?", "ru": "Маркус, что ты делал на выходных?" },
+          { "tr": "Noel de var ama ocakta ve daha sessiz geçer. Yılbaşı daha büyük.", "ru": "Рождество тоже есть, но в январе, и оно проходит тише. Новый год — праздник больше." }
+        ]},
+        { "speaker": "b", "tr": "Bu yıl yılbaşında Moskova'ya gidecek misin?", "ru": "В этом году поедешь на Новый год в Москву?", "distractors": [
+          { "tr": "Annemin doğum günüydü, Hamburg'a telefon ettim. Rusya'da en önemli aile bayramı hangisi?", "ru": "У мамы был день рождения, я звонил в Гамбург. А какой в России самый главный семейный праздник?" },
+          { "tr": "Yılbaşında ne yersiniz?", "ru": "А что вы едите на Новый год?" }
+        ]},
+        { "speaker": "a", "tr": "Bilmiyorum, biletler çok pahalı. Belki annemle babam İstanbul'a gelir.", "ru": "Не знаю, билеты очень дорогие. Может, мама с папой приедут в Стамбул.", "distractors": [
+          { "tr": "Markus, hafta sonu ne yaptın?", "ru": "Маркус, что ты делал на выходных?" },
+          { "tr": "Noel de var ama ocakta ve daha sessiz geçer. Yılbaşı daha büyük.", "ru": "Рождество тоже есть, но в январе, и оно проходит тише. Новый год — праздник больше." }
+        ]},
+        { "speaker": "b", "tr": "O zaman onları da bizim sınıfa getir!", "ru": "Тогда приводи их к нам в класс!", "distractors": [
+          { "tr": "Annemin doğum günüydü, Hamburg'a telefon ettim. Rusya'da en önemli aile bayramı hangisi?", "ru": "У мамы был день рождения, я звонил в Гамбург. А какой в России самый главный семейный праздник?" },
+          { "tr": "Yılbaşında ne yersiniz?", "ru": "А что вы едите на Новый год?" }
+        ]}
+      ]
+    },
+    {
+      "id": "semya-a2-mama-deniza",
+      "title": "Мама Дениза по видеосвязи",
+      "level": "A2",
+      "speakers": { "a": "Ольга", "b": "Шюкран" },
+      "turns": [
+        { "speaker": "a", "tr": "Merhaba Şükran Hanım! Nasılsınız?", "ru": "Здравствуйте, Шюкран-ханым! Как вы?", "distractors": [
+          { "tr": "İyiler, teşekkür ederim. Annem yazın İstanbul'a geldi, Deniz'le de tanıştı.", "ru": "Хорошо, спасибо. Мама летом приезжала в Стамбул и познакомилась с Денизом." },
+          { "tr": "Aleykümselam! Ona da selamımı söyleyin, lütfen.", "ru": "И ему привет! Передайте ему, пожалуйста, привет от меня." }
+        ]},
+        { "speaker": "b", "tr": "İyiyim kızım, sağ ol. Sonunda seni görüyorum! Deniz senden çok bahsediyor.", "ru": "Хорошо, дочка, спасибо. Наконец-то я тебя вижу! Дениз много о тебе рассказывает.", "distractors": [
+          { "tr": "Ne güzel! Siz Ankara'ya ne zaman geleceksiniz? Size mantı yapacağım.", "ru": "Как хорошо! А вы когда приедете в Анкару? Я приготовлю вам манты." },
+          { "tr": "Söylerim kızım. Bayramda görüşmek üzere!", "ru": "Передам, дочка. До встречи на байрам!" }
+        ]},
+        { "speaker": "a", "tr": "Ben de çok mutluyum. Deniz de sizden hep bahseder.", "ru": "Я тоже очень рада. Дениз тоже всё время о вас рассказывает.", "distractors": [
+          { "tr": "İyiler, teşekkür ederim. Annem yazın İstanbul'a geldi, Deniz'le de tanıştı.", "ru": "Хорошо, спасибо. Мама летом приезжала в Стамбул и познакомилась с Денизом." },
+          { "tr": "Aleykümselam! Ona da selamımı söyleyin, lütfen.", "ru": "И ему привет! Передайте ему, пожалуйста, привет от меня." }
+        ]},
+        { "speaker": "b", "tr": "Öyle mi? Deniz küçükken çok utangaçtı, biliyor musun?", "ru": "Правда? А ты знаешь, что в детстве Дениз был очень стеснительным?", "distractors": [
+          { "tr": "Ne güzel! Siz Ankara'ya ne zaman geleceksiniz? Size mantı yapacağım.", "ru": "Как хорошо! А вы когда приедете в Анкару? Я приготовлю вам манты." },
+          { "tr": "Söylerim kızım. Bayramda görüşmek üzere!", "ru": "Передам, дочка. До встречи на байрам!" }
+        ]},
+        { "speaker": "a", "tr": "Gerçekten mi? Şimdi hiç utangaç değil! Arda da utangaç mıydı?", "ru": "Правда? Сейчас он совсем не стеснительный! А Арда тоже был стеснительным?", "distractors": [
+          { "tr": "Deniz \"Bayramda gidelim\" diyor. Sizin mantınızı çok merak ediyorum!", "ru": "Дениз говорит: «Поедем на байрам». Очень хочу попробовать ваши манты!" },
+          { "tr": "Aleykümselam! Ona da selamımı söyleyin, lütfen.", "ru": "И ему привет! Передайте ему, пожалуйста, привет от меня." }
+        ]},
+        { "speaker": "b", "tr": "Hayır, Arda abisinden çok daha konuşkandı. Hâlâ öyle! Senin ailen nasıl?", "ru": "Нет, Арда был гораздо разговорчивее старшего брата. И сейчас такой! А как твоя семья?", "distractors": [
+          { "tr": "Deniz'in babası da seni görmek istiyor ama şimdi evde değil. Sana selam söylüyor.", "ru": "Папа Дениза тоже хочет тебя увидеть, но сейчас его нет дома. Он передаёт тебе привет." },
+          { "tr": "Söylerim kızım. Bayramda görüşmek üzere!", "ru": "Передам, дочка. До встречи на байрам!" }
+        ]},
+        { "speaker": "a", "tr": "İyiler, teşekkür ederim. Annem yazın İstanbul'a geldi, Deniz'le de tanıştı.", "ru": "Хорошо, спасибо. Мама летом приезжала в Стамбул и познакомилась с Денизом.", "distractors": [
+          { "tr": "Merhaba Şükran Hanım! Nasılsınız?", "ru": "Здравствуйте, Шюкран-ханым! Как вы?" },
+          { "tr": "Aleykümselam! Ona da selamımı söyleyin, lütfen.", "ru": "И ему привет! Передайте ему, пожалуйста, привет от меня." }
+        ]},
+        { "speaker": "b", "tr": "Ne güzel! Siz Ankara'ya ne zaman geleceksiniz? Size mantı yapacağım.", "ru": "Как хорошо! А вы когда приедете в Анкару? Я приготовлю вам манты.", "distractors": [
+          { "tr": "İyiyim kızım, sağ ol. Sonunda seni görüyorum! Deniz senden çok bahsediyor.", "ru": "Хорошо, дочка, спасибо. Наконец-то я тебя вижу! Дениз много о тебе рассказывает." },
+          { "tr": "Söylerim kızım. Bayramda görüşmek üzere!", "ru": "Передам, дочка. До встречи на байрам!" }
+        ]},
+        { "speaker": "a", "tr": "Deniz \"Bayramda gidelim\" diyor. Sizin mantınızı çok merak ediyorum!", "ru": "Дениз говорит: «Поедем на байрам». Очень хочу попробовать ваши манты!", "distractors": [
+          { "tr": "Merhaba Şükran Hanım! Nasılsınız?", "ru": "Здравствуйте, Шюкран-ханым! Как вы?" },
+          { "tr": "Gerçekten mi? Şimdi hiç utangaç değil! Arda da utangaç mıydı?", "ru": "Правда? Сейчас он совсем не стеснительный! А Арда тоже был стеснительным?" }
+        ]},
+        { "speaker": "b", "tr": "Deniz'in babası da seni görmek istiyor ama şimdi evde değil. Sana selam söylüyor.", "ru": "Папа Дениза тоже хочет тебя увидеть, но сейчас его нет дома. Он передаёт тебе привет.", "distractors": [
+          { "tr": "İyiyim kızım, sağ ol. Sonunda seni görüyorum! Deniz senden çok bahsediyor.", "ru": "Хорошо, дочка, спасибо. Наконец-то я тебя вижу! Дениз много о тебе рассказывает." },
+          { "tr": "Hayır, Arda abisinden çok daha konuşkandı. Hâlâ öyle! Senin ailen nasıl?", "ru": "Нет, Арда был гораздо разговорчивее старшего брата. И сейчас такой! А как твоя семья?" }
+        ]},
+        { "speaker": "a", "tr": "Aleykümselam! Ona da selamımı söyleyin, lütfen.", "ru": "И ему привет! Передайте ему, пожалуйста, привет от меня.", "distractors": [
+          { "tr": "Merhaba Şükran Hanım! Nasılsınız?", "ru": "Здравствуйте, Шюкран-ханым! Как вы?" },
+          { "tr": "Gerçekten mi? Şimdi hiç utangaç değil! Arda da utangaç mıydı?", "ru": "Правда? Сейчас он совсем не стеснительный! А Арда тоже был стеснительным?" }
+        ]},
+        { "speaker": "b", "tr": "Söylerim kızım. Bayramda görüşmek üzere!", "ru": "Передам, дочка. До встречи на байрам!", "distractors": [
+          { "tr": "İyiyim kızım, sağ ol. Sonunda seni görüyorum! Deniz senden çok bahsediyor.", "ru": "Хорошо, дочка, спасибо. Наконец-то я тебя вижу! Дениз много о тебе рассказывает." },
+          { "tr": "Hayır, Arda abisinden çok daha konuşkandı. Hâlâ öyle! Senin ailen nasıl?", "ru": "Нет, Арда был гораздо разговорчивее старшего брата. И сейчас такой! А как твоя семья?" }
+        ]}
+      ]
+    },
+    {
+      "id": "semya-a2-efe-shkola",
+      "title": "Эфе рассказывает про школу",
+      "level": "A2",
+      "speakers": { "a": "Ольга", "b": "Эфе" },
+      "turns": [
+        { "speaker": "a", "tr": "Efe, okul nasıl gidiyor?", "ru": "Эфе, как дела в школе?", "distractors": [
+          { "tr": "Hayır, çok sakindim. Ama kız kardeşim Anya çok yaramazdı! Sen derste yaramazlık yapıyor musun?", "ru": "Нет, я была очень спокойной. А вот моя сестра Аня была очень шаловливой! А ты на уроках шалишь?" },
+          { "tr": "Ha ha! Bundan sonra derste öğretmenini dinle, tamam mı?", "ru": "Ха-ха! Теперь слушай учительницу на уроках, договорились?" }
+        ]},
+        { "speaker": "b", "tr": "Çok güzel, Olga abla! Öğretmenimiz annemden daha sabırlı!", "ru": "Очень хорошо, Ольга! Наша учительница терпеливее мамы!", "distractors": [
+          { "tr": "Biraz... Dün öğretmen annemi aradı.", "ru": "Немножко… Вчера учительница звонила маме." },
+          { "tr": "Tamam! Olga abla, pazar günü bizimle parka gelir misin?", "ru": "Договорились! Ольга, пойдёшь с нами в воскресенье в парк?" }
+        ]},
+        { "speaker": "a", "tr": "Ha ha! Sınıfında kaç öğrenci var?", "ru": "Ха-ха! А сколько учеников у тебя в классе?", "distractors": [
+          { "tr": "Hayır, çok sakindim. Ama kız kardeşim Anya çok yaramazdı! Sen derste yaramazlık yapıyor musun?", "ru": "Нет, я была очень спокойной. А вот моя сестра Аня была очень шаловливой! А ты на уроках шалишь?" },
+          { "tr": "Ha ha! Bundan sonra derste öğretmenini dinle, tamam mı?", "ru": "Ха-ха! Теперь слушай учительницу на уроках, договорились?" }
+        ]},
+        { "speaker": "b", "tr": "Yirmi iki. En iyi arkadaşım Bora. O benden daha hızlı koşar ama ben daha güzel resim yaparım!", "ru": "Двадцать два. Мой лучший друг — Бора. Он бегает быстрее меня, зато я лучше рисую!", "distractors": [
+          { "tr": "Biraz... Dün öğretmen annemi aradı.", "ru": "Немножко… Вчера учительница звонила маме." },
+          { "tr": "Tamam! Olga abla, pazar günü bizimle parka gelir misin?", "ru": "Договорились! Ольга, пойдёшь с нами в воскресенье в парк?" }
+        ]},
+        { "speaker": "a", "tr": "Ben de senin yaşındayken çok resim yapardım.", "ru": "Я в твоём возрасте тоже много рисовала.", "distractors": [
+          { "tr": "Eyvah! Annen ne dedi?", "ru": "Ой-ой! И что сказала мама?" },
+          { "tr": "Ha ha! Bundan sonra derste öğretmenini dinle, tamam mı?", "ru": "Ха-ха! Теперь слушай учительницу на уроках, договорились?" }
+        ]},
+        { "speaker": "b", "tr": "Gerçekten mi? Sen okulda yaramaz mıydın?", "ru": "Правда? А ты в школе была шаловливой?", "distractors": [
+          { "tr": "\"Eve gelince konuşuruz\" dedi. Ama babam güldü!", "ru": "Сказала: «Дома поговорим». А папа засмеялся!" },
+          { "tr": "Tamam! Olga abla, pazar günü bizimle parka gelir misin?", "ru": "Договорились! Ольга, пойдёшь с нами в воскресенье в парк?" }
+        ]},
+        { "speaker": "a", "tr": "Hayır, çok sakindim. Ama kız kardeşim Anya çok yaramazdı! Sen derste yaramazlık yapıyor musun?", "ru": "Нет, я была очень спокойной. А вот моя сестра Аня была очень шаловливой! А ты на уроках шалишь?", "distractors": [
+          { "tr": "Efe, okul nasıl gidiyor?", "ru": "Эфе, как дела в школе?" },
+          { "tr": "Ha ha! Bundan sonra derste öğretmenini dinle, tamam mı?", "ru": "Ха-ха! Теперь слушай учительницу на уроках, договорились?" }
+        ]},
+        { "speaker": "b", "tr": "Biraz... Dün öğretmen annemi aradı.", "ru": "Немножко… Вчера учительница звонила маме.", "distractors": [
+          { "tr": "Çok güzel, Olga abla! Öğretmenimiz annemden daha sabırlı!", "ru": "Очень хорошо, Ольга! Наша учительница терпеливее мамы!" },
+          { "tr": "Tamam! Olga abla, pazar günü bizimle parka gelir misin?", "ru": "Договорились! Ольга, пойдёшь с нами в воскресенье в парк?" }
+        ]},
+        { "speaker": "a", "tr": "Eyvah! Annen ne dedi?", "ru": "Ой-ой! И что сказала мама?", "distractors": [
+          { "tr": "Efe, okul nasıl gidiyor?", "ru": "Эфе, как дела в школе?" },
+          { "tr": "Ben de senin yaşındayken çok resim yapardım.", "ru": "Я в твоём возрасте тоже много рисовала." }
+        ]},
+        { "speaker": "b", "tr": "\"Eve gelince konuşuruz\" dedi. Ama babam güldü!", "ru": "Сказала: «Дома поговорим». А папа засмеялся!", "distractors": [
+          { "tr": "Çok güzel, Olga abla! Öğretmenimiz annemden daha sabırlı!", "ru": "Очень хорошо, Ольга! Наша учительница терпеливее мамы!" },
+          { "tr": "Gerçekten mi? Sen okulda yaramaz mıydın?", "ru": "Правда? А ты в школе была шаловливой?" }
+        ]},
+        { "speaker": "a", "tr": "Ha ha! Bundan sonra derste öğretmenini dinle, tamam mı?", "ru": "Ха-ха! Теперь слушай учительницу на уроках, договорились?", "distractors": [
+          { "tr": "Efe, okul nasıl gidiyor?", "ru": "Эфе, как дела в школе?" },
+          { "tr": "Ben de senin yaşındayken çok resim yapardım.", "ru": "Я в твоём возрасте тоже много рисовала." }
+        ]},
+        { "speaker": "b", "tr": "Tamam! Olga abla, pazar günü bizimle parka gelir misin?", "ru": "Договорились! Ольга, пойдёшь с нами в воскресенье в парк?", "distractors": [
+          { "tr": "Çok güzel, Olga abla! Öğretmenimiz annemden daha sabırlı!", "ru": "Очень хорошо, Ольга! Наша учительница терпеливее мамы!" },
+          { "tr": "Gerçekten mi? Sen okulda yaramaz mıydın?", "ru": "Правда? А ты в школе была шаловливой?" }
+        ]}
+      ]
+    },
+    {
+      "id": "semya-a2-tuba-trabzon",
+      "title": "Туба: мама звонит каждый день",
+      "level": "A2",
+      "speakers": { "a": "Ольга", "b": "Туба" },
+      "turns": [
+        { "speaker": "a", "tr": "Tuba, telefonun yine çalıyor. Annen mi?", "ru": "Туба, у тебя опять звонит телефон. Мама?", "distractors": [
+          { "tr": "Ailen seni ziyarete geliyor mu?", "ru": "А родители к тебе приезжают?" },
+          { "tr": "Hayır, ormanın yanında! Anya'yla bütün gün mantar toplardık.", "ru": "Нет, у леса! Мы с Аней целыми днями собирали грибы." }
+        ]},
+        { "speaker": "b", "tr": "Evet! Annem her gün öğlen arar. Sen annenle ne sıklıkla konuşursun?", "ru": "Да! Мама звонит каждый день в обед. А ты как часто разговариваешь с мамой?", "distractors": [
+          { "tr": "Pek gelmezler. Yazın okullar kapanınca biz Trabzon'a gideriz. Alp'le Ela anneannelerini ve dedelerini çok severler.", "ru": "Редко. Летом, когда закрываются школы, мы едем в Трабзон. Альп и Эла очень любят бабушку с дедушкой." },
+          { "tr": "Ne güzel! Rusya'yı bir gün mutlaka görmeliyim.", "ru": "Как здорово! Мне обязательно надо когда-нибудь увидеть Россию." }
+        ]},
+        { "speaker": "a", "tr": "Her pazar anneme telefon ederim. Anya da bana her gün yazar.", "ru": "Каждое воскресенье я звоню маме. А Аня пишет мне каждый день.", "distractors": [
+          { "tr": "Ailen seni ziyarete geliyor mu?", "ru": "А родители к тебе приезжают?" },
+          { "tr": "Hayır, ormanın yanında! Anya'yla bütün gün mantar toplardık.", "ru": "Нет, у леса! Мы с Аней целыми днями собирали грибы." }
+        ]},
+        { "speaker": "b", "tr": "Benim annem pazarı beklemez! Eskiden ben Trabzon'dayken her sabah birlikte kahvaltı ederdik.", "ru": "Моя мама до воскресенья не ждёт! Раньше, когда я жила в Трабзоне, мы каждое утро вместе завтракали.", "distractors": [
+          { "tr": "Pek gelmezler. Yazın okullar kapanınca biz Trabzon'a gideriz. Alp'le Ela anneannelerini ve dedelerini çok severler.", "ru": "Редко. Летом, когда закрываются школы, мы едем в Трабзон. Альп и Эла очень любят бабушку с дедушкой." },
+          { "tr": "Ne güzel! Rusya'yı bir gün mutlaka görmeliyim.", "ru": "Как здорово! Мне обязательно надо когда-нибудь увидеть Россию." }
+        ]},
+        { "speaker": "a", "tr": "Trabzon'da mı büyüdün?", "ru": "Ты выросла в Трабзоне?", "distractors": [
+          { "tr": "Ben de küçükken yazları anneanneme giderdim. Onun bir yazlığı vardı.", "ru": "Я в детстве тоже ездила летом к бабушке. У неё была дача." },
+          { "tr": "Hayır, ormanın yanında! Anya'yla bütün gün mantar toplardık.", "ru": "Нет, у леса! Мы с Аней целыми днями собирали грибы." }
+        ]},
+        { "speaker": "b", "tr": "Evet. İstanbul'a üniversite için geldim. Sonra burada evlendim.", "ru": "Да. В Стамбул приехала учиться в университете. Потом здесь вышла замуж.", "distractors": [
+          { "tr": "Yazlık mı? Deniz kenarında mı?", "ru": "Дача? У моря?" },
+          { "tr": "Ne güzel! Rusya'yı bir gün mutlaka görmeliyim.", "ru": "Как здорово! Мне обязательно надо когда-нибудь увидеть Россию." }
+        ]},
+        { "speaker": "a", "tr": "Ailen seni ziyarete geliyor mu?", "ru": "А родители к тебе приезжают?", "distractors": [
+          { "tr": "Tuba, telefonun yine çalıyor. Annen mi?", "ru": "Туба, у тебя опять звонит телефон. Мама?" },
+          { "tr": "Hayır, ormanın yanında! Anya'yla bütün gün mantar toplardık.", "ru": "Нет, у леса! Мы с Аней целыми днями собирали грибы." }
+        ]},
+        { "speaker": "b", "tr": "Pek gelmezler. Yazın okullar kapanınca biz Trabzon'a gideriz. Alp'le Ela anneannelerini ve dedelerini çok severler.", "ru": "Редко. Летом, когда закрываются школы, мы едем в Трабзон. Альп и Эла очень любят бабушку с дедушкой.", "distractors": [
+          { "tr": "Evet! Annem her gün öğlen arar. Sen annenle ne sıklıkla konuşursun?", "ru": "Да! Мама звонит каждый день в обед. А ты как часто разговариваешь с мамой?" },
+          { "tr": "Ne güzel! Rusya'yı bir gün mutlaka görmeliyim.", "ru": "Как здорово! Мне обязательно надо когда-нибудь увидеть Россию." }
+        ]},
+        { "speaker": "a", "tr": "Ben de küçükken yazları anneanneme giderdim. Onun bir yazlığı vardı.", "ru": "Я в детстве тоже ездила летом к бабушке. У неё была дача.", "distractors": [
+          { "tr": "Tuba, telefonun yine çalıyor. Annen mi?", "ru": "Туба, у тебя опять звонит телефон. Мама?" },
+          { "tr": "Trabzon'da mı büyüdün?", "ru": "Ты выросла в Трабзоне?" }
+        ]},
+        { "speaker": "b", "tr": "Yazlık mı? Deniz kenarında mı?", "ru": "Дача? У моря?", "distractors": [
+          { "tr": "Evet! Annem her gün öğlen arar. Sen annenle ne sıklıkla konuşursun?", "ru": "Да! Мама звонит каждый день в обед. А ты как часто разговариваешь с мамой?" },
+          { "tr": "Evet. İstanbul'a üniversite için geldim. Sonra burada evlendim.", "ru": "Да. В Стамбул приехала учиться в университете. Потом здесь вышла замуж." }
+        ]},
+        { "speaker": "a", "tr": "Hayır, ormanın yanında! Anya'yla bütün gün mantar toplardık.", "ru": "Нет, у леса! Мы с Аней целыми днями собирали грибы.", "distractors": [
+          { "tr": "Tuba, telefonun yine çalıyor. Annen mi?", "ru": "Туба, у тебя опять звонит телефон. Мама?" },
+          { "tr": "Trabzon'da mı büyüdün?", "ru": "Ты выросла в Трабзоне?" }
+        ]},
+        { "speaker": "b", "tr": "Ne güzel! Rusya'yı bir gün mutlaka görmeliyim.", "ru": "Как здорово! Мне обязательно надо когда-нибудь увидеть Россию.", "distractors": [
+          { "tr": "Evet! Annem her gün öğlen arar. Sen annenle ne sıklıkla konuşursun?", "ru": "Да! Мама звонит каждый день в обед. А ты как часто разговариваешь с мамой?" },
+          { "tr": "Evet. İstanbul'a üniversite için geldim. Sonra burada evlendim.", "ru": "Да. В Стамбул приехала учиться в университете. Потом здесь вышла замуж." }
+        ]}
+      ]
+    },
+    {
+      "id": "semya-a2-deniz-ankara",
+      "title": "Едем к родителям Дениза на байрам",
+      "level": "A2",
+      "speakers": { "a": "Ольга", "b": "Дениз" },
+      "turns": [
+        { "speaker": "a", "tr": "Deniz, annen \"Bayramda gelin\" dedi. Ne zaman gidiyoruz?", "ru": "Дениз, твоя мама сказала: «Приезжайте на байрам». Когда мы едем?", "distractors": [
+          { "tr": "O zaman Kadıköy'den lokum ve çiçek alırız. Arda da evde olacak mı?", "ru": "Тогда купим в Кадыкёе лукум и цветы. А Арда тоже будет дома?" },
+          { "tr": "El öpmek! Bunu hiç yapmadım. Bana göster, lütfen.", "ru": "Целовать руку! Я так никогда не делала. Покажи мне, пожалуйста." }
+        ]},
+        { "speaker": "b", "tr": "Cuma akşamı. İşten çıkınca yola çıkarız. Arabayla beş saat sürer.", "ru": "В пятницу вечером. Выйдем с работы — и в путь. На машине это часов пять.", "distractors": [
+          { "tr": "Evet. Arda benden dört yaş küçük ama benden daha uzun, göreceksin!", "ru": "Да. Арда на четыре года младше меня, но выше меня, вот увидишь!" },
+          { "tr": "Tabii! Önce elini öpersin, sonra alnına koyarsın. Bu kadar!", "ru": "Конечно! Сначала целуешь руку, потом прикладываешь её ко лбу. Вот и всё!" }
+        ]},
+        { "speaker": "a", "tr": "Ankara'ya varınca doğrudan annenlere mi gideceğiz?", "ru": "Когда приедем в Анкару, сразу поедем к твоим родителям?", "distractors": [
+          { "tr": "O zaman Kadıköy'den lokum ve çiçek alırız. Arda da evde olacak mı?", "ru": "Тогда купим в Кадыкёе лукум и цветы. А Арда тоже будет дома?" },
+          { "tr": "El öpmek! Bunu hiç yapmadım. Bana göster, lütfen.", "ru": "Целовать руку! Я так никогда не делала. Покажи мне, пожалуйста." }
+        ]},
+        { "speaker": "b", "tr": "Evet. Annem bizi beklemeden yatmaz! Sen heyecanlı mısın?", "ru": "Да. Мама не ляжет спать, не дождавшись нас! Ты волнуешься?", "distractors": [
+          { "tr": "Evet. Arda benden dört yaş küçük ama benden daha uzun, göreceksin!", "ru": "Да. Арда на четыре года младше меня, но выше меня, вот увидишь!" },
+          { "tr": "Tabii! Önce elini öpersin, sonra alnına koyarsın. Bu kadar!", "ru": "Конечно! Сначала целуешь руку, потом прикладываешь её ко лбу. Вот и всё!" }
+        ]},
+        { "speaker": "a", "tr": "Biraz! Onlara ne hediye alalım?", "ru": "Немножко! Что им подарить?", "distractors": [
+          { "tr": "Bayram sabahı ne yaparsınız?", "ru": "А что вы делаете утром в байрам?" },
+          { "tr": "El öpmek! Bunu hiç yapmadım. Bana göster, lütfen.", "ru": "Целовать руку! Я так никогда не делала. Покажи мне, пожалуйста." }
+        ]},
+        { "speaker": "b", "tr": "Babam tatlıyı çok sever. Annem de çiçekleri sever, bahçesi var.", "ru": "Папа очень любит сладкое. А мама любит цветы, у неё есть сад.", "distractors": [
+          { "tr": "Erkenden kalkarız. Önce büyüklerin elini öperiz, sonra hep birlikte kahvaltı ederiz.", "ru": "Встаём рано. Сначала целуем руку старшим, потом все вместе завтракаем." },
+          { "tr": "Tabii! Önce elini öpersin, sonra alnına koyarsın. Bu kadar!", "ru": "Конечно! Сначала целуешь руку, потом прикладываешь её ко лбу. Вот и всё!" }
+        ]},
+        { "speaker": "a", "tr": "O zaman Kadıköy'den lokum ve çiçek alırız. Arda da evde olacak mı?", "ru": "Тогда купим в Кадыкёе лукум и цветы. А Арда тоже будет дома?", "distractors": [
+          { "tr": "Deniz, annen \"Bayramda gelin\" dedi. Ne zaman gidiyoruz?", "ru": "Дениз, твоя мама сказала: «Приезжайте на байрам». Когда мы едем?" },
+          { "tr": "El öpmek! Bunu hiç yapmadım. Bana göster, lütfen.", "ru": "Целовать руку! Я так никогда не делала. Покажи мне, пожалуйста." }
+        ]},
+        { "speaker": "b", "tr": "Evet. Arda benden dört yaş küçük ama benden daha uzun, göreceksin!", "ru": "Да. Арда на четыре года младше меня, но выше меня, вот увидишь!", "distractors": [
+          { "tr": "Cuma akşamı. İşten çıkınca yola çıkarız. Arabayla beş saat sürer.", "ru": "В пятницу вечером. Выйдем с работы — и в путь. На машине это часов пять." },
+          { "tr": "Tabii! Önce elini öpersin, sonra alnına koyarsın. Bu kadar!", "ru": "Конечно! Сначала целуешь руку, потом прикладываешь её ко лбу. Вот и всё!" }
+        ]},
+        { "speaker": "a", "tr": "Bayram sabahı ne yaparsınız?", "ru": "А что вы делаете утром в байрам?", "distractors": [
+          { "tr": "Deniz, annen \"Bayramda gelin\" dedi. Ne zaman gidiyoruz?", "ru": "Дениз, твоя мама сказала: «Приезжайте на байрам». Когда мы едем?" },
+          { "tr": "Biraz! Onlara ne hediye alalım?", "ru": "Немножко! Что им подарить?" }
+        ]},
+        { "speaker": "b", "tr": "Erkenden kalkarız. Önce büyüklerin elini öperiz, sonra hep birlikte kahvaltı ederiz.", "ru": "Встаём рано. Сначала целуем руку старшим, потом все вместе завтракаем.", "distractors": [
+          { "tr": "Cuma akşamı. İşten çıkınca yola çıkarız. Arabayla beş saat sürer.", "ru": "В пятницу вечером. Выйдем с работы — и в путь. На машине это часов пять." },
+          { "tr": "Babam tatlıyı çok sever. Annem de çiçekleri sever, bahçesi var.", "ru": "Папа очень любит сладкое. А мама любит цветы, у неё есть сад." }
+        ]},
+        { "speaker": "a", "tr": "El öpmek! Bunu hiç yapmadım. Bana göster, lütfen.", "ru": "Целовать руку! Я так никогда не делала. Покажи мне, пожалуйста.", "distractors": [
+          { "tr": "Deniz, annen \"Bayramda gelin\" dedi. Ne zaman gidiyoruz?", "ru": "Дениз, твоя мама сказала: «Приезжайте на байрам». Когда мы едем?" },
+          { "tr": "Biraz! Onlara ne hediye alalım?", "ru": "Немножко! Что им подарить?" }
+        ]},
+        { "speaker": "b", "tr": "Tabii! Önce elini öpersin, sonra alnına koyarsın. Bu kadar!", "ru": "Конечно! Сначала целуешь руку, потом прикладываешь её ко лбу. Вот и всё!", "distractors": [
+          { "tr": "Cuma akşamı. İşten çıkınca yola çıkarız. Arabayla beş saat sürer.", "ru": "В пятницу вечером. Выйдем с работы — и в путь. На машине это часов пять." },
+          { "tr": "Babam tatlıyı çok sever. Annem de çiçekleri sever, bahçesi var.", "ru": "Папа очень любит сладкое. А мама любит цветы, у неё есть сад." }
+        ]}
+      ]
+    },
+    {
+      "id": "semya-a2-ozge-skuchaet",
+      "title": "Озге скучает по семье",
+      "level": "A2",
+      "speakers": { "a": "Ольга", "b": "Озге" },
+      "turns": [
+        { "speaker": "a", "tr": "Özge Hanım, bugün biraz üzgünsünüz. Bir şey mi oldu?", "ru": "Озге, вы сегодня какая-то грустная. Что-то случилось?", "distractors": [
+          { "tr": "Hafta sonu Eskişehir'e gidebilir misiniz?", "ru": "А на выходных вы можете съездить в Эскишехир?" },
+          { "tr": "Çibörek mi? Bizde de benzer bir yemek var: çeburek!", "ru": "Чибёрек? У нас тоже есть похожее блюдо — чебурек!" }
+        ]},
+        { "speaker": "b", "tr": "Ailemi özledim, Olga Hanım. Eskişehir'deyken her akşam annemle yemek yerdik.", "ru": "Я соскучилась по семье, Ольга-ханым. Когда я жила в Эскишехире, мы с мамой каждый вечер ужинали вместе.", "distractors": [
+          { "tr": "Evet, hızlı trenle iki buçuk saat. Bu cuma gideceğim!", "ru": "Да, на скоростном поезде два с половиной часа. В эту пятницу поеду!" },
+          { "tr": "Gerçekten mi? O zaman annem size bir kutu gönderir!", "ru": "Правда? Тогда мама пришлёт вам целую коробку!" }
+        ]},
+        { "speaker": "a", "tr": "Anlıyorum. Ben de ilk aylarda ailemi çok özledim.", "ru": "Понимаю. Я тоже в первые месяцы очень скучала по семье.", "distractors": [
+          { "tr": "Hafta sonu Eskişehir'e gidebilir misiniz?", "ru": "А на выходных вы можете съездить в Эскишехир?" },
+          { "tr": "Çibörek mi? Bizde de benzer bir yemek var: çeburek!", "ru": "Чибёрек? У нас тоже есть похожее блюдо — чебурек!" }
+        ]},
+        { "speaker": "b", "tr": "Siz nasıl alıştınız?", "ru": "А как вы привыкли?", "distractors": [
+          { "tr": "Evet, hızlı trenle iki buçuk saat. Bu cuma gideceğim!", "ru": "Да, на скоростном поезде два с половиной часа. В эту пятницу поеду!" },
+          { "tr": "Gerçekten mi? O zaman annem size bir kutu gönderir!", "ru": "Правда? Тогда мама пришлёт вам целую коробку!" }
+        ]},
+        { "speaker": "a", "tr": "Her pazar annemle görüntülü konuşurum, bu çok yardım ediyor. Sizin kardeşiniz var mı?", "ru": "Каждое воскресенье созваниваюсь с мамой по видео, это очень помогает. А у вас есть братья или сёстры?", "distractors": [
+          { "tr": "Harika! Eskişehir'e gidince annenize benden selam söyleyin.", "ru": "Отлично! Когда приедете в Эскишехир, передайте маме привет от меня." },
+          { "tr": "Çibörek mi? Bizde de benzer bir yemek var: çeburek!", "ru": "Чибёрек? У нас тоже есть похожее блюдо — чебурек!" }
+        ]},
+        { "speaker": "b", "tr": "Bir ağabeyim var. Benden altı yaş büyük, evli. Kızı iki yaşında, çok tatlı!", "ru": "Есть старший брат. Он на шесть лет старше меня, женат. Его дочке два года, она очень милая!", "distractors": [
+          { "tr": "Söylerim! Annem belki size çibörek yapar. Eskişehir'in çiböreği meşhurdur.", "ru": "Передам! Может, мама приготовит для вас чибёрек. Эскишехирский чибёрек знаменит." },
+          { "tr": "Gerçekten mi? O zaman annem size bir kutu gönderir!", "ru": "Правда? Тогда мама пришлёт вам целую коробку!" }
+        ]},
+        { "speaker": "a", "tr": "Hafta sonu Eskişehir'e gidebilir misiniz?", "ru": "А на выходных вы можете съездить в Эскишехир?", "distractors": [
+          { "tr": "Özge Hanım, bugün biraz üzgünsünüz. Bir şey mi oldu?", "ru": "Озге, вы сегодня какая-то грустная. Что-то случилось?" },
+          { "tr": "Çibörek mi? Bizde de benzer bir yemek var: çeburek!", "ru": "Чибёрек? У нас тоже есть похожее блюдо — чебурек!" }
+        ]},
+        { "speaker": "b", "tr": "Evet, hızlı trenle iki buçuk saat. Bu cuma gideceğim!", "ru": "Да, на скоростном поезде два с половиной часа. В эту пятницу поеду!", "distractors": [
+          { "tr": "Ailemi özledim, Olga Hanım. Eskişehir'deyken her akşam annemle yemek yerdik.", "ru": "Я соскучилась по семье, Ольга-ханым. Когда я жила в Эскишехире, мы с мамой каждый вечер ужинали вместе." },
+          { "tr": "Gerçekten mi? O zaman annem size bir kutu gönderir!", "ru": "Правда? Тогда мама пришлёт вам целую коробку!" }
+        ]},
+        { "speaker": "a", "tr": "Harika! Eskişehir'e gidince annenize benden selam söyleyin.", "ru": "Отлично! Когда приедете в Эскишехир, передайте маме привет от меня.", "distractors": [
+          { "tr": "Özge Hanım, bugün biraz üzgünsünüz. Bir şey mi oldu?", "ru": "Озге, вы сегодня какая-то грустная. Что-то случилось?" },
+          { "tr": "Her pazar annemle görüntülü konuşurum, bu çok yardım ediyor. Sizin kardeşiniz var mı?", "ru": "Каждое воскресенье созваниваюсь с мамой по видео, это очень помогает. А у вас есть братья или сёстры?" }
+        ]},
+        { "speaker": "b", "tr": "Söylerim! Annem belki size çibörek yapar. Eskişehir'in çiböreği meşhurdur.", "ru": "Передам! Может, мама приготовит для вас чибёрек. Эскишехирский чибёрек знаменит.", "distractors": [
+          { "tr": "Ailemi özledim, Olga Hanım. Eskişehir'deyken her akşam annemle yemek yerdik.", "ru": "Я соскучилась по семье, Ольга-ханым. Когда я жила в Эскишехире, мы с мамой каждый вечер ужинали вместе." },
+          { "tr": "Bir ağabeyim var. Benden altı yaş büyük, evli. Kızı iki yaşında, çok tatlı!", "ru": "Есть старший брат. Он на шесть лет старше меня, женат. Его дочке два года, она очень милая!" }
+        ]},
+        { "speaker": "a", "tr": "Çibörek mi? Bizde de benzer bir yemek var: çeburek!", "ru": "Чибёрек? У нас тоже есть похожее блюдо — чебурек!", "distractors": [
+          { "tr": "Özge Hanım, bugün biraz üzgünsünüz. Bir şey mi oldu?", "ru": "Озге, вы сегодня какая-то грустная. Что-то случилось?" },
+          { "tr": "Her pazar annemle görüntülü konuşurum, bu çok yardım ediyor. Sizin kardeşiniz var mı?", "ru": "Каждое воскресенье созваниваюсь с мамой по видео, это очень помогает. А у вас есть братья или сёстры?" }
+        ]},
+        { "speaker": "b", "tr": "Gerçekten mi? O zaman annem size bir kutu gönderir!", "ru": "Правда? Тогда мама пришлёт вам целую коробку!", "distractors": [
+          { "tr": "Ailemi özledim, Olga Hanım. Eskişehir'deyken her akşam annemle yemek yerdik.", "ru": "Я соскучилась по семье, Ольга-ханым. Когда я жила в Эскишехире, мы с мамой каждый вечер ужинали вместе." },
+          { "tr": "Bir ağabeyim var. Benden altı yaş büyük, evli. Kızı iki yaşında, çok tatlı!", "ru": "Есть старший брат. Он на шесть лет старше меня, женат. Его дочке два года, она очень милая!" }
+        ]}
+      ]
+    },
+    {
+      "id": "semya-a2-nuran-deti",
+      "title": "Нуран-ханым рассказывает о детях",
+      "level": "A2",
+      "speakers": { "a": "Ольга", "b": "Нуран" },
+      "turns": [
+        { "speaker": "a", "tr": "Nuran Hanım, bu fotoğrafta kim var?", "ru": "Нуран-ханым, а кто на этой фотографии?", "distractors": [
+          { "tr": "Çok severim! Peki neden İstanbul'a geldiniz?", "ru": "Очень люблю! А почему вы переехали в Стамбул?" },
+          { "tr": "Evet! Her pazar anneme telefon ederim, bazen bir saat konuşuruz.", "ru": "Да! Я каждое воскресенье звоню маме, иногда разговариваем целый час." }
+        ]},
+        { "speaker": "b", "tr": "Kızımla oğlum. Burada ikisi de çok küçük.", "ru": "Мои дочка и сын. Здесь они оба ещё совсем маленькие.", "distractors": [
+          { "tr": "Oğlum burada okudu, sonra burada doktor oldu. Ben de onun yanına geldim.", "ru": "Сын здесь учился, потом здесь стал врачом. И я переехала поближе к нему." },
+          { "tr": "Aferin kızım. Anneler bunu çok sever. Hadi, çayın soğuyor!", "ru": "Молодец, дочка. Мамы это очень любят. Давай пей, чай стынет!" }
+        ]},
+        { "speaker": "a", "tr": "Oğlunuz doktor, değil mi? Hangisi daha büyük?", "ru": "Ваш сын ведь врач? А кто из них старше?", "distractors": [
+          { "tr": "Çok severim! Peki neden İstanbul'a geldiniz?", "ru": "Очень люблю! А почему вы переехали в Стамбул?" },
+          { "tr": "Evet! Her pazar anneme telefon ederim, bazen bir saat konuşuruz.", "ru": "Да! Я каждое воскресенье звоню маме, иногда разговариваем целый час." }
+        ]},
+        { "speaker": "b", "tr": "Kızım oğlumdan üç yaş büyük. Ama oğlum her zaman daha ciddiydi.", "ru": "Дочь на три года старше сына. Но сын всегда был серьёзнее.", "distractors": [
+          { "tr": "Oğlum burada okudu, sonra burada doktor oldu. Ben de onun yanına geldim.", "ru": "Сын здесь учился, потом здесь стал врачом. И я переехала поближе к нему." },
+          { "tr": "Aferin kızım. Anneler bunu çok sever. Hadi, çayın soğuyor!", "ru": "Молодец, дочка. Мамы это очень любят. Давай пей, чай стынет!" }
+        ]},
+        { "speaker": "a", "tr": "Siz İzmir'de mi büyüdünüz?", "ru": "Вы выросли в Измире?", "distractors": [
+          { "tr": "Kızınız hâlâ İzmir'de mi?", "ru": "А ваша дочь всё ещё в Измире?" },
+          { "tr": "Evet! Her pazar anneme telefon ederim, bazen bir saat konuşuruz.", "ru": "Да! Я каждое воскресенье звоню маме, иногда разговариваем целый час." }
+        ]},
+        { "speaker": "b", "tr": "Evet. Eskiden bütün aile İzmir'deydi. Yazları her akşam denize girerdik. Sen denizi sever misin?", "ru": "Да. Раньше вся семья жила в Измире. Летом мы каждый вечер купались в море. А ты любишь море?", "distractors": [
+          { "tr": "Evet, onu çok özlüyorum. Annem hep \"Kızlar anneye daha yakındır\" derdi. Senin annen de öyle mi?", "ru": "Да, я очень по ней скучаю. Моя мама всегда говорила: «Дочери ближе к матери». А у тебя с мамой так же?" },
+          { "tr": "Aferin kızım. Anneler bunu çok sever. Hadi, çayın soğuyor!", "ru": "Молодец, дочка. Мамы это очень любят. Давай пей, чай стынет!" }
+        ]},
+        { "speaker": "a", "tr": "Çok severim! Peki neden İstanbul'a geldiniz?", "ru": "Очень люблю! А почему вы переехали в Стамбул?", "distractors": [
+          { "tr": "Nuran Hanım, bu fotoğrafta kim var?", "ru": "Нуран-ханым, а кто на этой фотографии?" },
+          { "tr": "Evet! Her pazar anneme telefon ederim, bazen bir saat konuşuruz.", "ru": "Да! Я каждое воскресенье звоню маме, иногда разговариваем целый час." }
+        ]},
+        { "speaker": "b", "tr": "Oğlum burada okudu, sonra burada doktor oldu. Ben de onun yanına geldim.", "ru": "Сын здесь учился, потом здесь стал врачом. И я переехала поближе к нему.", "distractors": [
+          { "tr": "Kızımla oğlum. Burada ikisi de çok küçük.", "ru": "Мои дочка и сын. Здесь они оба ещё совсем маленькие." },
+          { "tr": "Aferin kızım. Anneler bunu çok sever. Hadi, çayın soğuyor!", "ru": "Молодец, дочка. Мамы это очень любят. Давай пей, чай стынет!" }
+        ]},
+        { "speaker": "a", "tr": "Kızınız hâlâ İzmir'de mi?", "ru": "А ваша дочь всё ещё в Измире?", "distractors": [
+          { "tr": "Nuran Hanım, bu fotoğrafta kim var?", "ru": "Нуран-ханым, а кто на этой фотографии?" },
+          { "tr": "Siz İzmir'de mi büyüdünüz?", "ru": "Вы выросли в Измире?" }
+        ]},
+        { "speaker": "b", "tr": "Evet, onu çok özlüyorum. Annem hep \"Kızlar anneye daha yakındır\" derdi. Senin annen de öyle mi?", "ru": "Да, я очень по ней скучаю. Моя мама всегда говорила: «Дочери ближе к матери». А у тебя с мамой так же?", "distractors": [
+          { "tr": "Kızımla oğlum. Burada ikisi de çok küçük.", "ru": "Мои дочка и сын. Здесь они оба ещё совсем маленькие." },
+          { "tr": "Evet. Eskiden bütün aile İzmir'deydi. Yazları her akşam denize girerdik. Sen denizi sever misin?", "ru": "Да. Раньше вся семья жила в Измире. Летом мы каждый вечер купались в море. А ты любишь море?" }
+        ]},
+        { "speaker": "a", "tr": "Evet! Her pazar anneme telefon ederim, bazen bir saat konuşuruz.", "ru": "Да! Я каждое воскресенье звоню маме, иногда разговариваем целый час.", "distractors": [
+          { "tr": "Nuran Hanım, bu fotoğrafta kim var?", "ru": "Нуран-ханым, а кто на этой фотографии?" },
+          { "tr": "Siz İzmir'de mi büyüdünüz?", "ru": "Вы выросли в Измире?" }
+        ]},
+        { "speaker": "b", "tr": "Aferin kızım. Anneler bunu çok sever. Hadi, çayın soğuyor!", "ru": "Молодец, дочка. Мамы это очень любят. Давай пей, чай стынет!", "distractors": [
+          { "tr": "Kızımla oğlum. Burada ikisi de çok küçük.", "ru": "Мои дочка и сын. Здесь они оба ещё совсем маленькие." },
+          { "tr": "Evet. Eskiden bütün aile İzmir'deydi. Yazları her akşam denize girerdik. Sen denizi sever misin?", "ru": "Да. Раньше вся семья жила в Измире. Летом мы каждый вечер купались в море. А ты любишь море?" }
+        ]}
+      ]
     }
   ]
 }
