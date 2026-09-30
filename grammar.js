@@ -1,32 +1,26 @@
-// Режим "Грамматика": тема = одно правило (памятка на экран + упражнения), по методике
-// рабочей тетради Yeni Hitit — сначала смысл, потом форма: во фразе из наших же «Фраз»
-// и «Диалогов» пропуск на месте слова, время/падеж подсказывает сама фраза и перевод.
+// Режим "Грамматика": тема = одно правило (памятка на экран + игра), по методике
+// рабочей тетради Yeni Hitit — сначала смысл, потом форма: во фразе пропуск, время/падеж
+// подсказывают сама фраза и перевод.
 //
-// Два упражнения на пропуск:
-//  • «Выбери форму» — 3 целых слова (как İşaretleyelim): для новых пропусков;
-//  • «Собери слово» — тайлы-кусочки по рядам (основа / время / лицо / падеж): когда
-//    пропуск уже знаком. Ошибка в ряду показывает, какое именно правило сломалось.
+// Игра «Собери из кучки»: под фразой высыпана кучка плашек в стиле маджонга — корни,
+// окончания, целые слова, среди них «почти правильные» (другое лицо, другая гармония,
+// другой падеж). Тапом по порядку собираешь пропуск; не та плашка вздрагивает, и внизу
+// появляется подсказка правила. Сложность растёт ступенями (GRAMMAR_LEVELS): одно слово →
+// два → три → вся фраза по переводу → фразы «из жизни». Раунд — ROUND_SIZE фраз, в конце
+// звёзды; следующая ступень открывается за STARS_TO_UNLOCK звезды.
 //
 // Приложение само ничего не склоняет: все формы, кусочки, обманки и пояснения готовит
 // офлайн tools/grammar/build.py (генератор tools/grammar/morph.py) в
-// assets/grammar/items.json. Переиспользует speak()/muted/setScreen() из script.js,
-// shuffle()/ящики Лейтнера (bumpPhraseStreak и др.) из phrases.js — со своим хранилищем.
+// assets/grammar/items.json. Переиспользует speak()/muted/setScreen() из script.js и
+// shuffle() из phrases.js.
 
 const GRAMMAR_ITEMS_URL = "assets/grammar/items.json";
-const GRAMMAR_PROGRESS_KEY = "mahjong-grammar-progress";
+const GRAMMAR_LEVELS_KEY = "mahjong-grammar-levels";
 const GRAMMAR_RULES_KEY = "mahjong-grammar-rules";
 
 // Сколько последних ответов помнить по каждому правилу — по ним цвет «плашки правила»
-// и то, насколько чаще такие пропуски попадаются.
+// и то, насколько чаще такие фразы попадаются.
 const RULE_HISTORY = 20;
-const WEAK_RULE_BONUS = 2;
-const MAX_NEW_GRAMMAR_PER_SESSION = 15;
-// Повторение открывается, когда по каждой теме набрано столько ответов.
-const REVIEW_UNLOCK_ANSWERS = 20;
-// Ступени внутри темы: сначала «База» (свои короткие фразы A1), а фразы разговорника и
-// диалогов («В жизни») подмешиваются, когда по теме набрано столько ответов — чтобы в
-// начале не было слишком сложно.
-const LIFE_UNLOCK_ANSWERS = 40;
 
 const GRAMMAR_TOPICS = [
   {
@@ -115,15 +109,17 @@ const GRAMMAR_TOPICS = [
 ];
 const GRAMMAR_REVIEW = { id: "review", emoji: "🔀", title: "Повторение вперемешку" };
 
-// Подписи рядов в «Собери слово».
-const PART_LABELS = {
-  stem: "основа",
-  neg: "отрицание",
-  tense: "время",
-  person: "лицо",
-  plural: "мн. число",
-  case: "падеж",
-};
+// Ступени темы — сложность растёт тем, сколько фразы собираешь сама.
+const GRAMMAR_LEVELS = [
+  { n: 1, title: "Одно слово", hint: "собери слово с правилом", words: 1, tier: "base", pile: 12 },
+  { n: 2, title: "Два слова", hint: "слово с правилом и соседнее", words: 2, tier: "base", pile: 14 },
+  { n: 3, title: "Три слова", hint: "почти вся фраза", words: 3, tier: "base", pile: 16 },
+  { n: 4, title: "Вся фраза", hint: "только перевод — собери по-турецки", words: 99, tier: "base", pile: 18 },
+  { n: 5, title: "В жизни", hint: "фразы из «Фраз» и «Диалогов»", words: 2, tier: "life", pile: 16 },
+];
+const ROUND_SIZE = 8;
+// Сколько звёзд за раунд нужно, чтобы открылась следующая ступень.
+const STARS_TO_UNLOCK = 2;
 
 let grammarItems = null;
 
@@ -135,10 +131,24 @@ function loadJSONKey(key, fallback) {
     return fallback;
   }
 }
-let grammarProgress = loadJSONKey(GRAMMAR_PROGRESS_KEY, {});
-function saveGrammarProgress() {
-  localStorage.setItem(GRAMMAR_PROGRESS_KEY, JSON.stringify(grammarProgress));
+let grammarLevels = loadJSONKey(GRAMMAR_LEVELS_KEY, {}); // {topicId: {levelN: лучшие звёзды}}
+function saveGrammarLevels() {
+  localStorage.setItem(GRAMMAR_LEVELS_KEY, JSON.stringify(grammarLevels));
 }
+function levelStars(topicId, n) {
+  return (grammarLevels[topicId] && grammarLevels[topicId][n]) || 0;
+}
+function isLevelUnlocked(topicId, n) {
+  return n === 1 || levelStars(topicId, n - 1) >= STARS_TO_UNLOCK;
+}
+function highestUnlocked(topicId) {
+  let best = 1;
+  GRAMMAR_LEVELS.forEach((l) => {
+    if (isLevelUnlocked(topicId, l.n)) best = l.n;
+  });
+  return best;
+}
+
 let grammarRuleStats = loadJSONKey(GRAMMAR_RULES_KEY, {}); // tag → [1,0,1,…] последние ответы
 function recordRule(tag, ok) {
   const hist = grammarRuleStats[tag] || [];
@@ -155,9 +165,6 @@ function isWeakRule(tag) {
   const acc = ruleAccuracy(tag);
   return acc !== null && acc < 0.7;
 }
-function slotKey(item, slot) {
-  return `${item.tr}::${slot.start}`;
-}
 
 async function loadGrammarItems() {
   if (grammarItems) return grammarItems;
@@ -170,34 +177,13 @@ async function loadGrammarItems() {
   return grammarItems;
 }
 
-function topicAnswerCount(topicId) {
-  return grammarRuleStats[`${topicId}.total`] || 0;
-}
-function isLifeUnlocked(topicId) {
-  return topicAnswerCount(topicId) >= LIFE_UNLOCK_ANSWERS;
-}
-// Фраза доступна в теме: «База» — всегда, «В жизни» — после открытия ступени.
-function itemAvailable(item, topicId) {
-  return item.tier === "base" || isLifeUnlocked(topicId);
-}
-
-function topicSlots(topicId) {
-  const out = [];
-  grammarItems.forEach((item) => {
-    if (!itemAvailable(item, topicId)) return;
-    item.slots.forEach((slot) => slot.topic === topicId && out.push({ item, slot }));
-  });
-  return out;
-}
-
-// Ответов по теме в истории правил всего RULE_HISTORY, поэтому для порога
-// «открыть повторение» держим отдельный неограниченный счётчик.
-function bumpTopicCounter(topicId) {
-  grammarRuleStats[`${topicId}.total`] = (grammarRuleStats[`${topicId}.total`] || 0) + 1;
-  localStorage.setItem(GRAMMAR_RULES_KEY, JSON.stringify(grammarRuleStats));
-}
+// Повторение вперемешку — когда в каждой теме пройдена ступень «Три слова».
 function isReviewUnlocked() {
-  return GRAMMAR_TOPICS.every((t) => topicAnswerCount(t.id) >= REVIEW_UNLOCK_ANSWERS);
+  return GRAMMAR_TOPICS.every((t) => levelStars(t.id, 3) >= STARS_TO_UNLOCK);
+}
+
+function starsText(n) {
+  return "★".repeat(n) + "☆".repeat(3 - n);
 }
 
 // --- каталог ---
@@ -210,17 +196,16 @@ async function renderGrammarCatalog() {
   loadingEl.classList.add("hidden");
 
   GRAMMAR_TOPICS.forEach((t) => {
-    const slots = topicSlots(t.id);
-    const mastered = slots.filter(({ item, slot }) => getPhraseBox(slotKey(item, slot), grammarProgress).id === "mastered").length;
-    grid.appendChild(buildGrammarTile(t.emoji, t.title, `${mastered}/${slots.length}`, () => openGrammarTopic(t.id)));
+    const top = highestUnlocked(t.id);
+    grid.appendChild(buildGrammarTile(t.emoji, t.title, `ступень ${top} из ${GRAMMAR_LEVELS.length}`, () => openGrammarTopic(t.id)));
   });
 
   const unlocked = isReviewUnlocked();
   const reviewTile = buildGrammarTile(
     unlocked ? GRAMMAR_REVIEW.emoji : "🔒",
     GRAMMAR_REVIEW.title,
-    unlocked ? "все темы вместе" : `откроется после ${REVIEW_UNLOCK_ANSWERS} ответов в каждой теме`,
-    () => unlocked && startGrammarDrill("review")
+    unlocked ? "все темы вместе" : "откроется после ступени «Три слова» в каждой теме",
+    () => unlocked && startGrammarRound("review", 3)
   );
   if (!unlocked) reviewTile.classList.add("not-loaded");
   grid.appendChild(reviewTile);
@@ -236,7 +221,7 @@ function buildGrammarTile(emoji, title, count, onClick) {
   return tile;
 }
 
-// --- экран темы: памятка + плашки правил ---
+// --- экран темы: памятка + ступени + плашки правил ---
 let currentGrammarTopicId = null;
 
 function fillMemo(container, topic) {
@@ -269,251 +254,270 @@ function renderRuleChips(container, topic) {
   });
 }
 
-// Ступени темы: «База» открыта сразу, «В жизни» — после LIFE_UNLOCK_ANSWERS ответов.
-function renderTopicStages(topic) {
+function renderTopicLevels(topic) {
   const el = document.getElementById("grammar-topic-stages");
-  const count = (tier) => grammarItems.filter((it) => it.tier === tier && it.slots.some((s) => s.topic === topic.id)).length;
-  const answers = topicAnswerCount(topic.id);
-  const life = isLifeUnlocked(topic.id)
-    ? `🌍 В жизни — ${count("life")} фраз из «Фраз» и «Диалогов», подмешиваются к базе`
-    : `🔒 В жизни — ${count("life")} фраз из «Фраз» и «Диалогов»; откроется после ${LIFE_UNLOCK_ANSWERS} ответов (сейчас ${answers})`;
   el.innerHTML = "";
-  [`🧱 База — ${count("base")} коротких фраз`, life].forEach((text) => {
-    const row = document.createElement("div");
-    row.className = "grammar-stage";
-    row.textContent = text;
+  GRAMMAR_LEVELS.forEach((level) => {
+    const unlocked = isLevelUnlocked(topic.id, level.n);
+    const row = document.createElement("button");
+    row.type = "button";
+    row.className = "grammar-stage" + (unlocked ? "" : " locked");
+    const stars = levelStars(topic.id, level.n);
+    row.innerHTML =
+      `<span class="stage-n">${unlocked ? level.n : "🔒"}</span>` +
+      `<span class="stage-text"><b>${level.title}</b><small>${unlocked ? level.hint : `откроется за ${STARS_TO_UNLOCK} ★ на ступени ${level.n - 1}`}</small></span>` +
+      `<span class="stage-stars">${unlocked ? starsText(stars) : ""}</span>`;
+    if (unlocked) row.addEventListener("click", () => startGrammarRound(topic.id, level.n));
     el.appendChild(row);
   });
 }
 
 async function openGrammarTopic(id) {
   currentGrammarTopicId = id;
+  await loadGrammarItems();
   const topic = GRAMMAR_TOPICS.find((t) => t.id === id);
   document.getElementById("grammar-topic-title").textContent = `${topic.emoji} ${topic.title}`;
   fillMemo(document.getElementById("grammar-topic-memo"), topic);
   renderRuleChips(document.getElementById("grammar-topic-rules"), topic);
-  renderTopicStages(topic);
+  renderTopicLevels(topic);
   setScreen("grammar-topic");
 }
 
-// --- очередь упражнений ---
-let drillMode = null; // id темы или "review"
-let drillQueue = [];
-let drillAllowedNew = null;
-let drillQuestion = null; // {item, slots: [...], index}
+// --- фраза → «единицы» (слова) и кусочки для кучки ---
+const TOKEN_RE = /[A-Za-zÇĞİÖŞÜçğıöşüÂâÎîÛû']+/g;
 
-// Кандидаты: {item, slots} — в теме один пропуск своей темы, в повторении все пропуски
-// фразы (не больше двух), чтобы в одной фразе встречались разные правила.
-function drillCandidates() {
-  if (drillMode === "review") {
-    return grammarItems
-      .map((item) => ({ item, slots: item.slots.filter((s) => itemAvailable(item, s.topic)) }))
-      .filter((c) => c.slots.length)
-      .map((c) => ({ item: c.item, slots: shuffle(c.slots).slice(0, 2).sort((a, b) => a.start - b.start) }));
+// Слово с правилом (пропуск из items.json) разбивается на свои кусочки: основа, время,
+// лицо…; обычное слово — одна плашка целиком. Слово с правилом ДРУГОЙ темы в теме тоже
+// приходит целиком — его ещё не учили (в повторении вперемешку разбиваются все).
+// Пустых кусочков (у «o» нет окончания) в кучке нет — слово просто заканчивается.
+function sentenceUnits(item, topicId) {
+  const units = [];
+  const slotAt = new Map(item.slots.map((s) => [s.start, s]));
+  let m;
+  TOKEN_RE.lastIndex = 0;
+  let skipUntil = -1;
+  while ((m = TOKEN_RE.exec(item.tr))) {
+    if (m.index < skipUntil) continue;
+    const slot = slotAt.get(m.index);
+    if (slot) {
+      const split = topicId === "review" || slot.topic === topicId;
+      units.push({
+        start: slot.start,
+        end: slot.end,
+        slot: split ? slot : null,
+        lemma: slot.lemma,
+        pieces: split
+          ? slot.parts.filter((p) => p.text.trim()).map((p) => ({ text: p.text.trim(), space: p.text.startsWith(" "), part: p }))
+          : [{ text: item.tr.slice(slot.start, slot.end), space: false, part: null }],
+      });
+      skipUntil = slot.end;
+    } else {
+      units.push({ start: m.index, end: m.index + m[0].length, slot: null, pieces: [{ text: m[0], space: false, part: null }] });
+    }
+  }
+  return units;
+}
+
+// Какие слова фразы превращаются в пропуски: слово с правилом темы + соседи слева
+// (в турецком глагол в конце — соседи обычно перед ним).
+function chooseGapUnits(units, topicId, words) {
+  let center = units.findIndex((u) => u.slot && (topicId === "review" || u.slot.topic === topicId));
+  if (center < 0) center = units.length - 1;
+  if (words >= units.length) return units.map((_, i) => i);
+  let from = center;
+  let to = center;
+  while (to - from + 1 < words) {
+    if (from > 0) from--;
+    else if (to < units.length - 1) to++;
+    else break;
   }
   const out = [];
-  grammarItems.forEach((item) => {
-    if (!itemAvailable(item, drillMode)) return;
-    const own = item.slots.filter((s) => s.topic === drillMode);
-    if (own.length) out.push({ item, slots: [own[Math.floor(Math.random() * own.length)]] });
-  });
+  for (let i = from; i <= to; i++) out.push(i);
   return out;
 }
 
-function candidateKey(c) {
-  return slotKey(c.item, c.slots[0]);
-}
-
-function buildDrillQueue() {
-  const cands = drillCandidates();
-  if (!drillAllowedNew) drillAllowedNew = new Set();
-  for (const k of drillAllowedNew) if (getPhraseBox(k, grammarProgress).id !== "new") drillAllowedNew.delete(k);
-  shuffle(cands.filter((c) => getPhraseBox(candidateKey(c), grammarProgress).id === "new" && !drillAllowedNew.has(candidateKey(c)))).some((c) => {
-    if (drillAllowedNew.size >= MAX_NEW_GRAMMAR_PER_SESSION) return true;
-    drillAllowedNew.add(candidateKey(c));
-    return false;
-  });
-
+// Обычные слова для кучки-обманки: из других фраз той же темы.
+function randomWords(n, exclude) {
   const pool = [];
-  cands.forEach((c) => {
-    const key = candidateKey(c);
-    const box = getPhraseBox(key, grammarProgress);
-    if (box.id === "new" && !drillAllowedNew.has(key)) return;
-    if (box.id === "mastered" && !isPhraseMasteredDue(key, grammarProgress)) return;
-    let weight = box.id === "mastered" ? 1 : box.weight;
-    // Слабые правила — чаще, на любых фразах, где они встречаются.
-    if (c.slots.some((s) => s.tags.some(isWeakRule))) weight += WEAK_RULE_BONUS;
-    if (drillMode === "review" && c.slots.length > 1) weight += 1;
-    for (let i = 0; i < weight; i++) pool.push(c);
-  });
-  if (!pool.length) pool.push(...shuffle(cands).slice(0, 20));
-  // Одна и та же фраза два раза подряд — скучно; раскидываем повторы.
-  const shuffled = shuffle(pool);
-  for (let i = 1; i < shuffled.length; i++) {
-    if (candidateKey(shuffled[i]) === candidateKey(shuffled[i - 1])) {
-      const j = Math.floor(Math.random() * shuffled.length);
-      [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
-    }
+  for (let i = 0; i < 40 && pool.length < n * 3; i++) {
+    const it = grammarItems[Math.floor(Math.random() * grammarItems.length)];
+    (it.tr.match(TOKEN_RE) || []).forEach((w) => {
+      if (!exclude.has(w) && !exclude.has(w.toLowerCase()) && w.length > 1) pool.push(w);
+    });
   }
-  return shuffled;
+  return shuffle([...new Set(pool)]).slice(0, n);
 }
 
-async function startGrammarDrill(mode) {
+function buildPile(units, gapIdx, pileSize) {
+  const needed = [];
+  gapIdx.forEach((i) => units[i].pieces.forEach((p) => needed.push(p.text)));
+  const neededSet = new Set(needed);
+  const distractors = [];
+  // Сначала — «почти правильные» кусочки: другие лица, гармония, падежи. На них и учимся.
+  gapIdx.forEach((i) => {
+    units[i].pieces.forEach((p) => {
+      if (!p.part) return;
+      shuffle(p.part.options.map((o) => o.trim()).filter((o) => o && !neededSet.has(o))).slice(0, 3).forEach((o) => distractors.push(o));
+    });
+  });
+  const uniqueDistr = [...new Set(distractors)];
+  const fill = Math.max(0, pileSize - needed.length - uniqueDistr.length);
+  const extra = randomWords(fill, new Set([...neededSet, ...uniqueDistr]));
+  return shuffle([...needed, ...uniqueDistr.slice(0, Math.max(0, pileSize - needed.length)), ...extra]);
+}
+
+// --- раунд ---
+let round = null; // {topicId, level, queue: [item], index, results: [bool], current}
+
+function roundCandidates(topicId, level) {
+  return grammarItems.filter((item) => {
+    if (item.tier !== level.tier) return false;
+    const hasTopic = item.slots.some((s) => topicId === "review" || s.topic === topicId);
+    if (!hasTopic) return false;
+    // «Вся фраза» — только короткие фразы, иначе кучка превращается в свалку.
+    if (level.words >= 99 && (item.tr.match(TOKEN_RE) || []).length > 5) return false;
+    return true;
+  });
+}
+
+// Раунд из ROUND_SIZE фраз; фразы со «слабыми» правилами попадаются чаще.
+function buildRoundQueue(topicId, level) {
+  const cands = roundCandidates(topicId, level);
+  const weighted = [];
+  cands.forEach((item) => {
+    const weak = item.slots.some((s) => s.tags.some(isWeakRule));
+    weighted.push(item);
+    if (weak) weighted.push(item, item);
+  });
+  const out = [];
+  const seen = new Set();
+  for (const item of shuffle(weighted)) {
+    if (seen.has(item.tr)) continue;
+    seen.add(item.tr);
+    out.push(item);
+    if (out.length >= ROUND_SIZE) break;
+  }
+  return out;
+}
+
+async function startGrammarRound(topicId, levelN) {
   await loadGrammarItems();
-  drillMode = mode;
-  drillAllowedNew = null;
-  drillQueue = buildDrillQueue();
-  const title = mode === "review" ? GRAMMAR_REVIEW.title : GRAMMAR_TOPICS.find((t) => t.id === mode).title;
+  const level = GRAMMAR_LEVELS.find((l) => l.n === levelN);
+  round = { topicId, level, queue: buildRoundQueue(topicId, level), index: 0, results: [] };
+  const title = topicId === "review" ? GRAMMAR_REVIEW.title : GRAMMAR_TOPICS.find((t) => t.id === topicId).title;
   document.getElementById("grammar-drill-title").textContent = title;
+  document.getElementById("grammar-drill-progress").textContent = `${level.n}. ${level.title}`;
+  document.getElementById("grammar-round-end").classList.add("hidden");
   setScreen("grammar-drill");
-  nextGrammarQuestion();
+  if (!round.queue.length) {
+    document.getElementById("grammar-ru").textContent = "Для этой ступени пока нет фраз.";
+    return;
+  }
+  renderRoundDots();
+  startSentence();
 }
 
-function updateDrillProgress() {
-  const slots = drillMode === "review" ? GRAMMAR_TOPICS.flatMap((t) => topicSlots(t.id)) : topicSlots(drillMode);
-  const mastered = slots.filter(({ item, slot }) => getPhraseBox(slotKey(item, slot), grammarProgress).id === "mastered").length;
-  document.getElementById("grammar-drill-progress").textContent = `${mastered}/${slots.length}`;
+function renderRoundDots() {
+  const el = document.getElementById("grammar-dots");
+  el.innerHTML = "";
+  round.queue.forEach((_, i) => {
+    const dot = document.createElement("span");
+    dot.className = "round-dot";
+    if (i < round.results.length) dot.classList.add(round.results[i] ? "dot-ok" : "dot-miss");
+    else if (i === round.index) dot.classList.add("dot-now");
+    el.appendChild(dot);
+  });
 }
 
-function nextGrammarQuestion() {
-  if (!drillQueue.length) drillQueue = buildDrillQueue();
-  const c = drillQueue.pop();
-  drillQuestion = { item: c.item, slots: c.slots, index: 0, done: [] };
-  updateDrillProgress();
-  renderSlotStep();
+function startSentence() {
+  const item = round.queue[round.index];
+  const units = sentenceUnits(item, round.topicId);
+  const gapIdx = chooseGapUnits(units, round.topicId, round.level.words);
+  const expected = [];
+  gapIdx.forEach((ui) => units[ui].pieces.forEach((p, pi) => expected.push({ ui, pi, ...p })));
+  round.current = { item, units, gapIdx: new Set(gapIdx), expected, pos: 0, mistake: false, failedParts: new Set(), filled: new Map() };
+
+  const whole = gapIdx.length === units.length;
+  document.getElementById("grammar-direction").textContent = whole ? "Собери фразу по-турецки" : "Собери пропуск из кучки";
+  document.getElementById("grammar-ru").textContent = item.ru;
+  document.getElementById("grammar-why").textContent = "";
+  renderGapSentence();
+  renderPileTiles(buildPile(units, gapIdx, round.level.pile));
 }
 
-// --- отрисовка фразы с пропусками ---
-function renderSentence() {
-  const { item, slots, index } = drillQuestion;
+// Фраза: пропуски по словам; в каждом — уже найденные кусочки, у слова с правилом до
+// начала сборки — подсказка-инфинитив (кроме «Вся фраза»: там только перевод).
+function renderGapSentence() {
+  const { item, units, gapIdx, filled, expected, pos } = round.current;
   const el = document.getElementById("grammar-sentence");
   el.innerHTML = "";
-  let pos = 0;
-  slots.forEach((slot, i) => {
-    el.appendChild(document.createTextNode(item.tr.slice(pos, slot.start)));
+  const activeUi = pos < expected.length ? expected[pos].ui : -1;
+  const whole = gapIdx.size === units.length;
+  let cursor = 0;
+  units.forEach((u, ui) => {
+    el.appendChild(document.createTextNode(whole ? " " : item.tr.slice(cursor, u.start)));
+    cursor = u.end;
+    if (!gapIdx.has(ui)) {
+      el.appendChild(document.createTextNode(item.tr.slice(u.start, u.end)));
+      return;
+    }
     const gap = document.createElement("span");
     gap.className = "grammar-gap";
-    if (i < index) {
-      gap.classList.add("gap-done");
-      gap.textContent = slot.word;
-    } else if (i === index) {
-      gap.classList.add("gap-active");
-      const built = drillQuestion.built;
-      gap.textContent = built && built.some((t) => t !== null) ? built.map((t) => (t === null ? "…" : t)).join("") : `(${slot.lemma})`;
+    const got = filled.get(ui) || [];
+    if (got.length === u.pieces.length) gap.classList.add("gap-done");
+    else if (ui === activeUi) gap.classList.add("gap-active");
+    if (got.length) {
+      gap.textContent = got.map((p) => (p.space ? " " : "") + p.text).join("");
     } else {
-      gap.textContent = `(${slot.lemma})`;
+      gap.textContent = u.lemma && !whole && round.level.tier === "base" ? `(${u.lemma})` : "…";
     }
     el.appendChild(gap);
-    pos = slot.end;
   });
-  el.appendChild(document.createTextNode(item.tr.slice(pos)));
+  if (!whole) el.appendChild(document.createTextNode(item.tr.slice(cursor)));
 }
 
-function renderSlotStep() {
-  const { item, slots, index } = drillQuestion;
-  const slot = slots[index];
-  const key = slotKey(item, slot);
-  // Новое — сначала узнать форму среди трёх; знакомое — собрать самой из кусочков.
-  const isNew = getPhraseBox(key, grammarProgress).id === "new";
-  drillQuestion.mode = isNew ? "choose" : "build";
-  drillQuestion.mistake = false;
-  drillQuestion.failedRows = new Set();
-  drillQuestion.built = drillQuestion.mode === "build" ? slot.parts.map((p) => (p.options.length > 1 ? null : p.text)) : null;
-
-  document.getElementById("grammar-direction").textContent =
-    drillQuestion.mode === "choose" ? "Выбери форму" : "Собери слово из кусочков";
-  document.getElementById("grammar-ru").textContent = item.ru;
-  document.getElementById("grammar-gloss").textContent = slot.gloss ? `${slot.lemma} — ${slot.gloss}` : "";
-  document.getElementById("grammar-why").textContent = "";
-  renderSentence();
-
-  const answerEl = document.getElementById("grammar-answer");
-  answerEl.innerHTML = "";
-  if (drillQuestion.mode === "choose") renderChoose(answerEl, slot);
-  else renderBuild(answerEl, slot);
-}
-
-function renderChoose(answerEl, slot) {
-  const opts = shuffle([slot.word, ...shuffle(slot.alts.filter((a) => a !== slot.word)).slice(0, 2)]);
-  const wrap = document.createElement("div");
-  wrap.className = "quiz-options grammar-choose";
-  opts.forEach((o) => {
-    const btn = document.createElement("button");
-    btn.className = "quiz-option";
-    btn.textContent = o;
-    btn.addEventListener("click", () => {
-      if (btn.disabled) return;
-      if (o === slot.word) {
-        btn.classList.add("correct");
-        wrap.querySelectorAll("button").forEach((b) => (b.disabled = true));
-        finishSlot(slot);
-      } else {
-        drillQuestion.mistake = true;
-        btn.classList.add("wrong");
-        btn.disabled = true;
-        document.getElementById("grammar-why").textContent = explainChoice(slot);
-        setTimeout(() => btn.classList.remove("wrong"), 300);
-      }
-    });
-    wrap.appendChild(btn);
-  });
-  answerEl.appendChild(wrap);
-}
-
-// Пояснение к ошибке в «Выбери»: всё, что определяет форму этого пропуска.
-function explainChoice(slot) {
-  return slot.parts.map((p) => p.why).filter(Boolean).join(" · ");
-}
-
-function tileLabel(text) {
-  const t = text.trim();
-  return t === "" ? "∅" : t;
-}
-
-function renderBuild(answerEl, slot) {
-  slot.parts.forEach((part, rowIdx) => {
-    if (part.options.length < 2) return;
-    const row = document.createElement("div");
-    row.className = "grammar-row";
-    const label = document.createElement("span");
-    label.className = "grammar-row-label";
-    label.textContent = part.slot === "person" && part.text.startsWith(" ") ? "частица" : PART_LABELS[part.slot] || part.slot;
-    row.appendChild(label);
-    const tiles = document.createElement("div");
-    tiles.className = "grammar-tiles";
-    const wrong = shuffle(part.options.filter((o) => o !== part.text)).slice(0, 3);
-    shuffle([part.text, ...wrong]).forEach((opt) => {
-      const tile = document.createElement("button");
-      tile.className = "grammar-tile";
-      tile.textContent = tileLabel(opt);
-      tile.addEventListener("click", () => onTileClick(slot, rowIdx, part, opt, tile, tiles));
-      tiles.appendChild(tile);
-    });
-    row.appendChild(tiles);
-    answerEl.appendChild(row);
+// Кучка: плашки в стиле маджонга, вразброс, чуть повёрнуты — как высыпали на стол.
+function renderPileTiles(texts) {
+  const pile = document.getElementById("grammar-answer");
+  pile.innerHTML = "";
+  pile.className = "grammar-pile";
+  texts.forEach((text) => {
+    const tile = document.createElement("button");
+    tile.type = "button";
+    tile.className = "pile-tile";
+    tile.textContent = text;
+    tile.style.setProperty("--rot", `${(Math.random() * 12 - 6).toFixed(1)}deg`);
+    tile.style.setProperty("--dx", `${Math.round(Math.random() * 10 - 5)}px`);
+    tile.style.setProperty("--dy", `${Math.round(Math.random() * 10 - 5)}px`);
+    tile.addEventListener("click", () => onPileTile(tile, text));
+    pile.appendChild(tile);
   });
 }
 
-function onTileClick(slot, rowIdx, part, opt, tile, tilesEl) {
-  if (tile.disabled || drillQuestion.built[rowIdx] !== null) return;
-  if (opt === part.text) {
-    tile.classList.add("correct");
-    tilesEl.querySelectorAll("button").forEach((b) => (b.disabled = true));
-    drillQuestion.built[rowIdx] = part.text;
-    renderSentence();
-    if (drillQuestion.built.every((t) => t !== null)) finishSlot(slot);
-  } else {
-    drillQuestion.mistake = true;
-    drillQuestion.failedRows.add(rowIdx);
-    tile.classList.add("wrong");
-    tile.disabled = true;
-    document.getElementById("grammar-why").textContent = part.why;
-    setTimeout(() => tile.classList.remove("wrong"), 300);
+function onPileTile(tile, text) {
+  const cur = round.current;
+  if (!cur || cur.pos >= cur.expected.length || tile.classList.contains("taken")) return;
+  const want = cur.expected[cur.pos];
+  if (text === want.text) {
+    tile.classList.add("taken");
+    const list = cur.filled.get(want.ui) || [];
+    list.push(want);
+    cur.filled.set(want.ui, list);
+    cur.pos++;
+    renderGapSentence();
+    if (cur.pos >= cur.expected.length) finishSentence();
+    return;
   }
+  cur.mistake = true;
+  if (want.part) cur.failedParts.add(want.part);
+  tile.classList.remove("wrong");
+  void tile.offsetWidth; // перезапуск анимации «не подходит»
+  tile.classList.add("wrong");
+  document.getElementById("grammar-why").textContent = want.part && want.part.why ? want.part.why : `Нужно слово: «${want.text[0]}…»`;
 }
 
-// Какие правила проверял ряд — чтобы ошибка в «лице» не портила статистику «гармонии».
-function rowTags(slot, part) {
+// Какие правила проверял кусочек — чтобы ошибка в «лице» не портила статистику «гармонии».
+function partTags(slot, part) {
   const t = slot.tags;
   switch (part.slot) {
     case "person":
@@ -533,41 +537,34 @@ function rowTags(slot, part) {
   }
 }
 
-function recordSlotStats(slot) {
-  const ok = !drillQuestion.mistake;
-  recordRule(slot.topic, ok);
-  bumpTopicCounter(slot.topic);
-  if (drillQuestion.mode === "choose") {
-    slot.tags.filter((t) => t !== slot.topic).forEach((t) => recordRule(t, ok));
-    return;
-  }
-  const seen = new Set();
-  slot.parts.forEach((part, i) => {
-    if (part.options.length < 2) return;
-    rowTags(slot, part).forEach((tag) => {
-      if (seen.has(tag)) return;
-      seen.add(tag);
-      recordRule(tag, !drillQuestion.failedRows.has(i));
+function recordSentenceStats() {
+  const cur = round.current;
+  cur.gapIdx.forEach((ui) => {
+    const slot = cur.units[ui].slot;
+    if (!slot) return;
+    recordRule(slot.topic, !slot.parts.some((p) => cur.failedParts.has(p)));
+    const seen = new Set();
+    slot.parts.forEach((part) => {
+      partTags(slot, part).forEach((tag) => {
+        if (seen.has(tag)) return;
+        seen.add(tag);
+        recordRule(tag, !cur.failedParts.has(part));
+      });
     });
   });
 }
 
-function finishSlot(slot) {
-  recordSlotStats(slot);
-  bumpPhraseStreak(slotKey(drillQuestion.item, slot), !drillQuestion.mistake, grammarProgress, saveGrammarProgress);
-  drillQuestion.index++;
-  if (drillQuestion.index < drillQuestion.slots.length) {
-    setTimeout(renderSlotStep, 500);
-    return;
-  }
-  drillQuestion.built = null;
-  renderSentence();
-  updateDrillProgress();
-  setTimeout(() => showGrammarDonePopup(drillQuestion.item), 350);
+function finishSentence() {
+  recordSentenceStats();
+  round.results.push(!round.current.mistake);
+  round.index++;
+  renderRoundDots();
+  const item = round.current.item;
+  setTimeout(() => showGrammarDonePopup(item), 300);
 }
 
 // Та же плашка, что в квизе фраз (см. showPhraseMatchPopup) — целая фраза, озвучка,
-// переход дальше сам через 4,5 сек или сразу тапом по фону.
+// переход дальше сам через 3 сек или сразу тапом по фону.
 function showGrammarDonePopup(item) {
   const popupEl = document.getElementById("match-popup");
   const card = popupEl.querySelector(".match-card");
@@ -584,20 +581,54 @@ function showGrammarDonePopup(item) {
     popupEl.classList.add("hidden");
     card.classList.remove("no-icon");
     popupEl.removeEventListener("click", onBackgroundClick);
-    if (document.body.dataset.screen === "grammar-drill") nextGrammarQuestion();
+    if (document.body.dataset.screen !== "grammar-drill" || !round) return;
+    if (round.index >= round.queue.length) showRoundEnd();
+    else startSentence();
   };
   function onBackgroundClick(e) {
     if (e.target === popupEl) advance();
   }
   popupEl.addEventListener("click", onBackgroundClick);
-  popupEl._hideTimer = setTimeout(advance, 4500);
+  popupEl._hideTimer = setTimeout(advance, 3000);
 
   speak(item.tr);
 }
 
+// Конец раунда: звёзды по доле фраз, собранных без ошибок; лучшая оценка запоминается.
+function showRoundEnd() {
+  const ok = round.results.filter(Boolean).length;
+  const share = ok / round.results.length;
+  const stars = share >= 0.85 ? 3 : share >= 0.6 ? 2 : 1;
+  const { topicId, level } = round;
+  let unlockedNow = false;
+  if (topicId !== "review") {
+    const before = isLevelUnlocked(topicId, level.n + 1);
+    grammarLevels[topicId] = grammarLevels[topicId] || {};
+    grammarLevels[topicId][level.n] = Math.max(levelStars(topicId, level.n), stars);
+    saveGrammarLevels();
+    unlockedNow = !before && level.n < GRAMMAR_LEVELS.length && isLevelUnlocked(topicId, level.n + 1);
+  }
+  const next = GRAMMAR_LEVELS.find((l) => l.n === level.n + 1);
+  document.getElementById("grammar-round-stars").textContent = starsText(stars);
+  document.getElementById("grammar-round-text").textContent =
+    `Без ошибок: ${ok} из ${round.results.length}.` +
+    (unlockedNow && next ? ` Открыта ступень «${next.title}»!` : "") +
+    (!unlockedNow && stars < STARS_TO_UNLOCK && next ? ` Для ступени «${next.title}» нужно ${STARS_TO_UNLOCK} ★.` : "");
+  const nextBtn = document.getElementById("grammar-round-next-btn");
+  const canNext = topicId !== "review" && next && isLevelUnlocked(topicId, next.n);
+  nextBtn.classList.toggle("hidden", !canNext);
+  nextBtn.onclick = () => canNext && startGrammarRound(topicId, next.n);
+  document.getElementById("grammar-round-again-btn").onclick = () => startGrammarRound(topicId, level.n);
+  document.getElementById("grammar-round-end").classList.remove("hidden");
+}
+
 function openMemoOverlay() {
-  const slot = drillQuestion && drillQuestion.slots[Math.min(drillQuestion.index, drillQuestion.slots.length - 1)];
-  const topicId = drillMode === "review" && slot ? slot.topic : drillMode;
+  const cur = round && round.current;
+  let topicId = round && round.topicId;
+  if (topicId === "review" && cur) {
+    const slotUnit = [...cur.gapIdx].map((i) => cur.units[i]).find((u) => u.slot);
+    topicId = slotUnit ? slotUnit.slot.topic : GRAMMAR_TOPICS[0].id;
+  }
   const topic = GRAMMAR_TOPICS.find((t) => t.id === topicId);
   if (!topic) return;
   fillMemo(document.getElementById("grammar-memo-overlay-body"), topic);
@@ -614,16 +645,23 @@ function initGrammarMode() {
     renderGrammarCatalog();
     setScreen("grammar-catalog");
   };
-  document.getElementById("grammar-topic-back-btn").addEventListener("click", backToCatalog);
-  document.getElementById("grammar-topic-done-btn").addEventListener("click", backToCatalog);
-  document.getElementById("grammar-topic-play-btn").addEventListener("click", () => startGrammarDrill(currentGrammarTopicId));
-  document.getElementById("grammar-back-btn").addEventListener("click", () => {
-    drillMode = null;
+  const leaveDrill = () => {
     const popupEl = document.getElementById("match-popup");
     clearTimeout(popupEl._hideTimer);
     popupEl.classList.add("hidden");
-    backToCatalog();
-  });
+    document.getElementById("grammar-round-end").classList.add("hidden");
+    const topicId = round && round.topicId;
+    round = null;
+    if (topicId && topicId !== "review") openGrammarTopic(topicId);
+    else backToCatalog();
+  };
+  document.getElementById("grammar-topic-back-btn").addEventListener("click", backToCatalog);
+  document.getElementById("grammar-topic-done-btn").addEventListener("click", backToCatalog);
+  document.getElementById("grammar-topic-play-btn").addEventListener("click", () =>
+    startGrammarRound(currentGrammarTopicId, highestUnlocked(currentGrammarTopicId))
+  );
+  document.getElementById("grammar-back-btn").addEventListener("click", leaveDrill);
+  document.getElementById("grammar-round-exit-btn").addEventListener("click", leaveDrill);
   document.getElementById("grammar-mute-btn").addEventListener("click", () => {
     muted = !muted;
     document.getElementById("grammar-mute-btn").textContent = muted ? "🔇" : "🔊";

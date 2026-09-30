@@ -293,33 +293,33 @@
     <div id="grammar-catalog-grid" class="catalog-grid"></div>
   </section>
 
-  <!-- ЭКРАН 7а: тема грамматики — памятка + как идут правила + старт -->
+  <!-- ЭКРАН 7а: тема грамматики — ступени + памятка + как идут правила -->
   <section id="screen-grammar-topic" class="screen manager-panel">
     <div class="manager-row category-header-row">
       <button id="grammar-topic-back-btn" class="secondary small">← Темы</button>
       <h2 id="grammar-topic-title"></h2>
     </div>
-    <div id="grammar-topic-memo" class="grammar-memo"></div>
     <div class="manager-row">
-      <div class="label">Ступени</div>
+      <div class="label">Ступени — от одного слова до целой фразы</div>
       <div id="grammar-topic-stages" class="grammar-stages"></div>
     </div>
+    <div id="grammar-topic-memo" class="grammar-memo"></div>
     <div class="manager-row">
       <div class="label">Как идут правила (по последним ответам)</div>
       <div id="grammar-topic-rules" class="grammar-rules"></div>
     </div>
     <div class="screen-actions">
       <button id="grammar-topic-done-btn" class="secondary">← Темы</button>
-      <button id="grammar-topic-play-btn">Упражняться →</button>
+      <button id="grammar-topic-play-btn">Играть →</button>
     </div>
   </section>
 
-  <!-- ЭКРАН 7б: упражнение — фраза с пропуском, «выбери форму» или «собери из кусочков» -->
+  <!-- ЭКРАН 7б: игра «Собери из кучки» — фраза с пропуском + кучка плашек -->
   <section id="screen-grammar-drill" class="screen screen-game">
     <div class="game-bar">
       <div class="stats">
         <div class="stat"><span class="label">Тема</span><span id="grammar-drill-title">—</span></div>
-        <div class="stat"><span class="label">Выучено</span><span id="grammar-drill-progress">0/0</span></div>
+        <div class="stat"><span class="label">Ступень</span><span id="grammar-drill-progress">—</span></div>
       </div>
       <div class="controls">
         <button id="grammar-memo-btn" title="Открыть памятку">📖 Памятка</button>
@@ -328,13 +328,25 @@
       </div>
     </div>
     <main class="quiz-main grammar-main">
+      <div id="grammar-dots" class="round-dots"></div>
       <div id="grammar-direction" class="quiz-direction"></div>
       <div id="grammar-ru" class="grammar-ru"></div>
       <div id="grammar-sentence" class="grammar-sentence"></div>
-      <div id="grammar-gloss" class="grammar-gloss"></div>
-      <div id="grammar-answer" class="grammar-answer"></div>
       <div id="grammar-why" class="grammar-why"></div>
+      <div id="grammar-answer" class="grammar-pile"></div>
     </main>
+    <div id="grammar-round-end" class="match-popup-overlay round-end hidden">
+      <div class="win-card">
+        <h2>Раунд пройден</h2>
+        <div id="grammar-round-stars" class="round-stars"></div>
+        <p id="grammar-round-text"></p>
+        <div class="round-end-actions">
+          <button id="grammar-round-next-btn" type="button">Следующая ступень →</button>
+          <button id="grammar-round-again-btn" type="button" class="secondary">Ещё раунд</button>
+          <button id="grammar-round-exit-btn" type="button" class="secondary">К ступеням</button>
+        </div>
+      </div>
+    </div>
   </section>
 
   <div id="grammar-memo-overlay" class="match-popup-overlay hidden">
