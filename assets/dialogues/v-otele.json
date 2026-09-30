@@ -410,7 +410,7 @@
         ]},
         { "speaker": "a", "tr": "Dört tane, lütfen. Bir de lavabo tıkalı.", "ru": "Четыре, пожалуйста. И ещё в раковине не уходит вода.", "distractors": [
           { "tr": "Evet, odamda hiç havlu yok.", "ru": "Да, у меня в номере нет полотенец." },
-          { "tr": "Çok teşekkürler, çok naziksiniz!", "ru": "Большое спасибо, вы очень любезны!" }
+          { "tr": "Allah razı olsun, çok naziksiniz!", "ru": "Дай вам бог здоровья, вы очень любезны!" }
         ]},
         { "speaker": "b", "tr": "Tamam, teknisyene söylüyorum.", "ru": "Хорошо, скажу мастеру.", "distractors": [
           { "tr": "Hemen getiriyorum. Kaç tane?", "ru": "Сейчас принесу. Сколько?" },
@@ -424,7 +424,7 @@
           { "tr": "Tamam, teknisyene söylüyorum.", "ru": "Хорошо, скажу мастеру." },
           { "tr": "Hemen getiriyorum. Kaç tane?", "ru": "Сейчас принесу. Сколько?" }
         ]},
-        { "speaker": "a", "tr": "Çok teşekkürler, çok naziksiniz!", "ru": "Большое спасибо, вы очень любезны!", "distractors": [
+        { "speaker": "a", "tr": "Allah razı olsun, çok naziksiniz!", "ru": "Дай вам бог здоровья, вы очень любезны!", "distractors": [
           { "tr": "Teşekkürler. Bir şey daha: kapı bozuk, iyi kapanmıyor.", "ru": "Спасибо. И ещё: сломалась дверь, плохо закрывается." },
           { "tr": "Dört tane, lütfen. Bir de lavabo tıkalı.", "ru": "Четыре, пожалуйста. И ещё в раковине не уходит вода." }
         ]}
@@ -582,7 +582,7 @@
         ]},
         { "speaker": "b", "tr": "Hoş geldiniz, Olga Hanım! Evet, buldum. Oda dördüncü katta.", "ru": "Добро пожаловать, Ольга-ханым! Да, нашла. Номер на пятом этаже (по-турецки — четвёртый).", "distractors": [
           { "tr": "Evet, açık büfe. Türk kahvaltısı çok güzel!", "ru": "Да, шведский стол. Турецкий завтрак очень вкусный!" },
-          { "tr": "Rica ederim. İyi çalışmalar!", "ru": "Не за что. Хорошей работы!" }
+          { "tr": "Rica ederim. Allah kolaylık versin!", "ru": "Не за что. Бог в помощь!" }
         ]},
         { "speaker": "a", "tr": "Müdürüm yarın geliyor. O yaşlı bir adam. Zemin katta bir odanız var mı?", "ru": "Мой начальник приезжает завтра. Он пожилой человек. У вас есть номер на первом этаже (по-турецки — zemin kat)?", "distractors": [
           { "tr": "İyi günler. İki oda rezerve ettirdim. Adım Olga.", "ru": "Добрый день. У меня забронировано два номера. Меня зовут Ольга." },
@@ -590,7 +590,7 @@
         ]},
         { "speaker": "b", "tr": "Maalesef yok. Ama bir oda daha var: oda birinci katta.", "ru": "К сожалению, нет. Но есть ещё один номер: номер на втором этаже (по-турецки — первый).", "distractors": [
           { "tr": "Hoş geldiniz, Olga Hanım! Evet, buldum. Oda dördüncü katta.", "ru": "Добро пожаловать, Ольга-ханым! Да, нашла. Номер на пятом этаже (по-турецки — четвёртый)." },
-          { "tr": "Rica ederim. İyi çalışmalar!", "ru": "Не за что. Хорошей работы!" }
+          { "tr": "Rica ederim. Allah kolaylık versin!", "ru": "Не за что. Бог в помощь!" }
         ]},
         { "speaker": "a", "tr": "İyi, o oda onun için olsun. Kahvaltı ne zaman?", "ru": "Хорошо, пусть этот номер будет для него. Во сколько завтрак?", "distractors": [
           { "tr": "Müdürüm yarın geliyor. O yaşlı bir adam. Zemin katta bir odanız var mı?", "ru": "Мой начальник приезжает завтра. Он пожилой человек. У вас есть номер на первом этаже (по-турецки — zemin kat)?" },
@@ -598,7 +598,7 @@
         ]},
         { "speaker": "b", "tr": "Yediden ona kadar, restoranda.", "ru": "С семи до десяти, в ресторане.", "distractors": [
           { "tr": "Maalesef yok. Ama bir oda daha var: oda birinci katta.", "ru": "К сожалению, нет. Но есть ещё один номер: номер на втором этаже (по-турецки — первый)." },
-          { "tr": "Rica ederim. İyi çalışmalar!", "ru": "Не за что. Хорошей работы!" }
+          { "tr": "Rica ederim. Allah kolaylık versin!", "ru": "Не за что. Бог в помощь!" }
         ]},
         { "speaker": "a", "tr": "Büfeniz var mı?", "ru": "У вас есть шведский стол?", "distractors": [
           { "tr": "İyi, o oda onun için olsun. Kahvaltı ne zaman?", "ru": "Хорошо, пусть этот номер будет для него. Во сколько завтрак?" },
@@ -606,13 +606,13 @@
         ]},
         { "speaker": "b", "tr": "Evet, açık büfe. Türk kahvaltısı çok güzel!", "ru": "Да, шведский стол. Турецкий завтрак очень вкусный!", "distractors": [
           { "tr": "Yediden ona kadar, restoranda.", "ru": "С семи до десяти, в ресторане." },
-          { "tr": "Rica ederim. İyi çalışmalar!", "ru": "Не за что. Хорошей работы!" }
+          { "tr": "Rica ederim. Allah kolaylık versin!", "ru": "Не за что. Бог в помощь!" }
         ]},
         { "speaker": "a", "tr": "Harika, kahveyi çok severim. Teşekkürler!", "ru": "Отлично, я очень люблю кофе. Спасибо!", "distractors": [
           { "tr": "Büfeniz var mı?", "ru": "У вас есть шведский стол?" },
           { "tr": "İyi, o oda onun için olsun. Kahvaltı ne zaman?", "ru": "Хорошо, пусть этот номер будет для него. Во сколько завтрак?" }
         ]},
-        { "speaker": "b", "tr": "Rica ederim. İyi çalışmalar!", "ru": "Не за что. Хорошей работы!", "distractors": [
+        { "speaker": "b", "tr": "Rica ederim. Allah kolaylık versin!", "ru": "Не за что. Бог в помощь!", "distractors": [
           { "tr": "Evet, açık büfe. Türk kahvaltısı çok güzel!", "ru": "Да, шведский стол. Турецкий завтрак очень вкусный!" },
           { "tr": "Yediden ona kadar, restoranda.", "ru": "С семи до десяти, в ресторане." }
         ]}
@@ -754,7 +754,7 @@
       "turns": [
         { "speaker": "b", "tr": "Olga?! Burada ne yapıyorsun?", "ru": "Ольга?! Что ты здесь делаешь?", "distractors": [
           { "tr": "İkinci katta. Seninki?", "ru": "На третьем (по-турецки — втором). А твой?" },
-          { "tr": "Güzel, ama odamda hiç sıcak su yok!", "ru": "Хороший, но у меня в номере нет горячей воды!" }
+          { "tr": "Güzel, ama Allah Allah, odamda hiç sıcak su yok!", "ru": "Хороший, но ну надо же — у меня в номере нет горячей воды!" }
         ]},
         { "speaker": "a", "tr": "Leyla! İş için buradayım, fuar var. Ya sen?", "ru": "Лейла! Я здесь по работе, тут выставка. А ты?", "distractors": [
           { "tr": "Benim odamda da yoktu! Resepsiyona söyle, hemen tamir ediyorlar.", "ru": "У меня тоже не было! Скажи на ресепшн, они сразу чинят." },
@@ -776,7 +776,7 @@
           { "tr": "Ne güzel! Senin odan kaçıncı katta?", "ru": "Как здорово! А твой номер на каком этаже?" },
           { "tr": "Görüşürüz, Leyla!", "ru": "До встречи, Лейла!" }
         ]},
-        { "speaker": "b", "tr": "Güzel, ama odamda hiç sıcak su yok!", "ru": "Хороший, но у меня в номере нет горячей воды!", "distractors": [
+        { "speaker": "b", "tr": "Güzel, ama Allah Allah, odamda hiç sıcak su yok!", "ru": "Хороший, но ну надо же — у меня в номере нет горячей воды!", "distractors": [
           { "tr": "İkinci katta. Seninki?", "ru": "На третьем (по-турецки — втором). А твой?" },
           { "tr": "Tamam, dokuzda lobide görüşürüz!", "ru": "Хорошо, в девять встретимся в лобби!" }
         ]},
@@ -785,7 +785,7 @@
           { "tr": "Görüşürüz, Leyla!", "ru": "До встречи, Лейла!" }
         ]},
         { "speaker": "b", "tr": "İyi fikir. Akşam birlikte yemek yiyelim mi?", "ru": "Хорошая идея. Поужинаем вечером вместе?", "distractors": [
-          { "tr": "Güzel, ama odamda hiç sıcak su yok!", "ru": "Хороший, но у меня в номере нет горячей воды!" },
+          { "tr": "Güzel, ama Allah Allah, odamda hiç sıcak su yok!", "ru": "Хороший, но ну надо же — у меня в номере нет горячей воды!" },
           { "tr": "Tamam, dokuzda lobide görüşürüz!", "ru": "Хорошо, в девять встретимся в лобби!" }
         ]},
         { "speaker": "a", "tr": "Olur! Ama geç döneceğim, toplantım var. Saat dokuzda olur mu?", "ru": "Давай! Но я вернусь поздно, у меня встреча. В девять нормально?", "distractors": [
@@ -794,7 +794,7 @@
         ]},
         { "speaker": "b", "tr": "Tamam, dokuzda lobide görüşürüz!", "ru": "Хорошо, в девять встретимся в лобби!", "distractors": [
           { "tr": "İyi fikir. Akşam birlikte yemek yiyelim mi?", "ru": "Хорошая идея. Поужинаем вечером вместе?" },
-          { "tr": "Güzel, ama odamda hiç sıcak su yok!", "ru": "Хороший, но у меня в номере нет горячей воды!" }
+          { "tr": "Güzel, ama Allah Allah, odamda hiç sıcak su yok!", "ru": "Хороший, но ну надо же — у меня в номере нет горячей воды!" }
         ]},
         { "speaker": "a", "tr": "Görüşürüz, Leyla!", "ru": "До встречи, Лейла!", "distractors": [
           { "tr": "Olur! Ama geç döneceğim, toplantım var. Saat dokuzda olur mu?", "ru": "Давай! Но я вернусь поздно, у меня встреча. В девять нормально?" },
@@ -899,7 +899,7 @@
         ]},
         { "speaker": "b", "tr": "İyi akşamlar. Var. Ne kadar kalacaksınız?", "ru": "Добрый вечер. Есть. Как долго вы планируете оставаться?", "distractors": [
           { "tr": "Kahvaltı dahil üç bin lira.", "ru": "С завтраком — три тысячи лир." },
-          { "tr": "Güzel. Buyurun, anahtar. İyi geceler!", "ru": "Отлично. Пожалуйста, ключ. Спокойной ночи!" }
+          { "tr": "Güzel. Buyurun, anahtar. Allah rahatlık versin!", "ru": "Отлично. Пожалуйста, ключ. Спокойной ночи!" }
         ]},
         { "speaker": "a", "tr": "Yalnızca bir gece kalacağız.", "ru": "Мы хотим только переночевать.", "distractors": [
           { "tr": "İyi akşamlar. Hiç boş odanız var mı?", "ru": "Добрый вечер. У вас есть свободные номера?" },
@@ -915,7 +915,7 @@
         ]},
         { "speaker": "b", "tr": "Tabii, buyurun. İşte oda.", "ru": "Конечно, проходите. Вот номер.", "distractors": [
           { "tr": "Yalnızca bir gecelik mi?", "ru": "Это только на одну ночь?" },
-          { "tr": "Güzel. Buyurun, anahtar. İyi geceler!", "ru": "Отлично. Пожалуйста, ключ. Спокойной ночи!" }
+          { "tr": "Güzel. Buyurun, anahtar. Allah rahatlık versin!", "ru": "Отлично. Пожалуйста, ключ. Спокойной ночи!" }
         ]},
         { "speaker": "a", "tr": "Biraz küçük. Başka bir odanız var mı?", "ru": "Маловат. У вас есть другой номер?", "distractors": [
           { "tr": "Evet, yarın İstanbul'a dönüyoruz. Odayı görebilir miyiz?", "ru": "Да, завтра возвращаемся в Стамбул. Можно посмотреть номер?" },
@@ -923,7 +923,7 @@
         ]},
         { "speaker": "b", "tr": "Maalesef, tek boş oda bu.", "ru": "К сожалению, это единственный свободный номер.", "distractors": [
           { "tr": "Tabii, buyurun. İşte oda.", "ru": "Конечно, проходите. Вот номер." },
-          { "tr": "Güzel. Buyurun, anahtar. İyi geceler!", "ru": "Отлично. Пожалуйста, ключ. Спокойной ночи!" }
+          { "tr": "Güzel. Buyurun, anahtar. Allah rahatlık versin!", "ru": "Отлично. Пожалуйста, ключ. Спокойной ночи!" }
         ]},
         { "speaker": "a", "tr": "İyi. Odanın gecelik fiyatı ne kadar?", "ru": "Хорошо. Сколько стоит номер за ночь?", "distractors": [
           { "tr": "Biraz küçük. Başka bir odanız var mı?", "ru": "Маловат. У вас есть другой номер?" },
@@ -931,13 +931,13 @@
         ]},
         { "speaker": "b", "tr": "Kahvaltı dahil üç bin lira.", "ru": "С завтраком — три тысячи лир.", "distractors": [
           { "tr": "Maalesef, tek boş oda bu.", "ru": "К сожалению, это единственный свободный номер." },
-          { "tr": "Güzel. Buyurun, anahtar. İyi geceler!", "ru": "Отлично. Пожалуйста, ключ. Спокойной ночи!" }
+          { "tr": "Güzel. Buyurun, anahtar. Allah rahatlık versin!", "ru": "Отлично. Пожалуйста, ключ. Спокойной ночи!" }
         ]},
         { "speaker": "a", "tr": "Tamam, alıyoruz.", "ru": "Хорошо, берём.", "distractors": [
           { "tr": "İyi. Odanın gecelik fiyatı ne kadar?", "ru": "Хорошо. Сколько стоит номер за ночь?" },
           { "tr": "Biraz küçük. Başka bir odanız var mı?", "ru": "Маловат. У вас есть другой номер?" }
         ]},
-        { "speaker": "b", "tr": "Güzel. Buyurun, anahtar. İyi geceler!", "ru": "Отлично. Пожалуйста, ключ. Спокойной ночи!", "distractors": [
+        { "speaker": "b", "tr": "Güzel. Buyurun, anahtar. Allah rahatlık versin!", "ru": "Отлично. Пожалуйста, ключ. Спокойной ночи!", "distractors": [
           { "tr": "Kahvaltı dahil üç bin lira.", "ru": "С завтраком — три тысячи лир." },
           { "tr": "Maalesef, tek boş oda bu.", "ru": "К сожалению, это единственный свободный номер." }
         ]}
@@ -953,7 +953,7 @@
           { "tr": "Kredi kartı ile ödeyeceğim. Buyurun.", "ru": "Я расплачусь кредитной картой. Пожалуйста." }
         ]},
         { "speaker": "b", "tr": "Anlıyorum. Hesabınızı hazırlıyorum.", "ru": "Понимаю. Готовлю ваш счёт.", "distractors": [
-          { "tr": "Teşekkürler. İyi yolculuklar, Olga Hanım!", "ru": "Спасибо. Счастливого пути, Ольга-ханым!" },
+          { "tr": "Teşekkürler. Allah'a emanet olun, Olga Hanım!", "ru": "Спасибо. Храни вас бог, Ольга-ханым, счастливого пути!" },
           { "tr": "Taksi beş dakikada kapıda. Hesabınız burada.", "ru": "Такси будет у входа через пять минут. Вот ваш счёт." }
         ]},
         { "speaker": "a", "tr": "Teşekkürler. Benim için bir mektup gelirse, gideceğim yerin adresi burada.", "ru": "Спасибо. Если для меня придёт письмо — вот адрес, куда я еду.", "distractors": [
@@ -962,7 +962,7 @@
         ]},
         { "speaker": "b", "tr": "Tamam, mektubu bu adrese göndeririz. Taksi çağırayım mı?", "ru": "Хорошо, перешлём письмо по этому адресу. Вызвать вам такси?", "distractors": [
           { "tr": "Anlıyorum. Hesabınızı hazırlıyorum.", "ru": "Понимаю. Готовлю ваш счёт." },
-          { "tr": "Teşekkürler. İyi yolculuklar, Olga Hanım!", "ru": "Спасибо. Счастливого пути, Ольга-ханым!" }
+          { "tr": "Teşekkürler. Allah'a emanet olun, Olga Hanım!", "ru": "Спасибо. Храни вас бог, Ольга-ханым, счастливого пути!" }
         ]},
         { "speaker": "a", "tr": "Evet, bir taksi çağırın, lütfen. Havalimanına gidiyorum.", "ru": "Да, вызовите такси, пожалуйста. Я еду в аэропорт.", "distractors": [
           { "tr": "Teşekkürler. Benim için bir mektup gelirse, gideceğim yerin adresi burada.", "ru": "Спасибо. Если для меня придёт письмо — вот адрес, куда я еду." },
@@ -970,13 +970,13 @@
         ]},
         { "speaker": "b", "tr": "Taksi beş dakikada kapıda. Hesabınız burada.", "ru": "Такси будет у входа через пять минут. Вот ваш счёт.", "distractors": [
           { "tr": "Tamam, mektubu bu adrese göndeririz. Taksi çağırayım mı?", "ru": "Хорошо, перешлём письмо по этому адресу. Вызвать вам такси?" },
-          { "tr": "Teşekkürler. İyi yolculuklar, Olga Hanım!", "ru": "Спасибо. Счастливого пути, Ольга-ханым!" }
+          { "tr": "Teşekkürler. Allah'a emanet olun, Olga Hanım!", "ru": "Спасибо. Храни вас бог, Ольга-ханым, счастливого пути!" }
         ]},
         { "speaker": "a", "tr": "Kredi kartı ile ödeyeceğim. Buyurun.", "ru": "Я расплачусь кредитной картой. Пожалуйста.", "distractors": [
           { "tr": "Evet, bir taksi çağırın, lütfen. Havalimanına gidiyorum.", "ru": "Да, вызовите такси, пожалуйста. Я еду в аэропорт." },
           { "tr": "Teşekkürler. Benim için bir mektup gelirse, gideceğim yerin adresi burada.", "ru": "Спасибо. Если для меня придёт письмо — вот адрес, куда я еду." }
         ]},
-        { "speaker": "b", "tr": "Teşekkürler. İyi yolculuklar, Olga Hanım!", "ru": "Спасибо. Счастливого пути, Ольга-ханым!", "distractors": [
+        { "speaker": "b", "tr": "Teşekkürler. Allah'a emanet olun, Olga Hanım!", "ru": "Спасибо. Храни вас бог, Ольга-ханым, счастливого пути!", "distractors": [
           { "tr": "Taksi beş dakikada kapıda. Hesabınız burada.", "ru": "Такси будет у входа через пять минут. Вот ваш счёт." },
           { "tr": "Tamam, mektubu bu adrese göndeririz. Taksi çağırayım mı?", "ru": "Хорошо, перешлём письмо по этому адресу. Вызвать вам такси?" }
         ]}

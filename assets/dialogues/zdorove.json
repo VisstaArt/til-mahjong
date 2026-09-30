@@ -119,7 +119,7 @@
       "turns": [
         { "speaker": "b", "tr": "Buyurun, Olga Hanım, oturun. Neyiniz var?", "ru": "Проходите, Ольга-ханым, садитесь. Что вас беспокоит?", "distractors": [
           { "tr": "İki gün evde dinlenin. İki gün sonra tekrar gelin.", "ru": "Два дня отдыхайте дома. Приходите на приём через два дня." },
-          { "tr": "Rica ederim. Geçmiş olsun!", "ru": "Не за что. Поправляйтесь!" }
+          { "tr": "Rica ederim. Geçmiş olsun, Allah şifasını versin!", "ru": "Не за что. Поправляйтесь, дай бог здоровья!" }
         ]},
         { "speaker": "a", "tr": "Boğazım ağrıyor ve kötü bir öksürüğüm var.", "ru": "Болит горло и сильный кашель.", "distractors": [
           { "tr": "Tamam. Çok teşekkür ederim, Doktor Bey.", "ru": "Хорошо. Большое спасибо, доктор." },
@@ -127,7 +127,7 @@
         ]},
         { "speaker": "b", "tr": "Ne kadar zamandır ağrınız var?", "ru": "Как давно у вас боли?", "distractors": [
           { "tr": "Tamam, not aldım. Başka sorunuz var mı?", "ru": "Хорошо, записал. Есть ещё вопросы?" },
-          { "tr": "Rica ederim. Geçmiş olsun!", "ru": "Не за что. Поправляйтесь!" }
+          { "tr": "Rica ederim. Geçmiş olsun, Allah şifasını versin!", "ru": "Не за что. Поправляйтесь, дай бог здоровья!" }
         ]},
         { "speaker": "a", "tr": "Üç gündür. Kulağım da biraz ağrıyor.", "ru": "Три дня. И ухо немного болит.", "distractors": [
           { "tr": "Evet, doğum kontrol hapı alıyorum.", "ru": "Да, я принимаю противозачаточные таблетки." },
@@ -135,7 +135,7 @@
         ]},
         { "speaker": "b", "tr": "Ateşinizi ölçeceğim... Otuz sekiz derece. Şimdi ağzınızı açın ve dilinizi çıkarın.", "ru": "Я измерю вам температуру... Тридцать восемь. Теперь откройте рот и высуньте язык.", "distractors": [
           { "tr": "İki gün evde dinlenin. İki gün sonra tekrar gelin.", "ru": "Два дня отдыхайте дома. Приходите на приём через два дня." },
-          { "tr": "Rica ederim. Geçmiş olsun!", "ru": "Не за что. Поправляйтесь!" }
+          { "tr": "Rica ederim. Geçmiş olsun, Allah şifasını versin!", "ru": "Не за что. Поправляйтесь, дай бог здоровья!" }
         ]},
         { "speaker": "a", "tr": "Boğazım çok kırmızı mı?", "ru": "Горло очень красное?", "distractors": [
           { "tr": "Yatakta kalmam gerekiyor mu?", "ru": "Мне нужно соблюдать постельный режим?" },
@@ -181,9 +181,13 @@
           { "tr": "Ama penisiline alerjim var.", "ru": "Но у меня аллергия на пенициллин." },
           { "tr": "Boğazım çok kırmızı mı?", "ru": "Горло очень красное?" }
         ]},
-        { "speaker": "b", "tr": "Rica ederim. Geçmiş olsun!", "ru": "Не за что. Поправляйтесь!", "distractors": [
+        { "speaker": "b", "tr": "Rica ederim. Geçmiş olsun, Allah şifasını versin!", "ru": "Не за что. Поправляйтесь, дай бог здоровья!", "distractors": [
           { "tr": "Ne kadar zamandır ağrınız var?", "ru": "Как давно у вас боли?" },
           { "tr": "İyi ki söylediniz! O zaman başka bir antibiyotik yazıyorum. Başka bir ilaç kullanıyor musunuz?", "ru": "Хорошо, что сказали! Тогда выпишу другой антибиотик. Вы принимаете какие-то другие лекарства?" }
+        ]},
+        { "speaker": "a", "tr": "Amin, sağ olun!", "ru": "Аминь, спасибо!", "distractors": [
+          { "tr": "Evet, doğum kontrol hapı alıyorum.", "ru": "Да, я принимаю противозачаточные таблетки." },
+          { "tr": "Yatakta kalmam gerekiyor mu?", "ru": "Мне нужно соблюдать постельный режим?" }
         ]}
       ]
     },
@@ -496,7 +500,7 @@
       "turns": [
         { "speaker": "b", "tr": "Alo, Olga Hanım? Günaydın. Toplantı başlıyor, neredesiniz?", "ru": "Алло, Ольга-ханым? Доброе утро. Совещание начинается, вы где?", "distractors": [
           { "tr": "Tabii, dinlenin. Yarın Alman müşterilerle toplantınız var, onu erteleyelim mi?", "ru": "Конечно, отдыхайте. Завтра у вас встреча с немецкими клиентами — перенесём её?" },
-          { "tr": "Tamam, kendinize iyi bakın.", "ru": "Хорошо, берегите себя." }
+          { "tr": "Tamam, kendinize iyi bakın. Allah şifasını versin.", "ru": "Хорошо, берегите себя. Дай бог здоровья." }
         ]},
         { "speaker": "a", "tr": "Günaydın, Metin Bey. Özür dilerim, bugün gelemiyorum. Hastayım.", "ru": "Доброе утро, господин Метин. Извините, сегодня я не смогу прийти. Я заболела.", "distractors": [
           { "tr": "Çok teşekkür ederim. Yarın size haber veririm.", "ru": "Большое спасибо. Завтра дам вам знать." },
@@ -504,7 +508,7 @@
         ]},
         { "speaker": "b", "tr": "Geçmiş olsun! Neyiniz var?", "ru": "Поправляйтесь! Что с вами?", "distractors": [
           { "tr": "Hiç gerek yok, önce sağlık!", "ru": "Совсем не нужно, здоровье прежде всего!" },
-          { "tr": "Tamam, kendinize iyi bakın.", "ru": "Хорошо, берегите себя." }
+          { "tr": "Tamam, kendinize iyi bakın. Allah şifasını versin.", "ru": "Хорошо, берегите себя. Дай бог здоровья." }
         ]},
         { "speaker": "a", "tr": "Midem bozuk ve başım dönüyor. Bugün doktora gideceğim.", "ru": "У меня проблема с желудком и кружится голова. Сегодня пойду к врачу.", "distractors": [
           { "tr": "Çok teşekkür ederim. Yarın size haber veririm.", "ru": "Большое спасибо. Завтра дам вам знать." },
@@ -526,9 +530,13 @@
           { "tr": "Günaydın, Metin Bey. Özür dilerim, bugün gelemiyorum. Hastayım.", "ru": "Доброе утро, господин Метин. Извините, сегодня я не смогу прийти. Я заболела." },
           { "tr": "Midem bozuk ve başım dönüyor. Bugün doktora gideceğim.", "ru": "У меня проблема с желудком и кружится голова. Сегодня пойду к врачу." }
         ]},
-        { "speaker": "b", "tr": "Tamam, kendinize iyi bakın.", "ru": "Хорошо, берегите себя.", "distractors": [
+        { "speaker": "b", "tr": "Tamam, kendinize iyi bakın. Allah şifasını versin.", "ru": "Хорошо, берегите себя. Дай бог здоровья.", "distractors": [
           { "tr": "Tabii, dinlenin. Yarın Alman müşterilerle toplantınız var, onu erteleyelim mi?", "ru": "Конечно, отдыхайте. Завтра у вас встреча с немецкими клиентами — перенесём её?" },
           { "tr": "Geçmiş olsun! Neyiniz var?", "ru": "Поправляйтесь! Что с вами?" }
+        ]},
+        { "speaker": "a", "tr": "Amin, sağ olun, Metin Bey.", "ru": "Аминь, спасибо, Метин-бей.", "distractors": [
+          { "tr": "Evet, lütfen. E-postalara evden bakabilirim.", "ru": "Да, пожалуйста. Почту я могу посмотреть из дома." },
+          { "tr": "Midem bozuk ve başım dönüyor. Bugün doktora gideceğim.", "ru": "У меня проблема с желудком и кружится голова. Сегодня пойду к врачу." }
         ]}
       ]
     },
@@ -762,7 +770,7 @@
           { "tr": "Tamam. Bir daha şapkasız plaja gelmem!", "ru": "Хорошо. Больше без шляпы на пляж не пойду!" }
         ]},
         { "speaker": "b", "tr": "Evet, al, iç. Gel, gölgeye oturalım. Miden bulanıyor mu?", "ru": "Да, на, пей. Пойдём сядем в тень. Тебя тошнит?", "distractors": [
-          { "tr": "Bir dakika daha bekle... Tamam, durdu. Şimdi nasılsın?", "ru": "Подожди ещё минутку... Всё, остановилась. Как ты сейчас?" },
+          { "tr": "Bir dakika daha bekle... Tamam, durdu, Allah'a şükür. Şimdi nasılsın?", "ru": "Подожди ещё минутку... Всё, остановилась, слава богу. Как ты сейчас?" },
           { "tr": "Ben iyiyim. Hadi eve gidelim, bugün yeter.", "ru": "Я нормально. Давай поедем домой, на сегодня хватит." }
         ]},
         { "speaker": "a", "tr": "Biraz. Aa, burnum kanıyor!", "ru": "Немного. Ой, у меня кровь из носа!", "distractors": [
@@ -777,7 +785,7 @@
           { "tr": "Arabada unuttum. Sen su getirdin mi?", "ru": "Забыла в машине. Ты воду взял?" },
           { "tr": "Daha iyiyim. Sen de çok güneşte kaldın, sen iyi misin?", "ru": "Получше. Ты тоже долго был на солнце — ты в порядке?" }
         ]},
-        { "speaker": "b", "tr": "Bir dakika daha bekle... Tamam, durdu. Şimdi nasılsın?", "ru": "Подожди ещё минутку... Всё, остановилась. Как ты сейчас?", "distractors": [
+        { "speaker": "b", "tr": "Bir dakika daha bekle... Tamam, durdu, Allah'a şükür. Şimdi nasılsın?", "ru": "Подожди ещё минутку... Всё, остановилась, слава богу. Как ты сейчас?", "distractors": [
           { "tr": "Çok kırmızısın! Şapkan nerede?", "ru": "Ты вся красная! Где твоя шляпа?" },
           { "tr": "Evet, al, iç. Gel, gölgeye oturalım. Miden bulanıyor mu?", "ru": "Да, на, пей. Пойдём сядем в тень. Тебя тошнит?" }
         ]},
@@ -969,7 +977,7 @@
           { "tr": "Tamam. Onu yatırın, kaldırmayın.", "ru": "Хорошо. Уложите его, не поднимайте." },
           { "tr": "Hemen arıyorum. Çocuk kaç yaşında?", "ru": "Сейчас позвоню. Сколько лет ребёнку?" }
         ]},
-        { "speaker": "b", "tr": "Salıncaktan. Başından yaralandı, bakın, kan var!", "ru": "С качелей. Он ударился головой, смотрите, кровь!", "distractors": [
+        { "speaker": "b", "tr": "Salıncaktan. Allah'ım, başından yaralandı, bakın, kan var!", "ru": "С качелей. Боже мой, он ударился головой, смотрите, кровь!", "distractors": [
           { "tr": "Beş yaşında. Adı Arda.", "ru": "Пять лет. Его зовут Арда." },
           { "tr": "Evet, lütfen! Telefonum evde kaldı.", "ru": "Да, пожалуйста! Мой телефон остался дома." }
         ]},
@@ -986,7 +994,7 @@
           { "tr": "İyi günler, hoşça kalın!", "ru": "Хорошего дня, до свидания!" }
         ]},
         { "speaker": "b", "tr": "Evet, lütfen! Telefonum evde kaldı.", "ru": "Да, пожалуйста! Мой телефон остался дома.", "distractors": [
-          { "tr": "Salıncaktan. Başından yaralandı, bakın, kan var!", "ru": "С качелей. Он ударился головой, смотрите, кровь!" },
+          { "tr": "Salıncaktan. Allah'ım, başından yaralandı, bakın, kan var!", "ru": "С качелей. Боже мой, он ударился головой, смотрите, кровь!" },
           { "tr": "Beş yaşında. Adı Arda.", "ru": "Пять лет. Его зовут Арда." }
         ]},
         { "speaker": "a", "tr": "Hemen arıyorum. Çocuk kaç yaşında?", "ru": "Сейчас позвоню. Сколько лет ребёнку?", "distractors": [
@@ -1060,7 +1068,7 @@
       "speakers": { "a": "Ольга", "b": "Лейла" },
       "turns": [
         { "speaker": "b", "tr": "Hoş geldin! Bak, yeni kedim Pamuk!", "ru": "Заходи! Смотри, моя новая кошка Памук!", "distractors": [
-          { "tr": "Tabii, kafede buluşuruz!", "ru": "Конечно, встретимся в кафе!" },
+          { "tr": "Allah'a şükür! Tabii, kafede buluşuruz!", "ru": "Слава богу! Конечно, встретимся в кафе!" },
           { "tr": "Tabii, al. Daha iyi misin?", "ru": "Конечно, держи. Тебе лучше?" }
         ]},
         { "speaker": "a", "tr": "Çok tatlı! Ne zaman aldın?", "ru": "Какая милая! Когда ты её взяла?", "distractors": [
@@ -1077,7 +1085,7 @@
         ]},
         { "speaker": "b", "tr": "Eyvah, bilmiyordum! Şimdi nasılsın?", "ru": "Ой, я не знала! Как ты сейчас?", "distractors": [
           { "tr": "Hoş geldin! Bak, yeni kedim Pamuk!", "ru": "Заходи! Смотри, моя новая кошка Памук!" },
-          { "tr": "Tabii, kafede buluşuruz!", "ru": "Конечно, встретимся в кафе!" }
+          { "tr": "Allah'a şükür! Tabii, kafede buluşuruz!", "ru": "Слава богу! Конечно, встретимся в кафе!" }
         ]},
         { "speaker": "a", "tr": "Gözlerim kaşınıyor. Nefes almakta zorlanıyorum. Pencereyi açar mısın?", "ru": "Глаза чешутся. Мне трудно дышать. Откроешь окно?", "distractors": [
           { "tr": "Çok tatlı! Ne zaman aldın?", "ru": "Какая милая! Когда ты её взяла?" },
@@ -1085,7 +1093,7 @@
         ]},
         { "speaker": "b", "tr": "Hemen balkona çıkalım! İlacın yanında mı?", "ru": "Давай скорее на балкон! Лекарство у тебя с собой?", "distractors": [
           { "tr": "Geçen hafta. Sen kedi sever misin?", "ru": "На прошлой неделе. А ты любишь кошек?" },
-          { "tr": "Tabii, kafede buluşuruz!", "ru": "Конечно, встретимся в кафе!" }
+          { "tr": "Allah'a şükür! Tabii, kafede buluşuruz!", "ru": "Слава богу! Конечно, встретимся в кафе!" }
         ]},
         { "speaker": "a", "tr": "Evet, çantamda. Suyun var mı?", "ru": "Да, в сумке. У тебя есть вода?", "distractors": [
           { "tr": "Çok severim, ama kedilere alerjim var.", "ru": "Очень люблю, но у меня аллергия на кошек." },
@@ -1099,7 +1107,7 @@
           { "tr": "Çok severim, ama kedilere alerjim var.", "ru": "Очень люблю, но у меня аллергия на кошек." },
           { "tr": "Çok tatlı! Ne zaman aldın?", "ru": "Какая милая! Когда ты её взяла?" }
         ]},
-        { "speaker": "b", "tr": "Tabii, kafede buluşuruz!", "ru": "Конечно, встретимся в кафе!", "distractors": [
+        { "speaker": "b", "tr": "Allah'a şükür! Tabii, kafede buluşuruz!", "ru": "Слава богу! Конечно, встретимся в кафе!", "distractors": [
           { "tr": "Geçen hafta. Sen kedi sever misin?", "ru": "На прошлой неделе. А ты любишь кошек?" },
           { "tr": "Hemen balkona çıkalım! İlacın yanında mı?", "ru": "Давай скорее на балкон! Лекарство у тебя с собой?" }
         ]}
@@ -1115,7 +1123,7 @@
           { "tr": "Bazen. Tansiyonum çok düşük, sıcakta başım dönüyor.", "ru": "Иногда. У меня очень низкое давление, в жару кружится голова." }
         ]},
         { "speaker": "b", "tr": "Başım dönüyor. Şeker hastasıyım, bugün öğle yemeği yemedim.", "ru": "Кружится голова. У меня диабет, а я сегодня не обедала.", "distractors": [
-          { "tr": "Daha iyiyim, sağ ol. Sen olmasan ne yapardım!", "ru": "Уже лучше, спасибо. Что бы я без тебя делала!" },
+          { "tr": "Daha iyiyim, Allah razı olsun. Sen olmasan ne yapardım!", "ru": "Уже лучше, спасибо тебе огромное. Что бы я без тебя делала!" },
           { "tr": "O zaman sen de dikkat et! Öğle yemeğini atlama.", "ru": "Тогда и ты будь осторожна! Не пропускай обед." }
         ]},
         { "speaker": "a", "tr": "Ne yapayım? Sana ne getireyim?", "ru": "Что мне сделать? Что тебе принести?", "distractors": [
@@ -1123,7 +1131,7 @@
           { "tr": "Tamam. Şimdi nasılsın?", "ru": "Хорошо. Как ты сейчас?" }
         ]},
         { "speaker": "b", "tr": "Çantamda meyve suyu var, getirir misin?", "ru": "В сумке есть сок, принесёшь?", "distractors": [
-          { "tr": "Daha iyiyim, sağ ol. Sen olmasan ne yapardım!", "ru": "Уже лучше, спасибо. Что бы я без тебя делала!" },
+          { "tr": "Daha iyiyim, Allah razı olsun. Sen olmasan ne yapardım!", "ru": "Уже лучше, спасибо тебе огромное. Что бы я без тебя делала!" },
           { "tr": "O zaman sen de dikkat et! Öğle yemeğini atlama.", "ru": "Тогда и ты будь осторожна! Не пропускай обед." }
         ]},
         { "speaker": "a", "tr": "Tabii, işte. Doktor çağırayım mı?", "ru": "Конечно, вот. Вызвать врача?", "distractors": [
@@ -1146,7 +1154,7 @@
           { "tr": "Ne yapayım? Sana ne getireyim?", "ru": "Что мне сделать? Что тебе принести?" },
           { "tr": "Tabii, işte. Doktor çağırayım mı?", "ru": "Конечно, вот. Вызвать врача?" }
         ]},
-        { "speaker": "b", "tr": "Daha iyiyim, sağ ol. Sen olmasan ne yapardım!", "ru": "Уже лучше, спасибо. Что бы я без тебя делала!", "distractors": [
+        { "speaker": "b", "tr": "Daha iyiyim, Allah razı olsun. Sen olmasan ne yapardım!", "ru": "Уже лучше, спасибо тебе огромное. Что бы я без тебя делала!", "distractors": [
           { "tr": "Gerek yok, on dakikada geçer. Sen hiç böyle olur musun?", "ru": "Не нужно, через десять минут пройдёт. А у тебя так бывает?" },
           { "tr": "Çantamda meyve suyu var, getirir misin?", "ru": "В сумке есть сок, принесёшь?" }
         ]}

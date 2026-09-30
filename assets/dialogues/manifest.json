@@ -15,7 +15,7 @@
     "id": "v-otele",
     "title": "В отеле",
     "count": 20,
-    "sizeKB": 108.9
+    "sizeKB": 109.2
   },
   {
     "id": "restoran",
@@ -27,13 +27,13 @@
     "id": "zdorove",
     "title": "Здоровье",
     "count": 24,
-    "sizeKB": 138.4
+    "sizeKB": 140.1
   },
   {
     "id": "puteshestvie",
     "title": "Путешествие",
     "count": 36,
-    "sizeKB": 205.5
+    "sizeKB": 206.3
   },
   {
     "id": "semya",
@@ -57,7 +57,7 @@
     "id": "kak-deystvovat-v-ekstrennoy-situacii",
     "title": "Как действовать в экстренной ситуации",
     "count": 10,
-    "sizeKB": 77.3
+    "sizeKB": 77.8
   },
   {
     "id": "kak-pomenyat-dengi",
@@ -69,7 +69,7 @@
     "id": "na-tamozhne",
     "title": "На таможне",
     "count": 8,
-    "sizeKB": 61.9
+    "sizeKB": 62.3
   },
   {
     "id": "obscheprinyatye-slova",
@@ -99,7 +99,7 @@
     "id": "osmotr-dostoprimechatelnostey",
     "title": "Осмотр достопримечательностей",
     "count": 11,
-    "sizeKB": 74.7
+    "sizeKB": 74.8
   },
   {
     "id": "razvlecheniya-otdyh",

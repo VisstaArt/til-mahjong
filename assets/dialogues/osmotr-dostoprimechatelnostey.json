@@ -300,7 +300,7 @@
           { "tr": "Merhaba. Bir turistik tur tavsiye edebilir misiniz?", "ru": "Здравствуйте. Какие вы порекомендуете экскурсии?" },
           { "tr": "Buradan, ofisin önünden. Hangi otelde kalıyorsunuz?", "ru": "Отсюда, от нашего офиса. В каком отеле вы остановились?" }
         ]},
-        { "speaker": "b", "tr": "Akşam beş gibi.", "ru": "Около пяти вечера.", "distractors": [
+        { "speaker": "b", "tr": "Akşam beş gibi. İnşallah hava da güzel olur.", "ru": "Около пяти вечера. Дай бог, и погода будет хорошая.", "distractors": [
           { "tr": "Rehber Rusça biliyor mu?", "ru": "Этот гид говорит по-русски?" },
           { "tr": "Nereden hareket edeceğiz?", "ru": "Откуда мы отъезжаем?" }
         ]},
@@ -625,7 +625,7 @@
           { "tr": "Kalenin içinde, müze dükkanında. Rusça katalog da var.", "ru": "Внутри крепости, в музейном магазине. Есть и каталог на русском." }
         ]},
         { "speaker": "a", "tr": "Evet, istiyoruz. Öğrenciler için indirim var mı?", "ru": "Да, возьмём. У вас есть скидки для студентов?", "distractors": [
-          { "tr": "Maalesef, sadece üniversite öğrencileri için. Kartla mı ödüyorsunuz?", "ru": "К сожалению, только для студентов университета. Будете платить картой?" },
+          { "tr": "Maşallah! Ama maalesef, sadece üniversite öğrencileri için. Kartla mı ödüyorsunuz?", "ru": "Молодец! Но, к сожалению, только для студентов университета. Будете платить картой?" },
           { "tr": "Harika. Burada hatıralık eşya almak olanaklı mı?", "ru": "Отлично. Здесь можно купить сувенир?" }
         ]},
         { "speaker": "b", "tr": "Var. Öğrenci misiniz?", "ru": "Есть. Вы студентка?", "distractors": [
@@ -636,7 +636,7 @@
           { "tr": "Kalenin içinde, müze dükkanında. Rusça katalog da var.", "ru": "Внутри крепости, в музейном магазине. Есть и каталог на русском." },
           { "tr": "Teşekkürler, iyi günler!", "ru": "Спасибо, хорошего дня!" }
         ]},
-        { "speaker": "b", "tr": "Maalesef, sadece üniversite öğrencileri için. Kartla mı ödüyorsunuz?", "ru": "К сожалению, только для студентов университета. Будете платить картой?", "distractors": [
+        { "speaker": "b", "tr": "Maşallah! Ama maalesef, sadece üniversite öğrencileri için. Kartla mı ödüyorsunuz?", "ru": "Молодец! Но, к сожалению, только для студентов университета. Будете платить картой?", "distractors": [
           { "tr": "Merhaba. Kale bugün açık, ama bir salon kapalı. Yine de bilet istiyor musunuz?", "ru": "Здравствуйте. Крепость сегодня открыта, но один зал закрыт. Всё равно возьмёте билеты?" },
           { "tr": "Evet, aynı dükkanda. Buyurun, biletleriniz. İyi gezmeler!", "ru": "Да, в том же магазине. Вот ваши билеты. Приятной прогулки!" }
         ]},

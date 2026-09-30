@@ -154,15 +154,15 @@
         ]},
         { "speaker": "b", "tr": "Hangi uçuş? Numarasını biliyor musunuz?", "ru": "Какой рейс? Вы знаете номер?", "distractors": [
           { "tr": "Tamam, çok teşekkürler!", "ru": "Хорошо, большое спасибо!" },
-          { "tr": "Rica ederim. Annenize \"Hoş geldiniz\" deyin!", "ru": "Не за что. Скажите маме «добро пожаловать»!" }
+          { "tr": "Rica ederim. Allah kavuştursun! Annenize \"Hoş geldiniz\" deyin!", "ru": "Не за что. Дай бог скорее встретиться! Скажите маме «добро пожаловать»!" }
         ]},
         { "speaker": "a", "tr": "Bilmiyorum. Saat on ikide iniyor, annem o uçakta.", "ru": "Не знаю. Он прилетает в двенадцать, на нём летит моя мама.", "distractors": [
           { "tr": "Bir saat mi? Annem İstanbul'a ilk kez geliyor, biraz endişeliyim.", "ru": "Час? Мама впервые прилетает в Стамбул, я немного волнуюсь." },
-          { "tr": "Rica ederim. Annenize \"Hoş geldiniz\" deyin!", "ru": "Не за что. Скажите маме «добро пожаловать»!" }
+          { "tr": "Rica ederim. Allah kavuştursun! Annenize \"Hoş geldiniz\" deyin!", "ru": "Не за что. Дай бог скорее встретиться! Скажите маме «добро пожаловать»!" }
         ]},
         { "speaker": "b", "tr": "Bir dakika, bakayım... Evet, uçak yirmi dakika önce indi.", "ru": "Минутку, посмотрю... Да, самолёт приземлился двадцать минут назад.", "distractors": [
           { "tr": "Tamam, çok teşekkürler!", "ru": "Хорошо, большое спасибо!" },
-          { "tr": "Rica ederim. Annenize \"Hoş geldiniz\" deyin!", "ru": "Не за что. Скажите маме «добро пожаловать»!" }
+          { "tr": "Rica ederim. Allah kavuştursun! Annenize \"Hoş geldiniz\" deyin!", "ru": "Не за что. Дай бог скорее встретиться! Скажите маме «добро пожаловать»!" }
         ]},
         { "speaker": "a", "tr": "Ama annem hâlâ çıkmadı. Neden bu kadar uzun sürüyor?", "ru": "Но мама всё ещё не вышла. Почему так долго?", "distractors": [
           { "tr": "Bir saat mi? Annem İstanbul'a ilk kez geliyor, biraz endişeliyim.", "ru": "Час? Мама впервые прилетает в Стамбул, я немного волнуюсь." },
@@ -178,7 +178,7 @@
         ]},
         { "speaker": "b", "tr": "Endişelenmeyin. Yolcular bu kapıdan çıkar. Burada bekleyebilirsiniz.", "ru": "Не волнуйтесь. Пассажиры выходят через эту дверь. Можете подождать здесь.", "distractors": [
           { "tr": "Ama annem hâlâ çıkmadı. Neden bu kadar uzun sürüyor?", "ru": "Но мама всё ещё не вышла. Почему так долго?" },
-          { "tr": "Rica ederim. Annenize \"Hoş geldiniz\" deyin!", "ru": "Не за что. Скажите маме «добро пожаловать»!" }
+          { "tr": "Rica ederim. Allah kavuştursun! Annenize \"Hoş geldiniz\" deyin!", "ru": "Не за что. Дай бог скорее встретиться! Скажите маме «добро пожаловать»!" }
         ]},
         { "speaker": "a", "tr": "Annem çıkmadan kahve alabilir miyim? Kafe nerede?", "ru": "А я успею купить кофе, пока мама не вышла? Где кафе?", "distractors": [
           { "tr": "Bilmiyorum. Saat on ikide iniyor, annem o uçakta.", "ru": "Не знаю. Он прилетает в двенадцать, на нём летит моя мама." },
@@ -192,7 +192,7 @@
           { "tr": "Hangi uçuş? Numarasını biliyor musunuz?", "ru": "Какой рейс? Вы знаете номер?" },
           { "tr": "Ama annem hâlâ çıkmadı. Neden bu kadar uzun sürüyor?", "ru": "Но мама всё ещё не вышла. Почему так долго?" }
         ]},
-        { "speaker": "b", "tr": "Rica ederim. Annenize \"Hoş geldiniz\" deyin!", "ru": "Не за что. Скажите маме «добро пожаловать»!", "distractors": [
+        { "speaker": "b", "tr": "Rica ederim. Allah kavuştursun! Annenize \"Hoş geldiniz\" deyin!", "ru": "Не за что. Дай бог скорее встретиться! Скажите маме «добро пожаловать»!", "distractors": [
           { "tr": "Hangi uçuş? Numarasını biliyor musunuz?", "ru": "Какой рейс? Вы знаете номер?" },
           { "tr": "Annem çıkmadan kahve alabilir miyim? Kafe nerede?", "ru": "А я успею купить кофе, пока мама не вышла? Где кафе?" }
         ]}
@@ -412,7 +412,7 @@
           { "tr": "Süper! Önce Anya'ya mesaj atayım, sonra gidelim.", "ru": "Супер! Сначала напишу Ане, и поедем." },
           { "tr": "Tamam. Bavulunu ver, ben taşırım.", "ru": "Хорошо. Давай чемодан, я понесу." }
         ]},
-        { "speaker": "b", "tr": "Tabii! Uçuş nasıldı? Çok yorgun görünüyorsun.", "ru": "Конечно! Как полёт? Ты выглядишь очень уставшей.", "distractors": [
+        { "speaker": "b", "tr": "Tabii! Allah'a şükür, geldin! Uçuş nasıldı? Çok yorgun görünüyorsun.", "ru": "Конечно! Слава богу, долетела! Как полёт? Ты выглядишь очень уставшей.", "distractors": [
           { "tr": "Çok çikolata! Memur biraz şaşırdı.", "ru": "Куча шоколада! Таможенник немного удивился." },
           { "tr": "Tabii. Gümbet'te güzel bir balık lokantası biliyorum.", "ru": "Конечно. Я знаю в Гюмбете хороший рыбный ресторан." }
         ]},
@@ -442,7 +442,7 @@
         ]},
         { "speaker": "a", "tr": "Harika! Otele gitmeden önce bir şey yiyebilir miyiz? Çok açım.", "ru": "Здорово! Можно перед отелем что-нибудь поесть? Я очень голодная.", "distractors": [
           { "tr": "Hoş bulduk! Ne güzel, arabayla gelmişsin!", "ru": "Спасибо! Как здорово, ты на машине!" },
-          { "tr": "Tabii! Uçuş nasıldı? Çok yorgun görünüyorsun.", "ru": "Конечно! Как полёт? Ты выглядишь очень уставшей." }
+          { "tr": "Tabii! Allah'a şükür, geldin! Uçuş nasıldı? Çok yorgun görünüyorsun.", "ru": "Конечно! Слава богу, долетела! Как полёт? Ты выглядишь очень уставшей." }
         ]},
         { "speaker": "b", "tr": "Tabii. Gümbet'te güzel bir balık lokantası biliyorum.", "ru": "Конечно. Я знаю в Гюмбете хороший рыбный ресторан.", "distractors": [
           { "tr": "Yorgunum. İstanbul'da pasaport kontrolünde uzun bir kuyruk vardı, gümrükte de çantamı açtılar.", "ru": "Устала. В Стамбуле на паспортном контроле была длинная очередь, а на таможне ещё и сумку открыли." },
