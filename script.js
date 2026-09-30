@@ -170,6 +170,35 @@ function saveExcludedWords(set) {
 
 let excludedWords = getExcludedWords();
 
+// Уровни слов A1…B2 — assets/words/levels.json (собирает tools/words/build_levels.py из
+// tools/words/levels.txt). «Уровень слов» в каталоге — потолок: слова выше него в игру не
+// попадают, даже если отмечены галочкой, — чтобы не выбирать руками из сотен слов.
+// Свои слова (добавленные через ИИ) уровня не имеют и играют всегда.
+const WORD_LEVEL_ORDER = ["A1", "A2", "B1", "B2"];
+const WORD_LEVEL_LABELS = { A1: "самая база", A2: "бытовое", B1: "шире повседневного", B2: "специальное" };
+const WORD_LEVEL_KEY = "mahjong-word-level";
+let wordLevels = {};
+let wordLevelCap = localStorage.getItem(WORD_LEVEL_KEY) || "B2";
+
+function wordLevel(w) {
+  return wordLevels[w.tr] || null;
+}
+function isAboveCap(level) {
+  return !!level && WORD_LEVEL_ORDER.indexOf(level) > WORD_LEVEL_ORDER.indexOf(wordLevelCap);
+}
+function isWithinLevel(w) {
+  return !isAboveCap(wordLevel(w));
+}
+
+fetch("assets/words/levels.json")
+  .then((r) => (r.ok ? r.json() : {}))
+  .then((data) => {
+    wordLevels = data;
+    if (document.body.dataset.screen === "catalog") renderCatalog();
+    if (document.body.dataset.screen === "category") renderCategoryWordList();
+  })
+  .catch(() => {});
+
 // Система "выученности" слов: streak = сколько раз подряд слово было собрано в пару
 // БЕЗ единой ошибки (см. onTileClick) — любая ошибка с участием этого слова сбрасывает
 // streak в 0. Чем выше streak, тем реже слово попадает в новую раскладку, а после
@@ -330,7 +359,7 @@ function getAllAvailableWords() {
 
 // Колода для игры — только отмеченные чекбоксом слова.
 function getActiveDeck() {
-  return getAllAvailableWords().filter((w) => !excludedWords.has(w.tr));
+  return getAllAvailableWords().filter((w) => !excludedWords.has(w.tr) && isWithinLevel(w));
 }
 
 const TILE_W = 64;
@@ -1021,7 +1050,8 @@ function formatSize(kb) {
 function renderCatalog() {
   document.getElementById("catalog-loading").classList.add("hidden");
   const words = getAllAvailableWords();
-  const selectedCount = words.filter((w) => !excludedWords.has(w.tr)).length;
+  const selectedCount = words.filter((w) => !excludedWords.has(w.tr) && isWithinLevel(w)).length;
+  renderWordLevelPicker();
   catalogSelectedCountEl.textContent = selectedCount;
   catalogTotalCountEl.textContent = words.length;
   catalogAvailableCountEl.textContent = categoryManifest.reduce((s, m) => s + m.count, 0);
@@ -1037,7 +1067,7 @@ function renderCatalog() {
     if (!manifestCount && !themeWords.length) return; // категория пока без слов
 
     const isLoaded = loaded.has(theme);
-    const themeSelected = themeWords.filter((w) => !excludedWords.has(w.tr)).length;
+    const themeSelected = themeWords.filter((w) => !excludedWords.has(w.tr) && isWithinLevel(w)).length;
 
     const tile = document.createElement("div");
     tile.className = "catalog-tile" + (isLoaded ? "" : " not-loaded");
@@ -1076,14 +1106,77 @@ async function openCategory(theme) {
   renderCategoryWordList();
 }
 
+// Переключатель «Уровень слов» в каталоге: A1 → до A2 → до B1 → все.
+function renderWordLevelPicker() {
+  const el = document.getElementById("word-level-buttons");
+  if (!el) return;
+  el.innerHTML = "";
+  WORD_LEVEL_ORDER.forEach((lv, i) => {
+    const btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = "level-btn" + (lv === wordLevelCap ? " active" : "");
+    btn.textContent = i === 0 ? "A1" : i === WORD_LEVEL_ORDER.length - 1 ? "все" : `до ${lv}`;
+    btn.title = i === WORD_LEVEL_ORDER.length - 1 ? "Все слова словаря" : `Только слова уровней A1–${lv}`;
+    btn.addEventListener("click", () => {
+      wordLevelCap = lv;
+      localStorage.setItem(WORD_LEVEL_KEY, lv);
+      renderCatalog();
+    });
+    el.appendChild(btn);
+  });
+}
+
+// Слова категории сгруппированы по уровню: у каждой группы своя кнопка «включить /
+// выключить всю группу» — освоила A1, подключаешь A2. Группы выше выбранного в каталоге
+// уровня видны, но помечены: в игру они не попадут, пока не поднять уровень.
 function renderCategoryWordList() {
   const byTheme = wordsByCategory();
   const words = (byTheme.get(currentCategoryTheme) || []).sort((a, b) => a.tr.localeCompare(b.tr, "tr"));
   categoryWordListEl.innerHTML = "";
-  const list = document.createElement("div");
-  list.className = "word-select-list-inner";
-  words.forEach((w) => list.appendChild(buildWordRow(w, renderCategoryWordList)));
-  categoryWordListEl.appendChild(list);
+  const groups = new Map();
+  words.forEach((w) => {
+    const key = wordLevel(w) || "own";
+    if (!groups.has(key)) groups.set(key, []);
+    groups.get(key).push(w);
+  });
+  [...WORD_LEVEL_ORDER, "own"].forEach((key) => {
+    const groupWords = groups.get(key);
+    if (!groupWords) return;
+    const locked = isAboveCap(key === "own" ? null : key);
+    const section = document.createElement("div");
+    section.className = "word-level-group" + (locked ? " locked" : "");
+
+    const header = document.createElement("div");
+    header.className = "word-level-header";
+    const on = groupWords.filter((w) => !excludedWords.has(w.tr)).length;
+    const title = key === "own" ? "Свои слова" : `${key} · ${WORD_LEVEL_LABELS[key]}`;
+    const note = locked ? " · выше выбранного уровня — в игру не попадут" : "";
+    header.innerHTML = `<span class="word-level-title">${title}</span><span class="word-level-count">${on}/${groupWords.length} включено${note}</span>`;
+    const actions = document.createElement("span");
+    actions.className = "word-level-actions";
+    [
+      ["Включить группу", (w) => excludedWords.delete(w.tr)],
+      ["Выключить", (w) => excludedWords.add(w.tr)],
+    ].forEach(([label, apply]) => {
+      const btn = document.createElement("button");
+      btn.type = "button";
+      btn.textContent = label;
+      btn.addEventListener("click", () => {
+        groupWords.forEach(apply);
+        saveExcludedWords(excludedWords);
+        renderCategoryWordList();
+      });
+      actions.appendChild(btn);
+    });
+    header.appendChild(actions);
+    section.appendChild(header);
+
+    const list = document.createElement("div");
+    list.className = "word-select-list-inner";
+    groupWords.forEach((w) => list.appendChild(buildWordRow(w, renderCategoryWordList)));
+    section.appendChild(list);
+    categoryWordListEl.appendChild(section);
+  });
   updateDeckSummary();
 }
 

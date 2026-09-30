@@ -1576,3 +1576,44 @@ main {
 .round-end-actions button { margin-top: 0 !important; }
 .round-end-actions button.secondary { background: var(--scale-2); color: #fff; }
 #grammar-round-next-btn.hidden { display: none; }
+
+/* Уровни слов маджонга: переключатель в каталоге и группы A1…B2 внутри категории. */
+.level-buttons { display: flex; gap: 8px; flex-wrap: wrap; }
+.manager-row .level-btn {
+  background: var(--scale-2);
+  color: var(--text);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 999px;
+  padding: 7px 16px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.manager-row .level-btn.active { background: var(--gold); color: #1b1b1b; border-color: var(--gold); }
+.word-level-group {
+  margin-bottom: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  overflow: hidden;
+}
+.word-level-group.locked { opacity: 0.55; }
+.word-level-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 12px;
+  padding: 10px 12px;
+  background: rgba(255, 255, 255, 0.06);
+}
+.word-level-title { font-weight: 700; color: var(--gold); }
+.word-level-count { font-size: 0.82rem; opacity: 0.75; flex: 1; }
+.word-level-actions { display: flex; gap: 6px; }
+.word-level-actions button {
+  background: var(--scale-2);
+  color: var(--text);
+  border: none;
+  border-radius: 8px;
+  padding: 6px 10px;
+  font-size: 0.8rem;
+  cursor: pointer;
+}

@@ -1,0 +1,163 @@
+# Уровни слов маджонга (A1 → B2). Собирается в assets/words/levels.json:
+#   python3 tools/words/build_levels.py
+# Формат: [категория] default=<уровень> — уровень всех слов категории по умолчанию;
+# строки «A1: слово | слово | …» — исключения. Слово пишется ровно как поле tr.
+# A1 — самая база (первые месяцы), A2 — бытовое, B1 — шире повседневного,
+# B2 — специальное (бизнес, техника, редкие вещи).
+
+[adjectives] default=B1
+A1: acı | az | aynı | açık | ağır | boş | büyük | daha | dolu | doğru | erken | eski | geç | genç | gibi | güzel | hafif | hasta | hızlı | iyi | kapalı | kirli | kolay | kötü | küçük | kısa | lezzetli | pahalı | sıcak | taze | temiz | tuzlu | ucuz | uzun | yakın | yalnız | yanlış | yavaş | yaşlı | yeni | yüksek | zor | çok | önemli | en
+A2: akıllı | alçak | bayat | benzer | böyle | ciddi | dar | derin | dikkatli | doğal | düşük | ekşi | eğlenceli | farklı | faydalı | fakir | garip | geniş | gerekli | gerçek | gerçekten | gürültülü | güvenli | güçlü | hoş | ilginç | ince | kalın | komik | kuru | meşgul | modern | mümkün | nazik | normal | oldukça | parlak | rahatsız | sade | sakin | serin | sessiz | sert | sevimli | sulu | tehlikeli | tembel | uygun | yakışıklı | yasak | yağlı | yumuşak | yuvarlak | zayıf | zengin | şişman | çiğ | çirkin | özel | ünlü | ıslak | şanslı | birçok | bol | canlı | hızla | ızgara | kızarmış | haşlanmış | baharatlı | daha iyi/daha kötü | karanlık | tuhaf | çabuk | şirin | ihtiyar | meraklı | serbest
+B2: kıtasal | sızma | nadide | hayalî | karizmatik | pürüzlü | pürüzsüz | görkemli | mütevazı | gerçekçi | verimli | eşsiz | berrak | bulanık | ilgili | olumlu | olumsuz | karma | arkadaki (diş) | aşağıdaki (diş) | öndeki (diş) | yukarıdaki (diş) | ölen | cansız | ailesiz | şekilde | farklılık | saygısız | fırınlanmış | sivri | sığ | pırıl pırıl | kibirli | cimri | umutsuz | müthiş | etkileyici | şaşırtıcı
+
+[animals] default=B1
+A1: balık | kedi | köpek | at | hayvan | inek | tavuk
+A2: aslan | ayı | balina | fil | maymun | tavşan | koyun | keçi | kurt | tilki | ördek | yılan | kaplumbağa | kurbağa | zürafa | kaplan | köpek balığı | yunus | penguen | timsah | evcil hayvan | kedi yavrusu | sincap | horoz | kuzu | güvercin | zebra | arı
+B2: bıldırcın | sülün | keklik | porsuk | vaşak | karaca | antilop | sırtlan | vatoz | kunduz | mors | istiridye | deniz salyangozu | denizatı | çakal | bufalo | akrep | sürü | yaban domuzu | yaban ördeği | kılıç balığı | mürekkep balığı | mercan | guinea pig | rakun
+
+[bathroom] default=B1
+A1: banyo | duş | havlu | sabun | ayna | diş fırçası | diş macunu | şampuan
+A2: küvet | musluk | çamaşır makinesi | çöp kovası | tartı | tuvalet kağıdı | bornoz | sünger
+B2: rezervuar | leke çıkarıcı | yumuşatıcı | aseton | manikür takımı (pilo) | duşakabin
+
+[birds] default=B1
+A1: kuş
+A2: karga | martı | papağan | kartal | baykuş | serçe
+B2: baykuşcuk | ardıç kuşu | doğan | şahin | tukan
+
+[body] default=B1
+A1: ayak | ağız | baş | burun | diş | el | göz | kafa | kol | kulak | saç | parmak | bacak
+A2: boyun | omuz | sırt | diz | dil | dudak | kilo | boy | göğüs | tırnak | çene | alın | vücut | karın | bel | yanak | yastık | kemik | beden | baş, kafa | başparmak | ayak parmağı
+B2: şakak | bağırsak | cinsel organ | bademcik | eklem | meme | diz kapağı | kakül | damar
+
+[business] default=B2
+A2: şirket | reklam
+B1: satış | ürün | imza | risk | miktar | masraf | sözleşme | yatırım | satın alma | talep | maliyet | teklif | anlaşma | taraf | yatırımcı | kampanya | rekabet | strateji | öncelik | hedef (iş) | karar (iş) | büyüme | personel | işe alım | terfi | motivasyon | geri bildirim | ekip | liderlik | iş yükü | muhasebe | borç (mali) | hedef kitle | içerik | değer | oran | mal | son teklif | karşı teklif | üretim | borsa
+
+[calendar] default=A2
+A1: akşam | bugün | dün | yarın | gün | gece | hafta | sabah | saat | dakika | yıl | şimdi | sonra | önce | pazartesi | salı | çarşamba | perşembe | cuma | cumartesi | pazar | zaman | doğum günü | hafta sonu | bazen | belki | hemen | buçuk | öğle | Bu akşam
+B1: aslında | ayrıca | artık | bir süre | birden | daima | genellikle | hâlâ | ilk önce | muhtemelen | nadiren | o sırada | resmî tatil | yaklaşık | çoktan | çoğu zaman | geçiyor | doğum tarihi | En kısa zamanda | Pazardan önce
+
+[city] default=B1
+A1: ev (yer) | okul | kafe | otel | park | restoran | sokak | şehir | hastane | sinema | müze | tuvalet | adres | durak | cami | bahçe | köy
+A2: alışveriş merkezi | anaokulu | bank | belediye | bilet gişesi | dükkan | gemi | harita | kütüphane | liman | lise | otobüs durağı | oyun | pazaryeri | posta | spor salonu | stadyum | tiyatro | üniversite | çarşı | çay bahçesi | ilkokul | ortaokul | kule | saray | meydan | hayvanat bahçesi | bina | kale | Giriş serbest (bedava) | Varış (Geliş) | Gidiş (Hareket) | Meşgul | Çekiniz | İtiniz | Yer yok | kütüphane (yer) | park (yer) | deniz (yer) | pazar (yer) | Büyükelçilik | Konsolosluk | lunapark | dönme dolap | fabrika
+B2: adliye | atlıkarınca | dönme salıncak | hız treni | otoban | sefer | tarihi yer | çarpışan arabalar | Köpek var | Bisiklet yolu | İçilmez | Tek yollu cadde | Lütfen zili çalınız | Rezerve | Bekleme odası | Yalnızca Yetkili Personel Girişi | antika eşya | arkeoloji | borsa (yer) | bit pazarı | botanik (bitkibilim) | botanik bahçeleri | bağ | çağlayan | jeoloji | çömlekçilik | ticaret merkezi | güzel sanatlar | sanat (yer) | tarih (yer) | kaynak (su) | çayır | alışveriş bölgesi | tıp (yer) | anıt | manastır | müzik (yer) | madeni paralar | opera binası | abide | geçit | mağara | harabe | parlamento binası | din | el sanatları | heykeltıraşlık | şato | deniz feneri | galeri | atölye | vezne | itfaiye | konser salonu | liman (yer)
+
+[clothing] default=B1
+A1: ayakkabı | elbise | etek | gömlek | pantolon | ceket | çanta | şapka | çorap | tişört | kazak | gözlük | kıyafet
+A2: atkı | bere | bot | bluz | cep | eşofman | giyinmek | soyunmak | kaban | mont | kemer | kot | kravat | küpe | kolye | yüzük | numara | pantalon | sandalet | spor ayakkabı | sırt çantası | takım elbise | terlik | çizme | şort | yağmurluk | mayo | pijama | manto, palto | el çantası | düğme | deri | ipek | pamuk | yün | şort | iç çamaşırı | hırka | kot, blucin | takım | yelek | kasket | gece elbisesi
+B2: pelerin | kubbe | fular | tunik | fanila | atlet | taç | önlük | çarşaf | elbiseyi | tenis ayakkabısı | ayakkabı düz ökçeli | ökçeli | kösele tabanlı | kauçuk tabanlı | süet (materyal) | deri (materyal) | kauçuk (materyal) | kumaş (materyal) | patiska | fitilli kadife | gabardin | blucin kumaşı | süet | dantel | havlu kumaş | poplin | saten | pamuklu | şifon | sutyen | uzun çorap | bayan külotu | erkek külotu | korse | tayyör | erkek elbisesi | bone | anorak | erkek çorabı | erkek mayosu | toka | sabahlık | çorap (kadın) | külotlu çorap | kadife | keten | boxer | külot | sütyen | tayt | saç bandı | gecelik | spor ceket
+
+[colors] default=A1
+A2: açık mavi | koyu yeşil | renk | bej | boya | altın rengi | gümüş rengi | portakal rengi
+B1: turkuvaz | açık mor | karton | kara | altın
+
+[cosmetics] default=B1
+A2: parfüm | krem | tarak | ruj | saç kurutma makinesi | güneş kremi | deodorant | el kremi | yüz kremi | makyaj | saç kremi | fırça | duş jeli | tıraş makinesi | saç fırçası | kolonya | manikür | nemlendirici krem
+B2: aydınlatıcı | bronzer | epilatör | kapatıcı | kaş jeli | kil maskesi | makyaj bazı | makyaj sabitleyici | micellar su | retinol | düzleştirici | maşa | bigudi | mizanpli | fönleme | perma | renk açma | boyama (saç) | tıraş fırçası | törpü | cımbız | peeling | vücut peelingi | serum | saç serumu | takma tırnak
+
+[countries] default=A2
+A1: rus | rusya | rusça | türk | türkiye | türkçe | ülke | ingilizce | almanca | almanya | ingiltere | İngiliz | ingiliz
+B1: milliyet | uzakdoğu | sırp | hintçe | mısırlı | portekizce | portekizli | korece | koreli | güney kore | hindistanlı | hintli | bayrak | seyahat
+
+[directions] default=A2
+A1: burada | orada | nerede | nereden | nereye | sağ | sol | sağa | sola | düz | yan | yanında | yer | uzak | içinde | üstünde | altında | karşısında | arasında
+B1: batı | doğu | güney | kuzey | güneybatı | güneydoğu | kuzeybatı | kuzeydoğu | pusula | peşinde | karşısındaki | yüzünde | yolda olmak | yerine | hakkında | dışında | üzerine
+
+[driver] default=B2
+A2: ehliyet | kaza | lastik | motor | trafik ışığı | emniyet kemeri | kavşak | yaya geçidi
+B1: arıza | hız sınırı | plaka | sigorta | vites | tekerlek | akü | çekici | radar | yağ (motor)
+
+[emotions] default=A2
+A1: aç | mutlu | yorgun | üzgün | sevmek | gülmek | yardım | var | aşk | kızgın | tok
+B1: bağışlamak | dürüstlük | empati | hayal kırıklığı | kayıtsız kalmak | tepki | zarar | başarı | dayanışma | güven | seçim | ilgi | iyilik | hayran
+
+[family] default=A2
+A1: anne | baba | kardeş | abla | abi | ağabey | arkadaş | çocuk | kız | erkek | kadın | aile | ad | evli | bekar | büyükanne | büyükbaba | istemek | vermek | getirmek | bulmak | unutmak | insan | komşu | Ailem | Arkadaşım | Çocuklarım | Kızım | Oğlum | Karım | Kocam | Eşim | sevgili | soyadı
+B1: kayınbirader | kayınpeder | kayınvalide | kan bağı | medeni hali | nesil | soy | sülale | göçmen | dul | damat | gelin | yenge | partner | aile bireyi | birbirlerine | ilişki | topluluk | kavga etmek | çözmek | anlaşmak | yardım almak | güvenmek | seçmek | kaybetmek | doğum yeri
+
+[food] default=B1
+A1: ekmek | su | çay | kahve | süt | peynir | yumurta | et | tavuk şiş | salata | çorba | pilav | makarna | şeker | tuz | yemek yemek | içmek | kahvaltı | zeytin | tatlı | meyve suyu | ayran | bira | şarap | hesap | menü | köfte | kebap | yoğurt | bal | reçel | dondurma | portakal suyu | içecek | yiyecek | afiyet olsun | pasta
+A2: ana yemek | baharat | bahşiş | balık fileto | beyaz peynir | biftek | börek | ceviz | dana eti | deniz ürünleri | fındık | hamburger | kaşar peyniri | kek | krema | kuzu eti | mantı | maden suyu | meze | mısır | nohut | pirinç | sipariş | soda | sos | sosis | sucuk | tereyağı | un | yağ | zeytinyağı | limonata | elma suyu | omlet | mercimek çorbası | sebze çorbası | domates çorbası | tavuk suyu | gözleme | muhallebi | kıyma | dilim | salam | jambon | alkol | viski | votka | şampanya | karabiber | tarçın | badem | antep fıstığı | yer fıstığı | kiraz | patates püresi | turşu | paket servis | çay limonlu | sütlü (çay) | tas kebap | kaymak | beslenme | ızgara | izgara | fırında | haşlama
+B2: adisyon | ara sıcak | arpa | ayçiçek yağı | bitki çayı | bitter çikolata | bulgur | buğday | domuz | enerji içeceği | garnitür | gazlı içecek | hindi eti | kabuk | kaju | kekik | kestane | kimyon | kinoa | kişniş | kuver | köri | kırmızı mercimek | lor peyniri | makademya | maydanoz | pazı | pekan cevizi | pekmez | pirzola | reyhan | safran | servis ücreti | sirke | smoothie | spesiyal | sumak | susam yağı | sığır | tahin | tahıl | tandır | taze soğan | tonik | toz biber | tulum peyniri | yenibahar | yeşil mercimek | yulaf | zencefil | zerdeçal | çavdar | çay demlemek | çekirdek | ısırgan suyu | buğulama | marmelat | tavada kızarmış | greyfurt suyu | jambon ve yumurta | rafadan yumurta | katı yumurta | kabuksuz haşlanmış yumurta | haşlanmış yumurtalar | mantarlı omlet | yeşillikli omlet | peynirli omlet | ispanaklı omlet | rafadan yumurtalar | tavada kızarmış yumurtalar | katı yumurtalar | koyun eti | bonfile | sığır eti | koyun kızartma | kuzu kızartma | dana pirzolalar | ciğer | böbrekler | sığır eti kızartma | koyun haşlama | fileto | dil (yemek) | ançüez | tuzlanmış domuz eti | yeşil zeytinler | havyar | deniz ürünleri kokteyli | kılıç balığı füme | som balığı füme | yılan balığı füme | pavurya | beyin | istakoz | işkembe | patlıcan salatası | beyin salatası | sardalya | bezelye çorbası | patates çorbası | soğan çorbası | pirinç çorbası | mısır çorbası | irmik çorbası | yeşillikli börek | patatesli börek | kıymalı börek | ayva | kavun (meyve) | komposto | kahveli pasta | krem karamel | bektaşı üzümü | bademli kurabiye | şurupla karıştırılmış süt | fındıklı pasta | kadın göbeği tatlısı | erikli pasta | sufle | pеynir pastası | turta | baharatlı pasta | elmalı pasta | dut | meyve salatası | meyveli turta | frenk üzümü | krem şokola | konyak | vermut | beyaz (şarap) | köpüklü (şarap) | kırmızı (şarap) | oda ısısında | hafif (içki) | soğutulmuş | tatlı (içki) | sek | cin-tonik | sıcak alkollü içki | likör | porto | rom | elma şarabı | buzlu çay | ispanyol şarabı | koyu sütlü | sütlü kakao | kahve kafeinsiz | kırmızı biber | havuç çorbası | kereviz çorbası | peynir çorbası | un çorbası | yılan balığı çorbası | fasulye çorbası | başlangıç | karides | dana eti
+
+[fruits] default=A2
+A1: elma | muz | portakal | üzüm | karpuz | çilek | limon
+B1: ahududu | avokado | böğürtlen | feijoa | frambuaz | hindistan cevizi | incir | kivi | mango | nar | persimmon | trabzon hurması | yaban mersini | üzümsü | kayısı | vişne | ananas
+
+[function-words] default=A1
+A2: aynı zamanda | bu yüzden | fakat | hatta | herhangi | hiçbir şey | ise | kendi kendine | kendisi | sanki | özellikle | kimisi | düşünce | niçin | ne olursa olsun | Öğrenciler | Özürlüler
+
+[health] default=B1
+A1: hasta | doktor | ilaç | eczane | hastane | ağrı | ateş | baş ağrısı | geçmiş olsun | sağlık
+A2: acil durum | alerji | ambulans | ameliyat | ağrı kesici | aşı | boğaz | grip | nezle | öksürük | mide | kan | reçete | muayene | termometre | tansiyon | vitamin | aspirin | plaster | kağıt mendil | güneş yanığı | ilk yardım | yorgunluk | dikkat | tedavi | tahlil | röntgen | mide bulantısı | baş dönmesi | kayıp
+B2: ameliyathane | enfeksiyon | idrar | karıncalanma | kuruluk | kızarıklık | poliklinik | teşhis | ultrason | yoğun bakım | şırınga | yara merhemi | biberon | dezenfektan | böcek ilacı | boğaz pastili | bebek maması | ishal | peklik | tentürdiyot | deniz tutması | mide bozukluğu | gargara | içki mahmurluğu | prezervatif | müshil | uyku ilacı | talk pudrası | yol tutması | böcek sokması | apandisit | astım | uykusuzluk | zatürree | sarılık | kızamık | apse | güneş yanığı (hastalık) | bademcik iltihabı | ülser | cilt
+
+[home] default=A2
+A1: ev | oda | kapı | pencere | masa | sandalye | yatak | lamba | banyo | mutfak | balkon | kanepe | halı | duvar
+B1: abajur | battaniye | dış kapı | kapak | kilim | komodin | nevresim | sehpa | tablo | tavan | yastık kılıfı | yatak başlığı | yatak takımı | yatak örtüsü | yorgan | zemin | çatı | şilte | Balkonlu | Banyolu | Denize bakan | Duşlu | Isıtmalı | İki kişilik yataklı | İki yataklı | Sıcak sulu | Telefonlu | Televizyonlu
+
+[insects] default=B1
+A2: arı | böcek | karınca | sinek | sivrisinek | örümcek | kelebek
+B2: ateş böceği | bit | ipek böceği | pire | tahta kurusu | yusufçuk
+
+[kitchen] default=A2
+A1: bardak | bıçak | çatal | kaşık | tabak | buzdolabı | fincan | şişe | mutfak | fırın
+B1: blender | bulaşık makinesi | davlumbaz | dondurucu | folyo | fırın eldiveni | fırın tepsisi | kepçe | kesme tahtası | kevgir | mutfak tartısı | peçetelik | rende | runner | sahan | saklama kabı | spatula | su ısıtıcısı | süzgeç | tezgâh | çırpıcı | ölçü kabı | sürahi | kül tablası | yarım şişe | fincan tabağı | kürdan | çekmece | tahta | hardal | sarmısak | küçük ekmek
+
+[nature] default=A2
+A1: ağaç | deniz | güneş | kar | yağmur | hava | soğuk | yaz | kış | ilkbahar | sonbahar | çiçek | dağ | su | gece | ay | yıldız | rüzgar | bulut | plaj
+B1: dal | damla | deprem | donmak | fırtına | gök gürültüsü | gökkuşağı | heyelan | hortum | kasırga | kuraklık | ormanlık | sağanak yağmur | sel | sis | tarla | tohum | toprak | vadi | yanardağ | zeytinlik | çalı | çim | ırmak | şimşek | don | kır | çevre | gölgen | güz | okyanus | çöl | şelale | palmiye
+B2: gayzer | leş
+
+[numbers] default=A1
+A2: altıncı | beşinci | dokuzuncu | dördüncü | sekizinci | yedinci | onuncu | üçüncü | kaçıncı | bir tutam | bir çok | daha az | daha fazla | gram | litre | paket | milyon | sırada olmak | biri
+
+[objects] default=B1
+A1: anahtar | bilet | bilgisayar | cep telefonu | hediye | kitap (oyuncak) | telefon | telefon numarası | pasaport | şemsiye | şarkı | mektup | kutu
+A2: kulaklık | laptop | liste | mesaj | kimlik | konser | makas | sergi | ses | sigara | kibrit | radyo | pil | kol saati | çalar saat | oyuncak bebek | oyuncak araba | hata | hikaye | konu | olay | fener | torba | çöp kutusu | posta kutusu | pul | kargo | altın kaplama | gümüş | taş | zincir | kristal | ampul | hoparlör | tespih | etkinlik | alkış | sahne | seyirci | pop müzik | klasik müzik | caz | halk müziği | bilezik | koyu | tütün | akıl | ceza | üye | şiir | şikayet | kargo
+B2: akik | alüminyum | ametist | arı kovanı | baca | bakır | bronz | cadı | civa | dava | demir | dinleyici | elmas | eser | final | inci | kalay | kaynak | kehribar | kostüm | krom | kulis | kum havuzu | maden | mücevher | nikel | oje | oniks | opal | paragraf | performans | platin | safir | seans | senaryo | sertifika | sosyal yardım | topaz | turkuaz | vergi | yakut | yangın | yeşim | zirkon | zümrüt | çelik | çinko | ıslık | çok sesli müzik | video kaseti | enstrumantal müzik | hafif müzik | oda müziği | okunabilir yazabilir CD | orkestra müziği | boş kaset | DVD (okunabilir yazabilir) | MP3 | video (cihaz) | oto radyosu | teyp | sigorta (elektrik) | adaptör | portatif televizyon | uzatma kordonu | amplifikatör | hızlı film | telemetre | lcd ekran | kapak (fotoğraf) | pil şarj aleti | hafıza kartı | kaset (fotoğraf) | objektif kapağı | objektif | 32 MB hafıza | gün ışığı tipi (film) | yapay ışık tipi (film) | dijital kamera yazıcısı | deklanşör | poz sayıcı | filtre (fotoğraf) | flaş | pozometre | renkli film | fotoğraf çantası | geniş açılı objektif | CCD sensor | USB kablo | uzun sigara | sigara ağızlığı | filtresiz sigara | mentolu sigara | filtreli sigara | pipo | pipo tütünü | firuze | broş | iğne (mücevher) | kravat iğnesi | kesme cam | kol düğmesi | nişan yüzüğü | paslanmaz çelik | alyans yüzük | gümüş çatal bıçak kaşık | mücevher kutusu | mine | pandantif | gümüş kaplama | fildişi | çatal bıçak takımı | su geçirmez saat | cep saati | kuvars saat | kol saati kayışı | dijital saat | kova (oyuncak) | kürek (oyuncak) | deniz topu | boyama kitabı | başvuru | ağ | makyaj
+
+[office] default=B1
+A2: dosya | e-posta | kalem | koltuk | kurşun kalem | not defteri | sekreter | yazıcı | zarf | çalışan | yönetici | Soyadı – adı | Pasaport numarası | mahalle | toplantı odası | dizüstü bilgisayar | hesap makinesi | bant | kablo | usb bellek | resepsiyon | sunum
+B2: arşiv | askılık | ataç | delgeç | düzeltme bandı | flipchart | fosforlu kalem | harici disk | kalemtraş | klips | lazer işaretçi | mürekkep | projeksiyon | raptiye | tarayıcı | uzatma kablosu | yapışkan not | zımba | uçak postası | taahhütlü | şehir içi | adi posta | ekspres | dosya dolabı | klasör | pano | kartvizit | stajyer | beyaz tahta
+
+[plants] default=B1
+A1: çiçek
+A2: ağaç | bitki | gül | lale | papatya | kaktüs | nane | çam ağacı | ayçiçeği | menekşe
+B2: akçaağaç | diken | gövde | huş ağacı | karanfil | kök | lavanta | meşe | orkide | sarmaşık | sukulent | söğüt | tomurcuk | zambak | çiçek yaprağı | çınar | biberiye | fesleğen
+
+[professions] default=A2
+A1: doktor | öğretmen | polis | şoför | garson | aşçı | mühendis | hemşire | müdür | iş adamı, iş kadını | maaş | işçi
+B1: avcı | cankurtaran | danışman | deneyim | diş hekimi | eczacı | emlakçı | florist | grafik tasarımcı | güvenlik görevlisi | hademe | hâkim | itfaiyeci | iş insanı | iş yeri | kaptan | katip | kuyumcu | kütüphaneci | marangoz | mimar | muhasebeci | müteahhit | pazarlamacı | tamirci | tercüman | terzi | veteriner | yazılımcı | yetenek | çalışma saati | çevirmen | çiftçi | asker | dekoratör | manken | denizci | hamal | noter | kameraman | emekli | politikacı | şair | programcı | psikolog | reklamcı | papaz | heykeltıraş | sigortacı | arkeolog | banka memuru | teknisyen | bilim adamı | resepsiyon görevlisi | oda temizlikçisi | santral memuru | komi | kapıcı | çocuk doktoru | dahiliyeci | göz doktoru | jinekolog | kasiyer | ev hanımı | kadın garson
+
+[school] default=A2
+A1: kitap | defter | kalem | ders | okul çantası | sınıf | soru | cevap | kelime | sayfa | ödev | türkçe | ingilizce | müzik | resim | kağıt | silgi | harf | cümle | sınav | not
+B1: akrilik boya | amaç | ana fikir | başlık | beceri | beden eğitimi | benzerlik | bilgi | boşluk | bölüm | coğrafya | davetiye | desen | detay | değerlendirme | durum | eskiz | eskiz defteri | etki | eğitim | fakülte | fark | fen bilgisi | fikir | görev | görüş | günlük | hayat bilgisi | heykel | kalemlik | kalemtıraş | kanıt | keçeli kalem | kolaj | konferans salonu | kurs | kırtasiye | laboratuvar | manzara | masal | matematik | meslek | metin | mezuniyet | natürmort | nokta | palet | pastel boya | portre | satır | seçenek | sonuç | soru işareti | sulu boya | sınıf defteri | sıra | tahmin | tahta kalemi | talimat | tebeşir | tuval | virgül | yapıştırıcı | yağlı boya | öneri | örnek | özet | ünlem işareti | şövale | karbon kağıdı | boya kutusu | seloteyp | dilbilgisi kitabı | mum boya | dolmakalem | bloknot | oyun kağıdı | kopya kağıdı | adres defteri | mektup kağıdı | mektup zarfı
+
+[shapes] default=B1
+A2: daire | kare | üçgen | çizgi | şekil | küp | oval | merkez
+B2: eşkenar dörtgen | yamuk | paralelkenar | prizma | koni | silindir | beşgen | altıgen | sekizgen | doğru parçası | köşegen | çap | yarıçap | simetri | eksen | dik | açı | dik açı | kenar | hacim | alan | geometri | çember
+
+[shopping] default=A2
+A1: para | fiyat | kasa | market | mağaza | alışveriş | indirim | çıkış | giriş | kredi kartı | nakit | poşet | fiş | alışveriş yapmak | satıcı
+B1: bakiye | borç | bütçe | danışma | değişim | faiz | fatura | gelir | gider | havale | hizmet ücreti | iade | iptal | işlem | kalite | kredi | kâr | marka | model | onay | pazarlık | stok | taksit | tanıtım | tasarruf | transfer | yemek katı | şarküteri | şifre | antikacı dükkanı | halıcı | eskici dükkanı | kuru temizleyici | çamaşırhane | sanat galerisi | seyahat acentesi | fotoğraf dükkanı | balıkçı dükkanı | kuyumcu dükkanı | ticaret merkezi (avm)
+
+[sports] default=B1
+A1: futbol | top | yüzme | koşu | Futbol oynamak | maç | tenis | basketbol | voleybol | yürüyüş | bisiklet sürmek
+A2: basketbol oynamak | antrenman | boks | forma | kayak | satranç | tavla | spor salonu | yoga | yüzme havuzu | masa tenisi | golf | şampiyon | madalya | piknik | salıncak | kaydırak | oyun parkı | kask | eldiven | beraberlik | skor | rekor | ısınma | dinlenme | nefes | hareket | adım | paten | sörf | dalış | yapboz | zar
+B2: curling | biatlon | kriket | rugby | softbol | triatlon | oryantiring | kısa kulvar | senkron | ofsayt | faul | uzatma | koordinasyon | soğuma | set | piyon | vezir | şah | halter | eskrim | okçuluk | hentbol | hokey | kızak | kayaklı koşu | kondisyon bisikleti | tırmanma duvarı | tahterevalli | trambolin | rüzgar sörfü | jetski | kano | dönüş | duruş | ifade | alet | mat | ritim | tempo | tekrar | esneme | esneklik | denge | mağlubiyet | yarışmak | vücut geliştirmek | sakatlanmak | koruyucu | üyelik | dambil | yelkencilik
+
+[transport] default=A2
+A1: araba | otobüs | taksi | tren | uçak | metro | bisiklet | yol | havalimanı | bilet | istasyon | Vapur | valiz | bagaj
+B1: biniş kartı | direksiyon | fren | gecikme | gümrük | hız | iniş | kalkış | rezervasyon | seyahat sigortası | trafik | tünel | yakıt | şerit | birinci mevki | turist mevki | kamara | Güverte | Araba vapuru | Cankurtaran yeleği | Cankurtaran sandalı | Deniz otobüsü | vize | benzin istasyonu | araba kiralamak | park yeri
+B2:
+
+[vegetables] default=A2
+A1: domates | patates | soğan | salatalık | havuç | biber | sarımsak | mantar
+B1: bamya | beyaz lahana | brokoli | dereotu | enginar | flat | karnabahar | kereviz | kuşkonmaz | kırmızı lahana | pancar | pırasa | roka | turp | ıspanak | ispanak | çalı fasulye | sakız kabağı | kapuska | semizotu | şalgam | acı biber | balkabağı | havuç salatası | domates salatası | tatlı biber | taze fasulye | patates salatası | mercimek
+
+[verbs] default=B1
+A1: almak | anlamak | aramak | açmak | bakmak | başlamak | beklemek | bilmek | binmek | bitirmek | demek | dinlemek | durmak | duymak | dönmek | düşünmek | gelmek | girmek | gitmek | giymek | görmek | istemek | izlemek | kalkmak | kalmak | kapatmak | konuşmak | koşmak | kullanmak | okumak | Okumak | olmak | oturmak | oynamak | satmak | satın almak | sevmek | sormak | söylemek | uyumak | uyanmak | yapmak | yatmak | yazmak | yemek | yüzmek | yürümek | çalışmak | çıkmak | ödemek | öğrenmek | yaşamak | yardım etmek | gerekmek | bitmek | vermek | içmek | getirmek | temizlemek | yıkamak | pişirmek | hazırlamak | kahvaltı yapmak | duş almak | geç kalmak
+A2: anlatmak | ağlamak | ağrımak | banyo yapmak | beğenmek | buluşmak | büyümek | bırakmak | cevap vermek | dans etmek | davet etmek | denemek | değiştirmek | dinlenmek | diş fırçalamak | doğmak | düşmek | eğlenmek | gezmek | geçmek | göstermek | gülümsemek | hatırlatmak | hoşlanmak | inmek | kaybolmak | kazanmak | kesmek | korkmak | koymak | kırmak | kızmak | merak etmek | onarmak | paylaşmak | sevinmek | seyahat etmek | seyretmek | silmek | sohbet etmek | spor yapmak | taşımak | tanışmak | teşekkür etmek | toplamak | tutmak | tıraş olmak | uçmak | varmak | yolculuk yapmak | Yolculuk etmek | yorulmak | çalmak | çağırmak | çevirmek | çizmek | çıkarmak | öpmek | özlemek | özür dilemek | ütülemek | şaka yapmak | şarkı söylemek | şaşırmak | karşılamak | açıklamak | atmak | boyamak | bağırmak | evlenmek | kızartmak | haşlamak | para çekmek | para yatırmak | not almak | araba park etmek | çamaşır yıkamak | çamaşır asmak | paket yapmak | karar vermek | izin vermek | tekrar etmek | hayal etmek | inanmak | ölmek | unutmak | tatmak | tadına bakmak | koklamak | kokmak | susamak | susmak | yakmak | söndürmek | kapanmak | açılmak | yardım almak | destek olmak | dönüş yapmak | ısıtmak | sürmek
+B2: alçalmak | arıtmak | bekletmek | belirlemek | borçlanmak | cıvıldamak | dağılmak | demiş | dinmek | dosyalamak | doğramak | dürüst olmak | eleştirmek | ezberlemek | ezmek | eşleştirmek | fırçalamak | fırınlamak | fısıldamak | genişlemek | gevelemek | gezinmek | görünmek | hızlanmak | ilerlemek | incelemek | indirmek | işaretlemek | işitmek | kaşımak | kirletmek | kopyalamak | kurulanmak | kırılmak | meraklanmak | okşamak | ovmek | pişman olmak | rendelemek | saldırmak | sarmak | sergilemek | sinyal vermek | sotelemek | soymak | süslemek | süzme | süzmek | sıkmak | sıralamak | sıçramak | tadım | takdir etmek | temas etmek | yalamak | yalanmak | yansımak | yavaşlamak | yazdırmak | yolda kalmak | yüklemek | yükselmek | çırpmak | öldürmek | önlemek | ötmek | övmek | ısınılmak | şakalamak | şakalar yapmak | şükretmek | eksilmek | alışmak | artmak | azalmak | dolaşmak | dokunmak | beslemek | beslenmek | davranmak | değişmek
