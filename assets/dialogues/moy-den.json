@@ -509,6 +509,502 @@
           { "tr": "Ne güzel! Pazar günü?", "ru": "Как здорово! А в воскресенье?" }
         ]}
       ]
+    },
+    {
+      "id": "moy-den-a2-markus-kurs",
+      "title": "Маркус: твой обычный день",
+      "level": "A2",
+      "speakers": { "a": "Ольга", "b": "Маркус" },
+      "turns": [
+        { "speaker": "b", "tr": "Olga, hafta içi günün nasıl geçer?", "ru": "Ольга, как у тебя проходит день в будни?", "distractors": [
+          { "tr": "Ben akşamları çalışırım, gece on bire kadar mutfaktayım. Pazartesi en yorucu günüm.", "ru": "А я по вечерам работаю, до одиннадцати ночи на кухне. Понедельник — мой самый утомительный день." },
+          { "tr": "İşten çıkıp spor salonuna giderim. Sen akşamları ne yaparsın?", "ru": "Ухожу с работы и иду в спортзал. А ты что делаешь по вечерам?" }
+        ]},
+        { "speaker": "a", "tr": "Genellikle aynı. Her sabah yedide kalkarım, kahvemi içip evden çıkarım.", "ru": "Обычно одинаково. Каждое утро встаю в семь, выпиваю кофе и выхожу из дома.", "distractors": [
+          { "tr": "Ben akşamları çalışırım, gece on bire kadar mutfaktayım. Pazartesi en yorucu günüm.", "ru": "А я по вечерам работаю, до одиннадцати ночи на кухне. Понедельник — мой самый утомительный день." },
+          { "tr": "Tabii, ben aşçıyım! İşe gitmeden önce her zaman iyi bir kahvaltı yaparım.", "ru": "Конечно, я же повар! Перед работой я всегда хорошо завтракаю." }
+        ]},
+        { "speaker": "b", "tr": "Kahvaltı yapmaz mısın?", "ru": "А ты не завтракаешь?", "distractors": [
+          { "tr": "Benim için de pazartesi en yorucu gün!", "ru": "Для меня тоже понедельник — самый утомительный день!" },
+          { "tr": "Haklısın. Sen işe nasıl gidersin?", "ru": "Ты прав. А ты как добираешься до работы?" }
+        ]},
+        { "speaker": "a", "tr": "Hayır, sabahları kahvaltı yapmam, sadece kahve içerim. Sen kahvaltı yapar mısın?", "ru": "Нет, по утрам я не завтракаю, только пью кофе. А ты завтракаешь?", "distractors": [
+          { "tr": "Olga, hafta içi günün nasıl geçer?", "ru": "Ольга, как у тебя проходит день в будни?" },
+          { "tr": "İşten çıkıp spor salonuna giderim. Sen akşamları ne yaparsın?", "ru": "Ухожу с работы и иду в спортзал. А ты что делаешь по вечерам?" }
+        ]},
+        { "speaker": "b", "tr": "Tabii, ben aşçıyım! İşe gitmeden önce her zaman iyi bir kahvaltı yaparım.", "ru": "Конечно, я же повар! Перед работой я всегда хорошо завтракаю.", "distractors": [
+          { "tr": "Kahvaltı yapmaz mısın?", "ru": "А ты не завтракаешь?" },
+          { "tr": "Benim için de pazartesi en yorucu gün!", "ru": "Для меня тоже понедельник — самый утомительный день!" }
+        ]},
+        { "speaker": "a", "tr": "Haklısın. Sen işe nasıl gidersin?", "ru": "Ты прав. А ты как добираешься до работы?", "distractors": [
+          { "tr": "Yürüyorum, otel evime çok yakın. Sen vapurla gidersin, değil mi?", "ru": "Хожу пешком, отель очень близко от дома. А ты ездишь на пароходе, да?" },
+          { "tr": "Evet. Vapurdayken çay içerim ve denize bakarım. Yol yirmi dakika sürer.", "ru": "Да. Когда я на пароходе, пью чай и смотрю на море. Дорога занимает двадцать минут." }
+        ]},
+        { "speaker": "b", "tr": "Yürüyorum, otel evime çok yakın. Sen vapurla gidersin, değil mi?", "ru": "Хожу пешком, отель очень близко от дома. А ты ездишь на пароходе, да?", "distractors": [
+          { "tr": "Tabii, ben aşçıyım! İşe gitmeden önce her zaman iyi bir kahvaltı yaparım.", "ru": "Конечно, я же повар! Перед работой я всегда хорошо завтракаю." },
+          { "tr": "Kahvaltı yapmaz mısın?", "ru": "А ты не завтракаешь?" }
+        ]},
+        { "speaker": "a", "tr": "Evet. Vapurdayken çay içerim ve denize bakarım. Yol yirmi dakika sürer.", "ru": "Да. Когда я на пароходе, пью чай и смотрю на море. Дорога занимает двадцать минут.", "distractors": [
+          { "tr": "Genellikle aynı. Her sabah yedide kalkarım, kahvemi içip evden çıkarım.", "ru": "Обычно одинаково. Каждое утро встаю в семь, выпиваю кофе и выхожу из дома." },
+          { "tr": "İşten çıkıp spor salonuna giderim. Sen akşamları ne yaparsın?", "ru": "Ухожу с работы и иду в спортзал. А ты что делаешь по вечерам?" }
+        ]},
+        { "speaker": "b", "tr": "Ne güzel! Akşamları ne yaparsın?", "ru": "Как здорово! А что ты делаешь по вечерам?", "distractors": [
+          { "tr": "Yürüyorum, otel evime çok yakın. Sen vapurla gidersin, değil mi?", "ru": "Хожу пешком, отель очень близко от дома. А ты ездишь на пароходе, да?" },
+          { "tr": "Haklısın. Sen işe nasıl gidersin?", "ru": "Ты прав. А ты как добираешься до работы?" }
+        ]},
+        { "speaker": "a", "tr": "İşten çıkıp spor salonuna giderim. Sen akşamları ne yaparsın?", "ru": "Ухожу с работы и иду в спортзал. А ты что делаешь по вечерам?", "distractors": [
+          { "tr": "Evet. Vapurdayken çay içerim ve denize bakarım. Yol yirmi dakika sürer.", "ru": "Да. Когда я на пароходе, пью чай и смотрю на море. Дорога занимает двадцать минут." },
+          { "tr": "Yürüyorum, otel evime çok yakın. Sen vapurla gidersin, değil mi?", "ru": "Хожу пешком, отель очень близко от дома. А ты ездишь на пароходе, да?" }
+        ]},
+        { "speaker": "b", "tr": "Ben akşamları çalışırım, gece on bire kadar mutfaktayım. Pazartesi en yorucu günüm.", "ru": "А я по вечерам работаю, до одиннадцати ночи на кухне. Понедельник — мой самый утомительный день.", "distractors": [
+          { "tr": "Kahvaltı yapmaz mısın?", "ru": "А ты не завтракаешь?" },
+          { "tr": "Genellikle aynı. Her sabah yedide kalkarım, kahvemi içip evden çıkarım.", "ru": "Обычно одинаково. Каждое утро встаю в семь, выпиваю кофе и выхожу из дома." }
+        ]},
+        { "speaker": "a", "tr": "Benim için de pazartesi en yorucu gün!", "ru": "Для меня тоже понедельник — самый утомительный день!", "distractors": [
+          { "tr": "Yürüyorum, otel evime çok yakın. Sen vapurla gidersin, değil mi?", "ru": "Хожу пешком, отель очень близко от дома. А ты ездишь на пароходе, да?" },
+          { "tr": "Genellikle aynı. Her sabah yedide kalkarım, kahvemi içip evden çıkarım.", "ru": "Обычно одинаково. Каждое утро встаю в семь, выпиваю кофе и выхожу из дома." }
+        ]}
+      ]
+    },
+    {
+      "id": "moy-den-a2-ozge-duzen",
+      "title": "Озге: как тут всё устроено",
+      "level": "A2",
+      "speakers": { "a": "Ольга", "b": "Озге" },
+      "turns": [
+        { "speaker": "b", "tr": "Olga Hanım, burada iş saat kaçta başlar?", "ru": "Ольга-ханым, во сколько здесь начинается работа?", "distractors": [
+          { "tr": "Haklısınız. Öğle arası saat kaçta?", "ru": "Вы правы. А во сколько обеденный перерыв?" },
+          { "tr": "Otobüs sabahları çok yavaş. Evden biraz daha erken çıkın.", "ru": "По утрам автобус очень медленный. Выходите из дома чуть раньше." }
+        ]},
+        { "speaker": "a", "tr": "Dokuzda başlar, altıda biter. Ama ben genellikle biraz erken gelirim.", "ru": "Начинается в девять, заканчивается в шесть. Но я обычно прихожу немного раньше.", "distractors": [
+          { "tr": "Anladım. Toplantılar ne zaman olur?", "ru": "Понятно. А когда бывают совещания?" },
+          { "tr": "Birde. Ben öğle yemeğini genellikle Tuba'yla yerim. Siz de bizimle gelebilirsiniz.", "ru": "В час. Обедаю я обычно с Тубой. Вы тоже можете пойти с нами." }
+        ]},
+        { "speaker": "b", "tr": "Neden erken gelirsiniz?", "ru": "А почему вы приходите рано?", "distractors": [
+          { "tr": "Olga Hanım, burada iş saat kaçta başlar?", "ru": "Ольга-ханым, во сколько здесь начинается работа?" },
+          { "tr": "Çok teşekkür ederim! Bugün gelebilir miyim?", "ru": "Большое спасибо! А можно сегодня?" }
+        ]},
+        { "speaker": "a", "tr": "İşe başlamadan önce e-postalarımı okurum. Sabahları ofis daha sessiz olur.", "ru": "Прежде чем начать работу, я читаю почту. По утрам в офисе тише.", "distractors": [
+          { "tr": "Haklısınız. Öğle arası saat kaçta?", "ru": "Вы правы. А во сколько обеденный перерыв?" },
+          { "tr": "Beşiktaş'tan otobüsle geliyorum. Ama sabahları yollar çok kalabalık olur, bazen geç kalıyorum.", "ru": "Из Бешикташа на автобусе. Но по утрам на дорогах много машин, иногда я опаздываю." }
+        ]},
+        { "speaker": "b", "tr": "Anladım. Toplantılar ne zaman olur?", "ru": "Понятно. А когда бывают совещания?", "distractors": [
+          { "tr": "Çok teşekkür ederim! Bugün gelebilir miyim?", "ru": "Большое спасибо! А можно сегодня?" },
+          { "tr": "Neden erken gelirsiniz?", "ru": "А почему вы приходите рано?" }
+        ]},
+        { "speaker": "a", "tr": "Pazartesi günleri her zaman saat onda toplantı var. Siz sabahları işe nasıl gelirsiniz?", "ru": "По понедельникам всегда совещание в десять. А вы как добираетесь утром на работу?", "distractors": [
+          { "tr": "Neden erken gelirsiniz?", "ru": "А почему вы приходите рано?" },
+          { "tr": "Birde. Ben öğle yemeğini genellikle Tuba'yla yerim. Siz de bizimle gelebilirsiniz.", "ru": "В час. Обедаю я обычно с Тубой. Вы тоже можете пойти с нами." }
+        ]},
+        { "speaker": "b", "tr": "Beşiktaş'tan otobüsle geliyorum. Ama sabahları yollar çok kalabalık olur, bazen geç kalıyorum.", "ru": "Из Бешикташа на автобусе. Но по утрам на дорогах много машин, иногда я опаздываю.", "distractors": [
+          { "tr": "Anladım. Toplantılar ne zaman olur?", "ru": "Понятно. А когда бывают совещания?" },
+          { "tr": "Olga Hanım, burada iş saat kaçta başlar?", "ru": "Ольга-ханым, во сколько здесь начинается работа?" }
+        ]},
+        { "speaker": "a", "tr": "Otobüs sabahları çok yavaş. Evden biraz daha erken çıkın.", "ru": "По утрам автобус очень медленный. Выходите из дома чуть раньше.", "distractors": [
+          { "tr": "Tabii, gelin! Saat birde kapıda buluşalım.", "ru": "Конечно, приходите! Встретимся у дверей в час." },
+          { "tr": "Neden erken gelirsiniz?", "ru": "А почему вы приходите рано?" }
+        ]},
+        { "speaker": "b", "tr": "Haklısınız. Öğle arası saat kaçta?", "ru": "Вы правы. А во сколько обеденный перерыв?", "distractors": [
+          { "tr": "Beşiktaş'tan otobüsle geliyorum. Ama sabahları yollar çok kalabalık olur, bazen geç kalıyorum.", "ru": "Из Бешикташа на автобусе. Но по утрам на дорогах много машин, иногда я опаздываю." },
+          { "tr": "Dokuzda başlar, altıda biter. Ama ben genellikle biraz erken gelirim.", "ru": "Начинается в девять, заканчивается в шесть. Но я обычно прихожу немного раньше." }
+        ]},
+        { "speaker": "a", "tr": "Birde. Ben öğle yemeğini genellikle Tuba'yla yerim. Siz de bizimle gelebilirsiniz.", "ru": "В час. Обедаю я обычно с Тубой. Вы тоже можете пойти с нами.", "distractors": [
+          { "tr": "Anladım. Toplantılar ne zaman olur?", "ru": "Понятно. А когда бывают совещания?" },
+          { "tr": "Çok teşekkür ederim! Bugün gelebilir miyim?", "ru": "Большое спасибо! А можно сегодня?" }
+        ]},
+        { "speaker": "b", "tr": "Çok teşekkür ederim! Bugün gelebilir miyim?", "ru": "Большое спасибо! А можно сегодня?", "distractors": [
+          { "tr": "Otobüs sabahları çok yavaş. Evden biraz daha erken çıkın.", "ru": "По утрам автобус очень медленный. Выходите из дома чуть раньше." },
+          { "tr": "İşe başlamadan önce e-postalarımı okurum. Sabahları ofis daha sessiz olur.", "ru": "Прежде чем начать работу, я читаю почту. По утрам в офисе тише." }
+        ]},
+        { "speaker": "a", "tr": "Tabii, gelin! Saat birde kapıda buluşalım.", "ru": "Конечно, приходите! Встретимся у дверей в час.", "distractors": [
+          { "tr": "Anladım. Toplantılar ne zaman olur?", "ru": "Понятно. А когда бывают совещания?" },
+          { "tr": "Dokuzda başlar, altıda biter. Ama ben genellikle biraz erken gelirim.", "ru": "Начинается в девять, заканчивается в шесть. Но я обычно прихожу немного раньше." }
+        ]}
+      ]
+    },
+    {
+      "id": "moy-den-a2-erken-cikmak",
+      "title": "Можно уйти пораньше? (вежливая форма)",
+      "level": "A2",
+      "speakers": { "a": "Ольга", "b": "Метин" },
+      "turns": [
+        { "speaker": "a", "tr": "Metin Bey, bir dakikanız var mı?", "ru": "Метин-бей, у вас есть минутка?", "distractors": [
+          { "tr": "Önemli değil. Kolay gelsin!", "ru": "Не за что. Удачной работы!" },
+          { "tr": "Bugün saat üçte müşteriyle toplantımız var. Toplantıya katılabilir misiniz?", "ru": "Сегодня в три у нас совещание с клиентом. Вы сможете быть на совещании?" }
+        ]},
+        { "speaker": "b", "tr": "Tabii Olga Hanım, buyurun.", "ru": "Конечно, Ольга-ханым, слушаю вас.", "distractors": [
+          { "tr": "Çok iyi. O zaman toplantıdan sonra çıkabilirsiniz.", "ru": "Отлично. Тогда после совещания можете идти." },
+          { "tr": "Bugün erken çıkabilir miyim? Saat beşte doktor randevum var.", "ru": "Можно мне сегодня уйти пораньше? В пять у меня запись к врачу." }
+        ]},
+        { "speaker": "a", "tr": "Bugün erken çıkabilir miyim? Saat beşte doktor randevum var.", "ru": "Можно мне сегодня уйти пораньше? В пять у меня запись к врачу.", "distractors": [
+          { "tr": "Önemli değil. Kolay gelsin!", "ru": "Не за что. Удачной работы!" },
+          { "tr": "Tamam. Raporu bugün bitirebilir misiniz?", "ru": "Хорошо. Вы сможете сегодня закончить отчёт?" }
+        ]},
+        { "speaker": "b", "tr": "Bugün saat üçte müşteriyle toplantımız var. Toplantıya katılabilir misiniz?", "ru": "Сегодня в три у нас совещание с клиентом. Вы сможете быть на совещании?", "distractors": [
+          { "tr": "Evet, öğleden önce bitiririm. Tuba her zaman raporlarımı kontrol eder, sonra size gönderirim.", "ru": "Да, закончу до обеда. Туба всегда проверяет мои отчёты, потом я пришлю его вам." },
+          { "tr": "Evet, katılabilirim. Toplantı ne kadar sürer?", "ru": "Да, смогу. Сколько обычно длится совещание?" }
+        ]},
+        { "speaker": "a", "tr": "Evet, katılabilirim. Toplantı ne kadar sürer?", "ru": "Да, смогу. Сколько обычно длится совещание?", "distractors": [
+          { "tr": "Metin Bey, bir dakikanız var mı?", "ru": "Метин-бей, у вас есть минутка?" },
+          { "tr": "Güzel. Toplantıdan sonra çıkıp vapura binerim. Doktor Kadıköy'de.", "ru": "Хорошо. После совещания я выйду и сяду на пароход. Врач в Кадыкёе." }
+        ]},
+        { "speaker": "b", "tr": "Genellikle bir saat sürer. Alman müşterilerimiz hiç geç kalmaz.", "ru": "Обычно час. Наши немецкие клиенты никогда не опаздывают.", "distractors": [
+          { "tr": "Çok teşekkür ederim, Metin Bey! Yarın sabah erken gelirim.", "ru": "Большое спасибо, Метин-бей! Завтра утром приду пораньше." },
+          { "tr": "Bugün erken çıkabilir miyim? Saat beşte doktor randevum var.", "ru": "Можно мне сегодня уйти пораньше? В пять у меня запись к врачу." }
+        ]},
+        { "speaker": "a", "tr": "Güzel. Toplantıdan sonra çıkıp vapura binerim. Doktor Kadıköy'de.", "ru": "Хорошо. После совещания я выйду и сяду на пароход. Врач в Кадыкёе.", "distractors": [
+          { "tr": "Çok iyi. O zaman toplantıdan sonra çıkabilirsiniz.", "ru": "Отлично. Тогда после совещания можете идти." },
+          { "tr": "Evet, katılabilirim. Toplantı ne kadar sürer?", "ru": "Да, смогу. Сколько обычно длится совещание?" }
+        ]},
+        { "speaker": "b", "tr": "Tamam. Raporu bugün bitirebilir misiniz?", "ru": "Хорошо. Вы сможете сегодня закончить отчёт?", "distractors": [
+          { "tr": "Tabii Olga Hanım, buyurun.", "ru": "Конечно, Ольга-ханым, слушаю вас." },
+          { "tr": "Çok iyi. O zaman toplantıdan sonra çıkabilirsiniz.", "ru": "Отлично. Тогда после совещания можете идти." }
+        ]},
+        { "speaker": "a", "tr": "Evet, öğleden önce bitiririm. Tuba her zaman raporlarımı kontrol eder, sonra size gönderirim.", "ru": "Да, закончу до обеда. Туба всегда проверяет мои отчёты, потом я пришлю его вам.", "distractors": [
+          { "tr": "Önemli değil. Kolay gelsin!", "ru": "Не за что. Удачной работы!" },
+          { "tr": "Çok iyi. O zaman toplantıdan sonra çıkabilirsiniz.", "ru": "Отлично. Тогда после совещания можете идти." }
+        ]},
+        { "speaker": "b", "tr": "Çok iyi. O zaman toplantıdan sonra çıkabilirsiniz.", "ru": "Отлично. Тогда после совещания можете идти.", "distractors": [
+          { "tr": "Genellikle bir saat sürer. Alman müşterilerimiz hiç geç kalmaz.", "ru": "Обычно час. Наши немецкие клиенты никогда не опаздывают." },
+          { "tr": "Güzel. Toplantıdan sonra çıkıp vapura binerim. Doktor Kadıköy'de.", "ru": "Хорошо. После совещания я выйду и сяду на пароход. Врач в Кадыкёе." }
+        ]},
+        { "speaker": "a", "tr": "Çok teşekkür ederim, Metin Bey! Yarın sabah erken gelirim.", "ru": "Большое спасибо, Метин-бей! Завтра утром приду пораньше.", "distractors": [
+          { "tr": "Evet, katılabilirim. Toplantı ne kadar sürer?", "ru": "Да, смогу. Сколько обычно длится совещание?" },
+          { "tr": "Güzel. Toplantıdan sonra çıkıp vapura binerim. Doktor Kadıköy'de.", "ru": "Хорошо. После совещания я выйду и сяду на пароход. Врач в Кадыкёе." }
+        ]},
+        { "speaker": "b", "tr": "Önemli değil. Kolay gelsin!", "ru": "Не за что. Удачной работы!", "distractors": [
+          { "tr": "Bugün saat üçte müşteriyle toplantımız var. Toplantıya katılabilir misiniz?", "ru": "Сегодня в три у нас совещание с клиентом. Вы сможете быть на совещании?" },
+          { "tr": "Tabii Olga Hanım, buyurun.", "ru": "Конечно, Ольга-ханым, слушаю вас." }
+        ]}
+      ]
+    },
+    {
+      "id": "moy-den-a2-deniz-budni",
+      "title": "Дениз: чьи будни тяжелее",
+      "level": "A2",
+      "speakers": { "a": "Ольга", "b": "Дениз" },
+      "turns": [
+        { "speaker": "b", "tr": "Bugün çok yorgunsun. Zor bir gün müydü?", "ru": "Ты сегодня очень уставшая. Трудный был день?", "distractors": [
+          { "tr": "Doğru. Ama sen işten sonra spor salonuna gidersin. Ben eve gelince hemen kanepeye yatarım!", "ru": "Верно. Но ты после работы идёшь в спортзал. А я, как прихожу домой, сразу ложусь на диван!" },
+          { "tr": "İyi. Ama ben her sabah trafikte bir saat kalırım. Senin yolun benimkinden daha kısa.", "ru": "Хорошо. Но я каждое утро час стою в пробке. Твоя дорога короче моей." }
+        ]},
+        { "speaker": "a", "tr": "Evet, pazartesi her zaman en yorucu gün. Senin günün nasıl geçti?", "ru": "Да, понедельник всегда самый утомительный день. А как прошёл твой день?", "distractors": [
+          { "tr": "Haha, ben de bazen spor yapmadan eve giderim. Yatmadan önce ne yaparsın?", "ru": "Ха-ха, я тоже иногда иду домой без тренировки. А что ты делаешь перед сном?" },
+          { "tr": "Genellikle kitap okurum. Hiç televizyon izlemem. Sen?", "ru": "Обычно читаю. Телевизор совсем не смотрю. А ты?" }
+        ]},
+        { "speaker": "b", "tr": "İyi. Ama ben her sabah trafikte bir saat kalırım. Senin yolun benimkinden daha kısa.", "ru": "Хорошо. Но я каждое утро час стою в пробке. Твоя дорога короче моей.", "distractors": [
+          { "tr": "Sekizde. İşim saat onda başlar, ama akşam yedide çıkarım.", "ru": "В восемь. Моя работа начинается в десять, но вечером я ухожу в семь." },
+          { "tr": "Bugün çok yorgunsun. Zor bir gün müydü?", "ru": "Ты сегодня очень уставшая. Трудный был день?" }
+        ]},
+        { "speaker": "a", "tr": "Evet, vapurla yirmi dakika. Ama sen benden daha geç kalkarsın. Saat kaçta kalkarsın?", "ru": "Да, на пароходе двадцать минут. Зато ты встаёшь позже меня. Во сколько ты встаёшь?", "distractors": [
+          { "tr": "Olur! Cuma günleri iş daha az olur.", "ru": "Давай! По пятницам работы меньше." },
+          { "tr": "Haha, ben de bazen spor yapmadan eve giderim. Yatmadan önce ne yaparsın?", "ru": "Ха-ха, я тоже иногда иду домой без тренировки. А что ты делаешь перед сном?" }
+        ]},
+        { "speaker": "b", "tr": "Sekizde. İşim saat onda başlar, ama akşam yedide çıkarım.", "ru": "В восемь. Моя работа начинается в десять, но вечером я ухожу в семь.", "distractors": [
+          { "tr": "Haha, ben de bazen spor yapmadan eve giderim. Yatmadan önce ne yaparsın?", "ru": "Ха-ха, я тоже иногда иду домой без тренировки. А что ты делаешь перед сном?" },
+          { "tr": "İyi. Ama ben her sabah trafikte bir saat kalırım. Senin yolun benimkinden daha kısa.", "ru": "Хорошо. Но я каждое утро час стою в пробке. Твоя дорога короче моей." }
+        ]},
+        { "speaker": "a", "tr": "Ben altıda çıkarım. Yani ikimiz de dokuz saat çalışıyoruz!", "ru": "А я ухожу в шесть. Значит, мы оба работаем по девять часов!", "distractors": [
+          { "tr": "İyi. Ama ben her sabah trafikte bir saat kalırım. Senin yolun benimkinden daha kısa.", "ru": "Хорошо. Но я каждое утро час стою в пробке. Твоя дорога короче моей." },
+          { "tr": "Doğru. Ama sen işten sonra spor salonuna gidersin. Ben eve gelince hemen kanepeye yatarım!", "ru": "Верно. Но ты после работы идёшь в спортзал. А я, как прихожу домой, сразу ложусь на диван!" }
+        ]},
+        { "speaker": "b", "tr": "Doğru. Ama sen işten sonra spor salonuna gidersin. Ben eve gelince hemen kanepeye yatarım!", "ru": "Верно. Но ты после работы идёшь в спортзал. А я, как прихожу домой, сразу ложусь на диван!", "distractors": [
+          { "tr": "Sekizde. İşim saat onda başlar, ama akşam yedide çıkarım.", "ru": "В восемь. Моя работа начинается в десять, но вечером я ухожу в семь." },
+          { "tr": "Evet, vapurla yirmi dakika. Ama sen benden daha geç kalkarsın. Saat kaçta kalkarsın?", "ru": "Да, на пароходе двадцать минут. Зато ты встаёшь позже меня. Во сколько ты встаёшь?" }
+        ]},
+        { "speaker": "a", "tr": "Haha, ben de bazen spor yapmadan eve giderim. Yatmadan önce ne yaparsın?", "ru": "Ха-ха, я тоже иногда иду домой без тренировки. А что ты делаешь перед сном?", "distractors": [
+          { "tr": "Sekizde. İşim saat onda başlar, ama akşam yedide çıkarım.", "ru": "В восемь. Моя работа начинается в десять, но вечером я ухожу в семь." },
+          { "tr": "Ben Anya'yla mesajlaşırım. Sonra on birde yatarım.", "ru": "Я переписываюсь с Аней. Потом в одиннадцать ложусь." }
+        ]},
+        { "speaker": "b", "tr": "Genellikle kitap okurum. Hiç televizyon izlemem. Sen?", "ru": "Обычно читаю. Телевизор совсем не смотрю. А ты?", "distractors": [
+          { "tr": "Sekizde. İşim saat onda başlar, ama akşam yedide çıkarım.", "ru": "В восемь. Моя работа начинается в десять, но вечером я ухожу в семь." },
+          { "tr": "Doğru. Ama sen işten sonra spor salonuna gidersin. Ben eve gelince hemen kanepeye yatarım!", "ru": "Верно. Но ты после работы идёшь в спортзал. А я, как прихожу домой, сразу ложусь на диван!" }
+        ]},
+        { "speaker": "a", "tr": "Ben Anya'yla mesajlaşırım. Sonra on birde yatarım.", "ru": "Я переписываюсь с Аней. Потом в одиннадцать ложусь.", "distractors": [
+          { "tr": "Cuma akşamı ikimiz de erken çıkalım ve sinemaya gidelim, olur mu?", "ru": "Давай в пятницу вечером оба уйдём пораньше и сходим в кино, хорошо?" },
+          { "tr": "Evet, vapurla yirmi dakika. Ama sen benden daha geç kalkarsın. Saat kaçta kalkarsın?", "ru": "Да, на пароходе двадцать минут. Зато ты встаёшь позже меня. Во сколько ты встаёшь?" }
+        ]},
+        { "speaker": "b", "tr": "Cuma akşamı ikimiz de erken çıkalım ve sinemaya gidelim, olur mu?", "ru": "Давай в пятницу вечером оба уйдём пораньше и сходим в кино, хорошо?", "distractors": [
+          { "tr": "Bugün çok yorgunsun. Zor bir gün müydü?", "ru": "Ты сегодня очень уставшая. Трудный был день?" },
+          { "tr": "Doğru. Ama sen işten sonra spor salonuna gidersin. Ben eve gelince hemen kanepeye yatarım!", "ru": "Верно. Но ты после работы идёшь в спортзал. А я, как прихожу домой, сразу ложусь на диван!" }
+        ]},
+        { "speaker": "a", "tr": "Olur! Cuma günleri iş daha az olur.", "ru": "Давай! По пятницам работы меньше.", "distractors": [
+          { "tr": "İyi. Ama ben her sabah trafikte bir saat kalırım. Senin yolun benimkinden daha kısa.", "ru": "Хорошо. Но я каждое утро час стою в пробке. Твоя дорога короче моей." },
+          { "tr": "Sekizde. İşim saat onda başlar, ama akşam yedide çıkarım.", "ru": "В восемь. Моя работа начинается в десять, но вечером я ухожу в семь." }
+        ]}
+      ]
+    },
+    {
+      "id": "moy-den-a2-anya-vyhodnye",
+      "title": "Аня: как проходят твои выходные",
+      "level": "A2",
+      "speakers": { "a": "Ольга", "b": "Аня" },
+      "turns": [
+        { "speaker": "b", "tr": "Alo, Olga! Söyle, hafta sonların nasıl geçer?", "ru": "Алло, Оля! Расскажи, как у тебя обычно проходят выходные?", "distractors": [
+          { "tr": "Evet, her zaman altıda kalkar! Benden daha enerjik. Siz Deniz'le hafta sonları ne yaparsınız?", "ru": "Да, всегда встаёт в шесть! Энергичнее меня. А вы с Денизом что делаете по выходным?" },
+          { "tr": "Genellikle cumartesi akşamı sinemaya gideriz. Bazen de pazar günü arabayla şehir dışına çıkarız.", "ru": "Обычно в субботу вечером ходим в кино. А иногда в воскресенье едем на машине за город." }
+        ]},
+        { "speaker": "a", "tr": "Cumartesi sabahları Türkçe kursuna giderim. Ders öğlene kadar sürer.", "ru": "По субботам утром я хожу на курсы турецкого. Урок длится до полудня.", "distractors": [
+          { "tr": "Hiç de değil! Ama temmuzda Bodrum'da birlikte çok eğleneceğiz!", "ru": "Вовсе нет! Но в июле в Бодруме мы вместе отлично повеселимся!" },
+          { "tr": "Anneanne nasıl? Hâlâ her sabah erken kalkar mı?", "ru": "Как бабушка? Всё так же каждое утро встаёт рано?" }
+        ]},
+        { "speaker": "b", "tr": "Kurstan sonra ne yaparsın?", "ru": "А после курсов что делаешь?", "distractors": [
+          { "tr": "Evet, her zaman altıda kalkar! Benden daha enerjik. Siz Deniz'le hafta sonları ne yaparsınız?", "ru": "Да, всегда встаёт в шесть! Энергичнее меня. А вы с Денизом что делаете по выходным?" },
+          { "tr": "Balık ekmek mi? Hiç yemedim! Pazar günleri ne yaparsın?", "ru": "Балык-экмек? Никогда не ела! А по воскресеньям что делаешь?" }
+        ]},
+        { "speaker": "a", "tr": "Bazen Markus'la kahve içeriz, bazen vapurla Eminönü'ne gidip balık ekmek yerim.", "ru": "Иногда мы с Маркусом пьём кофе, иногда еду на пароходе в Эминёню и ем балык-экмек.", "distractors": [
+          { "tr": "Balık ekmek mi? Hiç yemedim! Pazar günleri ne yaparsın?", "ru": "Балык-экмек? Никогда не ела! А по воскресеньям что делаешь?" },
+          { "tr": "Hiç de değil! Ama temmuzda Bodrum'da birlikte çok eğleneceğiz!", "ru": "Вовсе нет! Но в июле в Бодруме мы вместе отлично повеселимся!" }
+        ]},
+        { "speaker": "b", "tr": "Balık ekmek mi? Hiç yemedim! Pazar günleri ne yaparsın?", "ru": "Балык-экмек? Никогда не ела! А по воскресеньям что делаешь?", "distractors": [
+          { "tr": "Hiç de değil! Ama temmuzda Bodrum'da birlikte çok eğleneceğiz!", "ru": "Вовсе нет! Но в июле в Бодруме мы вместе отлично повеселимся!" },
+          { "tr": "Evet, her zaman altıda kalkar! Benden daha enerjik. Siz Deniz'le hafta sonları ne yaparsınız?", "ru": "Да, всегда встаёт в шесть! Энергичнее меня. А вы с Денизом что делаете по выходным?" }
+        ]},
+        { "speaker": "a", "tr": "Pazar günleri geç kalkarım, evi temizlerim ve annemi ararım. Sen hafta sonları ne yaparsın?", "ru": "По воскресеньям встаю поздно, убираю дома и звоню маме. А ты что делаешь по выходным?", "distractors": [
+          { "tr": "Anneanne nasıl? Hâlâ her sabah erken kalkar mı?", "ru": "Как бабушка? Всё так же каждое утро встаёт рано?" },
+          { "tr": "Kurstan sonra ne yaparsın?", "ru": "А после курсов что делаешь?" }
+        ]},
+        { "speaker": "b", "tr": "Her gün anneannemin yanına giderim, hafta sonları da. Sonra genellikle arkadaşlarımla buluşurum.", "ru": "Каждый день хожу к бабушке, и на выходных тоже. Потом обычно встречаюсь с друзьями.", "distractors": [
+          { "tr": "Ne güzel! Benim hafta sonlarım seninkinden daha sıkıcı.", "ru": "Как здорово! Мои выходные скучнее твоих." },
+          { "tr": "Kurstan sonra ne yaparsın?", "ru": "А после курсов что делаешь?" }
+        ]},
+        { "speaker": "a", "tr": "Anneanne nasıl? Hâlâ her sabah erken kalkar mı?", "ru": "Как бабушка? Всё так же каждое утро встаёт рано?", "distractors": [
+          { "tr": "Hiç de değil! Ama temmuzda Bodrum'da birlikte çok eğleneceğiz!", "ru": "Вовсе нет! Но в июле в Бодруме мы вместе отлично повеселимся!" },
+          { "tr": "Pazar günleri geç kalkarım, evi temizlerim ve annemi ararım. Sen hafta sonları ne yaparsın?", "ru": "По воскресеньям встаю поздно, убираю дома и звоню маме. А ты что делаешь по выходным?" }
+        ]},
+        { "speaker": "b", "tr": "Evet, her zaman altıda kalkar! Benden daha enerjik. Siz Deniz'le hafta sonları ne yaparsınız?", "ru": "Да, всегда встаёт в шесть! Энергичнее меня. А вы с Денизом что делаете по выходным?", "distractors": [
+          { "tr": "Genellikle cumartesi akşamı sinemaya gideriz. Bazen de pazar günü arabayla şehir dışına çıkarız.", "ru": "Обычно в субботу вечером ходим в кино. А иногда в воскресенье едем на машине за город." },
+          { "tr": "Her gün anneannemin yanına giderim, hafta sonları da. Sonra genellikle arkadaşlarımla buluşurum.", "ru": "Каждый день хожу к бабушке, и на выходных тоже. Потом обычно встречаюсь с друзьями." }
+        ]},
+        { "speaker": "a", "tr": "Genellikle cumartesi akşamı sinemaya gideriz. Bazen de pazar günü arabayla şehir dışına çıkarız.", "ru": "Обычно в субботу вечером ходим в кино. А иногда в воскресенье едем на машине за город.", "distractors": [
+          { "tr": "Balık ekmek mi? Hiç yemedim! Pazar günleri ne yaparsın?", "ru": "Балык-экмек? Никогда не ела! А по воскресеньям что делаешь?" },
+          { "tr": "Kurstan sonra ne yaparsın?", "ru": "А после курсов что делаешь?" }
+        ]},
+        { "speaker": "b", "tr": "Ne güzel! Benim hafta sonlarım seninkinden daha sıkıcı.", "ru": "Как здорово! Мои выходные скучнее твоих.", "distractors": [
+          { "tr": "Alo, Olga! Söyle, hafta sonların nasıl geçer?", "ru": "Алло, Оля! Расскажи, как у тебя обычно проходят выходные?" },
+          { "tr": "Evet, her zaman altıda kalkar! Benden daha enerjik. Siz Deniz'le hafta sonları ne yaparsınız?", "ru": "Да, всегда встаёт в шесть! Энергичнее меня. А вы с Денизом что делаете по выходным?" }
+        ]},
+        { "speaker": "a", "tr": "Hiç de değil! Ama temmuzda Bodrum'da birlikte çok eğleneceğiz!", "ru": "Вовсе нет! Но в июле в Бодруме мы вместе отлично повеселимся!", "distractors": [
+          { "tr": "Bazen Markus'la kahve içeriz, bazen vapurla Eminönü'ne gidip balık ekmek yerim.", "ru": "Иногда мы с Маркусом пьём кофе, иногда еду на пароходе в Эминёню и ем балык-экмек." },
+          { "tr": "Pazar günleri geç kalkarım, evi temizlerim ve annemi ararım. Sen hafta sonları ne yaparsın?", "ru": "По воскресеньям встаю поздно, убираю дома и звоню маме. А ты что делаешь по выходным?" }
+        ]}
+      ]
+    },
+    {
+      "id": "moy-den-a2-tuba-deti-utro",
+      "title": "Туба: утро с детьми",
+      "level": "A2",
+      "speakers": { "a": "Ольга", "b": "Туба" },
+      "turns": [
+        { "speaker": "b", "tr": "Günaydın... Bu sabah çok zordu. Hiç enerjim yok.", "ru": "Доброе утро… Это утро было очень тяжёлым. Совсем нет сил.", "distractors": [
+          { "tr": "Eder, ama o sekizde evden çıkar. Alp'i okula, Ela'yı anaokuluna ben götürürüm.", "ru": "Помогает, но он уходит из дома в восемь. Альпа в школу, а Элу в детский сад отвожу я." },
+          { "tr": "Hayır, sabahları hiç aç olmam. Ama bak, sana da kahve aldım.", "ru": "Нет, по утрам я совсем не голодная. Но смотри, я и тебе взяла кофе." }
+        ]},
+        { "speaker": "a", "tr": "Günaydın, Tuba! Ne oldu?", "ru": "Доброе утро, Туба! Что случилось?", "distractors": [
+          { "tr": "Her sabah aynı şey! Alp hiç erken kalkmaz, Ela da giyinmek istemez.", "ru": "Каждое утро одно и то же! Альп никак не встаёт рано, а Эла не хочет одеваться." },
+          { "tr": "Sen bir meleksin! Kahve içmeden çalışamam.", "ru": "Ты ангел! Без кофе я не могу работать." }
+        ]},
+        { "speaker": "b", "tr": "Her sabah aynı şey! Alp hiç erken kalkmaz, Ela da giyinmek istemez.", "ru": "Каждое утро одно и то же! Альп никак не встаёт рано, а Эла не хочет одеваться.", "distractors": [
+          { "tr": "Günaydın... Bu sabah çok zordu. Hiç enerjim yok.", "ru": "Доброе утро… Это утро было очень тяжёлым. Совсем нет сил." },
+          { "tr": "Hayır, sabahları hiç aç olmam. Ama bak, sana da kahve aldım.", "ru": "Нет, по утрам я совсем не голодная. Но смотри, я и тебе взяла кофе." }
+        ]},
+        { "speaker": "a", "tr": "Kocan yardım etmez mi?", "ru": "А муж не помогает?", "distractors": [
+          { "tr": "Altıda! Çocuklar uyurken duş alırım ve kahvaltı hazırlarım. Sen kaçta kalkarsın?", "ru": "В шесть! Пока дети спят, принимаю душ и готовлю завтрак. А ты во сколько встаёшь?" },
+          { "tr": "Günaydın, Tuba! Ne oldu?", "ru": "Доброе утро, Туба! Что случилось?" }
+        ]},
+        { "speaker": "b", "tr": "Eder, ama o sekizde evden çıkar. Alp'i okula, Ela'yı anaokuluna ben götürürüm.", "ru": "Помогает, но он уходит из дома в восемь. Альпа в школу, а Элу в детский сад отвожу я.", "distractors": [
+          { "tr": "Sen bir meleksin! Kahve içmeden çalışamam.", "ru": "Ты ангел! Без кофе я не могу работать." },
+          { "tr": "Günaydın, Tuba! Ne oldu?", "ru": "Доброе утро, Туба! Что случилось?" }
+        ]},
+        { "speaker": "a", "tr": "Sabahları kaçta kalkarsın?", "ru": "А во сколько ты встаёшь по утрам?", "distractors": [
+          { "tr": "Evet, senin hayatın daha sakin! Sen hiç kahvaltı yapmaz mısın?", "ru": "Да, у тебя жизнь спокойнее! Ты вообще не завтракаешь?" },
+          { "tr": "Hayır, sabahları hiç aç olmam. Ama bak, sana da kahve aldım.", "ru": "Нет, по утрам я совсем не голодная. Но смотри, я и тебе взяла кофе." }
+        ]},
+        { "speaker": "b", "tr": "Altıda! Çocuklar uyurken duş alırım ve kahvaltı hazırlarım. Sen kaçta kalkarsın?", "ru": "В шесть! Пока дети спят, принимаю душ и готовлю завтрак. А ты во сколько встаёшь?", "distractors": [
+          { "tr": "Hayır, sabahları hiç aç olmam. Ama bak, sana da kahve aldım.", "ru": "Нет, по утрам я совсем не голодная. Но смотри, я и тебе взяла кофе." },
+          { "tr": "Evet, senin hayatın daha sakin! Sen hiç kahvaltı yapmaz mısın?", "ru": "Да, у тебя жизнь спокойнее! Ты вообще не завтракаешь?" }
+        ]},
+        { "speaker": "a", "tr": "Yedide. Ama ben sadece kahve içerim. Benim sabahlarım seninkinden çok daha kolay.", "ru": "В семь. Но я только пью кофе. Мои утра намного легче твоих.", "distractors": [
+          { "tr": "Her sabah aynı şey! Alp hiç erken kalkmaz, Ela da giyinmek istemez.", "ru": "Каждое утро одно и то же! Альп никак не встаёт рано, а Эла не хочет одеваться." },
+          { "tr": "Evet, senin hayatın daha sakin! Sen hiç kahvaltı yapmaz mısın?", "ru": "Да, у тебя жизнь спокойнее! Ты вообще не завтракаешь?" }
+        ]},
+        { "speaker": "b", "tr": "Evet, senin hayatın daha sakin! Sen hiç kahvaltı yapmaz mısın?", "ru": "Да, у тебя жизнь спокойнее! Ты вообще не завтракаешь?", "distractors": [
+          { "tr": "Biliyorum. Bugün öğle yemeğini de ben ısmarlarım!", "ru": "Знаю. И обед сегодня за мой счёт!" },
+          { "tr": "Sabahları kaçta kalkarsın?", "ru": "А во сколько ты встаёшь по утрам?" }
+        ]},
+        { "speaker": "a", "tr": "Hayır, sabahları hiç aç olmam. Ama bak, sana da kahve aldım.", "ru": "Нет, по утрам я совсем не голодная. Но смотри, я и тебе взяла кофе.", "distractors": [
+          { "tr": "Kocan yardım etmez mi?", "ru": "А муж не помогает?" },
+          { "tr": "Günaydın... Bu sabah çok zordu. Hiç enerjim yok.", "ru": "Доброе утро… Это утро было очень тяжёлым. Совсем нет сил." }
+        ]},
+        { "speaker": "b", "tr": "Sen bir meleksin! Kahve içmeden çalışamam.", "ru": "Ты ангел! Без кофе я не могу работать.", "distractors": [
+          { "tr": "Günaydın... Bu sabah çok zordu. Hiç enerjim yok.", "ru": "Доброе утро… Это утро было очень тяжёлым. Совсем нет сил." },
+          { "tr": "Altıda! Çocuklar uyurken duş alırım ve kahvaltı hazırlarım. Sen kaçta kalkarsın?", "ru": "В шесть! Пока дети спят, принимаю душ и готовлю завтрак. А ты во сколько встаёшь?" }
+        ]},
+        { "speaker": "a", "tr": "Biliyorum. Bugün öğle yemeğini de ben ısmarlarım!", "ru": "Знаю. И обед сегодня за мой счёт!", "distractors": [
+          { "tr": "Sabahları kaçta kalkarsın?", "ru": "А во сколько ты встаёшь по утрам?" },
+          { "tr": "Her sabah aynı şey! Alp hiç erken kalkmaz, Ela da giyinmek istemez.", "ru": "Каждое утро одно и то же! Альп никак не встаёт рано, а Эла не хочет одеваться." }
+        ]}
+      ]
+    },
+    {
+      "id": "moy-den-a2-kuzey-kak-obychno",
+      "title": "Кузей: как обычно? (вежливая форма)",
+      "level": "A2",
+      "speakers": { "a": "Ольга", "b": "Кузей" },
+      "turns": [
+        { "speaker": "b", "tr": "Günaydın! Her zamanki gibi mi? Büyük, sütlü, şekersiz?", "ru": "Доброе утро! Как обычно? Большой, с молоком, без сахара?", "distractors": [
+          { "tr": "Günaydın! Evet, her zamanki gibi. Siz sabahları kaçta açarsınız?", "ru": "Доброе утро! Да, как обычно. А вы во сколько открываетесь по утрам?" },
+          { "tr": "Tabii. Siz hiç kahvaltı yapmaz mısınız?", "ru": "Конечно. А вы сами никогда не завтракаете?" }
+        ]},
+        { "speaker": "a", "tr": "Günaydın! Evet, her zamanki gibi. Siz sabahları kaçta açarsınız?", "ru": "Доброе утро! Да, как обычно. А вы во сколько открываетесь по утрам?", "distractors": [
+          { "tr": "Sizin sabahlarınız benimkinden daha yoğun. Akşam kaçta kapatırsınız?", "ru": "Ваши утра загруженнее моих. А вечером во сколько закрываетесь?" },
+          { "tr": "Bugün simit ister misiniz? Sıcak simitlerimiz var.", "ru": "Хотите сегодня симит? У нас есть горячие симиты." }
+        ]},
+        { "speaker": "b", "tr": "Yedi buçukta açarız. Siz genellikle dokuza doğru gelirsiniz.", "ru": "Мы открываемся в полвосьмого. А вы обычно приходите около девяти.", "distractors": [
+          { "tr": "Günaydın! Her zamanki gibi mi? Büyük, sütlü, şekersiz?", "ru": "Доброе утро! Как обычно? Большой, с молоком, без сахара?" },
+          { "tr": "Tabii. Siz hiç kahvaltı yapmaz mısınız?", "ru": "Конечно. А вы сами никогда не завтракаете?" }
+        ]},
+        { "speaker": "a", "tr": "Evet, vapurdan inip hemen buraya gelirim. Kahvesiz işe başlayamam!", "ru": "Да, схожу с парохода и сразу сюда. Без кофе я не могу начать работу!", "distractors": [
+          { "tr": "Bugün simit ister misiniz? Sıcak simitlerimiz var.", "ru": "Хотите сегодня симит? У нас есть горячие симиты." },
+          { "tr": "Sizin sabahlarınız benimkinden daha yoğun. Akşam kaçta kapatırsınız?", "ru": "Ваши утра загруженнее моих. А вечером во сколько закрываетесь?" }
+        ]},
+        { "speaker": "b", "tr": "Bugün simit ister misiniz? Sıcak simitlerimiz var.", "ru": "Хотите сегодня симит? У нас есть горячие симиты.", "distractors": [
+          { "tr": "Hayır, sabahları sadece kahve içerim. Ama öğlen çok yerim!", "ru": "Нет, по утрам я пью только кофе. Зато в обед ем много!" },
+          { "tr": "Sizin sabahlarınız benimkinden daha yoğun. Akşam kaçta kapatırsınız?", "ru": "Ваши утра загруженнее моих. А вечером во сколько закрываетесь?" }
+        ]},
+        { "speaker": "a", "tr": "Evet, üç tane alabilir miyim? Cuma günleri bazen iş arkadaşlarıma simit alırım.", "ru": "Да, можно три? По пятницам я иногда покупаю коллегам симиты.", "distractors": [
+          { "tr": "Tabii. Siz hiç kahvaltı yapmaz mısınız?", "ru": "Конечно. А вы сами никогда не завтракаете?" },
+          { "tr": "Evet, vapurdan inip hemen buraya gelirim. Kahvesiz işe başlayamam!", "ru": "Да, схожу с парохода и сразу сюда. Без кофе я не могу начать работу!" }
+        ]},
+        { "speaker": "b", "tr": "Tabii. Siz hiç kahvaltı yapmaz mısınız?", "ru": "Конечно. А вы сами никогда не завтракаете?", "distractors": [
+          { "tr": "Yedide. Buyurun, kahveniz ve simitleriniz. Her zamanki gibi kartla mı?", "ru": "В семь. Пожалуйста, ваш кофе и симиты. Как обычно, картой?" },
+          { "tr": "Evet, kartla. Teşekkürler, iyi günler!", "ru": "Да, картой. Спасибо, хорошего дня!" }
+        ]},
+        { "speaker": "a", "tr": "Hayır, sabahları sadece kahve içerim. Ama öğlen çok yerim!", "ru": "Нет, по утрам я пью только кофе. Зато в обед ем много!", "distractors": [
+          { "tr": "Günaydın! Evet, her zamanki gibi. Siz sabahları kaçta açarsınız?", "ru": "Доброе утро! Да, как обычно. А вы во сколько открываетесь по утрам?" },
+          { "tr": "Sizin sabahlarınız benimkinden daha yoğun. Akşam kaçta kapatırsınız?", "ru": "Ваши утра загруженнее моих. А вечером во сколько закрываетесь?" }
+        ]},
+        { "speaker": "b", "tr": "Biz de öyleyiz. Sabahları çok iş var, kahvaltıya hiç vakit yok!", "ru": "Мы тоже так. По утрам много работы, на завтрак совсем нет времени!", "distractors": [
+          { "tr": "Evet, vapurdan inip hemen buraya gelirim. Kahvesiz işe başlayamam!", "ru": "Да, схожу с парохода и сразу сюда. Без кофе я не могу начать работу!" },
+          { "tr": "Bugün simit ister misiniz? Sıcak simitlerimiz var.", "ru": "Хотите сегодня симит? У нас есть горячие симиты." }
+        ]},
+        { "speaker": "a", "tr": "Sizin sabahlarınız benimkinden daha yoğun. Akşam kaçta kapatırsınız?", "ru": "Ваши утра загруженнее моих. А вечером во сколько закрываетесь?", "distractors": [
+          { "tr": "Evet, vapurdan inip hemen buraya gelirim. Kahvesiz işe başlayamam!", "ru": "Да, схожу с парохода и сразу сюда. Без кофе я не могу начать работу!" },
+          { "tr": "Bugün simit ister misiniz? Sıcak simitlerimiz var.", "ru": "Хотите сегодня симит? У нас есть горячие симиты." }
+        ]},
+        { "speaker": "b", "tr": "Yedide. Buyurun, kahveniz ve simitleriniz. Her zamanki gibi kartla mı?", "ru": "В семь. Пожалуйста, ваш кофе и симиты. Как обычно, картой?", "distractors": [
+          { "tr": "Tabii. Siz hiç kahvaltı yapmaz mısınız?", "ru": "Конечно. А вы сами никогда не завтракаете?" },
+          { "tr": "Günaydın! Her zamanki gibi mi? Büyük, sütlü, şekersiz?", "ru": "Доброе утро! Как обычно? Большой, с молоком, без сахара?" }
+        ]},
+        { "speaker": "a", "tr": "Evet, kartla. Teşekkürler, iyi günler!", "ru": "Да, картой. Спасибо, хорошего дня!", "distractors": [
+          { "tr": "Evet, üç tane alabilir miyim? Cuma günleri bazen iş arkadaşlarıma simit alırım.", "ru": "Да, можно три? По пятницам я иногда покупаю коллегам симиты." },
+          { "tr": "Biz de öyleyiz. Sabahları çok iş var, kahvaltıya hiç vakit yok!", "ru": "Мы тоже так. По утрам много работы, на завтрак совсем нет времени!" }
+        ]}
+      ]
+    },
+    {
+      "id": "moy-den-a2-isil-sportzal",
+      "title": "Ышыл: как часто ты тренируешься",
+      "level": "A2",
+      "speakers": { "a": "Ольга", "b": "Ышыл" },
+      "turns": [
+        { "speaker": "b", "tr": "Merhaba Olga! Bugün de mi buradasın?", "ru": "Привет, Ольга! Ты и сегодня здесь?", "distractors": [
+          { "tr": "Her gün mü? Ben bazen çok yorgun olurum ve spor yapmadan eve giderim.", "ru": "Каждый день? А я иногда очень устаю и иду домой без тренировки." },
+          { "tr": "Her gün, ama sadece yarım saat. İşten çıkıp hemen buraya gelirim.", "ru": "Каждый день, но только полчаса. Ухожу с работы и сразу сюда." }
+        ]},
+        { "speaker": "a", "tr": "Evet! Haftada üç kez gelirim: pazartesi, çarşamba ve cuma. Sen ne sıklıkla spor yaparsın?", "ru": "Да! Я прихожу три раза в неделю: в понедельник, среду и пятницу. А ты как часто занимаешься спортом?", "distractors": [
+          { "tr": "Her gün mü? Ben bazen çok yorgun olurum ve spor yapmadan eve giderim.", "ru": "Каждый день? А я иногда очень устаю и иду домой без тренировки." },
+          { "tr": "Harika! Saat kaçta çıkarsın?", "ru": "Отлично! Во сколько ты уходишь?" }
+        ]},
+        { "speaker": "b", "tr": "Her gün, ama sadece yarım saat. İşten çıkıp hemen buraya gelirim.", "ru": "Каждый день, но только полчаса. Ухожу с работы и сразу сюда.", "distractors": [
+          { "tr": "Vapurla. Vapurdayken hep müzik dinlerim. Sen de vapurla mı dönersin?", "ru": "На пароходе. На пароходе я всегда слушаю музыку. Ты тоже возвращаешься на пароходе?" },
+          { "tr": "Harika! Saat kaçta çıkarsın?", "ru": "Отлично! Во сколько ты уходишь?" }
+        ]},
+        { "speaker": "a", "tr": "Her gün mü? Ben bazen çok yorgun olurum ve spor yapmadan eve giderim.", "ru": "Каждый день? А я иногда очень устаю и иду домой без тренировки.", "distractors": [
+          { "tr": "Harika! Saat kaçta çıkarsın?", "ru": "Отлично! Во сколько ты уходишь?" },
+          { "tr": "Merhaba Olga! Bugün de mi buradasın?", "ru": "Привет, Ольга! Ты и сегодня здесь?" }
+        ]},
+        { "speaker": "b", "tr": "Bu normal! Ama spordan sonra daha iyi uyursun.", "ru": "Это нормально! Но после спорта лучше спишь.", "distractors": [
+          { "tr": "Merhaba Olga! Bugün de mi buradasın?", "ru": "Привет, Ольга! Ты и сегодня здесь?" },
+          { "tr": "Evet! Haftada üç kez gelirim: pazartesi, çarşamba ve cuma. Sen ne sıklıkla spor yaparsın?", "ru": "Да! Я прихожу три раза в неделю: в понедельник, среду и пятницу. А ты как часто занимаешься спортом?" }
+        ]},
+        { "speaker": "a", "tr": "Doğru. Spor yapınca daha iyi uyurum. Sen eve nasıl dönersin?", "ru": "Правда. Когда занимаюсь спортом, сплю лучше. А ты как возвращаешься домой?", "distractors": [
+          { "tr": "Evet! Haftada üç kez gelirim: pazartesi, çarşamba ve cuma. Sen ne sıklıkla spor yaparsın?", "ru": "Да! Я прихожу три раза в неделю: в понедельник, среду и пятницу. А ты как часто занимаешься спортом?" },
+          { "tr": "Her gün mü? Ben bazen çok yorgun olurum ve spor yapmadan eve giderim.", "ru": "Каждый день? А я иногда очень устаю и иду домой без тренировки." }
+        ]},
+        { "speaker": "b", "tr": "Vapurla. Vapurdayken hep müzik dinlerim. Sen de vapurla mı dönersin?", "ru": "На пароходе. На пароходе я всегда слушаю музыку. Ты тоже возвращаешься на пароходе?", "distractors": [
+          { "tr": "Her gün mü? Ben bazen çok yorgun olurum ve spor yapmadan eve giderim.", "ru": "Каждый день? А я иногда очень устаю и иду домой без тренировки." },
+          { "tr": "Merhaba Olga! Bugün de mi buradasın?", "ru": "Привет, Ольга! Ты и сегодня здесь?" }
+        ]},
+        { "speaker": "a", "tr": "Evet, ben de Kadıköy'e vapurla dönerim. O zaman bugün beraber dönebiliriz!", "ru": "Да, я тоже возвращаюсь в Кадыкёй на пароходе. Тогда сегодня можем поехать вместе!", "distractors": [
+          { "tr": "Bu normal! Ama spordan sonra daha iyi uyursun.", "ru": "Это нормально! Но после спорта лучше спишь." },
+          { "tr": "Merhaba Olga! Bugün de mi buradasın?", "ru": "Привет, Ольга! Ты и сегодня здесь?" }
+        ]},
+        { "speaker": "b", "tr": "Harika! Saat kaçta çıkarsın?", "ru": "Отлично! Во сколько ты уходишь?", "distractors": [
+          { "tr": "Doğru. Spor yapınca daha iyi uyurum. Sen eve nasıl dönersin?", "ru": "Правда. Когда занимаюсь спортом, сплю лучше. А ты как возвращаешься домой?" },
+          { "tr": "Her gün, ama sadece yarım saat. İşten çıkıp hemen buraya gelirim.", "ru": "Каждый день, но только полчаса. Ухожу с работы и сразу сюда." }
+        ]},
+        { "speaker": "a", "tr": "Yedi buçukta. Duş alıp seni kapıda beklerim.", "ru": "В полвосьмого. Приму душ и буду ждать тебя у входа.", "distractors": [
+          { "tr": "Her gün mü? Ben bazen çok yorgun olurum ve spor yapmadan eve giderim.", "ru": "Каждый день? А я иногда очень устаю и иду домой без тренировки." },
+          { "tr": "Bu normal! Ama spordan sonra daha iyi uyursun.", "ru": "Это нормально! Но после спорта лучше спишь." }
+        ]}
+      ]
+    },
+    {
+      "id": "moy-den-a2-leyla-kogda-vstretimsya",
+      "title": "Лейла: когда ты свободна",
+      "level": "A2",
+      "speakers": { "a": "Ольга", "b": "Лейла" },
+      "turns": [
+        { "speaker": "b", "tr": "Olga, bu hafta bir akşam buluşabilir miyiz? Seni çok özledim!", "ru": "Ольга, можем встретиться на этой неделе вечером? Я очень соскучилась!", "distractors": [
+          { "tr": "Evet, müsaitim. Moda'da çay bahçesinde buluşalım mı? Saat yedide?", "ru": "Да, свободна. Встретимся в чайном саду в Моде? В семь?" },
+          { "tr": "Yedi biraz erken. Vapurdan inince seni ararım, tamam mı?", "ru": "Семь — рановато. Как сойду с парохода, позвоню тебе, хорошо?" }
+        ]},
+        { "speaker": "a", "tr": "Ben de seni özledim! Ama hafta içi akşamları hep meşgulüm.", "ru": "Я тоже по тебе соскучилась! Но по будним вечерам я всегда занята.", "distractors": [
+          { "tr": "Pazartesi, çarşamba ve cuma spor salonuna giderim. Salı akşamları Türkçe ödevimi yaparım.", "ru": "В понедельник, среду и пятницу хожу в спортзал. По вторникам вечером делаю домашнее задание по турецкому." },
+          { "tr": "Peki perşembe?", "ru": "А четверг?" }
+        ]},
+        { "speaker": "b", "tr": "Neden? Her akşam ne yaparsın?", "ru": "Почему? Что ты делаешь каждый вечер?", "distractors": [
+          { "tr": "Biliyorum! Perşembe görüşürüz!", "ru": "Знаю! До четверга!" },
+          { "tr": "Pazartesi, çarşamba ve cuma spor salonuna giderim. Salı akşamları Türkçe ödevimi yaparım.", "ru": "В понедельник, среду и пятницу хожу в спортзал. По вторникам вечером делаю домашнее задание по турецкому." }
+        ]},
+        { "speaker": "a", "tr": "Pazartesi, çarşamba ve cuma spor salonuna giderim. Salı akşamları Türkçe ödevimi yaparım.", "ru": "В понедельник, среду и пятницу хожу в спортзал. По вторникам вечером делаю домашнее задание по турецкому.", "distractors": [
+          { "tr": "Tamam. Sen çayı hâlâ şekersiz mi içersin?", "ru": "Хорошо. Ты всё так же пьёшь чай без сахара?" },
+          { "tr": "Peki perşembe?", "ru": "А четверг?" }
+        ]},
+        { "speaker": "b", "tr": "Peki perşembe?", "ru": "А четверг?", "distractors": [
+          { "tr": "Olga, bu hafta bir akşam buluşabilir miyiz? Seni çok özledim!", "ru": "Ольга, можем встретиться на этой неделе вечером? Я очень соскучилась!" },
+          { "tr": "Tamam. Sen çayı hâlâ şekersiz mi içersin?", "ru": "Хорошо. Ты всё так же пьёшь чай без сахара?" }
+        ]},
+        { "speaker": "a", "tr": "Perşembe boşum! Ama perşembe günleri çok işimiz olur, biraz geç çıkabilirim. Sen perşembe müsait misin?", "ru": "В четверг я свободна! Но по четвергам у нас много работы, могу уйти немного позже. А ты в четверг свободна?", "distractors": [
+          { "tr": "Tamam. Sen çayı hâlâ şekersiz mi içersin?", "ru": "Хорошо. Ты всё так же пьёшь чай без сахара?" },
+          { "tr": "Yedi biraz erken. Vapurdan inince seni ararım, tamam mı?", "ru": "Семь — рановато. Как сойду с парохода, позвоню тебе, хорошо?" }
+        ]},
+        { "speaker": "b", "tr": "Evet, müsaitim. Moda'da çay bahçesinde buluşalım mı? Saat yedide?", "ru": "Да, свободна. Встретимся в чайном саду в Моде? В семь?", "distractors": [
+          { "tr": "Neden? Her akşam ne yaparsın?", "ru": "Почему? Что ты делаешь каждый вечер?" },
+          { "tr": "Ben de seni özledim! Ama hafta içi akşamları hep meşgulüm.", "ru": "Я тоже по тебе соскучилась! Но по будним вечерам я всегда занята." }
+        ]},
+        { "speaker": "a", "tr": "Yedi biraz erken. Vapurdan inince seni ararım, tamam mı?", "ru": "Семь — рановато. Как сойду с парохода, позвоню тебе, хорошо?", "distractors": [
+          { "tr": "Tamam. Sen çayı hâlâ şekersiz mi içersin?", "ru": "Хорошо. Ты всё так же пьёшь чай без сахара?" },
+          { "tr": "Biliyorum! Perşembe görüşürüz!", "ru": "Знаю! До четверга!" }
+        ]},
+        { "speaker": "b", "tr": "Tamam. Sen çayı hâlâ şekersiz mi içersin?", "ru": "Хорошо. Ты всё так же пьёшь чай без сахара?", "distractors": [
+          { "tr": "Pazartesi, çarşamba ve cuma spor salonuna giderim. Salı akşamları Türkçe ödevimi yaparım.", "ru": "В понедельник, среду и пятницу хожу в спортзал. По вторникам вечером делаю домашнее задание по турецкому." },
+          { "tr": "Neden? Her akşam ne yaparsın?", "ru": "Почему? Что ты делаешь каждый вечер?" }
+        ]},
+        { "speaker": "a", "tr": "Evet, çayı her zaman şekersiz içerim. Sen de her zaman Pamuk'tan bahsedersin!", "ru": "Да, я всегда пью чай без сахара. А ты всегда рассказываешь про Памук!", "distractors": [
+          { "tr": "Biliyorum! Perşembe görüşürüz!", "ru": "Знаю! До четверга!" },
+          { "tr": "Yedi biraz erken. Vapurdan inince seni ararım, tamam mı?", "ru": "Семь — рановато. Как сойду с парохода, позвоню тебе, хорошо?" }
+        ]},
+        { "speaker": "b", "tr": "Haha, doğru! Pamuk dünyanın en tatlı kedisi.", "ru": "Ха-ха, правда! Памук — самая милая кошка на свете.", "distractors": [
+          { "tr": "Evet, müsaitim. Moda'da çay bahçesinde buluşalım mı? Saat yedide?", "ru": "Да, свободна. Встретимся в чайном саду в Моде? В семь?" },
+          { "tr": "Pazartesi, çarşamba ve cuma spor salonuna giderim. Salı akşamları Türkçe ödevimi yaparım.", "ru": "В понедельник, среду и пятницу хожу в спортзал. По вторникам вечером делаю домашнее задание по турецкому." }
+        ]},
+        { "speaker": "a", "tr": "Biliyorum! Perşembe görüşürüz!", "ru": "Знаю! До четверга!", "distractors": [
+          { "tr": "Ben de seni özledim! Ama hafta içi akşamları hep meşgulüm.", "ru": "Я тоже по тебе соскучилась! Но по будним вечерам я всегда занята." },
+          { "tr": "Olga, bu hafta bir akşam buluşabilir miyiz? Seni çok özledim!", "ru": "Ольга, можем встретиться на этой неделе вечером? Я очень соскучилась!" }
+        ]}
+      ]
     }
   ]
 }
