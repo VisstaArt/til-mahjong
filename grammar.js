@@ -6,8 +6,13 @@
 // окончания, целые слова, среди них «почти правильные» (другое лицо, другая гармония,
 // другой падеж). Тапом по порядку собираешь пропуск; не та плашка вздрагивает, и внизу
 // появляется подсказка правила. Сложность растёт ступенями (GRAMMAR_LEVELS): одно слово →
-// два → три → вся фраза по переводу → фразы «из жизни». Раунд — ROUND_SIZE фраз, в конце
-// звёзды; следующая ступень открывается за STARS_TO_UNLOCK звезды.
+// два → три → вся фраза по переводу → фразы «из жизни».
+//
+// Игровая цель — спасти кошку Памук (кошка Лейлы, см. LEGEND.md): она застряла на
+// дереве/крыше/мачте…, каждая собранная фраза — кирпич пирамиды, по которой до неё
+// добраться. Ошибиться можно level.mistakes раз (на кирпичах трещины), следующая ошибка —
+// пирамида взрывается, раунд заново. Спасла — открыта следующая ступень, звёзды — за
+// то, сколько трещин осталось. Звуки синтезируются WebAudio (sfx), без файлов.
 //
 // Приложение само ничего не склоняет: все формы, кусочки, обманки и пояснения готовит
 // офлайн tools/grammar/build.py (генератор tools/grammar/morph.py) в
@@ -109,17 +114,22 @@ const GRAMMAR_TOPICS = [
 ];
 const GRAMMAR_REVIEW = { id: "review", emoji: "🔀", title: "Повторение вперемешку" };
 
-// Ступени темы — сложность растёт тем, сколько фразы собираешь сама.
+// Ступени темы — сложность растёт тем, сколько фразы собираешь сама, и высотой пирамиды.
+// rows — ряды пирамиды снизу вверх (сумма = bricks, число фраз в раунде).
 const GRAMMAR_LEVELS = [
-  { n: 1, title: "Одно слово", hint: "собери слово с правилом", words: 1, tier: "base", pile: 12 },
-  { n: 2, title: "Два слова", hint: "слово с правилом и соседнее", words: 2, tier: "base", pile: 14 },
-  { n: 3, title: "Три слова", hint: "почти вся фраза", words: 3, tier: "base", pile: 16 },
-  { n: 4, title: "Вся фраза", hint: "только перевод — собери по-турецки", words: 99, tier: "base", pile: 18 },
-  { n: 5, title: "В жизни", hint: "фразы из «Фраз» и «Диалогов»", words: 2, tier: "life", pile: 16 },
+  { n: 1, title: "Одно слово", hint: "собери слово с правилом", words: 1, tier: "base", pile: 12,
+    bricks: 8, rows: [4, 3, 1], mistakes: 2, place: "🌳", where: "на дереве" },
+  { n: 2, title: "Два слова", hint: "слово с правилом и соседнее", words: 2, tier: "base", pile: 14,
+    bricks: 10, rows: [4, 3, 2, 1], mistakes: 2, place: "🏠", where: "на крыше" },
+  { n: 3, title: "Три слова", hint: "почти вся фраза", words: 3, tier: "base", pile: 16,
+    bricks: 10, rows: [4, 3, 2, 1], mistakes: 3, place: "⛴️", where: "на мачте парохода" },
+  { n: 4, title: "Вся фраза", hint: "только перевод — собери по-турецки", words: 99, tier: "base", pile: 18,
+    bricks: 12, rows: [5, 4, 2, 1], mistakes: 3, place: "🗼", where: "на Галатской башне" },
+  { n: 5, title: "В жизни", hint: "фразы из «Фраз» и «Диалогов»", words: 2, tier: "life", pile: 16,
+    bricks: 12, rows: [5, 4, 2, 1], mistakes: 3, place: "🎡", where: "на колесе обозрения" },
 ];
-const ROUND_SIZE = 8;
-// Сколько звёзд за раунд нужно, чтобы открылась следующая ступень.
-const STARS_TO_UNLOCK = 2;
+// Ступень открывается, когда на предыдущей Памук спасена (хоть с одной звездой).
+const STARS_TO_UNLOCK = 1;
 
 let grammarItems = null;
 
@@ -265,7 +275,7 @@ function renderTopicLevels(topic) {
     const stars = levelStars(topic.id, level.n);
     row.innerHTML =
       `<span class="stage-n">${unlocked ? level.n : "🔒"}</span>` +
-      `<span class="stage-text"><b>${level.title}</b><small>${unlocked ? level.hint : `откроется за ${STARS_TO_UNLOCK} ★ на ступени ${level.n - 1}`}</small></span>` +
+      `<span class="stage-text"><b>${level.place} ${level.title}</b><small>${unlocked ? `${level.hint} · Памук ${level.where}` : `откроется, когда спасёшь Памук на ступени ${level.n - 1}`}</small></span>` +
       `<span class="stage-stars">${unlocked ? starsText(stars) : ""}</span>`;
     if (unlocked) row.addEventListener("click", () => startGrammarRound(topic.id, level.n));
     el.appendChild(row);
@@ -366,8 +376,62 @@ function buildPile(units, gapIdx, pileSize) {
   return shuffle([...needed, ...uniqueDistr.slice(0, Math.max(0, pileSize - needed.length)), ...extra]);
 }
 
+// --- звуки: синтез WebAudio, без файлов ---
+let sfxCtx = null;
+function sfx(kind) {
+  if (muted) return;
+  try {
+    sfxCtx = sfxCtx || new (window.AudioContext || window.webkitAudioContext)();
+  } catch {
+    return;
+  }
+  const ctx = sfxCtx;
+  const t0 = ctx.currentTime;
+  const tone = (freq, start, dur, type = "sine", vol = 0.2, freqEnd = null) => {
+    const osc = ctx.createOscillator();
+    const gain = ctx.createGain();
+    osc.type = type;
+    osc.frequency.setValueAtTime(freq, t0 + start);
+    if (freqEnd) osc.frequency.exponentialRampToValueAtTime(freqEnd, t0 + start + dur);
+    gain.gain.setValueAtTime(vol, t0 + start);
+    gain.gain.exponentialRampToValueAtTime(0.001, t0 + start + dur);
+    osc.connect(gain).connect(ctx.destination);
+    osc.start(t0 + start);
+    osc.stop(t0 + start + dur + 0.05);
+  };
+  const noise = (dur, vol, filterType, fStart, fEnd) => {
+    const buf = ctx.createBuffer(1, Math.floor(ctx.sampleRate * dur), ctx.sampleRate);
+    const data = buf.getChannelData(0);
+    for (let i = 0; i < data.length; i++) data[i] = Math.random() * 2 - 1;
+    const src = ctx.createBufferSource();
+    src.buffer = buf;
+    const filter = ctx.createBiquadFilter();
+    filter.type = filterType;
+    filter.frequency.setValueAtTime(fStart, t0);
+    filter.frequency.exponentialRampToValueAtTime(fEnd, t0 + dur);
+    const gain = ctx.createGain();
+    gain.gain.setValueAtTime(vol, t0);
+    gain.gain.exponentialRampToValueAtTime(0.001, t0 + dur);
+    src.connect(filter).connect(gain).connect(ctx.destination);
+    src.start(t0);
+  };
+  if (kind === "tap") tone(700, 0, 0.07, "triangle", 0.12);
+  else if (kind === "brick") {
+    tone(160, 0, 0.18, "sine", 0.35, 60);
+    noise(0.12, 0.15, "lowpass", 900, 200);
+  } else if (kind === "crack") {
+    noise(0.18, 0.35, "highpass", 2500, 900);
+    tone(220, 0, 0.12, "square", 0.05, 110);
+  } else if (kind === "boom") {
+    noise(1.4, 0.8, "lowpass", 1200, 40);
+    tone(90, 0, 1.0, "sine", 0.6, 30);
+  } else if (kind === "win") {
+    [523, 659, 784, 1047].forEach((f, i) => tone(f, i * 0.12, 0.25, "triangle", 0.18));
+  }
+}
+
 // --- раунд ---
-let round = null; // {topicId, level, queue: [item], index, results: [bool], current}
+let round = null; // {topicId, level, queue, index, mistakes, over, current}
 
 function roundCandidates(topicId, level) {
   return grammarItems.filter((item) => {
@@ -380,7 +444,7 @@ function roundCandidates(topicId, level) {
   });
 }
 
-// Раунд из ROUND_SIZE фраз; фразы со «слабыми» правилами попадаются чаще.
+// Раунд = столько фраз, сколько кирпичей в пирамиде; «слабые» правила попадаются чаще.
 function buildRoundQueue(topicId, level) {
   const cands = roundCandidates(topicId, level);
   const weighted = [];
@@ -395,7 +459,7 @@ function buildRoundQueue(topicId, level) {
     if (seen.has(item.tr)) continue;
     seen.add(item.tr);
     out.push(item);
-    if (out.length >= ROUND_SIZE) break;
+    if (out.length >= level.bricks) break;
   }
   return out;
 }
@@ -403,7 +467,7 @@ function buildRoundQueue(topicId, level) {
 async function startGrammarRound(topicId, levelN) {
   await loadGrammarItems();
   const level = GRAMMAR_LEVELS.find((l) => l.n === levelN);
-  round = { topicId, level, queue: buildRoundQueue(topicId, level), index: 0, results: [] };
+  round = { topicId, level, queue: buildRoundQueue(topicId, level), index: 0, mistakes: 0, clean: 0, over: false };
   const title = topicId === "review" ? GRAMMAR_REVIEW.title : GRAMMAR_TOPICS.find((t) => t.id === topicId).title;
   document.getElementById("grammar-drill-title").textContent = title;
   document.getElementById("grammar-drill-progress").textContent = `${level.n}. ${level.title}`;
@@ -413,23 +477,64 @@ async function startGrammarRound(topicId, levelN) {
     document.getElementById("grammar-ru").textContent = "Для этой ступени пока нет фраз.";
     return;
   }
-  renderRoundDots();
-  startSentence();
+  buildScene();
+  document.getElementById("grammar-direction").textContent =
+    `Памук застряла ${level.where}! Собери ${round.queue.length} фраз — построй пирамиду. Ошибиться можно ${level.mistakes} раза.`;
+  startSentence(true);
 }
 
-function renderRoundDots() {
-  const el = document.getElementById("grammar-dots");
-  el.innerHTML = "";
-  round.queue.forEach((_, i) => {
-    const dot = document.createElement("span");
-    dot.className = "round-dot";
-    if (i < round.results.length) dot.classList.add(round.results[i] ? "dot-ok" : "dot-miss");
-    else if (i === round.index) dot.classList.add("dot-now");
-    el.appendChild(dot);
+// --- сцена: пирамида, кошка, трещины ---
+function buildScene() {
+  const { level, queue } = round;
+  const pyramid = document.getElementById("scene-pyramid");
+  pyramid.innerHTML = "";
+  pyramid.className = "scene-pyramid";
+  // Ряды снизу вверх; если фраз меньше, чем кирпичей, срезаем сверху.
+  let left = queue.length;
+  const rows = level.rows.map((w) => {
+    const take = Math.min(w, left);
+    left -= take;
+    return take;
+  }).filter(Boolean);
+  round.bricks = [];
+  rows.forEach((w) => {
+    const row = document.createElement("div");
+    row.className = "pyramid-row";
+    for (let i = 0; i < w; i++) {
+      const brick = document.createElement("span");
+      brick.className = "brick";
+      row.appendChild(brick);
+      round.bricks.push(brick);
+    }
+    pyramid.appendChild(row);
   });
+  document.getElementById("scene-place").textContent = level.place;
+  const cat = document.getElementById("scene-cat");
+  cat.textContent = "🐱";
+  cat.className = "scene-cat";
+  cat.style.transform = "";
+  document.getElementById("scene-boom").classList.add("hidden");
+  document.getElementById("grammar-scene").classList.remove("shake", "blown");
+  updateSceneStatus();
 }
 
-function startSentence() {
+function updateSceneStatus() {
+  const built = round.index;
+  document.getElementById("scene-bricks").textContent = `🧱 ${built}/${round.queue.length}`;
+  const left = round.level.mistakes - round.mistakes;
+  document.getElementById("scene-cracks").textContent =
+    left > 0 ? `можно ошибиться: ${"⚠️".repeat(left)}` : "ещё одна ошибка — и всё рухнет!";
+  document.getElementById("scene-cracks").classList.toggle("danger", left <= 0);
+}
+
+function shakeScene() {
+  const scene = document.getElementById("grammar-scene");
+  scene.classList.remove("shake");
+  void scene.offsetWidth;
+  scene.classList.add("shake");
+}
+
+function startSentence(first = false) {
   const item = round.queue[round.index];
   const units = sentenceUnits(item, round.topicId);
   const gapIdx = chooseGapUnits(units, round.topicId, round.level.words);
@@ -437,8 +542,10 @@ function startSentence() {
   gapIdx.forEach((ui) => units[ui].pieces.forEach((p, pi) => expected.push({ ui, pi, ...p })));
   round.current = { item, units, gapIdx: new Set(gapIdx), expected, pos: 0, mistake: false, failedParts: new Set(), filled: new Map() };
 
-  const whole = gapIdx.length === units.length;
-  document.getElementById("grammar-direction").textContent = whole ? "Собери фразу по-турецки" : "Собери пропуск из кучки";
+  if (!first) {
+    const whole = gapIdx.length === units.length;
+    document.getElementById("grammar-direction").textContent = whole ? "Собери фразу по-турецки" : "Собери пропуск из кучки";
+  }
   document.getElementById("grammar-ru").textContent = item.ru;
   document.getElementById("grammar-why").textContent = "";
   renderGapSentence();
@@ -495,10 +602,11 @@ function renderPileTiles(texts) {
 }
 
 function onPileTile(tile, text) {
-  const cur = round.current;
-  if (!cur || cur.pos >= cur.expected.length || tile.classList.contains("taken")) return;
+  const cur = round && round.current;
+  if (!cur || round.over || cur.pos >= cur.expected.length || tile.classList.contains("taken")) return;
   const want = cur.expected[cur.pos];
   if (text === want.text) {
+    sfx("tap");
     tile.classList.add("taken");
     const list = cur.filled.get(want.ui) || [];
     list.push(want);
@@ -514,6 +622,39 @@ function onPileTile(tile, text) {
   void tile.offsetWidth; // перезапуск анимации «не подходит»
   tile.classList.add("wrong");
   document.getElementById("grammar-why").textContent = want.part && want.part.why ? want.part.why : `Нужно слово: «${want.text[0]}…»`;
+  onMistake();
+}
+
+// Ошибка: трещина на одном из уже построенных кирпичей (или дрожит земля, пока кирпичей
+// нет). Сверх лимита — пирамида взрывается.
+function onMistake() {
+  round.mistakes++;
+  if (round.mistakes > round.level.mistakes) {
+    blowUp();
+    return;
+  }
+  sfx("crack");
+  shakeScene();
+  const built = round.bricks.slice(0, round.index).filter((b) => !b.classList.contains("cracked"));
+  if (built.length) built[Math.floor(Math.random() * built.length)].classList.add("cracked");
+  updateSceneStatus();
+}
+
+function blowUp() {
+  round.over = true;
+  sfx("boom");
+  const scene = document.getElementById("grammar-scene");
+  scene.classList.add("blown");
+  shakeScene();
+  round.bricks.forEach((b) => {
+    b.style.setProperty("--tx", `${Math.round(Math.random() * 240 - 120)}px`);
+    b.style.setProperty("--ty", `${Math.round(-Math.random() * 160 - 20)}px`);
+    b.style.setProperty("--tr", `${Math.round(Math.random() * 720 - 360)}deg`);
+  });
+  document.getElementById("scene-boom").classList.remove("hidden");
+  document.getElementById("scene-cat").textContent = "🙀";
+  document.querySelectorAll(".pile-tile").forEach((t) => (t.disabled = true));
+  setTimeout(() => showRoundResult(false), 1300);
 }
 
 // Какие правила проверял кусочек — чтобы ошибка в «лице» не портила статистику «гармонии».
@@ -554,17 +695,21 @@ function recordSentenceStats() {
   });
 }
 
+// Фраза собрана — кирпич ложится в пирамиду.
 function finishSentence() {
   recordSentenceStats();
-  round.results.push(!round.current.mistake);
+  if (!round.current.mistake) round.clean++;
+  const brick = round.bricks[round.index];
+  if (brick) brick.classList.add("placed");
   round.index++;
-  renderRoundDots();
+  sfx("brick");
+  updateSceneStatus();
   const item = round.current.item;
-  setTimeout(() => showGrammarDonePopup(item), 300);
+  setTimeout(() => showGrammarDonePopup(item), 350);
 }
 
 // Та же плашка, что в квизе фраз (см. showPhraseMatchPopup) — целая фраза, озвучка,
-// переход дальше сам через 3 сек или сразу тапом по фону.
+// переход дальше сам через 2,5 сек или сразу тапом по фону.
 function showGrammarDonePopup(item) {
   const popupEl = document.getElementById("match-popup");
   const card = popupEl.querySelector(".match-card");
@@ -582,43 +727,67 @@ function showGrammarDonePopup(item) {
     card.classList.remove("no-icon");
     popupEl.removeEventListener("click", onBackgroundClick);
     if (document.body.dataset.screen !== "grammar-drill" || !round) return;
-    if (round.index >= round.queue.length) showRoundEnd();
+    if (round.index >= round.queue.length) rescueCat();
     else startSentence();
   };
   function onBackgroundClick(e) {
     if (e.target === popupEl) advance();
   }
   popupEl.addEventListener("click", onBackgroundClick);
-  popupEl._hideTimer = setTimeout(advance, 3000);
+  popupEl._hideTimer = setTimeout(advance, 2500);
 
   speak(item.tr);
 }
 
-// Конец раунда: звёзды по доле фраз, собранных без ошибок; лучшая оценка запоминается.
-function showRoundEnd() {
-  const ok = round.results.filter(Boolean).length;
-  const share = ok / round.results.length;
-  const stars = share >= 0.85 ? 3 : share >= 0.6 ? 2 : 1;
-  const { topicId, level } = round;
-  let unlockedNow = false;
-  if (topicId !== "review") {
-    const before = isLevelUnlocked(topicId, level.n + 1);
-    grammarLevels[topicId] = grammarLevels[topicId] || {};
-    grammarLevels[topicId][level.n] = Math.max(levelStars(topicId, level.n), stars);
-    saveGrammarLevels();
-    unlockedNow = !before && level.n < GRAMMAR_LEVELS.length && isLevelUnlocked(topicId, level.n + 1);
+// Пирамида достроена — Памук спрыгивает на вершину.
+function rescueCat() {
+  round.over = true;
+  sfx("win");
+  const cat = document.getElementById("scene-cat");
+  cat.textContent = "😻";
+  cat.classList.add("rescued");
+  // Прыжок ровно на верхний кирпич — ширина сцены на разных телефонах разная.
+  const top = round.bricks[round.bricks.length - 1];
+  if (top) {
+    const c = cat.getBoundingClientRect();
+    const t = top.getBoundingClientRect();
+    const dx = t.left + t.width / 2 - (c.left + c.width / 2);
+    const dy = t.top - c.bottom + 4;
+    cat.style.transform = `translate(${Math.round(dx)}px, ${Math.round(dy)}px) scale(1.3)`;
   }
+  setTimeout(() => showRoundResult(true), 1100);
+}
+
+// Итог раунда. Спасла — звёзды по оставшимся трещинам, лучшая оценка запоминается,
+// открывается следующая ступень. Взорвалась — «Начать заново».
+function showRoundResult(saved) {
+  const { topicId, level } = round;
   const next = GRAMMAR_LEVELS.find((l) => l.n === level.n + 1);
-  document.getElementById("grammar-round-stars").textContent = starsText(stars);
-  document.getElementById("grammar-round-text").textContent =
-    `Без ошибок: ${ok} из ${round.results.length}.` +
-    (unlockedNow && next ? ` Открыта ступень «${next.title}»!` : "") +
-    (!unlockedNow && stars < STARS_TO_UNLOCK && next ? ` Для ступени «${next.title}» нужно ${STARS_TO_UNLOCK} ★.` : "");
+  let stars = 0;
+  let unlockedNow = false;
+  if (saved) {
+    stars = round.mistakes === 0 ? 3 : round.mistakes <= level.mistakes / 2 ? 2 : 1;
+    if (topicId !== "review") {
+      const before = isLevelUnlocked(topicId, level.n + 1);
+      grammarLevels[topicId] = grammarLevels[topicId] || {};
+      grammarLevels[topicId][level.n] = Math.max(levelStars(topicId, level.n), stars);
+      saveGrammarLevels();
+      unlockedNow = !before && level.n < GRAMMAR_LEVELS.length && isLevelUnlocked(topicId, level.n + 1);
+    }
+  }
+  document.getElementById("grammar-round-title").textContent = saved ? "🐱 Памук спасена!" : "💥 Пирамида рухнула!";
+  document.getElementById("grammar-round-stars").textContent = saved ? starsText(stars) : "🙀";
+  document.getElementById("grammar-round-text").textContent = saved
+    ? `Ошибок: ${round.mistakes}.` + (unlockedNow && next ? ` Открыта ступень «${next.title}» — Памук теперь ${next.where}!` : "")
+    : `Памук всё ещё ${level.where}. Собрано ${round.index} из ${round.queue.length}. Попробуй ещё раз!`;
   const nextBtn = document.getElementById("grammar-round-next-btn");
-  const canNext = topicId !== "review" && next && isLevelUnlocked(topicId, next.n);
+  const canNext = saved && topicId !== "review" && next && isLevelUnlocked(topicId, next.n);
   nextBtn.classList.toggle("hidden", !canNext);
   nextBtn.onclick = () => canNext && startGrammarRound(topicId, next.n);
-  document.getElementById("grammar-round-again-btn").onclick = () => startGrammarRound(topicId, level.n);
+  const againBtn = document.getElementById("grammar-round-again-btn");
+  againBtn.textContent = saved ? "Ещё раунд" : "Начать заново";
+  againBtn.classList.toggle("secondary", saved);
+  againBtn.onclick = () => startGrammarRound(topicId, level.n);
   document.getElementById("grammar-round-end").classList.remove("hidden");
 }
 

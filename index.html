@@ -328,7 +328,14 @@
       </div>
     </div>
     <main class="quiz-main grammar-main">
-      <div id="grammar-dots" class="round-dots"></div>
+      <div id="grammar-scene" class="grammar-scene">
+        <div class="scene-status"><span id="scene-bricks">🧱 0/8</span><span id="scene-cracks"></span></div>
+        <div class="scene-stage">
+          <div id="scene-pyramid" class="scene-pyramid"></div>
+          <div class="scene-goal"><span id="scene-place" class="scene-place">🌳</span><span id="scene-cat" class="scene-cat">🐱</span></div>
+          <div id="scene-boom" class="scene-boom hidden">💥</div>
+        </div>
+      </div>
       <div id="grammar-direction" class="quiz-direction"></div>
       <div id="grammar-ru" class="grammar-ru"></div>
       <div id="grammar-sentence" class="grammar-sentence"></div>
@@ -337,7 +344,7 @@
     </main>
     <div id="grammar-round-end" class="match-popup-overlay round-end hidden">
       <div class="win-card">
-        <h2>Раунд пройден</h2>
+        <h2 id="grammar-round-title">Раунд пройден</h2>
         <div id="grammar-round-stars" class="round-stars"></div>
         <p id="grammar-round-text"></p>
         <div class="round-end-actions">
