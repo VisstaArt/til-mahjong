@@ -1,0 +1,786 @@
+{
+  "id": "razvlecheniya-otdyh",
+  "title": "Развлечения, отдых",
+  "dialogues": [
+    {
+      "id": "razvl-kino-deniz",
+      "title": "Дениз: кино в Бейоглу",
+      "level": "A2",
+      "speakers": { "a": "Ольга", "b": "Дениз" },
+      "turns": [
+        { "speaker": "a", "tr": "Deniz, bu akşam sinemaya gidelim mi? Beyoğlu'na.", "ru": "Дениз, пойдём сегодня вечером в кино? В Бейоглу.", "distractors": [
+          { "tr": "Yönetmen de o! İlk filmi.", "ru": "Режиссёр тоже он! Это его первый фильм." },
+          { "tr": "Anlaştık! Sekizde Taksim'de buluşuruz.", "ru": "Договорились! Встречаемся в восемь на Таксиме." }
+        ]},
+        { "speaker": "b", "tr": "Olur! Bu akşam sinemada ne oynuyor?", "ru": "Давай! А что сегодня идёт в кино?", "distractors": [
+          { "tr": "Yönetmen de o! İlk filmi.", "ru": "Режиссёр тоже он! Это его первый фильм." },
+          { "tr": "Kimler oynuyor?", "ru": "Кто там играет?" }
+        ]},
+        { "speaker": "a", "tr": "Yeni bir Türk komedisi var. Leyla izlemiş, çok beğenmiş.", "ru": "Новая турецкая комедия. Лейла смотрела, говорит, ей очень понравилось.", "distractors": [
+          { "tr": "Harika! Saat kaçta başlıyor?", "ru": "Отлично! Во сколько начало?" },
+          { "tr": "Sorun değil. Önce İstiklal'de yemek yiyelim mi?", "ru": "Не проблема. Сначала поужинаем на Истикляле?" }
+        ]},
+        { "speaker": "b", "tr": "Kimler oynuyor?", "ru": "Кто там играет?", "distractors": [
+          { "tr": "Tamam. Film bitince vapur yok, taksiyle döneriz.", "ru": "Хорошо. Когда фильм закончится, пароходов уже не будет — вернёмся на такси." },
+          { "tr": "Anlaştık! Sekizde Taksim'de buluşuruz.", "ru": "Договорились! Встречаемся в восемь на Таксиме." }
+        ]},
+        { "speaker": "a", "tr": "Bilmiyorum. İnternete bakar mısın? Telefonumun şarjı az.", "ru": "Не знаю. Посмотришь в интернете? У меня телефон почти сел.", "distractors": [
+          { "tr": "Deniz, bu akşam sinemaya gidelim mi? Beyoğlu'na.", "ru": "Дениз, пойдём сегодня вечером в кино? В Бейоглу." },
+          { "tr": "Anlaştık! Sekizde Taksim'de buluşuruz.", "ru": "Договорились! Встречаемся в восемь на Таксиме." }
+        ]},
+        { "speaker": "b", "tr": "Bakıyorum… Başrolde benim favori komedyenim oynuyor!", "ru": "Смотрю… В главной роли мой любимый комик!", "distractors": [
+          { "tr": "Deniz, bu akşam sinemaya gidelim mi? Beyoğlu'na.", "ru": "Дениз, пойдём сегодня вечером в кино? В Бейоглу." },
+          { "tr": "Olur. Biletleri ben alıyorum, yemek senden!", "ru": "Давай. Билеты беру я, а ужин — с тебя!" }
+        ]},
+        { "speaker": "a", "tr": "Yönetmen kim?", "ru": "Кто режиссёр?", "distractors": [
+          { "tr": "Yeni bir Türk komedisi var. Leyla izlemiş, çok beğenmiş.", "ru": "Новая турецкая комедия. Лейла смотрела, говорит, ей очень понравилось." },
+          { "tr": "Dokuzda ve on bir buçukta. Dokuz daha iyi.", "ru": "В девять и в половине двенадцатого. Девять лучше." }
+        ]},
+        { "speaker": "b", "tr": "Yönetmen de o! İlk filmi.", "ru": "Режиссёр тоже он! Это его первый фильм.", "distractors": [
+          { "tr": "Deniz, bu akşam sinemaya gidelim mi? Beyoğlu'na.", "ru": "Дениз, пойдём сегодня вечером в кино? В Бейоглу." },
+          { "tr": "Sorun değil. Önce İstiklal'de yemek yiyelim mi?", "ru": "Не проблема. Сначала поужинаем на Истикляле?" }
+        ]},
+        { "speaker": "a", "tr": "Harika! Saat kaçta başlıyor?", "ru": "Отлично! Во сколько начало?", "distractors": [
+          { "tr": "Bakıyorum… Başrolde benim favori komedyenim oynuyor!", "ru": "Смотрю… В главной роли мой любимый комик!" },
+          { "tr": "Sorun değil. Önce İstiklal'de yemek yiyelim mi?", "ru": "Не проблема. Сначала поужинаем на Истикляле?" }
+        ]},
+        { "speaker": "b", "tr": "Dokuzda ve on bir buçukta. Dokuz daha iyi.", "ru": "В девять и в половине двенадцатого. Девять лучше.", "distractors": [
+          { "tr": "Kimler oynuyor?", "ru": "Кто там играет?" },
+          { "tr": "Yönetmen de o! İlk filmi.", "ru": "Режиссёр тоже он! Это его первый фильм." }
+        ]},
+        { "speaker": "a", "tr": "Tamam. Film bitince vapur yok, taksiyle döneriz.", "ru": "Хорошо. Когда фильм закончится, пароходов уже не будет — вернёмся на такси.", "distractors": [
+          { "tr": "Bakıyorum… Başrolde benim favori komedyenim oynuyor!", "ru": "Смотрю… В главной роли мой любимый комик!" },
+          { "tr": "Yeni bir Türk komedisi var. Leyla izlemiş, çok beğenmiş.", "ru": "Новая турецкая комедия. Лейла смотрела, говорит, ей очень понравилось." }
+        ]},
+        { "speaker": "b", "tr": "Sorun değil. Önce İstiklal'de yemek yiyelim mi?", "ru": "Не проблема. Сначала поужинаем на Истикляле?", "distractors": [
+          { "tr": "Yönetmen de o! İlk filmi.", "ru": "Режиссёр тоже он! Это его первый фильм." },
+          { "tr": "Kimler oynuyor?", "ru": "Кто там играет?" }
+        ]},
+        { "speaker": "a", "tr": "Olur. Biletleri ben alıyorum, yemek senden!", "ru": "Давай. Билеты беру я, а ужин — с тебя!", "distractors": [
+          { "tr": "Yönetmen de o! İlk filmi.", "ru": "Режиссёр тоже он! Это его первый фильм." },
+          { "tr": "Olur! Bu akşam sinemada ne oynuyor?", "ru": "Давай! А что сегодня идёт в кино?" }
+        ]},
+        { "speaker": "b", "tr": "Anlaştık! Sekizde Taksim'de buluşuruz.", "ru": "Договорились! Встречаемся в восемь на Таксиме.", "distractors": [
+          { "tr": "Olur! Bu akşam sinemada ne oynuyor?", "ru": "Давай! А что сегодня идёт в кино?" },
+          { "tr": "Yeni bir Türk komedisi var. Leyla izlemiş, çok beğenmiş.", "ru": "Новая турецкая комедия. Лейла смотрела, говорит, ей очень понравилось." }
+        ]}
+      ]
+    },
+    {
+      "id": "razvl-tiyatro-kasa",
+      "title": "Касса театра",
+      "level": "A2",
+      "speakers": { "a": "Ольга", "b": "Дамла" },
+      "turns": [
+        { "speaker": "a", "tr": "İyi günler. Bu hafta tiyatroda ne oynuyor?", "ru": "Добрый день. Что идёт в театре на этой неделе?", "distractors": [
+          { "tr": "İki yüz lira. Salon üç yüz.", "ru": "Двести лир. Партер — триста." },
+          { "tr": "Altıncı sıra, ortada. Buyurun, biletleriniz!", "ru": "Шестой ряд, в середине. Вот ваши билеты!" }
+        ]},
+        { "speaker": "b", "tr": "Büyük salonda «Hamlet», küçük salonda yeni bir oyun var.", "ru": "В большом зале «Гамлет», в малом — новая пьеса.", "distractors": [
+          { "tr": "Salon olsun. Çok arkada olmasın, ortalarda olsun.", "ru": "Давайте партер. Не очень далеко, где-нибудь в середине." },
+          { "tr": "Altıncı sıra, ortada. Buyurun, biletleriniz!", "ru": "Шестой ряд, в середине. Вот ваши билеты!" }
+        ]},
+        { "speaker": "a", "tr": "Ne tür bir oyun?", "ru": "Что это за пьеса?", "distractors": [
+          { "tr": "Tabii. Salon mu, balkon mu?", "ru": "Конечно. Партер или балкон?" },
+          { "tr": "Salon olsun. Çok arkada olmasın, ortalarda olsun.", "ru": "Давайте партер. Не очень далеко, где-нибудь в середине." }
+        ]},
+        { "speaker": "b", "tr": "Komedi. Çok eğlenceli, herkes gülüyor.", "ru": "Комедия. Очень весёлая, все смеются.", "distractors": [
+          { "tr": "Üzgünüm, hepsi satıldı. Pazar günü matine var.", "ru": "К сожалению, все билеты проданы. В воскресенье есть дневной спектакль." },
+          { "tr": "Tabii. Salon mu, balkon mu?", "ru": "Конечно. Партер или балкон?" }
+        ]},
+        { "speaker": "a", "tr": "Kimin eseri?", "ru": "Чья она?", "distractors": [
+          { "tr": "Tabii. Salon mu, balkon mu?", "ru": "Конечно. Партер или балкон?" },
+          { "tr": "Üzgünüm, hepsi satıldı. Pazar günü matine var.", "ru": "К сожалению, все билеты проданы. В воскресенье есть дневной спектакль." }
+        ]},
+        { "speaker": "b", "tr": "Genç bir Türk yazarın. Türkçe anlıyor musunuz?", "ru": "Молодого турецкого автора. Вы понимаете по-турецки?", "distractors": [
+          { "tr": "İki yüz lira. Salon üç yüz.", "ru": "Двести лир. Партер — триста." },
+          { "tr": "Büyük salonda «Hamlet», küçük salonda yeni bir oyun var.", "ru": "В большом зале «Гамлет», в малом — новая пьеса." }
+        ]},
+        { "speaker": "a", "tr": "Biraz, hâlâ öğreniyorum. Cumartesi için yer ayırtabilir miyim?", "ru": "Немного, я ещё учу. Можно забронировать места на субботу?", "distractors": [
+          { "tr": "Kimin eseri?", "ru": "Чья она?" },
+          { "tr": "Tabii. Salon mu, balkon mu?", "ru": "Конечно. Партер или балкон?" }
+        ]},
+        { "speaker": "b", "tr": "Üzgünüm, hepsi satıldı. Pazar günü matine var.", "ru": "К сожалению, все билеты проданы. В воскресенье есть дневной спектакль.", "distractors": [
+          { "tr": "Komedi. Çok eğlenceli, herkes gülüyor.", "ru": "Комедия. Очень весёлая, все смеются." },
+          { "tr": "İki yüz lira. Salon üç yüz.", "ru": "Двести лир. Партер — триста." }
+        ]},
+        { "speaker": "a", "tr": "Pazar günkü matine için iki bilet verir misiniz lütfen?", "ru": "Можно два билета на дневной спектакль в воскресенье?", "distractors": [
+          { "tr": "Kimin eseri?", "ru": "Чья она?" },
+          { "tr": "Biraz, hâlâ öğreniyorum. Cumartesi için yer ayırtabilir miyim?", "ru": "Немного, я ещё учу. Можно забронировать места на субботу?" }
+        ]},
+        { "speaker": "b", "tr": "Tabii. Salon mu, balkon mu?", "ru": "Конечно. Партер или балкон?", "distractors": [
+          { "tr": "Komedi. Çok eğlenceli, herkes gülüyor.", "ru": "Комедия. Очень весёлая, все смеются." },
+          { "tr": "Genç bir Türk yazarın. Türkçe anlıyor musunuz?", "ru": "Молодого турецкого автора. Вы понимаете по-турецки?" }
+        ]},
+        { "speaker": "a", "tr": "Balkondaki yerler ne kadar?", "ru": "Почём места на балконе?", "distractors": [
+          { "tr": "Büyük salonda «Hamlet», küçük salonda yeni bir oyun var.", "ru": "В большом зале «Гамлет», в малом — новая пьеса." },
+          { "tr": "Kimin eseri?", "ru": "Чья она?" }
+        ]},
+        { "speaker": "b", "tr": "İki yüz lira. Salon üç yüz.", "ru": "Двести лир. Партер — триста.", "distractors": [
+          { "tr": "Büyük salonda «Hamlet», küçük salonda yeni bir oyun var.", "ru": "В большом зале «Гамлет», в малом — новая пьеса." },
+          { "tr": "Genç bir Türk yazarın. Türkçe anlıyor musunuz?", "ru": "Молодого турецкого автора. Вы понимаете по-турецки?" }
+        ]},
+        { "speaker": "a", "tr": "Salon olsun. Çok arkada olmasın, ortalarda olsun.", "ru": "Давайте партер. Не очень далеко, где-нибудь в середине.", "distractors": [
+          { "tr": "Tabii. Salon mu, balkon mu?", "ru": "Конечно. Партер или балкон?" },
+          { "tr": "Biraz, hâlâ öğreniyorum. Cumartesi için yer ayırtabilir miyim?", "ru": "Немного, я ещё учу. Можно забронировать места на субботу?" }
+        ]},
+        { "speaker": "b", "tr": "Altıncı sıra, ortada. Buyurun, biletleriniz!", "ru": "Шестой ряд, в середине. Вот ваши билеты!", "distractors": [
+          { "tr": "Üzgünüm, hepsi satıldı. Pazar günü matine var.", "ru": "К сожалению, все билеты проданы. В воскресенье есть дневной спектакль." },
+          { "tr": "Biraz, hâlâ öğreniyorum. Cumartesi için yer ayırtabilir miyim?", "ru": "Немного, я ещё учу. Можно забронировать места на субботу?" }
+        ]}
+      ]
+    },
+    {
+      "id": "razvl-tiyatro-salon",
+      "title": "В театре: гардероб и места",
+      "level": "A2",
+      "speakers": { "a": "Ольга", "b": "Оя" },
+      "turns": [
+        { "speaker": "a", "tr": "Affedersiniz, vestiyer nerede?", "ru": "Извините, где находится гардероб?", "distractors": [
+          { "tr": "Teşekkürler. Bir program alabilir miyim lütfen?", "ru": "Спасибо. Можно программку?" },
+          { "tr": "Altıncı sıra, ortada. Gelin… Yeriniz burası.", "ru": "Шестой ряд, в середине. Пойдёмте… Вот ваше место." }
+        ]},
+        { "speaker": "b", "tr": "Aşağıda, merdivenlerin yanında.", "ru": "Внизу, рядом с лестницей.", "distractors": [
+          { "tr": "İki saat. Bir saat sonra on beş dakika ara var.", "ru": "Два часа. Через час — антракт пятнадцать минут." },
+          { "tr": "Buyurun. Bu yerler nerede? Arkadaşım da geliyor.", "ru": "Пожалуйста. Где находятся эти места? Подруга тоже сейчас подойдёт." }
+        ]},
+        { "speaker": "a", "tr": "Teşekkürler. Bir program alabilir miyim lütfen?", "ru": "Спасибо. Можно программку?", "distractors": [
+          { "tr": "Altıncı sıra, ortada. Gelin… Yeriniz burası.", "ru": "Шестой ряд, в середине. Пойдёмте… Вот ваше место." },
+          { "tr": "Evet, kafe aşağıda, vestiyerin yanında. İyi seyirler!", "ru": "Да, кафе внизу, рядом с гардеробом. Приятного просмотра!" }
+        ]},
+        { "speaker": "b", "tr": "Tabii, buyurun. Biletinizi görebilir miyim?", "ru": "Конечно, пожалуйста. Можно ваш билет?", "distractors": [
+          { "tr": "Evet, kafe aşağıda, vestiyerin yanında. İyi seyirler!", "ru": "Да, кафе внизу, рядом с гардеробом. Приятного просмотра!" },
+          { "tr": "Arada çay içebilir miyiz?", "ru": "В антракте можно выпить чаю?" }
+        ]},
+        { "speaker": "a", "tr": "Buyurun. Bu yerler nerede? Arkadaşım da geliyor.", "ru": "Пожалуйста. Где находятся эти места? Подруга тоже сейчас подойдёт.", "distractors": [
+          { "tr": "Ne güzel, sahne çok yakın! Oyun kaç saat sürüyor?", "ru": "Как здорово, сцена совсем близко! Сколько часов идёт спектакль?" },
+          { "tr": "Arada çay içebilir miyiz?", "ru": "В антракте можно выпить чаю?" }
+        ]},
+        { "speaker": "b", "tr": "Altıncı sıra, ortada. Gelin… Yeriniz burası.", "ru": "Шестой ряд, в середине. Пойдёмте… Вот ваше место.", "distractors": [
+          { "tr": "İki saat. Bir saat sonra on beş dakika ara var.", "ru": "Два часа. Через час — антракт пятнадцать минут." },
+          { "tr": "Evet, kafe aşağıda, vestiyerin yanında. İyi seyirler!", "ru": "Да, кафе внизу, рядом с гардеробом. Приятного просмотра!" }
+        ]},
+        { "speaker": "a", "tr": "Ne güzel, sahne çok yakın! Oyun kaç saat sürüyor?", "ru": "Как здорово, сцена совсем близко! Сколько часов идёт спектакль?", "distractors": [
+          { "tr": "Arada çay içebilir miyiz?", "ru": "В антракте можно выпить чаю?" },
+          { "tr": "Aşağıda, merdivenlerin yanında.", "ru": "Внизу, рядом с лестницей." }
+        ]},
+        { "speaker": "b", "tr": "İki saat. Bir saat sonra on beş dakika ara var.", "ru": "Два часа. Через час — антракт пятнадцать минут.", "distractors": [
+          { "tr": "Aşağıda, merdivenlerin yanında.", "ru": "Внизу, рядом с лестницей." },
+          { "tr": "Evet, kafe aşağıda, vestiyerin yanında. İyi seyirler!", "ru": "Да, кафе внизу, рядом с гардеробом. Приятного просмотра!" }
+        ]},
+        { "speaker": "a", "tr": "Arada çay içebilir miyiz?", "ru": "В антракте можно выпить чаю?", "distractors": [
+          { "tr": "Tabii, buyurun. Biletinizi görebilir miyim?", "ru": "Конечно, пожалуйста. Можно ваш билет?" },
+          { "tr": "Buyurun. Bu yerler nerede? Arkadaşım da geliyor.", "ru": "Пожалуйста. Где находятся эти места? Подруга тоже сейчас подойдёт." }
+        ]},
+        { "speaker": "b", "tr": "Evet, kafe aşağıda, vestiyerin yanında. İyi seyirler!", "ru": "Да, кафе внизу, рядом с гардеробом. Приятного просмотра!", "distractors": [
+          { "tr": "Teşekkürler. Bir program alabilir miyim lütfen?", "ru": "Спасибо. Можно программку?" },
+          { "tr": "Ne güzel, sahne çok yakın! Oyun kaç saat sürüyor?", "ru": "Как здорово, сцена совсем близко! Сколько часов идёт спектакль?" }
+        ]}
+      ]
+    },
+    {
+      "id": "razvl-plaj-deniz",
+      "title": "Бодрум: на какой пляж?",
+      "level": "A1",
+      "speakers": { "a": "Ольга", "b": "Дениз" },
+      "turns": [
+        { "speaker": "a", "tr": "Deniz, bugün nerede yüzmeye gidebiliriz? Gümbet çok kalabalık.", "ru": "Дениз, куда мы сегодня можем поехать поплавать? В Гюмбете слишком много народу.", "distractors": [
+          { "tr": "Evet, kumlu. Deniz çok sakin, dalga yok.", "ru": "Да, песчаный. Море очень спокойное, волн нет." },
+          { "tr": "Plajda güzel bir balık lokantası var. Akşam Gümbet'e dönüyoruz.", "ru": "На пляже есть хороший рыбный ресторанчик. А вечером возвращаемся в Гюмбет." }
+        ]},
+        { "speaker": "b", "tr": "Bitez'e gidelim. Arabayla on dakika.", "ru": "Поехали в Битез. На машине десять минут.", "distractors": [
+          { "tr": "Belki biraz. Öğlen nerede yemek yiyoruz?", "ru": "Может, немного. А где будем обедать?" },
+          { "tr": "Ben yüzeceğim, sonra biraz uyuyacağım! Sen de yüzecek misin?", "ru": "Я буду плавать, а потом немного посплю! А ты будешь купаться?" }
+        ]},
+        { "speaker": "a", "tr": "Plaj kumlu mu? Taşlarda yürümeyi sevmiyorum.", "ru": "Пляж песчаный? Не люблю ходить по камням.", "distractors": [
+          { "tr": "Belki biraz. Öğlen nerede yemek yiyoruz?", "ru": "Может, немного. А где будем обедать?" },
+          { "tr": "Plajda güzel bir balık lokantası var. Akşam Gümbet'e dönüyoruz.", "ru": "На пляже есть хороший рыбный ресторанчик. А вечером возвращаемся в Гюмбет." }
+        ]},
+        { "speaker": "b", "tr": "Evet, kumlu. Deniz çok sakin, dalga yok.", "ru": "Да, песчаный. Море очень спокойное, волн нет.", "distractors": [
+          { "tr": "Belki biraz. Öğlen nerede yemek yiyoruz?", "ru": "Может, немного. А где будем обедать?" },
+          { "tr": "Ben yüzeceğim, sonra biraz uyuyacağım! Sen de yüzecek misin?", "ru": "Я буду плавать, а потом немного посплю! А ты будешь купаться?" }
+        ]},
+        { "speaker": "a", "tr": "Harika! Ben kitabımı alıyorum. Sen ne yapacaksın?", "ru": "Отлично! Я беру книжку. А ты что будешь делать?", "distractors": [
+          { "tr": "Bitez'e gidelim. Arabayla on dakika.", "ru": "Поехали в Битез. На машине десять минут." },
+          { "tr": "Belki biraz. Öğlen nerede yemek yiyoruz?", "ru": "Может, немного. А где будем обедать?" }
+        ]},
+        { "speaker": "b", "tr": "Ben yüzeceğim, sonra biraz uyuyacağım! Sen de yüzecek misin?", "ru": "Я буду плавать, а потом немного посплю! А ты будешь купаться?", "distractors": [
+          { "tr": "Bitez'e gidelim. Arabayla on dakika.", "ru": "Поехали в Битез. На машине десять минут." },
+          { "tr": "Tamam. Güneş kremi, şapka, havlu… Hazırım!", "ru": "Хорошо. Крем от солнца, шляпа, полотенце… Я готова!" }
+        ]},
+        { "speaker": "a", "tr": "Belki biraz. Öğlen nerede yemek yiyoruz?", "ru": "Может, немного. А где будем обедать?", "distractors": [
+          { "tr": "Deniz, bugün nerede yüzmeye gidebiliriz? Gümbet çok kalabalık.", "ru": "Дениз, куда мы сегодня можем поехать поплавать? В Гюмбете слишком много народу." },
+          { "tr": "Evet, kumlu. Deniz çok sakin, dalga yok.", "ru": "Да, песчаный. Море очень спокойное, волн нет." }
+        ]},
+        { "speaker": "b", "tr": "Plajda güzel bir balık lokantası var. Akşam Gümbet'e dönüyoruz.", "ru": "На пляже есть хороший рыбный ресторанчик. А вечером возвращаемся в Гюмбет.", "distractors": [
+          { "tr": "Evet, kumlu. Deniz çok sakin, dalga yok.", "ru": "Да, песчаный. Море очень спокойное, волн нет." },
+          { "tr": "Harika! Ben kitabımı alıyorum. Sen ne yapacaksın?", "ru": "Отлично! Я беру книжку. А ты что будешь делать?" }
+        ]},
+        { "speaker": "a", "tr": "Tamam. Güneş kremi, şapka, havlu… Hazırım!", "ru": "Хорошо. Крем от солнца, шляпа, полотенце… Я готова!", "distractors": [
+          { "tr": "Ben yüzeceğim, sonra biraz uyuyacağım! Sen de yüzecek misin?", "ru": "Я буду плавать, а потом немного посплю! А ты будешь купаться?" },
+          { "tr": "Deniz, bugün nerede yüzmeye gidebiliriz? Gümbet çok kalabalık.", "ru": "Дениз, куда мы сегодня можем поехать поплавать? В Гюмбете слишком много народу." }
+        ]},
+        { "speaker": "b", "tr": "Hadi, gidelim!", "ru": "Давай, поехали!", "distractors": [
+          { "tr": "Belki biraz. Öğlen nerede yemek yiyoruz?", "ru": "Может, немного. А где будем обедать?" },
+          { "tr": "Plajda güzel bir balık lokantası var. Akşam Gümbet'e dönüyoruz.", "ru": "На пляже есть хороший рыбный ресторанчик. А вечером возвращаемся в Гюмбет." }
+        ]}
+      ]
+    },
+    {
+      "id": "razvl-plaj-kiralama",
+      "title": "Битез: шезлонги и прокат",
+      "level": "A2",
+      "speakers": { "a": "Ольга", "b": "Экрем" },
+      "turns": [
+        { "speaker": "b", "tr": "Günaydın! Şezlong ister misiniz?", "ru": "Доброе утро! Хотите шезлонг?", "distractors": [
+          { "tr": "Hayır, hiç yapmadım. Saati ne kadar?", "ru": "Нет, ни разу. Сколько это стоит в час?" },
+          { "tr": "Tabii. Şezlonglarınız şurada, ön sırada. İyi eğlenceler!", "ru": "Конечно. Ваши шезлонги вон там, в первом ряду. Хорошего отдыха!" }
+        ]},
+        { "speaker": "a", "tr": "Evet, iki şezlong lütfen. Bir güneş şemsiyesi kiralayabilir miyim?", "ru": "Да, два шезлонга, пожалуйста. Можно взять напрокат тент?", "distractors": [
+          { "tr": "Evet, iskelenin yanında. Motorbot da, sandal da var. Hiç su kayağı yaptınız mı?", "ru": "Да, у причала. Есть и моторная лодка, и шлюпка. Вы когда-нибудь катались на водных лыжах?" },
+          { "tr": "Güzel, bir maske alıyorum. Kartla ödeyebilir miyim?", "ru": "Здорово, беру маску. Можно заплатить картой?" }
+        ]},
+        { "speaker": "b", "tr": "Tabii. İki şezlong ve bir şemsiye, günlük üç yüz lira.", "ru": "Конечно. Два шезлонга и тент — триста лир за день.", "distractors": [
+          { "tr": "Evet, iskelenin yanında. Motorbot da, sandal da var. Hiç su kayağı yaptınız mı?", "ru": "Да, у причала. Есть и моторная лодка, и шлюпка. Вы когда-нибудь катались на водных лыжах?" },
+          { "tr": "Su kayağı yarım saat beş yüz lira. Sandalın saati iki yüz.", "ru": "Водные лыжи — пятьсот лир за полчаса. Шлюпка — двести в час." }
+        ]},
+        { "speaker": "a", "tr": "Tamam. Burada su kayağı yapabilir miyiz?", "ru": "Хорошо. Можно здесь покататься на водных лыжах?", "distractors": [
+          { "tr": "Su kayağı yarım saat beş yüz lira. Sandalın saati iki yüz.", "ru": "Водные лыжи — пятьсот лир за полчаса. Шлюпка — двести в час." },
+          { "tr": "Maske ve şnorkel var, günlük yüz lira. Kayaların yanında çok balık var.", "ru": "Есть маска и трубка, сто лир в день. У скал много рыбы." }
+        ]},
+        { "speaker": "b", "tr": "Evet, iskelenin yanında. Motorbot da, sandal da var. Hiç su kayağı yaptınız mı?", "ru": "Да, у причала. Есть и моторная лодка, и шлюпка. Вы когда-нибудь катались на водных лыжах?", "distractors": [
+          { "tr": "Maske ve şnorkel var, günlük yüz lira. Kayaların yanında çok balık var.", "ru": "Есть маска и трубка, сто лир в день. У скал много рыбы." },
+          { "tr": "Tabii. Şezlonglarınız şurada, ön sırada. İyi eğlenceler!", "ru": "Конечно. Ваши шезлонги вон там, в первом ряду. Хорошего отдыха!" }
+        ]},
+        { "speaker": "a", "tr": "Hayır, hiç yapmadım. Saati ne kadar?", "ru": "Нет, ни разу. Сколько это стоит в час?", "distractors": [
+          { "tr": "Maske ve şnorkel var, günlük yüz lira. Kayaların yanında çok balık var.", "ru": "Есть маска и трубка, сто лир в день. У скал много рыбы." },
+          { "tr": "Tabii. İki şezlong ve bir şemsiye, günlük üç yüz lira.", "ru": "Конечно. Два шезлонга и тент — триста лир за день." }
+        ]},
+        { "speaker": "b", "tr": "Su kayağı yarım saat beş yüz lira. Sandalın saati iki yüz.", "ru": "Водные лыжи — пятьсот лир за полчаса. Шлюпка — двести в час.", "distractors": [
+          { "tr": "Tamam. Burada su kayağı yapabilir miyiz?", "ru": "Хорошо. Можно здесь покататься на водных лыжах?" },
+          { "tr": "Tabii. İki şezlong ve bir şemsiye, günlük üç yüz lira.", "ru": "Конечно. Два шезлонга и тент — триста лир за день." }
+        ]},
+        { "speaker": "a", "tr": "Sandal daha kolay! Dalış malzemesi kiralayabilir miyim?", "ru": "Шлюпка попроще! Можно взять напрокат оборудование для подводного плавания?", "distractors": [
+          { "tr": "Günaydın! Şezlong ister misiniz?", "ru": "Доброе утро! Хотите шезлонг?" },
+          { "tr": "Hayır, hiç yapmadım. Saati ne kadar?", "ru": "Нет, ни разу. Сколько это стоит в час?" }
+        ]},
+        { "speaker": "b", "tr": "Maske ve şnorkel var, günlük yüz lira. Kayaların yanında çok balık var.", "ru": "Есть маска и трубка, сто лир в день. У скал много рыбы.", "distractors": [
+          { "tr": "Günaydın! Şezlong ister misiniz?", "ru": "Доброе утро! Хотите шезлонг?" },
+          { "tr": "Tabii. Şezlonglarınız şurada, ön sırada. İyi eğlenceler!", "ru": "Конечно. Ваши шезлонги вон там, в первом ряду. Хорошего отдыха!" }
+        ]},
+        { "speaker": "a", "tr": "Güzel, bir maske alıyorum. Kartla ödeyebilir miyim?", "ru": "Здорово, беру маску. Можно заплатить картой?", "distractors": [
+          { "tr": "Tabii. İki şezlong ve bir şemsiye, günlük üç yüz lira.", "ru": "Конечно. Два шезлонга и тент — триста лир за день." },
+          { "tr": "Evet, iskelenin yanında. Motorbot da, sandal da var. Hiç su kayağı yaptınız mı?", "ru": "Да, у причала. Есть и моторная лодка, и шлюпка. Вы когда-нибудь катались на водных лыжах?" }
+        ]},
+        { "speaker": "b", "tr": "Tabii. Şezlonglarınız şurada, ön sırada. İyi eğlenceler!", "ru": "Конечно. Ваши шезлонги вон там, в первом ряду. Хорошего отдыха!", "distractors": [
+          { "tr": "Tabii. İki şezlong ve bir şemsiye, günlük üç yüz lira.", "ru": "Конечно. Два шезлонга и тент — триста лир за день." },
+          { "tr": "Evet, iskelenin yanında. Motorbot da, sandal da var. Hiç su kayağı yaptınız mı?", "ru": "Да, у причала. Есть и моторная лодка, и шлюпка. Вы когда-нибудь катались на водных лыжах?" }
+        ]}
+      ]
+    },
+    {
+      "id": "razvl-plaj-koy",
+      "title": "Бухта под Датчей: где купаться",
+      "level": "A2",
+      "speakers": { "a": "Ольга", "b": "Шевкет" },
+      "turns": [
+        { "speaker": "a", "tr": "Affedersiniz, burada yüzmek güvenli mi?", "ru": "Извините, здесь безопасно плавать?", "distractors": [
+          { "tr": "Çok teşekkürler!", "ru": "Большое спасибо!" },
+          { "tr": "Şu küçük plajda güvenli, orası sığ ve sakin. İyi bir yüzücü müsünüz?", "ru": "Вон на том маленьком пляже безопасно, там мелко и спокойно. Вы хорошо плаваете?" }
+        ]},
+        { "speaker": "b", "tr": "Hayır, burada güçlü bir akıntı var. Burası çok derin.", "ru": "Нет, здесь сильное течение. Тут очень глубоко.", "distractors": [
+          { "tr": "Bence gerekmiyor, burada herkes iskeleden oltayla tutuyor. Hiç balık tuttunuz mu?", "ru": "По-моему, не нужно — здесь все ловят удочкой с причала. Вы когда-нибудь ловили рыбу?" },
+          { "tr": "Köyde bir market var, orada olta da satıyorlar.", "ru": "В деревне есть магазин, там продают и удочки." }
+        ]},
+        { "speaker": "a", "tr": "Anladım. Peki, bu körfezde denize girmek güvenli mi?", "ru": "Понятно. А в этом заливе вообще безопасно купаться?", "distractors": [
+          { "tr": "Köyde bir market var, orada olta da satıyorlar.", "ru": "В деревне есть магазин, там продают и удочки." },
+          { "tr": "Tabii. Bir de, yarın sabah balığa gitmek istiyorum. Bir izin gerekiyor mu?", "ru": "Конечно. И ещё: завтра утром я хочу порыбачить. Мне нужно разрешение?" }
+        ]},
+        { "speaker": "b", "tr": "Şu küçük plajda güvenli, orası sığ ve sakin. İyi bir yüzücü müsünüz?", "ru": "Вон на том маленьком пляже безопасно, там мелко и спокойно. Вы хорошо плаваете?", "distractors": [
+          { "tr": "Bence gerekmiyor, burada herkes iskeleden oltayla tutuyor. Hiç balık tuttunuz mu?", "ru": "По-моему, не нужно — здесь все ловят удочкой с причала. Вы когда-нибудь ловили рыбу?" },
+          { "tr": "Köyde bir market var, orada olta da satıyorlar.", "ru": "В деревне есть магазин, там продают и удочки." }
+        ]},
+        { "speaker": "a", "tr": "Fena değil, ama erkek arkadaşım benden daha iyi yüzer. Cankurtaran var mı?", "ru": "Неплохо, но мой молодой человек плавает лучше меня. Там есть спасатели?", "distractors": [
+          { "tr": "Anladım. Peki, bu körfezde denize girmek güvenli mi?", "ru": "Понятно. А в этом заливе вообще безопасно купаться?" },
+          { "tr": "Bence gerekmiyor, burada herkes iskeleden oltayla tutuyor. Hiç balık tuttunuz mu?", "ru": "По-моему, не нужно — здесь все ловят удочкой с причала. Вы когда-нибудь ловили рыбу?" }
+        ]},
+        { "speaker": "b", "tr": "Yok, burası küçük bir köy. Dikkatli olun, Allah korusun!", "ru": "Нет, это маленькая деревня. Будьте осторожны, не дай бог что!", "distractors": [
+          { "tr": "Hayır, burada güçlü bir akıntı var. Burası çok derin.", "ru": "Нет, здесь сильное течение. Тут очень глубоко." },
+          { "tr": "Anladım. Peki, bu körfezde denize girmek güvenli mi?", "ru": "Понятно. А в этом заливе вообще безопасно купаться?" }
+        ]},
+        { "speaker": "a", "tr": "Tabii. Bir de, yarın sabah balığa gitmek istiyorum. Bir izin gerekiyor mu?", "ru": "Конечно. И ещё: завтра утром я хочу порыбачить. Мне нужно разрешение?", "distractors": [
+          { "tr": "Hayır, ilk defa! Oltayı nereden alabilirim?", "ru": "Нет, первый раз! Где можно купить удочку?" },
+          { "tr": "Fena değil, ama erkek arkadaşım benden daha iyi yüzer. Cankurtaran var mı?", "ru": "Неплохо, но мой молодой человек плавает лучше меня. Там есть спасатели?" }
+        ]},
+        { "speaker": "b", "tr": "Bence gerekmiyor, burada herkes iskeleden oltayla tutuyor. Hiç balık tuttunuz mu?", "ru": "По-моему, не нужно — здесь все ловят удочкой с причала. Вы когда-нибудь ловили рыбу?", "distractors": [
+          { "tr": "Köyde bir market var, orada olta da satıyorlar.", "ru": "В деревне есть магазин, там продают и удочки." },
+          { "tr": "Çok teşekkürler!", "ru": "Большое спасибо!" }
+        ]},
+        { "speaker": "a", "tr": "Hayır, ilk defa! Oltayı nereden alabilirim?", "ru": "Нет, первый раз! Где можно купить удочку?", "distractors": [
+          { "tr": "Çok teşekkürler!", "ru": "Большое спасибо!" },
+          { "tr": "Yok, burası küçük bir köy. Dikkatli olun, Allah korusun!", "ru": "Нет, это маленькая деревня. Будьте осторожны, не дай бог что!" }
+        ]},
+        { "speaker": "b", "tr": "Köyde bir market var, orada olta da satıyorlar.", "ru": "В деревне есть магазин, там продают и удочки.", "distractors": [
+          { "tr": "Fena değil, ama erkek arkadaşım benden daha iyi yüzer. Cankurtaran var mı?", "ru": "Неплохо, но мой молодой человек плавает лучше меня. Там есть спасатели?" },
+          { "tr": "Affedersiniz, burada yüzmek güvenli mi?", "ru": "Извините, здесь безопасно плавать?" }
+        ]},
+        { "speaker": "a", "tr": "Çok teşekkürler!", "ru": "Большое спасибо!", "distractors": [
+          { "tr": "Hayır, ilk defa! Oltayı nereden alabilirim?", "ru": "Нет, первый раз! Где можно купить удочку?" },
+          { "tr": "Tabii. Bir de, yarın sabah balığa gitmek istiyorum. Bir izin gerekiyor mu?", "ru": "Конечно. И ещё: завтра утром я хочу порыбачить. Мне нужно разрешение?" }
+        ]},
+        { "speaker": "b", "tr": "Rica ederim. Rast gele!", "ru": "Не за что. Ни хвоста ни чешуи!", "distractors": [
+          { "tr": "Hayır, ilk defa! Oltayı nereden alabilirim?", "ru": "Нет, первый раз! Где можно купить удочку?" },
+          { "tr": "Fena değil, ama erkek arkadaşım benden daha iyi yüzer. Cankurtaran var mı?", "ru": "Неплохо, но мой молодой человек плавает лучше меня. Там есть спасатели?" }
+        ]}
+      ]
+    },
+    {
+      "id": "razvl-spor-mac-plan",
+      "title": "Дениз: идём на футбол",
+      "level": "A2",
+      "speakers": { "a": "Ольга", "b": "Дениз" },
+      "turns": [
+        { "speaker": "a", "tr": "Deniz, bir futbol maçına gitmek istiyorum. Hiç gitmedim!", "ru": "Дениз, я хочу сходить посмотреть футбольный матч. Ни разу не была!", "distractors": [
+          { "tr": "Ne zaman başlıyor?", "ru": "Когда начало?" },
+          { "tr": "Saat dörtte. Biletleri internetten alıyorum. Sen hangi takımı tutuyorsun?", "ru": "В четыре. Билеты куплю в интернете. А ты за какую команду болеешь?" }
+        ]},
+        { "speaker": "b", "tr": "Gerçekten mi? Pazar günü büyük bir maç var.", "ru": "Правда? В воскресенье как раз большой матч.", "distractors": [
+          { "tr": "Ne zaman başlıyor?", "ru": "Когда начало?" },
+          { "tr": "Kadıköy'de, senin evinin yakınında. Yürüyerek gidebiliriz.", "ru": "В Кадыкёе, недалеко от твоего дома. Можем дойти пешком." }
+        ]},
+        { "speaker": "a", "tr": "Kim oynuyor?", "ru": "Кто играет?", "distractors": [
+          { "tr": "Kadıköy'de, senin evinin yakınında. Yürüyerek gidebiliriz.", "ru": "В Кадыкёе, недалеко от твоего дома. Можем дойти пешком." },
+          { "tr": "Olmaz, bir takım seçmelisin! Pazar günü sarı-lacivert giy!", "ru": "Так нельзя, надо выбрать одну команду! В воскресенье надевай жёлто-синее!" }
+        ]},
+        { "speaker": "b", "tr": "Fenerbahçe ve Trabzonspor.", "ru": "«Фенербахче» и «Трабзонспор».", "distractors": [
+          { "tr": "Ne zaman başlıyor?", "ru": "Когда начало?" },
+          { "tr": "Olmaz, bir takım seçmelisin! Pazar günü sarı-lacivert giy!", "ru": "Так нельзя, надо выбрать одну команду! В воскресенье надевай жёлто-синее!" }
+        ]},
+        { "speaker": "a", "tr": "Trabzon! Geçen yaz oraya gittim. Stadyum nerede?", "ru": "Трабзон! Я была там прошлым летом. Где находится стадион?", "distractors": [
+          { "tr": "Tamam, tamam! Yerler güneşte mi, gölgede mi?", "ru": "Ладно, ладно! Места в тени или на солнце?" },
+          { "tr": "Kim oynuyor?", "ru": "Кто играет?" }
+        ]},
+        { "speaker": "b", "tr": "Kadıköy'de, senin evinin yakınında. Yürüyerek gidebiliriz.", "ru": "В Кадыкёе, недалеко от твоего дома. Можем дойти пешком.", "distractors": [
+          { "tr": "Gerçekten mi? Pazar günü büyük bir maç var.", "ru": "Правда? В воскресенье как раз большой матч." },
+          { "tr": "Saat dörtte. Biletleri internetten alıyorum. Sen hangi takımı tutuyorsun?", "ru": "В четыре. Билеты куплю в интернете. А ты за какую команду болеешь?" }
+        ]},
+        { "speaker": "a", "tr": "Ne zaman başlıyor?", "ru": "Когда начало?", "distractors": [
+          { "tr": "Trabzon! Geçen yaz oraya gittim. Stadyum nerede?", "ru": "Трабзон! Я была там прошлым летом. Где находится стадион?" },
+          { "tr": "Deniz, bir futbol maçına gitmek istiyorum. Hiç gitmedim!", "ru": "Дениз, я хочу сходить посмотреть футбольный матч. Ни разу не была!" }
+        ]},
+        { "speaker": "b", "tr": "Saat dörtte. Biletleri internetten alıyorum. Sen hangi takımı tutuyorsun?", "ru": "В четыре. Билеты куплю в интернете. А ты за какую команду болеешь?", "distractors": [
+          { "tr": "Gölgede, merak etme. İnşallah kazanırız!", "ru": "В тени, не волнуйся. Даст бог, выиграем!" },
+          { "tr": "Deniz, bir futbol maçına gitmek istiyorum. Hiç gitmedim!", "ru": "Дениз, я хочу сходить посмотреть футбольный матч. Ни разу не была!" }
+        ]},
+        { "speaker": "a", "tr": "Bilmiyorum! Kadıköy'de yaşıyorum, o zaman Fenerbahçe. Ama Trabzon'u da seviyorum…", "ru": "Не знаю! Живу в Кадыкёе — значит, за «Фенербахче». Но Трабзон я тоже люблю…", "distractors": [
+          { "tr": "Fenerbahçe ve Trabzonspor.", "ru": "«Фенербахче» и «Трабзонспор»." },
+          { "tr": "Gerçekten mi? Pazar günü büyük bir maç var.", "ru": "Правда? В воскресенье как раз большой матч." }
+        ]},
+        { "speaker": "b", "tr": "Olmaz, bir takım seçmelisin! Pazar günü sarı-lacivert giy!", "ru": "Так нельзя, надо выбрать одну команду! В воскресенье надевай жёлто-синее!", "distractors": [
+          { "tr": "Trabzon! Geçen yaz oraya gittim. Stadyum nerede?", "ru": "Трабзон! Я была там прошлым летом. Где находится стадион?" },
+          { "tr": "Deniz, bir futbol maçına gitmek istiyorum. Hiç gitmedim!", "ru": "Дениз, я хочу сходить посмотреть футбольный матч. Ни разу не была!" }
+        ]},
+        { "speaker": "a", "tr": "Tamam, tamam! Yerler güneşte mi, gölgede mi?", "ru": "Ладно, ладно! Места в тени или на солнце?", "distractors": [
+          { "tr": "Kim oynuyor?", "ru": "Кто играет?" },
+          { "tr": "Ne zaman başlıyor?", "ru": "Когда начало?" }
+        ]},
+        { "speaker": "b", "tr": "Gölgede, merak etme. İnşallah kazanırız!", "ru": "В тени, не волнуйся. Даст бог, выиграем!", "distractors": [
+          { "tr": "Trabzon! Geçen yaz oraya gittim. Stadyum nerede?", "ru": "Трабзон! Я была там прошлым летом. Где находится стадион?" },
+          { "tr": "Fenerbahçe ve Trabzonspor.", "ru": "«Фенербахче» и «Трабзонспор»." }
+        ]}
+      ]
+    },
+    {
+      "id": "razvl-spor-stadyum",
+      "title": "На стадионе: какой счёт?",
+      "level": "A2",
+      "speakers": { "a": "Ольга", "b": "Дениз" },
+      "turns": [
+        { "speaker": "a", "tr": "Deniz, geldim! Su ve simit aldım. Skor ne?", "ru": "Дениз, я вернулась! Купила воду и симиты. Какой счёт?", "distractors": [
+          { "tr": "Goool! Üç-bir!", "ru": "Го-о-ол! Три — один!" },
+          { "tr": "Tabii, gelirim! Ama sen simitleri alırsın.", "ru": "Конечно, пойду! Но симиты тогда покупаешь ты." }
+        ]},
+        { "speaker": "b", "tr": "İki-bir! Sen yokken iki gol oldu.", "ru": "Два — один! Пока тебя не было, забили два гола.", "distractors": [
+          { "tr": "O yeni oyuncumuz, Brezilyalı. İyi oynuyor, değil mi? Bak, top onda!", "ru": "Это наш новый игрок, бразилец. Хорошо играет, правда? Смотри, мяч у него!" },
+          { "tr": "Ben sana söyledim! Gelecek maça da gelir misin?", "ru": "Я же тебе говорил! На следующий матч тоже пойдёшь?" }
+        ]},
+        { "speaker": "a", "tr": "Eyvah, ben hiçbirini görmedim! Kim kazanıyor?", "ru": "Ой, я ни одного не видела! Кто выигрывает?", "distractors": [
+          { "tr": "Goool! Üç-bir!", "ru": "Го-о-ол! Три — один!" },
+          { "tr": "O yeni oyuncumuz, Brezilyalı. İyi oynuyor, değil mi? Bak, top onda!", "ru": "Это наш новый игрок, бразилец. Хорошо играет, правда? Смотри, мяч у него!" }
+        ]},
+        { "speaker": "b", "tr": "Biz, Fenerbahçe! Ama daha yirmi dakika var.", "ru": "Мы, «Фенербахче»! Но ещё двадцать минут.", "distractors": [
+          { "tr": "O yeni oyuncumuz, Brezilyalı. İyi oynuyor, değil mi? Bak, top onda!", "ru": "Это наш новый игрок, бразилец. Хорошо играет, правда? Смотри, мяч у него!" },
+          { "tr": "Ben sana söyledim! Gelecek maça da gelir misin?", "ru": "Я же тебе говорил! На следующий матч тоже пойдёшь?" }
+        ]},
+        { "speaker": "a", "tr": "Şu oyuncu kim? Çok hızlı koşuyor.", "ru": "Кто вон тот игрок? Он очень быстро бегает.", "distractors": [
+          { "tr": "Harika! Futbolu sevmeye başladım!", "ru": "Здорово! Кажется, я начинаю любить футбол!" },
+          { "tr": "Gol mü? Gol mü?", "ru": "Гол? Это гол?" }
+        ]},
+        { "speaker": "b", "tr": "O yeni oyuncumuz, Brezilyalı. İyi oynuyor, değil mi? Bak, top onda!", "ru": "Это наш новый игрок, бразилец. Хорошо играет, правда? Смотри, мяч у него!", "distractors": [
+          { "tr": "Ben sana söyledim! Gelecek maça da gelir misin?", "ru": "Я же тебе говорил! На следующий матч тоже пойдёшь?" },
+          { "tr": "İki-bir! Sen yokken iki gol oldu.", "ru": "Два — один! Пока тебя не было, забили два гола." }
+        ]},
+        { "speaker": "a", "tr": "Gol mü? Gol mü?", "ru": "Гол? Это гол?", "distractors": [
+          { "tr": "Biz, Fenerbahçe! Ama daha yirmi dakika var.", "ru": "Мы, «Фенербахче»! Но ещё двадцать минут." },
+          { "tr": "Deniz, geldim! Su ve simit aldım. Skor ne?", "ru": "Дениз, я вернулась! Купила воду и симиты. Какой счёт?" }
+        ]},
+        { "speaker": "b", "tr": "Goool! Üç-bir!", "ru": "Го-о-ол! Три — один!", "distractors": [
+          { "tr": "Eyvah, ben hiçbirini görmedim! Kim kazanıyor?", "ru": "Ой, я ни одного не видела! Кто выигрывает?" },
+          { "tr": "Tabii, gelirim! Ama sen simitleri alırsın.", "ru": "Конечно, пойду! Но симиты тогда покупаешь ты." }
+        ]},
+        { "speaker": "a", "tr": "Harika! Futbolu sevmeye başladım!", "ru": "Здорово! Кажется, я начинаю любить футбол!", "distractors": [
+          { "tr": "O yeni oyuncumuz, Brezilyalı. İyi oynuyor, değil mi? Bak, top onda!", "ru": "Это наш новый игрок, бразилец. Хорошо играет, правда? Смотри, мяч у него!" },
+          { "tr": "İki-bir! Sen yokken iki gol oldu.", "ru": "Два — один! Пока тебя не было, забили два гола." }
+        ]},
+        { "speaker": "b", "tr": "Ben sana söyledim! Gelecek maça da gelir misin?", "ru": "Я же тебе говорил! На следующий матч тоже пойдёшь?", "distractors": [
+          { "tr": "Goool! Üç-bir!", "ru": "Го-о-ол! Три — один!" },
+          { "tr": "Deniz, geldim! Su ve simit aldım. Skor ne?", "ru": "Дениз, я вернулась! Купила воду и симиты. Какой счёт?" }
+        ]},
+        { "speaker": "a", "tr": "Tabii, gelirim! Ama sen simitleri alırsın.", "ru": "Конечно, пойду! Но симиты тогда покупаешь ты.", "distractors": [
+          { "tr": "Harika! Futbolu sevmeye başladım!", "ru": "Здорово! Кажется, я начинаю любить футбол!" },
+          { "tr": "İki-bir! Sen yokken iki gol oldu.", "ru": "Два — один! Пока тебя не было, забили два гола." }
+        ]}
+      ]
+    },
+    {
+      "id": "razvl-spor-merkezi",
+      "title": "Спортцентр: бассейн и корт",
+      "level": "A2",
+      "speakers": { "a": "Ольга", "b": "Невин" },
+      "turns": [
+        { "speaker": "a", "tr": "Affedersiniz, burada bir yüzme havuzu var mı?", "ru": "Извините, здесь есть плавательный бассейн?", "distractors": [
+          { "tr": "Var, su yirmi yedi derece. Siz üye misiniz?", "ru": "С подогревом, вода двадцать семь градусов. Вы у нас состоите?" },
+          { "tr": "Tamam, pazar saat dokuz, iki numaralı kort.", "ru": "Хорошо, воскресенье, девять часов, корт номер два." }
+        ]},
+        { "speaker": "b", "tr": "Evet, var. Alt katta.", "ru": "Да, есть. На нижнем этаже.", "distractors": [
+          { "tr": "Gerçekten mi? Saatlik ücret ne kadar?", "ru": "Правда? Сколько стоит час?" },
+          { "tr": "Saati dört yüz lira. Raketiniz var mı?", "ru": "Четыреста лир в час. У вас есть ракетка?" }
+        ]},
+        { "speaker": "a", "tr": "Kapalı mı, açık mı?", "ru": "Он закрытый или открытый?", "distractors": [
+          { "tr": "Saati dört yüz lira. Raketiniz var mı?", "ru": "Четыреста лир в час. У вас есть ракетка?" },
+          { "tr": "Hayır. Raket kiralayabilir miyim?", "ru": "Нет. Можно взять напрокат ракетки?" }
+        ]},
+        { "speaker": "b", "tr": "Kapalı. Kışın da yüzebilirsiniz.", "ru": "Закрытый. Плавать можно и зимой.", "distractors": [
+          { "tr": "Var, su yirmi yedi derece. Siz üye misiniz?", "ru": "С подогревом, вода двадцать семь градусов. Вы у нас состоите?" },
+          { "tr": "Tabii, tanesi elli lira. Hangi gün istiyorsunuz?", "ru": "Конечно, пятьдесят лир за штуку. На какой день хотите?" }
+        ]},
+        { "speaker": "a", "tr": "Isıtması var mı? Soğuk suyu hiç sevmem.", "ru": "Он с подогревом? Терпеть не могу холодную воду.", "distractors": [
+          { "tr": "Bizim de kortumuz var, bahçede!", "ru": "У нас тоже есть корт, во дворе!" },
+          { "tr": "Hayır, değilim. Günlük ücret ne kadar?", "ru": "Нет. Сколько стоит день?" }
+        ]},
+        { "speaker": "b", "tr": "Var, su yirmi yedi derece. Siz üye misiniz?", "ru": "С подогревом, вода двадцать семь градусов. Вы у нас состоите?", "distractors": [
+          { "tr": "Havuz için günlük yüz elli lira.", "ru": "Бассейн — сто пятьдесят лир в день." },
+          { "tr": "Kapalı. Kışın da yüzebilirsiniz.", "ru": "Закрытый. Плавать можно и зимой." }
+        ]},
+        { "speaker": "a", "tr": "Hayır, değilim. Günlük ücret ne kadar?", "ru": "Нет. Сколько стоит день?", "distractors": [
+          { "tr": "Hayır. Raket kiralayabilir miyim?", "ru": "Нет. Можно взять напрокат ракетки?" },
+          { "tr": "Pazar sabahı, dokuzda. Cumartesi kursum var.", "ru": "На воскресенье, в девять утра. В субботу у меня курсы." }
+        ]},
+        { "speaker": "b", "tr": "Havuz için günlük yüz elli lira.", "ru": "Бассейн — сто пятьдесят лир в день.", "distractors": [
+          { "tr": "Evet, var. Alt katta.", "ru": "Да, есть. На нижнем этаже." },
+          { "tr": "Hayır. Raket kiralayabilir miyim?", "ru": "Нет. Можно взять напрокат ракетки?" }
+        ]},
+        { "speaker": "a", "tr": "Tamam. Bir de, en yakın tenis kortu nerede? Arkadaşımla oynamak istiyorum.", "ru": "Хорошо. И ещё: где ближайший теннисный корт? Хочу поиграть с подругой.", "distractors": [
+          { "tr": "Hayır, değilim. Günlük ücret ne kadar?", "ru": "Нет. Сколько стоит день?" },
+          { "tr": "Kapalı mı, açık mı?", "ru": "Он закрытый или открытый?" }
+        ]},
+        { "speaker": "b", "tr": "Bizim de kortumuz var, bahçede!", "ru": "У нас тоже есть корт, во дворе!", "distractors": [
+          { "tr": "Hayır. Raket kiralayabilir miyim?", "ru": "Нет. Можно взять напрокат ракетки?" },
+          { "tr": "Var, su yirmi yedi derece. Siz üye misiniz?", "ru": "С подогревом, вода двадцать семь градусов. Вы у нас состоите?" }
+        ]},
+        { "speaker": "a", "tr": "Gerçekten mi? Saatlik ücret ne kadar?", "ru": "Правда? Сколько стоит час?", "distractors": [
+          { "tr": "Tamam, pazar saat dokuz, iki numaralı kort.", "ru": "Хорошо, воскресенье, девять часов, корт номер два." },
+          { "tr": "Kapalı. Kışın da yüzebilirsiniz.", "ru": "Закрытый. Плавать можно и зимой." }
+        ]},
+        { "speaker": "b", "tr": "Saati dört yüz lira. Raketiniz var mı?", "ru": "Четыреста лир в час. У вас есть ракетка?", "distractors": [
+          { "tr": "Hayır, değilim. Günlük ücret ne kadar?", "ru": "Нет. Сколько стоит день?" },
+          { "tr": "Affedersiniz, burada bir yüzme havuzu var mı?", "ru": "Извините, здесь есть плавательный бассейн?" }
+        ]},
+        { "speaker": "a", "tr": "Hayır. Raket kiralayabilir miyim?", "ru": "Нет. Можно взять напрокат ракетки?", "distractors": [
+          { "tr": "Gerçekten mi? Saatlik ücret ne kadar?", "ru": "Правда? Сколько стоит час?" },
+          { "tr": "Havuz için günlük yüz elli lira.", "ru": "Бассейн — сто пятьдесят лир в день." }
+        ]},
+        { "speaker": "b", "tr": "Tabii, tanesi elli lira. Hangi gün istiyorsunuz?", "ru": "Конечно, пятьдесят лир за штуку. На какой день хотите?", "distractors": [
+          { "tr": "Evet, var. Alt katta.", "ru": "Да, есть. На нижнем этаже." },
+          { "tr": "Kapalı. Kışın da yüzebilirsiniz.", "ru": "Закрытый. Плавать можно и зимой." }
+        ]},
+        { "speaker": "a", "tr": "Pazar sabahı, dokuzda. Cumartesi kursum var.", "ru": "На воскресенье, в девять утра. В субботу у меня курсы.", "distractors": [
+          { "tr": "Havuz için günlük yüz elli lira.", "ru": "Бассейн — сто пятьдесят лир в день." },
+          { "tr": "Evet, var. Alt katta.", "ru": "Да, есть. На нижнем этаже." }
+        ]},
+        { "speaker": "b", "tr": "Tamam, pazar saat dokuz, iki numaralı kort.", "ru": "Хорошо, воскресенье, девять часов, корт номер два.", "distractors": [
+          { "tr": "Isıtması var mı? Soğuk suyu hiç sevmem.", "ru": "Он с подогревом? Терпеть не могу холодную воду." },
+          { "tr": "Kapalı. Kışın da yüzebilirsiniz.", "ru": "Закрытый. Плавать можно и зимой." }
+        ]}
+      ]
+    },
+    {
+      "id": "razvl-konser-leyla",
+      "title": "Лейла: два билета на концерт",
+      "level": "A2",
+      "speakers": { "a": "Ольга", "b": "Лейла" },
+      "turns": [
+        { "speaker": "b", "tr": "Olga, müjde! Cumartesi akşamı için iki konser biletim var!", "ru": "Ольга, хорошая новость! У меня два билета на концерт в субботу вечером!", "distractors": [
+          { "tr": "Vapurla Karaköy'e, sonra metroyla.", "ru": "На пароходе до Каракёя, потом на метро." },
+          { "tr": "Açıkhava, akşam serin olur. Bir hırka al. İnşallah yağmur yağmaz!", "ru": "Театр под открытым небом, вечером будет прохладно. Возьми кофту. Даст бог, дождя не будет!" }
+        ]},
+        { "speaker": "a", "tr": "Harika! Kim şarkı söylüyor?", "ru": "Здорово! Кто поёт?", "distractors": [
+          { "tr": "Hayır, bu benim hediyem. Sen bana küpe aldın, unuttun mu?", "ru": "Нет, это мой подарок. Ты же подарила мне серьги, забыла?" },
+          { "tr": "Vapurla Karaköy'e, sonra metroyla.", "ru": "На пароходе до Каракёя, потом на метро." }
+        ]},
+        { "speaker": "b", "tr": "Sezen Aksu! Harbiye Açıkhava'da.", "ru": "Сезен Аксу! В открытом театре в Харбие.", "distractors": [
+          { "tr": "Açıkhava, akşam serin olur. Bir hırka al. İnşallah yağmur yağmaz!", "ru": "Театр под открытым небом, вечером будет прохладно. Возьми кофту. Даст бог, дождя не будет!" },
+          { "tr": "İnşallah! Bütün hafta Sezen Aksu dinleyeceğim!", "ru": "Даст бог! Всю неделю буду слушать Сезен Аксу!" }
+        ]},
+        { "speaker": "a", "tr": "Senin favori şarkıcın! Biletler ne kadar? Ben de ödemek istiyorum.", "ru": "Твоя любимая певица! Почём билеты? Я тоже хочу заплатить.", "distractors": [
+          { "tr": "Vapurla Karaköy'e, sonra metroyla.", "ru": "На пароходе до Каракёя, потом на метро." },
+          { "tr": "Karaköy'ü iyi biliyorum, ofisim orada! Ne giyelim?", "ru": "Каракёй я хорошо знаю, там мой офис! Что наденем?" }
+        ]},
+        { "speaker": "b", "tr": "Hayır, bu benim hediyem. Sen bana küpe aldın, unuttun mu?", "ru": "Нет, это мой подарок. Ты же подарила мне серьги, забыла?", "distractors": [
+          { "tr": "Olga, müjde! Cumartesi akşamı için iki konser biletim var!", "ru": "Ольга, хорошая новость! У меня два билета на концерт в субботу вечером!" },
+          { "tr": "Açıkhava, akşam serin olur. Bir hırka al. İnşallah yağmur yağmaz!", "ru": "Театр под открытым небом, вечером будет прохладно. Возьми кофту. Даст бог, дождя не будет!" }
+        ]},
+        { "speaker": "a", "tr": "Çok tatlısın! Konser saat kaçta?", "ru": "Ты такая милая! Во сколько концерт?", "distractors": [
+          { "tr": "Vapurla Karaköy'e, sonra metroyla.", "ru": "На пароходе до Каракёя, потом на метро." },
+          { "tr": "Senin favori şarkıcın! Biletler ne kadar? Ben de ödemek istiyorum.", "ru": "Твоя любимая певица! Почём билеты? Я тоже хочу заплатить." }
+        ]},
+        { "speaker": "b", "tr": "Dokuzda başlıyor. Önce yemek yiyelim mi?", "ru": "Начало в девять. Сначала поужинаем?", "distractors": [
+          { "tr": "Sezen Aksu! Harbiye Açıkhava'da.", "ru": "Сезен Аксу! В открытом театре в Харбие." },
+          { "tr": "Harika! Kim şarkı söylüyor?", "ru": "Здорово! Кто поёт?" }
+        ]},
+        { "speaker": "a", "tr": "Olur. Harbiye'ye nasıl gidiyoruz?", "ru": "Давай. А как мы доберёмся до Харбие?", "distractors": [
+          { "tr": "İnşallah! Bütün hafta Sezen Aksu dinleyeceğim!", "ru": "Даст бог! Всю неделю буду слушать Сезен Аксу!" },
+          { "tr": "Açıkhava, akşam serin olur. Bir hırka al. İnşallah yağmur yağmaz!", "ru": "Театр под открытым небом, вечером будет прохладно. Возьми кофту. Даст бог, дождя не будет!" }
+        ]},
+        { "speaker": "b", "tr": "Vapurla Karaköy'e, sonra metroyla.", "ru": "На пароходе до Каракёя, потом на метро.", "distractors": [
+          { "tr": "Açıkhava, akşam serin olur. Bir hırka al. İnşallah yağmur yağmaz!", "ru": "Театр под открытым небом, вечером будет прохладно. Возьми кофту. Даст бог, дождя не будет!" },
+          { "tr": "Dokuzda başlıyor. Önce yemek yiyelim mi?", "ru": "Начало в девять. Сначала поужинаем?" }
+        ]},
+        { "speaker": "a", "tr": "Karaköy'ü iyi biliyorum, ofisim orada! Ne giyelim?", "ru": "Каракёй я хорошо знаю, там мой офис! Что наденем?", "distractors": [
+          { "tr": "Sezen Aksu! Harbiye Açıkhava'da.", "ru": "Сезен Аксу! В открытом театре в Харбие." },
+          { "tr": "Harika! Kim şarkı söylüyor?", "ru": "Здорово! Кто поёт?" }
+        ]},
+        { "speaker": "b", "tr": "Açıkhava, akşam serin olur. Bir hırka al. İnşallah yağmur yağmaz!", "ru": "Театр под открытым небом, вечером будет прохладно. Возьми кофту. Даст бог, дождя не будет!", "distractors": [
+          { "tr": "Harika! Kim şarkı söylüyor?", "ru": "Здорово! Кто поёт?" },
+          { "tr": "Olur. Harbiye'ye nasıl gidiyoruz?", "ru": "Давай. А как мы доберёмся до Харбие?" }
+        ]},
+        { "speaker": "a", "tr": "İnşallah! Bütün hafta Sezen Aksu dinleyeceğim!", "ru": "Даст бог! Всю неделю буду слушать Сезен Аксу!", "distractors": [
+          { "tr": "Dokuzda başlıyor. Önce yemek yiyelim mi?", "ru": "Начало в девять. Сначала поужинаем?" },
+          { "tr": "Olga, müjde! Cumartesi akşamı için iki konser biletim var!", "ru": "Ольга, хорошая новость! У меня два билета на концерт в субботу вечером!" }
+        ]}
+      ]
+    },
+    {
+      "id": "razvl-konser-betul",
+      "title": "Бетюль советует концерт",
+      "level": "A2",
+      "speakers": { "a": "Ольга", "b": "Бетюль" },
+      "turns": [
+        { "speaker": "a", "tr": "Betül Hanım, siz klasik müzik seversiniz, değil mi? Bir konser tavsiye edebilir misiniz?", "ru": "Бетюль-ханым, вы ведь любите классическую музыку? Можете порекомендовать, на какой концерт сходить?", "distractors": [
+          { "tr": "Hangi eseri çalıyorlar?", "ru": "Что играют?" },
+          { "tr": "Harbiye'de, Açıkhava'nın yakınında.", "ru": "В Харбие, рядом с открытым театром." }
+        ]},
+        { "speaker": "b", "tr": "Tabii! Cuma akşamı Cemal Reşit Rey'de güzel bir konser var.", "ru": "Конечно! В пятницу вечером в зале Джемаль Решит Рей хороший концерт.", "distractors": [
+          { "tr": "Harbiye'de, Açıkhava'nın yakınında.", "ru": "В Харбие, рядом с открытым театром." },
+          { "tr": "Çok güzel. İyi dinlemeler!", "ru": "Прекрасно. Приятного вечера!" }
+        ]},
+        { "speaker": "a", "tr": "Hangi orkestra çalıyor?", "ru": "Какой оркестр играет?", "distractors": [
+          { "tr": "Rahmaninov'un ikinci piyano konçertosu. Rus müziğini seversiniz, değil mi?", "ru": "Второй фортепианный концерт Рахманинова. Вы ведь любите русскую музыку?" },
+          { "tr": "Çok güzel. İyi dinlemeler!", "ru": "Прекрасно. Приятного вечера!" }
+        ]},
+        { "speaker": "b", "tr": "Borusan Filarmoni. Çok iyi bir orkestra.", "ru": "Филармония «Борусан». Очень хороший оркестр.", "distractors": [
+          { "tr": "Biliyorum, orada Leyla'yla konsere gittim. Annemle cuma günü gideceğim!", "ru": "Знаю, я была там на концерте с Лейлой. Пойду в пятницу с мамой!" },
+          { "tr": "Rahmaninov'un ikinci piyano konçertosu. Rus müziğini seversiniz, değil mi?", "ru": "Второй фортепианный концерт Рахманинова. Вы ведь любите русскую музыку?" }
+        ]},
+        { "speaker": "a", "tr": "Hangi eseri çalıyorlar?", "ru": "Что играют?", "distractors": [
+          { "tr": "Genç bir Türk piyanist. Geçen yıl dinledim, harikaydı.", "ru": "Молодой турецкий пианист. Я слушала его в прошлом году, было чудесно." },
+          { "tr": "Harbiye'de, Açıkhava'nın yakınında.", "ru": "В Харбие, рядом с открытым театром." }
+        ]},
+        { "speaker": "b", "tr": "Rahmaninov'un ikinci piyano konçertosu. Rus müziğini seversiniz, değil mi?", "ru": "Второй фортепианный концерт Рахманинова. Вы ведь любите русскую музыку?", "distractors": [
+          { "tr": "Biliyorum, orada Leyla'yla konsere gittim. Annemle cuma günü gideceğim!", "ru": "Знаю, я была там на концерте с Лейлой. Пойду в пятницу с мамой!" },
+          { "tr": "Hangi orkestra çalıyor?", "ru": "Какой оркестр играет?" }
+        ]},
+        { "speaker": "a", "tr": "Çok severim! Annem de çok sever. Solist kim?", "ru": "Очень люблю! И мама тоже очень любит. Кто солирует?", "distractors": [
+          { "tr": "Harbiye'de, Açıkhava'nın yakınında.", "ru": "В Харбие, рядом с открытым театром." },
+          { "tr": "Konser salonu nerede?", "ru": "Где находится концертный зал?" }
+        ]},
+        { "speaker": "b", "tr": "Genç bir Türk piyanist. Geçen yıl dinledim, harikaydı.", "ru": "Молодой турецкий пианист. Я слушала его в прошлом году, было чудесно.", "distractors": [
+          { "tr": "Harbiye'de, Açıkhava'nın yakınında.", "ru": "В Харбие, рядом с открытым театром." },
+          { "tr": "Hangi eseri çalıyorlar?", "ru": "Что играют?" }
+        ]},
+        { "speaker": "a", "tr": "Konser salonu nerede?", "ru": "Где находится концертный зал?", "distractors": [
+          { "tr": "Borusan Filarmoni. Çok iyi bir orkestra.", "ru": "Филармония «Борусан». Очень хороший оркестр." },
+          { "tr": "Çok güzel. İyi dinlemeler!", "ru": "Прекрасно. Приятного вечера!" }
+        ]},
+        { "speaker": "b", "tr": "Harbiye'de, Açıkhava'nın yakınında.", "ru": "В Харбие, рядом с открытым театром.", "distractors": [
+          { "tr": "Hangi eseri çalıyorlar?", "ru": "Что играют?" },
+          { "tr": "Betül Hanım, siz klasik müzik seversiniz, değil mi? Bir konser tavsiye edebilir misiniz?", "ru": "Бетюль-ханым, вы ведь любите классическую музыку? Можете порекомендовать, на какой концерт сходить?" }
+        ]},
+        { "speaker": "a", "tr": "Biliyorum, orada Leyla'yla konsere gittim. Annemle cuma günü gideceğim!", "ru": "Знаю, я была там на концерте с Лейлой. Пойду в пятницу с мамой!", "distractors": [
+          { "tr": "Genç bir Türk piyanist. Geçen yıl dinledim, harikaydı.", "ru": "Молодой турецкий пианист. Я слушала его в прошлом году, было чудесно." },
+          { "tr": "Hangi eseri çalıyorlar?", "ru": "Что играют?" }
+        ]},
+        { "speaker": "b", "tr": "Çok güzel. İyi dinlemeler!", "ru": "Прекрасно. Приятного вечера!", "distractors": [
+          { "tr": "Borusan Filarmoni. Çok iyi bir orkestra.", "ru": "Филармония «Борусан». Очень хороший оркестр." },
+          { "tr": "Hangi orkestra çalıyor?", "ru": "Какой оркестр играет?" }
+        ]}
+      ]
+    },
+    {
+      "id": "razvl-bale-kasa",
+      "title": "Касса оперы: балет для мамы",
+      "level": "A2",
+      "speakers": { "a": "Ольга", "b": "Бельгин" },
+      "turns": [
+        { "speaker": "a", "tr": "İyi günler. Bu akşam operada ne var?", "ru": "Добрый день. Что дают в опере сегодня вечером?", "distractors": [
+          { "tr": "Yarın da dolu. Opera mı istiyorsunuz, bale mi?", "ru": "Завтра тоже всё занято. Вам оперу или балет?" },
+          { "tr": "Dördüncü sıra, ortada. Program da ister misiniz?", "ru": "Четвёртый ряд, в середине. Программку тоже хотите?" }
+        ]},
+        { "speaker": "b", "tr": "Bu akşam «Carmen» var, ama maalesef bilet kalmadı.", "ru": "Сегодня «Кармен», но, к сожалению, билетов уже нет.", "distractors": [
+          { "tr": "Cumartesi akşamı. Salonda iki yer, lütfen, ön sıralarda.", "ru": "На субботу вечером. Два места в партере, пожалуйста, в первых рядах." },
+          { "tr": "Evet, lütfen. Annem çok mutlu olacak!", "ru": "Да, пожалуйста. Мама будет очень рада!" }
+        ]},
+        { "speaker": "a", "tr": "Yarın akşam için yer var mı?", "ru": "А на завтрашний вечер места есть?", "distractors": [
+          { "tr": "«Kuğu Gölü» var, Çaykovski'nin eseri. Anneniz Rus mu?", "ru": "Есть «Лебединое озеро», Чайковский. Ваша мама русская?" },
+          { "tr": "Cumartesi akşamı. Salonda iki yer, lütfen, ön sıralarda.", "ru": "На субботу вечером. Два места в партере, пожалуйста, в первых рядах." }
+        ]},
+        { "speaker": "b", "tr": "Yarın da dolu. Opera mı istiyorsunuz, bale mi?", "ru": "Завтра тоже всё занято. Вам оперу или балет?", "distractors": [
+          { "tr": "«Kuğu Gölü» var, Çaykovski'nin eseri. Anneniz Rus mu?", "ru": "Есть «Лебединое озеро», Чайковский. Ваша мама русская?" },
+          { "tr": "Evet, lütfen. Annem çok mutlu olacak!", "ru": "Да, пожалуйста. Мама будет очень рада!" }
+        ]},
+        { "speaker": "a", "tr": "Aslında annem için bakıyorum, Moskova'dan geliyor. Bir bale tavsiye edebilir misiniz?", "ru": "Вообще-то я ищу для мамы, она приезжает из Москвы. Можете порекомендовать, на какой балет сходить?", "distractors": [
+          { "tr": "Yarın akşam için yer var mı?", "ru": "А на завтрашний вечер места есть?" },
+          { "tr": "Salon beş yüz, balkon üç yüz lira. Hangi gün istiyorsunuz?", "ru": "Партер — пятьсот, балкон — триста лир. На какой день хотите?" }
+        ]},
+        { "speaker": "b", "tr": "«Kuğu Gölü» var, Çaykovski'nin eseri. Anneniz Rus mu?", "ru": "Есть «Лебединое озеро», Чайковский. Ваша мама русская?", "distractors": [
+          { "tr": "Yarın da dolu. Opera mı istiyorsunuz, bale mi?", "ru": "Завтра тоже всё занято. Вам оперу или балет?" },
+          { "tr": "Salondaki yerler ne kadar?", "ru": "Почём места в партере?" }
+        ]},
+        { "speaker": "a", "tr": "Evet, baleyi çok sever. Kim dans ediyor?", "ru": "Да, она очень любит балет. Кто танцует?", "distractors": [
+          { "tr": "Yarın akşam için yer var mı?", "ru": "А на завтрашний вечер места есть?" },
+          { "tr": "Aslında annem için bakıyorum, Moskova'dan geliyor. Bir bale tavsiye edebilir misiniz?", "ru": "Вообще-то я ищу для мамы, она приезжает из Москвы. Можете порекомендовать, на какой балет сходить?" }
+        ]},
+        { "speaker": "b", "tr": "Devlet Balesi. Baş balerin çok genç ve çok iyi.", "ru": "Государственный балет. Прима очень молодая и очень хорошая.", "distractors": [
+          { "tr": "Aslında annem için bakıyorum, Moskova'dan geliyor. Bir bale tavsiye edebilir misiniz?", "ru": "Вообще-то я ищу для мамы, она приезжает из Москвы. Можете порекомендовать, на какой балет сходить?" },
+          { "tr": "«Kuğu Gölü» var, Çaykovski'nin eseri. Anneniz Rus mu?", "ru": "Есть «Лебединое озеро», Чайковский. Ваша мама русская?" }
+        ]},
+        { "speaker": "a", "tr": "Salondaki yerler ne kadar?", "ru": "Почём места в партере?", "distractors": [
+          { "tr": "Bu akşam «Carmen» var, ama maalesef bilet kalmadı.", "ru": "Сегодня «Кармен», но, к сожалению, билетов уже нет." },
+          { "tr": "Dördüncü sıra, ortada. Program da ister misiniz?", "ru": "Четвёртый ряд, в середине. Программку тоже хотите?" }
+        ]},
+        { "speaker": "b", "tr": "Salon beş yüz, balkon üç yüz lira. Hangi gün istiyorsunuz?", "ru": "Партер — пятьсот, балкон — триста лир. На какой день хотите?", "distractors": [
+          { "tr": "Yarın akşam için yer var mı?", "ru": "А на завтрашний вечер места есть?" },
+          { "tr": "Dördüncü sıra, ortada. Program da ister misiniz?", "ru": "Четвёртый ряд, в середине. Программку тоже хотите?" }
+        ]},
+        { "speaker": "a", "tr": "Cumartesi akşamı. Salonda iki yer, lütfen, ön sıralarda.", "ru": "На субботу вечером. Два места в партере, пожалуйста, в первых рядах.", "distractors": [
+          { "tr": "Bu akşam «Carmen» var, ama maalesef bilet kalmadı.", "ru": "Сегодня «Кармен», но, к сожалению, билетов уже нет." },
+          { "tr": "Evet, baleyi çok sever. Kim dans ediyor?", "ru": "Да, она очень любит балет. Кто танцует?" }
+        ]},
+        { "speaker": "b", "tr": "Dördüncü sıra, ortada. Program da ister misiniz?", "ru": "Четвёртый ряд, в середине. Программку тоже хотите?", "distractors": [
+          { "tr": "Evet, baleyi çok sever. Kim dans ediyor?", "ru": "Да, она очень любит балет. Кто танцует?" },
+          { "tr": "Aslında annem için bakıyorum, Moskova'dan geliyor. Bir bale tavsiye edebilir misiniz?", "ru": "Вообще-то я ищу для мамы, она приезжает из Москвы. Можете порекомендовать, на какой балет сходить?" }
+        ]},
+        { "speaker": "a", "tr": "Evet, lütfen. Annem çok mutlu olacak!", "ru": "Да, пожалуйста. Мама будет очень рада!", "distractors": [
+          { "tr": "Devlet Balesi. Baş balerin çok genç ve çok iyi.", "ru": "Государственный балет. Прима очень молодая и очень хорошая." },
+          { "tr": "Salondaki yerler ne kadar?", "ru": "Почём места в партере?" }
+        ]}
+      ]
+    },
+    {
+      "id": "razvl-gece-otel",
+      "title": "Бодрум: куда пойти вечером",
+      "level": "A2",
+      "speakers": { "a": "Ольга", "b": "Берк" },
+      "turns": [
+        { "speaker": "a", "tr": "İyi akşamlar. İyi bir diskotek biliyor musunuz? Kız kardeşim dans etmeyi çok seviyor.", "ru": "Добрый вечер. Вы знаете какую-нибудь хорошую дискотеку? Моя сестра очень любит танцевать.", "distractors": [
+          { "tr": "Gümbet'ten biraz uzak. Size taksi çağırayım mı?", "ru": "От Гюмбета далековато. Вызвать вам такси?" },
+          { "tr": "Caz barda saat onda. Kulüpler gece yarısından sonra dolar.", "ru": "В джаз-баре в десять. А клубы заполняются после полуночи." }
+        ]},
+        { "speaker": "b", "tr": "Tabii! Barlar Sokağı'nda çok kulüp var. Gece çok kalabalık olur.", "ru": "Конечно! На Улице баров много клубов. Ночью там очень людно.", "distractors": [
+          { "tr": "Oraya nasıl gideriz? Yürüyerek mi?", "ru": "Как нам туда добраться? Пешком?" },
+          { "tr": "Tamam, Olga Hanım. İyi eğlenceler!", "ru": "Хорошо, Ольга-ханым. Хорошо вам повеселиться!" }
+        ]},
+        { "speaker": "a", "tr": "Burada iyi bir caz kulübü var mı? Ben cazı daha çok severim.", "ru": "А здесь есть хороший джазовый клуб? Я больше люблю джаз.", "distractors": [
+          { "tr": "Evet, lütfen, dokuz buçukta. Oda üç yüz beş.", "ru": "Да, пожалуйста, на половину десятого. Номер триста пять." },
+          { "tr": "Bilmiyorum! Önce caz, sonra diskotek. Gösteri ne zaman başlıyor?", "ru": "Не знаю! Сначала джаз, потом дискотека. Во сколько начинается шоу?" }
+        ]},
+        { "speaker": "b", "tr": "Evet, limanın yanında küçük bir caz barı var, canlı müzik çalıyorlar. Kız kardeşiniz cazı sever mi?", "ru": "Да, рядом с портом есть маленький джаз-бар, там играют живую музыку. А ваша сестра любит джаз?", "distractors": [
+          { "tr": "Evet, lütfen, dokuz buçukta. Oda üç yüz beş.", "ru": "Да, пожалуйста, на половину десятого. Номер триста пять." },
+          { "tr": "Tamam, Olga Hanım. İyi eğlenceler!", "ru": "Хорошо, Ольга-ханым. Хорошо вам повеселиться!" }
+        ]},
+        { "speaker": "a", "tr": "Bilmiyorum! Önce caz, sonra diskotek. Gösteri ne zaman başlıyor?", "ru": "Не знаю! Сначала джаз, потом дискотека. Во сколько начинается шоу?", "distractors": [
+          { "tr": "Evet, lütfen, dokuz buçukta. Oda üç yüz beş.", "ru": "Да, пожалуйста, на половину десятого. Номер триста пять." },
+          { "tr": "Tabii! Barlar Sokağı'nda çok kulüp var. Gece çok kalabalık olur.", "ru": "Конечно! На Улице баров много клубов. Ночью там очень людно." }
+        ]},
+        { "speaker": "b", "tr": "Caz barda saat onda. Kulüpler gece yarısından sonra dolar.", "ru": "В джаз-баре в десять. А клубы заполняются после полуночи.", "distractors": [
+          { "tr": "Evet, lütfen, dokuz buçukta. Oda üç yüz beş.", "ru": "Да, пожалуйста, на половину десятого. Номер триста пять." },
+          { "tr": "Tamam, Olga Hanım. İyi eğlenceler!", "ru": "Хорошо, Ольга-ханым. Хорошо вам повеселиться!" }
+        ]},
+        { "speaker": "a", "tr": "Oraya nasıl gideriz? Yürüyerek mi?", "ru": "Как нам туда добраться? Пешком?", "distractors": [
+          { "tr": "İyi akşamlar. İyi bir diskotek biliyor musunuz? Kız kardeşim dans etmeyi çok seviyor.", "ru": "Добрый вечер. Вы знаете какую-нибудь хорошую дискотеку? Моя сестра очень любит танцевать." },
+          { "tr": "Tabii! Barlar Sokağı'nda çok kulüp var. Gece çok kalabalık olur.", "ru": "Конечно! На Улице баров много клубов. Ночью там очень людно." }
+        ]},
+        { "speaker": "b", "tr": "Gümbet'ten biraz uzak. Size taksi çağırayım mı?", "ru": "От Гюмбета далековато. Вызвать вам такси?", "distractors": [
+          { "tr": "Caz barda saat onda. Kulüpler gece yarısından sonra dolar.", "ru": "В джаз-баре в десять. А клубы заполняются после полуночи." },
+          { "tr": "Tamam, Olga Hanım. İyi eğlenceler!", "ru": "Хорошо, Ольга-ханым. Хорошо вам повеселиться!" }
+        ]},
+        { "speaker": "a", "tr": "Evet, lütfen, dokuz buçukta. Oda üç yüz beş.", "ru": "Да, пожалуйста, на половину десятого. Номер триста пять.", "distractors": [
+          { "tr": "Burada iyi bir caz kulübü var mı? Ben cazı daha çok severim.", "ru": "А здесь есть хороший джазовый клуб? Я больше люблю джаз." },
+          { "tr": "Caz barda saat onda. Kulüpler gece yarısından sonra dolar.", "ru": "В джаз-баре в десять. А клубы заполняются после полуночи." }
+        ]},
+        { "speaker": "b", "tr": "Tamam, Olga Hanım. İyi eğlenceler!", "ru": "Хорошо, Ольга-ханым. Хорошо вам повеселиться!", "distractors": [
+          { "tr": "Evet, limanın yanında küçük bir caz barı var, canlı müzik çalıyorlar. Kız kardeşiniz cazı sever mi?", "ru": "Да, рядом с портом есть маленький джаз-бар, там играют живую музыку. А ваша сестра любит джаз?" },
+          { "tr": "Tabii! Barlar Sokağı'nda çok kulüp var. Gece çok kalabalık olur.", "ru": "Конечно! На Улице баров много клубов. Ночью там очень людно." }
+        ]}
+      ]
+    },
+    {
+      "id": "razvl-gece-kulup",
+      "title": "В клубе: «потанцуем?»",
+      "level": "A1",
+      "speakers": { "a": "Ольга", "b": "Эргюн" },
+      "turns": [
+        { "speaker": "b", "tr": "İyi akşamlar! Dans etmek ister misiniz?", "ru": "Добрый вечер! Не хотите ли потанцевать?", "distractors": [
+          { "tr": "Gece yarısı. Dansçılar ve ateş gösterisi var. Kaçırmayın!", "ru": "В полночь. Будут танцоры и огненное шоу. Не пропустите!" },
+          { "tr": "Tamam! Ah, işte kız kardeşim geliyor. O dans etmeyi çok seviyor!", "ru": "Хорошо! О, вот и моя сестра идёт. Она очень любит танцевать!" }
+        ]},
+        { "speaker": "a", "tr": "Teşekkürler, ama biraz yoruldum. Kız kardeşimi bekliyorum.", "ru": "Спасибо, но я немного устала. Жду сестру.", "distractors": [
+          { "tr": "Türkçeniz çok iyi!", "ru": "У вас отличный турецкий!" },
+          { "tr": "Gece yarısı. Dansçılar ve ateş gösterisi var. Kaçırmayın!", "ru": "В полночь. Будут танцоры и огненное шоу. Не пропустите!" }
+        ]},
+        { "speaker": "b", "tr": "Anladım. Siz buralı değilsiniz, değil mi?", "ru": "Понятно. Вы ведь не местная?", "distractors": [
+          { "tr": "Gece yarısı. Dansçılar ve ateş gösterisi var. Kaçırmayın!", "ru": "В полночь. Будут танцоры и огненное шоу. Не пропустите!" },
+          { "tr": "Ona sorun, ama o Türkçe bilmiyor! İyi eğlenceler!", "ru": "Спросите её, но она не говорит по-турецки! Хорошо повеселиться!" }
+        ]},
+        { "speaker": "a", "tr": "Hayır, Rusum, ama İstanbul'da yaşıyorum. Şimdi tatildeyim.", "ru": "Нет, я русская, но живу в Стамбуле. Сейчас в отпуске.", "distractors": [
+          { "tr": "Teşekkürler, ama biraz yoruldum. Kız kardeşimi bekliyorum.", "ru": "Спасибо, но я немного устала. Жду сестру." },
+          { "tr": "Tamam! Ah, işte kız kardeşim geliyor. O dans etmeyi çok seviyor!", "ru": "Хорошо! О, вот и моя сестра идёт. Она очень любит танцевать!" }
+        ]},
+        { "speaker": "b", "tr": "Türkçeniz çok iyi!", "ru": "У вас отличный турецкий!", "distractors": [
+          { "tr": "Ona sorun, ama o Türkçe bilmiyor! İyi eğlenceler!", "ru": "Спросите её, но она не говорит по-турецки! Хорошо повеселиться!" },
+          { "tr": "Belki o dans etmek ister!", "ru": "Может быть, она захочет потанцевать!" }
+        ]},
+        { "speaker": "a", "tr": "Teşekkürler, hâlâ öğreniyorum. Atraksiyon ne zaman?", "ru": "Спасибо, я ещё учу. Во сколько начинается программа?", "distractors": [
+          { "tr": "Ona sorun, ama o Türkçe bilmiyor! İyi eğlenceler!", "ru": "Спросите её, но она не говорит по-турецки! Хорошо повеселиться!" },
+          { "tr": "Tamam! Ah, işte kız kardeşim geliyor. O dans etmeyi çok seviyor!", "ru": "Хорошо! О, вот и моя сестра идёт. Она очень любит танцевать!" }
+        ]},
+        { "speaker": "b", "tr": "Gece yarısı. Dansçılar ve ateş gösterisi var. Kaçırmayın!", "ru": "В полночь. Будут танцоры и огненное шоу. Не пропустите!", "distractors": [
+          { "tr": "Hayır, Rusum, ama İstanbul'da yaşıyorum. Şimdi tatildeyim.", "ru": "Нет, я русская, но живу в Стамбуле. Сейчас в отпуске." },
+          { "tr": "Teşekkürler, ama biraz yoruldum. Kız kardeşimi bekliyorum.", "ru": "Спасибо, но я немного устала. Жду сестру." }
+        ]},
+        { "speaker": "a", "tr": "Tamam! Ah, işte kız kardeşim geliyor. O dans etmeyi çok seviyor!", "ru": "Хорошо! О, вот и моя сестра идёт. Она очень любит танцевать!", "distractors": [
+          { "tr": "Teşekkürler, hâlâ öğreniyorum. Atraksiyon ne zaman?", "ru": "Спасибо, я ещё учу. Во сколько начинается программа?" },
+          { "tr": "Hayır, Rusum, ama İstanbul'da yaşıyorum. Şimdi tatildeyim.", "ru": "Нет, я русская, но живу в Стамбуле. Сейчас в отпуске." }
+        ]},
+        { "speaker": "b", "tr": "Belki o dans etmek ister!", "ru": "Может быть, она захочет потанцевать!", "distractors": [
+          { "tr": "Anladım. Siz buralı değilsiniz, değil mi?", "ru": "Понятно. Вы ведь не местная?" },
+          { "tr": "Türkçeniz çok iyi!", "ru": "У вас отличный турецкий!" }
+        ]},
+        { "speaker": "a", "tr": "Ona sorun, ama o Türkçe bilmiyor! İyi eğlenceler!", "ru": "Спросите её, но она не говорит по-турецки! Хорошо повеселиться!", "distractors": [
+          { "tr": "Anladım. Siz buralı değilsiniz, değil mi?", "ru": "Понятно. Вы ведь не местная?" },
+          { "tr": "Hayır, Rusum, ama İstanbul'da yaşıyorum. Şimdi tatildeyim.", "ru": "Нет, я русская, но живу в Стамбуле. Сейчас в отпуске." }
+        ]}
+      ]
+    }
+  ]
+}
