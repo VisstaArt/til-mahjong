@@ -10,6 +10,7 @@ görebili	1	Yarın akşam. Gözlüksüz görebiliyor musunuz?
 duyamı	1	Affedersiniz, sizi iyi duyamıyorum. Daha yüksek sesle konuşur musunuz lütfen?
 yakışı	1	Çok güzel! Mavi sana çok yakışıyor.
 benzemi	1	Evet! Aa, çok güzel! Sana hiç benzemiyor.
+soğu	1	Aferin kızım. Anneler bunu çok sever. Hadi, çayın soğuyor!
 edemi	1	Bir de priz bozuk. Telefonumu şarj edemiyorum. Tamir edebilir misiniz?
 yetişi	1	Eyvah! Vapura yetişiyor muyuz?
 öksürü	1	Biraz düştü. Şimdi kendimi daha iyi hissediyorum, ama hâlâ öksürüyorum. Sen nasılsın, iş nasıldı?

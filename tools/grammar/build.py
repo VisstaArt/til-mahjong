@@ -217,6 +217,9 @@ def match_proper(token):
     if not m:
         return None
     name, suf = m.group(1), m.group(2)
+    # Allah'a şükür, Allah'tan… — застывшие формулы (LEGEND.md, «Живая речь»), не падеж на тренировку.
+    if name == "Allah":
+        return None
     case = "abl" if suf.endswith("n") else ("loc" if suf[0] in "dt" else "dat")
     form = morph.noun_case(tr_lower(name), case, proper=True)
     if tr_lower(form.word) != tr_lower(token):

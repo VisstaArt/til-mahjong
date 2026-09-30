@@ -54,6 +54,10 @@ FALSE = {
     "pazar", "kira", "ara", "kiralık", "fakir", "sıra", "doktor", "sigara", "yüzde", "hazır",
     "tamam", "yılmaz", "bekarım", "memnunum", "yoksa", "yaramaz", "yetmiş", "müşteri",
     "dolmuş",
+    # Выражения с Allah из LEGEND.md («Живая речь») — формулы уровня A1–A2.
+    "inşallah", "maşallah", "şükür", "korusun", "kavuştursun", "bağışlasın", "ısmarladık",
+    "vallah", "vallahi", "göstermesin", "yardımcın", "mübarek", "etsin", "versin", "siftah",
+    "bereketi", "hayırlı", "şifasını", "rahatlık", "kolaylık", "emanet",
     # Застывшие формулы учатся целиком, как слово, — это A1, хоть форма и широкое время.
     "ederim", "dilerim", "görüşürüz", "ederiz", "affedersiniz",
 }
