@@ -1,0 +1,826 @@
+{
+  "id": "biznes-vstrechi-i-ofis",
+  "title": "Бизнес: встречи и офис",
+  "dialogues": [
+    {
+      "id": "biznes-ozge-pazartesi-toplantisi",
+      "title": "Озге: совещание по понедельникам",
+      "level": "B1",
+      "speakers": { "a": "Ольга", "b": "Озге" },
+      "turns": [
+        { "speaker": "b", "tr": "Günaydın, Olga Hanım. Bugün toplantı var diyorlar. Toplantı ne zaman?", "ru": "Доброе утро, Ольга-ханым. Говорят, сегодня собрание. Когда собрание?", "distractors": [
+          { "tr": "Hayır, bir üst katta. Sizin ilk pazartesi toplantınız, değil mi?", "ru": "Нет, этажом выше. Это ваше первое совещание по понедельникам, да?" },
+          { "tr": "Büyük toplantı odasında, kapısında \"Galata\" yazıyor. Pencereden Galata Kulesi görünüyor.", "ru": "В большой переговорной, на двери написано «Галата». Из окна видна Галатская башня." }
+        ]},
+        { "speaker": "a", "tr": "Saat onda. Her pazartesi Metin Bey'in yönettiği bir toplantı yapılır.", "ru": "В десять. Каждый понедельник проходит совещание, которое ведёт Метин-бей.", "distractors": [
+          { "tr": "Eyvah, bakmadım! Evet, işte burada: İzmir fuarı ve yeni katalog.", "ru": "Ой, не смотрела! Да, вот она: выставка в Измире и новый каталог." },
+          { "tr": "Çok rahatladım! Teşekkür ederim, Olga Hanım.", "ru": "У меня прямо отлегло! Спасибо, Ольга-ханым." }
+        ]},
+        { "speaker": "b", "tr": "Toplantı nerede? Burada, bizim katta mı?", "ru": "Где будет собрание? Здесь, на нашем этаже?", "distractors": [
+          { "tr": "Büyük toplantı odasında, kapısında \"Galata\" yazıyor. Pencereden Galata Kulesi görünüyor.", "ru": "В большой переговорной, на двери написано «Галата». Из окна видна Галатская башня." },
+          { "tr": "Gündemi Metin Bey cuma günü e-postayla gönderdi. Gelen kutunuza baktınız mı?", "ru": "Повестку Метин-бей прислал в пятницу по почте. Вы смотрели входящие?" }
+        ]},
+        { "speaker": "a", "tr": "Hayır, bir üst katta. Sizin ilk pazartesi toplantınız, değil mi?", "ru": "Нет, этажом выше. Это ваше первое совещание по понедельникам, да?", "distractors": [
+          { "tr": "Toplantının gündemi nedir? Bir şey hazırlamam gerekiyor mu?", "ru": "Какая повестка дня у собрания? Мне нужно что-то подготовить?" },
+          { "tr": "Günaydın, Olga Hanım. Bugün toplantı var diyorlar. Toplantı ne zaman?", "ru": "Доброе утро, Ольга-ханым. Говорят, сегодня собрание. Когда собрание?" }
+        ]},
+        { "speaker": "b", "tr": "Evet, biraz heyecanlıyım. Toplantı hangi odada?", "ru": "Да, немного волнуюсь. В какой комнате собрание?", "distractors": [
+          { "tr": "Eyvah, bakmadım! Evet, işte burada: İzmir fuarı ve yeni katalog.", "ru": "Ой, не смотрела! Да, вот она: выставка в Измире и новый каталог." },
+          { "tr": "Merak etmeyin, sizden sadece dinlemeniz bekleniyor. İlk toplantıda herkes öyle yapar.", "ru": "Не волнуйтесь, от вас ждут только, что вы будете слушать. На первом совещании все так делают." }
+        ]},
+        { "speaker": "a", "tr": "Büyük toplantı odasında, kapısında \"Galata\" yazıyor. Pencereden Galata Kulesi görünüyor.", "ru": "В большой переговорной, на двери написано «Галата». Из окна видна Галатская башня.", "distractors": [
+          { "tr": "Gündemi Metin Bey cuma günü e-postayla gönderdi. Gelen kutunuza baktınız mı?", "ru": "Повестку Метин-бей прислал в пятницу по почте. Вы смотрели входящие?" },
+          { "tr": "Toplantı nerede? Burada, bizim katta mı?", "ru": "Где будет собрание? Здесь, на нашем этаже?" }
+        ]},
+        { "speaker": "b", "tr": "Ne güzel! Toplantı ne kadar sürer?", "ru": "Как здорово! Сколько будет длиться собрание?", "distractors": [
+          { "tr": "Günaydın, Olga Hanım. Bugün toplantı var diyorlar. Toplantı ne zaman?", "ru": "Доброе утро, Ольга-ханым. Говорят, сегодня собрание. Когда собрание?" },
+          { "tr": "Eyvah, bakmadım! Evet, işte burada: İzmir fuarı ve yeni katalog.", "ru": "Ой, не смотрела! Да, вот она: выставка в Измире и новый каталог." }
+        ]},
+        { "speaker": "a", "tr": "Genellikle bir saat. Ama konuşulacak çok konu varsa, uzayabilir.", "ru": "Обычно час. Но если нужно обсудить много вопросов, может затянуться.", "distractors": [
+          { "tr": "Evet, biraz heyecanlıyım. Toplantı hangi odada?", "ru": "Да, немного волнуюсь. В какой комнате собрание?" },
+          { "tr": "Gündemi Metin Bey cuma günü e-postayla gönderdi. Gelen kutunuza baktınız mı?", "ru": "Повестку Метин-бей прислал в пятницу по почте. Вы смотрели входящие?" }
+        ]},
+        { "speaker": "b", "tr": "Toplantının gündemi nedir? Bir şey hazırlamam gerekiyor mu?", "ru": "Какая повестка дня у собрания? Мне нужно что-то подготовить?", "distractors": [
+          { "tr": "Hayır, bir üst katta. Sizin ilk pazartesi toplantınız, değil mi?", "ru": "Нет, этажом выше. Это ваше первое совещание по понедельникам, да?" },
+          { "tr": "Toplantı nerede? Burada, bizim katta mı?", "ru": "Где будет собрание? Здесь, на нашем этаже?" }
+        ]},
+        { "speaker": "a", "tr": "Gündemi Metin Bey cuma günü e-postayla gönderdi. Gelen kutunuza baktınız mı?", "ru": "Повестку Метин-бей прислал в пятницу по почте. Вы смотрели входящие?", "distractors": [
+          { "tr": "Merak etmeyin, sizden sadece dinlemeniz bekleniyor. İlk toplantıda herkes öyle yapar.", "ru": "Не волнуйтесь, от вас ждут только, что вы будете слушать. На первом совещании все так делают." },
+          { "tr": "Genellikle bir saat. Ama konuşulacak çok konu varsa, uzayabilir.", "ru": "Обычно час. Но если нужно обсудить много вопросов, может затянуться." }
+        ]},
+        { "speaker": "b", "tr": "Eyvah, bakmadım! Evet, işte burada: İzmir fuarı ve yeni katalog.", "ru": "Ой, не смотрела! Да, вот она: выставка в Измире и новый каталог.", "distractors": [
+          { "tr": "Büyük toplantı odasında, kapısında \"Galata\" yazıyor. Pencereden Galata Kulesi görünüyor.", "ru": "В большой переговорной, на двери написано «Галата». Из окна видна Галатская башня." },
+          { "tr": "Günaydın, Olga Hanım. Bugün toplantı var diyorlar. Toplantı ne zaman?", "ru": "Доброе утро, Ольга-ханым. Говорят, сегодня собрание. Когда собрание?" }
+        ]},
+        { "speaker": "a", "tr": "Merak etmeyin, sizden sadece dinlemeniz bekleniyor. İlk toplantıda herkes öyle yapar.", "ru": "Не волнуйтесь, от вас ждут только, что вы будете слушать. На первом совещании все так делают.", "distractors": [
+          { "tr": "Saat onda. Her pazartesi Metin Bey'in yönettiği bir toplantı yapılır.", "ru": "В десять. Каждый понедельник проходит совещание, которое ведёт Метин-бей." },
+          { "tr": "Büyük toplantı odasında, kapısında \"Galata\" yazıyor. Pencereden Galata Kulesi görünüyor.", "ru": "В большой переговорной, на двери написано «Галата». Из окна видна Галатская башня." }
+        ]},
+        { "speaker": "b", "tr": "Çok rahatladım! Teşekkür ederim, Olga Hanım.", "ru": "У меня прямо отлегло! Спасибо, Ольга-ханым.", "distractors": [
+          { "tr": "Büyük toplantı odasında, kapısında \"Galata\" yazıyor. Pencereden Galata Kulesi görünüyor.", "ru": "В большой переговорной, на двери написано «Галата». Из окна видна Галатская башня." },
+          { "tr": "Günaydın, Olga Hanım. Bugün toplantı var diyorlar. Toplantı ne zaman?", "ru": "Доброе утро, Ольга-ханым. Говорят, сегодня собрание. Когда собрание?" }
+        ]}
+      ]
+    },
+    {
+      "id": "biznes-toplanti-baslangic",
+      "title": "Совещание: начало и первый вопрос",
+      "level": "B1",
+      "speakers": { "a": "Ольга", "b": "Метин" },
+      "turns": [
+        { "speaker": "b", "tr": "Günaydın arkadaşlar. Herkes buradaysa, toplantıya başlayalım.", "ru": "Доброе утро, коллеги. Если все здесь, давайте начнём собрание.", "distractors": [
+          { "tr": "Haklısınız, bunu unutmuşuz. Herhangi bir önerisi olan var mı?", "ru": "Вы правы, мы об этом забыли. У кого-то есть предложения?" },
+          { "tr": "Çok iyi. Başka fikri olan var mı?", "ru": "Отлично. У кого-то есть другие идеи?" }
+        ]},
+        { "speaker": "a", "tr": "Günaydın, Metin Bey. Tuba beş dakika gecikecek, mesaj attı.", "ru": "Доброе утро, Метин-бей. Туба опоздает на пять минут, она написала.", "distractors": [
+          { "tr": "Size katılıyorum. Matbaayı bugün arayıp daha erken basılabilir mi, sorarım.", "ru": "Я согласна с вами. Сегодня позвоню в типографию и спрошу, можно ли напечатать раньше." },
+          { "tr": "Haklısınız, bunu unutmuşuz. Herhangi bir önerisi olan var mı?", "ru": "Вы правы, мы об этом забыли. У кого-то есть предложения?" }
+        ]},
+        { "speaker": "b", "tr": "Tamam, onu beklemeden başlayalım. İlk konu İzmir fuarı. Broşürler hazır mı?", "ru": "Хорошо, начнём, не дожидаясь её. Первый вопрос — выставка в Измире. Брошюры готовы?", "distractors": [
+          { "tr": "Tabii, buyurun.", "ru": "Конечно, пожалуйста." },
+          { "tr": "Çok iyi. Başka fikri olan var mı?", "ru": "Отлично. У кого-то есть другие идеи?" }
+        ]},
+        { "speaker": "a", "tr": "Tasarım hazır, ama broşürler henüz basılmadı. Matbaa cumaya kadar basacağını söyledi.", "ru": "Дизайн готов, но брошюры ещё не напечатаны. Типография сказала, что напечатает к пятнице.", "distractors": [
+          { "tr": "Bir soru sorabilir miyim?", "ru": "Можно задать вопрос?" },
+          { "tr": "Broşürler sadece Türkçe ve Rusça mı olacak? Alman müşterilerimiz de gelecekse, Almanca da lazım.", "ru": "Брошюры будут только на турецком и русском? Если приедут и наши немецкие клиенты, нужен и немецкий." }
+        ]},
+        { "speaker": "b", "tr": "Broşürleri İzmir'e de göndermemiz gerekiyor, cuma bence biraz geç. Bu konuda ne düşünüyorsunuz?", "ru": "Брошюры ещё нужно отправить в Измир, по-моему, пятница — поздновато. Что вы думаете об этом?", "distractors": [
+          { "tr": "Çok iyi. Başka fikri olan var mı?", "ru": "Отлично. У кого-то есть другие идеи?" },
+          { "tr": "Güzel fikir, ama önce fiyatını öğrenelim. Sanırım bir sonraki konuya geçebiliriz.", "ru": "Хорошая идея, но сначала узнаем цену. Думаю, мы можем перейти к следующему вопросу." }
+        ]},
+        { "speaker": "a", "tr": "Size katılıyorum. Matbaayı bugün arayıp daha erken basılabilir mi, sorarım.", "ru": "Я согласна с вами. Сегодня позвоню в типографию и спрошу, можно ли напечатать раньше.", "distractors": [
+          { "tr": "Bir ekleme yapmak istiyorum. Standda bir ekran olursa, yeni videomuzu da gösterebiliriz.", "ru": "Я хотела бы кое-что добавить. Если на стенде будет экран, мы сможем показывать и наше новое видео." },
+          { "tr": "Tamam, onu beklemeden başlayalım. İlk konu İzmir fuarı. Broşürler hazır mı?", "ru": "Хорошо, начнём, не дожидаясь её. Первый вопрос — выставка в Измире. Брошюры готовы?" }
+        ]},
+        { "speaker": "b", "tr": "Çok iyi. Başka fikri olan var mı?", "ru": "Отлично. У кого-то есть другие идеи?", "distractors": [
+          { "tr": "Tasarım hazır, ama broşürler henüz basılmadı. Matbaa cumaya kadar basacağını söyledi.", "ru": "Дизайн готов, но брошюры ещё не напечатаны. Типография сказала, что напечатает к пятнице." },
+          { "tr": "Broşürleri İzmir'e de göndermemiz gerekiyor, cuma bence biraz geç. Bu konuda ne düşünüyorsunuz?", "ru": "Брошюры ещё нужно отправить в Измир, по-моему, пятница — поздновато. Что вы думаете об этом?" }
+        ]},
+        { "speaker": "a", "tr": "Bir soru sorabilir miyim?", "ru": "Можно задать вопрос?", "distractors": [
+          { "tr": "Bir ekleme yapmak istiyorum. Standda bir ekran olursa, yeni videomuzu da gösterebiliriz.", "ru": "Я хотела бы кое-что добавить. Если на стенде будет экран, мы сможем показывать и наше новое видео." },
+          { "tr": "Güzel fikir, ama önce fiyatını öğrenelim. Sanırım bir sonraki konuya geçebiliriz.", "ru": "Хорошая идея, но сначала узнаем цену. Думаю, мы можем перейти к следующему вопросу." }
+        ]},
+        { "speaker": "b", "tr": "Tabii, buyurun.", "ru": "Конечно, пожалуйста.", "distractors": [
+          { "tr": "Günaydın arkadaşlar. Herkes buradaysa, toplantıya başlayalım.", "ru": "Доброе утро, коллеги. Если все здесь, давайте начнём собрание." },
+          { "tr": "Çok iyi. Başka fikri olan var mı?", "ru": "Отлично. У кого-то есть другие идеи?" }
+        ]},
+        { "speaker": "a", "tr": "Broşürler sadece Türkçe ve Rusça mı olacak? Alman müşterilerimiz de gelecekse, Almanca da lazım.", "ru": "Брошюры будут только на турецком и русском? Если приедут и наши немецкие клиенты, нужен и немецкий.", "distractors": [
+          { "tr": "Bir ekleme yapmak istiyorum. Standda bir ekran olursa, yeni videomuzu da gösterebiliriz.", "ru": "Я хотела бы кое-что добавить. Если на стенде будет экран, мы сможем показывать и наше новое видео." },
+          { "tr": "Tamam, onu beklemeden başlayalım. İlk konu İzmir fuarı. Broşürler hazır mı?", "ru": "Хорошо, начнём, не дожидаясь её. Первый вопрос — выставка в Измире. Брошюры готовы?" }
+        ]},
+        { "speaker": "b", "tr": "Haklısınız, bunu unutmuşuz. Herhangi bir önerisi olan var mı?", "ru": "Вы правы, мы об этом забыли. У кого-то есть предложения?", "distractors": [
+          { "tr": "Tamam, onu beklemeden başlayalım. İlk konu İzmir fuarı. Broşürler hazır mı?", "ru": "Хорошо, начнём, не дожидаясь её. Первый вопрос — выставка в Измире. Брошюры готовы?" },
+          { "tr": "Günaydın arkadaşlar. Herkes buradaysa, toplantıya başlayalım.", "ru": "Доброе утро, коллеги. Если все здесь, давайте начнём собрание." }
+        ]},
+        { "speaker": "a", "tr": "Bir ekleme yapmak istiyorum. Standda bir ekran olursa, yeni videomuzu da gösterebiliriz.", "ru": "Я хотела бы кое-что добавить. Если на стенде будет экран, мы сможем показывать и наше новое видео.", "distractors": [
+          { "tr": "Bir soru sorabilir miyim?", "ru": "Можно задать вопрос?" },
+          { "tr": "Tasarım hazır, ama broşürler henüz basılmadı. Matbaa cumaya kadar basacağını söyledi.", "ru": "Дизайн готов, но брошюры ещё не напечатаны. Типография сказала, что напечатает к пятнице." }
+        ]},
+        { "speaker": "b", "tr": "Güzel fikir, ama önce fiyatını öğrenelim. Sanırım bir sonraki konuya geçebiliriz.", "ru": "Хорошая идея, но сначала узнаем цену. Думаю, мы можем перейти к следующему вопросу.", "distractors": [
+          { "tr": "Bir soru sorabilir miyim?", "ru": "Можно задать вопрос?" },
+          { "tr": "Size katılıyorum. Matbaayı bugün arayıp daha erken basılabilir mi, sorarım.", "ru": "Я согласна с вами. Сегодня позвоню в типографию и спрошу, можно ли напечатать раньше." }
+        ]}
+      ]
+    },
+    {
+      "id": "biznes-toplanti-ozet",
+      "title": "Совещание: итоги и следующие шаги",
+      "level": "B1",
+      "speakers": { "a": "Ольга", "b": "Метин" },
+      "turns": [
+        { "speaker": "b", "tr": "Saat on bir oldu. Toplantıyı özetleyelim.", "ru": "Уже одиннадцать. Давайте подведём итоги собрания.", "distractors": [
+          { "tr": "Fotoğrafçının gönderdiği teklife göre on beş bin lira.", "ru": "По предложению, которое прислал фотограф, — пятнадцать тысяч лир." },
+          { "tr": "Ben fotoğrafçıyı arayıp çekim için bir gün ayarlarım. Bütçeyi siz onaylar mısınız?", "ru": "Я позвоню фотографу и договорюсь о дне съёмки. А бюджет утвердите вы?" }
+        ]},
+        { "speaker": "a", "tr": "Tamam. Fuar için broşürler üç dilde basılacak: Türkçe, Rusça ve Almanca.", "ru": "Хорошо. Брошюры для выставки напечатают на трёх языках: турецком, русском и немецком.", "distractors": [
+          { "tr": "Kabul. O zaman sonraki adımları belirleyelim.", "ru": "Согласен. Тогда давайте определим дальнейшие шаги." },
+          { "tr": "Ne yazık ki size katılmıyorum. Eski fotoğraflarda geçen yılın ürünleri var.", "ru": "К сожалению, я не согласна с вами. На старых фотографиях — товары прошлого года." }
+        ]},
+        { "speaker": "b", "tr": "Evet. Almanca metni kim hazırlayacak?", "ru": "Да. А кто подготовит немецкий текст?", "distractors": [
+          { "tr": "Ne yazık ki size katılmıyorum. Eski fotoğraflarda geçen yılın ürünleri var.", "ru": "К сожалению, я не согласна с вами. На старых фотографиях — товары прошлого года." },
+          { "tr": "Ben fotoğrafçıyı arayıp çekim için bir gün ayarlarım. Bütçeyi siz onaylar mısınız?", "ru": "Я позвоню фотографу и договорюсь о дне съёмки. А бюджет утвердите вы?" }
+        ]},
+        { "speaker": "a", "tr": "Özge Hanım hazırlayacak, Tuba da kontrol edecek.", "ru": "Озге-ханым, а Туба проверит.", "distractors": [
+          { "tr": "Ne yazık ki size katılmıyorum. Eski fotoğraflarda geçen yılın ürünleri var.", "ru": "К сожалению, я не согласна с вами. На старых фотографиях — товары прошлого года." },
+          { "tr": "Ben fotoğrafçıyı arayıp çekim için bir gün ayarlarım. Bütçeyi siz onaylar mısınız?", "ru": "Я позвоню фотографу и договорюсь о дне съёмки. А бюджет утвердите вы?" }
+        ]},
+        { "speaker": "b", "tr": "Güzel. Katalog için de eski fotoğrafları kullanalım. Hem ucuz, hem hızlı.", "ru": "Хорошо. А для каталога давайте возьмём старые фотографии. И дёшево, и быстро.", "distractors": [
+          { "tr": "Fotoğrafçının gönderdiği teklife göre on beş bin lira.", "ru": "По предложению, которое прислал фотограф, — пятнадцать тысяч лир." },
+          { "tr": "Tamam. Fuar için broşürler üç dilde basılacak: Türkçe, Rusça ve Almanca.", "ru": "Хорошо. Брошюры для выставки напечатают на трёх языках: турецком, русском и немецком." }
+        ]},
+        { "speaker": "a", "tr": "Ne yazık ki size katılmıyorum. Eski fotoğraflarda geçen yılın ürünleri var.", "ru": "К сожалению, я не согласна с вами. На старых фотографиях — товары прошлого года.", "distractors": [
+          { "tr": "Kabul. O zaman sonraki adımları belirleyelim.", "ru": "Согласен. Тогда давайте определим дальнейшие шаги." },
+          { "tr": "Evet. Almanca metni kim hazırlayacak?", "ru": "Да. А кто подготовит немецкий текст?" }
+        ]},
+        { "speaker": "b", "tr": "Haklı olabilirsiniz. Yeni çekim ne kadar tutar?", "ru": "Возможно, вы правы. Сколько будет стоить новая съёмка?", "distractors": [
+          { "tr": "Evet, bugün onaylarım. Katkılarınız için teşekkürler. Çok verimli bir toplantı oldu.", "ru": "Да, сегодня утвержу. Спасибо за ваш вклад. Это было очень продуктивное собрание." },
+          { "tr": "Tamam. Fuar için broşürler üç dilde basılacak: Türkçe, Rusça ve Almanca.", "ru": "Хорошо. Брошюры для выставки напечатают на трёх языках: турецком, русском и немецком." }
+        ]},
+        { "speaker": "a", "tr": "Fotoğrafçının gönderdiği teklife göre on beş bin lira.", "ru": "По предложению, которое прислал фотограф, — пятнадцать тысяч лир.", "distractors": [
+          { "tr": "Güzel. Katalog için de eski fotoğrafları kullanalım. Hem ucuz, hem hızlı.", "ru": "Хорошо. А для каталога давайте возьмём старые фотографии. И дёшево, и быстро." },
+          { "tr": "Ne yazık ki size katılmıyorum. Eski fotoğraflarda geçen yılın ürünleri var.", "ru": "К сожалению, я не согласна с вами. На старых фотографиях — товары прошлого года." }
+        ]},
+        { "speaker": "b", "tr": "Kabul. O zaman sonraki adımları belirleyelim.", "ru": "Согласен. Тогда давайте определим дальнейшие шаги.", "distractors": [
+          { "tr": "Saat on bir oldu. Toplantıyı özetleyelim.", "ru": "Уже одиннадцать. Давайте подведём итоги собрания." },
+          { "tr": "Teşekkürler, Metin Bey. Fotoğrafçıdan haber alınca size yazarım.", "ru": "Спасибо, Метин-бей. Как получу ответ от фотографа, напишу вам." }
+        ]},
+        { "speaker": "a", "tr": "Ben fotoğrafçıyı arayıp çekim için bir gün ayarlarım. Bütçeyi siz onaylar mısınız?", "ru": "Я позвоню фотографу и договорюсь о дне съёмки. А бюджет утвердите вы?", "distractors": [
+          { "tr": "Güzel. Katalog için de eski fotoğrafları kullanalım. Hem ucuz, hem hızlı.", "ru": "Хорошо. А для каталога давайте возьмём старые фотографии. И дёшево, и быстро." },
+          { "tr": "Haklı olabilirsiniz. Yeni çekim ne kadar tutar?", "ru": "Возможно, вы правы. Сколько будет стоить новая съёмка?" }
+        ]},
+        { "speaker": "b", "tr": "Evet, bugün onaylarım. Katkılarınız için teşekkürler. Çok verimli bir toplantı oldu.", "ru": "Да, сегодня утвержу. Спасибо за ваш вклад. Это было очень продуктивное собрание.", "distractors": [
+          { "tr": "Saat on bir oldu. Toplantıyı özetleyelim.", "ru": "Уже одиннадцать. Давайте подведём итоги собрания." },
+          { "tr": "Tamam. Fuar için broşürler üç dilde basılacak: Türkçe, Rusça ve Almanca.", "ru": "Хорошо. Брошюры для выставки напечатают на трёх языках: турецком, русском и немецком." }
+        ]},
+        { "speaker": "a", "tr": "Teşekkürler, Metin Bey. Fotoğrafçıdan haber alınca size yazarım.", "ru": "Спасибо, Метин-бей. Как получу ответ от фотографа, напишу вам.", "distractors": [
+          { "tr": "Tamam. Fuar için broşürler üç dilde basılacak: Türkçe, Rusça ve Almanca.", "ru": "Хорошо. Брошюры для выставки напечатают на трёх языках: турецком, русском и немецком." },
+          { "tr": "Özge Hanım hazırlayacak, Tuba da kontrol edecek.", "ru": "Озге-ханым, а Туба проверит." }
+        ]}
+      ]
+    },
+    {
+      "id": "biznes-kartvizit-korhan",
+      "title": "Визитки: новый менеджер клиента",
+      "level": "B1",
+      "speakers": { "a": "Ольга", "b": "Корхан" },
+      "turns": [
+        { "speaker": "b", "tr": "Hoş geldiniz, buyurun oturun. Adım Korhan Aydemir.", "ru": "Добро пожаловать, садитесь, пожалуйста. Меня зовут Корхан Айдемир.", "distractors": [
+          { "tr": "Tebrik ederim! Daha önce de satın almada mı çalışıyordunuz?", "ru": "Поздравляю! Вы и раньше работали в закупках?" },
+          { "tr": "Harika, sizi bekleriz!", "ru": "Отлично, будем вас ждать!" }
+        ]},
+        { "speaker": "a", "tr": "Memnun oldum. Ben Olga Petrova, Global Trade'den. Buyurun kartım.", "ru": "Очень приятно. Я Ольга Петрова из Global Trade. Вот моя визитная карточка.", "distractors": [
+          { "tr": "Hayır, bankada çalışıyordum. Finans okudum. İşletme yüksek lisansım var (MBA).", "ru": "Нет, я работал в банке. Я изучал финансы. У меня степень MBA." },
+          { "tr": "İnşallah! Siz hangi departmanda çalışıyorsunuz?", "ru": "Дай бог! А вы в каком отделе работаете?" }
+        ]},
+        { "speaker": "b", "tr": "Teşekkürler, bu da benim kartım. Ben yeni Satın Alma Müdürüyüm.", "ru": "Спасибо, а это моя визитка. Я новый менеджер по закупкам.", "distractors": [
+          { "tr": "Memnuniyetle. Fuarda standınıza da uğrarım.", "ru": "С удовольствием. И на выставке зайду к вам на стенд." },
+          { "tr": "İzmir fuarı için yeni bir katalog hazırlıyoruz. Size de bir tane göndereceğim.", "ru": "Мы готовим новый каталог к выставке в Измире. Вам тоже пришлю." }
+        ]},
+        { "speaker": "a", "tr": "Tebrik ederim! Daha önce de satın almada mı çalışıyordunuz?", "ru": "Поздравляю! Вы и раньше работали в закупках?", "distractors": [
+          { "tr": "İnşallah! Siz hangi departmanda çalışıyorsunuz?", "ru": "Дай бог! А вы в каком отделе работаете?" },
+          { "tr": "Harika, sizi bekleriz!", "ru": "Отлично, будем вас ждать!" }
+        ]},
+        { "speaker": "b", "tr": "Hayır, bankada çalışıyordum. Finans okudum. İşletme yüksek lisansım var (MBA).", "ru": "Нет, я работал в банке. Я изучал финансы. У меня степень MBA.", "distractors": [
+          { "tr": "İnşallah! Siz hangi departmanda çalışıyorsunuz?", "ru": "Дай бог! А вы в каком отделе работаете?" },
+          { "tr": "Memnuniyetle. Fuarda standınıza da uğrarım.", "ru": "С удовольствием. И на выставке зайду к вам на стенд." }
+        ]},
+        { "speaker": "a", "tr": "Ne güzel. Bizimle çalışan eski müdürünüz çok memnundu. Umarım siz de memnun kalırsınız.", "ru": "Прекрасно. Ваш прежний менеджер, который с нами работал, был очень доволен. Надеюсь, вы тоже останетесь довольны.", "distractors": [
+          { "tr": "Harika, sizi bekleriz!", "ru": "Отлично, будем вас ждать!" },
+          { "tr": "Memnuniyetle. Fuarda standınıza da uğrarım.", "ru": "С удовольствием. И на выставке зайду к вам на стенд." }
+        ]},
+        { "speaker": "b", "tr": "İnşallah! Siz hangi departmanda çalışıyorsunuz?", "ru": "Дай бог! А вы в каком отделе работаете?", "distractors": [
+          { "tr": "Hayır, bankada çalışıyordum. Finans okudum. İşletme yüksek lisansım var (MBA).", "ru": "Нет, я работал в банке. Я изучал финансы. У меня степень MBA." },
+          { "tr": "Tebrik ederim! Daha önce de satın almada mı çalışıyordunuz?", "ru": "Поздравляю! Вы и раньше работали в закупках?" }
+        ]},
+        { "speaker": "a", "tr": "Pazarlama departmanında. Rus müşterilerimizle ben ilgileniyorum.", "ru": "В отделе маркетинга. Нашими русскими клиентами занимаюсь я.", "distractors": [
+          { "tr": "Ne güzel. Bizimle çalışan eski müdürünüz çok memnundu. Umarım siz de memnun kalırsınız.", "ru": "Прекрасно. Ваш прежний менеджер, который с нами работал, был очень доволен. Надеюсь, вы тоже останетесь довольны." },
+          { "tr": "Harika, sizi bekleriz!", "ru": "Отлично, будем вас ждать!" }
+        ]},
+        { "speaker": "b", "tr": "Türkçeniz çok iyi! Kaç yıldır burada çalışıyorsunuz?", "ru": "У вас очень хороший турецкий! Сколько лет вы здесь работаете?", "distractors": [
+          { "tr": "İzmir fuarı için yeni bir katalog hazırlıyoruz. Size de bir tane göndereceğim.", "ru": "Мы готовим новый каталог к выставке в Измире. Вам тоже пришлю." },
+          { "tr": "Harika, sizi bekleriz!", "ru": "Отлично, будем вас ждать!" }
+        ]},
+        { "speaker": "a", "tr": "Bir yıl oldu. Türkçeyi hâlâ öğreniyorum.", "ru": "Уже год. Турецкий я ещё учу.", "distractors": [
+          { "tr": "Hayır, bankada çalışıyordum. Finans okudum. İşletme yüksek lisansım var (MBA).", "ru": "Нет, я работал в банке. Я изучал финансы. У меня степень MBA." },
+          { "tr": "Ne güzel. Bizimle çalışan eski müdürünüz çok memnundu. Umarım siz de memnun kalırsınız.", "ru": "Прекрасно. Ваш прежний менеджер, который с нами работал, был очень доволен. Надеюсь, вы тоже останетесь довольны." }
+        ]},
+        { "speaker": "b", "tr": "Hiç belli olmuyor! Peki, şu an hangi proje üzerinde çalışıyorsunuz?", "ru": "Совсем не скажешь! А над каким проектом вы сейчас работаете?", "distractors": [
+          { "tr": "Harika, sizi bekleriz!", "ru": "Отлично, будем вас ждать!" },
+          { "tr": "Memnun oldum. Ben Olga Petrova, Global Trade'den. Buyurun kartım.", "ru": "Очень приятно. Я Ольга Петрова из Global Trade. Вот моя визитная карточка." }
+        ]},
+        { "speaker": "a", "tr": "İzmir fuarı için yeni bir katalog hazırlıyoruz. Size de bir tane göndereceğim.", "ru": "Мы готовим новый каталог к выставке в Измире. Вам тоже пришлю.", "distractors": [
+          { "tr": "Ne güzel. Bizimle çalışan eski müdürünüz çok memnundu. Umarım siz de memnun kalırsınız.", "ru": "Прекрасно. Ваш прежний менеджер, который с нами работал, был очень доволен. Надеюсь, вы тоже останетесь довольны." },
+          { "tr": "Memnun oldum. Ben Olga Petrova, Global Trade'den. Buyurun kartım.", "ru": "Очень приятно. Я Ольга Петрова из Global Trade. Вот моя визитная карточка." }
+        ]},
+        { "speaker": "b", "tr": "Memnuniyetle. Fuarda standınıza da uğrarım.", "ru": "С удовольствием. И на выставке зайду к вам на стенд.", "distractors": [
+          { "tr": "İnşallah! Siz hangi departmanda çalışıyorsunuz?", "ru": "Дай бог! А вы в каком отделе работаете?" },
+          { "tr": "Memnun oldum. Ben Olga Petrova, Global Trade'den. Buyurun kartım.", "ru": "Очень приятно. Я Ольга Петрова из Global Trade. Вот моя визитная карточка." }
+        ]},
+        { "speaker": "a", "tr": "Harika, sizi bekleriz!", "ru": "Отлично, будем вас ждать!", "distractors": [
+          { "tr": "İzmir fuarı için yeni bir katalog hazırlıyoruz. Size de bir tane göndereceğim.", "ru": "Мы готовим новый каталог к выставке в Измире. Вам тоже пришлю." },
+          { "tr": "Teşekkürler, bu da benim kartım. Ben yeni Satın Alma Müdürüyüm.", "ru": "Спасибо, а это моя визитка. Я новый менеджер по закупкам." }
+        ]}
+      ]
+    },
+    {
+      "id": "biznes-stand-maliyet",
+      "title": "Стенд для выставки: цена и смета",
+      "level": "B1",
+      "speakers": { "a": "Ольга", "b": "Тайлан" },
+      "turns": [
+        { "speaker": "b", "tr": "Taylan Stand, buyurun.", "ru": "«Тайлан Стенд», слушаю вас.", "distractors": [
+          { "tr": "Merhaba Olga Hanım. Nasıl bir stand düşünüyorsunuz?", "ru": "Здравствуйте, Ольга-ханым. Какой стенд вы планируете?" },
+          { "tr": "İyi fikir. Fuar gelecek çarşamba başlıyor. Stand o zamana kadar hazır olur mu?", "ru": "Хорошая идея. Выставка начинается в следующую среду. Стенд будет готов к этому времени?" }
+        ]},
+        { "speaker": "a", "tr": "Merhaba, ben Global Trade'den Olga. İzmir fuarı için bir stand lazım.", "ru": "Здравствуйте, это Ольга из Global Trade. Нам нужен стенд для выставки в Измире.", "distractors": [
+          { "tr": "Çok pahalı! Bunun için bütçemiz yok. Ekransız ne kadar olur?", "ru": "Очень дорого! У нас нет бюджета на это. А без экрана сколько будет?" },
+          { "tr": "Gelecek çarşamba mı? Ne yazık ki bu kadar zamanda bu işi yetiştiremeyiz.", "ru": "В следующую среду? К сожалению, мы не успеем сделать это в такой срок." }
+        ]},
+        { "speaker": "b", "tr": "Merhaba Olga Hanım. Nasıl bir stand düşünüyorsunuz?", "ru": "Здравствуйте, Ольга-ханым. Какой стенд вы планируете?", "distractors": [
+          { "tr": "Ekransız yetmiş bin. Ekranı fuardan kiralarsanız, daha ucuza gelir.", "ru": "Без экрана — семьдесят тысяч. Если возьмёте экран в аренду на выставке, выйдет дешевле." },
+          { "tr": "Teklifi e-postayla gönderin, Metin Bey'e göstereyim. Bir saat içinde size dönerim.", "ru": "Пришлите предложение по почте, я покажу Метин-бею. Отвечу вам в течение часа." }
+        ]},
+        { "speaker": "a", "tr": "On iki metrekare, bir ekran ve küçük bir masa. Bana yaklaşık bir maliyet verebilir misiniz?", "ru": "Двенадцать квадратных метров, экран и небольшой стол. Вы можете назвать приблизительную стоимость?", "distractors": [
+          { "tr": "Teklifi e-postayla gönderin, Metin Bey'e göstereyim. Bir saat içinde size dönerim.", "ru": "Пришлите предложение по почте, я покажу Метин-бею. Отвечу вам в течение часа." },
+          { "tr": "İyi fikir. Fuar gelecek çarşamba başlıyor. Stand o zamana kadar hazır olur mu?", "ru": "Хорошая идея. Выставка начинается в следующую среду. Стенд будет готов к этому времени?" }
+        ]},
+        { "speaker": "b", "tr": "Ekranla birlikte yaklaşık yüz bin lira tutar.", "ru": "Вместе с экраном — примерно сто тысяч лир.", "distractors": [
+          { "tr": "Ekransız yetmiş bin. Ekranı fuardan kiralarsanız, daha ucuza gelir.", "ru": "Без экрана — семьдесят тысяч. Если возьмёте экран в аренду на выставке, выйдет дешевле." },
+          { "tr": "Merhaba Olga Hanım. Nasıl bir stand düşünüyorsunuz?", "ru": "Здравствуйте, Ольга-ханым. Какой стенд вы планируете?" }
+        ]},
+        { "speaker": "a", "tr": "Çok pahalı! Bunun için bütçemiz yok. Ekransız ne kadar olur?", "ru": "Очень дорого! У нас нет бюджета на это. А без экрана сколько будет?", "distractors": [
+          { "tr": "İyi fikir. Fuar gelecek çarşamba başlıyor. Stand o zamana kadar hazır olur mu?", "ru": "Хорошая идея. Выставка начинается в следующую среду. Стенд будет готов к этому времени?" },
+          { "tr": "Taylan Stand, buyurun.", "ru": "«Тайлан Стенд», слушаю вас." }
+        ]},
+        { "speaker": "b", "tr": "Ekransız yetmiş bin. Ekranı fuardan kiralarsanız, daha ucuza gelir.", "ru": "Без экрана — семьдесят тысяч. Если возьмёте экран в аренду на выставке, выйдет дешевле.", "distractors": [
+          { "tr": "O zaman yetiştirebiliriz. Ama teklifi bugün onaylamanız gerekiyor.", "ru": "Тогда успеем. Но предложение нужно утвердить сегодня." },
+          { "tr": "Teklifi e-postayla gönderin, Metin Bey'e göstereyim. Bir saat içinde size dönerim.", "ru": "Пришлите предложение по почте, я покажу Метин-бею. Отвечу вам в течение часа." }
+        ]},
+        { "speaker": "a", "tr": "İyi fikir. Fuar gelecek çarşamba başlıyor. Stand o zamana kadar hazır olur mu?", "ru": "Хорошая идея. Выставка начинается в следующую среду. Стенд будет готов к этому времени?", "distractors": [
+          { "tr": "O zaman yetiştirebiliriz. Ama teklifi bugün onaylamanız gerekiyor.", "ru": "Тогда успеем. Но предложение нужно утвердить сегодня." },
+          { "tr": "Peki, standı daha basit yaparsak? Sadece bir duvar, masa ve logomuz.", "ru": "А если сделать стенд попроще? Только стена, стол и наш логотип." }
+        ]},
+        { "speaker": "b", "tr": "Gelecek çarşamba mı? Ne yazık ki bu kadar zamanda bu işi yetiştiremeyiz.", "ru": "В следующую среду? К сожалению, мы не успеем сделать это в такой срок.", "distractors": [
+          { "tr": "Taylan Stand, buyurun.", "ru": "«Тайлан Стенд», слушаю вас." },
+          { "tr": "O zaman yetiştirebiliriz. Ama teklifi bugün onaylamanız gerekiyor.", "ru": "Тогда успеем. Но предложение нужно утвердить сегодня." }
+        ]},
+        { "speaker": "a", "tr": "Peki, standı daha basit yaparsak? Sadece bir duvar, masa ve logomuz.", "ru": "А если сделать стенд попроще? Только стена, стол и наш логотип.", "distractors": [
+          { "tr": "Teklifi e-postayla gönderin, Metin Bey'e göstereyim. Bir saat içinde size dönerim.", "ru": "Пришлите предложение по почте, я покажу Метин-бею. Отвечу вам в течение часа." },
+          { "tr": "Ekransız yetmiş bin. Ekranı fuardan kiralarsanız, daha ucuza gelir.", "ru": "Без экрана — семьдесят тысяч. Если возьмёте экран в аренду на выставке, выйдет дешевле." }
+        ]},
+        { "speaker": "b", "tr": "O zaman yetiştirebiliriz. Ama teklifi bugün onaylamanız gerekiyor.", "ru": "Тогда успеем. Но предложение нужно утвердить сегодня.", "distractors": [
+          { "tr": "Gelecek çarşamba mı? Ne yazık ki bu kadar zamanda bu işi yetiştiremeyiz.", "ru": "В следующую среду? К сожалению, мы не успеем сделать это в такой срок." },
+          { "tr": "Taylan Stand, buyurun.", "ru": "«Тайлан Стенд», слушаю вас." }
+        ]},
+        { "speaker": "a", "tr": "Teklifi e-postayla gönderin, Metin Bey'e göstereyim. Bir saat içinde size dönerim.", "ru": "Пришлите предложение по почте, я покажу Метин-бею. Отвечу вам в течение часа.", "distractors": [
+          { "tr": "On iki metrekare, bir ekran ve küçük bir masa. Bana yaklaşık bir maliyet verebilir misiniz?", "ru": "Двенадцать квадратных метров, экран и небольшой стол. Вы можете назвать приблизительную стоимость?" },
+          { "tr": "Merhaba, ben Global Trade'den Olga. İzmir fuarı için bir stand lazım.", "ru": "Здравствуйте, это Ольга из Global Trade. Нам нужен стенд для выставки в Измире." }
+        ]},
+        { "speaker": "b", "tr": "Tamam, hemen gönderiyorum. Kolay gelsin!", "ru": "Хорошо, сейчас отправлю. Удачной работы!", "distractors": [
+          { "tr": "Gelecek çarşamba mı? Ne yazık ki bu kadar zamanda bu işi yetiştiremeyiz.", "ru": "В следующую среду? К сожалению, мы не успеем сделать это в такой срок." },
+          { "tr": "O zaman yetiştirebiliriz. Ama teklifi bugün onaylamanız gerekiyor.", "ru": "Тогда успеем. Но предложение нужно утвердить сегодня." }
+        ]}
+      ]
+    },
+    {
+      "id": "biznes-izmir-plan",
+      "title": "Командировка в Измир: план с Метин-беем",
+      "level": "B1",
+      "speakers": { "a": "Ольга", "b": "Метин" },
+      "turns": [
+        { "speaker": "b", "tr": "Olga Hanım, İzmir için her şey hazır mı?", "ru": "Ольга-ханым, к Измиру всё готово?", "distractors": [
+          { "tr": "Bu fuar bizim için çok önemli. İnşallah iyi geçer.", "ru": "Эта выставка для нас очень важна. Дай бог, всё пройдёт хорошо." },
+          { "tr": "Evet, gelirim. Fuarda görüşeceğimiz müşterilerin listesi var mı?", "ru": "Да, приеду. Есть список клиентов, с которыми мы встретимся на выставке?" }
+        ]},
+        { "speaker": "a", "tr": "Neredeyse. Kordon Otel doluydu, Liman Otel'de iki oda ayırttım. Fuara yakın.", "ru": "Почти. «Кордон» был занят, я забронировала два номера в «Лимане». Он рядом с выставкой.", "distractors": [
+          { "tr": "Bu fuar bizim için çok önemli. İnşallah iyi geçer.", "ru": "Эта выставка для нас очень важна. Дай бог, всё пройдёт хорошо." },
+          { "tr": "Güzel. Masraflar için şirket kartını alın. Fişleri saklamayı unutmayın.", "ru": "Хорошо. Возьмите корпоративную карту для расходов. Не забудьте сохранять чеки." }
+        ]},
+        { "speaker": "b", "tr": "Çok iyi. Kaç gün kalacağız?", "ru": "Отлично. Сколько дней мы там пробудем?", "distractors": [
+          { "tr": "Olga Hanım, İzmir için her şey hazır mı?", "ru": "Ольга-ханым, к Измиру всё готово?" },
+          { "tr": "Evet, gelirim. Fuarda görüşeceğimiz müşterilerin listesi var mı?", "ru": "Да, приеду. Есть список клиентов, с которыми мы встретимся на выставке?" }
+        ]},
+        { "speaker": "a", "tr": "Salıdan cumaya kadar. Fuar çarşamba açılıyor. Siz salı akşamı gelebilecek misiniz?", "ru": "Со вторника до пятницы. Выставка открывается в среду. Вы сможете приехать во вторник вечером?", "distractors": [
+          { "tr": "Tamam. Fişleri dönünce muhasebeye veririm.", "ru": "Хорошо. Чеки отдам в бухгалтерию, когда вернёмся." },
+          { "tr": "Harika. Peki Korhan Bey? Ondan haber var mı?", "ru": "Отлично. А Корхан-бей? От него есть новости?" }
+        ]},
+        { "speaker": "b", "tr": "Evet, gelirim. Fuarda görüşeceğimiz müşterilerin listesi var mı?", "ru": "Да, приеду. Есть список клиентов, с которыми мы встретимся на выставке?", "distractors": [
+          { "tr": "Güzel. Masraflar için şirket kartını alın. Fişleri saklamayı unutmayın.", "ru": "Хорошо. Возьмите корпоративную карту для расходов. Не забудьте сохранять чеки." },
+          { "tr": "Bu fuar bizim için çok önemli. İnşallah iyi geçer.", "ru": "Эта выставка для нас очень важна. Дай бог, всё пройдёт хорошо." }
+        ]},
+        { "speaker": "a", "tr": "Var. Beş Rus müşteri geleceğini yazdı, iki Alman şirketi de.", "ru": "Есть. Пятеро русских клиентов написали, что приедут, и две немецкие компании тоже.", "distractors": [
+          { "tr": "Salıdan cumaya kadar. Fuar çarşamba açılıyor. Siz salı akşamı gelebilecek misiniz?", "ru": "Со вторника до пятницы. Выставка открывается в среду. Вы сможете приехать во вторник вечером?" },
+          { "tr": "Evet, standımıza uğrayacağını söyledi. Yeni Satın Alma Müdürü, çok ilgili biri.", "ru": "Да, сказал, что зайдёт к нам на стенд. Новый менеджер по закупкам, очень заинтересованный человек." }
+        ]},
+        { "speaker": "b", "tr": "Harika. Peki Korhan Bey? Ondan haber var mı?", "ru": "Отлично. А Корхан-бей? От него есть новости?", "distractors": [
+          { "tr": "Çok iyi. Kaç gün kalacağız?", "ru": "Отлично. Сколько дней мы там пробудем?" },
+          { "tr": "Salıdan cumaya kadar. Fuar çarşamba açılıyor. Siz salı akşamı gelebilecek misiniz?", "ru": "Со вторника до пятницы. Выставка открывается в среду. Вы сможете приехать во вторник вечером?" }
+        ]},
+        { "speaker": "a", "tr": "Evet, standımıza uğrayacağını söyledi. Yeni Satın Alma Müdürü, çok ilgili biri.", "ru": "Да, сказал, что зайдёт к нам на стенд. Новый менеджер по закупкам, очень заинтересованный человек.", "distractors": [
+          { "tr": "Var. Beş Rus müşteri geleceğini yazdı, iki Alman şirketi de.", "ru": "Есть. Пятеро русских клиентов написали, что приедут, и две немецкие компании тоже." },
+          { "tr": "Evet, gelirim. Fuarda görüşeceğimiz müşterilerin listesi var mı?", "ru": "Да, приеду. Есть список клиентов, с которыми мы встретимся на выставке?" }
+        ]},
+        { "speaker": "b", "tr": "Güzel. Masraflar için şirket kartını alın. Fişleri saklamayı unutmayın.", "ru": "Хорошо. Возьмите корпоративную карту для расходов. Не забудьте сохранять чеки.", "distractors": [
+          { "tr": "Harika. Peki Korhan Bey? Ondan haber var mı?", "ru": "Отлично. А Корхан-бей? От него есть новости?" },
+          { "tr": "Neredeyse. Kordon Otel doluydu, Liman Otel'de iki oda ayırttım. Fuara yakın.", "ru": "Почти. «Кордон» был занят, я забронировала два номера в «Лимане». Он рядом с выставкой." }
+        ]},
+        { "speaker": "a", "tr": "Tamam. Fişleri dönünce muhasebeye veririm.", "ru": "Хорошо. Чеки отдам в бухгалтерию, когда вернёмся.", "distractors": [
+          { "tr": "Neredeyse. Kordon Otel doluydu, Liman Otel'de iki oda ayırttım. Fuara yakın.", "ru": "Почти. «Кордон» был занят, я забронировала два номера в «Лимане». Он рядом с выставкой." },
+          { "tr": "Evet, gelirim. Fuarda görüşeceğimiz müşterilerin listesi var mı?", "ru": "Да, приеду. Есть список клиентов, с которыми мы встретимся на выставке?" }
+        ]},
+        { "speaker": "b", "tr": "Bu fuar bizim için çok önemli. İnşallah iyi geçer.", "ru": "Эта выставка для нас очень важна. Дай бог, всё пройдёт хорошо.", "distractors": [
+          { "tr": "Harika. Peki Korhan Bey? Ondan haber var mı?", "ru": "Отлично. А Корхан-бей? От него есть новости?" },
+          { "tr": "Evet, standımıza uğrayacağını söyledi. Yeni Satın Alma Müdürü, çok ilgili biri.", "ru": "Да, сказал, что зайдёт к нам на стенд. Новый менеджер по закупкам, очень заинтересованный человек." }
+        ]},
+        { "speaker": "a", "tr": "İnşallah! Elimizden geleni yapacağız.", "ru": "Дай бог! Сделаем всё, что в наших силах.", "distractors": [
+          { "tr": "Evet, gelirim. Fuarda görüşeceğimiz müşterilerin listesi var mı?", "ru": "Да, приеду. Есть список клиентов, с которыми мы встретимся на выставке?" },
+          { "tr": "Evet, standımıza uğrayacağını söyledi. Yeni Satın Alma Müdürü, çok ilgili biri.", "ru": "Да, сказал, что зайдёт к нам на стенд. Новый менеджер по закупкам, очень заинтересованный человек." }
+        ]}
+      ]
+    },
+    {
+      "id": "biznes-fuar-konferans",
+      "title": "Выставка в Измире: конференция",
+      "level": "B1",
+      "speakers": { "a": "Ольга", "b": "Ипек" },
+      "turns": [
+        { "speaker": "b", "tr": "Hoş geldiniz! Adınızı alabilir miyim?", "ru": "Добро пожаловать! Можно ваше имя?", "distractors": [
+          { "tr": "Evet, buldum. Buyurun, yaka kartınız. Konferans salonu ikinci katta.", "ru": "Да, нашла. Вот ваш бейдж. Конференц-зал на втором этаже." },
+          { "tr": "Konuşmalar Rusçaya çevrilecek mi? Rus müşterilerimiz de dinlemek istiyor.", "ru": "Будет ли перевод выступлений на русский язык? Наши русские клиенты тоже хотят послушать." }
+        ]},
+        { "speaker": "a", "tr": "Olga Petrova, Global Trade. Konferansa geçen hafta kayıt yaptırmıştım.", "ru": "Ольга Петрова, Global Trade. Я регистрировалась на конференцию на прошлой неделе.", "distractors": [
+          { "tr": "Türkçe ve İngilizce. Yabancı konuşmacılar İngilizce konuşacak.", "ru": "Турецкий и английский. Иностранные докладчики будут говорить по-английски." },
+          { "tr": "Teşekkürler. Konferansın çalışma dilleri hangileri?", "ru": "Спасибо. Какие рабочие языки конференции?" }
+        ]},
+        { "speaker": "b", "tr": "Evet, buldum. Buyurun, yaka kartınız. Konferans salonu ikinci katta.", "ru": "Да, нашла. Вот ваш бейдж. Конференц-зал на втором этаже.", "distractors": [
+          { "tr": "Evet, isteyenlere Rusça çeviri için kulaklık veriliyor. Kulaklıklar salonun kapısında.", "ru": "Да, желающим выдают наушники с переводом на русский. Наушники — у входа в зал." },
+          { "tr": "Konuşmalar Rusçaya çevrilecek mi? Rus müşterilerimiz de dinlemek istiyor.", "ru": "Будет ли перевод выступлений на русский язык? Наши русские клиенты тоже хотят послушать." }
+        ]},
+        { "speaker": "a", "tr": "Teşekkürler. Konferansın çalışma dilleri hangileri?", "ru": "Спасибо. Какие рабочие языки конференции?", "distractors": [
+          { "tr": "Hoş geldiniz! Adınızı alabilir miyim?", "ru": "Добро пожаловать! Можно ваше имя?" },
+          { "tr": "Olga Petrova, Global Trade. Konferansa geçen hafta kayıt yaptırmıştım.", "ru": "Ольга Петрова, Global Trade. Я регистрировалась на конференцию на прошлой неделе." }
+        ]},
+        { "speaker": "b", "tr": "Türkçe ve İngilizce. Yabancı konuşmacılar İngilizce konuşacak.", "ru": "Турецкий и английский. Иностранные докладчики будут говорить по-английски.", "distractors": [
+          { "tr": "Yarım saat. Sonra kahve molası var, standınıza rahatça yetişirsiniz.", "ru": "Полчаса. Потом кофе-брейк, на стенд вы спокойно успеете." },
+          { "tr": "Hoş geldiniz! Adınızı alabilir miyim?", "ru": "Добро пожаловать! Можно ваше имя?" }
+        ]},
+        { "speaker": "a", "tr": "Konuşmalar Rusçaya çevrilecek mi? Rus müşterilerimiz de dinlemek istiyor.", "ru": "Будет ли перевод выступлений на русский язык? Наши русские клиенты тоже хотят послушать.", "distractors": [
+          { "tr": "Evet, buldum. Buyurun, yaka kartınız. Konferans salonu ikinci katta.", "ru": "Да, нашла. Вот ваш бейдж. Конференц-зал на втором этаже." },
+          { "tr": "Teşekkürler. Konferansın çalışma dilleri hangileri?", "ru": "Спасибо. Какие рабочие языки конференции?" }
+        ]},
+        { "speaker": "b", "tr": "Evet, isteyenlere Rusça çeviri için kulaklık veriliyor. Kulaklıklar salonun kapısında.", "ru": "Да, желающим выдают наушники с переводом на русский. Наушники — у входа в зал.", "distractors": [
+          { "tr": "Konuşmalar on birde bitiyor, sonra tartışma var. Tartışmaya da kalacak mısınız?", "ru": "Выступления заканчиваются в одиннадцать, потом дискуссия. Останетесь и на дискуссию?" },
+          { "tr": "Yarım saat. Sonra kahve molası var, standınıza rahatça yetişirsiniz.", "ru": "Полчаса. Потом кофе-брейк, на стенд вы спокойно успеете." }
+        ]},
+        { "speaker": "a", "tr": "Harika! Ama konuşmalardan sonra standa dönmeliyim.", "ru": "Отлично! Но после выступлений мне нужно вернуться на стенд.", "distractors": [
+          { "tr": "Yarım saat. Sonra kahve molası var, standınıza rahatça yetişirsiniz.", "ru": "Полчаса. Потом кофе-брейк, на стенд вы спокойно успеете." },
+          { "tr": "Teşekkürler. Konferansın çalışma dilleri hangileri?", "ru": "Спасибо. Какие рабочие языки конференции?" }
+        ]},
+        { "speaker": "b", "tr": "Konuşmalar on birde bitiyor, sonra tartışma var. Tartışmaya da kalacak mısınız?", "ru": "Выступления заканчиваются в одиннадцать, потом дискуссия. Останетесь и на дискуссию?", "distractors": [
+          { "tr": "Çok iyi, teşekkürler. Kolay gelsin!", "ru": "Отлично, спасибо. Удачной работы!" },
+          { "tr": "Teşekkürler. Konferansın çalışma dilleri hangileri?", "ru": "Спасибо. Какие рабочие языки конференции?" }
+        ]},
+        { "speaker": "a", "tr": "Bilmiyorum. Tartışma ne kadar sürecek?", "ru": "Не знаю. Сколько времени отводится для дискуссии?", "distractors": [
+          { "tr": "Türkçe ve İngilizce. Yabancı konuşmacılar İngilizce konuşacak.", "ru": "Турецкий и английский. Иностранные докладчики будут говорить по-английски." },
+          { "tr": "Konuşmalar Rusçaya çevrilecek mi? Rus müşterilerimiz de dinlemek istiyor.", "ru": "Будет ли перевод выступлений на русский язык? Наши русские клиенты тоже хотят послушать." }
+        ]},
+        { "speaker": "b", "tr": "Yarım saat. Sonra kahve molası var, standınıza rahatça yetişirsiniz.", "ru": "Полчаса. Потом кофе-брейк, на стенд вы спокойно успеете.", "distractors": [
+          { "tr": "Hoş geldiniz! Adınızı alabilir miyim?", "ru": "Добро пожаловать! Можно ваше имя?" },
+          { "tr": "Türkçe ve İngilizce. Yabancı konuşmacılar İngilizce konuşacak.", "ru": "Турецкий и английский. Иностранные докладчики будут говорить по-английски." }
+        ]},
+        { "speaker": "a", "tr": "Çok iyi, teşekkürler. Kolay gelsin!", "ru": "Отлично, спасибо. Удачной работы!", "distractors": [
+          { "tr": "Teşekkürler. Konferansın çalışma dilleri hangileri?", "ru": "Спасибо. Какие рабочие языки конференции?" },
+          { "tr": "Bilmiyorum. Tartışma ne kadar sürecek?", "ru": "Не знаю. Сколько времени отводится для дискуссии?" }
+        ]}
+      ]
+    },
+    {
+      "id": "biznes-kahve-molasi",
+      "title": "Кофе-брейк на конференции",
+      "level": "B1",
+      "speakers": { "a": "Ольга", "b": "Берна" },
+      "turns": [
+        { "speaker": "b", "tr": "Allah Allah, bu kahve makinesi çalışmıyor galiba!", "ru": "Ну надо же, кажется, эта кофемашина не работает!", "distractors": [
+          { "tr": "Evet, ta kendisi. Standımız B salonunda, sizi bekleriz.", "ru": "Да, она самая. Наш стенд в зале B, ждём вас." },
+          { "tr": "Global Trade! Rus müşterilerle çalışan şirket, değil mi?", "ru": "Global Trade! Компания, которая работает с русскими клиентами, да?" }
+        ]},
+        { "speaker": "a", "tr": "Şu düğmeye basmanız gerekiyor. Ben de az önce öğrendim.", "ru": "Нужно нажать вот эту кнопку. Я сама только что узнала.", "distractors": [
+          { "tr": "Anladım, teşekkürler. Rakamlardan çok iyi anlıyorsunuz!", "ru": "Поняла, спасибо. Вы прекрасно разбираетесь в цифрах!" },
+          { "tr": "Haydi, kahvelerimizi alıp gidelim!", "ru": "Давайте возьмём кофе и пойдём!" }
+        ]},
+        { "speaker": "b", "tr": "Ah, teşekkürler! Konuşmaları nasıl buldunuz?", "ru": "Ах, спасибо! Как вам выступления?", "distractors": [
+          { "tr": "Anladım, teşekkürler. Rakamlardan çok iyi anlıyorsunuz!", "ru": "Поняла, спасибо. Вы прекрасно разбираетесь в цифрах!" },
+          { "tr": "Ne güzel. Ben Global Trade'in pazarlama bölümündeyim. Buyurun kartım.", "ru": "Как здорово. А я работаю в отделе маркетинга Global Trade. Вот моя визитка." }
+        ]},
+        { "speaker": "a", "tr": "Çok ilginçti, ama konuşmacının gösterdiği son grafiği anlamadım. Bunu bana anlatabilir misiniz lütfen?", "ru": "Очень интересно, но я не поняла последний график, который показал докладчик. Не могли бы вы мне это объяснить?", "distractors": [
+          { "tr": "Global Trade! Rus müşterilerle çalışan şirket, değil mi?", "ru": "Global Trade! Компания, которая работает с русскими клиентами, да?" },
+          { "tr": "Haydi, kahvelerimizi alıp gidelim!", "ru": "Давайте возьмём кофе и пойдём!" }
+        ]},
+        { "speaker": "b", "tr": "Tabii. Grafik, Rusya'ya yapılan ihracatı gösteriyordu. Geçen yıl yüzde yirmi arttı.", "ru": "Конечно. График показывал экспорт в Россию. В прошлом году он вырос на двадцать процентов.", "distractors": [
+          { "tr": "Allah Allah, bu kahve makinesi çalışmıyor galiba!", "ru": "Ну надо же, кажется, эта кофемашина не работает!" },
+          { "tr": "Ah, teşekkürler! Konuşmaları nasıl buldunuz?", "ru": "Ах, спасибо! Как вам выступления?" }
+        ]},
+        { "speaker": "a", "tr": "Anladım, teşekkürler. Rakamlardan çok iyi anlıyorsunuz!", "ru": "Поняла, спасибо. Вы прекрасно разбираетесь в цифрах!", "distractors": [
+          { "tr": "Global Trade! Rus müşterilerle çalışan şirket, değil mi?", "ru": "Global Trade! Компания, которая работает с русскими клиентами, да?" },
+          { "tr": "Mutlaka gelirim. Herkes salona dönüyor, mola bitmiş galiba.", "ru": "Обязательно приду. Все возвращаются в зал — кажется, перерыв закончился." }
+        ]},
+        { "speaker": "b", "tr": "Mesleğim bu! Şu an finans müdürü olarak çalışıyorum, bir tekstil şirketinde.", "ru": "Это моя профессия! Сейчас я работаю финансовым директором в текстильной компании.", "distractors": [
+          { "tr": "Ah, teşekkürler! Konuşmaları nasıl buldunuz?", "ru": "Ах, спасибо! Как вам выступления?" },
+          { "tr": "Tabii. Grafik, Rusya'ya yapılan ihracatı gösteriyordu. Geçen yıl yüzde yirmi arttı.", "ru": "Конечно. График показывал экспорт в Россию. В прошлом году он вырос на двадцать процентов." }
+        ]},
+        { "speaker": "a", "tr": "Ne güzel. Ben Global Trade'in pazarlama bölümündeyim. Buyurun kartım.", "ru": "Как здорово. А я работаю в отделе маркетинга Global Trade. Вот моя визитка.", "distractors": [
+          { "tr": "Tabii. Grafik, Rusya'ya yapılan ihracatı gösteriyordu. Geçen yıl yüzde yirmi arttı.", "ru": "Конечно. График показывал экспорт в Россию. В прошлом году он вырос на двадцать процентов." },
+          { "tr": "Anladım, teşekkürler. Rakamlardan çok iyi anlıyorsunuz!", "ru": "Поняла, спасибо. Вы прекрасно разбираетесь в цифрах!" }
+        ]},
+        { "speaker": "b", "tr": "Global Trade! Rus müşterilerle çalışan şirket, değil mi?", "ru": "Global Trade! Компания, которая работает с русскими клиентами, да?", "distractors": [
+          { "tr": "Haydi, kahvelerimizi alıp gidelim!", "ru": "Давайте возьмём кофе и пойдём!" },
+          { "tr": "Mutlaka gelirim. Herkes salona dönüyor, mola bitmiş galiba.", "ru": "Обязательно приду. Все возвращаются в зал — кажется, перерыв закончился." }
+        ]},
+        { "speaker": "a", "tr": "Evet, ta kendisi. Standımız B salonunda, sizi bekleriz.", "ru": "Да, она самая. Наш стенд в зале B, ждём вас.", "distractors": [
+          { "tr": "Allah Allah, bu kahve makinesi çalışmıyor galiba!", "ru": "Ну надо же, кажется, эта кофемашина не работает!" },
+          { "tr": "Tabii. Grafik, Rusya'ya yapılan ihracatı gösteriyordu. Geçen yıl yüzde yirmi arttı.", "ru": "Конечно. График показывал экспорт в Россию. В прошлом году он вырос на двадцать процентов." }
+        ]},
+        { "speaker": "b", "tr": "Mutlaka gelirim. Herkes salona dönüyor, mola bitmiş galiba.", "ru": "Обязательно приду. Все возвращаются в зал — кажется, перерыв закончился.", "distractors": [
+          { "tr": "Global Trade! Rus müşterilerle çalışan şirket, değil mi?", "ru": "Global Trade! Компания, которая работает с русскими клиентами, да?" },
+          { "tr": "Ah, teşekkürler! Konuşmaları nasıl buldunuz?", "ru": "Ах, спасибо! Как вам выступления?" }
+        ]},
+        { "speaker": "a", "tr": "Haydi, kahvelerimizi alıp gidelim!", "ru": "Давайте возьмём кофе и пойдём!", "distractors": [
+          { "tr": "Ne güzel. Ben Global Trade'in pazarlama bölümündeyim. Buyurun kartım.", "ru": "Как здорово. А я работаю в отделе маркетинга Global Trade. Вот моя визитка." },
+          { "tr": "Anladım, teşekkürler. Rakamlardan çok iyi anlıyorsunuz!", "ru": "Поняла, спасибо. Вы прекрасно разбираетесь в цифрах!" }
+        ]}
+      ]
+    },
+    {
+      "id": "biznes-fuar-basari",
+      "title": "После выставки: это большой успех",
+      "level": "B1",
+      "speakers": { "a": "Ольга", "b": "Метин" },
+      "turns": [
+        { "speaker": "b", "tr": "Olga Hanım, fuardan gelen siparişleri gördünüz mü?", "ru": "Ольга-ханым, вы видели заказы, которые пришли после выставки?", "distractors": [
+          { "tr": "Bir de Korhan Bey'in siparişi geldiğinde bana haber verin.", "ru": "И ещё: когда придёт заказ от Корхан-бея, сообщите мне." },
+          { "tr": "Tabii, hemen ararım. Tuba'ya da söyleyeyim, çok sevinecek.", "ru": "Конечно, сейчас позвоню. И Тубе скажу, она очень обрадуется." }
+        ]},
+        { "speaker": "a", "tr": "Hayır, henüz görmedim. Kaç sipariş geldi?", "ru": "Нет, ещё не видела. Сколько пришло заказов?", "distractors": [
+          { "tr": "Ekranda gösterdiğiniz video herkesin dikkatini çekti. İyi iş çıkardınız!", "ru": "Видео, которое вы показывали на экране, привлекло всеобщее внимание. Отличная работа!" },
+          { "tr": "Çok güzel olur! Bir önerim var: Karaköy'de güzel bir balık lokantası biliyorum.", "ru": "Будет здорово! У меня есть предложение: я знаю хороший рыбный ресторан в Каракёе." }
+        ]},
+        { "speaker": "b", "tr": "On iki! Geçen yıl sadece dört siparişimiz vardı. Bu büyük bir başarı.", "ru": "Двенадцать! В прошлом году у нас было всего четыре. Это большой успех.", "distractors": [
+          { "tr": "Teşekkür ederim, ama yalnız değildim. Broşürleri Özge Hanım hazırladı, Tuba da kontrol etti.", "ru": "Спасибо, но я была не одна. Брошюры подготовила Озге-ханым, а Туба проверила." },
+          { "tr": "Çok güzel olur! Bir önerim var: Karaköy'de güzel bir balık lokantası biliyorum.", "ru": "Будет здорово! У меня есть предложение: я знаю хороший рыбный ресторан в Каракёе." }
+        ]},
+        { "speaker": "a", "tr": "Allah'a şükür! Standımız gerçekten çok ilgi gördü.", "ru": "Слава богу! Наш стенд правда привлёк много внимания.", "distractors": [
+          { "tr": "Hayır, henüz görmedim. Kaç sipariş geldi?", "ru": "Нет, ещё не видела. Сколько пришло заказов?" },
+          { "tr": "Olga Hanım, fuardan gelen siparişleri gördünüz mü?", "ru": "Ольга-ханым, вы видели заказы, которые пришли после выставки?" }
+        ]},
+        { "speaker": "b", "tr": "Ekranda gösterdiğiniz video herkesin dikkatini çekti. İyi iş çıkardınız!", "ru": "Видео, которое вы показывали на экране, привлекло всеобщее внимание. Отличная работа!", "distractors": [
+          { "tr": "Hayır, henüz görmedim. Kaç sipariş geldi?", "ru": "Нет, ещё не видела. Сколько пришло заказов?" },
+          { "tr": "Olur. Rezervasyonu siz yapar mısınız? Yedi kişi olacağız.", "ru": "Хорошо. Забронируете вы? Нас будет семеро." }
+        ]},
+        { "speaker": "a", "tr": "Teşekkür ederim, ama yalnız değildim. Broşürleri Özge Hanım hazırladı, Tuba da kontrol etti.", "ru": "Спасибо, но я была не одна. Брошюры подготовила Озге-ханым, а Туба проверила.", "distractors": [
+          { "tr": "Hayır, henüz görmedim. Kaç sipariş geldi?", "ru": "Нет, ещё не видела. Сколько пришло заказов?" },
+          { "tr": "Çok güzel olur! Bir önerim var: Karaköy'de güzel bir balık lokantası biliyorum.", "ru": "Будет здорово! У меня есть предложение: я знаю хороший рыбный ресторан в Каракёе." }
+        ]},
+        { "speaker": "b", "tr": "Haklısınız, bütün ekip çok çalıştı. Cuma akşamı ekibi yemeğe götürmek istiyorum. Ne dersiniz?", "ru": "Вы правы, вся команда много работала. В пятницу вечером хочу сводить команду на ужин. Что скажете?", "distractors": [
+          { "tr": "Olga Hanım, fuardan gelen siparişleri gördünüz mü?", "ru": "Ольга-ханым, вы видели заказы, которые пришли после выставки?" },
+          { "tr": "Tamam, Metin Bey. Sipariş gelince hemen size yazarım.", "ru": "Хорошо, Метин-бей. Как только заказ придёт, сразу вам напишу." }
+        ]},
+        { "speaker": "a", "tr": "Çok güzel olur! Bir önerim var: Karaköy'de güzel bir balık lokantası biliyorum.", "ru": "Будет здорово! У меня есть предложение: я знаю хороший рыбный ресторан в Каракёе.", "distractors": [
+          { "tr": "Olga Hanım, fuardan gelen siparişleri gördünüz mü?", "ru": "Ольга-ханым, вы видели заказы, которые пришли после выставки?" },
+          { "tr": "Teşekkür ederim, ama yalnız değildim. Broşürleri Özge Hanım hazırladı, Tuba da kontrol etti.", "ru": "Спасибо, но я была не одна. Брошюры подготовила Озге-ханым, а Туба проверила." }
+        ]},
+        { "speaker": "b", "tr": "Olur. Rezervasyonu siz yapar mısınız? Yedi kişi olacağız.", "ru": "Хорошо. Забронируете вы? Нас будет семеро.", "distractors": [
+          { "tr": "Tamam, Metin Bey. Sipariş gelince hemen size yazarım.", "ru": "Хорошо, Метин-бей. Как только заказ придёт, сразу вам напишу." },
+          { "tr": "Bir de Korhan Bey'in siparişi geldiğinde bana haber verin.", "ru": "И ещё: когда придёт заказ от Корхан-бея, сообщите мне." }
+        ]},
+        { "speaker": "a", "tr": "Tabii, hemen ararım. Tuba'ya da söyleyeyim, çok sevinecek.", "ru": "Конечно, сейчас позвоню. И Тубе скажу, она очень обрадуется.", "distractors": [
+          { "tr": "Çok güzel olur! Bir önerim var: Karaköy'de güzel bir balık lokantası biliyorum.", "ru": "Будет здорово! У меня есть предложение: я знаю хороший рыбный ресторан в Каракёе." },
+          { "tr": "Ekranda gösterdiğiniz video herkesin dikkatini çekti. İyi iş çıkardınız!", "ru": "Видео, которое вы показывали на экране, привлекло всеобщее внимание. Отличная работа!" }
+        ]},
+        { "speaker": "b", "tr": "Bir de Korhan Bey'in siparişi geldiğinde bana haber verin.", "ru": "И ещё: когда придёт заказ от Корхан-бея, сообщите мне.", "distractors": [
+          { "tr": "Allah'a şükür! Standımız gerçekten çok ilgi gördü.", "ru": "Слава богу! Наш стенд правда привлёк много внимания." },
+          { "tr": "Teşekkür ederim, ama yalnız değildim. Broşürleri Özge Hanım hazırladı, Tuba da kontrol etti.", "ru": "Спасибо, но я была не одна. Брошюры подготовила Озге-ханым, а Туба проверила." }
+        ]},
+        { "speaker": "a", "tr": "Tamam, Metin Bey. Sipariş gelince hemen size yazarım.", "ru": "Хорошо, Метин-бей. Как только заказ придёт, сразу вам напишу.", "distractors": [
+          { "tr": "Teşekkür ederim, ama yalnız değildim. Broşürleri Özge Hanım hazırladı, Tuba da kontrol etti.", "ru": "Спасибо, но я была не одна. Брошюры подготовила Озге-ханым, а Туба проверила." },
+          { "tr": "Tabii, hemen ararım. Tuba'ya da söyleyeyim, çok sevinecek.", "ru": "Конечно, сейчас позвоню. И Тубе скажу, она очень обрадуется." }
+        ]}
+      ]
+    },
+    {
+      "id": "biznes-ozge-yeni-sistem",
+      "title": "Озге осваивает новую систему",
+      "level": "B1",
+      "speakers": { "a": "Ольга", "b": "Озге" },
+      "turns": [
+        { "speaker": "b", "tr": "Olga Hanım, müsait misiniz? Bu sistemi nasıl kullanacağımı gösterebilir misiniz?", "ru": "Ольга-ханым, вы свободны? Не могли бы вы показать, как пользоваться этой системой?", "distractors": [
+          { "tr": "Rica ederim. Bir sorunuz olursa, bana sorun. Kolay gelsin!", "ru": "Не за что. Если будет вопрос — спрашивайте. Удачной работы!" },
+          { "tr": "Evet. Fuarda topladığımız kartları gördünüz mü? Hepsini buraya gireceğiz.", "ru": "Да. Вы видели визитки, которые мы собрали на выставке? Все внесём сюда." }
+        ]},
+        { "speaker": "a", "tr": "Tabii. Bu, müşteri bilgilerinin tutulduğu program. Önce şifrenizle girin.", "ru": "Конечно. Это программа, в которой хранятся данные клиентов. Сначала войдите со своим паролем.", "distractors": [
+          { "tr": "Sağ üstteki \"Ekle\" düğmesine basın. Kırmızı yıldızlı alanlar doldurulmalı.", "ru": "Нажмите кнопку «Добавить» справа вверху. Поля с красной звёздочкой нужно обязательно заполнить." },
+          { "tr": "Anladım. Çok güzel anlattınız, teşekkür ederim!", "ru": "Поняла. Вы очень хорошо объяснили, спасибо!" }
+        ]},
+        { "speaker": "b", "tr": "Girdim. Yeni bir müşteriyi nasıl eklerim?", "ru": "Вошла. Как добавить нового клиента?", "distractors": [
+          { "tr": "Evet. Fuarda topladığımız kartları gördünüz mü? Hepsini buraya gireceğiz.", "ru": "Да. Вы видели визитки, которые мы собрали на выставке? Все внесём сюда." },
+          { "tr": "Rica ederim. Bir sorunuz olursa, bana sorun. Kolay gelsin!", "ru": "Не за что. Если будет вопрос — спрашивайте. Удачной работы!" }
+        ]},
+        { "speaker": "a", "tr": "Sağ üstteki \"Ekle\" düğmesine basın. Kırmızı yıldızlı alanlar doldurulmalı.", "ru": "Нажмите кнопку «Добавить» справа вверху. Поля с красной звёздочкой нужно обязательно заполнить.", "distractors": [
+          { "tr": "Olga Hanım, müsait misiniz? Bu sistemi nasıl kullanacağımı gösterebilir misiniz?", "ru": "Ольга-ханым, вы свободны? Не могли бы вы показать, как пользоваться этой системой?" },
+          { "tr": "Ortak klasörde, \"Raporlar\"da. Ama bazı telefon numaraları eski, önce kontrol edin.", "ru": "В общей папке, в «Отчётах». Но некоторые номера телефонов старые, сначала проверьте." }
+        ]},
+        { "speaker": "b", "tr": "Tamam. Korhan Bey'in kartındaki bilgileri de buraya mı yazıyorum?", "ru": "Хорошо. А данные с визитки Корхан-бея тоже сюда пишу?", "distractors": [
+          { "tr": "Girdim. Yeni bir müşteriyi nasıl eklerim?", "ru": "Вошла. Как добавить нового клиента?" },
+          { "tr": "Anladım. Çok güzel anlattınız, teşekkür ederim!", "ru": "Поняла. Вы очень хорошо объяснили, спасибо!" }
+        ]},
+        { "speaker": "a", "tr": "Evet. Fuarda topladığımız kartları gördünüz mü? Hepsini buraya gireceğiz.", "ru": "Да. Вы видели визитки, которые мы собрали на выставке? Все внесём сюда.", "distractors": [
+          { "tr": "Girdim. Yeni bir müşteriyi nasıl eklerim?", "ru": "Вошла. Как добавить нового клиента?" },
+          { "tr": "Olga Hanım, müsait misiniz? Bu sistemi nasıl kullanacağımı gösterebilir misiniz?", "ru": "Ольга-ханым, вы свободны? Не могли бы вы показать, как пользоваться этой системой?" }
+        ]},
+        { "speaker": "b", "tr": "Gördüm, çok kart var! Bunları bitirmek bir hafta sürer.", "ru": "Видела, визиток много! На них уйдёт неделя.", "distractors": [
+          { "tr": "Rica ederim. Bir sorunuz olursa, bana sorun. Kolay gelsin!", "ru": "Не за что. Если будет вопрос — спрашивайте. Удачной работы!" },
+          { "tr": "Bir şey daha: Metin Bey'in bahsettiği müşteri listesi nerede?", "ru": "И ещё: где список клиентов, о котором говорил Метин-бей?" }
+        ]},
+        { "speaker": "a", "tr": "Merak etmeyin, yarısını Tuba'yla ben yaparım.", "ru": "Не волнуйтесь, половину сделаем мы с Тубой.", "distractors": [
+          { "tr": "Girdim. Yeni bir müşteriyi nasıl eklerim?", "ru": "Вошла. Как добавить нового клиента?" },
+          { "tr": "Evet. Fuarda topladığımız kartları gördünüz mü? Hepsini buraya gireceğiz.", "ru": "Да. Вы видели визитки, которые мы собрали на выставке? Все внесём сюда." }
+        ]},
+        { "speaker": "b", "tr": "Bir şey daha: Metin Bey'in bahsettiği müşteri listesi nerede?", "ru": "И ещё: где список клиентов, о котором говорил Метин-бей?", "distractors": [
+          { "tr": "Gördüm, çok kart var! Bunları bitirmek bir hafta sürer.", "ru": "Видела, визиток много! На них уйдёт неделя." },
+          { "tr": "Sağ üstteki \"Ekle\" düğmesine basın. Kırmızı yıldızlı alanlar doldurulmalı.", "ru": "Нажмите кнопку «Добавить» справа вверху. Поля с красной звёздочкой нужно обязательно заполнить." }
+        ]},
+        { "speaker": "a", "tr": "Ortak klasörde, \"Raporlar\"da. Ama bazı telefon numaraları eski, önce kontrol edin.", "ru": "В общей папке, в «Отчётах». Но некоторые номера телефонов старые, сначала проверьте.", "distractors": [
+          { "tr": "Rica ederim. Bir sorunuz olursa, bana sorun. Kolay gelsin!", "ru": "Не за что. Если будет вопрос — спрашивайте. Удачной работы!" },
+          { "tr": "Evet. Fuarda topladığımız kartları gördünüz mü? Hepsini buraya gireceğiz.", "ru": "Да. Вы видели визитки, которые мы собрали на выставке? Все внесём сюда." }
+        ]},
+        { "speaker": "b", "tr": "Anladım. Çok güzel anlattınız, teşekkür ederim!", "ru": "Поняла. Вы очень хорошо объяснили, спасибо!", "distractors": [
+          { "tr": "Tamam. Korhan Bey'in kartındaki bilgileri de buraya mı yazıyorum?", "ru": "Хорошо. А данные с визитки Корхан-бея тоже сюда пишу?" },
+          { "tr": "Bir şey daha: Metin Bey'in bahsettiği müşteri listesi nerede?", "ru": "И ещё: где список клиентов, о котором говорил Метин-бей?" }
+        ]},
+        { "speaker": "a", "tr": "Rica ederim. Bir sorunuz olursa, bana sorun. Kolay gelsin!", "ru": "Не за что. Если будет вопрос — спрашивайте. Удачной работы!", "distractors": [
+          { "tr": "Girdim. Yeni bir müşteriyi nasıl eklerim?", "ru": "Вошла. Как добавить нового клиента?" },
+          { "tr": "Tabii. Bu, müşteri bilgilerinin tutulduğu program. Önce şifrenizle girin.", "ru": "Конечно. Это программа, в которой хранятся данные клиентов. Сначала войдите со своим паролем." }
+        ]}
+      ]
+    },
+    {
+      "id": "biznes-telefon-musteri",
+      "title": "Звонок клиенту: линия занята",
+      "level": "B1",
+      "speakers": { "a": "Ольга", "b": "Гюнеш" },
+      "turns": [
+        { "speaker": "b", "tr": "Atlas Ticaret, iyi günler. Ben Güneş, buyurun.", "ru": "«Атлас Тиджарет», добрый день. Это Гюнеш, слушаю вас.", "distractors": [
+          { "tr": "Arayabilirim, ama acil bir konu var. Beni muhasebe departmanına bağlayabilir misiniz?", "ru": "Могу, но есть срочный вопрос. Не могли бы вы соединить меня с бухгалтерией?" },
+          { "tr": "Geçen ay gönderdiğimiz fatura hâlâ ödenmedi.", "ru": "Счёт, который мы отправили в прошлом месяце, до сих пор не оплачен." }
+        ]},
+        { "speaker": "a", "tr": "İyi günler. Global Trade'den Olga Petrova. Korhan Bey'le görüşebilir miyim?", "ru": "Добрый день. Ольга Петрова из Global Trade. Можно поговорить с Корхан-беем?", "distractors": [
+          { "tr": "Olga Hanım, hattı meşgul. Asistanı diyor ki, şu anda toplantıda.", "ru": "Ольга-ханым, его линия занята. Ассистент говорит, что он сейчас на собрании." },
+          { "tr": "Çok teşekkür ederim. İyi günler!", "ru": "Большое спасибо. Хорошего дня!" }
+        ]},
+        { "speaker": "b", "tr": "Bir saniye, bağlıyorum. Hatta kalın lütfen.", "ru": "Секунду, соединяю. Пожалуйста, оставайтесь на линии.", "distractors": [
+          { "tr": "Çok teşekkür ederim. İyi günler!", "ru": "Большое спасибо. Хорошего дня!" },
+          { "tr": "Evet, lütfen. Faturayı kontrol etmesini rica ediyorum.", "ru": "Да, пожалуйста. Прошу его проверить счёт." }
+        ]},
+        { "speaker": "a", "tr": "Tabii, bekliyorum.", "ru": "Конечно, жду.", "distractors": [
+          { "tr": "İyi günler. Global Trade'den Olga Petrova. Korhan Bey'le görüşebilir miyim?", "ru": "Добрый день. Ольга Петрова из Global Trade. Можно поговорить с Корхан-беем?" },
+          { "tr": "Toplantı ne zaman bitecek, biliyor musunuz?", "ru": "Не знаете, когда закончится совещание?" }
+        ]},
+        { "speaker": "b", "tr": "Olga Hanım, hattı meşgul. Asistanı diyor ki, şu anda toplantıda.", "ru": "Ольга-ханым, его линия занята. Ассистент говорит, что он сейчас на собрании.", "distractors": [
+          { "tr": "Bir saniye, bağlıyorum. Hatta kalın lütfen.", "ru": "Секунду, соединяю. Пожалуйста, оставайтесь на линии." },
+          { "tr": "Arayabilirim, ama acil bir konu var. Beni muhasebe departmanına bağlayabilir misiniz?", "ru": "Могу, но есть срочный вопрос. Не могли бы вы соединить меня с бухгалтерией?" }
+        ]},
+        { "speaker": "a", "tr": "Toplantı ne zaman bitecek, biliyor musunuz?", "ru": "Не знаете, когда закончится совещание?", "distractors": [
+          { "tr": "Atlas Ticaret, iyi günler. Ben Güneş, buyurun.", "ru": "«Атлас Тиджарет», добрый день. Это Гюнеш, слушаю вас." },
+          { "tr": "Arayabilirim, ama acil bir konu var. Beni muhasebe departmanına bağlayabilir misiniz?", "ru": "Могу, но есть срочный вопрос. Не могли бы вы соединить меня с бухгалтерией?" }
+        ]},
+        { "speaker": "b", "tr": "Öğleden sonra boş olacakmış. Daha sonra tekrar arayabilir misiniz?", "ru": "Говорят, после обеда он будет свободен. Не могли бы вы перезвонить позже?", "distractors": [
+          { "tr": "Tabii, bekliyorum.", "ru": "Конечно, жду." },
+          { "tr": "Anlıyorum. Ama muhasebe şu an öğle arasında. Korhan Bey'e not bırakmak ister misiniz?", "ru": "Понимаю. Но в бухгалтерии сейчас обеденный перерыв. Хотите оставить записку Корхан-бею?" }
+        ]},
+        { "speaker": "a", "tr": "Arayabilirim, ama acil bir konu var. Beni muhasebe departmanına bağlayabilir misiniz?", "ru": "Могу, но есть срочный вопрос. Не могли бы вы соединить меня с бухгалтерией?", "distractors": [
+          { "tr": "Evet, lütfen. Faturayı kontrol etmesini rica ediyorum.", "ru": "Да, пожалуйста. Прошу его проверить счёт." },
+          { "tr": "Bir saniye, bağlıyorum. Hatta kalın lütfen.", "ru": "Секунду, соединяю. Пожалуйста, оставайтесь на линии." }
+        ]},
+        { "speaker": "b", "tr": "Tabii. Konu nedir, sorabilir miyim?", "ru": "Конечно. Можно спросить, в чём дело?", "distractors": [
+          { "tr": "Atlas Ticaret, iyi günler. Ben Güneş, buyurun.", "ru": "«Атлас Тиджарет», добрый день. Это Гюнеш, слушаю вас." },
+          { "tr": "Anlıyorum. Ama muhasebe şu an öğle arasında. Korhan Bey'e not bırakmak ister misiniz?", "ru": "Понимаю. Но в бухгалтерии сейчас обеденный перерыв. Хотите оставить записку Корхан-бею?" }
+        ]},
+        { "speaker": "a", "tr": "Geçen ay gönderdiğimiz fatura hâlâ ödenmedi.", "ru": "Счёт, который мы отправили в прошлом месяце, до сих пор не оплачен.", "distractors": [
+          { "tr": "Notunuzu ileteceğim. İyi günler, Olga Hanım.", "ru": "Я передам вашу записку. Хорошего дня, Ольга-ханым." },
+          { "tr": "İyi günler. Global Trade'den Olga Petrova. Korhan Bey'le görüşebilir miyim?", "ru": "Добрый день. Ольга Петрова из Global Trade. Можно поговорить с Корхан-беем?" }
+        ]},
+        { "speaker": "b", "tr": "Anlıyorum. Ama muhasebe şu an öğle arasında. Korhan Bey'e not bırakmak ister misiniz?", "ru": "Понимаю. Но в бухгалтерии сейчас обеденный перерыв. Хотите оставить записку Корхан-бею?", "distractors": [
+          { "tr": "Bir saniye, bağlıyorum. Hatta kalın lütfen.", "ru": "Секунду, соединяю. Пожалуйста, оставайтесь на линии." },
+          { "tr": "Öğleden sonra boş olacakmış. Daha sonra tekrar arayabilir misiniz?", "ru": "Говорят, после обеда он будет свободен. Не могли бы вы перезвонить позже?" }
+        ]},
+        { "speaker": "a", "tr": "Evet, lütfen. Faturayı kontrol etmesini rica ediyorum.", "ru": "Да, пожалуйста. Прошу его проверить счёт.", "distractors": [
+          { "tr": "Geçen ay gönderdiğimiz fatura hâlâ ödenmedi.", "ru": "Счёт, который мы отправили в прошлом месяце, до сих пор не оплачен." },
+          { "tr": "Çok teşekkür ederim. İyi günler!", "ru": "Большое спасибо. Хорошего дня!" }
+        ]},
+        { "speaker": "b", "tr": "Notunuzu ileteceğim. İyi günler, Olga Hanım.", "ru": "Я передам вашу записку. Хорошего дня, Ольга-ханым.", "distractors": [
+          { "tr": "Atlas Ticaret, iyi günler. Ben Güneş, buyurun.", "ru": "«Атлас Тиджарет», добрый день. Это Гюнеш, слушаю вас." },
+          { "tr": "Anlıyorum. Ama muhasebe şu an öğle arasında. Korhan Bey'e not bırakmak ister misiniz?", "ru": "Понимаю. Но в бухгалтерии сейчас обеденный перерыв. Хотите оставить записку Корхан-бею?" }
+        ]},
+        { "speaker": "a", "tr": "Çok teşekkür ederim. İyi günler!", "ru": "Большое спасибо. Хорошего дня!", "distractors": [
+          { "tr": "İyi günler. Global Trade'den Olga Petrova. Korhan Bey'le görüşebilir miyim?", "ru": "Добрый день. Ольга Петрова из Global Trade. Можно поговорить с Корхан-беем?" },
+          { "tr": "Anlıyorum. Ama muhasebe şu an öğle arasında. Korhan Bey'e not bırakmak ister misiniz?", "ru": "Понимаю. Но в бухгалтерии сейчас обеденный перерыв. Хотите оставить записку Корхан-бею?" }
+        ]}
+      ]
+    },
+    {
+      "id": "biznes-toplanti-erteleme",
+      "title": "Встречу с клиентами переносим",
+      "level": "B1",
+      "speakers": { "a": "Ольга", "b": "Метин" },
+      "turns": [
+        { "speaker": "b", "tr": "Olga Hanım, kötü bir haber var. Bu toplantıyı ertelemeliyiz.", "ru": "Ольга-ханым, плохая новость. Мы должны перенести это собрание.", "distractors": [
+          { "tr": "Ama bana bu konuda bir bilgi verilmedi.", "ru": "Но меня об этом не проинформировали." },
+          { "tr": "Peki, yeni bir tarih belirleyelim mi? Perşembe sizin için uygun mu?", "ru": "Хорошо, давайте назначим новую дату? Четверг вам удобен?" }
+        ]},
+        { "speaker": "a", "tr": "Hangisini? Alman müşterilerle yapacağımız toplantıyı mı?", "ru": "Какое? Встречу, которая у нас должна быть с немецкими клиентами?", "distractors": [
+          { "tr": "Harika. Ertelenen toplantıyı ekibin takviminde de değiştirin, lütfen.", "ru": "Отлично. И поменяйте, пожалуйста, перенесённое совещание в календаре команды." },
+          { "tr": "Ben de az önce öğrendim. Müşteri sabah e-posta göndermiş.", "ru": "Я и сам только что узнал. Клиент, оказывается, утром прислал письмо." }
+        ]},
+        { "speaker": "b", "tr": "Evet. Uçakları iptal edilmiş, bugün gelemiyorlar.", "ru": "Да. Оказалось, их рейс отменили, сегодня они не могут приехать.", "distractors": [
+          { "tr": "Harika. Ertelenen toplantıyı ekibin takviminde de değiştirin, lütfen.", "ru": "Отлично. И поменяйте, пожалуйста, перенесённое совещание в календаре команды." },
+          { "tr": "Tabii, hemen yazarım. Sunumu da perşembeye kadar biraz daha geliştiririm.", "ru": "Конечно, сейчас напишу. И презентацию к четвергу ещё немного доработаю." }
+        ]},
+        { "speaker": "a", "tr": "Ama bana bu konuda bir bilgi verilmedi.", "ru": "Но меня об этом не проинформировали.", "distractors": [
+          { "tr": "Çok iyi. Müşteriye yeni saati siz bildirir misiniz?", "ru": "Отлично. Новое время клиенту сообщите вы?" },
+          { "tr": "Hangisini? Alman müşterilerle yapacağımız toplantıyı mı?", "ru": "Какое? Встречу, которая у нас должна быть с немецкими клиентами?" }
+        ]},
+        { "speaker": "b", "tr": "Ben de az önce öğrendim. Müşteri sabah e-posta göndermiş.", "ru": "Я и сам только что узнал. Клиент, оказывается, утром прислал письмо.", "distractors": [
+          { "tr": "Tabii, hemen yazarım. Sunumu da perşembeye kadar biraz daha geliştiririm.", "ru": "Конечно, сейчас напишу. И презентацию к четвергу ещё немного доработаю." },
+          { "tr": "Olga Hanım, kötü bir haber var. Bu toplantıyı ertelemeliyiz.", "ru": "Ольга-ханым, плохая новость. Мы должны перенести это собрание." }
+        ]},
+        { "speaker": "a", "tr": "Peki, yeni bir tarih belirleyelim mi? Perşembe sizin için uygun mu?", "ru": "Хорошо, давайте назначим новую дату? Четверг вам удобен?", "distractors": [
+          { "tr": "Ama bana bu konuda bir bilgi verilmedi.", "ru": "Но меня об этом не проинформировали." },
+          { "tr": "Çok iyi. Müşteriye yeni saati siz bildirir misiniz?", "ru": "Отлично. Новое время клиенту сообщите вы?" }
+        ]},
+        { "speaker": "b", "tr": "Perşembe sabah başka bir toplantım var. Öğleden sonra olursa, olur.", "ru": "В четверг утром у меня другое совещание. Если после обеда — подойдёт.", "distractors": [
+          { "tr": "Ama bana bu konuda bir bilgi verilmedi.", "ru": "Но меня об этом не проинформировали." },
+          { "tr": "Tamam, herkese yeni bir davet gönderirim.", "ru": "Хорошо, отправлю всем новое приглашение." }
+        ]},
+        { "speaker": "a", "tr": "O zaman perşembe saat ikiye ne dersiniz? Toplantı odasını da ayırtırım.", "ru": "Тогда как насчёт четверга, в два? И переговорную забронирую.", "distractors": [
+          { "tr": "Olga Hanım, kötü bir haber var. Bu toplantıyı ertelemeliyiz.", "ru": "Ольга-ханым, плохая новость. Мы должны перенести это собрание." },
+          { "tr": "Harika. Ertelenen toplantıyı ekibin takviminde de değiştirin, lütfen.", "ru": "Отлично. И поменяйте, пожалуйста, перенесённое совещание в календаре команды." }
+        ]},
+        { "speaker": "b", "tr": "Çok iyi. Müşteriye yeni saati siz bildirir misiniz?", "ru": "Отлично. Новое время клиенту сообщите вы?", "distractors": [
+          { "tr": "Harika. Ertelenen toplantıyı ekibin takviminde de değiştirin, lütfen.", "ru": "Отлично. И поменяйте, пожалуйста, перенесённое совещание в календаре команды." },
+          { "tr": "Perşembe sabah başka bir toplantım var. Öğleden sonra olursa, olur.", "ru": "В четверг утром у меня другое совещание. Если после обеда — подойдёт." }
+        ]},
+        { "speaker": "a", "tr": "Tabii, hemen yazarım. Sunumu da perşembeye kadar biraz daha geliştiririm.", "ru": "Конечно, сейчас напишу. И презентацию к четвергу ещё немного доработаю.", "distractors": [
+          { "tr": "Perşembe sabah başka bir toplantım var. Öğleden sonra olursa, olur.", "ru": "В четверг утром у меня другое совещание. Если после обеда — подойдёт." },
+          { "tr": "O zaman perşembe saat ikiye ne dersiniz? Toplantı odasını da ayırtırım.", "ru": "Тогда как насчёт четверга, в два? И переговорную забронирую." }
+        ]},
+        { "speaker": "b", "tr": "Harika. Ertelenen toplantıyı ekibin takviminde de değiştirin, lütfen.", "ru": "Отлично. И поменяйте, пожалуйста, перенесённое совещание в календаре команды.", "distractors": [
+          { "tr": "Çok iyi. Müşteriye yeni saati siz bildirir misiniz?", "ru": "Отлично. Новое время клиенту сообщите вы?" },
+          { "tr": "Peki, yeni bir tarih belirleyelim mi? Perşembe sizin için uygun mu?", "ru": "Хорошо, давайте назначим новую дату? Четверг вам удобен?" }
+        ]},
+        { "speaker": "a", "tr": "Tamam, herkese yeni bir davet gönderirim.", "ru": "Хорошо, отправлю всем новое приглашение.", "distractors": [
+          { "tr": "O zaman perşembe saat ikiye ne dersiniz? Toplantı odasını da ayırtırım.", "ru": "Тогда как насчёт четверга, в два? И переговорную забронирую." },
+          { "tr": "Peki, yeni bir tarih belirleyelim mi? Perşembe sizin için uygun mu?", "ru": "Хорошо, давайте назначим новую дату? Четверг вам удобен?" }
+        ]}
+      ]
+    },
+    {
+      "id": "biznes-sunum-provasi",
+      "title": "Туба слушает презентацию",
+      "level": "B1",
+      "speakers": { "a": "Ольга", "b": "Туба" },
+      "turns": [
+        { "speaker": "a", "tr": "Tuba, sunumumu bir dinler misin? Yarın Alman müşterilere göstereceğim.", "ru": "Туба, послушаешь мою презентацию? Завтра я покажу её немецким клиентам.", "distractors": [
+          { "tr": "Ne demek! Allah kolaylık versin, yarın çok iyi geçecek.", "ru": "Да брось! Бог в помощь, завтра всё пройдёт отлично." },
+          { "tr": "Almanya'daki satışlarla karşılaştırırsak durum nedir?", "ru": "А если сравнить с продажами в Германии, какая картина?" }
+        ]},
+        { "speaker": "b", "tr": "Tabii! Ben müşteri olayım, sen de bana \"siz\" de. Başla bakalım.", "ru": "Конечно! Я буду клиентом, а ты говори мне «вы». Давай, начинай.", "distractors": [
+          { "tr": "Çok iyi cevap! Ama dur, bu dokümanda bir hata var. Tarih yanlış yazılmış.", "ru": "Отличный ответ! Но стой, в этом документе есть ошибка. Дата написана неправильно." },
+          { "tr": "Bununla ilgili bir veri yok, çünkü Almanya'da bu yıl başladık.", "ru": "По этому вопросу нет данных: в Германии мы начали только в этом году." }
+        ]},
+        { "speaker": "a", "tr": "Peki. Bu slaytta geçen yıl Rusya'da satılan ürünlerimizi görüyorsunuz.", "ru": "Хорошо. На этом слайде вы видите наши товары, которые продавались в России в прошлом году.", "distractors": [
+          { "tr": "Çok sağ ol, Tuba. Raporlarımı hep sen kontrol ediyorsun!", "ru": "Огромное спасибо, Туба. Ты всегда проверяешь мои отчёты!" },
+          { "tr": "Tuba, sunumumu bir dinler misin? Yarın Alman müşterilere göstereceğim.", "ru": "Туба, послушаешь мою презентацию? Завтра я покажу её немецким клиентам." }
+        ]},
+        { "speaker": "b", "tr": "Almanya'daki satışlarla karşılaştırırsak durum nedir?", "ru": "А если сравнить с продажами в Германии, какая картина?", "distractors": [
+          { "tr": "Haklısın, hemen düzeltiyorum. Başka bir şey gördün mü?", "ru": "Ты права, сейчас исправлю. Ещё что-нибудь заметила?" },
+          { "tr": "Ne demek! Allah kolaylık versin, yarın çok iyi geçecek.", "ru": "Да брось! Бог в помощь, завтра всё пройдёт отлично." }
+        ]},
+        { "speaker": "a", "tr": "Sorunuzu tekrar edebilir misiniz lütfen?", "ru": "Не могли бы вы повторить ваш вопрос?", "distractors": [
+          { "tr": "Alıştın artık! Ortak klasörde, \"Raporlar\"da. Sana linki atarım.", "ru": "Уже привыкла! В общей папке, в «Отчётах». Скину тебе ссылку." },
+          { "tr": "Peki. Bu slaytta geçen yıl Rusya'da satılan ürünlerimizi görüyorsunuz.", "ru": "Хорошо. На этом слайде вы видите наши товары, которые продавались в России в прошлом году." }
+        ]},
+        { "speaker": "b", "tr": "Almanya'daki satışlar nasıl? Rusya'dan daha mı iyi?", "ru": "Как продажи в Германии? Лучше, чем в России?", "distractors": [
+          { "tr": "Hayır, gerisi güzel. Metin Bey'in geçen ay bahsettiği pazar raporunu da eklersen iyi olur.", "ru": "Нет, остальное хорошо. Хорошо бы ещё добавить отчёт о рынке, о котором Метин-бей говорил в прошлом месяце." },
+          { "tr": "Tabii! Ben müşteri olayım, sen de bana \"siz\" de. Başla bakalım.", "ru": "Конечно! Я буду клиентом, а ты говори мне «вы». Давай, начинай." }
+        ]},
+        { "speaker": "a", "tr": "Bununla ilgili bir veri yok, çünkü Almanya'da bu yıl başladık.", "ru": "По этому вопросу нет данных: в Германии мы начали только в этом году.", "distractors": [
+          { "tr": "Almanya'daki satışlarla karşılaştırırsak durum nedir?", "ru": "А если сравнить с продажами в Германии, какая картина?" },
+          { "tr": "Tuba, sunumumu bir dinler misin? Yarın Alman müşterilere göstereceğim.", "ru": "Туба, послушаешь мою презентацию? Завтра я покажу её немецким клиентам." }
+        ]},
+        { "speaker": "b", "tr": "Çok iyi cevap! Ama dur, bu dokümanda bir hata var. Tarih yanlış yazılmış.", "ru": "Отличный ответ! Но стой, в этом документе есть ошибка. Дата написана неправильно.", "distractors": [
+          { "tr": "Peki. Bu slaytta geçen yıl Rusya'da satılan ürünlerimizi görüyorsunuz.", "ru": "Хорошо. На этом слайде вы видите наши товары, которые продавались в России в прошлом году." },
+          { "tr": "Hayır, gerisi güzel. Metin Bey'in geçen ay bahsettiği pazar raporunu da eklersen iyi olur.", "ru": "Нет, остальное хорошо. Хорошо бы ещё добавить отчёт о рынке, о котором Метин-бей говорил в прошлом месяце." }
+        ]},
+        { "speaker": "a", "tr": "Haklısın, hemen düzeltiyorum. Başka bir şey gördün mü?", "ru": "Ты права, сейчас исправлю. Ещё что-нибудь заметила?", "distractors": [
+          { "tr": "Alıştın artık! Ortak klasörde, \"Raporlar\"da. Sana linki atarım.", "ru": "Уже привыкла! В общей папке, в «Отчётах». Скину тебе ссылку." },
+          { "tr": "Çok sağ ol, Tuba. Raporlarımı hep sen kontrol ediyorsun!", "ru": "Огромное спасибо, Туба. Ты всегда проверяешь мои отчёты!" }
+        ]},
+        { "speaker": "b", "tr": "Hayır, gerisi güzel. Metin Bey'in geçen ay bahsettiği pazar raporunu da eklersen iyi olur.", "ru": "Нет, остальное хорошо. Хорошо бы ещё добавить отчёт о рынке, о котором Метин-бей говорил в прошлом месяце.", "distractors": [
+          { "tr": "Ne demek! Allah kolaylık versin, yarın çok iyi geçecek.", "ru": "Да брось! Бог в помощь, завтра всё пройдёт отлично." },
+          { "tr": "Peki. Bu slaytta geçen yıl Rusya'da satılan ürünlerimizi görüyorsunuz.", "ru": "Хорошо. На этом слайде вы видите наши товары, которые продавались в России в прошлом году." }
+        ]},
+        { "speaker": "a", "tr": "Bahsettiğiniz dokümana nasıl ulaşabilirim? Ay, yine \"siz\" dedim!", "ru": "Как мне получить доступ к документу, который вы упомянули? Ой, опять сказала «вы»!", "distractors": [
+          { "tr": "Tabii! Ben müşteri olayım, sen de bana \"siz\" de. Başla bakalım.", "ru": "Конечно! Я буду клиентом, а ты говори мне «вы». Давай, начинай." },
+          { "tr": "Almanya'daki satışlar nasıl? Rusya'dan daha mı iyi?", "ru": "Как продажи в Германии? Лучше, чем в России?" }
+        ]},
+        { "speaker": "b", "tr": "Alıştın artık! Ortak klasörde, \"Raporlar\"da. Sana linki atarım.", "ru": "Уже привыкла! В общей папке, в «Отчётах». Скину тебе ссылку.", "distractors": [
+          { "tr": "Ne demek! Allah kolaylık versin, yarın çok iyi geçecek.", "ru": "Да брось! Бог в помощь, завтра всё пройдёт отлично." },
+          { "tr": "Peki. Bu slaytta geçen yıl Rusya'da satılan ürünlerimizi görüyorsunuz.", "ru": "Хорошо. На этом слайде вы видите наши товары, которые продавались в России в прошлом году." }
+        ]},
+        { "speaker": "a", "tr": "Çok sağ ol, Tuba. Raporlarımı hep sen kontrol ediyorsun!", "ru": "Огромное спасибо, Туба. Ты всегда проверяешь мои отчёты!", "distractors": [
+          { "tr": "Peki. Bu slaytta geçen yıl Rusya'da satılan ürünlerimizi görüyorsunuz.", "ru": "Хорошо. На этом слайде вы видите наши товары, которые продавались в России в прошлом году." },
+          { "tr": "Bununla ilgili bir veri yok, çünkü Almanya'da bu yıl başladık.", "ru": "По этому вопросу нет данных: в Германии мы начали только в этом году." }
+        ]},
+        { "speaker": "b", "tr": "Ne demek! Allah kolaylık versin, yarın çok iyi geçecek.", "ru": "Да брось! Бог в помощь, завтра всё пройдёт отлично.", "distractors": [
+          { "tr": "Bahsettiğiniz dokümana nasıl ulaşabilirim? Ay, yine \"siz\" dedim!", "ru": "Как мне получить доступ к документу, который вы упомянули? Ой, опять сказала «вы»!" },
+          { "tr": "Peki. Bu slaytta geçen yıl Rusya'da satılan ürünlerimizi görüyorsunuz.", "ru": "Хорошо. На этом слайде вы видите наши товары, которые продавались в России в прошлом году." }
+        ]}
+      ]
+    },
+    {
+      "id": "biznes-toplanti-odasi",
+      "title": "Переговорная занята",
+      "level": "B1",
+      "speakers": { "a": "Ольга", "b": "Бетюль" },
+      "turns": [
+        { "speaker": "b", "tr": "Olga Hanım, toplantı odasını siz mi ayırttınız? Saat ikide odayı ben ayırtmıştım.", "ru": "Ольга-ханым, это вы забронировали переговорную? Я бронировала её на два часа.", "distractors": [
+          { "tr": "Yarım saat, sadece muhasebeyle bütçeyi konuşacağız. Sizinki?", "ru": "Полчаса, мы только обсудим бюджет с бухгалтерией. А ваше?" },
+          { "tr": "Olabilir. Sizin toplantınız ne kadar sürecek?", "ru": "Может быть. А сколько продлится ваше совещание?" }
+        ]},
+        { "speaker": "a", "tr": "Evet, Alman müşterilerle toplantı için. Sistemde benim adım yazıyor.", "ru": "Да, для встречи с немецкими клиентами. В системе стоит моё имя.", "distractors": [
+          { "tr": "Bizimki en az bir saat sürer. Müşteriler yirmi dakika sonra gelecek.", "ru": "Наше — не меньше часа. Клиенты придут через двадцать минут." },
+          { "tr": "Buldum, teşekkürler. Müşterilerinizle kolay gelsin!", "ru": "Нашла, спасибо. Удачной встречи с клиентами!" }
+        ]},
+        { "speaker": "b", "tr": "Garip. Belki sistem aynı saati iki kişiye vermiş.", "ru": "Странно. Наверное, система дала одно и то же время двоим.", "distractors": [
+          { "tr": "Teşekkürler! Bu hatayı yarın bilgi işleme söyleyeyim, bir daha olmasın.", "ru": "Спасибо! Завтра скажу про эту ошибку в IT-отдел, чтобы больше не повторялось." },
+          { "tr": "Buldum, teşekkürler. Müşterilerinizle kolay gelsin!", "ru": "Нашла, спасибо. Удачной встречи с клиентами!" }
+        ]},
+        { "speaker": "a", "tr": "Olabilir. Sizin toplantınız ne kadar sürecek?", "ru": "Может быть. А сколько продлится ваше совещание?", "distractors": [
+          { "tr": "Çok naziksiniz, Betül Hanım! Küçük oda boş, az önce baktım.", "ru": "Вы очень любезны, Бетюль-ханым! Маленькая комната свободна, я только что смотрела." },
+          { "tr": "O zaman ben küçük odaya geçeyim. Orası boşsa, bize yeter.", "ru": "Тогда я перейду в маленькую комнату. Если она свободна, нам хватит." }
+        ]},
+        { "speaker": "b", "tr": "Yarım saat, sadece muhasebeyle bütçeyi konuşacağız. Sizinki?", "ru": "Полчаса, мы только обсудим бюджет с бухгалтерией. А ваше?", "distractors": [
+          { "tr": "Evet, Alman müşterilerle toplantı için. Sistemde benim adım yazıyor.", "ru": "Да, для встречи с немецкими клиентами. В системе стоит моё имя." },
+          { "tr": "Buldum, teşekkürler. Müşterilerinizle kolay gelsin!", "ru": "Нашла, спасибо. Удачной встречи с клиентами!" }
+        ]},
+        { "speaker": "a", "tr": "Bizimki en az bir saat sürer. Müşteriler yirmi dakika sonra gelecek.", "ru": "Наше — не меньше часа. Клиенты придут через двадцать минут.", "distractors": [
+          { "tr": "Olabilir. Sizin toplantınız ne kadar sürecek?", "ru": "Может быть. А сколько продлится ваше совещание?" },
+          { "tr": "Teşekkürler! Bu hatayı yarın bilgi işleme söyleyeyim, bir daha olmasın.", "ru": "Спасибо! Завтра скажу про эту ошибку в IT-отдел, чтобы больше не повторялось." }
+        ]},
+        { "speaker": "b", "tr": "O zaman ben küçük odaya geçeyim. Orası boşsa, bize yeter.", "ru": "Тогда я перейду в маленькую комнату. Если она свободна, нам хватит.", "distractors": [
+          { "tr": "Teşekkürler! Bu hatayı yarın bilgi işleme söyleyeyim, bir daha olmasın.", "ru": "Спасибо! Завтра скажу про эту ошибку в IT-отдел, чтобы больше не повторялось." },
+          { "tr": "Güzel. Projektörü de alabilir miyim? Burada zaten büyük bir ekran var.", "ru": "Хорошо. Можно я возьму и проектор? Здесь ведь есть большой экран." }
+        ]},
+        { "speaker": "a", "tr": "Çok naziksiniz, Betül Hanım! Küçük oda boş, az önce baktım.", "ru": "Вы очень любезны, Бетюль-ханым! Маленькая комната свободна, я только что смотрела.", "distractors": [
+          { "tr": "Buldum, teşekkürler. Müşterilerinizle kolay gelsin!", "ru": "Нашла, спасибо. Удачной встречи с клиентами!" },
+          { "tr": "Olga Hanım, toplantı odasını siz mi ayırttınız? Saat ikide odayı ben ayırtmıştım.", "ru": "Ольга-ханым, это вы забронировали переговорную? Я бронировала её на два часа." }
+        ]},
+        { "speaker": "b", "tr": "Güzel. Projektörü de alabilir miyim? Burada zaten büyük bir ekran var.", "ru": "Хорошо. Можно я возьму и проектор? Здесь ведь есть большой экран.", "distractors": [
+          { "tr": "Olga Hanım, toplantı odasını siz mi ayırttınız? Saat ikide odayı ben ayırtmıştım.", "ru": "Ольга-ханым, это вы забронировали переговорную? Я бронировала её на два часа." },
+          { "tr": "Evet, Alman müşterilerle toplantı için. Sistemde benim adım yazıyor.", "ru": "Да, для встречи с немецкими клиентами. В системе стоит моё имя." }
+        ]},
+        { "speaker": "a", "tr": "Tabii, alın. Kablosu masanın üstünde duruyor.", "ru": "Конечно, берите. Кабель лежит на столе.", "distractors": [
+          { "tr": "Garip. Belki sistem aynı saati iki kişiye vermiş.", "ru": "Странно. Наверное, система дала одно и то же время двоим." },
+          { "tr": "O zaman ben küçük odaya geçeyim. Orası boşsa, bize yeter.", "ru": "Тогда я перейду в маленькую комнату. Если она свободна, нам хватит." }
+        ]},
+        { "speaker": "b", "tr": "Buldum, teşekkürler. Müşterilerinizle kolay gelsin!", "ru": "Нашла, спасибо. Удачной встречи с клиентами!", "distractors": [
+          { "tr": "Çok naziksiniz, Betül Hanım! Küçük oda boş, az önce baktım.", "ru": "Вы очень любезны, Бетюль-ханым! Маленькая комната свободна, я только что смотрела." },
+          { "tr": "Yarım saat, sadece muhasebeyle bütçeyi konuşacağız. Sizinki?", "ru": "Полчаса, мы только обсудим бюджет с бухгалтерией. А ваше?" }
+        ]},
+        { "speaker": "a", "tr": "Teşekkürler! Bu hatayı yarın bilgi işleme söyleyeyim, bir daha olmasın.", "ru": "Спасибо! Завтра скажу про эту ошибку в IT-отдел, чтобы больше не повторялось.", "distractors": [
+          { "tr": "Garip. Belki sistem aynı saati iki kişiye vermiş.", "ru": "Странно. Наверное, система дала одно и то же время двоим." },
+          { "tr": "Olabilir. Sizin toplantınız ne kadar sürecek?", "ru": "Может быть. А сколько продлится ваше совещание?" }
+        ]}
+      ]
+    }
+  ]
+}
