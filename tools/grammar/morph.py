@@ -149,9 +149,16 @@ def yor(infinitive, person, negative=False, question=False):
         )
         tags.append("cons")
 
-    if question:
+    if question and person == "onlar":
+        # «Они» — исключение: -lar остаётся на глаголе, а частица по гармонии с -lar: mı.
+        parts.append(Part("lar", "person", _uniq(["lar"] + [YOR_PERSON[p] for p in PERSONS if YOR_PERSON[p]]),
+                          "onlar (они) → -lar остаётся на глаголе"))
+        parts.append(Part(" mı", "person", [" mı", " mu", " mi", " musunuz"],
+                          "после -lar частица вопроса по гармонии: lar → mı"))
+        tags.append("question")
+    elif question:
         q = YOR_QUESTION[person]
-        opts = _uniq([q] + [YOR_QUESTION[p] for p in PERSONS])
+        opts = _uniq([q] + [YOR_QUESTION[p] for p in PERSONS if p != "onlar"])
         parts.append(Part(" " + q, "person", [" " + o for o in opts],
                           f"в вопросе лицо переезжает на частицу: {person} → {q}"))
         tags.append("question")
@@ -264,6 +271,10 @@ if __name__ == "__main__":
         if got != want:
             bad += 1
             print("FAIL neg", args, got)
+    got = yor("oynamak", "onlar", question=True).word
+    if got != "oynuyorlar mı":
+        bad += 1
+        print("FAIL q onlar", got)
     got = yor("çalışmak", "siz", question=True).word
     if got != "çalışıyor musunuz":
         bad += 1

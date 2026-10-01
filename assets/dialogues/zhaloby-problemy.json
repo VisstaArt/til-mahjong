@@ -1,0 +1,710 @@
+{
+  "id": "zhaloby-problemy",
+  "title": "Жалобы и проблемы",
+  "dialogues": [
+    {
+      "id": "zhaloby-problemy-kombi-bozuldu",
+      "title": "Зимой сломался котёл: звонок арендодателю",
+      "level": "B1",
+      "speakers": { "a": "Ольга", "b": "Рахми" },
+      "turns": [
+        { "speaker": "b", "tr": "Alo, buyurun.", "ru": "Алло, слушаю.", "distractors": [
+          { "tr": "Çok iyi. Bu gece elektrikli ısıtıcı kullanın, üşümeyin. Geçmiş olsun.", "ru": "Отлично. Сегодня ночью включите электрообогреватель, не мёрзните. Сочувствую." },
+          { "tr": "Kusura bakmayın. Hemen bir usta göndereyim.", "ru": "Простите. Сейчас пришлю мастера." }
+        ]},
+        { "speaker": "a", "tr": "Alo, Rahmi Bey, merhaba. Ben Olga, Çınar Sokak 12'deki kiracınız.", "ru": "Алло, Рахми-бей, здравствуйте. Это Ольга, ваша квартиросъёмщица с Чынар Сокак, 12.", "distractors": [
+          { "tr": "Sağ olun, Rahmi Bey. Usta gelince sizi ararım.", "ru": "Спасибо, Рахми-бей. Когда мастер придёт, я вам позвоню." },
+          { "tr": "Usta ne zaman gelebilir?", "ru": "Когда мастер сможет прийти?" }
+        ]},
+        { "speaker": "b", "tr": "Merhaba Olga Hanım. Bir sorun mu var?", "ru": "Здравствуйте, Ольга-ханым. Что-то случилось?", "distractors": [
+          { "tr": "Çok iyi. Bu gece elektrikli ısıtıcı kullanın, üşümeyin. Geçmiş olsun.", "ru": "Отлично. Сегодня ночью включите электрообогреватель, не мёрзните. Сочувствую." },
+          { "tr": "Kombiyi takan ustayı göndereceğim. Yarın sabah dokuzda orada olur.", "ru": "Пришлю мастера, который ставил котёл. Завтра в девять утра будет у вас." }
+        ]},
+        { "speaker": "a", "tr": "Maalesef evet. Kombi bozuldu. Dün geceden beri sıcak su yok.", "ru": "К сожалению, да. Котёл сломался. Со вчерашнего вечера нет горячей воды.", "distractors": [
+          { "tr": "Sağ olun, Rahmi Bey. Usta gelince sizi ararım.", "ru": "Спасибо, Рахми-бей. Когда мастер придёт, я вам позвоню." },
+          { "tr": "Tamam. Yarın evde olacağım. İşe geç gideceğimi müdürüme söyleyeceğim.", "ru": "Хорошо. Завтра я буду дома. Скажу начальнику, что приду на работу позже." }
+        ]},
+        { "speaker": "b", "tr": "Allah Allah! Kombinin bakımı geçen ay yapıldı ama.", "ru": "Ну надо же! Котёл ведь в прошлом месяце обслуживали.", "distractors": [
+          { "tr": "Çok iyi. Bu gece elektrikli ısıtıcı kullanın, üşümeyin. Geçmiş olsun.", "ru": "Отлично. Сегодня ночью включите электрообогреватель, не мёрзните. Сочувствую." },
+          { "tr": "Alo, buyurun.", "ru": "Алло, слушаю." }
+        ]},
+        { "speaker": "a", "tr": "Biliyorum, ama çalışmıyor. Ekranda bir hata kodu var. Ev çok soğuk, dışarıda kar yağıyor.", "ru": "Знаю, но он не работает. На экране код ошибки. В квартире очень холодно, на улице идёт снег.", "distractors": [
+          { "tr": "Sağ olun, Rahmi Bey. Usta gelince sizi ararım.", "ru": "Спасибо, Рахми-бей. Когда мастер придёт, я вам позвоню." },
+          { "tr": "Alo, Rahmi Bey, merhaba. Ben Olga, Çınar Sokak 12'deki kiracınız.", "ru": "Алло, Рахми-бей, здравствуйте. Это Ольга, ваша квартиросъёмщица с Чынар Сокак, 12." }
+        ]},
+        { "speaker": "b", "tr": "Kusura bakmayın. Hemen bir usta göndereyim.", "ru": "Простите. Сейчас пришлю мастера.", "distractors": [
+          { "tr": "Alo, buyurun.", "ru": "Алло, слушаю." },
+          { "tr": "Merhaba Olga Hanım. Bir sorun mu var?", "ru": "Здравствуйте, Ольга-ханым. Что-то случилось?" }
+        ]},
+        { "speaker": "a", "tr": "Usta ne zaman gelebilir?", "ru": "Когда мастер сможет прийти?", "distractors": [
+          { "tr": "Alo, Rahmi Bey, merhaba. Ben Olga, Çınar Sokak 12'deki kiracınız.", "ru": "Алло, Рахми-бей, здравствуйте. Это Ольга, ваша квартиросъёмщица с Чынар Сокак, 12." },
+          { "tr": "Maalesef evet. Kombi bozuldu. Dün geceden beri sıcak su yok.", "ru": "К сожалению, да. Котёл сломался. Со вчерашнего вечера нет горячей воды." }
+        ]},
+        { "speaker": "b", "tr": "Kombiyi takan ustayı göndereceğim. Yarın sabah dokuzda orada olur.", "ru": "Пришлю мастера, который ставил котёл. Завтра в девять утра будет у вас.", "distractors": [
+          { "tr": "Alo, buyurun.", "ru": "Алло, слушаю." },
+          { "tr": "Merhaba Olga Hanım. Bir sorun mu var?", "ru": "Здравствуйте, Ольга-ханым. Что-то случилось?" }
+        ]},
+        { "speaker": "a", "tr": "Tamam. Yarın evde olacağım. İşe geç gideceğimi müdürüme söyleyeceğim.", "ru": "Хорошо. Завтра я буду дома. Скажу начальнику, что приду на работу позже.", "distractors": [
+          { "tr": "Alo, Rahmi Bey, merhaba. Ben Olga, Çınar Sokak 12'deki kiracınız.", "ru": "Алло, Рахми-бей, здравствуйте. Это Ольга, ваша квартиросъёмщица с Чынар Сокак, 12." },
+          { "tr": "Maalesef evet. Kombi bozuldu. Dün geceden beri sıcak su yok.", "ru": "К сожалению, да. Котёл сломался. Со вчерашнего вечера нет горячей воды." }
+        ]},
+        { "speaker": "b", "tr": "Çok iyi. Bu gece elektrikli ısıtıcı kullanın, üşümeyin. Geçmiş olsun.", "ru": "Отлично. Сегодня ночью включите электрообогреватель, не мёрзните. Сочувствую.", "distractors": [
+          { "tr": "Alo, buyurun.", "ru": "Алло, слушаю." },
+          { "tr": "Allah Allah! Kombinin bakımı geçen ay yapıldı ama.", "ru": "Ну надо же! Котёл ведь в прошлом месяце обслуживали." }
+        ]},
+        { "speaker": "a", "tr": "Sağ olun, Rahmi Bey. Usta gelince sizi ararım.", "ru": "Спасибо, Рахми-бей. Когда мастер придёт, я вам позвоню.", "distractors": [
+          { "tr": "Alo, Rahmi Bey, merhaba. Ben Olga, Çınar Sokak 12'deki kiracınız.", "ru": "Алло, Рахми-бей, здравствуйте. Это Ольга, ваша квартиросъёмщица с Чынар Сокак, 12." },
+          { "tr": "Biliyorum, ama çalışmıyor. Ekranda bir hata kodu var. Ev çok soğuk, dışarıda kar yağıyor.", "ru": "Знаю, но он не работает. На экране код ошибки. В квартире очень холодно, на улице идёт снег." }
+        ]}
+      ]
+    },
+    {
+      "id": "zhaloby-problemy-usta-gelmedi",
+      "title": "Мастер не пришёл",
+      "level": "B1",
+      "speakers": { "a": "Ольга", "b": "Рахми" },
+      "turns": [
+        { "speaker": "a", "tr": "Alo, Rahmi Bey? Yine ben, Olga.", "ru": "Алло, Рахми-бей? Это снова я, Ольга.", "distractors": [
+          { "tr": "Dün de böyle söylediniz. Lütfen bu sefer söz verin.", "ru": "Вчера вы говорили то же самое. Пожалуйста, на этот раз пообещайте." },
+          { "tr": "Kusura bakmayın ama böyle olmaz. İki gündür evde sıcak su yok.", "ru": "Простите, но так нельзя. Уже два дня в квартире нет горячей воды." }
+        ]},
+        { "speaker": "b", "tr": "Merhaba Olga Hanım. Kombi tamir edildi mi?", "ru": "Здравствуйте, Ольга-ханым. Котёл починили?", "distractors": [
+          { "tr": "Söz veriyorum. Gelmezse beni hemen arayın.", "ru": "Обещаю. Если не придёт, сразу звоните мне." },
+          { "tr": "Haklısınız, ama bugün başka usta bulmak zor.", "ru": "Вы правы, но сегодня найти другого мастера трудно." }
+        ]},
+        { "speaker": "a", "tr": "Hayır, edilmedi. Usta gelmedi. Sabahtan beri evde bekliyorum.", "ru": "Нет, не починили. Мастер не пришёл. Я с утра жду дома.", "distractors": [
+          { "tr": "Dün de böyle söylediniz. Lütfen bu sefer söz verin.", "ru": "Вчера вы говорили то же самое. Пожалуйста, на этот раз пообещайте." },
+          { "tr": "Eğer bugün tamir edilmezse başka bir usta çağıracağım ve faturayı size göndereceğim.", "ru": "Если сегодня не починят, я вызову другого мастера и пришлю счёт вам." }
+        ]},
+        { "speaker": "b", "tr": "Nasıl gelmedi? Ben dün akşam onunla konuştum.", "ru": "Как не пришёл? Я вчера вечером с ним говорил.", "distractors": [
+          { "tr": "Söz veriyorum. Gelmezse beni hemen arayın.", "ru": "Обещаю. Если не придёт, сразу звоните мне." },
+          { "tr": "Tamam, tamam. Hakkı Usta'yı ben bulurum, bir saat içinde orada olur.", "ru": "Хорошо, хорошо. Я сам найду Хаккы-усту, через час он будет у вас." }
+        ]},
+        { "speaker": "a", "tr": "Verdiğiniz numarayı aradım, telefonu kapalı.", "ru": "Я звонила по номеру, который вы дали, — телефон выключен.", "distractors": [
+          { "tr": "Dün de böyle söylediniz. Lütfen bu sefer söz verin.", "ru": "Вчера вы говорили то же самое. Пожалуйста, на этот раз пообещайте." },
+          { "tr": "Alo, Rahmi Bey? Yine ben, Olga.", "ru": "Алло, Рахми-бей? Это снова я, Ольга." }
+        ]},
+        { "speaker": "b", "tr": "Allah bilir, belki başka bir işe gitti. Yarın mutlaka gelir.", "ru": "Бог его знает, может, поехал на другой заказ. Завтра точно придёт.", "distractors": [
+          { "tr": "Söz veriyorum. Gelmezse beni hemen arayın.", "ru": "Обещаю. Если не придёт, сразу звоните мне." },
+          { "tr": "Merhaba Olga Hanım. Kombi tamir edildi mi?", "ru": "Здравствуйте, Ольга-ханым. Котёл починили?" }
+        ]},
+        { "speaker": "a", "tr": "Kusura bakmayın ama böyle olmaz. İki gündür evde sıcak su yok.", "ru": "Простите, но так нельзя. Уже два дня в квартире нет горячей воды.", "distractors": [
+          { "tr": "Alo, Rahmi Bey? Yine ben, Olga.", "ru": "Алло, Рахми-бей? Это снова я, Ольга." },
+          { "tr": "Hayır, edilmedi. Usta gelmedi. Sabahtan beri evde bekliyorum.", "ru": "Нет, не починили. Мастер не пришёл. Я с утра жду дома." }
+        ]},
+        { "speaker": "b", "tr": "Haklısınız, ama bugün başka usta bulmak zor.", "ru": "Вы правы, но сегодня найти другого мастера трудно.", "distractors": [
+          { "tr": "Merhaba Olga Hanım. Kombi tamir edildi mi?", "ru": "Здравствуйте, Ольга-ханым. Котёл починили?" },
+          { "tr": "Nasıl gelmedi? Ben dün akşam onunla konuştum.", "ru": "Как не пришёл? Я вчера вечером с ним говорил." }
+        ]},
+        { "speaker": "a", "tr": "Eğer bugün tamir edilmezse başka bir usta çağıracağım ve faturayı size göndereceğim.", "ru": "Если сегодня не починят, я вызову другого мастера и пришлю счёт вам.", "distractors": [
+          { "tr": "Alo, Rahmi Bey? Yine ben, Olga.", "ru": "Алло, Рахми-бей? Это снова я, Ольга." },
+          { "tr": "Hayır, edilmedi. Usta gelmedi. Sabahtan beri evde bekliyorum.", "ru": "Нет, не починили. Мастер не пришёл. Я с утра жду дома." }
+        ]},
+        { "speaker": "b", "tr": "Tamam, tamam. Hakkı Usta'yı ben bulurum, bir saat içinde orada olur.", "ru": "Хорошо, хорошо. Я сам найду Хаккы-усту, через час он будет у вас.", "distractors": [
+          { "tr": "Merhaba Olga Hanım. Kombi tamir edildi mi?", "ru": "Здравствуйте, Ольга-ханым. Котёл починили?" },
+          { "tr": "Nasıl gelmedi? Ben dün akşam onunla konuştum.", "ru": "Как не пришёл? Я вчера вечером с ним говорил." }
+        ]},
+        { "speaker": "a", "tr": "Dün de böyle söylediniz. Lütfen bu sefer söz verin.", "ru": "Вчера вы говорили то же самое. Пожалуйста, на этот раз пообещайте.", "distractors": [
+          { "tr": "Alo, Rahmi Bey? Yine ben, Olga.", "ru": "Алло, Рахми-бей? Это снова я, Ольга." },
+          { "tr": "Verdiğiniz numarayı aradım, telefonu kapalı.", "ru": "Я звонила по номеру, который вы дали, — телефон выключен." }
+        ]},
+        { "speaker": "b", "tr": "Söz veriyorum. Gelmezse beni hemen arayın.", "ru": "Обещаю. Если не придёт, сразу звоните мне.", "distractors": [
+          { "tr": "Merhaba Olga Hanım. Kombi tamir edildi mi?", "ru": "Здравствуйте, Ольга-ханым. Котёл починили?" },
+          { "tr": "Allah bilir, belki başka bir işe gitti. Yarın mutlaka gelir.", "ru": "Бог его знает, может, поехал на другой заказ. Завтра точно придёт." }
+        ]}
+      ]
+    },
+    {
+      "id": "zhaloby-problemy-hakki-usta",
+      "title": "Мастер чинит котёл и кран",
+      "level": "B1",
+      "speakers": { "a": "Ольга", "b": "Хаккы" },
+      "turns": [
+        { "speaker": "b", "tr": "Merhaba, ben Hakkı Usta. Rahmi Bey gönderdi. Kusura bakmayın, sabah gelemedim, arabam bozuldu.", "ru": "Здравствуйте, я мастер Хаккы. Меня прислал Рахми-бей. Простите, утром не смог прийти — сломалась машина.", "distractors": [
+          { "tr": "Rica ederim. Bu kış rahat edersiniz inşallah.", "ru": "Не за что. Этой зимой, даст бог, проблем не будет." },
+          { "tr": "Contası eskimiş. Onu da hemen değiştiririm.", "ru": "Прокладка износилась. Её тоже сразу заменю." }
+        ]},
+        { "speaker": "a", "tr": "Geçmiş olsun. Buyurun, kombi mutfakta.", "ru": "Сочувствую. Проходите, котёл на кухне.", "distractors": [
+          { "tr": "İnşallah!", "ru": "Дай бог!" },
+          { "tr": "Ücreti kim ödeyecek? Ben mi, ev sahibi mi?", "ru": "Кто будет платить? Я или хозяин квартиры?" }
+        ]},
+        { "speaker": "b", "tr": "Ne zamandan beri çalışmıyor?", "ru": "С какого времени он не работает?", "distractors": [
+          { "tr": "Rica ederim. Bu kış rahat edersiniz inşallah.", "ru": "Не за что. Этой зимой, даст бог, проблем не будет." },
+          { "tr": "Contası eskimiş. Onu da hemen değiştiririm.", "ru": "Прокладка износилась. Её тоже сразу заменю." }
+        ]},
+        { "speaker": "a", "tr": "Pazartesi gecesinden beri. Ekranda bir hata kodu var.", "ru": "С ночи понедельника. На экране код ошибки.", "distractors": [
+          { "tr": "İnşallah!", "ru": "Дай бог!" },
+          { "tr": "Ücreti kim ödeyecek? Ben mi, ev sahibi mi?", "ru": "Кто будет платить? Я или хозяин квартиры?" }
+        ]},
+        { "speaker": "b", "tr": "Bakayım... Evet, bir parça bozulmuş. Bir parça değiştirilmeli.", "ru": "Посмотрим... Да, одна деталь сломалась. Нужно заменить одну деталь.", "distractors": [
+          { "tr": "Rica ederim. Bu kış rahat edersiniz inşallah.", "ru": "Не за что. Этой зимой, даст бог, проблем не будет." },
+          { "tr": "Merhaba, ben Hakkı Usta. Rahmi Bey gönderdi. Kusura bakmayın, sabah gelemedim, arabam bozuldu.", "ru": "Здравствуйте, я мастер Хаккы. Меня прислал Рахми-бей. Простите, утром не смог прийти — сломалась машина." }
+        ]},
+        { "speaker": "a", "tr": "Bugün değiştirilebilir mi?", "ru": "Её можно заменить сегодня?", "distractors": [
+          { "tr": "İnşallah!", "ru": "Дай бог!" },
+          { "tr": "Geçmiş olsun. Buyurun, kombi mutfakta.", "ru": "Сочувствую. Проходите, котёл на кухне." }
+        ]},
+        { "speaker": "b", "tr": "Evet, parça arabada var. Yarım saatte biter.", "ru": "Да, деталь есть в машине. За полчаса закончу.", "distractors": [
+          { "tr": "Merhaba, ben Hakkı Usta. Rahmi Bey gönderdi. Kusura bakmayın, sabah gelemedim, arabam bozuldu.", "ru": "Здравствуйте, я мастер Хаккы. Меня прислал Рахми-бей. Простите, утром не смог прийти — сломалась машина." },
+          { "tr": "Ne zamandan beri çalışmıyor?", "ru": "С какого времени он не работает?" }
+        ]},
+        { "speaker": "a", "tr": "Çok iyi. Bir de banyodaki musluk damlıyor. Geçen ay söyledim ama musluk tamir edilmedi.", "ru": "Отлично. И ещё кран в ванной капает. Я говорила об этом в прошлом месяце, но кран так и не починили.", "distractors": [
+          { "tr": "Geçmiş olsun. Buyurun, kombi mutfakta.", "ru": "Сочувствую. Проходите, котёл на кухне." },
+          { "tr": "Pazartesi gecesinden beri. Ekranda bir hata kodu var.", "ru": "С ночи понедельника. На экране код ошибки." }
+        ]},
+        { "speaker": "b", "tr": "Contası eskimiş. Onu da hemen değiştiririm.", "ru": "Прокладка износилась. Её тоже сразу заменю.", "distractors": [
+          { "tr": "Merhaba, ben Hakkı Usta. Rahmi Bey gönderdi. Kusura bakmayın, sabah gelemedim, arabam bozuldu.", "ru": "Здравствуйте, я мастер Хаккы. Меня прислал Рахми-бей. Простите, утром не смог прийти — сломалась машина." },
+          { "tr": "Bakayım... Evet, bir parça bozulmuş. Bir parça değiştirilmeli.", "ru": "Посмотрим... Да, одна деталь сломалась. Нужно заменить одну деталь." }
+        ]},
+        { "speaker": "a", "tr": "Ücreti kim ödeyecek? Ben mi, ev sahibi mi?", "ru": "Кто будет платить? Я или хозяин квартиры?", "distractors": [
+          { "tr": "Geçmiş olsun. Buyurun, kombi mutfakta.", "ru": "Сочувствую. Проходите, котёл на кухне." },
+          { "tr": "Bugün değiştirilebilir mi?", "ru": "Её можно заменить сегодня?" }
+        ]},
+        { "speaker": "b", "tr": "Merak etmeyin, faturayı Rahmi Bey'e keseceğim. Tamam, kombi çalışıyor. Sıcak su geldi mi?", "ru": "Не волнуйтесь, счёт выставлю Рахми-бею. Всё, котёл работает. Горячая вода пошла?", "distractors": [
+          { "tr": "Merhaba, ben Hakkı Usta. Rahmi Bey gönderdi. Kusura bakmayın, sabah gelemedim, arabam bozuldu.", "ru": "Здравствуйте, я мастер Хаккы. Меня прислал Рахми-бей. Простите, утром не смог прийти — сломалась машина." },
+          { "tr": "Bakayım... Evet, bir parça bozulmuş. Bir parça değiştirilmeli.", "ru": "Посмотрим... Да, одна деталь сломалась. Нужно заменить одну деталь." }
+        ]},
+        { "speaker": "a", "tr": "Evet, geldi! Çok teşekkür ederim, usta.", "ru": "Да, пошла! Большое спасибо, мастер.", "distractors": [
+          { "tr": "Geçmiş olsun. Buyurun, kombi mutfakta.", "ru": "Сочувствую. Проходите, котёл на кухне." },
+          { "tr": "Bugün değiştirilebilir mi?", "ru": "Её можно заменить сегодня?" }
+        ]},
+        { "speaker": "b", "tr": "Rica ederim. Bu kış rahat edersiniz inşallah.", "ru": "Не за что. Этой зимой, даст бог, проблем не будет.", "distractors": [
+          { "tr": "Merhaba, ben Hakkı Usta. Rahmi Bey gönderdi. Kusura bakmayın, sabah gelemedim, arabam bozuldu.", "ru": "Здравствуйте, я мастер Хаккы. Меня прислал Рахми-бей. Простите, утром не смог прийти — сломалась машина." },
+          { "tr": "Bakayım... Evet, bir parça bozulmuş. Bir parça değiştirilmeli.", "ru": "Посмотрим... Да, одна деталь сломалась. Нужно заменить одну деталь." }
+        ]},
+        { "speaker": "a", "tr": "İnşallah!", "ru": "Дай бог!", "distractors": [
+          { "tr": "Geçmiş olsun. Buyurun, kombi mutfakta.", "ru": "Сочувствую. Проходите, котёл на кухне." },
+          { "tr": "Bugün değiştirilebilir mi?", "ru": "Её можно заменить сегодня?" }
+        ]}
+      ]
+    },
+    {
+      "id": "zhaloby-problemy-tadilat-nuran",
+      "title": "Шумный ремонт: разговор с Нуран-ханым",
+      "level": "B1",
+      "speakers": { "a": "Ольга", "b": "Нуран" },
+      "turns": [
+        { "speaker": "b", "tr": "Olga, kızım, sen de duyuyor musun bu gürültüyü?", "ru": "Ольга, дочка, ты тоже слышишь этот шум?", "distractors": [
+          { "tr": "Allah razı olsun, kızım. Gel, önce bir çay iç.", "ru": "Дай бог тебе здоровья, дочка. Заходи, сначала выпей чаю." },
+          { "tr": "Evet, yedide başladılar. Pazar günü bu yasak değil mi?", "ru": "Да, в семь начали. Разве в воскресенье это не запрещено?" }
+        ]},
+        { "speaker": "a", "tr": "Duyuyorum, Nuran Hanım. Sabah sekizden beri matkap sesi var.", "ru": "Слышу, Нуран-ханым. С восьми утра звук дрели.", "distractors": [
+          { "tr": "Tabii, bu akşam yukarı çıkıp yeni komşuyla konuşurum.", "ru": "Конечно, сегодня вечером поднимусь и поговорю с новым соседом." },
+          { "tr": "Bence yasak. Apartman kurallarına göre pazar günü tadilat yapılamaz.", "ru": "По-моему, запрещено. По правилам дома в воскресенье ремонт делать нельзя." }
+        ]},
+        { "speaker": "b", "tr": "Dördüncü kattaki daire satıldı. Yeni sahibi bütün evi yeniletiyor.", "ru": "Квартиру на четвёртом этаже продали. Новый хозяин делает ремонт во всей квартире.", "distractors": [
+          { "tr": "Allah razı olsun, kızım. Gel, önce bir çay iç.", "ru": "Дай бог тебе здоровья, дочка. Заходи, сначала выпей чаю." },
+          { "tr": "Ben yaşlıyım, onlarla tartışmak istemiyorum. Sen konuşur musun, kızım?", "ru": "Я уже немолодая, не хочу с ними спорить. Ты поговоришь, дочка?" }
+        ]},
+        { "speaker": "a", "tr": "Ne kadar sürecek, biliyor musunuz?", "ru": "А вы знаете, сколько это продлится?", "distractors": [
+          { "tr": "Tabii, bu akşam yukarı çıkıp yeni komşuyla konuşurum.", "ru": "Конечно, сегодня вечером поднимусь и поговорю с новым соседом." },
+          { "tr": "Bence yasak. Apartman kurallarına göre pazar günü tadilat yapılamaz.", "ru": "По-моему, запрещено. По правилам дома в воскресенье ремонт делать нельзя." }
+        ]},
+        { "speaker": "b", "tr": "Apartman yöneticisi iki ay sürecek dedi. Allah'ım, iki ay!", "ru": "Управляющий домом сказал, что два месяца. Боже мой, два месяца!", "distractors": [
+          { "tr": "Allah razı olsun, kızım. Gel, önce bir çay iç.", "ru": "Дай бог тебе здоровья, дочка. Заходи, сначала выпей чаю." },
+          { "tr": "Olga, kızım, sen de duyuyor musun bu gürültüyü?", "ru": "Ольга, дочка, ты тоже слышишь этот шум?" }
+        ]},
+        { "speaker": "a", "tr": "İki ay mı? Pazar sabahı da çalıştılar, ben hiç uyuyamadım.", "ru": "Два месяца? Они и в воскресенье утром работали, я совсем не выспалась.", "distractors": [
+          { "tr": "Duyuyorum, Nuran Hanım. Sabah sekizden beri matkap sesi var.", "ru": "Слышу, Нуран-ханым. С восьми утра звук дрели." },
+          { "tr": "Tabii, bu akşam yukarı çıkıp yeni komşuyla konuşurum.", "ru": "Конечно, сегодня вечером поднимусь и поговорю с новым соседом." }
+        ]},
+        { "speaker": "b", "tr": "Evet, yedide başladılar. Pazar günü bu yasak değil mi?", "ru": "Да, в семь начали. Разве в воскресенье это не запрещено?", "distractors": [
+          { "tr": "Olga, kızım, sen de duyuyor musun bu gürültüyü?", "ru": "Ольга, дочка, ты тоже слышишь этот шум?" },
+          { "tr": "Dördüncü kattaki daire satıldı. Yeni sahibi bütün evi yeniletiyor.", "ru": "Квартиру на четвёртом этаже продали. Новый хозяин делает ремонт во всей квартире." }
+        ]},
+        { "speaker": "a", "tr": "Bence yasak. Apartman kurallarına göre pazar günü tadilat yapılamaz.", "ru": "По-моему, запрещено. По правилам дома в воскресенье ремонт делать нельзя.", "distractors": [
+          { "tr": "Duyuyorum, Nuran Hanım. Sabah sekizden beri matkap sesi var.", "ru": "Слышу, Нуран-ханым. С восьми утра звук дрели." },
+          { "tr": "Ne kadar sürecek, biliyor musunuz?", "ru": "А вы знаете, сколько это продлится?" }
+        ]},
+        { "speaker": "b", "tr": "Ben yaşlıyım, onlarla tartışmak istemiyorum. Sen konuşur musun, kızım?", "ru": "Я уже немолодая, не хочу с ними спорить. Ты поговоришь, дочка?", "distractors": [
+          { "tr": "Olga, kızım, sen de duyuyor musun bu gürültüyü?", "ru": "Ольга, дочка, ты тоже слышишь этот шум?" },
+          { "tr": "Dördüncü kattaki daire satıldı. Yeni sahibi bütün evi yeniletiyor.", "ru": "Квартиру на четвёртом этаже продали. Новый хозяин делает ремонт во всей квартире." }
+        ]},
+        { "speaker": "a", "tr": "Tabii, bu akşam yukarı çıkıp yeni komşuyla konuşurum.", "ru": "Конечно, сегодня вечером поднимусь и поговорю с новым соседом.", "distractors": [
+          { "tr": "Duyuyorum, Nuran Hanım. Sabah sekizden beri matkap sesi var.", "ru": "Слышу, Нуран-ханым. С восьми утра звук дрели." },
+          { "tr": "Ne kadar sürecek, biliyor musunuz?", "ru": "А вы знаете, сколько это продлится?" }
+        ]},
+        { "speaker": "b", "tr": "Allah razı olsun, kızım. Gel, önce bir çay iç.", "ru": "Дай бог тебе здоровья, дочка. Заходи, сначала выпей чаю.", "distractors": [
+          { "tr": "Olga, kızım, sen de duyuyor musun bu gürültüyü?", "ru": "Ольга, дочка, ты тоже слышишь этот шум?" },
+          { "tr": "Apartman yöneticisi iki ay sürecek dedi. Allah'ım, iki ay!", "ru": "Управляющий домом сказал, что два месяца. Боже мой, два месяца!" }
+        ]}
+      ]
+    },
+    {
+      "id": "zhaloby-problemy-tadilat-komsu",
+      "title": "Вежливо, но твёрдо: разговор с новым соседом",
+      "level": "B1",
+      "speakers": { "a": "Ольга", "b": "Окан" },
+      "turns": [
+        { "speaker": "a", "tr": "İyi akşamlar. Ben Olga, ikinci kattaki komşunuzum.", "ru": "Добрый вечер. Я Ольга, ваша соседка со второго этажа.", "distractors": [
+          { "tr": "Anlayışınız için teşekkür ederim. İyi akşamlar.", "ru": "Спасибо за понимание. Доброго вечера." },
+          { "tr": "Ama çalıştılar. Bir de merdivenler hep toz içinde.", "ru": "Но они работали. И ещё на лестнице всё время пыль." }
+        ]},
+        { "speaker": "b", "tr": "İyi akşamlar, memnun oldum. Ben Okan. Buyurun?", "ru": "Добрый вечер, очень приятно. Я Окан. Слушаю вас?", "distractors": [
+          { "tr": "İyi akşamlar. Nuran Hanım'dan da özür dilerim.", "ru": "Доброго вечера. И у Нуран-ханым я тоже прошу прощения." },
+          { "tr": "Haklısınız. Merdivenleri her akşam temizletirim.", "ru": "Вы правы. Буду каждый вечер заказывать уборку лестницы." }
+        ]},
+        { "speaker": "a", "tr": "Tadilat için geldim. Kusura bakmayın ama gürültü çok fazla.", "ru": "Я пришла насчёт ремонта. Простите, но шума слишком много.", "distractors": [
+          { "tr": "Anlayışınız için teşekkür ederim. İyi akşamlar.", "ru": "Спасибо за понимание. Доброго вечера." },
+          { "tr": "Teşekkürler. Bir rica daha: işler sabah dokuzdan önce başlamasın. Eğer yine pazar günü çalışılırsa yöneticiye şikâyet edeceğim.", "ru": "Спасибо. И ещё просьба: пусть работы не начинаются раньше девяти утра. Если в воскресенье снова будут работать, я пожалуюсь управляющему." }
+        ]},
+        { "speaker": "b", "tr": "Biliyorum, kusura bakmayın. Mutfak ve banyo yenileniyor, biraz ses olacak.", "ru": "Знаю, извините. Обновляем кухню и ванную, будет немного шумно.", "distractors": [
+          { "tr": "İyi akşamlar. Nuran Hanım'dan da özür dilerim.", "ru": "Доброго вечера. И у Нуран-ханым я тоже прошу прощения." },
+          { "tr": "Anlaşıldı. Ustalara bugün söyleyeceğim. Bir daha olmayacak.", "ru": "Понял. Сегодня же скажу мастерам. Больше такого не будет." }
+        ]},
+        { "speaker": "a", "tr": "Anlıyorum. Ama pazar sabahı yedide matkap sesiyle uyandık. Nuran Hanım da çok rahatsız oldu.", "ru": "Понимаю. Но в воскресенье в семь утра мы проснулись от дрели. Нуран-ханым тоже очень беспокоилась.", "distractors": [
+          { "tr": "Anlayışınız için teşekkür ederim. İyi akşamlar.", "ru": "Спасибо за понимание. Доброго вечера." },
+          { "tr": "İyi akşamlar. Ben Olga, ikinci kattaki komşunuzum.", "ru": "Добрый вечер. Я Ольга, ваша соседка со второго этажа." }
+        ]},
+        { "speaker": "b", "tr": "Pazar mı? Ben ustalara \"pazar günü çalışmayın\" dedim!", "ru": "В воскресенье? Я же сказал мастерам: «В воскресенье не работайте»!", "distractors": [
+          { "tr": "İyi akşamlar. Nuran Hanım'dan da özür dilerim.", "ru": "Доброго вечера. И у Нуран-ханым я тоже прошу прощения." },
+          { "tr": "İyi akşamlar, memnun oldum. Ben Okan. Buyurun?", "ru": "Добрый вечер, очень приятно. Я Окан. Слушаю вас?" }
+        ]},
+        { "speaker": "a", "tr": "Ama çalıştılar. Bir de merdivenler hep toz içinde.", "ru": "Но они работали. И ещё на лестнице всё время пыль.", "distractors": [
+          { "tr": "İyi akşamlar. Ben Olga, ikinci kattaki komşunuzum.", "ru": "Добрый вечер. Я Ольга, ваша соседка со второго этажа." },
+          { "tr": "Tadilat için geldim. Kusura bakmayın ama gürültü çok fazla.", "ru": "Я пришла насчёт ремонта. Простите, но шума слишком много." }
+        ]},
+        { "speaker": "b", "tr": "Haklısınız. Merdivenleri her akşam temizletirim.", "ru": "Вы правы. Буду каждый вечер заказывать уборку лестницы.", "distractors": [
+          { "tr": "İyi akşamlar, memnun oldum. Ben Okan. Buyurun?", "ru": "Добрый вечер, очень приятно. Я Окан. Слушаю вас?" },
+          { "tr": "Biliyorum, kusura bakmayın. Mutfak ve banyo yenileniyor, biraz ses olacak.", "ru": "Знаю, извините. Обновляем кухню и ванную, будет немного шумно." }
+        ]},
+        { "speaker": "a", "tr": "Teşekkürler. Bir rica daha: işler sabah dokuzdan önce başlamasın. Eğer yine pazar günü çalışılırsa yöneticiye şikâyet edeceğim.", "ru": "Спасибо. И ещё просьба: пусть работы не начинаются раньше девяти утра. Если в воскресенье снова будут работать, я пожалуюсь управляющему.", "distractors": [
+          { "tr": "İyi akşamlar. Ben Olga, ikinci kattaki komşunuzum.", "ru": "Добрый вечер. Я Ольга, ваша соседка со второго этажа." },
+          { "tr": "Tadilat için geldim. Kusura bakmayın ama gürültü çok fazla.", "ru": "Я пришла насчёт ремонта. Простите, но шума слишком много." }
+        ]},
+        { "speaker": "b", "tr": "Anlaşıldı. Ustalara bugün söyleyeceğim. Bir daha olmayacak.", "ru": "Понял. Сегодня же скажу мастерам. Больше такого не будет.", "distractors": [
+          { "tr": "İyi akşamlar, memnun oldum. Ben Okan. Buyurun?", "ru": "Добрый вечер, очень приятно. Я Окан. Слушаю вас?" },
+          { "tr": "Biliyorum, kusura bakmayın. Mutfak ve banyo yenileniyor, biraz ses olacak.", "ru": "Знаю, извините. Обновляем кухню и ванную, будет немного шумно." }
+        ]},
+        { "speaker": "a", "tr": "Anlayışınız için teşekkür ederim. İyi akşamlar.", "ru": "Спасибо за понимание. Доброго вечера.", "distractors": [
+          { "tr": "İyi akşamlar. Ben Olga, ikinci kattaki komşunuzum.", "ru": "Добрый вечер. Я Ольга, ваша соседка со второго этажа." },
+          { "tr": "Anlıyorum. Ama pazar sabahı yedide matkap sesiyle uyandık. Nuran Hanım da çok rahatsız oldu.", "ru": "Понимаю. Но в воскресенье в семь утра мы проснулись от дрели. Нуран-ханым тоже очень беспокоилась." }
+        ]},
+        { "speaker": "b", "tr": "İyi akşamlar. Nuran Hanım'dan da özür dilerim.", "ru": "Доброго вечера. И у Нуран-ханым я тоже прошу прощения.", "distractors": [
+          { "tr": "İyi akşamlar, memnun oldum. Ben Okan. Buyurun?", "ru": "Добрый вечер, очень приятно. Я Окан. Слушаю вас?" },
+          { "tr": "Pazar mı? Ben ustalara \"pazar günü çalışmayın\" dedim!", "ru": "В воскресенье? Я же сказал мастерам: «В воскресенье не работайте»!" }
+        ]}
+      ]
+    },
+    {
+      "id": "zhaloby-problemy-yanlis-beden",
+      "title": "Интернет-заказ: пришёл не тот размер",
+      "level": "B1",
+      "speakers": { "a": "Ольга", "b": "Мелтем" },
+      "turns": [
+        { "speaker": "b", "tr": "Lavanta müşteri hizmetleri, ben Meltem. Size nasıl yardımcı olabilirim?", "ru": "Служба поддержки «Лаванта», меня зовут Мелтем. Чем могу помочь?", "distractors": [
+          { "tr": "Perşembe günü elinizde olur. Tekrar özür dileriz.", "ru": "В четверг оно будет у вас. Ещё раз приносим извинения." },
+          { "tr": "Lacivert ve yeşil var. Hangisini istersiniz?", "ru": "Есть тёмно-синий и зелёный. Какой хотите?" }
+        ]},
+        { "speaker": "a", "tr": "Merhaba. Geçen hafta sitenizden bir elbise sipariş ettim. Bugün geldi ama beden yanlış.", "ru": "Здравствуйте. На прошлой неделе я заказала у вас на сайте платье. Сегодня пришло, но размер не тот.", "distractors": [
+          { "tr": "Peki, yeni elbise ne zaman gelir? Cumartesi akşamı giymek istiyorum.", "ru": "Хорошо, а новое платье когда придёт? Я хочу надеть его в субботу вечером." },
+          { "tr": "Hangi renkler var?", "ru": "Какие есть цвета?" }
+        ]},
+        { "speaker": "b", "tr": "Çok özür dilerim. Sipariş numaranızı alabilir miyim?", "ru": "Очень извиняюсь. Можно номер вашего заказа?", "distractors": [
+          { "tr": "Perşembe günü elinizde olur. Tekrar özür dileriz.", "ru": "В четверг оно будет у вас. Ещё раз приносим извинения." },
+          { "tr": "Lacivert ve yeşil var. Hangisini istersiniz?", "ru": "Есть тёмно-синий и зелёный. Какой хотите?" }
+        ]},
+        { "speaker": "a", "tr": "Tabii, 48213. Ben 36 beden sipariş ettim, ama gelen elbise 40 beden.", "ru": "Конечно, 48213. Я заказывала 36-й размер, а пришло платье 40-го.", "distractors": [
+          { "tr": "Peki, yeni elbise ne zaman gelir? Cumartesi akşamı giymek istiyorum.", "ru": "Хорошо, а новое платье когда придёт? Я хочу надеть его в субботу вечером." },
+          { "tr": "Lacivert olsun. Yanlış gelen elbiseyi nasıl geri göndereceğim?", "ru": "Пусть будет тёмно-синий. А как мне отправить обратно платье, которое пришло по ошибке?" }
+        ]},
+        { "speaker": "b", "tr": "Bir saniye... Evet, haklısınız. Depoda bir hata yapılmış.", "ru": "Секунду... Да, вы правы. На складе ошиблись.", "distractors": [
+          { "tr": "Perşembe günü elinizde olur. Tekrar özür dileriz.", "ru": "В четверг оно будет у вас. Ещё раз приносим извинения." },
+          { "tr": "Lavanta müşteri hizmetleri, ben Meltem. Size nasıl yardımcı olabilirim?", "ru": "Служба поддержки «Лаванта», меня зовут Мелтем. Чем могу помочь?" }
+        ]},
+        { "speaker": "a", "tr": "Elbiseyi değiştirmek istiyorum. 36 beden var mı?", "ru": "Я хочу обменять платье. 36-й размер есть?", "distractors": [
+          { "tr": "Peki, yeni elbise ne zaman gelir? Cumartesi akşamı giymek istiyorum.", "ru": "Хорошо, а новое платье когда придёт? Я хочу надеть его в субботу вечером." },
+          { "tr": "Merhaba. Geçen hafta sitenizden bir elbise sipariş ettim. Bugün geldi ama beden yanlış.", "ru": "Здравствуйте. На прошлой неделе я заказала у вас на сайте платье. Сегодня пришло, но размер не тот." }
+        ]},
+        { "speaker": "b", "tr": "Maalesef bu renkte 36 beden kalmadı. İsterseniz başka bir renk gönderebiliriz ya da paranızı iade ederiz.", "ru": "К сожалению, в этом цвете 36-го размера не осталось. Если хотите, можем прислать другой цвет или вернём деньги.", "distractors": [
+          { "tr": "Lavanta müşteri hizmetleri, ben Meltem. Size nasıl yardımcı olabilirim?", "ru": "Служба поддержки «Лаванта», меня зовут Мелтем. Чем могу помочь?" },
+          { "tr": "Çok özür dilerim. Sipariş numaranızı alabilir miyim?", "ru": "Очень извиняюсь. Можно номер вашего заказа?" }
+        ]},
+        { "speaker": "a", "tr": "Hangi renkler var?", "ru": "Какие есть цвета?", "distractors": [
+          { "tr": "Merhaba. Geçen hafta sitenizden bir elbise sipariş ettim. Bugün geldi ama beden yanlış.", "ru": "Здравствуйте. На прошлой неделе я заказала у вас на сайте платье. Сегодня пришло, но размер не тот." },
+          { "tr": "Tabii, 48213. Ben 36 beden sipariş ettim, ama gelen elbise 40 beden.", "ru": "Конечно, 48213. Я заказывала 36-й размер, а пришло платье 40-го." }
+        ]},
+        { "speaker": "b", "tr": "Lacivert ve yeşil var. Hangisini istersiniz?", "ru": "Есть тёмно-синий и зелёный. Какой хотите?", "distractors": [
+          { "tr": "Lavanta müşteri hizmetleri, ben Meltem. Size nasıl yardımcı olabilirim?", "ru": "Служба поддержки «Лаванта», меня зовут Мелтем. Чем могу помочь?" },
+          { "tr": "Bir saniye... Evet, haklısınız. Depoda bir hata yapılmış.", "ru": "Секунду... Да, вы правы. На складе ошиблись." }
+        ]},
+        { "speaker": "a", "tr": "Lacivert olsun. Yanlış gelen elbiseyi nasıl geri göndereceğim?", "ru": "Пусть будет тёмно-синий. А как мне отправить обратно платье, которое пришло по ошибке?", "distractors": [
+          { "tr": "Merhaba. Geçen hafta sitenizden bir elbise sipariş ettim. Bugün geldi ama beden yanlış.", "ru": "Здравствуйте. На прошлой неделе я заказала у вас на сайте платье. Сегодня пришло, но размер не тот." },
+          { "tr": "Tabii, 48213. Ben 36 beden sipariş ettim, ama gelen elbise 40 beden.", "ru": "Конечно, 48213. Я заказывала 36-й размер, а пришло платье 40-го." }
+        ]},
+        { "speaker": "b", "tr": "Kargo görevlisi yarın kapınıza gelecek. Kargo ücreti bizden.", "ru": "Завтра к вам придёт курьер. Доставку оплачиваем мы.", "distractors": [
+          { "tr": "Lavanta müşteri hizmetleri, ben Meltem. Size nasıl yardımcı olabilirim?", "ru": "Служба поддержки «Лаванта», меня зовут Мелтем. Чем могу помочь?" },
+          { "tr": "Bir saniye... Evet, haklısınız. Depoda bir hata yapılmış.", "ru": "Секунду... Да, вы правы. На складе ошиблись." }
+        ]},
+        { "speaker": "a", "tr": "Peki, yeni elbise ne zaman gelir? Cumartesi akşamı giymek istiyorum.", "ru": "Хорошо, а новое платье когда придёт? Я хочу надеть его в субботу вечером.", "distractors": [
+          { "tr": "Merhaba. Geçen hafta sitenizden bir elbise sipariş ettim. Bugün geldi ama beden yanlış.", "ru": "Здравствуйте. На прошлой неделе я заказала у вас на сайте платье. Сегодня пришло, но размер не тот." },
+          { "tr": "Elbiseyi değiştirmek istiyorum. 36 beden var mı?", "ru": "Я хочу обменять платье. 36-й размер есть?" }
+        ]},
+        { "speaker": "b", "tr": "Perşembe günü elinizde olur. Tekrar özür dileriz.", "ru": "В четверг оно будет у вас. Ещё раз приносим извинения.", "distractors": [
+          { "tr": "Lavanta müşteri hizmetleri, ben Meltem. Size nasıl yardımcı olabilirim?", "ru": "Служба поддержки «Лаванта», меня зовут Мелтем. Чем могу помочь?" },
+          { "tr": "Bir saniye... Evet, haklısınız. Depoda bir hata yapılmış.", "ru": "Секунду... Да, вы правы. На складе ошиблись." }
+        ]}
+      ]
+    },
+    {
+      "id": "zhaloby-problemy-iade-magaza",
+      "title": "Вернуть сломанный чайник",
+      "level": "B1",
+      "speakers": { "a": "Ольга", "b": "Тунч" },
+      "turns": [
+        { "speaker": "a", "tr": "Merhaba. Bu su ısıtıcısını geçen hafta buradan aldım ama çalışmıyor.", "ru": "Здравствуйте. Я купила этот чайник у вас на прошлой неделе, но он не работает.", "distractors": [
+          { "tr": "Teşekkür ederim. Kolay gelsin.", "ru": "Спасибо. Хорошего рабочего дня." },
+          { "tr": "Söylediğiniz gibi değil. Bozuk ürün iade edilebilir, bunu kanun da söylüyor.", "ru": "Это не так, как вы говорите. Бракованный товар можно вернуть — так и по закону." }
+        ]},
+        { "speaker": "b", "tr": "Bakalım. Fişiniz yanınızda mı?", "ru": "Посмотрим. Чек у вас с собой?", "distractors": [
+          { "tr": "Üç ile beş iş günü içinde. Kusura bakmayın.", "ru": "В течение трёх–пяти рабочих дней. Извините за неудобства." },
+          { "tr": "Bizim kuralımız böyle: önce değişim, sonra iade.", "ru": "У нас такое правило: сначала обмен, потом возврат." }
+        ]},
+        { "speaker": "a", "tr": "Evet, fiş burada. İki gün çalıştı, sonra hiç ısıtmadı.", "ru": "Да, вот чек. Два дня работал, потом совсем перестал греть.", "distractors": [
+          { "tr": "Teşekkür ederim. Kolay gelsin.", "ru": "Спасибо. Хорошего рабочего дня." },
+          { "tr": "Söylediğiniz gibi değil. Bozuk ürün iade edilebilir, bunu kanun da söylüyor.", "ru": "Это не так, как вы говорите. Бракованный товар можно вернуть — так и по закону." }
+        ]},
+        { "speaker": "b", "tr": "Gerçekten bozuk. Size yenisini verebilirim.", "ru": "Действительно сломан. Могу дать вам новый.", "distractors": [
+          { "tr": "Üç ile beş iş günü içinde. Kusura bakmayın.", "ru": "В течение трёх–пяти рабочих дней. Извините за неудобства." },
+          { "tr": "Peki, müdürüme sorayım... Tamam, müdürüm onayladı. Paranız kartınıza iade edilecek.", "ru": "Ладно, спрошу у управляющего... Всё, управляющий одобрил. Деньги вернут вам на карту." }
+        ]},
+        { "speaker": "a", "tr": "Yenisini istemiyorum, aynı model yine bozulur diye korkuyorum. Paramı geri alabilir miyim?", "ru": "Новый не хочу — боюсь, что та же модель опять сломается. Можно вернуть деньги?", "distractors": [
+          { "tr": "Teşekkür ederim. Kolay gelsin.", "ru": "Спасибо. Хорошего рабочего дня." },
+          { "tr": "Merhaba. Bu su ısıtıcısını geçen hafta buradan aldım ama çalışmıyor.", "ru": "Здравствуйте. Я купила этот чайник у вас на прошлой неделе, но он не работает." }
+        ]},
+        { "speaker": "b", "tr": "Maalesef nakit iade yapılmıyor. Sadece değişim ya da hediye çeki verebiliriz.", "ru": "К сожалению, деньги наличными не возвращаем. Можем только обменять или дать подарочный сертификат.", "distractors": [
+          { "tr": "Üç ile beş iş günü içinde. Kusura bakmayın.", "ru": "В течение трёх–пяти рабочих дней. Извините за неудобства." },
+          { "tr": "Bakalım. Fişiniz yanınızda mı?", "ru": "Посмотрим. Чек у вас с собой?" }
+        ]},
+        { "speaker": "a", "tr": "Ama satın aldığım gün başka bir şey söylediniz. \"İade on dört gün içinde yapılır\" dediniz.", "ru": "Но в день покупки вы говорили другое. Вы сказали: «Возврат делается в течение четырнадцати дней».", "distractors": [
+          { "tr": "Merhaba. Bu su ısıtıcısını geçen hafta buradan aldım ama çalışmıyor.", "ru": "Здравствуйте. Я купила этот чайник у вас на прошлой неделе, но он не работает." },
+          { "tr": "Evet, fiş burada. İki gün çalıştı, sonra hiç ısıtmadı.", "ru": "Да, вот чек. Два дня работал, потом совсем перестал греть." }
+        ]},
+        { "speaker": "b", "tr": "Bizim kuralımız böyle: önce değişim, sonra iade.", "ru": "У нас такое правило: сначала обмен, потом возврат.", "distractors": [
+          { "tr": "Bakalım. Fişiniz yanınızda mı?", "ru": "Посмотрим. Чек у вас с собой?" },
+          { "tr": "Gerçekten bozuk. Size yenisini verebilirim.", "ru": "Действительно сломан. Могу дать вам новый." }
+        ]},
+        { "speaker": "a", "tr": "Söylediğiniz gibi değil. Bozuk ürün iade edilebilir, bunu kanun da söylüyor.", "ru": "Это не так, как вы говорите. Бракованный товар можно вернуть — так и по закону.", "distractors": [
+          { "tr": "Merhaba. Bu su ısıtıcısını geçen hafta buradan aldım ama çalışmıyor.", "ru": "Здравствуйте. Я купила этот чайник у вас на прошлой неделе, но он не работает." },
+          { "tr": "Yenisini istemiyorum, aynı model yine bozulur diye korkuyorum. Paramı geri alabilir miyim?", "ru": "Новый не хочу — боюсь, что та же модель опять сломается. Можно вернуть деньги?" }
+        ]},
+        { "speaker": "b", "tr": "Peki, müdürüme sorayım... Tamam, müdürüm onayladı. Paranız kartınıza iade edilecek.", "ru": "Ладно, спрошу у управляющего... Всё, управляющий одобрил. Деньги вернут вам на карту.", "distractors": [
+          { "tr": "Bakalım. Fişiniz yanınızda mı?", "ru": "Посмотрим. Чек у вас с собой?" },
+          { "tr": "Gerçekten bozuk. Size yenisini verebilirim.", "ru": "Действительно сломан. Могу дать вам новый." }
+        ]},
+        { "speaker": "a", "tr": "Ne zaman yatar?", "ru": "Когда они придут?", "distractors": [
+          { "tr": "Merhaba. Bu su ısıtıcısını geçen hafta buradan aldım ama çalışmıyor.", "ru": "Здравствуйте. Я купила этот чайник у вас на прошлой неделе, но он не работает." },
+          { "tr": "Yenisini istemiyorum, aynı model yine bozulur diye korkuyorum. Paramı geri alabilir miyim?", "ru": "Новый не хочу — боюсь, что та же модель опять сломается. Можно вернуть деньги?" }
+        ]},
+        { "speaker": "b", "tr": "Üç ile beş iş günü içinde. Kusura bakmayın.", "ru": "В течение трёх–пяти рабочих дней. Извините за неудобства.", "distractors": [
+          { "tr": "Bakalım. Fişiniz yanınızda mı?", "ru": "Посмотрим. Чек у вас с собой?" },
+          { "tr": "Maalesef nakit iade yapılmıyor. Sadece değişim ya da hediye çeki verebiliriz.", "ru": "К сожалению, деньги наличными не возвращаем. Можем только обменять или дать подарочный сертификат." }
+        ]},
+        { "speaker": "a", "tr": "Teşekkür ederim. Kolay gelsin.", "ru": "Спасибо. Хорошего рабочего дня.", "distractors": [
+          { "tr": "Merhaba. Bu su ısıtıcısını geçen hafta buradan aldım ama çalışmıyor.", "ru": "Здравствуйте. Я купила этот чайник у вас на прошлой неделе, но он не работает." },
+          { "tr": "Yenisini istemiyorum, aynı model yine bozulur diye korkuyorum. Paramı geri alabilir miyim?", "ru": "Новый не хочу — боюсь, что та же модель опять сломается. Можно вернуть деньги?" }
+        ]}
+      ]
+    },
+    {
+      "id": "zhaloby-problemy-elektrik-faturasi",
+      "title": "Ошибка в счёте за электричество",
+      "level": "B1",
+      "speakers": { "a": "Ольга", "b": "Озлем" },
+      "turns": [
+        { "speaker": "b", "tr": "Elektrik müşteri hizmetleri, ben Özlem. Buyurun.", "ru": "Служба поддержки электросетей, меня зовут Озлем. Слушаю вас.", "distractors": [
+          { "tr": "Hayır, ödemeyin. Yeni fatura gelene kadar bekleyin.", "ru": "Нет, не оплачивайте. Подождите, пока придёт новый счёт." },
+          { "tr": "Evet, öyle görünüyor. Sayacın fotoğrafını gönderirseniz faturayı düzeltiriz.", "ru": "Да, похоже на то. Если пришлёте фото счётчика, мы исправим счёт." }
+        ]},
+        { "speaker": "a", "tr": "Merhaba. Bu ayki elektrik faturamda bir hata var galiba.", "ru": "Здравствуйте. Кажется, в моём счёте за электричество за этот месяц ошибка.", "distractors": [
+          { "tr": "Tamam, çok teşekkür ederim. İyi günler.", "ru": "Хорошо, большое спасибо. Хорошего дня." },
+          { "tr": "Fotoğrafı nereye göndereyim?", "ru": "Куда отправить фото?" }
+        ]},
+        { "speaker": "b", "tr": "Abone numaranızı alabilir miyim?", "ru": "Можно ваш номер абонента?", "distractors": [
+          { "tr": "Hayır, ödemeyin. Yeni fatura gelene kadar bekleyin.", "ru": "Нет, не оплачивайте. Подождите, пока придёт новый счёт." },
+          { "tr": "Evet, öyle görünüyor. Sayacın fotoğrafını gönderirseniz faturayı düzeltiriz.", "ru": "Да, похоже на то. Если пришлёте фото счётчика, мы исправим счёт." }
+        ]},
+        { "speaker": "a", "tr": "Tabii: 305712. Adres Çınar Sokak 12, daire 5.", "ru": "Конечно: 305712. Адрес — Чынар Сокак, 12, квартира 5.", "distractors": [
+          { "tr": "Tamam, çok teşekkür ederim. İyi günler.", "ru": "Хорошо, большое спасибо. Хорошего дня." },
+          { "tr": "Fotoğrafı nereye göndereyim?", "ru": "Куда отправить фото?" }
+        ]},
+        { "speaker": "b", "tr": "Teşekkürler. Sorun nedir?", "ru": "Спасибо. В чём проблема?", "distractors": [
+          { "tr": "Hayır, ödemeyin. Yeni fatura gelene kadar bekleyin.", "ru": "Нет, не оплачивайте. Подождите, пока придёт новый счёт." },
+          { "tr": "Elektrik müşteri hizmetleri, ben Özlem. Buyurun.", "ru": "Служба поддержки электросетей, меня зовут Озлем. Слушаю вас." }
+        ]},
+        { "speaker": "a", "tr": "Fatura 2400 lira geldi. Normalde 600 lira civarında ödüyorum. Neden bu kadar yüksek?", "ru": "Пришёл счёт на 2400 лир. Обычно я плачу около 600. Почему так много?", "distractors": [
+          { "tr": "Tamam, çok teşekkür ederim. İyi günler.", "ru": "Хорошо, большое спасибо. Хорошего дня." },
+          { "tr": "Merhaba. Bu ayki elektrik faturamda bir hata var galiba.", "ru": "Здравствуйте. Кажется, в моём счёте за электричество за этот месяц ошибка." }
+        ]},
+        { "speaker": "b", "tr": "Bakıyorum... Bu ay sayacınız okunmamış, tüketim tahmini hesaplanmış.", "ru": "Смотрю... В этом месяце ваш счётчик не снимали, расход посчитали примерно.", "distractors": [
+          { "tr": "Elektrik müşteri hizmetleri, ben Özlem. Buyurun.", "ru": "Служба поддержки электросетей, меня зовут Озлем. Слушаю вас." },
+          { "tr": "Abone numaranızı alabilir miyim?", "ru": "Можно ваш номер абонента?" }
+        ]},
+        { "speaker": "a", "tr": "Yani benden fazla para istenmiş.", "ru": "То есть с меня запросили лишние деньги.", "distractors": [
+          { "tr": "Merhaba. Bu ayki elektrik faturamda bir hata var galiba.", "ru": "Здравствуйте. Кажется, в моём счёте за электричество за этот месяц ошибка." },
+          { "tr": "Tabii: 305712. Adres Çınar Sokak 12, daire 5.", "ru": "Конечно: 305712. Адрес — Чынар Сокак, 12, квартира 5." }
+        ]},
+        { "speaker": "b", "tr": "Evet, öyle görünüyor. Sayacın fotoğrafını gönderirseniz faturayı düzeltiriz.", "ru": "Да, похоже на то. Если пришлёте фото счётчика, мы исправим счёт.", "distractors": [
+          { "tr": "Elektrik müşteri hizmetleri, ben Özlem. Buyurun.", "ru": "Служба поддержки электросетей, меня зовут Озлем. Слушаю вас." },
+          { "tr": "Teşekkürler. Sorun nedir?", "ru": "Спасибо. В чём проблема?" }
+        ]},
+        { "speaker": "a", "tr": "Fotoğrafı nereye göndereyim?", "ru": "Куда отправить фото?", "distractors": [
+          { "tr": "Merhaba. Bu ayki elektrik faturamda bir hata var galiba.", "ru": "Здравствуйте. Кажется, в моём счёте за электричество за этот месяц ошибка." },
+          { "tr": "Fatura 2400 lira geldi. Normalde 600 lira civarında ödüyorum. Neden bu kadar yüksek?", "ru": "Пришёл счёт на 2400 лир. Обычно я плачу около 600. Почему так много?" }
+        ]},
+        { "speaker": "b", "tr": "Size SMS ile bir link göndereceğim. Düzeltilen fatura üç gün içinde gelir.", "ru": "Я пришлю вам ссылку по SMS. Исправленный счёт придёт в течение трёх дней.", "distractors": [
+          { "tr": "Elektrik müşteri hizmetleri, ben Özlem. Buyurun.", "ru": "Служба поддержки электросетей, меня зовут Озлем. Слушаю вас." },
+          { "tr": "Teşekkürler. Sorun nedir?", "ru": "Спасибо. В чём проблема?" }
+        ]},
+        { "speaker": "a", "tr": "Eski faturayı ödemem gerekiyor mu? Son ödeme tarihi cuma.", "ru": "А старый счёт мне нужно оплачивать? Срок оплаты — пятница.", "distractors": [
+          { "tr": "Merhaba. Bu ayki elektrik faturamda bir hata var galiba.", "ru": "Здравствуйте. Кажется, в моём счёте за электричество за этот месяц ошибка." },
+          { "tr": "Fatura 2400 lira geldi. Normalde 600 lira civarında ödüyorum. Neden bu kadar yüksek?", "ru": "Пришёл счёт на 2400 лир. Обычно я плачу около 600. Почему так много?" }
+        ]},
+        { "speaker": "b", "tr": "Hayır, ödemeyin. Yeni fatura gelene kadar bekleyin.", "ru": "Нет, не оплачивайте. Подождите, пока придёт новый счёт.", "distractors": [
+          { "tr": "Elektrik müşteri hizmetleri, ben Özlem. Buyurun.", "ru": "Служба поддержки электросетей, меня зовут Озлем. Слушаю вас." },
+          { "tr": "Teşekkürler. Sorun nedir?", "ru": "Спасибо. В чём проблема?" }
+        ]},
+        { "speaker": "a", "tr": "Tamam, çok teşekkür ederim. İyi günler.", "ru": "Хорошо, большое спасибо. Хорошего дня.", "distractors": [
+          { "tr": "Merhaba. Bu ayki elektrik faturamda bir hata var galiba.", "ru": "Здравствуйте. Кажется, в моём счёте за электричество за этот месяц ошибка." },
+          { "tr": "Fatura 2400 lira geldi. Normalde 600 lira civarında ödüyorum. Neden bu kadar yüksek?", "ru": "Пришёл счёт на 2400 лир. Обычно я плачу около 600. Почему так много?" }
+        ]}
+      ]
+    },
+    {
+      "id": "zhaloby-problemy-teslimat-gecikti",
+      "title": "Доставка опоздала",
+      "level": "B1",
+      "speakers": { "a": "Ольга", "b": "Бенгю" },
+      "turns": [
+        { "speaker": "b", "tr": "TeknoEv müşteri hizmetleri, ben Bengü. Size nasıl yardımcı olabilirim?", "ru": "Служба поддержки «ТекноЭв», меня зовут Бенгю. Чем могу помочь?", "distractors": [
+          { "tr": "Haklısınız. Bugün mutlaka gelecek. İyi günler.", "ru": "Вы правы. Сегодня обязательно придёт. Хорошего дня." },
+          { "tr": "Paketi bir komşunuza bırakabilir miyiz?", "ru": "Можно оставить посылку у кого-нибудь из соседей?" }
+        ]},
+        { "speaker": "a", "tr": "Merhaba. Pazartesi bir elektrikli ısıtıcı sipariş ettim. Dün gelmesi gerekiyordu ama hâlâ gelmedi.", "ru": "Здравствуйте. В понедельник я заказала электрообогреватель. Он должен был прийти вчера, но до сих пор нет.", "distractors": [
+          { "tr": "Teşekkür ederim. Ama eğer bugün de gelmezse siparişi iptal edeceğim.", "ru": "Спасибо. Но если и сегодня не придёт, я отменю заказ." },
+          { "tr": "Ama ben akşam altıya kadar işteyim. Evde kimse olmayacak.", "ru": "Но я до шести вечера на работе. Дома никого не будет." }
+        ]},
+        { "speaker": "b", "tr": "Çok özür dileriz. Sipariş numaranız nedir?", "ru": "Приносим извинения. Какой у вас номер заказа?", "distractors": [
+          { "tr": "Haklısınız. Bugün mutlaka gelecek. İyi günler.", "ru": "Вы правы. Сегодня обязательно придёт. Хорошего дня." },
+          { "tr": "Paketi bir komşunuza bırakabilir miyiz?", "ru": "Можно оставить посылку у кого-нибудь из соседей?" }
+        ]},
+        { "speaker": "a", "tr": "77105. Sitenizde \"24 saatte teslim\" yazıyordu.", "ru": "77105. У вас на сайте было написано: «Доставка за 24 часа».", "distractors": [
+          { "tr": "Teşekkür ederim. Ama eğer bugün de gelmezse siparişi iptal edeceğim.", "ru": "Спасибо. Но если и сегодня не придёт, я отменю заказ." },
+          { "tr": "Evet, üst kattaki komşum Nuran Hanım'a bırakılabilir.", "ru": "Да, её можно оставить моей соседке сверху, Нуран-ханым." }
+        ]},
+        { "speaker": "b", "tr": "Bakıyorum... Siparişiniz kargoya verilmiş ama dağıtımda bir gecikme olmuş.", "ru": "Смотрю... Ваш заказ передали в службу доставки, но при развозе произошла задержка.", "distractors": [
+          { "tr": "Haklısınız. Bugün mutlaka gelecek. İyi günler.", "ru": "Вы правы. Сегодня обязательно придёт. Хорошего дня." },
+          { "tr": "TeknoEv müşteri hizmetleri, ben Bengü. Size nasıl yardımcı olabilirim?", "ru": "Служба поддержки «ТекноЭв», меня зовут Бенгю. Чем могу помочь?" }
+        ]},
+        { "speaker": "a", "tr": "Kombim bozuk, ev çok soğuk. Isıtıcıya bugün ihtiyacım var.", "ru": "У меня сломан котёл, дома очень холодно. Обогреватель нужен мне сегодня.", "distractors": [
+          { "tr": "Teşekkür ederim. Ama eğer bugün de gelmezse siparişi iptal edeceğim.", "ru": "Спасибо. Но если и сегодня не придёт, я отменю заказ." },
+          { "tr": "Merhaba. Pazartesi bir elektrikli ısıtıcı sipariş ettim. Dün gelmesi gerekiyordu ama hâlâ gelmedi.", "ru": "Здравствуйте. В понедельник я заказала электрообогреватель. Он должен был прийти вчера, но до сих пор нет." }
+        ]},
+        { "speaker": "b", "tr": "Anlıyorum. Kargo firmasına hemen haber vereceğim. Bugün akşama kadar teslim edilecek.", "ru": "Понимаю. Сейчас же сообщу службе доставки. Сегодня до вечера его доставят.", "distractors": [
+          { "tr": "TeknoEv müşteri hizmetleri, ben Bengü. Size nasıl yardımcı olabilirim?", "ru": "Служба поддержки «ТекноЭв», меня зовут Бенгю. Чем могу помочь?" },
+          { "tr": "Çok özür dileriz. Sipariş numaranız nedir?", "ru": "Приносим извинения. Какой у вас номер заказа?" }
+        ]},
+        { "speaker": "a", "tr": "Ama ben akşam altıya kadar işteyim. Evde kimse olmayacak.", "ru": "Но я до шести вечера на работе. Дома никого не будет.", "distractors": [
+          { "tr": "Merhaba. Pazartesi bir elektrikli ısıtıcı sipariş ettim. Dün gelmesi gerekiyordu ama hâlâ gelmedi.", "ru": "Здравствуйте. В понедельник я заказала электрообогреватель. Он должен был прийти вчера, но до сих пор нет." },
+          { "tr": "77105. Sitenizde \"24 saatte teslim\" yazıyordu.", "ru": "77105. У вас на сайте было написано: «Доставка за 24 часа»." }
+        ]},
+        { "speaker": "b", "tr": "Paketi bir komşunuza bırakabilir miyiz?", "ru": "Можно оставить посылку у кого-нибудь из соседей?", "distractors": [
+          { "tr": "TeknoEv müşteri hizmetleri, ben Bengü. Size nasıl yardımcı olabilirim?", "ru": "Служба поддержки «ТекноЭв», меня зовут Бенгю. Чем могу помочь?" },
+          { "tr": "Bakıyorum... Siparişiniz kargoya verilmiş ama dağıtımda bir gecikme olmuş.", "ru": "Смотрю... Ваш заказ передали в службу доставки, но при развозе произошла задержка." }
+        ]},
+        { "speaker": "a", "tr": "Evet, üst kattaki komşum Nuran Hanım'a bırakılabilir.", "ru": "Да, её можно оставить моей соседке сверху, Нуран-ханым.", "distractors": [
+          { "tr": "Merhaba. Pazartesi bir elektrikli ısıtıcı sipariş ettim. Dün gelmesi gerekiyordu ama hâlâ gelmedi.", "ru": "Здравствуйте. В понедельник я заказала электрообогреватель. Он должен был прийти вчера, но до сих пор нет." },
+          { "tr": "77105. Sitenizde \"24 saatte teslim\" yazıyordu.", "ru": "77105. У вас на сайте было написано: «Доставка за 24 часа»." }
+        ]},
+        { "speaker": "b", "tr": "Tamam, not aldım. Gecikme için kargo ücretini de iade ediyoruz.", "ru": "Хорошо, записала. За задержку мы также возвращаем стоимость доставки.", "distractors": [
+          { "tr": "TeknoEv müşteri hizmetleri, ben Bengü. Size nasıl yardımcı olabilirim?", "ru": "Служба поддержки «ТекноЭв», меня зовут Бенгю. Чем могу помочь?" },
+          { "tr": "Bakıyorum... Siparişiniz kargoya verilmiş ama dağıtımda bir gecikme olmuş.", "ru": "Смотрю... Ваш заказ передали в службу доставки, но при развозе произошла задержка." }
+        ]},
+        { "speaker": "a", "tr": "Teşekkür ederim. Ama eğer bugün de gelmezse siparişi iptal edeceğim.", "ru": "Спасибо. Но если и сегодня не придёт, я отменю заказ.", "distractors": [
+          { "tr": "Merhaba. Pazartesi bir elektrikli ısıtıcı sipariş ettim. Dün gelmesi gerekiyordu ama hâlâ gelmedi.", "ru": "Здравствуйте. В понедельник я заказала электрообогреватель. Он должен был прийти вчера, но до сих пор нет." },
+          { "tr": "Kombim bozuk, ev çok soğuk. Isıtıcıya bugün ihtiyacım var.", "ru": "У меня сломан котёл, дома очень холодно. Обогреватель нужен мне сегодня." }
+        ]},
+        { "speaker": "b", "tr": "Haklısınız. Bugün mutlaka gelecek. İyi günler.", "ru": "Вы правы. Сегодня обязательно придёт. Хорошего дня.", "distractors": [
+          { "tr": "TeknoEv müşteri hizmetleri, ben Bengü. Size nasıl yardımcı olabilirim?", "ru": "Служба поддержки «ТекноЭв», меня зовут Бенгю. Чем могу помочь?" },
+          { "tr": "Bakıyorum... Siparişiniz kargoya verilmiş ama dağıtımda bir gecikme olmuş.", "ru": "Смотрю... Ваш заказ передали в службу доставки, но при развозе произошла задержка." }
+        ]}
+      ]
+    },
+    {
+      "id": "zhaloby-problemy-restoran-hizmet",
+      "title": "Плохое обслуживание и ошибка в счёте",
+      "level": "B1",
+      "speakers": { "a": "Ольга", "b": "Зеки" },
+      "turns": [
+        { "speaker": "a", "tr": "Affedersiniz, müdürle görüşebilir miyim?", "ru": "Извините, можно поговорить с администратором?", "distractors": [
+          { "tr": "Teşekkürler, çok naziksiniz. Düzeltilmiş hesabı getirir misiniz?", "ru": "Спасибо, очень любезно. Принесёте исправленный счёт?" },
+          { "tr": "Bir de hesapta bir hata var. Bize iki kadeh şarap yazılmış, ama biz şarap içmedik.", "ru": "И ещё в счёте ошибка. Нам записали два бокала вина, но мы вино не пили." }
+        ]},
+        { "speaker": "b", "tr": "Buyurun, müdür benim, adım Zeki. Bir sorun mu var?", "ru": "Слушаю, администратор — я, меня зовут Зеки. Что-то случилось?", "distractors": [
+          { "tr": "Tabii, hemen getiriyorum. Tekrar bekleriz.", "ru": "Конечно, сейчас принесу. Будем рады видеть вас снова." },
+          { "tr": "Gerçekten mi? Hesabı görebilir miyim?", "ru": "Правда? Можно посмотреть счёт?" }
+        ]},
+        { "speaker": "a", "tr": "Evet, maalesef. Kırk dakika önce sipariş verdik, yemeğimiz çok geç geldi.", "ru": "Да, к сожалению. Мы заказали сорок минут назад, еду принесли очень поздно.", "distractors": [
+          { "tr": "Teşekkürler, çok naziksiniz. Düzeltilmiş hesabı getirir misiniz?", "ru": "Спасибо, очень любезно. Принесёте исправленный счёт?" },
+          { "tr": "Buyurun. Arkadaşım alkol kullanmıyor, ayran içti. Ben de sadece su içtim.", "ru": "Пожалуйста. Моя подруга не пьёт алкоголь, она пила айран. А я пила только воду." }
+        ]},
+        { "speaker": "b", "tr": "Çok özür dilerim. Bu akşam mutfakta iki aşçı eksik.", "ru": "Очень извиняюсь. Сегодня вечером на кухне не хватает двух поваров.", "distractors": [
+          { "tr": "Tabii, hemen getiriyorum. Tekrar bekleriz.", "ru": "Конечно, сейчас принесу. Будем рады видеть вас снова." },
+          { "tr": "Evet, bu başka bir masanın siparişi. Hemen düzeltiyorum. Özür olarak tatlılarınız bizden olsun.", "ru": "Да, это заказ другого столика. Сейчас исправлю. В качестве извинения десерт за наш счёт." }
+        ]},
+        { "speaker": "a", "tr": "Anlıyorum. Ama garson hiç ilgilenmedi. Üç kere su istedik, getirilmedi.", "ru": "Понимаю. Но официант совсем не обращал на нас внимания. Мы три раза просили воды — так и не принесли.", "distractors": [
+          { "tr": "Teşekkürler, çok naziksiniz. Düzeltilmiş hesabı getirir misiniz?", "ru": "Спасибо, очень любезно. Принесёте исправленный счёт?" },
+          { "tr": "Affedersiniz, müdürle görüşebilir miyim?", "ru": "Извините, можно поговорить с администратором?" }
+        ]},
+        { "speaker": "b", "tr": "Haklısınız, bu kabul edilemez. Garsonla konuşacağım.", "ru": "Вы правы, это недопустимо. Я поговорю с официантом.", "distractors": [
+          { "tr": "Tabii, hemen getiriyorum. Tekrar bekleriz.", "ru": "Конечно, сейчас принесу. Будем рады видеть вас снова." },
+          { "tr": "Buyurun, müdür benim, adım Zeki. Bir sorun mu var?", "ru": "Слушаю, администратор — я, меня зовут Зеки. Что-то случилось?" }
+        ]},
+        { "speaker": "a", "tr": "Bir de hesapta bir hata var. Bize iki kadeh şarap yazılmış, ama biz şarap içmedik.", "ru": "И ещё в счёте ошибка. Нам записали два бокала вина, но мы вино не пили.", "distractors": [
+          { "tr": "Affedersiniz, müdürle görüşebilir miyim?", "ru": "Извините, можно поговорить с администратором?" },
+          { "tr": "Evet, maalesef. Kırk dakika önce sipariş verdik, yemeğimiz çok geç geldi.", "ru": "Да, к сожалению. Мы заказали сорок минут назад, еду принесли очень поздно." }
+        ]},
+        { "speaker": "b", "tr": "Gerçekten mi? Hesabı görebilir miyim?", "ru": "Правда? Можно посмотреть счёт?", "distractors": [
+          { "tr": "Buyurun, müdür benim, adım Zeki. Bir sorun mu var?", "ru": "Слушаю, администратор — я, меня зовут Зеки. Что-то случилось?" },
+          { "tr": "Çok özür dilerim. Bu akşam mutfakta iki aşçı eksik.", "ru": "Очень извиняюсь. Сегодня вечером на кухне не хватает двух поваров." }
+        ]},
+        { "speaker": "a", "tr": "Buyurun. Arkadaşım alkol kullanmıyor, ayran içti. Ben de sadece su içtim.", "ru": "Пожалуйста. Моя подруга не пьёт алкоголь, она пила айран. А я пила только воду.", "distractors": [
+          { "tr": "Affedersiniz, müdürle görüşebilir miyim?", "ru": "Извините, можно поговорить с администратором?" },
+          { "tr": "Evet, maalesef. Kırk dakika önce sipariş verdik, yemeğimiz çok geç geldi.", "ru": "Да, к сожалению. Мы заказали сорок минут назад, еду принесли очень поздно." }
+        ]},
+        { "speaker": "b", "tr": "Evet, bu başka bir masanın siparişi. Hemen düzeltiyorum. Özür olarak tatlılarınız bizden olsun.", "ru": "Да, это заказ другого столика. Сейчас исправлю. В качестве извинения десерт за наш счёт.", "distractors": [
+          { "tr": "Buyurun, müdür benim, adım Zeki. Bir sorun mu var?", "ru": "Слушаю, администратор — я, меня зовут Зеки. Что-то случилось?" },
+          { "tr": "Çok özür dilerim. Bu akşam mutfakta iki aşçı eksik.", "ru": "Очень извиняюсь. Сегодня вечером на кухне не хватает двух поваров." }
+        ]},
+        { "speaker": "a", "tr": "Teşekkürler, çok naziksiniz. Düzeltilmiş hesabı getirir misiniz?", "ru": "Спасибо, очень любезно. Принесёте исправленный счёт?", "distractors": [
+          { "tr": "Affedersiniz, müdürle görüşebilir miyim?", "ru": "Извините, можно поговорить с администратором?" },
+          { "tr": "Anlıyorum. Ama garson hiç ilgilenmedi. Üç kere su istedik, getirilmedi.", "ru": "Понимаю. Но официант совсем не обращал на нас внимания. Мы три раза просили воды — так и не принесли." }
+        ]},
+        { "speaker": "b", "tr": "Tabii, hemen getiriyorum. Tekrar bekleriz.", "ru": "Конечно, сейчас принесу. Будем рады видеть вас снова.", "distractors": [
+          { "tr": "Buyurun, müdür benim, adım Zeki. Bir sorun mu var?", "ru": "Слушаю, администратор — я, меня зовут Зеки. Что-то случилось?" },
+          { "tr": "Haklısınız, bu kabul edilemez. Garsonla konuşacağım.", "ru": "Вы правы, это недопустимо. Я поговорю с официантом." }
+        ]}
+      ]
+    },
+    {
+      "id": "zhaloby-problemy-oto-servis",
+      "title": "Дениз жалуется в автосервисе",
+      "level": "B1",
+      "speakers": { "a": "Дениз", "b": "Эркут" },
+      "turns": [
+        { "speaker": "a", "tr": "Merhaba Erkut Usta. Geçen hafta frenleri değiştirdiniz, hatırladınız mı?", "ru": "Здравствуйте, мастер Эркут. На прошлой неделе вы меняли тормоза, помните?", "distractors": [
+          { "tr": "Tamam. Bu sefer iyice kontrol edin lütfen.", "ru": "Хорошо. На этот раз проверьте как следует, пожалуйста." },
+          { "tr": "Teşekkürler. Peki frenler ne olacak? Her gün bu arabayla işe gidiyorum.", "ru": "Спасибо. А что с тормозами? Я каждый день езжу на этой машине на работу." }
+        ]},
+        { "speaker": "b", "tr": "Tabii, Deniz Bey, hoş geldiniz. Bir sorun mu var?", "ru": "Конечно, Дениз-бей, добро пожаловать. Что-то не так?", "distractors": [
+          { "tr": "Merak etmeyin, Deniz Bey. Akşama hazır olacak.", "ru": "Не волнуйтесь, Дениз-бей. К вечеру будет готова." },
+          { "tr": "Arabayı bırakın, bugün ustamıza bir daha kontrol ettireyim. Ücret almayacağız.", "ru": "Оставьте машину, сегодня попрошу нашего мастера ещё раз её проверить. Денег не возьмём." }
+        ]},
+        { "speaker": "a", "tr": "Var. Frenlerden hâlâ ses geliyor. Siz \"her şey düzeltildi\" dediniz.", "ru": "Да. Тормоза до сих пор скрипят. Вы сказали: «Всё исправлено».", "distractors": [
+          { "tr": "Tamam. Bu sefer iyice kontrol edin lütfen.", "ru": "Хорошо. На этот раз проверьте как следует, пожалуйста." },
+          { "tr": "Teşekkürler. Peki frenler ne olacak? Her gün bu arabayla işe gidiyorum.", "ru": "Спасибо. А что с тормозами? Я каждый день езжу на этой машине на работу." }
+        ]},
+        { "speaker": "b", "tr": "Allah Allah... Her şeyi kontrol ettik, test sürüşü de yapıldı.", "ru": "Ну надо же... Мы всё проверили, даже тестовую поездку сделали.", "distractors": [
+          { "tr": "Merak etmeyin, Deniz Bey. Akşama hazır olacak.", "ru": "Не волнуйтесь, Дениз-бей. К вечеру будет готова." },
+          { "tr": "Arabayı bırakın, bugün ustamıza bir daha kontrol ettireyim. Ücret almayacağız.", "ru": "Оставьте машину, сегодня попрошу нашего мастера ещё раз её проверить. Денег не возьмём." }
+        ]},
+        { "speaker": "a", "tr": "Ama ses var, usta. Dün Olga'yla Moda'ya giderken çok kötü ses geldi.", "ru": "Но звук есть, мастер. Вчера, когда мы с Ольгой ехали в Моду, был очень плохой звук.", "distractors": [
+          { "tr": "Tamam. Bu sefer iyice kontrol edin lütfen.", "ru": "Хорошо. На этот раз проверьте как следует, пожалуйста." },
+          { "tr": "Merhaba Erkut Usta. Geçen hafta frenleri değiştirdiniz, hatırladınız mı?", "ru": "Здравствуйте, мастер Эркут. На прошлой неделе вы меняли тормоза, помните?" }
+        ]},
+        { "speaker": "b", "tr": "Balatalar yeni olduğu için ses yapıyor olabilir. Birkaç gün sonra geçer.", "ru": "Возможно, звук из-за того, что колодки новые. Через несколько дней пройдёт.", "distractors": [
+          { "tr": "Merak etmeyin, Deniz Bey. Akşama hazır olacak.", "ru": "Не волнуйтесь, Дениз-бей. К вечеру будет готова." },
+          { "tr": "Tabii, Deniz Bey, hoş geldiniz. Bir sorun mu var?", "ru": "Конечно, Дениз-бей, добро пожаловать. Что-то не так?" }
+        ]},
+        { "speaker": "a", "tr": "Bir hafta geçti, geçmedi. Ayrıca faturada iki kere işçilik ücreti yazılmış.", "ru": "Прошла неделя — не прошло. К тому же в счёте два раза записали оплату за работу.", "distractors": [
+          { "tr": "Merhaba Erkut Usta. Geçen hafta frenleri değiştirdiniz, hatırladınız mı?", "ru": "Здравствуйте, мастер Эркут. На прошлой неделе вы меняли тормоза, помните?" },
+          { "tr": "Var. Frenlerden hâlâ ses geliyor. Siz \"her şey düzeltildi\" dediniz.", "ru": "Да. Тормоза до сих пор скрипят. Вы сказали: «Всё исправлено»." }
+        ]},
+        { "speaker": "b", "tr": "Bir bakayım... Evet, haklısınız. Fazla aldığımız parayı iade edeceğiz.", "ru": "Сейчас посмотрю... Да, вы правы. Деньги, которые мы взяли лишние, вернём.", "distractors": [
+          { "tr": "Tabii, Deniz Bey, hoş geldiniz. Bir sorun mu var?", "ru": "Конечно, Дениз-бей, добро пожаловать. Что-то не так?" },
+          { "tr": "Allah Allah... Her şeyi kontrol ettik, test sürüşü de yapıldı.", "ru": "Ну надо же... Мы всё проверили, даже тестовую поездку сделали." }
+        ]},
+        { "speaker": "a", "tr": "Teşekkürler. Peki frenler ne olacak? Her gün bu arabayla işe gidiyorum.", "ru": "Спасибо. А что с тормозами? Я каждый день езжу на этой машине на работу.", "distractors": [
+          { "tr": "Merhaba Erkut Usta. Geçen hafta frenleri değiştirdiniz, hatırladınız mı?", "ru": "Здравствуйте, мастер Эркут. На прошлой неделе вы меняли тормоза, помните?" },
+          { "tr": "Ama ses var, usta. Dün Olga'yla Moda'ya giderken çok kötü ses geldi.", "ru": "Но звук есть, мастер. Вчера, когда мы с Ольгой ехали в Моду, был очень плохой звук." }
+        ]},
+        { "speaker": "b", "tr": "Arabayı bırakın, bugün ustamıza bir daha kontrol ettireyim. Ücret almayacağız.", "ru": "Оставьте машину, сегодня попрошу нашего мастера ещё раз её проверить. Денег не возьмём.", "distractors": [
+          { "tr": "Tabii, Deniz Bey, hoş geldiniz. Bir sorun mu var?", "ru": "Конечно, Дениз-бей, добро пожаловать. Что-то не так?" },
+          { "tr": "Balatalar yeni olduğu için ses yapıyor olabilir. Birkaç gün sonra geçer.", "ru": "Возможно, звук из-за того, что колодки новые. Через несколько дней пройдёт." }
+        ]},
+        { "speaker": "a", "tr": "Akşam yedide işten çıkıyorum. Araba hazır olur mu?", "ru": "Я ухожу с работы в семь вечера. Машина будет готова?", "distractors": [
+          { "tr": "Merhaba Erkut Usta. Geçen hafta frenleri değiştirdiniz, hatırladınız mı?", "ru": "Здравствуйте, мастер Эркут. На прошлой неделе вы меняли тормоза, помните?" },
+          { "tr": "Ama ses var, usta. Dün Olga'yla Moda'ya giderken çok kötü ses geldi.", "ru": "Но звук есть, мастер. Вчера, когда мы с Ольгой ехали в Моду, был очень плохой звук." }
+        ]},
+        { "speaker": "b", "tr": "Olur. Eğer bir parça değiştirilmesi gerekirse önce sizi ararım.", "ru": "Будет. Если понадобится менять какую-то деталь, сначала вам позвоню.", "distractors": [
+          { "tr": "Tabii, Deniz Bey, hoş geldiniz. Bir sorun mu var?", "ru": "Конечно, Дениз-бей, добро пожаловать. Что-то не так?" },
+          { "tr": "Balatalar yeni olduğu için ses yapıyor olabilir. Birkaç gün sonra geçer.", "ru": "Возможно, звук из-за того, что колодки новые. Через несколько дней пройдёт." }
+        ]},
+        { "speaker": "a", "tr": "Tamam. Bu sefer iyice kontrol edin lütfen.", "ru": "Хорошо. На этот раз проверьте как следует, пожалуйста.", "distractors": [
+          { "tr": "Merhaba Erkut Usta. Geçen hafta frenleri değiştirdiniz, hatırladınız mı?", "ru": "Здравствуйте, мастер Эркут. На прошлой неделе вы меняли тормоза, помните?" },
+          { "tr": "Ama ses var, usta. Dün Olga'yla Moda'ya giderken çok kötü ses geldi.", "ru": "Но звук есть, мастер. Вчера, когда мы с Ольгой ехали в Моду, был очень плохой звук." }
+        ]},
+        { "speaker": "b", "tr": "Merak etmeyin, Deniz Bey. Akşama hazır olacak.", "ru": "Не волнуйтесь, Дениз-бей. К вечеру будет готова.", "distractors": [
+          { "tr": "Tabii, Deniz Bey, hoş geldiniz. Bir sorun mu var?", "ru": "Конечно, Дениз-бей, добро пожаловать. Что-то не так?" },
+          { "tr": "Balatalar yeni olduğu için ses yapıyor olabilir. Birkaç gün sonra geçer.", "ru": "Возможно, звук из-за того, что колодки новые. Через несколько дней пройдёт." }
+        ]}
+      ]
+    },
+    {
+      "id": "zhaloby-problemy-leyla-kotu-hafta",
+      "title": "Неудачная неделя: рассказ Лейле",
+      "level": "B1",
+      "speakers": { "a": "Ольга", "b": "Лейла" },
+      "turns": [
+        { "speaker": "b", "tr": "Olga, ne oldu? Çok yorgun görünüyorsun.", "ru": "Ольга, что случилось? Ты выглядишь очень уставшей.", "distractors": [
+          { "tr": "Türkçen çok gelişmiş, maşallah! Artık şikâyet etmeyi de biliyorsun.", "ru": "Твой турецкий здорово улучшился, машаллах! Теперь ты умеешь и жаловаться." },
+          { "tr": "Hayır, çok iyi yapmışsın! Burada bazen biraz ısrar etmek lazım.", "ru": "Нет, ты всё правильно сделала! Здесь иногда нужно немного настоять." }
+        ]},
+        { "speaker": "a", "tr": "Sorma, Leyla. Bu hafta her şey bozuldu. Önce kombi bozuldu, iki gün sıcak su yoktu.", "ru": "Не спрашивай, Лейла. На этой неделе всё сломалось. Сначала котёл, два дня не было горячей воды.", "distractors": [
+          { "tr": "İnşallah bir daha gerekmez! Hadi, kahve içelim, ben ısmarlıyorum.", "ru": "Надеюсь, больше не понадобится! Давай выпьем кофе, я угощаю." },
+          { "tr": "Bir de internetten aldığım elbise yanlış beden geldi. Elektrik faturasında da hata vardı.", "ru": "А ещё платье, которое я купила в интернете, пришло не того размера. И в счёте за электричество была ошибка." }
+        ]},
+        { "speaker": "b", "tr": "Geçmiş olsun! Şimdi tamir edildi mi?", "ru": "Сочувствую! Сейчас уже починили?", "distractors": [
+          { "tr": "Türkçen çok gelişmiş, maşallah! Artık şikâyet etmeyi de biliyorsun.", "ru": "Твой турецкий здорово улучшился, машаллах! Теперь ты умеешь и жаловаться." },
+          { "tr": "Vallahi, çok kötü bir hafta! Peki, fatura düzeldi mi?", "ru": "Честное слово, ужасная неделя! А счёт исправили?" }
+        ]},
+        { "speaker": "a", "tr": "Evet, sonunda tamir edildi. Ama ev sahibimi üç kere aradım.", "ru": "Да, в конце концов починили. Но я три раза звонила хозяину квартиры.", "distractors": [
+          { "tr": "İnşallah bir daha gerekmez! Hadi, kahve içelim, ben ısmarlıyorum.", "ru": "Надеюсь, больше не понадобится! Давай выпьем кофе, я угощаю." },
+          { "tr": "Düzeltildi. Telefonda çok kibar konuştum ama ısrar ettim.", "ru": "Исправили. По телефону я говорила очень вежливо, но настояла на своём." }
+        ]},
+        { "speaker": "b", "tr": "Ev sahibin ne dedi?", "ru": "А что сказал хозяин?", "distractors": [
+          { "tr": "Türkçen çok gelişmiş, maşallah! Artık şikâyet etmeyi de biliyorsun.", "ru": "Твой турецкий здорово улучшился, машаллах! Теперь ты умеешь и жаловаться." },
+          { "tr": "Olga, ne oldu? Çok yorgun görünüyorsun.", "ru": "Ольга, что случилось? Ты выглядишь очень уставшей." }
+        ]},
+        { "speaker": "a", "tr": "Her seferinde \"yarın gelir\" dedi. Sonunda \"Eğer bugün tamir edilmezse başka usta çağırırım\" dedim. Sence fazla mı yaptım?", "ru": "Каждый раз говорил: «Завтра придёт». В конце концов я сказала: «Если сегодня не починят, вызову другого мастера». Как думаешь, я перегнула?", "distractors": [
+          { "tr": "İnşallah bir daha gerekmez! Hadi, kahve içelim, ben ısmarlıyorum.", "ru": "Надеюсь, больше не понадобится! Давай выпьем кофе, я угощаю." },
+          { "tr": "Sorma, Leyla. Bu hafta her şey bozuldu. Önce kombi bozuldu, iki gün sıcak su yoktu.", "ru": "Не спрашивай, Лейла. На этой неделе всё сломалось. Сначала котёл, два дня не было горячей воды." }
+        ]},
+        { "speaker": "b", "tr": "Hayır, çok iyi yapmışsın! Burada bazen biraz ısrar etmek lazım.", "ru": "Нет, ты всё правильно сделала! Здесь иногда нужно немного настоять.", "distractors": [
+          { "tr": "Olga, ne oldu? Çok yorgun görünüyorsun.", "ru": "Ольга, что случилось? Ты выглядишь очень уставшей." },
+          { "tr": "Geçmiş olsun! Şimdi tamir edildi mi?", "ru": "Сочувствую! Сейчас уже починили?" }
+        ]},
+        { "speaker": "a", "tr": "Bir de internetten aldığım elbise yanlış beden geldi. Elektrik faturasında da hata vardı.", "ru": "А ещё платье, которое я купила в интернете, пришло не того размера. И в счёте за электричество была ошибка.", "distractors": [
+          { "tr": "Sorma, Leyla. Bu hafta her şey bozuldu. Önce kombi bozuldu, iki gün sıcak su yoktu.", "ru": "Не спрашивай, Лейла. На этой неделе всё сломалось. Сначала котёл, два дня не было горячей воды." },
+          { "tr": "Evet, sonunda tamir edildi. Ama ev sahibimi üç kere aradım.", "ru": "Да, в конце концов починили. Но я три раза звонила хозяину квартиры." }
+        ]},
+        { "speaker": "b", "tr": "Vallahi, çok kötü bir hafta! Peki, fatura düzeldi mi?", "ru": "Честное слово, ужасная неделя! А счёт исправили?", "distractors": [
+          { "tr": "Olga, ne oldu? Çok yorgun görünüyorsun.", "ru": "Ольга, что случилось? Ты выглядишь очень уставшей." },
+          { "tr": "Geçmiş olsun! Şimdi tamir edildi mi?", "ru": "Сочувствую! Сейчас уже починили?" }
+        ]},
+        { "speaker": "a", "tr": "Düzeltildi. Telefonda çok kibar konuştum ama ısrar ettim.", "ru": "Исправили. По телефону я говорила очень вежливо, но настояла на своём.", "distractors": [
+          { "tr": "Sorma, Leyla. Bu hafta her şey bozuldu. Önce kombi bozuldu, iki gün sıcak su yoktu.", "ru": "Не спрашивай, Лейла. На этой неделе всё сломалось. Сначала котёл, два дня не было горячей воды." },
+          { "tr": "Evet, sonunda tamir edildi. Ama ev sahibimi üç kere aradım.", "ru": "Да, в конце концов починили. Но я три раза звонила хозяину квартиры." }
+        ]},
+        { "speaker": "b", "tr": "Türkçen çok gelişmiş, maşallah! Artık şikâyet etmeyi de biliyorsun.", "ru": "Твой турецкий здорово улучшился, машаллах! Теперь ты умеешь и жаловаться.", "distractors": [
+          { "tr": "Olga, ne oldu? Çok yorgun görünüyorsun.", "ru": "Ольга, что случилось? Ты выглядишь очень уставшей." },
+          { "tr": "Ev sahibin ne dedi?", "ru": "А что сказал хозяин?" }
+        ]},
+        { "speaker": "a", "tr": "İnşallah bir daha gerekmez! Hadi, kahve içelim, ben ısmarlıyorum.", "ru": "Надеюсь, больше не понадобится! Давай выпьем кофе, я угощаю.", "distractors": [
+          { "tr": "Sorma, Leyla. Bu hafta her şey bozuldu. Önce kombi bozuldu, iki gün sıcak su yoktu.", "ru": "Не спрашивай, Лейла. На этой неделе всё сломалось. Сначала котёл, два дня не было горячей воды." },
+          { "tr": "Her seferinde \"yarın gelir\" dedi. Sonunda \"Eğer bugün tamir edilmezse başka usta çağırırım\" dedim. Sence fazla mı yaptım?", "ru": "Каждый раз говорил: «Завтра придёт». В конце концов я сказала: «Если сегодня не починят, вызову другого мастера». Как думаешь, я перегнула?" }
+        ]}
+      ]
+    }
+  ]
+}

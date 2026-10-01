@@ -26,8 +26,9 @@ OUT = os.path.join(ROOT, "assets", "grammar", "items.json")
 UNMATCHED = os.path.join(os.path.dirname(__file__), "unmatched.txt")
 EXTRA_VERBS = os.path.join(os.path.dirname(__file__), "extra-verbs.txt")
 EXTRA_NOUNS = os.path.join(os.path.dirname(__file__), "extra-nouns.txt")
-# Свои короткие фразы A1 («База») — по файлу на тему: base-<тема>.txt, «tr | ru».
-BASE_FILES = {"yor": "base-yor.txt", "case": "base-case.txt"}
+# Пути тем — ступени со своими короткими фразами (path-<тема>.txt), в порядке прохождения.
+PATH_TOPICS = ["yor", "case"]
+PATH_OUT = os.path.join(ROOT, "assets", "grammar", "path.json")
 # Фраза из разговорника/диалога идёт в ступень «В жизни» только если она короткая и по
 # грамматике не выше этого уровня (оценка levels.py) — иначе для начинающих слишком сложно.
 LIFE_MAX_WORDS = 8
@@ -55,6 +56,8 @@ def tr_lower(s):
 def load_lexicon():
     verbs, nouns, all_words = {}, {}, set()
     for f in glob.glob(os.path.join(ROOT, "assets", "words", "*.json")):
+        if os.path.basename(f) in ("manifest.json", "levels.json"):
+            continue
         for w in json.load(open(f, encoding="utf-8")):
             tr = tr_lower((w.get("tr") or "").strip())
             if not tr:
@@ -83,23 +86,39 @@ def load_lexicon():
     return verbs, nouns, all_words
 
 
-def load_base():
-    out = []
-    for topic, name in BASE_FILES.items():
-        path = os.path.join(os.path.dirname(__file__), name)
-        for line in open(path, encoding="utf-8"):
+def load_paths():
+    """Читает path-<тема>.txt: ступени («## Название | подсказка | words=N | gate | life»)
+    и их фразы. Возвращает (фразы как источники, описание пути для приложения)."""
+    out, path = [], []
+    for topic in PATH_TOPICS:
+        stages = []
+        fname = os.path.join(os.path.dirname(__file__), f"path-{topic}.txt")
+        for line in open(fname, encoding="utf-8"):
             line = line.strip()
-            if not line or line.startswith("#"):
+            if not line or (line.startswith("#") and not line.startswith("## ")):
+                continue
+            if line.startswith("## "):
+                fields = [f.strip() for f in line[3:].split("|")]
+                stage = {"title": fields[0], "hint": fields[1] if len(fields) > 1 else "", "words": 1, "count": 0}
+                for f in fields[2:]:
+                    if f.startswith("words="):
+                        stage["words"] = int(f[6:])
+                    elif f in ("gate", "life"):
+                        stage[f] = True
+                stages.append(stage)
                 continue
             tr, _, ru = line.partition("|")
-            out.append({"ru": ru.strip(), "tr": tr.strip(), "src": "База", "tier": "base", "baseTopic": topic})
-    return out
+            stages[-1]["count"] += 1
+            out.append({"ru": ru.strip(), "tr": tr.strip(), "src": "База", "tier": "base",
+                        "baseTopic": topic, "stage": len(stages) - 1})
+        path.append({"id": topic, "stages": stages})
+    return out, path
 
 
 def load_sources():
     """Фразы и реплики диалогов в одном виде: {id, ru, tr, src, tier}. Сначала «База»,
     чтобы при совпадении текста фраза считалась своей, а не из разговорника."""
-    out = load_base()
+    out = load_paths()[0]
     pm = json.load(open(os.path.join(ROOT, "assets", "phrases", "manifest.json"), encoding="utf-8"))
     titles = {m["id"]: m["title"] for m in pm}
     # Идиомы с Allah — застывшие выражения, часто со старой грамматикой: на них
@@ -193,7 +212,9 @@ def build_case_index(nouns, all_words):
 
     def add(form, lemma, case, **kw):
         w = tr_lower(form.word)
-        if w in STOP or w in all_words:
+        # bura/şura/ora/nere — сами по себе в словаре (burada, nereye), но это и есть
+        # падежи, которые тренируем; остальные совпадения со словарём — не трогаем.
+        if lemma not in PLACE_WORDS and (w in STOP or w in all_words):
             return
         idx.setdefault(w, []).append((lemma, case, kw, form))
 
@@ -333,6 +354,11 @@ def main():
             if not any(s["topic"] == src["baseTopic"] for s in slots):
                 base_problems.append(f"{src['baseTopic']}: {tr}")
                 continue
+            # Во фразе пути только пройденное: правила тем, идущих ПОЗЖЕ, — ошибка автора.
+            later = PATH_TOPICS[PATH_TOPICS.index(src["baseTopic"]) + 1:]
+            if any(s["topic"] in later for s in slots):
+                base_problems.append(f"{src['baseTopic']}: правило следующей темы во фразе «{tr}»")
+                continue
         else:
             # Уровень, проставленный вручную (агент диалогов), важнее эвристики levels.py.
             level = src.get("level") or levels.classify(tr)[0]
@@ -340,11 +366,17 @@ def main():
                 too_hard += 1
                 continue
         if slots:
-            items.append({"id": f"g{n}", "ru": src["ru"], "tr": tr, "src": src["src"], "tier": src["tier"], "slots": slots})
+            item = {"id": f"g{n}", "ru": src["ru"], "tr": tr, "src": src["src"], "tier": src["tier"], "slots": slots}
+            if src["tier"] == "base":
+                item["topic"] = src["baseTopic"]
+                item["stage"] = src["stage"]
+            items.append(item)
 
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
     with open(OUT, "w", encoding="utf-8") as f:
         json.dump(items, f, ensure_ascii=False, separators=(",", ":"))
+    with open(PATH_OUT, "w", encoding="utf-8") as f:
+        json.dump(load_paths()[1], f, ensure_ascii=False, separators=(",", ":"))
     with open(UNMATCHED, "w", encoding="utf-8") as f:
         f.write("# основа до -yor → фразы; глагола нет в словаре (assets/words) или форма не сошлась\n")
         for base, trs in sorted(unmatched.items(), key=lambda kv: -len(kv[1])):

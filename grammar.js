@@ -5,8 +5,13 @@
 // Игра «Собери из кучки»: под фразой высыпана кучка плашек в стиле маджонга — корни,
 // окончания, целые слова, среди них «почти правильные» (другое лицо, другая гармония,
 // другой падеж). Тапом по порядку собираешь пропуск; не та плашка вздрагивает, и внизу
-// появляется подсказка правила. Сложность растёт ступенями (GRAMMAR_LEVELS): одно слово →
-// два → три → вся фраза по переводу → фразы «из жизни».
+// появляется подсказка правила.
+//
+// Тема — длинный путь ступеней (assets/grammar/path.json, пишется в tools/grammar/path-*.txt):
+// одна новая вещь на ступень (я/ты → он/мы → вы/они → гармония → «не» → вопрос → всё
+// вместе → фраза длиннее → три слова → вся фраза → «в жизни»), по образцу рабочей тетради
+// Yeni Hitit. Во фразах ступени — только уже пройденное. Следующая тема открывается
+// ступенью-«воротами» (gate) предыдущей.
 //
 // Игровая цель — спасти кошку Памук (кошка Лейлы, см. LEGEND.md): она застряла на
 // дереве/крыше/мачте…, каждая собранная фраза — кирпич пирамиды, по которой до неё
@@ -20,6 +25,7 @@
 // shuffle() из phrases.js.
 
 const GRAMMAR_ITEMS_URL = "assets/grammar/items.json";
+const GRAMMAR_PATH_URL = "assets/grammar/path.json";
 const GRAMMAR_LEVELS_KEY = "mahjong-grammar-levels";
 const GRAMMAR_RULES_KEY = "mahjong-grammar-rules";
 
@@ -114,22 +120,71 @@ const GRAMMAR_TOPICS = [
 ];
 const GRAMMAR_REVIEW = { id: "review", emoji: "🔀", title: "Повторение вперемешку" };
 
-// Ступени темы — сложность растёт тем, сколько фразы собираешь сама, и высотой пирамиды.
-// rows — ряды пирамиды снизу вверх (сумма = bricks, число фраз в раунде).
-const GRAMMAR_LEVELS = [
-  { n: 1, title: "Одно слово", hint: "собери слово с правилом", words: 1, tier: "base", pile: 12,
-    bricks: 8, rows: [4, 3, 1], mistakes: 2, place: "🌳", where: "на дереве" },
-  { n: 2, title: "Два слова", hint: "слово с правилом и соседнее", words: 2, tier: "base", pile: 14,
-    bricks: 10, rows: [4, 3, 2, 1], mistakes: 2, place: "🏠", where: "на крыше" },
-  { n: 3, title: "Три слова", hint: "почти вся фраза", words: 3, tier: "base", pile: 16,
-    bricks: 10, rows: [4, 3, 2, 1], mistakes: 3, place: "⛴️", where: "на мачте парохода" },
-  { n: 4, title: "Вся фраза", hint: "только перевод — собери по-турецки", words: 99, tier: "base", pile: 18,
-    bricks: 12, rows: [5, 4, 2, 1], mistakes: 3, place: "🗼", where: "на Галатской башне" },
-  { n: 5, title: "В жизни", hint: "фразы из «Фраз» и «Диалогов»", words: 2, tier: "life", pile: 16,
-    bricks: 12, rows: [5, 4, 2, 1], mistakes: 3, place: "🎡", where: "на колесе обозрения" },
+// Где застряла Памук — новое место на каждой ступени темы (по кругу).
+const RESCUE_PLACES = [
+  ["🌳", "на дереве"],
+  ["🏠", "на крыше"],
+  ["⛴️", "на мачте парохода"],
+  ["🗼", "на Галатской башне"],
+  ["🎡", "на колесе обозрения"],
+  ["🌉", "на Босфорском мосту"],
+  ["🏰", "на стене крепости"],
+  ["🚋", "на крыше трамвая"],
+  ["⛰️", "на скале"],
+  ["🎈", "на воздушном шаре"],
+  ["🚢", "на круизном лайнере"],
+  ["🗻", "на вершине горы"],
 ];
 // Ступень открывается, когда на предыдущей Памук спасена (хоть с одной звездой).
 const STARS_TO_UNLOCK = 1;
+// Фраз «из жизни» в раунде (своих строк у такой ступени нет).
+const LIFE_ROUND = 10;
+
+let grammarPath = []; // [{id, stages: [{title, hint, words, count, gate?, life?}]}]
+
+// Ряды пирамиды снизу вверх для n кирпичей: треугольник, лишнее срезается сверху.
+function pyramidRows(n) {
+  let w = 1;
+  while ((w * (w + 1)) / 2 < n) w++;
+  const rows = [];
+  for (let i = w; i >= 1; i--) rows.push(i);
+  let excess = rows.reduce((a, b) => a + b, 0) - n;
+  for (let i = rows.length - 1; i >= 0 && excess > 0; i--) {
+    const cut = Math.min(rows[i], excess);
+    rows[i] -= cut;
+    excess -= cut;
+  }
+  return rows.filter(Boolean);
+}
+
+// Ступени темы как готовые к игре настройки раунда.
+function topicLevels(topicId) {
+  const entry = grammarPath.find((t) => t.id === topicId);
+  if (!entry) return [];
+  return entry.stages.map((st, i) => {
+    const bricks = st.life ? LIFE_ROUND : Math.min(st.count, 12);
+    const [place, where] = RESCUE_PLACES[i % RESCUE_PLACES.length];
+    return {
+      n: i + 1,
+      stage: i,
+      title: st.title,
+      hint: st.hint,
+      words: st.words,
+      gate: !!st.gate,
+      tier: st.life ? "life" : "base",
+      bricks,
+      mistakes: st.words === 1 ? 2 : 3,
+      pile: Math.min(18, 10 + 2 * Math.min(st.words, 4)),
+      place,
+      where,
+    };
+  });
+}
+// Повторение: короткие фразы всех пройденных тем, по два слова.
+const REVIEW_LEVEL = {
+  n: 1, stage: -1, title: "Вперемешку", hint: "все темы вместе", words: 2, tier: "base",
+  bricks: 10, mistakes: 3, pile: 14, place: "🎪", where: "под куполом цирка",
+};
 
 let grammarItems = null;
 
@@ -153,10 +208,29 @@ function isLevelUnlocked(topicId, n) {
 }
 function highestUnlocked(topicId) {
   let best = 1;
-  GRAMMAR_LEVELS.forEach((l) => {
+  topicLevels(topicId).forEach((l) => {
     if (isLevelUnlocked(topicId, l.n)) best = l.n;
   });
   return best;
+}
+// Первая ещё не пройденная из открытых ступеней — с неё «Играть →».
+function nextToPlay(topicId) {
+  const open = topicLevels(topicId).filter((l) => isLevelUnlocked(topicId, l.n));
+  const fresh = open.find((l) => levelStars(topicId, l.n) === 0);
+  return (fresh || open[open.length - 1] || { n: 1 }).n;
+}
+// Тема открыта, если у предыдущей пройдена ступень-«ворота».
+function isTopicUnlocked(topicId) {
+  const i = GRAMMAR_TOPICS.findIndex((t) => t.id === topicId);
+  if (i <= 0) return true;
+  const prev = GRAMMAR_TOPICS[i - 1].id;
+  const gate = topicLevels(prev).find((l) => l.gate);
+  return !gate || levelStars(prev, gate.n) >= STARS_TO_UNLOCK;
+}
+// Какие темы уже «пройдены» к данной — для отбора фраз «из жизни»: эта и все до неё.
+function taughtTopics(topicId) {
+  const i = GRAMMAR_TOPICS.findIndex((t) => t.id === topicId);
+  return GRAMMAR_TOPICS.slice(0, i + 1).map((t) => t.id);
 }
 
 let grammarRuleStats = loadJSONKey(GRAMMAR_RULES_KEY, {}); // tag → [1,0,1,…] последние ответы
@@ -179,17 +253,21 @@ function isWeakRule(tag) {
 async function loadGrammarItems() {
   if (grammarItems) return grammarItems;
   try {
-    const resp = await fetch(GRAMMAR_ITEMS_URL);
-    grammarItems = resp.ok ? await resp.json() : [];
+    const [itemsResp, pathResp] = await Promise.all([fetch(GRAMMAR_ITEMS_URL), fetch(GRAMMAR_PATH_URL)]);
+    grammarItems = itemsResp.ok ? await itemsResp.json() : [];
+    grammarPath = pathResp.ok ? await pathResp.json() : [];
   } catch {
     grammarItems = [];
   }
   return grammarItems;
 }
 
-// Повторение вперемешку — когда в каждой теме пройдена ступень «Три слова».
+// Повторение вперемешку — когда во всех темах пройдены «ворота».
 function isReviewUnlocked() {
-  return GRAMMAR_TOPICS.every((t) => levelStars(t.id, 3) >= STARS_TO_UNLOCK);
+  return GRAMMAR_TOPICS.every((t) => {
+    const gate = topicLevels(t.id).find((l) => l.gate);
+    return gate && levelStars(t.id, gate.n) >= STARS_TO_UNLOCK;
+  });
 }
 
 function starsText(n) {
@@ -205,17 +283,25 @@ async function renderGrammarCatalog() {
   await loadGrammarItems();
   loadingEl.classList.add("hidden");
 
-  GRAMMAR_TOPICS.forEach((t) => {
-    const top = highestUnlocked(t.id);
-    grid.appendChild(buildGrammarTile(t.emoji, t.title, `ступень ${top} из ${GRAMMAR_LEVELS.length}`, () => openGrammarTopic(t.id)));
+  GRAMMAR_TOPICS.forEach((t, i) => {
+    const total = topicLevels(t.id).length;
+    if (!isTopicUnlocked(t.id)) {
+      const prev = GRAMMAR_TOPICS[i - 1];
+      const gate = topicLevels(prev.id).find((l) => l.gate);
+      const tile = buildGrammarTile("🔒", t.title, `откроется после ступени «${gate.title}» в теме «${prev.title}»`, () => {});
+      tile.classList.add("not-loaded");
+      grid.appendChild(tile);
+      return;
+    }
+    grid.appendChild(buildGrammarTile(t.emoji, t.title, `ступень ${highestUnlocked(t.id)} из ${total}`, () => openGrammarTopic(t.id)));
   });
 
   const unlocked = isReviewUnlocked();
   const reviewTile = buildGrammarTile(
     unlocked ? GRAMMAR_REVIEW.emoji : "🔒",
     GRAMMAR_REVIEW.title,
-    unlocked ? "все темы вместе" : "откроется после ступени «Три слова» в каждой теме",
-    () => unlocked && startGrammarRound("review", 3)
+    unlocked ? "все темы вместе" : "откроется, когда в каждой теме пройдено «Всё вместе»",
+    () => unlocked && startGrammarRound("review", 1)
   );
   if (!unlocked) reviewTile.classList.add("not-loaded");
   grid.appendChild(reviewTile);
@@ -267,7 +353,7 @@ function renderRuleChips(container, topic) {
 function renderTopicLevels(topic) {
   const el = document.getElementById("grammar-topic-stages");
   el.innerHTML = "";
-  GRAMMAR_LEVELS.forEach((level) => {
+  topicLevels(topic.id).forEach((level) => {
     const unlocked = isLevelUnlocked(topic.id, level.n);
     const row = document.createElement("button");
     row.type = "button";
@@ -347,10 +433,52 @@ function chooseGapUnits(units, topicId, words) {
 }
 
 // Обычные слова для кучки-обманки: из других фраз той же темы.
+// Что уже «пройдено» к этой ступени: фразы ступеней до неё (и эта), фразы прошлых тем.
+// Из них берутся слова-обманки для кучки — так в кучке нет ни слов, ни окончаний из тем,
+// которые ещё впереди.
+function learnedItems(topicId, level) {
+  if (topicId === "review") return grammarItems.filter((it) => it.tier === "base");
+  const taught = taughtTopics(topicId);
+  const stage = level.tier === "life" ? Infinity : level.stage;
+  return grammarItems.filter(
+    (it) =>
+      it.tier === "base" &&
+      (it.topic === topicId ? it.stage <= stage : taught.includes(it.topic))
+  );
+}
+function learnedPieces(items, topicId) {
+  const set = new Set();
+  items.forEach((it) => sentenceUnits(it, topicId).forEach((u) => u.pieces.forEach((p) => set.add(p.text))));
+  return set;
+}
+// «Почти правильная» обманка — та же форма с ошибкой в одном звуке, на котором и учимся,
+// даже если сама форма ещё не встречалась: гласная по гармонии (ıyor/iyor, de/da),
+// глухость (de/te), чередование (k/ğ, p/b, ç/c, t/d); у основы — гласная на конце
+// (izl/izle). Другое окончание (dan вместо da) — уже не «почти», его пускаем в кучку,
+// только когда оно пройдено.
+const VOWELS_RE = /[aeıioöuü]/;
+const SOUND_PAIRS = ["dt", "td", "kğ", "ğk", "pb", "bp", "çc", "cç"];
+function isNearMiss(a, b, slot) {
+  if (a.length === b.length) {
+    let diffs = 0;
+    let ok = true;
+    for (let i = 0; i < a.length; i++) {
+      if (a[i] === b[i]) continue;
+      diffs++;
+      ok = ok && ((VOWELS_RE.test(a[i]) && VOWELS_RE.test(b[i])) || SOUND_PAIRS.includes(a[i] + b[i]));
+    }
+    return diffs === 1 && ok;
+  }
+  if (slot !== "stem") return false;
+  const [short, long] = a.length < b.length ? [a, b] : [b, a];
+  return long.length - short.length === 1 && long.startsWith(short);
+}
+
 function randomWords(n, exclude) {
+  const source = round && round.learned ? round.learned : grammarItems;
   const pool = [];
   for (let i = 0; i < 40 && pool.length < n * 3; i++) {
-    const it = grammarItems[Math.floor(Math.random() * grammarItems.length)];
+    const it = source[Math.floor(Math.random() * source.length)];
     (it.tr.match(TOKEN_RE) || []).forEach((w) => {
       if (!exclude.has(w) && !exclude.has(w.toLowerCase()) && w.length > 1) pool.push(w);
     });
@@ -367,7 +495,10 @@ function buildPile(units, gapIdx, pileSize) {
   gapIdx.forEach((i) => {
     units[i].pieces.forEach((p) => {
       if (!p.part) return;
-      shuffle(p.part.options.map((o) => o.trim()).filter((o) => o && !neededSet.has(o))).slice(0, 3).forEach((o) => distractors.push(o));
+      const allowed = (o) => !round || !round.pieces || round.pieces.has(o) || isNearMiss(o, p.text, p.part.slot);
+      shuffle(p.part.options.map((o) => o.trim()).filter((o) => o && !neededSet.has(o) && allowed(o)))
+        .slice(0, 3)
+        .forEach((o) => distractors.push(o));
     });
   });
   const uniqueDistr = [...new Set(distractors)];
@@ -433,15 +564,23 @@ function sfx(kind) {
 // --- раунд ---
 let round = null; // {topicId, level, queue, index, mistakes, over, current}
 
+// Фразы раунда: у ступени пути — её собственные; «в жизни» — фразы из «Фраз»/«Диалогов» с
+// правилом темы и без правил тем, которые ещё не пройдены; в повторении — короткие фразы
+// всех тем.
 function roundCandidates(topicId, level) {
-  return grammarItems.filter((item) => {
-    if (item.tier !== level.tier) return false;
-    const hasTopic = item.slots.some((s) => topicId === "review" || s.topic === topicId);
-    if (!hasTopic) return false;
-    // «Вся фраза» — только короткие фразы, иначе кучка превращается в свалку.
-    if (level.words >= 99 && (item.tr.match(TOKEN_RE) || []).length > 5) return false;
-    return true;
-  });
+  if (topicId === "review") {
+    return grammarItems.filter((item) => item.tier === "base" && (item.tr.match(TOKEN_RE) || []).length <= 6);
+  }
+  if (level.tier === "base") {
+    return grammarItems.filter((item) => item.topic === topicId && item.stage === level.stage);
+  }
+  const taught = taughtTopics(topicId);
+  return grammarItems.filter(
+    (item) =>
+      item.tier === "life" &&
+      item.slots.some((s) => s.topic === topicId) &&
+      item.slots.every((s) => taught.includes(s.topic))
+  );
 }
 
 // Раунд = столько фраз, сколько кирпичей в пирамиде; «слабые» правила попадаются чаще.
@@ -466,8 +605,10 @@ function buildRoundQueue(topicId, level) {
 
 async function startGrammarRound(topicId, levelN) {
   await loadGrammarItems();
-  const level = GRAMMAR_LEVELS.find((l) => l.n === levelN);
+  const level = topicId === "review" ? REVIEW_LEVEL : topicLevels(topicId).find((l) => l.n === levelN);
   round = { topicId, level, queue: buildRoundQueue(topicId, level), index: 0, mistakes: 0, clean: 0, over: false };
+  round.learned = learnedItems(topicId, level);
+  round.pieces = learnedPieces(round.learned, topicId);
   const title = topicId === "review" ? GRAMMAR_REVIEW.title : GRAMMAR_TOPICS.find((t) => t.id === topicId).title;
   document.getElementById("grammar-drill-title").textContent = title;
   document.getElementById("grammar-drill-progress").textContent = `${level.n}. ${level.title}`;
@@ -490,12 +631,7 @@ function buildScene() {
   pyramid.innerHTML = "";
   pyramid.className = "scene-pyramid";
   // Ряды снизу вверх; если фраз меньше, чем кирпичей, срезаем сверху.
-  let left = queue.length;
-  const rows = level.rows.map((w) => {
-    const take = Math.min(w, left);
-    left -= take;
-    return take;
-  }).filter(Boolean);
+  const rows = pyramidRows(queue.length);
   round.bricks = [];
   rows.forEach((w) => {
     const row = document.createElement("div");
@@ -762,7 +898,9 @@ function rescueCat() {
 // открывается следующая ступень. Взорвалась — «Начать заново».
 function showRoundResult(saved) {
   const { topicId, level } = round;
-  const next = GRAMMAR_LEVELS.find((l) => l.n === level.n + 1);
+  const levels = topicId === "review" ? [] : topicLevels(topicId);
+  const nextTopic = GRAMMAR_TOPICS[GRAMMAR_TOPICS.findIndex((t) => t.id === topicId) + 1];
+  const next = levels.find((l) => l.n === level.n + 1);
   let stars = 0;
   let unlockedNow = false;
   if (saved) {
@@ -772,13 +910,15 @@ function showRoundResult(saved) {
       grammarLevels[topicId] = grammarLevels[topicId] || {};
       grammarLevels[topicId][level.n] = Math.max(levelStars(topicId, level.n), stars);
       saveGrammarLevels();
-      unlockedNow = !before && level.n < GRAMMAR_LEVELS.length && isLevelUnlocked(topicId, level.n + 1);
+      unlockedNow = !before && level.n < levels.length && isLevelUnlocked(topicId, level.n + 1);
     }
   }
   document.getElementById("grammar-round-title").textContent = saved ? "🐱 Памук спасена!" : "💥 Пирамида рухнула!";
   document.getElementById("grammar-round-stars").textContent = saved ? starsText(stars) : "🙀";
   document.getElementById("grammar-round-text").textContent = saved
-    ? `Ошибок: ${round.mistakes}.` + (unlockedNow && next ? ` Открыта ступень «${next.title}» — Памук теперь ${next.where}!` : "")
+    ? `Ошибок: ${round.mistakes}.` +
+      (unlockedNow && next ? ` Открыта ступень «${next.title}» — Памук теперь ${next.where}!` : "") +
+      (level.gate && nextTopic && isTopicUnlocked(nextTopic.id) ? ` А ещё открыта новая тема: «${nextTopic.title}»!` : "")
     : `Памук всё ещё ${level.where}. Собрано ${round.index} из ${round.queue.length}. Попробуй ещё раз!`;
   const nextBtn = document.getElementById("grammar-round-next-btn");
   const canNext = saved && topicId !== "review" && next && isLevelUnlocked(topicId, next.n);
@@ -827,7 +967,7 @@ function initGrammarMode() {
   document.getElementById("grammar-topic-back-btn").addEventListener("click", backToCatalog);
   document.getElementById("grammar-topic-done-btn").addEventListener("click", backToCatalog);
   document.getElementById("grammar-topic-play-btn").addEventListener("click", () =>
-    startGrammarRound(currentGrammarTopicId, highestUnlocked(currentGrammarTopicId))
+    startGrammarRound(currentGrammarTopicId, nextToPlay(currentGrammarTopicId))
   );
   document.getElementById("grammar-back-btn").addEventListener("click", leaveDrill);
   document.getElementById("grammar-round-exit-btn").addEventListener("click", leaveDrill);

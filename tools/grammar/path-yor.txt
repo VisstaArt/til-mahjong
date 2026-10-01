@@ -1,0 +1,133 @@
+# Путь темы «-yor»: ступени по порядку, одна новая вещь на ступень (по образцу
+# рабочей тетради Yeni Hitit 1, ünite 2.1). Во фразах только уже пройденное:
+# никаких падежей (-de/-den/-e), притяжательных и винительного — они идут в следующих темах.
+#
+# Заголовок ступени:  ## Название | подсказка | words=N [| gate] [| life]
+#   words — сколько слов фразы собираешь (1 — только глагол, 99 — всю фразу по переводу);
+#   gate  — пройдя эту ступень, открываешь следующую тему;
+#   life  — ступень из фраз «Фраз» и «Диалогов» (своих строк нет).
+# Строка фразы: турецкий | русский.  После правки: python3 tools/grammar/build.py
+
+## Я и ты | ben → -um, sen → -sun | words=1
+Ben kahve içiyorum. | Я пью кофе.
+Sen çay içiyorsun. | Ты пьёшь чай.
+Ben kitap okuyorum. | Я читаю книгу.
+Sen mektup yazıyorsun. | Ты пишешь письмо.
+Ben Türkçe öğreniyorum. | Я учу турецкий.
+Sen çok çalışıyorsun. | Ты много работаешь.
+Ben şimdi geliyorum. | Я сейчас иду.
+Sen müzik dinliyorsun. | Ты слушаешь музыку.
+Ben film izliyorum. | Я смотрю фильм.
+Sen simit yiyorsun. | Ты ешь симит.
+
+## Он, она, мы | o → без окончания, biz → -uz | words=1
+Olga kahve içiyor. | Ольга пьёт кофе.
+Leyla ayran içiyor. | Лейла пьёт айран.
+Pamuk uyuyor. | Памук спит.
+Deniz çalışıyor. | Дениз работает.
+Biz film izliyoruz. | Мы смотрим фильм.
+Biz Türkçe öğreniyoruz. | Мы учим турецкий.
+Biz yemek yiyoruz. | Мы едим.
+Anya mektup yazıyor. | Аня пишет письмо.
+Biz çay içiyoruz. | Мы пьём чай.
+Tuba çok konuşuyor. | Туба много говорит.
+
+## Вы, они | siz → -sunuz, onlar → -lar | words=1
+Siz ne içiyorsunuz? | Что вы пьёте?
+Siz Rusça konuşuyorsunuz. | Вы говорите по-русски.
+Siz çok güzel yazıyorsunuz. | Вы очень красиво пишете.
+Onlar futbol oynuyorlar. | Они играют в футбол.
+Çocuklar oynuyorlar. | Дети играют.
+Onlar kahve içiyorlar. | Они пьют кофе.
+Siz kitap okuyorsunuz. | Вы читаете книгу.
+Onlar şarkı söylüyorlar. | Они поют песню.
+Siz film izliyorsunuz. | Вы смотрите фильм.
+Onlar çok çalışıyorlar. | Они много работают.
+
+## Гармония | ıyor / iyor / uyor / üyor, bekle → bekliyor, git → gidiyor | words=1
+Ben bekliyorum. | Я жду.
+Sen ne düşünüyorsun? | Что ты думаешь?
+Olga gülüyor. | Ольга смеётся.
+Biz yürüyoruz. | Мы идём пешком.
+Siz ne istiyorsunuz? | Что вы хотите?
+Onlar gidiyorlar. | Они уходят.
+Leyla ağlıyor. | Лейла плачет.
+Ben yüzüyorum. | Я плаваю.
+Sen ne yapıyorsun? | Что ты делаешь?
+Deniz koşuyor. | Дениз бегает.
+Ben anlıyorum. | Я понимаю.
+Biz dans ediyoruz. | Мы танцуем.
+
+## Не | -mıyor / -miyor / -muyor / -müyor | words=1
+Ben et yemiyorum. | Я не ем мясо.
+Leyla alkol içmiyor. | Лейла не пьёт алкоголь.
+Sen dinlemiyorsun! | Ты не слушаешь!
+Biz bugün çalışmıyoruz. | Мы сегодня не работаем.
+Onlar Rusça bilmiyorlar. | Они не знают русский.
+Ben anlamıyorum. | Я не понимаю.
+Siz gelmiyorsunuz. | Вы не идёте.
+Pamuk süt içmiyor. | Памук не пьёт молоко.
+Deniz uyumuyor. | Дениз не спит.
+Ben sigara içmiyorum. | Я не курю.
+
+## Вопрос | çalışıyor musun? — лицо на частице mu | words=1
+Sen çay içiyor musun? | Ты пьёшь чай?
+Siz Rusça biliyor musunuz? | Вы знаете русский?
+Leyla geliyor mu? | Лейла придёт?
+Onlar futbol oynuyorlar mı? | Они играют в футбол?
+Biz şimdi gidiyor muyuz? | Мы сейчас уходим?
+Pamuk uyuyor mu? | Памук спит?
+Sen Türkçe öğreniyor musun? | Ты учишь турецкий?
+Siz sigara içiyor musunuz? | Вы курите?
+Deniz çalışıyor mu? | Дениз работает?
+Ben doğru söylüyor muyum? | Я правильно говорю?
+
+## Всё вместе | да, нет и вопрос вперемешку | words=1 | gate
+Sen ne okuyorsun? | Что ты читаешь?
+Olga Türkçe öğreniyor mu? | Ольга учит турецкий?
+Biz yarın çalışmıyoruz. | Мы завтра не работаем.
+Onlar ne yapıyorlar? | Что они делают?
+Siz çok hızlı konuşuyorsunuz. | Вы очень быстро говорите.
+Ben Almanca bilmiyorum. | Я не знаю немецкий.
+Leyla şarkı söylüyor mu? | Лейла поёт?
+Deniz araba kullanıyor. | Дениз ведёт машину.
+Sen neden gülüyorsun? | Почему ты смеёшься?
+Çocuklar uyumuyorlar. | Дети не спят.
+
+## Фраза длиннее | + когда, сколько, какой: слово перед глаголом | words=2
+Ben her sabah kahve içiyorum. | Я каждое утро пью кофе.
+Olga yeni bir kitap okuyor. | Ольга читает новую книгу.
+Biz bugün çok çalışıyoruz. | Мы сегодня много работаем.
+Leyla iki simit yiyor. | Лейла ест два симита.
+Sen güzel bir şarkı söylüyorsun. | Ты поёшь красивую песню.
+Deniz kırmızı bir araba istiyor. | Дениз хочет красную машину.
+Onlar her gün Türkçe konuşuyorlar. | Они каждый день говорят по-турецки.
+Siz Pazartesi çalışıyor musunuz? | Вы работаете в понедельник?
+Anya sıcak çay içiyor. | Аня пьёт горячий чай.
+Ben şimdi yeni bir film izliyorum. | Я сейчас смотрю новый фильм.
+
+## Три слова | собери конец фразы | words=3
+Pamuk her gün çok uyuyor. | Памук каждый день много спит.
+Biz akşam film izliyoruz. | Вечером мы смотрим фильм.
+Olga sabah erken kalkıyor. | Ольга рано встаёт утром.
+Çocuklar şimdi futbol oynuyorlar. | Дети сейчас играют в футбол.
+Leyla bugün yeni bir elbise alıyor. | Лейла сегодня покупает новое платье.
+Ben üç dil öğreniyorum. | Я учу три языка.
+Sen çok güzel Türkçe konuşuyorsun. | Ты очень хорошо говоришь по-турецки.
+Tuba Cumartesi çalışmıyor. | Туба не работает в субботу.
+Deniz siyah kahve seviyor. | Дениз любит чёрный кофе.
+Siz yarın geliyor musunuz? | Вы завтра придёте?
+
+## Вся фраза | только перевод — собери по-турецки | words=99
+Ben çay içiyorum. | Я пью чай.
+Sen yemek yapıyorsun. | Ты готовишь еду.
+Olga kitap okuyor. | Ольга читает книгу.
+Biz Türkçe konuşuyoruz. | Мы говорим по-турецки.
+Leyla et yemiyor. | Лейла не ест мясо.
+Siz kahve içiyor musunuz? | Вы пьёте кофе?
+Onlar dans ediyorlar. | Они танцуют.
+Pamuk şimdi uyuyor. | Памук сейчас спит.
+Deniz çok çalışıyor. | Дениз много работает.
+Ben Rusça biliyorum. | Я знаю русский.
+
+## В жизни | фразы из «Фраз» и «Диалогов» — только с пройденным | words=2 | life
