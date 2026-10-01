@@ -53,6 +53,30 @@ def tr_lower(s):
     return s.replace("I", "ı").replace("İ", "i").lower()
 
 
+# Перевод отдельных слов фразы — для подсказки «что это за слово» в игре. Словарь
+# маджонга + частые служебные слова, которых там нет (или они там с другим смыслом).
+WORDS_RU = {}
+BASIC_GLOSS = {
+    "ben": "я", "sen": "ты", "o": "он, она", "biz": "мы", "siz": "вы", "onlar": "они",
+    "her": "каждый", "bir": "один, какой-то", "ve": "и", "de": "тоже", "da": "тоже",
+    "ne": "что", "neden": "почему", "kim": "кто", "çok": "много, очень", "şimdi": "сейчас",
+    "bugün": "сегодня", "yarın": "завтра", "akşam": "вечер, вечером", "sabah": "утро, утром",
+    "erken": "рано", "geç": "поздно", "biraz": "немного", "hiç": "совсем (не)", "güzel": "красивый, хорошо",
+    "hızlı": "быстро", "doğru": "правильно", "yazın": "летом", "gün": "день",
+    "mu": "частица вопроса", "mı": "частица вопроса", "mi": "частица вопроса", "mü": "частица вопроса",
+    "musun": "частица вопроса (ты)", "musunuz": "частица вопроса (вы)", "muyum": "частица вопроса (я)",
+    "muyuz": "частица вопроса (мы)",
+}
+NAMES = {"olga", "leyla", "anya", "deniz", "tuba", "pamuk", "metin", "bey", "kemal"}
+
+
+def gloss_for(word):
+    low = tr_lower(word)
+    if low in NAMES:
+        return "имя"
+    return BASIC_GLOSS.get(low) or WORDS_RU.get(low, "")
+
+
 def load_lexicon():
     verbs, nouns, all_words = {}, {}, set()
     for f in glob.glob(os.path.join(ROOT, "assets", "words", "*.json")):
@@ -65,6 +89,7 @@ def load_lexicon():
             all_words.add(tr)
             if " " in tr or "/" in tr or "," in tr:
                 continue
+            WORDS_RU.setdefault(tr, w.get("ru", ""))
             if w.get("pos") == "verb" and re.search(r"m[ae]k$", tr):
                 verbs.setdefault(tr, w.get("ru", ""))
             elif w.get("pos") == "noun":
@@ -343,7 +368,7 @@ def main():
                     form.word = raw
                 # Перевод леммы для падежей не показываем: у существительных в словаре
                 # бывает не тот смысл (sağ → «право»), а смысл и так есть во фразе.
-                slot = form_to_slot(form, s, e, lemma, "case", "")
+                slot = form_to_slot(form, s, e, lemma, "case", nouns.get(lemma) or PLACE_WORDS.get(lemma, ""))
                 slot["case"] = case
                 slot["alts"] = case_alternatives(lemma, case, kw, False)
                 if raw[0].isupper():
@@ -367,6 +392,17 @@ def main():
                 continue
         if slots:
             item = {"id": f"g{n}", "ru": src["ru"], "tr": tr, "src": src["src"], "tier": src["tier"], "slots": slots}
+            # Переводы обычных слов (не пропусков) — для подсказки «что за слово».
+            in_slots = [(sl["start"], sl["end"]) for sl in slots]
+            gl = {}
+            for raw, ts, _te in tokens:
+                if any(a <= ts < b for a, b in in_slots):
+                    continue
+                g = gloss_for(raw)
+                if g:
+                    gl[raw] = g
+            if gl:
+                item["gl"] = gl
             if src["tier"] == "base":
                 item["topic"] = src["baseTopic"]
                 item["stage"] = src["stage"]

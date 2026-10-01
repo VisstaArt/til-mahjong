@@ -1562,7 +1562,7 @@ main {
 }
 .pile-tile:active { transform: translate(var(--dx, 0), calc(var(--dy, 0px) + 2px)) rotate(var(--rot, 0deg)); box-shadow: 0 2px 0 #c9b98f; }
 .pile-tile.taken { opacity: 0; transform: scale(0.6); pointer-events: none; }
-.pile-tile.wrong { animation: pile-shake 0.35s ease; background: #f3c7bb; }
+.pile-tile.wrong { animation: pile-shake 0.35s ease; }
 @keyframes pile-shake {
   0%, 100% { transform: translate(var(--dx, 0), var(--dy, 0)) rotate(var(--rot, 0deg)); }
   25% { transform: translate(calc(var(--dx, 0px) - 6px), var(--dy, 0)) rotate(var(--rot, 0deg)); }
@@ -1616,4 +1616,37 @@ main {
   padding: 6px 10px;
   font-size: 0.8rem;
   cursor: pointer;
+}
+
+/* Кнопка подсказок: вспышка, когда подсказка заработана. */
+#grammar-hint-btn.hint-gain { animation: hint-gain 0.7s ease; }
+@keyframes hint-gain {
+  0% { transform: scale(1); }
+  40% { transform: scale(1.25); box-shadow: 0 0 0 4px rgba(233, 196, 106, 0.6); }
+  100% { transform: scale(1); }
+}
+
+/* Цвет плашки — вид кусочка (как символы Монтессори): глагол, время, «не», лицо, вопрос,
+   падеж; обычные слова — кремовые, как в маджонге. Оттенки светлые, чтобы текст читался. */
+.pile-tile.kind-verb, .legend-chip.kind-verb { background: #f6d2c4; }
+.pile-tile.kind-tense, .legend-chip.kind-tense { background: #cfe2f6; }
+.pile-tile.kind-neg, .legend-chip.kind-neg { background: #f5c3cc; }
+.pile-tile.kind-person, .legend-chip.kind-person { background: #f6e7a8; }
+.pile-tile.kind-question, .legend-chip.kind-question { background: #e0d2f4; }
+.pile-tile.kind-case, .legend-chip.kind-case { background: #cbe9d2; }
+.pile-tile.kind-noun, .pile-tile.kind-word, .legend-chip.kind-noun, .legend-chip.kind-word { background: var(--word-bg); }
+.pile-tile.wrong { background: var(--danger) !important; color: #fff; }
+.pile-legend {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px;
+  margin-top: -8px;
+}
+.legend-chip {
+  color: var(--word-text);
+  border-radius: 6px;
+  padding: 2px 8px;
+  font-size: 0.75rem;
+  font-weight: 600;
 }

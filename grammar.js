@@ -28,6 +28,13 @@ const GRAMMAR_ITEMS_URL = "assets/grammar/items.json";
 const GRAMMAR_PATH_URL = "assets/grammar/path.json";
 const GRAMMAR_LEVELS_KEY = "mahjong-grammar-levels";
 const GRAMMAR_RULES_KEY = "mahjong-grammar-rules";
+const GRAMMAR_HINTS_KEY = "mahjong-grammar-hints";
+// Подсказки — редкие, их зарабатывают: +1 за спасённую Памук, +2 — если без единой
+// ошибки. Подсказка объясняет правило для следующего кусочка или показывает нужное
+// турецкое слово — но не подсвечивает плашку: найти её в кучке всё равно нужно самой.
+const HINTS_START = 2;
+const HINTS_PER_RESCUE = 1;
+const HINTS_PER_PERFECT = 2;
 
 // Сколько последних ответов помнить по каждому правилу — по ним цвет «плашки правила»
 // и то, насколько чаще такие фразы попадаются.
@@ -233,6 +240,23 @@ function taughtTopics(topicId) {
   return GRAMMAR_TOPICS.slice(0, i + 1).map((t) => t.id);
 }
 
+let grammarHints = (() => {
+  const v = Number(localStorage.getItem(GRAMMAR_HINTS_KEY));
+  return Number.isFinite(v) && localStorage.getItem(GRAMMAR_HINTS_KEY) !== null ? v : HINTS_START;
+})();
+function setHints(n, gained = 0) {
+  grammarHints = Math.max(0, n);
+  localStorage.setItem(GRAMMAR_HINTS_KEY, String(grammarHints));
+  const btn = document.getElementById("grammar-hint-btn");
+  if (!btn) return;
+  btn.textContent = `💡 ${grammarHints}`;
+  if (gained > 0) {
+    btn.classList.remove("hint-gain");
+    void btn.offsetWidth;
+    btn.classList.add("hint-gain");
+  }
+}
+
 let grammarRuleStats = loadJSONKey(GRAMMAR_RULES_KEY, {}); // tag → [1,0,1,…] последние ответы
 function recordRule(tag, ok) {
   const hist = grammarRuleStats[tag] || [];
@@ -401,17 +425,47 @@ function sentenceUnits(item, topicId) {
         start: slot.start,
         end: slot.end,
         slot: split ? slot : null,
+        orig: slot,
         lemma: slot.lemma,
         pieces: split
-          ? slot.parts.filter((p) => p.text.trim()).map((p) => ({ text: p.text.trim(), space: p.text.startsWith(" "), part: p }))
-          : [{ text: item.tr.slice(slot.start, slot.end), space: false, part: null }],
+          ? slot.parts
+              .filter((p) => p.text.trim())
+              .map((p) => ({ text: p.text.trim(), space: p.text.startsWith(" "), part: p, kind: partKind(slot, p) }))
+          : [{ text: item.tr.slice(slot.start, slot.end), space: false, part: null, kind: slot.topic === "yor" ? "verb" : "noun" }],
       });
       skipUntil = slot.end;
     } else {
-      units.push({ start: m.index, end: m.index + m[0].length, slot: null, pieces: [{ text: m[0], space: false, part: null }] });
+      units.push({ start: m.index, end: m.index + m[0].length, slot: null, pieces: [{ text: m[0], space: false, part: null, kind: "word" }] });
     }
   }
   return units;
+}
+
+const KIND_LABELS = {
+  verb: "глагол",
+  tense: "время",
+  neg: "«не»",
+  person: "лицо",
+  question: "вопрос",
+  noun: "слово",
+  case: "падеж",
+  word: "слово",
+};
+const KIND_ORDER = ["verb", "tense", "neg", "person", "question", "noun", "case", "word"];
+
+// Вид кусочка — по нему плашка подкрашена (основа глагола, время, лицо, «не», вопрос,
+// падеж) и из таких же кусочков набирается кучка-обманка.
+function partKind(slot, part) {
+  switch (part.slot) {
+    case "stem":
+      return slot.topic === "yor" ? "verb" : "noun";
+    case "person":
+      return part.text.startsWith(" ") ? "question" : "person";
+    case "plural":
+      return "case";
+    default:
+      return part.slot; // tense, neg, case
+  }
 }
 
 // Какие слова фразы превращаются в пропуски: слово с правилом темы + соседи слева
@@ -451,6 +505,19 @@ function learnedPieces(items, topicId) {
   items.forEach((it) => sentenceUnits(it, topicId).forEach((u) => u.pieces.forEach((p) => set.add(p.text))));
   return set;
 }
+// Пройденные кусочки по видам: {verb: [iç, oku…], person: [um, sun…], word: […]}.
+function learnedPiecePool(items, topicId) {
+  const pool = {};
+  items.forEach((it) =>
+    sentenceUnits(it, topicId).forEach((u) =>
+      u.pieces.forEach((p) => {
+        (pool[p.kind] = pool[p.kind] || new Set()).add(p.text);
+      })
+    )
+  );
+  Object.keys(pool).forEach((k) => (pool[k] = [...pool[k]]));
+  return pool;
+}
 // «Почти правильная» обманка — та же форма с ошибкой в одном звуке, на котором и учимся,
 // даже если сама форма ещё не встречалась: гласная по гармонии (ıyor/iyor, de/da),
 // глухость (de/te), чередование (k/ğ, p/b, ç/c, t/d); у основы — гласная на конце
@@ -474,37 +541,38 @@ function isNearMiss(a, b, slot) {
   return long.length - short.length === 1 && long.startsWith(short);
 }
 
-function randomWords(n, exclude) {
-  const source = round && round.learned ? round.learned : grammarItems;
-  const pool = [];
-  for (let i = 0; i < 40 && pool.length < n * 3; i++) {
-    const it = source[Math.floor(Math.random() * source.length)];
-    (it.tr.match(TOKEN_RE) || []).forEach((w) => {
-      if (!exclude.has(w) && !exclude.has(w.toLowerCase()) && w.length > 1) pool.push(w);
-    });
-  }
-  return shuffle([...new Set(pool)]).slice(0, n);
-}
-
+// Кучка = нужные кусочки + обманки, в которых реально можно ошибиться: «почти
+// правильные» варианты (другая гласная, глухость), а остальное — кусочки ТОГО ЖЕ вида из
+// пройденного: основы других глаголов, другие лица и падежи. Случайных слов-шума нет.
 function buildPile(units, gapIdx, pileSize) {
+  const out = [];
+  const seen = new Set();
+  const add = (text, kind) => {
+    if (!text || seen.has(text) || out.length >= pileSize) return;
+    seen.add(text);
+    out.push({ text, kind });
+  };
   const needed = [];
-  gapIdx.forEach((i) => units[i].pieces.forEach((p) => needed.push(p.text)));
-  const neededSet = new Set(needed);
-  const distractors = [];
-  // Сначала — «почти правильные» кусочки: другие лица, гармония, падежи. На них и учимся.
-  gapIdx.forEach((i) => {
-    units[i].pieces.forEach((p) => {
-      if (!p.part) return;
-      const allowed = (o) => !round || !round.pieces || round.pieces.has(o) || isNearMiss(o, p.text, p.part.slot);
-      shuffle(p.part.options.map((o) => o.trim()).filter((o) => o && !neededSet.has(o) && allowed(o)))
-        .slice(0, 3)
-        .forEach((o) => distractors.push(o));
-    });
+  gapIdx.forEach((i) => units[i].pieces.forEach((p) => needed.push(p)));
+  needed.forEach((p) => {
+    seen.add(p.text);
+    out.push({ text: p.text, kind: p.kind });
   });
-  const uniqueDistr = [...new Set(distractors)];
-  const fill = Math.max(0, pileSize - needed.length - uniqueDistr.length);
-  const extra = randomWords(fill, new Set([...neededSet, ...uniqueDistr]));
-  return shuffle([...needed, ...uniqueDistr.slice(0, Math.max(0, pileSize - needed.length)), ...extra]);
+  needed.forEach((p) => {
+    if (!p.part) return;
+    const allowed = (o) => !round || !round.pieces || round.pieces.has(o) || isNearMiss(o, p.text, p.part.slot);
+    shuffle(p.part.options.map((o) => o.trim()).filter((o) => o && allowed(o)))
+      .slice(0, 2)
+      .forEach((o) => add(o, p.kind));
+  });
+  const kinds = [...new Set(needed.map((p) => p.kind))];
+  const pool = (round && round.piecePool) || {};
+  for (let guard = 0; out.length < pileSize && guard < 300; guard++) {
+    const kind = kinds[guard % kinds.length];
+    const list = pool[kind] || [];
+    if (list.length) add(list[Math.floor(Math.random() * list.length)], kind);
+  }
+  return shuffle(out);
 }
 
 // --- звуки: синтез WebAudio, без файлов ---
@@ -606,9 +674,13 @@ function buildRoundQueue(topicId, level) {
 async function startGrammarRound(topicId, levelN) {
   await loadGrammarItems();
   const level = topicId === "review" ? REVIEW_LEVEL : topicLevels(topicId).find((l) => l.n === levelN);
+  const popupEl = document.getElementById("match-popup");
+  clearTimeout(popupEl._hideTimer);
+  popupEl.classList.add("hidden");
   round = { topicId, level, queue: buildRoundQueue(topicId, level), index: 0, mistakes: 0, clean: 0, over: false };
   round.learned = learnedItems(topicId, level);
   round.pieces = learnedPieces(round.learned, topicId);
+  round.piecePool = learnedPiecePool(round.learned, topicId);
   const title = topicId === "review" ? GRAMMAR_REVIEW.title : GRAMMAR_TOPICS.find((t) => t.id === topicId).title;
   document.getElementById("grammar-drill-title").textContent = title;
   document.getElementById("grammar-drill-progress").textContent = `${level.n}. ${level.title}`;
@@ -720,14 +792,14 @@ function renderGapSentence() {
 }
 
 // Кучка: плашки в стиле маджонга, вразброс, чуть повёрнуты — как высыпали на стол.
-function renderPileTiles(texts) {
+function renderPileTiles(pieces) {
   const pile = document.getElementById("grammar-answer");
   pile.innerHTML = "";
   pile.className = "grammar-pile";
-  texts.forEach((text) => {
+  pieces.forEach(({ text, kind }) => {
     const tile = document.createElement("button");
     tile.type = "button";
-    tile.className = "pile-tile";
+    tile.className = `pile-tile kind-${kind}`;
     tile.textContent = text;
     tile.style.setProperty("--rot", `${(Math.random() * 12 - 6).toFixed(1)}deg`);
     tile.style.setProperty("--dx", `${Math.round(Math.random() * 10 - 5)}px`);
@@ -735,6 +807,12 @@ function renderPileTiles(texts) {
     tile.addEventListener("click", () => onPileTile(tile, text));
     pile.appendChild(tile);
   });
+  // Легенда цветов — только для видов, что лежат в кучке.
+  const legend = document.getElementById("grammar-legend");
+  const kinds = [...new Set(pieces.map((p) => p.kind))];
+  legend.innerHTML = KIND_ORDER.filter((k) => kinds.includes(k))
+    .map((k) => `<span class="legend-chip kind-${k}">${KIND_LABELS[k]}</span>`)
+    .join("");
 }
 
 function onPileTile(tile, text) {
@@ -759,6 +837,51 @@ function onPileTile(tile, text) {
   tile.classList.add("wrong");
   document.getElementById("grammar-why").textContent = want.part && want.part.why ? want.part.why : `Нужно слово: «${want.text[0]}…»`;
   onMistake();
+}
+
+// Подсказка к следующему кусочку: правило (почему именно так) и/или перевод слова.
+// Подсказка к следующему кусочку. Русский перевод не помогает (фраза и так по-русски) —
+// поэтому для слова показываем турецкое слово, а для окончания — правило.
+function hintText() {
+  const cur = round.current;
+  const want = cur.expected[cur.pos];
+  const unit = cur.units[want.ui];
+  const src = unit.slot || unit.orig;
+  // Слово уже подписано в пропуске («(ev)», «(içmek)») — тогда переводить нечего,
+  // объясняем правило всего слова: основа + что к ней прибавить.
+  const lemmaShown = round.level.tier === "base" && cur.gapIdx.size !== cur.units.length;
+  if (want.part && want.part.slot === "stem" && src && lemmaShown) {
+    const stemRule = want.part.why || (src.topic === "yor" ? `основа: ${src.lemma} без -mak / -mek` : `основа: ${src.lemma}`);
+    const rest = src.parts.filter((p) => p !== want.part && p.why).map((p) => p.why);
+    return [stemRule, ...rest].join(" · ");
+  }
+  if (want.part && want.part.slot === "stem" && src) {
+    const turkish = src.gloss ? `«${src.gloss}» по-турецки — ${src.lemma}` : `это ${src.lemma}`;
+    const rule = want.part.why || (src.topic === "yor" ? "основа — без -mak / -mek" : "");
+    return [turkish, rule].filter(Boolean).join(" · ");
+  }
+  if (want.part) return want.part.why || "";
+  if (src) {
+    const form = src.person ? `в форме для «${src.person}»` : src.case ? "с падежом" : "";
+    return [src.gloss ? `«${src.gloss}» по-турецки — ${src.lemma}` : src.lemma, form].filter(Boolean).join(", ");
+  }
+  const gloss = (cur.item.gl && cur.item.gl[want.text]) || "";
+  if (gloss === "имя") return `имя: ${want.text}`;
+  if (gloss) return `«${gloss}» по-турецки — ${want.text}`;
+  return `слово начинается на «${want.text.slice(0, 2)}…»`;
+}
+
+function useGrammarHint() {
+  const cur = round && round.current;
+  if (!cur || round.over || cur.pos >= cur.expected.length) return;
+  const why = document.getElementById("grammar-why");
+  if (grammarHints <= 0) {
+    why.textContent = `💡 Подсказок пока нет: +${HINTS_PER_RESCUE} за спасённую Памук, +${HINTS_PER_PERFECT} — если без ошибок.`;
+    return;
+  }
+  setHints(grammarHints - 1);
+  cur.hinted = true;
+  why.textContent = `💡 ${hintText()}`;
 }
 
 // Ошибка: трещина на одном из уже построенных кирпичей (или дрожит земля, пока кирпичей
@@ -841,7 +964,9 @@ function finishSentence() {
   sfx("brick");
   updateSceneStatus();
   const item = round.current.item;
-  setTimeout(() => showGrammarDonePopup(item), 350);
+  const thisRound = round;
+  // Пока ждём плашку, игрок мог уже уйти в другой раунд — тогда старую не показываем.
+  setTimeout(() => round === thisRound && showGrammarDonePopup(item), 350);
 }
 
 // Та же плашка, что в квизе фраз (см. showPhraseMatchPopup) — целая фраза, озвучка,
@@ -879,6 +1004,8 @@ function showGrammarDonePopup(item) {
 function rescueCat() {
   round.over = true;
   sfx("win");
+  const gain = round.mistakes === 0 ? HINTS_PER_PERFECT : HINTS_PER_RESCUE;
+  setHints(grammarHints + gain, gain);
   const cat = document.getElementById("scene-cat");
   cat.textContent = "😻";
   cat.classList.add("rescued");
@@ -978,6 +1105,8 @@ function initGrammarMode() {
     if (muted && "speechSynthesis" in window) speechSynthesis.cancel();
   });
   document.getElementById("grammar-memo-btn").addEventListener("click", openMemoOverlay);
+  document.getElementById("grammar-hint-btn").addEventListener("click", useGrammarHint);
+  setHints(grammarHints);
   const overlay = document.getElementById("grammar-memo-overlay");
   document.getElementById("grammar-memo-close-btn").addEventListener("click", () => overlay.classList.add("hidden"));
   overlay.addEventListener("click", (e) => {
