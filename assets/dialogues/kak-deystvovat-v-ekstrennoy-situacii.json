@@ -82,7 +82,7 @@
       "turns": [
         { "speaker": "a", "tr": "Alo, merhaba! Bu telefon benim. Dün akşam taksiyle eve geldim ve telefonumu kaybettim.", "ru": "Алло, здравствуйте! Это мой телефон. Вчера вечером я ехала домой на такси и потеряла телефон.", "distractors": [
           { "tr": "Harika. Ofisimin yanında bir kahveci var. Orada beklerim.", "ru": "Отлично. Рядом с моим офисом есть кофейня. Я подожду там." },
-          { "tr": "Evet, bu iş arkadaşım Tuba'nın numarası. Çok teşekkür ederim!", "ru": "Да, это номер моей коллеги Тубы. Большое спасибо!" }
+          { "tr": "Evet, bu iş arkadaşım Tuba'nın numarası. Allah razı olsun, çok teşekkür ederim!", "ru": "Да, это номер моей коллеги Тубы. Дай вам бог здоровья, большое спасибо!" }
         ]},
         { "speaker": "b", "tr": "Merhaba! Evet, telefon arka koltukta kalmış. Ben taksi şoförüyüm.", "ru": "Здравствуйте! Да, телефон, оказывается, остался на заднем сиденье. Я таксист.", "distractors": [
           { "tr": "Şimdi Beşiktaş'tayım. Yarım saat sonra Karaköy'de olurum.", "ru": "Я сейчас в Бешикташе. Через полчаса буду в Каракёе." },
@@ -93,7 +93,7 @@
           { "tr": "Evet, kız kardeşim her gün yazar. Görüşürüz!", "ru": "Да, сестра пишет мне каждый день. До встречи!" }
         ]},
         { "speaker": "b", "tr": "Memnun oldum, Olga Hanım. Ben Vedat. Telefonunuzu nasıl getirebilirim?", "ru": "Очень приятно, Ольга-ханым. Я Ведат. Как мне вернуть вам телефон?", "distractors": [
-          { "tr": "Evet, bu iş arkadaşım Tuba'nın numarası. Çok teşekkür ederim!", "ru": "Да, это номер моей коллеги Тубы. Большое спасибо!" },
+          { "tr": "Evet, bu iş arkadaşım Tuba'nın numarası. Allah razı olsun, çok teşekkür ederim!", "ru": "Да, это номер моей коллеги Тубы. Дай вам бог здоровья, большое спасибо!" },
           { "tr": "Görüşürüz, Olga Hanım.", "ru": "До встречи, Ольга-ханым." }
         ]},
         { "speaker": "a", "tr": "Ben Karaköy'de çalışıyorum. Buraya gelebilir misiniz?", "ru": "Я работаю в Каракёе. Вы можете сюда приехать?", "distractors": [
@@ -112,7 +112,7 @@
           { "tr": "Çok şükür! İş arkadaşımın telefonuyla arıyorum. Adım Olga.", "ru": "Слава богу! Я звоню с телефона коллеги. Меня зовут Ольга." },
           { "tr": "Evet, kız kardeşim her gün yazar. Görüşürüz!", "ru": "Да, сестра пишет мне каждый день. До встречи!" }
         ]},
-        { "speaker": "a", "tr": "Evet, bu iş arkadaşım Tuba'nın numarası. Çok teşekkür ederim!", "ru": "Да, это номер моей коллеги Тубы. Большое спасибо!", "distractors": [
+        { "speaker": "a", "tr": "Evet, bu iş arkadaşım Tuba'nın numarası. Allah razı olsun, çok teşekkür ederim!", "ru": "Да, это номер моей коллеги Тубы. Дай вам бог здоровья, большое спасибо!", "distractors": [
           { "tr": "Çok şükür! İş arkadaşımın telefonuyla arıyorum. Adım Olga.", "ru": "Слава богу! Я звоню с телефона коллеги. Меня зовут Ольга." },
           { "tr": "Şimdi Beşiktaş'tayım. Yarım saat sonra Karaköy'de olurum.", "ru": "Я сейчас в Бешикташе. Через полчаса буду в Каракёе." }
         ]},
@@ -353,7 +353,7 @@
           { "tr": "Bugün işten sonra gelebilirim. Saat altı buçukta olur mu?", "ru": "Могу прийти сегодня после работы. В половине седьмого можно?" }
         ]},
         { "speaker": "b", "tr": "Evet. Hırsız çantayı bir parkta bırakmış. Bir temizlik görevlisi bulmuş.", "ru": "Да. Оказалось, вор бросил сумку в парке. Её нашёл дворник.", "distractors": [
-          { "tr": "Çok sevindim! Oturma izni benim için paradan daha önemli.", "ru": "Я так рада! Вид на жительство для меня важнее денег." },
+          { "tr": "Çok sevindim! Allah'tan ki oturma iznim içinde. Oturma izni benim için paradan daha önemli.", "ru": "Я так рада! Хорошо ещё, что вид на жительство там. Вид на жительство для меня важнее денег." },
           { "tr": "Görüşürüz, Olga Hanım. Kolay gelsin.", "ru": "До встречи, Ольга-ханым. Хорошей работы." }
         ]},
         { "speaker": "a", "tr": "Harika! İçinde ne var?", "ru": "Отлично! Что в ней?", "distractors": [
@@ -364,7 +364,7 @@
           { "tr": "İyi günler. Ben Moda karakolundan Tahsin. Olga Petrova ile mi görüşüyorum?", "ru": "Добрый день. Это Тахсин из участка в Моде. Я говорю с Ольгой Петровой?" },
           { "tr": "Görüşürüz, Olga Hanım. Kolay gelsin.", "ru": "До встречи, Ольга-ханым. Хорошей работы." }
         ]},
-        { "speaker": "a", "tr": "Çok sevindim! Oturma izni benim için paradan daha önemli.", "ru": "Я так рада! Вид на жительство для меня важнее денег.", "distractors": [
+        { "speaker": "a", "tr": "Çok sevindim! Allah'tan ki oturma iznim içinde. Oturma izni benim için paradan daha önemli.", "ru": "Я так рада! Хорошо ещё, что вид на жительство там. Вид на жительство для меня важнее денег.", "distractors": [
           { "tr": "Evet. Hırsız çantayı bir parkta bırakmış. Bir temizlik görevlisi bulmuş.", "ru": "Да. Оказалось, вор бросил сумку в парке. Её нашёл дворник." },
           { "tr": "Çok teşekkür ederim, Tahsin Bey. Akşam görüşürüz.", "ru": "Большое спасибо, Тахсин-бей. До вечера." }
         ]},
@@ -394,7 +394,7 @@
         ]},
         { "speaker": "b", "tr": "Görüşürüz, Olga Hanım. Kolay gelsin.", "ru": "До встречи, Ольга-ханым. Хорошей работы.", "distractors": [
           { "tr": "İyi günler. Ben Moda karakolundan Tahsin. Olga Petrova ile mi görüşüyorum?", "ru": "Добрый день. Это Тахсин из участка в Моде. Я говорю с Ольгой Петровой?" },
-          { "tr": "Çok sevindim! Oturma izni benim için paradan daha önemli.", "ru": "Я так рада! Вид на жительство для меня важнее денег." }
+          { "tr": "Çok sevindim! Allah'tan ki oturma iznim içinde. Oturma izni benim için paradan daha önemli.", "ru": "Я так рада! Хорошо ещё, что вид на жительство там. Вид на жительство для меня важнее денег." }
         ]}
       ]
     },
@@ -552,7 +552,7 @@
           { "tr": "Affedersiniz! Yardım edin, lütfen! Dışarıda yaşlı bir adam düştü.", "ru": "Извините! Помогите, пожалуйста! На улице упал пожилой мужчина." },
           { "tr": "Çok iyi. İşte ambulans geliyor!", "ru": "Очень хорошо. Вот и скорая едет!" }
         ]},
-        { "speaker": "b", "tr": "Çok şükür. Ambulans beş dakika sonra gelecek.", "ru": "Слава богу. Скорая приедет через пять минут.", "distractors": [
+        { "speaker": "b", "tr": "Allah'a şükür. Ambulans beş dakika sonra gelecek.", "ru": "Слава богу. Скорая приедет через пять минут.", "distractors": [
           { "tr": "Merdivenlerde. Ona \"Dikkat!\" dedim, ama geç kaldım.", "ru": "На лестнице. Я крикнула ему «Осторожно!», но не успела." },
           { "tr": "Asıl ben teşekkür ederim. Siz onu gördünüz!", "ru": "Это вам спасибо. Это вы его заметили!" }
         ]},
@@ -562,10 +562,10 @@
         ]},
         { "speaker": "b", "tr": "Hayır! Doktor gelmeden önce onu kaldırmayın.", "ru": "Нет! Не поднимайте его, пока не приедет врач.", "distractors": [
           { "tr": "Tamam. Bakın, gözlerini açtı!", "ru": "Хорошо. Смотрите, он открыл глаза!" },
-          { "tr": "Çok şükür. Ambulans beş dakika sonra gelecek.", "ru": "Слава богу. Скорая приедет через пять минут." }
+          { "tr": "Allah'a şükür. Ambulans beş dakika sonra gelecek.", "ru": "Слава богу. Скорая приедет через пять минут." }
         ]},
         { "speaker": "a", "tr": "Anladım. Ceketimi üstüne koyuyorum, hava soğuk.", "ru": "Поняла. Накрою его своей курткой, холодно.", "distractors": [
-          { "tr": "Çok şükür. Ambulans beş dakika sonra gelecek.", "ru": "Слава богу. Скорая приедет через пять минут." },
+          { "tr": "Allah'a şükür. Ambulans beş dakika sonra gelecek.", "ru": "Слава богу. Скорая приедет через пять минут." },
           { "tr": "Onu kaldırmalı mıyız?", "ru": "Нам нужно его поднять?" }
         ]},
         { "speaker": "b", "tr": "Çok iyi. İşte ambulans geliyor!", "ru": "Очень хорошо. Вот и скорая едет!", "distractors": [
