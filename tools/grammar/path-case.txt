@@ -1,0 +1,110 @@
+# Путь темы «Где? Откуда? Куда?» (-de / -den / -e) — идёт после -yor (как в Yeni Hitit 1,
+# ünite 2.2), поэтому во фразах свободно используется -yor. Формат — как в path-yor.txt.
+
+## Где? -de / -da | ev → evde, masa → masada | words=1
+Olga evde. | Ольга дома.
+Kitap masada. | Книга на столе.
+Çocuklar okulda. | Дети в школе.
+Biz kafede kahve içiyoruz. | Мы пьём кофе в кафе.
+Pamuk bahçede oynuyor. | Памук играет в саду.
+Telefon arabada. | Телефон в машине.
+Tuba odada. | Туба в комнате.
+Ben evde çalışıyorum. | Я работаю дома.
+Leyla sinemada film izliyor. | Лейла смотрит фильм в кинотеатре.
+Biz denizde yüzüyoruz. | Мы плаваем в море.
+
+## После глухих: -te / -ta | ç f h k p s ş t → park → parkta | words=1
+Leyla parkta. | Лейла в парке.
+Pamuk mutfakta. | Памук на кухне.
+Tuba ofiste çalışıyor. | Туба работает в офисе.
+Otobüs durakta. | Автобус на остановке.
+Kitap rafta. | Книга на полке.
+Biz sokakta yürüyoruz. | Мы гуляем на улице.
+Deniz otobüste. | Дениз в автобусе.
+Çocuklar parkta oynuyorlar. | Дети играют в парке.
+Anahtar cepte. | Ключ в кармане.
+Kedi ağaçta. | Кошка на дереве.
+
+## Откуда? -den / -dan, -ten / -tan | okul → okuldan, iş → işten | words=1
+Leyla işten geliyor. | Лейла идёт с работы.
+Çocuklar okuldan geliyorlar. | Дети идут из школы.
+Biz sinemadan çıkıyoruz. | Мы выходим из кинотеатра.
+Tuba ofisten çıkıyor. | Туба выходит из офиса.
+Ben evden çıkıyorum. | Я выхожу из дома.
+Pamuk kutudan çıkıyor. | Памук вылезает из коробки.
+Deniz marketten geliyor. | Дениз идёт из магазина.
+Sen nereden geliyorsun? | Откуда ты идёшь?
+Biz parktan geliyoruz. | Мы идём из парка.
+Anya bankadan çıkıyor. | Аня выходит из банка.
+
+## Куда? -e / -a, после гласной -ye / -ya | ev → eve, sinema → sinemaya | words=1
+Olga eve gidiyor. | Ольга идёт домой.
+Ben işe gidiyorum. | Я иду на работу.
+Leyla markete gidiyor. | Лейла идёт в магазин.
+Biz sinemaya gidiyoruz. | Мы идём в кино.
+Çocuklar okula gidiyorlar. | Дети идут в школу.
+Tuba ofise geliyor. | Туба идёт в офис.
+Biz otobüse biniyoruz. | Мы садимся в автобус.
+Pamuk kutuya giriyor. | Памук залезает в коробку.
+Ben kafeye gidiyorum. | Я иду в кафе.
+Sen nereye gidiyorsun? | Куда ты идёшь?
+
+## k → ğ, p → b, ç → c перед -e | sokak → sokağa, kitap → kitaba | words=1
+Çocuklar sokağa çıkıyorlar. | Дети выходят на улицу.
+Leyla mutfağa gidiyor. | Лейла идёт на кухню.
+Ben durağa yürüyorum. | Я иду пешком к остановке.
+Pamuk ağaca çıkıyor. | Памук залезает на дерево.
+Olga kitaba bakıyor. | Ольга смотрит в книгу.
+Biz uçağa biniyoruz. | Мы садимся в самолёт.
+Tuba çocuğa bakıyor. | Туба смотрит на ребёнка.
+Deniz bardağa su koyuyor. | Дениз наливает воду в стакан.
+
+## Города и имена — через апостроф | İstanbul'da, Ankara'dan, Rusya'ya | words=1
+Anya Moskova'da. | Аня в Москве.
+Olga İstanbul'da yaşıyor. | Ольга живёт в Стамбуле.
+Olga Rusya'dan. | Ольга из России.
+Deniz Ankara'dan geliyor. | Дениз едет из Анкары.
+Anya İstanbul'a geliyor. | Аня приезжает в Стамбул.
+Olga Kadıköy'de yaşıyor. | Ольга живёт в Кадыкёе.
+Olga Karaköy'de çalışıyor. | Ольга работает в Каракёе.
+Leyla Üsküdar'a gidiyor. | Лейла едет в Ускюдар.
+Biz Bodrum'a gidiyoruz. | Мы едем в Бодрум.
+Metin Bey İzmir'e gidiyor. | Метин-бей едет в Измир.
+
+## Где, откуда, куда — вперемешку | burada, oradan, nereye… | words=1 | gate
+Burada ne yapıyorsun? | Что ты здесь делаешь?
+Leyla nerede? | Где Лейла?
+Biz oraya gidiyoruz. | Мы идём туда.
+Pamuk buraya geliyor. | Памук идёт сюда.
+Nereden geliyorsunuz? | Откуда вы идёте?
+Ben oradan geliyorum. | Я иду оттуда.
+Siz nereye gidiyorsunuz? | Куда вы идёте?
+Olga burada çalışıyor. | Ольга работает здесь.
+Çocuklar evden okula gidiyorlar. | Дети идут из дома в школу.
+Olga Kadıköy'den Karaköy'e gidiyor. | Ольга едет из Кадыкёя в Каракёй.
+
+## Фраза длиннее | падеж + глагол | words=2
+Ben her sabah ofise gidiyorum. | Я каждое утро иду в офис.
+Olga yazın Bodrum'a gidiyor. | Летом Ольга едет в Бодрум.
+Biz akşam sinemaya gidiyoruz. | Вечером мы идём в кино.
+Çocuklar şimdi parkta oynuyorlar. | Дети сейчас играют в парке.
+Pamuk kırmızı kutuda uyuyor. | Памук спит в красной коробке.
+Anya bankada çok çalışıyor. | Аня много работает в банке.
+Tuba Pazartesi ofise gelmiyor. | Туба не приходит в офис в понедельник.
+Sen bugün evde çalışıyor musun? | Ты сегодня работаешь дома?
+Biz yazın denizde yüzüyoruz. | Летом мы плаваем в море.
+Olga vapurda çay içiyor. | На пароходе Ольга пьёт чай.
+
+## Вся фраза | только перевод — собери по-турецки | words=99
+Kedi evde. | Кошка дома.
+Biz eve gidiyoruz. | Мы идём домой.
+Deniz işten geliyor. | Дениз идёт с работы.
+Anya Moskova'da yaşıyor. | Аня живёт в Москве.
+Pamuk mutfağa gidiyor. | Памук идёт на кухню.
+Onlar okuldan geliyorlar. | Они идут из школы.
+Tuba kafede. | Туба в кафе.
+Biz otobüste uyuyoruz. | Мы спим в автобусе.
+Olga İstanbul'a dönüyor. | Ольга возвращается в Стамбул.
+Leyla markette. | Лейла в магазине.
+
+## В жизни | фразы из «Фраз» и «Диалогов» — только с пройденным | words=2 | life
