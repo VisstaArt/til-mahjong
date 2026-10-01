@@ -1,18 +1,36 @@
 # основа до -yor → фразы; глагола нет в словаре (assets/words) или форма не сошлась
-benzi	3	Annene benziyorsun.
+yatırılı	4	Maaşlar ne zaman yatırılıyor?
+benzi	4	Annene benziyorsun.
+alını	3	Burada nasıl izin alınıyor?
 uyuyamı	3	Uyuyamıyorum
 yiyemi	3	Yemek yiyemiyorum
-tanı	2	Ayvazovski. Onu tanıyor musunuz?
-gelemi	2	Günaydın, Metin Bey. Özür dilerim, bugün gelemiyorum. Hastayım.
+gelemi	3	Evet. Uçakları iptal edilmiş, bugün gelemiyorlar.
+tanı	3	Doğru, herkes farklı. Ankara'yı tanıyor musun?
+işli	2	Burada her şey nasıl işliyor?
+yapılı	2	Pazartesi günleri saat onda toplantı yapılıyor.
+yetiştiremi	2	İşler o kadar çok ki yetiştiremiyorum.
+biriktiri	2	Üç yıldır para biriktiriyorum.
+yapılmı	2	Maalesef nakit iade yapılmıyor.
+yenileti	2	Yeni sahibi bütün evi yeniletiyor.
+soğu	2	Amin! Hadi, çaylar soğuyor.
+bekleni	1	Merak etmeyin, sizden sadece dinlemeniz bekleniyor. İlk toplantıda herkes öyle yapar.
+verili	1	Evet, isteyenlere Rusça çeviri için kulaklık veriliyor. Kulaklıklar salonun kapısında.
 giremi	1	Moda'dayım, karakolda. Anahtarım da yok, eve giremiyorum.
 görüşü	1	İyi günler. Ben Moda karakolundan Tahsin. Olga Petrova ile mi görüşüyorum?
+yaşlanı	1	Annemle babam yaşlanıyor, onlara yakın olmak istiyorum. Bence çok iyi bir fikir.
+gelebili	1	Gördün mü? Bence en zoru ekler. Bir kelimeye beş ek gelebiliyor.
+geçiri	1	Bence harika! En büyük avantajı, yolda vakit kaybetmemek. Çocukları okula ve kreşe bıraktıktan sonra trafikte bir saat geçiriyorum.
+konuşabili	1	Bir daha düşündüm de, sen haklısın. Altyazıyla izlemek gerçekten yardım ediyor. Mutfakta Türkçe konuşabiliyor musun?
 görebili	1	Yarın akşam. Gözlüksüz görebiliyor musunuz?
 duyamı	1	Affedersiniz, sizi iyi duyamıyorum. Daha yüksek sesle konuşur musunuz lütfen?
 yakışı	1	Çok güzel! Mavi sana çok yakışıyor.
+konuşulu	1	Önce e-postalara bakın. Pazartesi günleri saat onda toplantı yapılıyor, orada haftanın işleri konuşuluyor.
+yoru	1	Biraz yorgunum. Dün gece otelde yine on bire kadar çalıştım. Bu iş beni çok yoruyor.
 benzemi	1	Evet! Aa, çok güzel! Sana hiç benzemiyor.
-soğu	1	Aferin kızım. Anneler bunu çok sever. Hadi, çayın soğuyor!
 edemi	1	Bir de priz bozuk. Telefonumu şarj edemiyorum. Tamir edebilir misiniz?
 yetişi	1	Eyvah! Vapura yetişiyor muyuz?
 öksürü	1	Biraz düştü. Şimdi kendimi daha iyi hissediyorum, ama hâlâ öksürüyorum. Sen nasılsın, iş nasıldı?
 basamı	1	Hayır, kolum iyi. Ama ayağıma basamıyorum.
 kaşını	1	Gözlerim kaşınıyor. Nefes almakta zorlanıyorum. Pencereyi açar mısın?
+yenileni	1	Biliyorum, kusura bakmayın. Mutfak ve banyo yenileniyor, biraz ses olacak.
+ısmarlı	1	İnşallah bir daha gerekmez! Hadi, kahve içelim, ben ısmarlıyorum.
