@@ -1,0 +1,662 @@
+{
+  "id": "mneniya",
+  "title": "Мнения",
+  "dialogues": [
+    {
+      "id": "mneniya-film-leyla",
+      "title": "После кино с Лейлой",
+      "level": "B1",
+      "speakers": { "a": "Ольга", "b": "Лейла" },
+      "turns": [
+        { "speaker": "b", "tr": "Eee, film bitti! Sence nasıl?", "ru": "Ну вот, фильм закончился! Как тебе?", "distractors": [
+          { "tr": "Ben bayıldım! Bence bu yılın en iyi filmi. Neden beğenmedin?", "ru": "Я в восторге! По-моему, это лучший фильм года. Почему тебе не понравилось?" },
+          { "tr": "Bilmem... Ya beğenmezsem?", "ru": "Не знаю... А если мне не понравится?" }
+        ]},
+        { "speaker": "a", "tr": "Açıkçası pek beğenmedim. Çok uzundu. Sen beğendin mi?", "ru": "Честно говоря, мне не очень понравилось. Слишком длинный. А тебе понравился?", "distractors": [
+          { "tr": "Tamam, anlaştık! Ama patlamış mısırı ben alıyorum.", "ru": "Ладно, договорились! Но попкорн покупаю я." },
+          { "tr": "Beğenmezsen bir sonraki filmi sen seçersin. Söz!", "ru": "Если не понравится — следующий фильм выбираешь ты. Обещаю!" }
+        ]},
+        { "speaker": "b", "tr": "Ben bayıldım! Bence bu yılın en iyi filmi. Neden beğenmedin?", "ru": "Я в восторге! По-моему, это лучший фильм года. Почему тебе не понравилось?", "distractors": [
+          { "tr": "Ne demek istediğini anlıyorum ama bu yavaşlık filmin bir parçası. Müziği nasıl buldun?", "ru": "Я понимаю, что ты хочешь сказать, но эта медлительность — часть фильма. А как тебе музыка?" },
+          { "tr": "O mektubu hiç fark etmemişim! Düşündüğüm kadar kötü değilmiş.", "ru": "Я это письмо совсем не заметила! Оказывается, фильм не так плох, как я думала." }
+        ]},
+        { "speaker": "a", "tr": "Hikâye çok yavaş ilerliyordu. Ortasında neredeyse uyuyordum.", "ru": "История развивалась очень медленно. На середине я чуть не уснула.", "distractors": [
+          { "tr": "Bir yere kadar haklısın. Ama sonunu hiç anlamadım. Kadın neden köyüne geri döndü?", "ru": "Отчасти ты права. Но концовку я совсем не поняла. Почему женщина вернулась в свою деревню?" },
+          { "tr": "Kesinlikle katılıyorum. O zaman film o kadar da kötü değil!", "ru": "Полностью согласна. Значит, фильм не так уж и плох!" }
+        ]},
+        { "speaker": "b", "tr": "Ne demek istediğini anlıyorum ama bu yavaşlık filmin bir parçası. Müziği nasıl buldun?", "ru": "Я понимаю, что ты хочешь сказать, но эта медлительность — часть фильма. А как тебе музыка?", "distractors": [
+          { "tr": "Annesinin hasta olduğunu öğrendiği için döndü. Gelen mektupta yazıyordu.", "ru": "Она вернулась, потому что узнала, что её мама больна. Об этом было в письме, которое ей пришло." },
+          { "tr": "Bir yere kadar haklısın. Ama sonunu hiç anlamadım. Kadın neden köyüne geri döndü?", "ru": "Отчасти ты права. Но концовку я совсем не поняла. Почему женщина вернулась в свою деревню?" }
+        ]},
+        { "speaker": "a", "tr": "Müzik harikaydı. Oyuncular da çok iyi oynamıştı.", "ru": "Музыка была чудесная. И актёры сыграли очень хорошо.", "distractors": [
+          { "tr": "Hikâye çok yavaş ilerliyordu. Ortasında neredeyse uyuyordum.", "ru": "История развивалась очень медленно. На середине я чуть не уснула." },
+          { "tr": "Beğenmezsen bir sonraki filmi sen seçersin. Söz!", "ru": "Если не понравится — следующий фильм выбираешь ты. Обещаю!" }
+        ]},
+        { "speaker": "b", "tr": "Kesinlikle katılıyorum. O zaman film o kadar da kötü değil!", "ru": "Полностью согласна. Значит, фильм не так уж и плох!", "distractors": [
+          { "tr": "Annesinin hasta olduğunu öğrendiği için döndü. Gelen mektupta yazıyordu.", "ru": "Она вернулась, потому что узнала, что её мама больна. Об этом было в письме, которое ей пришло." },
+          { "tr": "Tamam, anlaştık! Ama patlamış mısırı ben alıyorum.", "ru": "Ладно, договорились! Но попкорн покупаю я." }
+        ]},
+        { "speaker": "a", "tr": "Bir yere kadar haklısın. Ama sonunu hiç anlamadım. Kadın neden köyüne geri döndü?", "ru": "Отчасти ты права. Но концовку я совсем не поняла. Почему женщина вернулась в свою деревню?", "distractors": [
+          { "tr": "O mektubu hiç fark etmemişim! Düşündüğüm kadar kötü değilmiş.", "ru": "Я это письмо совсем не заметила! Оказывается, фильм не так плох, как я думала." },
+          { "tr": "Eee, film bitti! Sence nasıl?", "ru": "Ну вот, фильм закончился! Как тебе?" }
+        ]},
+        { "speaker": "b", "tr": "Annesinin hasta olduğunu öğrendiği için döndü. Gelen mektupta yazıyordu.", "ru": "Она вернулась, потому что узнала, что её мама больна. Об этом было в письме, которое ей пришло.", "distractors": [
+          { "tr": "Eee, film bitti! Sence nasıl?", "ru": "Ну вот, фильм закончился! Как тебе?" },
+          { "tr": "Tamam, anlaştık! Ama patlamış mısırı ben alıyorum.", "ru": "Ладно, договорились! Но попкорн покупаю я." }
+        ]},
+        { "speaker": "a", "tr": "O mektubu hiç fark etmemişim! Düşündüğüm kadar kötü değilmiş.", "ru": "Я это письмо совсем не заметила! Оказывается, фильм не так плох, как я думала.", "distractors": [
+          { "tr": "Tamam, anlaştık! Ama patlamış mısırı ben alıyorum.", "ru": "Ладно, договорились! Но попкорн покупаю я." },
+          { "tr": "Ben bayıldım! Bence bu yılın en iyi filmi. Neden beğenmedin?", "ru": "Я в восторге! По-моему, это лучший фильм года. Почему тебе не понравилось?" }
+        ]},
+        { "speaker": "b", "tr": "Gördün mü? Gelecek ay aynı yönetmenin yeni filmi çıkıyor. Birlikte gidelim mi?", "ru": "Видишь? В следующем месяце выходит новый фильм того же режиссёра. Пойдём вместе?", "distractors": [
+          { "tr": "Ne demek istediğini anlıyorum ama bu yavaşlık filmin bir parçası. Müziği nasıl buldun?", "ru": "Я понимаю, что ты хочешь сказать, но эта медлительность — часть фильма. А как тебе музыка?" },
+          { "tr": "Bir yere kadar haklısın. Ama sonunu hiç anlamadım. Kadın neden köyüne geri döndü?", "ru": "Отчасти ты права. Но концовку я совсем не поняла. Почему женщина вернулась в свою деревню?" }
+        ]},
+        { "speaker": "a", "tr": "Bilmem... Ya beğenmezsem?", "ru": "Не знаю... А если мне не понравится?", "distractors": [
+          { "tr": "Müzik harikaydı. Oyuncular da çok iyi oynamıştı.", "ru": "Музыка была чудесная. И актёры сыграли очень хорошо." },
+          { "tr": "Ne demek istediğini anlıyorum ama bu yavaşlık filmin bir parçası. Müziği nasıl buldun?", "ru": "Я понимаю, что ты хочешь сказать, но эта медлительность — часть фильма. А как тебе музыка?" }
+        ]},
+        { "speaker": "b", "tr": "Beğenmezsen bir sonraki filmi sen seçersin. Söz!", "ru": "Если не понравится — следующий фильм выбираешь ты. Обещаю!", "distractors": [
+          { "tr": "Ben bayıldım! Bence bu yılın en iyi filmi. Neden beğenmedin?", "ru": "Я в восторге! По-моему, это лучший фильм года. Почему тебе не понравилось?" },
+          { "tr": "Hikâye çok yavaş ilerliyordu. Ortasında neredeyse uyuyordum.", "ru": "История развивалась очень медленно. На середине я чуть не уснула." }
+        ]},
+        { "speaker": "a", "tr": "Tamam, anlaştık! Ama patlamış mısırı ben alıyorum.", "ru": "Ладно, договорились! Но попкорн покупаю я.", "distractors": [
+          { "tr": "Açıkçası pek beğenmedim. Çok uzundu. Sen beğendin mi?", "ru": "Честно говоря, мне не очень понравилось. Слишком длинный. А тебе понравился?" },
+          { "tr": "Ben bayıldım! Bence bu yılın en iyi filmi. Neden beğenmedin?", "ru": "Я в восторге! По-моему, это лучший фильм года. Почему тебе не понравилось?" }
+        ]}
+      ]
+    },
+    {
+      "id": "mneniya-deniz-ankara",
+      "title": "Стамбул или Анкара?",
+      "level": "B1",
+      "speakers": { "a": "Ольга", "b": "Дениз" },
+      "turns": [
+        { "speaker": "b", "tr": "Olga, son zamanlarda çok düşünüyorum. Ankara'ya, ailemin yanına taşınsak nasıl olur?", "ru": "Ольга, я в последнее время много думаю. Как ты смотришь на то, чтобы переехать в Анкару, поближе к моей семье?", "distractors": [
+          { "tr": "Bilmiyorum. Ne olacağını kimse bilmiyor. Ama ailemi çok özlüyorum.", "ru": "Не знаю. Никто не знает, что будет. Но я очень скучаю по семье." },
+          { "tr": "Haklısın ama asıl sorun bu değil. Ben Moda'yı, denizi, vapuru seviyorum. Sen Ankara'da gerçekten mutlu olacak mısın?", "ru": "Ты прав, но главная проблема не в этом. Я люблю Моду, море, пароход. А ты правда будешь счастлив в Анкаре?" }
+        ]},
+        { "speaker": "a", "tr": "Ankara'ya mı? Bu fikir nereden çıktı?", "ru": "В Анкару? Откуда вдруг такая идея?", "distractors": [
+          { "tr": "Haklısın ama asıl sorun bu değil. Ben Moda'yı, denizi, vapuru seviyorum. Sen Ankara'da gerçekten mutlu olacak mısın?", "ru": "Ты прав, но главная проблема не в этом. Я люблю Моду, море, пароход. А ты правда будешь счастлив в Анкаре?" },
+          { "tr": "İstanbul'a mı? Hiç sanmam. Annem bahçesini asla bırakmaz.", "ru": "В Стамбул? Вряд ли. Мама ни за что не бросит свой сад." }
+        ]},
+        { "speaker": "b", "tr": "Annemle babam yaşlanıyor, onlara yakın olmak istiyorum. Bence çok iyi bir fikir.", "ru": "Мама с папой стареют, я хочу быть рядом с ними. По-моему, это очень хорошая идея.", "distractors": [
+          { "tr": "İstanbul'a mı? Hiç sanmam. Annem bahçesini asla bırakmaz.", "ru": "В Стамбул? Вряд ли. Мама ни за что не бросит свой сад." },
+          { "tr": "Emin değilim. İşim, arkadaşlarım, Türkçe kursum — hepsi burada.", "ru": "Я не уверена. Моя работа, друзья, курсы турецкого — всё здесь." }
+        ]},
+        { "speaker": "a", "tr": "Ailene yakın olmak istediğini anlıyorum. Ama taşınırsak işimi değiştirmem gerekir.", "ru": "Я понимаю, что ты хочешь быть ближе к семье. Но если мы переедем, мне придётся сменить работу.", "distractors": [
+          { "tr": "Senin yerinde olsam biraz beklerdim. Belki annenler İstanbul'a taşınmak ister?", "ru": "На твоём месте я бы немного подождала. Может, твои родители захотят переехать в Стамбул?" },
+          { "tr": "Ama İstanbul'da yaşamak Ankara'dan daha pahalı. Kiralar her yıl artıyor.", "ru": "Но жить в Стамбуле дороже, чем в Анкаре. Аренда растёт каждый год." }
+        ]},
+        { "speaker": "b", "tr": "Ankara'da da yabancı şirketler var. Rusça bilen birini hemen işe alırlar.", "ru": "В Анкаре тоже есть иностранные компании. Человека, который знает русский, сразу возьмут на работу.", "distractors": [
+          { "tr": "Olga, son zamanlarda çok düşünüyorum. Ankara'ya, ailemin yanına taşınsak nasıl olur?", "ru": "Ольга, я в последнее время много думаю. Как ты смотришь на то, чтобы переехать в Анкару, поближе к моей семье?" },
+          { "tr": "Haklısın ama asıl sorun bu değil. Ben Moda'yı, denizi, vapuru seviyorum. Sen Ankara'da gerçekten mutlu olacak mısın?", "ru": "Ты прав, но главная проблема не в этом. Я люблю Моду, море, пароход. А ты правда будешь счастлив в Анкаре?" }
+        ]},
+        { "speaker": "a", "tr": "Emin değilim. İşim, arkadaşlarım, Türkçe kursum — hepsi burada.", "ru": "Я не уверена. Моя работа, друзья, курсы турецкого — всё здесь.", "distractors": [
+          { "tr": "Senin yerinde olsam biraz beklerdim. Belki annenler İstanbul'a taşınmak ister?", "ru": "На твоём месте я бы немного подождала. Может, твои родители захотят переехать в Стамбул?" },
+          { "tr": "Tamam. Bunu sonra tekrar konuşalım. İnşallah doğru kararı veririz.", "ru": "Хорошо. Давай вернёмся к этому позже. Дай бог, примем правильное решение." }
+        ]},
+        { "speaker": "b", "tr": "Ama İstanbul'da yaşamak Ankara'dan daha pahalı. Kiralar her yıl artıyor.", "ru": "Но жить в Стамбуле дороже, чем в Анкаре. Аренда растёт каждый год.", "distractors": [
+          { "tr": "Olga, son zamanlarda çok düşünüyorum. Ankara'ya, ailemin yanına taşınsak nasıl olur?", "ru": "Ольга, я в последнее время много думаю. Как ты смотришь на то, чтобы переехать в Анкару, поближе к моей семье?" },
+          { "tr": "Ankara'ya mı? Bu fikir nereden çıktı?", "ru": "В Анкару? Откуда вдруг такая идея?" }
+        ]},
+        { "speaker": "a", "tr": "Haklısın ama asıl sorun bu değil. Ben Moda'yı, denizi, vapuru seviyorum. Sen Ankara'da gerçekten mutlu olacak mısın?", "ru": "Ты прав, но главная проблема не в этом. Я люблю Моду, море, пароход. А ты правда будешь счастлив в Анкаре?", "distractors": [
+          { "tr": "İnşallah! Şimdi hadi, akşam yemeğine çıkalım.", "ru": "Дай бог! А сейчас пойдём поужинаем." },
+          { "tr": "İstanbul'a mı? Hiç sanmam. Annem bahçesini asla bırakmaz.", "ru": "В Стамбул? Вряд ли. Мама ни за что не бросит свой сад." }
+        ]},
+        { "speaker": "b", "tr": "Bilmiyorum. Ne olacağını kimse bilmiyor. Ama ailemi çok özlüyorum.", "ru": "Не знаю. Никто не знает, что будет. Но я очень скучаю по семье.", "distractors": [
+          { "tr": "İstanbul'a mı? Hiç sanmam. Annem bahçesini asla bırakmaz.", "ru": "В Стамбул? Вряд ли. Мама ни за что не бросит свой сад." },
+          { "tr": "İnşallah! Şimdi hadi, akşam yemeğine çıkalım.", "ru": "Дай бог! А сейчас пойдём поужинаем." }
+        ]},
+        { "speaker": "a", "tr": "Senin yerinde olsam biraz beklerdim. Belki annenler İstanbul'a taşınmak ister?", "ru": "На твоём месте я бы немного подождала. Может, твои родители захотят переехать в Стамбул?", "distractors": [
+          { "tr": "Ailene yakın olmak istediğini anlıyorum. Ama taşınırsak işimi değiştirmem gerekir.", "ru": "Я понимаю, что ты хочешь быть ближе к семье. Но если мы переедем, мне придётся сменить работу." },
+          { "tr": "Ama İstanbul'da yaşamak Ankara'dan daha pahalı. Kiralar her yıl artıyor.", "ru": "Но жить в Стамбуле дороже, чем в Анкаре. Аренда растёт каждый год." }
+        ]},
+        { "speaker": "b", "tr": "İstanbul'a mı? Hiç sanmam. Annem bahçesini asla bırakmaz.", "ru": "В Стамбул? Вряд ли. Мама ни за что не бросит свой сад.", "distractors": [
+          { "tr": "Bilmiyorum. Ne olacağını kimse bilmiyor. Ama ailemi çok özlüyorum.", "ru": "Не знаю. Никто не знает, что будет. Но я очень скучаю по семье." },
+          { "tr": "Emin değilim. İşim, arkadaşlarım, Türkçe kursum — hepsi burada.", "ru": "Я не уверена. Моя работа, друзья, курсы турецкого — всё здесь." }
+        ]},
+        { "speaker": "a", "tr": "O zaman acele etmeyelim. Bayramda Ankara'ya gidince annenlerle de konuşuruz.", "ru": "Тогда давай не будем торопиться. На байрам поедем в Анкару — поговорим и с твоими родителями.", "distractors": [
+          { "tr": "Ankara'ya mı? Bu fikir nereden çıktı?", "ru": "В Анкару? Откуда вдруг такая идея?" },
+          { "tr": "Ankara'da da yabancı şirketler var. Rusça bilen birini hemen işe alırlar.", "ru": "В Анкаре тоже есть иностранные компании. Человека, который знает русский, сразу возьмут на работу." }
+        ]},
+        { "speaker": "b", "tr": "Tamam. Bunu sonra tekrar konuşalım. İnşallah doğru kararı veririz.", "ru": "Хорошо. Давай вернёмся к этому позже. Дай бог, примем правильное решение.", "distractors": [
+          { "tr": "İstanbul'a mı? Hiç sanmam. Annem bahçesini asla bırakmaz.", "ru": "В Стамбул? Вряд ли. Мама ни за что не бросит свой сад." },
+          { "tr": "Ankara'ya mı? Bu fikir nereden çıktı?", "ru": "В Анкару? Откуда вдруг такая идея?" }
+        ]},
+        { "speaker": "a", "tr": "İnşallah! Şimdi hadi, akşam yemeğine çıkalım.", "ru": "Дай бог! А сейчас пойдём поужинаем.", "distractors": [
+          { "tr": "Ailene yakın olmak istediğini anlıyorum. Ama taşınırsak işimi değiştirmem gerekir.", "ru": "Я понимаю, что ты хочешь быть ближе к семье. Но если мы переедем, мне придётся сменить работу." },
+          { "tr": "Ankara'da da yabancı şirketler var. Rusça bilen birini hemen işe alırlar.", "ru": "В Анкаре тоже есть иностранные компании. Человека, который знает русский, сразу возьмут на работу." }
+        ]}
+      ]
+    },
+    {
+      "id": "mneniya-leyla-sovet",
+      "title": "Совет Лейлы",
+      "level": "B1",
+      "speakers": { "a": "Ольга", "b": "Лейла" },
+      "turns": [
+        { "speaker": "a", "tr": "Leyla, sana bir şey danışmak istiyorum. Deniz Ankara'ya taşınmak istiyor.", "ru": "Лейла, хочу с тобой посоветоваться. Дениз хочет переехать в Анкару.", "distractors": [
+          { "tr": "Bir kere iş için gittim, Kızılay'da kaldım. Güzel bir şehir ama İstanbul gibi değil.", "ru": "Один раз ездила по работе, жила в Кызылае. Красивый город, но не как Стамбул." },
+          { "tr": "Ben sen olsam kabul ederdim. Ama hemen değil — önce Ankara'da biraz zaman geçir.", "ru": "Я бы на твоём месте согласилась. Но не сразу — сначала побудь немного в Анкаре." }
+        ]},
+        { "speaker": "b", "tr": "Allah Allah! Ciddi mi? Peki sen ne düşünüyorsun?", "ru": "Ну надо же! Серьёзно? А ты что думаешь?", "distractors": [
+          { "tr": "Ben sen olsam kabul ederdim. Ama hemen değil — önce Ankara'da biraz zaman geçir.", "ru": "Я бы на твоём месте согласилась. Но не сразу — сначала побудь немного в Анкаре." },
+          { "tr": "Peki Deniz'e ne söyleyeyim? Onu üzmek istemiyorum.", "ru": "А что мне сказать Денизу? Не хочу его расстраивать." }
+        ]},
+        { "speaker": "a", "tr": "Açıkçası yanlış bir karar olur diye düşünüyorum. Burada kurduğum hayatı bırakmak istemiyorum.", "ru": "Честно говоря, мне кажется, это было бы неверное решение. Я не хочу бросать жизнь, которую здесь построила.", "distractors": [
+          { "tr": "Fikrine saygı duyuyorum ama farklı düşünüyorum. Benim ailem de uzakta, ama ben burada mutluyum.", "ru": "Уважаю твоё мнение, но думаю иначе. Моя семья тоже далеко, но я здесь счастлива." },
+          { "tr": "Ben sen olsam kabul ederdim. Ama hemen değil — önce Ankara'da biraz zaman geçir.", "ru": "Я бы на твоём месте согласилась. Но не сразу — сначала побудь немного в Анкаре." }
+        ]},
+        { "speaker": "b", "tr": "Anlıyorum. Ama bana kalırsa en önemlisi aile. Deniz ailesini özlüyor.", "ru": "Понимаю. Но если хочешь знать моё мнение, главное — семья. Дениз скучает по своим.", "distractors": [
+          { "tr": "İşte! Bence biraz düşünmelisin. Acele etmemeni tavsiye ederim.", "ru": "Вот! По-моему, тебе стоит немного подумать. Советую тебе не торопиться." },
+          { "tr": "Bayramda zaten Ankara'ya gidiyoruz.", "ru": "На байрам мы и так едем в Анкару." }
+        ]},
+        { "speaker": "a", "tr": "Fikrine saygı duyuyorum ama farklı düşünüyorum. Benim ailem de uzakta, ama ben burada mutluyum.", "ru": "Уважаю твоё мнение, но думаю иначе. Моя семья тоже далеко, но я здесь счастлива.", "distractors": [
+          { "tr": "Bir kere iş için gittim, Kızılay'da kaldım. Güzel bir şehir ama İstanbul gibi değil.", "ru": "Один раз ездила по работе, жила в Кызылае. Красивый город, но не как Стамбул." },
+          { "tr": "Allah Allah! Ciddi mi? Peki sen ne düşünüyorsun?", "ru": "Ну надо же! Серьёзно? А ты что думаешь?" }
+        ]},
+        { "speaker": "b", "tr": "Doğru, herkes farklı. Ankara'yı tanıyor musun?", "ru": "Верно, все разные. А ты знаешь Анкару?", "distractors": [
+          { "tr": "Ben sen olsam kabul ederdim. Ama hemen değil — önce Ankara'da biraz zaman geçir.", "ru": "Я бы на твоём месте согласилась. Но не сразу — сначала побудь немного в Анкаре." },
+          { "tr": "Bayramda zaten Ankara'ya gidiyoruz.", "ru": "На байрам мы и так едем в Анкару." }
+        ]},
+        { "speaker": "a", "tr": "Bir kere iş için gittim, Kızılay'da kaldım. Güzel bir şehir ama İstanbul gibi değil.", "ru": "Один раз ездила по работе, жила в Кызылае. Красивый город, но не как Стамбул.", "distractors": [
+          { "tr": "Leyla, sana bir şey danışmak istiyorum. Deniz Ankara'ya taşınmak istiyor.", "ru": "Лейла, хочу с тобой посоветоваться. Дениз хочет переехать в Анкару." },
+          { "tr": "Ben sen olsam kabul ederdim. Ama hemen değil — önce Ankara'da biraz zaman geçir.", "ru": "Я бы на твоём месте согласилась. Но не сразу — сначала побудь немного в Анкаре." }
+        ]},
+        { "speaker": "b", "tr": "Ankara daha sakin, trafik de daha az. Bunu da düşün.", "ru": "Анкара спокойнее, и пробок меньше. Об этом тоже подумай.", "distractors": [
+          { "tr": "Ben sen olsam kabul ederdim. Ama hemen değil — önce Ankara'da biraz zaman geçir.", "ru": "Я бы на твоём месте согласилась. Но не сразу — сначала побудь немного в Анкаре." },
+          { "tr": "Açıkçası yanlış bir karar olur diye düşünüyorum. Burada kurduğum hayatı bırakmak istemiyorum.", "ru": "Честно говоря, мне кажется, это было бы неверное решение. Я не хочу бросать жизнь, которую здесь построила." }
+        ]},
+        { "speaker": "a", "tr": "Kısacası, ikisinin de iyi tarafları var. Sen benim yerimde olsan ne yapardın?", "ru": "Короче говоря, у обоих вариантов есть плюсы. А ты бы что сделала на моём месте?", "distractors": [
+          { "tr": "Bir kere iş için gittim, Kızılay'da kaldım. Güzel bir şehir ama İstanbul gibi değil.", "ru": "Один раз ездила по работе, жила в Кызылае. Красивый город, но не как Стамбул." },
+          { "tr": "İşte! Bence biraz düşünmelisin. Acele etmemeni tavsiye ederim.", "ru": "Вот! По-моему, тебе стоит немного подумать. Советую тебе не торопиться." }
+        ]},
+        { "speaker": "b", "tr": "Ben sen olsam kabul ederdim. Ama hemen değil — önce Ankara'da biraz zaman geçir.", "ru": "Я бы на твоём месте согласилась. Но не сразу — сначала побудь немного в Анкаре.", "distractors": [
+          { "tr": "Ne hissettiğini ona açıkça söyle. Önemli olan, mutlu olman.", "ru": "Скажи ему прямо, что ты чувствуешь. Главное — чтобы ты была счастлива." },
+          { "tr": "Açıkçası yanlış bir karar olur diye düşünüyorum. Burada kurduğum hayatı bırakmak istemiyorum.", "ru": "Честно говоря, мне кажется, это было бы неверное решение. Я не хочу бросать жизнь, которую здесь построила." }
+        ]},
+        { "speaker": "a", "tr": "Bayramda zaten Ankara'ya gidiyoruz.", "ru": "На байрам мы и так едем в Анкару.", "distractors": [
+          { "tr": "Leyla, sana bir şey danışmak istiyorum. Deniz Ankara'ya taşınmak istiyor.", "ru": "Лейла, хочу с тобой посоветоваться. Дениз хочет переехать в Анкару." },
+          { "tr": "Ankara daha sakin, trafik de daha az. Bunu da düşün.", "ru": "Анкара спокойнее, и пробок меньше. Об этом тоже подумай." }
+        ]},
+        { "speaker": "b", "tr": "İşte! Bence biraz düşünmelisin. Acele etmemeni tavsiye ederim.", "ru": "Вот! По-моему, тебе стоит немного подумать. Советую тебе не торопиться.", "distractors": [
+          { "tr": "Ankara daha sakin, trafik de daha az. Bunu da düşün.", "ru": "Анкара спокойнее, и пробок меньше. Об этом тоже подумай." },
+          { "tr": "Kısacası, ikisinin de iyi tarafları var. Sen benim yerimde olsan ne yapardın?", "ru": "Короче говоря, у обоих вариантов есть плюсы. А ты бы что сделала на моём месте?" }
+        ]},
+        { "speaker": "a", "tr": "Peki Deniz'e ne söyleyeyim? Onu üzmek istemiyorum.", "ru": "А что мне сказать Денизу? Не хочу его расстраивать.", "distractors": [
+          { "tr": "Kısacası, ikisinin de iyi tarafları var. Sen benim yerimde olsan ne yapardın?", "ru": "Короче говоря, у обоих вариантов есть плюсы. А ты бы что сделала на моём месте?" },
+          { "tr": "Doğru, herkes farklı. Ankara'yı tanıyor musun?", "ru": "Верно, все разные. А ты знаешь Анкару?" }
+        ]},
+        { "speaker": "b", "tr": "Ne hissettiğini ona açıkça söyle. Önemli olan, mutlu olman.", "ru": "Скажи ему прямо, что ты чувствуешь. Главное — чтобы ты была счастлива.", "distractors": [
+          { "tr": "Anlıyorum. Ama bana kalırsa en önemlisi aile. Deniz ailesini özlüyor.", "ru": "Понимаю. Но если хочешь знать моё мнение, главное — семья. Дениз скучает по своим." },
+          { "tr": "Bayramda zaten Ankara'ya gidiyoruz.", "ru": "На байрам мы и так едем в Анкару." }
+        ]}
+      ]
+    },
+    {
+      "id": "mneniya-markus-aygerim",
+      "title": "Трудный ли турецкий?",
+      "level": "B1",
+      "speakers": { "a": "Маркус", "b": "Айгерим" },
+      "turns": [
+        { "speaker": "a", "tr": "Aygerim, bugünkü ders çok zordu. Sence Türkçe zor bir dil mi?", "ru": "Айгерим, сегодняшний урок был очень трудный. Как ты считаешь, турецкий — трудный язык?", "distractors": [
+          { "tr": "Tamam, beni ikna ettin. Yarından itibaren mutfakta sadece Türkçe konuşacağım!", "ru": "Ладно, ты меня убедила. С завтрашнего дня на кухне говорю только по-турецки!" },
+          { "tr": "Hiç geç değil! Otelde Türk arkadaşların var. Onlarla neden denemiyorsun?", "ru": "Ещё совсем не поздно! В отеле у тебя есть турецкие друзья. Почему бы не попробовать с ними?" }
+        ]},
+        { "speaker": "b", "tr": "Bence o kadar zor değil. Kazakçaya çok benziyor.", "ru": "По-моему, не такой уж трудный. Он очень похож на казахский.", "distractors": [
+          { "tr": "Türkçede \"dün okuduğum kitap\" diyoruz. Almancada da fiil sonda geliyor, değil mi?", "ru": "По-турецки мы говорим «dün okuduğum kitap» — «книга, которую я вчера прочитала». В немецком ведь тоже глагол стоит в конце, правда?" },
+          { "tr": "Mutfakta herkes çok hızlı konuşuyor. Anlamazsam ne yaparım?", "ru": "На кухне все говорят очень быстро. Что я буду делать, если не пойму?" }
+        ]},
+        { "speaker": "a", "tr": "Senin için kolay, Kazakça da bir Türk dili. Ama Almancada her şey farklı!", "ru": "Тебе легко, казахский тоже тюркский язык. А в немецком всё по-другому!", "distractors": [
+          { "tr": "Tamam, beni ikna ettin. Yarından itibaren mutfakta sadece Türkçe konuşacağım!", "ru": "Ладно, ты меня убедила. С завтрашнего дня на кухне говорю только по-турецки!" },
+          { "tr": "Hiç geç değil! Otelde Türk arkadaşların var. Onlarla neden denemiyorsun?", "ru": "Ещё совсем не поздно! В отеле у тебя есть турецкие друзья. Почему бы не попробовать с ними?" }
+        ]},
+        { "speaker": "b", "tr": "Aslında düşündüğün kadar zor değil. Bir örnek vereyim.", "ru": "На самом деле это не так трудно, как ты думаешь. Приведу пример.", "distractors": [
+          { "tr": "Hiç geç değil! Otelde Türk arkadaşların var. Onlarla neden denemiyorsun?", "ru": "Ещё совсем не поздно! В отеле у тебя есть турецкие друзья. Почему бы не попробовать с ними?" },
+          { "tr": "Mutfakta herkes çok hızlı konuşuyor. Anlamazsam ne yaparım?", "ru": "На кухне все говорят очень быстро. Что я буду делать, если не пойму?" }
+        ]},
+        { "speaker": "a", "tr": "Tamam, dinliyorum.", "ru": "Давай, слушаю.", "distractors": [
+          { "tr": "Tamam, beni ikna ettin. Yarından itibaren mutfakta sadece Türkçe konuşacağım!", "ru": "Ладно, ты меня убедила. С завтрашнего дня на кухне говорю только по-турецки!" },
+          { "tr": "Anlamazsan sorarsın! Ben de ilk başta utanıyordum, şimdi rahatım.", "ru": "Не поймёшь — переспросишь! Я тоже сначала стеснялась, а теперь мне легко." }
+        ]},
+        { "speaker": "b", "tr": "Türkçede \"dün okuduğum kitap\" diyoruz. Almancada da fiil sonda geliyor, değil mi?", "ru": "По-турецки мы говорим «dün okuduğum kitap» — «книга, которую я вчера прочитала». В немецком ведь тоже глагол стоит в конце, правда?", "distractors": [
+          { "tr": "Vallahi mi? Başaracağından eminim!", "ru": "Правда? Я уверена, что у тебя получится!" },
+          { "tr": "Senin için kolay, Kazakça da bir Türk dili. Ama Almancada her şey farklı!", "ru": "Тебе легко, казахский тоже тюркский язык. А в немецком всё по-другому!" }
+        ]},
+        { "speaker": "a", "tr": "Evet, \"gelesen habe\"! Haklıymışsın, bunu hiç düşünmemiştim.", "ru": "Да, «gelesen habe»! Оказывается, ты права, я об этом никогда не думал.", "distractors": [
+          { "tr": "Tamam, beni ikna ettin. Yarından itibaren mutfakta sadece Türkçe konuşacağım!", "ru": "Ладно, ты меня убедила. С завтрашнего дня на кухне говорю только по-турецки!" },
+          { "tr": "Aslında düşündüğün kadar zor değil. Bir örnek vereyim.", "ru": "На самом деле это не так трудно, как ты думаешь. Приведу пример." }
+        ]},
+        { "speaker": "b", "tr": "Gördün mü? Bence en zoru ekler. Bir kelimeye beş ek gelebiliyor.", "ru": "Видишь? По-моему, самое трудное — суффиксы. К одному слову может прибавиться пять суффиксов.", "distractors": [
+          { "tr": "Anlamazsan sorarsın! Ben de ilk başta utanıyordum, şimdi rahatım.", "ru": "Не поймёшь — переспросишь! Я тоже сначала стеснялась, а теперь мне легко." },
+          { "tr": "Tamam, dinliyorum.", "ru": "Давай, слушаю." }
+        ]},
+        { "speaker": "a", "tr": "Evet, uzun kelimeleri görünce korkuyorum. Keşke daha erken başlasaydım.", "ru": "Да, когда вижу длинные слова, мне страшно. Жаль, что я не начал раньше.", "distractors": [
+          { "tr": "Tamam, dinliyorum.", "ru": "Давай, слушаю." },
+          { "tr": "Aslında düşündüğün kadar zor değil. Bir örnek vereyim.", "ru": "На самом деле это не так трудно, как ты думаешь. Приведу пример." }
+        ]},
+        { "speaker": "b", "tr": "Hiç geç değil! Otelde Türk arkadaşların var. Onlarla neden denemiyorsun?", "ru": "Ещё совсем не поздно! В отеле у тебя есть турецкие друзья. Почему бы не попробовать с ними?", "distractors": [
+          { "tr": "Anlamazsan sorarsın! Ben de ilk başta utanıyordum, şimdi rahatım.", "ru": "Не поймёшь — переспросишь! Я тоже сначала стеснялась, а теперь мне легко." },
+          { "tr": "Aygerim, bugünkü ders çok zordu. Sence Türkçe zor bir dil mi?", "ru": "Айгерим, сегодняшний урок был очень трудный. Как ты считаешь, турецкий — трудный язык?" }
+        ]},
+        { "speaker": "a", "tr": "Mutfakta herkes çok hızlı konuşuyor. Anlamazsam ne yaparım?", "ru": "На кухне все говорят очень быстро. Что я буду делать, если не пойму?", "distractors": [
+          { "tr": "Aygerim, bugünkü ders çok zordu. Sence Türkçe zor bir dil mi?", "ru": "Айгерим, сегодняшний урок был очень трудный. Как ты считаешь, турецкий — трудный язык?" },
+          { "tr": "Vallahi mi? Başaracağından eminim!", "ru": "Правда? Я уверена, что у тебя получится!" }
+        ]},
+        { "speaker": "b", "tr": "Anlamazsan sorarsın! Ben de ilk başta utanıyordum, şimdi rahatım.", "ru": "Не поймёшь — переспросишь! Я тоже сначала стеснялась, а теперь мне легко.", "distractors": [
+          { "tr": "Aslında düşündüğün kadar zor değil. Bir örnek vereyim.", "ru": "На самом деле это не так трудно, как ты думаешь. Приведу пример." },
+          { "tr": "Aygerim, bugünkü ders çok zordu. Sence Türkçe zor bir dil mi?", "ru": "Айгерим, сегодняшний урок был очень трудный. Как ты считаешь, турецкий — трудный язык?" }
+        ]},
+        { "speaker": "a", "tr": "Tamam, beni ikna ettin. Yarından itibaren mutfakta sadece Türkçe konuşacağım!", "ru": "Ладно, ты меня убедила. С завтрашнего дня на кухне говорю только по-турецки!", "distractors": [
+          { "tr": "Evet, uzun kelimeleri görünce korkuyorum. Keşke daha erken başlasaydım.", "ru": "Да, когда вижу длинные слова, мне страшно. Жаль, что я не начал раньше." },
+          { "tr": "Hiç geç değil! Otelde Türk arkadaşların var. Onlarla neden denemiyorsun?", "ru": "Ещё совсем не поздно! В отеле у тебя есть турецкие друзья. Почему бы не попробовать с ними?" }
+        ]},
+        { "speaker": "b", "tr": "Vallahi mi? Başaracağından eminim!", "ru": "Правда? Я уверена, что у тебя получится!", "distractors": [
+          { "tr": "Anlamazsan sorarsın! Ben de ilk başta utanıyordum, şimdi rahatım.", "ru": "Не поймёшь — переспросишь! Я тоже сначала стеснялась, а теперь мне легко." },
+          { "tr": "Senin için kolay, Kazakça da bir Türk dili. Ama Almancada her şey farklı!", "ru": "Тебе легко, казахский тоже тюркский язык. А в немецком всё по-другому!" }
+        ]}
+      ]
+    },
+    {
+      "id": "mneniya-tuba-iz-doma",
+      "title": "Работа из дома: за и против",
+      "level": "B1",
+      "speakers": { "a": "Ольга", "b": "Туба" },
+      "turns": [
+        { "speaker": "b", "tr": "Olga, duydun mu? Metin Bey haftada iki gün evden çalışmayı düşünüyor. Bu konuda ne düşünüyorsun?", "ru": "Ольга, слышала? Метин-бей думает разрешить работать из дома два дня в неделю. Что ты об этом думаешь?", "distractors": [
+          { "tr": "O zaman Metin Bey'e ikimiz de aynı şeyi söyleyelim.", "ru": "Тогда давай обе скажем Метин-бею одно и то же." },
+          { "tr": "İşte bu da bir dezavantaj. Çocuklar evdeyse çalışmak zor değil mi?", "ru": "Вот и минус. Разве не трудно работать, если дети дома?" }
+        ]},
+        { "speaker": "a", "tr": "Bunun hem avantajları hem dezavantajları var. Sen ne dersin?", "ru": "У этого есть и плюсы, и минусы. А ты что скажешь?", "distractors": [
+          { "tr": "Galiba haklısın. İkisinin ortası en iyisi.", "ru": "Кажется, ты права. Золотая середина — лучше всего." },
+          { "tr": "Yalnız mı? Benim evimde yalnızlık olmaz! Ela öğleden sonra kreşten geliyor.", "ru": "Одна? У меня дома одиночества не бывает! Эла после обеда возвращается из садика." }
+        ]},
+        { "speaker": "b", "tr": "Bence harika! En büyük avantajı, yolda vakit kaybetmemek. Çocukları okula ve kreşe bıraktıktan sonra trafikte bir saat geçiriyorum.", "ru": "По-моему, отлично! Главный плюс — не терять время в дороге. Отвезу детей в школу и в садик — и потом час стою в пробках.", "distractors": [
+          { "tr": "Söylediğin doğru ama her şey bu değil. Evde daha az yoruluyorum, daha çok iş yapıyorum.", "ru": "То, что ты говоришь, верно, но дело не только в этом. Дома я меньше устаю и больше успеваю." },
+          { "tr": "O zaman anlaştık! Ama ofis günlerimiz aynı olsun, öğle yemeği bizim.", "ru": "Тогда договорились! Но пусть офисные дни у нас совпадают — обеды за нами." }
+        ]},
+        { "speaker": "a", "tr": "Ben vapurla yirmi dakikada geliyorum, benim için yol sorun değil. Evden çalışmak mı? Bir yandan rahat, öte yandan insan yalnız kalıyor.", "ru": "Я доезжаю на пароходе за двадцать минут, дорога для меня не проблема. Работать из дома? С одной стороны, удобно, с другой — остаёшься совсем одна.", "distractors": [
+          { "tr": "Bunun hem avantajları hem dezavantajları var. Sen ne dersin?", "ru": "У этого есть и плюсы, и минусы. А ты что скажешь?" },
+          { "tr": "Olga, duydun mu? Metin Bey haftada iki gün evden çalışmayı düşünüyor. Bu konuda ne düşünüyorsun?", "ru": "Ольга, слышала? Метин-бей думает разрешить работать из дома два дня в неделю. Что ты об этом думаешь?" }
+        ]},
+        { "speaker": "b", "tr": "Yalnız mı? Benim evimde yalnızlık olmaz! Ela öğleden sonra kreşten geliyor.", "ru": "Одна? У меня дома одиночества не бывает! Эла после обеда возвращается из садика.", "distractors": [
+          { "tr": "Söylediğin doğru ama her şey bu değil. Evde daha az yoruluyorum, daha çok iş yapıyorum.", "ru": "То, что ты говоришь, верно, но дело не только в этом. Дома я меньше устаю и больше успеваю." },
+          { "tr": "Galiba haklısın. İkisinin ortası en iyisi.", "ru": "Кажется, ты права. Золотая середина — лучше всего." }
+        ]},
+        { "speaker": "a", "tr": "İşte bu da bir dezavantaj. Çocuklar evdeyse çalışmak zor değil mi?", "ru": "Вот и минус. Разве не трудно работать, если дети дома?", "distractors": [
+          { "tr": "Ben vapurla yirmi dakikada geliyorum, benim için yol sorun değil. Evden çalışmak mı? Bir yandan rahat, öte yandan insan yalnız kalıyor.", "ru": "Я доезжаю на пароходе за двадцать минут, дорога для меня не проблема. Работать из дома? С одной стороны, удобно, с другой — остаёшься совсем одна." },
+          { "tr": "O zaman Metin Bey'e ikimiz de aynı şeyi söyleyelim.", "ru": "Тогда давай обе скажем Метин-бею одно и то же." }
+        ]},
+        { "speaker": "b", "tr": "Söylediğin doğru ama her şey bu değil. Evde daha az yoruluyorum, daha çok iş yapıyorum.", "ru": "То, что ты говоришь, верно, но дело не только в этом. Дома я меньше устаю и больше успеваю.", "distractors": [
+          { "tr": "O zaman Metin Bey'e ikimiz de aynı şeyi söyleyelim.", "ru": "Тогда давай обе скажем Метин-бею одно и то же." },
+          { "tr": "Bunun hem avantajları hem dezavantajları var. Sen ne dersin?", "ru": "У этого есть и плюсы, и минусы. А ты что скажешь?" }
+        ]},
+        { "speaker": "a", "tr": "Ben yalnız yaşıyorum. Evde bütün gün kimseyle konuşmuyorum. Ofiste en azından seninle öğle yemeği yiyoruz.", "ru": "Я живу одна. Дома весь день ни с кем не разговариваю. А в офисе мы хотя бы обедаем вместе.", "distractors": [
+          { "tr": "Galiba haklısın. İkisinin ortası en iyisi.", "ru": "Кажется, ты права. Золотая середина — лучше всего." },
+          { "tr": "O zaman Metin Bey'e ikimiz de aynı şeyi söyleyelim.", "ru": "Тогда давай обе скажем Метин-бею одно и то же." }
+        ]},
+        { "speaker": "b", "tr": "Ah, öğle yemeklerimiz! Onları ben de özlerim. Peki iki gün evde, üç gün ofiste olursa?", "ru": "Ах, наши обеды! По ним я бы тоже скучала. А если два дня дома, а три в офисе?", "distractors": [
+          { "tr": "O zaman Metin Bey'e ikimiz de aynı şeyi söyleyelim.", "ru": "Тогда давай обе скажем Метин-бею одно и то же." },
+          { "tr": "O zaman anlaştık! Ama ofis günlerimiz aynı olsun, öğle yemeği bizim.", "ru": "Тогда договорились! Но пусть офисные дни у нас совпадают — обеды за нами." }
+        ]},
+        { "speaker": "a", "tr": "Galiba haklısın. İkisinin ortası en iyisi.", "ru": "Кажется, ты права. Золотая середина — лучше всего.", "distractors": [
+          { "tr": "Bunun hem avantajları hem dezavantajları var. Sen ne dersin?", "ru": "У этого есть и плюсы, и минусы. А ты что скажешь?" },
+          { "tr": "Olga, duydun mu? Metin Bey haftada iki gün evden çalışmayı düşünüyor. Bu konuda ne düşünüyorsun?", "ru": "Ольга, слышала? Метин-бей думает разрешить работать из дома два дня в неделю. Что ты об этом думаешь?" }
+        ]},
+        { "speaker": "b", "tr": "O zaman Metin Bey'e ikimiz de aynı şeyi söyleyelim.", "ru": "Тогда давай обе скажем Метин-бею одно и то же.", "distractors": [
+          { "tr": "Ah, öğle yemeklerimiz! Onları ben de özlerim. Peki iki gün evde, üç gün ofiste olursa?", "ru": "Ах, наши обеды! По ним я бы тоже скучала. А если два дня дома, а три в офисе?" },
+          { "tr": "Ben vapurla yirmi dakikada geliyorum, benim için yol sorun değil. Evden çalışmak mı? Bir yandan rahat, öte yandan insan yalnız kalıyor.", "ru": "Я доезжаю на пароходе за двадцать минут, дорога для меня не проблема. Работать из дома? С одной стороны, удобно, с другой — остаёшься совсем одна." }
+        ]},
+        { "speaker": "a", "tr": "O zaman anlaştık! Ama ofis günlerimiz aynı olsun, öğle yemeği bizim.", "ru": "Тогда договорились! Но пусть офисные дни у нас совпадают — обеды за нами.", "distractors": [
+          { "tr": "Ben yalnız yaşıyorum. Evde bütün gün kimseyle konuşmuyorum. Ofiste en azından seninle öğle yemeği yiyoruz.", "ru": "Я живу одна. Дома весь день ни с кем не разговариваю. А в офисе мы хотя бы обедаем вместе." },
+          { "tr": "Yalnız mı? Benim evimde yalnızlık olmaz! Ela öğleden sonra kreşten geliyor.", "ru": "Одна? У меня дома одиночества не бывает! Эла после обеда возвращается из садика." }
+        ]}
+      ]
+    },
+    {
+      "id": "mneniya-mama-moskva",
+      "title": "Мама: Москва или Стамбул?",
+      "level": "B1",
+      "speakers": { "a": "Ольга", "b": "Мама" },
+      "turns": [
+        { "speaker": "b", "tr": "Kızım, dün babanla konuştuk. Moskova'ya dönmeyi hiç düşünüyor musun?", "ru": "Доченька, вчера мы с папой поговорили. Ты вообще думаешь вернуться в Москву?", "distractors": [
+          { "tr": "Biliyorum, ama çok uzaktasın. Moskova'da da iyi işler var.", "ru": "Знаю, но ты так далеко. В Москве тоже есть хорошая работа." },
+          { "tr": "Biletler çok pahalı, anne. Söz veremem.", "ru": "Билеты очень дорогие, мама. Обещать не могу." }
+        ]},
+        { "speaker": "a", "tr": "Anne, yine mi? Ben burada mutluyum, işim de çok iyi.", "ru": "Мама, опять? Мне здесь хорошо, и работа очень хорошая.", "distractors": [
+          { "tr": "Ben de onları çok özlüyorum. Zamanım olsa daha sık gelirdim.", "ru": "Я тоже по ним очень скучаю. Если бы у меня было время, я бы приезжала чаще." },
+          { "tr": "O zaman belki biz geliriz. Babana sorarım.", "ru": "Тогда, может, мы приедем. Спрошу у папы." }
+        ]},
+        { "speaker": "b", "tr": "Biliyorum, ama çok uzaktasın. Moskova'da da iyi işler var.", "ru": "Знаю, но ты так далеко. В Москве тоже есть хорошая работа.", "distractors": [
+          { "tr": "Peki, kızım. Neye karar verirsen ver, yanındayım. Ama Yılbaşına gel!", "ru": "Хорошо, доченька. Что бы ты ни решила, я с тобой. Но на Новый год приезжай!" },
+          { "tr": "Belki. Ama İstanbul'u çok seviyorum. Sen de buradayken gördün: deniz, vapur, Kadıköy...", "ru": "Может быть. Но я очень люблю Стамбул. Ты сама видела, когда была здесь: море, пароход, Кадыкёй..." }
+        ]},
+        { "speaker": "a", "tr": "Bu konuda sana katılmıyorum, anne. Burada yaptığım işi Moskova'da bulamam.", "ru": "В этом я с тобой не согласна, мама. Такую работу, как здесь, я в Москве не найду.", "distractors": [
+          { "tr": "Harika olur! İnşallah!", "ru": "Было бы чудесно! Дай бог!" },
+          { "tr": "Kızım, dün babanla konuştuk. Moskova'ya dönmeyi hiç düşünüyor musun?", "ru": "Доченька, вчера мы с папой поговорили. Ты вообще думаешь вернуться в Москву?" }
+        ]},
+        { "speaker": "b", "tr": "Neden bulamazsın? Türkçe bilen birini her yerde ararlar.", "ru": "Почему не найдёшь? Человека, который знает турецкий, везде ищут.", "distractors": [
+          { "tr": "Peki ya Deniz? Onunla ciddi misiniz?", "ru": "А Дениз? У вас с ним серьёзно?" },
+          { "tr": "Anne, yine mi? Ben burada mutluyum, işim de çok iyi.", "ru": "Мама, опять? Мне здесь хорошо, и работа очень хорошая." }
+        ]},
+        { "speaker": "a", "tr": "Belki. Ama İstanbul'u çok seviyorum. Sen de buradayken gördün: deniz, vapur, Kadıköy...", "ru": "Может быть. Но я очень люблю Стамбул. Ты сама видела, когда была здесь: море, пароход, Кадыкёй...", "distractors": [
+          { "tr": "Harika olur! İnşallah!", "ru": "Было бы чудесно! Дай бог!" },
+          { "tr": "Peki ya Deniz? Onunla ciddi misiniz?", "ru": "А Дениз? У вас с ним серьёзно?" }
+        ]},
+        { "speaker": "b", "tr": "Gördüm, çok güzeldi. Ama Anya da, anneannen de seni çok özlüyor.", "ru": "Видела, было очень красиво. Но и Аня, и бабушка очень по тебе скучают.", "distractors": [
+          { "tr": "O zaman belki biz geliriz. Babana sorarım.", "ru": "Тогда, может, мы приедем. Спрошу у папы." },
+          { "tr": "Bu konuda sana katılmıyorum, anne. Burada yaptığım işi Moskova'da bulamam.", "ru": "В этом я с тобой не согласна, мама. Такую работу, как здесь, я в Москве не найду." }
+        ]},
+        { "speaker": "a", "tr": "Ben de onları çok özlüyorum. Zamanım olsa daha sık gelirdim.", "ru": "Я тоже по ним очень скучаю. Если бы у меня было время, я бы приезжала чаще.", "distractors": [
+          { "tr": "Evet, anne. Burada kendi hayatımı kurdum. Kalmak istiyorum ve bunun doğru bir karar olduğunu düşünüyorum.", "ru": "Да, мама. Я построила здесь свою жизнь. Я хочу остаться и думаю, что это правильное решение." },
+          { "tr": "Kızım, dün babanla konuştuk. Moskova'ya dönmeyi hiç düşünüyor musun?", "ru": "Доченька, вчера мы с папой поговорили. Ты вообще думаешь вернуться в Москву?" }
+        ]},
+        { "speaker": "b", "tr": "Peki ya Deniz? Onunla ciddi misiniz?", "ru": "А Дениз? У вас с ним серьёзно?", "distractors": [
+          { "tr": "Peki, kızım. Neye karar verirsen ver, yanındayım. Ama Yılbaşına gel!", "ru": "Хорошо, доченька. Что бы ты ни решила, я с тобой. Но на Новый год приезжай!" },
+          { "tr": "Anne, yine mi? Ben burada mutluyum, işim de çok iyi.", "ru": "Мама, опять? Мне здесь хорошо, и работа очень хорошая." }
+        ]},
+        { "speaker": "a", "tr": "Evet, anne. Burada kendi hayatımı kurdum. Kalmak istiyorum ve bunun doğru bir karar olduğunu düşünüyorum.", "ru": "Да, мама. Я построила здесь свою жизнь. Я хочу остаться и думаю, что это правильное решение.", "distractors": [
+          { "tr": "Bu konuda sana katılmıyorum, anne. Burada yaptığım işi Moskova'da bulamam.", "ru": "В этом я с тобой не согласна, мама. Такую работу, как здесь, я в Москве не найду." },
+          { "tr": "O zaman belki biz geliriz. Babana sorarım.", "ru": "Тогда, может, мы приедем. Спрошу у папы." }
+        ]},
+        { "speaker": "b", "tr": "Peki, kızım. Neye karar verirsen ver, yanındayım. Ama Yılbaşına gel!", "ru": "Хорошо, доченька. Что бы ты ни решила, я с тобой. Но на Новый год приезжай!", "distractors": [
+          { "tr": "Gördüm, çok güzeldi. Ama Anya da, anneannen de seni çok özlüyor.", "ru": "Видела, было очень красиво. Но и Аня, и бабушка очень по тебе скучают." },
+          { "tr": "Ben de onları çok özlüyorum. Zamanım olsa daha sık gelirdim.", "ru": "Я тоже по ним очень скучаю. Если бы у меня было время, я бы приезжала чаще." }
+        ]},
+        { "speaker": "a", "tr": "Biletler çok pahalı, anne. Söz veremem.", "ru": "Билеты очень дорогие, мама. Обещать не могу.", "distractors": [
+          { "tr": "Evet, anne. Burada kendi hayatımı kurdum. Kalmak istiyorum ve bunun doğru bir karar olduğunu düşünüyorum.", "ru": "Да, мама. Я построила здесь свою жизнь. Я хочу остаться и думаю, что это правильное решение." },
+          { "tr": "Neden bulamazsın? Türkçe bilen birini her yerde ararlar.", "ru": "Почему не найдёшь? Человека, который знает турецкий, везде ищут." }
+        ]},
+        { "speaker": "b", "tr": "O zaman belki biz geliriz. Babana sorarım.", "ru": "Тогда, может, мы приедем. Спрошу у папы.", "distractors": [
+          { "tr": "Kızım, dün babanla konuştuk. Moskova'ya dönmeyi hiç düşünüyor musun?", "ru": "Доченька, вчера мы с папой поговорили. Ты вообще думаешь вернуться в Москву?" },
+          { "tr": "Bu konuda sana katılmıyorum, anne. Burada yaptığım işi Moskova'da bulamam.", "ru": "В этом я с тобой не согласна, мама. Такую работу, как здесь, я в Москве не найду." }
+        ]},
+        { "speaker": "a", "tr": "Harika olur! İnşallah!", "ru": "Было бы чудесно! Дай бог!", "distractors": [
+          { "tr": "Biletler çok pahalı, anne. Söz veremem.", "ru": "Билеты очень дорогие, мама. Обещать не могу." },
+          { "tr": "Biliyorum, ama çok uzaktasın. Moskova'da da iyi işler var.", "ru": "Знаю, но ты так далеко. В Москве тоже есть хорошая работа." }
+        ]}
+      ]
+    },
+    {
+      "id": "mneniya-ozge-proekt",
+      "title": "Озге: браться ли за проект?",
+      "level": "B1",
+      "speakers": { "a": "Ольга", "b": "Озге" },
+      "turns": [
+        { "speaker": "b", "tr": "Olga Hanım, size bir şey danışabilir miyim? Metin Bey bana yeni bir proje teklif etti.", "ru": "Ольга-ханым, можно с вами посоветоваться? Метин-бей предложил мне новый проект.", "distractors": [
+          { "tr": "Tamam, ikna oldum. Yarın Metin Bey'e \"evet\" diyeceğim. İnşallah her şey yolunda gider!", "ru": "Хорошо, вы меня убедили. Завтра скажу Метин-бею «да». Дай бог, всё пройдёт хорошо!" },
+          { "tr": "İnşallah! Yardıma ihtiyacınız olursa ben hep buradayım.", "ru": "Дай бог! Если понадобится помощь, я всегда рядом." }
+        ]},
+        { "speaker": "a", "tr": "Tebrikler! Ne projesi?", "ru": "Поздравляю! Что за проект?", "distractors": [
+          { "tr": "Bunu Metin Bey'le açıkça konuşun. Belki raporların bir kısmı başka birine verilir.", "ru": "Обсудите это с Метин-беем открыто. Может, часть отчётов передадут кому-нибудь другому." },
+          { "tr": "Siz benim yerimde olsanız ne yapardınız?", "ru": "А вы бы что сделали на моём месте?" }
+        ]},
+        { "speaker": "b", "tr": "Alman müşteriler için yeni bir reklam kampanyası. Ama biraz zor olacağını düşünüyorum.", "ru": "Новая рекламная кампания для немецких клиентов. Но я думаю, что будет трудновато.", "distractors": [
+          { "tr": "Çok çekiyor! Ama zaten çok işim var. Raporları nasıl yetiştiririm?", "ru": "Очень! Но у меня и так много работы. Как я успею с отчётами?" },
+          { "tr": "Kızmaz. Bundan eminim. Açık konuşan çalışanları sever.", "ru": "Не рассердится. Я в этом уверена. Он ценит сотрудников, которые говорят открыто." }
+        ]},
+        { "speaker": "a", "tr": "Neden? Siz çok çalışkansınız, işinizi iyi yapıyorsunuz.", "ru": "Почему? Вы очень старательная и хорошо делаете свою работу.", "distractors": [
+          { "tr": "Metin Bey size güvendiği için bu projeyi verdi. Bunu unutmayın.", "ru": "Метин-бей дал вам этот проект, потому что доверяет вам. Не забывайте об этом." },
+          { "tr": "Siz benim yerimde olsanız ne yapardınız?", "ru": "А вы бы что сделали на моём месте?" }
+        ]},
+        { "speaker": "b", "tr": "Ama bu benim ilk işim ve ilk kez bir proje yöneteceğim. Ya başaramazsam?", "ru": "Но это моя первая работа, и я впервые буду руководить проектом. А если не справлюсь?", "distractors": [
+          { "tr": "Olga Hanım, size bir şey danışabilir miyim? Metin Bey bana yeni bir proje teklif etti.", "ru": "Ольга-ханым, можно с вами посоветоваться? Метин-бей предложил мне новый проект." },
+          { "tr": "Tebrikler! Ne projesi?", "ru": "Поздравляю! Что за проект?" }
+        ]},
+        { "speaker": "a", "tr": "Metin Bey size güvendiği için bu projeyi verdi. Bunu unutmayın.", "ru": "Метин-бей дал вам этот проект, потому что доверяет вам. Не забывайте об этом.", "distractors": [
+          { "tr": "Tebrikler! Ne projesi?", "ru": "Поздравляю! Что за проект?" },
+          { "tr": "Tamam, ikna oldum. Yarın Metin Bey'e \"evet\" diyeceğim. İnşallah her şey yolunda gider!", "ru": "Хорошо, вы меня убедили. Завтра скажу Метин-бею «да». Дай бог, всё пройдёт хорошо!" }
+        ]},
+        { "speaker": "b", "tr": "Siz benim yerimde olsanız ne yapardınız?", "ru": "А вы бы что сделали на моём месте?", "distractors": [
+          { "tr": "Olga Hanım, size bir şey danışabilir miyim? Metin Bey bana yeni bir proje teklif etti.", "ru": "Ольга-ханым, можно с вами посоветоваться? Метин-бей предложил мне новый проект." },
+          { "tr": "Neden? Siz çok çalışkansınız, işinizi iyi yapıyorsunuz.", "ru": "Почему? Вы очень старательная и хорошо делаете свою работу." }
+        ]},
+        { "speaker": "a", "tr": "Ben sizin yerinizde olsam hiç düşünmeden kabul ederdim. Proje ilginizi çekiyor mu?", "ru": "Я бы на вашем месте согласилась не раздумывая. А сам проект вам интересен?", "distractors": [
+          { "tr": "Neden? Siz çok çalışkansınız, işinizi iyi yapıyorsunuz.", "ru": "Почему? Вы очень старательная и хорошо делаете свою работу." },
+          { "tr": "Olga Hanım, size bir şey danışabilir miyim? Metin Bey bana yeni bir proje teklif etti.", "ru": "Ольга-ханым, можно с вами посоветоваться? Метин-бей предложил мне новый проект." }
+        ]},
+        { "speaker": "b", "tr": "Çok çekiyor! Ama zaten çok işim var. Raporları nasıl yetiştiririm?", "ru": "Очень! Но у меня и так много работы. Как я успею с отчётами?", "distractors": [
+          { "tr": "Haklısınız. Peki, sizce Metin Bey kızar mı?", "ru": "Вы правы. А как вы думаете, Метин-бей не рассердится?" },
+          { "tr": "Tebrikler! Ne projesi?", "ru": "Поздравляю! Что за проект?" }
+        ]},
+        { "speaker": "a", "tr": "Bunu Metin Bey'le açıkça konuşun. Belki raporların bir kısmı başka birine verilir.", "ru": "Обсудите это с Метин-беем открыто. Может, часть отчётов передадут кому-нибудь другому.", "distractors": [
+          { "tr": "Tebrikler! Ne projesi?", "ru": "Поздравляю! Что за проект?" },
+          { "tr": "Alman müşteriler için yeni bir reklam kampanyası. Ama biraz zor olacağını düşünüyorum.", "ru": "Новая рекламная кампания для немецких клиентов. Но я думаю, что будет трудновато." }
+        ]},
+        { "speaker": "b", "tr": "Haklısınız. Peki, sizce Metin Bey kızar mı?", "ru": "Вы правы. А как вы думаете, Метин-бей не рассердится?", "distractors": [
+          { "tr": "Çok çekiyor! Ama zaten çok işim var. Raporları nasıl yetiştiririm?", "ru": "Очень! Но у меня и так много работы. Как я успею с отчётами?" },
+          { "tr": "Neden? Siz çok çalışkansınız, işinizi iyi yapıyorsunuz.", "ru": "Почему? Вы очень старательная и хорошо делаете свою работу." }
+        ]},
+        { "speaker": "a", "tr": "Kızmaz. Bundan eminim. Açık konuşan çalışanları sever.", "ru": "Не рассердится. Я в этом уверена. Он ценит сотрудников, которые говорят открыто.", "distractors": [
+          { "tr": "Neden? Siz çok çalışkansınız, işinizi iyi yapıyorsunuz.", "ru": "Почему? Вы очень старательная и хорошо делаете свою работу." },
+          { "tr": "Alman müşteriler için yeni bir reklam kampanyası. Ama biraz zor olacağını düşünüyorum.", "ru": "Новая рекламная кампания для немецких клиентов. Но я думаю, что будет трудновато." }
+        ]},
+        { "speaker": "b", "tr": "Tamam, ikna oldum. Yarın Metin Bey'e \"evet\" diyeceğim. İnşallah her şey yolunda gider!", "ru": "Хорошо, вы меня убедили. Завтра скажу Метин-бею «да». Дай бог, всё пройдёт хорошо!", "distractors": [
+          { "tr": "Çok çekiyor! Ama zaten çok işim var. Raporları nasıl yetiştiririm?", "ru": "Очень! Но у меня и так много работы. Как я успею с отчётами?" },
+          { "tr": "Ben sizin yerinizde olsam hiç düşünmeden kabul ederdim. Proje ilginizi çekiyor mu?", "ru": "Я бы на вашем месте согласилась не раздумывая. А сам проект вам интересен?" }
+        ]},
+        { "speaker": "a", "tr": "İnşallah! Yardıma ihtiyacınız olursa ben hep buradayım.", "ru": "Дай бог! Если понадобится помощь, я всегда рядом.", "distractors": [
+          { "tr": "Bunu Metin Bey'le açıkça konuşun. Belki raporların bir kısmı başka birine verilir.", "ru": "Обсудите это с Метин-беем открыто. Может, часть отчётов передадут кому-нибудь другому." },
+          { "tr": "Çok çekiyor! Ama zaten çok işim var. Raporları nasıl yetiştiririm?", "ru": "Очень! Но у меня и так много работы. Как я успею с отчётами?" }
+        ]}
+      ]
+    },
+    {
+      "id": "mneniya-markus-dizi",
+      "title": "Сериалы вместо учебника?",
+      "level": "B1",
+      "speakers": { "a": "Ольга", "b": "Маркус" },
+      "turns": [
+        { "speaker": "b", "tr": "Olga, bence Türkçe öğrenmenin en iyi yolu dizi izlemek. Sen dizi izliyor musun?", "ru": "Ольга, по-моему, лучший способ выучить турецкий — смотреть сериалы. Ты смотришь сериалы?", "distractors": [
+          { "tr": "Ama Türkçe altyazıyla izlersen, yeni kelimeleri hem duyarsın hem görürsün.", "ru": "Но если смотреть с турецкими субтитрами, новые слова и слышишь, и видишь." },
+          { "tr": "Öyle düşünmüyorum. Aygerim Kazakça bildiği için her şeyi daha kolay anlıyor.", "ru": "Я так не думаю. Айгерим всё понимает легче, потому что знает казахский." }
+        ]},
+        { "speaker": "a", "tr": "Pek izlemiyorum. Bu fikrin işe yarayacağını sanmıyorum. Çok hızlı konuşuyorlar.", "ru": "Почти не смотрю. Не думаю, что эта идея сработает. Там говорят слишком быстро.", "distractors": [
+          { "tr": "Öyle düşünmüyorum. Aygerim Kazakça bildiği için her şeyi daha kolay anlıyor.", "ru": "Я так не думаю. Айгерим всё понимает легче, потому что знает казахский." },
+          { "tr": "Anlaştık! Gelecek cumartesi dersten sonra konuşuruz.", "ru": "Договорились! В следующую субботу после урока обсудим." }
+        ]},
+        { "speaker": "b", "tr": "Aygerim de dizi izleyerek çok şey öğrendiğini söylüyor. Onun haklı olduğunu sanıyorum.", "ru": "Айгерим тоже говорит, что многому научилась по сериалам. Мне кажется, она права.", "distractors": [
+          { "tr": "Anlaştık! Gelecek cumartesi dersten sonra konuşuruz.", "ru": "Договорились! В следующую субботу после урока обсудим." },
+          { "tr": "Tamam. Ama ben de bir dizi önereyim, sen de benim seçtiğim diziyi izle.", "ru": "Хорошо. Но и я предложу сериал — а ты посмотри тот, который выберу я." }
+        ]},
+        { "speaker": "a", "tr": "Öyle düşünmüyorum. Aygerim Kazakça bildiği için her şeyi daha kolay anlıyor.", "ru": "Я так не думаю. Айгерим всё понимает легче, потому что знает казахский.", "distractors": [
+          { "tr": "Pek izlemiyorum. Bu fikrin işe yarayacağını sanmıyorum. Çok hızlı konuşuyorlar.", "ru": "Почти не смотрю. Не думаю, что эта идея сработает. Там говорят слишком быстро." },
+          { "tr": "Bir aşçının hayatını anlatan bir dizi. Tabii, ben aşçıyım! İstersen bir deneyelim: bu hafta ikimiz de ilk bölümü izleyelim.", "ru": "Сериал о жизни повара. Ну конечно, я же повар! Если хочешь, давай попробуем: на этой неделе оба посмотрим первую серию." }
+        ]},
+        { "speaker": "b", "tr": "Ama Türkçe altyazıyla izlersen, yeni kelimeleri hem duyarsın hem görürsün.", "ru": "Но если смотреть с турецкими субтитрами, новые слова и слышишь, и видишь.", "distractors": [
+          { "tr": "Bir aşçının hayatını anlatan bir dizi. Tabii, ben aşçıyım! İstersen bir deneyelim: bu hafta ikimiz de ilk bölümü izleyelim.", "ru": "Сериал о жизни повара. Ну конечно, я же повар! Если хочешь, давай попробуем: на этой неделе оба посмотрим первую серию." },
+          { "tr": "Tamam. Kim haklıymış, o zaman görürüz!", "ru": "Хорошо. Тогда и посмотрим, кто был прав!" }
+        ]},
+        { "speaker": "a", "tr": "Bu mantıklı. Ama hangi diziyi izleyeyim? Sen ne izliyorsun?", "ru": "Это логично. Но какой сериал мне смотреть? А ты что смотришь?", "distractors": [
+          { "tr": "Tamam. Kim haklıymış, o zaman görürüz!", "ru": "Хорошо. Тогда и посмотрим, кто был прав!" },
+          { "tr": "Anlaştık! Gelecek cumartesi dersten sonra konuşuruz.", "ru": "Договорились! В следующую субботу после урока обсудим." }
+        ]},
+        { "speaker": "b", "tr": "Bir aşçının hayatını anlatan bir dizi. Tabii, ben aşçıyım! İstersen bir deneyelim: bu hafta ikimiz de ilk bölümü izleyelim.", "ru": "Сериал о жизни повара. Ну конечно, я же повар! Если хочешь, давай попробуем: на этой неделе оба посмотрим первую серию.", "distractors": [
+          { "tr": "Aygerim de dizi izleyerek çok şey öğrendiğini söylüyor. Onun haklı olduğunu sanıyorum.", "ru": "Айгерим тоже говорит, что многому научилась по сериалам. Мне кажется, она права." },
+          { "tr": "Tamam. Kim haklıymış, o zaman görürüz!", "ru": "Хорошо. Тогда и посмотрим, кто был прав!" }
+        ]},
+        { "speaker": "a", "tr": "Tamam. Ama ben de bir dizi önereyim, sen de benim seçtiğim diziyi izle.", "ru": "Хорошо. Но и я предложу сериал — а ты посмотри тот, который выберу я.", "distractors": [
+          { "tr": "Pek izlemiyorum. Bu fikrin işe yarayacağını sanmıyorum. Çok hızlı konuşuyorlar.", "ru": "Почти не смотрю. Не думаю, что эта идея сработает. Там говорят слишком быстро." },
+          { "tr": "Olga, bence Türkçe öğrenmenin en iyi yolu dizi izlemek. Sen dizi izliyor musun?", "ru": "Ольга, по-моему, лучший способ выучить турецкий — смотреть сериалы. Ты смотришь сериалы?" }
+        ]},
+        { "speaker": "b", "tr": "Anlaştık! Gelecek cumartesi dersten sonra konuşuruz.", "ru": "Договорились! В следующую субботу после урока обсудим.", "distractors": [
+          { "tr": "Aygerim de dizi izleyerek çok şey öğrendiğini söylüyor. Onun haklı olduğunu sanıyorum.", "ru": "Айгерим тоже говорит, что многому научилась по сериалам. Мне кажется, она права." },
+          { "tr": "Pek izlemiyorum. Bu fikrin işe yarayacağını sanmıyorum. Çok hızlı konuşuyorlar.", "ru": "Почти не смотрю. Не думаю, что эта идея сработает. Там говорят слишком быстро." }
+        ]},
+        { "speaker": "a", "tr": "Tamam. Kim haklıymış, o zaman görürüz!", "ru": "Хорошо. Тогда и посмотрим, кто был прав!", "distractors": [
+          { "tr": "Öyle düşünmüyorum. Aygerim Kazakça bildiği için her şeyi daha kolay anlıyor.", "ru": "Я так не думаю. Айгерим всё понимает легче, потому что знает казахский." },
+          { "tr": "Aygerim de dizi izleyerek çok şey öğrendiğini söylüyor. Onun haklı olduğunu sanıyorum.", "ru": "Айгерим тоже говорит, что многому научилась по сериалам. Мне кажется, она права." }
+        ]}
+      ]
+    },
+    {
+      "id": "mneniya-markus-dizi-sonra",
+      "title": "Неделю спустя: сериалы",
+      "level": "B1",
+      "speakers": { "a": "Ольга", "b": "Маркус" },
+      "turns": [
+        { "speaker": "b", "tr": "Eee, Olga? Diziyi izledin mi?", "ru": "Ну что, Ольга? Посмотрела сериал?", "distractors": [
+          { "tr": "Söylemem! Bundan sonra her hafta bir bölüm izleyelim mi?", "ru": "Не скажу! Давай теперь смотреть по серии в неделю?" },
+          { "tr": "Kesinlikle! Sonra cumartesi kahve içerken konuşuruz.", "ru": "Обязательно! А в субботу обсудим за кофе." }
+        ]},
+        { "speaker": "a", "tr": "İzledim, hem de üç bölüm! Fikrimi değiştirdim.", "ru": "Посмотрела, да ещё три серии! Я передумала.", "distractors": [
+          { "tr": "Gülsün! Ama bu seni rahatsız ediyorsa, önce onunla konuşsan iyi olur.", "ru": "Пусть смеётся! Но если тебе это неприятно, лучше сначала поговори с ним." },
+          { "tr": "Söylemem! Bundan sonra her hafta bir bölüm izleyelim mi?", "ru": "Не скажу! Давай теперь смотреть по серии в неделю?" }
+        ]},
+        { "speaker": "b", "tr": "Gerçekten mi? Geçen hafta \"işe yaramaz\" diyordun!", "ru": "Правда? На прошлой неделе ты говорила «не сработает»!", "distractors": [
+          { "tr": "Haklısın, şef aslında iyi biri. Yarın onunla konuşurum. Bu arada, bence dizi izlemek dersten bile eğlenceli!", "ru": "Ты права, шеф на самом деле хороший человек. Завтра поговорю с ним. Кстати, по-моему, смотреть сериалы даже веселее, чем уроки!" },
+          { "tr": "Kesinlikle! Sonra cumartesi kahve içerken konuşuruz.", "ru": "Обязательно! А в субботу обсудим за кофе." }
+        ]},
+        { "speaker": "a", "tr": "Biliyorum. İlk başta öyle düşünüyordum ama şimdi emin değilim. Birçok kelimeyi anladım!", "ru": "Знаю. Сначала я так думала, а теперь не уверена. Я поняла много слов!", "distractors": [
+          { "tr": "Kesinlikle! Sonra cumartesi kahve içerken konuşuruz.", "ru": "Обязательно! А в субботу обсудим за кофе." },
+          { "tr": "Eee, Olga? Diziyi izledin mi?", "ru": "Ну что, Ольга? Посмотрела сериал?" }
+        ]},
+        { "speaker": "b", "tr": "Ben de senin seçtiğin diziyi izledim. Çok güzel ama çok zor!", "ru": "А я посмотрел сериал, который выбрала ты. Очень хороший, но очень трудный!", "distractors": [
+          { "tr": "Haklısın, şef aslında iyi biri. Yarın onunla konuşurum. Bu arada, bence dizi izlemek dersten bile eğlenceli!", "ru": "Ты права, шеф на самом деле хороший человек. Завтра поговорю с ним. Кстати, по-моему, смотреть сериалы даже веселее, чем уроки!" },
+          { "tr": "İzledim, hem de üç bölüm! Fikrimi değiştirdim.", "ru": "Посмотрела, да ещё три серии! Я передумала." }
+        ]},
+        { "speaker": "a", "tr": "Bir daha düşündüm de, sen haklısın. Altyazıyla izlemek gerçekten yardım ediyor. Mutfakta Türkçe konuşabiliyor musun?", "ru": "Я ещё раз подумала — ты прав. Смотреть с субтитрами правда помогает. А на кухне у тебя получается говорить по-турецки?", "distractors": [
+          { "tr": "Biliyorum. İlk başta öyle düşünüyordum ama şimdi emin değilim. Birçok kelimeyi anladım!", "ru": "Знаю. Сначала я так думала, а теперь не уверена. Я поняла много слов!" },
+          { "tr": "Haklısın, şef aslında iyi biri. Yarın onunla konuşurum. Bu arada, bence dizi izlemek dersten bile eğlenceli!", "ru": "Ты права, шеф на самом деле хороший человек. Завтра поговорю с ним. Кстати, по-моему, смотреть сериалы даже веселее, чем уроки!" }
+        ]},
+        { "speaker": "b", "tr": "Konuşuyorum ama doğru karar verdiğimden emin değilim. Şef her hatamda gülüyor.", "ru": "Говорю, но не уверен, что принял правильное решение. Шеф смеётся над каждой моей ошибкой.", "distractors": [
+          { "tr": "Eee, Olga? Diziyi izledin mi?", "ru": "Ну что, Ольга? Посмотрела сериал?" },
+          { "tr": "Biliyorum. İlk başta öyle düşünüyordum ama şimdi emin değilim. Birçok kelimeyi anladım!", "ru": "Знаю. Сначала я так думала, а теперь не уверена. Я поняла много слов!" }
+        ]},
+        { "speaker": "a", "tr": "Gülsün! Ama bu seni rahatsız ediyorsa, önce onunla konuşsan iyi olur.", "ru": "Пусть смеётся! Но если тебе это неприятно, лучше сначала поговори с ним.", "distractors": [
+          { "tr": "Kesinlikle! Sonra cumartesi kahve içerken konuşuruz.", "ru": "Обязательно! А в субботу обсудим за кофе." },
+          { "tr": "Gerçekten mi? Geçen hafta \"işe yaramaz\" diyordun!", "ru": "Правда? На прошлой неделе ты говорила «не сработает»!" }
+        ]},
+        { "speaker": "b", "tr": "Haklısın, şef aslında iyi biri. Yarın onunla konuşurum. Bu arada, bence dizi izlemek dersten bile eğlenceli!", "ru": "Ты права, шеф на самом деле хороший человек. Завтра поговорю с ним. Кстати, по-моему, смотреть сериалы даже веселее, чем уроки!", "distractors": [
+          { "tr": "Konuşuyorum ama doğru karar verdiğimden emin değilim. Şef her hatamda gülüyor.", "ru": "Говорю, но не уверен, что принял правильное решение. Шеф смеётся над каждой моей ошибкой." },
+          { "tr": "Kesinlikle! Sonra cumartesi kahve içerken konuşuruz.", "ru": "Обязательно! А в субботу обсудим за кофе." }
+        ]},
+        { "speaker": "a", "tr": "Ben de aynı fikirdeyim. Ama hocamıza söyleme!", "ru": "Я того же мнения. Только нашему преподавателю не говори!", "distractors": [
+          { "tr": "İzledim, hem de üç bölüm! Fikrimi değiştirdim.", "ru": "Посмотрела, да ещё три серии! Я передумала." },
+          { "tr": "Ben de senin seçtiğin diziyi izledim. Çok güzel ama çok zor!", "ru": "А я посмотрел сериал, который выбрала ты. Очень хороший, но очень трудный!" }
+        ]},
+        { "speaker": "b", "tr": "Söylemem! Bundan sonra her hafta bir bölüm izleyelim mi?", "ru": "Не скажу! Давай теперь смотреть по серии в неделю?", "distractors": [
+          { "tr": "Haklısın, şef aslında iyi biri. Yarın onunla konuşurum. Bu arada, bence dizi izlemek dersten bile eğlenceli!", "ru": "Ты права, шеф на самом деле хороший человек. Завтра поговорю с ним. Кстати, по-моему, смотреть сериалы даже веселее, чем уроки!" },
+          { "tr": "Biliyorum. İlk başta öyle düşünüyordum ama şimdi emin değilim. Birçok kelimeyi anladım!", "ru": "Знаю. Сначала я так думала, а теперь не уверена. Я поняла много слов!" }
+        ]},
+        { "speaker": "a", "tr": "Kesinlikle! Sonra cumartesi kahve içerken konuşuruz.", "ru": "Обязательно! А в субботу обсудим за кофе.", "distractors": [
+          { "tr": "Gülsün! Ama bu seni rahatsız ediyorsa, önce onunla konuşsan iyi olur.", "ru": "Пусть смеётся! Но если тебе это неприятно, лучше сначала поговори с ним." },
+          { "tr": "Konuşuyorum ama doğru karar verdiğimden emin değilim. Şef her hatamda gülüyor.", "ru": "Говорю, но не уверен, что принял правильное решение. Шеф смеётся над каждой моей ошибкой." }
+        ]}
+      ]
+    },
+    {
+      "id": "mneniya-anya-yilbasi",
+      "title": "Аня: где встречать Новый год?",
+      "level": "B1",
+      "speakers": { "a": "Ольга", "b": "Аня" },
+      "turns": [
+        { "speaker": "b", "tr": "Olga, Yılbaşında Moskova'ya geliyor musun? Annem her gün soruyor.", "ru": "Ольга, ты приедешь на Новый год в Москву? Мама каждый день спрашивает.", "distractors": [
+          { "tr": "Ben anneannemle kalırım. Yılbaşında onu yalnız bırakmak istemiyorum.", "ru": "Я останусь с бабушкой. Не хочу оставлять её одну на Новый год." },
+          { "tr": "Haklısın. Ama annemler gelmezse, Yılbaşında yanımda ailemden kimse olmaz.", "ru": "Ты права. Но если мама с папой не приедут, на Новый год рядом со мной никого из семьи не будет." }
+        ]},
+        { "speaker": "a", "tr": "Bilmiyorum, Anya. Biletler çok pahalı. Sonuç olarak karar vermek zor.", "ru": "Не знаю, Аня. Билеты очень дорогие. В итоге решить трудно.", "distractors": [
+          { "tr": "Annem İstanbul'da da Olivier salatası yapar mı acaba?", "ru": "Интересно, мама и в Стамбуле сделает «Оливье»?" },
+          { "tr": "Ben anneannemle kalırım. Yılbaşında onu yalnız bırakmak istemiyorum.", "ru": "Я останусь с бабушкой. Не хочу оставлять её одну на Новый год." }
+        ]},
+        { "speaker": "b", "tr": "Annemle babam İstanbul'a gelmeyi düşünüyor. Bana sorarsan bu fırsatı kaçırma!", "ru": "Мама с папой думают приехать в Стамбул. Если хочешь знать моё мнение — не упускай этот шанс!", "distractors": [
+          { "tr": "Olga, Yılbaşında Moskova'ya geliyor musun? Annem her gün soruyor.", "ru": "Ольга, ты приедешь на Новый год в Москву? Мама каждый день спрашивает." },
+          { "tr": "Peki babam ne diyor?", "ru": "А что говорит папа?" }
+        ]},
+        { "speaker": "a", "tr": "Gerçekten mi? Bu harika olur! Peki sen? Sen de gelir misin?", "ru": "Правда? Это было бы чудесно! А ты? Ты тоже приедешь?", "distractors": [
+          { "tr": "Tamam, bu akşam annemi arayıp konuşacağım. Ama daha kesin değil!", "ru": "Ладно, сегодня вечером позвоню маме и поговорю. Но это ещё не точно!" },
+          { "tr": "Olga, Yılbaşında Moskova'ya geliyor musun? Annem her gün soruyor.", "ru": "Ольга, ты приедешь на Новый год в Москву? Мама каждый день спрашивает." }
+        ]},
+        { "speaker": "b", "tr": "Ben anneannemle kalırım. Yılbaşında onu yalnız bırakmak istemiyorum.", "ru": "Я останусь с бабушкой. Не хочу оставлять её одну на Новый год.", "distractors": [
+          { "tr": "Annemle babam İstanbul'a gelmeyi düşünüyor. Bana sorarsan bu fırsatı kaçırma!", "ru": "Мама с папой думают приехать в Стамбул. Если хочешь знать моё мнение — не упускай этот шанс!" },
+          { "tr": "Bilmiyorum, Anya. Biletler çok pahalı. Sonuç olarak karar vermek zor.", "ru": "Не знаю, Аня. Билеты очень дорогие. В итоге решить трудно." }
+        ]},
+        { "speaker": "a", "tr": "Haklısın. Ama annemler gelmezse, Yılbaşında yanımda ailemden kimse olmaz.", "ru": "Ты права. Но если мама с папой не приедут, на Новый год рядом со мной никого из семьи не будет.", "distractors": [
+          { "tr": "Gerçekten mi? Bu harika olur! Peki sen? Sen de gelir misin?", "ru": "Правда? Это было бы чудесно! А ты? Ты тоже приедешь?" },
+          { "tr": "Yapar tabii! Olivier olmadan Yılbaşı olmaz!", "ru": "Конечно сделает! Без «Оливье» Нового года не бывает!" }
+        ]},
+        { "speaker": "b", "tr": "Gelecekler, bundan eminim. Annem İstanbul'u çok sevdi!", "ru": "Приедут, я в этом уверена. Маме очень понравился Стамбул!", "distractors": [
+          { "tr": "Annemle babam İstanbul'a gelmeyi düşünüyor. Bana sorarsan bu fırsatı kaçırma!", "ru": "Мама с папой думают приехать в Стамбул. Если хочешь знать моё мнение — не упускай этот шанс!" },
+          { "tr": "Tamam, bu akşam annemi arayıp konuşacağım. Ama daha kesin değil!", "ru": "Ладно, сегодня вечером позвоню маме и поговорю. Но это ещё не точно!" }
+        ]},
+        { "speaker": "a", "tr": "Peki babam ne diyor?", "ru": "А что говорит папа?", "distractors": [
+          { "tr": "Annem İstanbul'da da Olivier salatası yapar mı acaba?", "ru": "Интересно, мама и в Стамбуле сделает «Оливье»?" },
+          { "tr": "Olga, Yılbaşında Moskova'ya geliyor musun? Annem her gün soruyor.", "ru": "Ольга, ты приедешь на Новый год в Москву? Мама каждый день спрашивает." }
+        ]},
+        { "speaker": "b", "tr": "Biliyorsun, babam pek konuşmaz. Ama bence o da gelmek istiyor. Sen de Deniz'i çağırırsın!", "ru": "Ты же знаешь, папа немногословен. Но, по-моему, он тоже хочет приехать. А ты позовёшь Дениза!", "distractors": [
+          { "tr": "Yapar tabii! Olivier olmadan Yılbaşı olmaz!", "ru": "Конечно сделает! Без «Оливье» Нового года не бывает!" },
+          { "tr": "Haklısın. Ama annemler gelmezse, Yılbaşında yanımda ailemden kimse olmaz.", "ru": "Ты права. Но если мама с папой не приедут, на Новый год рядом со мной никого из семьи не будет." }
+        ]},
+        { "speaker": "a", "tr": "Annem İstanbul'da da Olivier salatası yapar mı acaba?", "ru": "Интересно, мама и в Стамбуле сделает «Оливье»?", "distractors": [
+          { "tr": "Haklısın. Ama annemler gelmezse, Yılbaşında yanımda ailemden kimse olmaz.", "ru": "Ты права. Но если мама с папой не приедут, на Новый год рядом со мной никого из семьи не будет." },
+          { "tr": "Ben anneannemle kalırım. Yılbaşında onu yalnız bırakmak istemiyorum.", "ru": "Я останусь с бабушкой. Не хочу оставлять её одну на Новый год." }
+        ]},
+        { "speaker": "b", "tr": "Yapar tabii! Olivier olmadan Yılbaşı olmaz!", "ru": "Конечно сделает! Без «Оливье» Нового года не бывает!", "distractors": [
+          { "tr": "Ben anneannemle kalırım. Yılbaşında onu yalnız bırakmak istemiyorum.", "ru": "Я останусь с бабушкой. Не хочу оставлять её одну на Новый год." },
+          { "tr": "Peki babam ne diyor?", "ru": "А что говорит папа?" }
+        ]},
+        { "speaker": "a", "tr": "Tamam, bu akşam annemi arayıp konuşacağım. Ama daha kesin değil!", "ru": "Ладно, сегодня вечером позвоню маме и поговорю. Но это ещё не точно!", "distractors": [
+          { "tr": "Peki babam ne diyor?", "ru": "А что говорит папа?" },
+          { "tr": "Gelecekler, bundan eminim. Annem İstanbul'u çok sevdi!", "ru": "Приедут, я в этом уверена. Маме очень понравился Стамбул!" }
+        ]}
+      ]
+    },
+    {
+      "id": "mneniya-ozge-proekt-sonra",
+      "title": "Озге: первые недели проекта",
+      "level": "B1",
+      "speakers": { "a": "Ольга", "b": "Озге" },
+      "turns": [
+        { "speaker": "a", "tr": "Özge Hanım, yeni proje nasıl gidiyor?", "ru": "Озге-ханым, как идёт новый проект?", "distractors": [
+          { "tr": "Çok sevindim. Alman müşteriler kampanyayı beğendi mi?", "ru": "Очень рада. А немецким клиентам кампания понравилась?" },
+          { "tr": "İnşallah! O zaman akşam altıda toplantı odasında buluşalım.", "ru": "Дай бог! Тогда встретимся в шесть вечера в переговорной." }
+        ]},
+        { "speaker": "b", "tr": "Çok yoğun, Olga Hanım! Ama sandığım kadar zor değilmiş.", "ru": "Очень напряжённо, Ольга-ханым! Но оказалось не так трудно, как я думала.", "distractors": [
+          { "tr": "İnşallah! O zaman akşam altıda toplantı odasında buluşalım.", "ru": "Дай бог! Тогда встретимся в шесть вечера в переговорной." },
+          { "tr": "İngilizce. Müşterilerin anladığı dilde konuşmak daha iyi. Siz ne düşünüyorsunuz?", "ru": "По-английски. Лучше говорить на языке, который понимают клиенты. А вы как думаете?" }
+        ]},
+        { "speaker": "a", "tr": "Gördünüz mü? Metin Bey'le raporları konuştunuz mu?", "ru": "Видите? А с Метин-беем об отчётах поговорили?", "distractors": [
+          { "tr": "Bence gayet iyi. Bu akşam sunumu bana bir kere anlatın, birlikte prova yapalım.", "ru": "По-моему, вполне хороший. Расскажите мне сегодня вечером презентацию — порепетируем вместе." },
+          { "tr": "İnşallah! O zaman akşam altıda toplantı odasında buluşalım.", "ru": "Дай бог! Тогда встретимся в шесть вечера в переговорной." }
+        ]},
+        { "speaker": "b", "tr": "Konuştum. Raporların yarısı Tuba Hanım'a verildi. Siz haklıymışsınız!", "ru": "Поговорила. Половину отчётов передали Тубе-ханым. Вы оказались правы!", "distractors": [
+          { "tr": "İnşallah! O zaman akşam altıda toplantı odasında buluşalım.", "ru": "Дай бог! Тогда встретимся в шесть вечера в переговорной." },
+          { "tr": "Bence gayet iyi. Bu akşam sunumu bana bir kere anlatın, birlikte prova yapalım.", "ru": "По-моему, вполне хороший. Расскажите мне сегодня вечером презентацию — порепетируем вместе." }
+        ]},
+        { "speaker": "a", "tr": "Çok sevindim. Alman müşteriler kampanyayı beğendi mi?", "ru": "Очень рада. А немецким клиентам кампания понравилась?", "distractors": [
+          { "tr": "Özge Hanım, yeni proje nasıl gidiyor?", "ru": "Озге-ханым, как идёт новый проект?" },
+          { "tr": "İnşallah! O zaman akşam altıda toplantı odasında buluşalım.", "ru": "Дай бог! Тогда встретимся в шесть вечера в переговорной." }
+        ]},
+        { "speaker": "b", "tr": "Henüz bilmiyoruz. Yarın sunum var, çok heyecanlıyım. Siz olsanız sunumu Türkçe mi, İngilizce mi yapardınız?", "ru": "Пока не знаем. Завтра презентация, я очень волнуюсь. А вы бы провели презентацию по-турецки или по-английски?", "distractors": [
+          { "tr": "Konuştum. Raporların yarısı Tuba Hanım'a verildi. Siz haklıymışsınız!", "ru": "Поговорила. Половину отчётов передали Тубе-ханым. Вы оказались правы!" },
+          { "tr": "Gördünüz mü? Metin Bey'le raporları konuştunuz mu?", "ru": "Видите? А с Метин-беем об отчётах поговорили?" }
+        ]},
+        { "speaker": "a", "tr": "İngilizce. Müşterilerin anladığı dilde konuşmak daha iyi. Siz ne düşünüyorsunuz?", "ru": "По-английски. Лучше говорить на языке, который понимают клиенты. А вы как думаете?", "distractors": [
+          { "tr": "Rica ederim. Yarın her şey çok güzel geçecek, bundan eminim.", "ru": "Не за что. Завтра всё пройдёт отлично, я в этом уверена." },
+          { "tr": "Konuştum. Raporların yarısı Tuba Hanım'a verildi. Siz haklıymışsınız!", "ru": "Поговорила. Половину отчётов передали Тубе-ханым. Вы оказались правы!" }
+        ]},
+        { "speaker": "b", "tr": "Ben de aynı fikirdeyim. Ama İngilizcem çok iyi değil...", "ru": "Я того же мнения. Но мой английский не очень хорош...", "distractors": [
+          { "tr": "Gerçekten mi? Çok teşekkür ederim, Olga Hanım. Allah razı olsun!", "ru": "Правда? Огромное спасибо, Ольга-ханым. Дай вам бог здоровья!" },
+          { "tr": "Gördünüz mü? Metin Bey'le raporları konuştunuz mu?", "ru": "Видите? А с Метин-беем об отчётах поговорили?" }
+        ]},
+        { "speaker": "a", "tr": "Bence gayet iyi. Bu akşam sunumu bana bir kere anlatın, birlikte prova yapalım.", "ru": "По-моему, вполне хороший. Расскажите мне сегодня вечером презентацию — порепетируем вместе.", "distractors": [
+          { "tr": "Gördünüz mü? Metin Bey'le raporları konuştunuz mu?", "ru": "Видите? А с Метин-беем об отчётах поговорили?" },
+          { "tr": "İnşallah! O zaman akşam altıda toplantı odasında buluşalım.", "ru": "Дай бог! Тогда встретимся в шесть вечера в переговорной." }
+        ]},
+        { "speaker": "b", "tr": "Gerçekten mi? Çok teşekkür ederim, Olga Hanım. Allah razı olsun!", "ru": "Правда? Огромное спасибо, Ольга-ханым. Дай вам бог здоровья!", "distractors": [
+          { "tr": "Henüz bilmiyoruz. Yarın sunum var, çok heyecanlıyım. Siz olsanız sunumu Türkçe mi, İngilizce mi yapardınız?", "ru": "Пока не знаем. Завтра презентация, я очень волнуюсь. А вы бы провели презентацию по-турецки или по-английски?" },
+          { "tr": "Gördünüz mü? Metin Bey'le raporları konuştunuz mu?", "ru": "Видите? А с Метин-беем об отчётах поговорили?" }
+        ]},
+        { "speaker": "a", "tr": "Rica ederim. Yarın her şey çok güzel geçecek, bundan eminim.", "ru": "Не за что. Завтра всё пройдёт отлично, я в этом уверена.", "distractors": [
+          { "tr": "İngilizce. Müşterilerin anladığı dilde konuşmak daha iyi. Siz ne düşünüyorsunuz?", "ru": "По-английски. Лучше говорить на языке, который понимают клиенты. А вы как думаете?" },
+          { "tr": "Henüz bilmiyoruz. Yarın sunum var, çok heyecanlıyım. Siz olsanız sunumu Türkçe mi, İngilizce mi yapardınız?", "ru": "Пока не знаем. Завтра презентация, я очень волнуюсь. А вы бы провели презентацию по-турецки или по-английски?" }
+        ]},
+        { "speaker": "b", "tr": "İnşallah! O zaman akşam altıda toplantı odasında buluşalım.", "ru": "Дай бог! Тогда встретимся в шесть вечера в переговорной.", "distractors": [
+          { "tr": "Ben de aynı fikirdeyim. Ama İngilizcem çok iyi değil...", "ru": "Я того же мнения. Но мой английский не очень хорош..." },
+          { "tr": "Çok sevindim. Alman müşteriler kampanyayı beğendi mi?", "ru": "Очень рада. А немецким клиентам кампания понравилась?" }
+        ]}
+      ]
+    }
+  ]
+}

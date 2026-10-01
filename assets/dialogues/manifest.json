@@ -124,5 +124,11 @@
     "title": "Работа",
     "count": 12,
     "sizeKB": 117.1
+  },
+  {
+    "id": "mneniya",
+    "title": "Мнения",
+    "count": 11,
+    "sizeKB": 102.0
   }
 ]
