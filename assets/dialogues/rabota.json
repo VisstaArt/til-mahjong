@@ -1,0 +1,746 @@
+{
+  "id": "rabota",
+  "title": "Работа",
+  "dialogues": [
+    {
+      "id": "rabota-ozge-pervye-mesyacy",
+      "title": "Озге: первые месяцы",
+      "level": "B1",
+      "speakers": { "a": "Ольга", "b": "Озге" },
+      "turns": [
+        { "speaker": "a", "tr": "Özge Hanım, günaydın! İlk ayınız nasıl geçti?", "ru": "Озге-ханым, доброе утро! Как прошёл ваш первый месяц?", "distractors": [
+          { "tr": "Korkmayın. Anlamadığınız bir şey olursa Tuba'ya ya da bana sorun. Benim raporlarımı bile önce Tuba kontrol ediyor!", "ru": "Не бойтесь. Если что-то будет непонятно, спрашивайте Тубу или меня. Даже мои отчёты сначала проверяет Туба!" },
+          { "tr": "Çok anlayışlı biridir. Burada herkes birbirine yardım eder, merak etmeyin.", "ru": "Очень понимающий. Здесь все помогают друг другу, не волнуйтесь." }
+        ]},
+        { "speaker": "b", "tr": "Günaydın, Olga Hanım! Biraz yorucu, ama çok şey öğreniyorum. Size bir şey sorabilir miyim?", "ru": "Доброе утро, Ольга-ханым! Немного утомительно, но я многому учусь. Можно вас кое о чём спросить?", "distractors": [
+          { "tr": "Gerçekten mi? İçim rahatladı. Peki, Metin Bey nasıl biri?", "ru": "Правда? У меня отлегло от сердца. А какой человек Метин-бей?" },
+          { "tr": "Çok teşekkür ederim, Olga Hanım. Artık daha rahat çalışacağım.", "ru": "Большое спасибо, Ольга-ханым. Теперь я буду работать спокойнее." }
+        ]},
+        { "speaker": "a", "tr": "Tabii, sorun. Geçen yıl ben de sizin gibi yeniydim.", "ru": "Конечно, спрашивайте. В прошлом году я тоже была новенькой, как вы.", "distractors": [
+          { "tr": "Özge Hanım, günaydın! İlk ayınız nasıl geçti?", "ru": "Озге-ханым, доброе утро! Как прошёл ваш первый месяц?" },
+          { "tr": "Çok anlayışlı biridir. Burada herkes birbirine yardım eder, merak etmeyin.", "ru": "Очень понимающий. Здесь все помогают друг другу, не волнуйтесь." }
+        ]},
+        { "speaker": "b", "tr": "Burada her şey nasıl işliyor? Hangi işi önce yapmam gerektiğini bilmiyorum.", "ru": "Как здесь всё устроено? Я не знаю, какую работу нужно делать в первую очередь.", "distractors": [
+          { "tr": "Günaydın, Olga Hanım! Biraz yorucu, ama çok şey öğreniyorum. Size bir şey sorabilir miyim?", "ru": "Доброе утро, Ольга-ханым! Немного утомительно, но я многому учусь. Можно вас кое о чём спросить?" },
+          { "tr": "Çok teşekkür ederim, Olga Hanım. Artık daha rahat çalışacağım.", "ru": "Большое спасибо, Ольга-ханым. Теперь я буду работать спокойнее." }
+        ]},
+        { "speaker": "a", "tr": "Önce e-postalara bakın. Pazartesi günleri saat onda toplantı yapılıyor, orada haftanın işleri konuşuluyor.", "ru": "Сначала просмотрите почту. По понедельникам в десять проводится совещание, там обсуждаются дела на неделю.", "distractors": [
+          { "tr": "Özge Hanım, günaydın! İlk ayınız nasıl geçti?", "ru": "Озге-ханым, доброе утро! Как прошёл ваш первый месяц?" },
+          { "tr": "Çok anlayışlı biridir. Burada herkes birbirine yardım eder, merak etmeyin.", "ru": "Очень понимающий. Здесь все помогают друг другу, не волнуйтесь." }
+        ]},
+        { "speaker": "b", "tr": "Anladım. Peki, sizin sorumluluklarınız neler?", "ru": "Понятно. А какие у вас обязанности?", "distractors": [
+          { "tr": "Günaydın, Olga Hanım! Biraz yorucu, ama çok şey öğreniyorum. Size bir şey sorabilir miyim?", "ru": "Доброе утро, Ольга-ханым! Немного утомительно, но я многому учусь. Можно вас кое о чём спросить?" },
+          { "tr": "Çok teşekkür ederim, Olga Hanım. Artık daha rahat çalışacağım.", "ru": "Большое спасибо, Ольга-ханым. Теперь я буду работать спокойнее." }
+        ]},
+        { "speaker": "a", "tr": "Sosyal medyadan ve reklam kampanyalarından sorumluyum. Müşterilerimiz çoğunlukla Rus olduğu için Rusça metinleri de ben hazırlıyorum. Siz en çok hangi işi seviyorsunuz?", "ru": "Я отвечаю за соцсети и рекламные кампании. Так как наши клиенты в основном русские, русские тексты тоже готовлю я. А вам какая работа нравится больше всего?", "distractors": [
+          { "tr": "Özge Hanım, günaydın! İlk ayınız nasıl geçti?", "ru": "Озге-ханым, доброе утро! Как прошёл ваш первый месяц?" },
+          { "tr": "Çok anlayışlı biridir. Burada herkes birbirine yardım eder, merak etmeyin.", "ru": "Очень понимающий. Здесь все помогают друг другу, не волнуйтесь." }
+        ]},
+        { "speaker": "b", "tr": "Ben en çok sosyal medyayı seviyorum. Siz buraya gelmeden önce de pazarlamada mı çalışıyordunuz?", "ru": "Мне больше всего нравятся соцсети. А вы до того, как приехать сюда, тоже работали в маркетинге?", "distractors": [
+          { "tr": "Günaydın, Olga Hanım! Biraz yorucu, ama çok şey öğreniyorum. Size bir şey sorabilir miyim?", "ru": "Доброе утро, Ольга-ханым! Немного утомительно, но я многому учусь. Можно вас кое о чём спросить?" },
+          { "tr": "Çok teşekkür ederim, Olga Hanım. Artık daha rahat çalışacağım.", "ru": "Большое спасибо, Ольга-ханым. Теперь я буду работать спокойнее." }
+        ]},
+        { "speaker": "a", "tr": "Evet. Daha önce Moskova'da bir reklam ajansında üç yıl çalıştım.", "ru": "Да. Раньше я три года работала в рекламном агентстве в Москве.", "distractors": [
+          { "tr": "Özge Hanım, günaydın! İlk ayınız nasıl geçti?", "ru": "Озге-ханым, доброе утро! Как прошёл ваш первый месяц?" },
+          { "tr": "Çok anlayışlı biridir. Burada herkes birbirine yardım eder, merak etmeyin.", "ru": "Очень понимающий. Здесь все помогают друг другу, не волнуйтесь." }
+        ]},
+        { "speaker": "b", "tr": "Ne güzel! Ben de sizin gibi deneyim kazanmak istiyorum. Ama bazen hata yapmaktan korkuyorum.", "ru": "Как здорово! Я тоже хочу набраться опыта, как вы. Но иногда я боюсь ошибиться.", "distractors": [
+          { "tr": "Günaydın, Olga Hanım! Biraz yorucu, ama çok şey öğreniyorum. Size bir şey sorabilir miyim?", "ru": "Доброе утро, Ольга-ханым! Немного утомительно, но я многому учусь. Можно вас кое о чём спросить?" },
+          { "tr": "Çok teşekkür ederim, Olga Hanım. Artık daha rahat çalışacağım.", "ru": "Большое спасибо, Ольга-ханым. Теперь я буду работать спокойнее." }
+        ]},
+        { "speaker": "a", "tr": "Korkmayın. Anlamadığınız bir şey olursa Tuba'ya ya da bana sorun. Benim raporlarımı bile önce Tuba kontrol ediyor!", "ru": "Не бойтесь. Если что-то будет непонятно, спрашивайте Тубу или меня. Даже мои отчёты сначала проверяет Туба!", "distractors": [
+          { "tr": "Özge Hanım, günaydın! İlk ayınız nasıl geçti?", "ru": "Озге-ханым, доброе утро! Как прошёл ваш первый месяц?" },
+          { "tr": "Çok anlayışlı biridir. Burada herkes birbirine yardım eder, merak etmeyin.", "ru": "Очень понимающий. Здесь все помогают друг другу, не волнуйтесь." }
+        ]},
+        { "speaker": "b", "tr": "Gerçekten mi? İçim rahatladı. Peki, Metin Bey nasıl biri?", "ru": "Правда? У меня отлегло от сердца. А какой человек Метин-бей?", "distractors": [
+          { "tr": "Günaydın, Olga Hanım! Biraz yorucu, ama çok şey öğreniyorum. Size bir şey sorabilir miyim?", "ru": "Доброе утро, Ольга-ханым! Немного утомительно, но я многому учусь. Можно вас кое о чём спросить?" },
+          { "tr": "Çok teşekkür ederim, Olga Hanım. Artık daha rahat çalışacağım.", "ru": "Большое спасибо, Ольга-ханым. Теперь я буду работать спокойнее." }
+        ]},
+        { "speaker": "a", "tr": "Çok anlayışlı biridir. Burada herkes birbirine yardım eder, merak etmeyin.", "ru": "Очень понимающий. Здесь все помогают друг другу, не волнуйтесь.", "distractors": [
+          { "tr": "Özge Hanım, günaydın! İlk ayınız nasıl geçti?", "ru": "Озге-ханым, доброе утро! Как прошёл ваш первый месяц?" },
+          { "tr": "Tabii, sorun. Geçen yıl ben de sizin gibi yeniydim.", "ru": "Конечно, спрашивайте. В прошлом году я тоже была новенькой, как вы." }
+        ]},
+        { "speaker": "b", "tr": "Çok teşekkür ederim, Olga Hanım. Artık daha rahat çalışacağım.", "ru": "Большое спасибо, Ольга-ханым. Теперь я буду работать спокойнее.", "distractors": [
+          { "tr": "Günaydın, Olga Hanım! Biraz yorucu, ama çok şey öğreniyorum. Size bir şey sorabilir miyim?", "ru": "Доброе утро, Ольга-ханым! Немного утомительно, но я многому учусь. Можно вас кое о чём спросить?" },
+          { "tr": "Burada her şey nasıl işliyor? Hangi işi önce yapmam gerektiğini bilmiyorum.", "ru": "Как здесь всё устроено? Я не знаю, какую работу нужно делать в первую очередь." }
+        ]}
+      ]
+    },
+    {
+      "id": "rabota-otpusk-v-iyule",
+      "title": "Отпуск на июль",
+      "level": "B1",
+      "speakers": { "a": "Ольга", "b": "Метин" },
+      "turns": [
+        { "speaker": "a", "tr": "Metin Bey, müsait misiniz? Size bir şey sormak istiyorum.", "ru": "Метин-бей, вы свободны? Я хочу вас кое о чём спросить.", "distractors": [
+          { "tr": "Çok teşekkür ederim! Eğer acil bir şey olursa, bana telefonla ulaşabilirsiniz.", "ru": "Большое спасибо! Если будет что-то срочное, можете связаться со мной по телефону." },
+          { "tr": "Merak etmeyin, dinlenip enerjik dönerim! İyi günler, Metin Bey.", "ru": "Не волнуйтесь, отдохну и вернусь полная сил! Хорошего дня, Метин-бей." }
+        ]},
+        { "speaker": "b", "tr": "Tabii, Olga Hanım, buyurun, oturun.", "ru": "Конечно, Ольга-ханым, прошу, садитесь.", "distractors": [
+          { "tr": "Tamam. İzin formunu doldurup bana gönderin, ben onaylarım.", "ru": "Хорошо. Заполните заявление на отпуск и пришлите мне, я подпишу." },
+          { "tr": "Gerek yok, tatilde dinlenin. Ama dönüşte sizi büyük bir iş bekliyor, haberiniz olsun!", "ru": "Не нужно, в отпуске отдыхайте. Но имейте в виду: после возвращения вас ждёт большая работа!" }
+        ]},
+        { "speaker": "a", "tr": "Temmuzda iki hafta izin almak istiyorum. Mümkün mü?", "ru": "Я хочу взять две недели отпуска в июле. Это возможно?", "distractors": [
+          { "tr": "Metin Bey, müsait misiniz? Size bir şey sormak istiyorum.", "ru": "Метин-бей, вы свободны? Я хочу вас кое о чём спросить." },
+          { "tr": "Merak etmeyin, dinlenip enerjik dönerim! İyi günler, Metin Bey.", "ru": "Не волнуйтесь, отдохну и вернусь полная сил! Хорошего дня, Метин-бей." }
+        ]},
+        { "speaker": "b", "tr": "Temmuz biraz zor, çünkü Alman müşterilerle büyük bir projemiz var. Yıllık izninizden kaç gün kaldı?", "ru": "Июль — сложновато, потому что у нас большой проект с немецкими клиентами. Сколько дней ежегодного отпуска у вас осталось?", "distractors": [
+          { "tr": "Tabii, Olga Hanım, buyurun, oturun.", "ru": "Конечно, Ольга-ханым, прошу, садитесь." },
+          { "tr": "Gerek yok, tatilde dinlenin. Ama dönüşte sizi büyük bir iş bekliyor, haberiniz olsun!", "ru": "Не нужно, в отпуске отдыхайте. Но имейте в виду: после возвращения вас ждёт большая работа!" }
+        ]},
+        { "speaker": "a", "tr": "Yıllık iznimden on dört gün kaldı. Kız kardeşim Moskova'dan gelecek, birlikte Bodrum'a gideceğiz.", "ru": "У меня осталось четырнадцать дней ежегодного отпуска. Сестра приедет из Москвы, мы вместе поедем в Бодрум.", "distractors": [
+          { "tr": "Metin Bey, müsait misiniz? Size bir şey sormak istiyorum.", "ru": "Метин-бей, вы свободны? Я хочу вас кое о чём спросить." },
+          { "tr": "Merak etmeyin, dinlenip enerjik dönerim! İyi günler, Metin Bey.", "ru": "Не волнуйтесь, отдохну и вернусь полная сил! Хорошего дня, Метин-бей." }
+        ]},
+        { "speaker": "b", "tr": "Anlıyorum. Peki, siz yokken işlerinize kim bakacak? Rus müşterilerin e-postaları beklemez.", "ru": "Понимаю. А кто займётся вашими делами, пока вас не будет? Письма русских клиентов ждать не будут.", "distractors": [
+          { "tr": "Tabii, Olga Hanım, buyurun, oturun.", "ru": "Конечно, Ольга-ханым, прошу, садитесь." },
+          { "tr": "Gerek yok, tatilde dinlenin. Ama dönüşte sizi büyük bir iş bekliyor, haberiniz olsun!", "ru": "Не нужно, в отпуске отдыхайте. Но имейте в виду: после возвращения вас ждёт большая работа!" }
+        ]},
+        { "speaker": "a", "tr": "Tuba'yla konuştum, işlerime o bakabilir. Özge Hanım da ona yardım edecek.", "ru": "Я поговорила с Тубой, она может заняться моими делами. Озге-ханым ей поможет.", "distractors": [
+          { "tr": "Metin Bey, müsait misiniz? Size bir şey sormak istiyorum.", "ru": "Метин-бей, вы свободны? Я хочу вас кое о чём спросить." },
+          { "tr": "Merak etmeyin, dinlenip enerjik dönerim! İyi günler, Metin Bey.", "ru": "Не волнуйтесь, отдохну и вернусь полная сил! Хорошего дня, Метин-бей." }
+        ]},
+        { "speaker": "b", "tr": "Güzel, demek her şeyi düşündünüz. Projede sizin kısmınız ne zaman bitecek?", "ru": "Хорошо, значит, вы всё продумали. А когда будет готова ваша часть проекта?", "distractors": [
+          { "tr": "Tabii, Olga Hanım, buyurun, oturun.", "ru": "Конечно, Ольга-ханым, прошу, садитесь." },
+          { "tr": "Gerek yok, tatilde dinlenin. Ama dönüşte sizi büyük bir iş bekliyor, haberiniz olsun!", "ru": "Не нужно, в отпуске отдыхайте. Но имейте в виду: после возвращения вас ждёт большая работа!" }
+        ]},
+        { "speaker": "a", "tr": "Gitmeden önce bütün işlerimi bitireceğim, söz veriyorum.", "ru": "Я закончу все свои дела до отъезда, обещаю.", "distractors": [
+          { "tr": "Metin Bey, müsait misiniz? Size bir şey sormak istiyorum.", "ru": "Метин-бей, вы свободны? Я хочу вас кое о чём спросить." },
+          { "tr": "Merak etmeyin, dinlenip enerjik dönerim! İyi günler, Metin Bey.", "ru": "Не волнуйтесь, отдохну и вернусь полная сил! Хорошего дня, Метин-бей." }
+        ]},
+        { "speaker": "b", "tr": "Tamam. İzin formunu doldurup bana gönderin, ben onaylarım.", "ru": "Хорошо. Заполните заявление на отпуск и пришлите мне, я подпишу.", "distractors": [
+          { "tr": "Tabii, Olga Hanım, buyurun, oturun.", "ru": "Конечно, Ольга-ханым, прошу, садитесь." },
+          { "tr": "Gerek yok, tatilde dinlenin. Ama dönüşte sizi büyük bir iş bekliyor, haberiniz olsun!", "ru": "Не нужно, в отпуске отдыхайте. Но имейте в виду: после возвращения вас ждёт большая работа!" }
+        ]},
+        { "speaker": "a", "tr": "Çok teşekkür ederim! Eğer acil bir şey olursa, bana telefonla ulaşabilirsiniz.", "ru": "Большое спасибо! Если будет что-то срочное, можете связаться со мной по телефону.", "distractors": [
+          { "tr": "Metin Bey, müsait misiniz? Size bir şey sormak istiyorum.", "ru": "Метин-бей, вы свободны? Я хочу вас кое о чём спросить." },
+          { "tr": "Merak etmeyin, dinlenip enerjik dönerim! İyi günler, Metin Bey.", "ru": "Не волнуйтесь, отдохну и вернусь полная сил! Хорошего дня, Метин-бей." }
+        ]},
+        { "speaker": "b", "tr": "Gerek yok, tatilde dinlenin. Ama dönüşte sizi büyük bir iş bekliyor, haberiniz olsun!", "ru": "Не нужно, в отпуске отдыхайте. Но имейте в виду: после возвращения вас ждёт большая работа!", "distractors": [
+          { "tr": "Tabii, Olga Hanım, buyurun, oturun.", "ru": "Конечно, Ольга-ханым, прошу, садитесь." },
+          { "tr": "Temmuz biraz zor, çünkü Alman müşterilerle büyük bir projemiz var. Yıllık izninizden kaç gün kaldı?", "ru": "Июль — сложновато, потому что у нас большой проект с немецкими клиентами. Сколько дней ежегодного отпуска у вас осталось?" }
+        ]},
+        { "speaker": "a", "tr": "Merak etmeyin, dinlenip enerjik dönerim! İyi günler, Metin Bey.", "ru": "Не волнуйтесь, отдохну и вернусь полная сил! Хорошего дня, Метин-бей.", "distractors": [
+          { "tr": "Metin Bey, müsait misiniz? Size bir şey sormak istiyorum.", "ru": "Метин-бей, вы свободны? Я хочу вас кое о чём спросить." },
+          { "tr": "Temmuzda iki hafta izin almak istiyorum. Mümkün mü?", "ru": "Я хочу взять две недели отпуска в июле. Это возможно?" }
+        ]}
+      ]
+    },
+    {
+      "id": "rabota-deniz-probki",
+      "title": "Дениз устал от пробок",
+      "level": "B1",
+      "speakers": { "a": "Ольга", "b": "Дениз" },
+      "turns": [
+        { "speaker": "a", "tr": "Deniz, sonunda geldin! Saat dokuz olmuş.", "ru": "Дениз, наконец-то ты пришёл! Уже девять часов.", "distractors": [
+          { "tr": "Kesinlikle! Hem de sabahları bir saat fazla uyursun.", "ru": "Точно! К тому же по утрам будешь спать на час дольше." },
+          { "tr": "İnşallah kabul eder! Hadi, şimdi yemek yiyelim, sen biraz dinlen.", "ru": "Дай бог, согласится! Давай теперь поедим, а ты немного отдохни." }
+        ]},
+        { "speaker": "b", "tr": "Geldim, ama çok yorgunum. Bugün de köprüde iki saat trafikte kaldım.", "ru": "Пришёл, но я очень устал. Сегодня опять два часа простоял в пробке на мосту.", "distractors": [
+          { "tr": "Doğru! Yarın müdürüme söyleyeceğim. Eğer kabul ederse, çarşamba ve cuma evden çalışırım.", "ru": "Верно! Завтра скажу начальнику. Если он согласится, буду работать из дома по средам и пятницам." },
+          { "tr": "İyi fikir. Trafikte çok acıktım!", "ru": "Хорошая идея. Я в пробке ужасно проголодался!" }
+        ]},
+        { "speaker": "a", "tr": "Allah Allah! Yine mi? Dün de geç kalmıştın.", "ru": "Ну надо же! Опять? Вчера ты тоже опоздал.", "distractors": [
+          { "tr": "Deniz, sonunda geldin! Saat dokuz olmuş.", "ru": "Дениз, наконец-то ты пришёл! Уже девять часов." },
+          { "tr": "İnşallah kabul eder! Hadi, şimdi yemek yiyelim, sen biraz dinlen.", "ru": "Дай бог, согласится! Давай теперь поедим, а ты немного отдохни." }
+        ]},
+        { "speaker": "b", "tr": "Her gün aynı. Maslak'taki ofise gidip gelmek günde üç saatimi alıyor.", "ru": "Каждый день одно и то же. Дорога до офиса в Маслаке и обратно отнимает у меня три часа в день.", "distractors": [
+          { "tr": "Geldim, ama çok yorgunum. Bugün de köprüde iki saat trafikte kaldım.", "ru": "Пришёл, но я очень устал. Сегодня опять два часа простоял в пробке на мосту." },
+          { "tr": "İyi fikir. Trafikte çok acıktım!", "ru": "Хорошая идея. Я в пробке ужасно проголодался!" }
+        ]},
+        { "speaker": "a", "tr": "Peki, şirketiniz evden çalışmaya izin veriyor mu?", "ru": "А ваша компания разрешает работать из дома?", "distractors": [
+          { "tr": "Deniz, sonunda geldin! Saat dokuz olmuş.", "ru": "Дениз, наконец-то ты пришёл! Уже девять часов." },
+          { "tr": "İnşallah kabul eder! Hadi, şimdi yemek yiyelim, sen biraz dinlen.", "ru": "Дай бог, согласится! Давай теперь поедим, а ты немного отдохни." }
+        ]},
+        { "speaker": "b", "tr": "Bazı arkadaşlar haftada iki gün evden çalışıyor. Yazılımcılar için bu kolay, bilgisayar yeter.", "ru": "Некоторые коллеги работают из дома два дня в неделю. Программистам это легко — достаточно компьютера.", "distractors": [
+          { "tr": "Geldim, ama çok yorgunum. Bugün de köprüde iki saat trafikte kaldım.", "ru": "Пришёл, но я очень устал. Сегодня опять два часа простоял в пробке на мосту." },
+          { "tr": "İyi fikir. Trafikte çok acıktım!", "ru": "Хорошая идея. Я в пробке ужасно проголодался!" }
+        ]},
+        { "speaker": "a", "tr": "O zaman sen de müdürünle konuş. Evden çalışırsan, trafikte vakit kaybetmezsin.", "ru": "Тогда и ты поговори со своим начальником. Если будешь работать из дома, не будешь терять время в пробках.", "distractors": [
+          { "tr": "Deniz, sonunda geldin! Saat dokuz olmuş.", "ru": "Дениз, наконец-то ты пришёл! Уже девять часов." },
+          { "tr": "İnşallah kabul eder! Hadi, şimdi yemek yiyelim, sen biraz dinlen.", "ru": "Дай бог, согласится! Давай теперь поедим, а ты немного отдохни." }
+        ]},
+        { "speaker": "b", "tr": "Haklısın. Ama evde odaklanmak zor olabilir. Sen evden çalışmayı sever misin?", "ru": "Ты права. Но дома может быть трудно сосредоточиться. А ты любишь работать из дома?", "distractors": [
+          { "tr": "Geldim, ama çok yorgunum. Bugün de köprüde iki saat trafikte kaldım.", "ru": "Пришёл, но я очень устал. Сегодня опять два часа простоял в пробке на мосту." },
+          { "tr": "İyi fikir. Trafikte çok acıktım!", "ru": "Хорошая идея. Я в пробке ужасно проголодался!" }
+        ]},
+        { "speaker": "a", "tr": "Bizim şirkette evden çalışmak pek mümkün değil. Bir kere denedim: sessiz, ama biraz sıkıcı.", "ru": "У нас в компании работать из дома почти невозможно. Я один раз пробовала: тихо, но немного скучно.", "distractors": [
+          { "tr": "Deniz, sonunda geldin! Saat dokuz olmuş.", "ru": "Дениз, наконец-то ты пришёл! Уже девять часов." },
+          { "tr": "İnşallah kabul eder! Hadi, şimdi yemek yiyelim, sen biraz dinlen.", "ru": "Дай бог, согласится! Давай теперь поедим, а ты немного отдохни." }
+        ]},
+        { "speaker": "b", "tr": "Bence haftada iki gün yeter. Hem dinlenirim hem de daha çok iş yaparım.", "ru": "По-моему, двух дней в неделю хватит. И отдохну, и больше успею.", "distractors": [
+          { "tr": "Geldim, ama çok yorgunum. Bugün de köprüde iki saat trafikte kaldım.", "ru": "Пришёл, но я очень устал. Сегодня опять два часа простоял в пробке на мосту." },
+          { "tr": "İyi fikir. Trafikte çok acıktım!", "ru": "Хорошая идея. Я в пробке ужасно проголодался!" }
+        ]},
+        { "speaker": "a", "tr": "Kesinlikle! Hem de sabahları bir saat fazla uyursun.", "ru": "Точно! К тому же по утрам будешь спать на час дольше.", "distractors": [
+          { "tr": "Deniz, sonunda geldin! Saat dokuz olmuş.", "ru": "Дениз, наконец-то ты пришёл! Уже девять часов." },
+          { "tr": "İnşallah kabul eder! Hadi, şimdi yemek yiyelim, sen biraz dinlen.", "ru": "Дай бог, согласится! Давай теперь поедим, а ты немного отдохни." }
+        ]},
+        { "speaker": "b", "tr": "Doğru! Yarın müdürüme söyleyeceğim. Eğer kabul ederse, çarşamba ve cuma evden çalışırım.", "ru": "Верно! Завтра скажу начальнику. Если он согласится, буду работать из дома по средам и пятницам.", "distractors": [
+          { "tr": "Geldim, ama çok yorgunum. Bugün de köprüde iki saat trafikte kaldım.", "ru": "Пришёл, но я очень устал. Сегодня опять два часа простоял в пробке на мосту." },
+          { "tr": "İyi fikir. Trafikte çok acıktım!", "ru": "Хорошая идея. Я в пробке ужасно проголодался!" }
+        ]},
+        { "speaker": "a", "tr": "İnşallah kabul eder! Hadi, şimdi yemek yiyelim, sen biraz dinlen.", "ru": "Дай бог, согласится! Давай теперь поедим, а ты немного отдохни.", "distractors": [
+          { "tr": "Deniz, sonunda geldin! Saat dokuz olmuş.", "ru": "Дениз, наконец-то ты пришёл! Уже девять часов." },
+          { "tr": "Allah Allah! Yine mi? Dün de geç kalmıştın.", "ru": "Ну надо же! Опять? Вчера ты тоже опоздал." }
+        ]},
+        { "speaker": "b", "tr": "İyi fikir. Trafikte çok acıktım!", "ru": "Хорошая идея. Я в пробке ужасно проголодался!", "distractors": [
+          { "tr": "Geldim, ama çok yorgunum. Bugün de köprüde iki saat trafikte kaldım.", "ru": "Пришёл, но я очень устал. Сегодня опять два часа простоял в пробке на мосту." },
+          { "tr": "Her gün aynı. Maslak'taki ofise gidip gelmek günde üç saatimi alıyor.", "ru": "Каждый день одно и то же. Дорога до офиса в Маслаке и обратно отнимает у меня три часа в день." }
+        ]}
+      ]
+    },
+    {
+      "id": "rabota-markus-kafe",
+      "title": "Маркус и своё кафе",
+      "level": "B1",
+      "speakers": { "a": "Ольга", "b": "Маркус" },
+      "turns": [
+        { "speaker": "a", "tr": "Markus, bugün derste çok sessizdin. Bir şey mi var?", "ru": "Маркус, ты сегодня на занятии был очень тихий. Что-то случилось?", "distractors": [
+          { "tr": "Bir ortak bulursan daha kolay olur. Bir de belgeler için bir danışmana sorman lazım.", "ru": "Если найдёшь партнёра, будет легче. И ещё насчёт документов тебе нужно спросить консультанта." },
+          { "tr": "Çok sevinirim! İnşallah her şey istediğin gibi olur.", "ru": "Буду очень рада! Дай бог, всё будет так, как ты хочешь." }
+        ]},
+        { "speaker": "b", "tr": "Biraz yorgunum. Dün gece otelde yine on bire kadar çalıştım. Bu iş beni çok yoruyor.", "ru": "Я немного устал. Вчера опять работал в отеле до одиннадцати. Эта работа меня очень выматывает.", "distractors": [
+          { "tr": "Haklısın. Kafeyi açtığım gün ilk müşterim sen olacaksın, söz!", "ru": "Ты права. В день, когда я открою кафе, моим первым клиентом будешь ты, обещаю!" },
+          { "tr": "Teşekkürler, Olga! Senin kahvelerin hep benden!", "ru": "Спасибо, Ольга! Твой кофе — всегда за мой счёт!" }
+        ]},
+        { "speaker": "a", "tr": "Anlıyorum. Otelde çalışmaktan memnun değil misin?", "ru": "Понимаю. Ты недоволен работой в отеле?", "distractors": [
+          { "tr": "Markus, bugün derste çok sessizdin. Bir şey mi var?", "ru": "Маркус, ты сегодня на занятии был очень тихий. Что-то случилось?" },
+          { "tr": "Çok sevinirim! İnşallah her şey istediğin gibi olur.", "ru": "Буду очень рада! Дай бог, всё будет так, как ты хочешь." }
+        ]},
+        { "speaker": "b", "tr": "Mutfağı seviyorum, ama hep başkasının menüsünü pişiriyorum. Aslında kendi kafemi açmak istiyorum. Sence bu çılgınca mı?", "ru": "Кухню я люблю, но всё время готовлю по чужому меню. На самом деле я хочу открыть своё кафе. Думаешь, это безумие?", "distractors": [
+          { "tr": "Biraz yorgunum. Dün gece otelde yine on bire kadar çalıştım. Bu iş beni çok yoruyor.", "ru": "Я немного устал. Вчера опять работал в отеле до одиннадцати. Эта работа меня очень выматывает." },
+          { "tr": "Teşekkürler, Olga! Senin kahvelerin hep benden!", "ru": "Спасибо, Ольга! Твой кофе — всегда за мой счёт!" }
+        ]},
+        { "speaker": "a", "tr": "Hiç de değil, çok güzel bir fikir! Nasıl bir kafe düşünüyorsun?", "ru": "Вовсе нет, прекрасная идея! Какое кафе ты себе представляешь?", "distractors": [
+          { "tr": "Markus, bugün derste çok sessizdin. Bir şey mi var?", "ru": "Маркус, ты сегодня на занятии был очень тихий. Что-то случилось?" },
+          { "tr": "Çok sevinirim! İnşallah her şey istediğin gibi olur.", "ru": "Буду очень рада! Дай бог, всё будет так, как ты хочешь." }
+        ]},
+        { "speaker": "b", "tr": "Küçük bir kafe. Annemin yaptığı Alman pastalarını ve iyi kahve satmak istiyorum.", "ru": "Маленькое кафе. Хочу продавать немецкие пироги, которые печёт моя мама, и хороший кофе.", "distractors": [
+          { "tr": "Biraz yorgunum. Dün gece otelde yine on bire kadar çalıştım. Bu iş beni çok yoruyor.", "ru": "Я немного устал. Вчера опять работал в отеле до одиннадцати. Эта работа меня очень выматывает." },
+          { "tr": "Teşekkürler, Olga! Senin kahvelerin hep benden!", "ru": "Спасибо, Ольга! Твой кофе — всегда за мой счёт!" }
+        ]},
+        { "speaker": "a", "tr": "Harika! Kafeyi nerede açacaksın?", "ru": "Здорово! А где ты откроешь кафе?", "distractors": [
+          { "tr": "Markus, bugün derste çok sessizdin. Bir şey mi var?", "ru": "Маркус, ты сегодня на занятии был очень тихий. Что-то случилось?" },
+          { "tr": "Çok sevinirim! İnşallah her şey istediğin gibi olur.", "ru": "Буду очень рада! Дай бог, всё будет так, как ты хочешь." }
+        ]},
+        { "speaker": "b", "tr": "Kadıköy'de ya da Moda'da. Sence Moda'da kafe açmak iyi bir fikir mi?", "ru": "В Кадыкёе или в Моде. Как думаешь, открыть кафе в Моде — хорошая идея?", "distractors": [
+          { "tr": "Biraz yorgunum. Dün gece otelde yine on bire kadar çalıştım. Bu iş beni çok yoruyor.", "ru": "Я немного устал. Вчера опять работал в отеле до одиннадцати. Эта работа меня очень выматывает." },
+          { "tr": "Teşekkürler, Olga! Senin kahvelerin hep benden!", "ru": "Спасибо, Ольга! Твой кофе — всегда за мой счёт!" }
+        ]},
+        { "speaker": "a", "tr": "Bence çok iyi, Moda'da kafeler hep dolu. Ama kira çok pahalı. Ne kadar para lazım?", "ru": "По-моему, очень хорошая: в Моде кафе всегда полные. Но аренда очень дорогая. Сколько нужно денег?", "distractors": [
+          { "tr": "Markus, bugün derste çok sessizdin. Bir şey mi var?", "ru": "Маркус, ты сегодня на занятии был очень тихий. Что-то случилось?" },
+          { "tr": "Çok sevinirim! İnşallah her şey istediğin gibi olur.", "ru": "Буду очень рада! Дай бог, всё будет так, как ты хочешь." }
+        ]},
+        { "speaker": "b", "tr": "Çok! Üç yıldır para biriktiriyorum. Eğer bir yıl daha biriktirirsem, yeterli olacak.", "ru": "Много! Я уже три года коплю деньги. Если накоплю ещё год, будет достаточно.", "distractors": [
+          { "tr": "Biraz yorgunum. Dün gece otelde yine on bire kadar çalıştım. Bu iş beni çok yoruyor.", "ru": "Я немного устал. Вчера опять работал в отеле до одиннадцати. Эта работа меня очень выматывает." },
+          { "tr": "Teşekkürler, Olga! Senin kahvelerin hep benden!", "ru": "Спасибо, Ольга! Твой кофе — всегда за мой счёт!" }
+        ]},
+        { "speaker": "a", "tr": "Bir ortak bulursan daha kolay olur. Bir de belgeler için bir danışmana sorman lazım.", "ru": "Если найдёшь партнёра, будет легче. И ещё насчёт документов тебе нужно спросить консультанта.", "distractors": [
+          { "tr": "Markus, bugün derste çok sessizdin. Bir şey mi var?", "ru": "Маркус, ты сегодня на занятии был очень тихий. Что-то случилось?" },
+          { "tr": "Çok sevinirim! İnşallah her şey istediğin gibi olur.", "ru": "Буду очень рада! Дай бог, всё будет так, как ты хочешь." }
+        ]},
+        { "speaker": "b", "tr": "Haklısın. Kafeyi açtığım gün ilk müşterim sen olacaksın, söz!", "ru": "Ты права. В день, когда я открою кафе, моим первым клиентом будешь ты, обещаю!", "distractors": [
+          { "tr": "Biraz yorgunum. Dün gece otelde yine on bire kadar çalıştım. Bu iş beni çok yoruyor.", "ru": "Я немного устал. Вчера опять работал в отеле до одиннадцати. Эта работа меня очень выматывает." },
+          { "tr": "Teşekkürler, Olga! Senin kahvelerin hep benden!", "ru": "Спасибо, Ольга! Твой кофе — всегда за мой счёт!" }
+        ]},
+        { "speaker": "a", "tr": "Çok sevinirim! İnşallah her şey istediğin gibi olur.", "ru": "Буду очень рада! Дай бог, всё будет так, как ты хочешь.", "distractors": [
+          { "tr": "Markus, bugün derste çok sessizdin. Bir şey mi var?", "ru": "Маркус, ты сегодня на занятии был очень тихий. Что-то случилось?" },
+          { "tr": "Anlıyorum. Otelde çalışmaktan memnun değil misin?", "ru": "Понимаю. Ты недоволен работой в отеле?" }
+        ]},
+        { "speaker": "b", "tr": "Teşekkürler, Olga! Senin kahvelerin hep benden!", "ru": "Спасибо, Ольга! Твой кофе — всегда за мой счёт!", "distractors": [
+          { "tr": "Biraz yorgunum. Dün gece otelde yine on bire kadar çalıştım. Bu iş beni çok yoruyor.", "ru": "Я немного устал. Вчера опять работал в отеле до одиннадцати. Эта работа меня очень выматывает." },
+          { "tr": "Mutfağı seviyorum, ama hep başkasının menüsünü pişiriyorum. Aslında kendi kafemi açmak istiyorum. Sence bu çılgınca mı?", "ru": "Кухню я люблю, но всё время готовлю по чужому меню. На самом деле я хочу открыть своё кафе. Думаешь, это безумие?" }
+        ]}
+      ]
+    },
+    {
+      "id": "rabota-anya-povyshenie",
+      "title": "Аня: повышение в банке",
+      "level": "B1",
+      "speakers": { "a": "Ольга", "b": "Аня" },
+      "turns": [
+        { "speaker": "a", "tr": "Anya, merhaba! Görüntü geldi mi? Ben seni görüyorum!", "ru": "Аня, привет! Изображение есть? Я тебя вижу!", "distractors": [
+          { "tr": "İstiyorum tabii. Eğer terfi alırsam, daha büyük projeler yönetebilirim. Ama önce Türkçemi geliştirmem lazım.", "ru": "Конечно, хочу. Если меня повысят, я смогу руководить более крупными проектами. Но сначала мне надо подтянуть турецкий." },
+          { "tr": "Anlaştık! Terfi alan kişi ısmarlar! Annem duydu mu?", "ru": "Договорились! Кого повысили, тот и угощает! Мама уже знает?" }
+        ]},
+        { "speaker": "b", "tr": "Merhaba! Evet, ben de seni görüyorum. Sana büyük bir haberim var!", "ru": "Привет! Да, я тоже тебя вижу. У меня для тебя большая новость!", "distractors": [
+          { "tr": "Senin Türkçen zaten çok iyi! Temmuzda Bodrum'da bunu kutlayalım mı? Ben ısmarlarım!", "ru": "Твой турецкий и так очень хороший! Давай отпразднуем это в июле в Бодруме? Я угощаю!" },
+          { "tr": "Evet, ilk ona söyledim. Hemen bütün komşulara anlattı!", "ru": "Да, ей я сказала первой. Она тут же рассказала всем соседям!" }
+        ]},
+        { "speaker": "a", "tr": "Söyle, söyle! Çok merak ettim.", "ru": "Говори, говори! Мне очень любопытно.", "distractors": [
+          { "tr": "Anya, merhaba! Görüntü geldi mi? Ben seni görüyorum!", "ru": "Аня, привет! Изображение есть? Я тебя вижу!" },
+          { "tr": "Anlaştık! Terfi alan kişi ısmarlar! Annem duydu mu?", "ru": "Договорились! Кого повысили, тот и угощает! Мама уже знает?" }
+        ]},
+        { "speaker": "b", "tr": "Terfi aldım! Artık kredi bölümünde takım lideriyim.", "ru": "Меня повысили! Теперь я руководитель группы в кредитном отделе.", "distractors": [
+          { "tr": "Merhaba! Evet, ben de seni görüyorum. Sana büyük bir haberim var!", "ru": "Привет! Да, я тоже тебя вижу. У меня для тебя большая новость!" },
+          { "tr": "Evet, ilk ona söyledim. Hemen bütün komşulara anlattı!", "ru": "Да, ей я сказала первой. Она тут же рассказала всем соседям!" }
+        ]},
+        { "speaker": "a", "tr": "Vay, tebrikler! Çok sevindim! Ne zamandan beri bunu bekliyordun?", "ru": "Ого, поздравляю! Я так рада! Сколько ты этого ждала?", "distractors": [
+          { "tr": "Anya, merhaba! Görüntü geldi mi? Ben seni görüyorum!", "ru": "Аня, привет! Изображение есть? Я тебя вижу!" },
+          { "tr": "Anlaştık! Terfi alan kişi ısmarlar! Annem duydu mu?", "ru": "Договорились! Кого повысили, тот и угощает! Мама уже знает?" }
+        ]},
+        { "speaker": "b", "tr": "Bir yıldır. Müdürüm geçen hafta beni odasına çağırdı ve \"Bu pozisyon sizin\" dedi.", "ru": "Год. На прошлой неделе начальник вызвал меня к себе в кабинет и сказал: «Эта должность ваша».", "distractors": [
+          { "tr": "Merhaba! Evet, ben de seni görüyorum. Sana büyük bir haberim var!", "ru": "Привет! Да, я тоже тебя вижу. У меня для тебя большая новость!" },
+          { "tr": "Evet, ilk ona söyledim. Hemen bütün komşulara anlattı!", "ru": "Да, ей я сказала первой. Она тут же рассказала всем соседям!" }
+        ]},
+        { "speaker": "a", "tr": "Harika! Maaşın da arttı mı?", "ru": "Здорово! А зарплата тоже выросла?", "distractors": [
+          { "tr": "Anya, merhaba! Görüntü geldi mi? Ben seni görüyorum!", "ru": "Аня, привет! Изображение есть? Я тебя вижу!" },
+          { "tr": "Anlaştık! Terfi alan kişi ısmarlar! Annem duydu mu?", "ru": "Договорились! Кого повысили, тот и угощает! Мама уже знает?" }
+        ]},
+        { "speaker": "b", "tr": "Evet, yüzde yirmi zam aldım. Ama sorumluluğum da arttı: beş kişilik bir ekibi yöneteceğim. Senin işin nasıl gidiyor?", "ru": "Да, мне подняли зарплату на двадцать процентов. Но и ответственности стало больше: я буду руководить командой из пяти человек. А как у тебя дела на работе?", "distractors": [
+          { "tr": "Merhaba! Evet, ben de seni görüyorum. Sana büyük bir haberim var!", "ru": "Привет! Да, я тоже тебя вижу. У меня для тебя большая новость!" },
+          { "tr": "Evet, ilk ona söyledim. Hemen bütün komşulara anlattı!", "ru": "Да, ей я сказала первой. Она тут же рассказала всем соседям!" }
+        ]},
+        { "speaker": "a", "tr": "İyi gidiyor. Bu ay çok yoğunum, Alman müşteriler için yeni bir kampanya hazırlıyoruz.", "ru": "Хорошо. В этом месяце я очень загружена: готовим новую кампанию для немецких клиентов.", "distractors": [
+          { "tr": "Anya, merhaba! Görüntü geldi mi? Ben seni görüyorum!", "ru": "Аня, привет! Изображение есть? Я тебя вижу!" },
+          { "tr": "Anlaştık! Terfi alan kişi ısmarlar! Annem duydu mu?", "ru": "Договорились! Кого повысили, тот и угощает! Мама уже знает?" }
+        ]},
+        { "speaker": "b", "tr": "Sen de terfi almak istemiyor musun?", "ru": "А ты сама не хочешь повышения?", "distractors": [
+          { "tr": "Merhaba! Evet, ben de seni görüyorum. Sana büyük bir haberim var!", "ru": "Привет! Да, я тоже тебя вижу. У меня для тебя большая новость!" },
+          { "tr": "Evet, ilk ona söyledim. Hemen bütün komşulara anlattı!", "ru": "Да, ей я сказала первой. Она тут же рассказала всем соседям!" }
+        ]},
+        { "speaker": "a", "tr": "İstiyorum tabii. Eğer terfi alırsam, daha büyük projeler yönetebilirim. Ama önce Türkçemi geliştirmem lazım.", "ru": "Конечно, хочу. Если меня повысят, я смогу руководить более крупными проектами. Но сначала мне надо подтянуть турецкий.", "distractors": [
+          { "tr": "Anya, merhaba! Görüntü geldi mi? Ben seni görüyorum!", "ru": "Аня, привет! Изображение есть? Я тебя вижу!" },
+          { "tr": "Anlaştık! Terfi alan kişi ısmarlar! Annem duydu mu?", "ru": "Договорились! Кого повысили, тот и угощает! Мама уже знает?" }
+        ]},
+        { "speaker": "b", "tr": "Senin Türkçen zaten çok iyi! Temmuzda Bodrum'da bunu kutlayalım mı? Ben ısmarlarım!", "ru": "Твой турецкий и так очень хороший! Давай отпразднуем это в июле в Бодруме? Я угощаю!", "distractors": [
+          { "tr": "Merhaba! Evet, ben de seni görüyorum. Sana büyük bir haberim var!", "ru": "Привет! Да, я тоже тебя вижу. У меня для тебя большая новость!" },
+          { "tr": "Evet, ilk ona söyledim. Hemen bütün komşulara anlattı!", "ru": "Да, ей я сказала первой. Она тут же рассказала всем соседям!" }
+        ]},
+        { "speaker": "a", "tr": "Anlaştık! Terfi alan kişi ısmarlar! Annem duydu mu?", "ru": "Договорились! Кого повысили, тот и угощает! Мама уже знает?", "distractors": [
+          { "tr": "Anya, merhaba! Görüntü geldi mi? Ben seni görüyorum!", "ru": "Аня, привет! Изображение есть? Я тебя вижу!" },
+          { "tr": "Söyle, söyle! Çok merak ettim.", "ru": "Говори, говори! Мне очень любопытно." }
+        ]},
+        { "speaker": "b", "tr": "Evet, ilk ona söyledim. Hemen bütün komşulara anlattı!", "ru": "Да, ей я сказала первой. Она тут же рассказала всем соседям!", "distractors": [
+          { "tr": "Merhaba! Evet, ben de seni görüyorum. Sana büyük bir haberim var!", "ru": "Привет! Да, я тоже тебя вижу. У меня для тебя большая новость!" },
+          { "tr": "Terfi aldım! Artık kredi bölümünde takım lideriyim.", "ru": "Меня повысили! Теперь я руководитель группы в кредитном отделе." }
+        ]}
+      ]
+    },
+    {
+      "id": "rabota-sobesedovanie",
+      "title": "Собеседование",
+      "level": "B1",
+      "speakers": { "a": "Ольга", "b": "Ырмак" },
+      "turns": [
+        { "speaker": "a", "tr": "Hoş geldiniz, Irmak Hanım. Ben Olga, pazarlama bölümünde çalışıyorum. Metin Bey birazdan gelecek.", "ru": "Добро пожаловать, Ырмак-ханым. Я Ольга, работаю в отделе маркетинга. Метин-бей скоро подойдёт.", "distractors": [
+          { "tr": "Dürüst bir cevap, teşekkürler. Sizin bize sormak istediğiniz bir şey var mı?", "ru": "Честный ответ, спасибо. Есть ли что-то, о чём вы хотели бы спросить нас?" },
+          { "tr": "Mesai dokuzdan altıya kadar. Seçilen aday ay başında işe başlayacak. Size bir hafta içinde haber vereceğiz.", "ru": "Рабочий день с девяти до шести. Выбранный кандидат выйдет на работу в начале месяца. Мы сообщим вам в течение недели." }
+        ]},
+        { "speaker": "b", "tr": "Hoş bulduk, memnun oldum. Biraz heyecanlıyım, kusura bakmayın.", "ru": "Спасибо, очень приятно. Я немного волнуюсь, извините.", "distractors": [
+          { "tr": "Evet. Çalışma saatleri nasıl? İşe ne zaman başlamam gerekiyor?", "ru": "Да. Какой график работы? Когда нужно будет выйти на работу?" },
+          { "tr": "Çok teşekkür ederim. Umarım tekrar görüşürüz!", "ru": "Большое спасибо. Надеюсь, ещё увидимся!" }
+        ]},
+        { "speaker": "a", "tr": "Hiç önemli değil, rahat olun. Önce kendinizden biraz bahseder misiniz?", "ru": "Ничего страшного, не волнуйтесь. Для начала расскажите, пожалуйста, немного о себе.", "distractors": [
+          { "tr": "Hoş geldiniz, Irmak Hanım. Ben Olga, pazarlama bölümünde çalışıyorum. Metin Bey birazdan gelecek.", "ru": "Добро пожаловать, Ырмак-ханым. Я Ольга, работаю в отделе маркетинга. Метин-бей скоро подойдёт." },
+          { "tr": "Mesai dokuzdan altıya kadar. Seçilen aday ay başında işe başlayacak. Size bir hafta içinde haber vereceğiz.", "ru": "Рабочий день с девяти до шести. Выбранный кандидат выйдет на работу в начале месяца. Мы сообщим вам в течение недели." }
+        ]},
+        { "speaker": "b", "tr": "Tabii. Marmara Üniversitesi'nde işletme okudum. Daha önce bir turizm şirketinde iki yıl çalıştım.", "ru": "Конечно. Я училась на менеджменте в университете Мармара. До этого два года работала в туристической компании.", "distractors": [
+          { "tr": "Hoş bulduk, memnun oldum. Biraz heyecanlıyım, kusura bakmayın.", "ru": "Спасибо, очень приятно. Я немного волнуюсь, извините." },
+          { "tr": "Çok teşekkür ederim. Umarım tekrar görüşürüz!", "ru": "Большое спасибо. Надеюсь, ещё увидимся!" }
+        ]},
+        { "speaker": "a", "tr": "O şirkette ne iş yapıyordunuz?", "ru": "Чем вы занимались в той компании?", "distractors": [
+          { "tr": "Hoş geldiniz, Irmak Hanım. Ben Olga, pazarlama bölümünde çalışıyorum. Metin Bey birazdan gelecek.", "ru": "Добро пожаловать, Ырмак-ханым. Я Ольга, работаю в отделе маркетинга. Метин-бей скоро подойдёт." },
+          { "tr": "Mesai dokuzdan altıya kadar. Seçilen aday ay başında işe başlayacak. Size bir hafta içinde haber vereceğiz.", "ru": "Рабочий день с девяти до шести. Выбранный кандидат выйдет на работу в начале месяца. Мы сообщим вам в течение недели." }
+        ]},
+        { "speaker": "b", "tr": "Sosyal medya hesaplarını yönetiyordum ve müşterilerle yazışıyordum. Biraz da Rusça biliyorum.", "ru": "Вела аккаунты в соцсетях и переписывалась с клиентами. А ещё я немного знаю русский.", "distractors": [
+          { "tr": "Hoş bulduk, memnun oldum. Biraz heyecanlıyım, kusura bakmayın.", "ru": "Спасибо, очень приятно. Я немного волнуюсь, извините." },
+          { "tr": "Çok teşekkür ederim. Umarım tekrar görüşürüz!", "ru": "Большое спасибо. Надеюсь, ещё увидимся!" }
+        ]},
+        { "speaker": "a", "tr": "Ne güzel! Müşterilerimizin çoğu Rus. Neden işinizi değiştirmek istiyorsunuz?", "ru": "Как хорошо! Большинство наших клиентов — русские. Почему вы хотите сменить работу?", "distractors": [
+          { "tr": "Hoş geldiniz, Irmak Hanım. Ben Olga, pazarlama bölümünde çalışıyorum. Metin Bey birazdan gelecek.", "ru": "Добро пожаловать, Ырмак-ханым. Я Ольга, работаю в отделе маркетинга. Метин-бей скоро подойдёт." },
+          { "tr": "Mesai dokuzdan altıya kadar. Seçilen aday ay başında işe başlayacak. Size bir hafta içinde haber vereceğiz.", "ru": "Рабочий день с девяти до шести. Выбранный кандидат выйдет на работу в начале месяца. Мы сообщим вам в течение недели." }
+        ]},
+        { "speaker": "b", "tr": "Orada kendimi geliştiremiyordum. Daha büyük, uluslararası bir şirkette çalışmak istiyorum. Sizce bu pozisyonda en önemli şey ne?", "ru": "Там я не могла развиваться. Хочу работать в более крупной, международной компании. Как вы думаете, что на этой должности самое важное?", "distractors": [
+          { "tr": "Hoş bulduk, memnun oldum. Biraz heyecanlıyım, kusura bakmayın.", "ru": "Спасибо, очень приятно. Я немного волнуюсь, извините." },
+          { "tr": "Çok teşekkür ederim. Umarım tekrar görüşürüz!", "ru": "Большое спасибо. Надеюсь, ещё увидимся!" }
+        ]},
+        { "speaker": "a", "tr": "Bence takım çalışması. Peki, güçlü ve zayıf yönleriniz neler?", "ru": "По-моему, работа в команде. А какие у вас сильные и слабые стороны?", "distractors": [
+          { "tr": "Hoş geldiniz, Irmak Hanım. Ben Olga, pazarlama bölümünde çalışıyorum. Metin Bey birazdan gelecek.", "ru": "Добро пожаловать, Ырмак-ханым. Я Ольга, работаю в отделе маркетинга. Метин-бей скоро подойдёт." },
+          { "tr": "Mesai dokuzdan altıya kadar. Seçilen aday ay başında işe başlayacak. Size bir hafta içinde haber vereceğiz.", "ru": "Рабочий день с девяти до шести. Выбранный кандидат выйдет на работу в начале месяца. Мы сообщим вам в течение недели." }
+        ]},
+        { "speaker": "b", "tr": "Düzenli ve dakik biriyim. Zayıf yönüm: bazen her şeyi kendim yapmak istiyorum, yardım istemekte zorlanıyorum.", "ru": "Я организованный и пунктуальный человек. Слабая сторона: иногда хочу сделать всё сама, мне трудно просить о помощи.", "distractors": [
+          { "tr": "Hoş bulduk, memnun oldum. Biraz heyecanlıyım, kusura bakmayın.", "ru": "Спасибо, очень приятно. Я немного волнуюсь, извините." },
+          { "tr": "Çok teşekkür ederim. Umarım tekrar görüşürüz!", "ru": "Большое спасибо. Надеюсь, ещё увидимся!" }
+        ]},
+        { "speaker": "a", "tr": "Dürüst bir cevap, teşekkürler. Sizin bize sormak istediğiniz bir şey var mı?", "ru": "Честный ответ, спасибо. Есть ли что-то, о чём вы хотели бы спросить нас?", "distractors": [
+          { "tr": "Hoş geldiniz, Irmak Hanım. Ben Olga, pazarlama bölümünde çalışıyorum. Metin Bey birazdan gelecek.", "ru": "Добро пожаловать, Ырмак-ханым. Я Ольга, работаю в отделе маркетинга. Метин-бей скоро подойдёт." },
+          { "tr": "Mesai dokuzdan altıya kadar. Seçilen aday ay başında işe başlayacak. Size bir hafta içinde haber vereceğiz.", "ru": "Рабочий день с девяти до шести. Выбранный кандидат выйдет на работу в начале месяца. Мы сообщим вам в течение недели." }
+        ]},
+        { "speaker": "b", "tr": "Evet. Çalışma saatleri nasıl? İşe ne zaman başlamam gerekiyor?", "ru": "Да. Какой график работы? Когда нужно будет выйти на работу?", "distractors": [
+          { "tr": "Hoş bulduk, memnun oldum. Biraz heyecanlıyım, kusura bakmayın.", "ru": "Спасибо, очень приятно. Я немного волнуюсь, извините." },
+          { "tr": "Çok teşekkür ederim. Umarım tekrar görüşürüz!", "ru": "Большое спасибо. Надеюсь, ещё увидимся!" }
+        ]},
+        { "speaker": "a", "tr": "Mesai dokuzdan altıya kadar. Seçilen aday ay başında işe başlayacak. Size bir hafta içinde haber vereceğiz.", "ru": "Рабочий день с девяти до шести. Выбранный кандидат выйдет на работу в начале месяца. Мы сообщим вам в течение недели.", "distractors": [
+          { "tr": "Hoş geldiniz, Irmak Hanım. Ben Olga, pazarlama bölümünde çalışıyorum. Metin Bey birazdan gelecek.", "ru": "Добро пожаловать, Ырмак-ханым. Я Ольга, работаю в отделе маркетинга. Метин-бей скоро подойдёт." },
+          { "tr": "Hiç önemli değil, rahat olun. Önce kendinizden biraz bahseder misiniz?", "ru": "Ничего страшного, не волнуйтесь. Для начала расскажите, пожалуйста, немного о себе." }
+        ]},
+        { "speaker": "b", "tr": "Çok teşekkür ederim. Umarım tekrar görüşürüz!", "ru": "Большое спасибо. Надеюсь, ещё увидимся!", "distractors": [
+          { "tr": "Hoş bulduk, memnun oldum. Biraz heyecanlıyım, kusura bakmayın.", "ru": "Спасибо, очень приятно. Я немного волнуюсь, извините." },
+          { "tr": "Tabii. Marmara Üniversitesi'nde işletme okudum. Daha önce bir turizm şirketinde iki yıl çalıştım.", "ru": "Конечно. Я училась на менеджменте в университете Мармара. До этого два года работала в туристической компании." }
+        ]}
+      ]
+    },
+    {
+      "id": "rabota-tuba-dedlayn",
+      "title": "Туба: горит дедлайн",
+      "level": "B1",
+      "speakers": { "a": "Ольга", "b": "Туба" },
+      "turns": [
+        { "speaker": "a", "tr": "Tuba, sana kahve getirdim. Bugün çok yorgun görünüyorsun.", "ru": "Туба, я принесла тебе кофе. Ты сегодня выглядишь очень уставшей.", "distractors": [
+          { "tr": "Sorun değil, yarın geç çıkabilirim. Neyse ki perşembe günleri spora gitmiyorum.", "ru": "Не проблема, завтра могу уйти попозже. Хорошо, что по четвергам я не хожу в спортзал." },
+          { "tr": "Ne demek! Sen de benim raporlarımı hep kontrol ediyorsun. Hadi, başlayalım!", "ru": "Да что ты! Ты ведь тоже всегда проверяешь мои отчёты. Давай, начнём!" }
+        ]},
+        { "speaker": "b", "tr": "Sağ ol, canım! Dün gece yarısına kadar çalıştım. Alman müşterinin raporu cuma gününe yetişmeli.", "ru": "Спасибо, дорогая! Вчера работала до полуночи. Отчёт для немецкого клиента должен быть готов к пятнице.", "distractors": [
+          { "tr": "Hemen gönderiyorum. Fazla mesai yapmamız gerekebilir, sorun olur mu?", "ru": "Сейчас отправлю. Возможно, нам придётся поработать сверхурочно, это не проблема?" },
+          { "tr": "Allah razı olsun, Olga! Sen olmasan bu işi bitiremezdim.", "ru": "Дай бог тебе здоровья, Ольга! Без тебя я бы эту работу не закончила." }
+        ]},
+        { "speaker": "a", "tr": "Cuma mı? Teslim tarihi gelecek hafta değil miydi?", "ru": "К пятнице? Разве срок сдачи был не на следующей неделе?", "distractors": [
+          { "tr": "Tuba, sana kahve getirdim. Bugün çok yorgun görünüyorsun.", "ru": "Туба, я принесла тебе кофе. Ты сегодня выглядишь очень уставшей." },
+          { "tr": "Ne demek! Sen de benim raporlarımı hep kontrol ediyorsun. Hadi, başlayalım!", "ru": "Да что ты! Ты ведь тоже всегда проверяешь мои отчёты. Давай, начнём!" }
+        ]},
+        { "speaker": "b", "tr": "Öyleydi, ama müşteri tarihi öne aldı. Metin Bey bu sabah söyledi.", "ru": "Был, но клиент перенёс срок на раньше. Метин-бей сказал сегодня утром.", "distractors": [
+          { "tr": "Sağ ol, canım! Dün gece yarısına kadar çalıştım. Alman müşterinin raporu cuma gününe yetişmeli.", "ru": "Спасибо, дорогая! Вчера работала до полуночи. Отчёт для немецкого клиента должен быть готов к пятнице." },
+          { "tr": "Allah razı olsun, Olga! Sen olmasan bu işi bitiremezdim.", "ru": "Дай бог тебе здоровья, Ольга! Без тебя я бы эту работу не закончила." }
+        ]},
+        { "speaker": "a", "tr": "Allah'ım! Bugün çarşamba. Bu iş iki günde nasıl biter?", "ru": "Боже мой! Сегодня среда. Как эту работу закончить за два дня?", "distractors": [
+          { "tr": "Tuba, sana kahve getirdim. Bugün çok yorgun görünüyorsun.", "ru": "Туба, я принесла тебе кофе. Ты сегодня выглядишь очень уставшей." },
+          { "tr": "Ne demek! Sen de benim raporlarımı hep kontrol ediyorsun. Hadi, başlayalım!", "ru": "Да что ты! Ты ведь тоже всегда проверяешь мои отчёты. Давай, начнём!" }
+        ]},
+        { "speaker": "b", "tr": "Bilmiyorum. İşler o kadar çok ki yetiştiremiyorum. Bir de Özge'ye yeni sistemi öğretmem gerekiyor.", "ru": "Не знаю. Дел так много, что я не успеваю. А ещё мне надо учить Озге новой системе.", "distractors": [
+          { "tr": "Sağ ol, canım! Dün gece yarısına kadar çalıştım. Alman müşterinin raporu cuma gününe yetişmeli.", "ru": "Спасибо, дорогая! Вчера работала до полуночи. Отчёт для немецкого клиента должен быть готов к пятнице." },
+          { "tr": "Allah razı olsun, Olga! Sen olmasan bu işi bitiremezdim.", "ru": "Дай бог тебе здоровья, Ольга! Без тебя я бы эту работу не закончила." }
+        ]},
+        { "speaker": "a", "tr": "Sana yardım edeyim mi? Elimdeki kampanya bitti, bu hafta biraz boşum.", "ru": "Давай я тебе помогу? Моя кампания закончилась, на этой неделе я немного свободна.", "distractors": [
+          { "tr": "Tuba, sana kahve getirdim. Bugün çok yorgun görünüyorsun.", "ru": "Туба, я принесла тебе кофе. Ты сегодня выглядишь очень уставшей." },
+          { "tr": "Ne demek! Sen de benim raporlarımı hep kontrol ediyorsun. Hadi, başlayalım!", "ru": "Да что ты! Ты ведь тоже всегда проверяешь мои отчёты. Давай, начнём!" }
+        ]},
+        { "speaker": "b", "tr": "Gerçekten mi? Çok iyi olur! Rakamları ben hazırlarım, sunumu sen yapar mısın?", "ru": "Правда? Это было бы здорово! Цифры подготовлю я, а презентацию сделаешь ты?", "distractors": [
+          { "tr": "Sağ ol, canım! Dün gece yarısına kadar çalıştım. Alman müşterinin raporu cuma gününe yetişmeli.", "ru": "Спасибо, дорогая! Вчера работала до полуночи. Отчёт для немецкого клиента должен быть готов к пятнице." },
+          { "tr": "Allah razı olsun, Olga! Sen olmasan bu işi bitiremezdim.", "ru": "Дай бог тебе здоровья, Ольга! Без тебя я бы эту работу не закончила." }
+        ]},
+        { "speaker": "a", "tr": "Tabii. Müşterinin gönderdiği dosyaları bana yollar mısın?", "ru": "Конечно. Перешлёшь мне файлы, которые прислал клиент?", "distractors": [
+          { "tr": "Tuba, sana kahve getirdim. Bugün çok yorgun görünüyorsun.", "ru": "Туба, я принесла тебе кофе. Ты сегодня выглядишь очень уставшей." },
+          { "tr": "Ne demek! Sen de benim raporlarımı hep kontrol ediyorsun. Hadi, başlayalım!", "ru": "Да что ты! Ты ведь тоже всегда проверяешь мои отчёты. Давай, начнём!" }
+        ]},
+        { "speaker": "b", "tr": "Hemen gönderiyorum. Fazla mesai yapmamız gerekebilir, sorun olur mu?", "ru": "Сейчас отправлю. Возможно, нам придётся поработать сверхурочно, это не проблема?", "distractors": [
+          { "tr": "Sağ ol, canım! Dün gece yarısına kadar çalıştım. Alman müşterinin raporu cuma gününe yetişmeli.", "ru": "Спасибо, дорогая! Вчера работала до полуночи. Отчёт для немецкого клиента должен быть готов к пятнице." },
+          { "tr": "Allah razı olsun, Olga! Sen olmasan bu işi bitiremezdim.", "ru": "Дай бог тебе здоровья, Ольга! Без тебя я бы эту работу не закончила." }
+        ]},
+        { "speaker": "a", "tr": "Sorun değil, yarın geç çıkabilirim. Neyse ki perşembe günleri spora gitmiyorum.", "ru": "Не проблема, завтра могу уйти попозже. Хорошо, что по четвергам я не хожу в спортзал.", "distractors": [
+          { "tr": "Tuba, sana kahve getirdim. Bugün çok yorgun görünüyorsun.", "ru": "Туба, я принесла тебе кофе. Ты сегодня выглядишь очень уставшей." },
+          { "tr": "Ne demek! Sen de benim raporlarımı hep kontrol ediyorsun. Hadi, başlayalım!", "ru": "Да что ты! Ты ведь тоже всегда проверяешь мои отчёты. Давай, начнём!" }
+        ]},
+        { "speaker": "b", "tr": "Allah razı olsun, Olga! Sen olmasan bu işi bitiremezdim.", "ru": "Дай бог тебе здоровья, Ольга! Без тебя я бы эту работу не закончила.", "distractors": [
+          { "tr": "Sağ ol, canım! Dün gece yarısına kadar çalıştım. Alman müşterinin raporu cuma gününe yetişmeli.", "ru": "Спасибо, дорогая! Вчера работала до полуночи. Отчёт для немецкого клиента должен быть готов к пятнице." },
+          { "tr": "Öyleydi, ama müşteri tarihi öne aldı. Metin Bey bu sabah söyledi.", "ru": "Был, но клиент перенёс срок на раньше. Метин-бей сказал сегодня утром." }
+        ]},
+        { "speaker": "a", "tr": "Ne demek! Sen de benim raporlarımı hep kontrol ediyorsun. Hadi, başlayalım!", "ru": "Да что ты! Ты ведь тоже всегда проверяешь мои отчёты. Давай, начнём!", "distractors": [
+          { "tr": "Tuba, sana kahve getirdim. Bugün çok yorgun görünüyorsun.", "ru": "Туба, я принесла тебе кофе. Ты сегодня выглядишь очень уставшей." },
+          { "tr": "Cuma mı? Teslim tarihi gelecek hafta değil miydi?", "ru": "К пятнице? Разве срок сдачи был не на следующей неделе?" }
+        ]}
+      ]
+    },
+    {
+      "id": "rabota-leyla-kariera",
+      "title": "Лейла: менять ли работу",
+      "level": "B1",
+      "speakers": { "a": "Ольга", "b": "Лейла" },
+      "turns": [
+        { "speaker": "a", "tr": "Leyla, bugün işte ne oldu? Mesajında çok sinirli görünüyordun.", "ru": "Лейла, что сегодня случилось на работе? По твоему сообщению казалось, что ты очень злишься.", "distractors": [
+          { "tr": "Bir gün kendi ekibimi yönetmek istiyorum. Belki kendi ajansımı da açarım.", "ru": "Когда-нибудь я хочу руководить своей командой. Может быть, и своё агентство открою." },
+          { "tr": "Amin! Hadi, çaylar soğuyor.", "ru": "Аминь! Давай, чай остывает." }
+        ]},
+        { "speaker": "b", "tr": "Sorma! Yeni müdürümüz her şeyi değiştiriyor ve beni hiç dinlemiyor.", "ru": "Не спрашивай! Наш новый начальник всё меняет и совсем меня не слушает.", "distractors": [
+          { "tr": "Haklısın. Eğer iyi bir iş bulursam, hiç düşünmeden ayrılırım! Sen beş yıl sonra kendini nerede görüyorsun?", "ru": "Ты права. Если найду хорошую работу, уйду не раздумывая! А ты где видишь себя через пять лет?" },
+          { "tr": "Çok güzel hedefler! İnşallah hepsi olur.", "ru": "Прекрасные цели! Дай бог, всё сбудется." }
+        ]},
+        { "speaker": "a", "tr": "Çok kötü. Onunla konuşmayı denedin mi?", "ru": "Это очень плохо. Ты пробовала с ним поговорить?", "distractors": [
+          { "tr": "Leyla, bugün işte ne oldu? Mesajında çok sinirli görünüyordun.", "ru": "Лейла, что сегодня случилось на работе? По твоему сообщению казалось, что ты очень злишься." },
+          { "tr": "Amin! Hadi, çaylar soğuyor.", "ru": "Аминь! Давай, чай остывает." }
+        ]},
+        { "speaker": "b", "tr": "Denedim, ama \"Benim dediğim olacak\" dedi. Bazen işten ayrılmayı düşünüyorum. Sen hiç iş değiştirdin mi?", "ru": "Пробовала, но он сказал: «Будет так, как я сказал». Иногда я думаю уйти с работы. А ты когда-нибудь меняла работу?", "distractors": [
+          { "tr": "Sorma! Yeni müdürümüz her şeyi değiştiriyor ve beni hiç dinlemiyor.", "ru": "Не спрашивай! Наш новый начальник всё меняет и совсем меня не слушает." },
+          { "tr": "Çok güzel hedefler! İnşallah hepsi olur.", "ru": "Прекрасные цели! Дай бог, всё сбудется." }
+        ]},
+        { "speaker": "a", "tr": "Evet. Moskova'da çalıştığım ajansta da zor bir müdürüm vardı. İstanbul'dan iş teklifi gelince hemen kabul ettim.", "ru": "Да. В агентстве, где я работала в Москве, у меня тоже был трудный начальник. Когда пришло предложение о работе из Стамбула, я сразу согласилась.", "distractors": [
+          { "tr": "Leyla, bugün işte ne oldu? Mesajında çok sinirli görünüyordun.", "ru": "Лейла, что сегодня случилось на работе? По твоему сообщению казалось, что ты очень злишься." },
+          { "tr": "Amin! Hadi, çaylar soğuyor.", "ru": "Аминь! Давай, чай остывает." }
+        ]},
+        { "speaker": "b", "tr": "Cesur bir karar! Pişman olmadın mı?", "ru": "Смелое решение! Ты не пожалела?", "distractors": [
+          { "tr": "Sorma! Yeni müdürümüz her şeyi değiştiriyor ve beni hiç dinlemiyor.", "ru": "Не спрашивай! Наш новый начальник всё меняет и совсем меня не слушает." },
+          { "tr": "Çok güzel hedefler! İnşallah hepsi olur.", "ru": "Прекрасные цели! Дай бог, всё сбудется." }
+        ]},
+        { "speaker": "a", "tr": "Hiç olmadım. Çalıştığım şirketi çok seviyorum, ekibim harika. Tabii ilk aylar kolay değildi.", "ru": "Ни разу. Я очень люблю компанию, в которой работаю, команда у меня замечательная. Конечно, первые месяцы были нелёгкими.", "distractors": [
+          { "tr": "Leyla, bugün işte ne oldu? Mesajında çok sinirli görünüyordun.", "ru": "Лейла, что сегодня случилось на работе? По твоему сообщению казалось, что ты очень злишься." },
+          { "tr": "Amin! Hadi, çaylar soğuyor.", "ru": "Аминь! Давай, чай остывает." }
+        ]},
+        { "speaker": "b", "tr": "Ben de değişiklikten korkuyorum. Yeni bir işte her şeye yeniden başlamak zor.", "ru": "Я тоже боюсь перемен. На новой работе трудно начинать всё заново.", "distractors": [
+          { "tr": "Sorma! Yeni müdürümüz her şeyi değiştiriyor ve beni hiç dinlemiyor.", "ru": "Не спрашивай! Наш новый начальник всё меняет и совсем меня не слушает." },
+          { "tr": "Çok güzel hedefler! İnşallah hepsi olur.", "ru": "Прекрасные цели! Дай бог, всё сбудется." }
+        ]},
+        { "speaker": "a", "tr": "Bence önce CV'ni güncelle ve ilanlara bak. Belki daha iyi bir teklif bulursun.", "ru": "По-моему, сначала обнови резюме и посмотри объявления. Может, найдёшь предложение получше.", "distractors": [
+          { "tr": "Leyla, bugün işte ne oldu? Mesajında çok sinirli görünüyordun.", "ru": "Лейла, что сегодня случилось на работе? По твоему сообщению казалось, что ты очень злишься." },
+          { "tr": "Amin! Hadi, çaylar soğuyor.", "ru": "Аминь! Давай, чай остывает." }
+        ]},
+        { "speaker": "b", "tr": "Haklısın. Eğer iyi bir iş bulursam, hiç düşünmeden ayrılırım! Sen beş yıl sonra kendini nerede görüyorsun?", "ru": "Ты права. Если найду хорошую работу, уйду не раздумывая! А ты где видишь себя через пять лет?", "distractors": [
+          { "tr": "Sorma! Yeni müdürümüz her şeyi değiştiriyor ve beni hiç dinlemiyor.", "ru": "Не спрашивай! Наш новый начальник всё меняет и совсем меня не слушает." },
+          { "tr": "Çok güzel hedefler! İnşallah hepsi olur.", "ru": "Прекрасные цели! Дай бог, всё сбудется." }
+        ]},
+        { "speaker": "a", "tr": "Bir gün kendi ekibimi yönetmek istiyorum. Belki kendi ajansımı da açarım.", "ru": "Когда-нибудь я хочу руководить своей командой. Может быть, и своё агентство открою.", "distractors": [
+          { "tr": "Leyla, bugün işte ne oldu? Mesajında çok sinirli görünüyordun.", "ru": "Лейла, что сегодня случилось на работе? По твоему сообщению казалось, что ты очень злишься." },
+          { "tr": "Amin! Hadi, çaylar soğuyor.", "ru": "Аминь! Давай, чай остывает." }
+        ]},
+        { "speaker": "b", "tr": "Çok güzel hedefler! İnşallah hepsi olur.", "ru": "Прекрасные цели! Дай бог, всё сбудется.", "distractors": [
+          { "tr": "Sorma! Yeni müdürümüz her şeyi değiştiriyor ve beni hiç dinlemiyor.", "ru": "Не спрашивай! Наш новый начальник всё меняет и совсем меня не слушает." },
+          { "tr": "Denedim, ama \"Benim dediğim olacak\" dedi. Bazen işten ayrılmayı düşünüyorum. Sen hiç iş değiştirdin mi?", "ru": "Пробовала, но он сказал: «Будет так, как я сказал». Иногда я думаю уйти с работы. А ты когда-нибудь меняла работу?" }
+        ]},
+        { "speaker": "a", "tr": "Amin! Hadi, çaylar soğuyor.", "ru": "Аминь! Давай, чай остывает.", "distractors": [
+          { "tr": "Leyla, bugün işte ne oldu? Mesajında çok sinirli görünüyordun.", "ru": "Лейла, что сегодня случилось на работе? По твоему сообщению казалось, что ты очень злишься." },
+          { "tr": "Çok kötü. Onunla konuşmayı denedin mi?", "ru": "Это очень плохо. Ты пробовала с ним поговорить?" }
+        ]}
+      ]
+    },
+    {
+      "id": "rabota-metin-degerlendirme",
+      "title": "Метин-бей: итоги года",
+      "level": "B1",
+      "speakers": { "a": "Ольга", "b": "Метин" },
+      "turns": [
+        { "speaker": "a", "tr": "Metin Bey, beni çağırmışsınız.", "ru": "Метин-бей, вы меня вызывали?", "distractors": [
+          { "tr": "Zaten Özge Hanım'a yardım ediyorum, bunu severek yaparım.", "ru": "Я и так помогаю Озге-ханым, буду делать это с удовольствием." },
+          { "tr": "Merak etmeyin, cumartesi günleri hâlâ kursa gidiyorum.", "ru": "Не волнуйтесь, по субботам я всё ещё хожу на курсы." }
+        ]},
+        { "speaker": "b", "tr": "Evet, Olga Hanım, oturun lütfen. Yıllık değerlendirme zamanı geldi.", "ru": "Да, Ольга-ханым, садитесь, пожалуйста. Пришло время ежегодной оценки.", "distractors": [
+          { "tr": "Güzel. Bir de Türkçe yazışmalarınızı biraz daha geliştirirseniz, hiçbir engel kalmaz.", "ru": "Хорошо. И если вы ещё немного улучшите свою деловую переписку на турецком, никаких препятствий не останется." },
+          { "tr": "Belli oluyor. Tebrik ederim, Olga Hanım. Böyle devam edin!", "ru": "Это заметно. Поздравляю, Ольга-ханым. Продолжайте в том же духе!" }
+        ]},
+        { "speaker": "a", "tr": "Biraz heyecanlıyım. Bu yıl işimden memnun musunuz?", "ru": "Я немного волнуюсь. Вы довольны моей работой в этом году?", "distractors": [
+          { "tr": "Metin Bey, beni çağırmışsınız.", "ru": "Метин-бей, вы меня вызывали?" },
+          { "tr": "Merak etmeyin, cumartesi günleri hâlâ kursa gidiyorum.", "ru": "Не волнуйтесь, по субботам я всё ещё хожу на курсы." }
+        ]},
+        { "speaker": "b", "tr": "Çok memnunum. Hazırladığınız Rusça kampanya sayesinde satışlar yüzde on beş arttı.", "ru": "Очень доволен. Благодаря русской кампании, которую вы подготовили, продажи выросли на пятнадцать процентов.", "distractors": [
+          { "tr": "Evet, Olga Hanım, oturun lütfen. Yıllık değerlendirme zamanı geldi.", "ru": "Да, Ольга-ханым, садитесь, пожалуйста. Пришло время ежегодной оценки." },
+          { "tr": "Belli oluyor. Tebrik ederim, Olga Hanım. Böyle devam edin!", "ru": "Это заметно. Поздравляю, Ольга-ханым. Продолжайте в том же духе!" }
+        ]},
+        { "speaker": "a", "tr": "Çok sevindim! Ekip olarak çok çalıştık. Tuba ve Özge Hanım da çok yardım etti.", "ru": "Я очень рада! Мы много работали всей командой. Туба и Озге-ханым тоже очень помогли.", "distractors": [
+          { "tr": "Metin Bey, beni çağırmışsınız.", "ru": "Метин-бей, вы меня вызывали?" },
+          { "tr": "Merak etmeyin, cumartesi günleri hâlâ kursa gidiyorum.", "ru": "Не волнуйтесь, по субботам я всё ещё хожу на курсы." }
+        ]},
+        { "speaker": "b", "tr": "Biliyorum. Bu yüzden maaşınıza zam yapılacak. Ocak ayından itibaren geçerli olacak.", "ru": "Знаю. Поэтому вам повысят зарплату. Это вступит в силу с января.", "distractors": [
+          { "tr": "Evet, Olga Hanım, oturun lütfen. Yıllık değerlendirme zamanı geldi.", "ru": "Да, Ольга-ханым, садитесь, пожалуйста. Пришло время ежегодной оценки." },
+          { "tr": "Belli oluyor. Tebrik ederim, Olga Hanım. Böyle devam edin!", "ru": "Это заметно. Поздравляю, Ольга-ханым. Продолжайте в том же духе!" }
+        ]},
+        { "speaker": "a", "tr": "Çok teşekkür ederim! Bir şey daha sorabilir miyim? Gelecekte terfi alma şansım var mı?", "ru": "Большое спасибо! Можно спросить ещё кое-что? Есть ли у меня в будущем шанс на повышение?", "distractors": [
+          { "tr": "Metin Bey, beni çağırmışsınız.", "ru": "Метин-бей, вы меня вызывали?" },
+          { "tr": "Merak etmeyin, cumartesi günleri hâlâ kursa gidiyorum.", "ru": "Не волнуйтесь, по субботам я всё ещё хожу на курсы." }
+        ]},
+        { "speaker": "b", "tr": "Elbette. Gelecek yıl Rus pazarı için yeni bir pozisyon açılacak. Siz bu pozisyon için düşündüğümüz ilk kişisiniz.", "ru": "Конечно. В следующем году откроется новая должность по российскому рынку. Вы — первая, о ком мы думаем на эту должность.", "distractors": [
+          { "tr": "Evet, Olga Hanım, oturun lütfen. Yıllık değerlendirme zamanı geldi.", "ru": "Да, Ольга-ханым, садитесь, пожалуйста. Пришло время ежегодной оценки." },
+          { "tr": "Belli oluyor. Tebrik ederim, Olga Hanım. Böyle devam edin!", "ru": "Это заметно. Поздравляю, Ольга-ханым. Продолжайте в том же духе!" }
+        ]},
+        { "speaker": "a", "tr": "Gerçekten mi? Bu benim için büyük bir fırsat. Ne yapmam gerekiyor?", "ru": "Правда? Для меня это большая возможность. Что мне нужно делать?", "distractors": [
+          { "tr": "Metin Bey, beni çağırmışsınız.", "ru": "Метин-бей, вы меня вызывали?" },
+          { "tr": "Merak etmeyin, cumartesi günleri hâlâ kursa gidiyorum.", "ru": "Не волнуйтесь, по субботам я всё ещё хожу на курсы." }
+        ]},
+        { "speaker": "b", "tr": "Biraz daha sorumluluk almanızı istiyorum. Mesela yeni gelen arkadaşlara siz yol gösterin.", "ru": "Я хочу, чтобы вы взяли на себя чуть больше ответственности. Например, помогайте освоиться новым сотрудникам.", "distractors": [
+          { "tr": "Evet, Olga Hanım, oturun lütfen. Yıllık değerlendirme zamanı geldi.", "ru": "Да, Ольга-ханым, садитесь, пожалуйста. Пришло время ежегодной оценки." },
+          { "tr": "Belli oluyor. Tebrik ederim, Olga Hanım. Böyle devam edin!", "ru": "Это заметно. Поздравляю, Ольга-ханым. Продолжайте в том же духе!" }
+        ]},
+        { "speaker": "a", "tr": "Zaten Özge Hanım'a yardım ediyorum, bunu severek yaparım.", "ru": "Я и так помогаю Озге-ханым, буду делать это с удовольствием.", "distractors": [
+          { "tr": "Metin Bey, beni çağırmışsınız.", "ru": "Метин-бей, вы меня вызывали?" },
+          { "tr": "Merak etmeyin, cumartesi günleri hâlâ kursa gidiyorum.", "ru": "Не волнуйтесь, по субботам я всё ещё хожу на курсы." }
+        ]},
+        { "speaker": "b", "tr": "Güzel. Bir de Türkçe yazışmalarınızı biraz daha geliştirirseniz, hiçbir engel kalmaz.", "ru": "Хорошо. И если вы ещё немного улучшите свою деловую переписку на турецком, никаких препятствий не останется.", "distractors": [
+          { "tr": "Evet, Olga Hanım, oturun lütfen. Yıllık değerlendirme zamanı geldi.", "ru": "Да, Ольга-ханым, садитесь, пожалуйста. Пришло время ежегодной оценки." },
+          { "tr": "Belli oluyor. Tebrik ederim, Olga Hanım. Böyle devam edin!", "ru": "Это заметно. Поздравляю, Ольга-ханым. Продолжайте в том же духе!" }
+        ]},
+        { "speaker": "a", "tr": "Merak etmeyin, cumartesi günleri hâlâ kursa gidiyorum.", "ru": "Не волнуйтесь, по субботам я всё ещё хожу на курсы.", "distractors": [
+          { "tr": "Metin Bey, beni çağırmışsınız.", "ru": "Метин-бей, вы меня вызывали?" },
+          { "tr": "Biraz heyecanlıyım. Bu yıl işimden memnun musunuz?", "ru": "Я немного волнуюсь. Вы довольны моей работой в этом году?" }
+        ]},
+        { "speaker": "b", "tr": "Belli oluyor. Tebrik ederim, Olga Hanım. Böyle devam edin!", "ru": "Это заметно. Поздравляю, Ольга-ханым. Продолжайте в том же духе!", "distractors": [
+          { "tr": "Evet, Olga Hanım, oturun lütfen. Yıllık değerlendirme zamanı geldi.", "ru": "Да, Ольга-ханым, садитесь, пожалуйста. Пришло время ежегодной оценки." },
+          { "tr": "Çok memnunum. Hazırladığınız Rusça kampanya sayesinde satışlar yüzde on beş arttı.", "ru": "Очень доволен. Благодаря русской кампании, которую вы подготовили, продажи выросли на пятнадцать процентов." }
+        ]}
+      ]
+    },
+    {
+      "id": "rabota-ozge-otgul",
+      "title": "Озге: как взять отгул",
+      "level": "B1",
+      "speakers": { "a": "Ольга", "b": "Озге" },
+      "turns": [
+        { "speaker": "a", "tr": "Özge Hanım, bir şey mi arıyorsunuz?", "ru": "Озге-ханым, вы что-то ищете?", "distractors": [
+          { "tr": "Üzülmeyin. Betül Hanım titiz biridir, ama çok iyi kalplidir. Ondan özür dileyin, her şey düzelir.", "ru": "Не расстраивайтесь. Бетюль-ханым человек дотошный, но очень добрый. Извинитесь перед ней, и всё наладится." },
+          { "tr": "Bence herkesle iyi anlaşacaksınız. Cuma günleri öğle yemeğine hep beraber çıkıyoruz, siz de gelin!", "ru": "Думаю, вы со всеми поладите. По пятницам мы все вместе ходим на обед, приходите и вы!" }
+        ]},
+        { "speaker": "b", "tr": "Evet, Olga Hanım. Gelecek cuma Eskişehir'e gitmem lazım, yeğenimin doğum günü var. Burada nasıl izin alınıyor?", "ru": "Да, Ольга-ханым. В следующую пятницу мне нужно поехать в Эскишехир, у племянницы день рождения. Как здесь берут отгул?", "distractors": [
+          { "tr": "Haklısınız. İş arkadaşlarıyla iyi anlaşmak benim için çok önemli.", "ru": "Вы правы. Для меня очень важно хорошо ладить с коллегами." },
+          { "tr": "Çok sevinirim! Allah razı olsun, Olga Hanım, bana çok yardım ediyorsunuz.", "ru": "С большим удовольствием! Спасибо вам огромное, Ольга-ханым, вы мне очень помогаете." }
+        ]},
+        { "speaker": "a", "tr": "Önce Metin Bey'e söyleyin, sonra sistemden izin formu doldurulur. Kaç gün izin istiyorsunuz?", "ru": "Сначала скажите Метин-бею, потом в системе заполняется заявление. Сколько дней вы хотите взять?", "distractors": [
+          { "tr": "Özge Hanım, bir şey mi arıyorsunuz?", "ru": "Озге-ханым, вы что-то ищете?" },
+          { "tr": "Bence herkesle iyi anlaşacaksınız. Cuma günleri öğle yemeğine hep beraber çıkıyoruz, siz de gelin!", "ru": "Думаю, вы со всеми поладите. По пятницам мы все вместе ходим на обед, приходите и вы!" }
+        ]},
+        { "speaker": "b", "tr": "Bir gün izin almak istiyorum. Ama ben daha yeni başladım. Yıllık iznim var mı?", "ru": "Я хочу взять один день. Но я ведь только начала. У меня есть ежегодный отпуск?", "distractors": [
+          { "tr": "Evet, Olga Hanım. Gelecek cuma Eskişehir'e gitmem lazım, yeğenimin doğum günü var. Burada nasıl izin alınıyor?", "ru": "Да, Ольга-ханым. В следующую пятницу мне нужно поехать в Эскишехир, у племянницы день рождения. Как здесь берут отгул?" },
+          { "tr": "Çok sevinirim! Allah razı olsun, Olga Hanım, bana çok yardım ediyorsunuz.", "ru": "С большим удовольствием! Спасибо вам огромное, Ольга-ханым, вы мне очень помогаете." }
+        ]},
+        { "speaker": "a", "tr": "İlk yıl yıllık izin yok, ama bir günlük ücretsiz izin alabilirsiniz. Metin Bey bu konuda anlayışlıdır.", "ru": "В первый год ежегодного отпуска нет, но можно взять один день за свой счёт. Метин-бей в этом плане понимающий.", "distractors": [
+          { "tr": "Özge Hanım, bir şey mi arıyorsunuz?", "ru": "Озге-ханым, вы что-то ищете?" },
+          { "tr": "Bence herkesle iyi anlaşacaksınız. Cuma günleri öğle yemeğine hep beraber çıkıyoruz, siz de gelin!", "ru": "Думаю, вы со всеми поладите. По пятницам мы все вместе ходим на обед, приходите и вы!" }
+        ]},
+        { "speaker": "b", "tr": "Çok iyi. Bir de maaşla ilgili sormak istiyorum. Maaşlar ne zaman yatırılıyor?", "ru": "Отлично. И ещё хочу спросить про зарплату. Когда перечисляют зарплату?", "distractors": [
+          { "tr": "Evet, Olga Hanım. Gelecek cuma Eskişehir'e gitmem lazım, yeğenimin doğum günü var. Burada nasıl izin alınıyor?", "ru": "Да, Ольга-ханым. В следующую пятницу мне нужно поехать в Эскишехир, у племянницы день рождения. Как здесь берут отгул?" },
+          { "tr": "Çok sevinirim! Allah razı olsun, Olga Hanım, bana çok yardım ediyorsunuz.", "ru": "С большим удовольствием! Спасибо вам огромное, Ольга-ханым, вы мне очень помогаете." }
+        ]},
+        { "speaker": "a", "tr": "Maaşlar ayın on beşinde yatırılıyor. Maaş için bankada hesap açtınız mı?", "ru": "Зарплату перечисляют пятнадцатого числа. Вы открыли в банке счёт для зарплаты?", "distractors": [
+          { "tr": "Özge Hanım, bir şey mi arıyorsunuz?", "ru": "Озге-ханым, вы что-то ищете?" },
+          { "tr": "Bence herkesle iyi anlaşacaksınız. Cuma günleri öğle yemeğine hep beraber çıkıyoruz, siz de gelin!", "ru": "Думаю, вы со всеми поладите. По пятницам мы все вместе ходим на обед, приходите и вы!" }
+        ]},
+        { "speaker": "b", "tr": "Evet, açtım. Bir şey daha: dün Betül Hanım'a bir dosyayı geç gönderdim, bana biraz kızdı.", "ru": "Да, открыла. И ещё одно: вчера я поздно отправила Бетюль-ханым один файл, она на меня немного рассердилась.", "distractors": [
+          { "tr": "Evet, Olga Hanım. Gelecek cuma Eskişehir'e gitmem lazım, yeğenimin doğum günü var. Burada nasıl izin alınıyor?", "ru": "Да, Ольга-ханым. В следующую пятницу мне нужно поехать в Эскишехир, у племянницы день рождения. Как здесь берут отгул?" },
+          { "tr": "Çok sevinirim! Allah razı olsun, Olga Hanım, bana çok yardım ediyorsunuz.", "ru": "С большим удовольствием! Спасибо вам огромное, Ольга-ханым, вы мне очень помогаете." }
+        ]},
+        { "speaker": "a", "tr": "Üzülmeyin. Betül Hanım titiz biridir, ama çok iyi kalplidir. Ondan özür dileyin, her şey düzelir.", "ru": "Не расстраивайтесь. Бетюль-ханым человек дотошный, но очень добрый. Извинитесь перед ней, и всё наладится.", "distractors": [
+          { "tr": "Özge Hanım, bir şey mi arıyorsunuz?", "ru": "Озге-ханым, вы что-то ищете?" },
+          { "tr": "Bence herkesle iyi anlaşacaksınız. Cuma günleri öğle yemeğine hep beraber çıkıyoruz, siz de gelin!", "ru": "Думаю, вы со всеми поладите. По пятницам мы все вместе ходим на обед, приходите и вы!" }
+        ]},
+        { "speaker": "b", "tr": "Haklısınız. İş arkadaşlarıyla iyi anlaşmak benim için çok önemli.", "ru": "Вы правы. Для меня очень важно хорошо ладить с коллегами.", "distractors": [
+          { "tr": "Evet, Olga Hanım. Gelecek cuma Eskişehir'e gitmem lazım, yeğenimin doğum günü var. Burada nasıl izin alınıyor?", "ru": "Да, Ольга-ханым. В следующую пятницу мне нужно поехать в Эскишехир, у племянницы день рождения. Как здесь берут отгул?" },
+          { "tr": "Çok sevinirim! Allah razı olsun, Olga Hanım, bana çok yardım ediyorsunuz.", "ru": "С большим удовольствием! Спасибо вам огромное, Ольга-ханым, вы мне очень помогаете." }
+        ]},
+        { "speaker": "a", "tr": "Bence herkesle iyi anlaşacaksınız. Cuma günleri öğle yemeğine hep beraber çıkıyoruz, siz de gelin!", "ru": "Думаю, вы со всеми поладите. По пятницам мы все вместе ходим на обед, приходите и вы!", "distractors": [
+          { "tr": "Özge Hanım, bir şey mi arıyorsunuz?", "ru": "Озге-ханым, вы что-то ищете?" },
+          { "tr": "Önce Metin Bey'e söyleyin, sonra sistemden izin formu doldurulur. Kaç gün izin istiyorsunuz?", "ru": "Сначала скажите Метин-бею, потом в системе заполняется заявление. Сколько дней вы хотите взять?" }
+        ]},
+        { "speaker": "b", "tr": "Çok sevinirim! Allah razı olsun, Olga Hanım, bana çok yardım ediyorsunuz.", "ru": "С большим удовольствием! Спасибо вам огромное, Ольга-ханым, вы мне очень помогаете.", "distractors": [
+          { "tr": "Evet, Olga Hanım. Gelecek cuma Eskişehir'e gitmem lazım, yeğenimin doğum günü var. Burada nasıl izin alınıyor?", "ru": "Да, Ольга-ханым. В следующую пятницу мне нужно поехать в Эскишехир, у племянницы день рождения. Как здесь берут отгул?" },
+          { "tr": "Bir gün izin almak istiyorum. Ama ben daha yeni başladım. Yıllık iznim var mı?", "ru": "Я хочу взять один день. Но я ведь только начала. У меня есть ежегодный отпуск?" }
+        ]}
+      ]
+    },
+    {
+      "id": "rabota-tuba-iz-doma",
+      "title": "Туба работает из дома",
+      "level": "B1",
+      "speakers": { "a": "Ольга", "b": "Туба" },
+      "turns": [
+        { "speaker": "a", "tr": "Alo, Tuba? Günaydın! Bugün ofiste yoksun, her şey yolunda mı?", "ru": "Алло, Туба? Доброе утро! Тебя сегодня нет в офисе, всё в порядке?", "distractors": [
+          { "tr": "Rus müşteriler için yeni bir katalog hazırlıyorum. Raporu da bitirip sana göndereceğim, kontrol eder misin?", "ru": "Готовлю новый каталог для русских клиентов. А ещё закончу отчёт и пришлю тебе — проверишь?" },
+          { "tr": "Anlaşıldı. Bir şeye ihtiyacın olursa bana yaz. Toplantı notlarını da sana gönderirim.", "ru": "Понятно. Если что-то понадобится, пиши мне. Заметки с совещания я тоже тебе пришлю." }
+        ]},
+        { "speaker": "b", "tr": "Günaydın, Olga! Ela dün gece ateşlendi, bu yüzden bugün evden çalışıyorum.", "ru": "Доброе утро, Ольга! У Элы вчера вечером поднялась температура, поэтому сегодня я работаю из дома.", "distractors": [
+          { "tr": "Tabii, öğleden sonra bakarım. Ela uyuduğu zaman daha rahat çalışabilirim.", "ru": "Конечно, посмотрю после обеда. Когда Эла спит, мне спокойнее работать." },
+          { "tr": "Çok iyisin! Yarın ofise gelebilirsem, öğle yemeği benden!", "ru": "Ты такая хорошая! Если завтра смогу прийти в офис, обед за мой счёт!" }
+        ]},
+        { "speaker": "a", "tr": "Geçmiş olsun! Doktora gittiniz mi?", "ru": "Выздоравливайте! Вы ходили к врачу?", "distractors": [
+          { "tr": "Alo, Tuba? Günaydın! Bugün ofiste yoksun, her şey yolunda mı?", "ru": "Алло, Туба? Доброе утро! Тебя сегодня нет в офисе, всё в порядке?" },
+          { "tr": "Anlaşıldı. Bir şeye ihtiyacın olursa bana yaz. Toplantı notlarını da sana gönderirim.", "ru": "Понятно. Если что-то понадобится, пиши мне. Заметки с совещания я тоже тебе пришлю." }
+        ]},
+        { "speaker": "b", "tr": "Sağ ol. Evet, gittik, grip olmuş. Allah'a şükür, ciddi bir şey değil.", "ru": "Спасибо. Да, ходили, у неё грипп. Слава богу, ничего серьёзного.", "distractors": [
+          { "tr": "Günaydın, Olga! Ela dün gece ateşlendi, bu yüzden bugün evden çalışıyorum.", "ru": "Доброе утро, Ольга! У Элы вчера вечером поднялась температура, поэтому сегодня я работаю из дома." },
+          { "tr": "Çok iyisin! Yarın ofise gelebilirsem, öğle yemeği benden!", "ru": "Ты такая хорошая! Если завтра смогу прийти в офис, обед за мой счёт!" }
+        ]},
+        { "speaker": "a", "tr": "Çok sevindim. Saat onda toplantı var, katılabilecek misin?", "ru": "Очень рада. В десять совещание, ты сможешь участвовать?", "distractors": [
+          { "tr": "Alo, Tuba? Günaydın! Bugün ofiste yoksun, her şey yolunda mı?", "ru": "Алло, Туба? Доброе утро! Тебя сегодня нет в офисе, всё в порядке?" },
+          { "tr": "Anlaşıldı. Bir şeye ihtiyacın olursa bana yaz. Toplantı notlarını da sana gönderirim.", "ru": "Понятно. Если что-то понадобится, пиши мне. Заметки с совещания я тоже тебе пришлю." }
+        ]},
+        { "speaker": "b", "tr": "Evet, toplantıya bilgisayardan bağlanırım. Bana linki gönderir misin?", "ru": "Да, подключусь к совещанию с компьютера. Пришлёшь мне ссылку?", "distractors": [
+          { "tr": "Günaydın, Olga! Ela dün gece ateşlendi, bu yüzden bugün evden çalışıyorum.", "ru": "Доброе утро, Ольга! У Элы вчера вечером поднялась температура, поэтому сегодня я работаю из дома." },
+          { "tr": "Çok iyisin! Yarın ofise gelebilirsem, öğle yemeği benden!", "ru": "Ты такая хорошая! Если завтра смогу прийти в офис, обед за мой счёт!" }
+        ]},
+        { "speaker": "a", "tr": "Tabii, hemen gönderiyorum. Metin Bey'e senin evden çalıştığını söyledim.", "ru": "Конечно, сейчас пришлю. Я сказала Метин-бею, что ты работаешь из дома.", "distractors": [
+          { "tr": "Alo, Tuba? Günaydın! Bugün ofiste yoksun, her şey yolunda mı?", "ru": "Алло, Туба? Доброе утро! Тебя сегодня нет в офисе, всё в порядке?" },
+          { "tr": "Anlaşıldı. Bir şeye ihtiyacın olursa bana yaz. Toplantı notlarını da sana gönderirim.", "ru": "Понятно. Если что-то понадобится, пиши мне. Заметки с совещания я тоже тебе пришлю." }
+        ]},
+        { "speaker": "b", "tr": "Teşekkürler. Evde çalışmak hiç kolay değil, Ela beş dakikada bir \"Anne!\" diye bağırıyor. Sen bugün ne yapıyorsun?", "ru": "Спасибо. Работать дома совсем не просто: Эла каждые пять минут кричит «Мама!». А ты что сегодня делаешь?", "distractors": [
+          { "tr": "Günaydın, Olga! Ela dün gece ateşlendi, bu yüzden bugün evden çalışıyorum.", "ru": "Доброе утро, Ольга! У Элы вчера вечером поднялась температура, поэтому сегодня я работаю из дома." },
+          { "tr": "Çok iyisin! Yarın ofise gelebilirsem, öğle yemeği benden!", "ru": "Ты такая хорошая! Если завтра смогу прийти в офис, обед за мой счёт!" }
+        ]},
+        { "speaker": "a", "tr": "Rus müşteriler için yeni bir katalog hazırlıyorum. Raporu da bitirip sana göndereceğim, kontrol eder misin?", "ru": "Готовлю новый каталог для русских клиентов. А ещё закончу отчёт и пришлю тебе — проверишь?", "distractors": [
+          { "tr": "Alo, Tuba? Günaydın! Bugün ofiste yoksun, her şey yolunda mı?", "ru": "Алло, Туба? Доброе утро! Тебя сегодня нет в офисе, всё в порядке?" },
+          { "tr": "Anlaşıldı. Bir şeye ihtiyacın olursa bana yaz. Toplantı notlarını da sana gönderirim.", "ru": "Понятно. Если что-то понадобится, пиши мне. Заметки с совещания я тоже тебе пришлю." }
+        ]},
+        { "speaker": "b", "tr": "Tabii, öğleden sonra bakarım. Ela uyuduğu zaman daha rahat çalışabilirim.", "ru": "Конечно, посмотрю после обеда. Когда Эла спит, мне спокойнее работать.", "distractors": [
+          { "tr": "Günaydın, Olga! Ela dün gece ateşlendi, bu yüzden bugün evden çalışıyorum.", "ru": "Доброе утро, Ольга! У Элы вчера вечером поднялась температура, поэтому сегодня я работаю из дома." },
+          { "tr": "Çok iyisin! Yarın ofise gelebilirsem, öğle yemeği benden!", "ru": "Ты такая хорошая! Если завтра смогу прийти в офис, обед за мой счёт!" }
+        ]},
+        { "speaker": "a", "tr": "Anlaşıldı. Bir şeye ihtiyacın olursa bana yaz. Toplantı notlarını da sana gönderirim.", "ru": "Понятно. Если что-то понадобится, пиши мне. Заметки с совещания я тоже тебе пришлю.", "distractors": [
+          { "tr": "Alo, Tuba? Günaydın! Bugün ofiste yoksun, her şey yolunda mı?", "ru": "Алло, Туба? Доброе утро! Тебя сегодня нет в офисе, всё в порядке?" },
+          { "tr": "Geçmiş olsun! Doktora gittiniz mi?", "ru": "Выздоравливайте! Вы ходили к врачу?" }
+        ]},
+        { "speaker": "b", "tr": "Çok iyisin! Yarın ofise gelebilirsem, öğle yemeği benden!", "ru": "Ты такая хорошая! Если завтра смогу прийти в офис, обед за мой счёт!", "distractors": [
+          { "tr": "Günaydın, Olga! Ela dün gece ateşlendi, bu yüzden bugün evden çalışıyorum.", "ru": "Доброе утро, Ольга! У Элы вчера вечером поднялась температура, поэтому сегодня я работаю из дома." },
+          { "tr": "Sağ ol. Evet, gittik, grip olmuş. Allah'a şükür, ciddi bir şey değil.", "ru": "Спасибо. Да, ходили, у неё грипп. Слава богу, ничего серьёзного." }
+        ]}
+      ]
+    },
+    {
+      "id": "rabota-aygerim-staj",
+      "title": "Айгерим ищет стажировку",
+      "level": "B1",
+      "speakers": { "a": "Ольга", "b": "Айгерим" },
+      "turns": [
+        { "speaker": "a", "tr": "Aygerim, kurstan sonra kahve içelim mi?", "ru": "Айгерим, выпьем кофе после курсов?", "distractors": [
+          { "tr": "Bilmiyorum, ama Metin Bey'e sorabilirim. Bana CV'ni gönder, ona veririm.", "ru": "Не знаю, но могу спросить Метин-бея. Пришли мне своё резюме, я ему передам." },
+          { "tr": "Anlaştık! Ama bugünkü kahveler benden.", "ru": "Договорились! Но сегодняшний кофе — за мой счёт." }
+        ]},
+        { "speaker": "b", "tr": "Olur! Zaten sana bir şey sormak istiyordum. Sen tam olarak ne iş yapıyorsun?", "ru": "Давай! Я как раз хотела тебя кое о чём спросить. Чем именно ты занимаешься?", "distractors": [
+          { "tr": "Çok teşekkür ederim! Eğer staj bulursam, sana büyük bir pasta ısmarlayacağım!", "ru": "Большое спасибо! Если найду стажировку, угощу тебя большим тортом!" },
+          { "tr": "Tamam! Hadi gidelim, ders bitti.", "ru": "Ладно! Пойдём, занятие закончилось." }
+        ]},
+        { "speaker": "a", "tr": "Global Trade adlı bir şirkette, pazarlama bölümünde çalışıyorum. Ofisimiz Karaköy'de.", "ru": "Я работаю в отделе маркетинга в компании под названием Global Trade. Наш офис в Каракёе.", "distractors": [
+          { "tr": "Aygerim, kurstan sonra kahve içelim mi?", "ru": "Айгерим, выпьем кофе после курсов?" },
+          { "tr": "Anlaştık! Ama bugünkü kahveler benden.", "ru": "Договорились! Но сегодняшний кофе — за мой счёт." }
+        ]},
+        { "speaker": "b", "tr": "Bütün gün bilgisayar başında mı oturuyorsun?", "ru": "Ты весь день сидишь за компьютером?", "distractors": [
+          { "tr": "Olur! Zaten sana bir şey sormak istiyordum. Sen tam olarak ne iş yapıyorsun?", "ru": "Давай! Я как раз хотела тебя кое о чём спросить. Чем именно ты занимаешься?" },
+          { "tr": "Tamam! Hadi gidelim, ders bitti.", "ru": "Ладно! Пойдём, занятие закончилось." }
+        ]},
+        { "speaker": "a", "tr": "Genelde evet. Sosyal medyadan ve reklam kampanyalarından sorumluyum. Sen neden soruyorsun?", "ru": "В основном да. Я отвечаю за соцсети и рекламные кампании. А почему ты спрашиваешь?", "distractors": [
+          { "tr": "Aygerim, kurstan sonra kahve içelim mi?", "ru": "Айгерим, выпьем кофе после курсов?" },
+          { "tr": "Anlaştık! Ama bugünkü kahveler benden.", "ru": "Договорились! Но сегодняшний кофе — за мой счёт." }
+        ]},
+        { "speaker": "b", "tr": "Bu yaz bir şirkette staj yapmak istiyorum. Ama Türkçem iş için yeterli mi, bilmiyorum.", "ru": "Этим летом я хочу пройти стажировку в какой-нибудь компании. Но не знаю, хватит ли моего турецкого для работы.", "distractors": [
+          { "tr": "Olur! Zaten sana bir şey sormak istiyordum. Sen tam olarak ne iş yapıyorsun?", "ru": "Давай! Я как раз хотела тебя кое о чём спросить. Чем именно ты занимаешься?" },
+          { "tr": "Tamam! Hadi gidelim, ders bitti.", "ru": "Ладно! Пойдём, занятие закончилось." }
+        ]},
+        { "speaker": "a", "tr": "Bence yeterli. Ben buraya geldiğimde senin kadar iyi konuşmuyordum.", "ru": "По-моему, хватит. Когда я сюда приехала, я говорила не так хорошо, как ты.", "distractors": [
+          { "tr": "Aygerim, kurstan sonra kahve içelim mi?", "ru": "Айгерим, выпьем кофе после курсов?" },
+          { "tr": "Anlaştık! Ama bugünkü kahveler benden.", "ru": "Договорились! Но сегодняшний кофе — за мой счёт." }
+        ]},
+        { "speaker": "b", "tr": "Gerçekten mi? Türkiye'de çalışmak nasıl? İş saatleri uzun mu?", "ru": "Правда? А как работается в Турции? Рабочий день длинный?", "distractors": [
+          { "tr": "Olur! Zaten sana bir şey sormak istiyordum. Sen tam olarak ne iş yapıyorsun?", "ru": "Давай! Я как раз хотела тебя кое о чём спросить. Чем именно ты занимаешься?" },
+          { "tr": "Tamam! Hadi gidelim, ders bitti.", "ru": "Ладно! Пойдём, занятие закончилось." }
+        ]},
+        { "speaker": "a", "tr": "Biz dokuzdan altıya kadar çalışıyoruz, ama bazen fazla mesai oluyor. İşim çok ilginç, ama yorucu.", "ru": "Мы работаем с девяти до шести, но иногда бывают переработки. Работа у меня очень интересная, но утомительная.", "distractors": [
+          { "tr": "Aygerim, kurstan sonra kahve içelim mi?", "ru": "Айгерим, выпьем кофе после курсов?" },
+          { "tr": "Anlaştık! Ama bugünkü kahveler benden.", "ru": "Договорились! Но сегодняшний кофе — за мой счёт." }
+        ]},
+        { "speaker": "b", "tr": "Anlıyorum. Sizin şirkette stajyer alınıyor mu?", "ru": "Понятно. А в вашей компании берут стажёров?", "distractors": [
+          { "tr": "Olur! Zaten sana bir şey sormak istiyordum. Sen tam olarak ne iş yapıyorsun?", "ru": "Давай! Я как раз хотела тебя кое о чём спросить. Чем именно ты занимаешься?" },
+          { "tr": "Tamam! Hadi gidelim, ders bitti.", "ru": "Ладно! Пойдём, занятие закончилось." }
+        ]},
+        { "speaker": "a", "tr": "Bilmiyorum, ama Metin Bey'e sorabilirim. Bana CV'ni gönder, ona veririm.", "ru": "Не знаю, но могу спросить Метин-бея. Пришли мне своё резюме, я ему передам.", "distractors": [
+          { "tr": "Aygerim, kurstan sonra kahve içelim mi?", "ru": "Айгерим, выпьем кофе после курсов?" },
+          { "tr": "Anlaştık! Ama bugünkü kahveler benden.", "ru": "Договорились! Но сегодняшний кофе — за мой счёт." }
+        ]},
+        { "speaker": "b", "tr": "Çok teşekkür ederim! Eğer staj bulursam, sana büyük bir pasta ısmarlayacağım!", "ru": "Большое спасибо! Если найду стажировку, угощу тебя большим тортом!", "distractors": [
+          { "tr": "Olur! Zaten sana bir şey sormak istiyordum. Sen tam olarak ne iş yapıyorsun?", "ru": "Давай! Я как раз хотела тебя кое о чём спросить. Чем именно ты занимаешься?" },
+          { "tr": "Tamam! Hadi gidelim, ders bitti.", "ru": "Ладно! Пойдём, занятие закончилось." }
+        ]},
+        { "speaker": "a", "tr": "Anlaştık! Ama bugünkü kahveler benden.", "ru": "Договорились! Но сегодняшний кофе — за мой счёт.", "distractors": [
+          { "tr": "Aygerim, kurstan sonra kahve içelim mi?", "ru": "Айгерим, выпьем кофе после курсов?" },
+          { "tr": "Global Trade adlı bir şirkette, pazarlama bölümünde çalışıyorum. Ofisimiz Karaköy'de.", "ru": "Я работаю в отделе маркетинга в компании под названием Global Trade. Наш офис в Каракёе." }
+        ]},
+        { "speaker": "b", "tr": "Tamam! Hadi gidelim, ders bitti.", "ru": "Ладно! Пойдём, занятие закончилось.", "distractors": [
+          { "tr": "Olur! Zaten sana bir şey sormak istiyordum. Sen tam olarak ne iş yapıyorsun?", "ru": "Давай! Я как раз хотела тебя кое о чём спросить. Чем именно ты занимаешься?" },
+          { "tr": "Bütün gün bilgisayar başında mı oturuyorsun?", "ru": "Ты весь день сидишь за компьютером?" }
+        ]}
+      ]
+    }
+  ]
+}
