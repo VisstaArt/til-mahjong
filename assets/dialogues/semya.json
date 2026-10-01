@@ -168,7 +168,7 @@
           { "tr": "Tuba, bu fotoğraf çok güzel! Bunlar senin çocukların mı?", "ru": "Туба, какая красивая фотография! Это твои дети?" },
           { "tr": "Evet, erkek arkadaşım var. Adı Deniz. Eşin ne iş yapıyor?", "ru": "Да, у меня есть молодой человек. Его зовут Дениз. А кем работает твой муж?" }
         ]},
-        { "speaker": "a", "tr": "Adları ne?", "ru": "Как их зовут?", "distractors": [
+        { "speaker": "a", "tr": "Allah bağışlasın! Adları ne?", "ru": "Дай бог им здоровья! Как их зовут?", "distractors": [
           { "tr": "Evet! İki çocuğum var. Bir oğlum ve bir kızım var.", "ru": "Да! У меня двое детей. У меня сын и дочь." },
           { "tr": "Eşim avukat. Çok çalışıyor, çocuklar hep benimle.", "ru": "Мой муж — юрист. Он много работает, дети всё время со мной." }
         ]},
@@ -202,7 +202,7 @@
       "turns": [
         { "speaker": "a", "tr": "Ne tatlı bir çocuk! Torununuz mu?", "ru": "Какой милый ребёнок! Это ваш внук?", "distractors": [
           { "tr": "Size de iyi günler!", "ru": "И вам хорошего дня!" },
-          { "tr": "Ne güzel. Kuzey, gel! Eve gidiyoruz. İyi günler!", "ru": "Как хорошо. Кузей, иди сюда! Идём домой. Хорошего дня!" }
+          { "tr": "Allah kavuştursun. Kuzey, gel! Eve gidiyoruz. İyi günler!", "ru": "Дай бог вам скорее увидеться. Кузей, иди сюда! Идём домой. Хорошего дня!" }
         ]},
         { "speaker": "b", "tr": "Evet, torunum Kuzey. Beş yaşında.", "ru": "Да, мой внук Кузей. Ему пять лет.", "distractors": [
           { "tr": "Ailenizi özlüyor musunuz?", "ru": "Вы скучаете по семье?" },
@@ -236,7 +236,7 @@
           { "tr": "Ne tatlı bir çocuk! Torununuz mu?", "ru": "Какой милый ребёнок! Это ваш внук?" },
           { "tr": "Size de iyi günler!", "ru": "И вам хорошего дня!" }
         ]},
-        { "speaker": "b", "tr": "Ne güzel. Kuzey, gel! Eve gidiyoruz. İyi günler!", "ru": "Как хорошо. Кузей, иди сюда! Идём домой. Хорошего дня!", "distractors": [
+        { "speaker": "b", "tr": "Allah kavuştursun. Kuzey, gel! Eve gidiyoruz. İyi günler!", "ru": "Дай бог вам скорее увидеться. Кузей, иди сюда! Идём домой. Хорошего дня!", "distractors": [
           { "tr": "Ne tatlı bir çocuk! Torununuz mu?", "ru": "Какой милый ребёнок! Это ваш внук?" },
           { "tr": "Kaç torununuz var?", "ru": "Сколько у вас внуков?" }
         ]},
@@ -401,20 +401,20 @@
       "speakers": { "a": "Ольга", "b": "Туба" },
       "turns": [
         { "speaker": "b", "tr": "Olga, ailenle sık sık konuşuyor musun?", "ru": "Ольга, ты часто разговариваешь с семьёй?", "distractors": [
-          { "tr": "Çok isterim!", "ru": "С удовольствием!" },
+          { "tr": "İnşallah! Çok isterim!", "ru": "Дай бог! С удовольствием!" },
           { "tr": "Bir gün birlikte gideceğiz. Annem seni çok sevecek!", "ru": "Когда-нибудь поедем вместе. Мама тебя очень полюбит!" }
         ]},
         { "speaker": "a", "tr": "Evet. Annemi her pazar arıyorum.", "ru": "Да. Я звоню маме каждое воскресенье.", "distractors": [
           { "tr": "Gerçekten mi? Beğendin mi?", "ru": "Правда? Тебе понравилось?" },
-          { "tr": "Çok isterim!", "ru": "С удовольствием!" }
+          { "tr": "İnşallah! Çok isterim!", "ru": "Дай бог! С удовольствием!" }
         ]},
         { "speaker": "b", "tr": "Ya kız kardeşin?", "ru": "А с сестрой?", "distractors": [
           { "tr": "Olga, ailenle sık sık konuşuyor musun?", "ru": "Ольга, ты часто разговариваешь с семьёй?" },
-          { "tr": "Çok isterim!", "ru": "С удовольствием!" }
+          { "tr": "İnşallah! Çok isterim!", "ru": "Дай бог! С удовольствием!" }
         ]},
         { "speaker": "a", "tr": "Kız kardeşime her gün mesaj yazıyorum. Senin ailen nerede?", "ru": "Сестре я каждый день пишу сообщения. А где твоя семья?", "distractors": [
           { "tr": "Evet. Annemi her pazar arıyorum.", "ru": "Да. Я звоню маме каждое воскресенье." },
-          { "tr": "Çok isterim!", "ru": "С удовольствием!" }
+          { "tr": "İnşallah! Çok isterim!", "ru": "Дай бог! С удовольствием!" }
         ]},
         { "speaker": "b", "tr": "Annemle babam Trabzon'da. Annem beni her gün arıyor!", "ru": "Мама с папой в Трабзоне. Мама звонит мне каждый день!", "distractors": [
           { "tr": "Olga, ailenle sık sık konuşuyor musun?", "ru": "Ольга, ты часто разговариваешь с семьёй?" },
@@ -422,21 +422,21 @@
         ]},
         { "speaker": "a", "tr": "Her gün mü? Çok tatlı! Ben geçen yaz Trabzon'a gittim.", "ru": "Каждый день? Как мило! А я прошлым летом ездила в Трабзон.", "distractors": [
           { "tr": "Olga, ailenle sık sık konuşuyor musun?", "ru": "Ольга, ты часто разговариваешь с семьёй?" },
-          { "tr": "Çok isterim!", "ru": "С удовольствием!" }
+          { "tr": "İnşallah! Çok isterim!", "ru": "Дай бог! С удовольствием!" }
         ]},
         { "speaker": "b", "tr": "Gerçekten mi? Beğendin mi?", "ru": "Правда? Тебе понравилось?", "distractors": [
           { "tr": "Evet. Annemi her pazar arıyorum.", "ru": "Да. Я звоню маме каждое воскресенье." },
-          { "tr": "Çok isterim!", "ru": "С удовольствием!" }
+          { "tr": "İnşallah! Çok isterim!", "ru": "Дай бог! С удовольствием!" }
         ]},
         { "speaker": "a", "tr": "Çok beğendim! Çok güzel bir şehir.", "ru": "Очень понравилось! Очень красивый город.", "distractors": [
           { "tr": "Olga, ailenle sık sık konuşuyor musun?", "ru": "Ольга, ты часто разговариваешь с семьёй?" },
-          { "tr": "Çok isterim!", "ru": "С удовольствием!" }
+          { "tr": "İnşallah! Çok isterim!", "ru": "Дай бог! С удовольствием!" }
         ]},
         { "speaker": "b", "tr": "Bir gün birlikte gideceğiz. Annem seni çok sevecek!", "ru": "Когда-нибудь поедем вместе. Мама тебя очень полюбит!", "distractors": [
           { "tr": "Olga, ailenle sık sık konuşuyor musun?", "ru": "Ольга, ты часто разговариваешь с семьёй?" },
           { "tr": "Ya kız kardeşin?", "ru": "А с сестрой?" }
         ]},
-        { "speaker": "a", "tr": "Çok isterim!", "ru": "С удовольствием!", "distractors": [
+        { "speaker": "a", "tr": "İnşallah! Çok isterim!", "ru": "Дай бог! С удовольствием!", "distractors": [
           { "tr": "Olga, ailenle sık sık konuşuyor musun?", "ru": "Ольга, ты часто разговариваешь с семьёй?" },
           { "tr": "Ya kız kardeşin?", "ru": "А с сестрой?" }
         ]}
@@ -458,7 +458,7 @@
         ]},
         { "speaker": "b", "tr": "Hiç. Benim kardeşim yok. Ailem çok büyük değil.", "ru": "Да так. А у меня нет братьев и сестёр. Моя семья небольшая.", "distractors": [
           { "tr": "Olga, erkek kardeşin var mı?", "ru": "Ольга, у тебя есть брат?" },
-          { "tr": "Annen ne iş yapıyor?", "ru": "А кем работает твоя мама?" }
+          { "tr": "Seksen mi? Maşallah! Annen ne iş yapıyor?", "ru": "Восемьдесят? Не сглазить бы! А кем работает твоя мама?" }
         ]},
         { "speaker": "a", "tr": "Annen ve baban nerede yaşıyor?", "ru": "А где живут твои мама и папа?", "distractors": [
           { "tr": "Olga, erkek kardeşin var mı?", "ru": "Ольга, у тебя есть брат?" },
@@ -466,7 +466,7 @@
         ]},
         { "speaker": "b", "tr": "Bursa'da. Anneannem de bizimle yaşıyor.", "ru": "В Бурсе. Бабушка тоже живёт с нами.", "distractors": [
           { "tr": "Olga, erkek kardeşin var mı?", "ru": "Ольга, у тебя есть брат?" },
-          { "tr": "Annen ne iş yapıyor?", "ru": "А кем работает твоя мама?" }
+          { "tr": "Seksen mi? Maşallah! Annen ne iş yapıyor?", "ru": "Восемьдесят? Не сглазить бы! А кем работает твоя мама?" }
         ]},
         { "speaker": "a", "tr": "Anneannen kaç yaşında?", "ru": "Сколько лет твоей бабушке?", "distractors": [
           { "tr": "Hiç. Benim kardeşim yok. Ailem çok büyük değil.", "ru": "Да так. А у меня нет братьев и сестёр. Моя семья небольшая." },
@@ -480,7 +480,7 @@
           { "tr": "Olga, erkek kardeşin var mı?", "ru": "Ольга, у тебя есть брат?" },
           { "tr": "Annem öğretmen. Annem çok sabırlı. Babam sessiz ama çok iyi biri.", "ru": "Мама — учительница. Она очень терпеливая. А папа молчаливый, но очень хороший человек." }
         ]},
-        { "speaker": "b", "tr": "Annen ne iş yapıyor?", "ru": "А кем работает твоя мама?", "distractors": [
+        { "speaker": "b", "tr": "Seksen mi? Maşallah! Annen ne iş yapıyor?", "ru": "Восемьдесят? Не сглазить бы! А кем работает твоя мама?", "distractors": [
           { "tr": "Hiç. Benim kardeşim yok. Ailem çok büyük değil.", "ru": "Да так. А у меня нет братьев и сестёр. Моя семья небольшая." },
           { "tr": "Bursa'da. Anneannem de bizimle yaşıyor.", "ru": "В Бурсе. Бабушка тоже живёт с нами." }
         ]},
@@ -665,7 +665,7 @@
       "speakers": { "a": "Ольга", "b": "Шюкран" },
       "turns": [
         { "speaker": "a", "tr": "Merhaba Şükran Hanım! Nasılsınız?", "ru": "Здравствуйте, Шюкран-ханым! Как вы?", "distractors": [
-          { "tr": "İyiler, teşekkür ederim. Annem yazın İstanbul'a geldi, Deniz'le de tanıştı.", "ru": "Хорошо, спасибо. Мама летом приезжала в Стамбул и познакомилась с Денизом." },
+          { "tr": "Allah'a şükür, iyiler. Annem yazın İstanbul'a geldi, Deniz'le de tanıştı.", "ru": "Слава богу, все хорошо. Мама летом приезжала в Стамбул и познакомилась с Денизом." },
           { "tr": "Aleykümselam! Ona da selamımı söyleyin, lütfen.", "ru": "И ему привет! Передайте ему, пожалуйста, привет от меня." }
         ]},
         { "speaker": "b", "tr": "İyiyim kızım, sağ ol. Sonunda seni görüyorum! Deniz senden çok bahsediyor.", "ru": "Хорошо, дочка, спасибо. Наконец-то я тебя вижу! Дениз много о тебе рассказывает.", "distractors": [
@@ -673,7 +673,7 @@
           { "tr": "Söylerim kızım. Bayramda görüşmek üzere!", "ru": "Передам, дочка. До встречи на байрам!" }
         ]},
         { "speaker": "a", "tr": "Ben de çok mutluyum. Deniz de sizden hep bahseder.", "ru": "Я тоже очень рада. Дениз тоже всё время о вас рассказывает.", "distractors": [
-          { "tr": "İyiler, teşekkür ederim. Annem yazın İstanbul'a geldi, Deniz'le de tanıştı.", "ru": "Хорошо, спасибо. Мама летом приезжала в Стамбул и познакомилась с Денизом." },
+          { "tr": "Allah'a şükür, iyiler. Annem yazın İstanbul'a geldi, Deniz'le de tanıştı.", "ru": "Слава богу, все хорошо. Мама летом приезжала в Стамбул и познакомилась с Денизом." },
           { "tr": "Aleykümselam! Ona da selamımı söyleyin, lütfen.", "ru": "И ему привет! Передайте ему, пожалуйста, привет от меня." }
         ]},
         { "speaker": "b", "tr": "Öyle mi? Deniz küçükken çok utangaçtı, biliyor musun?", "ru": "Правда? А ты знаешь, что в детстве Дениз был очень стеснительным?", "distractors": [
@@ -688,7 +688,7 @@
           { "tr": "Deniz'in babası da seni görmek istiyor ama şimdi evde değil. Sana selam söylüyor.", "ru": "Папа Дениза тоже хочет тебя увидеть, но сейчас его нет дома. Он передаёт тебе привет." },
           { "tr": "Söylerim kızım. Bayramda görüşmek üzere!", "ru": "Передам, дочка. До встречи на байрам!" }
         ]},
-        { "speaker": "a", "tr": "İyiler, teşekkür ederim. Annem yazın İstanbul'a geldi, Deniz'le de tanıştı.", "ru": "Хорошо, спасибо. Мама летом приезжала в Стамбул и познакомилась с Денизом.", "distractors": [
+        { "speaker": "a", "tr": "Allah'a şükür, iyiler. Annem yazın İstanbul'a geldi, Deniz'le de tanıştı.", "ru": "Слава богу, все хорошо. Мама летом приезжала в Стамбул и познакомилась с Денизом.", "distractors": [
           { "tr": "Merhaba Şükran Hanım! Nasılsınız?", "ru": "Здравствуйте, Шюкран-ханым! Как вы?" },
           { "tr": "Aleykümselam! Ona da selamımı söyleyin, lütfen.", "ru": "И ему привет! Передайте ему, пожалуйста, привет от меня." }
         ]},

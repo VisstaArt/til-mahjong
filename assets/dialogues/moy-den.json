@@ -61,7 +61,7 @@
           { "tr": "Dokuza on var. Bir sonraki vapur ne zaman?", "ru": "Без десяти девять. Когда следующий пароход?" }
         ]},
         { "speaker": "b", "tr": "Eyvah! Neredesin?", "ru": "Ой! Ты где?", "distractors": [
-          { "tr": "Tamam, teşekkürler! Vapur geldi. Yoldayım!", "ru": "Хорошо, спасибо! Пароход пришёл. Я уже в пути!" },
+          { "tr": "Tamam, teşekkürler! Allah'a şükür, vapur geldi. Yoldayım!", "ru": "Хорошо, спасибо! Слава богу, пароход пришёл. Я уже в пути!" },
           { "tr": "Hayır, daha gelmedi. Merak etme!", "ru": "Нет, ещё не пришёл. Не волнуйся!" }
         ]},
         { "speaker": "a", "tr": "Kadıköy'deyim, iskelede. Biraz geç kalacağım.", "ru": "Я в Кадыкёе, на пристани. Я немного опоздаю.", "distractors": [
@@ -78,7 +78,7 @@
         ]},
         { "speaker": "b", "tr": "Dokuza on var. Bir sonraki vapur ne zaman?", "ru": "Без десяти девять. Когда следующий пароход?", "distractors": [
           { "tr": "Alo, Tuba! Vapuru kaçırdım.", "ru": "Алло, Туба! Я опоздала на пароход." },
-          { "tr": "Tamam, teşekkürler! Vapur geldi. Yoldayım!", "ru": "Хорошо, спасибо! Пароход пришёл. Я уже в пути!" }
+          { "tr": "Tamam, teşekkürler! Allah'a şükür, vapur geldi. Yoldayım!", "ru": "Хорошо, спасибо! Слава богу, пароход пришёл. Я уже в пути!" }
         ]},
         { "speaker": "a", "tr": "Dokuzda. Metin Bey ofiste mi?", "ru": "В девять. Метин-бей в офисе?", "distractors": [
           { "tr": "Alo, Tuba! Vapuru kaçırdım.", "ru": "Алло, Туба! Я опоздала на пароход." },
@@ -88,7 +88,7 @@
           { "tr": "Eyvah! Neredesin?", "ru": "Ой! Ты где?" },
           { "tr": "Saat kaç şimdi?", "ru": "А сейчас который час?" }
         ]},
-        { "speaker": "a", "tr": "Tamam, teşekkürler! Vapur geldi. Yoldayım!", "ru": "Хорошо, спасибо! Пароход пришёл. Я уже в пути!", "distractors": [
+        { "speaker": "a", "tr": "Tamam, teşekkürler! Allah'a şükür, vapur geldi. Yoldayım!", "ru": "Хорошо, спасибо! Слава богу, пароход пришёл. Я уже в пути!", "distractors": [
           { "tr": "Eyvah! Neredesin?", "ru": "Ой! Ты где?" },
           { "tr": "Saat kaç şimdi?", "ru": "А сейчас который час?" }
         ]}
@@ -629,7 +629,7 @@
       "speakers": { "a": "Ольга", "b": "Метин" },
       "turns": [
         { "speaker": "a", "tr": "Metin Bey, bir dakikanız var mı?", "ru": "Метин-бей, у вас есть минутка?", "distractors": [
-          { "tr": "Önemli değil. Kolay gelsin!", "ru": "Не за что. Удачной работы!" },
+          { "tr": "Önemli değil. Allah kolaylık versin!", "ru": "Не за что. Бог в помощь!" },
           { "tr": "Bugün saat üçte müşteriyle toplantımız var. Toplantıya katılabilir misiniz?", "ru": "Сегодня в три у нас совещание с клиентом. Вы сможете быть на совещании?" }
         ]},
         { "speaker": "b", "tr": "Tabii Olga Hanım, buyurun.", "ru": "Конечно, Ольга-ханым, слушаю вас.", "distractors": [
@@ -637,7 +637,7 @@
           { "tr": "Bugün erken çıkabilir miyim? Saat beşte doktor randevum var.", "ru": "Можно мне сегодня уйти пораньше? В пять у меня запись к врачу." }
         ]},
         { "speaker": "a", "tr": "Bugün erken çıkabilir miyim? Saat beşte doktor randevum var.", "ru": "Можно мне сегодня уйти пораньше? В пять у меня запись к врачу.", "distractors": [
-          { "tr": "Önemli değil. Kolay gelsin!", "ru": "Не за что. Удачной работы!" },
+          { "tr": "Önemli değil. Allah kolaylık versin!", "ru": "Не за что. Бог в помощь!" },
           { "tr": "Tamam. Raporu bugün bitirebilir misiniz?", "ru": "Хорошо. Вы сможете сегодня закончить отчёт?" }
         ]},
         { "speaker": "b", "tr": "Bugün saat üçte müşteriyle toplantımız var. Toplantıya katılabilir misiniz?", "ru": "Сегодня в три у нас совещание с клиентом. Вы сможете быть на совещании?", "distractors": [
@@ -661,7 +661,7 @@
           { "tr": "Çok iyi. O zaman toplantıdan sonra çıkabilirsiniz.", "ru": "Отлично. Тогда после совещания можете идти." }
         ]},
         { "speaker": "a", "tr": "Evet, öğleden önce bitiririm. Tuba her zaman raporlarımı kontrol eder, sonra size gönderirim.", "ru": "Да, закончу до обеда. Туба всегда проверяет мои отчёты, потом я пришлю его вам.", "distractors": [
-          { "tr": "Önemli değil. Kolay gelsin!", "ru": "Не за что. Удачной работы!" },
+          { "tr": "Önemli değil. Allah kolaylık versin!", "ru": "Не за что. Бог в помощь!" },
           { "tr": "Çok iyi. O zaman toplantıdan sonra çıkabilirsiniz.", "ru": "Отлично. Тогда после совещания можете идти." }
         ]},
         { "speaker": "b", "tr": "Çok iyi. O zaman toplantıdan sonra çıkabilirsiniz.", "ru": "Отлично. Тогда после совещания можете идти.", "distractors": [
@@ -672,7 +672,7 @@
           { "tr": "Evet, katılabilirim. Toplantı ne kadar sürer?", "ru": "Да, смогу. Сколько обычно длится совещание?" },
           { "tr": "Güzel. Toplantıdan sonra çıkıp vapura binerim. Doktor Kadıköy'de.", "ru": "Хорошо. После совещания я выйду и сяду на пароход. Врач в Кадыкёе." }
         ]},
-        { "speaker": "b", "tr": "Önemli değil. Kolay gelsin!", "ru": "Не за что. Удачной работы!", "distractors": [
+        { "speaker": "b", "tr": "Önemli değil. Allah kolaylık versin!", "ru": "Не за что. Бог в помощь!", "distractors": [
           { "tr": "Bugün saat üçte müşteriyle toplantımız var. Toplantıya katılabilir misiniz?", "ru": "Сегодня в три у нас совещание с клиентом. Вы сможете быть на совещании?" },
           { "tr": "Tabii Olga Hanım, buyurun.", "ru": "Конечно, Ольга-ханым, слушаю вас." }
         ]}
@@ -802,7 +802,7 @@
         ]},
         { "speaker": "a", "tr": "Günaydın, Tuba! Ne oldu?", "ru": "Доброе утро, Туба! Что случилось?", "distractors": [
           { "tr": "Her sabah aynı şey! Alp hiç erken kalkmaz, Ela da giyinmek istemez.", "ru": "Каждое утро одно и то же! Альп никак не встаёт рано, а Эла не хочет одеваться." },
-          { "tr": "Sen bir meleksin! Kahve içmeden çalışamam.", "ru": "Ты ангел! Без кофе я не могу работать." }
+          { "tr": "Allah razı olsun, sen bir meleksin! Kahve içmeden çalışamam.", "ru": "Храни тебя бог, ты ангел! Без кофе я не могу работать." }
         ]},
         { "speaker": "b", "tr": "Her sabah aynı şey! Alp hiç erken kalkmaz, Ela da giyinmek istemez.", "ru": "Каждое утро одно и то же! Альп никак не встаёт рано, а Эла не хочет одеваться.", "distractors": [
           { "tr": "Günaydın... Bu sabah çok zordu. Hiç enerjim yok.", "ru": "Доброе утро… Это утро было очень тяжёлым. Совсем нет сил." },
@@ -813,7 +813,7 @@
           { "tr": "Günaydın, Tuba! Ne oldu?", "ru": "Доброе утро, Туба! Что случилось?" }
         ]},
         { "speaker": "b", "tr": "Eder, ama o sekizde evden çıkar. Alp'i okula, Ela'yı anaokuluna ben götürürüm.", "ru": "Помогает, но он уходит из дома в восемь. Альпа в школу, а Элу в детский сад отвожу я.", "distractors": [
-          { "tr": "Sen bir meleksin! Kahve içmeden çalışamam.", "ru": "Ты ангел! Без кофе я не могу работать." },
+          { "tr": "Allah razı olsun, sen bir meleksin! Kahve içmeden çalışamam.", "ru": "Храни тебя бог, ты ангел! Без кофе я не могу работать." },
           { "tr": "Günaydın, Tuba! Ne oldu?", "ru": "Доброе утро, Туба! Что случилось?" }
         ]},
         { "speaker": "a", "tr": "Sabahları kaçta kalkarsın?", "ru": "А во сколько ты встаёшь по утрам?", "distractors": [
@@ -836,7 +836,7 @@
           { "tr": "Kocan yardım etmez mi?", "ru": "А муж не помогает?" },
           { "tr": "Günaydın... Bu sabah çok zordu. Hiç enerjim yok.", "ru": "Доброе утро… Это утро было очень тяжёлым. Совсем нет сил." }
         ]},
-        { "speaker": "b", "tr": "Sen bir meleksin! Kahve içmeden çalışamam.", "ru": "Ты ангел! Без кофе я не могу работать.", "distractors": [
+        { "speaker": "b", "tr": "Allah razı olsun, sen bir meleksin! Kahve içmeden çalışamam.", "ru": "Храни тебя бог, ты ангел! Без кофе я не могу работать.", "distractors": [
           { "tr": "Günaydın... Bu sabah çok zordu. Hiç enerjim yok.", "ru": "Доброе утро… Это утро было очень тяжёлым. Совсем нет сил." },
           { "tr": "Altıda! Çocuklar uyurken duş alırım ve kahvaltı hazırlarım. Sen kaçta kalkarsın?", "ru": "В шесть! Пока дети спят, принимаю душ и готовлю завтрак. А ты во сколько встаёшь?" }
         ]},
@@ -996,7 +996,7 @@
           { "tr": "Biliyorum! Perşembe görüşürüz!", "ru": "Знаю! До четверга!" },
           { "tr": "Yedi biraz erken. Vapurdan inince seni ararım, tamam mı?", "ru": "Семь — рановато. Как сойду с парохода, позвоню тебе, хорошо?" }
         ]},
-        { "speaker": "b", "tr": "Haha, doğru! Pamuk dünyanın en tatlı kedisi.", "ru": "Ха-ха, правда! Памук — самая милая кошка на свете.", "distractors": [
+        { "speaker": "b", "tr": "Haha, doğru! Pamuk, maşallah, dünyanın en tatlı kedisi.", "ru": "Ха-ха, правда! Памук, не сглазить бы, — самая милая кошка на свете.", "distractors": [
           { "tr": "Evet, müsaitim. Moda'da çay bahçesinde buluşalım mı? Saat yedide?", "ru": "Да, свободна. Встретимся в чайном саду в Моде? В семь?" },
           { "tr": "Pazartesi, çarşamba ve cuma spor salonuna giderim. Salı akşamları Türkçe ödevimi yaparım.", "ru": "В понедельник, среду и пятницу хожу в спортзал. По вторникам вечером делаю домашнее задание по турецкому." }
         ]},

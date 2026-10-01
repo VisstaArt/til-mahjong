@@ -68,7 +68,7 @@
           { "tr": "Yüz yirmi lira. İyi günler!", "ru": "Сто двадцать лир. Хорошего дня!" },
           { "tr": "Günaydın! İskeleye, lütfen. Acelem var.", "ru": "Доброе утро! На пристань, пожалуйста. Я спешу." }
         ]},
-        { "speaker": "b", "tr": "Merak etmeyin, on dakikada iskeledeyiz.", "ru": "Не волнуйтесь, через десять минут будем на пристани.", "distractors": [
+        { "speaker": "b", "tr": "Merak etmeyin. İnşallah on dakikada iskeledeyiz.", "ru": "Не волнуйтесь. Даст бог, через десять минут будем на пристани.", "distractors": [
           { "tr": "Günaydın! İskeleye, lütfen. Acelem var.", "ru": "Доброе утро! На пристань, пожалуйста. Я спешу." },
           { "tr": "Tamam. Vapurunuz saat kaçta?", "ru": "Хорошо. Во сколько ваш пароход?" }
         ]},
@@ -104,7 +104,7 @@
           { "tr": "Tamam. Çayımı içiyorum ve gidiyorum!", "ru": "Ладно. Допиваю чай и иду!" },
           { "tr": "Hayır, ben saat üçte Özge ile çalışıyorum.", "ru": "Нет, в три я работаю с Озге." }
         ]},
-        { "speaker": "b", "tr": "Eyvah! Saat ikide toplantı var!", "ru": "Ой! В два совещание!", "distractors": [
+        { "speaker": "b", "tr": "Allah'ım! Saat ikide toplantı var!", "ru": "Боже мой! В два совещание!", "distractors": [
           { "tr": "Tamam. Çayımı içiyorum ve gidiyorum!", "ru": "Ладно. Допиваю чай и иду!" },
           { "tr": "Hayır, ben saat üçte Özge ile çalışıyorum.", "ru": "Нет, в три я работаю с Озге." }
         ]},
