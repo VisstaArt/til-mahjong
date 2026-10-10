@@ -994,8 +994,14 @@ def main():
             items.append(item)
 
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
+    # В приложение — только то, чем пользуется игра (alts / src / id / word — для отладки).
+    slim = []
+    for it in items:
+        x = {k: v for k, v in it.items() if k not in ("id", "src")}
+        x["slots"] = [{k: v for k, v in sl.items() if k not in ("alts", "word")} for sl in it["slots"]]
+        slim.append(x)
     with open(OUT, "w", encoding="utf-8") as f:
-        json.dump(items, f, ensure_ascii=False, separators=(",", ":"))
+        json.dump(slim, f, ensure_ascii=False, separators=(",", ":"))
     with open(PATH_OUT, "w", encoding="utf-8") as f:
         json.dump(load_paths()[1], f, ensure_ascii=False, separators=(",", ":"))
     with open(UNMATCHED, "w", encoding="utf-8") as f:
