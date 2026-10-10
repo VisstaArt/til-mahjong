@@ -332,6 +332,46 @@ def ecek(infinitive, person, negative=False, question=False):
     return Form("".join(p.text for p in parts), parts, tags)
 
 
+# --- с кем? чем? -(y)la: vapurla, taksiyle, Leyla'yla, benimle, annemle, kardeşiyle ---
+PRONOUN_WITH = {"ben": "benim", "sen": "senin", "o": "onun", "biz": "bizim", "siz": "sizin", "onlar": "onlar"}
+
+
+def _with_suffix(base):
+    return ("y" if base[-1] in VOWELS else "") + "l" + a2(base)
+
+
+def with_form(noun, proper=False, poss=None, pronoun=None):
+    """vapur → vapurla, taksi → taksiyle, Leyla → Leyla'yla; anne + benim → annemle;
+    kardeş + onun → kardeşiyle; ben → benimle (у местоимений — от «чей»: benim + le)."""
+    tags = ["with"]
+    if pronoun:
+        stem = PRONOUN_WITH[pronoun]
+        parts = [Part(stem, "stem", [stem], f"с местоимением -le крепится к «чей»: {pronoun} → {stem}" if pronoun != "onlar" else "")]
+        base = stem
+        tags.append("pronoun")
+    elif poss:
+        f = possessive(noun, poss)
+        parts = list(f.parts)
+        base = f.word
+        tags += ["poss-with", f"p.{poss}"]
+    else:
+        parts = [Part(noun, "stem", [noun], "")]
+        base = noun
+    suf = _with_suffix(base.lower())
+    why = f"с кем? чем? → -la / -le; последняя гласная «{last_vowel(base.lower())}» → l{a2(base.lower())}"
+    if suf.startswith("y"):
+        why += "; после гласной — связка y"
+        tags.append("buffer")
+    opts = _uniq([suf, suf[1:] if suf.startswith("y") else "y" + suf, suf.translate(str.maketrans("ae", "ea")),
+                  _case_suffix(base.lower(), "loc"), _case_suffix(base.lower(), "dat")])
+    if proper:
+        suf = "'" + suf
+        opts = ["'" + o for o in opts]
+        tags.append("proper")
+    parts.append(Part(suf, "with", opts, why))
+    return Form("".join(p.text for p in parts), parts, tags)
+
+
 # --- падежи -de / -den / -e ---
 def _case_suffix(base, case, proper=False):
     last = base[-1]
@@ -745,6 +785,16 @@ if __name__ == "__main__":
         if got != want:
             bad += 1
             print("FAIL ecek", args, kw, got)
+    for args, kw, want in [
+        (("vapur",), {}, "vapurla"), (("tren",), {}, "trenle"), (("taksi",), {}, "taksiyle"), (("araba",), {}, "arabayla"),
+        (("Leyla",), {"proper": True}, "Leyla'yla"), (("Deniz",), {"proper": True}, "Deniz'le"),
+        (("anne",), {"poss": "ben"}, "annemle"), (("kardeş",), {"poss": "o"}, "kardeşiyle"), (("arkadaş",), {"poss": "ben"}, "arkadaşımla"),
+        (("",), {"pronoun": "ben"}, "benimle"), (("",), {"pronoun": "o"}, "onunla"), (("",), {"pronoun": "onlar"}, "onlarla"),
+    ]:
+        got = with_form(*args, **kw).word
+        if got != want:
+            bad += 1
+            print("FAIL with", args, kw, got)
     got = copula("", "ben", pre=noun_case("ev", "loc")).word
     if got != "evdeyim":
         bad += 1

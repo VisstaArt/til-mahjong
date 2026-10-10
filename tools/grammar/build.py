@@ -27,7 +27,7 @@ UNMATCHED = os.path.join(os.path.dirname(__file__), "unmatched.txt")
 EXTRA_VERBS = os.path.join(os.path.dirname(__file__), "extra-verbs.txt")
 EXTRA_NOUNS = os.path.join(os.path.dirname(__file__), "extra-nouns.txt")
 # Пути тем — ступени со своими короткими фразами (path-<тема>.txt), в порядке прохождения.
-PATH_TOPICS = ["yor", "case", "cop", "poss", "acc", "di", "want", "ecek"]
+PATH_TOPICS = ["yor", "case", "cop", "poss", "acc", "di", "want", "ecek", "with"]
 PATH_OUT = os.path.join(ROOT, "assets", "grammar", "path.json")
 # Фраза из разговорника/диалога идёт в ступень «В жизни» только если она короткая и по
 # грамматике не выше этого уровня (оценка levels.py) — иначе для начинающих слишком сложно.
@@ -399,6 +399,49 @@ def match_ecek(token, next_token, verbs, all_words, life):
     return found[0]
 
 
+# --- с кем? чем? -(y)la ---
+WITH_PROPER_RE = re.compile(r"^([A-ZÇĞİÖŞÜ][\wçğıöşü]+)'(y?l[ae])$")
+PRONOUN_WITH_WORDS = {"benimle": "ben", "seninle": "sen", "onunla": "o", "bizimle": "biz", "sizinle": "siz", "onlarla": "onlar"}
+
+
+def build_with_index(nouns, all_words):
+    idx = {}
+    for lemma in nouns:
+        if len(lemma) < 2 or " " in lemma:
+            continue
+        variants = [(None, morph.with_form(lemma))] + [(p, morph.with_form(lemma, poss=p)) for p in morph.PERSONS]
+        for person, f in variants:
+            w = tr_lower(f.word)
+            if w in STOP or w in all_words or w in WORD_PARTS:
+                continue
+            idx.setdefault(w, []).append((lemma, person, f))
+    return idx
+
+
+def match_with(tokens, i, with_idx, sentence_words, life):
+    raw = tokens[i][0]
+    low = tr_lower(raw)
+    if low in PRONOUN_WITH_WORDS:
+        p = PRONOUN_WITH_WORDS[low]
+        return p, morph.with_form("", pronoun=p)
+    m = WITH_PROPER_RE.match(raw)
+    if m:
+        f = morph.with_form(m.group(1), proper=True)
+        return (m.group(1), f) if f.word == raw else None
+    cands = with_idx.get(low)
+    if not cands:
+        return None
+    prev = tokens[i - 1][0] if i > 0 else ""
+    prev_gen = tr_lower(prev) == "onun" or bool(GEN_RE.match(prev))
+    for lemma, person, f in cands:
+        if person == "sen" and "senin" not in sentence_words and (life or "sen" not in sentence_words):
+            continue
+        if person in ("o", "onlar") and life and not prev_gen:
+            continue
+        return lemma, f
+    return None
+
+
 # --- падежи ---
 def build_case_index(nouns, all_words):
     idx = {}
@@ -754,6 +797,7 @@ def main():
     case_idx = build_case_index(nouns, all_words)
     poss_idx = build_poss_index(nouns, all_words)
     acc_idx = build_acc_index(nouns, all_words)
+    with_idx = build_with_index(nouns, all_words)
     sources = load_sources()
     items, unmatched = [], {}
     base_problems, too_hard = [], 0
@@ -847,7 +891,7 @@ def main():
                 i += 1
                 continue
             ps = match_poss(tokens, i, poss_idx, sentence_words, src["tier"] == "life")
-            if ps and (raw[0].islower() or s == 0):
+            if ps and (raw[0].islower() or s == 0 or tr[:s].rstrip()[-1:] in ".!?"):
                 lemma, person, case, form = ps
                 if raw[0].isupper():
                     form = copy.deepcopy(form)
@@ -864,7 +908,7 @@ def main():
                 continue
             ac = match_acc(tokens, i, acc_idx, sentence_words, src["tier"] == "life")
             # С заглавной посреди фразы — имя (Pamuk), кроме языков: Türkçeyi, Rusçayı.
-            if ac and (raw[0].islower() or s == 0 or "'" in raw or str(ac[0]).endswith(("çe", "ça"))):
+            if ac and (raw[0].islower() or s == 0 or tr[:s].rstrip()[-1:] in ".!?" or "'" in raw or str(ac[0]).endswith(("çe", "ça"))):
                 lemma, person, form, is_pronoun = ac
                 if raw[0].isupper() and "'" not in raw:
                     form = copy.deepcopy(form)
@@ -874,6 +918,19 @@ def main():
                 slot = form_to_slot(form, s, e, lemma, "acc", nouns.get(lemma, "") if not is_pronoun else "")
                 if person:
                     slot["person"] = person
+                slot["alts"] = []
+                slots.append(slot)
+                i += 1
+                continue
+            wf = match_with(tokens, i, with_idx, sentence_words, src["tier"] == "life")
+            if wf and (raw[0].islower() or s == 0 or tr[:s].rstrip()[-1:] in ".!?" or "'" in raw):
+                lemma, form = wf
+                if raw[0].isupper() and "'" not in raw:
+                    form = copy.deepcopy(form)
+                    form.parts[0].text = raw[0] + form.parts[0].text[1:]
+                    form.parts[0].options = [o[0].upper() + o[1:] for o in form.parts[0].options]
+                    form.word = raw
+                slot = form_to_slot(form, s, e, lemma, "with", nouns.get(lemma, "") if isinstance(lemma, str) else "")
                 slot["alts"] = []
                 slots.append(slot)
                 i += 1

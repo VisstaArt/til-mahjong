@@ -334,6 +334,35 @@ GRAMMAR_TOPICS.push({
     <div class="memo-examples" data-examples="Yarın ne yapacaksın?|Что ты будешь делать завтра?;Yazın Bodrum'a gideceğim.|Летом я поеду в Бодрум.;Akşam seni arayacağım.|Вечером я тебе позвоню.;Leyla'yı arayacak mısın?|Ты позвонишь Лейле?"></div>
   `,
 });
+GRAMMAR_TOPICS.push({
+  id: "with",
+  emoji: "🤝",
+  title: "С кем? Чем? -la / -le",
+  rules: [
+    ["with", "с кем? чем? -la / -le"],
+    ["buffer", "после гласной -yla"],
+    ["proper", "имена: Leyla'yla"],
+    ["pronoun", "benimle, seninle…"],
+    ["poss-with", "annemle, kardeşiyle"],
+  ],
+  memo: `
+    <h3>С кем? Чем? -la / -le</h3>
+    <table class="memo-table">
+      <tr><th>что</th><th>как</th><th>пример</th></tr>
+      <tr><td>после согл.</td><td>-la / -le</td><td>vapur<b>la</b>, tren<b>le</b></td></tr>
+      <tr><td>после гласной</td><td>-yla / -yle</td><td>taksi<b>yle</b>, araba<b>yla</b></td></tr>
+      <tr><td>имя</td><td>'la, 'yla</td><td>Deniz<b>'le</b>, Leyla<b>'yla</b></td></tr>
+      <tr><td>со мной…</td><td>чей + -le</td><td><b>benimle, seninle, onunla, bizimle, sizinle, onlarla</b></td></tr>
+      <tr><td>с мамой</td><td>свой + -la</td><td>anne<b>mle</b>, kardeşi<b>yle</b></td></tr>
+    </table>
+    <ul>
+      <li>Это то же, что отдельное слово <b>ile</b>: vapur ile = vapurla. Гласная — a / e по гармонии.</li>
+      <li>«Чем?» — транспорт и инструмент: vapur<b>la</b> gidiyorum, kart<b>la</b> ödüyorum.</li>
+      <li>«С кем?»: Leyla<b>'yla</b> konuşuyorum, annem<b>le</b> konuştum.</li>
+    </ul>
+    <div class="memo-examples" data-examples="İşe vapurla gidiyorum.|Я езжу на работу на пароходе.;Leyla'yla Kars'a trenle gittik.|Мы с Лейлой ездили в Карс на поезде.;Seninle konuşmak istiyorum.|Я хочу поговорить с тобой.;Dün annemle konuştum.|Вчера я поговорила с мамой."></div>
+  `,
+});
 const GRAMMAR_REVIEW = { id: "review", emoji: "🔀", title: "Повторение вперемешку" };
 
 // Где застряла Памук — новое место на каждой ступени темы (по кругу).
@@ -676,6 +705,7 @@ function partKind(slot, part) {
     case "gen":
       return "poss";
     case "acc":
+    case "with":
       return "case";
     default:
       return part.slot; // tense, neg, case, poss
@@ -1161,6 +1191,8 @@ function partTags(slot, part) {
       return t.filter((x) => x === "gen");
     case "acc":
       return t.filter((x) => ["acc", "buffer", "proper", "pronoun", "poss-acc", "n-buffer"].includes(x));
+    case "with":
+      return t.filter((x) => ["with", "buffer", "proper", "pronoun", "poss-with"].includes(x));
     case "case":
       return t.filter((x) => x.startsWith("c.") || ["voiceless", "buffer", "proper", "n-buffer"].includes(x));
     default:

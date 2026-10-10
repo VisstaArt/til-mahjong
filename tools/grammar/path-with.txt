@@ -1,0 +1,101 @@
+# Путь темы «С кем? Чем?» -(y)la / -(y)le: vapurla, taksiyle, Leyla'yla, benimle, annemle —
+# Yeni Hitit 1, ünite 4.3. Идёт после всех прошлых тем. Ольга ездит на работу пароходом из
+# Кадыкёя, в Карс ездила с Лейлой поездом (LEGEND.md). Формат — как в path-yor.txt.
+
+## Чем? Транспорт: -la / -le | vapur → vapurla, tren → trenle | words=1
+Ben işe vapurla gidiyorum. | Я езжу на работу на пароходе.
+Leyla okula otobüsle gidiyor. | Лейла едет в школу на автобусе.
+Biz Kars'a trenle gittik. | Мы ездили в Карс на поезде.
+Deniz İzmir'e uçakla gitti. | Дениз летал в Измир на самолёте.
+Sen işe vapurla mı gidiyorsun? | Ты ездишь на работу на пароходе?
+Anya İstanbul'a uçakla geldi. | Аня прилетела в Стамбул на самолёте.
+Tuba ofise otobüsle geliyor. | Туба приезжает в офис на автобусе.
+Onlar Bodrum'a otobüsle gidecekler. | Они поедут в Бодрум на автобусе.
+Biz Karaköy'e vapurla gidiyoruz. | Мы едем в Каракёй на пароходе.
+Biz Ankara'ya trenle gideceğiz. | Мы поедем в Анкару на поезде.
+
+## После гласной — связка y | taksi → taksiyle, araba → arabayla | words=1
+Ben eve taksiyle döndüm. | Я вернулась домой на такси.
+Deniz bizi arabayla bekliyor. | Дениз ждёт нас на машине.
+Sen metroyla mı geldin? | Ты приехала на метро?
+Biz Kapadokya'ya arabayla gittik. | Мы ездили в Каппадокию на машине.
+Olga balığı salatayla yiyor. | Ольга ест рыбу с салатом.
+Leyla pastayı kahveyle yiyor. | Лейла ест торт с кофе.
+Siz Kadıköy'e metroyla mı gidiyorsunuz? | Вы едете в Кадыкёй на метро?
+Tuba ofise taksiyle geldi. | Туба приехала в офис на такси.
+Ben havalimanına taksiyle gideceğim. | Я поеду в аэропорт на такси.
+Onlar işe metroyla gidiyorlar. | Они ездят на работу на метро.
+
+## С кем? Имена: Leyla'yla, Deniz'le | после гласной — 'yla | words=1
+Ben Leyla'yla konuşuyorum. | Я разговариваю с Лейлой.
+Olga Deniz'le sinemaya gitti. | Ольга ходила с Денизом в кино.
+Biz Anya'yla Bodrum'a gideceğiz. | Мы с Аней поедем в Бодрум.
+Leyla Efe'yle Büyükada'ya gitti. | Лейла ездила с Эфе на Бююкаду.
+Sen Tuba'yla mı çalışıyorsun? | Ты работаешь с Тубой?
+Deniz Olga'yla kahve içiyor. | Дениз пьёт кофе с Ольгой.
+Pamuk Leyla'yla uyuyor. | Памук спит с Лейлой.
+Ben Metin Bey'le toplantıdayım. | Я на совещании с Метин-беем.
+Anya Olga'yla konuşmak istiyor. | Аня хочет поговорить с Ольгой.
+Siz Deniz'le tanışacak mısınız? | Вы познакомитесь с Денизом?
+
+## Со мной, с тобой | benimle, seninle, onunla — от «чей» + -le | words=1
+Benimle gel! | Пойдём со мной!
+Seninle konuşmak istiyorum. | Я хочу поговорить с тобой.
+Onunla tanıştım. | Я с ним познакомилась.
+Bizimle sinemaya gelecek misin? | Пойдёшь с нами в кино?
+Sizinle çalışmak istiyorum. | Я хочу работать с вами.
+Onlarla kahve içtik. | Мы пили с ними кофе.
+Leyla benimle geliyor. | Лейла идёт со мной.
+Ben seninle gideceğim. | Я пойду с тобой.
+Deniz onunla konuşmadı. | Дениз с ним не разговаривал.
+Biz onlarla Kars'a gittik. | Мы ездили с ними в Карс.
+
+## С мамой, с подругой | annemle, arkadaşımla, kardeşiyle | words=1
+Ben annemle konuştum. | Я поговорила с мамой.
+Olga kardeşiyle konuşuyor. | Ольга разговаривает с сестрой.
+Biz arkadaşımızla geliyoruz. | Мы идём с нашей подругой.
+Sen annenle mi geldin? | Ты пришла с мамой?
+Leyla ailesiyle yaşıyor mu? | Лейла живёт с семьёй?
+Deniz annesiyle konuşacak. | Дениз поговорит с мамой.
+Ben arkadaşımla buluşuyorum. | Я встречаюсь с подругой.
+Tuba çocuğuyla parka gitti. | Туба пошла с ребёнком в парк.
+Siz öğretmeninizle konuştunuz mu? | Вы поговорили со своим учителем?
+Pamuk kediyle oynuyor. | Памук играет с кошкой.
+
+## Всё вместе | чем? с кем? — вперемешку | words=1 | gate
+İşe neyle gidiyorsun? Vapurla. | На чём ты ездишь на работу? На пароходе.
+Leyla'yla Kars'a trenle gittik. | Мы с Лейлой ездили в Карс на поезде.
+Seninle tanışmak istiyorum. | Я хочу с тобой познакомиться.
+Annemle her pazar konuşuyorum. | Я разговариваю с мамой каждое воскресенье.
+Deniz'le arabayla gideceğiz. | Мы с Денизом поедем на машине.
+Kahveyi sütle mi içiyorsun? | Ты пьёшь кофе с молоком?
+Onlarla tanışmak istiyorum. | Я хочу с ними познакомиться.
+Taksiyle mi geldiniz? | Вы приехали на такси?
+Kardeşimle Moskova'da buluşacağım. | Я встречусь с сестрой в Москве.
+Tuba bizimle öğle yemeği yiyecek mi? | Туба будет обедать с нами?
+
+## Фраза длиннее | + когда, куда: слово рядом | words=2
+Ben her sabah vapurla işe gidiyorum. | Каждое утро я езжу на работу на пароходе.
+Olga dün akşam Deniz'le sinemaya gitti. | Вчера вечером Ольга ходила с Денизом в кино.
+Biz yazın Anya'yla Bodrum'a gideceğiz. | Летом мы с Аней поедем в Бодрум.
+Leyla bugün kedisiyle evde kalacak. | Сегодня Лейла останется дома со своей кошкой.
+Sen yarın benimle gelecek misin? | Ты завтра пойдёшь со мной?
+Deniz annesiyle her gün konuşuyor. | Дениз каждый день разговаривает с мамой.
+Tuba çocuklarıyla parkta. | Туба с детьми в парке.
+Biz geçen hafta onlarla tanıştık. | На прошлой неделе мы с ними познакомились.
+Siz kahveyi şekerle mi içiyorsunuz? | Вы пьёте кофе с сахаром?
+Onlar işe arabayla gitmiyorlar. | Они ездят на работу не на машине.
+
+## Вся фраза | только перевод — собери по-турецки | words=99
+Ben vapurla gidiyorum. | Я еду на пароходе.
+Onunla gittim. | Я ходила с ним.
+Leyla'yla konuştum. | Я поговорила с Лейлой.
+Biz trenle gittik. | Мы ехали на поезде.
+Deniz arabayla geldi. | Дениз приехал на машине.
+Seninle gideceğim. | Я пойду с тобой.
+Annemle konuşacağım. | Я поговорю с мамой.
+Onlarla çalışıyoruz. | Мы работаем с ними.
+Taksiyle döndük. | Мы вернулись на такси.
+Olga kardeşiyle konuşuyor mu? | Ольга разговаривает с сестрой?
+
+## В жизни | фразы из «Фраз» и «Диалогов» — только с пройденным | words=2 | life
