@@ -273,6 +273,65 @@ def imperative(infinitive, person="siz", negative=False):
     return Form("".join(p.text for p in parts), parts, tags)
 
 
+# --- будущее -(y)ecek: geleceğim, gidecek, bekleyeceğiz, gelmeyeceğim, gelecek misin? ---
+ECEK_PERSON = {"ben": "{v}m", "sen": "s{v}n", "o": "", "biz": "{v}z", "siz": "s{v}n{v}z", "onlar": "l{a}r"}
+ECEK_QUESTION = {"ben": "m{v}y{v}m", "sen": "m{v}s{v}n", "o": "m{v}", "biz": "m{v}y{v}z", "siz": "m{v}s{v}n{v}z"}
+
+
+def ecek(infinitive, person, negative=False, question=False):
+    """gel → geleceğim (k → ğ перед гласной), bekle → bekleyeceğim (связка y), git → gideceğim,
+    ye → yiyeceğim; не: gelmeyeceğim; вопрос: gelecek misin? / gelecekler mi?"""
+    stem = verb_stem(infinitive)
+    tags = ["ecek", f"p.{person}"]
+    if infinitive in IRREGULAR_YOR and not negative:  # yemek → yiyecek (но yemeyecek), demek → diyecek
+        new = IRREGULAR_YOR[infinitive]
+        parts = [Part(new, "stem", [new, stem], f"{infinitive} — исключение: {stem} → {new}yecek")]
+        tags.append("irregular")
+        base = new
+    elif _is_softening_verb(infinitive) and not negative:
+        new = stem[:-1] + SOFTEN[stem[-1]]
+        parts = [Part(new, "stem", [new, stem], f"{infinitive}: t → d перед гласной ({stem} → {new})")]
+        tags.append("soften")
+        base = new
+    else:
+        parts = [Part(stem, "stem", [stem], "")]
+        base = stem
+    if negative:
+        neg = "m" + a2(stem)
+        parts.append(Part(neg, "neg", _uniq([neg, "m" + ("e" if neg[-1] == "a" else "a"), "m" + i4(stem)]),
+                          f"«не» → -ma / -me; последняя гласная «{last_vowel(stem)}» → {neg}"))
+        base = stem + neg
+        tags.append("neg")
+    a = a2(base)
+    y = "y" if base[-1] in VOWELS else ""
+    core = y + a + "c" + a
+    end_raw = "" if question else ECEK_PERSON[person].format(v=i4(core), a=a)
+    soft_k = end_raw[:1] in VOWELS
+    tense = core + ("ğ" if soft_k else "k")
+    why = f"будущее → -acak / -ecek; последняя гласная «{last_vowel(base)}» → {a}c{a}k"
+    if y:
+        why += "; после гласной — связка y"
+        tags.append("buffer")
+    if soft_k:
+        why += "; перед гласной k → ğ"
+    opts = _uniq([tense] + [x + y2 + "c" + x + kk for x in "ae" for y2 in ({y, ""}) for kk in "kğ"])
+    parts.append(Part(tense, "tense", opts[:8], why))
+    if question:
+        if person == "onlar":
+            parts.append(Part("l" + a + "r", "person", ["lar", "ler"], f"onlar (они) → -l{a}r остаётся на глаголе"))
+            parts.append(Part(" m" + ("ı" if a == "a" else "i"), "question", [" mı", " mi", " mu"],
+                              "после -lar частица по гармонии: mı / mi"))
+        else:
+            q = ECEK_QUESTION[person].format(v=i4(core))
+            parts.append(Part(" " + q, "person", _uniq([" " + q] + [" " + ECEK_QUESTION[p].format(v=i4(core)) for p in ECEK_QUESTION]),
+                              f"в вопросе лицо — на частице: {person} → {q}"))
+        tags.append("question")
+    elif end_raw:
+        opts_p = _uniq([end_raw] + [ECEK_PERSON[p].format(v=i4(core), a=a) for p in PERSONS if ECEK_PERSON[p]])
+        parts.append(Part(end_raw, "person", opts_p, f"{person} ({PERSON_RU[person]}) → -{end_raw}"))
+    return Form("".join(p.text for p in parts), parts, tags)
+
+
 # --- падежи -de / -den / -e ---
 def _case_suffix(base, case, proper=False):
     last = base[-1]
@@ -672,6 +731,20 @@ if __name__ == "__main__":
         if got != want:
             bad += 1
             print("FAIL want", fn.__name__, args, kw, got)
+    for args, kw, want in [
+        (("gelmek", "ben"), {}, "geleceğim"), (("gelmek", "sen"), {}, "geleceksin"), (("gelmek", "o"), {}, "gelecek"),
+        (("gelmek", "biz"), {}, "geleceğiz"), (("gelmek", "siz"), {}, "geleceksiniz"), (("gelmek", "onlar"), {}, "gelecekler"),
+        (("yapmak", "ben"), {}, "yapacağım"), (("beklemek", "biz"), {}, "bekleyeceğiz"), (("okumak", "o"), {}, "okuyacak"),
+        (("gitmek", "ben"), {}, "gideceğim"), (("yemek", "ben"), {}, "yiyeceğim"),
+        (("gelmek", "ben"), {"negative": True}, "gelmeyeceğim"), (("gitmek", "o"), {"negative": True}, "gitmeyecek"),
+        (("yemek", "o"), {"negative": True}, "yemeyecek"), (("giymek", "sen"), {}, "giyeceksin"),
+        (("gelmek", "sen"), {"question": True}, "gelecek misin"), (("yapmak", "o"), {"question": True}, "yapacak mı"),
+        (("gelmek", "onlar"), {"question": True}, "gelecekler mi"), (("gitmek", "siz"), {"question": True}, "gidecek misiniz"),
+    ]:
+        got = ecek(*args, **kw).word
+        if got != want:
+            bad += 1
+            print("FAIL ecek", args, kw, got)
     got = copula("", "ben", pre=noun_case("ev", "loc")).word
     if got != "evdeyim":
         bad += 1

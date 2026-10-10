@@ -1,0 +1,114 @@
+# Путь темы «Будущее -ecek» (geleceğim, gidecek, bekleyeceğiz, gelmeyeceğim, gelecek misin?) —
+# Yeni Hitit 1, ünite 7.1. Идёт после всех прошлых тем. Планы — по легенде Ольги: летом отпуск
+# в Бодруме, в июне — к Ане в Москву, мама летом впервые приедет в Стамбул, Аня присоединится
+# к отпуску в июле. Формат — как в path-yor.txt.
+
+## Я и ты | geleceğim, geleceksin: перед гласной k → ğ | words=1
+Ben yarın geleceğim. | Я приду завтра.
+Sen yarın geleceksin. | Ты придёшь завтра.
+Ben kitap alacağım. | Я куплю книгу.
+Sen ne yapacaksın? | Что ты будешь делать?
+Ben Türkçe öğreneceğim. | Я выучу турецкий.
+Sen çay içeceksin. | Ты будешь пить чай.
+Ben yarın çalışacağım. | Завтра я буду работать.
+Sen mektup yazacaksın. | Ты напишешь письмо.
+Ben Leyla'yı göreceğim. | Я увижу Лейлу.
+Sen bu kitabı seveceksin. | Тебе понравится эта книга.
+
+## Он, мы | gelecek, geleceğiz | words=1
+Olga yarın çalışacak. | Ольга завтра будет работать.
+Biz akşam çıkacağız. | Вечером мы пойдём гулять.
+Annem İstanbul'a gelecek. | Мама приедет в Стамбул.
+Biz bu akşam evde kalacağız. | Сегодня вечером мы останемся дома.
+Leyla bize gelecek. | Лейла придёт к нам.
+Biz yazın denizde yüzeceğiz. | Летом мы будем плавать в море.
+Deniz Olga'yı görecek. | Дениз увидит Ольгу.
+Biz Türkçe konuşacağız. | Мы будем говорить по-турецки.
+Pamuk bütün gün yatacak. | Памук будет весь день лежать.
+Tuba kahve içecek. | Туба будет пить кофе.
+
+## Вы, они | geleceksiniz, gelecekler | words=1
+Siz yarın geleceksiniz. | Вы придёте завтра.
+Onlar yarın çalışacaklar. | Они завтра будут работать.
+Siz ne alacaksınız? | Что вы купите?
+Onlar bizi görecekler. | Они нас увидят.
+Siz Türkçe öğreneceksiniz. | Вы выучите турецкий.
+Çocuklar parkta koşacaklar. | Дети будут бегать в парке.
+Siz nerede kalacaksınız? | Где вы остановитесь?
+Onlar yarın dönecekler. | Они вернутся завтра.
+Siz bu filmi seveceksiniz. | Вам понравится этот фильм.
+Onlar akşam gelecekler. | Они придут вечером.
+
+## После гласной — y; git → gideceğim | bekleyeceğim, okuyacak | words=1
+Ben seni bekleyeceğim. | Я буду тебя ждать.
+Leyla kitabı okuyacak. | Лейла прочитает книгу.
+Biz Moskova'ya gideceğiz. | Мы поедем в Москву.
+Sen ne isteyeceksin? | Что ты попросишь?
+Olga annesini arayacak. | Ольга позвонит маме.
+Siz müzik dinleyeceksiniz. | Вы будете слушать музыку.
+Onlar futbol oynayacaklar. | Они будут играть в футбол.
+Ben haziranda Moskova'ya gideceğim. | В июне я полечу в Москву.
+Deniz yemek yiyecek. | Дениз будет есть.
+Tuba odayı temizleyecek. | Туба уберёт комнату.
+
+## Не: -mayacak / -meyecek | gelmeyeceğim, gitmeyecek | words=1
+Ben yarın gelmeyeceğim. | Я завтра не приду.
+Sen bunu unutmayacaksın. | Ты этого не забудешь.
+Olga bu akşam çalışmayacak. | Ольга сегодня вечером не будет работать.
+Biz sinemaya gitmeyeceğiz. | Мы не пойдём в кино.
+Siz geç kalmayacaksınız. | Вы не опоздаете.
+Onlar bizi beklemeyecekler. | Они не будут нас ждать.
+Pamuk süt içmeyecek. | Памук не будет пить молоко.
+Ben bir daha sigara içmeyeceğim. | Я больше не буду курить.
+Deniz bu hafta Ankara'ya gitmeyecek. | Дениз на этой неделе не поедет в Анкару.
+Tuba şeker yemeyecek. | Туба не будет есть сахар.
+
+## Вопрос: gelecek misin? | лицо — на частице | words=1
+Sen yarın gelecek misin? | Ты придёшь завтра?
+Siz kahve içecek misiniz? | Вы будете пить кофе?
+Olga bize gelecek mi? | Ольга к нам придёт?
+Biz Bodrum'a gidecek miyiz? | Мы поедем в Бодрум?
+Onlar bizi bekleyecekler mi? | Они будут нас ждать?
+Sen beni arayacak mısın? | Ты мне позвонишь?
+Anya temmuzda gelecek mi? | Аня приедет в июле?
+Siz yarın dönecek misiniz? | Вы вернётесь завтра?
+Pamuk yemek yiyecek mi? | Памук будет есть?
+Ben yarın çalışacak mıyım? | Я буду работать завтра?
+
+## Всё вместе | yarın, gelecek hafta, yazın — вперемешку | words=1 | gate
+Yarın ne yapacaksın? | Что ты будешь делать завтра?
+Yazın Bodrum'a gideceğim. | Летом я поеду в Бодрум.
+Annem iki hafta kalacak. | Мама останется на две недели.
+Biz bu akşam çıkmayacağız. | Мы сегодня вечером никуда не пойдём.
+Anya temmuzda Bodrum'a gelecek. | Аня приедет в Бодрум в июле.
+Deniz bizi havalimanında bekleyecek. | Дениз будет ждать нас в аэропорту.
+Leyla'yı arayacak mısın? | Ты позвонишь Лейле?
+Siz gelecek hafta gelecek misiniz? | Вы придёте на следующей неделе?
+Pamuk bütün gün uyuyacak. | Памук будет спать весь день.
+Onlar bizi unutmayacaklar. | Они нас не забудут.
+
+## Фраза длиннее | + когда, куда: слово рядом | words=2
+Ben gelecek hafta Moskova'ya gideceğim. | На следующей неделе я полечу в Москву.
+Annem yazın İstanbul'a gelecek. | Летом мама приедет в Стамбул.
+Biz yarın erken kalkacağız. | Завтра мы рано встанем.
+Leyla bu akşam bize gelecek. | Сегодня вечером Лейла придёт к нам.
+Sen yarın ne giyeceksin? | Что ты наденешь завтра?
+Deniz cumartesi araba kullanacak. | В субботу Дениз будет за рулём.
+Olga yarın annesini arayacak. | Завтра Ольга позвонит маме.
+Siz bu yaz nereye gideceksiniz? | Куда вы поедете этим летом?
+Tuba yarın ofise gelmeyecek. | Завтра Туба не придёт в офис.
+Onlar gelecek ay evlenecekler. | В следующем месяце они поженятся.
+
+## Вся фраза | только перевод — собери по-турецки | words=99
+Ben yarın evde kalacağım. | Завтра я останусь дома.
+Sen gelecek misin? | Ты придёшь?
+Olga Bodrum'a gidecek. | Ольга поедет в Бодрум.
+Biz seni arayacağız. | Мы тебе позвоним.
+Pamuk yemek yemeyecek. | Памук не будет есть.
+Siz ne içeceksiniz? | Что вы будете пить?
+Annem İstanbul'a gelecek mi? | Мама приедет в Стамбул?
+Ben bunu unutmayacağım. | Я этого не забуду.
+Leyla kitabı okuyacak mı? | Лейла прочитает книгу?
+Onlar yarın gelecekler. | Они придут завтра.
+
+## В жизни | фразы из «Фраз» и «Диалогов» — только с пройденным | words=2 | life

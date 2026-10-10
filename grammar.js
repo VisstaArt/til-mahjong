@@ -297,6 +297,43 @@ GRAMMAR_TOPICS.push({
     <div class="memo-examples" data-examples="Kahve içmek istiyorum.|Я хочу выпить кофе.;Biraz dinlenmelisin.|Тебе надо немного отдохнуть.;Lütfen oturun.|Садитесь, пожалуйста.;Unutma!|Не забудь!"></div>
   `,
 });
+GRAMMAR_TOPICS.push({
+  id: "ecek",
+  emoji: "⏭️",
+  title: "Будущее -ecek: geleceğim",
+  rules: [
+    ["p.ben", "ben -eceğim"],
+    ["p.sen", "sen -eceksin"],
+    ["p.o", "o -ecek"],
+    ["p.biz", "biz -eceğiz"],
+    ["p.siz", "siz -eceksiniz"],
+    ["p.onlar", "onlar -ecekler"],
+    ["buffer", "после гласной -yecek"],
+    ["soften", "git → gideceğim"],
+    ["neg", "не: -meyecek"],
+    ["question", "вопрос: gelecek misin?"],
+  ],
+  memo: `
+    <h3>Будущее: geleceğim — я приду</h3>
+    <p class="memo-formula">основа + <b>-acak / -ecek</b> + лицо</p>
+    <table class="memo-table">
+      <tr><th>кто</th><th>окончание</th><th>пример</th></tr>
+      <tr><td>ben</td><td>-eceğim</td><td>gel<b>eceğim</b></td></tr>
+      <tr><td>sen</td><td>-eceksin</td><td>gel<b>eceksin</b></td></tr>
+      <tr><td>o</td><td>-ecek</td><td>gel<b>ecek</b></td></tr>
+      <tr><td>biz</td><td>-eceğiz</td><td>gel<b>eceğiz</b></td></tr>
+      <tr><td>siz</td><td>-eceksiniz</td><td>gel<b>eceksiniz</b></td></tr>
+      <tr><td>onlar</td><td>-ecekler</td><td>gel<b>ecekler</b></td></tr>
+    </table>
+    <ul>
+      <li><b>-acak</b> после a ı o u (yap<b>acak</b>), <b>-ecek</b> после e i ö ü (gel<b>ecek</b>).</li>
+      <li>Перед гласной (ben, biz) <b>k → ğ</b>: gelece<b>ğ</b>im, yapaca<b>ğ</b>ız.</li>
+      <li>После гласной — связка <b>y</b>: bekle<b>y</b>eceğim, oku<b>y</b>acak. git → <b>gid</b>eceğim, ye → <b>yi</b>yeceğim.</li>
+      <li>«Не»: gel<b>me</b>yeceğim. Вопрос — как у -yor: gelecek <b>misin</b>? gelecek <b>mi</b>?</li>
+    </ul>
+    <div class="memo-examples" data-examples="Yarın ne yapacaksın?|Что ты будешь делать завтра?;Yazın Bodrum'a gideceğim.|Летом я поеду в Бодрум.;Akşam seni arayacağım.|Вечером я тебе позвоню.;Leyla'yı arayacak mısın?|Ты позвонишь Лейле?"></div>
+  `,
+});
 const GRAMMAR_REVIEW = { id: "review", emoji: "🔀", title: "Повторение вперемешку" };
 
 // Где застряла Памук — новое место на каждой ступени темы (по кругу).

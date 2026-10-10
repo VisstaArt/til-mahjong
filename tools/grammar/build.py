@@ -27,7 +27,7 @@ UNMATCHED = os.path.join(os.path.dirname(__file__), "unmatched.txt")
 EXTRA_VERBS = os.path.join(os.path.dirname(__file__), "extra-verbs.txt")
 EXTRA_NOUNS = os.path.join(os.path.dirname(__file__), "extra-nouns.txt")
 # Пути тем — ступени со своими короткими фразами (path-<тема>.txt), в порядке прохождения.
-PATH_TOPICS = ["yor", "case", "cop", "poss", "acc", "di", "want"]
+PATH_TOPICS = ["yor", "case", "cop", "poss", "acc", "di", "want", "ecek"]
 PATH_OUT = os.path.join(ROOT, "assets", "grammar", "path.json")
 # Фраза из разговорника/диалога идёт в ступень «В жизни» только если она короткая и по
 # грамматике не выше этого уровня (оценка levels.py) — иначе для начинающих слишком сложно.
@@ -190,6 +190,8 @@ def load_sources():
     for it in out:
         key = it["tr"].strip()
         if key in seen:
+            if it.get("tier") == "base":
+                print(f"ВНИМАНИЕ: фраза пути повторяется — второй раз пропущена: «{key}»")
             continue
         seen.add(key)
         uniq.append(it)
@@ -347,6 +349,54 @@ def match_want(tokens, i, tr, verbs, all_words, life):
             if inf in verbs and morph.imperative(inf, "sen", negative=True).word == low:
                 return morph.imperative(inf, "sen", negative=True), inf
     return None
+
+
+# --- будущее -(y)ecek ---
+ECEK_RE = re.compile(r"^(.+?)(y?)(acak|acağ|ecek|eceğ)(.*)$")
+ECEK_Q = {}
+for _v in "ıi":
+    ECEK_Q.update({f"m{_v}y{_v}m": "ben", f"m{_v}s{_v}n": "sen", f"m{_v}": "o", f"m{_v}y{_v}z": "biz", f"m{_v}s{_v}n{_v}z": "siz"})
+
+
+def match_ecek(token, next_token, verbs, all_words, life):
+    m = ECEK_RE.match(token)
+    if not m:
+        return None
+    question = next_token in ECEK_Q
+    # gelecek — «будущий», içecek — «напиток»: во фразах из жизни глаголом не считаем.
+    if life and token in all_words and not question:
+        return None
+    # «gelecek hafta» — «на следующей неделе», это прилагательное, а не «придёт».
+    if not question and next_token in ("hafta", "ay", "yıl", "sene", "yaz", "kış", "sefer", "sefere", "gün"):
+        return None
+    base = m.group(1)
+    cands = [(base, False)]
+    if m.group(2):  # giy-ecek: y — часть основы, а не связка
+        cands.append((base + m.group(2), False))
+    if base[-2:] in ("ma", "me") and len(base) > 3:
+        cands.append((base[:-2], True))
+    if base.endswith("d"):
+        cands.append((base[:-1] + "t", False))
+    if base in ("yi", "di"):
+        cands.append((base[0] + "e", False))
+    persons = morph.PERSONS
+    if question:
+        persons = [ECEK_Q[next_token]]
+        if token.endswith(("lar", "ler")) and next_token in ("mı", "mi"):
+            persons = ["onlar"]
+    found = []
+    for stem, neg in cands:
+        for suf in ("mak", "mek"):
+            inf = stem + suf
+            if inf not in verbs:
+                continue
+            for person in persons:
+                f = morph.ecek(inf, person, negative=neg, question=question)
+                if f.word == token + (" " + next_token if question else ""):
+                    found.append((inf, person, neg, question, f))
+    if len({x[0] for x in found}) != 1:
+        return None
+    return found[0]
 
 
 # --- падежи ---
@@ -594,7 +644,7 @@ def build_acc_index(nouns, all_words):
     return idx
 
 
-VERB_FORM_RE = re.compile(r"(yor|[dt][ıiuü](m|n|k|n[ıiuü]z|l[ae]r)?|m[ae]l[ıi]\w*|m[ae]k)$")
+VERB_FORM_RE = re.compile(r"(yor|[dt][ıiuü](m|n|k|n[ıiuü]z|l[ae]r)?|m[ae]l[ıi]\w*|m[ae]k|[ae]c[ae][kğ]\w*)$")
 
 
 def _verb_later(tokens, i):
@@ -619,7 +669,7 @@ def _transitive_later(tokens, i):
         if re.search(r"m[ae]k$", low):
             return True
         m = (re.match(r"^(.+?)[ıiuü]?yor", low) or re.match(r"^(.+?)[dt][ıiuü](m|n|k|n[ıiuü]z|l[ae]r)?$", low)
-             or re.match(r"^(.+?)m[ae]l[ıi]", low))
+             or re.match(r"^(.+?)m[ae]l[ıi]", low) or re.match(r"^(.+?)y?[ae]c[ae][kğ]", low))
         if m and any(m.group(1).startswith(st) for st in TRANSITIVE_STEMS):
             return True
     return False
@@ -745,6 +795,21 @@ def main():
                     form.parts[0].text = raw[0] + form.parts[0].text[1:]
                     form.parts[0].options = [o[0].upper() + o[1:] for o in form.parts[0].options]
                 slot = form_to_slot(form, s, end, inf, "di", verbs[inf])
+                slot["person"] = person
+                slot["alts"] = []
+                slot["word"] = tr[s:end]
+                slots.append(slot)
+                i += 2 if question else 1
+                continue
+            em = match_ecek(low, nxt, verbs, all_words, src["tier"] == "life")
+            if em:
+                inf, person, neg, question, form = em
+                end = tokens[i + 1][2] if question else e
+                if raw[0].isupper():
+                    form = copy.deepcopy(form)
+                    form.parts[0].text = raw[0] + form.parts[0].text[1:]
+                    form.parts[0].options = [o[0].upper() + o[1:] for o in form.parts[0].options]
+                slot = form_to_slot(form, s, end, inf, "ecek", verbs[inf])
                 slot["person"] = person
                 slot["alts"] = []
                 slot["word"] = tr[s:end]

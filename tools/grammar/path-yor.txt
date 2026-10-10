@@ -11,23 +11,23 @@
 ## Я и ты | ben → -um, sen → -sun | words=1
 Ben kahve içiyorum. | Я пью кофе.
 Sen çay içiyorsun. | Ты пьёшь чай.
-Ben kitap okuyorum. | Я читаю книгу.
+Ben kitap alıyorum. | Я покупаю книгу.
 Sen mektup yazıyorsun. | Ты пишешь письмо.
 Ben Türkçe öğreniyorum. | Я учу турецкий.
 Sen çok çalışıyorsun. | Ты много работаешь.
 Ben şimdi geliyorum. | Я сейчас иду.
-Sen müzik dinliyorsun. | Ты слушаешь музыку.
-Ben film izliyorum. | Я смотрю фильм.
-Sen simit yiyorsun. | Ты ешь симит.
+Sen Türkçe konuşuyorsun. | Ты говоришь по-турецки.
+Ben şimdi çıkıyorum. | Я сейчас выхожу.
+Sen simit alıyorsun. | Ты покупаешь симит.
 
 ## Он, она, мы | o → без окончания, biz → -uz | words=1
 Olga kahve içiyor. | Ольга пьёт кофе.
 Leyla ayran içiyor. | Лейла пьёт айран.
-Pamuk uyuyor. | Памук спит.
+Pamuk koşuyor. | Памук бегает.
 Deniz çalışıyor. | Дениз работает.
-Biz film izliyoruz. | Мы смотрим фильм.
+Biz çok gülüyoruz. | Мы много смеёмся.
 Biz Türkçe öğreniyoruz. | Мы учим турецкий.
-Biz yemek yiyoruz. | Мы едим.
+Biz kahve içiyoruz. | Мы пьём кофе.
 Anya mektup yazıyor. | Аня пишет письмо.
 Biz çay içiyoruz. | Мы пьём чай.
 Tuba çok konuşuyor. | Туба много говорит.
@@ -36,12 +36,12 @@ Tuba çok konuşuyor. | Туба много говорит.
 Siz ne içiyorsunuz? | Что вы пьёте?
 Siz Rusça konuşuyorsunuz. | Вы говорите по-русски.
 Siz çok güzel yazıyorsunuz. | Вы очень красиво пишете.
-Onlar futbol oynuyorlar. | Они играют в футбол.
-Çocuklar oynuyorlar. | Дети играют.
+Onlar futbol seviyorlar. | Они любят футбол.
+Çocuklar koşuyorlar. | Дети бегают.
 Onlar kahve içiyorlar. | Они пьют кофе.
-Siz kitap okuyorsunuz. | Вы читаете книгу.
-Onlar şarkı söylüyorlar. | Они поют песню.
-Siz film izliyorsunuz. | Вы смотрите фильм.
+Siz kitap alıyorsunuz. | Вы покупаете книгу.
+Onlar Türkçe öğreniyorlar. | Они учат турецкий.
+Siz şimdi geliyorsunuz. | Вы сейчас идёте.
 Onlar çok çalışıyorlar. | Они много работают.
 
 ## Гармония | ıyor / iyor / uyor / üyor, bekle → bekliyor, git → gidiyor | words=1
