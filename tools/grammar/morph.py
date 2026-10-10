@@ -237,6 +237,67 @@ def noun_case(lemma, case, plural=False, soften=False, proper=False):
     return Form("".join(p.text for p in parts), parts, tags)
 
 
+# --- «быть» (ek-fiil): öğretmenim, hastayım, evdeyim, yorgun değilim, hasta mısın? ---
+def _cop_suffix(base, person):
+    """Окончание «быть» по последнему звуку base. У «o» окончания нет (Olga Rus.)."""
+    v = i4(base)
+    y = "y" if base[-1] in VOWELS else ""
+    return {
+        "ben": y + v + "m",
+        "sen": "s" + v + "n",
+        "o": "",
+        "biz": y + v + "z",
+        "siz": "s" + v + "n" + v + "z",
+        "onlar": "l" + a2(base) + "r",
+    }[person]
+
+
+def _cop_person_part(base, person, intro=""):
+    suf = _cop_suffix(base, person)
+    opts = [_cop_suffix(base, p) for p in PERSONS if _cop_suffix(base, p)]
+    # «Почти правильные»: другая гласная, лишняя/пропущенная связка y.
+    wrong_vowel = suf.translate(str.maketrans("ıiuü", "iıüu"))
+    no_y = suf[1:] if suf.startswith("y") else "y" + suf if suf[0] in "ıiuü" else suf
+    why = intro + f"{person} ({PERSON_RU[person]}) → -{suf}"
+    if suf.startswith("y"):
+        why += "; после гласной нужна связка y"
+    elif person != "onlar":
+        why += f"; последняя гласная «{last_vowel(base)}» → {i4(base)}"
+    return Part(suf, "person", _uniq([suf] + opts + [wrong_vowel, no_y]), why)
+
+
+def copula(word, person, negative=False, question=False, pre=None):
+    """Именное сказуемое: слово (или готовая падежная форма — pre=Form) + «быть».
+    ben öğretmen → öğretmenim; ben ev+de → evdeyim; yorgun değil+im; hasta mı+sın."""
+    parts = list(pre.parts) if pre else [Part(word, "stem", [word], "")]
+    tags = ["cop", f"p.{person}"] + (["loc"] if pre and "c.loc" in pre.tags else [])
+    base = "".join(p.text for p in parts).replace("'", "")
+    if negative:
+        parts.append(Part(" değil", "neg", [" değil"], "«не» при «быть» — отдельное слово değil"))
+        if person != "o":
+            parts.append(_cop_person_part("değil", person, "окончание лица — на değil: "))
+        tags.append("neg")
+    elif question:
+        if person == "onlar":
+            suf = _cop_suffix(base, "onlar")
+            parts.append(Part(suf, "person", ["lar", "ler"], f"onlar (они) → -{suf} на самом слове"))
+            base = base + suf
+        q = "m" + i4(base)
+        parts.append(Part(" " + q, "question", _uniq([" " + q] + [" m" + x for x in "ıiuü"]),
+                          f"вопрос — отдельная частица m + гласная по гармонии: «{last_vowel(base)}» → {q}"))
+        if person not in ("o", "onlar"):
+            parts.append(_cop_person_part(q, person, "лицо — на частице: "))
+        tags.append("question")
+    else:
+        if person == "o":
+            raise ValueError("у «o» нет окончания — пропуска не будет")
+        part = _cop_person_part(base, person)
+        parts.append(part)
+        if part.text.startswith("y"):
+            tags.append("buffer")
+    return Form("".join(p.text for p in parts), parts, tags)
+
+
 if __name__ == "__main__":
     # Сверка с таблицей из книги (durmak, duygulanmak) и с типовыми случаями.
     checks = {
@@ -294,4 +355,32 @@ if __name__ == "__main__":
         if got != want:
             bad += 1
             print("FAIL case", args, got)
+    for args, kw, want in [
+        (("öğretmen", "ben"), {}, "öğretmenim"),
+        (("hasta", "ben"), {}, "hastayım"),
+        (("Rus", "biz"), {}, "Rusuz"),
+        (("nazik", "siz"), {}, "naziksiniz"),
+        (("mutlu", "onlar"), {}, "mutlular"),
+        (("güzel", "sen"), {}, "güzelsin"),
+        (("yorgun", "ben"), {"negative": True}, "yorgun değilim"),
+        (("Türk", "o"), {"negative": True}, "Türk değil"),
+        (("aç", "onlar"), {"negative": True}, "aç değiller"),
+        (("yorgun", "sen"), {"question": True}, "yorgun musun"),
+        (("hazır", "biz"), {"question": True}, "hazır mıyız"),
+        (("öğretmen", "siz"), {"question": True}, "öğretmen misiniz"),
+        (("evde", "onlar"), {"question": True}, "evdeler mi"),
+        (("aç", "o"), {"question": True}, "aç mı"),
+    ]:
+        got = copula(*args, **kw).word
+        if got != want:
+            bad += 1
+            print("FAIL cop", args, kw, got)
+    got = copula("", "ben", pre=noun_case("ev", "loc")).word
+    if got != "evdeyim":
+        bad += 1
+        print("FAIL cop loc", got)
+    got = copula("", "ben", pre=noun_case("İstanbul", "loc", proper=True)).word
+    if got != "İstanbul'dayım":
+        bad += 1
+        print("FAIL cop proper", got)
     print("ok" if not bad else f"{bad} failures")

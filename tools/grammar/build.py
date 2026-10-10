@@ -27,7 +27,7 @@ UNMATCHED = os.path.join(os.path.dirname(__file__), "unmatched.txt")
 EXTRA_VERBS = os.path.join(os.path.dirname(__file__), "extra-verbs.txt")
 EXTRA_NOUNS = os.path.join(os.path.dirname(__file__), "extra-nouns.txt")
 # Пути тем — ступени со своими короткими фразами (path-<тема>.txt), в порядке прохождения.
-PATH_TOPICS = ["yor", "case"]
+PATH_TOPICS = ["yor", "case", "cop"]
 PATH_OUT = os.path.join(ROOT, "assets", "grammar", "path.json")
 # Фраза из разговорника/диалога идёт в ступень «В жизни» только если она короткая и по
 # грамматике не выше этого уровня (оценка levels.py) — иначе для начинающих слишком сложно.
@@ -66,8 +66,17 @@ BASIC_GLOSS = {
     "mu": "частица вопроса", "mı": "частица вопроса", "mi": "частица вопроса", "mü": "частица вопроса",
     "musun": "частица вопроса (ты)", "musunuz": "частица вопроса (вы)", "muyum": "частица вопроса (я)",
     "muyuz": "частица вопроса (мы)",
+    "evet": "да", "hayır": "нет", "tamam": "хорошо, ладно", "merhaba": "привет",
+    "teşekkürler": "спасибо", "teşekkür": "спасибо", "lütfen": "пожалуйста", "ama": "но",
+    "çünkü": "потому что", "sonra": "потом", "şimdi": "сейчас", "değil": "не",
+    "burada": "здесь", "orada": "там", "nerede": "где", "bu": "этот, это", "şu": "тот",
+    "ya": "а (ты?)", "harika": "отлично", "peki": "ладно", "affedersiniz": "извините",
 }
 NAMES = {"olga", "leyla", "anya", "deniz", "tuba", "pamuk", "metin", "bey", "kemal"}
+# Слова, которые могут быть сказуемым с «быть» (öğretmenim, yorgunum): существительные и
+# прилагательные словаря + extra-nouns.txt. Заполняется в load_lexicon.
+NOMINALS = {}
+ADJECTIVES = set()
 
 
 def gloss_for(word):
@@ -90,6 +99,10 @@ def load_lexicon():
             if " " in tr or "/" in tr or "," in tr:
                 continue
             WORDS_RU.setdefault(tr, w.get("ru", ""))
+            if w.get("pos") in ("noun", "adjective"):
+                NOMINALS.setdefault(tr, w.get("ru", ""))
+                if w.get("pos") == "adjective":
+                    ADJECTIVES.add(tr)
             if w.get("pos") == "verb" and re.search(r"m[ae]k$", tr):
                 verbs.setdefault(tr, w.get("ru", ""))
             elif w.get("pos") == "noun":
@@ -101,6 +114,7 @@ def load_lexicon():
                 if line:
                     word, _, ru = line.partition("=")
                     target.setdefault(tr_lower(word.strip()), ru.strip())
+                    NOMINALS.setdefault(tr_lower(word.strip()), ru.strip())
     if os.path.exists(EXTRA_VERBS):
         for line in open(EXTRA_VERBS, encoding="utf-8"):
             line = line.split("#")[0].strip()
@@ -276,6 +290,109 @@ def match_proper(token):
     return name, case, form
 
 
+# --- «быть»: öğretmenim, evdeyim, yorgun değilim, hasta mısın? ---
+NEG_FORMS = {"değilim": "ben", "değilsin": "sen", "değil": "o", "değiliz": "biz", "değilsiniz": "siz", "değiller": "onlar"}
+Q_FORMS = {}
+for _v in "ıiuü":
+    Q_FORMS.update({f"m{_v}y{_v}m": "ben", f"m{_v}s{_v}n": "sen", f"m{_v}": "o", f"m{_v}y{_v}z": "biz", f"m{_v}s{_v}n{_v}z": "siz"})
+NOT_PREDICATE = {"var", "yok", "ne", "bu", "şu", "o"}
+
+
+def _cop_base(raw, case_idx, verbs):
+    """Чем может быть основа сказуемого: (lemma, pre-форма с падежом или None, перевод)."""
+    low = tr_lower(raw)
+    if "'" in raw:
+        name, _, rest = raw.partition("'")
+        if len(name) < 2 or not rest:
+            return None
+        for case in ("loc", "abl"):
+            f = morph.noun_case(tr_lower(name), case, proper=True)
+            if tr_lower(f.word) == low:
+                f.parts[0].text = name
+                f.parts[0].options = [name]
+                return name, f, ""
+        return None
+    if low in case_idx:
+        lemma, case, kw, f = case_idx[low]
+        if case in ("loc", "abl"):
+            return lemma, f, NOMINALS.get(lemma, "")
+        return None
+    if low in NOMINALS and low not in verbs and low not in STOP and low not in NOT_PREDICATE and len(low) >= 2:
+        return raw, None, NOMINALS[low]
+    return None
+
+
+VERBISH_RE = re.compile(r"([ae]c[ae][kğ]|m[ıiuü]ş|[ıiuü]yor)$")
+
+
+def _clause_ends_after(tr, pos):
+    """После позиции — конец фразы/части (?, ., !, запятая) или конец строки. Иначе mı/değil
+    стоит посреди глагольного предложения (Tatilden mi dönüyorsunuz?) — это не «быть»."""
+    rest = tr[pos:].lstrip()
+    return not rest or rest[0] in "?.!,;…"
+
+
+def match_cop(tokens, i, tr, case_idx, verbs, sentence_words, all_words):
+    """Возвращает (form, start, end, lemma, gloss, person, сколько токенов съели) или None."""
+    raw, s, e = tokens[i]
+    nxt_raw = tokens[i + 1][0] if i + 1 < len(tokens) else ""
+    nxt = tr_lower(nxt_raw)
+    if VERBISH_RE.search(tr_lower(raw)):
+        return None
+    clause_end = i + 1 < len(tokens) and _clause_ends_after(tr, tokens[i + 1][2])
+    # отрицание: yorgun değilim
+    if nxt in NEG_FORMS and clause_end:
+        base = _cop_base(raw, case_idx, verbs)
+        if base:
+            lemma, pre, gloss = base
+            person = NEG_FORMS[nxt]
+            f = morph.copula(raw, person, negative=True, pre=pre)
+            if tr_lower(f.word) == tr_lower(f"{raw} {nxt_raw}"):
+                return f, s, tokens[i + 1][2], lemma, gloss, person, 2
+    # вопрос: hasta mısın? / evdeler mi?
+    if nxt in Q_FORMS and clause_end:
+        person = Q_FORMS[nxt]
+        cands = [(raw, person)]
+        if person == "o" and tr_lower(raw)[-3:] in ("lar", "ler"):
+            cands.append((raw[:-3], "onlar"))
+        for word, pers in cands:
+            base = _cop_base(word, case_idx, verbs)
+            if not base:
+                continue
+            lemma, pre, gloss = base
+            f = morph.copula(word, pers, question=True, pre=pre)
+            if tr_lower(f.word) == tr_lower(f"{raw} {nxt_raw}"):
+                return f, s, tokens[i + 1][2], lemma, gloss, pers, 2
+    # утверждение: öğretmenim, hastayım, evdeyiz, İstanbul'dayım
+    low = tr_lower(raw)
+    if low in all_words:  # sekiz — это «восемь», а не «sek + iz»
+        return None
+    # ne yapayım / gideyim — желательное наклонение глагола, а не «я искусственный» (yapay+ım)
+    if low[-4:] in ("ayım", "eyim", "yayım", "yeyim") and any(
+        low[:k] + suf in verbs for k in (len(low) - 4, len(low) - 5) for suf in ("mak", "mek")
+    ):
+        return None
+    for person in ("ben", "sen", "biz", "siz", "onlar"):
+        for cut in range(2, min(6, len(raw) - 1)):
+            word = raw[:-cut]
+            base = _cop_base(word, case_idx, verbs)
+            if not base:
+                continue
+            lemma, pre, gloss = base
+            f = morph.copula(word, person, pre=pre)
+            if tr_lower(f.word) != low:
+                continue
+            # «-ım» у существительного — чаще «мой» (adım — моё имя), «-lar» — просто
+            # множественное: верим, только если рядом есть ben / onlar.
+            plain_noun = pre is None and tr_lower(word) not in ADJECTIVES
+            if plain_noun and person == "ben" and "ben" not in sentence_words:
+                continue
+            if plain_noun and person == "onlar" and "onlar" not in sentence_words:
+                continue
+            return f, s, e, lemma, gloss, person, 1
+    return None
+
+
 # --- сборка ---
 def form_to_slot(form, start, end, lemma, topic, gloss):
     return {
@@ -326,6 +443,7 @@ def main():
     for n, src in enumerate(sources):
         tr = src["tr"]
         tokens = [(m.group(0), m.start(), m.end()) for m in WORD_RE.finditer(tr)]
+        sentence_words = {tr_lower(t[0]) for t in tokens}
         slots = []
         i = 0
         while i < len(tokens):
@@ -349,6 +467,16 @@ def main():
                 slot["word"] = tr[s:end]
                 slots.append(slot)
                 i += 2 if question else 1
+                continue
+            cop = match_cop(tokens, i, tr, case_idx, verbs, sentence_words, all_words)
+            if cop:
+                form, cs, ce, lemma, gloss, person, used = cop
+                slot = form_to_slot(form, cs, ce, lemma, "cop", gloss)
+                slot["person"] = person
+                slot["alts"] = []
+                slot["word"] = tr[cs:ce]
+                slots.append(slot)
+                i += used
                 continue
             pr = match_proper(raw)
             if pr:

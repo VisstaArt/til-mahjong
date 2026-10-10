@@ -1,0 +1,132 @@
+# Путь темы «Быть» (ek-fiil: öğretmenim, hastayım, evdeyim, değilim, mısın?) — идёт после
+# -yor и падежей (в Yeni Hitit 1 это ünite 1.2–2.2), поэтому во фразах можно и то и другое.
+# У «o» окончания нет (Olga Rus.) — такие фразы без пропуска, поэтому «o» тренируется только
+# в «не» (Türk değil) и в вопросе (evde mi?). Формат — как в path-yor.txt.
+
+## Я и ты | ben → -ım / -im / -um / -üm, sen → -sın / -sin… | words=1
+Ben öğretmenim. | Я учитель.
+Sen doktorsun. | Ты врач.
+Ben yorgunum. | Я устала.
+Sen çok güzelsin. | Ты очень красивая.
+Ben Rusum. | Я русская.
+Sen Türksün. | Ты турчанка.
+Ben bekarım. | Я не замужем.
+Sen evlisin. | Ты замужем.
+Ben üzgünüm. | Мне грустно.
+Sen zenginsin. | Ты богатая.
+Ben yalnızım. | Я одна.
+Sen akıllısın. | Ты умная.
+
+## После гласной — связка y | hasta → hastayım, iyi → iyiyim | words=1
+Ben hastayım. | Я болею.
+Ben iyiyim. | Я в порядке.
+Ben çok mutluyum. | Я очень счастлива.
+Sen hastasın. | Ты больна.
+Ben biraz kötüyüm. | Мне немного нехорошо.
+Ben yeniyim. | Я здесь новенькая.
+Sen çok iyisin. | Ты очень добрая.
+Sen sevimlisin. | Ты милая.
+Ben öğrenciyim. | Я ученица.
+Ben hazırım. | Я готова.
+
+## Мы, вы, они | biz → -ız, siz → -sınız, onlar → -lar | words=1
+Biz Rusuz. | Мы русские.
+Biz çok yorgunuz. | Мы очень устали.
+Siz öğretmensiniz. | Вы учитель.
+Siz çok naziksiniz. | Вы очень любезны.
+Biz hazırız. | Мы готовы.
+Siz Türksünüz. | Вы турок.
+Onlar mutlular. | Они счастливы.
+Onlar çok yorgunlar. | Они очень устали.
+Biz mutluyuz. | Мы счастливы.
+Siz çok iyisiniz. | Вы очень добры.
+Onlar zenginler. | Они богатые.
+
+## Где я? -de + «быть» | evde → evdeyim, İstanbul'da → İstanbul'dayım | words=1
+Ben evdeyim. | Я дома.
+Sen neredesin? | Где ты?
+Biz kafedeyiz. | Мы в кафе.
+Ben otobüsteyim. | Я в автобусе.
+Siz neredesiniz? | Где вы?
+Ben İstanbul'dayım. | Я в Стамбуле.
+Biz parktayız. | Мы в парке.
+Sen ofistesin. | Ты в офисе.
+Onlar okuldalar. | Они в школе.
+Ben Kadıköy'deyim. | Я в Кадыкёе.
+Ben buradayım. | Я здесь.
+Ben Rusya'danım. | Я из России.
+
+## Не: değil | yorgun değilim, Türk değil | words=1
+Ben yorgun değilim. | Я не устала.
+Sen hasta değilsin. | Ты не больна.
+Olga Türk değil. | Ольга не турчанка.
+Biz evde değiliz. | Мы не дома.
+Siz öğretmen değilsiniz. | Вы не учитель.
+Onlar aç değiller. | Они не голодны.
+Ben evli değilim. | Я не замужем.
+Pamuk mutlu değil. | Памук не весела.
+Tuba bugün ofiste değil. | Тубы сегодня нет в офисе.
+Ben doktor değilim. | Я не врач.
+
+## Вопрос: mı + лицо | yorgun musun? evde mi? | words=1
+Sen yorgun musun? | Ты устала?
+Siz Türk müsünüz? | Вы турок?
+Leyla evde mi? | Лейла дома?
+Biz hazır mıyız? | Мы готовы?
+Sen bugün hasta mısın? | Ты сегодня болеешь?
+Siz öğretmen misiniz? | Вы учитель?
+Onlar evdeler mi? | Они дома?
+Pamuk aç mı? | Памук голодная?
+Sen evli misin? | Ты замужем?
+Anya bankada mı? | Аня в банке?
+
+## Всё вместе | да, нет и вопрос вперемешку | words=1 | gate
+Biz bugün çok mutluyuz. | Мы сегодня очень счастливы.
+Siz Rus musunuz? | Вы русская?
+Ben Türk değilim, Rusum. | Я не турчанка, я русская.
+Pamuk mutfakta mı? | Памук на кухне?
+Biz hasta değiliz. | Мы не болеем.
+Sen bugün çok güzelsin. | Ты сегодня очень красивая.
+Siz şimdi neredesiniz? | Где вы сейчас?
+Ben ofisteyim. | Я в офисе.
+Tuba evli mi? | Туба замужем?
+Onlar okulda değiller. | Они не в школе.
+Ben aç değilim, tokum. | Я не голодная, я сыта.
+
+## Фраза длиннее | + когда, какой: слово перед сказуемым | words=2
+Ben bugün çok yorgunum. | Я сегодня очень устала.
+Sen her zaman çok naziksin. | Ты всегда очень любезна.
+Biz şimdi Kadıköy'deyiz. | Мы сейчас в Кадыкёе.
+Siz yarın evde misiniz? | Вы завтра дома?
+Ben şimdi hasta değilim. | Я сейчас не болею.
+Onlar bugün çok mutlular. | Они сегодня очень счастливы.
+Sen akşam evde misin? | Ты вечером дома?
+Biz Pazartesi ofisteyiz. | В понедельник мы в офисе.
+Ben yeni bir öğrenciyim. | Я новая ученица.
+Sen çok iyi bir arkadaşsın. | Ты очень хорошая подруга.
+
+## Три слова | собери конец фразы | words=3
+Ben bugün biraz hastayım. | Я сегодня немного болею.
+Sen şimdi neredesin? | Где ты сейчас?
+Biz akşam sinemadayız. | Вечером мы в кино.
+Siz çok iyi bir doktorsunuz. | Вы очень хороший врач.
+Onlar şimdi parktalar. | Они сейчас в парке.
+Biz Pazartesi çok yorgunuz. | В понедельник мы очень устаём.
+Sen bu akşam evde misin? | Ты сегодня вечером дома?
+Biz şimdi çok mutluyuz. | Мы сейчас очень счастливы.
+Leyla bugün çok yorgun mu? | Лейла сегодня очень устала?
+Ben çok aç değilim. | Я не очень голодна.
+
+## Вся фраза | только перевод — собери по-турецки | words=99
+Ben mühendisim. | Я инженер.
+Sen garson musun? | Ты официант?
+Biz bugün hastayız. | Мы сегодня болеем.
+Siz evdesiniz. | Вы дома.
+Onlar Türkler. | Они турки.
+Pamuk aç değil. | Памук не голодна.
+Sen çok sevimlisin. | Ты очень милая.
+Biz arkadaşız. | Мы подруги.
+Tuba evde mi? | Туба дома?
+Ben iyi değilim. | Мне нехорошо.
+
+## В жизни | фразы из «Фраз» и «Диалогов» — только с пройденным | words=2 | life

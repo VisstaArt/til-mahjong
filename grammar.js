@@ -125,6 +125,43 @@ const GRAMMAR_TOPICS = [
     `,
   },
 ];
+GRAMMAR_TOPICS.push({
+  id: "cop",
+  emoji: "🙋",
+  title: "Быть: öğretmenim, evdeyim",
+  rules: [
+    ["p.ben", "ben -ım / -yım"],
+    ["p.sen", "sen -sın"],
+    ["p.biz", "biz -ız / -yız"],
+    ["p.siz", "siz -sınız"],
+    ["p.onlar", "onlar -lar"],
+    ["buffer", "связка y после гласной"],
+    ["loc", "с падежом: evdeyim"],
+    ["neg", "не: değil"],
+    ["question", "вопрос: mısın?"],
+  ],
+  memo: `
+    <h3>«Быть»: öğretmenim — я учитель</h3>
+    <p class="memo-formula">слово + <b>окончание лица</b> (как у -yor, только без -yor)</p>
+    <table class="memo-table">
+      <tr><th>кто</th><th>окончание</th><th>пример</th></tr>
+      <tr><td>ben</td><td>-ım / -yım</td><td>öğretmen<b>im</b>, hasta<b>yım</b></td></tr>
+      <tr><td>sen</td><td>-sın</td><td>doktor<b>sun</b></td></tr>
+      <tr><td>o</td><td>—</td><td>Olga Rus.</td></tr>
+      <tr><td>biz</td><td>-ız / -yız</td><td>Rus<b>uz</b>, mutlu<b>yuz</b></td></tr>
+      <tr><td>siz</td><td>-sınız</td><td>nazik<b>siniz</b></td></tr>
+      <tr><td>onlar</td><td>-lar</td><td>mutlu<b>lar</b></td></tr>
+    </table>
+    <ul>
+      <li>Гласная — по гармонии, как в -yor: ı / i / u / ü.</li>
+      <li>После гласной у <b>ben</b> и <b>biz</b> — связка <b>y</b>: hasta → hasta<b>yım</b>.</li>
+      <li>С падежом: ev → evde → evde<b>yim</b> («я дома»), İstanbul'da<b>yım</b>.</li>
+      <li>«Не» — отдельное слово <b>değil</b>, лицо на нём: yorgun <b>değilim</b>, Türk <b>değil</b>.</li>
+      <li>Вопрос — частица <b>mı</b>, лицо на ней: yorgun <b>musun</b>? evde <b>mi</b>? hazır <b>mıyız</b>?</li>
+    </ul>
+    <div class="memo-examples" data-examples="Ben Rusum.|Я русская.;Sen neredesin?|Где ты?;Ben yorgun değilim.|Я не устала.;Evli misin?|Ты замужем?"></div>
+  `,
+});
 const GRAMMAR_REVIEW = { id: "review", emoji: "🔀", title: "Повторение вперемешку" };
 
 // Где застряла Памук — новое место на каждой ступени темы (по кругу).
@@ -553,7 +590,7 @@ function buildPile(units, gapIdx, pileSize) {
     out.push({ text, kind });
   };
   const needed = [];
-  gapIdx.forEach((i) => units[i].pieces.forEach((p) => needed.push(p)));
+  gapIdx.forEach((i) => units[i].pieces.forEach((p) => !p.prefilled && needed.push(p)));
   needed.forEach((p) => {
     seen.add(p.text);
     out.push({ text: p.text, kind: p.kind });
@@ -746,12 +783,25 @@ function startSentence(first = false) {
   const item = round.queue[round.index];
   const units = sentenceUnits(item, round.topicId);
   const gapIdx = chooseGapUnits(units, round.topicId, round.level.words);
+  // Если слово подписано в пропуске («(park)», «(yorgun)») и у его основы нет вариантов,
+  // тапать её отдельной плашкой незачем — ставим сразу, собирать нужно только окончание.
+  // У глаголов основу оставляем: там учимся отбрасывать -mak/-mek и гласную.
+  const whole = gapIdx.length === units.length;
+  const lemmaShown = round.level.tier === "base" && !whole;
+  const filled = new Map();
+  gapIdx.forEach((ui) => {
+    const u = units[ui];
+    const first = u.pieces[0];
+    if (lemmaShown && u.slot && u.slot.topic !== "yor" && first.part && first.part.slot === "stem" && first.part.options.length === 1 && u.pieces.length > 1) {
+      first.prefilled = true;
+      filled.set(ui, [first]);
+    }
+  });
   const expected = [];
-  gapIdx.forEach((ui) => units[ui].pieces.forEach((p, pi) => expected.push({ ui, pi, ...p })));
-  round.current = { item, units, gapIdx: new Set(gapIdx), expected, pos: 0, mistake: false, failedParts: new Set(), filled: new Map() };
+  gapIdx.forEach((ui) => units[ui].pieces.forEach((p, pi) => !p.prefilled && expected.push({ ui, pi, ...p })));
+  round.current = { item, units, gapIdx: new Set(gapIdx), expected, pos: 0, mistake: false, failedParts: new Set(), filled };
 
   if (!first) {
-    const whole = gapIdx.length === units.length;
     document.getElementById("grammar-direction").textContent = whole ? "Собери фразу по-турецки" : "Собери пропуск из кучки";
   }
   document.getElementById("grammar-ru").textContent = item.ru;
@@ -840,25 +890,21 @@ function onPileTile(tile, text) {
 }
 
 // Подсказка к следующему кусочку: правило (почему именно так) и/или перевод слова.
-// Подсказка к следующему кусочку. Русский перевод не помогает (фраза и так по-русски) —
-// поэтому для слова показываем турецкое слово, а для окончания — правило.
+// Подсказка — ровно на ОДИН следующий кусочек, не на всё слово: для основы — какое это
+// турецкое слово (или как из него получить основу), для окончания — правило именно этого
+// окончания. Русский перевод не помогает (фраза и так по-русски), поэтому слово даём
+// по-турецки.
 function hintText() {
   const cur = round.current;
   const want = cur.expected[cur.pos];
   const unit = cur.units[want.ui];
   const src = unit.slot || unit.orig;
-  // Слово уже подписано в пропуске («(ev)», «(içmek)») — тогда переводить нечего,
-  // объясняем правило всего слова: основа + что к ней прибавить.
   const lemmaShown = round.level.tier === "base" && cur.gapIdx.size !== cur.units.length;
-  if (want.part && want.part.slot === "stem" && src && lemmaShown) {
-    const stemRule = want.part.why || (src.topic === "yor" ? `основа: ${src.lemma} без -mak / -mek` : `основа: ${src.lemma}`);
-    const rest = src.parts.filter((p) => p !== want.part && p.why).map((p) => p.why);
-    return [stemRule, ...rest].join(" · ");
-  }
   if (want.part && want.part.slot === "stem" && src) {
+    if (want.part.why) return want.part.why;
+    if (lemmaShown) return src.topic === "yor" ? `основа: ${src.lemma} без -mak / -mek` : `сначала само слово: ${src.lemma}`;
     const turkish = src.gloss ? `«${src.gloss}» по-турецки — ${src.lemma}` : `это ${src.lemma}`;
-    const rule = want.part.why || (src.topic === "yor" ? "основа — без -mak / -mek" : "");
-    return [turkish, rule].filter(Boolean).join(" · ");
+    return src.topic === "yor" ? `${turkish}; основа — без -mak / -mek` : turkish;
   }
   if (want.part) return want.part.why || "";
   if (src) {
@@ -921,7 +967,9 @@ function partTags(slot, part) {
   const t = slot.tags;
   switch (part.slot) {
     case "person":
-      return t.filter((x) => x.startsWith("p.") || x === "question");
+      return t.filter((x) => x.startsWith("p.") || x === "question" || x === "buffer");
+    case "question":
+      return t.filter((x) => x === "question");
     case "neg":
       return t.filter((x) => x === "neg");
     case "stem":
