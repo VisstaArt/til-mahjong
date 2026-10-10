@@ -27,7 +27,7 @@ UNMATCHED = os.path.join(os.path.dirname(__file__), "unmatched.txt")
 EXTRA_VERBS = os.path.join(os.path.dirname(__file__), "extra-verbs.txt")
 EXTRA_NOUNS = os.path.join(os.path.dirname(__file__), "extra-nouns.txt")
 # Пути тем — ступени со своими короткими фразами (path-<тема>.txt), в порядке прохождения.
-PATH_TOPICS = ["yor", "case", "cop", "poss", "acc", "di", "want", "ecek", "with", "deg", "qw", "two"]
+PATH_TOPICS = ["yor", "case", "cop", "poss", "acc", "di", "want", "ecek", "with", "deg", "qw", "two", "li"]
 # Темы-сравнения: их фразы проверяются не по «своему» пропуску, а по признаку.
 PRED_TOPICS = {"yor", "cop", "di", "ecek", "want", "deg"}
 QUESTION_WORDS = {"ne", "nerede", "nereye", "nereden", "kim", "kimi", "kime", "nasıl", "neden", "niye",
@@ -475,6 +475,51 @@ def match_exist(tokens, i):
         end = tokens[i + 1][2]
     f = morph.Form("".join(p.text for p in parts), parts, tags)
     return f, s, end, 2 if nxt == q else 1
+
+
+# --- с чем / без чего: sütlü, şekersiz, şapkalı, Moskovalıyım ---
+LI_CITIES = {"İstanbul", "Moskova", "Ankara", "Trabzon", "İzmir", "Rusya", "Kars", "Antalya", "Bodrum", "Kadıköy"}
+LI_LEXICAL = {"evli"}  # evli — «женатый/замужем», а не «с домом»
+# Слова словаря на -lı, которые ЧИТАЮТСЯ как «с чем-то» — их считаем темой -lı. Остальные
+# словарные (hızlı, tatlı, yaşlı, akıllı) — просто прилагательные, не трогаем.
+LI_TRANSPARENT = {
+    "güneşli", "bulutlu", "yağmurlu", "rüzgarlı", "karlı", "sisli", "sütlü", "şekerli", "tuzlu",
+    "etli", "limonlu", "peynirli", "şekersiz", "sütsüz", "tuzsuz", "gözlüklü", "gözlüksüz",
+    "balkonlu", "banyolu", "duşlu", "bahçeli",
+}
+LI_RE = re.compile(r"(l[ıiuü]|s[ıiuü]z)")
+
+
+def match_li(tokens, i, tr, nouns, verbs, all_words):
+    raw, s, e = tokens[i]
+    low = tr_lower(raw)
+    if low in LI_LEXICAL:
+        return None
+    nxt = tr_lower(tokens[i + 1][0]) if i + 1 < len(tokens) else ""
+    for m in LI_RE.finditer(low):
+        k = m.start()
+        base_raw = raw[:k]
+        base = low[:k]
+        if len(base) < 2:
+            continue
+        proper = base_raw in LI_CITIES
+        if not proper and base not in nouns:
+            continue
+        without = m.group(1).startswith("s")
+        f = morph.li(base_raw, without=without)
+        if tr_lower(f.word) in all_words and tr_lower(f.word) not in LI_TRANSPARENT:
+            continue
+        if tr_lower(f.word) == low:
+            if nxt in Q_FORMS and _clause_ends_after(tr, tokens[i + 1][2]):
+                q = morph.copula("", Q_FORMS[nxt], question=True, pre=f)
+                if tr_lower(q.word) == f"{low} {nxt}":
+                    return q, s, tokens[i + 1][2], base_raw, 2
+            return f, s, e, base_raw, 1
+        for person in ("ben", "sen", "biz", "siz"):
+            c = morph.copula("", person, pre=f)
+            if tr_lower(c.word) == low:
+                return c, s, e, base_raw, 1
+    return None
 
 
 # --- падежи ---
@@ -929,6 +974,17 @@ def main():
                 slot["alts"] = []
                 slots.append(slot)
                 i += 1
+                continue
+            lm = match_li(tokens, i, tr, nouns, verbs, all_words)
+            if lm and (raw[0].islower() or s == 0 or tr[:s].rstrip()[-1:] in ".!?" or lm[3] in LI_CITIES):
+                form, ls, le, lemma, used = lm
+                if raw[0].isupper() and lemma not in LI_CITIES:
+                    form = copy.deepcopy(form)
+                    form.parts[0].text = raw[0] + form.parts[0].text[1:]
+                    form.parts[0].options = [o[0].upper() + o[1:] for o in form.parts[0].options]
+                slot = form_to_slot(form, ls, le, lemma, "li", nouns.get(tr_lower(lemma), ""))
+                slots.append(slot)
+                i += used
                 continue
             cop = match_cop(tokens, i, tr, case_idx, verbs, sentence_words, all_words)
             if cop:

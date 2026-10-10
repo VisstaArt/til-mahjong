@@ -378,6 +378,21 @@ def with_form(noun, proper=False, poss=None, pronoun=None):
     return Form("".join(p.text for p in parts), parts, tags)
 
 
+# --- с чем / без чего: sütlü, şekersiz, şapkalı, Moskovalı ---
+def li(noun, without=False):
+    """süt → sütlü (с молоком), şeker → şekersiz (без сахара), Moskova → Moskovalı (оттуда)."""
+    v = i4(noun)
+    suf = ("s" + v + "z") if without else ("l" + v)
+    other = ("l" + v) if without else ("s" + v + "z")
+    if without:
+        why = f"без чего? → -sız; последняя гласная «{last_vowel(noun)}» → s{v}z"
+    else:
+        why = f"с чем? в чём? откуда? → -lı; последняя гласная «{last_vowel(noun)}» → l{v}"
+    opts = _uniq([suf, other, suf.translate(str.maketrans("ıiuü", "iıüu")), "l" + a2(noun), "d" + a2(noun)])
+    parts = [Part(noun, "stem", [noun], ""), Part(suf, "li", opts, why)]
+    return Form(noun + suf, parts, ["li", "siz" if without else "lı"])
+
+
 # --- падежи -de / -den / -e ---
 def _case_suffix(base, case, proper=False):
     last = base[-1]
@@ -801,6 +816,19 @@ if __name__ == "__main__":
         if got != want:
             bad += 1
             print("FAIL with", args, kw, got)
+    for args, kw, want in [
+        (("süt",), {}, "sütlü"), (("şeker",), {"without": True}, "şekersiz"), (("şapka",), {}, "şapkalı"),
+        (("gözlük",), {}, "gözlüklü"), (("Moskova",), {}, "Moskovalı"), (("İstanbul",), {}, "İstanbullu"),
+        (("güneş",), {}, "güneşli"), (("bulut",), {}, "bulutlu"), (("para",), {"without": True}, "parasız"),
+    ]:
+        got = li(*args, **kw).word
+        if got != want:
+            bad += 1
+            print("FAIL li", args, kw, got)
+    got = copula("", "ben", pre=li("Moskova")).word
+    if got != "Moskovalıyım":
+        bad += 1
+        print("FAIL li+cop", got)
     got = copula("", "ben", pre=noun_case("ev", "loc")).word
     if got != "evdeyim":
         bad += 1

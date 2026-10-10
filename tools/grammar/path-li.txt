@@ -1,0 +1,114 @@
+# Путь темы «С чем? Без чего? -lı / -sız» — sütlü kahve, şekersiz çay, gözlüklü adam,
+# «Kırmızı şapkalı kızı görüyorum» (девочку в красной шапке), Moskovalıyım (я из Москвы).
+# Yeni Hitit 1, ünite 5.2. Идёт после всех тем A1. Формат — как в path-yor.txt.
+
+## С чем? -lı / -li / -lu / -lü | sütlü kahve, peynirli börek | words=1
+Ben sütlü kahve içiyorum. | Я пью кофе с молоком.
+Leyla limonlu çay istiyor. | Лейла хочет чай с лимоном.
+Bir peynirli börek lütfen. | Один бёрек с сыром, пожалуйста.
+Olga şekerli çay içmiyor. | Ольга не пьёт сладкий чай.
+Deniz etli pilav seviyor. | Дениз любит плов с мясом.
+Tuzlu yemek sevmiyorum. | Я не люблю солёную еду.
+Biz bahçeli bir ev istiyoruz. | Мы хотим дом с садом.
+Bu balkonlu bir oda. | Это комната с балконом.
+Anya çikolatalı pasta yiyor. | Аня ест шоколадный торт.
+Pamuk sütlü mama seviyor. | Памук любит корм с молоком.
+
+## Без чего? -sız / -siz / -suz / -süz | şekersiz çay, sütsüz kahve | words=1
+Tuba şekersiz çay içiyor. | Туба пьёт чай без сахара.
+Ben sütsüz kahve istiyorum. | Я хочу кофе без молока.
+Bu çorba tuzsuz. | Этот суп без соли.
+Leyla etsiz yemek yapıyor. | Лейла готовит еду без мяса.
+Deniz bugün parasız. | Дениз сегодня без денег.
+Ben gözlüksüz okumuyorum. | Без очков я не читаю.
+Biz bahçesiz bir evde oturuyoruz. | Мы живём в доме без сада.
+Olga şekersiz kahve seviyor. | Ольга любит кофе без сахара.
+Sen sütsüz çay mı içiyorsun? | Ты пьёшь чай без молока?
+Bu oda balkonsuz. | Эта комната без балкона.
+Onlar şimdi işsiz. | Они сейчас без работы.
+
+## Какой человек? В чём-то | gözlüklü adam, şapkalı kız | words=1
+Gözlüklü adam öğretmen. | Мужчина в очках — учитель.
+Şapkalı kız Leyla'nın kuzeni. | Девушка в шляпе — кузина Лейлы.
+Çantalı kadın nerede? | Где женщина с сумкой?
+Kırmızı elbiseli kız çok güzel. | Девушка в красном платье очень красивая.
+Mavi gömlekli adam Deniz. | Мужчина в голубой рубашке — Дениз.
+Siyah ceketli kadın Tuba. | Женщина в чёрной куртке — Туба.
+Uzun saçlı kız Anya. | Девушка с длинными волосами — Аня.
+Beyaz kedili kadın kim? | Кто эта женщина с белой кошкой?
+Sarı şemsiyeli çocuk okula gidiyor. | Ребёнок с жёлтым зонтом идёт в школу.
+Gözlüklü öğretmen çok iyi. | Учитель в очках очень хороший.
+
+## Девочку в красной шапке: -lı + -ı | Kırmızı şapkalı kızı görüyorum. | words=1
+Kırmızı şapkalı kızı görüyorum. | Я вижу девочку в красной шапке.
+Gözlüklü adamı tanıyor musun? | Ты знаешь мужчину в очках?
+Mavi elbiseli kadını arıyorum. | Я ищу женщину в синем платье.
+Bahçeli evi çok sevdim. | Мне очень понравился дом с садом.
+Sütlü kahveyi kim istedi? | Кто просил кофе с молоком?
+Balkonlu odayı istiyoruz. | Мы хотим комнату с балконом.
+Siyah çantalı kızı gördün mü? | Ты видела девушку с чёрной сумкой?
+Şekersiz çayı Tuba için yaptım. | Чай без сахара я сделала для Тубы.
+Uzun saçlı kızı tanıyorum. | Я знаю девушку с длинными волосами.
+Beyaz kedili kadını bekliyoruz. | Мы ждём женщину с белой кошкой.
+
+## Откуда? Moskovalı, İstanbullu | Ben Moskovalıyım. Siz İstanbullu musunuz? | words=1
+Ben Moskovalıyım. | Я из Москвы.
+Leyla İstanbullu. | Лейла из Стамбула.
+Deniz Ankaralı. | Дениз из Анкары.
+Siz İstanbullu musunuz? | Вы из Стамбула?
+Tuba Trabzonlu. | Туба из Трабзона.
+Biz Moskovalıyız. | Мы из Москвы.
+Sen Ankaralı mısın? | Ты из Анкары?
+Anya da Moskovalı. | Аня тоже из Москвы.
+Metin Bey İstanbullu mu? | Метин-бей из Стамбула?
+Ben Rusyalıyım. | Я из России.
+
+## Погода: güneşli, yağmurlu | Bugün hava güneşli. | words=1
+Bugün hava güneşli. | Сегодня солнечно.
+Yarın hava yağmurlu. | Завтра дождливо.
+Bugün hava bulutlu mu? | Сегодня облачно?
+Bugün hava rüzgarlı mı? | Сегодня ветрено?
+Moskova'da kış karlı. | Зимой в Москве снежно.
+Bodrum'da yaz güneşli. | Летом в Бодруме солнечно.
+İstanbul bugün sisli. | В Стамбуле сегодня туман.
+Hava çok rüzgarlı. | Очень ветрено.
+Yarın güneşli mi? | Завтра солнечно?
+Bugün yağmurlu, şemsiyeni al! | Сегодня дождь, возьми зонт!
+
+## Всё вместе | с чем, без чего, какой, откуда — вперемешку | words=1 | gate
+Sütlü mü, sütsüz mü? | С молоком или без?
+Kırmızı ceketli adamı gördün mü? | Ты видела мужчину в красной куртке?
+Ben İstanbullu değilim, Moskovalıyım. | Я не из Стамбула, я из Москвы.
+Şekersiz bir çay lütfen. | Один чай без сахара, пожалуйста.
+Bugün hava güneşli ve sıcak. | Сегодня солнечно и тепло.
+Gözlüklü kız benim kardeşim. | Девушка в очках — моя сестра.
+Balkonlu bir oda istiyoruz. | Мы хотим комнату с балконом.
+Tuba şekerli bir şey yemiyor. | Туба не ест ничего сладкого.
+Limonlu çayı çok seviyorum. | Я очень люблю чай с лимоном.
+Deniz Ankaralı ama İstanbul'da yaşıyor. | Дениз из Анкары, но живёт в Стамбуле.
+
+## Фраза длиннее | + какой, где: слово рядом | words=2
+Ben her sabah sütlü kahve içiyorum. | Каждое утро я пью кофе с молоком.
+Leyla bugün kırmızı elbiseli. | Лейла сегодня в красном платье.
+Biz manzaralı bir oda istiyoruz. | Мы хотим комнату с видом.
+Uzun saçlı kızı dün parkta gördüm. | Вчера я видела в парке девушку с длинными волосами.
+Tuba her zaman şekersiz çay içiyor. | Туба всегда пьёт чай без сахара.
+Deniz gözlüklü bir öğretmeni arıyor. | Дениз ищет учителя в очках.
+Yarın hava çok güneşli olacak. | Завтра будет очень солнечно.
+Leyla bana limonlu bir kek getirdi. | Лейла принесла мне кекс с лимоном.
+Biz bahçeli bir evde oturuyoruz. | Мы живём в доме с садом.
+Olga peynirli böreği çok seviyor. | Ольга очень любит бёрек с сыром.
+
+## Вся фраза | только перевод — собери по-турецки | words=99
+Sütlü kahve istiyorum. | Я хочу кофе с молоком.
+Şekersiz çay lütfen. | Чай без сахара, пожалуйста.
+Deniz Ankaralı mı? | Дениз из Анкары?
+Gözlüklü adam kim? | Кто этот мужчина в очках?
+Bugün hava yağmurlu. | Сегодня дождливо.
+Sen Moskovalı mısın? | Ты из Москвы?
+Şapkalı kızı gördüm. | Я видела девушку в шляпе.
+Bu oda balkonlu mu? | В этой комнате есть балкон?
+Etsiz yemek yapıyorum. | Я готовлю еду без мяса.
+Parasızım. | Я без денег.
+
+## В жизни | фразы из «Фраз» и «Диалогов» — только с пройденным | words=2 | life

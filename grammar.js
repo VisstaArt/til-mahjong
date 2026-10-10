@@ -444,6 +444,33 @@ GRAMMAR_TOPICS.push(
     `,
   }
 );
+GRAMMAR_TOPICS.push({
+  id: "li",
+  emoji: "🧢",
+  title: "С чем? Без чего? -lı / -sız",
+  rules: [
+    ["lı", "с чем: -lı"],
+    ["siz", "без чего: -sız"],
+    ["cop", "Moskovalıyım"],
+  ],
+  memo: `
+    <h3>С чем? Без чего? -lı / -sız</h3>
+    <table class="memo-table">
+      <tr><th>что</th><th>как</th><th>пример</th></tr>
+      <tr><td>с чем-то</td><td>-lı / -li / -lu / -lü</td><td>süt<b>lü</b> kahve, limon<b>lu</b> çay</td></tr>
+      <tr><td>без чего-то</td><td>-sız / -siz / -suz / -süz</td><td>şeker<b>siz</b> çay, süt<b>süz</b> kahve</td></tr>
+      <tr><td>в чём-то (человек)</td><td>-lı</td><td>gözlük<b>lü</b> adam, şapka<b>lı</b> kız</td></tr>
+      <tr><td>откуда</td><td>-lı</td><td>Moskova<b>lı</b>, İstanbul<b>lu</b></td></tr>
+      <tr><td>погода</td><td>-lı</td><td>güneş<b>li</b>, yağmur<b>lu</b>, bulut<b>lu</b></td></tr>
+    </table>
+    <ul>
+      <li>Гласная — ı / i / u / ü по гармонии; связки после гласной нет: şapka<b>lı</b>.</li>
+      <li>«Девочка в красной шапке» — <b>kırmızı şapkalı kız</b>; «вижу девочку…» — kırmızı şapkalı kız<b>ı</b> görüyorum.</li>
+      <li>С «быть»: Moskovalı<b>yım</b> — я из Москвы; İstanbullu <b>musunuz</b>? — вы из Стамбула?</li>
+    </ul>
+    <div class="memo-examples" data-examples="Sütlü kahve lütfen.|Кофе с молоком, пожалуйста.;Şekersiz çay içiyorum.|Я пью чай без сахара.;Kırmızı şapkalı kızı görüyorum.|Я вижу девочку в красной шапке.;Ben Moskovalıyım.|Я из Москвы."></div>
+  `,
+});
 const GRAMMAR_REVIEW = { id: "review", emoji: "🔀", title: "Повторение вперемешку" };
 
 // Где застряла Памук — новое место на каждой ступени темы (по кругу).
@@ -811,6 +838,8 @@ function partKind(slot, part) {
       return "case";
     case "exist":
       return "neg";
+    case "li":
+      return "poss";
     default:
       return part.slot; // tense, neg, case, poss
   }
@@ -1310,6 +1339,8 @@ function partTags(slot, part) {
       return t.filter((x) => ["with", "buffer", "proper", "pronoun", "poss-with"].includes(x));
     case "exist":
       return t.filter((x) => ["exist", "var", "yok"].includes(x));
+    case "li":
+      return t.filter((x) => ["lı", "siz"].includes(x));
     case "case":
       return t.filter((x) => x.startsWith("c.") || ["voiceless", "buffer", "proper", "n-buffer"].includes(x));
     default:
