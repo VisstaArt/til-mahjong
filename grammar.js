@@ -198,6 +198,38 @@ GRAMMAR_TOPICS.push({
     <div class="memo-examples" data-examples="Benim adım Olga.|Меня зовут Ольга.;Senin adın ne?|Как тебя зовут?;Leyla'nın kedisi çok sevimli.|Кошка Лейлы очень милая.;Kitap çantamda.|Книга в моей сумке."></div>
   `,
 });
+GRAMMAR_TOPICS.push({
+  id: "acc",
+  emoji: "🎯",
+  title: "Кого? Что? kitabı, seni",
+  rules: [
+    ["acc", "кого? что? -ı"],
+    ["buffer", "после гласной -yı"],
+    ["soften", "k → ğ, p → b, ç → c"],
+    ["proper", "имена: Leyla'yı"],
+    ["pronoun", "beni, seni, onu…"],
+    ["poss-acc", "свой: annemi"],
+    ["n-buffer", "kedisini: n перед -ı"],
+  ],
+  memo: `
+    <h3>Кого? Что? Винительный -ı</h3>
+    <p class="memo-formula">конкретный предмет + <b>-ı / -i / -u / -ü</b></p>
+    <table class="memo-table">
+      <tr><th>что</th><th>как</th><th>пример</th></tr>
+      <tr><td>после согл.</td><td>-ı</td><td>film<b>i</b> izliyorum</td></tr>
+      <tr><td>после гласной</td><td>-yı</td><td>kahve<b>yi</b> seviyorum</td></tr>
+      <tr><td>k / p / ç</td><td>ğ / b / c</td><td>kita<b>bı</b>, köpe<b>ği</b></td></tr>
+      <tr><td>имя</td><td>'ı, 'yı</td><td>Leyla<b>'yı</b>, Pamuk<b>'u</b></td></tr>
+      <tr><td>я, ты…</td><td>—</td><td><b>beni, seni, onu, bizi, sizi, onları</b></td></tr>
+    </table>
+    <ul>
+      <li>-ı — когда предмет <b>конкретный</b>: <b>kitabı</b> okuyorum — «читаю (эту) книгу»; <b>kitap</b> okuyorum — «читаю (какую-то) книгу».</li>
+      <li>Свой + -ı: anne<b>m</b> → anne<b>mi</b> arıyorum. После «его» (-ı, -sı) — <b>n</b>: kedisi → kedisi<b>ni</b>.</li>
+      <li>«Звонить кому-то» по-турецки — тоже «кого»: Leyla<b>'yı</b> arıyorum.</li>
+    </ul>
+    <div class="memo-examples" data-examples="Ben seni seviyorum.|Я тебя люблю.;Kahveyi seviyorum.|Я люблю кофе.;Leyla'yı arıyorum.|Я звоню Лейле.;Annemi her pazar arıyorum.|Я звоню маме каждое воскресенье."></div>
+  `,
+});
 const GRAMMAR_REVIEW = { id: "review", emoji: "🔀", title: "Повторение вперемешку" };
 
 // Где застряла Памук — новое место на каждой ступени темы (по кругу).
@@ -539,6 +571,8 @@ function partKind(slot, part) {
       return "case";
     case "gen":
       return "poss";
+    case "acc":
+      return "case";
     default:
       return part.slot; // tense, neg, case, poss
   }
@@ -1021,6 +1055,8 @@ function partTags(slot, part) {
       return t.filter((x) => x.startsWith("p.") || x === "buffer");
     case "gen":
       return t.filter((x) => x === "gen");
+    case "acc":
+      return t.filter((x) => ["acc", "buffer", "proper", "pronoun", "poss-acc", "n-buffer"].includes(x));
     case "case":
       return t.filter((x) => x.startsWith("c.") || ["voiceless", "buffer", "proper", "n-buffer"].includes(x));
     default:

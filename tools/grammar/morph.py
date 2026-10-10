@@ -368,6 +368,69 @@ def genitive(name):
     return Form("".join(p.text for p in parts), parts, ["poss", "gen"] + (["buffer"] if name[-1].lower() in VOWELS else []))
 
 
+# --- кого? что? винительный -(y)ı: kitabı, arabayı, Leyla'yı, seni, annemi, kedisini ---
+PRONOUN_ACC = {"ben": "beni", "sen": "seni", "o": "onu", "biz": "bizi", "siz": "sizi", "onlar": "onları"}
+
+
+def _acc_suffix(base):
+    v = i4(base)
+    return ("y" + v) if base[-1] in VOWELS else v
+
+
+def accusative(noun, proper=False, poss=None):
+    """kitap → kitabı, araba → arabayı, Pamuk → Pamuk'u; poss — чей: annem → annemi,
+    kedisi → kedisini (после «его» перед -ı встаёт n)."""
+    tags = ["acc"]
+    if poss:
+        f = possessive(noun, poss)
+        parts = list(f.parts)
+        tags += ["poss-acc", f"p.{poss}"] + [t for t in f.tags if t == "soften"]
+        base = f.word
+        if poss in ("o", "onlar"):
+            suf = "n" + i4(base)
+            why = f"после «его/её» перед -ı — n: {base} → {base}{suf}"
+            tags.append("n-buffer")
+        else:
+            suf = _acc_suffix(base)
+            why = f"кого? что? → -ı; последняя гласная «{last_vowel(base)}» → {i4(base)}"
+        opts = _uniq([suf, "n" + i4(base), i4(base), "y" + i4(base), suf.translate(str.maketrans("ıiuü", "iıüu")),
+                      "d" + a2(base), a2(base)])
+        parts.append(Part(suf, "acc", opts, why))
+        return Form("".join(p.text for p in parts), parts, tags)
+    parts = []
+    base = noun
+    suf = _acc_suffix(noun)
+    if not proper and suf[0] in VOWELS and noun[-1] in "pçk" and _syllables(noun) > 1:
+        base = noun[:-1] + SOFTEN[noun[-1]]
+        parts.append(Part(base, "stem", [base, noun], f"{noun[-1]} → {SOFTEN[noun[-1]]} перед гласной ({noun} → {base})"))
+        tags.append("soften")
+    else:
+        parts.append(Part(noun, "stem", [noun], ""))
+    why = f"кого? что? (этот, конкретный) → -ı; последняя гласная «{last_vowel(noun.lower())}» → {i4(noun.lower())}"
+    if suf.startswith("y"):
+        why += "; после гласной — связка y"
+        tags.append("buffer")
+    opts = _uniq([suf, "y" + i4(noun.lower()) if not suf.startswith("y") else suf[1:],
+                  suf.translate(str.maketrans("ıiuü", "iıüu")),
+                  _case_suffix(noun.lower(), "loc"), _case_suffix(noun.lower(), "dat"), _case_suffix(noun.lower(), "abl")])
+    if proper:
+        suf = "'" + suf
+        opts = ["'" + o for o in opts]
+        tags.append("proper")
+    parts.append(Part(suf, "acc", opts, why))
+    return Form("".join(p.text for p in parts), parts, tags)
+
+
+def pronoun_acc(person):
+    """beni, seni, onu, bizi, sizi, onları — местоимение + -ı (у o — onu)."""
+    word = PRONOUN_ACC[person]
+    stem = {"o": "on"}.get(person, person)
+    suf = word[len(stem):]
+    why = f"кого? {person} → {word}" + ("; у o — с n: onu" if person == "o" else "")
+    parts = [Part(stem, "stem", [stem], ""), Part(suf, "acc", _uniq([suf, "i", "ı", "u", "e", "a", "de", "den"]), why)]
+    return Form(word, parts, ["acc", "pronoun"])
+
+
 if __name__ == "__main__":
     # Сверка с таблицей из книги (durmak, duygulanmak) и с типовыми случаями.
     checks = {
@@ -466,6 +529,21 @@ if __name__ == "__main__":
         if got != want:
             bad += 1
             print("FAIL gen", name, got)
+    for args, kw, want in [
+        (("kitap",), {}, "kitabı"), (("araba",), {}, "arabayı"), (("ev",), {}, "evi"), (("su",), {}, "suyu"),
+        (("çay",), {}, "çayı"), (("müzik",), {}, "müziği"), (("top",), {}, "topu"), (("otobüs",), {}, "otobüsü"),
+        (("Leyla",), {"proper": True}, "Leyla'yı"), (("Pamuk",), {"proper": True}, "Pamuk'u"), (("Deniz",), {"proper": True}, "Deniz'i"),
+        (("anne",), {"poss": "ben"}, "annemi"), (("kitap",), {"poss": "ben"}, "kitabımı"), (("kedi",), {"poss": "o"}, "kedisini"),
+        (("araba",), {"poss": "biz"}, "arabamızı"), (("pasaport",), {"poss": "siz"}, "pasaportunuzu"), (("kardeş",), {"poss": "o"}, "kardeşini"),
+    ]:
+        got = accusative(*args, **kw).word
+        if got != want:
+            bad += 1
+            print("FAIL acc", args, kw, got)
+    for person, want in PRONOUN_ACC.items():
+        if pronoun_acc(person).word != want:
+            bad += 1
+            print("FAIL pron acc", person)
     got = copula("", "ben", pre=noun_case("ev", "loc")).word
     if got != "evdeyim":
         bad += 1

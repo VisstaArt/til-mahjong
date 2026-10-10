@@ -27,7 +27,7 @@ UNMATCHED = os.path.join(os.path.dirname(__file__), "unmatched.txt")
 EXTRA_VERBS = os.path.join(os.path.dirname(__file__), "extra-verbs.txt")
 EXTRA_NOUNS = os.path.join(os.path.dirname(__file__), "extra-nouns.txt")
 # Пути тем — ступени со своими короткими фразами (path-<тема>.txt), в порядке прохождения.
-PATH_TOPICS = ["yor", "case", "cop", "poss"]
+PATH_TOPICS = ["yor", "case", "cop", "poss", "acc"]
 PATH_OUT = os.path.join(ROOT, "assets", "grammar", "path.json")
 # Фраза из разговорника/диалога идёт в ступень «В жизни» только если она короткая и по
 # грамматике не выше этого уровня (оценка levels.py) — иначе для начинающих слишком сложно.
@@ -57,6 +57,7 @@ def tr_lower(s):
 # маджонга + частые служебные слова, которых там нет (или они там с другим смыслом).
 WORDS_RU = {}
 WORD_PARTS = set()  # отдельные слова из многословных записей словаря (doğum günü → doğum)
+WORD_PARTS_PAIRS = set()  # сами многословные записи (cep telefonu)
 BASIC_GLOSS = {
     "ben": "я", "sen": "ты", "o": "он, она", "biz": "мы", "siz": "вы", "onlar": "они",
     "her": "каждый", "bir": "один, какой-то", "ve": "и", "de": "тоже", "da": "тоже",
@@ -101,6 +102,7 @@ def load_lexicon():
             all_words.add(tr)
             if " " in tr or "/" in tr or "," in tr:
                 WORD_PARTS.update(x for x in re.split(r"[\s/,()]+", tr) if x)
+                WORD_PARTS_PAIRS.add(tr)
                 continue
             WORDS_RU.setdefault(tr, w.get("ru", ""))
             if w.get("pos") in ("noun", "adjective"):
@@ -475,6 +477,86 @@ def match_poss(tokens, i, poss_idx, sentence_words, life):
     return ok[0][:4]
 
 
+# --- кого? что? винительный: kitabı, Leyla'yı, seni, annemi ---
+ACC_PROPER_RE = re.compile(r"^([A-ZÇĞİÖŞÜ][\wçğıöşü]+)'(y?[ıiuü])$")
+PRONOUN_ACC_WORDS = {v: k for k, v in morph.PRONOUN_ACC.items()}
+
+
+def build_acc_index(nouns, all_words):
+    idx = {}
+    for lemma in nouns:
+        if len(lemma) < 2 or " " in lemma:
+            continue
+        variants = [(None, morph.accusative(lemma))] + [(p, morph.accusative(lemma, poss=p)) for p in morph.PERSONS]
+        for person, f in variants:
+            w = tr_lower(f.word)
+            if w in STOP or w in PRONOUN_GEN or w in all_words:
+                continue
+            idx.setdefault(w, []).append((lemma, person, f))
+    return idx
+
+
+def _verb_later(tokens, i):
+    """Винительный — дополнение при глаголе: в пройденных темах это -yor где-то дальше."""
+    return any("yor" in tr_lower(t[0]) for t in tokens[i + 1:])
+
+
+# Переходные глаголы (основа перед -yor): во фразах «из жизни» -ı считаем винительным только
+# перед ними или перед инфинитивом (hesabı ödemek istiyorum) — иначе это чаще «его»:
+# başı dönüyor, saat onu çeyrek geçiyor.
+TRANSITIVE_STEMS = (
+    "sev", "isti", "ar", "bekl", "bil", "oku", "yaz", "iç", "yi", "izl", "dinl", "gör", "al", "öd",
+    "aç", "kapat", "temizl", "yık", "hazırl", "tanı", "anl", "özl", "bırak", "gönder", "sor", "duy",
+    "unut", "söyl", "sat", "kullan", "yap", "bul", "getir", "götür", "ver", "tut", "giy", "seç",
+    "öğren", "öğret", "ist", "çek", "değiştir", "kontrol", "rica", "ödü", "kaybed", "tamir",
+)
+
+
+def _transitive_later(tokens, i):
+    for t in tokens[i + 1:]:
+        low = tr_lower(t[0])
+        if re.search(r"m[ae]k$", low):
+            return True
+        m = re.match(r"^(.+?)[ıiuü]?yor", low)
+        if m and any(m.group(1).startswith(st) for st in TRANSITIVE_STEMS):
+            return True
+    return False
+
+
+def match_acc(tokens, i, acc_idx, sentence_words, life):
+    raw = tokens[i][0]
+    low = tr_lower(raw)
+    if not _verb_later(tokens, i):
+        return None
+    if life and not _transitive_later(tokens, i):
+        return None
+    prev_low = tr_lower(tokens[i - 1][0]) if i > 0 else ""
+    # cep telefonu, balık ekmeği, finans müdürü — составное слово, -ı там «его», не винительный.
+    if f"{prev_low} {low}" in WORD_PARTS_PAIRS or (life and prev_low in NOMINALS and prev_low not in ADJECTIVES):
+        return None
+    if low in PRONOUN_ACC_WORDS:
+        return low, PRONOUN_ACC_WORDS[low], morph.pronoun_acc(PRONOUN_ACC_WORDS[low]), True
+    m = ACC_PROPER_RE.match(raw)
+    if m:
+        f = morph.accusative(m.group(1), proper=True)
+        return (m.group(1), None, f, False) if f.word == raw else None
+    cands = acc_idx.get(low)
+    if not cands:
+        return None
+    prev = tokens[i - 1][0] if i > 0 else ""
+    prev_gen = tr_lower(prev) == "onun" or bool(GEN_RE.match(prev))
+    for lemma, person, f in cands:
+        if person == "sen" and "senin" not in sentence_words and (life or "sen" not in sentence_words):
+            continue
+        if person in ("o", "onlar"):
+            if life and not prev_gen:
+                continue
+            if "sen" in sentence_words or "senin" in sentence_words:
+                continue
+        return lemma, person, f, False
+    return None
+
+
 # --- сборка ---
 def form_to_slot(form, start, end, lemma, topic, gloss):
     return {
@@ -519,6 +601,7 @@ def main():
     verbs, nouns, all_words = load_lexicon()
     case_idx = build_case_index(nouns, all_words)
     poss_idx = build_poss_index(nouns, all_words)
+    acc_idx = build_acc_index(nouns, all_words)
     sources = load_sources()
     items, unmatched = [], {}
     base_problems, too_hard = [], 0
@@ -580,6 +663,22 @@ def main():
                 slot["person"] = person
                 if case:
                     slot["case"] = case
+                slot["alts"] = []
+                slots.append(slot)
+                i += 1
+                continue
+            ac = match_acc(tokens, i, acc_idx, sentence_words, src["tier"] == "life")
+            # С заглавной посреди фразы — имя (Pamuk), кроме языков: Türkçeyi, Rusçayı.
+            if ac and (raw[0].islower() or s == 0 or "'" in raw or str(ac[0]).endswith(("çe", "ça"))):
+                lemma, person, form, is_pronoun = ac
+                if raw[0].isupper() and "'" not in raw:
+                    form = copy.deepcopy(form)
+                    form.parts[0].text = raw[0] + form.parts[0].text[1:]
+                    form.parts[0].options = [o[0].upper() + o[1:] for o in form.parts[0].options]
+                    form.word = raw
+                slot = form_to_slot(form, s, e, lemma, "acc", nouns.get(lemma, "") if not is_pronoun else "")
+                if person:
+                    slot["person"] = person
                 slot["alts"] = []
                 slots.append(slot)
                 i += 1

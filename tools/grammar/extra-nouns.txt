@@ -7,3 +7,5 @@ banka = банк
 öğrenci = ученик, студент
 hazır = готовый
 nasıl = как
+film = фильм
+dolap = шкаф

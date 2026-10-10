@@ -1,0 +1,115 @@
+# Путь темы «Кого? Что?» — винительный -(y)ı: kitabı okuyorum, Leyla'yı arıyorum, seni
+# seviyorum, annemi arıyorum. Идёт после -yor, падежей, «быть» и «чей» — всё это можно.
+# Главное правило: -ı — когда предмет конкретный («этот, тот самый»); «kitap okuyorum» —
+# просто «читаю (какую-то) книгу», без -ı. Формат — как в path-yor.txt.
+
+## Этот, тот самый: -ı / -i / -u / -ü | film → filmi, otobüs → otobüsü | words=1
+Ben filmi izliyorum. | Я смотрю этот фильм.
+Leyla evi temizliyor. | Лейла убирает дом.
+Biz telefonu arıyoruz. | Мы ищем телефон.
+Olga dersi dinliyor. | Ольга слушает урок.
+Biz otobüsü bekliyoruz. | Мы ждём автобус.
+Tuba işi bitiriyor. | Туба заканчивает работу.
+Onlar parkı seviyorlar. | Им нравится этот парк.
+Ben müdürü arıyorum. | Я ищу директора.
+Sen filmi seviyor musun? | Тебе нравится фильм?
+Biz çayı seviyoruz. | Мы любим чай.
+
+## После гласной — связка y | araba → arabayı, kahve → kahveyi | words=1
+Ben kahveyi seviyorum. | Я люблю кофе.
+Deniz arabayı yıkıyor. | Дениз моет машину.
+Biz Türkçeyi öğreniyoruz. | Мы учим турецкий.
+Sen kapıyı açıyor musun? | Ты открываешь дверь?
+Olga odayı temizliyor. | Ольга убирает комнату.
+Pamuk suyu içmiyor. | Памук не пьёт воду.
+Tuba masayı hazırlıyor. | Туба накрывает на стол.
+Siz müzeyi biliyor musunuz? | Вы знаете этот музей?
+Onlar pastayı yiyorlar. | Они едят торт.
+Ben şarkıyı dinliyorum. | Я слушаю песню.
+
+## k → ğ, p → b, ç → c | kitap → kitabı, köpek → köpeği | words=1
+Ben kitabı okuyorum. | Я читаю эту книгу.
+Leyla köpeği seviyor. | Лейла любит собаку.
+Olga mektubu yazıyor. | Ольга пишет письмо.
+Biz ekmeği yiyoruz. | Мы едим хлеб.
+Çocuklar topu arıyorlar. | Дети ищут мяч.
+Sen çocuğu görüyor musun? | Ты видишь ребёнка?
+Deniz bardağı yıkıyor. | Дениз моет стакан.
+Tuba mutfağı temizliyor. | Туба убирает кухню.
+Ben dolabı açıyorum. | Я открываю шкаф.
+Siz müziği seviyor musunuz? | Вам нравится музыка?
+
+## Кого? Имена и «меня, тебя» | Leyla'yı, Pamuk'u, beni, seni, onu | words=1
+Ben Leyla'yı arıyorum. | Я звоню Лейле.
+Deniz Olga'yı bekliyor. | Дениз ждёт Ольгу.
+Pamuk Leyla'yı seviyor. | Памук любит Лейлу.
+Ben seni seviyorum. | Я тебя люблю.
+Sen beni anlıyor musun? | Ты меня понимаешь?
+Biz onu bekliyoruz. | Мы его ждём.
+Anya Olga'yı arıyor. | Аня звонит Ольге.
+Onlar bizi bekliyorlar. | Они нас ждут.
+Ben sizi anlamıyorum. | Я вас не понимаю.
+Metin Bey Tuba'yı arıyor. | Метин-бей ищет Тубу.
+Leyla Pamuk'u arıyor. | Лейла ищет Памук.
+
+## Этот или какой-то? | bu kitabı — эту книгу; kitap — (какую-то) книгу | words=1
+Ben bu filmi seviyorum. | Мне нравится этот фильм.
+Sen şu kitabı okuyor musun? | Ты читаешь ту книгу?
+Leyla bu şarkıyı söylüyor. | Лейла поёт эту песню.
+Biz bu kafeyi seviyoruz. | Нам нравится это кафе.
+Olga bu kelimeyi bilmiyor. | Ольга не знает этого слова.
+Deniz şu arabayı istiyor. | Дениз хочет ту машину.
+Tuba bu otobüsü bekliyor. | Туба ждёт этот автобус.
+Ben bu müziği dinliyorum. | Я слушаю эту музыку.
+Onlar bu oyunu oynuyorlar. | Они играют в эту игру.
+Siz bu adresi biliyor musunuz? | Вы знаете этот адрес?
+
+## Свой: annemi, kitabımı, kedisini | «мой» + -ı; после «его» — n: kedisini | words=1
+Ben annemi arıyorum. | Я звоню маме.
+Ben anahtarımı arıyorum. | Я ищу свой ключ.
+Biz arabamızı yıkıyoruz. | Мы моем свою машину.
+Siz pasaportunuzu arıyor musunuz? | Вы ищете свой паспорт?
+Ben kitabımı okuyorum. | Я читаю свою книгу.
+Olga kardeşini arıyor. | Ольга звонит сестре.
+Leyla kedisini seviyor. | Лейла любит свою кошку.
+Deniz annesini arıyor. | Дениз звонит маме.
+Biz öğretmenimizi seviyoruz. | Мы любим нашего учителя.
+Ben çantamı açıyorum. | Я открываю свою сумку.
+
+## Всё вместе | кого? что? — вперемешку | words=1 | gate
+Sen Leyla'yı tanıyor musun? | Ты знаешь Лейлу?
+Ben bu kitabı çok seviyorum. | Я очень люблю эту книгу.
+Olga annesini arıyor. | Ольга звонит маме.
+Biz seni bekliyoruz. | Мы тебя ждём.
+Deniz kahveyi hazırlıyor. | Дениз готовит кофе.
+Çocuklar köpeği seviyorlar. | Дети любят собаку.
+Siz beni duyuyor musunuz? | Вы меня слышите?
+Tuba kapıyı açmıyor. | Туба не открывает дверь.
+Ben telefonumu arıyorum. | Я ищу свой телефон.
+Leyla Deniz'i tanıyor. | Лейла знает Дениза.
+
+## Фраза длиннее | + когда, как: слово рядом | words=2
+Ben her sabah kahveyi hazırlıyorum. | Каждое утро я готовлю кофе.
+Leyla şimdi kedisini arıyor. | Лейла сейчас ищет свою кошку.
+Biz bu filmi çok seviyoruz. | Нам очень нравится этот фильм.
+Sen yarın Deniz'i görüyor musun? | Ты завтра видишь Дениза?
+Olga akşam annesini arıyor. | Вечером Ольга звонит маме.
+Deniz arabasını her gün yıkıyor. | Дениз моет свою машину каждый день.
+Tuba bugün mutfağı temizliyor. | Сегодня Туба убирает кухню.
+Ben seni çok seviyorum. | Я тебя очень люблю.
+Onlar bu şarkıyı çok seviyorlar. | Им очень нравится эта песня.
+Siz Türkçeyi nerede öğreniyorsunuz? | Где вы учите турецкий?
+
+## Вся фраза | только перевод — собери по-турецки | words=99
+Ben suyu içiyorum. | Я пью воду.
+Sen beni seviyor musun? | Ты меня любишь?
+Leyla Pamuk'u arıyor mu? | Лейла ищет Памук?
+Biz kapıyı açıyoruz. | Мы открываем дверь.
+Deniz Olga'yı seviyor. | Дениз любит Ольгу.
+Olga mektubunu yazıyor. | Ольга пишет своё письмо.
+Siz onu tanıyor musunuz? | Вы его знаете?
+Ben bu kafeyi biliyorum. | Я знаю это кафе.
+Onlar bizi anlıyorlar. | Они нас понимают.
+Tuba çayı seviyor. | Туба любит чай.
+
+## В жизни | фразы из «Фраз» и «Диалогов» — только с пройденным | words=2 | life

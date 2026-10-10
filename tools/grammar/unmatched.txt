@@ -1,11 +1,11 @@
 # основа до -yor → фразы; глагола нет в словаре (assets/words) или форма не сошлась
+tanı	6	Sen Leyla'yı tanıyor musun?
 yatırılı	4	Maaşlar ne zaman yatırılıyor?
 benzi	4	Annene benziyorsun.
 alını	3	Burada nasıl izin alınıyor?
 uyuyamı	3	Uyuyamıyorum
 yiyemi	3	Yemek yiyemiyorum
 gelemi	3	Evet. Uçakları iptal edilmiş, bugün gelemiyorlar.
-tanı	3	Doğru, herkes farklı. Ankara'yı tanıyor musun?
 işli	2	Burada her şey nasıl işliyor?
 yapılı	2	Pazartesi günleri saat onda toplantı yapılıyor.
 yetiştiremi	2	İşler o kadar çok ki yetiştiremiyorum.
