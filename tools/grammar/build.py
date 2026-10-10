@@ -27,7 +27,22 @@ UNMATCHED = os.path.join(os.path.dirname(__file__), "unmatched.txt")
 EXTRA_VERBS = os.path.join(os.path.dirname(__file__), "extra-verbs.txt")
 EXTRA_NOUNS = os.path.join(os.path.dirname(__file__), "extra-nouns.txt")
 # Пути тем — ступени со своими короткими фразами (path-<тема>.txt), в порядке прохождения.
-PATH_TOPICS = ["yor", "case", "cop", "poss", "acc", "di", "want", "ecek", "with"]
+PATH_TOPICS = ["yor", "case", "cop", "poss", "acc", "di", "want", "ecek", "with", "deg", "qw", "two"]
+# Темы-сравнения: их фразы проверяются не по «своему» пропуску, а по признаку.
+PRED_TOPICS = {"yor", "cop", "di", "ecek", "want", "deg"}
+QUESTION_WORDS = {"ne", "nerede", "nereye", "nereden", "kim", "kimi", "kime", "nasıl", "neden", "niye",
+                  "kaç", "kaçta", "hangi", "zaman", "neyle", "kiminle", "neredesin", "neredesiniz"}
+
+
+def contrast_ok(topic, slots, tr):
+    """Подходит ли фраза теме-сравнению (для своих фраз пути и для «В жизни»)."""
+    if topic == "deg":
+        return any(s["topic"] == "deg" or "neg" in s["tags"] for s in slots)
+    if topic == "qw":
+        return any(s["topic"] in PRED_TOPICS for s in slots)
+    if topic == "two":
+        return sum(1 for s in slots if s["topic"] in PRED_TOPICS) >= 2
+    return None
 PATH_OUT = os.path.join(ROOT, "assets", "grammar", "path.json")
 # Фраза из разговорника/диалога идёт в ступень «В жизни» только если она короткая и по
 # грамматике не выше этого уровня (оценка levels.py) — иначе для начинающих слишком сложно.
@@ -148,7 +163,7 @@ def load_paths():
                 for f in fields[2:]:
                     if f.startswith("words="):
                         stage["words"] = int(f[6:])
-                    elif f in ("gate", "life"):
+                    elif f in ("gate", "life", "pred"):
                         stage[f] = True
                 stages.append(stage)
                 continue
@@ -442,6 +457,26 @@ def match_with(tokens, i, with_idx, sentence_words, life):
     return None
 
 
+# --- есть / нет: var, yok, var mı? ---
+def match_exist(tokens, i):
+    raw, s, e = tokens[i]
+    low = tr_lower(raw)
+    if low not in ("var", "yok"):
+        return None
+    nxt = tr_lower(tokens[i + 1][0]) if i + 1 < len(tokens) else ""
+    q = {"var": "mı", "yok": "mu"}[low]
+    why = "есть, имеется → var" if low == "var" else "нет, не имеется → yok (не «değil»: değil — «не являюсь / не там»)"
+    parts = [morph.Part(raw, "exist", [raw, {"var": "yok", "yok": "var"}[low], "değil"], why)]
+    tags = ["exist", low]
+    end = e
+    if nxt == q:
+        parts.append(morph.Part(" " + q, "question", [" " + q, " mi", " mü", " misin"], f"вопрос: {low} {q}? — частица отдельно"))
+        tags.append("question")
+        end = tokens[i + 1][2]
+    f = morph.Form("".join(p.text for p in parts), parts, tags)
+    return f, s, end, 2 if nxt == q else 1
+
+
 # --- падежи ---
 def build_case_index(nouns, all_words):
     idx = {}
@@ -495,7 +530,7 @@ for _v in "ıiuü":
 NOT_PREDICATE = {"var", "yok", "ne", "bu", "şu", "o"}
 
 
-def _cop_base(raw, case_idx, verbs):
+def _cop_base(raw, case_idx, verbs, neg=False):
     """Чем может быть основа сказуемого: (lemma, pre-форма с падежом или None, перевод)."""
     low = tr_lower(raw)
     if "'" in raw:
@@ -516,17 +551,27 @@ def _cop_base(raw, case_idx, verbs):
         return None
     if low in NOMINALS and low not in verbs and low not in STOP and low not in NOT_PREDICATE and len(low) >= 2:
         return raw, None, NOMINALS[low]
+    # «Bu benim değil», «Bu benim çantam değil», «Ders bugün değil» — тоже сказуемое,
+    # но только перед değil (иначе evimiz разберётся как «мы — мой дом»).
+    if neg and (low in PRONOUN_GEN or low in ("bugün", "yarın", "dün") or low in POSS_FORMS):
+        return raw, None, ""
     return None
 
 
 VERBISH_RE = re.compile(r"([ae]c[ae][kğ]|m[ıiuü]ş|[ıiuü]yor)$")
 
 
+CONJUNCTIONS = ("ama", "ve", "çünkü", "fakat", "ya", "sadece")
+
+
 def _clause_ends_after(tr, pos):
-    """После позиции — конец фразы/части (?, ., !, запятая) или конец строки. Иначе mı/değil
-    стоит посреди глагольного предложения (Tatilden mi dönüyorsunuz?) — это не «быть»."""
+    """После позиции — конец фразы/части (?, ., !, запятая, «ama», «çünkü») или конец строки.
+    Иначе mı/değil стоит посреди глагольного предложения (Tatilden mi dönüyorsunuz?)."""
     rest = tr[pos:].lstrip()
-    return not rest or rest[0] in "?.!,;…"
+    if not rest or rest[0] in "?.!,;…":
+        return True
+    nxt = tr_lower(rest.split()[0]).strip("?.!,")
+    return nxt in CONJUNCTIONS
 
 
 def match_cop(tokens, i, tr, case_idx, verbs, sentence_words, all_words):
@@ -539,7 +584,7 @@ def match_cop(tokens, i, tr, case_idx, verbs, sentence_words, all_words):
     clause_end = i + 1 < len(tokens) and _clause_ends_after(tr, tokens[i + 1][2])
     # отрицание: yorgun değilim
     if nxt in NEG_FORMS and clause_end:
-        base = _cop_base(raw, case_idx, verbs)
+        base = _cop_base(raw, case_idx, verbs, neg=True)
         if base:
             lemma, pre, gloss = base
             person = NEG_FORMS[nxt]
@@ -595,6 +640,9 @@ PRONOUN_GEN = {"benim", "senin", "onun", "bizim", "sizin", "onların"}
 GEN_RE = re.compile(r"^([A-ZÇĞİÖŞÜ][\wçğıöşü]+)'(n?[ıiuü]n)$")
 
 
+POSS_FORMS = set()  # все формы «чей» без падежа (çantam, evimiz) — для «Bu benim çantam değil»
+
+
 def build_poss_index(nouns, all_words):
     idx = {}
     for lemma in nouns:
@@ -610,6 +658,8 @@ def build_poss_index(nouns, all_words):
                 # если рядом «чьё» местоимение: benim adım.
                 homo = case is None and (w in all_words or w in WORD_PARTS)
                 idx.setdefault(w, []).append((lemma, person, case, f, homo))
+                if case is None and person in ("ben", "sen", "biz", "siz"):
+                    POSS_FORMS.add(w)
     return idx
 
 
@@ -830,6 +880,13 @@ def main():
                 slots.append(slot)
                 i += 2 if question else 1
                 continue
+            ex = match_exist(tokens, i)
+            if ex:
+                form, xs, xe, used = ex
+                slot = form_to_slot(form, xs, xe, tr_lower(raw), "deg", "")
+                slots.append(slot)
+                i += used
+                continue
             dm = match_di(low, nxt, verbs, all_words)
             if dm:
                 inf, person, neg, question, form = dm
@@ -961,12 +1018,16 @@ def main():
                 slots.append(slot)
             i += 1
         if src["tier"] == "base":
-            if not any(s["topic"] == src["baseTopic"] for s in slots):
+            ok = contrast_ok(src["baseTopic"], slots, tr)
+            if ok is None:
+                ok = any(s["topic"] == src["baseTopic"] for s in slots)
+            if not ok:
                 base_problems.append(f"{src['baseTopic']}: {tr}")
                 continue
             # Во фразе пути только пройденное: правила тем, идущих ПОЗЖЕ, — ошибка автора.
+            # var / yok — просто слова, их можно и раньше «своей» темы.
             later = PATH_TOPICS[PATH_TOPICS.index(src["baseTopic"]) + 1:]
-            if any(s["topic"] in later for s in slots):
+            if any(s["topic"] in later and "exist" not in s["tags"] for s in slots):
                 base_problems.append(f"{src['baseTopic']}: правило следующей темы во фразе «{tr}»")
                 continue
         else:

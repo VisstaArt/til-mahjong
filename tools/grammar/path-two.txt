@@ -1,0 +1,89 @@
+# Тема «Два глагола в одной фразе» — у каждого сказуемого своя форма: разные лица, да и нет,
+# вчера и завтра, «хочу, но надо», «потому что». Пропуски — на всех сказуемых фразы (pred).
+# Формат — как в path-yor.txt.
+
+## Ты и я: два лица | Ben çay içiyorum, sen kahve içiyorsun. | words=1 | pred
+Ben çay içiyorum, sen kahve içiyorsun. | Я пью чай, а ты кофе.
+Ben çalışıyorum, Leyla dinleniyor. | Я работаю, а Лейла отдыхает.
+Biz geliyoruz, onlar gidiyorlar. | Мы приходим, а они уходят.
+Sen okuyorsun, ben yazıyorum. | Ты читаешь, а я пишу.
+Olga uyuyor, Pamuk oynuyor. | Ольга спит, а Памук играет.
+Siz Türkçe konuşuyorsunuz, biz Rusça konuşuyoruz. | Вы говорите по-турецки, а мы по-русски.
+Ben yürüyorum, Deniz koşuyor. | Я иду пешком, а Дениз бежит.
+Tuba kahve içiyor, ben su içiyorum. | Туба пьёт кофе, а я воду.
+Onlar film izliyorlar, biz müzik dinliyoruz. | Они смотрят фильм, а мы слушаем музыку.
+Sen gülüyorsun, ben ağlıyorum. | Ты смеёшься, а я плачу.
+
+## Да и нет: ama | Ben kahve içiyorum ama Leyla içmiyor. | words=1 | pred
+Ben kahve içiyorum ama Leyla içmiyor. | Я пью кофе, а Лейла нет.
+Deniz Türkçe biliyor ama Rusça bilmiyor. | Дениз знает турецкий, но не знает русского.
+Biz geliyoruz ama Tuba gelmiyor. | Мы придём, а Туба нет.
+Pamuk süt içmiyor ama su içiyor. | Памук не пьёт молоко, но пьёт воду.
+Ben yorgunum ama mutluyum. | Я устала, но счастлива.
+Leyla evde değil ama telefonu açıyor. | Лейлы нет дома, но она берёт трубку.
+Sen çalışıyorsun ama ben çalışmıyorum. | Ты работаешь, а я нет.
+Onlar Rusça bilmiyorlar ama Türkçe biliyorlar. | Они не знают русского, но знают турецкий.
+Ben aç değilim ama yemek istiyorum. | Я не голодна, но хочу поесть.
+Siz gelmediniz ama biz bekledik. | Вы не пришли, а мы ждали.
+
+## Вчера и завтра: два времени | Dün çalıştım, yarın dinleneceğim. | words=1 | pred
+Dün çalıştım, yarın dinleneceğim. | Вчера я работала, завтра отдохну.
+Leyla dün geldi, bugün gidiyor. | Лейла вчера пришла, сегодня уезжает.
+Geçen yaz Trabzon'a gittim, bu yaz Bodrum'a gideceğim. | Прошлым летом я ездила в Трабзон, этим летом поеду в Бодрум.
+Şimdi kahve içiyorum, sonra çalışacağım. | Сейчас я пью кофе, потом буду работать.
+Dün film izledik, bugün kitap okuyoruz. | Вчера мы смотрели фильм, сегодня читаем книгу.
+Anya geçen yıl geldi, bu yıl yine gelecek. | Аня приезжала в прошлом году и снова приедет в этом.
+Deniz bugün çalışmıyor, yarın çalışacak. | Дениз сегодня не работает, завтра будет.
+Dün annemi aradım, yarın kardeşimi arayacağım. | Вчера я звонила маме, завтра позвоню сестре.
+Biz şimdi yiyoruz, sonra yürüyeceğiz. | Сейчас мы едим, потом пойдём гулять.
+Pamuk sabah oynadı, şimdi uyuyor. | Утром Памук играла, сейчас спит.
+
+## Хочу, но надо | Gitmek istiyorum ama çalışmalıyım. | words=1 | pred
+Gitmek istiyorum ama çalışmalıyım. | Я хочу уйти, но мне надо работать.
+Uyumak istiyorum ama kalkmalıyım. | Я хочу спать, но мне надо вставать.
+Kahve içmek istiyorum ama içmemeliyim. | Я хочу выпить кофе, но мне нельзя.
+Leyla gelmek istiyor ama çalışmalı. | Лейла хочет прийти, но ей надо работать.
+Tatlı yemek istiyorum ama yememeliyim. | Хочу сладкого, но мне нельзя.
+Tuba şeker yemek istiyor ama yememeli. | Туба хочет сахара, но ей нельзя.
+Dinlenmek istiyoruz ama çalışmalıyız. | Мы хотим отдохнуть, но нам надо работать.
+Sinemaya gitmek istiyorsun ama ders çalışmalısın. | Ты хочешь в кино, но тебе надо заниматься.
+Erken yatmak istiyorum ama yatmıyorum. | Хочу рано лечь, но не ложусь.
+Deniz araba kullanmak istiyor ama kullanmamalı. | Дениз хочет сесть за руль, но ему нельзя.
+
+## Почему? çünkü | Bugün evde kalıyorum çünkü hastayım. | words=1 | pred
+Bugün evde kalıyorum çünkü hastayım. | Сегодня я остаюсь дома, потому что болею.
+Gülüyorum çünkü mutluyum. | Я смеюсь, потому что счастлива.
+Kahve içmiyorum çünkü uyumak istiyorum. | Я не пью кофе, потому что хочу спать.
+Erken kalktım çünkü işe gittim. | Я рано встала, потому что пошла на работу.
+Pamuk uyuyor çünkü yoruldu. | Памук спит, потому что устала.
+Biz Türkçe öğreniyoruz çünkü İstanbul'da yaşıyoruz. | Мы учим турецкий, потому что живём в Стамбуле.
+Deniz gelmedi çünkü çalışıyor. | Дениз не пришёл, потому что работает.
+Ben yorgunum çünkü çok çalıştım. | Я устала, потому что много работала.
+Sen üzgünsün çünkü Leyla gitti. | Ты грустишь, потому что Лейла уехала.
+Tuba şeker yemiyor çünkü yememeli. | Туба не ест сахар, потому что ей нельзя.
+
+## Всё вместе | два сказуемых — вперемешку | words=1 | pred | gate
+Ben çalışıyorum, sen ne yapıyorsun? | Я работаю, а ты что делаешь?
+Dün gelmedin, yarın gelecek misin? | Вчера ты не пришла, завтра придёшь?
+Gitmek istemiyorum ama gitmeliyim. | Я не хочу идти, но надо.
+Olga yorgun değil çünkü çok uyudu. | Ольга не устала, потому что много спала.
+Leyla kahve içiyor, ben çay istiyorum. | Лейла пьёт кофе, а я хочу чаю.
+Evdeyim ama çalışıyorum. | Я дома, но работаю.
+Anya bankada çalışıyor, Olga ofiste çalışıyor. | Аня работает в банке, а Ольга в офисе.
+Biz dün sinemaya gittik, bugün evde kalacağız. | Вчера мы ходили в кино, сегодня останемся дома.
+Sen yemek yaptın mı? Ben açım! | Ты приготовила еду? Я голодная!
+Pamuk süt istemiyor, su içiyor. | Памук не хочет молока, она пьёт воду.
+
+## Вся фраза | только перевод — собери по-турецки | words=99
+Ben okuyorum, sen yazıyorsun. | Я читаю, а ты пишешь.
+Dün geldim, yarın gideceğim. | Вчера я приехала, завтра уеду.
+Uyumak istiyorum ama çalışmalıyım. | Хочу спать, но надо работать.
+Leyla geliyor, Deniz gelmiyor. | Лейла придёт, а Дениз нет.
+Yorgunum çünkü çalıştım. | Я устала, потому что работала.
+Evde kalacağım çünkü hastayım. | Я останусь дома, потому что болею.
+Sen içiyorsun, ben içmiyorum. | Ты пьёшь, а я нет.
+Gitmek istiyor musun? Ben istiyorum. | Хочешь пойти? Я хочу.
+Kahve var ama süt yok. | Кофе есть, а молока нет.
+Annem geliyor, ben bekliyorum. | Мама приезжает, я жду.
+
+## В жизни | фразы из «Фраз» и «Диалогов» с двумя сказуемыми | words=2 | pred | life

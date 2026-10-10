@@ -1,0 +1,89 @@
+# Тема-сравнение «Вопрос: mı или вопросительное слово?» — с ne, nerede, ne zaman, kim,
+# nasıl, neden, hangi частица mı НЕ нужна: «Ne içiyorsun?», но «Kahve içiyor musun?».
+# В кучке лежат и «musun», и «sun» — выбирать по смыслу. Формат — как в path-yor.txt.
+
+## Да или нет? Частица mı | Kahve içiyor musun? Evde misin? | words=1
+Kahve içiyor musun? | Ты пьёшь кофе?
+Evde misin? | Ты дома?
+Yorgun musun? | Ты устала?
+Leyla geldi mi? | Лейла пришла?
+Yarın gelecek misin? | Ты придёшь завтра?
+Türkçe biliyor musunuz? | Вы знаете турецкий?
+Öğretmen misiniz? | Вы учитель?
+Anya'yı aradın mı? | Ты звонила Ане?
+Pamuk şimdi uyuyor mu? | Памук сейчас спит?
+Kahvaltı yaptın mı? | Ты позавтракала?
+
+## Вопросительное слово — без mı | Ne içiyorsun? Neredesin? Ne zaman geldin? | words=1
+Ne içiyorsun? | Что ты пьёшь?
+Neredesin? | Где ты?
+Nasılsın? | Как ты?
+Ne zaman geldin? | Когда ты пришла?
+Nereye gidiyorsunuz? | Куда вы идёте?
+Kimi arıyorsun? | Кого ты ищешь?
+Neden gülüyorsun? | Почему ты смеёшься?
+Kim geldi? | Кто пришёл?
+Ne yapacaksın? | Что ты будешь делать?
+Hangi kitabı okuyorsun? | Какую книгу ты читаешь?
+
+## Пары: mı или слово? | Ofiste misin? — Nerede çalışıyorsun? | words=1
+Ofiste misin? | Ты в офисе?
+Nerede çalışıyorsun? | Где ты работаешь?
+Yarın geliyor musun? | Ты завтра придёшь?
+Ne zaman geliyorsun? | Когда ты придёшь?
+Çay istiyor musunuz? | Хотите чаю?
+Ne istiyorsunuz? | Что вы хотите?
+Dün sinemaya gittin mi? | Ты вчера ходила в кино?
+Dün nereye gittin? | Куда ты вчера ходила?
+Leyla'yı tanıyor musun? | Ты знаешь Лейлу?
+Kimi tanıyorsun? | Кого ты знаешь?
+
+## С «быть»: mısın? или nasılsın? | Hasta mısın? — Nasılsın? | words=1
+Mutlu musun? | Ты счастлива?
+Nasılsınız? | Как вы?
+Hasta mısın? | Ты болеешь?
+Neredesiniz? | Где вы?
+Öğrenci misin? | Ты ученица?
+Hazır mısınız? | Вы готовы?
+Bugün yorgun musun? | Ты сегодня устала?
+Şimdi neredesin? | Где ты сейчас?
+Ofiste misiniz? | Вы в офисе?
+Sen nasılsın? | А ты как?
+
+## Было и будет: geldin mi? — ne zaman geldin? | words=1
+Kahvaltı yaptınız mı? | Вы позавтракали?
+Ne zaman kahvaltı yaptınız? | Когда вы завтракали?
+Leyla'yı gördün mü? | Ты видела Лейлу?
+Leyla'yı nerede gördün? | Где ты видела Лейлу?
+Yarın gelecek misiniz? | Вы придёте завтра?
+Ne zaman geleceksiniz? | Когда вы придёте?
+Anya geldi mi? | Аня приехала?
+Anya ne zaman geldi? | Когда Аня приехала?
+Bu akşam çıkacak mısın? | Ты пойдёшь куда-нибудь вечером?
+Bu akşam ne yapacaksın? | Что ты будешь делать вечером?
+
+## Всё вместе | mı или вопросительное слово — вперемешку | words=1 | gate
+Ne yemek istiyorsun? | Что ты хочешь есть?
+Çay içmek istiyor musun? | Хочешь выпить чаю?
+Deniz nerede çalışıyor? | Где работает Дениз?
+Deniz bugün çalışıyor mu? | Дениз сегодня работает?
+Neden gelmedin? | Почему ты не пришла?
+Gelmedin mi? | Ты не пришла?
+Kim arıyor? | Кто звонит?
+Annen arıyor mu? | Мама звонит?
+Nasıl gidiyorsun? | Как ты добираешься?
+Hazır mısın? | Ты готова?
+
+## Вся фраза | только перевод — собери по-турецки | words=99
+Ne yapıyorsun? | Что ты делаешь?
+Parkta mısın? | Ты в парке?
+Nereye gittin? | Куда ты ходила?
+Kahve istiyor musun? | Хочешь кофе?
+Ne zaman döneceksin? | Когда ты вернёшься?
+Neden ağlıyorsun? | Почему ты плачешь?
+Metin Bey geldi mi? | Метин-бей пришёл?
+Kimi bekliyorsun? | Кого ты ждёшь?
+Aç mısın? | Ты голодна?
+Nasıl gidiyorsunuz? | Как вы добираетесь?
+
+## В жизни | фразы из «Фраз» и «Диалогов» — только с пройденным | words=2 | life

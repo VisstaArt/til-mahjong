@@ -41,7 +41,12 @@ CASES = ["loc", "abl", "dat"]
 CASE_RU = {"loc": "где? (-de)", "abl": "откуда? (-den)", "dat": "куда? (-e)"}
 
 
+def _low(word):
+    return word.replace("I", "ı").replace("İ", "i").lower()
+
+
 def last_vowel(word):
+    word = _low(word)
     for ch in reversed(word):
         if ch in VOWELS:
             return ch
@@ -54,6 +59,7 @@ def i4(word):
 
 def a2(word):
     return A2[last_vowel(word)]
+
 
 
 @dataclass

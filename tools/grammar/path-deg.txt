@@ -1,0 +1,103 @@
+# Тема-сравнение «Değil, yok или -ma?» — три разных «не» и «есть»:
+#   değil — «не являюсь / не там» (Türk değilim, Leyla evde değil);
+#   yok   — «нет, не имеется» (Evde süt yok, Arabam yok), var — «есть»;
+#   -ma   — «не делаю» (Türkçe bilmiyorum, gelmedim).
+# Идёт после всех тем A1 — во фразах можно всё. Формат — как в path-yor.txt.
+
+## Есть: var | Evde süt var. Kedim var. | words=1
+Evde süt var. | Дома есть молоко.
+Leyla'nın kedisi var. | У Лейлы есть кошка.
+Benim bir kız kardeşim var. | У меня есть сестра.
+Burada bir kafe var. | Здесь есть кафе.
+Deniz'in arabası var. | У Дениза есть машина.
+Bugün toplantı var. | Сегодня есть совещание.
+Masada kahve var. | На столе есть кофе.
+Kadıköy'de güzel bir park var. | В Кадыкёе есть красивый парк.
+Tuba'nın iki çocuğu var. | У Тубы двое детей.
+Çantamda su var. | В моей сумке есть вода.
+
+## Нет: yok | Evde ekmek yok. Arabam yok. | words=1
+Evde ekmek yok. | Дома нет хлеба.
+Benim arabam yok. | У меня нет машины.
+Burada otobüs yok. | Здесь нет автобуса.
+Bugün ders yok. | Сегодня нет урока.
+Leyla'nın köpeği yok. | У Лейлы нет собаки.
+Masada şeker yok. | На столе нет сахара.
+Çantamda para yok. | В моей сумке нет денег.
+Sorun yok. | Нет проблем.
+Evde kimse yok. | Дома никого нет.
+Zamanım yok. | У меня нет времени.
+
+## Есть? var mı? yok mu? | вопрос — частица отдельно | words=1
+Evde süt var mı? | Дома есть молоко?
+Burada bir eczane var mı? | Здесь есть аптека?
+Senin kardeşin var mı? | У тебя есть брат или сестра?
+Bugün toplantı var mı? | Сегодня есть совещание?
+Çay var mı? | Чай есть?
+Sizin arabanız var mı? | У вас есть машина?
+Şeker yok mu? | Сахара нет?
+Kadıköy'de metro var mı? | В Кадыкёе есть метро?
+Bir sorun var mı? | Есть какая-то проблема?
+Bugün ders yok mu? | Сегодня нет урока?
+
+## Не являюсь, не там: değil | Türk değilim. Leyla evde değil. | words=1
+Ben Türk değilim. | Я не турчанка.
+Leyla evde değil. | Лейлы нет дома.
+Bu benim çantam değil. | Это не моя сумка.
+Sen yorgun değilsin. | Ты не устала.
+Bugün Pazartesi değil. | Сегодня не понедельник.
+Deniz doktor değil. | Дениз не врач.
+Biz aç değiliz. | Мы не голодны.
+Bu kahve sıcak değil. | Этот кофе не горячий.
+Onlar Rus değiller. | Они не русские.
+Pamuk mutfakta değil. | Памук не на кухне.
+
+## Yok или değil? | нет чего-то — yok; не тот, не там — değil | words=1
+Evde süt yok. | Дома нет молока.
+Leyla şimdi evde değil. | Лейлы сейчас нет дома.
+Burada otobüs durağı yok. | Здесь нет автобусной остановки.
+Otobüs durakta değil. | Автобус не на остановке.
+Benim kedim yok. | У меня нет кошки.
+Bu kedi benim değil. | Эта кошка не моя.
+Kahve yok, çay var. | Кофе нет, есть чай.
+Bu kahve değil, çay. | Это не кофе, а чай.
+Bugün ders yok, yarın var. | Сегодня урока нет, завтра есть.
+Ders bugün değil, yarın. | Урок не сегодня, а завтра.
+
+## Değil или -ma? | не являюсь — değil; не делаю — -ma | words=1
+Ben öğretmen değilim. | Я не учитель.
+Ben Türkçe bilmiyorum. | Я не знаю турецкий.
+Leyla yorgun değil. | Лейла не устала.
+Leyla bugün çalışmıyor. | Лейла сегодня не работает.
+Biz bugün evde değiliz. | Сегодня мы не дома.
+Biz televizyon izlemiyoruz. | Мы не смотрим телевизор.
+Kahve sıcak değil. | Кофе не горячий.
+Ben bugün kahve içmedim. | Я сегодня не пила кофе.
+Deniz Rus değil. | Дениз не русский.
+Deniz Rusça konuşmuyor. | Дениз не говорит по-русски.
+
+## Всё вместе | var, yok, değil, -ma — вперемешку | words=1 | gate
+Buzdolabında süt var mı? | В холодильнике есть молоко?
+Benim hiç zamanım yok. | У меня совсем нет времени.
+Ben hasta değilim, sadece yorgunum. | Я не больна, просто устала.
+Olga sigara içmiyor. | Ольга не курит.
+Bu telefon benim değil. | Это не мой телефон.
+Kadıköy'de metro var. | В Кадыкёе есть метро.
+Pamuk bugün yemek yemiyor. | Памук сегодня не ест.
+Leyla burada değil. | Лейлы здесь нет.
+Bugün toplantı yok. | Сегодня нет совещания.
+Ben bu filmi izlemedim. | Я не смотрела этот фильм.
+
+## Вся фраза | только перевод — собери по-турецки | words=99
+Evde çay var. | Дома есть чай.
+Param yok. | У меня нет денег.
+Sen Türk değilsin. | Ты не турчанка.
+Leyla gelmiyor. | Лейла не придёт.
+Burada eczane yok. | Здесь нет аптеки.
+Bu benim kitabım değil. | Это не моя книга.
+Kardeşin var mı? | У тебя есть брат или сестра?
+Deniz evde değil. | Дениза нет дома.
+Biz yarın çalışmayacağız. | Завтра мы не будем работать.
+Sorun yok! | Нет проблем!
+
+## В жизни | фразы из «Фраз» и «Диалогов» — только с пройденным | words=2 | life

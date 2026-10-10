@@ -363,6 +363,87 @@ GRAMMAR_TOPICS.push({
     <div class="memo-examples" data-examples="İşe vapurla gidiyorum.|Я езжу на работу на пароходе.;Leyla'yla Kars'a trenle gittik.|Мы с Лейлой ездили в Карс на поезде.;Seninle konuşmak istiyorum.|Я хочу поговорить с тобой.;Dün annemle konuştum.|Вчера я поговорила с мамой."></div>
   `,
 });
+GRAMMAR_TOPICS.push(
+  {
+    id: "deg",
+    emoji: "🚫",
+    title: "Değil, yok или -ma?",
+    rules: [
+      ["var", "есть: var"],
+      ["yok", "нет: yok"],
+      ["neg", "не: değil / -ma"],
+      ["question", "var mı? değil mi?"],
+    ],
+    memo: `
+      <h3>Три разных «не» и «есть»</h3>
+      <table class="memo-table">
+        <tr><th>когда</th><th>что</th><th>пример</th></tr>
+        <tr><td>есть, имеется</td><td><b>var</b></td><td>Evde süt <b>var</b>. Kedim <b>var</b>.</td></tr>
+        <tr><td>нет, не имеется</td><td><b>yok</b></td><td>Evde süt <b>yok</b>. Arabam <b>yok</b>.</td></tr>
+        <tr><td>не являюсь, не там</td><td><b>değil</b></td><td>Türk <b>değilim</b>. Leyla evde <b>değil</b>.</td></tr>
+        <tr><td>не делаю</td><td><b>-ma / -me</b></td><td>Türkçe bil<b>m</b>iyorum. Gel<b>me</b>di.</td></tr>
+      </table>
+      <ul>
+        <li>«Дома нет молока» — молока <b>не существует</b> там → <b>yok</b>. «Лейлы нет дома» — Лейла <b>не находится</b> там → <b>değil</b>.</li>
+        <li>«У меня есть / нет» — тоже var / yok: Kardeşim <b>var</b>, zamanım <b>yok</b>.</li>
+        <li>Вопрос: var <b>mı</b>? yok <b>mu</b>? değil <b>mi</b>? — частица отдельно.</li>
+      </ul>
+      <div class="memo-examples" data-examples="Evde süt yok.|Дома нет молока.;Leyla evde değil.|Лейлы нет дома.;Türkçe bilmiyorum.|Я не знаю турецкий.;Burada eczane var mı?|Здесь есть аптека?"></div>
+    `,
+  },
+  {
+    id: "qw",
+    emoji: "❓",
+    title: "Вопрос: mı или слово?",
+    rules: [
+      ["question", "да/нет: mı"],
+      ["p.sen", "sen"],
+      ["p.siz", "siz"],
+      ["yor", "с -yor"],
+      ["cop", "с «быть»"],
+      ["di", "с -dı"],
+    ],
+    memo: `
+      <h3>Вопрос: mı или вопросительное слово?</h3>
+      <table class="memo-table">
+        <tr><th>вопрос</th><th>как</th><th>пример</th></tr>
+        <tr><td>да или нет?</td><td>+ <b>mı</b></td><td>Kahve içiyor <b>musun</b>? Evde <b>misin</b>?</td></tr>
+        <tr><td>что? где? когда?…</td><td>без mı</td><td><b>Ne</b> içiyorsun? <b>Nerede</b>sin?</td></tr>
+      </table>
+      <ul>
+        <li>Вопросительное слово уже делает фразу вопросом — <b>mı не нужна</b>: <b>Ne zaman</b> geldin? (не «geldin mi»).</li>
+        <li>Слова: <b>ne</b> что, <b>nerede</b> где, <b>nereye</b> куда, <b>ne zaman</b> когда, <b>kim</b> кто, <b>nasıl</b> как, <b>neden</b> почему, <b>hangi</b> какой.</li>
+        <li>С -yor и «быть» лицо уходит на частицу: içiyor <b>musun</b>; без частицы — на глагол: içiyor<b>sun</b>.</li>
+      </ul>
+      <div class="memo-examples" data-examples="Kahve içiyor musun?|Ты пьёшь кофе?;Ne içiyorsun?|Что ты пьёшь?;Leyla geldi mi?|Лейла пришла?;Leyla ne zaman geldi?|Когда пришла Лейла?"></div>
+    `,
+  },
+  {
+    id: "two",
+    emoji: "🔗",
+    title: "Два глагола в одной фразе",
+    rules: [
+      ["yor", "-yor"],
+      ["di", "-dı"],
+      ["ecek", "-ecek"],
+      ["cop", "«быть»"],
+      ["want", "хочу / надо"],
+      ["neg", "не"],
+    ],
+    memo: `
+      <h3>Два сказуемых — у каждого своя форма</h3>
+      <ul>
+        <li>Разные лица: Ben çay içiyor<b>um</b>, sen kahve içiyor<b>sun</b>.</li>
+        <li>Да и нет: Ben kahve içiyorum <b>ama</b> Leyla iç<b>mi</b>yor.</li>
+        <li>Разное время: <b>Dün</b> çalış<b>tım</b>, <b>yarın</b> dinlen<b>eceğim</b>.</li>
+        <li>Хочу, но надо: Gitmek istiyorum <b>ama</b> çalış<b>malıyım</b>.</li>
+        <li>Причина: Evde kalıyorum <b>çünkü</b> hasta<b>yım</b>.</li>
+      </ul>
+      <p>Каждое сказуемое смотрит на <b>своё</b> подлежащее и <b>своё</b> время — не копируй форму первого.</p>
+      <div class="memo-examples" data-examples="Ben çay içiyorum, sen kahve içiyorsun.|Я пью чай, а ты кофе.;Dün çalıştım, yarın dinleneceğim.|Вчера я работала, завтра отдохну.;Gitmek istiyorum ama çalışmalıyım.|Хочу уйти, но надо работать.;Evde kalıyorum çünkü hastayım.|Остаюсь дома, потому что болею."></div>
+    `,
+  }
+);
 const GRAMMAR_REVIEW = { id: "review", emoji: "🔀", title: "Повторение вперемешку" };
 
 // Где застряла Памук — новое место на каждой ступени темы (по кругу).
@@ -415,6 +496,7 @@ function topicLevels(topicId) {
       title: st.title,
       hint: st.hint,
       words: st.words,
+      pred: !!st.pred,
       gate: !!st.gate,
       tier: st.life ? "life" : "base",
       bricks,
@@ -658,7 +740,7 @@ function sentenceUnits(item, topicId) {
     if (m.index < skipUntil) continue;
     const slot = slotAt.get(m.index);
     if (slot) {
-      const split = topicId === "review" || slot.topic === topicId;
+      const split = topicId === "review" || slot.topic === topicId || (CONTRAST[topicId] && CONTRAST[topicId].pick(slot));
       units.push({
         start: slot.start,
         end: slot.end,
@@ -679,10 +761,30 @@ function sentenceUnits(item, topicId) {
   return units;
 }
 
+// Темы-сравнения: пропуск ставится не на «своё» правило, а на признак (любое «не»,
+// любое сказуемое…), а в кучку подкладываются «соперники» — то, с чем путают.
+const PRED_TOPICS = new Set(["yor", "cop", "di", "ecek", "want", "deg"]);
+const QUESTION_WORDS = new Set(["ne", "nerede", "nereye", "nereden", "kim", "kimi", "kime", "nasıl", "neden", "niye", "kaç", "kaçta", "hangi", "zaman"]);
+const CONTRAST = {
+  deg: { pick: (s) => s.topic === "deg" || s.tags.includes("neg"), rivals: ["değil", "değilim", "yok", "var", "mı", "mi"] },
+  qw: { pick: (s) => PRED_TOPICS.has(s.topic), rivals: ["mu", "mı", "mi", "musun", "misin", "musunuz", "misiniz", "sun", "sin", "sunuz", "siniz"] },
+  two: { pick: (s) => PRED_TOPICS.has(s.topic), rivals: [] },
+};
+function lifeFits(topicId, item) {
+  const preds = item.slots.filter((s) => PRED_TOPICS.has(s.topic));
+  if (topicId === "deg") return item.slots.some(CONTRAST.deg.pick);
+  if (topicId === "qw") {
+    const words = (item.tr.match(TOKEN_RE) || []).map((w) => w.toLowerCase());
+    return item.tr.includes("?") && preds.length > 0 && (item.slots.some((s) => s.tags.includes("question")) || words.some((w) => QUESTION_WORDS.has(w)));
+  }
+  if (topicId === "two") return preds.length >= 2;
+  return item.slots.some((s) => s.topic === topicId);
+}
+
 const KIND_LABELS = {
   verb: "глагол",
   tense: "время",
-  neg: "«не»",
+  neg: "не / есть",
   person: "лицо",
   question: "вопрос",
   noun: "слово",
@@ -707,6 +809,8 @@ function partKind(slot, part) {
     case "acc":
     case "with":
       return "case";
+    case "exist":
+      return "neg";
     default:
       return part.slot; // tense, neg, case, poss
   }
@@ -714,8 +818,13 @@ function partKind(slot, part) {
 
 // Какие слова фразы превращаются в пропуски: слово с правилом темы + соседи слева
 // (в турецком глагол в конце — соседи обычно перед ним).
-function chooseGapUnits(units, topicId, words) {
-  let center = units.findIndex((u) => u.slot && (topicId === "review" || u.slot.topic === topicId));
+function chooseGapUnits(units, topicId, words, pred) {
+  // «Два глагола»: пропуск на каждом сказуемом фразы.
+  if (pred && words < 99) {
+    const preds = units.map((u, i) => (u.slot ? i : -1)).filter((i) => i >= 0);
+    if (preds.length) return preds;
+  }
+  let center = units.findIndex((u) => u.slot && (topicId === "review" || u.slot.topic === topicId || (CONTRAST[topicId] && CONTRAST[topicId].pick(u.slot))));
   if (center < 0) center = units.length - 1;
   if (words >= units.length) return units.map((_, i) => i);
   let from = center;
@@ -809,6 +918,11 @@ function buildPile(units, gapIdx, pileSize) {
       .slice(0, 2)
       .forEach((o) => add(o, p.kind));
   });
+  // Соперники темы-сравнения: değil ↔ yok ↔ -ma, musun ↔ sun.
+  const contrast = round && CONTRAST[round.topicId];
+  if (contrast) {
+    shuffle(contrast.rivals).slice(0, 3).forEach((r) => add(r, /^(değil|yok|var)/.test(r) ? "neg" : /^m[ıiuü]/.test(r) ? "question" : "person"));
+  }
   const kinds = [...new Set(needed.map((p) => p.kind))];
   const pool = (round && round.piecePool) || {};
   for (let guard = 0; out.length < pileSize && guard < 300; guard++) {
@@ -890,8 +1004,9 @@ function roundCandidates(topicId, level) {
   return grammarItems.filter(
     (item) =>
       item.tier === "life" &&
-      item.slots.some((s) => s.topic === topicId) &&
-      item.slots.every((s) => taught.includes(s.topic))
+      lifeFits(topicId, item) &&
+      // var / yok — просто слова: не мешают фразе попасть в тему раньше «своей».
+      item.slots.every((s) => taught.includes(s.topic) || s.tags.includes("exist"))
   );
 }
 
@@ -989,7 +1104,7 @@ function shakeScene() {
 function startSentence(first = false) {
   const item = round.queue[round.index];
   const units = sentenceUnits(item, round.topicId);
-  const gapIdx = chooseGapUnits(units, round.topicId, round.level.words);
+  const gapIdx = chooseGapUnits(units, round.topicId, round.level.words, round.level.pred);
   // Если слово подписано в пропуске («(park)», «(yorgun)») и у его основы нет вариантов,
   // тапать её отдельной плашкой незачем — ставим сразу, собирать нужно только окончание.
   // У глаголов основу оставляем: там учимся отбрасывать -mak/-mek и гласную.
@@ -1193,6 +1308,8 @@ function partTags(slot, part) {
       return t.filter((x) => ["acc", "buffer", "proper", "pronoun", "poss-acc", "n-buffer"].includes(x));
     case "with":
       return t.filter((x) => ["with", "buffer", "proper", "pronoun", "poss-with"].includes(x));
+    case "exist":
+      return t.filter((x) => ["exist", "var", "yok"].includes(x));
     case "case":
       return t.filter((x) => x.startsWith("c.") || ["voiceless", "buffer", "proper", "n-buffer"].includes(x));
     default:

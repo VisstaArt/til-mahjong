@@ -1,5 +1,4 @@
 # основа до -yor → фразы; глагола нет в словаре (assets/words) или форма не сошлась
-tanı	6	Sen Leyla'yı tanıyor musun?
 yatırılı	4	Maaşlar ne zaman yatırılıyor?
 benzi	4	Annene benziyorsun.
 alını	3	Burada nasıl izin alınıyor?
