@@ -171,6 +171,47 @@ def yor(infinitive, person, negative=False, question=False):
     return Form(word, parts, tags)
 
 
+# --- прошедшее -dı: geldim, yaptın, gitti, gelmedik, gördünüz mü? ---
+DI_PERSON = {"ben": "m", "sen": "n", "o": "", "biz": "k", "siz": "n{v}z", "onlar": "l{a}r"}
+
+
+def _di_person(base, person):
+    return DI_PERSON[person].format(v=i4(base), a=a2(base))
+
+
+def di(infinitive, person, negative=False, question=False):
+    """gel → geldim; yap → yaptım (после глухой — t); gel+me → gelmedim; geldin mi?"""
+    stem = verb_stem(infinitive)
+    tags = ["di", f"p.{person}"]
+    parts = [Part(stem, "stem", [stem], "")]
+    base = stem
+    if negative:
+        neg = "m" + a2(stem)
+        parts.append(Part(neg, "neg", _uniq([neg, "m" + ("e" if neg[-1] == "a" else "a"), "m" + i4(stem)]),
+                          f"«не» → -ma / -me; последняя гласная «{last_vowel(stem)}» → {neg}"))
+        base = stem + neg
+        tags.append("neg")
+    d = "t" if base[-1] in VOICELESS else "d"
+    v = i4(base)
+    tense = d + v
+    why = f"прошедшее → -dı; последняя гласная «{last_vowel(base)}» → {v}"
+    if d == "t":
+        why += f"; после глухой «{base[-1]}» d → t"
+        tags.append("voiceless")
+    opts = _uniq([tense] + [d + x for x in "ıiuü"] + [("d" if d == "t" else "t") + v])
+    parts.append(Part(tense, "tense", opts, why))
+    end = _di_person(base + tense, person)
+    if end:
+        parts.append(Part(end, "person", _uniq([end] + [_di_person(base + tense, p) for p in PERSONS if _di_person(base + tense, p)]),
+                          f"{person} ({PERSON_RU[person]}) → -{end}"))
+    if question:
+        q = "m" + i4(base + tense + end)
+        parts.append(Part(" " + q, "question", _uniq([" " + q] + [" m" + x for x in "ıiuü"]),
+                          f"вопрос — частица после лица: «{last_vowel(base + tense + end)}» → {q}"))
+        tags.append("question")
+    return Form("".join(p.text for p in parts), parts, tags)
+
+
 # --- падежи -de / -den / -e ---
 def _case_suffix(base, case, proper=False):
     last = base[-1]
@@ -544,6 +585,18 @@ if __name__ == "__main__":
         if pronoun_acc(person).word != want:
             bad += 1
             print("FAIL pron acc", person)
+    for args, kw, want in [
+        (("gelmek", "ben"), {}, "geldim"), (("yapmak", "sen"), {}, "yaptın"), (("gitmek", "o"), {}, "gitti"),
+        (("okumak", "biz"), {}, "okuduk"), (("görmek", "siz"), {}, "gördünüz"), (("içmek", "onlar"), {}, "içtiler"),
+        (("konuşmak", "ben"), {}, "konuştum"), (("beklemek", "o"), {}, "bekledi"), (("yemek", "o"), {}, "yedi"),
+        (("gelmek", "biz"), {"negative": True}, "gelmedik"), (("yapmak", "ben"), {"negative": True}, "yapmadım"),
+        (("gelmek", "sen"), {"question": True}, "geldin mi"), (("görmek", "siz"), {"question": True}, "gördünüz mü"),
+        (("gitmek", "o"), {"question": True}, "gitti mi"), (("okumak", "onlar"), {"question": True}, "okudular mı"),
+    ]:
+        got = di(*args, **kw).word
+        if got != want:
+            bad += 1
+            print("FAIL di", args, kw, got)
     got = copula("", "ben", pre=noun_case("ev", "loc")).word
     if got != "evdeyim":
         bad += 1

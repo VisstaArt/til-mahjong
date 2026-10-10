@@ -1,0 +1,115 @@
+# Путь темы «Прошедшее -dı» (geldim, yaptın, gitti, gelmedik, gördünüz mü?) — Yeni Hitit 1,
+# ünite 4.1. Идёт после -yor, падежей, «быть», «чей» и винительного. Прошлые события — по
+# легенде Ольги (Трабзон прошлым летом, Каппадокия с Денизом, Бююкада с Лейлой и Эфе,
+# коробка книг от Ани). Формат — как в path-yor.txt.
+
+## Я и ты | geldim, geldin: -dım, -dın | words=1
+Ben dün geldim. | Я вчера пришла.
+Sen dün geldin. | Ты вчера пришла.
+Ben kitap okudum. | Я читала книгу.
+Sen mektup yazdın. | Ты написала письмо.
+Ben film izledim. | Я смотрела фильм.
+Sen otobüs bekledin. | Ты ждала автобус.
+Ben ekmek aldım. | Я купила хлеб.
+Sen Leyla'yı gördün. | Ты видела Лейлу.
+Ben çok uyudum. | Я долго спала.
+Sen müzik dinledin. | Ты слушала музыку.
+Ben eve döndüm. | Я вернулась домой.
+
+## Он, она, мы | geldi, geldik | words=1
+Olga dün geldi. | Ольга вчера пришла.
+Biz film izledik. | Мы смотрели фильм.
+Anya İstanbul'a geldi. | Аня приехала в Стамбул.
+Biz eve döndük. | Мы вернулись домой.
+Leyla kitap okudu. | Лейла читала книгу.
+Biz Deniz'i gördük. | Мы видели Дениза.
+Pamuk çok uyudu. | Памук долго спала.
+Biz otobüs bekledik. | Мы ждали автобус.
+Deniz ekmek aldı. | Дениз купил хлеб.
+Tuba ofise geldi. | Туба пришла в офис.
+
+## Вы, они | geldiniz, geldiler | words=1
+Siz dün geldiniz. | Вы вчера пришли.
+Onlar film izlediler. | Они смотрели фильм.
+Siz Leyla'yı gördünüz. | Вы видели Лейлу.
+Çocuklar eve döndüler. | Дети вернулись домой.
+Siz mektup yazdınız. | Вы написали письмо.
+Onlar müzik dinlediler. | Они слушали музыку.
+Siz ne aldınız? | Что вы купили?
+Onlar çok güldüler. | Они много смеялись.
+Siz Türkçe öğrendiniz. | Вы учили турецкий.
+Onlar bizi beklediler. | Они нас ждали.
+
+## После глухих: -tı | yap → yaptım, iç → içtim, git → gitti | words=1
+Ben kahve içtim. | Я выпила кофе.
+Sen ne yaptın? | Что ты сделала?
+Olga Trabzon'a gitti. | Ольга ездила в Трабзон.
+Biz Türkçe konuştuk. | Мы говорили по-турецки.
+Siz erken kalktınız. | Вы рано встали.
+Onlar çok çalıştılar. | Они много работали.
+Deniz parkta koştu. | Дениз бегал в парке.
+Ben Kapadokya'ya gittim. | Я ездила в Каппадокию.
+Sen pencereden baktın. | Ты посмотрела в окно.
+Leyla çay içti. | Лейла выпила чай.
+
+## Не: -madı / -medi | gelmedim, yapmadın | words=1
+Ben kahve içmedim. | Я не пила кофе.
+Sen gelmedin. | Ты не пришла.
+Olga dün çalışmadı. | Ольга вчера не работала.
+Biz film izlemedik. | Мы не смотрели фильм.
+Siz beni anlamadınız. | Вы меня не поняли.
+Onlar gelmediler. | Они не пришли.
+Pamuk süt içmedi. | Памук не пила молоко.
+Ben uyumadım. | Я не спала.
+Deniz telefonu açmadı. | Дениз не взял трубку.
+Tuba kitabı okumadı. | Туба не прочитала книгу.
+
+## Вопрос: geldin mi? | лицо на глаголе, частица mı отдельно | words=1
+Sen kahve içtin mi? | Ты пила кофе?
+Siz Leyla'yı gördünüz mü? | Вы видели Лейлу?
+Olga geldi mi? | Ольга пришла?
+Biz kapıyı kapattık mı? | Мы закрыли дверь?
+Onlar yemek yediler mi? | Они поели?
+Sen anneni aradın mı? | Ты позвонила маме?
+Deniz eve döndü mü? | Дениз вернулся домой?
+Siz Türkçe öğrendiniz mi? | Вы выучили турецкий?
+Pamuk uyudu mu? | Памук поспала?
+Ben doğru yaptım mı? | Я правильно сделала?
+
+## Всё вместе | когда? dün, geçen yaz, bu sabah — вперемешку | words=1 | gate
+Dün akşam ne yaptın? | Что ты делала вчера вечером?
+Geçen yaz Trabzon'a gittim. | Прошлым летом я ездила в Трабзон.
+Anya bir kutu kitap getirdi. | Аня привезла коробку книг.
+Biz dün sinemaya gitmedik. | Мы вчера не ходили в кино.
+Siz bu sabah kahvaltı yaptınız mı? | Вы сегодня утром завтракали?
+Leyla ve Efe Büyükada'ya gittiler. | Лейла и Эфе ездили на Бююкаду.
+Deniz bugün çok çalıştı. | Дениз сегодня много работал.
+Ben dün annemi aradım. | Я вчера звонила маме.
+Pamuk bütün gün uyudu. | Памук спала весь день.
+Tuba geldi mi? | Туба пришла?
+
+## Фраза длиннее | + когда: geçen hafta, dün akşam | words=2
+Ben geçen hafta İzmir'e gittim. | На прошлой неделе я ездила в Измир.
+Olga dün akşam annesini aradı. | Вчера вечером Ольга звонила маме.
+Biz geçen yaz Kapadokya'ya gittik. | Прошлым летом мы ездили в Каппадокию.
+Sen bu sabah ne yedin? | Что ты ела сегодня утром?
+Leyla dün yeni bir elbise aldı. | Вчера Лейла купила новое платье.
+Deniz geçen hafta Ankara'dan geldi. | На прошлой неделе Дениз приехал из Анкары.
+Biz dün akşam çok güldük. | Вчера вечером мы много смеялись.
+Siz dün nereye gittiniz? | Куда вы вчера ходили?
+Tuba bu sabah erken kalktı. | Сегодня утром Туба рано встала.
+Onlar dün bizi aradılar. | Вчера они нам звонили.
+
+## Вся фраза | только перевод — собери по-турецки | words=99
+Ben dün çalıştım. | Вчера я работала.
+Sen ne aldın? | Что ты купила?
+Olga kahve içmedi. | Ольга не пила кофе.
+Biz eve geldik. | Мы пришли домой.
+Deniz seni aradı mı? | Дениз тебе звонил?
+Siz geç kaldınız. | Вы опоздали.
+Onlar dün geldiler. | Они пришли вчера.
+Pamuk süt içti. | Памук выпила молоко.
+Leyla beni gördü. | Лейла меня увидела.
+Ben Türkçe öğrendim. | Я выучила турецкий.
+
+## В жизни | фразы из «Фраз» и «Диалогов» — только с пройденным | words=2 | life

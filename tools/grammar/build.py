@@ -27,7 +27,7 @@ UNMATCHED = os.path.join(os.path.dirname(__file__), "unmatched.txt")
 EXTRA_VERBS = os.path.join(os.path.dirname(__file__), "extra-verbs.txt")
 EXTRA_NOUNS = os.path.join(os.path.dirname(__file__), "extra-nouns.txt")
 # Пути тем — ступени со своими короткими фразами (path-<тема>.txt), в порядке прохождения.
-PATH_TOPICS = ["yor", "case", "cop", "poss", "acc"]
+PATH_TOPICS = ["yor", "case", "cop", "poss", "acc", "di"]
 PATH_OUT = os.path.join(ROOT, "assets", "grammar", "path.json")
 # Фраза из разговорника/диалога идёт в ступень «В жизни» только если она короткая и по
 # грамматике не выше этого уровня (оценка levels.py) — иначе для начинающих слишком сложно.
@@ -248,6 +248,42 @@ def match_yor(token, next_token, verbs):
     # Однозначность: если подошли два разных глагола — не рискуем.
     if len({f[0] for f in found}) != 1:
         return None if found else ("unmatched", base)
+    return found[0]
+
+
+# --- прошедшее -dı ---
+DI_ENDINGS = [("onlar", ("lar", "ler")), ("siz", ("nız", "niz", "nuz", "nüz")), ("ben", ("m",)), ("sen", ("n",)), ("biz", ("k",)), ("o", ("",))]
+Q_PARTICLES = {"mı", "mi", "mu", "mü"}
+
+
+def match_di(token, next_token, verbs, all_words):
+    """geldim, yaptın, gitti, gelmedik, geldin mi — проверяется генератором."""
+    if token in all_words or token in STOP:
+        return None
+    question = next_token in Q_PARTICLES
+    found = []
+    for person, ends in DI_ENDINGS:
+        for end in ends:
+            if end and not token.endswith(end):
+                continue
+            rest = token[: len(token) - len(end)] if end else token
+            if len(rest) < 4 or rest[-2] not in "dt" or rest[-1] not in "ıiuü":
+                continue
+            base = rest[:-2]
+            cands = [(base, False)]
+            if base[-2:] in ("ma", "me") and len(base) > 3:
+                cands.append((base[:-2], True))
+            for stem, neg in cands:
+                for suf in ("mak", "mek"):
+                    inf = stem + suf
+                    if inf not in verbs:
+                        continue
+                    f = morph.di(inf, person, negative=neg, question=question)
+                    target = token + (" " + next_token if question else "")
+                    if f.word == target:
+                        found.append((inf, person, neg, question, f))
+    if len({x[0] for x in found}) != 1:
+        return None
     return found[0]
 
 
@@ -496,9 +532,12 @@ def build_acc_index(nouns, all_words):
     return idx
 
 
+VERB_FORM_RE = re.compile(r"(yor|[dt][ıiuü](m|n|k|n[ıiuü]z|l[ae]r)?)$")
+
+
 def _verb_later(tokens, i):
-    """Винительный — дополнение при глаголе: в пройденных темах это -yor где-то дальше."""
-    return any("yor" in tr_lower(t[0]) for t in tokens[i + 1:])
+    """Винительный — дополнение при глаголе: дальше во фразе есть -yor или -dı."""
+    return any("yor" in tr_lower(t[0]) or VERB_FORM_RE.search(tr_lower(t[0])) for t in tokens[i + 1:])
 
 
 # Переходные глаголы (основа перед -yor): во фразах «из жизни» -ı считаем винительным только
@@ -517,7 +556,7 @@ def _transitive_later(tokens, i):
         low = tr_lower(t[0])
         if re.search(r"m[ae]k$", low):
             return True
-        m = re.match(r"^(.+?)[ıiuü]?yor", low)
+        m = re.match(r"^(.+?)[ıiuü]?yor", low) or re.match(r"^(.+?)[dt][ıiuü](m|n|k|n[ıiuü]z|l[ae]r)?$", low)
         if m and any(m.group(1).startswith(st) for st in TRANSITIVE_STEMS):
             return True
     return False
@@ -630,6 +669,21 @@ def main():
                 slot["alts"] = yor_alternatives(inf, person, neg, question)
                 if raw[0].isupper():
                     slot["alts"] = [a[0].upper() + a[1:] for a in slot["alts"]]
+                slot["word"] = tr[s:end]
+                slots.append(slot)
+                i += 2 if question else 1
+                continue
+            dm = match_di(low, nxt, verbs, all_words)
+            if dm:
+                inf, person, neg, question, form = dm
+                end = tokens[i + 1][2] if question else e
+                if raw[0].isupper():
+                    form = copy.deepcopy(form)
+                    form.parts[0].text = raw[0] + form.parts[0].text[1:]
+                    form.parts[0].options = [o[0].upper() + o[1:] for o in form.parts[0].options]
+                slot = form_to_slot(form, s, end, inf, "di", verbs[inf])
+                slot["person"] = person
+                slot["alts"] = []
                 slot["word"] = tr[s:end]
                 slots.append(slot)
                 i += 2 if question else 1

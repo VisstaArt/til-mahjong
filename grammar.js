@@ -230,6 +230,42 @@ GRAMMAR_TOPICS.push({
     <div class="memo-examples" data-examples="Ben seni seviyorum.|Я тебя люблю.;Kahveyi seviyorum.|Я люблю кофе.;Leyla'yı arıyorum.|Я звоню Лейле.;Annemi her pazar arıyorum.|Я звоню маме каждое воскресенье."></div>
   `,
 });
+GRAMMAR_TOPICS.push({
+  id: "di",
+  emoji: "⏮️",
+  title: "Прошедшее -dı: geldim",
+  rules: [
+    ["p.ben", "ben -dım"],
+    ["p.sen", "sen -dın"],
+    ["p.o", "o -dı"],
+    ["p.biz", "biz -dık"],
+    ["p.siz", "siz -dınız"],
+    ["p.onlar", "onlar -dılar"],
+    ["voiceless", "после глухой -tı"],
+    ["neg", "не: -madı"],
+    ["question", "вопрос: geldin mi?"],
+  ],
+  memo: `
+    <h3>Прошедшее: geldim — я пришла</h3>
+    <p class="memo-formula">основа + <b>-dı</b> (ı / i / u / ü) + лицо</p>
+    <table class="memo-table">
+      <tr><th>кто</th><th>окончание</th><th>пример</th></tr>
+      <tr><td>ben</td><td>-dım</td><td>gel<b>dim</b></td></tr>
+      <tr><td>sen</td><td>-dın</td><td>gel<b>din</b></td></tr>
+      <tr><td>o</td><td>-dı</td><td>gel<b>di</b></td></tr>
+      <tr><td>biz</td><td>-dık</td><td>gel<b>dik</b></td></tr>
+      <tr><td>siz</td><td>-dınız</td><td>gel<b>diniz</b></td></tr>
+      <tr><td>onlar</td><td>-dılar</td><td>gel<b>diler</b></td></tr>
+    </table>
+    <ul>
+      <li>После глухих <b>ç f h k p s ş t</b> — <b>t</b>: yap<b>tım</b>, iç<b>tin</b>, git<b>ti</b>, konuş<b>tuk</b>.</li>
+      <li>Основа не меняется: bekle → bekle<b>dim</b> (не как в -yor), git → git<b>ti</b>.</li>
+      <li>«Не» — <b>-ma / -me</b> перед -dı: gel<b>me</b>dim, yap<b>ma</b>dın.</li>
+      <li>Вопрос: лицо остаётся на глаголе, частица отдельно: geldin <b>mi</b>? gördünüz <b>mü</b>?</li>
+    </ul>
+    <div class="memo-examples" data-examples="Dün akşam ne yaptın?|Что ты делала вчера вечером?;Geçen yaz Trabzon'a gittim.|Прошлым летом я ездила в Трабзон.;Kahve içmedim.|Я не пила кофе.;Leyla'yı gördün mü?|Ты видела Лейлу?"></div>
+  `,
+});
 const GRAMMAR_REVIEW = { id: "review", emoji: "🔀", title: "Повторение вперемешку" };
 
 // Где застряла Памук — новое место на каждой ступени темы (по кругу).
@@ -1048,7 +1084,7 @@ function partTags(slot, part) {
     case "stem":
       return t.filter((x) => ["drop", "soften", "irregular"].includes(x));
     case "tense":
-      return t.filter((x) => ["cons", "drop", "vowel", "irregular"].includes(x));
+      return t.filter((x) => ["cons", "drop", "vowel", "irregular", "voiceless"].includes(x));
     case "plural":
       return t.filter((x) => x === "plural");
     case "poss":
