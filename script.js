@@ -1106,20 +1106,62 @@ async function openCategory(theme) {
   renderCategoryWordList();
 }
 
+// Сколько слов всего в словаре (во всех категориях, не только уже открытых) попадает
+// под каждый потолок уровня — считаем по assets/words/levels.json, он содержит уровень
+// каждого слова словаря целиком, независимо от того, какие категории уже подгружены.
+function levelCumulativeCounts() {
+  const perLevel = { A1: 0, A2: 0, B1: 0, B2: 0 };
+  Object.values(wordLevels).forEach((lv) => {
+    if (perLevel[lv] !== undefined) perLevel[lv]++;
+  });
+  const cumulative = {};
+  let running = 0;
+  WORD_LEVEL_ORDER.forEach((lv) => {
+    running += perLevel[lv];
+    cumulative[lv] = running;
+  });
+  return cumulative;
+}
+
+// Выбор уровня подгружает сразу все категории (а не только уже открытые), чтобы
+// после выбора "A1" можно было сразу играть, не заходя по одной в каждую тему.
+let loadingAllCategories = false;
+async function ensureAllCategoriesLoaded() {
+  if (loadingAllCategories) return;
+  loadingAllCategories = true;
+  const loadingEl = document.getElementById("catalog-loading");
+  const loaded = getLoadedCategories();
+  const toLoad = categoryManifest.filter((m) => !loaded.has(m.theme));
+  if (toLoad.length && loadingEl) {
+    loadingEl.textContent = "⏳ Загружаем весь словарь…";
+    loadingEl.classList.remove("hidden");
+  }
+  for (const m of toLoad) {
+    await loadCategoryWords(m.theme);
+  }
+  if (loadingEl) loadingEl.classList.add("hidden");
+  customWords = await getAllCustomWords();
+  loadingAllCategories = false;
+}
+
 // Переключатель «Уровень слов» в каталоге: A1 → до A2 → до B1 → все.
 function renderWordLevelPicker() {
   const el = document.getElementById("word-level-buttons");
   if (!el) return;
   el.innerHTML = "";
+  const counts = levelCumulativeCounts();
   WORD_LEVEL_ORDER.forEach((lv, i) => {
     const btn = document.createElement("button");
     btn.type = "button";
     btn.className = "level-btn" + (lv === wordLevelCap ? " active" : "");
-    btn.textContent = i === 0 ? "A1" : i === WORD_LEVEL_ORDER.length - 1 ? "все" : `до ${lv}`;
+    const label = i === 0 ? "A1" : i === WORD_LEVEL_ORDER.length - 1 ? "все" : `до ${lv}`;
+    btn.innerHTML = `${label}<span class="level-btn-count">${counts[lv] || 0} слов</span>`;
     btn.title = i === WORD_LEVEL_ORDER.length - 1 ? "Все слова словаря" : `Только слова уровней A1–${lv}`;
-    btn.addEventListener("click", () => {
+    btn.addEventListener("click", async () => {
       wordLevelCap = lv;
       localStorage.setItem(WORD_LEVEL_KEY, lv);
+      renderCatalog();
+      await ensureAllCategoriesLoaded();
       renderCatalog();
     });
     el.appendChild(btn);
