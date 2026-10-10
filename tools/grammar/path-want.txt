@@ -1,0 +1,114 @@
+# Путь темы «Хочу, надо, сделайте!» — içmek istiyorum, gitmeliyim / gitmemeliyim, oturun!,
+# gitme! (Yeni Hitit 1: ünite 5.1 и 6). Идёт после всех прошлых тем — их можно использовать.
+# «Сделай!» для «ты» — это просто основа (Gel!), окончания нет, поэтому её тренируем только
+# в «не делай» (Gitme!). Формат — как в path-yor.txt.
+
+## Хочу + -mak / -mek | içmek istiyorum, gitmek istiyorum | words=1
+Ben kahve içmek istiyorum. | Я хочу выпить кофе.
+Sen ne yapmak istiyorsun? | Что ты хочешь делать?
+Olga Türkçe öğrenmek istiyor. | Ольга хочет выучить турецкий.
+Biz sinemaya gitmek istiyoruz. | Мы хотим пойти в кино.
+Leyla dans etmek istiyor. | Лейла хочет танцевать.
+Siz çay içmek istiyor musunuz? | Хотите выпить чаю?
+Onlar futbol oynamak istiyorlar. | Они хотят играть в футбол.
+Ben uyumak istiyorum. | Я хочу спать.
+Deniz Olga'yı görmek istiyor. | Дениз хочет увидеть Ольгу.
+Ben Leyla'yı aramak istiyorum. | Я хочу позвонить Лейле.
+
+## Не хочу, хотела | gitmek istemiyorum, gitmek istedim | words=1
+Ben bugün çalışmak istemiyorum. | Я не хочу сегодня работать.
+Sen dün ne yapmak istedin? | Что ты хотела делать вчера?
+Olga yazın yüzmek istiyor. | Летом Ольга хочет плавать.
+Biz yemek yemek istemiyoruz. | Мы не хотим есть.
+Leyla film izlemek istedi. | Лейла хотела посмотреть фильм.
+Siz ne içmek istiyorsunuz? | Что вы хотите выпить?
+Onlar eve dönmek istemiyorlar. | Они не хотят возвращаться домой.
+Ben Kapadokya'ya gitmek istedim. | Я хотела поехать в Каппадокию.
+Tuba erken kalkmak istemiyor. | Туба не хочет рано вставать.
+Deniz yeni bir telefon almak istiyor. | Дениз хочет купить новый телефон.
+
+## Надо: -malı / -meli + лицо | gitmeliyim, çalışmalısın | words=1
+Ben çalışmalıyım. | Мне надо работать.
+Sen dinlenmelisin. | Тебе надо отдохнуть.
+Olga Türkçe öğrenmeli. | Ольге надо учить турецкий.
+Biz şimdi gitmeliyiz. | Нам надо сейчас идти.
+Siz doktora gitmelisiniz. | Вам надо пойти к врачу.
+Onlar erken kalkmalılar. | Им надо рано вставать.
+Ben annemi aramalıyım. | Мне надо позвонить маме.
+Sen su içmelisin. | Тебе надо пить воду.
+Tuba ilacını almalı. | Тубе надо принять лекарство.
+Pamuk uyumalı. | Памук надо поспать.
+
+## Нельзя: -mamalı / -memeli | içmemelisin, kalmamalıyım | words=1
+Sen çok kahve içmemelisin. | Тебе нельзя пить много кофе.
+Ben geç kalmamalıyım. | Мне нельзя опаздывать.
+Biz bugün çok yememeliyiz. | Нам сегодня нельзя много есть.
+Siz burada sigara içmemelisiniz. | Вам здесь нельзя курить.
+Pamuk süt içmemeli. | Памук нельзя пить молоко.
+Olga bu akşam geç yatmamalı. | Ольге сегодня нельзя поздно ложиться.
+Onlar geç gelmemeliler. | Им нельзя приходить поздно.
+Tuba şeker yememeli. | Тубе нельзя есть сахар.
+Sen unutmamalısın. | Тебе нельзя забывать.
+Ben çok çalışmamalıyım. | Мне нельзя много работать.
+
+## Сделайте! -ın, после гласной -yın | oturun, bekleyin, gidin | words=1
+Lütfen oturun. | Садитесь, пожалуйста.
+Buraya bakın! | Посмотрите сюда!
+Lütfen bekleyin. | Подождите, пожалуйста.
+Kapıyı açın, lütfen. | Откройте дверь, пожалуйста.
+Yavaş konuşun, lütfen. | Говорите медленнее, пожалуйста.
+Bu kitabı okuyun. | Прочитайте эту книгу.
+Lütfen beni arayın. | Позвоните мне, пожалуйста.
+Sola dönün. | Поверните налево.
+Biraz dinlenin. | Отдохните немного.
+Adresi yazın, lütfen. | Напишите адрес, пожалуйста.
+
+## Не делай(те)! gitme!, içmeyin | -ma / -me; для «вы» — -mayın / -meyin | words=1
+Gitme! | Не уходи!
+Ağlama! | Не плачь!
+Lütfen sigara içmeyin. | Пожалуйста, не курите.
+Kapıyı açmayın! | Не открывайте дверь!
+Unutma! | Не забудь!
+Korkma! | Не бойся!
+Geç kalma! | Не опаздывай!
+Burada beklemeyin. | Не ждите здесь.
+Pamuk, masaya çıkma! | Памук, не залезай на стол!
+Üzülme! | Не расстраивайся!
+
+## Всё вместе | хочу, надо, сделайте — вперемешку | words=1 | gate
+Ne içmek istiyorsun? | Что ты хочешь выпить?
+Biraz dinlenmelisin. | Тебе надо немного отдохнуть.
+Lütfen tekrar edin. | Повторите, пожалуйста.
+Gitmek istemiyorum. | Я не хочу уходить.
+Geç kalmamalıyız. | Нам нельзя опаздывать.
+Korkma, Pamuk! | Не бойся, Памук!
+Olga'yı aramalısın. | Тебе надо позвонить Ольге.
+Leyla Bodrum'a gelmek istiyor mu? | Лейла хочет приехать в Бодрум?
+Buyurun, oturun. | Садитесь, пожалуйста.
+Ben yeni bir şey denemek istiyorum. | Я хочу попробовать что-то новое.
+
+## Фраза длиннее | + когда, где: слово рядом | words=2
+Ben bu akşam sinemaya gitmek istiyorum. | Сегодня вечером я хочу пойти в кино.
+Sen her gün su içmelisin. | Тебе надо пить воду каждый день.
+Lütfen burada biraz bekleyin. | Подождите здесь немного, пожалуйста.
+Biz yarın erken kalkmalıyız. | Завтра нам надо рано встать.
+Olga Türkçe konuşmak istiyor. | Ольга хочет говорить по-турецки.
+Deniz bugün çok çalışmamalı. | Дениз сегодня не должен много работать.
+Siz bu kitabı mutlaka okumalısınız. | Вам обязательно надо прочитать эту книгу.
+Leyla yeni bir elbise almak istiyor. | Лейла хочет купить новое платье.
+Tuba her sabah ilacını almalı. | Тубе надо каждое утро принимать лекарство.
+Çocuklar parkta oynamak istiyorlar. | Дети хотят играть в парке.
+
+## Вся фраза | только перевод — собери по-турецки | words=99
+Ben eve gitmek istiyorum. | Я хочу пойти домой.
+Sen uyumalısın. | Тебе надо поспать.
+Lütfen gelin. | Приходите, пожалуйста.
+Ağlama, Leyla! | Не плачь, Лейла!
+Biz Türkçe öğrenmek istiyoruz. | Мы хотим выучить турецкий.
+Olga annesini aramalı. | Ольге надо позвонить маме.
+Siz ne yemek istiyorsunuz? | Что вы хотите есть?
+Kapıyı kapatın. | Закройте дверь.
+Ben kahve içmemeliyim. | Мне нельзя пить кофе.
+Deniz seni görmek istiyor. | Дениз хочет тебя увидеть.
+
+## В жизни | фразы из «Фраз» и «Диалогов» — только с пройденным | words=2 | life

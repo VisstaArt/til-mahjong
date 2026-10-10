@@ -212,6 +212,67 @@ def di(infinitive, person, negative=False, question=False):
     return Form("".join(p.text for p in parts), parts, tags)
 
 
+# --- хочу / надо / сделайте: içmek istiyorum, gitmeliyim, oturun!, gitme! ---
+def infinitive_form(infinitive):
+    """iç → içmek, yap → yapmak — инфинитив перед istemek."""
+    stem = verb_stem(infinitive)
+    suf = "m" + a2(stem) + "k"
+    why = f"«делать» → -mak / -mek; последняя гласная «{last_vowel(stem)}» → {suf}"
+    parts = [Part(stem, "stem", [stem], ""), Part(suf, "tense", ["mak", "mek", "ma", "me"], why)]
+    return Form("".join(p.text for p in parts), parts, ["want", "inf"])
+
+
+def meli(infinitive, person, negative=False):
+    """git → gitmeliyim (надо), gitmemeliyim (нельзя); лицо — как у «быть»."""
+    stem = verb_stem(infinitive)
+    parts = [Part(stem, "stem", [stem], "")]
+    tags = ["want", "meli", f"p.{person}"]
+    base = stem
+    if negative:
+        neg = "m" + a2(stem)
+        parts.append(Part(neg, "neg", _uniq([neg, "m" + ("e" if neg[-1] == "a" else "a")]),
+                          f"«нельзя» → -ma / -me перед -malı; последняя гласная «{last_vowel(stem)}» → {neg}"))
+        base += neg
+        tags.append("neg")
+    a = a2(base)
+    m = "m" + a + "l" + ("ı" if a == "a" else "i")
+    parts.append(Part(m, "tense", _uniq([m, "malı", "meli", "mak", "mek"]),
+                      f"«надо» → -malı / -meli; последняя гласная «{last_vowel(base)}» → {m}"))
+    end = _cop_suffix(base + m, person)
+    if end:
+        parts.append(_cop_person_part(base + m, person, "лицо — как у «быть»: "))
+    return Form("".join(p.text for p in parts), parts, tags)
+
+
+def imperative(infinitive, person="siz", negative=False):
+    """siz: otur → oturun, bekle → bekleyin, git → gidin; не: gelmeyin. sen: только «не» — gelme!"""
+    stem = verb_stem(infinitive)
+    tags = ["want", "imp", f"p.{person}"]
+    base = stem
+    soft = _is_softening_verb(infinitive) and person == "siz" and not negative
+    if soft:
+        base = stem[:-1] + SOFTEN[stem[-1]]
+        parts = [Part(base, "stem", [base, stem], f"{infinitive}: t → d перед гласной ({stem} → {base})")]
+        tags.append("soften")
+    else:
+        parts = [Part(stem, "stem", [stem], "")]
+    if negative:
+        neg = "m" + a2(stem)
+        parts.append(Part(neg, "neg", _uniq([neg, "m" + ("e" if neg[-1] == "a" else "a")]),
+                          f"«не делай» → -ma / -me; последняя гласная «{last_vowel(stem)}» → {neg}"))
+        base = stem + neg
+        tags.append("neg")
+    if person == "siz":
+        y = "y" if base[-1] in VOWELS else ""
+        suf = y + i4(base) + "n"
+        why = f"«сделайте» → -ın; последняя гласная «{last_vowel(base)}» → {i4(base)}"
+        if y:
+            why += "; после гласной — связка y"
+            tags.append("buffer")
+        parts.append(Part(suf, "person", _uniq([suf, ("" if y else "y") + i4(base) + "n", suf.translate(str.maketrans("ıiuü", "iıüu")), "sın", "in"]), why))
+    return Form("".join(p.text for p in parts), parts, tags)
+
+
 # --- падежи -de / -den / -e ---
 def _case_suffix(base, case, proper=False):
     last = base[-1]
@@ -597,6 +658,20 @@ if __name__ == "__main__":
         if got != want:
             bad += 1
             print("FAIL di", args, kw, got)
+    for fn, args, kw, want in [
+        (infinitive_form, ("içmek",), {}, "içmek"), (infinitive_form, ("yapmak",), {}, "yapmak"),
+        (meli, ("gitmek", "ben"), {}, "gitmeliyim"), (meli, ("çalışmak", "sen"), {}, "çalışmalısın"),
+        (meli, ("öğrenmek", "o"), {}, "öğrenmeli"), (meli, ("kalkmak", "onlar"), {}, "kalkmalılar"),
+        (meli, ("içmek", "sen"), {"negative": True}, "içmemelisin"), (meli, ("kalmak", "ben"), {"negative": True}, "kalmamalıyım"),
+        (imperative, ("oturmak",), {}, "oturun"), (imperative, ("beklemek",), {}, "bekleyin"), (imperative, ("okumak",), {}, "okuyun"),
+        (imperative, ("gitmek",), {}, "gidin"), (imperative, ("tekrar etmek",), {}, "tekrar edin"),
+        (imperative, ("içmek",), {"negative": True}, "içmeyin"), (imperative, ("gitmek", "sen"), {"negative": True}, "gitme"),
+        (imperative, ("ağlamak", "sen"), {"negative": True}, "ağlama"),
+    ]:
+        got = fn(*args, **kw).word
+        if got != want:
+            bad += 1
+            print("FAIL want", fn.__name__, args, kw, got)
     got = copula("", "ben", pre=noun_case("ev", "loc")).word
     if got != "evdeyim":
         bad += 1

@@ -27,7 +27,7 @@ UNMATCHED = os.path.join(os.path.dirname(__file__), "unmatched.txt")
 EXTRA_VERBS = os.path.join(os.path.dirname(__file__), "extra-verbs.txt")
 EXTRA_NOUNS = os.path.join(os.path.dirname(__file__), "extra-nouns.txt")
 # Пути тем — ступени со своими короткими фразами (path-<тема>.txt), в порядке прохождения.
-PATH_TOPICS = ["yor", "case", "cop", "poss", "acc", "di"]
+PATH_TOPICS = ["yor", "case", "cop", "poss", "acc", "di", "want"]
 PATH_OUT = os.path.join(ROOT, "assets", "grammar", "path.json")
 # Фраза из разговорника/диалога идёт в ступень «В жизни» только если она короткая и по
 # грамматике не выше этого уровня (оценка levels.py) — иначе для начинающих слишком сложно.
@@ -287,6 +287,68 @@ def match_di(token, next_token, verbs, all_words):
     return found[0]
 
 
+# --- хочу / надо / сделайте ---
+MELI_RE = re.compile(r"^(.+?)(m[ae]l[ıi])(.*)$")
+IMP_AMBIGUOUS = {"sorun", "yazın", "yakın", "alın", "gelin", "olun"}
+IMP_RE = re.compile(r"^(.+?)(y?[ıiuü]n)$")
+
+
+def match_want(tokens, i, tr, verbs, all_words, life):
+    """içmek (istiyorum), gitmeliyim, oturun, gitme! — с проверкой генератором."""
+    raw, s, e = tokens[i]
+    low = tr_lower(raw)
+    nxt = tr_lower(tokens[i + 1][0]) if i + 1 < len(tokens) else ""
+    if low in STOP:
+        return None
+    # хочу + инфинитив
+    if low in verbs and re.search(r"m[ae]k$", low) and nxt.startswith(("iste", "isti", "ister")):
+        return morph.infinitive_form(low), low
+    # надо / нельзя
+    m = MELI_RE.match(low)
+    if m:
+        for stem, neg in ((m.group(1), False), (m.group(1)[:-2], True)):
+            for suf in ("mak", "mek"):
+                inf = stem + suf
+                if inf not in verbs:
+                    continue
+                for person in morph.PERSONS:
+                    f = morph.meli(inf, person, negative=neg)
+                    if f.word == low:
+                        return f, inf
+    after = tr[e:].lstrip()[:1]
+    # Повелительное, совпадающее с обычным словом (yakın — «близкий», yazın — «летом»,
+    # sorun — «проблема», gelin — «невеста»), верим только в просьбе: lütfen или «!».
+    if (low in all_words or low in WORD_PARTS or low in IMP_AMBIGUOUS) and not (
+        "lütfen" in tr_lower(tr) or "!" in tr
+    ):
+        return None
+    # сделайте: oturun, bekleyin, gidin, içmeyin
+    m = IMP_RE.match(low)
+    if m:
+        base = m.group(1)
+        cands = [(base, False)]
+        if base.endswith("d"):
+            cands.append((base[:-1] + "t", False))
+        if base[-2:] in ("ma", "me"):
+            cands.append((base[:-2], True))
+        if base.endswith("y"):
+            cands.append((base[:-1], False))
+            if base[-3:-1] in ("ma", "me"):
+                cands.append((base[:-3], True))
+        for stem, neg in cands:
+            for suf in ("mak", "mek"):
+                inf = stem + suf
+                if inf in verbs and morph.imperative(inf, "siz", negative=neg).word == low:
+                    return morph.imperative(inf, "siz", negative=neg), inf
+    # не делай: gitme!, ağlama!
+    if low[-2:] in ("ma", "me") and (after == "!" or (not life and after in ",.")):
+        for suf in ("mak", "mek"):
+            inf = low[:-2] + suf
+            if inf in verbs and morph.imperative(inf, "sen", negative=True).word == low:
+                return morph.imperative(inf, "sen", negative=True), inf
+    return None
+
+
 # --- падежи ---
 def build_case_index(nouns, all_words):
     idx = {}
@@ -532,7 +594,7 @@ def build_acc_index(nouns, all_words):
     return idx
 
 
-VERB_FORM_RE = re.compile(r"(yor|[dt][ıiuü](m|n|k|n[ıiuü]z|l[ae]r)?)$")
+VERB_FORM_RE = re.compile(r"(yor|[dt][ıiuü](m|n|k|n[ıiuü]z|l[ae]r)?|m[ae]l[ıi]\w*|m[ae]k)$")
 
 
 def _verb_later(tokens, i):
@@ -556,7 +618,8 @@ def _transitive_later(tokens, i):
         low = tr_lower(t[0])
         if re.search(r"m[ae]k$", low):
             return True
-        m = re.match(r"^(.+?)[ıiuü]?yor", low) or re.match(r"^(.+?)[dt][ıiuü](m|n|k|n[ıiuü]z|l[ae]r)?$", low)
+        m = (re.match(r"^(.+?)[ıiuü]?yor", low) or re.match(r"^(.+?)[dt][ıiuü](m|n|k|n[ıiuü]z|l[ae]r)?$", low)
+             or re.match(r"^(.+?)m[ae]l[ıi]", low))
         if m and any(m.group(1).startswith(st) for st in TRANSITIVE_STEMS):
             return True
     return False
@@ -687,6 +750,19 @@ def main():
                 slot["word"] = tr[s:end]
                 slots.append(slot)
                 i += 2 if question else 1
+                continue
+            wm = match_want(tokens, i, tr, verbs, all_words, src["tier"] == "life")
+            if wm:
+                form, inf = wm
+                if raw[0].isupper():
+                    form = copy.deepcopy(form)
+                    form.parts[0].text = raw[0] + form.parts[0].text[1:]
+                    form.parts[0].options = [o[0].upper() + o[1:] for o in form.parts[0].options]
+                    form.word = raw
+                slot = form_to_slot(form, s, e, inf, "want", verbs.get(inf, ""))
+                slot["alts"] = []
+                slots.append(slot)
+                i += 1
                 continue
             cop = match_cop(tokens, i, tr, case_idx, verbs, sentence_words, all_words)
             if cop:

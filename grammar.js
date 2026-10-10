@@ -266,6 +266,37 @@ GRAMMAR_TOPICS.push({
     <div class="memo-examples" data-examples="Dün akşam ne yaptın?|Что ты делала вчера вечером?;Geçen yaz Trabzon'a gittim.|Прошлым летом я ездила в Трабзон.;Kahve içmedim.|Я не пила кофе.;Leyla'yı gördün mü?|Ты видела Лейлу?"></div>
   `,
 });
+GRAMMAR_TOPICS.push({
+  id: "want",
+  emoji: "🙏",
+  title: "Хочу, надо, сделайте!",
+  rules: [
+    ["inf", "хочу: -mak / -mek"],
+    ["meli", "надо: -malı / -meli"],
+    ["neg", "нельзя / не делай: -ma"],
+    ["imp", "сделайте: -ın / -yın"],
+    ["buffer", "после гласной -yın"],
+    ["soften", "git → gidin"],
+  ],
+  memo: `
+    <h3>Хочу, надо, сделайте!</h3>
+    <table class="memo-table">
+      <tr><th>что</th><th>как</th><th>пример</th></tr>
+      <tr><td>хочу</td><td>-mak / -mek + istiyorum</td><td>iç<b>mek</b> istiyorum</td></tr>
+      <tr><td>надо</td><td>-malı / -meli + лицо</td><td>git<b>meli</b>yim, çalış<b>malı</b>sın</td></tr>
+      <tr><td>нельзя</td><td>-mamalı / -memeli</td><td>iç<b>me</b>melisin</td></tr>
+      <tr><td>сделайте</td><td>-ın / -yın</td><td>otur<b>un</b>, bekle<b>yin</b>, gid<b>in</b></td></tr>
+      <tr><td>не делай(те)</td><td>-ma / -mayın</td><td>git<b>me</b>!, iç<b>meyin</b></td></tr>
+    </table>
+    <ul>
+      <li>Инфинитив: <b>-mak</b> после a ı o u, <b>-mek</b> после e i ö ü.</li>
+      <li>Лицо после -malı — как у «быть»: gitmeli<b>yim</b>, gitmeli<b>sin</b>, gitmeli, gitmeli<b>yiz</b>…</li>
+      <li>«Сделай!» для «ты» — просто основа: <b>Gel! Otur! Bak!</b> Для «вы» — <b>-ın</b>, после гласной <b>-yın</b>.</li>
+      <li>git, et — t → d перед гласной: <b>gidin</b>, tekrar <b>edin</b>.</li>
+    </ul>
+    <div class="memo-examples" data-examples="Kahve içmek istiyorum.|Я хочу выпить кофе.;Biraz dinlenmelisin.|Тебе надо немного отдохнуть.;Lütfen oturun.|Садитесь, пожалуйста.;Unutma!|Не забудь!"></div>
+  `,
+});
 const GRAMMAR_REVIEW = { id: "review", emoji: "🔀", title: "Повторение вперемешку" };
 
 // Где застряла Памук — новое место на каждой ступени темы (по кругу).
@@ -1076,7 +1107,7 @@ function partTags(slot, part) {
   const t = slot.tags;
   switch (part.slot) {
     case "person":
-      return t.filter((x) => x.startsWith("p.") || x === "question" || x === "buffer");
+      return t.filter((x) => x.startsWith("p.") || ["question", "buffer", "imp"].includes(x));
     case "question":
       return t.filter((x) => x === "question");
     case "neg":
@@ -1084,7 +1115,7 @@ function partTags(slot, part) {
     case "stem":
       return t.filter((x) => ["drop", "soften", "irregular"].includes(x));
     case "tense":
-      return t.filter((x) => ["cons", "drop", "vowel", "irregular", "voiceless"].includes(x));
+      return t.filter((x) => ["cons", "drop", "vowel", "irregular", "voiceless", "inf", "meli"].includes(x));
     case "plural":
       return t.filter((x) => x === "plural");
     case "poss":
