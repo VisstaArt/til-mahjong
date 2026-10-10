@@ -1656,3 +1656,176 @@ main {
   font-size: 0.75rem;
   font-weight: 600;
 }
+
+/* --- «Фразы»: игра «Пароход до Каракёя» --- */
+.ferry-bar {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 10px 16px 8px;
+  background: linear-gradient(180deg, rgba(64, 145, 108, 0.12), rgba(15, 26, 23, 0));
+}
+.ferry-route { display: flex; align-items: center; gap: 10px; }
+.ferry-pier { font-size: 0.72rem; letter-spacing: 0.04em; opacity: 0.7; white-space: nowrap; }
+.ferry-track {
+  position: relative;
+  flex: 1;
+  height: 30px;
+  border-radius: 15px;
+  background:
+    repeating-linear-gradient(90deg, rgba(120, 180, 220, 0.35) 0 10%, rgba(120, 180, 220, 0.18) 10% 10.4%),
+    linear-gradient(180deg, #1f4e6b, #163a50);
+  box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.4);
+}
+.ferry-boat {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  font-size: 1.5rem;
+  transform: translate(-30%, -55%) scaleX(-1);
+  transition: left 0.7s cubic-bezier(0.3, 0.8, 0.4, 1);
+  filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.5));
+}
+.ferry-boat.fast { animation: ferry-bob 0.6s ease-in-out infinite; }
+@keyframes ferry-bob {
+  0%, 100% { transform: translate(-30%, -55%) scaleX(-1) rotate(0deg); }
+  50% { transform: translate(-30%, -65%) scaleX(-1) rotate(-4deg); }
+}
+.ferry-status { display: flex; align-items: center; justify-content: space-between; gap: 10px; min-height: 26px; }
+.ferry-glasses { display: flex; gap: 4px; font-size: 1.25rem; }
+.ferry-glass { transition: opacity 0.3s ease, filter 0.3s ease; }
+.ferry-glass.spilled { opacity: 0.25; filter: grayscale(1); }
+.ferry-glass.just-spilled { animation: ferry-spill 0.6s ease; }
+@keyframes ferry-spill {
+  0% { transform: rotate(0); opacity: 1; filter: none; }
+  40% { transform: rotate(-70deg) translateY(-3px); opacity: 1; }
+  100% { transform: rotate(0); }
+}
+.ferry-combo { font-weight: 800; font-size: 1rem; color: var(--gold); }
+.ferry-combo.hot { animation: ferry-pulse 0.8s ease-in-out infinite; }
+@keyframes ferry-pulse { 50% { transform: scale(1.15); } }
+.ferry-count { font-variant-numeric: tabular-nums; font-weight: 700; opacity: 0.85; }
+.ferry-note {
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translateX(-50%);
+  background: var(--gold);
+  color: #2a2110;
+  font-weight: 700;
+  font-size: 0.85rem;
+  padding: 6px 12px;
+  border-radius: 999px;
+  white-space: nowrap;
+  z-index: 5;
+  animation: ferry-note 2.2s ease forwards;
+}
+@keyframes ferry-note {
+  0% { opacity: 0; transform: translate(-50%, -6px); }
+  15%, 80% { opacity: 1; transform: translate(-50%, 4px); }
+  100% { opacity: 0; transform: translate(-50%, 4px); }
+}
+
+.quiz-subprompt { font-size: 0.95rem; opacity: 0.7; text-align: center; max-width: 560px; }
+.quiz-subprompt:empty { display: none; }
+.quiz-speak {
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--text);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 999px;
+  padding: 4px 10px;
+  font-size: 1rem;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.quiz-speak.big { font-size: 1.15rem; padding: 14px 22px; }
+
+.quiz-build { display: flex; flex-direction: column; align-items: center; gap: 18px; width: 100%; max-width: 640px; }
+.quiz-build.hidden { display: none; }
+.quiz-build-answer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  min-height: 58px;
+  padding: 8px;
+  border-bottom: 2px dashed rgba(255, 255, 255, 0.25);
+  transition: border-color 0.2s ease;
+}
+.quiz-build-answer:empty::before { content: "нажимай слова по порядку"; align-self: center; font-size: 0.85rem; opacity: 0.45; }
+.quiz-build-answer.right { border-color: var(--scale-3); }
+.quiz-build-answer.wrong { border-color: var(--danger); animation: quiz-shake 0.3s ease; }
+.quiz-build-pile { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px 8px; }
+.build-tile {
+  background: var(--word-bg);
+  color: var(--word-text);
+  border: 2px solid rgba(255, 255, 255, 0.15);
+  border-radius: var(--radius);
+  box-shadow: 0 4px 0 #c9b98f, 0 6px 12px rgba(0, 0, 0, 0.35);
+  padding: 10px 14px;
+  font-size: 1.05rem;
+  font-weight: 700;
+  cursor: pointer;
+  user-select: none;
+  transition: transform 0.1s ease;
+}
+.build-tile:active { transform: translateY(2px); box-shadow: 0 2px 0 #c9b98f; }
+.build-tile.hinted { outline: 2px solid var(--gold); outline-offset: 1px; }
+
+.ferry-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  background: rgba(5, 12, 10, 0.72);
+  backdrop-filter: blur(3px);
+}
+.ferry-overlay.hidden { display: none; }
+.ferry-card {
+  width: 100%;
+  max-width: 420px;
+  background: linear-gradient(180deg, #1d3a4f, #13261f);
+  border: 1px solid rgba(233, 196, 106, 0.35);
+  border-radius: 18px;
+  padding: 22px 20px 18px;
+  text-align: center;
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.5);
+  animation: ferry-card-in 0.3s ease;
+}
+@keyframes ferry-card-in { from { transform: translateY(14px) scale(0.97); opacity: 0; } }
+.ferry-card-emoji { font-size: 3rem; line-height: 1; }
+.ferry-card h3 { margin: 10px 0 6px; font-size: 1.2rem; text-wrap: balance; }
+.ferry-card p { margin: 0 0 10px; opacity: 0.85; line-height: 1.4; }
+.ferry-card-extra { display: flex; flex-wrap: wrap; justify-content: center; gap: 6px; margin-bottom: 14px; }
+.ferry-card-extra:empty { display: none; }
+.ferry-chip { font-size: 0.8rem; padding: 4px 10px; border-radius: 999px; background: rgba(255, 255, 255, 0.08); }
+.ferry-stars { width: 100%; font-size: 2rem; letter-spacing: 4px; }
+.ferry-stars .dim { opacity: 0.2; filter: grayscale(1); }
+.ferry-small { width: 100%; font-size: 0.85rem; opacity: 0.8; }
+.ferry-unlock { width: 100%; padding: 8px; border-radius: 10px; background: rgba(233, 196, 106, 0.15); color: var(--gold); }
+.ferry-unlock i { opacity: 0.75; font-style: normal; font-size: 0.85em; }
+.ferry-card-actions.screen-actions { justify-content: center; flex-wrap: wrap; gap: 10px; }
+#ferry-go-btn { font-size: 1.05rem; padding: 12px 24px; font-weight: 700; }
+
+.ferry-map {
+  margin: 0 16px 6px;
+  padding: 10px 14px;
+  border-radius: 14px;
+  background: linear-gradient(90deg, rgba(31, 78, 107, 0.45), rgba(45, 106, 79, 0.25));
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+.ferry-map:empty { display: none; }
+.ferry-map-head { font-weight: 700; font-size: 0.9rem; }
+.ferry-map-places { display: flex; flex-wrap: wrap; gap: 6px; margin: 6px 0 4px; font-size: 1.3rem; }
+.ferry-place { opacity: 0.35; filter: grayscale(1); }
+.ferry-place.open { opacity: 1; filter: none; }
+.ferry-map-next { font-size: 0.8rem; opacity: 0.7; }
+
+@media (prefers-reduced-motion: reduce) {
+  .ferry-boat, .ferry-boat.fast, .ferry-combo.hot, .ferry-glass.just-spilled, .ferry-card, .ferry-note { animation: none; transition: none; }
+}

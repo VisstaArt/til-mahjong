@@ -195,6 +195,7 @@
       <div class="label label-mastered">⭐ <span id="phrases-mastered-count">0</span> фраз уже выучено</div>
       <div class="label"><span id="phrases-total-count">0</span> фраз всего в <span id="phrases-topic-count">0</span> темах</div>
     </div>
+    <div id="ferry-map" class="ferry-map"></div>
     <div id="phrases-catalog-loading" class="catalog-loading">⏳ Загружаем список тем…</div>
     <div class="manager-row">
       <div class="label label-secondary">Отметь галочкой несколько тем — фразы в квизе будут перемешиваться между ними</div>
@@ -231,15 +232,44 @@
       </div>
       <div class="controls">
         <button id="quiz-mute-btn" title="Выключить звук">🔊</button>
-        <button id="quiz-hint-btn" title="Подсказка: убрать половину неверных вариантов">💡 Подсказка</button>
+        <button id="quiz-hint-btn" title="Подсказка — одна на рейс: убрать половину неверных вариантов или поставить следующее слово">💡 <span id="quiz-hint-count">1</span></button>
         <button id="quiz-back-btn" class="secondary" title="Вернуться к темам">← Темы</button>
+      </div>
+    </div>
+    <div id="ferry-bar" class="ferry-bar">
+      <div class="ferry-route">
+        <span class="ferry-pier">Kadıköy</span>
+        <div id="ferry-track" class="ferry-track"><span id="ferry-boat" class="ferry-boat">⛴️</span></div>
+        <span class="ferry-pier">Karaköy</span>
+      </div>
+      <div class="ferry-status">
+        <span id="ferry-glasses" class="ferry-glasses" title="Стаканы чая: ошибка проливает один"></span>
+        <span id="ferry-combo" class="ferry-combo"></span>
+        <span id="ferry-count" class="ferry-count">0/10</span>
       </div>
     </div>
     <main class="quiz-main">
       <div id="quiz-direction" class="quiz-direction"></div>
       <div id="quiz-prompt" class="quiz-prompt"></div>
+      <div id="quiz-subprompt" class="quiz-subprompt"></div>
       <div id="quiz-options" class="quiz-options"></div>
+      <div id="quiz-build" class="quiz-build hidden">
+        <div id="quiz-build-answer" class="quiz-build-answer"></div>
+        <div id="quiz-build-pile" class="quiz-build-pile"></div>
+      </div>
     </main>
+    <div id="ferry-overlay" class="ferry-overlay hidden">
+      <div class="ferry-card">
+        <div id="ferry-card-emoji" class="ferry-card-emoji"></div>
+        <h3 id="ferry-card-title"></h3>
+        <p id="ferry-card-text"></p>
+        <div id="ferry-card-extra" class="ferry-card-extra"></div>
+        <div class="ferry-card-actions screen-actions">
+          <button id="ferry-go-btn"></button>
+          <button id="ferry-exit-btn" class="secondary">← Темы</button>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- ЭКРАН 6: каталог тем — диалоги -->
