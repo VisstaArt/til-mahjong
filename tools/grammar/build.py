@@ -27,7 +27,7 @@ UNMATCHED = os.path.join(os.path.dirname(__file__), "unmatched.txt")
 EXTRA_VERBS = os.path.join(os.path.dirname(__file__), "extra-verbs.txt")
 EXTRA_NOUNS = os.path.join(os.path.dirname(__file__), "extra-nouns.txt")
 # Пути тем — ступени со своими короткими фразами (path-<тема>.txt), в порядке прохождения.
-PATH_TOPICS = ["yor", "case", "cop"]
+PATH_TOPICS = ["yor", "case", "cop", "poss"]
 PATH_OUT = os.path.join(ROOT, "assets", "grammar", "path.json")
 # Фраза из разговорника/диалога идёт в ступень «В жизни» только если она короткая и по
 # грамматике не выше этого уровня (оценка levels.py) — иначе для начинающих слишком сложно.
@@ -41,7 +41,7 @@ STOP = {
     "önce", "sonra", "göre", "kadar", "beri", "işte", "belki", "keşke", "hala", "hâlâ",
     "şimdi", "yarın", "dün", "bugün", "hepsi", "neden", "nereden", "birde", "bende",
     "sende", "bizde", "sizde", "onda", "bunda", "şunda", "buna", "şuna", "kime", "neye",
-    "tane", "tamam", "banka", "ekleme", "güle", "evet", "hayır", "yani", "aslında", "yeter", "kere", "defa",
+    "tane", "tamam", "banka", "ekleme", "güle", "taksim", "evet", "hayır", "yani", "aslında", "yeter", "kere", "defa",
 }
 # Слова-«места»: bura/şura/ora/nere — сами по себе не встречаются, только с падежом.
 PLACE_WORDS = {"bura": "здесь/сюда", "şura": "там (рядом)", "ora": "там/туда", "nere": "где/куда"}
@@ -56,6 +56,7 @@ def tr_lower(s):
 # Перевод отдельных слов фразы — для подсказки «что это за слово» в игре. Словарь
 # маджонга + частые служебные слова, которых там нет (или они там с другим смыслом).
 WORDS_RU = {}
+WORD_PARTS = set()  # отдельные слова из многословных записей словаря (doğum günü → doğum)
 BASIC_GLOSS = {
     "ben": "я", "sen": "ты", "o": "он, она", "biz": "мы", "siz": "вы", "onlar": "они",
     "her": "каждый", "bir": "один, какой-то", "ve": "и", "de": "тоже", "da": "тоже",
@@ -71,6 +72,8 @@ BASIC_GLOSS = {
     "çünkü": "потому что", "sonra": "потом", "şimdi": "сейчас", "değil": "не",
     "burada": "здесь", "orada": "там", "nerede": "где", "bu": "этот, это", "şu": "тот",
     "ya": "а (ты?)", "harika": "отлично", "peki": "ладно", "affedersiniz": "извините",
+    "benim": "мой", "senin": "твой", "onun": "его, её", "bizim": "наш", "sizin": "ваш",
+    "onların": "их", "kaç": "сколько", "yaşında": "лет (возраст)",
 }
 NAMES = {"olga", "leyla", "anya", "deniz", "tuba", "pamuk", "metin", "bey", "kemal"}
 # Слова, которые могут быть сказуемым с «быть» (öğretmenim, yorgunum): существительные и
@@ -97,6 +100,7 @@ def load_lexicon():
                 continue
             all_words.add(tr)
             if " " in tr or "/" in tr or "," in tr:
+                WORD_PARTS.update(x for x in re.split(r"[\s/,()]+", tr) if x)
                 continue
             WORDS_RU.setdefault(tr, w.get("ru", ""))
             if w.get("pos") in ("noun", "adjective"):
@@ -393,6 +397,84 @@ def match_cop(tokens, i, tr, case_idx, verbs, sentence_words, all_words):
     return None
 
 
+# --- «чей?»: evim, arabası, Olga'nın, evimde ---
+PRONOUN_GEN = {"benim", "senin", "onun", "bizim", "sizin", "onların"}
+GEN_RE = re.compile(r"^([A-ZÇĞİÖŞÜ][\wçğıöşü]+)'(n?[ıiuü]n)$")
+
+
+def build_poss_index(nouns, all_words):
+    idx = {}
+    for lemma in nouns:
+        if len(lemma) < 2 or " " in lemma:
+            continue
+        for person in morph.PERSONS:
+            for case in (None, "loc", "abl", "dat"):
+                f = morph.possessive(lemma, person, case=case)
+                w = tr_lower(f.word)
+                if w in STOP or w in PRONOUN_GEN:
+                    continue
+                # Совпадает со словом словаря (adım — «шаг», ailem, doğum) — верим, только
+                # если рядом «чьё» местоимение: benim adım.
+                homo = case is None and (w in all_words or w in WORD_PARTS)
+                idx.setdefault(w, []).append((lemma, person, case, f, homo))
+    return idx
+
+
+def match_genitive(raw):
+    m = GEN_RE.match(raw)
+    if not m:
+        return None
+    f = morph.genitive(m.group(1))
+    return f if f.word == raw else None
+
+
+PERSON_GEN = {"ben": "benim", "sen": "senin", "o": "onun", "biz": "bizim", "siz": "sizin", "onlar": "onların"}
+
+
+def match_poss(tokens, i, poss_idx, sentence_words, life):
+    """Слово с притяжанием, если контекст снимает неоднозначность: evin — «твой дом» только
+    при senin (иначе это «дома» в род. падеже); evi / kitabı — «его» только после onun /
+    Olga'nın (иначе это винительный: «дом», «книгу»); -ları без падежа — только при onların."""
+    raw = tokens[i][0]
+    cands = poss_idx.get(tr_lower(raw))
+    if not cands:
+        return None
+    prev = tr_lower(tokens[i - 1][0]) if i > 0 else ""
+    prev_gen = prev == "onun" or bool(GEN_RE.match(tokens[i - 1][0])) if i > 0 else False
+    ok = []
+    for lemma, person, case, f, homo in cands:
+        if homo and PERSON_GEN[person] not in sentence_words:
+            continue
+        # Во фразах «из жизни» 3-е лицо почти всегда — составное слово или послелог
+        # (resepsiyonun yanında, trafik ışıkları), а не «его / их»: только после onun /
+        # Olga'nın / onların.
+        if life and person == "o" and not prev_gen:
+            continue
+        if life and person == "onlar" and "onların" not in sentence_words:
+            continue
+        # sorun — «проблема», öğlene — «к полудню»: «твой» во фразах из жизни — только при senin.
+        if life and person == "sen" and "senin" not in sentence_words:
+            continue
+        consonant = lemma[-1] not in morph.VOWELS
+        if person == "sen" and consonant and "senin" not in sentence_words:
+            continue
+        if person == "o":
+            if case is None and not prev_gen:
+                continue
+            if case is not None and ("senin" in sentence_words or "sen" in sentence_words):
+                continue
+        if person == "onlar" and case is None and "onların" not in sentence_words:
+            continue
+        if person == "ben" and case is None and "ben" in sentence_words and "benim" not in sentence_words:
+            continue
+        ok.append((lemma, person, case, f))
+    if not ok:
+        return None
+    # evinde: «у тебя дома» при senin, иначе «у него дома».
+    ok.sort(key=lambda c: 0 if (c[1] == "sen") == ("senin" in sentence_words) else 1)
+    return ok[0][:4]
+
+
 # --- сборка ---
 def form_to_slot(form, start, end, lemma, topic, gloss):
     return {
@@ -436,6 +518,7 @@ def case_alternatives(lemma, case, kw, proper, name=None):
 def main():
     verbs, nouns, all_words = load_lexicon()
     case_idx = build_case_index(nouns, all_words)
+    poss_idx = build_poss_index(nouns, all_words)
     sources = load_sources()
     items, unmatched = [], {}
     base_problems, too_hard = [], 0
@@ -477,6 +560,29 @@ def main():
                 slot["word"] = tr[cs:ce]
                 slots.append(slot)
                 i += used
+                continue
+            gen = match_genitive(raw)
+            if gen:
+                slot = form_to_slot(gen, s, e, gen.parts[0].text, "poss", "")
+                slot["alts"] = []
+                slots.append(slot)
+                i += 1
+                continue
+            ps = match_poss(tokens, i, poss_idx, sentence_words, src["tier"] == "life")
+            if ps and (raw[0].islower() or s == 0):
+                lemma, person, case, form = ps
+                if raw[0].isupper():
+                    form = copy.deepcopy(form)
+                    form.parts[0].text = raw[0] + form.parts[0].text[1:]
+                    form.parts[0].options = [o[0].upper() + o[1:] for o in form.parts[0].options]
+                    form.word = raw
+                slot = form_to_slot(form, s, e, lemma, "poss", nouns.get(lemma, ""))
+                slot["person"] = person
+                if case:
+                    slot["case"] = case
+                slot["alts"] = []
+                slots.append(slot)
+                i += 1
                 continue
             pr = match_proper(raw)
             if pr:

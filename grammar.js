@@ -162,6 +162,42 @@ GRAMMAR_TOPICS.push({
     <div class="memo-examples" data-examples="Ben Rusum.|Я русская.;Sen neredesin?|Где ты?;Ben yorgun değilim.|Я не устала.;Evli misin?|Ты замужем?"></div>
   `,
 });
+GRAMMAR_TOPICS.push({
+  id: "poss",
+  emoji: "🔑",
+  title: "Чей? evim, Olga'nın evi",
+  rules: [
+    ["p.ben", "мой -ım / -m"],
+    ["p.sen", "твой -ın / -n"],
+    ["p.o", "его -ı / -sı"],
+    ["p.biz", "наш -ımız"],
+    ["p.siz", "ваш -ınız"],
+    ["p.onlar", "их -ları"],
+    ["soften", "k → ğ, p → b, ç → c"],
+    ["gen", "чей? -nın / -ın"],
+    ["n-buffer", "evinde: n перед падежом"],
+  ],
+  memo: `
+    <h3>Чей? benim evim — мой дом</h3>
+    <p class="memo-formula">слово + <b>окончание «чей»</b>; benim / senin… — по желанию, для ясности</p>
+    <table class="memo-table">
+      <tr><th>чей</th><th>после согл.</th><th>после гласной</th></tr>
+      <tr><td>benim — мой</td><td>ev<b>im</b></td><td>araba<b>m</b></td></tr>
+      <tr><td>senin — твой</td><td>ev<b>in</b></td><td>araba<b>n</b></td></tr>
+      <tr><td>onun — его/её</td><td>ev<b>i</b></td><td>araba<b>sı</b></td></tr>
+      <tr><td>bizim — наш</td><td>ev<b>imiz</b></td><td>araba<b>mız</b></td></tr>
+      <tr><td>sizin — ваш</td><td>ev<b>iniz</b></td><td>araba<b>nız</b></td></tr>
+      <tr><td>onların — их</td><td>ev<b>leri</b></td><td>araba<b>ları</b></td></tr>
+    </table>
+    <ul>
+      <li>Гласная — по гармонии: ı / i / u / ü (telefon<b>um</b>, göz<b>üm</b>).</li>
+      <li>У многосложных перед гласной: <b>k → ğ, p → b, ç → c</b>: kitap → kita<b>bım</b>, sokak → soka<b>ğım</b>.</li>
+      <li>Чей? У имени — <b>-ın</b>, после гласной <b>-nın</b>: Deniz<b>'in</b> arabası, Olga<b>'nın</b> evi.</li>
+      <li>«Мой» + падеж — как обычно: evim<b>de</b>, odam<b>a</b>. После «его» (-ı, -sı) перед падежом — <b>n</b>: evi<b>nde</b>, arabası<b>nda</b>.</li>
+    </ul>
+    <div class="memo-examples" data-examples="Benim adım Olga.|Меня зовут Ольга.;Senin adın ne?|Как тебя зовут?;Leyla'nın kedisi çok sevimli.|Кошка Лейлы очень милая.;Kitap çantamda.|Книга в моей сумке."></div>
+  `,
+});
 const GRAMMAR_REVIEW = { id: "review", emoji: "🔀", title: "Повторение вперемешку" };
 
 // Где застряла Памук — новое место на каждой ступени темы (по кругу).
@@ -485,10 +521,11 @@ const KIND_LABELS = {
   person: "лицо",
   question: "вопрос",
   noun: "слово",
+  poss: "чей",
   case: "падеж",
   word: "слово",
 };
-const KIND_ORDER = ["verb", "tense", "neg", "person", "question", "noun", "case", "word"];
+const KIND_ORDER = ["verb", "tense", "neg", "person", "question", "noun", "poss", "case", "word"];
 
 // Вид кусочка — по нему плашка подкрашена (основа глагола, время, лицо, «не», вопрос,
 // падеж) и из таких же кусочков набирается кучка-обманка.
@@ -500,8 +537,10 @@ function partKind(slot, part) {
       return part.text.startsWith(" ") ? "question" : "person";
     case "plural":
       return "case";
+    case "gen":
+      return "poss";
     default:
-      return part.slot; // tense, neg, case
+      return part.slot; // tense, neg, case, poss
   }
 }
 
@@ -978,8 +1017,12 @@ function partTags(slot, part) {
       return t.filter((x) => ["cons", "drop", "vowel", "irregular"].includes(x));
     case "plural":
       return t.filter((x) => x === "plural");
+    case "poss":
+      return t.filter((x) => x.startsWith("p.") || x === "buffer");
+    case "gen":
+      return t.filter((x) => x === "gen");
     case "case":
-      return t.filter((x) => x.startsWith("c.") || ["voiceless", "buffer", "proper"].includes(x));
+      return t.filter((x) => x.startsWith("c.") || ["voiceless", "buffer", "proper", "n-buffer"].includes(x));
     default:
       return [];
   }

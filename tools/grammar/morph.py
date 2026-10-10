@@ -298,6 +298,76 @@ def copula(word, person, negative=False, question=False, pre=None):
     return Form("".join(p.text for p in parts), parts, tags)
 
 
+# --- «чей?»: evim, araban, arabası, evimiz, Olga'nın; с падежом: evimde, arabasında ---
+POSS_RU = {"ben": "мой", "sen": "твой", "o": "его/её", "biz": "наш", "siz": "ваш", "onlar": "их"}
+
+
+def _syllables(word):
+    return sum(1 for ch in word if ch in VOWELS)
+
+
+def _poss_suffix(base, person):
+    v = i4(base)
+    if base[-1] in VOWELS:
+        return {"ben": "m", "sen": "n", "o": "s" + v, "biz": "m" + v + "z", "siz": "n" + v + "z",
+                "onlar": "l" + a2(base) + "r" + i4("l" + a2(base) + "r")}[person]
+    return {"ben": v + "m", "sen": v + "n", "o": v, "biz": v + "m" + v + "z", "siz": v + "n" + v + "z",
+            "onlar": "l" + a2(base) + "r" + i4(a2(base))}[person]
+
+
+def possessive(noun, person, case=None):
+    """ev → evim / evin / evi / evimiz / eviniz / evleri; kitap → kitabım (p→b, ç→c, k→ğ —
+    только у многосложных; t не трогаем: bilet → biletim). case — падеж после: evimde,
+    3-е лицо с n: evinde, arabasında."""
+    tags = ["poss", f"p.{person}"]
+    parts = []
+    suf = _poss_suffix(noun, person)
+    stem = noun
+    if suf[0] in VOWELS and noun[-1] in "pçk" and _syllables(noun) > 1:
+        stem = noun[:-1] + SOFTEN[noun[-1]]
+        parts.append(Part(stem, "stem", [stem, noun], f"{noun[-1]} → {SOFTEN[noun[-1]]} перед гласной ({noun} → {stem})"))
+        tags.append("soften")
+    else:
+        parts.append(Part(noun, "stem", [noun], ""))
+    opts = [_poss_suffix(noun, p) for p in PERSONS]
+    wrong = suf.translate(str.maketrans("ıiuü", "iıüu"))
+    why = f"{POSS_RU[person]} ({person}) → -{suf}"
+    if noun[-1] in VOWELS and person in ("ben", "sen", "biz", "siz"):
+        why += "; после гласной — без своей гласной"
+    elif noun[-1] in VOWELS and person == "o":
+        why += "; после гласной — связка s"
+        tags.append("buffer")
+    elif person != "onlar":
+        why += f"; последняя гласная «{last_vowel(noun)}» → {i4(noun)}"
+    parts.append(Part(suf, "poss", _uniq([suf] + opts + [wrong]), why))
+    if case:
+        base = stem + suf
+        third = person in ("o", "onlar")
+        cs = _case_suffix(base, case)
+        if third:
+            # После -ı / -sı / -ları перед падежом встаёт n: evi → evinde, evine.
+            cs = "n" + (a2(base) if case == "dat" else "d" + a2(base) + ("n" if case == "abl" else ""))
+            cwhy = f"после «его/её/их» перед падежом — n: {noun}{suf} → {noun}{suf}{cs}"
+            tags.append("n-buffer")
+        else:
+            cwhy = {"loc": "где? → -de/-da", "abl": "откуда? → -den/-dan", "dat": "куда? → -e/-a"}[case]
+            cwhy += f"; последняя гласная «{last_vowel(base)}» → {a2(base)}"
+        copts = _uniq([cs] + [("n" if third else "") + x for x in ("da", "de", "dan", "den", "a", "e")] + _case_options(base, case))
+        parts.append(Part(cs, "case", copts, cwhy))
+        tags += ["case", f"c.{case}"]
+    return Form("".join(p.text for p in parts), parts, tags)
+
+
+def genitive(name):
+    """Чей? Olga'nın, Deniz'in, Pamuk'un — имя + 'nın после гласной, 'ın после согласной."""
+    v = i4(name.lower())
+    suf = ("n" + v + "n") if name[-1].lower() in VOWELS else (v + "n")
+    opts = ["'" + x for x in _uniq([suf] + ["n" + x + "n" for x in "ıiuü"] + [x + "n" for x in "ıiuü"])]
+    why = f"чей? → -ın; после гласной — -nın; последняя гласная «{last_vowel(name.lower())}» → {v}"
+    parts = [Part(name, "stem", [name], ""), Part("'" + suf, "gen", opts, why)]
+    return Form("".join(p.text for p in parts), parts, ["poss", "gen"] + (["buffer"] if name[-1].lower() in VOWELS else []))
+
+
 if __name__ == "__main__":
     # Сверка с таблицей из книги (durmak, duygulanmak) и с типовыми случаями.
     checks = {
@@ -375,6 +445,27 @@ if __name__ == "__main__":
         if got != want:
             bad += 1
             print("FAIL cop", args, kw, got)
+    for args, kw, want in [
+        (("ev", "ben"), {}, "evim"), (("ev", "sen"), {}, "evin"), (("ev", "o"), {}, "evi"),
+        (("ev", "biz"), {}, "evimiz"), (("ev", "siz"), {}, "eviniz"), (("ev", "onlar"), {}, "evleri"),
+        (("araba", "ben"), {}, "arabam"), (("araba", "o"), {}, "arabası"), (("araba", "biz"), {}, "arabamız"),
+        (("araba", "onlar"), {}, "arabaları"), (("kitap", "ben"), {}, "kitabım"), (("sokak", "o"), {}, "sokağı"),
+        (("bilet", "ben"), {}, "biletim"), (("top", "ben"), {}, "topum"), (("ad", "ben"), {}, "adım"),
+        (("telefon", "siz"), {}, "telefonunuz"), (("köpek", "o"), {}, "köpeği"),
+        (("ev", "ben"), {"case": "loc"}, "evimde"), (("ev", "o"), {"case": "loc"}, "evinde"),
+        (("araba", "o"), {"case": "loc"}, "arabasında"), (("ev", "biz"), {"case": "dat"}, "evimize"),
+        (("iş", "o"), {"case": "dat"}, "işine"), (("oda", "o"), {"case": "abl"}, "odasından"),
+        (("okul", "onlar"), {"case": "dat"}, "okullarına"), (("çanta", "ben"), {"case": "loc"}, "çantamda"),
+    ]:
+        got = possessive(*args, **kw).word
+        if got != want:
+            bad += 1
+            print("FAIL poss", args, kw, got)
+    for name, want in [("Olga", "Olga'nın"), ("Deniz", "Deniz'in"), ("Pamuk", "Pamuk'un"), ("Tuba", "Tuba'nın"), ("Bey", "Bey'in")]:
+        got = genitive(name).word
+        if got != want:
+            bad += 1
+            print("FAIL gen", name, got)
     got = copula("", "ben", pre=noun_case("ev", "loc")).word
     if got != "evdeyim":
         bad += 1

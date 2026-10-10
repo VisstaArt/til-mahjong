@@ -1,0 +1,138 @@
+# Путь темы «Чей?» (притяжание: evim, araban, onun evi, evimiz, Olga'nın evi, evimde) —
+# в Yeni Hitit 1 это ünite 3.1–3.2. Идёт после -yor, падежей и «быть» — во фразах можно всё это.
+# benim / senin / onun / bizim / sizin / onların даются готовыми словами: по ним понятно, чьё.
+# Формат — как в path-yor.txt.
+
+## Мой и твой | benim evim, senin evin: -ım, -ın | words=1
+Benim evim büyük. | Мой дом большой.
+Senin evin çok güzel. | Твой дом очень красивый.
+Benim adım Olga. | Меня зовут Ольга.
+Senin adın ne? | Как тебя зовут?
+Benim telefonum yeni. | Мой телефон новый.
+Senin telefonun nerede? | Где твой телефон?
+Benim işim zor. | Моя работа трудная.
+Senin arkadaşın Türk mü? | Твоя подруга — турчанка?
+Benim kardeşim Moskova'da. | Моя сестра в Москве.
+Senin işin nerede? | Где твоя работа?
+
+## После гласной: -m, -n | araba → arabam, araban | words=1
+Benim odam küçük. | Моя комната маленькая.
+Senin araban çok güzel. | Твоя машина очень красивая.
+Benim annem Moskova'da. | Моя мама в Москве.
+Senin annen nerede? | Где твоя мама?
+Benim kahvem sıcak. | Мой кофе горячий.
+Senin çantan nerede? | Где твоя сумка?
+Benim babam mühendis. | Мой папа инженер.
+Senin kedin çok sevimli. | Твоя кошка очень милая.
+Senin odan büyük mü? | Твоя комната большая?
+Benim ailem Rusya'da. | Моя семья в России.
+
+## Его, её: -ı, после гласной -sı | onun evi, onun arabası | words=1
+Onun evi büyük. | Его дом большой.
+Onun arabası yeni. | Его машина новая.
+Onun adı Deniz. | Его зовут Дениз.
+Onun kedisi çok sevimli. | Её кошка очень милая.
+Onun işi zor. | Его работа трудная.
+Onun telefonu nerede? | Где её телефон?
+Onun odası küçük. | Её комната маленькая.
+Onun çantası çok güzel. | Её сумка очень красивая.
+Onun arkadaşı Rus. | Его подруга — русская.
+Onun babası mühendis. | Её папа инженер.
+
+## Наш, ваш, их | bizim evimiz, sizin eviniz, onların evleri | words=1
+Bizim evimiz küçük. | Наш дом маленький.
+Sizin eviniz çok güzel. | Ваш дом очень красивый.
+Onların evleri büyük. | Их дом большой.
+Bizim arabamız eski. | Наша машина старая.
+Sizin adınız ne? | Как вас зовут?
+Bizim öğretmenimiz Türk. | Наш учитель — турок.
+Sizin odanız burada. | Ваша комната здесь.
+Bizim kedimiz evde. | Наша кошка дома.
+Sizin telefonunuz nerede? | Где ваш телефон?
+Bizim ofisimiz Karaköy'de. | Наш офис в Каракёе.
+Onların okulları yakın. | Их школа рядом.
+
+## k → ğ, p → b, ç → c | kitap → kitabım, sokak → sokağım | words=1
+Benim kitabım nerede? | Где моя книга?
+Senin kitabın çok güzel. | Твоя книга очень красивая.
+Onun köpeği büyük. | Его собака большая.
+Benim sokağım sakin. | Моя улица тихая.
+Senin bardağın burada. | Твой стакан здесь.
+Onun çocuğu okulda. | Её ребёнок в школе.
+Senin mektubun burada. | Твоё письмо здесь.
+Bizim mutfağımız küçük. | Наша кухня маленькая.
+Sizin köpeğiniz çok sevimli. | Ваша собака очень милая.
+
+## Мой + падеж | çantamda, evimize, ofisimden | words=1
+Kitap çantamda. | Книга в моей сумке.
+Telefon arabamda. | Телефон в моей машине.
+Pamuk odamda uyuyor. | Памук спит в моей комнате.
+Anahtar çantanda mı? | Ключ в твоей сумке?
+Biz evimize gidiyoruz. | Мы идём к себе домой.
+Siz odanızda mısınız? | Вы в своей комнате?
+Ben ofisimden çıkıyorum. | Я выхожу из своего офиса.
+Sen arabana biniyorsun. | Ты садишься в свою машину.
+Ben odama gidiyorum. | Я иду в свою комнату.
+Biz arabamızda kahve içiyoruz. | Мы пьём кофе в своей машине.
+
+## Его + падеж: перед падежом n | evi → evinde, arabası → arabasında | words=1
+Deniz arabasında. | Дениз в своей машине.
+Leyla şimdi evinde. | Лейла сейчас у себя дома.
+Pamuk kutusunda uyuyor. | Памук спит в своей коробке.
+Tuba odasından çıkıyor. | Туба выходит из своей комнаты.
+Anya işine gidiyor. | Аня идёт на работу.
+Olga arkadaşına gidiyor. | Ольга идёт к подруге.
+Deniz arabasına biniyor. | Дениз садится в свою машину.
+Metin Bey ofisinde. | Метин-бей у себя в офисе.
+Çocuklar okullarına gidiyorlar. | Дети идут в свою школу.
+Leyla kedisine bakıyor. | Лейла смотрит на свою кошку.
+
+## Чей? Olga'nın evi | после гласной -nın, после согласной -ın | words=1
+Olga'nın evi Kadıköy'de. | Дом Ольги в Кадыкёе.
+Leyla'nın kedisi çok sevimli. | Кошка Лейлы очень милая.
+Deniz'in arabası burada. | Машина Дениза здесь.
+Anya'nın işi zor. | Работа Ани трудная.
+Tuba'nın çocuğu okulda. | Ребёнок Тубы в школе.
+Metin Bey'in ofisi büyük. | Офис Метин-бея большой.
+Pamuk'un kutusu nerede? | Где коробка Памук?
+Leyla'nın arkadaşı Rus. | Подруга Лейлы — русская.
+Deniz'in ailesi Ankara'da. | Семья Дениза в Анкаре.
+Olga'nın annesi Moskova'da. | Мама Ольги в Москве.
+
+## Всё вместе | мой, твой, его, чей — вперемешку | words=1 | gate
+Senin adın ne? Benim adım Leyla. | Как тебя зовут? Меня зовут Лейла.
+Onun telefonu çantasında. | Её телефон у неё в сумке.
+Bizim evimiz Kadıköy'de. | Наш дом в Кадыкёе.
+Sizin çocuğunuz kaç yaşında? | Сколько лет вашему ребёнку?
+Deniz'in annesi evde. | Мама Дениза дома.
+Benim kitabım masada. | Моя книга на столе.
+Leyla'nın kedisi uyuyor. | Кошка Лейлы спит.
+Senin araban nerede? | Где твоя машина?
+Onların evleri büyük mü? | Их дом большой?
+Benim kardeşim bankada çalışıyor. | Моя сестра работает в банке.
+
+## Фраза длиннее | + какой, где: слово рядом | words=2
+Benim yeni telefonum çok güzel. | Мой новый телефон очень красивый.
+Onun arabası bugün burada değil. | Его машины сегодня нет здесь.
+Bizim evimiz çok büyük değil. | Наш дом не очень большой.
+Leyla'nın kedisi şimdi mutfakta. | Кошка Лейлы сейчас на кухне.
+Senin odan çok sıcak. | В твоей комнате очень тепло.
+Deniz'in arabası çok eski. | Машина Дениза очень старая.
+Benim annem İstanbul'a geliyor. | Моя мама приезжает в Стамбул.
+Sizin öğretmeniniz çok iyi. | Ваш учитель очень хороший.
+Anya'nın bankası Moskova'da. | Банк Ани в Москве.
+Olga'nın ofisi Karaköy'de. | Офис Ольги в Каракёе.
+
+## Вся фраза | только перевод — собери по-турецки | words=99
+Benim kardeşim Anya. | Мою сестру зовут Аня.
+Senin evin büyük mü? | Твой дом большой?
+Onun kedisi evde. | Его кошка дома.
+Bizim odamız küçük. | Наша комната маленькая.
+Deniz'in telefonu nerede? | Где телефон Дениза?
+Benim babam evde. | Мой папа дома.
+Leyla'nın annesi Türk. | Мама Лейлы — турчанка.
+Sizin çantanız burada. | Ваша сумка здесь.
+Pamuk evinde. | Памук у себя дома.
+Benim çayım sıcak. | Мой чай горячий.
+
+## В жизни | фразы из «Фраз» и «Диалогов» — только с пройденным | words=2 | life
