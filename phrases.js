@@ -33,6 +33,39 @@ const PHRASE_BOX_ORDER = PHRASE_BOXES.map((b) => b.id);
 const MAX_NEW_PHRASES_PER_SESSION = 15;
 
 let phraseManifest = []; // [{id, title, source, count, sizeKB}]
+
+// Уровни A1…B2 — assets/phrases/levels.json (собирает tools/phrases/build_levels.py):
+// порядок тем по уровням и уровень каждой фразы. «Уровень фраз» — потолок, как у слов
+// маджонга: фразы выше него в рейс не попадают.
+const PHRASE_LEVEL_ORDER = ["A1", "A2", "B1", "B2"];
+const PHRASE_LEVEL_LABELS = { A1: "самая база", A2: "бытовое", B1: "шире повседневного", B2: "специальное" };
+const PHRASE_LEVEL_CAP_KEY = "mahjong-phrase-level";
+let phraseLevels = null; // {order: [id], topics: {id: {level, counts}}, phrases: {id: {tr: level}}}
+let phraseLevelCap = localStorage.getItem(PHRASE_LEVEL_CAP_KEY) || "B2";
+let quizMaxLevel = null; // потолок текущего рейса («весь A1» — только A1)
+let quizExactLevel = false;
+
+async function fetchPhraseLevels() {
+  if (phraseLevels) return phraseLevels;
+  try {
+    const resp = await fetch("assets/phrases/levels.json");
+    phraseLevels = resp.ok ? await resp.json() : { order: [], topics: {}, phrases: {} };
+  } catch {
+    phraseLevels = { order: [], topics: {}, phrases: {} };
+  }
+  return phraseLevels;
+}
+function topicLevel(topicId) {
+  return (phraseLevels && phraseLevels.topics[topicId] && phraseLevels.topics[topicId].level) || "B1";
+}
+function phraseLevel(topicId, p) {
+  if (p.level) return p.level;
+  const map = phraseLevels && phraseLevels.phrases[topicId];
+  return (map && map[p.tr]) || topicLevel(topicId);
+}
+function levelAtMost(level, cap) {
+  return PHRASE_LEVEL_ORDER.indexOf(level) <= PHRASE_LEVEL_ORDER.indexOf(cap);
+}
 let phraseTopicCache = new Map(); // id → {id, title, source, phrases: [...]}
 let selectedForQuiz = new Set(); // id тем, отмеченных чекбоксом в каталоге для общего квиза
 
@@ -231,65 +264,127 @@ function formatSizeKB(kb) {
   return `${Math.round(kb)} КБ`;
 }
 
-// --- каталог тем ---
+// --- каталог тем: по уровням A1 → B2, в каждом — «▶ весь уровень» ---
 async function renderPhrasesCatalog() {
   const grid = document.getElementById("phrases-catalog-grid");
   const loadingEl = document.getElementById("phrases-catalog-loading");
   loadingEl.classList.remove("hidden");
   grid.innerHTML = "";
-  await fetchPhraseManifest();
+  await Promise.all([fetchPhraseManifest(), fetchPhraseLevels()]);
   loadingEl.classList.add("hidden");
   renderFerryMap();
+  renderPhraseLevelPicker();
 
   const loaded = getLoadedPhraseTopics();
   let totalPhrases = 0;
   let totalMastered = 0;
+  const byId = new Map(phraseManifest.map((m) => [m.id, m]));
+  const ordered = [...phraseLevels.order.filter((id) => byId.has(id)), ...phraseManifest.map((m) => m.id).filter((id) => !phraseLevels.order.includes(id))];
 
-  phraseManifest.forEach((m) => {
-    totalPhrases += m.count;
-    const isLoaded = loaded.has(m.id) && phraseTopicCache.has(m.id);
-    let masteredHere = 0;
-    if (isLoaded) {
-      const topic = phraseTopicCache.get(m.id);
-      masteredHere = topic.phrases.filter((p) => getPhraseBox(phraseId(m.id, p)).id === "mastered").length;
-    }
-    totalMastered += masteredHere;
-
-    const tile = document.createElement("div");
-    tile.className = "catalog-tile" + (isLoaded ? "" : " not-loaded") + (selectedForQuiz.has(m.id) ? " selected-for-quiz" : "");
-    const emoji = m.source === "allah" ? "☪️" : "💬";
-    const countLabel = isLoaded ? `${masteredHere}/${m.count}` : `⬇ ${m.count} фраз`;
-    const sizeLabel = !isLoaded ? `<span class="size">${formatSizeKB(m.sizeKB)}</span>` : "";
-    tile.innerHTML =
-      `<span class="emoji">${emoji}</span>` +
-      `<div class="tile-overlay">` +
-      `<span class="name">${m.title}</span>` +
-      `<span class="count">${countLabel}</span>` +
-      sizeLabel +
-      `</div>`;
-
-    const checkbox = document.createElement("input");
-    checkbox.type = "checkbox";
-    checkbox.className = "tile-select";
-    checkbox.checked = selectedForQuiz.has(m.id);
-    checkbox.title = "Взять эту тему в общий квиз вперемешку с другими";
-    checkbox.addEventListener("click", (e) => e.stopPropagation());
-    checkbox.addEventListener("change", () => {
-      if (checkbox.checked) selectedForQuiz.add(m.id);
-      else selectedForQuiz.delete(m.id);
-      tile.classList.toggle("selected-for-quiz", checkbox.checked);
-      updatePlaySelectedButton();
+  PHRASE_LEVEL_ORDER.forEach((level) => {
+    const ids = ordered.filter((id) => topicLevel(id) === level);
+    if (!ids.length) return;
+    const above = !levelAtMost(level, phraseLevelCap);
+    const section = document.createElement("div");
+    section.className = "phrase-level-section" + (above ? " locked" : "");
+    const levelCount = Object.values(phraseLevels.phrases).reduce(
+      (n, map) => n + Object.values(map).filter((lv) => lv === level).length,
+      0
+    );
+    const head = document.createElement("div");
+    head.className = "phrase-level-head";
+    head.innerHTML =
+      `<span class="phrase-level-title">${level} · ${PHRASE_LEVEL_LABELS[level]}</span>` +
+      `<span class="phrase-level-sub">${ids.length} ${ferryPlural(ids.length, "тема", "темы", "тем")} · ${levelCount} ${ferryPlural(levelCount, "фраза", "фразы", "фраз")}${above ? " · выше выбранного уровня" : ""}</span>`;
+    const playAll = document.createElement("button");
+    playAll.type = "button";
+    playAll.className = "phrase-level-play";
+    playAll.textContent = `▶ Весь ${level}`;
+    playAll.title = `Рейс по всем фразам уровня ${level} из всех тем — не нужно выбирать темы вручную`;
+    playAll.addEventListener("click", async () => {
+      playAll.disabled = true;
+      playAll.textContent = "⏳ Загружаем…";
+      const topicIds = Object.keys(phraseLevels.phrases).filter((id) =>
+        Object.values(phraseLevels.phrases[id]).some((lv) => lv === level)
+      );
+      const topics = await Promise.all(topicIds.map((id) => loadPhraseTopic(id)));
+      startQuiz(topics, level, true);
     });
-    tile.appendChild(checkbox);
+    head.appendChild(playAll);
+    section.appendChild(head);
 
-    tile.addEventListener("click", () => openPhraseTopic(m.id));
-    grid.appendChild(tile);
+    const sectionGrid = document.createElement("div");
+    sectionGrid.className = "catalog-grid";
+    ids.forEach((id) => {
+      const m = byId.get(id);
+      totalPhrases += m.count;
+      const isLoaded = loaded.has(m.id) && phraseTopicCache.has(m.id);
+      let masteredHere = 0;
+      if (isLoaded) {
+        const topic = phraseTopicCache.get(m.id);
+        masteredHere = topic.phrases.filter((p) => getPhraseBox(phraseId(m.id, p)).id === "mastered").length;
+      }
+      totalMastered += masteredHere;
+      sectionGrid.appendChild(buildPhraseTopicTile(m, isLoaded, masteredHere));
+    });
+    section.appendChild(sectionGrid);
+    grid.appendChild(section);
   });
 
   document.getElementById("phrases-mastered-count").textContent = totalMastered;
   document.getElementById("phrases-total-count").textContent = totalPhrases;
   document.getElementById("phrases-topic-count").textContent = phraseManifest.length;
   updatePlaySelectedButton();
+}
+
+function buildPhraseTopicTile(m, isLoaded, masteredHere) {
+  const tile = document.createElement("div");
+  tile.className = "catalog-tile" + (isLoaded ? "" : " not-loaded") + (selectedForQuiz.has(m.id) ? " selected-for-quiz" : "");
+  const emoji = m.source === "allah" ? "☪️" : "💬";
+  const countLabel = isLoaded ? `${masteredHere}/${m.count}` : `⬇ ${m.count} фраз`;
+  const sizeLabel = !isLoaded ? `<span class="size">${formatSizeKB(m.sizeKB)}</span>` : "";
+  tile.innerHTML =
+    `<span class="emoji">${emoji}</span>` +
+    `<div class="tile-overlay">` +
+    `<span class="name">${m.title}</span>` +
+    `<span class="count">${countLabel}</span>` +
+    sizeLabel +
+    `</div>`;
+
+  const checkbox = document.createElement("input");
+  checkbox.type = "checkbox";
+  checkbox.className = "tile-select";
+  checkbox.checked = selectedForQuiz.has(m.id);
+  checkbox.title = "Взять эту тему в общий рейс вперемешку с другими";
+  checkbox.addEventListener("click", (e) => e.stopPropagation());
+  checkbox.addEventListener("change", () => {
+    if (checkbox.checked) selectedForQuiz.add(m.id);
+    else selectedForQuiz.delete(m.id);
+    tile.classList.toggle("selected-for-quiz", checkbox.checked);
+    updatePlaySelectedButton();
+  });
+  tile.appendChild(checkbox);
+  tile.addEventListener("click", () => openPhraseTopic(m.id));
+  return tile;
+}
+
+// Переключатель «Уровень фраз»: A1 → до A2 → до B1 → все (как у слов маджонга).
+function renderPhraseLevelPicker() {
+  const el = document.getElementById("phrase-level-buttons");
+  if (!el) return;
+  el.innerHTML = "";
+  PHRASE_LEVEL_ORDER.forEach((lv, i) => {
+    const btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = "level-btn" + (lv === phraseLevelCap ? " active" : "");
+    btn.textContent = i === 0 ? "A1" : i === PHRASE_LEVEL_ORDER.length - 1 ? "все" : `до ${lv}`;
+    btn.addEventListener("click", () => {
+      phraseLevelCap = lv;
+      localStorage.setItem(PHRASE_LEVEL_CAP_KEY, lv);
+      renderPhrasesCatalog();
+    });
+    el.appendChild(btn);
+  });
 }
 
 function updatePlaySelectedButton() {
@@ -313,6 +408,7 @@ let currentTopicId = null;
 
 async function openPhraseTopic(id) {
   currentTopicId = id;
+  await fetchPhraseLevels();
   const manifestEntry = phraseManifest.find((m) => m.id === id);
   document.getElementById("phrase-topic-title").textContent = manifestEntry ? manifestEntry.title : "";
   setScreen("phrase-topic");
@@ -381,13 +477,47 @@ function phraseStatusLabel(id) {
   return `${box.label} — ${todayCorrect}/${DAILY_CORRECT_TO_ADVANCE} верных сегодня`;
 }
 
+// Фразы темы — группами по уровню, у группы своя кнопка «включить / выключить» (как
+// группы слов в маджонге): освоила A1 — подключаешь A2.
 function renderPhraseTopicList(topic) {
   const listEl = document.getElementById("phrase-topic-list");
   listEl.innerHTML = "";
-  const inner = document.createElement("div");
-  inner.className = "word-select-list-inner";
-  topic.phrases.forEach((p) => inner.appendChild(buildPhraseRow(topic, p)));
-  listEl.appendChild(inner);
+  PHRASE_LEVEL_ORDER.forEach((level) => {
+    const group = topic.phrases.filter((p) => phraseLevel(topic.id, p) === level);
+    if (!group.length) return;
+    const above = !levelAtMost(level, phraseLevelCap);
+    const section = document.createElement("div");
+    section.className = "word-level-group" + (above ? " locked" : "");
+    const header = document.createElement("div");
+    header.className = "word-level-header";
+    const on = group.filter((p) => !excludedPhrases.has(phraseId(topic.id, p))).length;
+    header.innerHTML =
+      `<span class="word-level-title">${level} · ${PHRASE_LEVEL_LABELS[level]}</span>` +
+      `<span class="word-level-count">${on}/${group.length} включено${above ? " · выше выбранного уровня — в рейс не попадут" : ""}</span>`;
+    const actions = document.createElement("span");
+    actions.className = "word-level-actions";
+    [
+      ["Включить группу", (id) => excludedPhrases.delete(id)],
+      ["Выключить", (id) => excludedPhrases.add(id)],
+    ].forEach(([label, apply]) => {
+      const btn = document.createElement("button");
+      btn.type = "button";
+      btn.textContent = label;
+      btn.addEventListener("click", () => {
+        group.forEach((p) => apply(phraseId(topic.id, p)));
+        saveExcludedPhrases();
+        renderPhraseTopicList(topic);
+      });
+      actions.appendChild(btn);
+    });
+    header.appendChild(actions);
+    section.appendChild(header);
+    const inner = document.createElement("div");
+    inner.className = "word-select-list-inner";
+    group.forEach((p) => inner.appendChild(buildPhraseRow(topic, p)));
+    section.appendChild(inner);
+    listEl.appendChild(section);
+  });
 }
 
 document.getElementById("phrase-topic-select-all-btn").addEventListener("click", () => {
@@ -432,10 +562,13 @@ function shuffle(arr) {
 // галочкой на экране темы (если так вышло, что снято всё — играем всё равно всем).
 function collectItems(topics) {
   const items = [];
+  const cap = quizMaxLevel || phraseLevelCap;
+  // «▶ Весь A1» — ровно этот уровень; обычный рейс — всё до потолка.
+  const fits = (topicId, p) => (quizExactLevel ? phraseLevel(topicId, p) === cap : levelAtMost(phraseLevel(topicId, p), cap));
   topics.forEach((topic) => {
     topic.phrases.forEach((p) => {
       const id = phraseId(topic.id, p);
-      if (!excludedPhrases.has(id)) items.push({ phrase: p, topicId: topic.id, id });
+      if (!excludedPhrases.has(id) && fits(topic.id, p)) items.push({ phrase: p, topicId: topic.id, id });
     });
   });
   if (items.length) return items;
@@ -513,10 +646,10 @@ function pickDistractors(topics, correctItem, n) {
 }
 
 // --- «Пароход до Каракёя»: игровой слой поверх квиза ---
-// Рейс = FERRY_ROUND фраз; каждый верный ответ продвигает пароход к пристани. Три стакана
-// чая: ошибка проливает один, пролиты все — «пароход ушёл без тебя», рейс заново. Серия
-// верных подряд — 🔥, каждые FERRY_REFILL_EVERY подряд доливают стакан. Причалила — звёзды
-// по оставшимся стаканам и счётчик рейсов, по которому на карте Стамбула открываются места
+// Рейс = FERRY_ROUND фраз = столько же препятствий на пути (скалы, волны, лодки): верный
+// ответ — пароход проходит препятствие, ошибка — пробоина в корпусе, FERRY_GLASSES пробоин —
+// пароход тонет, рейс заново. Серия верных подряд — 🔥, каждые FERRY_REFILL_EVERY подряд
+// заделывают пробоину. Причалила — звёзды по целому корпусу и счётчик рейсов, по которому на карте Стамбула открываются места
 // из жизни Ольги (см. assets/dialogues/LEGEND.md). Ящики Лейтнера (bumpPhraseStreak)
 // работают как раньше: каждый ответ засчитывается в прогресс фразы, даже если рейс сорвался.
 const FERRY_ROUND = 10;
@@ -542,18 +675,19 @@ const FERRY_PLACES = [
   { at: 66, emoji: "🚲", name: "Бююкада", tr: "Büyükada" },
 ];
 
+// «Фразы» — чтобы выучить фразу ЦЕЛИКОМ: узнать, вспомнить по-турецки, понять на слух.
+// Вставлять слова и собирать фразу по кусочкам — это работа «Грамматики», не здесь.
 const QUESTION_TYPES = {
   tr2ru: "Что это значит?",
   ru2tr: "Как сказать по-турецки?",
   listen: "Послушай и выбери перевод",
-  gap: "Вставь пропущенное слово",
-  build: "Собери фразу из слов",
 };
+// Препятствия на пути парохода — по одному на фразу рейса.
+const FERRY_OBSTACLES = ["🪨", "🌊", "⛵", "🪨", "🛥️", "🌊", "🪨", "⛵", "🌊", "🪨"];
 
 let ferry = null; // {done, glasses, combo, bestCombo, hints, token, asked}
 let ferryToken = 0; // отменяет отложенные колбэки (таймер плашки) брошенного рейса
 let lastQuestionType = null;
-let buildState = null; // {words: [...], placed: [tileEl...]}
 
 function getFerryMeta() {
   const m = phraseProgress[FERRY_META_KEY];
@@ -605,72 +739,29 @@ function ferrySfx(kind) {
   }
 }
 
-// --- текст фразы: слова для «собери» и «пропуск» ---
-const PUNCT_RE = /[.,!?;:«»"“”()]/g;
-function wordKey(w) {
-  return w.replace(PUNCT_RE, "").toLocaleLowerCase("tr").trim();
-}
-function wordLabel(w) {
-  return w.replace(PUNCT_RE, "").trim();
-}
-// Для «собери» и «пропуска» годятся только «чистые» фразы: без шаблонов «…» и вариантов
-// через «/», от 2 до 8 слов.
-function plainWords(tr) {
-  if (/[…\/]/.test(tr) || tr.includes("...")) return null;
-  const words = tr.split(/\s+/).filter((w) => wordKey(w));
-  if (words.length < 2 || words.length > 8) return null;
-  return words;
-}
-
-// skipFirst — не брать первые слова фраз: их заглавная буква в «пропуске» выдала бы, что это
-// не тот вариант (пропуск всегда в середине фразы).
-function topicWordPool(topicId, excludeKeys, skipFirst = false) {
-  const topic = currentTopics.find((t) => t.id === topicId) || currentTopics[0];
-  const pool = [];
-  const seen = new Set(excludeKeys);
-  const sources = [topic, ...currentTopics.filter((t) => t !== topic), ...phraseTopicCache.values()];
-  for (const t of sources) {
-    for (const p of shuffle(t.phrases)) {
-      for (const [wi, w] of p.tr.split(/\s+/).entries()) {
-        if ((skipFirst && wi === 0) || /[…\/]/.test(w)) continue;
-        const k = wordKey(w);
-        if (k.length < 2 || seen.has(k)) continue;
-        seen.add(k);
-        pool.push(wordLabel(w));
-      }
-    }
-    if (pool.length > 40) break;
-  }
-  return shuffle(pool);
-}
-
 // Чем лучше фраза выучена — тем труднее тип вопроса: новые чаще узнаём (тур → рус),
 // почти выученные — собираем сами.
 function pickQuestionType(item) {
   const box = getPhraseBoxId(item.id);
-  const words = plainWords(item.phrase.tr);
   const canListen = !muted && "speechSynthesis" in window;
+  // Новую фразу сначала узнаём, знакомую — вспоминаем по-турецки и ловим на слух.
   const byBox = {
-    new: ["tr2ru", "tr2ru", "ru2tr", "listen", "gap", "build"],
-    learning: ["ru2tr", "tr2ru", "listen", "gap", "build"],
-    almost: ["build", "build", "ru2tr", "listen", "gap"],
-    mastered: ["build", "ru2tr", "listen", "gap"],
+    new: ["tr2ru", "tr2ru", "listen"],
+    learning: ["tr2ru", "ru2tr", "listen"],
+    almost: ["ru2tr", "ru2tr", "listen"],
+    mastered: ["ru2tr", "listen"],
   };
-  let options = (byBox[box] || byBox.new).filter((t) => {
-    if (t === "listen") return canListen;
-    if (t === "gap") return !!words;
-    // Новую фразу собирать целиком тяжело — только если она короткая.
-    if (t === "build") return !!words && (box !== "new" || words.length <= 4);
-    return true;
-  });
+  let options = (byBox[box] || byBox.new).filter((t) => (t === "listen" ? canListen : true));
   if (!options.length) options = ["tr2ru"];
   const varied = options.filter((t) => t !== lastQuestionType);
   const pickFrom = varied.length ? varied : options;
   return pickFrom[Math.floor(Math.random() * pickFrom.length)];
 }
 
-function startQuiz(topics) {
+function startQuiz(topics, maxLevel = null, exact = false) {
   currentTopics = topics;
+  quizMaxLevel = maxLevel;
+  quizExactLevel = exact;
   allowedNewIds = null; // новая сессия — заново решаем, какие новые фразы пустить в оборот
   currentQueue = buildPhraseQueue(currentTopics);
   setScreen("quiz");
@@ -680,18 +771,17 @@ function startQuiz(topics) {
 }
 
 function quizHeaderTitle(topics) {
+  if (quizExactLevel && quizMaxLevel) return `Весь ${quizMaxLevel}`;
   if (topics.length === 1) return topics[0].title;
   if (topics.length === 2) return topics.map((t) => t.title).join(" + ");
   return `${topics.length} тем вместе`;
 }
 
 function updateQuizProgressLabel() {
-  let mastered = 0;
-  let total = 0;
-  currentTopics.forEach((topic) => {
-    total += topic.phrases.length;
-    mastered += topic.phrases.filter((p) => getPhraseBox(phraseId(topic.id, p)).id === "mastered").length;
-  });
+  // Только фразы, которые реально участвуют в рейсе (с учётом уровня и снятых галочек).
+  const items = collectItems(currentTopics);
+  const total = items.length;
+  const mastered = items.filter((it) => getPhraseBox(it.id).id === "mastered").length;
   document.getElementById("quiz-progress").textContent = `${mastered}/${total}`;
 }
 
@@ -713,15 +803,18 @@ function showFerryOverlay({ emoji, title, text, extra = "", goLabel, onGo }) {
 
 function showVoyageIntro() {
   ferryToken++;
-  ferry = { done: 0, glasses: FERRY_GLASSES, combo: 0, bestCombo: 0, hints: FERRY_HINTS, token: ferryToken, asked: new Set() };
+  ferry = {
+    done: 0, glasses: FERRY_GLASSES, combo: 0, bestCombo: 0, hints: FERRY_HINTS, token: ferryToken, asked: new Set(),
+    obstacles: shuffle(FERRY_OBSTACLES).slice(0, FERRY_ROUND),
+  };
   renderFerryBar();
   clearQuestionArea();
   const meta = getFerryMeta();
   showFerryOverlay({
     emoji: "⛴️",
     title: `Рейс №${meta.voyages + 1}: Кадыкёй → Каракёй`,
-    text: `${FERRY_ROUND} фраз — ${FERRY_ROUND} отрезков пути. С собой ${FERRY_GLASSES} стакана чая: ошибка проливает один. Прольёшь все — пароход уйдёт без тебя.`,
-    extra: `<span class="ferry-chip">🔥 ${FERRY_REFILL_EVERY} подряд — долить стакан</span><span class="ferry-chip">💡 ${FERRY_HINTS} подсказка на рейс</span>`,
+    text: `${FERRY_ROUND} фраз — ${FERRY_ROUND} препятствий на пути: скалы, волны, лодки. Верный ответ — проходишь мимо. Ошибка — пробоина в корпусе. ${FERRY_GLASSES} пробоины — пароход тонет.`,
+    extra: `<span class="ferry-chip">🔥 ${FERRY_REFILL_EVERY} подряд — заделать пробоину 🔧</span><span class="ferry-chip">💡 ${FERRY_HINTS} подсказка на рейс</span>`,
     goLabel: "Отчалить ▶",
     onGo: () => {
       ferrySfx("horn");
@@ -732,14 +825,24 @@ function showVoyageIntro() {
 
 function renderFerryBar() {
   if (!ferry) return;
+  // Корпус: целые доски и пробоины.
   const glassesEl = document.getElementById("ferry-glasses");
-  glassesEl.innerHTML = "";
+  glassesEl.innerHTML = '<span class="ferry-hull-label">Корпус</span>';
   for (let i = 0; i < FERRY_GLASSES; i++) {
     const g = document.createElement("span");
-    g.className = "ferry-glass" + (i < ferry.glasses ? "" : " spilled");
-    g.textContent = "🍵";
+    g.className = "ferry-hull" + (i < ferry.glasses ? "" : " broken");
     glassesEl.appendChild(g);
   }
+  // Препятствия на пути: пройденные бледнеют, следующее — впереди парохода.
+  const track = document.getElementById("ferry-track");
+  track.querySelectorAll(".ferry-obstacle").forEach((o) => o.remove());
+  ferry.obstacles.forEach((emoji, i) => {
+    const o = document.createElement("span");
+    o.className = "ferry-obstacle" + (i < ferry.done ? " passed" : i === ferry.done ? " next" : "");
+    o.textContent = emoji;
+    o.style.left = `${((i + 0.6) / FERRY_ROUND) * 100}%`;
+    track.appendChild(o);
+  });
   const comboEl = document.getElementById("ferry-combo");
   comboEl.textContent = ferry.combo >= 2 ? `🔥 ${ferry.combo}` : "";
   comboEl.classList.toggle("hot", ferry.combo >= 3);
@@ -756,7 +859,6 @@ function clearQuestionArea() {
   document.getElementById("quiz-prompt").textContent = "";
   document.getElementById("quiz-subprompt").textContent = "";
   document.getElementById("quiz-options").innerHTML = "";
-  document.getElementById("quiz-build").classList.add("hidden");
 }
 
 function nextQuestion() {
@@ -765,16 +867,13 @@ function nextQuestion() {
   ferry.asked.add(currentItem.id);
   hintUsed = false;
   questionAnswered = false;
-  buildState = null;
   clearQuestionArea();
 
   const type = pickQuestionType(currentItem);
   lastQuestionType = type;
   currentItem.type = type;
   document.getElementById("quiz-direction").textContent = QUESTION_TYPES[type];
-
-  if (type === "build") renderBuildQuestion();
-  else renderChoiceQuestion(type);
+  renderChoiceQuestion(type);
   renderFerryBar();
   updateQuizProgressLabel();
 }
@@ -811,20 +910,7 @@ function renderChoiceQuestion(type) {
   let correctText;
   let distractorTexts;
 
-  if (type === "gap") {
-    const words = plainWords(phrase.tr);
-    const candidates = words
-      .map((w, i) => ({ w, i }))
-      .filter((x) => x.i > 0 && wordKey(x.w).length >= 3)
-      .sort((a, b) => wordKey(b.w).length - wordKey(a.w).length)
-      .slice(0, 2);
-    const pick = candidates.length ? candidates[Math.floor(Math.random() * candidates.length)] : { w: words[words.length - 1], i: words.length - 1 };
-    correctText = wordLabel(pick.w);
-    const shown = words.map((w, i) => (i === pick.i ? w.replace(wordLabel(w), "＿＿＿") : w)).join(" ");
-    promptEl.textContent = shown;
-    subEl.textContent = phrase.ru;
-    distractorTexts = topicWordPool(currentItem.topicId, words.map(wordKey), true).slice(0, FERRY_OPTIONS - 1);
-  } else {
+  {
     const showRu = type === "tr2ru" || type === "listen";
     correctText = showRu ? phrase.ru : phrase.tr;
     const seen = new Set([correctText]);
@@ -874,89 +960,6 @@ function onAnswerClick(btn) {
   }
 }
 
-// --- «Собери фразу из слов» ---
-function renderBuildQuestion() {
-  const phrase = currentItem.phrase;
-  const words = plainWords(phrase.tr);
-  document.getElementById("quiz-prompt").textContent = phrase.ru;
-  const extra = topicWordPool(currentItem.topicId, words.map(wordKey)).slice(0, words.length <= 3 ? 2 : 3);
-  buildState = { words, placed: [] };
-
-  const box = document.getElementById("quiz-build");
-  box.classList.remove("hidden");
-  const answerEl = document.getElementById("quiz-build-answer");
-  const pileEl = document.getElementById("quiz-build-pile");
-  answerEl.innerHTML = "";
-  pileEl.innerHTML = "";
-  answerEl.classList.remove("wrong", "right");
-  shuffle([...words.map(wordLabel), ...extra]).forEach((text) => {
-    const tile = document.createElement("button");
-    tile.type = "button";
-    tile.className = "build-tile";
-    tile.textContent = text;
-    tile.addEventListener("click", () => onBuildTileClick(tile));
-    pileEl.appendChild(tile);
-  });
-}
-
-function onBuildTileClick(tile) {
-  if (questionAnswered || !buildState || !ferry) return;
-  const answerEl = document.getElementById("quiz-build-answer");
-  const pileEl = document.getElementById("quiz-build-pile");
-  ferrySfx("tap");
-  if (tile.parentElement === answerEl) {
-    pileEl.appendChild(tile);
-    buildState.placed = buildState.placed.filter((t) => t !== tile);
-    return;
-  }
-  answerEl.appendChild(tile);
-  buildState.placed.push(tile);
-  if (buildState.placed.length === buildState.words.length) checkBuild();
-}
-
-function buildIsCorrect() {
-  const got = buildState.placed.map((t) => wordKey(t.textContent));
-  const want = buildState.words.map(wordKey);
-  return got.length === want.length && got.every((k, i) => k === want[i]);
-}
-
-function checkBuild() {
-  const answerEl = document.getElementById("quiz-build-answer");
-  if (buildIsCorrect()) {
-    answerEl.classList.add("right");
-    onCorrect();
-    return;
-  }
-  answerEl.classList.add("wrong");
-  onWrong();
-  setTimeout(() => {
-    answerEl.classList.remove("wrong");
-    if (!buildState || questionAnswered) return;
-    const pileEl = document.getElementById("quiz-build-pile");
-    buildState.placed.forEach((t) => pileEl.appendChild(t));
-    buildState.placed = [];
-  }, 600);
-}
-
-// Подсказка в «собери»: убирает неверно поставленное и ставит следующее верное слово.
-function hintBuild() {
-  const answerEl = document.getElementById("quiz-build-answer");
-  const pileEl = document.getElementById("quiz-build-pile");
-  const want = buildState.words.map(wordKey);
-  let ok = 0;
-  while (ok < buildState.placed.length && wordKey(buildState.placed[ok].textContent) === want[ok]) ok++;
-  buildState.placed.slice(ok).forEach((t) => pileEl.appendChild(t));
-  buildState.placed = buildState.placed.slice(0, ok);
-  if (ok >= want.length) return;
-  const next = [...pileEl.children].find((t) => wordKey(t.textContent) === want[ok]);
-  if (next) {
-    answerEl.appendChild(next);
-    buildState.placed.push(next);
-    next.classList.add("hinted");
-  }
-  if (buildState.placed.length === buildState.words.length) checkBuild();
-}
-
 // --- общий исход ответа ---
 function onCorrect() {
   questionAnswered = true;
@@ -976,7 +979,7 @@ function onCorrect() {
   }
   ferrySfx(ferry.combo >= 3 && ferry.combo % FERRY_REFILL_EVERY === 0 ? "combo" : "ok");
   renderFerryBar();
-  if (refilled) flashFerryNote("🔥 Серия! Стакан чая долит 🍵");
+  if (refilled) flashFerryNote("🔥 Серия! Пробоину заделали 🔧");
   updateQuizProgressLabel();
   showPhraseMatchPopup(currentItem.phrase, () => {
     if (!ferry || ferry.token !== token) return;
@@ -991,9 +994,16 @@ function onWrong(revealCorrect) {
   ferry.glasses--;
   ferrySfx("spill");
   renderFerryBar();
-  const glasses = document.querySelectorAll("#ferry-glasses .ferry-glass.spilled");
-  const last = glasses[glasses.length - 1];
-  if (last) last.classList.add("just-spilled");
+  // Удар о препятствие: пароход вздрагивает, препятствие вспыхивает, доска трескается.
+  const holes = document.querySelectorAll("#ferry-glasses .ferry-hull.broken");
+  const last = holes[holes.length - 1];
+  if (last) last.classList.add("just-broken");
+  const boat = document.getElementById("ferry-boat");
+  boat.classList.remove("crash");
+  void boat.offsetWidth;
+  boat.classList.add("crash");
+  const next = document.querySelector("#ferry-track .ferry-obstacle.next");
+  if (next) next.classList.add("hit");
   if (ferry.glasses > 0) return;
   questionAnswered = true;
   if (revealCorrect) revealCorrect();
@@ -1041,7 +1051,7 @@ function finishVoyage() {
   showFerryOverlay({
     emoji: "⚓",
     title: "Причалили в Каракёе!",
-    text: `Рейс №${meta.voyages} пройден. Чая осталось: ${stars} из ${FERRY_GLASSES}.`,
+    text: `Рейс №${meta.voyages} пройден. Корпус цел: ${stars} из ${FERRY_GLASSES}.`,
     extra,
     goLabel: "Следующий рейс ▶",
     onGo: showVoyageIntro,
@@ -1053,9 +1063,9 @@ function sinkVoyage(phrase) {
   const done = ferry.done;
   ferry = null;
   showFerryOverlay({
-    emoji: "😿",
-    title: "Пароход ушёл без тебя",
-    text: `Все ${FERRY_GLASSES} стакана пролиты на отрезке ${done + 1} из ${FERRY_ROUND}. Ответы в этом рейсе всё равно засчитаны в прогресс фраз.`,
+    emoji: "🌊",
+    title: "Пароход затонул",
+    text: `${FERRY_GLASSES} пробоины на отрезке ${done + 1} из ${FERRY_ROUND}. Ответы в этом рейсе всё равно засчитаны в прогресс фраз.`,
     extra: `<div class="ferry-small">Запомни: <b>${escapeHtml(phrase.tr)}</b> — ${escapeHtml(phrase.ru)}</div>`,
     goLabel: "Новый рейс ↻",
     onGo: showVoyageIntro,
@@ -1113,10 +1123,6 @@ function useHint() {
   hintUsed = true;
   ferry.hints--;
   renderFerryBar();
-  if (currentItem.type === "build") {
-    hintBuild();
-    return;
-  }
   const optionsEl = document.getElementById("quiz-options");
   const wrongButtons = shuffle(Array.from(optionsEl.children).filter((b) => b.dataset.correct === "0" && !b.disabled));
   wrongButtons.slice(0, Math.ceil(wrongButtons.length / 2)).forEach((b) => {

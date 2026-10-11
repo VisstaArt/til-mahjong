@@ -196,11 +196,15 @@
       <div class="label"><span id="phrases-total-count">0</span> фраз всего в <span id="phrases-topic-count">0</span> темах</div>
     </div>
     <div id="ferry-map" class="ferry-map"></div>
+    <div class="manager-row word-level-picker">
+      <div class="label">Уровень фраз — в рейс попадают только фразы до этого уровня</div>
+      <div id="phrase-level-buttons" class="level-buttons"></div>
+    </div>
     <div id="phrases-catalog-loading" class="catalog-loading">⏳ Загружаем список тем…</div>
     <div class="manager-row">
-      <div class="label label-secondary">Отметь галочкой несколько тем — фразы в квизе будут перемешиваться между ними</div>
+      <div class="label label-secondary">Темы — по уровням, от самого нужного. «▶ Весь A1» — рейс по всем фразам уровня сразу; или отметь галочкой несколько тем.</div>
     </div>
-    <div id="phrases-catalog-grid" class="catalog-grid"></div>
+    <div id="phrases-catalog-grid" class="phrase-sections"></div>
     <div class="screen-actions">
       <button id="phrases-catalog-play-btn" disabled>▶ Играть вместе (<span id="phrases-selected-count">0</span>)</button>
     </div>
@@ -232,7 +236,7 @@
       </div>
       <div class="controls">
         <button id="quiz-mute-btn" title="Выключить звук">🔊</button>
-        <button id="quiz-hint-btn" title="Подсказка — одна на рейс: убрать половину неверных вариантов или поставить следующее слово">💡 <span id="quiz-hint-count">1</span></button>
+        <button id="quiz-hint-btn" title="Подсказка — одна на рейс: убрать половину неверных вариантов">💡 <span id="quiz-hint-count">1</span></button>
         <button id="quiz-back-btn" class="secondary" title="Вернуться к темам">← Темы</button>
       </div>
     </div>
@@ -243,7 +247,7 @@
         <span class="ferry-pier">Karaköy</span>
       </div>
       <div class="ferry-status">
-        <span id="ferry-glasses" class="ferry-glasses" title="Стаканы чая: ошибка проливает один"></span>
+        <span id="ferry-glasses" class="ferry-glasses" title="Корпус: ошибка — пробоина, три пробоины — пароход тонет"></span>
         <span id="ferry-combo" class="ferry-combo"></span>
         <span id="ferry-count" class="ferry-count">0/10</span>
       </div>
@@ -253,10 +257,6 @@
       <div id="quiz-prompt" class="quiz-prompt"></div>
       <div id="quiz-subprompt" class="quiz-subprompt"></div>
       <div id="quiz-options" class="quiz-options"></div>
-      <div id="quiz-build" class="quiz-build hidden">
-        <div id="quiz-build-answer" class="quiz-build-answer"></div>
-        <div id="quiz-build-pile" class="quiz-build-pile"></div>
-      </div>
     </main>
     <div id="ferry-overlay" class="ferry-overlay hidden">
       <div class="ferry-card">

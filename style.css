@@ -1742,38 +1742,6 @@ main {
 }
 .quiz-speak.big { font-size: 1.15rem; padding: 14px 22px; }
 
-.quiz-build { display: flex; flex-direction: column; align-items: center; gap: 18px; width: 100%; max-width: 640px; }
-.quiz-build.hidden { display: none; }
-.quiz-build-answer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 8px;
-  width: 100%;
-  min-height: 58px;
-  padding: 8px;
-  border-bottom: 2px dashed rgba(255, 255, 255, 0.25);
-  transition: border-color 0.2s ease;
-}
-.quiz-build-answer:empty::before { content: "нажимай слова по порядку"; align-self: center; font-size: 0.85rem; opacity: 0.45; }
-.quiz-build-answer.right { border-color: var(--scale-3); }
-.quiz-build-answer.wrong { border-color: var(--danger); animation: quiz-shake 0.3s ease; }
-.quiz-build-pile { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px 8px; }
-.build-tile {
-  background: var(--word-bg);
-  color: var(--word-text);
-  border: 2px solid rgba(255, 255, 255, 0.15);
-  border-radius: var(--radius);
-  box-shadow: 0 4px 0 #c9b98f, 0 6px 12px rgba(0, 0, 0, 0.35);
-  padding: 10px 14px;
-  font-size: 1.05rem;
-  font-weight: 700;
-  cursor: pointer;
-  user-select: none;
-  transition: transform 0.1s ease;
-}
-.build-tile:active { transform: translateY(2px); box-shadow: 0 2px 0 #c9b98f; }
-.build-tile.hinted { outline: 2px solid var(--gold); outline-offset: 1px; }
 
 .ferry-overlay {
   position: fixed;
@@ -1829,4 +1797,59 @@ main {
 
 @media (prefers-reduced-motion: reduce) {
   .ferry-boat, .ferry-boat.fast, .ferry-combo.hot, .ferry-glass.just-spilled, .ferry-card, .ferry-note { animation: none; transition: none; }
+}
+
+/* Пароход: препятствия на пути и корпус с пробоинами (вместо стаканов чая). */
+.ferry-obstacle {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -55%);
+  font-size: 1.05rem;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  pointer-events: none;
+}
+.ferry-obstacle.passed { opacity: 0.2; transform: translate(-50%, -55%) scale(0.75); }
+.ferry-obstacle.next { animation: ferry-obstacle-bob 1.4s ease-in-out infinite; }
+.ferry-obstacle.hit { animation: ferry-obstacle-hit 0.6s ease; filter: drop-shadow(0 0 6px var(--danger)); }
+@keyframes ferry-obstacle-bob { 50% { transform: translate(-50%, -70%); } }
+@keyframes ferry-obstacle-hit { 30% { transform: translate(-50%, -55%) scale(1.5); } }
+.ferry-boat { z-index: 1; }
+.ferry-boat.crash { animation: ferry-crash 0.5s ease; }
+@keyframes ferry-crash {
+  0%, 100% { transform: translate(-30%, -55%) scaleX(-1) rotate(0); }
+  25% { transform: translate(-45%, -55%) scaleX(-1) rotate(-14deg); }
+  60% { transform: translate(-22%, -55%) scaleX(-1) rotate(10deg); }
+}
+.ferry-hull-label { font-size: 0.72rem; opacity: 0.7; margin-right: 4px; align-self: center; }
+.ferry-hull {
+  width: 22px;
+  height: 12px;
+  border-radius: 3px;
+  background: linear-gradient(180deg, #c98a4b, #8c5a2b);
+  align-self: center;
+  transition: background 0.3s ease;
+}
+.ferry-hull.broken {
+  background:
+    linear-gradient(60deg, transparent 42%, #1b1b1b 43%, #1b1b1b 55%, transparent 56%),
+    linear-gradient(180deg, #6b3b2b, #3d2016);
+}
+.ferry-hull.just-broken { animation: ferry-spill 0.6s ease; }
+@media (prefers-reduced-motion: reduce) {
+  .ferry-obstacle.next, .ferry-obstacle.hit, .ferry-boat.crash, .ferry-hull.just-broken { animation: none; }
+}
+/* Каталог фраз по уровням. */
+.phrase-sections { display: flex; flex-direction: column; gap: 18px; }
+.phrase-level-section.locked { opacity: 0.55; }
+.phrase-level-head { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 12px; margin-bottom: 10px; }
+.phrase-level-title { font-weight: 800; color: var(--gold); font-size: 1.05rem; }
+.phrase-level-sub { font-size: 0.82rem; opacity: 0.7; flex: 1; }
+.phrase-level-head .phrase-level-play {
+  background: var(--gold);
+  color: #1b1b1b;
+  border: none;
+  border-radius: 999px;
+  padding: 7px 16px;
+  font-weight: 700;
+  cursor: pointer;
 }
