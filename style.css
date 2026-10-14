@@ -2128,3 +2128,208 @@ body[data-screen="today"] .today-banner { background: var(--gold); color: #2a211
 .today-finish { padding: 12px; border-radius: 12px; background: rgba(149, 213, 178, 0.15); color: #b7e4c7; font-weight: 700; text-align: center; }
 .today-note { margin: 0; font-size: 0.78rem; opacity: 0.65; line-height: 1.4; }
 body[data-screen="game"] .today-banner, body[data-screen="layout"] .today-banner { display: none; }
+
+/* Игры со словами (wordgames.js) */
+body[data-screen="word-game"] #screen-word-game { display: flex; }
+body[data-screen="word-game"] .topbar { display: none; }
+.wg-strip { flex-direction: column; align-items: stretch; }
+.wg-buttons { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 8px; }
+.wg-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+  padding: 10px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--text);
+  text-align: left;
+  cursor: pointer;
+}
+.wg-card b { font-size: 0.95rem; }
+.wg-card small { font-size: 0.75rem; opacity: 0.7; line-height: 1.3; }
+.wg-card-emoji { font-size: 1.5rem; }
+#wg-hint-btn.hidden { display: none; }
+.wg-lives { text-align: center; font-size: 1.1rem; letter-spacing: 2px; min-height: 1.4em; }
+.wg-lives .dim { opacity: 0.35; }
+.wg-main { flex: 1; min-height: 0; display: flex; flex-direction: column; gap: 10px; padding: 8px 16px 16px; overflow-y: auto; }
+.wg-clue { display: flex; flex-direction: column; align-items: center; gap: 4px; }
+.wg-clue img { width: 64px; height: 64px; object-fit: contain; }
+.wg-clue.small img { width: 40px; height: 40px; }
+.wg-swatch { width: 56px; height: 40px; border-radius: 8px; border: 2px solid rgba(255, 255, 255, 0.3); }
+.wg-clue.small .wg-swatch { width: 36px; height: 26px; }
+.wg-num { font-size: 1.8rem; font-weight: 800; color: var(--gold); line-height: 1; }
+.wg-ru { font-size: 0.95rem; font-weight: 600; text-align: center; line-height: 1.2; }
+.wg-clue.small .wg-ru { font-size: 0.82rem; }
+
+/* 🌧 Слова падают */
+.wg-rain { padding: 0; gap: 0; overflow: hidden; }
+.rain-field {
+  position: relative;
+  flex: 1;
+  overflow: hidden;
+  background: linear-gradient(180deg, rgba(31, 78, 107, 0.35), rgba(15, 26, 23, 0.2));
+  touch-action: manipulation;
+}
+.rain-drop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 12px;
+  background: var(--word-bg);
+  color: var(--word-text);
+  font-size: 1.05rem;
+  font-weight: 700;
+  white-space: nowrap;
+  box-shadow: 0 4px 0 rgba(0, 0, 0, 0.35);
+  cursor: pointer;
+}
+.rain-drop.caught { background: var(--scale-3); color: #fff; transition: opacity 0.35s, transform 0.35s; opacity: 0; }
+.rain-drop.wrong { background: var(--danger); color: #fff; transition: opacity 0.35s; opacity: 0; }
+.rain-note {
+  position: absolute;
+  left: 50%;
+  bottom: 12px;
+  transform: translateX(-50%);
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: var(--danger);
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+.rain-target {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  min-height: 96px;
+  padding: 10px 16px calc(10px + env(safe-area-inset-bottom));
+  background: rgba(233, 196, 106, 0.12);
+  border-top: 2px solid var(--gold);
+}
+.rain-label { font-size: 0.8rem; opacity: 0.7; text-transform: uppercase; letter-spacing: 0.05em; }
+.rain-listen { padding: 12px 16px; border: none; border-radius: 999px; background: var(--gold); color: #2a2110; font-weight: 800; font-size: 1rem; }
+
+/* 🔎 Найди слова */
+.search-grid {
+  display: grid;
+  gap: 3px;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  touch-action: none;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.search-grid.shake { animation: quiz-shake 0.3s ease; }
+.search-cell {
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background: var(--word-bg);
+  color: var(--word-text);
+  font-weight: 800;
+  font-size: 1.15rem;
+}
+.search-cell.sel { background: var(--gold); }
+.search-cell.hint { animation: journey-pulse 0.8s ease-in-out 3; outline: 3px solid var(--gold); }
+.search-cell.found.c0, .search-clue.found.c0 { background: #95d5b2; }
+.search-cell.found.c1, .search-clue.found.c1 { background: #a2d2ff; }
+.search-cell.found.c2, .search-clue.found.c2 { background: #ffc8dd; }
+.search-cell.found.c3, .search-clue.found.c3 { background: #ffd166; }
+.search-cell.found.c4, .search-clue.found.c4 { background: #cdb4db; }
+.search-cell.found.c5, .search-clue.found.c5 { background: #f4a261; }
+.search-clues { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+.search-clue { display: flex; flex-direction: column; align-items: center; gap: 4px; padding: 8px 4px; border-radius: 10px; background: rgba(255, 255, 255, 0.06); }
+.search-clue.found { color: #2a2110; }
+.search-clue.hint { outline: 2px solid var(--gold); }
+.search-word { font-weight: 800; letter-spacing: 0.08em; font-size: 0.85rem; opacity: 0.85; }
+
+/* ✏️ Кроссворд */
+.wg-cross { align-items: center; }
+.cross-grid { display: grid; gap: 2px; justify-content: center; }
+.cross-cell {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  background: var(--word-bg);
+  color: var(--word-text);
+  font-weight: 800;
+  cursor: pointer;
+}
+.cross-cell.in-word { background: #ffe8a8; }
+.cross-cell.cursor { box-shadow: inset 0 0 0 3px var(--scale-2); }
+.cross-cell.locked { background: #95d5b2; }
+.cross-cell.bad { background: var(--danger); color: #fff; }
+.cross-num { position: absolute; top: 1px; left: 2px; font-size: 0.5em; font-weight: 600; opacity: 0.7; }
+.cross-current {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: 100%;
+  padding: 8px;
+  border-radius: 12px;
+  background: rgba(233, 196, 106, 0.12);
+}
+.cross-len { font-size: 0.8rem; opacity: 0.7; }
+.cross-clue-num { font-weight: 800; color: var(--gold); }
+.cross-keys { display: flex; flex-direction: column; gap: 5px; width: 100%; max-width: 440px; }
+.cross-key-row { display: flex; justify-content: center; gap: 3px; }
+.cross-key {
+  flex: 1;
+  max-width: 38px;
+  height: 44px;
+  padding: 0;
+  border: none;
+  border-radius: 6px;
+  background: var(--word-bg);
+  color: var(--word-text);
+  font-size: 1.05rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+.cross-key.wide { max-width: 64px; flex: 1.6; background: var(--scale-2); color: var(--text); }
+.cross-clues { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 6px; width: 100%; }
+.cross-clue {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 8px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--text);
+  text-align: left;
+  cursor: pointer;
+}
+.cross-clue .wg-clue { flex-direction: row; }
+.cross-clue.current { border-color: var(--gold); }
+.cross-clue.done { opacity: 0.5; }
+
+/* 👂 Слушай и найди */
+.wg-listen { align-items: center; }
+.listen-play { padding: 14px 22px; border: none; border-radius: 999px; background: var(--gold); color: #2a2110; font-size: 1.1rem; font-weight: 800; cursor: pointer; }
+.listen-options { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; width: 100%; max-width: 520px; }
+.listen-option {
+  position: relative;
+  min-height: 110px;
+  padding: 10px;
+  border: 2px solid transparent;
+  border-radius: 14px;
+  background: var(--word-bg);
+  color: var(--word-text);
+  cursor: pointer;
+}
+.listen-option.correct { border-color: var(--scale-3); background: #b7e4c7; }
+.listen-option.wrong { background: var(--danger); color: #fff; }
+.listen-tr { display: block; margin-top: 4px; font-weight: 800; color: var(--scale-1); }

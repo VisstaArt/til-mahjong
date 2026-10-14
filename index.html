@@ -57,6 +57,10 @@
       <div class="label">Уровень слов — в игру попадают только слова до этого уровня</div>
       <div id="word-level-buttons" class="level-buttons"></div>
     </div>
+    <div class="manager-row wg-strip">
+      <div class="label">🎮 Игры с выбранными словами — те же слова, что и для маджонга</div>
+      <div id="wg-buttons" class="wg-buttons"></div>
+    </div>
     <div id="catalog-loading" class="catalog-loading">⏳ Загружаем словарь…</div>
     <div id="catalog-grid" class="catalog-grid"></div>
     <div class="screen-actions">
@@ -275,6 +279,36 @@
     </div>
   </section>
 
+  <!-- Игры со словами (wordgames.js): слова падают, найди слова, кроссворд, на слух -->
+  <section id="screen-word-game" class="screen screen-game">
+    <div class="game-bar">
+      <div class="stats">
+        <div class="stat"><span class="label">Игра</span><span id="wg-title">—</span></div>
+        <div class="stat"><span class="label" id="wg-score-label">Счёт</span><span id="wg-score">0</span></div>
+        <div class="stat"><span class="label" id="wg-progress-label">Прогресс</span><span id="wg-progress">—</span></div>
+      </div>
+      <div class="controls">
+        <button id="wg-mute-btn" type="button" title="Звук">🔊</button>
+        <button id="wg-hint-btn" type="button" class="hidden" title="Подсказка">💡</button>
+        <button id="wg-back-btn" type="button" class="secondary">← Слова</button>
+      </div>
+    </div>
+    <div id="wg-lives" class="wg-lives"></div>
+    <main id="wg-main" class="wg-main"></main>
+    <div id="wg-overlay" class="ferry-overlay hidden">
+      <div class="ferry-card">
+        <div id="wg-card-emoji" class="ferry-card-emoji"></div>
+        <h3 id="wg-card-title"></h3>
+        <p id="wg-card-text"></p>
+        <div id="wg-card-extra" class="ferry-card-extra"></div>
+        <div class="ferry-card-actions screen-actions">
+          <button id="wg-again-btn" type="button">Ещё раз ▶</button>
+          <button id="wg-exit-btn" type="button" class="secondary">← Слова</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- «Занятие дня» (today.js): слова → фразы → грамматика → диалог одной темы -->
   <section id="screen-today" class="screen manager-panel">
     <div id="today-root"></div>
@@ -451,5 +485,6 @@
   <script src="dialogues.js"></script>
   <script src="grammar.js"></script>
   <script src="today.js"></script>
+  <script src="wordgames.js"></script>
 </body>
 </html>
