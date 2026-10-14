@@ -613,6 +613,7 @@ function finishDialogueRun() {
   document.getElementById("dialogue-replay-role-btn").textContent = next >= 5 ? "Ещё раз (живой разговор)" : `Дальше: ступень ${next} ▶`;
   document.getElementById("dialogue-next-btn").classList.toggle("hidden", !getNextDialogueInTopic());
   document.getElementById("dialogue-finished").classList.remove("hidden");
+  if (typeof dayBlockDone === "function") dayBlockDone("dialogue");
 }
 
 // «Сейчас можно говорить вслух?» — раз в день, общий ответ с «Фразами».

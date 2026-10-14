@@ -343,11 +343,12 @@ function roundsForHits(hits) {
 function roundsText(n) {
   return `≈ ${voyagesWord(n)}`;
 }
-function levelEtaText(st, level) {
-  if (!st.answersLeft) return `Весь ${level} выучен ⭐`;
+// label — «A1» для уровня или «темы «Семья»» для рейса по одной теме.
+function levelEtaText(st, label) {
+  if (!st.answersLeft) return `Всё выучено ⭐`;
   const days = Math.ceil(st.rounds / 10);
   const daysPart = st.rounds > 10 ? ` — по 10 рейсов в день это ${days} ${ferryPlural(days, "день", "дня", "дней")}` : "";
-  return `До конца ${level}: ${roundsText(st.rounds)}${daysPart}, если почти всегда отвечать верно`;
+  return `До конца ${label}: ${roundsText(st.rounds)}${daysPart}, если почти всегда отвечать верно`;
 }
 
 // --- исключённые из практики фразы (аналог excludedWords) ---
@@ -1040,7 +1041,7 @@ function startQuiz(topics, maxLevel = null, exact = false) {
 }
 
 function quizHeaderTitle(topics) {
-  if (quizExactLevel && quizMaxLevel) return `Весь ${quizMaxLevel}`;
+  if (quizExactLevel && quizMaxLevel) return topics.length === 1 ? `${topics[0].title} · ${quizMaxLevel}` : `Весь ${quizMaxLevel}`;
   if (topics.length === 1) return topics[0].title;
   if (topics.length === 2) return topics.map((t) => t.title).join(" + ");
   return `${topics.length} тем вместе`;
@@ -1535,7 +1536,9 @@ function voyageReportHtml(stats) {
   return (
     chips.map((c) => `<span class="ferry-chip">${c}</span>`).join("") +
     `<div class="ferry-small">${escapeHtml(courseText(course))}</div>` +
-    (quizExactLevel && quizMaxLevel ? `<div class="ferry-small dim">${escapeHtml(levelEtaText(course.st, quizMaxLevel))}</div>` : "")
+    (quizExactLevel && quizMaxLevel
+      ? `<div class="ferry-small dim">${escapeHtml(levelEtaText(course.st, currentTopics.length === 1 ? `темы «${currentTopics[0].title}»` : quizMaxLevel))}</div>`
+      : "")
   );
 }
 
@@ -1553,6 +1556,7 @@ function finishVoyage() {
   if (arrived) extra += `<div class="ferry-unlock">Новый причал на карте: <b>${arrived.emoji} ${escapeHtml(arrived.name)}</b></div>`;
   extra += voyageReportHtml(ferry.stats);
   ferry = null;
+  if (typeof dayBlockDone === "function") dayBlockDone("phrases");
   showFerryOverlay({
     emoji: arrived ? arrived.emoji : "⚓",
     title: arrived ? `Причалили: ${arrived.name}!` : "Рейс пройден!",
@@ -1568,6 +1572,7 @@ function sinkVoyage(phrase) {
   const done = ferry.done;
   const stats = ferry.stats;
   ferry = null;
+  if (typeof dayBlockDone === "function") dayBlockDone("phrases");
   showFerryOverlay({
     emoji: "🌊",
     title: "Пароход затонул",

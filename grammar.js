@@ -1467,6 +1467,7 @@ function showRoundResult(saved) {
   againBtn.classList.toggle("secondary", saved);
   againBtn.onclick = () => startGrammarRound(topicId, level.n);
   document.getElementById("grammar-round-end").classList.remove("hidden");
+  if (typeof dayBlockDone === "function") dayBlockDone("grammar");
 }
 
 function openMemoOverlay() {

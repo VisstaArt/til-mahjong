@@ -22,6 +22,7 @@
       <button id="mode-dialogues-btn" class="mode-btn" type="button">🎭 Диалоги</button>
       <button id="mode-grammar-btn" class="mode-btn" type="button">🧩 Грамматика</button>
     </div>
+    <button id="today-banner" class="today-banner" type="button">📅 Занятие дня</button>
     <div id="account-box" class="account-box hidden">
       <span id="account-email"></span>
       <button id="account-logout-btn" class="secondary small">Выйти</button>
@@ -274,6 +275,11 @@
     </div>
   </section>
 
+  <!-- «Занятие дня» (today.js): слова → фразы → грамматика → диалог одной темы -->
+  <section id="screen-today" class="screen manager-panel">
+    <div id="today-root"></div>
+  </section>
+
   <!-- ЭКРАН 6: каталог тем — диалоги -->
   <section id="screen-dialogues-catalog" class="screen manager-panel">
     <div class="manager-row">
@@ -424,6 +430,8 @@
     </div>
   </div>
 
+  <button id="today-pill" class="today-pill hidden" type="button"></button>
+
   <div id="win-screen" class="win-screen hidden">
     <div class="win-card">
       <h2>🎉 Все пары найдены!</h2>
@@ -442,5 +450,6 @@
   <script src="phrases.js"></script>
   <script src="dialogues.js"></script>
   <script src="grammar.js"></script>
+  <script src="today.js"></script>
 </body>
 </html>

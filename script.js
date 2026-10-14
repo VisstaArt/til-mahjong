@@ -357,8 +357,11 @@ function getAllAvailableWords() {
   return customWords;
 }
 
-// Колода для игры — только отмеченные чекбоксом слова.
+// Колода для игры — только отмеченные чекбоксом слова. В «Занятии дня» (today.js) —
+// слова темы дня, без трогания своих галочек.
+let dayDeckOverride = null;
 function getActiveDeck() {
+  if (dayDeckOverride && dayDeckOverride.length) return dayDeckOverride;
   return getAllAvailableWords().filter((w) => !excludedWords.has(w.tr) && isWithinLevel(w));
 }
 
@@ -722,6 +725,7 @@ function endGame() {
   const s = String(seconds % 60).padStart(2, "0");
   winStatsEl.textContent = `Время: ${m}:${s} · Ходы: ${moves}`;
   winScreenEl.classList.remove("hidden");
+  if (typeof dayBlockDone === "function") dayBlockDone("words");
 }
 
 function newGame() {
