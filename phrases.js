@@ -16,21 +16,17 @@ const PHRASE_LOADED_KEY = "mahjong-phrase-loaded-topics";
 
 // Тот же принцип "ящиков", что и для слов (см. PROGRESS_BOXES в script.js), но отдельное
 // хранилище — прогресс по фразам не должен смешиваться с прогрессом по словам маджонга.
-// В отличие от слов, переход между ящиками здесь разнесён по времени (см. ниже,
-// система Лейтнера) — не через "N подряд правильных за один присест".
+// Переход между ящиками разнесён по дням (система Лейтнера, см. bumpPhraseStreak).
 const PHRASE_BOXES = [
-  { id: "new", label: "новое", emoji: "🔴", weight: 3 },
-  { id: "learning", label: "учится", emoji: "🟡", weight: 2 },
-  { id: "almost", label: "почти выучено", emoji: "🟢", weight: 1 },
-  { id: "mastered", label: "выучено", emoji: "⭐", weight: 0 },
+  { id: "new", label: "в работе", emoji: "🔴" },
+  { id: "learning", label: "запомнилась", emoji: "🟡" },
+  { id: "almost", label: "почти выучена", emoji: "🟢" },
+  { id: "mastered", label: "выучена", emoji: "⭐" },
 ];
-const PHRASE_BOX_ORDER = PHRASE_BOXES.map((b) => b.id);
 
-// Не больше стольки совсем новых фраз "в работе" одновременно (см. MAX_NEW_WORDS_PER_GAME
-// в script.js — тот же принцип): открыть свежую тему и сразу получить только незнакомые
-// фразы подряд — тяжело и не запоминается. Остальные места в раскладке добираются
-// повторами уже отобранных фраз и/или более простыми (учится/почти выучено/выучено).
-const MAX_NEW_PHRASES_PER_SESSION = 15;
+// «В работе» одновременно столько начатых фраз; запомнилась одна — её место тут же
+// занимает следующая по пути. Так фразы «кружатся», а новые всё время добавляются.
+const PHRASE_WORKING_SET = 20;
 
 let phraseManifest = []; // [{id, title, source, count, sizeKB}]
 
@@ -70,8 +66,6 @@ let phraseTopicCache = new Map(); // id → {id, title, source, phrases: [...]}
 let selectedForQuiz = new Set(); // id тем, отмеченных чекбоксом в каталоге для общего квиза
 
 let currentTopics = []; // темы, участвующие в текущей сессии квиза (1 или несколько)
-let currentQueue = []; // очередь элементов {phrase, topicId, id}
-let allowedNewIds = null; // Set id — какие "новые" фразы допущены в этой сессии (фиксируется один раз при старте)
 let currentItem = null; // {phrase, topicId, id} — текущий вопрос
 let hintUsed = false;
 let questionAnswered = false;
@@ -116,84 +110,79 @@ function getPhraseBox(id, store = phraseProgress) {
   return PHRASE_BOXES.find((b) => b.id === getPhraseBoxId(id, store));
 }
 
-// Система Лейтнера: у каждого ящика — свой интервал в днях, раньше которого фраза не
-// "созрела" для перехода на следующий уровень (0 для "new" — учить можно сразу).
-// Даже пока фраза не созрела, она всё равно попадается в квизе по весу ящика (см.
-// buildPhraseQueue) — это просто тренировка, без продвижения вперёд.
-const PHRASE_BOX_INTERVAL_DAYS = { new: 0, learning: 1, almost: 3 };
-// Сколько верных ответов нужно набрать за ОДИН календарный день (когда интервал уже
-// прошёл), чтобы фраза перешла на следующий уровень — одного-двух мало, могло быть
-// случайное угадывание; после DAILY_CORRECT_TO_ADVANCE подряд за день это уже
-// настоящее подтверждение. Комбинация даёт то, что и требовалось: выучить фразу
-// "за один присест" физически невозможно — нужно обязательно вернуться к ней в другой
-// день, но сам переход внутри созревшего дня не растягивается на неделю ответов.
-const DAILY_CORRECT_TO_ADVANCE = 4;
-
-// "Выучено" — не тупик: фраза уходит из ротации, но периодически возвращается на
-// контрольную проверку по нарастающим интервалам (неделя → месяц → квартал →
-// полгода, дальше повторяется раз в полгода). Верный ответ на контрольной проверке —
-// это ОДИН ответ, а не DAILY_CORRECT_TO_ADVANCE: тут не учим заново, а просто
-// подтверждаем, что не забыла, и просто отодвигаем следующую проверку дальше.
-// Ошиблась — сразу назад в 🔴 "новое", как и при любой другой ошибке.
+// Как фраза учится:
+// 🔴 «в работе» — NEW_HITS_TO_LEARN верных ответов (не обязательно подряд и не обязательно
+//    за один день) → 🟡 «запомнилась», повтор завтра;
+// 🟡 → 🟢 — вспомнила на следующий день (один верный ответ), повтор через 3 дня;
+// 🟢 → ⭐ — вспомнила через 3 дня; дальше контрольные проверки через неделю, месяц,
+//    3 месяца, полгода. Десять верных ответов за один вечер не значат, что фраза
+//    запомнилась надолго, — поэтому ⭐ нельзя получить за один день.
+// Пока срок повтора не подошёл, фраза в рейсы не попадает — место отдаётся новым.
+// Ошибка: у фразы «в работе» минус один верный ответ; запомнившаяся — снова в работу.
+const NEW_HITS_TO_LEARN = 3;
+const PHRASE_BOX_INTERVAL_DAYS = { learning: 1, almost: 3 };
 const MASTERED_REVIEW_INTERVALS_DAYS = [7, 30, 90, 180];
 
+// Верные ответы фразы «в работе» (todayCorrect — поле старых записей).
+function phraseHits(id, store = phraseProgress) {
+  const p = store[id];
+  if (!p || (p.box || "new") !== "new") return 0;
+  return p.hits ?? p.todayCorrect ?? 0;
+}
+// Хоть раз дошла до 🟡 — для карты пути: пароход не плывёт назад, если фраза
+// потом забылась и вернулась в работу.
+function phraseEverLearned(id, store = phraseProgress) {
+  const p = store[id];
+  return !!p && (!!p.ever || (p.box || "new") !== "new");
+}
+// Подошёл ли срок повтора у запомнившейся / выученной фразы.
+function isPhraseDue(id, store = phraseProgress) {
+  const p = store[id];
+  if (!p || (p.box || "new") === "new") return false;
+  return !p.dueDay || todayStr() >= p.dueDay;
+}
+
+// Возвращает, что случилось, — для плашки после ответа: hit (ещё в работе), learned (🟡),
+// almost (🟢), mastered (⭐), kept (⭐ подтверждена), practice (срок не подошёл — без
+// счёта), miss (минус верный ответ), back (забылась — снова в работе).
 function bumpPhraseStreak(id, correct, store = phraseProgress, save = savePhraseProgress) {
   const today = todayStr();
-  const prev = store[id] || { box: "new", dueDay: null, todayDay: null, todayCorrect: 0, reviewStage: 0 };
+  const prev = store[id];
+  const box = (prev && prev.box) || "new";
+  const ever = phraseEverLearned(id, store);
+  const write = (fields) => {
+    store[id] = { box: "new", dueDay: null, todayDay: today, hits: 0, reviewStage: 0, ever, ...fields };
+    save();
+  };
 
   if (!correct) {
-    store[id] = { box: "new", dueDay: null, todayDay: today, todayCorrect: 0, reviewStage: 0 };
-    save();
-    return;
+    if (box === "new") {
+      const hits = Math.max(0, phraseHits(id, store) - 1);
+      write({ hits });
+      return { kind: "miss", hits };
+    }
+    write({});
+    return { kind: "back" };
   }
 
-  if (prev.box === "mastered") {
-    const stage = Math.min((prev.reviewStage || 0) + 1, MASTERED_REVIEW_INTERVALS_DAYS.length - 1);
-    store[id] = {
-      box: "mastered",
-      dueDay: addDaysStr(today, MASTERED_REVIEW_INTERVALS_DAYS[stage]),
-      todayDay: today,
-      todayCorrect: 0,
-      reviewStage: stage,
-    };
-    save();
-    return;
+  if (box === "new") {
+    const hits = phraseHits(id, store) + 1;
+    if (hits >= NEW_HITS_TO_LEARN) {
+      write({ box: "learning", dueDay: addDaysStr(today, PHRASE_BOX_INTERVAL_DAYS.learning), ever: true });
+      return { kind: "learned" };
+    }
+    write({ hits });
+    return { kind: "hit", hits };
   }
 
-  // Ящик ещё не "созрел" для перехода — засчитываем как практику, без движения вперёд.
-  if (prev.dueDay && today < prev.dueDay) return;
-
-  const todayCorrect = (prev.todayDay === today ? prev.todayCorrect || 0 : 0) + 1;
-
-  if (todayCorrect >= DAILY_CORRECT_TO_ADVANCE) {
-    const nextBox = PHRASE_BOX_ORDER[Math.min(PHRASE_BOX_ORDER.indexOf(prev.box || "new") + 1, PHRASE_BOX_ORDER.length - 1)];
-    const dueDay =
-      nextBox === "mastered" ? addDaysStr(today, MASTERED_REVIEW_INTERVALS_DAYS[0]) : addDaysStr(today, PHRASE_BOX_INTERVAL_DAYS[nextBox]);
-    store[id] = { box: nextBox, dueDay, todayDay: today, todayCorrect: 0, reviewStage: 0 };
-  } else {
-    store[id] = { box: prev.box || "new", dueDay: prev.dueDay || null, todayDay: today, todayCorrect, reviewStage: prev.reviewStage || 0 };
+  if (!isPhraseDue(id, store)) return { kind: "practice", dueDay: prev.dueDay };
+  if (box === "learning") {
+    write({ box: "almost", dueDay: addDaysStr(today, PHRASE_BOX_INTERVAL_DAYS.almost), ever: true });
+    return { kind: "almost", days: PHRASE_BOX_INTERVAL_DAYS.almost };
   }
-  save();
-}
-
-// Сколько сегодняшних верных ответов уже засчитано в счётчик перехода (0, если фраза
-// ещё не созрела для перехода или сегодня по ней ещё не отвечали) — для подсказки в
-// списке темы.
-function getPhraseTodayCorrect(id) {
-  const p = phraseProgress[id];
-  if (!p) return 0;
-  const today = todayStr();
-  if (p.dueDay && today < p.dueDay) return 0;
-  return p.todayDay === today ? p.todayCorrect || 0 : 0;
-}
-
-// "Созрела" ли выученная фраза для контрольной проверки — используется, чтобы решить,
-// брать ли её в пул квиза (см. buildPhraseQueue): пока не назрел срок, она в квизе не
-// участвует вообще, экономя место для того, что реально нужно повторять.
-function isPhraseMasteredDue(id, store = phraseProgress) {
-  const p = store[id];
-  if (!p || p.box !== "mastered") return false;
-  return !p.dueDay || todayStr() >= p.dueDay;
+  const stage = box === "almost" ? 0 : Math.min((prev.reviewStage || 0) + 1, MASTERED_REVIEW_INTERVALS_DAYS.length - 1);
+  write({ box: "mastered", dueDay: addDaysStr(today, MASTERED_REVIEW_INTERVALS_DAYS[stage]), reviewStage: stage, ever: true });
+  return { kind: box === "almost" ? "mastered" : "kept", days: MASTERED_REVIEW_INTERVALS_DAYS[stage] };
 }
 
 // Ручная пометка "уже знаю эту фразу" — сразу переводит в ящик "выучено", как markWordKnown,
@@ -204,10 +193,161 @@ function markPhraseKnown(id) {
     box: "mastered",
     dueDay: addDaysStr(today, MASTERED_REVIEW_INTERVALS_DAYS[0]),
     todayDay: today,
-    todayCorrect: 0,
+    hits: 0,
     reviewStage: 0,
+    ever: true,
   };
   savePhraseProgress();
+}
+
+// «завтра», «через 3 дня», «через месяц»… — для плашек и списка темы.
+function inDaysText(days) {
+  if (days <= 0) return "сегодня";
+  if (days === 1) return "завтра";
+  if (days === 30) return "через месяц";
+  if (days === 90) return "через 3 месяца";
+  if (days === 180) return "через полгода";
+  if (days === 7) return "через неделю";
+  return `через ${days} ${ferryPlural(days, "день", "дня", "дней")}`;
+}
+function daysUntil(dayStr) {
+  const [y, m, d] = dayStr.split("-").map(Number);
+  const [ty, tm, td] = todayStr().split("-").map(Number);
+  return Math.round((new Date(y, m - 1, d) - new Date(ty, tm - 1, td)) / 86400000);
+}
+
+// --- Карта пути: уровень = маршрут по Стамбулу, причал = ~15 фраз подряд ---
+// Фразы уровня идут по темам в порядке пути (levels.json) и внутри темы — по порядку
+// файла; рейсы вводят новые фразы в этом же порядке, поэтому пароход на карте плывёт
+// от причала к причалу. Причал пройден, когда каждая его фраза хоть раз запомнилась (🟡).
+const JOURNEY_STOP_SIZE = 15;
+const JOURNEY_LEVEL_KEY = "mahjong-phrase-journey";
+let journeyLevel = localStorage.getItem(JOURNEY_LEVEL_KEY) || "A1";
+// A1 — Кадыкёй и старый город, A2 — Босфор, B1 — Золотой Рог и острова, B2 — деловой Стамбул.
+const JOURNEY_ROUTES = {
+  A1: [
+    "Kadıköy ⚓", "Moda 🌳", "Yeldeğirmeni 🎨", "Haydarpaşa 🚉", "Harem 🚌", "Salacak 🌅", "Kız Kulesi 🏝️",
+    "Üsküdar 🕌", "Kuzguncuk 🏘️", "Karaköy ☕", "Galata Kulesi 🏰", "Tünel 🚃", "İstiklal 🚋", "Taksim 🏙️",
+    "Cihangir 🐈", "Tophane 🫖", "Kabataş ⛴️", "Dolmabahçe 👑", "Beşiktaş ⚽", "Ortaköy 🥔", "Eminönü 🐟",
+    "Sirkeci 🚆", "Mısır Çarşısı 🌶️", "Süleymaniye 🕌", "Kapalıçarşı 🛍️", "Beyazıt 🎓", "Sultanahmet 🏛️",
+    "Ayasofya 🕌", "Topkapı 👑", "Yerebatan 💧", "Gülhane 🌷", "Kumkapı 🦐", "Samatya 🏘️", "Yedikule 🏰",
+    "Balat 🎨", "Fener ⛪", "Ayvansaray 🧱", "Eyüp 🕌", "Pierre Loti 🌄", "Hasköy ⚓", "Kasımpaşa ⚓", "Şişhane 🎭",
+  ],
+  A2: [
+    "Beylerbeyi 🏛️", "Çengelköy 🥒", "Kuleli 🏫", "Vaniköy 🏡", "Kandilli 🔭", "Göksu 🛶", "Küçüksu 🏰",
+    "Anadolu Hisarı 🏰", "Kanlıca 🥣", "Çubuklu 🌲", "Paşabahçe 🥃", "Beykoz 🌳", "Anadolu Kavağı ⛰️",
+    "Rumeli Kavağı 🎣", "Sarıyer 🥐", "Büyükdere ⛵", "Kireçburnu 🎣", "Tarabya ⛵", "Yeniköy 🏡", "İstinye ⚓", "Emirgan 🌷", "Rumeli Hisarı 🏰",
+    "Bebek 🌊", "Arnavutköy 🏘️", "Kuruçeşme 🎶", "Çırağan 🏨", "Yıldız Parkı 🌳", "Nişantaşı 👜", "Maçka 🌲",
+    "Harbiye 🎼", "Şişli 🏢", "Mecidiyeköy 🚇", "Levent 🏙️", "Etiler 🍽️", "Ulus 🌇", "Hisarüstü 🎓",
+    "Fenerbahçe 🏟️", "Kalamış ⛵", "Caddebostan 🏖️", "Bağdat Caddesi 🛒", "Suadiye 🌊", "Bostancı ⛴️",
+    "Erenköy 🏡", "Göztepe 🌳", "Kozyatağı 🏢", "Ataşehir 🏙️", "Acıbadem 🏥", "Altunizade 🌉", "Çamlıca ⛰️",
+    "Boğaziçi Köprüsü 🌉",
+  ],
+  B1: [
+    "Bakırköy 🛍️", "Yeşilköy ✈️", "Florya 🏖️", "Kınalıada 🏝️", "Burgazada 🏝️", "Heybeliada 🌲", "Büyükada 🚲",
+    "Sedef Adası 🐚", "Maltepe 🎡", "Kartal ⛴️", "Pendik 🚤", "Tuzla ⚓", "Şile 🗼", "Ağva 🛶", "Polonezköy 🌲",
+  ],
+  B2: [
+    "Maslak 🏢", "Zincirlikuyu 🛣️", "Esentepe 🏢", "Gayrettepe 🏦", "Fulya 🏙️", "Kağıthane 🏭", "Vadistanbul 🏬",
+    "Göktürk 🏡", "Belgrad Ormanı 🌳", "Kilyos 🏖️", "Rumelifeneri 🗼", "Garipçe 🎣", "Poyrazköy ⚓", "Riva 🏖️",
+    "Kumburgaz 🏖️", "Büyükçekmece 🌉", "Çatalca 🍒", "Silivri 🧀", "Kemerburgaz 🌲", "Eyüp Sultan 🕌",
+    "Ortaköy Camii 🕌", "Rüstem Paşa 🕌", "Mihrimah Sultan 🕌",
+  ],
+};
+
+function orderIndex(topicId) {
+  const i = phraseLevels ? phraseLevels.order.indexOf(topicId) : -1;
+  return i < 0 ? 999 : i;
+}
+// Темы, где есть фразы ровно этого уровня, — в порядке пути.
+function levelTopicIds(level) {
+  if (!phraseLevels) return [];
+  return phraseLevels.order.filter((tid) => Object.values(phraseLevels.phrases[tid] || {}).includes(level));
+}
+
+// Причалы маршрута: каждая тема режется на равные куски примерно по JOURNEY_STOP_SIZE фраз.
+// routeLevel — чьи названия мест брать; без него (рейс по одной теме) — «Причал 1, 2…».
+function journeyStops(topicIds, level, exact, routeLevel = null) {
+  const stops = [];
+  [...topicIds].sort((a, b) => orderIndex(a) - orderIndex(b)).forEach((tid) => {
+    const map = (phraseLevels && phraseLevels.phrases[tid]) || {};
+    const ids = Object.keys(map)
+      .filter((tr) => (exact ? map[tr] === level : levelAtMost(map[tr], level)))
+      .map((tr) => `${tid}::${tr}`)
+      .filter((id) => !excludedPhrases.has(id));
+    if (!ids.length) return;
+    const k = Math.max(1, Math.round(ids.length / JOURNEY_STOP_SIZE));
+    for (let i = 0; i < k; i++) {
+      const from = Math.round((i * ids.length) / k);
+      const to = Math.round(((i + 1) * ids.length) / k);
+      stops.push({ topicId: tid, ids: ids.slice(from, to) });
+    }
+  });
+  const route = (routeLevel && JOURNEY_ROUTES[routeLevel]) || [];
+  stops.forEach((s, i) => {
+    if (route.length) {
+      const place = route[i % route.length];
+      const cut = place.lastIndexOf(" ");
+      s.name = place.slice(0, cut) + (i >= route.length ? ` ${Math.floor(i / route.length) + 1}` : "");
+      s.emoji = place.slice(cut + 1);
+    } else {
+      s.name = `Причал ${i + 1}`;
+      s.emoji = "⚓";
+    }
+  });
+  return stops;
+}
+
+// Сколько ответов осталось фразе до ⭐, если отвечать верно: 3 в работе + завтра + через 3 дня.
+function answersToMaster(id) {
+  const box = getPhraseBoxId(id);
+  if (box === "mastered") return 0;
+  if (box === "almost") return 1;
+  if (box === "learning") return 2;
+  return NEW_HITS_TO_LEARN - phraseHits(id) + 2;
+}
+
+// Состояние маршрута: где пароход, сколько запомнилось / выучено, сколько рейсов осталось.
+function journeyState(stops) {
+  const st = { stops, total: 0, learned: 0, mastered: 0, answersLeft: 0, current: -1 };
+  stops.forEach((s, i) => {
+    s.ever = 0;
+    s.learned = 0;
+    s.mastered = 0;
+    s.back = 0;
+    s.hitsLeft = 0;
+    s.ids.forEach((id) => {
+      const box = getPhraseBoxId(id);
+      const ever = phraseEverLearned(id);
+      if (ever) s.ever++;
+      if (box !== "new") s.learned++;
+      if (box === "mastered") s.mastered++;
+      if (box === "new" && ever) s.back++;
+      if (!ever) s.hitsLeft += NEW_HITS_TO_LEARN - phraseHits(id);
+      st.answersLeft += answersToMaster(id);
+    });
+    st.total += s.ids.length;
+    st.learned += s.learned;
+    st.mastered += s.mastered;
+    s.passed = s.ever === s.ids.length;
+    s.gold = s.mastered === s.ids.length;
+    if (st.current < 0 && !s.passed) st.current = i;
+  });
+  st.rounds = Math.ceil(st.answersLeft / FERRY_ROUND);
+  return st;
+}
+// Примерно 7 из 10 вопросов рейса уходят на фразы в работе, остальные — на повторы.
+function roundsForHits(hits) {
+  return Math.max(1, Math.ceil(hits / 7));
+}
+function roundsText(n) {
+  return `≈ ${voyagesWord(n)}`;
+}
+function levelEtaText(st, level) {
+  if (!st.answersLeft) return `Весь ${level} выучен ⭐`;
+  const days = Math.ceil(st.rounds / 10);
+  const daysPart = st.rounds > 10 ? ` — по 10 рейсов в день это ${days} ${ferryPlural(days, "день", "дня", "дней")}` : "";
+  return `До конца ${level}: ${roundsText(st.rounds)}${daysPart}, если почти всегда отвечать верно`;
 }
 
 // --- исключённые из практики фразы (аналог excludedWords) ---
@@ -272,12 +412,13 @@ async function renderPhrasesCatalog() {
   grid.innerHTML = "";
   await Promise.all([fetchPhraseManifest(), fetchPhraseLevels()]);
   loadingEl.classList.add("hidden");
-  renderFerryMap();
+  renderJourneyMap();
   renderPhraseLevelPicker();
 
   const loaded = getLoadedPhraseTopics();
   let totalPhrases = 0;
   let totalMastered = 0;
+  let totalLearned = 0;
   const byId = new Map(phraseManifest.map((m) => [m.id, m]));
   const ordered = [...phraseLevels.order.filter((id) => byId.has(id)), ...phraseManifest.map((m) => m.id).filter((id) => !phraseLevels.order.includes(id))];
 
@@ -301,15 +442,7 @@ async function renderPhrasesCatalog() {
     playAll.className = "phrase-level-play";
     playAll.textContent = `▶ Весь ${level}`;
     playAll.title = `Рейс по всем фразам уровня ${level} из всех тем — не нужно выбирать темы вручную`;
-    playAll.addEventListener("click", async () => {
-      playAll.disabled = true;
-      playAll.textContent = "⏳ Загружаем…";
-      const topicIds = Object.keys(phraseLevels.phrases).filter((id) =>
-        Object.values(phraseLevels.phrases[id]).some((lv) => lv === level)
-      );
-      const topics = await Promise.all(topicIds.map((id) => loadPhraseTopic(id)));
-      startQuiz(topics, level, true);
-    });
+    playAll.addEventListener("click", () => startLevelVoyage(level, playAll));
     head.appendChild(playAll);
     section.appendChild(head);
 
@@ -319,29 +452,29 @@ async function renderPhrasesCatalog() {
       const m = byId.get(id);
       totalPhrases += m.count;
       const isLoaded = loaded.has(m.id) && phraseTopicCache.has(m.id);
-      let masteredHere = 0;
-      if (isLoaded) {
-        const topic = phraseTopicCache.get(m.id);
-        masteredHere = topic.phrases.filter((p) => getPhraseBox(phraseId(m.id, p)).id === "mastered").length;
-      }
-      totalMastered += masteredHere;
-      sectionGrid.appendChild(buildPhraseTopicTile(m, isLoaded, masteredHere));
+      // Счёт — по ключам levels.json, файл темы для этого не нужен.
+      const keys = Object.keys(phraseLevels.phrases[m.id] || {}).map((tr) => `${m.id}::${tr}`);
+      const learnedHere = keys.filter((k) => getPhraseBoxId(k) !== "new").length;
+      totalLearned += learnedHere;
+      totalMastered += keys.filter((k) => getPhraseBoxId(k) === "mastered").length;
+      sectionGrid.appendChild(buildPhraseTopicTile(m, isLoaded, learnedHere));
     });
     section.appendChild(sectionGrid);
     grid.appendChild(section);
   });
 
+  document.getElementById("phrases-learned-count").textContent = totalLearned;
   document.getElementById("phrases-mastered-count").textContent = totalMastered;
   document.getElementById("phrases-total-count").textContent = totalPhrases;
   document.getElementById("phrases-topic-count").textContent = phraseManifest.length;
   updatePlaySelectedButton();
 }
 
-function buildPhraseTopicTile(m, isLoaded, masteredHere) {
+function buildPhraseTopicTile(m, isLoaded, learnedHere) {
   const tile = document.createElement("div");
   tile.className = "catalog-tile" + (isLoaded ? "" : " not-loaded") + (selectedForQuiz.has(m.id) ? " selected-for-quiz" : "");
   const emoji = m.source === "allah" ? "☪️" : "💬";
-  const countLabel = isLoaded ? `${masteredHere}/${m.count}` : `⬇ ${m.count} фраз`;
+  const countLabel = isLoaded || learnedHere ? `🟡 ${learnedHere}/${m.count}` : `⬇ ${m.count} фраз`;
   const sizeLabel = !isLoaded ? `<span class="size">${formatSizeKB(m.sizeKB)}</span>` : "";
   tile.innerHTML =
     `<span class="emoji">${emoji}</span>` +
@@ -385,6 +518,141 @@ function renderPhraseLevelPicker() {
     });
     el.appendChild(btn);
   });
+}
+
+// Рейс по всему уровню — с карты пути и из кнопок «▶ Весь A1».
+async function startLevelVoyage(level, btn) {
+  if (btn) {
+    btn.disabled = true;
+    btn.textContent = "⏳ Загружаем…";
+  }
+  const topics = await Promise.all(levelTopicIds(level).map((id) => loadPhraseTopic(id)));
+  startQuiz(topics, level, true);
+}
+
+// Карта пути (как в Duolingo): причалы уровня зигзагом, пароход — где ты сейчас,
+// сверху — куда плывёшь и сколько рейсов осталось до причала и до конца уровня.
+const JOURNEY_W = 320;
+const JOURNEY_STEP = 76;
+const JOURNEY_BANNER = 46;
+const JOURNEY_OFFSETS = [0, 45, 70, 45, 0, -45, -70, -45];
+
+function renderJourneyMap() {
+  const el = document.getElementById("phrase-journey");
+  if (!el || !phraseLevels) return;
+  const meta = getFerryMeta();
+  const titles = new Map(phraseManifest.map((m) => [m.id, m.title]));
+  const stops = journeyStops(levelTopicIds(journeyLevel), journeyLevel, true, journeyLevel);
+  const st = journeyState(stops);
+  const nextLevel = PHRASE_LEVEL_ORDER[PHRASE_LEVEL_ORDER.indexOf(journeyLevel) + 1];
+
+  // Раскладка: баннер темы перед её первым причалом, причалы зигзагом.
+  let y = 10;
+  let lastTopic = null;
+  const banners = [];
+  const points = stops.map((s, i) => {
+    if (s.topicId !== lastTopic) {
+      const count = stops.filter((x) => x.topicId === s.topicId).reduce((n, x) => n + x.ids.length, 0);
+      banners.push({ y, topicId: s.topicId, count });
+      y += JOURNEY_BANNER;
+      lastTopic = s.topicId;
+    }
+    const p = { x: JOURNEY_W / 2 + JOURNEY_OFFSETS[i % JOURNEY_OFFSETS.length], y: y + 28 };
+    y += JOURNEY_STEP;
+    return p;
+  });
+  const height = y + 50;
+  const curve = (pts) =>
+    pts.map((p, i) => (i === 0 ? `M${p.x} ${p.y}` : `C${pts[i - 1].x} ${pts[i - 1].y + 38} ${p.x} ${p.y - 38} ${p.x} ${p.y}`)).join(" ");
+  const doneUpTo = st.current < 0 ? points.length : st.current + 1;
+
+  const nodes = stops
+    .map((s, i) => {
+      const p = points[i];
+      const state = i === st.current ? "current" : s.gold ? "gold" : s.passed ? "done" : "ahead";
+      const pct = Math.round((s.ever / s.ids.length) * 100);
+      const badge = s.back ? `<span class="jn-badge back">🔁${s.back}</span>` : s.gold ? '<span class="jn-badge">⭐</span>' : s.passed ? '<span class="jn-badge">✓</span>' : "";
+      const sub = i === st.current ? `${s.ever} из ${s.ids.length}` : s.passed ? (s.gold ? "выучено" : `⭐ ${s.mastered}/${s.ids.length}`) : `${s.ids.length} фраз`;
+      const side = p.x <= JOURNEY_W / 2 ? `left:${p.x + 36}px` : `left:${p.x - 36 - 120}px;text-align:right`;
+      return (
+        `<button type="button" class="journey-node ${state}" data-i="${i}" style="left:${p.x}px;top:${p.y}px;--p:${pct}%">` +
+        `<span class="jn-emoji">${s.emoji}</span>${i === st.current ? '<span class="jn-ship">⛴️</span>' : ""}${badge}</button>` +
+        `<span class="journey-label ${state}" style="top:${p.y}px;${side}">${escapeHtml(s.name)}<small>${sub}</small></span>`
+      );
+    })
+    .join("");
+  const bannerHtml = banners
+    .map(
+      (b) =>
+        `<button type="button" class="journey-banner" data-topic="${b.topicId}" style="top:${b.y}px">` +
+        `${escapeHtml(titles.get(b.topicId) || b.topicId)} · ${b.count} ${ferryPlural(b.count, "фраза", "фразы", "фраз")} ›</button>`
+    )
+    .join("");
+  const finish = `<div class="journey-finish" style="top:${y - 6}px">🏁 Конец ${journeyLevel}${nextLevel ? ` — дальше ${nextLevel}` : ""}</div>`;
+
+  let summary;
+  if (!stops.length) {
+    summary = `<div class="journey-line">В этом уровне нет фраз.</div>`;
+  } else if (st.current < 0) {
+    summary =
+      `<div class="journey-here">🏁 Все причалы ${journeyLevel} пройдены!</div>` +
+      `<div class="journey-line">Запомнилось <b>${st.learned}</b> из ${st.total} · ⭐ выучено <b>${st.mastered}</b></div>` +
+      `<div class="journey-line">${levelEtaText(st, journeyLevel)}</div>`;
+  } else {
+    const cur = stops[st.current];
+    const next = stops[st.current + 1];
+    const left = cur.ids.length - cur.ever;
+    summary =
+      `<div class="journey-here">⛴️ Ты здесь: <b>${cur.emoji} ${escapeHtml(cur.name)}</b> — причал ${st.current + 1} из ${stops.length}, тема «${escapeHtml(titles.get(cur.topicId) || "")}»</div>` +
+      `<div class="journey-progress"><span style="width:${(st.learned / st.total) * 100}%"></span></div>` +
+      `<div class="journey-line">Запомнилось <b>${st.learned}</b> из ${st.total} · ⭐ выучено <b>${st.mastered}</b></div>` +
+      `<div class="journey-line">${next ? `Курс на <b>${next.emoji} ${escapeHtml(next.name)}</b>` : "До финиша"}: запомнить ещё ${left} ${ferryPlural(left, "фразу", "фразы", "фраз")} — ${roundsText(roundsForHits(cur.hitsLeft))}</div>` +
+      `<div class="journey-line dim">${levelEtaText(st, journeyLevel)}</div>`;
+  }
+
+  el.innerHTML =
+    `<div class="journey-head"><span>🗺️ Путь по Стамбулу</span><span class="journey-meta">⛴️ ${voyagesWord(meta.voyages)} · ⭐ ${meta.stars}</span></div>` +
+    `<div class="journey-tabs">${PHRASE_LEVEL_ORDER.map((lv) => `<button type="button" data-level="${lv}" class="${lv === journeyLevel ? "active" : ""}">${lv}</button>`).join("")}</div>` +
+    `<div class="journey-summary">${summary}<button type="button" class="journey-go">▶ Плыть дальше — весь ${journeyLevel}</button></div>` +
+    `<div class="journey-scroll"><div class="journey-path" style="width:${JOURNEY_W}px;height:${height}px">` +
+    `<svg class="journey-svg" width="${JOURNEY_W}" height="${height}" aria-hidden="true">` +
+    `<path class="journey-line-ahead" d="${curve(points)}"/>` +
+    `<path class="journey-line-done" d="${curve(points.slice(0, doneUpTo))}"/></svg>` +
+    bannerHtml + nodes + finish +
+    `</div></div>` +
+    `<div class="journey-info" id="journey-info">Нажми на причал — покажу, что там.</div>` +
+    `<details class="journey-rules"><summary>Когда фраза считается выученной?</summary>` +
+    `<p>🔴 <b>В работе</b> — ${NEW_HITS_TO_LEARN} верных ответа, и фраза <b>🟡 запомнилась</b>: её место тут же занимает новая.</p>` +
+    `<p>🟡 → 🟢 — вспомнила на следующий день. 🟢 → ⭐ <b>выучена</b> — вспомнила ещё через 3 дня.</p>` +
+    `<p>Дальше ⭐ проверяется через неделю, месяц, 3 месяца. Ошиблась — фраза снова в работе.</p>` +
+    `<p>В работе одновременно до ${PHRASE_WORKING_SET} фраз. Пока не пришёл срок повтора, запомнившаяся фраза в рейсы не попадает.</p></details>`;
+
+  el.querySelectorAll(".journey-tabs button").forEach((b) =>
+    b.addEventListener("click", () => {
+      journeyLevel = b.dataset.level;
+      localStorage.setItem(JOURNEY_LEVEL_KEY, journeyLevel);
+      renderJourneyMap();
+    })
+  );
+  const go = el.querySelector(".journey-go");
+  go.disabled = !stops.length;
+  go.addEventListener("click", () => startLevelVoyage(journeyLevel, go));
+  el.querySelectorAll(".journey-banner").forEach((b) => b.addEventListener("click", () => openPhraseTopic(b.dataset.topic)));
+  const info = el.querySelector("#journey-info");
+  el.querySelectorAll(".journey-node").forEach((b) =>
+    b.addEventListener("click", () => {
+      const s = stops[Number(b.dataset.i)];
+      const inWork = s.ids.filter((id) => phraseProgress[id] && getPhraseBoxId(id) === "new").length;
+      info.innerHTML =
+        `<b>${s.emoji} ${escapeHtml(s.name)}</b> · «${escapeHtml(titles.get(s.topicId) || "")}», ${s.ids.length} ${ferryPlural(s.ids.length, "фраза", "фразы", "фраз")}: ` +
+        `🟡 запомнилось ${s.learned}, ⭐ выучено ${s.mastered}, 🔴 в работе ${inWork}` +
+        (s.back ? `, 🔁 ${s.back} забылись — снова в работе` : "");
+    })
+  );
+  // Прокрутить карту к пароходу (не всю страницу).
+  const scroller = el.querySelector(".journey-scroll");
+  const target = points[st.current < 0 ? points.length - 1 : st.current];
+  if (target) requestAnimationFrame(() => (scroller.scrollTop = Math.max(0, target.y - 110)));
 }
 
 function updatePlaySelectedButton() {
@@ -441,7 +709,7 @@ function buildPhraseRow(topic, p) {
   const box = getPhraseBox(id);
   const badge = document.createElement("span");
   badge.className = "row-progress-badge";
-  badge.textContent = box.emoji;
+  badge.textContent = phraseBadgeText(id);
   badge.title = phraseStatusLabel(id);
   row.appendChild(badge);
 
@@ -451,8 +719,7 @@ function buildPhraseRow(topic, p) {
     knowBtn.title = "Отметить, что уже знаю эту фразу — она перестанет часто появляться";
     knowBtn.addEventListener("click", () => {
       markPhraseKnown(id);
-      const newBox = getPhraseBox(id);
-      badge.textContent = newBox.emoji;
+      badge.textContent = phraseBadgeText(id);
       badge.title = phraseStatusLabel(id);
       knowBtn.remove();
     });
@@ -462,19 +729,22 @@ function buildPhraseRow(topic, p) {
   return row;
 }
 
-// Текст подсказки над бейджем прогресса: сколько сегодняшних верных ответов уже
-// засчитано к переходу на следующий уровень, или с какого дня фраза снова "созреет".
+// Бейдж в строке фразы: «🔴 1/3» в работе, ящик — эмодзи, не встречалась — «○».
+function phraseBadgeText(id) {
+  if (!phraseProgress[id]) return "○";
+  const box = getPhraseBox(id);
+  return box.id === "new" ? `${box.emoji} ${phraseHits(id)}/${NEW_HITS_TO_LEARN}` : box.emoji;
+}
+
+// Подпись к бейджу прогресса: сколько верных ответов уже есть или когда следующий повтор.
 function phraseStatusLabel(id) {
   const box = getPhraseBox(id);
   const p = phraseProgress[id];
-  if (box.id === "mastered") {
-    if (p && p.dueDay) return `${box.label} — контрольная проверка с ${p.dueDay}`;
-    return box.label;
-  }
-  const today = todayStr();
-  if (p && p.dueDay && today < p.dueDay) return `${box.label} — повторить можно с ${p.dueDay}`;
-  const todayCorrect = getPhraseTodayCorrect(id);
-  return `${box.label} — ${todayCorrect}/${DAILY_CORRECT_TO_ADVANCE} верных сегодня`;
+  if (!p) return "ещё не встречалась";
+  if (box.id === "new") return `${box.label} — ${phraseHits(id)} из ${NEW_HITS_TO_LEARN} верных`;
+  if (!p.dueDay || isPhraseDue(id)) return `${box.label} — пора повторить`;
+  const what = box.id === "mastered" ? "проверка" : "повтор";
+  return `${box.label} — ${what} ${inDaysText(daysUntil(p.dueDay))}`;
 }
 
 // Фразы темы — группами по уровню, у группы своя кнопка «включить / выключить» (как
@@ -558,74 +828,80 @@ function shuffle(arr) {
   return a;
 }
 
-// Плоский список {phrase, topicId, id} по всем темам сессии, за вычетом снятых
-// галочкой на экране темы (если так вышло, что снято всё — играем всё равно всем).
+// Плоский список {phrase, topicId, id} по всем темам сессии в порядке пути (тема за темой,
+// внутри темы — по порядку файла), за вычетом снятых галочкой на экране темы (если так
+// вышло, что снято всё — играем всё равно всем).
 function collectItems(topics) {
   const items = [];
+  const seen = new Set();
   const cap = quizMaxLevel || phraseLevelCap;
   // «▶ Весь A1» — ровно этот уровень; обычный рейс — всё до потолка.
   const fits = (topicId, p) => (quizExactLevel ? phraseLevel(topicId, p) === cap : levelAtMost(phraseLevel(topicId, p), cap));
-  topics.forEach((topic) => {
+  const ordered = [...topics].sort((a, b) => orderIndex(a.id) - orderIndex(b.id));
+  ordered.forEach((topic) => {
     topic.phrases.forEach((p) => {
       const id = phraseId(topic.id, p);
+      if (seen.has(id)) return;
+      seen.add(id);
       if (!excludedPhrases.has(id) && fits(topic.id, p)) items.push({ phrase: p, topicId: topic.id, id });
     });
   });
   if (items.length) return items;
   const all = [];
-  topics.forEach((topic) => {
+  ordered.forEach((topic) => {
     topic.phrases.forEach((p) => all.push({ phrase: p, topicId: topic.id, id: phraseId(topic.id, p) }));
   });
   return all;
 }
 
-// Не больше MAX_NEW_PHRASES_PER_SESSION совсем новых фраз "в работе" одновременно —
-// но это скользящее окно, а не разовая фиксация: как только фраза из allowedNewIds
-// набирает DAILY_CORRECT_TO_ADVANCE верных ответов за день (см. bumpPhraseStreak) и
-// покидает ящик "new" (переходит в "learning"), освобождённое место тут же занимает
-// следующая ещё непройденная фраза темы. Иначе (как было раньше) набор фиксировался
-// один раз на всю сессию и остальной массив темы не попадал в ротацию, пока первая
-// партия не дойдёт до полного мастерства.
-function topUpAllowedNew(items) {
-  if (!allowedNewIds) allowedNewIds = new Set();
-  for (const id of allowedNewIds) {
-    if (getPhraseBox(id).id !== "new") allowedNewIds.delete(id);
-  }
-  if (allowedNewIds.size >= MAX_NEW_PHRASES_PER_SESSION) return;
-  const candidates = shuffle(items.filter((it) => getPhraseBox(it.id).id === "new" && !allowedNewIds.has(it.id)));
-  for (const it of candidates) {
-    if (allowedNewIds.size >= MAX_NEW_PHRASES_PER_SESSION) break;
-    allowedNewIds.add(it.id);
-  }
-}
+// --- кто следующий в рейсе ---
+// В работе — до PHRASE_WORKING_SET начатых фраз; они идут по кругу (дольше всех не
+// встречавшаяся — первой), так что между встречами одной фразы проходит десяток других.
+// Есть свободное место — добавляется следующая по пути новая фраза (не две новые подряд,
+// если есть что крутить). Пришёл срок повтора 🟡/🟢/⭐ — примерно каждый третий вопрос
+// отдаётся повтору. Не пришёл — фраза ждёт своего дня и место не занимает.
+const PHRASE_MIN_GAP = 4; // фраза возвращается не раньше, чем через 3 других вопроса
+const PHRASE_REVIEW_SHARE = 0.35;
+let phraseAskSeq = 0;
+const phraseLastAsked = new Map(); // id → номер вопроса (в пределах открытой страницы)
+let lastWasFresh = false;
 
-// Насколько редко "выученная, но созревшая для проверки" фраза попадается в квизе —
-// как и "почти выучено" (weight 1), не чаще, это просто сверка, а не заучивание.
-const MASTERED_REVIEW_WEIGHT = 1;
-
-// Взвешенная колода — как buildWeightedDeck в script.js: невыученное встречается чаще,
-// выученное постепенно пропадает из ротации — и полностью выпадает из неё, пока не
-// назреет срок контрольной проверки (см. isPhraseMasteredDue). Фразы разных тем
-// перемешиваются в одном пуле.
-function buildPhraseQueue(topics) {
-  const items = collectItems(topics);
-  topUpAllowedNew(items);
-
-  const eligible = items.filter((it) => {
-    const boxId = getPhraseBox(it.id).id;
-    if (boxId === "new") return allowedNewIds.has(it.id);
-    if (boxId === "mastered") return isPhraseMasteredDue(it.id);
-    return true;
+function pickNextItem() {
+  const items = collectItems(currentTopics);
+  const gap = (it) => (phraseLastAsked.has(it.id) ? phraseAskSeq - phraseLastAsked.get(it.id) : Infinity);
+  const free = (it) => !ferry.asked.has(it.id);
+  const due = [];
+  const started = [];
+  const unseen = [];
+  items.forEach((it) => {
+    const rec = phraseProgress[it.id];
+    if (!rec) unseen.push(it);
+    else if ((rec.box || "new") === "new") started.push(it);
+    else if (isPhraseDue(it.id)) due.push(it);
   });
+  const longestGap = (list) => {
+    const sorted = shuffle(list).sort((a, b) => gap(b) - gap(a));
+    return sorted[0];
+  };
+  const dueReady = due.filter((it) => free(it) && gap(it) >= PHRASE_MIN_GAP);
+  // Начатая фраза может вернуться и в том же рейсе — так новая закрепляется быстрее.
+  const startedReady = started.filter((it) => gap(it) >= PHRASE_MIN_GAP);
+  const fresh = started.length < PHRASE_WORKING_SET ? unseen.find(free) : null;
 
-  const pool = [];
-  eligible.forEach((it) => {
-    const box = getPhraseBox(it.id);
-    const weight = box.id === "mastered" ? MASTERED_REVIEW_WEIGHT : box.weight;
-    for (let i = 0; i < weight; i++) pool.push(it);
-  });
-  if (!pool.length) pool.push(...(eligible.length ? eligible : items));
-  return shuffle(pool);
+  if (dueReady.length && (Math.random() < PHRASE_REVIEW_SHARE || (!startedReady.length && !fresh))) {
+    return longestGap(dueReady);
+  }
+  if (fresh && (!startedReady.length || (!lastWasFresh && (startedReady.length < 3 || Math.random() < 0.5)))) {
+    return fresh;
+  }
+  if (startedReady.length) return longestGap(startedReady);
+  if (dueReady.length) return longestGap(dueReady);
+  // Всё начатое только что было, повторов нет: берём хоть что-то не из этого рейса —
+  // сначала начатые/новые, потом давно не встречавшиеся (тренировка без счёта).
+  const fallback = [...started, ...unseen, ...due].filter(free);
+  if (fallback.length) return longestGap(fallback);
+  const rest = items.filter(free);
+  return rest.length ? longestGap(rest) : items[Math.floor(Math.random() * items.length)];
 }
 
 // Дистракторы предпочтительно из той же темы, что и правильный ответ (REQ-010) —
@@ -645,35 +921,21 @@ function pickDistractors(topics, correctItem, n) {
   return pool.slice(0, n);
 }
 
-// --- «Пароход до Каракёя»: игровой слой поверх квиза ---
+// --- «Пароход»: игровой слой поверх квиза ---
 // Рейс = FERRY_ROUND фраз = столько же препятствий на пути (скалы, волны, лодки): верный
 // ответ — пароход проходит препятствие, ошибка — пробоина в корпусе, FERRY_GLASSES пробоин —
-// пароход тонет, рейс заново. Серия верных подряд — 🔥, каждые FERRY_REFILL_EVERY подряд
-// заделывают пробоину. Причалила — звёзды по целому корпусу и счётчик рейсов, по которому на карте Стамбула открываются места
-// из жизни Ольги (см. assets/dialogues/LEGEND.md). Ящики Лейтнера (bumpPhraseStreak)
-// работают как раньше: каждый ответ засчитывается в прогресс фразы, даже если рейс сорвался.
+// пароход тонет, рейс заново. Ошибка на совсем новой фразе (видишь её впервые) корпус не
+// ломает. Серия верных подряд — 🔥, каждые FERRY_REFILL_EVERY подряд заделывают пробоину.
+// Рейс везёт по карте пути (journeyStops): слева причал, где пароход сейчас, справа —
+// следующий. Каждый ответ засчитывается в прогресс фразы, даже если рейс сорвался.
 const FERRY_ROUND = 10;
 const FERRY_GLASSES = 3;
 const FERRY_HINTS = 1;
 const FERRY_REFILL_EVERY = 5;
-const FERRY_OPTIONS = 4;
+const FERRY_OPTIONS = 6;
 // Мета хранится прямо в объекте прогресса фраз (ключ не может совпасть с id фразы вида
 // «тема::текст»), чтобы синхронизироваться через уже существующую колонку phrase_progress.
 const FERRY_META_KEY = "__ferry";
-
-const FERRY_PLACES = [
-  { at: 1, emoji: "⚓", name: "Пристань Кадыкёй", tr: "Kadıköy İskelesi" },
-  { at: 3, emoji: "🌳", name: "Мода", tr: "Moda" },
-  { at: 6, emoji: "☕", name: "Каракёй", tr: "Karaköy" },
-  { at: 10, emoji: "🗼", name: "Галатская башня", tr: "Galata Kulesi" },
-  { at: 15, emoji: "🚋", name: "Истикляль", tr: "İstiklal Caddesi" },
-  { at: 21, emoji: "🐟", name: "Эминёню", tr: "Eminönü" },
-  { at: 28, emoji: "🕌", name: "Айя-София", tr: "Ayasofya" },
-  { at: 36, emoji: "🌉", name: "Босфорский мост", tr: "Boğaziçi Köprüsü" },
-  { at: 45, emoji: "⚽", name: "Стадион Фенербахче", tr: "Fenerbahçe Stadı" },
-  { at: 55, emoji: "🏡", name: "Ускюдар", tr: "Üsküdar" },
-  { at: 66, emoji: "🚲", name: "Бююкада", tr: "Büyükada" },
-];
 
 // «Фразы» — чтобы выучить фразу ЦЕЛИКОМ: узнать, вспомнить по-турецки, понять на слух.
 // Вставлять слова и собирать фразу по кусочкам — это работа «Грамматики», не здесь.
@@ -685,9 +947,10 @@ const QUESTION_TYPES = {
 // Препятствия на пути парохода — по одному на фразу рейса.
 const FERRY_OBSTACLES = ["🪨", "🌊", "⛵", "🪨", "🛥️", "🌊", "🪨", "⛵", "🌊", "🪨"];
 
-let ferry = null; // {done, glasses, combo, bestCombo, hints, token, asked}
+let ferry = null; // {done, glasses, combo, bestCombo, hints, token, asked, obstacles, stats, stopAt}
 let ferryToken = 0; // отменяет отложенные колбэки (таймер плашки) брошенного рейса
 let lastQuestionType = null;
+let quizStops = []; // причалы текущего рейса (карта пути)
 
 function getFerryMeta() {
   const m = phraseProgress[FERRY_META_KEY];
@@ -739,19 +1002,17 @@ function ferrySfx(kind) {
   }
 }
 
-// Чем лучше фраза выучена — тем труднее тип вопроса: новые чаще узнаём (тур → рус),
-// почти выученные — собираем сами.
+// Новую фразу сначала узнаём (тур → рус), с каждым верным ответом — труднее:
+// на слух, потом вспомнить по-турецки. Повторы — в основном по-турецки.
 function pickQuestionType(item) {
   const box = getPhraseBoxId(item.id);
+  const hits = phraseHits(item.id);
   const canListen = !muted && "speechSynthesis" in window;
-  // Новую фразу сначала узнаём, знакомую — вспоминаем по-турецки и ловим на слух.
-  const byBox = {
-    new: ["tr2ru", "tr2ru", "listen"],
-    learning: ["tr2ru", "ru2tr", "listen"],
-    almost: ["ru2tr", "ru2tr", "listen"],
-    mastered: ["ru2tr", "listen"],
-  };
-  let options = (byBox[box] || byBox.new).filter((t) => (t === "listen" ? canListen : true));
+  let options;
+  if (box === "new") options = hits === 0 ? ["tr2ru"] : hits === 1 ? ["tr2ru", "listen"] : ["ru2tr", "listen"];
+  else if (box === "learning") options = ["ru2tr", "listen"];
+  else options = ["ru2tr", "ru2tr", "listen"];
+  options = options.filter((t) => (t === "listen" ? canListen : true));
   if (!options.length) options = ["tr2ru"];
   const varied = options.filter((t) => t !== lastQuestionType);
   const pickFrom = varied.length ? varied : options;
@@ -759,11 +1020,15 @@ function pickQuestionType(item) {
 }
 
 function startQuiz(topics, maxLevel = null, exact = false) {
-  currentTopics = topics;
+  currentTopics = [...topics].sort((a, b) => orderIndex(a.id) - orderIndex(b.id));
   quizMaxLevel = maxLevel;
   quizExactLevel = exact;
-  allowedNewIds = null; // новая сессия — заново решаем, какие новые фразы пустить в оборот
-  currentQueue = buildPhraseQueue(currentTopics);
+  quizStops = journeyStops(
+    currentTopics.map((t) => t.id),
+    maxLevel || phraseLevelCap,
+    exact,
+    exact ? maxLevel : null
+  );
   setScreen("quiz");
   document.getElementById("quiz-topic-title").textContent = quizHeaderTitle(topics);
   updateQuizProgressLabel();
@@ -779,10 +1044,21 @@ function quizHeaderTitle(topics) {
 
 function updateQuizProgressLabel() {
   // Только фразы, которые реально участвуют в рейсе (с учётом уровня и снятых галочек).
-  const items = collectItems(currentTopics);
-  const total = items.length;
-  const mastered = items.filter((it) => getPhraseBox(it.id).id === "mastered").length;
-  document.getElementById("quiz-progress").textContent = `${mastered}/${total}`;
+  const st = journeyState(quizStops);
+  document.getElementById("quiz-progress").textContent = st.mastered ? `${st.learned}/${st.total} · ⭐${st.mastered}` : `${st.learned}/${st.total}`;
+}
+
+// Где пароход на карте пути: текущий причал и следующий.
+function ferryCourse() {
+  const st = journeyState(quizStops);
+  const cur = st.current < 0 ? null : quizStops[st.current];
+  const next = st.current < 0 ? null : quizStops[st.current + 1];
+  return { st, cur, next, left: cur ? cur.ids.length - cur.ever : 0 };
+}
+function courseText(c) {
+  if (!c.cur) return "Все причалы пройдены — рейсы на повторение ⭐";
+  const target = c.next ? `${c.next.emoji} ${c.next.name}` : "🏁 финиша";
+  return `Курс на ${target}: запомнить ещё ${c.left} ${ferryPlural(c.left, "фразу", "фразы", "фраз")} — ${roundsText(roundsForHits(c.cur.hitsLeft))}`;
 }
 
 function showFerryOverlay({ emoji, title, text, extra = "", goLabel, onGo }) {
@@ -803,18 +1079,25 @@ function showFerryOverlay({ emoji, title, text, extra = "", goLabel, onGo }) {
 
 function showVoyageIntro() {
   ferryToken++;
+  const course = ferryCourse();
   ferry = {
     done: 0, glasses: FERRY_GLASSES, combo: 0, bestCombo: 0, hints: FERRY_HINTS, token: ferryToken, asked: new Set(),
     obstacles: shuffle(FERRY_OBSTACLES).slice(0, FERRY_ROUND),
+    stats: { learned: 0, reviewed: 0, fresh: 0, back: 0 },
+    stopAt: course.st.current,
   };
   renderFerryBar();
   clearQuestionArea();
   const meta = getFerryMeta();
+  const from = course.cur ? course.cur.name : "Kadıköy";
+  const to = course.next ? course.next.name : course.cur ? "финиш" : "повторы";
   showFerryOverlay({
     emoji: "⛴️",
-    title: `Рейс №${meta.voyages + 1}: Кадыкёй → Каракёй`,
-    text: `${FERRY_ROUND} фраз — ${FERRY_ROUND} препятствий на пути: скалы, волны, лодки. Верный ответ — проходишь мимо. Ошибка — пробоина в корпусе. ${FERRY_GLASSES} пробоины — пароход тонет.`,
-    extra: `<span class="ferry-chip">🔥 ${FERRY_REFILL_EVERY} подряд — заделать пробоину 🔧</span><span class="ferry-chip">💡 ${FERRY_HINTS} подсказка на рейс</span>`,
+    title: `Рейс №${meta.voyages + 1}: ${from} → ${to}`,
+    text: `${FERRY_ROUND} фраз — ${FERRY_ROUND} препятствий: верный ответ — проходишь мимо, ошибка — пробоина, ${FERRY_GLASSES} пробоины — пароход тонет. На совсем новой фразе ошибка корпус не ломает.`,
+    extra:
+      `<div class="ferry-small">${escapeHtml(courseText(course))}</div>` +
+      `<span class="ferry-chip">🔥 ${FERRY_REFILL_EVERY} подряд — заделать пробоину 🔧</span><span class="ferry-chip">💡 ${FERRY_HINTS} подсказка на рейс</span>`,
     goLabel: "Отчалить ▶",
     onGo: () => {
       ferrySfx("horn");
@@ -843,6 +1126,11 @@ function renderFerryBar() {
     o.style.left = `${((i + 0.6) / FERRY_ROUND) * 100}%`;
     track.appendChild(o);
   });
+  // Откуда и куда: причалы карты пути.
+  const course = ferryCourse();
+  document.getElementById("ferry-pier-from").textContent = course.cur ? course.cur.name : "⭐";
+  document.getElementById("ferry-pier-to").textContent = course.next ? course.next.name : "🏁";
+  document.getElementById("ferry-course").textContent = courseText(course);
   const comboEl = document.getElementById("ferry-combo");
   comboEl.textContent = ferry.combo >= 2 ? `🔥 ${ferry.combo}` : "";
   comboEl.classList.toggle("hot", ferry.combo >= 3);
@@ -863,8 +1151,14 @@ function clearQuestionArea() {
 
 function nextQuestion() {
   if (!ferry) return;
-  currentItem = takeFreshItem();
+  currentItem = { ...pickNextItem() };
+  // Совсем новая фраза — видишь впервые: ошибка на ней не ломает корпус.
+  currentItem.fresh = !phraseProgress[currentItem.id];
+  currentItem.missed = false;
+  lastWasFresh = currentItem.fresh;
+  if (currentItem.fresh) ferry.stats.fresh++;
   ferry.asked.add(currentItem.id);
+  phraseLastAsked.set(currentItem.id, ++phraseAskSeq);
   hintUsed = false;
   questionAnswered = false;
   clearQuestionArea();
@@ -872,25 +1166,10 @@ function nextQuestion() {
   const type = pickQuestionType(currentItem);
   lastQuestionType = type;
   currentItem.type = type;
-  document.getElementById("quiz-direction").textContent = QUESTION_TYPES[type];
+  document.getElementById("quiz-direction").textContent = (currentItem.fresh ? "🆕 Новая фраза · " : "") + QUESTION_TYPES[type];
   renderChoiceQuestion(type);
   renderFerryBar();
   updateQuizProgressLabel();
-}
-
-// Следующая фраза из очереди, которой ещё не было в этом рейсе (в колоде новые фразы лежат
-// по три копии — без этого одна и та же могла попасться дважды за рейс). Если в теме
-// фраз меньше, чем отрезков рейса, повторы неизбежны — тогда берём любую.
-function takeFreshItem() {
-  for (let attempt = 0; attempt < 2; attempt++) {
-    if (!currentQueue.length) currentQueue = buildPhraseQueue(currentTopics);
-    for (let i = currentQueue.length - 1; i >= 0; i--) {
-      if (!ferry.asked.has(currentQueue[i].id)) return currentQueue.splice(i, 1)[0];
-    }
-    currentQueue = [];
-  }
-  if (!currentQueue.length) currentQueue = buildPhraseQueue(currentTopics);
-  return currentQueue.pop();
 }
 
 function speakButton(text, big = false) {
@@ -906,35 +1185,32 @@ function speakButton(text, big = false) {
 function renderChoiceQuestion(type) {
   const phrase = currentItem.phrase;
   const promptEl = document.getElementById("quiz-prompt");
-  const subEl = document.getElementById("quiz-subprompt");
-  let correctText;
-  let distractorTexts;
-
-  {
-    const showRu = type === "tr2ru" || type === "listen";
-    correctText = showRu ? phrase.ru : phrase.tr;
-    const seen = new Set([correctText]);
-    distractorTexts = [];
-    for (const p of pickDistractors(currentTopics, currentItem, 12)) {
-      const t = showRu ? p.ru : p.tr;
-      if (seen.has(t)) continue;
-      seen.add(t);
-      distractorTexts.push(t);
-      if (distractorTexts.length >= FERRY_OPTIONS - 1) break;
-    }
-    if (type === "listen") {
-      promptEl.appendChild(speakButton(phrase.tr, true));
-      speak(phrase.tr);
-    } else if (type === "tr2ru") {
-      promptEl.textContent = phrase.tr + " ";
-      promptEl.appendChild(speakButton(phrase.tr));
-    } else {
-      promptEl.textContent = phrase.ru;
-    }
+  const showRu = type === "tr2ru" || type === "listen";
+  const correctText = showRu ? phrase.ru : phrase.tr;
+  const seen = new Set([correctText]);
+  const distractorTexts = [];
+  for (const p of pickDistractors(currentTopics, currentItem, 20)) {
+    const t = showRu ? p.ru : p.tr;
+    if (seen.has(t)) continue;
+    seen.add(t);
+    distractorTexts.push(t);
+    if (distractorTexts.length >= FERRY_OPTIONS - 1) break;
+  }
+  if (type === "listen") {
+    promptEl.appendChild(speakButton(phrase.tr, true));
+    speak(phrase.tr);
+  } else if (type === "tr2ru") {
+    promptEl.textContent = phrase.tr + " ";
+    promptEl.appendChild(speakButton(phrase.tr));
+  } else {
+    promptEl.textContent = phrase.ru;
   }
 
   const optionsEl = document.getElementById("quiz-options");
-  shuffle([correctText, ...distractorTexts]).forEach((text) => {
+  const all = [correctText, ...distractorTexts];
+  // Короткие варианты на телефоне — в две колонки, длинные — в одну.
+  optionsEl.classList.toggle("short", all.every((t) => t.length <= 26));
+  shuffle(all).forEach((text) => {
     const btn = document.createElement("button");
     btn.className = "quiz-option";
     btn.textContent = text;
@@ -960,16 +1236,49 @@ function onAnswerClick(btn) {
   }
 }
 
+// Что сказать после ответа: сколько ещё до «запомнилась», когда повтор.
+function outcomeText(out) {
+  if (!out) return "";
+  const left = NEW_HITS_TO_LEARN - (out.hits || 0);
+  const dots = "●".repeat(out.hits || 0) + "○".repeat(Math.max(0, left));
+  switch (out.kind) {
+    case "hit":
+      return `${dots}  ещё ${left} ${ferryPlural(left, "верный ответ", "верных ответа", "верных ответов")} — и фраза запомнится`;
+    case "learned":
+      return "🟡 Запомнилась! Повторим завтра, а её место в работе займёт новая фраза";
+    case "almost":
+      return `🟢 Помнишь! Следующий повтор ${inDaysText(out.days)}`;
+    case "mastered":
+      return `⭐ Выучена! Проверим ${inDaysText(out.days)}`;
+    case "kept":
+      return `⭐ Всё ещё помнишь — следующая проверка ${inDaysText(out.days)}`;
+    case "practice":
+      return out.dueDay ? `Тренировка — повтор по плану ${inDaysText(daysUntil(out.dueDay))}` : "Тренировка";
+    case "hint":
+      return "С подсказкой — в счёт не идёт";
+    case "missed":
+      return "После ошибки — в счёт не идёт, фраза ещё вернётся";
+    default:
+      return "";
+  }
+}
+
 // --- общий исход ответа ---
 function onCorrect() {
   questionAnswered = true;
   const token = ferry.token;
-  if (!hintUsed) {
-    bumpPhraseStreak(currentItem.id, true);
+  let out;
+  if (hintUsed) {
+    out = { kind: "hint" };
+    ferry.combo = 0;
+  } else if (currentItem.missed) {
+    out = { kind: "missed" };
+  } else {
+    out = bumpPhraseStreak(currentItem.id, true);
+    if (out.kind === "learned") ferry.stats.learned++;
+    if (out.kind === "almost" || out.kind === "mastered" || out.kind === "kept") ferry.stats.reviewed++;
     ferry.combo++;
     ferry.bestCombo = Math.max(ferry.bestCombo, ferry.combo);
-  } else {
-    ferry.combo = 0;
   }
   ferry.done++;
   let refilled = false;
@@ -979,18 +1288,42 @@ function onCorrect() {
   }
   ferrySfx(ferry.combo >= 3 && ferry.combo % FERRY_REFILL_EVERY === 0 ? "combo" : "ok");
   renderFerryBar();
-  if (refilled) flashFerryNote("🔥 Серия! Пробоину заделали 🔧");
+  // Причалила к следующему причалу карты.
+  const course = ferryCourse();
+  const arrived = ferry.stopAt >= 0 && (course.st.current < 0 || course.st.current > ferry.stopAt);
+  if (arrived) {
+    const reached = quizStops[course.st.current < 0 ? quizStops.length - 1 : course.st.current];
+    ferry.arrivedAt = reached;
+    ferry.stopAt = course.st.current;
+    flashFerryNote(`⚓ Причалили: ${reached.emoji} ${reached.name}!`);
+    ferrySfx("combo");
+  } else if (refilled) flashFerryNote("🔥 Серия! Пробоину заделали 🔧");
   updateQuizProgressLabel();
   showPhraseMatchPopup(currentItem.phrase, () => {
     if (!ferry || ferry.token !== token) return;
     if (ferry.done >= FERRY_ROUND) finishVoyage();
     else nextQuestion();
-  });
+  }, outcomeText(out));
 }
 
 function onWrong(revealCorrect) {
-  if (!hintUsed) bumpPhraseStreak(currentItem.id, false);
+  const firstMiss = !currentItem.missed;
+  currentItem.missed = true;
+  if (firstMiss && !hintUsed) {
+    const out = bumpPhraseStreak(currentItem.id, false);
+    if (out.kind === "back") {
+      ferry.stats.back++;
+      flashFerryNote("🔴 Забылась — фраза снова в работе");
+    }
+  }
   ferry.combo = 0;
+  // Совсем новая фраза: её ещё не учили — корпус цел, просто выбери ещё раз.
+  if (currentItem.fresh) {
+    ferrySfx("tap");
+    renderFerryBar();
+    if (firstMiss) flashFerryNote("🆕 Новая фраза — без пробоины");
+    return;
+  }
   ferry.glasses--;
   ferrySfx("spill");
   renderFerryBar();
@@ -1017,6 +1350,7 @@ function onWrong(revealCorrect) {
 
 function flashFerryNote(text) {
   const bar = document.getElementById("ferry-bar");
+  bar.querySelectorAll(".ferry-note").forEach((n) => n.remove());
   const note = document.createElement("div");
   note.className = "ferry-note";
   note.textContent = text;
@@ -1028,30 +1362,39 @@ function starsHtml(n) {
   return `<div class="ferry-stars">${"⭐".repeat(n)}${'<span class="dim">⭐</span>'.repeat(FERRY_GLASSES - n)}</div>`;
 }
 
+// Что дал рейс: сколько фраз запомнилось, повторено, новых; и где теперь пароход.
+function voyageReportHtml(stats) {
+  const chips = [];
+  if (stats.learned) chips.push(`🟡 +${stats.learned} ${ferryPlural(stats.learned, "фраза запомнилась", "фразы запомнились", "фраз запомнились")}`);
+  if (stats.reviewed) chips.push(`🔁 ${stats.reviewed} ${ferryPlural(stats.reviewed, "повтор", "повтора", "повторов")} пройдено`);
+  if (stats.fresh) chips.push(`🆕 ${stats.fresh} ${ferryPlural(stats.fresh, "новая фраза", "новые фразы", "новых фраз")} в работе`);
+  if (stats.back) chips.push(`🔴 ${stats.back} ${ferryPlural(stats.back, "забылась", "забылись", "забылись")}`);
+  const course = ferryCourse();
+  return (
+    chips.map((c) => `<span class="ferry-chip">${c}</span>`).join("") +
+    `<div class="ferry-small">${escapeHtml(courseText(course))}</div>` +
+    (quizExactLevel && quizMaxLevel ? `<div class="ferry-small dim">${escapeHtml(levelEtaText(course.st, quizMaxLevel))}</div>` : "")
+  );
+}
+
 function finishVoyage() {
   const stars = Math.max(1, ferry.glasses);
   const meta = getFerryMeta();
-  const before = FERRY_PLACES.filter((p) => p.at <= meta.voyages).length;
   meta.voyages += 1;
   meta.stars += stars;
   meta.bestCombo = Math.max(meta.bestCombo || 0, ferry.bestCombo);
   saveFerryMeta(meta);
-  const unlocked = FERRY_PLACES.filter((p) => p.at <= meta.voyages).slice(before);
   ferrySfx("horn");
-  let extra = starsHtml(stars) + `<div class="ferry-small">Лучшая серия в рейсе: 🔥 ${ferry.bestCombo}</div>`;
-  if (unlocked.length) {
-    extra += unlocked
-      .map((p) => `<div class="ferry-unlock">Новое место на карте: <b>${p.emoji} ${p.name}</b> <i>${p.tr}</i></div>`)
-      .join("");
-  } else {
-    const next = FERRY_PLACES.find((p) => p.at > meta.voyages);
-    if (next) extra += `<div class="ferry-small">До следующего места (${next.emoji} ${next.name}): ещё ${voyagesWord(next.at - meta.voyages)}.</div>`;
-  }
+  const arrived = ferry.arrivedAt;
+  const best = ferry.bestCombo;
+  let extra = starsHtml(stars);
+  if (arrived) extra += `<div class="ferry-unlock">Новый причал на карте: <b>${arrived.emoji} ${escapeHtml(arrived.name)}</b></div>`;
+  extra += voyageReportHtml(ferry.stats);
   ferry = null;
   showFerryOverlay({
-    emoji: "⚓",
-    title: "Причалили в Каракёе!",
-    text: `Рейс №${meta.voyages} пройден. Корпус цел: ${stars} из ${FERRY_GLASSES}.`,
+    emoji: arrived ? arrived.emoji : "⚓",
+    title: arrived ? `Причалили: ${arrived.name}!` : "Рейс пройден!",
+    text: `Рейс №${meta.voyages}. Корпус цел: ${stars} из ${FERRY_GLASSES}. Лучшая серия: 🔥 ${best}`,
     extra,
     goLabel: "Следующий рейс ▶",
     onGo: showVoyageIntro,
@@ -1061,12 +1404,13 @@ function finishVoyage() {
 function sinkVoyage(phrase) {
   ferrySfx("sink");
   const done = ferry.done;
+  const stats = ferry.stats;
   ferry = null;
   showFerryOverlay({
     emoji: "🌊",
     title: "Пароход затонул",
-    text: `${FERRY_GLASSES} пробоины на отрезке ${done + 1} из ${FERRY_ROUND}. Ответы в этом рейсе всё равно засчитаны в прогресс фраз.`,
-    extra: `<div class="ferry-small">Запомни: <b>${escapeHtml(phrase.tr)}</b> — ${escapeHtml(phrase.ru)}</div>`,
+    text: `${FERRY_GLASSES} пробоины на отрезке ${done + 1} из ${FERRY_ROUND}. Ответы этого рейса всё равно засчитаны.`,
+    extra: `<div class="ferry-small">Запомни: <b>${escapeHtml(phrase.tr)}</b> — ${escapeHtml(phrase.ru)}</div>` + voyageReportHtml(stats),
     goLabel: "Новый рейс ↻",
     onGo: showVoyageIntro,
   });
@@ -1088,12 +1432,20 @@ function escapeHtml(s) {
 // Плашка "нашлась пара" — тот же принцип, что и в маджонге (см. showMatchPopup в
 // script.js), но без иконки и с переходом дальше: автоматически через 3,5 сек или сразу —
 // тапом по свободному полю. Даёт сфокусироваться на фразе, даже если ответ угадан.
-function showPhraseMatchPopup(phrase, onDone) {
+// status — что стало с фразой («ещё 1 верный — и запомнится», «🟡 Запомнилась!»).
+function showPhraseMatchPopup(phrase, onDone, status = "") {
   const popupEl = document.getElementById("match-popup");
   const card = popupEl.querySelector(".match-card");
   card.classList.add("no-icon");
   popupEl.querySelector(".match-tr").textContent = phrase.tr;
   popupEl.querySelector(".match-ru").textContent = phrase.ru;
+  let statusEl = card.querySelector(".match-status");
+  if (!statusEl) {
+    statusEl = document.createElement("div");
+    statusEl.className = "match-status";
+    popupEl.querySelector(".match-ru").after(statusEl);
+  }
+  statusEl.textContent = status;
   popupEl.classList.remove("hidden");
   clearTimeout(popupEl._hideTimer);
 
@@ -1104,6 +1456,7 @@ function showPhraseMatchPopup(phrase, onDone) {
     clearTimeout(popupEl._hideTimer);
     popupEl.classList.add("hidden");
     card.classList.remove("no-icon");
+    statusEl.textContent = "";
     popupEl.removeEventListener("click", onBackgroundClick);
     onDone();
   };
@@ -1111,13 +1464,13 @@ function showPhraseMatchPopup(phrase, onDone) {
     if (e.target === popupEl) advance();
   }
   popupEl.addEventListener("click", onBackgroundClick);
-  popupEl._hideTimer = setTimeout(advance, 3500);
+  popupEl._hideTimer = setTimeout(advance, status ? 4000 : 3500);
 
   speak(phrase.tr);
 }
 
-// Подсказка — одна на рейс. В выборе гасит половину неверных вариантов, в «собери» ставит
-// следующее слово. Ответ после подсказки не идёт в прогресс (REQ-004) и обнуляет серию.
+// Подсказка — одна на рейс: гасит половину неверных вариантов. Ответ после подсказки
+// не идёт в прогресс (REQ-004) и обнуляет серию.
 function useHint() {
   if (hintUsed || questionAnswered || !ferry || ferry.hints <= 0) return;
   hintUsed = true;
@@ -1131,23 +1484,6 @@ function useHint() {
   });
 }
 
-// --- карта Стамбула в каталоге фраз ---
-function renderFerryMap() {
-  const el = document.getElementById("ferry-map");
-  if (!el) return;
-  const meta = getFerryMeta();
-  const places = FERRY_PLACES.map((p) => {
-    const open = p.at <= meta.voyages;
-    return `<span class="ferry-place${open ? " open" : ""}" title="${open ? `${p.name} — ${p.tr}` : `откроется после ${p.at}-го рейса`}">${open ? p.emoji : "🔒"}</span>`;
-  }).join("");
-  const next = FERRY_PLACES.find((p) => p.at > meta.voyages);
-  const nextText = next ? `Дальше: ${next.name} — ещё ${voyagesWord(next.at - meta.voyages)}.` : "Весь Стамбул открыт!";
-  el.innerHTML =
-    `<div class="ferry-map-head">🗺️ Твой Стамбул · ⛴️ ${voyagesWord(meta.voyages)} · ⭐ ${meta.stars}</div>` +
-    `<div class="ferry-map-places">${places}</div>` +
-    `<div class="ferry-map-next">${nextText}</div>`;
-}
-
 function initPhrasesMode() {
   document.getElementById("quiz-hint-btn").addEventListener("click", useHint);
   const leaveQuiz = () => {
@@ -1155,7 +1491,6 @@ function initPhrasesMode() {
     ferry = null;
     document.getElementById("ferry-overlay").classList.add("hidden");
     currentTopics = [];
-    allowedNewIds = null;
     renderPhrasesCatalog();
     setScreen("phrases-catalog");
   };

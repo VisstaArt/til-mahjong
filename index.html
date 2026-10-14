@@ -192,17 +192,17 @@
   <!-- ЭКРАН 4: каталог тем — фразы -->
   <section id="screen-phrases-catalog" class="screen manager-panel">
     <div class="manager-row">
-      <div class="label label-mastered">⭐ <span id="phrases-mastered-count">0</span> фраз уже выучено</div>
+      <div class="label label-mastered">🟡 <span id="phrases-learned-count">0</span> запомнилось · ⭐ <span id="phrases-mastered-count">0</span> выучено</div>
       <div class="label"><span id="phrases-total-count">0</span> фраз всего в <span id="phrases-topic-count">0</span> темах</div>
     </div>
-    <div id="ferry-map" class="ferry-map"></div>
-    <div class="manager-row word-level-picker">
-      <div class="label">Уровень фраз — в рейс попадают только фразы до этого уровня</div>
-      <div id="phrase-level-buttons" class="level-buttons"></div>
-    </div>
     <div id="phrases-catalog-loading" class="catalog-loading">⏳ Загружаем список тем…</div>
+    <div id="phrase-journey" class="journey"></div>
     <div class="manager-row">
-      <div class="label label-secondary">Темы — по уровням, от самого нужного. «▶ Весь A1» — рейс по всем фразам уровня сразу; или отметь галочкой несколько тем.</div>
+      <div class="label label-secondary">Темы по отдельности — по уровням, от самого нужного. Можно отметить галочкой несколько тем и плыть по ним вместе.</div>
+    </div>
+    <div class="manager-row word-level-picker">
+      <div class="label">Уровень фраз для рейсов по темам — фразы выше него не попадают</div>
+      <div id="phrase-level-buttons" class="level-buttons"></div>
     </div>
     <div id="phrases-catalog-grid" class="phrase-sections"></div>
     <div class="screen-actions">
@@ -232,7 +232,7 @@
     <div class="game-bar">
       <div class="stats">
         <div class="stat"><span class="label">Тема</span><span id="quiz-topic-title">—</span></div>
-        <div class="stat"><span class="label">Прогресс</span><span id="quiz-progress">0/0</span></div>
+        <div class="stat" title="Запомнилось 🟡 из всех фраз рейса; ⭐ — выучено"><span class="label">Запомнилось</span><span id="quiz-progress">0/0</span></div>
       </div>
       <div class="controls">
         <button id="quiz-mute-btn" title="Выключить звук">🔊</button>
@@ -242,10 +242,11 @@
     </div>
     <div id="ferry-bar" class="ferry-bar">
       <div class="ferry-route">
-        <span class="ferry-pier">Kadıköy</span>
+        <span id="ferry-pier-from" class="ferry-pier">Kadıköy</span>
         <div id="ferry-track" class="ferry-track"><span id="ferry-boat" class="ferry-boat">⛴️</span></div>
-        <span class="ferry-pier">Karaköy</span>
+        <span id="ferry-pier-to" class="ferry-pier">Moda</span>
       </div>
+      <div id="ferry-course" class="ferry-course"></div>
       <div class="ferry-status">
         <span id="ferry-glasses" class="ferry-glasses" title="Корпус: ошибка — пробоина, три пробоины — пароход тонет"></span>
         <span id="ferry-combo" class="ferry-combo"></span>

@@ -982,8 +982,11 @@ main {
 }
 
 @media (max-width: 480px) {
-  .quiz-options { grid-template-columns: 1fr; }
+  .quiz-options { grid-template-columns: 1fr; gap: 8px; }
+  .quiz-options.short { grid-template-columns: 1fr 1fr; }
+  .quiz-option { padding: 10px 10px; font-size: 0.9rem; }
   .quiz-prompt { font-size: 1.2rem; }
+  .quiz-main { gap: 12px; padding: 14px 16px; }
 }
 
 .quiz-option {
@@ -1781,22 +1784,145 @@ main {
 .ferry-card-actions.screen-actions { justify-content: center; flex-wrap: wrap; gap: 10px; }
 #ferry-go-btn { font-size: 1.05rem; padding: 12px 24px; font-weight: 700; }
 
-.ferry-map {
-  margin: 0 16px 6px;
-  padding: 10px 14px;
-  border-radius: 14px;
-  background: linear-gradient(90deg, rgba(31, 78, 107, 0.45), rgba(45, 106, 79, 0.25));
+/* Карта пути «Фраз»: причалы уровня зигзагом, как в Duolingo */
+.journey {
+  margin: 0 16px 10px;
+  padding: 12px 14px;
+  border-radius: 16px;
+  background: linear-gradient(180deg, rgba(31, 78, 107, 0.5), rgba(20, 38, 34, 0.6));
   border: 1px solid rgba(255, 255, 255, 0.08);
 }
-.ferry-map:empty { display: none; }
-.ferry-map-head { font-weight: 700; font-size: 0.9rem; }
-.ferry-map-places { display: flex; flex-wrap: wrap; gap: 6px; margin: 6px 0 4px; font-size: 1.3rem; }
-.ferry-place { opacity: 0.35; filter: grayscale(1); }
-.ferry-place.open { opacity: 1; filter: none; }
-.ferry-map-next { font-size: 0.8rem; opacity: 0.7; }
+.journey:empty { display: none; }
+.journey-head { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; flex-wrap: wrap; font-weight: 700; }
+.journey-meta { font-size: 0.8rem; font-weight: 600; opacity: 0.75; }
+.journey-tabs { display: flex; gap: 6px; margin: 10px 0; }
+.journey-tabs button {
+  flex: 1;
+  padding: 6px 0;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text);
+  font-weight: 700;
+  cursor: pointer;
+}
+.journey-tabs button.active { background: var(--gold); color: #2a2110; border-color: var(--gold); }
+.journey-summary { display: flex; flex-direction: column; gap: 5px; }
+.journey-here { font-size: 0.95rem; line-height: 1.35; }
+.journey-line { font-size: 0.85rem; line-height: 1.35; opacity: 0.9; }
+.journey-line.dim { opacity: 0.65; }
+.journey-progress { height: 8px; border-radius: 4px; background: rgba(255, 255, 255, 0.1); overflow: hidden; }
+.journey-progress span { display: block; height: 100%; min-width: 2px; background: linear-gradient(90deg, var(--scale-3), var(--gold)); }
+.journey-go {
+  margin-top: 6px;
+  align-self: stretch;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: var(--gold);
+  color: #2a2110;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+.journey-go:disabled { opacity: 0.5; cursor: default; }
+.journey-scroll {
+  margin-top: 12px;
+  max-height: 420px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  border-radius: 12px;
+  background: linear-gradient(180deg, rgba(22, 58, 80, 0.55), rgba(15, 26, 23, 0.4));
+}
+.journey-path { position: relative; margin: 0 auto; max-width: 100%; }
+.journey-svg { position: absolute; inset: 0; pointer-events: none; }
+.journey-line-ahead { fill: none; stroke: rgba(255, 255, 255, 0.22); stroke-width: 4; stroke-dasharray: 2 9; stroke-linecap: round; }
+.journey-line-done { fill: none; stroke: var(--gold); stroke-width: 4; stroke-linecap: round; opacity: 0.8; }
+.journey-banner {
+  position: absolute;
+  left: 8px;
+  right: 8px;
+  height: 32px;
+  border-radius: 10px;
+  border: none;
+  background: rgba(233, 196, 106, 0.14);
+  color: var(--gold);
+  font-size: 0.82rem;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.journey-node {
+  position: absolute;
+  width: 54px;
+  height: 54px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  background: #2b3b37;
+  box-shadow: 0 4px 0 rgba(0, 0, 0, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.journey-node .jn-emoji { font-size: 1.5rem; line-height: 1; }
+.journey-node.ahead .jn-emoji { filter: grayscale(1); opacity: 0.45; }
+.journey-node.done { background: var(--scale-3); }
+.journey-node.gold { background: var(--gold); }
+.journey-node.current {
+  width: 64px;
+  height: 64px;
+  background:
+    radial-gradient(circle, #1f4e6b 0 58%, transparent 59%),
+    conic-gradient(var(--gold) var(--p), rgba(255, 255, 255, 0.15) 0);
+  animation: journey-pulse 1.8s ease-in-out infinite;
+}
+@keyframes journey-pulse { 50% { box-shadow: 0 4px 0 rgba(0, 0, 0, 0.35), 0 0 0 8px rgba(233, 196, 106, 0.18); } }
+.jn-ship { position: absolute; top: -20px; font-size: 1.3rem; filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.5)); }
+.jn-badge {
+  position: absolute;
+  right: -6px;
+  bottom: -4px;
+  min-width: 20px;
+  padding: 1px 5px;
+  border-radius: 999px;
+  background: #13261f;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  font-size: 0.7rem;
+  color: var(--text);
+}
+.jn-badge.back { color: #ffb4a2; }
+.journey-label {
+  position: absolute;
+  width: 120px;
+  transform: translateY(-50%);
+  font-size: 0.8rem;
+  font-weight: 700;
+  line-height: 1.2;
+  pointer-events: none;
+}
+.journey-label small { display: block; font-weight: 500; opacity: 0.7; }
+.journey-label.ahead { opacity: 0.55; }
+.journey-label.current { color: var(--gold); }
+.journey-finish { position: absolute; left: 0; right: 0; text-align: center; font-weight: 700; opacity: 0.8; }
+.journey-info { margin-top: 8px; font-size: 0.82rem; line-height: 1.35; opacity: 0.85; min-height: 1.2em; }
+.journey-rules { margin-top: 8px; font-size: 0.82rem; }
+.journey-rules summary { cursor: pointer; color: var(--gold); font-weight: 600; }
+.journey-rules p { margin: 6px 0 0; line-height: 1.4; opacity: 0.9; }
+
+/* Рейс: куда плывём и сколько осталось; статус фразы на плашке ответа */
+.ferry-course { font-size: 0.78rem; opacity: 0.8; text-align: center; line-height: 1.3; }
+.ferry-course:empty { display: none; }
+.ferry-pier { max-width: 26%; overflow: hidden; text-overflow: ellipsis; }
+.match-status { margin-top: 10px; font-size: 0.9rem; font-weight: 600; color: var(--text); max-width: 300px; line-height: 1.35; }
+.match-status:empty { display: none; }
 
 @media (prefers-reduced-motion: reduce) {
-  .ferry-boat, .ferry-boat.fast, .ferry-combo.hot, .ferry-glass.just-spilled, .ferry-card, .ferry-note { animation: none; transition: none; }
+  .ferry-boat, .ferry-boat.fast, .ferry-combo.hot, .ferry-glass.just-spilled, .ferry-card, .ferry-note, .journey-node.current { animation: none; transition: none; }
 }
 
 /* Пароход: препятствия на пути и корпус с пробоинами (вместо стаканов чая). */
