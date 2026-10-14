@@ -277,8 +277,9 @@
   <!-- ЭКРАН 6: каталог тем — диалоги -->
   <section id="screen-dialogues-catalog" class="screen manager-panel">
     <div class="manager-row">
-      <div class="label">Диалоги, собранные из фраз по темам — потренироваться в связной речи</div>
+      <div class="label">Диалоги, собранные из фраз по темам — потренироваться в связной речи. Каждый новый проход за ту же роль — ступенью выше: понять → выбрать голосом → вспомнить с подсказкой → живой разговор.</div>
     </div>
+    <div class="manager-row"><button id="dialogue-said-btn" class="secondary hidden" type="button"></button></div>
     <div id="dialogues-catalog-loading" class="catalog-loading">⏳ Загружаем список тем…</div>
     <div id="dialogues-catalog-grid" class="catalog-grid"></div>
   </section>
@@ -298,11 +299,13 @@
       <div class="stats">
         <div class="stat"><span class="label">Диалог</span><span id="dialogue-player-title">—</span></div>
         <div class="stat"><span class="label">Роль</span><span id="dialogue-player-role">—</span></div>
+        <div class="stat"><span class="label">Ступень</span><span id="dialogue-player-step">1/4</span></div>
       </div>
       <div class="controls">
         <button id="dialogue-translate-btn" title="Показать/скрыть перевод">👁 Перевод</button>
         <button id="dialogue-replay-all-btn" title="Прослушать весь диалог с начала">🔊 Прослушать всё</button>
         <button id="dialogue-mute-btn" title="Выключить звук">🔊</button>
+        <button id="dialogue-say-btn" class="hidden" title="Говорить вслух: включить / выключить">🎤</button>
         <button id="dialogue-back-btn" class="secondary" title="Вернуться к диалогам">← Диалоги</button>
       </div>
     </div>
@@ -318,6 +321,17 @@
         </div>
       </div>
     </main>
+    <div id="dialogue-overlay" class="ferry-overlay hidden">
+      <div class="ferry-card">
+        <div class="ferry-card-emoji">🎤</div>
+        <h3>Сейчас можно говорить вслух?</h3>
+        <p>Тогда свои реплики ты будешь говорить, а телефон — проверять. Нужен интернет, а на iPhone — включённая диктовка (Настройки → Основные → Клавиатура → Диктовка). Без голоса — вспоминаешь про себя и проверяешь себя сама. Спрошу один раз за день; переключить можно кнопкой 🎤 вверху.</p>
+        <div class="ferry-card-actions screen-actions">
+          <button id="dialogue-say-yes" type="button">🎤 Да, могу говорить</button>
+          <button id="dialogue-say-no" type="button" class="secondary">Нет, сегодня без голоса</button>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- ЭКРАН 7: грамматика — список тем (правил) -->

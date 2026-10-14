@@ -1004,15 +1004,16 @@ function ferrySfx(kind) {
 }
 
 // Новую фразу сначала узнаём (тур → рус), с каждым верным ответом — труднее:
-// на слух, потом вспомнить по-турецки. Повторы — в основном по-турецки. Если сегодня
-// можно говорить вслух (sayEnabled), «вспомнить по-турецки» чаще всего — вслух.
+// на слух, потом вспомнить по-турецки. Повторы — в основном по-турецки. Вслух
+// (если сегодня можно, sayEnabled) — только запомнившиеся фразы, от 🟡 и выше:
+// пока фраза «в работе», говорить её рано (решение пользовательницы).
 function pickQuestionType(item) {
   const box = getPhraseBoxId(item.id);
   const hits = phraseHits(item.id);
   const canListen = !muted && "speechSynthesis" in window;
   const canSay = sayEnabled();
   let options;
-  if (box === "new") options = hits === 0 ? ["tr2ru"] : hits === 1 ? ["tr2ru", "listen"] : canSay ? ["say", "listen"] : ["ru2tr", "listen"];
+  if (box === "new") options = hits === 0 ? ["tr2ru"] : hits === 1 ? ["tr2ru", "listen"] : ["ru2tr", "listen"];
   else if (box === "learning") options = canSay ? ["say", "say", "ru2tr", "listen"] : ["ru2tr", "listen"];
   else options = canSay ? ["say", "say", "ru2tr", "listen"] : ["ru2tr", "ru2tr", "listen"];
   options = options.filter((t) => (t === "listen" ? canListen : true));
@@ -1332,9 +1333,14 @@ function renderSayQuestion() {
   };
 
   mic.addEventListener("click", () => {
-    if (!alive() || mic.classList.contains("listening")) return;
+    if (!alive()) return;
+    // Второе нажатие во время записи — «я закончила».
+    if (mic.classList.contains("listening")) {
+      if (stopListening && stopListening.finish) stopListening.finish();
+      return;
+    }
     mic.classList.add("listening");
-    mic.textContent = "🔴 Слушаю… говори";
+    mic.textContent = "🔴 Слушаю… нажми, когда скажешь";
     stopListening = listenTurkish({
       onResult: (transcripts) => {
         mic.classList.remove("listening");
@@ -1634,8 +1640,7 @@ function useHint() {
   renderFerryBar();
   if (currentItem.type === "say") {
     // Первые буквы слов: «N_______? İ__ m______?»
-    const initials = currentItem.phrase.tr.replace(/[A-Za-zÇĞİÖŞÜçğıöşüâîû]+/g, (w) => w[0] + "_".repeat(Math.max(1, w.length - 1)));
-    document.getElementById("quiz-subprompt").textContent = `💡 ${initials}`;
+    document.getElementById("quiz-subprompt").textContent = `💡 ${initialsHint(currentItem.phrase.tr)}`;
     return;
   }
   const optionsEl = document.getElementById("quiz-options");

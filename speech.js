@@ -138,8 +138,14 @@ function wordsClose(a, b) {
 }
 // {ok, score, words: [{w, hit}]} — ok, если узнаны все слова короткой фразы
 // (до двух слов) или три четверти длинной; порядок слов и лишние слова не важны.
-function matchSpoken(referenceTr, heard) {
-  const slots = referenceSlots(referenceTr);
+// opts.ignore — слова-«вежливость», которые не проверяем (lütfen, efendim…),
+// opts.threshold — своя доля для длинных фраз (в живом разговоре мягче).
+function matchSpoken(referenceTr, heard, opts = {}) {
+  let slots = referenceSlots(referenceTr);
+  if (opts.ignore) {
+    const kept = slots.filter((alts) => !alts.every((a) => opts.ignore.has(a)));
+    if (kept.length) slots = kept;
+  }
   const words = spokenWords(heard);
   const used = new Set();
   let hit = 0;
@@ -152,17 +158,24 @@ function matchSpoken(referenceTr, heard) {
   });
   const need = slots.length;
   const score = need ? hit / need : 1;
-  const ok = need <= 2 ? hit === need : score >= 0.75;
+  const ok = need <= 2 ? hit === need : score >= (opts.threshold || 0.75);
   return { ok, score, words: words.map((w, j) => ({ w, hit: used.has(j) })) };
 }
-// Лучший из нескольких вариантов, которые услышал телефон.
-function bestSpokenMatch(referenceTr, transcripts) {
+// Лучший из нескольких вариантов, которые услышал телефон; references — одна фраза
+// или список допустимых вариантов.
+function bestSpokenMatch(references, transcripts, opts = {}) {
   let best = null;
-  transcripts.forEach((t) => {
-    const m = { ...matchSpoken(referenceTr, t), text: t };
-    if (!best || m.score > best.score) best = m;
+  [].concat(references).forEach((ref) => {
+    transcripts.forEach((t) => {
+      const m = { ...matchSpoken(ref, t, opts), text: t, ref };
+      if (!best || m.ok > best.ok || (m.ok === best.ok && m.score > best.score)) best = m;
+    });
   });
   return best;
+}
+// Подсказка первыми буквами: «Nasılsınız?» → «N________?»
+function initialsHint(tr) {
+  return tr.replace(/[A-Za-zÇĞİÖŞÜçğıöşüâîû]+/g, (w) => w[0] + "_".repeat(Math.max(1, w.length - 1)));
 }
 
 // --- одна попытка «скажи» ---
@@ -208,9 +221,20 @@ function listenTurkish(handlers) {
     sayBroken = "распознавание не запустилось";
     handlers.onFail(sayBroken);
   }
-  return () => {
+  // iPhone иногда не заканчивает слушать сам — через 10 секунд останавливаем
+  // (stop, а не abort: сказанное при этом всё равно распознаётся).
+  const autoStop = setTimeout(() => {
     try {
-      rec.abort();
+      rec.stop();
+    } catch {}
+  }, 10000);
+  const stop = (finish = false) => {
+    clearTimeout(autoStop);
+    try {
+      if (finish) rec.stop();
+      else rec.abort();
     } catch {}
   };
+  stop.finish = () => stop(true);
+  return stop;
 }
