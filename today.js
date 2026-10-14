@@ -39,6 +39,20 @@ const DAY_TOPIC_WORDS = {
 
 let dayRun = null; // {block} — какой шаг занятия сейчас идёт
 
+// Игра для слов темы меняется по дням; на шаге можно выбрать другую.
+const DAY_WORD_GAMES = [
+  { id: "mahjong", emoji: "🀄", title: "Маджонг" },
+  { id: "rain", emoji: "🌧", title: "Слова падают" },
+  { id: "search", emoji: "🔎", title: "Найди слова" },
+  { id: "listen", emoji: "👂", title: "Слушай и найди" },
+  { id: "cross", emoji: "✏️", title: "Кроссворд" },
+];
+function dayWordGame(dateStr) {
+  const [y, m, d] = dateStr.split("-").map(Number);
+  const dayNum = Math.floor(Date.UTC(y, m - 1, d) / 86400000);
+  return DAY_WORD_GAMES[dayNum % DAY_WORD_GAMES.length];
+}
+
 function getDayMeta() {
   return { streak: 0, lastFull: null, done: {}, voyages: 0, ...(phraseProgress[DAY_META_KEY] || {}) };
 }
@@ -119,13 +133,15 @@ async function openToday() {
   const dlg = await dayDialogue(meta.topic, level);
   if (document.body.dataset.screen !== "today") return;
 
+  const game = dayWordGame(meta.date);
   const steps = [
     {
       id: "words",
-      icon: "🀄",
-      title: "Слова темы",
-      sub: `Маджонг: ${words.join(", ")} — слова уровня ${level}`,
-      start: () => startDayWords(words, level),
+      icon: game.emoji,
+      title: `Слова темы — ${game.title}`,
+      sub: `${words.join(", ")} — слова уровня ${level}`,
+      start: () => startDayWords(words, level, game.id),
+      alt: true,
     },
     {
       id: "phrases",
@@ -166,7 +182,13 @@ async function openToday() {
         (s, i) =>
           `<li class="${meta.done[s.id] ? "done" : s.id === currentId ? "current" : ""}">` +
           `<span class="ts-icon">${meta.done[s.id] ? "✓" : s.icon}</span>` +
-          `<div class="ts-text"><b>${i + 1}. ${s.title}</b><small>${escapeHtml(s.sub)}</small></div>` +
+          `<div class="ts-text"><b>${i + 1}. ${s.title}</b><small>${escapeHtml(s.sub)}</small>` +
+          (s.alt
+            ? `<span class="ts-alt">или: ${DAY_WORD_GAMES.filter((x) => x.id !== game.id)
+                .map((x) => `<button type="button" class="ts-alt-btn" data-game="${x.id}" title="${x.title}">${x.emoji}</button>`)
+                .join("")}</span>`
+            : "") +
+          `</div>` +
           (s.start ? `<button type="button" data-step="${s.id}">${meta.done[s.id] ? "Ещё" : "▶"}</button>` : "") +
           `</li>`
       )
@@ -177,6 +199,12 @@ async function openToday() {
       : "") +
     `<p class="today-note">Порядок такой, чтобы к диалогу слова и фразы темы были уже натренированы. Грамматика идёт своим путём — правило за правилом. Тема дня — та, у которой сейчас пароход на карте фраз; уровень меняется там же.</p>` +
     `</div>`;
+  root.querySelectorAll(".ts-alt-btn").forEach((b) =>
+    b.addEventListener("click", () => {
+      b.disabled = true;
+      startDayWords(words, level, b.dataset.game);
+    })
+  );
   root.querySelectorAll("button[data-step]").forEach((b) => {
     const step = steps.find((s) => s.id === b.dataset.step);
     b.addEventListener("click", async () => {
@@ -188,7 +216,7 @@ async function openToday() {
 }
 
 // --- запуск шагов ---
-async function startDayWords(themes, level) {
+async function startDayWords(themes, level, gameId = "mahjong") {
   const loaded = getLoadedCategories();
   for (const theme of themes) if (!loaded.has(theme)) await loadCategoryWords(theme);
   customWords = await getAllCustomWords();
@@ -202,6 +230,7 @@ async function startDayWords(themes, level) {
   dayDeckOverride = deck;
   dayRun = { block: "words" };
   activateMode("mahjong");
+  if (gameId !== "mahjong") return startWordGame(gameId);
   setScreen("game");
   newGame();
 }
@@ -255,6 +284,7 @@ function leaveDayBlock() {
   if (screen === "quiz") document.getElementById("quiz-back-btn").click();
   else if (screen === "dialogue-player") document.getElementById("dialogue-back-btn").click();
   else if (screen === "grammar-drill") document.getElementById("grammar-round-end").classList.add("hidden");
+  else if (screen === "word-game") wgBack();
   else if (screen === "game") {
     stopTimer();
     winScreenEl.classList.add("hidden");
@@ -283,6 +313,8 @@ function initToday() {
   document.getElementById("today-pill").addEventListener("click", leaveDayBlock);
   // Ушла в любой режим сама — занятие больше не ведём.
   document.querySelectorAll(".mode-switch .mode-btn").forEach((b) => b.addEventListener("click", endDayRun));
+  // Из маджонга занятия ушла в настройки слов — дальше своя подборка, не слова темы.
+  document.getElementById("back-to-setup-btn").addEventListener("click", () => dayRun && endDayRun());
   updateTodayBanner();
 }
 

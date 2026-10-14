@@ -2333,3 +2333,6 @@ body[data-screen="word-game"] .topbar { display: none; }
 .listen-option.correct { border-color: var(--scale-3); background: #b7e4c7; }
 .listen-option.wrong { background: var(--danger); color: #fff; }
 .listen-tr { display: block; margin-top: 4px; font-weight: 800; color: var(--scale-1); }
+
+.ts-alt { display: flex; align-items: center; gap: 4px; margin-top: 4px; font-size: 0.75rem; opacity: 0.8; }
+.ts-alt-btn { padding: 2px 6px; border: 1px solid rgba(255, 255, 255, 0.15); border-radius: 8px; background: rgba(255, 255, 255, 0.06); font-size: 1rem; cursor: pointer; }

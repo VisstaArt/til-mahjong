@@ -118,10 +118,12 @@ function wgHintButton(count, onUse) {
   btn.disabled = count <= 0;
   btn.onclick = onUse;
 }
-function wgFinish({ emoji, title, text, extra = "" }) {
+function wgFinish({ emoji, title, text, extra = "", counts = true }) {
   cancelAnimationFrame(wgRaf);
   clearInterval(wg && wg.timer);
   const id = wg.id;
+  // Раунд сыгран — шаг «Слова темы» в «Занятии дня» готов (если игра шла оттуда).
+  if (counts && typeof dayBlockDone === "function") dayBlockDone("words");
   const ov = document.getElementById("wg-overlay");
   document.getElementById("wg-card-emoji").textContent = emoji;
   document.getElementById("wg-card-title").textContent = title;
@@ -137,6 +139,7 @@ function wgNotEnough(game) {
     emoji: "🗂",
     title: "Мало слов для игры",
     text: `Нужно хотя бы ${game.min} подходящих слов. Отметь категории в каталоге слов (и проверь «Уровень слов») — игры берут те же слова, что маджонг.`,
+    counts: false,
   });
   document.getElementById("wg-again-btn").onclick = wgBack;
 }
@@ -146,6 +149,12 @@ function wgBack() {
   wgToken++;
   wg = null;
   if ("speechSynthesis" in window) speechSynthesis.cancel();
+  // Игра шла из «Занятия дня» — туда и возвращаемся (и слова темы больше не подставляем).
+  if (typeof dayRun !== "undefined" && dayRun) {
+    document.getElementById("today-pill").classList.add("hidden");
+    openToday();
+    return;
+  }
   renderCatalog();
   renderWordGamesStrip();
   setScreen("catalog");
@@ -823,7 +832,7 @@ function startListenGame() {
   const game = WORD_GAMES[3];
   if (!("speechSynthesis" in window)) {
     wgOpen("listen");
-    return wgFinish({ emoji: "🔇", title: "Нет озвучки", text: "Этот браузер не умеет произносить слова — игра на слух недоступна." });
+    return wgFinish({ emoji: "🔇", title: "Нет озвучки", text: "Этот браузер не умеет произносить слова — игра на слух недоступна.", counts: false });
   }
   // Картинка запоминается лучше перевода — если слов с картинками хватает, только они.
   const hasPic = (w) => w.icon || COLOR_WORDS[w.tr] || NUMBER_VALUES[w.tr];
