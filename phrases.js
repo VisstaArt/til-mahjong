@@ -943,6 +943,7 @@ const QUESTION_TYPES = {
   tr2ru: "Что это значит?",
   ru2tr: "Как сказать по-турецки?",
   listen: "Послушай и выбери перевод",
+  say: "Скажи по-турецки вслух 🎤",
 };
 // Препятствия на пути парохода — по одному на фразу рейса.
 const FERRY_OBSTACLES = ["🪨", "🌊", "⛵", "🪨", "🛥️", "🌊", "🪨", "⛵", "🌊", "🪨"];
@@ -1003,18 +1004,20 @@ function ferrySfx(kind) {
 }
 
 // Новую фразу сначала узнаём (тур → рус), с каждым верным ответом — труднее:
-// на слух, потом вспомнить по-турецки. Повторы — в основном по-турецки.
+// на слух, потом вспомнить по-турецки. Повторы — в основном по-турецки. Если сегодня
+// можно говорить вслух (sayEnabled), «вспомнить по-турецки» чаще всего — вслух.
 function pickQuestionType(item) {
   const box = getPhraseBoxId(item.id);
   const hits = phraseHits(item.id);
   const canListen = !muted && "speechSynthesis" in window;
+  const canSay = sayEnabled();
   let options;
-  if (box === "new") options = hits === 0 ? ["tr2ru"] : hits === 1 ? ["tr2ru", "listen"] : ["ru2tr", "listen"];
-  else if (box === "learning") options = ["ru2tr", "listen"];
-  else options = ["ru2tr", "ru2tr", "listen"];
+  if (box === "new") options = hits === 0 ? ["tr2ru"] : hits === 1 ? ["tr2ru", "listen"] : canSay ? ["say", "listen"] : ["ru2tr", "listen"];
+  else if (box === "learning") options = canSay ? ["say", "say", "ru2tr", "listen"] : ["ru2tr", "listen"];
+  else options = canSay ? ["say", "say", "ru2tr", "listen"] : ["ru2tr", "ru2tr", "listen"];
   options = options.filter((t) => (t === "listen" ? canListen : true));
   if (!options.length) options = ["tr2ru"];
-  const varied = options.filter((t) => t !== lastQuestionType);
+  const varied = options.filter((t) => t === "say" || t !== lastQuestionType);
   const pickFrom = varied.length ? varied : options;
   return pickFrom[Math.floor(Math.random() * pickFrom.length)];
 }
@@ -1077,7 +1080,44 @@ function showFerryOverlay({ emoji, title, text, extra = "", goLabel, onGo }) {
   go.focus();
 }
 
+// Перед первым рейсом дня: «Сейчас можно говорить вслух?» Без «да» голосовых заданий нет.
+function askSayThen(next) {
+  if (!saySupported() || navigator.onLine === false || sayChoiceToday() !== null) {
+    next();
+    return;
+  }
+  showFerryOverlay({
+    emoji: "🎤",
+    title: "Сейчас можно говорить вслух?",
+    text: "Тогда будут задания «Скажи по-турецки»: видишь фразу по-русски, нажимаешь 🎤 и говоришь её по-турецки. Нужен интернет, а на iPhone — включённая диктовка (Настройки → Основные → Клавиатура → Диктовка). Спрошу один раз за день; переключить можно кнопкой 🎤 вверху.",
+    extra: '<button type="button" id="say-no-btn" class="secondary">Нет, сегодня без голоса</button>',
+    goLabel: "🎤 Да, могу говорить",
+    onGo: () => {
+      setSayChoice(true);
+      updateSayButton();
+      next();
+    },
+  });
+  document.getElementById("say-no-btn").addEventListener("click", () => {
+    document.getElementById("ferry-overlay").classList.add("hidden");
+    setSayChoice(false);
+    updateSayButton();
+    next();
+  });
+}
+function updateSayButton() {
+  const btn = document.getElementById("quiz-say-btn");
+  btn.classList.toggle("hidden", !saySupported());
+  btn.classList.toggle("off", !sayEnabled());
+  btn.title = sayEnabled() ? "Задания вслух включены — нажми, чтобы выключить" : "Задания вслух выключены — нажми, чтобы включить";
+}
+
 function showVoyageIntro() {
+  if (saySupported() && sayChoiceToday() === null && navigator.onLine !== false) {
+    askSayThen(showVoyageIntro);
+    return;
+  }
+  updateSayButton();
   ferryToken++;
   const course = ferryCourse();
   ferry = {
@@ -1151,6 +1191,8 @@ function clearQuestionArea() {
 
 function nextQuestion() {
   if (!ferry) return;
+  if (stopListening) stopListening();
+  stopListening = null;
   currentItem = { ...pickNextItem() };
   // Совсем новая фраза — видишь впервые: ошибка на ней не ломает корпус.
   currentItem.fresh = !phraseProgress[currentItem.id];
@@ -1167,7 +1209,8 @@ function nextQuestion() {
   lastQuestionType = type;
   currentItem.type = type;
   document.getElementById("quiz-direction").textContent = (currentItem.fresh ? "🆕 Новая фраза · " : "") + QUESTION_TYPES[type];
-  renderChoiceQuestion(type);
+  if (type === "say") renderSayQuestion();
+  else renderChoiceQuestion(type);
   renderFerryBar();
   updateQuizProgressLabel();
 }
@@ -1218,6 +1261,119 @@ function renderChoiceQuestion(type) {
     btn.addEventListener("click", () => onAnswerClick(btn));
     optionsEl.appendChild(btn);
   });
+}
+
+// «Скажи по-турецки вслух»: русская фраза → 🎤 → телефон распознаёт → мягкая сверка
+// (matchSpoken в speech.js). Не совпало — видно, что услышал телефон; можно сказать
+// ещё раз (до SAY_TRIES попыток) или открыть ответ и честно оценить себя:
+// «я так и сказала» (телефон не понял) — засчитывается, «не так» — как ошибка.
+const SAY_TRIES = 3;
+let stopListening = null;
+
+function renderSayQuestion() {
+  const phrase = currentItem.phrase;
+  document.getElementById("quiz-prompt").textContent = phrase.ru;
+  const optionsEl = document.getElementById("quiz-options");
+  optionsEl.classList.remove("short");
+  optionsEl.innerHTML =
+    '<div class="say-box">' +
+    '<button type="button" class="say-mic">🎤 Нажми и скажи</button>' +
+    '<div class="say-heard"></div>' +
+    '<div class="say-actions"><button type="button" class="say-skip secondary">Не помню — показать</button></div>' +
+    "</div>";
+  const box = optionsEl.querySelector(".say-box");
+  const mic = box.querySelector(".say-mic");
+  const heardEl = box.querySelector(".say-heard");
+  const actions = box.querySelector(".say-actions");
+  const item = currentItem;
+  let tries = 0;
+  const alive = () => ferry && currentItem === item && !questionAnswered;
+
+  const setActions = (buttons) => {
+    actions.innerHTML = "";
+    buttons.forEach(([label, cls, fn]) => {
+      const b = document.createElement("button");
+      b.type = "button";
+      b.className = cls;
+      b.textContent = label;
+      b.addEventListener("click", () => alive() && fn());
+      actions.appendChild(b);
+    });
+  };
+  const showHeard = (m) => {
+    heardEl.innerHTML =
+      '<span class="say-label">Услышал:</span> ' +
+      (m.words.length ? m.words.map((x) => `<span class="${x.hit ? "hit" : "miss"}">${escapeHtml(x.w)}</span>`).join(" ") : "—");
+  };
+  // Открыть ответ: эталон + озвучка; дальше человек сам решает, совпало ли.
+  const reveal = (afterTry) => {
+    mic.classList.add("hidden");
+    const ref = document.createElement("div");
+    ref.className = "say-reference";
+    ref.innerHTML = `<span class="say-label">Правильно:</span> <b>${escapeHtml(phrase.tr)}</b> `;
+    ref.appendChild(speakButton(phrase.tr));
+    heardEl.after(ref);
+    speak(phrase.tr);
+    if (afterTry) {
+      setActions([
+        ["✓ Я так и сказала", "", () => onCorrect()],
+        ["✗ Не так", "secondary", () => sayMiss()],
+      ]);
+    } else {
+      sayMiss(true);
+    }
+  };
+  // Ошибка: пробоина (как неверный вариант), потом пароход идёт дальше без зачёта.
+  const sayMiss = (waitForNext = false) => {
+    onWrong(null);
+    if (!ferry || questionAnswered) return;
+    if (waitForNext) setActions([["Дальше ▶", "", () => onCorrect()]]);
+    else onCorrect();
+  };
+
+  mic.addEventListener("click", () => {
+    if (!alive() || mic.classList.contains("listening")) return;
+    mic.classList.add("listening");
+    mic.textContent = "🔴 Слушаю… говори";
+    stopListening = listenTurkish({
+      onResult: (transcripts) => {
+        mic.classList.remove("listening");
+        mic.textContent = "🎤 Сказать ещё раз";
+        if (!alive()) return;
+        const m = bestSpokenMatch(phrase.tr, transcripts);
+        showHeard(m);
+        if (m.ok) {
+          heardEl.classList.add("ok");
+          onCorrect();
+          return;
+        }
+        tries++;
+        if (tries >= SAY_TRIES) {
+          reveal(true);
+          return;
+        }
+        setActions([["Показать ответ", "secondary", () => reveal(true)]]);
+        flashFerryNote(`Не совпало — попробуй ещё (${SAY_TRIES - tries})`);
+      },
+      onNothing: () => {
+        mic.classList.remove("listening");
+        mic.textContent = "🎤 Не расслышал — нажми и скажи";
+      },
+      onFail: (reason) => {
+        mic.classList.remove("listening");
+        if (!alive()) return;
+        // Голос не работает — до перезагрузки только выбор вариантов.
+        updateSayButton();
+        currentItem.type = "ru2tr";
+        lastQuestionType = "ru2tr";
+        clearQuestionArea();
+        document.getElementById("quiz-direction").textContent = QUESTION_TYPES.ru2tr;
+        document.getElementById("quiz-subprompt").textContent = `🎤 Голос выключен: ${reason}.`;
+        renderChoiceQuestion("ru2tr");
+      },
+    });
+  });
+  box.querySelector(".say-skip").addEventListener("click", () => alive() && reveal(false));
 }
 
 function onAnswerClick(btn) {
@@ -1476,6 +1632,12 @@ function useHint() {
   hintUsed = true;
   ferry.hints--;
   renderFerryBar();
+  if (currentItem.type === "say") {
+    // Первые буквы слов: «N_______? İ__ m______?»
+    const initials = currentItem.phrase.tr.replace(/[A-Za-zÇĞİÖŞÜçğıöşüâîû]+/g, (w) => w[0] + "_".repeat(Math.max(1, w.length - 1)));
+    document.getElementById("quiz-subprompt").textContent = `💡 ${initials}`;
+    return;
+  }
   const optionsEl = document.getElementById("quiz-options");
   const wrongButtons = shuffle(Array.from(optionsEl.children).filter((b) => b.dataset.correct === "0" && !b.disabled));
   wrongButtons.slice(0, Math.ceil(wrongButtons.length / 2)).forEach((b) => {
@@ -1487,6 +1649,8 @@ function useHint() {
 function initPhrasesMode() {
   document.getElementById("quiz-hint-btn").addEventListener("click", useHint);
   const leaveQuiz = () => {
+    if (stopListening) stopListening();
+    stopListening = null;
     ferryToken++;
     ferry = null;
     document.getElementById("ferry-overlay").classList.add("hidden");
@@ -1495,6 +1659,11 @@ function initPhrasesMode() {
     setScreen("phrases-catalog");
   };
   document.getElementById("quiz-back-btn").addEventListener("click", leaveQuiz);
+  document.getElementById("quiz-say-btn").addEventListener("click", () => {
+    setSayChoice(!sayEnabled());
+    updateSayButton();
+    flashFerryNote(sayEnabled() ? "🎤 Задания вслух включены" : "Задания вслух выключены");
+  });
   document.getElementById("ferry-exit-btn").addEventListener("click", leaveQuiz);
   document.getElementById("quiz-mute-btn").addEventListener("click", () => {
     muted = !muted;

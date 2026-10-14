@@ -1979,3 +1979,44 @@ main {
   font-weight: 700;
   cursor: pointer;
 }
+
+/* «Скажи по-турецки вслух» (speech.js) */
+#quiz-say-btn.hidden { display: none; }
+#quiz-say-btn.off { opacity: 0.45; text-decoration: line-through; }
+.say-box { grid-column: 1 / -1; display: flex; flex-direction: column; align-items: center; gap: 12px; width: 100%; }
+.say-mic {
+  width: 100%;
+  max-width: 340px;
+  padding: 18px 16px;
+  border: none;
+  border-radius: 999px;
+  background: var(--gold);
+  color: #2a2110;
+  font-size: 1.15rem;
+  font-weight: 800;
+  cursor: pointer;
+  box-shadow: 0 4px 0 rgba(0, 0, 0, 0.35);
+}
+.say-mic.hidden { display: none; }
+.say-mic.listening { background: var(--danger); color: #fff; animation: say-pulse 1s ease-in-out infinite; }
+@keyframes say-pulse { 50% { box-shadow: 0 4px 0 rgba(0, 0, 0, 0.35), 0 0 0 10px rgba(231, 111, 81, 0.25); } }
+.say-heard, .say-reference { font-size: 1rem; line-height: 1.5; text-align: center; max-width: 520px; }
+.say-heard:empty { display: none; }
+.say-heard .hit { color: #95d5b2; font-weight: 700; }
+.say-heard .miss { color: #ffb4a2; text-decoration: underline wavy rgba(255, 180, 162, 0.6); }
+.say-label { opacity: 0.65; font-size: 0.85rem; }
+.say-reference b { color: var(--gold); }
+.say-actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; }
+.say-actions button {
+  border: none;
+  border-radius: 10px;
+  padding: 10px 16px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  background: var(--gold);
+  color: #2a2110;
+}
+.say-actions button.secondary { background: var(--scale-2); color: var(--text); }
+#say-no-btn { width: 100%; padding: 10px; border-radius: 10px; border: none; font-weight: 600; cursor: pointer; }
+@media (prefers-reduced-motion: reduce) { .say-mic.listening { animation: none; } }
