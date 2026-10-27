@@ -12,6 +12,12 @@
 // телефона (startOffline). Сыгранное офлайн помечается (UNSYNCED_KEY) и при следующей
 // связи уходит в облако, а не затирается более старой облачной копией.
 //
+// Облако может и вовсе не отвечать при живом интернете: бесплатный проект Supabase
+// засыпает после недели без заходов (адрес перестаёт существовать). Тогда на экране
+// входа — «Играть на этом телефоне» (startLocal), а при следующем входе берём ту копию
+// прогресса, где его больше: Safari сам стирает данные сайта, которым неделю не
+// пользовались, и пустой телефон не должен затереть облако.
+//
 // Схема таблицы — см. SQL, который пользователь выполнил в Supabase SQL Editor
 // (assets тут не хранится — это одноразовая настройка на стороне Supabase).
 
@@ -24,6 +30,8 @@ const SUPABASE_AUTH_KEY = "sb-orrdqcjqeprccpzicfmb-auth-token"; // где supaba
 const UNSYNCED_KEY = "til-unsynced"; // id пользователя, чей прогресс ещё не дошёл до облака
 const SYNCED_SIG_KEY = "til-synced-sig"; // отпечаток прогресса, который точно есть в облаке
 const NETWORK_WAIT_MS = 4000; // дольше слабую сеть не ждём — играем офлайн
+const LOCAL_PLAY_KEY = "til-local-play"; // играли без входа, пока облако не отвечало
+const WANT_LOGIN_KEY = "til-want-login"; // нажала «Войти» в игре без облака — показать форму
 
 // Ключи localStorage <-> колонки таблицы user_progress — единственное место, где это
 // сопоставление описано; если появится новый вид прогресса (например, для диалогов),
@@ -78,6 +86,17 @@ async function hydrateFromCloud(userId) {
     return;
   }
 
+  // Играли без входа: если на телефоне прогресса не меньше, чем в облаке, — он новее,
+  // отправляем его. Меньше — телефон, видимо, всё забыл, берём облако.
+  if (localStorage.getItem(LOCAL_PLAY_KEY)) {
+    localStorage.removeItem(LOCAL_PLAY_KEY);
+    if (progressSize(progressPayload(userId)) >= progressSize(data || {})) {
+      await pushToCloud(userId);
+      sessionStorage.setItem("til-hydrated", userId);
+      return;
+    }
+  }
+
   let changed = false;
   for (const [localKey, column] of Object.entries(SYNCED_KEYS)) {
     const value = (data && data[column]) ?? defaultForKey(localKey);
@@ -108,6 +127,13 @@ function progressPayload(userId) {
     }
   }
   return payload;
+}
+// Сколько всего записей прогресса (слов, фраз, тем) — чтобы сравнить две копии.
+function progressSize(payload) {
+  return Object.values(SYNCED_KEYS).reduce((n, column) => {
+    const v = payload[column];
+    return n + (Array.isArray(v) ? v.length : v && typeof v === "object" ? Object.keys(v).length : 0);
+  }, 0);
 }
 // Короткий отпечаток (FNV-1a) — хранить вторую копию всего прогресса ради сравнения жалко.
 function progressSig(payload) {
@@ -143,6 +169,7 @@ function translateAuthError(message) {
     "Password should be at least 6 characters": "Пароль должен быть не короче 6 символов",
     "Email not confirmed": "Почта ещё не подтверждена — проверь письмо со ссылкой",
   };
+  if (/fetch|load failed|network/i.test(message)) return "Нет связи с облаком";
   return map[message] || message;
 }
 
@@ -206,11 +233,20 @@ function initAuthForm() {
       errorEl.textContent = translateAuthError(err.message);
       errorEl.classList.remove("hidden");
       submitBtn.disabled = false;
+      if (!(await cloudReachable())) showCloudDown();
     }
   });
 
+  document.getElementById("auth-local-btn").addEventListener("click", startLocal);
+
   document.getElementById("account-logout-btn").addEventListener("click", async () => {
-    if (currentUserId) await pushToCloud(currentUserId); // финальная выгрузка перед выходом
+    if (!currentUserId) {
+      // Играли без облака — эта кнопка «Войти».
+      sessionStorage.setItem(WANT_LOGIN_KEY, "1");
+      location.reload();
+      return;
+    }
+    await pushToCloud(currentUserId); // финальная выгрузка перед выходом
     clearInterval(pushTimer);
     pushTimer = null;
     sessionStorage.removeItem("til-hydrated");
@@ -233,13 +269,57 @@ function storedUser() {
 // пытаться — как только сеть вернётся, supabase-js сам обновит токен и прогресс уйдёт.
 function startOffline(user) {
   currentUserId = user.id;
-  document.getElementById("account-email").textContent = `${user.email} · без сети`;
+  const why = navigator.onLine === false ? "без сети" : "облако не отвечает";
+  document.getElementById("account-email").textContent = `${user.email} · ${why}`;
   document.getElementById("account-box").classList.remove("hidden");
   authReadyResolve();
   if (!pushTimer) pushTimer = setInterval(() => pushToCloud(currentUserId), 10000);
 }
 
+// Облако вообще отвечает? Любой ответ сервера (кроме 5xx) — да; нет адреса или молчит — нет.
+async function cloudReachable() {
+  const abort = new AbortController();
+  const timer = setTimeout(() => abort.abort(), NETWORK_WAIT_MS);
+  try {
+    const res = await fetch(`${SUPABASE_URL}/auth/v1/health`, {
+      headers: { apikey: SUPABASE_PUBLISHABLE_KEY },
+      signal: abort.signal,
+    });
+    return res.status < 500;
+  } catch {
+    return false;
+  } finally {
+    clearTimeout(timer);
+  }
+}
+
+function showCloudDown() {
+  document.getElementById("auth-cloud-down").classList.remove("hidden");
+}
+
+// Играем без входа на прогрессе из телефона: в облако ничего не уходит, пока не войдёшь.
+function startLocal() {
+  if (currentUserId) return;
+  localStorage.setItem(LOCAL_PLAY_KEY, "1");
+  document.getElementById("account-email").textContent = "без облака";
+  document.getElementById("account-logout-btn").textContent = "Войти";
+  document.getElementById("account-box").classList.remove("hidden");
+  if (document.body.dataset.screen === "auth") document.body.dataset.screen = "catalog";
+  authReadyResolve();
+}
+
+// Экран входа. Облако не отвечает — объясняем и даём играть; уже так играли — сразу пускаем.
+async function showAuthScreen(wantLogin) {
+  document.body.dataset.screen = "auth";
+  if (await cloudReachable()) return;
+  if (currentUserId) return;
+  if (localStorage.getItem(LOCAL_PLAY_KEY) && !wantLogin) startLocal();
+  else showCloudDown();
+}
+
 function initSupabaseSync() {
+  const wantLogin = sessionStorage.getItem(WANT_LOGIN_KEY);
+  sessionStorage.removeItem(WANT_LOGIN_KEY);
   const stored = storedUser();
   if (!supabaseClient) {
     // Библиотеки входа нет (офлайн и не успела закешироваться) — играем локально.
@@ -277,9 +357,9 @@ function initSupabaseSync() {
       // Токен не обновился из-за сети (при настоящей ошибке входа supabase-js стёр бы его).
       startOffline(storedUser());
     } else {
-      document.body.dataset.screen = "auth";
       // window.authReady осознанно остаётся неразрешённым — дальше игра не пойдёт,
-      // пока не будет успешного входа (см. форму выше).
+      // пока не будет успешного входа (см. форму выше) или игры без облака.
+      showAuthScreen(wantLogin);
     }
   });
 }

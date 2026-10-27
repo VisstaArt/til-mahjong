@@ -1252,6 +1252,28 @@ main {
 }
 .auth-status.hidden { display: none; }
 
+.auth-cloud-down {
+  margin-top: 18px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+.auth-cloud-down.hidden { display: none; }
+.auth-cloud-down p { margin: 0 0 12px; }
+.auth-cloud-down small { display: block; margin-top: 10px; color: rgba(241, 245, 242, 0.6); }
+#auth-local-btn {
+  width: 100%;
+  background: transparent;
+  color: var(--gold);
+  border: 1px solid var(--gold);
+  border-radius: 8px;
+  padding: 11px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
 /* Индикатор аккаунта в шапке — почта + выход, видно только когда вошли. */
 .account-box {
   display: flex;
