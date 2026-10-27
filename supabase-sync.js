@@ -52,6 +52,7 @@ window.authReady = new Promise((resolve) => {
 
 let currentUserId = null;
 let pushTimer = null;
+let offlineMode = false; // играем по входу из телефона, облако пока не ответило
 
 function defaultForKey(key) {
   return key.includes("excluded") || key.includes("loaded") ? [] : {};
@@ -269,6 +270,7 @@ function storedUser() {
 // пытаться — как только сеть вернётся, supabase-js сам обновит токен и прогресс уйдёт.
 function startOffline(user) {
   currentUserId = user.id;
+  offlineMode = true;
   const why = navigator.onLine === false ? "без сети" : "облако не отвечает";
   document.getElementById("account-email").textContent = `${user.email} · ${why}`;
   document.getElementById("account-box").classList.remove("hidden");
@@ -336,7 +338,18 @@ function initSupabaseSync() {
   });
 
   supabaseClient.auth.onAuthStateChange((event, session) => {
-    if (session && !currentUserId) onAuthenticated(session);
+    if (!session) return;
+    if (offlineMode) {
+      // Облако ожило (supabase-js сам обновил вход) — подключаемся, не дожидаясь
+      // перезапуска. Сыгранное без облака уходит туда первым, а не затирается.
+      offlineMode = false;
+      if (localStorage.getItem(SYNCED_SIG_KEY) !== progressSig(progressPayload(session.user.id))) {
+        localStorage.setItem(UNSYNCED_KEY, session.user.id);
+      }
+      onAuthenticated(session);
+    } else if (!currentUserId) {
+      onAuthenticated(session);
+    }
   });
 
   // Сети точно нет — не ждём: supabase-js полминуты пытался бы обновить токен, а всё
