@@ -471,6 +471,12 @@ GRAMMAR_TOPICS.push({
     <div class="memo-examples" data-examples="Sütlü kahve lütfen.|Кофе с молоком, пожалуйста.;Şekersiz çay içiyorum.|Я пью чай без сахара.;Kırmızı şapkalı kızı görüyorum.|Я вижу девочку в красной шапке.;Ben Moskovalıyım.|Я из Москвы."></div>
   `,
 });
+// Порядок тем — как в учебнике Yeni Hitit 1: «быть» (ünite 1) раньше -yor (ünite 2). Путь
+// «Быть» опирается только на себя («где?» -de объясняется в нём же), остальные пути — на
+// предыдущие темы, поэтому вперёд поднята только она. Этапы «Занятия дня»
+// (assets/stages.json, tools/stages/build_stages.py) идут по этому же порядку.
+GRAMMAR_TOPICS.unshift(...GRAMMAR_TOPICS.splice(GRAMMAR_TOPICS.findIndex((t) => t.id === "cop"), 1));
+
 const GRAMMAR_REVIEW = { id: "review", emoji: "🔀", title: "Повторение вперемешку" };
 
 // Где застряла Памук — новое место на каждой ступени темы (по кругу).
@@ -577,6 +583,9 @@ function nextToPlay(topicId) {
 function isTopicUnlocked(topicId) {
   const i = GRAMMAR_TOPICS.findIndex((t) => t.id === topicId);
   if (i <= 0) return true;
+  // Начатая тема не закрывается: порядок тем менялся, а темы этапов, пройденных
+  // входным тестом, открыты сразу.
+  if (grammarLevels[topicId] && Object.keys(grammarLevels[topicId]).length) return true;
   const prev = GRAMMAR_TOPICS[i - 1].id;
   const gate = topicLevels(prev).find((l) => l.gate);
   return !gate || levelStars(prev, gate.n) >= STARS_TO_UNLOCK;

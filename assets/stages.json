@@ -1,0 +1,1509 @@
+{
+ "stages": [
+  {
+   "n": 1,
+   "title": "Знакомство",
+   "unit": "Hitit 1 · Merhaba",
+   "emoji": "👋",
+   "grammar": [
+    "cop"
+   ],
+   "phraseTopics": [
+    "privetstvie",
+    "znakomstvo",
+    "voprositelnye-slova",
+    "obscheprinyatye-slova"
+   ],
+   "words": [
+    "Числительные",
+    "Страны и национальности",
+    "Служебные слова",
+    "Профессии",
+    "Эмоции и чувства"
+   ],
+   "phrases": [
+    "privetstvie::Nasılsınız?",
+    "privetstvie::Ne oldu?",
+    "privetstvie::Merhaba",
+    "privetstvie::Günaydın",
+    "privetstvie::İyi günler",
+    "privetstvie::İyi akşamlar",
+    "privetstvie::İyi geceler",
+    "privetstvie::Hoş geldiniz",
+    "privetstvie::Tebrikler",
+    "privetstvie::İyi hafta sonları",
+    "privetstvie::İyi şanslar",
+    "privetstvie::İyi yolculuklar",
+    "privetstvie::İyi dileklerimle",
+    "privetstvie::İyi yıllar",
+    "privetstvie::Mutlu yıllar",
+    "privetstvie::Kocanız (eşiniz) nasıl?",
+    "privetstvie::Oğlunuz/kızınız nasıl?",
+    "privetstvie::Affedersiniz",
+    "privetstvie::Özür dilerim/Pardon",
+    "privetstvie::Teşekkür ederim",
+    "privetstvie::Çok teşekkür ederim",
+    "privetstvie::Bir şey değil",
+    "privetstvie::Her şey yolunda mı?",
+    "privetstvie::Türkçe bilmiyorum",
+    "privetstvie::Anladınız mı?",
+    "privetstvie::Anladın mı?",
+    "privetstvie::Anlıyorum",
+    "privetstvie::Anlamıyorum",
+    "privetstvie::Anladım",
+    "privetstvie::Anlamadım",
+    "privetstvie::Bu Türkçede ne demek?",
+    "privetstvie::Buna Türkçede ne denir?",
+    "privetstvie::Bu Türkçe nasıl söylenir?",
+    "privetstvie::… istiyorum",
+    "privetstvie::… rica ediyorum",
+    "privetstvie::Yoruldum",
+    "privetstvie::Acıktım",
+    "privetstvie::Susadım",
+    "privetstvie::… arıyorum",
+    "privetstvie::Kayboldum",
+    "privetstvie::Önemli",
+    "privetstvie::Acele",
+    "privetstvie::Benim adım …",
+    "privetstvie::Adınız ne?",
+    "privetstvie::Milliyetiniz ne?",
+    "privetstvie::Ben Rusum",
+    "privetstvie::Nerelisiniz?",
+    "privetstvie::Nerelisin?",
+    "privetstvie::Rusyalıyım",
+    "privetstvie::O Rusyalı",
+    "privetstvie::Ne kadar zamandır buradasınız?",
+    "privetstvie::… gündür buradayım",
+    "privetstvie::… haftadır buradayım",
+    "privetstvie::… aydır buradayım",
+    "privetstvie::… yıldır buradayım",
+    "privetstvie::Yalnız mısınız?",
+    "privetstvie::Karımla birlikteyim",
+    "privetstvie::Kocamla birlikteyim",
+    "privetstvie::Oğlumla birlikteyim",
+    "privetstvie::Kızımla birlikteyim",
+    "privetstvie::Bekarım",
+    "privetstvie::Evliyim",
+    "privetstvie::Tatilde misiniz?",
+    "privetstvie::Tatildeyim",
+    "privetstvie::Tatildeyiz",
+    "privetstvie::İş için buradayım",
+    "privetstvie::Bu ilk gelişiniz mi?",
+    "privetstvie::Bu ilk gelişim",
+    "privetstvie::Nerede yaşıyorsunuz?",
+    "privetstvie::Moskova'da yaşıyorum",
+    "privetstvie::Hobiniz var mı?",
+    "privetstvie::Hobim müzik",
+    "privetstvie::Hobim spor",
+    "privetstvie::Hobim sinema",
+    "privetstvie::Mesleğiniz ne?",
+    "privetstvie::Ben öğretmenim",
+    "privetstvie::O iş adamı/iş kadını",
+    "privetstvie::Bu kızım/oğlum",
+    "privetstvie::Memnun oldum",
+    "privetstvie::Evli misiniz?",
+    "privetstvie::Oğlum/kızım … yaşında",
+    "privetstvie::Nerede kalıyorsunuz?",
+    "znakomstvo::Çok naziksin",
+    "znakomstvo::Harika.",
+    "znakomstvo::Ne yazık ki şimdi ayrılmak zorundayım",
+    "znakomstvo::Bize katılsana?",
+    "znakomstvo::Ne/neden gülüyorsun?",
+    "znakomstvo::Bu akşam boş musun?",
+    "znakomstvo::Çok iyi olur.",
+    "znakomstvo::Teşekkür ederim",
+    "znakomstvo::Teşekkür ederim ama meşgulüm",
+    "znakomstvo::Nerede buluşalım?",
+    "znakomstvo::Telefon numaran ne?",
+    "znakomstvo::Ne zaman geleyim?",
+    "znakomstvo::Ne zaman geri dönmen gerek?",
+    "znakomstvo::Ateşin var mı acaba?",
+    "znakomstvo::Bir sigara ister misin?",
+    "znakomstvo::Bıraktım",
+    "znakomstvo::Seni evine götüreyim",
+    "znakomstvo::Akşam nefisti",
+    "znakomstvo::Sonra/yarın görüşürüz",
+    "znakomstvo::Adınız ne?",
+    "znakomstvo::Benim adım Olga.",
+    "znakomstvo::Soyadınız ne?",
+    "znakomstvo::Nerelisiniz?",
+    "znakomstvo::Rusyalıyım.",
+    "znakomstvo::Moskovalıyım.",
+    "znakomstvo::İstanbullu musunuz?",
+    "znakomstvo::Nerede oturuyorsunuz?",
+    "znakomstvo::Moda'da oturuyorum.",
+    "znakomstvo::Öğrenci misiniz?",
+    "znakomstvo::Kaç yaşındasınız?",
+    "znakomstvo::Türkçe öğreniyorum.",
+    "znakomstvo::Hoş geldiniz!",
+    "znakomstvo::Hoş bulduk.",
+    "znakomstvo::WhatsApp'ınız var mı?",
+    "voprositelnye-slova::Ne kadar uzaklıkta?",
+    "voprositelnye-slova::Ne kadar zaman?",
+    "obscheprinyatye-slova::Oradayım",
+    "obscheprinyatye-slova::Oradayız",
+    "obscheprinyatye-slova::Oradalar",
+    "obscheprinyatye-slova::Var",
+    "obscheprinyatye-slova::Var mı?",
+    "obscheprinyatye-slova::Yok",
+    "obscheprinyatye-slova::Hiçbir şey yok",
+    "obscheprinyatye-slova::Biliyorum",
+    "obscheprinyatye-slova::Bilmiyorum",
+    "obscheprinyatye-slova::Öyle sanıyorum",
+    "obscheprinyatye-slova::Acelem var",
+    "obscheprinyatye-slova::Bir dakika lütfen",
+    "obscheprinyatye-slova::İçeri gelin",
+    "obscheprinyatye-slova::İçeri gel"
+   ],
+   "dialogues": [
+    {
+     "topic": "znakomstvo",
+     "id": "znakomstvo-leyla-podruga",
+     "turns": 9
+    },
+    {
+     "topic": "znakomstvo",
+     "id": "znakomstvo-yazisma",
+     "turns": 12
+    },
+    {
+     "topic": "znakomstvo",
+     "id": "znakomstvo-vezhlivyy-otkaz",
+     "turns": 12
+    },
+    {
+     "topic": "znakomstvo",
+     "id": "znakomstvo-sevdikler",
+     "turns": 13
+    },
+    {
+     "topic": "znakomstvo",
+     "id": "znakomstvo-posle-svidaniya",
+     "turns": 16
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "title": "Мой день",
+   "unit": "Hitit 2 · Günlük hayat",
+   "emoji": "☀️",
+   "grammar": [
+    "yor",
+    "case"
+   ],
+   "phraseTopics": [
+    "moy-den",
+    "vremya"
+   ],
+   "words": [
+    "Глаголы — действия",
+    "Календарь и время",
+    "Направления и предлоги",
+    "Дом и мебель"
+   ],
+   "phrases": [
+    "privetstvie::Sizi rahatsız ediyor muyum?",
+    "privetstvie::Rusça biliyor musunuz?",
+    "privetstvie::Burada birisi Rusça biliyor mu?",
+    "privetstvie::Bu buraya ikinci/üçüncü gelişimiz",
+    "privetstvie::Bir otelde kalıyoruz/Bir otelde kalıyorum",
+    "znakomstvo::Sen de geliyor musun?",
+    "znakomstvo::Birisini mi bekliyorsun?",
+    "znakomstvo::Bu akşam bir şey yapıyor musun?",
+    "znakomstvo::İyi bir diskotek biliyorum",
+    "znakomstvo::Sinemaya gidelim mi?",
+    "znakomstvo::Sigara içiyor musun?",
+    "znakomstvo::Hayır içmiyorum, teşekkürler.",
+    "znakomstvo::Yalnız mı yaşıyorsun?",
+    "znakomstvo::Ben de Kadıköy'de oturuyorum.",
+    "znakomstvo::Hangi katta oturuyorsunuz?",
+    "znakomstvo::Ne iş yapıyorsunuz?",
+    "znakomstvo::Pazarlama bölümünde çalışıyorum.",
+    "znakomstvo::Hayır, öğrenci değilim. Çalışıyorum.",
+    "znakomstvo::Türkçe biliyor musunuz?",
+    "znakomstvo::Biraz Türkçe konuşuyorum.",
+    "obscheprinyatye-slova::Bu taraftan lütfen",
+    "moy-den::Her sabah yedide kalkıyorum.",
+    "moy-den::Önce bir kahve içiyorum.",
+    "moy-den::Acele etmeliyim.",
+    "moy-den::İşe nasıl gidiyorsun?",
+    "moy-den::Yol yirmi dakika sürüyor.",
+    "moy-den::Vapuru kaçırdım.",
+    "moy-den::Yoldayım.",
+    "moy-den::Saat dokuzda işe başlıyorum.",
+    "moy-den::Müşterilere e-posta yazıyorum.",
+    "moy-den::Çok yoruldum.",
+    "moy-den::Kahve ister misin?",
+    "moy-den::Öğle arası saat birde.",
+    "moy-den::Aç mısın?",
+    "moy-den::Çok açım.",
+    "moy-den::İşten saat altıda çıkıyorum.",
+    "moy-den::Akşam ne yapıyorsun?",
+    "moy-den::Akşam evdeyim.",
+    "moy-den::Akşam yemek yapıyorum.",
+    "moy-den::Bu akşam spor salonuna gidiyorum.",
+    "moy-den::Saat on birde yatıyorum.",
+    "moy-den::İyi geceler!",
+    "moy-den::Hafta sonu ne yapıyorsun?",
+    "moy-den::Cumartesi günü boşum.",
+    "moy-den::Pazar günü geç kalkıyorum.",
+    "moy-den::Evi temizlemeliyim.",
+    "moy-den::Saat kaç?",
+    "moy-den::Saat sekiz buçuk.",
+    "moy-den::Saat kaçta?",
+    "moy-den::Bugün günlerden ne?",
+    "moy-den::Bugün perşembe.",
+    "moy-den::Yarın cuma.",
+    "moy-den::Bugün pazartesi.",
+    "moy-den::Pazartesiden cumaya çalışıyorum.",
+    "moy-den::Şu an ne yapıyorsun?",
+    "moy-den::Şu an yemek yiyorum.",
+    "moy-den::Şimdi evdeyim, dinleniyorum.",
+    "moy-den::Meşgul müsün?",
+    "moy-den::Şu an toplantıdayım.",
+    "vremya::Saat kaç?",
+    "vremya::Saat beş",
+    "vremya::Altıyı on geçiyor",
+    "vremya::Yediye beş var",
+    "vremya::Sekiz buçuk",
+    "vremya::İkiye çeyrek var",
+    "vremya::Onu çeyrek geçiyor"
+   ],
+   "dialogues": [
+    {
+     "topic": "obscheprinyatye-slova",
+     "id": "obscheprinyatye-slova-deniz-u-dveri",
+     "turns": 7
+    },
+    {
+     "topic": "o-pogode",
+     "id": "o-pogode-anya-moskva-sneg",
+     "turns": 8
+    },
+    {
+     "topic": "moy-den",
+     "id": "moy-den-leyla-seychas",
+     "turns": 9
+    },
+    {
+     "topic": "voprositelnye-slova",
+     "id": "voprositelnye-slova-kuzey-kofe",
+     "turns": 9
+    },
+    {
+     "topic": "znakomstvo",
+     "id": "znakomstvo-sigara",
+     "turns": 10
+    },
+    {
+     "topic": "znakomstvo",
+     "id": "znakomstvo-novyy-god",
+     "turns": 10
+    },
+    {
+     "topic": "znakomstvo",
+     "id": "znakomstvo-a1-kurs-pervyy-urok",
+     "turns": 10
+    },
+    {
+     "topic": "obscheprinyatye-slova",
+     "id": "obscheprinyatye-slova-bakkal-hleb",
+     "turns": 10
+    },
+    {
+     "topic": "znakomstvo",
+     "id": "znakomstvo-kompaniya",
+     "turns": 12
+    },
+    {
+     "topic": "moy-den",
+     "id": "moy-den-na-pristani",
+     "turns": 12
+    },
+    {
+     "topic": "znakomstvo",
+     "id": "znakomstvo-meslek",
+     "turns": 13
+    },
+    {
+     "topic": "znakomstvo",
+     "id": "znakomstvo-ne-anliyorum",
+     "turns": 14
+    },
+    {
+     "topic": "znakomstvo",
+     "id": "znakomstvo-sport",
+     "turns": 16
+    },
+    {
+     "topic": "znakomstvo",
+     "id": "znakomstvo-turistka",
+     "turns": 16
+    },
+    {
+     "topic": "znakomstvo",
+     "id": "znakomstvo-vecherinka",
+     "turns": 31
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Семья и город",
+   "unit": "Hitit 3 · Yakın çevremiz",
+   "emoji": "🏘️",
+   "grammar": [
+    "poss",
+    "acc"
+   ],
+   "phraseTopics": [
+    "semya",
+    "v-gorode"
+   ],
+   "words": [
+    "Семья и отношения",
+    "Город и места",
+    "Транспорт и вождение",
+    "Школа и канцтовары"
+   ],
+   "phrases": [
+    "privetstvie::Yardımınız için teşekkür ederim",
+    "privetstvie::Çocuğunuz var mı?",
+    "privetstvie::Bir çocuğum var",
+    "privetstvie::Onun mesleği ne?",
+    "privetstvie::Bu benim karım/kocam",
+    "privetstvie::Bu benim erkek arkadaşım/kız arkadaşım",
+    "privetstvie::Erkek kardeşiniz ya da kız kardeşiniz var mı?",
+    "privetstvie::… erkek kardeşim/kız kardeşim var",
+    "znakomstvo::Benim adım … . Senin adın ne?",
+    "znakomstvo::Türkçeniz çok iyi!",
+    "znakomstvo::Telefon numaranız ne?",
+    "znakomstvo::Bu benim numaram.",
+    "semya::Bu benim ailem.",
+    "semya::Bu benim annem.",
+    "semya::Bu kim?",
+    "semya::Bir kız kardeşim var.",
+    "semya::Erkek kardeşin var mı?",
+    "semya::Kardeşim yok.",
+    "semya::Kaç kardeşsiniz?",
+    "semya::İki kardeşiz.",
+    "semya::Bu benim ablam.",
+    "semya::Ailem çok büyük değil.",
+    "semya::Kız kardeşinin adı ne?",
+    "semya::Onun adı Anya.",
+    "semya::Kaç yaşında?",
+    "semya::Yirmi beş yaşında.",
+    "semya::Annen kaç yaşında?",
+    "semya::Benden iki yaş küçük.",
+    "semya::Anneannem seksen yaşında.",
+    "semya::Ailen nerede yaşıyor?",
+    "semya::Ailem Moskova'da yaşıyor.",
+    "semya::Anneannem yalnız yaşıyor.",
+    "semya::Ben İstanbul'da yalnız yaşıyorum.",
+    "semya::Annen ne iş yapıyor?",
+    "semya::Annem öğretmen.",
+    "semya::Babam mühendis.",
+    "semya::Kız kardeşim bankada çalışıyor.",
+    "semya::Annem ev hanımı.",
+    "semya::Ablam hemşire.",
+    "semya::Evli misin?",
+    "semya::Hayır, bekarım.",
+    "semya::Erkek arkadaşım var.",
+    "semya::Ablam evli.",
+    "semya::Eşin ne iş yapıyor?",
+    "semya::Çocuğun var mı?",
+    "semya::İki çocuğum var.",
+    "semya::Bir oğlum ve bir kızım var.",
+    "semya::Çocuğum yok.",
+    "semya::Oğlun kaç yaşında?",
+    "semya::Oğlum okula gidiyor.",
+    "semya::Kızım anaokuluna gidiyor.",
+    "semya::Annemi her pazar arıyorum.",
+    "semya::Kız kardeşime her gün mesaj yazıyorum.",
+    "semya::Ailenle sık sık konuşuyor musun?",
+    "semya::Anneanneme selam söyle.",
+    "semya::Seni özledim.",
+    "semya::Ne zaman geliyorsun?",
+    "semya::O nasıl biri?",
+    "semya::Kız kardeşim çok komik.",
+    "semya::Anya sarışın, gözleri mavi.",
+    "semya::Babam uzun boylu.",
+    "semya::Annene benziyorsun.",
+    "semya::Annem çok sabırlı.",
+    "semya::Babam sessiz ama çok iyi biri.",
+    "semya::Çok tatlı ama çok yaramaz.",
+    "moy-den::Bugün çok işim var.",
+    "v-gorode::Otobüs durağı nerede?",
+    "v-gorode::Bilet gişesi nerede?",
+    "v-gorode::İstasyon nerede?",
+    "v-gorode::Gazete bayii nerede?",
+    "v-gorode::Peron 4 nerede?",
+    "v-gorode::Danışma bürosu nerede?",
+    "v-gorode::Şehir merkezine bir otobüs var mı?",
+    "v-gorode::Oraya gitmek ne kadar zaman alır?",
+    "v-gorode::Kaç kilometre?",
+    "v-gorode::Affedersiniz, metro nerede?",
+    "v-gorode::İskele nerede?",
+    "v-gorode::Burası neresi?",
+    "v-gorode::Durak burada mı?",
+    "v-gorode::Taksi durağı nerede?",
+    "v-gorode::Orada, köşede.",
+    "v-gorode::Sağa dönün.",
+    "v-gorode::Sola dönün.",
+    "v-gorode::Düz gidin.",
+    "v-gorode::Sağda.",
+    "v-gorode::Solda.",
+    "v-gorode::Bu yol doğru mu?",
+    "v-gorode::Uzak mı?",
+    "v-gorode::Çok uzak değil.",
+    "v-gorode::Çok yakın.",
+    "v-gorode::Buradan beş dakika.",
+    "v-gorode::Bu otobüs Taksim'e gidiyor mu?",
+    "v-gorode::Vapur ne zaman kalkıyor?",
+    "v-gorode::Bir sonraki vapur saat kaçta?",
+    "v-gorode::İstanbulkart'ım var.",
+    "v-gorode::İskeleye, lütfen.",
+    "v-gorode::Çok trafik var.",
+    "v-gorode::Kaç dakika?"
+   ],
+   "dialogues": [
+    {
+     "topic": "v-gorode",
+     "id": "v-gorode-dorogu-k-metro",
+     "turns": 8
+    },
+    {
+     "topic": "v-gorode",
+     "id": "v-gorode-bodrum-otobus",
+     "turns": 8
+    },
+    {
+     "topic": "vremya",
+     "id": "vremya-leyla-koncert",
+     "turns": 9
+    },
+    {
+     "topic": "semya",
+     "id": "semya-deniz-foto",
+     "turns": 10
+    },
+    {
+     "topic": "semya",
+     "id": "semya-leyla-ablasi",
+     "turns": 10
+    },
+    {
+     "topic": "semya",
+     "id": "semya-tuba-deti",
+     "turns": 10
+    },
+    {
+     "topic": "semya",
+     "id": "semya-stazherka-melis",
+     "turns": 10
+    },
+    {
+     "topic": "v-gorode",
+     "id": "v-gorode-uskudar-iskele",
+     "turns": 10
+    },
+    {
+     "topic": "v-gorode",
+     "id": "v-gorode-avtobus-taksim",
+     "turns": 10
+    },
+    {
+     "topic": "vremya",
+     "id": "vremya-opazdyvayu-na-parohod",
+     "turns": 10
+    },
+    {
+     "topic": "znakomstvo",
+     "id": "znakomstvo-dogum-gunu",
+     "turns": 11
+    },
+    {
+     "topic": "semya",
+     "id": "semya-sosedka-v-parke",
+     "turns": 11
+    },
+    {
+     "topic": "semya",
+     "id": "semya-leyla-pro-anyu",
+     "turns": 11
+    },
+    {
+     "topic": "znakomstvo",
+     "id": "znakomstvo-aile",
+     "turns": 13
+    },
+    {
+     "topic": "znakomstvo",
+     "id": "znakomstvo-semya-kollegi",
+     "turns": 13
+    },
+    {
+     "topic": "znakomstvo",
+     "id": "znakomstvo-korporativ",
+     "turns": 14
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "title": "Вчера и в кафе",
+   "unit": "Hitit 4–5 · Zaman geçiyor, Afiyet olsun",
+   "emoji": "☕",
+   "grammar": [
+    "di",
+    "want"
+   ],
+   "phraseTopics": [
+    "restoran"
+   ],
+   "words": [
+    "Еда и напитки",
+    "Кухня и посуда",
+    "Фрукты",
+    "Овощи",
+    "Природа и погода"
+   ],
+   "phrases": [
+    "privetstvie::Tekrar edin, lütfen",
+    "privetstvie::Lütfen bana … verin",
+    "privetstvie::Lütfen bana … getirin",
+    "privetstvie::Lütfen bana … gösterin",
+    "znakomstvo::Bir parti var.",
+    "znakomstvo::Beni rahat bırakın lütfen",
+    "znakomstvo::Ben de memnun oldum",
+    "znakomstvo::Bir daha söyleyin, lütfen.",
+    "znakomstvo::Bir yıl önce Türkiye'ye geldim.",
+    "znakomstvo::Yirmi yedi yaşındayım.",
+    "znakomstvo::Lütfen yavaş konuşun.",
+    "obscheprinyatye-slova::Beni rahat bırakın",
+    "semya::Ailemi çok özledim.",
+    "semya::Yeğenim Efe yedi yaşında.",
+    "moy-den::Bugün geç kalktım.",
+    "moy-den::Kahvaltı yapıyor musun?",
+    "moy-den::Kahvaltıda peynir ve zeytin yiyorum.",
+    "moy-den::Toplantı saat onda.",
+    "moy-den::Metin Bey ofiste mi?",
+    "moy-den::Bugün ne yemek istiyorsun?",
+    "moy-den::Bugün dışarıda yemek istiyorum.",
+    "moy-den::Yemeğimi evden getirdim.",
+    "moy-den::Cumartesi birlikte kahvaltı yapmak ister misin?",
+    "moy-den::Hafta sonu ne yaptın?",
+    "restoran::Acıktım",
+    "restoran::Susadım",
+    "restoran::İki kişilik bir masa ayırtmak istiyorum",
+    "restoran::Üç kişilik bir masa ayırtmak istiyorum",
+    "restoran::Dört kişilik bir masa ayırtmak istiyorum",
+    "restoran::İki kişilik bir masanız var mı?",
+    "restoran::Üç kişilik bir masanız var mı?",
+    "restoran::Dört kişilik bir masanız var mı?",
+    "restoran::… bir masanız var mı?",
+    "restoran::Bir köşede / Dışarıda",
+    "restoran::Bu taraftan lütfen",
+    "restoran::Garson!",
+    "restoran::Yemek/içmek için bir şey istiyoruz",
+    "restoran::Çabuk hazır olan bir şeyiniz var mı?",
+    "restoran::Yerli yemekleriniz var mı?",
+    "restoran::Hafif yemekler veriyor musunuz?",
+    "restoran::Acelemiz var",
+    "restoran::Sossuz (salçasız)/yağsız lütfen",
+    "restoran::Biraz daha rica ediyorum",
+    "restoran::Bu kadar yeter, teşekkür ederim",
+    "restoran::Özel bir rejimdeyim",
+    "restoran::Alkol kullanmıyorum",
+    "restoran::Şeker içeren yemekler yememeliyim",
+    "restoran::Tuz içeren yemekler yememeliyim",
+    "restoran::Un içeren yemekler yememeliyim",
+    "restoran::Yağ içeren yemekler yememeliyim",
+    "restoran::Vejetaryen yemekleriniz var mı?",
+    "restoran::Şeker hastaları için özel bir mönü var mı?",
+    "restoran::Tuvaletler nerede?",
+    "restoran::… ister misiniz?",
+    "restoran::Bizde … yok",
+    "restoran::… tavsiye ederim",
+    "restoran::… denemek (tatmak) ister misiniz?",
+    "restoran::Kahvaltı istiyorum lütfen",
+    "restoran::Bir bardak votka/cin-tonik rica ediyorum",
+    "restoran::Bir şişe/bardak bira rica ediyorum",
+    "restoran::Koyu/açık bir bira lütfen",
+    "restoran::Bir şişe şarap rica ediyorum",
+    "restoran::Bir şişe yerli şarap rica ediyorum",
+    "restoran::Bu şarabın adı ne?",
+    "restoran::Bir bardak su rica ediyorum",
+    "restoran::Bir fincan çay/kahve lütfen",
+    "restoran::Bir yanlışlık olmalı.",
+    "restoran::Kaşığım yok",
+    "restoran::Çatalım yok",
+    "restoran::Bıçağım yok",
+    "restoran::Bunu beğenmedim",
+    "restoran::Bu çok tuzlu",
+    "restoran::Bu çok ekşi",
+    "restoran::Bu çok baharatlı",
+    "restoran::Hesap lütfen",
+    "restoran::Hesabı ödemek istiyorum",
+    "restoran::Servis dahil mi?",
+    "restoran::Bu miktar ne için?",
+    "restoran::Çorba/tavuk ısmarlamadım",
+    "restoran::Teşekkür ederim.",
+    "restoran::Bu sizin için",
+    "restoran::Üstü kalsın",
+    "restoran::Beğendik.",
+    "restoran::Teşekkür ederiz",
+    "restoran::Çok güzeldi",
+    "restoran::Bir bardak/tabak eksik",
+    "restoran::Pencere kenarında",
+    "restoran::Terasta",
+    "restoran::Sigara içilmeyen bir yerde",
+    "restoran::Bu akşama/yarına bir masa ayırtmak istiyorum",
+    "restoran::Bir kahve, lütfen.",
+    "restoran::Sütlü kahve istiyorum.",
+    "restoran::Şekersiz, lütfen.",
+    "restoran::Bir çay daha, lütfen.",
+    "restoran::Çay mı, kahve mi?",
+    "restoran::Kahve istemiyorum, çay istiyorum.",
+    "restoran::Bir şişe su, lütfen.",
+    "restoran::Çay çok sıcak.",
+    "restoran::Bir simit ve bir çay, lütfen.",
+    "restoran::Ne istiyorsunuz?",
+    "restoran::Ne istiyorsun?",
+    "restoran::Tost istiyorum.",
+    "restoran::Menü var mı?",
+    "restoran::Burada mı, paket mi?",
+    "restoran::Paket, lütfen.",
+    "restoran::Başka bir şey?",
+    "restoran::Hepsi bu, teşekkürler.",
+    "restoran::Ne kadar?",
+    "restoran::Kahve kaç lira?",
+    "restoran::Simit yirmi lira.",
+    "restoran::Hepsi ne kadar?",
+    "restoran::Hesap bende!",
+    "restoran::Kartla ödemek istiyorum.",
+    "restoran::Çok lezzetli!",
+    "restoran::Lezzetli değil.",
+    "restoran::Simit çok taze.",
+    "restoran::Afiyet olsun!",
+    "restoran::Çok açım.",
+    "restoran::Aç mısın?",
+    "restoran::Çok susadım, su istiyorum.",
+    "v-gorode::Hangi durakta inmeliyim?",
+    "v-gorode::Kartıma para yüklemek istiyorum.",
+    "v-gorode::Taksimetreyi açın, lütfen.",
+    "v-gorode::Burada durun, lütfen."
+   ],
+   "dialogues": [
+    {
+     "topic": "obscheprinyatye-slova",
+     "id": "obscheprinyatye-slova-leyla-uskudar",
+     "turns": 6
+    },
+    {
+     "topic": "restoran",
+     "id": "restoran-sef-garson",
+     "turns": 7
+    },
+    {
+     "topic": "obscheprinyatye-slova",
+     "id": "obscheprinyatye-slova-prodavets-zontov",
+     "turns": 7
+    },
+    {
+     "topic": "vremya",
+     "id": "vremya-tuba-soveshchanie",
+     "turns": 7
+    },
+    {
+     "topic": "restoran",
+     "id": "restoran-sefe-tesekkur",
+     "turns": 8
+    },
+    {
+     "topic": "moy-den",
+     "id": "moy-den-anya-toplanti",
+     "turns": 8
+    },
+    {
+     "topic": "moy-den",
+     "id": "moy-den-ponedelnik",
+     "turns": 8
+    },
+    {
+     "topic": "v-gorode",
+     "id": "v-gorode-leyla-marmaray",
+     "turns": 8
+    },
+    {
+     "topic": "vremya",
+     "id": "vremya-skolko-vremeni",
+     "turns": 8
+    },
+    {
+     "topic": "o-pogode",
+     "id": "o-pogode-bodrum-zhara",
+     "turns": 8
+    },
+    {
+     "topic": "restoran",
+     "id": "restoran-tavsiye",
+     "turns": 9
+    },
+    {
+     "topic": "restoran",
+     "id": "restoran-kapida",
+     "turns": 9
+    },
+    {
+     "topic": "restoran",
+     "id": "restoran-teras",
+     "turns": 9
+    },
+    {
+     "topic": "restoran",
+     "id": "restoran-deniz-garson",
+     "turns": 9
+    },
+    {
+     "topic": "moy-den",
+     "id": "moy-den-vapur-tuba",
+     "turns": 9
+    },
+    {
+     "topic": "moy-den",
+     "id": "moy-den-obed",
+     "turns": 9
+    },
+    {
+     "topic": "v-gorode",
+     "id": "v-gorode-taksi-deniz",
+     "turns": 9
+    },
+    {
+     "topic": "obscheprinyatye-slova",
+     "id": "obscheprinyatye-slova-nuran-za-solyu",
+     "turns": 9
+    },
+    {
+     "topic": "vremya",
+     "id": "vremya-markus-opozdal",
+     "turns": 9
+    },
+    {
+     "topic": "znakomstvo",
+     "id": "znakomstvo-kayboldum",
+     "turns": 10
+    },
+    {
+     "topic": "znakomstvo",
+     "id": "znakomstvo-a1-sosedka",
+     "turns": 10
+    },
+    {
+     "topic": "znakomstvo",
+     "id": "znakomstvo-a1-sosedka-chay",
+     "turns": 10
+    },
+    {
+     "topic": "znakomstvo",
+     "id": "znakomstvo-a1-sportzal-pervyy-den",
+     "turns": 10
+    },
+    {
+     "topic": "znakomstvo",
+     "id": "znakomstvo-a1-sportzal-sosedka",
+     "turns": 10
+    },
+    {
+     "topic": "znakomstvo",
+     "id": "znakomstvo-a1-novaya-kollega",
+     "turns": 10
+    },
+    {
+     "topic": "znakomstvo",
+     "id": "znakomstvo-a1-kollega-obed",
+     "turns": 10
+    },
+    {
+     "topic": "znakomstvo",
+     "id": "znakomstvo-a1-kurs-posle-uroka",
+     "turns": 10
+    },
+    {
+     "topic": "znakomstvo",
+     "id": "znakomstvo-a1-kurs-novenkaya",
+     "turns": 10
+    },
+    {
+     "topic": "restoran",
+     "id": "restoran-yanlis-siparis",
+     "turns": 10
+    },
+    {
+     "topic": "restoran",
+     "id": "restoran-a1-kahveci-ofis",
+     "turns": 10
+    },
+    {
+     "topic": "restoran",
+     "id": "restoran-a1-kahveci-ikinci-gun",
+     "turns": 10
+    },
+    {
+     "topic": "restoran",
+     "id": "restoran-a1-leyla-cay",
+     "turns": 10
+    },
+    {
+     "topic": "restoran",
+     "id": "restoran-a1-leyla-evde",
+     "turns": 10
+    },
+    {
+     "topic": "restoran",
+     "id": "restoran-a1-tezgah",
+     "turns": 10
+    },
+    {
+     "topic": "restoran",
+     "id": "restoran-a1-tuba-ogle",
+     "turns": 10
+    },
+    {
+     "topic": "restoran",
+     "id": "restoran-a1-tuba-hesap",
+     "turns": 10
+    },
+    {
+     "topic": "restoran",
+     "id": "restoran-a1-vapur-cay",
+     "turns": 10
+    },
+    {
+     "topic": "restoran",
+     "id": "restoran-a1-vapur-leyla",
+     "turns": 10
+    },
+    {
+     "topic": "semya",
+     "id": "semya-kuzen-leyly",
+     "turns": 10
+    },
+    {
+     "topic": "semya",
+     "id": "semya-tuba-na-svyazi",
+     "turns": 10
+    },
+    {
+     "topic": "moy-den",
+     "id": "moy-den-ofis-utro",
+     "turns": 10
+    },
+    {
+     "topic": "moy-den",
+     "id": "moy-den-vecher-deniz",
+     "turns": 10
+    },
+    {
+     "topic": "moy-den",
+     "id": "moy-den-leyla-vyhodnye",
+     "turns": 10
+    },
+    {
+     "topic": "moy-den",
+     "id": "moy-den-rano-v-ofise",
+     "turns": 10
+    },
+    {
+     "topic": "v-gorode",
+     "id": "v-gorode-kadikoy-iskele",
+     "turns": 10
+    },
+    {
+     "topic": "v-gorode",
+     "id": "v-gorode-metro-anya",
+     "turns": 10
+    },
+    {
+     "topic": "v-gorode",
+     "id": "v-gorode-taksi-iskele",
+     "turns": 10
+    },
+    {
+     "topic": "razvlecheniya-otdyh",
+     "id": "razvl-gece-kulup",
+     "turns": 10
+    },
+    {
+     "topic": "znakomstvo",
+     "id": "znakomstvo-ofis-sabah",
+     "turns": 12
+    },
+    {
+     "topic": "znakomstvo",
+     "id": "znakomstvo-kofe-leyla",
+     "turns": 12
+    },
+    {
+     "topic": "restoran",
+     "id": "restoran-yerli-yemek",
+     "turns": 12
+    },
+    {
+     "topic": "restoran",
+     "id": "restoran-acele",
+     "turns": 12
+    },
+    {
+     "topic": "restoran",
+     "id": "restoran-vejetaryen",
+     "turns": 12
+    },
+    {
+     "topic": "restoran",
+     "id": "restoran-rejim",
+     "turns": 12
+    },
+    {
+     "topic": "restoran",
+     "id": "restoran-tuzlu",
+     "turns": 12
+    },
+    {
+     "topic": "restoran",
+     "id": "restoran-deniz-rezervasyon",
+     "turns": 13
+    },
+    {
+     "topic": "restoran",
+     "id": "restoran-deniz-aksam",
+     "turns": 13
+    },
+    {
+     "topic": "restoran",
+     "id": "restoran-telefon",
+     "turns": 14
+    },
+    {
+     "topic": "restoran",
+     "id": "restoran-kahvalti",
+     "turns": 14
+    },
+    {
+     "topic": "restoran",
+     "id": "restoran-hesap-yanlislik",
+     "turns": 14
+    },
+    {
+     "topic": "znakomstvo",
+     "id": "znakomstvo-sestra",
+     "turns": 15
+    },
+    {
+     "topic": "znakomstvo",
+     "id": "znakomstvo-eshche-svidanie",
+     "turns": 16
+    },
+    {
+     "topic": "restoran",
+     "id": "restoran-bira",
+     "turns": 16
+    },
+    {
+     "topic": "restoran",
+     "id": "restoran-leyla",
+     "turns": 18
+    },
+    {
+     "topic": "znakomstvo",
+     "id": "znakomstvo-v-poezdke",
+     "turns": 27
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Покупки и планы",
+   "unit": "Hitit 5–6 · Afiyet olsun, Bürokrasi",
+   "emoji": "🛍️",
+   "grammar": [
+    "ecek",
+    "with",
+    "deg"
+   ],
+   "phraseTopics": [
+    "pokupki-servis"
+   ],
+   "words": [
+    "Покупки и магазины",
+    "Одежда и аксессуары",
+    "Цвета",
+    "Предметы и вещи",
+    "Ванная и гигиена"
+   ],
+   "phrases": [
+    "znakomstvo::… bizimle akşam yemeği yemek ister misin?",
+    "znakomstvo::Gelecek sefere seni bize bekliyoruz",
+    "znakomstvo::Bu akşam benimle çıkmak ister misin?",
+    "znakomstvo::Bu akşam benimle dansa gitmek ister misin?",
+    "znakomstvo::Arabayla gezmek ister misin?",
+    "znakomstvo::Sana mesaj atacağım.",
+    "semya::Dün annemle konuştum.",
+    "semya::Onu yarın arayacağım.",
+    "moy-den::Vapurla işe gidiyorum.",
+    "moy-den::Biraz geç kalacağım.",
+    "moy-den::Bu akşam bir film izleyeceğim.",
+    "moy-den::Sonra sahilde yürüyüş yapacağız.",
+    "moy-den::Sonra seni arayacağım.",
+    "pokupki-servis::En iyi mağaza nerede?",
+    "pokupki-servis::En yakın dükkan nerede?",
+    "pokupki-servis::Nerede iyi bir … var?",
+    "pokupki-servis::Buradan uzak mı?",
+    "pokupki-servis::Affedersiniz, sizde … var mı?",
+    "pokupki-servis::… bölümü nerede?",
+    "pokupki-servis::Asansör nerede?",
+    "pokupki-servis::Sadece bakıyorum",
+    "pokupki-servis::…satıyor musunuz?",
+    "pokupki-servis::… satın almak istiyorum",
+    "pokupki-servis::Bu adrese gönderin lütfen",
+    "pokupki-servis::Ne yazık ki bizde … yok",
+    "pokupki-servis::Daha başka bir şey?",
+    "pokupki-servis::Hayır onu beğenmedim",
+    "pokupki-servis::Çok pahalı bir şey istemiyorum",
+    "pokupki-servis::Mavi/deri bir şey rica ediyorum",
+    "pokupki-servis::Bunu alıyorum",
+    "pokupki-servis::Bu rengi beğenmedim",
+    "pokupki-servis::Daha açık tonda bir şey var mı?",
+    "pokupki-servis::Bu ne kadar?",
+    "pokupki-servis::Giyim bölümü nerede?",
+    "pokupki-servis::İç çamaşırı bölümü nerede?",
+    "pokupki-servis::Tuhafiye bölümü nerede?",
+    "pokupki-servis::Sekiz yaşında bir kız/erkek çocuk için … istiyorum",
+    "pokupki-servis::Plaj giysileri nerede?",
+    "pokupki-servis::Pamuklu bir şeyiniz var mı?",
+    "pokupki-servis::Bu ithal mi?",
+    "pokupki-servis::Bu el işi mi?",
+    "pokupki-servis::Daha kaliteli bir şeyiniz var mı?",
+    "pokupki-servis::Saf pamuklu mu?",
+    "pokupki-servis::Saf yünlü mü?",
+    "pokupki-servis::Sentetik mi?",
+    "pokupki-servis::Ayna/giyinme kabini nerede?",
+    "pokupki-servis::Uymadı",
+    "pokupki-servis::Çok iyi uydu",
+    "pokupki-servis::38 beden kullanıyorum",
+    "pokupki-servis::Bir çift sandalet rica ediyorum",
+    "pokupki-servis::Başka bir renk var mı?",
+    "pokupki-servis::Aynısının siyahı var mı?",
+    "pokupki-servis::Bunlar çok küçük/büyük",
+    "pokupki-servis::En yakın kitapçı nerede?",
+    "pokupki-servis::Rehber kitaplar bölümü nerede?",
+    "pokupki-servis::Rusça/Türkçe dergi satıyor musunuz?",
+    "pokupki-servis::Sizde fotokopi makinesi bulunur mu?",
+    "pokupki-servis::Bir karayolları haritası/şehir haritası istiyorum",
+    "pokupki-servis::…in Türkçe/Rusça kitapları var mı?",
+    "pokupki-servis::Bir sözlük rica ediyorum",
+    "pokupki-servis::Bir Rusça-Türkçe cep sözlüğü rica ediyorum",
+    "pokupki-servis::Bir eğlence rehberi rica ediyorum",
+    "pokupki-servis::Bir/birkaç … rica ediyorum",
+    "pokupki-servis::… nin yeni CD'si var mı?",
+    "pokupki-servis::Bir disk rica ediyorum",
+    "pokupki-servis::Voltaj ne?",
+    "pokupki-servis::Bunun için bir piliniz var mı?",
+    "pokupki-servis::Bir … rica ediyorum",
+    "pokupki-servis::Bir fotoğraf makinesi satın almak istiyorum",
+    "pokupki-servis::Otomatik bir fotoğraf makinesi istiyorum",
+    "pokupki-servis::Sizde hangi sigaralar/purolar var?",
+    "pokupki-servis::Bir paket … sigarası lütfen",
+    "pokupki-servis::Rus/Türk sigaraları var mı?",
+    "pokupki-servis::Bir karton rica ediyorum",
+    "pokupki-servis::Bir çakmak satın almak istiyorum",
+    "pokupki-servis::Pipo temizleyicisi var mı?",
+    "pokupki-servis::Gözlüğümü kırdım.",
+    "pokupki-servis::Çerçeve kırık",
+    "pokupki-servis::Koyu renkli cam istiyorum",
+    "pokupki-servis::Güneş gözlüğü rica ediyorum",
+    "pokupki-servis::Ben miyobum/ hipermetrobum",
+    "pokupki-servis::Bu kaç ayar?",
+    "pokupki-servis::Beş yaşında bir çocuk için bir oyuncak istiyorum",
+    "pokupki-servis::Ekmek var mı?",
+    "pokupki-servis::Bir somun ekmek lütfen",
+    "pokupki-servis::Ne tür peyniriniz var?",
+    "pokupki-servis::Bir şişe süt lütfen",
+    "pokupki-servis::Bir şişe bira lütfen",
+    "pokupki-servis::Bir şişe şarap lütfen",
+    "pokupki-servis::… rica ediyorum",
+    "pokupki-servis::10 dilim salam",
+    "pokupki-servis::6 yumurta",
+    "pokupki-servis::Bir kavanoz reçel",
+    "pokupki-servis::Bir kutu bezelye",
+    "pokupki-servis::Bir kutu çikolata",
+    "pokupki-servis::Bir paket çay",
+    "pokupki-servis::Bir tüp hardal",
+    "pokupki-servis::Bana yarım kilo … verin lütfen",
+    "pokupki-servis::Bana bir kilo … verin lütfen",
+    "pokupki-servis::Bana iki kilo … verin lütfen",
+    "pokupki-servis::Şişesi/kilosu ne kadar?",
+    "pokupki-servis::Bu elbiseleri temizletmek istiyorum",
+    "pokupki-servis::Bu elbiseleri ütületmek istiyorum",
+    "pokupki-servis::Bu elbiseleri yıkatmak istiyorum",
+    "pokupki-servis::… e kadar gerekiyor",
+    "pokupki-servis::Ne zaman hazır olur?",
+    "pokupki-servis::Yarın hazır olur",
+    "pokupki-servis::Bu benimki değil",
+    "pokupki-servis::Bir şey kayıp",
+    "pokupki-servis::Saçımı biraz kısaltmak istiyorum",
+    "pokupki-servis::Bir saç kesimi rica ediyorum",
+    "pokupki-servis::Kenarlar çok kısa olmasın",
+    "pokupki-servis::Üstten/arkadan biraz daha alın",
+    "pokupki-servis::Saç spreyi kullanmayın lütfen",
+    "pokupki-servis::Bir renk katalogunuz var mı?",
+    "pokupki-servis::Jöle istemiyorum",
+    "pokupki-servis::Saçım kuru",
+    "pokupki-servis::Saçım yağlı",
+    "pokupki-servis::Saçım normal",
+    "pokupki-servis::Su çok soğuk/sıcak",
+    "pokupki-servis::Bir sakal tıraşı rica ediyorum",
+    "pokupki-servis::Teşekkür ederim.",
+    "pokupki-servis::Çok beğendim",
+    "pokupki-servis::En yakın (nöbetçi) eczane nerede?",
+    "pokupki-servis::Eczane ne zaman kapanır?",
+    "pokupki-servis::Sizde küçük bir ilk yardım çantası bulunur mu?",
+    "pokupki-servis::Aspirin/güneş kremi rica ediyorum",
+    "pokupki-servis::En yakın postane nerede?",
+    "pokupki-servis::Postane ne zaman açılıyor/ kapanıyor?",
+    "pokupki-servis::Posta kutusu nerede?",
+    "pokupki-servis::Bu paketi göndermek istiyorum",
+    "pokupki-servis::Gümrük beyannamesi doldurmalı mıyım?",
+    "pokupki-servis::Bu mektup/kart için bir pul lütfen",
+    "pokupki-servis::Moskova’ya mektup ücreti ne kadar?",
+    "pokupki-servis::Moskova’ya uçak postası ne kadar?",
+    "pokupki-servis::Rusya’ya telefon etmek istiyorum",
+    "pokupki-servis::Daha küçük/daha büyük bir numara var mı?",
+    "pokupki-servis::Biraz ayakkabı boyası/ayakkabı bağına ihtiyacım var",
+    "pokupki-servis::Hattan ayrılmayın lütfen",
+    "pokupki-servis::Bu görüşmenin fiyatı ne kadar?",
+    "pokupki-servis::Alo, ben …",
+    "pokupki-servis::…ile konuşmak istiyorum",
+    "pokupki-servis::Ne istiyorsun(uz)?",
+    "pokupki-servis::Sizde … var mı?",
+    "pokupki-servis::Süt var mı?",
+    "pokupki-servis::Elma var mı?",
+    "pokupki-servis::Evet, var.",
+    "pokupki-servis::Maalesef yok.",
+    "pokupki-servis::Ne kadar?",
+    "pokupki-servis::Kilosu kaç lira?",
+    "pokupki-servis::Hepsi ne kadar?",
+    "pokupki-servis::Yüz lira.",
+    "pokupki-servis::Çok pahalı!",
+    "pokupki-servis::Bu ucuz.",
+    "pokupki-servis::Daha ucuz bir şey var mı?",
+    "pokupki-servis::İndirim var mı?",
+    "pokupki-servis::Bedeniniz kaç?",
+    "pokupki-servis::Otuz altı beden.",
+    "pokupki-servis::Bu bana büyük.",
+    "pokupki-servis::Bu bana küçük.",
+    "pokupki-servis::Kırmızısı var mı?",
+    "pokupki-servis::Bu renk çok güzel.",
+    "pokupki-servis::Bunu verin, lütfen.",
+    "pokupki-servis::Şunu istiyorum.",
+    "pokupki-servis::Bir kilo elma, lütfen.",
+    "pokupki-servis::İki simit, lütfen.",
+    "pokupki-servis::Bu kadar, teşekkürler.",
+    "pokupki-servis::Kart geçiyor mu?",
+    "pokupki-servis::Nakit mi, kartla mı?",
+    "pokupki-servis::Nakit ödüyorum.",
+    "pokupki-servis::Poşet ister misiniz?",
+    "pokupki-servis::Bir poşet, lütfen.",
+    "pokupki-servis::Poşet istemiyorum, çantam var.",
+    "pokupki-servis::Buyurun, para üstünüz.",
+    "v-gorode::Vapurla yirmi dakika.",
+    "v-gorode::Metroyla on dakika sürüyor."
+   ],
+   "dialogues": [
+    {
+     "topic": "pokupki-servis",
+     "id": "pokupki-a1-bakkal-kart",
+     "turns": 8
+    },
+    {
+     "topic": "pokupki-servis",
+     "id": "pokupki-a1-pazar-elma",
+     "turns": 8
+    },
+    {
+     "topic": "pokupki-servis",
+     "id": "pokupki-a1-pazar-leyla",
+     "turns": 8
+    },
+    {
+     "topic": "pokupki-servis",
+     "id": "pokupki-a1-kazak-renk",
+     "turns": 8
+    },
+    {
+     "topic": "pokupki-servis",
+     "id": "pokupki-a1-bakkal-sut",
+     "turns": 9
+    },
+    {
+     "topic": "pokupki-servis",
+     "id": "pokupki-kitapci-tavsiye",
+     "turns": 10
+    },
+    {
+     "topic": "pokupki-servis",
+     "id": "pokupki-gunes-gozlugu",
+     "turns": 10
+    },
+    {
+     "topic": "pokupki-servis",
+     "id": "pokupki-supermarket",
+     "turns": 10
+    },
+    {
+     "topic": "pokupki-servis",
+     "id": "pokupki-kuafor-randevu",
+     "turns": 10
+    },
+    {
+     "topic": "pokupki-servis",
+     "id": "pokupki-telefon-rusya",
+     "turns": 10
+    },
+    {
+     "topic": "pokupki-servis",
+     "id": "pokupki-a1-elbise-beden",
+     "turns": 10
+    },
+    {
+     "topic": "pokupki-servis",
+     "id": "pokupki-a1-deniz-gomlek",
+     "turns": 10
+    },
+    {
+     "topic": "pokupki-servis",
+     "id": "pokupki-a1-firin-simit",
+     "turns": 10
+    },
+    {
+     "topic": "pokupki-servis",
+     "id": "pokupki-a1-firin-ekmek",
+     "turns": 10
+    },
+    {
+     "topic": "semya",
+     "id": "semya-zvonok-ane",
+     "turns": 10
+    },
+    {
+     "topic": "semya",
+     "id": "semya-metin-bey-mama",
+     "turns": 10
+    },
+    {
+     "topic": "moy-den",
+     "id": "moy-den-utro-deniz",
+     "turns": 10
+    },
+    {
+     "topic": "razvlecheniya-otdyh",
+     "id": "razvl-plaj-deniz",
+     "turns": 10
+    },
+    {
+     "topic": "pokupki-servis",
+     "id": "pokupki-film",
+     "turns": 11
+    },
+    {
+     "topic": "pokupki-servis",
+     "id": "pokupki-gozluk-kirildi",
+     "turns": 11
+    },
+    {
+     "topic": "pokupki-servis",
+     "id": "pokupki-saatci",
+     "turns": 11
+    },
+    {
+     "topic": "pokupki-servis",
+     "id": "pokupki-camasir-hazir-mi",
+     "turns": 11
+    },
+    {
+     "topic": "pokupki-servis",
+     "id": "pokupki-telefon-duyamiyorum",
+     "turns": 11
+    },
+    {
+     "topic": "pokupki-servis",
+     "id": "pokupki-leyla-plan",
+     "turns": 12
+    },
+    {
+     "topic": "pokupki-servis",
+     "id": "pokupki-sadece-bakiyorum",
+     "turns": 12
+    },
+    {
+     "topic": "pokupki-servis",
+     "id": "pokupki-primerka",
+     "turns": 12
+    },
+    {
+     "topic": "pokupki-servis",
+     "id": "pokupki-degisim",
+     "turns": 12
+    },
+    {
+     "topic": "pokupki-servis",
+     "id": "pokupki-oyuncak",
+     "turns": 12
+    },
+    {
+     "topic": "pokupki-servis",
+     "id": "pokupki-muzik",
+     "turns": 12
+    },
+    {
+     "topic": "pokupki-servis",
+     "id": "pokupki-elektrik",
+     "turns": 12
+    },
+    {
+     "topic": "pokupki-servis",
+     "id": "pokupki-vesikalik",
+     "turns": 12
+    },
+    {
+     "topic": "pokupki-servis",
+     "id": "pokupki-fotograf-makinesi",
+     "turns": 12
+    },
+    {
+     "topic": "pokupki-servis",
+     "id": "pokupki-kuyumcu",
+     "turns": 12
+    },
+    {
+     "topic": "pokupki-servis",
+     "id": "pokupki-pazar",
+     "turns": 12
+    },
+    {
+     "topic": "pokupki-servis",
+     "id": "pokupki-kuru-temizleme",
+     "turns": 12
+    },
+    {
+     "topic": "pokupki-servis",
+     "id": "pokupki-nobetci-eczane",
+     "turns": 12
+    },
+    {
+     "topic": "pokupki-servis",
+     "id": "pokupki-postane-saat",
+     "turns": 12
+    },
+    {
+     "topic": "pokupki-servis",
+     "id": "pokupki-telefon-sarj",
+     "turns": 12
+    },
+    {
+     "topic": "pokupki-servis",
+     "id": "pokupki-telefon-sekreter",
+     "turns": 12
+    },
+    {
+     "topic": "pokupki-servis",
+     "id": "pokupki-halici",
+     "turns": 13
+    },
+    {
+     "topic": "pokupki-servis",
+     "id": "pokupki-avm",
+     "turns": 13
+    },
+    {
+     "topic": "pokupki-servis",
+     "id": "pokupki-bakkal",
+     "turns": 13
+    },
+    {
+     "topic": "pokupki-servis",
+     "id": "pokupki-eczane",
+     "turns": 13
+    },
+    {
+     "topic": "pokupki-servis",
+     "id": "pokupki-sozluk",
+     "turns": 14
+    },
+    {
+     "topic": "pokupki-servis",
+     "id": "pokupki-kirtasiye",
+     "turns": 14
+    },
+    {
+     "topic": "pokupki-servis",
+     "id": "pokupki-tutun",
+     "turns": 14
+    },
+    {
+     "topic": "pokupki-servis",
+     "id": "pokupki-hali-anya",
+     "turns": 15
+    },
+    {
+     "topic": "pokupki-servis",
+     "id": "pokupki-sandalet",
+     "turns": 15
+    },
+    {
+     "topic": "pokupki-servis",
+     "id": "pokupki-postane-paket",
+     "turns": 15
+    },
+    {
+     "topic": "pokupki-servis",
+     "id": "pokupki-pamuklu",
+     "turns": 16
+    },
+    {
+     "topic": "pokupki-servis",
+     "id": "pokupki-kuafor",
+     "turns": 16
+    },
+    {
+     "topic": "pokupki-servis",
+     "id": "pokupki-deri-canta",
+     "turns": 17
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "title": "Свободнее",
+   "unit": "Hitit 6 · Bürokrasi",
+   "emoji": "🎓",
+   "grammar": [
+    "qw",
+    "two",
+    "li"
+   ],
+   "phraseTopics": [],
+   "words": [
+    "Прилагательные и сравнения",
+    "Части тела",
+    "Здоровье",
+    "Спорт и игры",
+    "Животные"
+   ],
+   "phrases": [],
+   "dialogues": []
+  }
+ ]
+}

@@ -39,6 +39,10 @@ const PHRASE_LEVEL_CAP_KEY = "mahjong-phrase-level";
 let phraseLevels = null; // {order: [id], topics: {id: {level, counts}}, phrases: {id: {tr: level}}}
 let phraseLevelCap = localStorage.getItem(PHRASE_LEVEL_CAP_KEY) || "B2";
 let quizMaxLevel = null; // потолок текущего рейса («весь A1» — только A1)
+// Рейс по своему списку фраз (этап «Занятия дня», today.js): новые вводятся в порядке
+// списка, а сколько новых ещё можно — quizNewLeft (null — без ограничения).
+let quizIdList = null;
+let quizNewLeft = null;
 let quizExactLevel = false;
 
 async function fetchPhraseLevels() {
@@ -295,6 +299,16 @@ function journeyStops(topicIds, level, exact, routeLevel = null) {
       s.emoji = "⚓";
     }
   });
+  return stops;
+}
+
+// Причалы рейса по своему списку фраз — по JOURNEY_STOP_SIZE подряд.
+function idStops(ids) {
+  const live = ids.filter((id) => !excludedPhrases.has(id));
+  const stops = [];
+  for (let i = 0; i < live.length; i += JOURNEY_STOP_SIZE) {
+    stops.push({ topicId: live[i].split("::")[0], ids: live.slice(i, i + JOURNEY_STOP_SIZE), name: `Причал ${stops.length + 1}`, emoji: "⚓" });
+  }
   return stops;
 }
 
@@ -833,6 +847,12 @@ function shuffle(arr) {
 // внутри темы — по порядку файла), за вычетом снятых галочкой на экране темы (если так
 // вышло, что снято всё — играем всё равно всем).
 function collectItems(topics) {
+  if (quizIdList) {
+    const byId = new Map();
+    topics.forEach((t) => t.phrases.forEach((p) => byId.set(phraseId(t.id, p), { phrase: p, topicId: t.id, id: phraseId(t.id, p) })));
+    const list = quizIdList.map((id) => byId.get(id)).filter((it) => it && !excludedPhrases.has(it.id));
+    if (list.length) return list;
+  }
   const items = [];
   const seen = new Set();
   const cap = quizMaxLevel || phraseLevelCap;
@@ -887,7 +907,8 @@ function pickNextItem() {
   const dueReady = due.filter((it) => free(it) && gap(it) >= PHRASE_MIN_GAP);
   // Начатая фраза может вернуться и в том же рейсе — так новая закрепляется быстрее.
   const startedReady = started.filter((it) => gap(it) >= PHRASE_MIN_GAP);
-  const fresh = started.length < PHRASE_WORKING_SET ? unseen.find(free) : null;
+  const newAllowed = quizNewLeft === null || quizNewLeft > 0;
+  const fresh = started.length < PHRASE_WORKING_SET && newAllowed ? unseen.find(free) : null;
 
   if (dueReady.length && (Math.random() < PHRASE_REVIEW_SHARE || (!startedReady.length && !fresh))) {
     return longestGap(dueReady);
@@ -899,7 +920,7 @@ function pickNextItem() {
   if (dueReady.length) return longestGap(dueReady);
   // Всё начатое только что было, повторов нет: берём хоть что-то не из этого рейса —
   // сначала начатые/новые, потом давно не встречавшиеся (тренировка без счёта).
-  const fallback = [...started, ...unseen, ...due].filter(free);
+  const fallback = [...started, ...(newAllowed ? unseen : []), ...due].filter(free);
   if (fallback.length) return longestGap(fallback);
   const rest = items.filter(free);
   return rest.length ? longestGap(rest) : items[Math.floor(Math.random() * items.length)];
@@ -1024,16 +1045,20 @@ function pickQuestionType(item) {
   return pickFrom[Math.floor(Math.random() * pickFrom.length)];
 }
 
-function startQuiz(topics, maxLevel = null, exact = false) {
+function startQuiz(topics, maxLevel = null, exact = false, ids = null, newLeft = null) {
   currentTopics = [...topics].sort((a, b) => orderIndex(a.id) - orderIndex(b.id));
   quizMaxLevel = maxLevel;
   quizExactLevel = exact;
-  quizStops = journeyStops(
-    currentTopics.map((t) => t.id),
-    maxLevel || phraseLevelCap,
-    exact,
-    exact ? maxLevel : null
-  );
+  quizIdList = ids;
+  quizNewLeft = newLeft;
+  quizStops = ids
+    ? idStops(ids)
+    : journeyStops(
+        currentTopics.map((t) => t.id),
+        maxLevel || phraseLevelCap,
+        exact,
+        exact ? maxLevel : null
+      );
   setScreen("quiz");
   document.getElementById("quiz-topic-title").textContent = quizHeaderTitle(topics);
   updateQuizProgressLabel();
@@ -1198,6 +1223,7 @@ function nextQuestion() {
   currentItem = { ...pickNextItem() };
   // Совсем новая фраза — видишь впервые: ошибка на ней не ломает корпус.
   currentItem.fresh = !phraseProgress[currentItem.id];
+  if (currentItem.fresh && quizNewLeft !== null) quizNewLeft--;
   currentItem.missed = false;
   lastWasFresh = currentItem.fresh;
   if (currentItem.fresh) ferry.stats.fresh++;
@@ -1665,6 +1691,8 @@ function initPhrasesMode() {
     ferry = null;
     document.getElementById("ferry-overlay").classList.add("hidden");
     currentTopics = [];
+    quizIdList = null;
+    quizNewLeft = null;
     renderPhrasesCatalog();
     setScreen("phrases-catalog");
   };

@@ -2150,6 +2150,63 @@ body[data-screen="today"] .today-banner { background: var(--gold); color: #2a211
 .today-finish { padding: 12px; border-radius: 12px; background: rgba(149, 213, 178, 0.15); color: #b7e4c7; font-weight: 700; text-align: center; }
 .today-note { margin: 0; font-size: 0.78rem; opacity: 0.65; line-height: 1.4; }
 body[data-screen="game"] .today-banner, body[data-screen="layout"] .today-banner { display: none; }
+.today-stage-bar { height: 6px; border-radius: 3px; background: rgba(255, 255, 255, 0.1); overflow: hidden; }
+.today-stage-bar span { display: block; height: 100%; background: var(--gold); }
+.today-placement {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid var(--gold);
+  background: rgba(233, 196, 106, 0.08);
+  font-size: 0.88rem;
+  line-height: 1.4;
+}
+.today-placement-btns { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 4px; }
+.today-placement button:not(.secondary),
+.today-finish button,
+.placement > button:not(.secondary):not(.today-retest) {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 10px;
+  background: var(--gold);
+  color: #2a2110;
+  font-size: 0.95rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+.today-finish { display: flex; flex-direction: column; align-items: center; gap: 8px; }
+.today-finish small { font-weight: 400; opacity: 0.85; color: var(--text); }
+.today-retest {
+  align-self: center;
+  background: transparent;
+  border: none;
+  color: var(--gold);
+  font-size: 0.85rem;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.placement p { margin: 0; font-size: 0.92rem; line-height: 1.45; }
+.pq-prompt { font-size: 0.85rem; opacity: 0.75; }
+.pq-phrase { font-size: 1.25rem; font-weight: 700; line-height: 1.4; }
+.pq-gap { display: inline-block; min-width: 3em; border-bottom: 2px solid var(--gold); color: var(--gold); text-align: center; }
+.pq-ru { font-size: 0.9rem; opacity: 0.75; }
+.pq-speak { align-self: flex-start; padding: 10px 16px; border: 1px solid var(--gold); border-radius: 10px; background: transparent; color: var(--gold); font-size: 1rem; cursor: pointer; }
+.pq-options { display: flex; flex-direction: column; gap: 8px; }
+.pq-opt {
+  padding: 12px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--text);
+  font-size: 0.98rem;
+  text-align: left;
+  cursor: pointer;
+}
+.pq-opt.right { background: var(--scale-2); border-color: #95d5b2; }
+.pq-opt.wrong { background: rgba(231, 111, 81, 0.35); border-color: var(--danger); }
+.pq-pass { font-size: 1.1rem; font-weight: 800; color: #b7e4c7; }
 
 /* Игры со словами (wordgames.js) */
 body[data-screen="word-game"] #screen-word-game { display: flex; }

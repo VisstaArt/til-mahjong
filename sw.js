@@ -6,7 +6,7 @@
 // Чтобы приложение работало без интернета целиком, при установке кладём в кеш не
 // только код, но и все данные (слова, фразы, диалоги, грамматику) — списки файлов
 // берём из их manifest.json, так что новые темы попадают в кеш сами.
-const CACHE_NAME = "til-mahjong-v35";
+const CACHE_NAME = "til-mahjong-v36";
 
 const APP_SHELL = [
   "./",
@@ -22,6 +22,7 @@ const APP_SHELL = [
   "./dialogues.js",
   "./grammar.js",
   "./today.js",
+  "./placement.js",
   "./wordgames.js",
   "./manifest.json",
   "./assets/pwa/icon-192-v2.png",
@@ -40,6 +41,7 @@ const DATA_FILES = [
   "./assets/dialogues/manifest.json",
   "./assets/grammar/items.json",
   "./assets/grammar/path.json",
+  "./assets/stages.json",
 ];
 const DATA_LISTS = [
   ["./assets/words/manifest.json", (m) => m.map((c) => `./assets/words/${c.slug}.json`)],
