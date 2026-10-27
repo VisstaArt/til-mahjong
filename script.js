@@ -341,6 +341,18 @@ function speak(text) {
   speechSynthesis.speak(u);
 }
 
+// iPhone даёт странице говорить только после «настоящего» нажатия (click), а в играх
+// со словами слова ловятся касанием (pointerdown) — без этого озвучка молчала весь
+// раунд. Беззвучная фраза в момент нажатия кнопки «Играть» снимает запрет.
+let speechUnlocked = false;
+function unlockSpeech() {
+  if (speechUnlocked || !("speechSynthesis" in window)) return;
+  speechUnlocked = true;
+  const u = new SpeechSynthesisUtterance(" ");
+  u.volume = 0;
+  speechSynthesis.speak(u);
+}
+
 voiceSelect.addEventListener("change", () => {
   localStorage.setItem(VOICE_STORAGE_KEY, voiceSelect.value);
 });

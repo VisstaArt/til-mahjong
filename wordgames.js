@@ -167,6 +167,7 @@ function wgCombo(ok) {
 }
 
 function startWordGame(id) {
+  unlockSpeech();
   ({ rain: startRain, search: startSearch, cross: startCross, listen: startListenGame })[id]();
 }
 
@@ -216,8 +217,10 @@ function startRain() {
   wgRaf = requestAnimationFrame(loop);
 }
 
-function rainNextTarget(g) {
-  g.target = g.words[g.targetIdx++ % g.words.length];
+// sayAfter — через сколько мс произнести слово «на слух»: сначала должно дозвучать
+// только что пойманное (или правильное после ошибки).
+function rainNextTarget(g, sayAfter = 0) {
+  const target = (g.target = g.words[g.targetIdx++ % g.words.length]);
   g.spawnsWithoutTarget = 2; // нужное слово появится почти сразу
   // Каждое третье слово — только на слух (если звук есть).
   g.listenOnly = g.targetIdx % 3 === 0 && !muted && "speechSynthesis" in window;
@@ -229,7 +232,7 @@ function rainNextTarget(g) {
     b.textContent = "👂 на слух — 🔊 ещё раз";
     b.addEventListener("click", () => speak(g.target.tr));
     g.clueEl.appendChild(b);
-    speak(g.target.tr);
+    setTimeout(() => wgAlive(g.token) && !g.over && g.target === target && speak(target.tr), sayAfter);
   } else {
     g.clueEl.appendChild(wgClue(g.target, "small"));
   }
@@ -306,7 +309,7 @@ function rainTap(g, d) {
     wgStat("Счёт", g.score);
     wgProgress("Поймано", `${g.caught}/${RAIN_TARGETS}`);
     if (g.caught >= RAIN_TARGETS) return rainEnd(g, true);
-    rainNextTarget(g);
+    rainNextTarget(g, 1100);
   } else {
     rainRemove(g, d, "wrong");
     rainMiss(g, `Нужно было: ${g.target.tr} — ${g.target.ru}`);
@@ -322,8 +325,9 @@ function rainMiss(g, text) {
   note.textContent = text;
   g.field.appendChild(note);
   setTimeout(() => note.remove(), 1800);
+  speak(g.target.tr);
   if (g.lives <= 0) return rainEnd(g, false);
-  rainNextTarget(g);
+  rainNextTarget(g, 1600);
 }
 function rainEnd(g, won) {
   const best = wgSaveBest("rain", g.score);
@@ -513,6 +517,7 @@ function searchHint(g) {
   const cell = document.querySelector(`.search-cell[data-rc="${p.cells[0]}"]`);
   cell.classList.add("hint");
   p.chip.classList.add("hint");
+  speak(p.w.tr); // подсказка ещё и на слух — так слово проще узнать в сетке
   setTimeout(() => cell.classList.remove("hint"), 2400);
 }
 

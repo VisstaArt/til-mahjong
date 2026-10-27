@@ -7,13 +7,23 @@
 // раз при загрузке скрипта, и "на лету" их не подменить; (2) дальше периодически и при
 // уходе со страницы выгружаем localStorage обратно в облако.
 //
+// Без интернета: войти заново нельзя (токен живёт час, обновить его можно только
+// онлайн), но если на этом телефоне уже входили — пускаем играть на прогрессе из
+// телефона (startOffline). Сыгранное офлайн помечается (UNSYNCED_KEY) и при следующей
+// связи уходит в облако, а не затирается более старой облачной копией.
+//
 // Схема таблицы — см. SQL, который пользователь выполнил в Supabase SQL Editor
 // (assets тут не хранится — это одноразовая настройка на стороне Supabase).
 
 const SUPABASE_URL = "https://orrdqcjqeprccpzicfmb.supabase.co";
 const SUPABASE_PUBLISHABLE_KEY = "sb_publishable_Bn7h4TJ6KYe8o60ySPSOTA_AbLz8SEB";
 
-const supabaseClient = window.supabase.createClient(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY);
+// Библиотека с CDN; офлайн её может не оказаться в кеше — тогда играем без облака.
+const supabaseClient = window.supabase ? window.supabase.createClient(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY) : null;
+const SUPABASE_AUTH_KEY = "sb-orrdqcjqeprccpzicfmb-auth-token"; // где supabase-js хранит вход
+const UNSYNCED_KEY = "til-unsynced"; // id пользователя, чей прогресс ещё не дошёл до облака
+const SYNCED_SIG_KEY = "til-synced-sig"; // отпечаток прогресса, который точно есть в облаке
+const NETWORK_WAIT_MS = 4000; // дольше слабую сеть не ждём — играем офлайн
 
 // Ключи localStorage <-> колонки таблицы user_progress — единственное место, где это
 // сопоставление описано; если появится новый вид прогресса (например, для диалогов),
@@ -45,7 +55,23 @@ function defaultForKey(key) {
 async function hydrateFromCloud(userId) {
   if (sessionStorage.getItem("til-hydrated") === userId) return;
 
-  const { data, error } = await supabaseClient.from("user_progress").select("*").eq("user_id", userId).maybeSingle();
+  // В прошлый раз играли без сети и прогресс не дошёл до облака — сначала отправляем
+  // своё; облачная копия старее, тянуть её поверх нельзя.
+  if (localStorage.getItem(UNSYNCED_KEY) === userId) {
+    await pushToCloud(userId);
+    sessionStorage.setItem("til-hydrated", userId);
+    return;
+  }
+
+  const abort = new AbortController();
+  const timer = setTimeout(() => abort.abort(), NETWORK_WAIT_MS);
+  const { data, error } = await supabaseClient
+    .from("user_progress")
+    .select("*")
+    .eq("user_id", userId)
+    .abortSignal(abort.signal)
+    .maybeSingle();
+  clearTimeout(timer);
   if (error) {
     console.error("[supabase-sync] не удалось загрузить прогресс из облака", error);
     sessionStorage.setItem("til-hydrated", userId);
@@ -68,10 +94,11 @@ async function hydrateFromCloud(userId) {
   }
 
   sessionStorage.setItem("til-hydrated", userId);
+  localStorage.setItem(SYNCED_SIG_KEY, progressSig(progressPayload(userId)));
   if (changed) location.reload();
 }
 
-async function pushToCloud(userId) {
+function progressPayload(userId) {
   const payload = { user_id: userId };
   for (const [localKey, column] of Object.entries(SYNCED_KEYS)) {
     try {
@@ -80,8 +107,33 @@ async function pushToCloud(userId) {
       payload[column] = defaultForKey(localKey);
     }
   }
-  const { error } = await supabaseClient.from("user_progress").upsert(payload);
-  if (error) console.error("[supabase-sync] не удалось сохранить прогресс в облако", error);
+  return payload;
+}
+// Короткий отпечаток (FNV-1a) — хранить вторую копию всего прогресса ради сравнения жалко.
+function progressSig(payload) {
+  const s = JSON.stringify(payload);
+  let h = 0x811c9dc5;
+  for (let i = 0; i < s.length; i++) h = Math.imul(h ^ s.charCodeAt(i), 0x01000193);
+  return `${payload.user_id}:${s.length}:${(h >>> 0).toString(36)}`;
+}
+
+// true — облако получило прогресс.
+async function pushToCloud(userId) {
+  const payload = progressPayload(userId);
+  const sig = progressSig(payload);
+  const { error } = supabaseClient
+    ? await supabaseClient.from("user_progress").upsert(payload)
+    : { error: "нет библиотеки Supabase" };
+  if (error) {
+    console.error("[supabase-sync] не удалось сохранить прогресс в облако", error);
+    // Нет сети, а прогресс менялся после последней синхронизации — запоминаем, чтобы
+    // при следующем входе отправить его, а не затереть облачной копией.
+    if (localStorage.getItem(SYNCED_SIG_KEY) !== sig) localStorage.setItem(UNSYNCED_KEY, userId);
+    return false;
+  }
+  localStorage.setItem(SYNCED_SIG_KEY, sig);
+  localStorage.removeItem(UNSYNCED_KEY);
+  return true;
 }
 
 function translateAuthError(message) {
@@ -167,27 +219,68 @@ function initAuthForm() {
   });
 }
 
+// Кто входил на этом телефоне (supabase-js держит это в localStorage даже с протухшим токеном).
+function storedUser() {
+  try {
+    const s = JSON.parse(localStorage.getItem(SUPABASE_AUTH_KEY) || "null");
+    return (s && s.user && s.user.id && s.user) || null;
+  } catch {
+    return null;
+  }
+}
+
+// Играем без облака на прогрессе из телефона. Выгрузка по таймеру продолжает
+// пытаться — как только сеть вернётся, supabase-js сам обновит токен и прогресс уйдёт.
+function startOffline(user) {
+  currentUserId = user.id;
+  document.getElementById("account-email").textContent = `${user.email} · без сети`;
+  document.getElementById("account-box").classList.remove("hidden");
+  authReadyResolve();
+  if (!pushTimer) pushTimer = setInterval(() => pushToCloud(currentUserId), 10000);
+}
+
 function initSupabaseSync() {
+  const stored = storedUser();
+  if (!supabaseClient) {
+    // Библиотеки входа нет (офлайн и не успела закешироваться) — играем локально.
+    if (stored) startOffline(stored);
+    else authReadyResolve();
+    return;
+  }
   initAuthForm();
-
-  supabaseClient.auth.onAuthStateChange((event, session) => {
-    if (session && !currentUserId) onAuthenticated(session);
-  });
-
-  supabaseClient.auth.getSession().then(({ data }) => {
-    if (data.session) {
-      onAuthenticated(data.session);
-    } else {
-      document.body.dataset.screen = "auth";
-      // window.authReady осознанно остаётся неразрешённым — дальше игра не пойдёт,
-      // пока не будет успешного входа (см. форму выше).
-    }
-  });
 
   // Выгружаем прогресс перед уходом со страницы/сворачиванием — не ждать следующего
   // 10-секундного тика, если человек как раз закрыл вкладку сразу после ответа.
   document.addEventListener("visibilitychange", () => {
     if (document.visibilityState === "hidden" && currentUserId) pushToCloud(currentUserId);
+  });
+
+  supabaseClient.auth.onAuthStateChange((event, session) => {
+    if (session && !currentUserId) onAuthenticated(session);
+  });
+
+  // Сети точно нет — не ждём: supabase-js полминуты пытался бы обновить токен, а всё
+  // это время висел бы экран входа.
+  if (stored && navigator.onLine === false) {
+    startOffline(stored);
+    return;
+  }
+  // Сеть «есть», но не отвечает — тоже не держим человека на экране входа.
+  const slow = stored ? setTimeout(() => !currentUserId && startOffline(stored), NETWORK_WAIT_MS) : null;
+
+  supabaseClient.auth.getSession().then(({ data, error }) => {
+    clearTimeout(slow);
+    if (currentUserId) return;
+    if (data.session) {
+      onAuthenticated(data.session);
+    } else if (error && storedUser()) {
+      // Токен не обновился из-за сети (при настоящей ошибке входа supabase-js стёр бы его).
+      startOffline(storedUser());
+    } else {
+      document.body.dataset.screen = "auth";
+      // window.authReady осознанно остаётся неразрешённым — дальше игра не пойдёт,
+      // пока не будет успешного входа (см. форму выше).
+    }
   });
 }
 
